@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '273'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ Voici un ensemble de directives à suivre lorsque vous contribuez à ce projet.
 ## Code De Conduite
 
 Ce projet respecte le [code de conduite](code-of-conduct.md) d’Adobe. En participant,
-vous devez respecter ce code. Veuillez signaler tout comportement inacceptable à
+vous devez respecter ce code. Signaler tout comportement inacceptable à
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Documentation du guide du contributeur
@@ -23,22 +23,21 @@ Voir le [Guide du contributeur](https://experienceleague.adobe.com/docs/contribu
 
 ## Vous Avez Une Question ?
 
-Commencez par signaler un problème. Les validateurs existants à ce projet doivent atteindre .
-consensus autour de la direction du projet et des solutions aux problèmes dans les fils de publication
-(le cas échéant).
+Commencez par signaler un problème. Les contributeurs actuels à ce projet doivent atteindre les objectifs suivants :
+le cas échéant, consensus autour de la direction du projet et des solutions aux problèmes dans les fils de publication.
 
 ## Contrat de licence du contributeur
 
 Toutes les contributions tierces à ce projet doivent être accompagnées d’un contributeur signé
-contrat de licence. Cela donne à l’Adobe l’autorisation de redistribuer vos contributions
-dans le cadre du projet. [Signez notre CLC](http://opensource.adobe.com/cla.html). Vous
-n’avez à soumettre un contrat de licence du contributeur d’Adobe qu’une seule fois, donc si vous en avez déjà soumis un,
+contrat de licence. Adobe a ainsi la permission de redistribuer vos contributions
+dans le cadre du projet. [Signez notre CLC](https://opensource.adobe.com/cla.html). Vous
+Il suffit d’envoyer un contrat de licence du contributeur Adobe une fois. Si vous en avez déjà soumis un,
 tout est fin prêt !
 
 ## Révisions du code
 
 Toutes les soumissions doivent prendre la forme de demandes d’extraction et doivent être examinées
-par les responsables de projet. Lisez la documentation relative à la demande d’extraction de [GitHub](https://help.github.com/articles/about-pull-requests/)
+par les contributeurs au projet. Lisez la documentation relative à la demande d’extraction de [GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 pour plus d’informations sur l’envoi de requêtes d’extraction.
 
 <!--
@@ -50,11 +49,11 @@ submitting a pull request!
 
 Nous aimons les contributions de notre communauté ! Si vous souhaitez aller plus loin que le statut de contributeur
 et devenez un validateur disposant d’un accès complet en écriture ayant son mot à dire dans le projet, vous devez :
-être invité(e) au projet. Les validateurs existants utilisent une nomination interne
+être invité(e) au projet. Les contributeurs existants font appel à une nomination interne
 processus qui doit aboutir à un consensus tacite (le silence est considéré comme une approbation) avant les invitations
 sont émis. Si vous vous sentez qualifié et souhaitez vous impliquer davantage,
-n’hésitez pas à contacter les responsables existants pour en discuter.
+n’hésitez pas à contacter les contributeurs existants pour en discuter.
 
 ## Problèmes de sécurité
 
-Les problèmes de sécurité ne doivent pas être signalés dans ce dispositif de suivi de problèmes. Soumettez plutôt [ problème à nos experts en sécurité](https://helpx.adobe.com/security/alertus.html)
+Pour signaler un problème de sécurité, [signalez-le à nos experts en sécurité](https://helpx.adobe.com/security/alertus.html).
