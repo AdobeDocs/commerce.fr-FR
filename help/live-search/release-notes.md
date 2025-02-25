@@ -2,9 +2,10 @@
 title: Notes de mise à jour de [!DNL Live Search]
 description: Dernières informations de mise à jour pour  [!DNL Live Search]  à partir d’Adobe Commerce.
 feature: Services, Search, Release Notes
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,10 @@ Les mises à jour incluent :
 ## Mises à jour des services hébergés
 
 Ces notes décrivent les mises à jour qui ont été publiées en dehors d’une version versionnée ou les améliorations apportées au service hébergé.
+
+_20 février 2025_
+
+![Nouveau](../assets/new.svg) Commerce prend en charge les synonymes comportant plusieurs mots. [En savoir plus](synonyms-type.md#multi-word-synonym-behavior). La prise en charge des synonymes à plusieurs mots n’est disponible qu’après cette date de publication du 20 février. Tout synonyme existant comportant plusieurs mots nécessite une réindexation complète pour fonctionner, que vous pouvez demander en [créant un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 _31 janvier 2025_
 

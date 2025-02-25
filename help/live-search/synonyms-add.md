@@ -1,7 +1,8 @@
 ---
 title: Ajouter des synonymes
 description: Ajoutez  [!DNL Live Search]  synonymes pour améliorer la réponse aux requêtes de recherche.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -30,7 +31,6 @@ Suivez les instructions relatives au [type de synonyme](synonyms-type.md) que vo
 1. Acceptez l’option **Bidirectionnelle** par défaut.
 
    ![Ajouter un synonyme bidirectionnel](assets/synonym-add-two-way.png)
-
 
 1. Saisissez le terme ou l’expression **Mot-clé** à faire correspondre.
 1. Saisissez le ou les termes **Expansion** que vous souhaitez ajouter comme synonymes du mot-clé. Séparez les différents termes par une virgule.
