@@ -2,7 +2,8 @@
 title: Connexion De Votre Instance
 description: Connectez votre instance Commerce à l’aide d’une clé API et d’une clé privée, puis spécifiez l’espace de données dans la configuration.
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f2b3be02-e9dd-4bca-b9e4-c80a56bf8691
+source-git-commit: 16bd0e7ed1e8982e1571e2593115824a2004b7dc
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -12,6 +13,8 @@ ht-degree: 0%
 # Connexion De Votre Instance
 
 [!DNL Payment Services] est optimisé par Commerce Services et déployé en tant que SaaS (logiciel en tant que service). Connectez votre instance Commerce à l’aide d’une clé API et d’une clé privée, puis spécifiez l’espace de données dans la configuration à l’aide du [connecteur de services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html). **Vous ne configurez cette connexion qu’une seule fois.**
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447835)
 
 >[!INFO]
 >
