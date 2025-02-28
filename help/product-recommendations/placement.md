@@ -1,9 +1,10 @@
 ---
 title: Emplacement et libellés
 description: Découvrez où placer des recommandations sur différentes pages de votre site et obtenez des suggestions pour les libellés fréquemment utilisés pour chaque type de recommandation.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0576add8-50dd-4aac-91f5-38b7d85b751f
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -51,8 +52,8 @@ _Recommandation en haut des résultats de recherche_
 
 Le tableau suivant répertorie les pages de storefront où vous pouvez placer des recommandations et les types de recommandations autorisés sur chaque page.
 
-| Page | Recommandations d’emplacement |
-|---|---|
+| Page | Recommandations d’emplacement | Types |
+|---|---|---|
 | Page d’accueil | En haut du contenu principal<br>En bas du contenu principal (par défaut) | Les plus consultés<br>Les plus achetés<br>Les plus ajoutés au panier<br>Recommandé pour vous<br>Trending |
 | Catégorie | En haut du contenu principal<br>En bas du contenu principal (par défaut) | Les plus consultés<br>Les plus achetés<br>Les plus ajoutés au panier<br>Recommandé pour vous<br>Trending |
 | Détails du produit | Au bas du contenu principal (par défaut) | Les plus consultés<br>Les plus achetés<br>Les plus ajoutés au panier<br>Consulté ceci, consulté cela<br>Consulté cela, acheté cela<br>Acheté cela<br>Plus de similarité visuelle <br> tendance <br> |
