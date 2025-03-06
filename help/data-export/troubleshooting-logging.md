@@ -2,9 +2,10 @@
 title: Consulter les journaux et résoudre les problèmes
 description: Découvrez comment résoudre les erreurs  [!DNL data export]  l’aide des journaux data-export et saas-export .
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d022756f-6e75-4c2a-9601-31958698dc43
+source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Les journaux sont disponibles dans le répertoire `var/log` du serveur d’appli
 
 | nom du journal | nom de fichier | description |
 |-----------------| ----------| -------------|
-| Log d&#39;export de données SaaS | `commerce-data-export.log` | Fournit des informations sur les activités d’exportation de données telles que les événements d’entité et les déclencheurs de resynchronisation complète.  Chaque enregistrement de journal possède une structure spécifique et fournit des informations sur le flux, l’opération, le statut, le temps écoulé, l’ID de processus et l’appelant. |
+| Log d&#39;export de données SaaS | `commerce-data-export.log` | Fournit des informations sur les activités d’exportation de données, telles que les événements d’entité et les déclencheurs de resynchronisation complète.  Chaque enregistrement de journal possède une structure spécifique et fournit des informations sur le flux, l’opération, le statut, le temps écoulé, l’ID de processus et l’appelant. |
 | Journal des erreurs d&#39;export des données SaaS | `data-export-errors.log` | Fournit des messages d’erreur et des traces de pile pour les erreurs qui se produisent pendant le processus de synchronisation des données. |
 | Log d&#39;export SaaS | `saas-export.log` | Fournit des informations sur les données envoyées aux services SaaS de Commerce. |
 | Journal des erreurs d&#39;export SaaS | `saas-export-errors.log` | Fournit des informations sur les erreurs qui se produisent lors de l’envoi de données aux services SaaS Commerce. |
@@ -36,8 +37,8 @@ Chaque enregistrement de journal présente la structure suivante.
    "feed": "<feed name>",
    "operation": "<executed operation>",
    "status": "<status of operation>",
-   "elapsed": "<time elaspsed from script run>",
-   "pid": "<proccess id who executed `operation`>",
+   "elapsed": "<time elapsed from script run>",
+   "pid": "<process id that executed `operation`>",
    "caller": "<who called this `operation`>"
 } [] []
 ```
@@ -50,10 +51,10 @@ Le tableau suivant décrit les types d’opérations qui peuvent être enregistr
 
 | Fonctionnement | Description | Exemple d’appelant |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| synchronisation complète | La synchronisation complète collecte et envoie toutes les données au SaaS pour un flux donné. | `bin/magento saas:resync --feed=products` |
-| réindexation partielle | La synchronisation partielle collecte et envoie des données au SaaS pour les entités mises à jour uniquement dans un flux donné. Ce journal est présent uniquement s’il existe des entités mises à jour. | `bin/magento cron:run --group=index` |
-| réessayer les éléments ayant échoué | Renvoie les éléments d’un flux donné au SaaS si l’opération de synchronisation précédente a échoué en raison d’une erreur de serveur ou d’application Commerce. Ce journal n’est présent que si des éléments ayant échoué existent. | `bin/magento cron:run --group=saas_data_exporter` (tout groupe cron « *_data_exportateur ») |
-| synchronisation complète (héritée) | Synchronisation complète pour un flux donné en mode d’exportation hérité. | `bin/magento saas:resync --feed=categories` |
+| synchronisation complète | Collecte et envoie toutes les données au SaaS pour un flux donné. | `bin/magento saas:resync --feed=products` |
+| réindexation partielle | Collecte et envoie des données au SaaS pour les entités mises à jour uniquement dans un flux donné. Ce journal est présent uniquement s’il existe des entités mises à jour. | `bin/magento cron:run --group=index` |
+| réessayer les éléments ayant échoué | Renvoyez les éléments d’un flux donné à SaaS si l’opération de synchronisation précédente a échoué en raison d’une erreur de serveur ou d’application Commerce. Ce journal n’est présent que si des éléments ayant échoué existent. | `bin/magento cron:run --group=saas_data_exporter` (tout groupe cron « *_data_exportateur ») |
+| synchronisation complète (héritée) | Collecte et envoie toutes les données au SaaS pour un flux donné en mode d’exportation hérité. | `bin/magento saas:resync --feed=categories` |
 | réindexation partielle (héritée) | Envoie les entités mises à jour au SaaS pour un flux donné en mode d’exportation hérité. Ce journal est présent uniquement s’il existe des entités mises à jour. | `bin/magento cron:run --group=index` |
 | synchronisation partielle (héritée) | Envoie les entités mises à jour au SaaS pour un flux donné en mode d’exportation hérité. Ce journal est présent uniquement s’il existe des entités mises à jour. | `bin/magento cron:run --group=saas_data_exporter` (tout groupe cron « *_data_exportateur ») |
 
@@ -123,12 +124,12 @@ Cet exemple ajoute une règle qui vous permet d’interroger les journaux New Re
 
 ## Dépannage
 
-Si des données sont manquantes ou incorrectes dans Commerce Services, vérifiez les journaux pour voir si un problème s’est produit lors de la synchronisation de l’instance Adobe Commerce vers la plateforme Commerce Service. Si nécessaire, utilisez la journalisation étendue pour ajouter des informations supplémentaires aux journaux à des fins de dépannage.
+Si des données sont manquantes ou incorrectes dans les services Commerce, recherchez dans les journaux les messages d’erreur relatifs à la synchronisation entre Adobe Commerce et la plateforme des services Commerce. Si nécessaire, utilisez la journalisation étendue pour ajouter des informations supplémentaires aux journaux à des fins de dépannage.
 
-- commerce-data-export-errors.log - si une erreur s’est produite lors de la phase de collecte
-- saas-export-errors.log - si une erreur s’est produite lors de la phase de transmission
+- Le journal des erreurs d’exportation des données (`commerce-data-export-errors.log`) capture les erreurs qui se produisent pendant la phase de collecte.
+- Le journal des erreurs d’exportation SaaS (`saas-export-errors.log`) capture les erreurs qui se produisent pendant la phase de transmission.
 
-Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) avec autant d’informations que possible.
+Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) avec autant d’informations que possible.
 
 ### Résolution des problèmes de synchronisation des catalogues {#resolvesync}
 
@@ -143,22 +144,15 @@ Lorsque vous déclenchez une resynchronisation des données, la mise à jour des
 
 #### Synchronisation non exécutée
 
-Si la synchronisation ne s’exécute pas selon un planning ou si rien n’est synchronisé, consultez cet article [Base de connaissances](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
+Si la synchronisation ne s’exécute pas selon un planning ou si rien n’est synchronisé, consultez cet article [Base de connaissances](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Échec de la synchronisation
 
-Si la synchronisation du catalogue a le statut **Échec**, envoyez un ticket d’assistance [](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Si la synchronisation du catalogue a le statut **Échec**, envoyez un ticket d’assistance [](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Journalisation étendue
 
-Pour obtenir des informations supplémentaires sur le journal, vous pouvez utiliser des variables d’environnement pour étendre les journaux avec des données supplémentaires pour le suivi et le dépannage.
-
-Le répertoire `var/log/` contient deux fichiers journaux :
-
-- commerce-data-export-errors.log - si une erreur s’est produite lors de la phase de collecte
-- saas-export-errors.log - si une erreur s’est produite lors de la phase de transmission
-
-Vous pouvez utiliser des variables d’environnement pour étendre les journaux avec des données supplémentaires à des fins de suivi et de dépannage.
+Utilisez des variables d’environnement pour étendre les journaux avec des données supplémentaires à des fins de suivi et de dépannage. Ajoutez la variable d’environnement à la ligne de commande lorsque vous exécutez les commandes de l’interface de ligne de commande d’exportation des données, comme illustré dans les exemples suivants.
 
 ### Vérifier la payload du flux
 
