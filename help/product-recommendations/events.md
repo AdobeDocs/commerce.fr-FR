@@ -2,7 +2,8 @@
 title: Collecter des données
 description: Découvrez comment les événements collectent des données pour  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
+source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -118,14 +119,14 @@ Ce tableau décrit les événements utilisés par chaque type de recommandation.
 | Type de recommandation | Événements | Page |
 | --- | --- | --- |
 | Les plus consultés | `page-view`<br>`product-view` | Page des détails du produit |
-| Les plus achetés | `page-view`<br>`complete-checkout` | Panier/Passage en caisse |
+| Les plus achetés | `page-view`<br>`place-order` | Panier/Passage en caisse |
 | Les plus ajoutés au panier | `page-view`<br>`add-to-cart` | Page des détails du produit<br>page de liste des produits<br>panier<br>liste de souhaits |
 | A consulté ceci, a consulté cela | `page-view`<br>`product-view` | Page des détails du produit |
 | A vu ceci, a acheté cela | Rec De Produit | `page-view`<br>`product-view` | Page des détails du produit<br>Panier/Passage en caisse |
 | J&#39;ai acheté ça, acheté ça | Rec De Produit | `page-view`<br>`product-view` | Page des détails du produit |
 | En Tendance | `page-view`<br>`product-view` | Page des détails du produit |
 | Conversion : afficher pour acheter | Rec De Produit | `page-view`<br>`product-view` | Page des détails du produit |
-| Conversion : afficher pour acheter | Rec De Produit | `page-view`<br>`complete-checkout` | Panier/Passage en caisse |
+| Conversion : afficher pour acheter | Rec De Produit | `page-view`<br>`place-order` | Panier/Passage en caisse |
 | Conversion : afficher au panier | Rec De Produit | `page-view`<br>`product-view` | Page des détails du produit |
 | Conversion : afficher au panier | Rec De Produit | `page-view`<br>`add-to-cart` | Page des détails du produit<br>Page de liste des produits<br>Panier<br>Liste de souhaits |
 
