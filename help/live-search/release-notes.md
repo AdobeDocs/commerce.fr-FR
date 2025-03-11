@@ -3,9 +3,9 @@ title: Notes de mise à jour de [!DNL Live Search]
 description: Dernières informations de mise à jour pour  [!DNL Live Search]  à partir d’Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: eb016fa8e53cfb9d035d73979495171feccb764f
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,15 @@ _31 mai 2024_
 _27 octobre 2023_
 
 ![Nouveau](../assets/new.svg) Le widget [!DNL Live Search] PLP prend désormais en charge les échantillons de couleurs.
+
+## [!DNL Live Search] 4.3.0
+
+_1 mars 2025_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Fix](../assets/fix.svg) [!DNL Live Search] prend désormais en charge PHP 8.4 pour les installations exécutant Adobe Commerce 2.4.8-beta2.
+![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel l’adaptateur de recherche n’était pas compatible avec `psr/http-message:2.0`.
 
 ## [!DNL Live Search] 4.2.3
 
@@ -173,11 +182,9 @@ Après l’installation de la version 3.1.1 ou ultérieure, activez les nouveaux
 
 Après la mise à niveau, testez la configuration mise à jour dans le contrôle qualité ou l’évaluation avant d’envoyer les modifications en production.
 
-## Versions précédentes
-
 +++3.1.1 et versions antérieures
 
-## [!DNL Live Search] 3.1.1
+### [!DNL Live Search] 3.1.1
 
 _15 septembre 2023_
 
@@ -194,7 +201,7 @@ _15 septembre 2023_
 ![Nouveau](../assets/new.svg) l’aperçu des catégories affiche uniquement la catégorie sélectionnée.
 Les composants ![Nouveau](../assets/new.svg) CIF AEM [Widget contextuel](https://github.com/adobe/aem-cif-guides-venia/pull/319) et [Widget PLP](https://github.com/adobe/aem-cif-guides-venia/pull/320) permettent aux sites AEM de tirer parti de l’[!DNL Live Search].
 
-### Mises à jour
+#### Mises à jour
 
 ![Correctif](../assets/fix.svg) La taille de la table des flux Produits et Prix a été considérablement réduite. Les tableaux `catalog_data_exporter_products` et `catalog_data_exporter_product_prices` doivent présenter une réduction substantielle de la taille.
 ![Correctif](../assets/fix.svg) L’onglet « Règles » est renommé « Règles de recherche »
@@ -206,23 +213,23 @@ Les composants ![Nouveau](../assets/new.svg) CIF AEM [Widget contextuel](https:/
 ![Correctif](../assets/fix.svg) &#39;Type de classement&#39; a été renommé en &#39;Classement intelligent&#39;
 ![Correctif](../assets/fix.svg) Correctifs mineurs
 
-## [!DNL Live Search] 3.1.0
+### [!DNL Live Search] 3.1.0
 
 _1er septembre 2023_
 
 [!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
-### Mises à jour
+#### Mises à jour
 
-![Correctif](../assets/fix.svg) Le widget Liste des produits a été mis à jour pour utiliser l’[API Catalog Service](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
+![Correctif](../assets/fix.svg) Le widget Liste des produits a été mis à jour pour utiliser l’[API Catalog Service](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/).
 
-## [!DNL Live Search] 3.0.2
+### [!DNL Live Search] 3.0.2
 
 _7 août 2023_
 
 [!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
-### Nouvelles fonctionnalités
+#### Nouvelles fonctionnalités
 
 ![Nouveau](../assets/new.svg) Les valeurs suivantes ont été ajoutées à l&#39;objet `storeDetails` :
 
@@ -232,7 +239,7 @@ _7 août 2023_
 - « Produits par page sur la valeur par défaut de la grille »
 - Stocker la langue
 
-### Mises à jour
+#### Mises à jour
 
 ![Correctif](../assets/fix.svg) les modules du service de catalogue ont été ajoutés au métapaquet pour prendre en charge la récupération avancée des données.
 ![Correctif](../assets/fix.svg) La navigation sur la page **Mon compte** ne disparaît plus lors de l’utilisation du widget Page de liste de produits.
@@ -241,17 +248,17 @@ Les commerçants doivent mettre à niveau la version >= 3.0.2 de l’extension [
 
 Il est recommandé de mettre à niveau et de tester avant de passer en production. Envisagez de mettre à niveau l’environnement de production pendant les heures creuses après avoir vérifié les résultats de leur environnement de test.
 
-### Restrictions
+#### Restrictions
 
 L’utilisation du widget Page de liste de produits Live Search entraîne l’échec de Google Tag Manager. Utilisez l’adaptateur de recherche par défaut si Google Tag Manager est nécessaire.
 
-## [!DNL Live Search] 3.0.1
+### [!DNL Live Search] 3.0.1
 
 _14 mars 2023_
 
 [!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
-### Nouvelles fonctionnalités
+#### Nouvelles fonctionnalités
 
 ![Nouveau](../assets/new.svg) fiche article de produit dans l&#39;aperçu des règles
 ![Nouveau](../assets/new.svg) [widget de page de liste de produits](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
@@ -265,7 +272,7 @@ _14 mars 2023_
 ![Nouveau](../assets/new.svg) [Classement intelligent des règles](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add)
 ![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge les fonctionnalités [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) complètes dans Commerce (anciennement connu sous le nom de Multi-Source Inventory, ou MSI). Pour activer la prise en charge complète, vous devez [mettre à jour](install.md#update) le module de dépendance `commerce-data-export` à la version 102.2.0+.
 
-### Mises à jour
+#### Mises à jour
 
 ![Corriger](../assets/fix.svg) Configurer les règles trie désormais automatiquement les positions de manière unique
 ![Correctif](../assets/fix.svg) La suppression d’un événement existant met désormais à jour l’aperçu
@@ -273,7 +280,7 @@ _14 mars 2023_
 ![Corriger](../assets/fix.svg) Supprimer le sélecteur de facettes « Sélectionner le type »
 ![Correctif ](../assets/fix.svg) ajout d’un nouveau statut « Modification » pour les règles non enregistrées
 
-### Correctifs
+#### Correctifs
 
 ![Correctif](../assets/fix.svg) Correction d’une erreur de serveur lorsqu’un événement est inachevé lors de l’enregistrement
 ![Corriger](../assets/fix.svg) Correction de la suppression d’un événement spécifique en présence de plusieurs événements
@@ -281,8 +288,6 @@ _14 mars 2023_
 ![Correctif](../assets/fix.svg) Corrigé lors du second clic « Modifier » dans les détails, [!DNL Live Search] page nécessitant un rechargement
 ![Correctif](../assets/fix.svg) Synonymes : correction d’un problème en raison duquel un utilisateur cliquait sur une entrée et ne pouvait pas renvoyer le focus au champ
 ![Correctif](../assets/fix.svg) Autres correctifs mineurs et mises à jour des performances
-
-
 ![Bug](../assets/bug.svg) - Le classement par « Recommandé pour vous » n’est pris en charge que dans les widgets de recherche en direct. Il n’est pas pris en charge avec la fonctionnalité de recherche par défaut de Luma et PWA.
 ![Bug](../assets/bug.svg) - Les facettes d’attribut de prix personnalisé ne s’affichent pas correctement dans Luma, mais l’API les filtre correctement.
 
@@ -290,7 +295,7 @@ Les commerçants doivent mettre à niveau la version >= 3.0.1 de l’extension [
 
 Il est recommandé de mettre à niveau et de tester avant de passer en production. Envisagez de mettre à niveau l’environnement de production pendant les heures creuses après avoir vérifié les résultats de leur environnement de test.
 
-## [!DNL Live Search] 2.0.5
+### [!DNL Live Search] 2.0.5
 
 [!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
@@ -355,7 +360,7 @@ Le ![nouveau](../assets/new.svg) [Tableau de bord de création de rapports Perfo
 ![Nouveau](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) permet d’accéder à une couche de données commune avec des services, des mesures et des services d’abonnement et de publication d’événements.
 ![Correctif](../assets/fix.svg) La [[!DNL Storefront popover]](storefront-popover.md) comporte une nouvelle classe `active` pour le conteneur `.search-autocomplete` qui contrôle la visibilité.
 ![Correctif](../assets/fix.svg) Dans le storefront, le lien de pied de page [Termes de recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) est supprimé et son cache désactivé pour les installations de [!DNL Live Search].
-![Bogue](../assets/bug.svg) le correctif pour l’adaptateur Search gère les produits en double.
+![Bogue](../assets/bug.svg) le correctif pour l’adaptateur de recherche gère les produits en double.
 ![Bogue](../assets/bug.svg) [!DNL Live Search] prend en charge les emplacements d’inventaire [source unique](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) (physique) avec plusieurs [stocks](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) (virtuels). Les sources d’inventaire multiples ne sont pas prises en charge actuellement.
 
 ### [!DNL Live Search] 1.2.0
