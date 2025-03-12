@@ -2,13 +2,13 @@
 title: Notes de mise à jour de [!DNL Payment Services]
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes  [!DNL Payment Services]  versions.
 feature: Payments, Release Notes
-source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
+exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
+source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
 workflow-type: tm+mt
-source-wordcount: '3392'
+source-wordcount: '3644'
 ht-degree: 0%
 
 ---
-
 
 # Notes de mise à jour
 
@@ -89,6 +89,33 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s&#39;affichent dans l&#39;état [Statut du paiement des commandes](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et l&#39;état [Paiements](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l&#39;aide du contrôle Paramètres des colonnes.
 
 +++
+
+## v2.11.0
+
+_13 mars 2025_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+
+![Nouveau](../assets/new.svg)<!-- PAY-5938 --> Désormais, [!DNL Payment Services] permet aux commerçants de gérer les paramètres de paiement afin de maximiser la flexibilité de leur entreprise. Cette version améliore la possibilité de joindre [plusieurs comptes PayPal](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) pour les régions et les marques prises en charge par un commerçant. Notre équipe des ventes peut fournir un lien d’intégration pour configurer votre site web et les portées d’affichage de la boutique.
+
+![Nouveau](../assets/new.svg)<!-- PAY-5968 --> Désormais, [!DNL Payment Services] met à jour la configuration d’administration avec les valeurs **ID de vendeur PayPal** et **Statut de vendeur PayPal**. Ces valeurs offrent aux commerçants une meilleure visibilité sur le statut de leur compte PayPal.
+
+![Correction d’un problème](../assets/fix.svg)<!-- PAY-5816 --> Restauration de la fonctionnalité de commande normale dans [!DNL Payment Services] en résolvant un problème qui provoquait des erreurs dans tous les emplacements de commande avec la version v2.9.0.
+
+![Correction d’un problème](../assets/fix.svg)<!-- PAY-5825 --> Correction d’un problème en raison duquel le mini-panier Apple Pay utilisait une URL de totaux estimés incorrecte pour les clients connectés. Désormais, [!DNL Payment Services] assure des calculs totaux précis.
+
+![Correction d’un problème](../assets/fix.svg)<!-- PAY-5826 --> Amélioration de la fiabilité de la gestion des commandes en résolvant un problème qui provoquait une erreur HTTP 500 lors du changement du statut du devis en `inactive`.
+
+![Correction d’un problème](../assets/fix.svg)<!-- PAY-5849 --> Correction d’un problème en raison duquel `LineItemProvider` générait des exceptions pour les quantités décimales inférieures à 1. Désormais, [!DNL Payment Services] offre une meilleure prise en charge des quantités fractionnelles.
+
+![Correction d’un problème](../assets/fix.svg)<!-- PAY-5868 --> Correction d’une erreur de montant de carte cadeau lors du passage en caisse. [!DNL Payment Services] garantit désormais des valeurs précises lors d’un processus de passage en caisse.
+
+![Problème résolu](../assets/fix.svg)<!-- PAY-5911 --> Erreurs résolues lors de la création de l&#39;expédition pour les commandes passées à l&#39;aide de méthodes de paiement en ligne non [!DNL Payment Services], ce qui améliore la fiabilité globale.
+
+![Problème résolu](../assets/fix.svg)<!-- PAY-5954 --> [!DNL Payment Services] offre désormais une expérience de passage en caisse plus fluide en résolvant un problème où Apple Pay n’avait pas passé de commande lorsqu’une autre carte de crédit avait été sélectionnée dans le portefeuille.
+
+![Problème résolu](../assets/fix.svg)<!-- PAY-5971 --> [!DNL Payment Services] ne redirige plus les clients vers la page de révision des commandes lorsqu’Apple Pay échoue, ce qui évite les perturbations inutiles lors du passage en caisse.
 
 ## v2.10.3
 
