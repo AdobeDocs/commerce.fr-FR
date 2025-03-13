@@ -2,9 +2,10 @@
 title: Synchroniser les données avec l'export de données SaaS
 description: Découvrez comment le collecte et synchronise  [!DNL SaaS Data Export]  données entre les instances Adobe Commerce et les services SaaS connectés.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
+source-git-commit: 55c433f36b122813e8fc9136a7efbb869246b7f5
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -79,7 +80,7 @@ La plupart des activités de synchronisation sont traitées automatiquement en f
 
 - Les utilisateurs administrateurs peuvent afficher et suivre la progression de la synchronisation et obtenir des informations sur les données à partir du tableau de bord [Data Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
-- Les développeurs, les intégrateurs système ou les administrateurs ayant accès au serveur d’applications Commerce peuvent gérer le processus de synchronisation et les flux de données à l’aide de l’outil de ligne de commande (CLI) Adobe Commerce. Voir [Référence des commandes d’exportation de données](data-export-cli-commands.md).
+- Les développeurs, les intégrateurs système ou les administrateurs ayant accès au serveur d’applications Commerce peuvent gérer le processus de synchronisation et les flux de données à l’aide de l’outil de ligne de commande (CLI) Adobe Commerce. Voir [ Gérer les opérations de synchronisation à l’aide de l’interface de ligne de commande Commerce](data-export-cli-commands.md).
 
 ### Vérification de la configuration de l’application Commerce
 
