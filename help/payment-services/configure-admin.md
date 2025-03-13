@@ -4,9 +4,10 @@ description: Après l’installation, vous pouvez effectuer la configuration  [!
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: a4da36e2-4316-42d5-ae30-cf078f440444
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -34,6 +35,7 @@ Vous pouvez activer les [!DNL Payment Services] pour votre boutique et votre _[!
    >
    > Si vous devez modifier l’ID de votre espace de données dans le connecteur de services Commerce, vous devez réinitialiser votre ID de [!DNL Payment Services]. Cliquez sur **Réinitialiser l’ID des services de paiement** pour réinitialiser votre sandbox ou vos ID de production. Si vous réinitialisez vos identifiants [!DNL Payment Services], vous devez procéder à une nouvelle intégration.
 
+1. Vos valeurs **[!UICONTROL PayPal Merchant ID]** et **[!UICONTROL PayPal Merchant Status]** sont automatiquement fournies par PayPal lorsque vous consultez le tableau de bord [!DNL Payment Services] pour la première fois.
 1. Pour **Descripteur soft** (valeurs personnalisées qui s’affichent sur les relevés bancaires de transaction client pour délimiter les magasins/marques/catalogues), ajoutez votre texte personnalisé (jusqu’à 22 caractères) dans le champ de texte, en remplaçant `Soft descriptor` ou la valeur existante.
 1. Cliquez sur **[!UICONTROL Save Config]** pour enregistrer vos modifications.
 1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, puis cliquez sur **[!UICONTROL Flush Cache]** pour actualiser tous les caches non valides.
@@ -48,6 +50,8 @@ Vous pouvez activer les [!DNL Payment Services] pour votre boutique et votre _[!
 | [!UICONTROL Method] | vue magasin | Définissez la méthode, ou l’environnement, de votre magasin. Options : [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | vue magasin | Votre ID de marchand de sandbox, qui est généré automatiquement lors de l’intégration au sandbox. |
 | [!UICONTROL Payment Services Production ID] | vue magasin | Votre ID de commerçant de production, qui est généré automatiquement lors de l’intégration de la production (en direct). |
+| [!UICONTROL PayPal Merchant ID] | vue magasin | Identifiant unique de votre compte PayPal Merchant, généré lors de la création de votre compte PayPal. |
+| [!UICONTROL PayPal Merchant Status] | vue magasin | Statut de votre ID de vendeur PayPal. |
 | [!UICONTROL Soft Descriptor] | affichage du site web ou de la boutique | Ajoutez un descripteur à vos sites web et vue(s) de boutique pour ajouter des informations aux transactions client qui délimitent les marques, les boutiques ou les lignes de produits. |
 
 ## [!UICONTROL Credit Card Fields]

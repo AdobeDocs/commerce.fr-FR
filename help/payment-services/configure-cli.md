@@ -1,17 +1,18 @@
 ---
-title: Configuration de la ligne de commande
+title: Configuration de ligne de commande
 description: Après l’installation, vous pouvez configurer à l [!DNL Payment Services] aide de l’interface de ligne de commande (CLI).
 role: Admin, Developer
 level: Intermediate
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
-# Configuration de la ligne de commande
+# Configuration de ligne de commande
 
 Après l’installation de [!DNL Payment Services], vous pouvez facilement le configurer à partir de [à la maison](payments-home.md) ou via l’interface de ligne de commande (CLI).
 
@@ -88,6 +89,32 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 Pour en savoir plus sur la réindexation et les indexeurs, consultez la rubrique [Gérer les indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) dans la documentation destinée aux développeurs.
+
+## Configuration de l’étendue via l’interface de ligne de commande
+
+[!DNL Payment Services] permet aux commerçants d&#39;utiliser [plusieurs comptes PayPal](settings.md#use-multiple-paypal-accounts). Vous pouvez désormais modifier les portées de ces comptes via l’interface de ligne de commande.
+
+Pour définir l’étendue au niveau `website`, exécutez :
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level website
+```
+
+Pour définir l’étendue au niveau `store`, utilisez :
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level store
+```
+
+>[!TIP]
+>
+> Si vous souhaitez modifier la portée au niveau du magasin, contactez votre représentant commercial [!DNL Payment Services].
+
+Une fois la portée modifiée, videz le cache pour afficher les modifications :
+
+```bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
 
 ## Configuration du traitement L2/L3
 

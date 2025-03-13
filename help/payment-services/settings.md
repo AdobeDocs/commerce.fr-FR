@@ -4,9 +4,10 @@ description: Après l’installation, vous pouvez configurer  [!DNL Payment Serv
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 793bc59d-1581-4c78-bafe-a43b9e5fb1bc
+source-git-commit: 00ba1ec70a3042780071003f5c0b8d1cc29c49ed
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2420'
 ht-degree: 0%
 
 ---
@@ -302,5 +303,7 @@ Voir [3DS dans Sécurité](security.md#3ds) pour plus d’informations.
 En [!UICONTROL Payment Services], vous pouvez utiliser plusieurs comptes PayPal dans **un** compte marchand au niveau du site web. Par exemple, si vous exploitez vos magasins dans plusieurs pays (qui utilisent différentes [devises](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency)) ou si vous souhaitez utiliser Adobe Commerce pour certaines parties de votre entreprise, mais pas _toutes_, vous pouvez configurer votre compte commercial pour utiliser plusieurs comptes PayPal.
 
 Consultez [Site, magasin et portée d’affichage](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) pour plus d’informations sur la hiérarchie des sites web, des magasins et des vues de magasin.
+
+Consultez [Configuration de ligne de commande](configure-cli.md#configure-scope-via-cli) pour plus d’informations sur la configuration des portées de plusieurs comptes PayPal via l’interface de ligne de commande.
 
 Votre représentant commercial peut créer une nouvelle [portée](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) pour votre compte marchand et intégrer le site supplémentaire avec PayPal afin que tous les boutons PayPal que vous configurez pour apparaître s&#39;affichent sur votre site. Contactez votre représentant commercial pour obtenir de l’aide sur l’utilisation de plusieurs comptes PayPal pour vos sites web.
