@@ -3,9 +3,9 @@ title: Notes de mise à jour de [!DNL Payment Services]
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes  [!DNL Payment Services]  versions.
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
+source-git-commit: 0098e5bab2ea72f9abd7c846d49d5ee4d523ad73
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3681'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,14 @@ _28 juin 2021_
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2761 --> Vous pouvez désormais personnaliser les données qui s&#39;affichent dans l&#39;état [Statut du paiement des commandes](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) et l&#39;état [Paiements](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) en affichant ou en masquant les colonnes à l&#39;aide du contrôle Paramètres des colonnes.
 
 +++
+
+## v2.11.1
+
+_14 mars 2025_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+
+![Correction d’un problème](../assets/fix.svg)<!-- PAY-5849 --> Correction d’un problème qui affectait [Éléments de ligne](line-items.md) lors de la passage en caisse. Désormais, [!DNL Payment Services] a amélioré la fiabilité du processus de passage en caisse pour les **lignes**. Si vous rencontrez un problème similaire, contactez votre représentant commercial [!DNL Payment Services] pour obtenir de l’aide.
 
 ## v2.11.0
 
