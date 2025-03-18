@@ -3,13 +3,13 @@ title: Présentation d’Adobe Commerce as a Cloud Service
 description: Découvrez les principales fonctionnalités et avantages d’Adobe Commerce as a Cloud Service.
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
-source-git-commit: 0a112b1dab0113eb910e2ecdcca21e7e2814e761
+exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
+source-git-commit: 27d08ed9c01923f2144b071ed7418a399b3126eb
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1593'
 ht-degree: 0%
 
 ---
-
 
 # Présentation d’Adobe Commerce as a Cloud Service
 
@@ -83,10 +83,13 @@ Adobe fournit les outils de développement suivants pour créer des intégration
 
 ## Commerce Foundation
 
-Commerce Foundation fournit une plateforme d’hébergement automatisée sécurisée et des fonctionnalités en libre-service pour gérer votre application Commerce dans un environnement natif dans le cloud. Les principales fonctionnalités sont les suivantes :
+Commerce Foundation fournit une plateforme d’hébergement automatisée sécurisée et des fonctionnalités en libre-service pour gérer votre application Commerce dans un environnement natif dans le cloud.
+
+Les principales fonctionnalités sont les suivantes :
 
 - Intégration simplifiée
 - Mises à niveau transparentes
+- Intégrations tierces
 
 ### Intégration simplifiée
 
@@ -103,6 +106,10 @@ Le processus de mise à niveau classique pour Adobe Commerce sur Cloud consistai
 >[!NOTE]
 >
 >Adobe garantit la rétrocompatibilité pour toutes les mises à jour. Cela signifie que lorsque des mises à jour sont appliquées, elles n’interrompent pas les fonctionnalités ou personnalisations existantes qui adhèrent au modèle [extensibilité API-first](https://developer.adobe.com/commerce/extensibility/).
+
+### Intégrations tierces
+
+Les développeurs peuvent utiliser des API [GraphQL et REST complètes](https://developer.adobe.com/commerce/services/cloud/guides/) pour intégrer Commerce Foundation à des systèmes tiers et étendre les fonctionnalités de Commerce.
 
 ## Intégration d’Experience Cloud
 
