@@ -1,18 +1,20 @@
 ---
 title: Responsabilité partagée
-description: Découvrez les responsabilités de chaque partie impliquée dans votre projet Adobe Commerce as a Cloud Service en matière de sécurité.
+description: Découvrez les responsabilités de chaque partie impliquée dans votre projet en matière  [!DNL Adobe Commerce as a Cloud Service]  sécurité.
 role: Admin, Architect, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-
 # Sécurité à responsabilité partagée et modèle opérationnel
 
-Adobe Commerce as a Cloud Service est un service à la demande qui repose sur un modèle opérationnel et de sécurité à responsabilité partagée. Ces responsabilités sont partagées entre Adobe et les clients. Chaque partie assume la responsabilité distincte de la sécurisation et de l’exploitation de l’application Adobe Commerce.
+{{accs-early-access}}
+
+[!DNL Adobe Commerce as a Cloud Service] est un service à la demande qui repose sur un modèle de sécurité et d&#39;exploitation à responsabilité partagée. Ces responsabilités sont partagées entre Adobe et les clients. Chaque partie assume la responsabilité distincte de la sécurisation et de l’exploitation de l’application Adobe Commerce.
 
 >[!BEGINSHADEBOX]
 
@@ -33,8 +35,8 @@ Les tableaux récapitulatifs ci-après utilisent le modèle RACI pour montrer le
 | Définition des règles de WAF du réseau CDN principal | RA | |
 | Déploiement des règles WAF de la plateforme principale | RA | |
 | Déploiement des règles de WAF du réseau CDN principal | RA | |
-| Correction des bugs principaux dans Adobe Commerce as a Cloud Service | RA | I |
-| Publication des correctifs d’infrastructure d’Adobe Commerce as a Cloud Service | RA | |
+| Correction des bugs principaux dans [!DNL Adobe Commerce as a Cloud Service] | RA | I |
+| Publication des correctifs d’infrastructure [!DNL Adobe Commerce as a Cloud Service] | RA | |
 | Évolutivité (infrastructure) | RA | |
 | Mise à l’échelle (application principale) | RA | |
 | Intégration d’applications externes | | RA |

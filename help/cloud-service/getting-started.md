@@ -1,18 +1,20 @@
 ---
-title: Prise en main d’Adobe Commerce as a Cloud Service
-description: Découvrez comment commencer à utiliser Adobe Commerce as a Cloud Service.
+title: Prise en main de  [!DNL Adobe Commerce as a Cloud Service]
+description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
 
-
 # Prise en main
 
-Adobe Commerce as a Cloud Service fournit la plupart des configurations prêtes à l’emploi. Après avoir terminé quelques processus de configuration de base, votre boutique sera opérationnelle en un rien de temps. Ce guide vous guide tout au long de la création et de l’utilisation d’une instance.
+{{accs-early-access}}
+
+[!DNL Adobe Commerce as a Cloud Service] fournit la plupart des configurations prêtes à l’emploi. Après avoir terminé quelques processus de configuration de base, votre boutique sera opérationnelle en un rien de temps. Ce guide vous guide tout au long de la création et de l’utilisation d’une instance.
 
 Cliquez sur les onglets ci-dessous pour afficher des vues d’ensemble générales des workflows pour les types d’utilisateurs suivants :
 
@@ -24,27 +26,27 @@ Cliquez sur les onglets ci-dessous pour afficher des vues d’ensemble général
 
 >[!TAB Workflow administrateur et commerçant]
 
-Ce diagramme présente de manière générale la manière dont les administrateurs et les commerçants accèdent aux instances Adobe Commerce as a Cloud Service et les gèrent. Voir le [Guide Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) pour plus d&#39;informations sur les workflows d&#39;administration.
+Ce diagramme présente de manière générale la manière dont les administrateurs et les commerçants accèdent aux instances [!DNL Adobe Commerce as a Cloud Service] et les gèrent. Voir le [Guide Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) pour plus d&#39;informations sur les workflows d&#39;administration.
 
-![diagramme de flux des commerçants Adobe Commerce as a Cloud Service](./assets/merchant-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service] diagramme de flux des commerçants](./assets/merchant-flow.svg){zoomable="yes"}
 
 >[!TAB Workflow du développeur]
 
-Ce diagramme présente de manière générale la manière dont les développeurs créent des intégrations pour Adobe Commerce as a Cloud Service à l’aide d’App Builder. Pour plus d’informations, consultez la [documentation de l’API](https://developer.adobe.com/commerce/services/cloud/).
+Ce diagramme présente de manière générale la manière dont les développeurs créent des intégrations pour les [!DNL Adobe Commerce as a Cloud Service] à l’aide d’App Builder. Pour plus d’informations, consultez la [documentation de l’API](https://developer.adobe.com/commerce/services/cloud/).
 
-![Diagramme de flux du développeur Adobe Commerce as a Cloud Service](./assets/developer-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service] le diagramme de flux du développeur](./assets/developer-flow.svg){zoomable="yes"}
 
 >[!ENDTABS]
 
 ## Création d’une instance
 
-Les instances Adobe Commerce as a Cloud Service utilisent un système basé sur les crédits. Vous pouvez créer plusieurs instances, mais chaque instance nécessite un montant relatif de crédits. Le montant des crédits dont vous disposez au départ dépend de votre abonnement.
+[!DNL Adobe Commerce as a Cloud Service] instances utilisent un système basé sur les crédits. Vous pouvez créer plusieurs instances, mais chaque instance nécessite un montant relatif de crédits. Le montant des crédits dont vous disposez au départ dépend de votre abonnement.
 
 1. Connectez-vous à votre compte [Adobe Experience Cloud](https://experience-stage.adobe.com/).
 
 1. Sous [!UICONTROL Quick access], cliquez sur [!UICONTROL **Commerce**] pour ouvrir le [!UICONTROL Commerce Cloud Manager].
 
-   La [!UICONTROL Commerce Cloud Manager] affiche une liste des instances d’Adobe Commerce as a Cloud Service disponibles dans votre organisation Adobe IMS.
+   La [!UICONTROL Commerce Cloud Manager] affiche une liste des instances de [!DNL Adobe Commerce as a Cloud Service] disponibles dans votre organisation Adobe IMS.
 
 1. Cliquez sur [!UICONTROL **Ajouter une instance**] dans le coin supérieur droit de l’écran.
 
@@ -62,7 +64,7 @@ Les instances Adobe Commerce as a Cloud Service utilisent un système basé sur 
 
 1. Sélectionnez le [!UICONTROL **type d’environnement**] de votre instance. Vous pouvez choisir entre les options suivantes :
 
-   * [!UICONTROL **Sandbox**] - Idéal pour la conception et les tests. Commencez votre parcours Adobe Commerce as a Cloud Service à l’aide de l’environnement sandbox.
+   * [!UICONTROL **Sandbox**] - Idéal pour la conception et les tests. Commencez votre parcours de [!DNL Adobe Commerce as a Cloud Service] à l’aide de l’environnement Sandbox.
    * [!UICONTROL **Production**] - Pour les magasins en ligne et les sites orientés clients.
 
    >[!NOTE]
@@ -93,9 +95,9 @@ Après avoir créé une instance, vous pouvez y accéder à partir du [!UICONTRO
 
 ## Importer votre catalogue
 
-Par défaut, les instances Adobe Commerce as a Cloud Service n’incluent aucune donnée de produit. Vous avez la possibilité d’inclure des exemples de données de produit lorsque vous créez une instance à des fins de test et d’apprentissage avant d’importer votre propre catalogue.
+Par défaut, les instances de [!DNL Adobe Commerce as a Cloud Service] n’incluent aucune donnée de produit. Vous avez la possibilité d’inclure des exemples de données de produit lorsque vous créez une instance à des fins de test et d’apprentissage avant d’importer votre propre catalogue.
 
-Pour importer votre catalogue dans Adobe Commerce as a Cloud Service, deux méthodes sont possibles :
+Pour importer votre catalogue dans [!DNL Adobe Commerce as a Cloud Service], deux méthodes sont possibles :
 
 * [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Une interface conviviale qui vous permet d&#39;importer vos données de catalogue en quelques clics.
 * [**Importer l’API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Une API REST qui vous permet d’importer les données de votre catalogue par programmation.
