@@ -3,9 +3,9 @@ title: Synchroniser les données avec l'export de données SaaS
 description: Découvrez comment le collecte et synchronise  [!DNL SaaS Data Export]  données entre les instances Adobe Commerce et les services SaaS connectés.
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
-source-git-commit: 55c433f36b122813e8fc9136a7efbb869246b7f5
+source-git-commit: 291babe5dbdabb7d626ae744335b94e44ba6a6f5
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ Les principaux composants du flux d&#39;exportation de données SaaS sont les su
 - Modules d’exportation de données SaaS qui collectent les données pour les flux d’Adobe Commerce, assemblent les éléments des flux, écoutent les mises à jour et conservent le statut des flux.
 - Les modules SaaS exportent les données, configurent le routage et publient les flux vers les services connectés.
 - Le service Adobe Commerce gère le processus d’ingestion des données pour valider les flux entrants et conserver les mises à jour des services connectés.
+
+>[REMARQUE !]
+>
+>Pour garantir une planification fluide et éviter toute perturbation du fonctionnement du site, Adobe recommande d’estimer le volume de données et l’heure de synchronisation avant de démarrer la synchronisation des flux de données. Cette estimation est importante lors de la planification de synchronisations initiales ou de mises à jour de catalogue à grande échelle, telles que des modifications de prix en masse. Pour plus d’informations, voir [ Estimation du volume de données et de la durée de transmission pour la synchronisation des données](estimate-data-volume-sync-time.md)
 
 ## Modes de synchronisation
 
