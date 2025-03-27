@@ -1,9 +1,10 @@
 ---
 title: '[!DNL Product Recommendations] Workspace'
 description: Découvrez comment configurer, gérer et surveiller les performances des recommandations de produits.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -18,6 +19,19 @@ L’espace de travail [!DNL Product Recommendations] affiche une liste de recomm
 
 ![Espace de travail Recommendations](assets/workspace.png)
 _Workspace Recommendations_
+
+## Collecte de données
+
+Pour vous assurer que chaque domaine fonctionnel de l’espace de travail contient les données correctes, vous devez configurer la collecte de données en fonction de l’implémentation de storefront sélectionnée :
+
+1. Luma - La collecte de données est disponible par défaut.
+1. Découplé - La collecte de données doit être configurée manuellement, en fonction de l’implémentation du storefront.
+
+Si vous utilisez un storefront découplé, reportez-vous à la documentation suivante pour obtenir plus d’informations sur les événements requis à ajouter :
+
+- [Événements requis](events.md) pour le tableau de bord des recommandations de produits.
+- [collecteur d’événements Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) qui doit être ajouté comme condition préalable.
+- [Exemples](https://github.com/adobe/commerce-events/tree/main/examples) de la structure des événements.
 
 ## Définir la portée
 
