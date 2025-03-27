@@ -2,9 +2,10 @@
 title: Marchandisage de catégorie
 description: Utilisez  [!DNL Live Search]  marchandisage de catégorie pour une expérience d’achat plus rapide.
 gourl: ls_catalog_merchandising
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
+source-git-commit: e5e5443e0bdb12e4774856336157067b4ff6eb7c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -140,3 +141,7 @@ Pour ajouter manuellement un événement :
 1. Sous Classement manuel, cliquez sur le menu **Sélectionner un événement** et choisissez un événement qui se produira une fois les conditions associées remplies.
 1. Saisissez le nom du produit à affecter. Des produits sont suggérés lors de la saisie.
 1. Pour plusieurs événements, choisissez tous les autres événements que vous souhaitez déclencher lorsque les conditions sont remplies.
+
+>[!NOTE]
+>
+>Les règles sont appliquées lorsqu’une catégorie spécifique est ouverte sur le storefront et qu’il existe une règle pour cette catégorie. Pour les règles de marchandisage de catégorie, l’ordre de tri par défaut est « Trier par : Position ». Si un acheteur modifie l’ordre de tri, tous les produits masqués, épinglés et enfouis ne sont plus triés.

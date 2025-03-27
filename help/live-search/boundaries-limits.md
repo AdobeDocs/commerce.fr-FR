@@ -3,9 +3,9 @@ title: Limites et limites
 description: Découvrez les limites et les limites de pour  [!DNL Live Search]  assurer qu’il répond aux besoins de votre entreprise.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,12 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 - Le nombre maximal de résultats par page est de 500.
 - Il n’est pas possible de filtrer les résultats à l’aide d’un attribut de type date.
 
-## Règles
+## Recherche de marchandisage
 
 - Le nombre maximal de [règles](rules.md) de marchandisage de recherche par vue de magasin est de 50.
-- Le marchandisage de catégorie peut comporter une règle par catégorie.
 - Le nombre maximal de conditions par règle est de 10.
 - Le nombre maximal d’événements par règle est de 25.
+- Les règles et les produits classés manuellement sont appliqués aux résultats de la recherche lorsque l’ordre de tri par défaut « Trier par : les plus pertinents » est sélectionné. Si un acheteur modifie l’ordre de tri pour qu’il ressemble à un tri par nom ou prix, les règles et les classements manuels ne sont plus en vigueur.
 - Pour éviter des résultats imprévisibles dans les réponses paginées, le nombre de produits épinglés ne doit pas dépasser la taille de page demandée.
 
 ## Synonymes
@@ -68,9 +68,10 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 
 ## Marchandisage de catégorie
 
-- Une règle par catégorie peut être créée pour chaque vue de magasin. Chaque règle peut avoir :
-   - Jusqu’à dix conditions
-   - Jusqu’à 25 événements
+- Vous pouvez créer une règle par catégorie pour chaque vue de magasin.
+- Le nombre maximal de conditions par règle est de 10.
+- Le nombre maximal d’événements par règle est de 25.
+- Les règles sont appliquées lorsqu’une catégorie spécifique est ouverte sur le storefront et qu’il existe une règle pour cette catégorie. Pour les règles de marchandisage de catégorie, l’ordre de tri par défaut est « Trier par : Position ». Si un acheteur modifie l’ordre de tri, tous les produits masqués, épinglés et enfouis ne sont plus triés.
 
 ## Autorisations B2B et de catégorie
 

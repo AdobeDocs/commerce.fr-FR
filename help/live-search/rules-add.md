@@ -1,9 +1,10 @@
 ---
 title: Ajouter des règles
 description: Découvrez comment créer des règles de marchandisage de recherche.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
+source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
@@ -151,6 +152,10 @@ Les informations saisies ici apparaissent dans le panneau [Détails de la règle
    La règle est ajoutée à la liste dans l’espace de travail *Règles*.
 
 1. Bien que les règles actives prennent immédiatement effet, vous devrez peut-être attendre jusqu’à 15 minutes pour que les résultats de la requête mise en cache dans le storefront soient actualisés.
+
+>[!NOTE]
+>
+>Les règles et les produits classés manuellement sont appliqués aux résultats de la recherche lorsque l’ordre de tri par défaut « Trier par : les plus pertinents » est sélectionné. Si un acheteur modifie l’ordre de tri pour qu’il ressemble à un tri par nom ou prix, les règles et les classements manuels ne sont plus en vigueur.
 
 ## Descriptions des champs
 
