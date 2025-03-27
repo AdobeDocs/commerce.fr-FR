@@ -3,9 +3,9 @@ title: Configurer votre storefront
 description: 'Découvrez comment exécuter l’outil de génération de modèles automatique pour configurer votre storefront [!DNL Adobe Commerce as a Cloud Service] '
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 7f7a674b856090bd02752a9e2ad29475b2b56fcf
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -102,13 +102,11 @@ L’exécution de la commande suivante crée une génération de modèles automa
 
 1. Saisissez le nom du référentiel que vous souhaitez créer.
 
-1. Sélectionnez le modèle à utiliser, par exemple `adobe-commerce/adobe-demo-store`.
-
 1. Sélectionnez l’une des options suivantes :
 
-   * **Utiliser l’instance de démonstration Adobe (points d’entrée par défaut)** - Utilisez l’exemple d’instance Commerce Adobe.
+   * **Utiliser le client Adobe Commerce de démonstration** - Utilisez un client de démonstration.
       * Si vous sélectionnez cette option, vous êtes invité à installer le robot de synchronisation du code AEM dans une fenêtre de navigateur. Vous devez spécifier le référentiel que vous avez créé et autoriser le robot. Revenez à l’interface de ligne de commande et saisissez `y` pour confirmer l’installation du robot de synchronisation du code AEM.
-   * **Choisir une API disponible (maillage -> SaaS)** - Sélectionner une instance Commerce existante dans l’organisation sélectionnée.
+   * **Sélectionner un client Adobe Commerce disponible** - Sélectionnez un client Commerce existant dans l’organisation sélectionnée.
       * Si vous sélectionnez cette option, vous devez sélectionner le projet et l’espace de travail dans lesquels créer un maillage.
 
    >[!NOTE]
