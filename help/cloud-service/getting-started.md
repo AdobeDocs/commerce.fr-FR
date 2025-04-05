@@ -3,7 +3,7 @@ title: Prise en main de  [!DNL Adobe Commerce as a Cloud Service]
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: a1b825a819b25d9374eef169c633d54fb94ee26c
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Ce diagramme présente de manière générale la manière dont les développeurs
 
 [!DNL Adobe Commerce as a Cloud Service] instances utilisent un système basé sur les crédits. Vous pouvez créer plusieurs instances, mais chaque instance nécessite un montant relatif de crédits. Le montant des crédits dont vous disposez au départ dépend de votre abonnement.
 
-1. Connectez-vous à votre compte [Adobe Experience Cloud](https://experience-stage.adobe.com/).
+1. Connectez-vous à votre compte [Adobe Experience Cloud](https://experience.adobe.com/).
 
 1. Sous [!UICONTROL Quick access], cliquez sur [!UICONTROL **Commerce**] pour ouvrir le [!UICONTROL Commerce Cloud Manager].
 
