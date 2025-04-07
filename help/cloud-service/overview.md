@@ -4,9 +4,9 @@ description: Découvrez les principales fonctionnalités et avantages de  [!DNL 
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Les principales fonctionnalités sont les suivantes :
 
 ### Intégration simplifiée
 
-Lancez le sandbox et les instances de production en quelques minutes avec le portail d’approvisionnement en libre-service de Commerce Cloud Manager. Tout ce dont vous avez besoin, y compris les services de marchandisage, le storefront Commerce et App Builder, est automatiquement configuré et intégré à vos instances.
+Lancez le sandbox et les instances de production en quelques minutes avec le portail d’approvisionnement en libre-service [!UICONTROL Commerce Cloud Manager]. Tout ce dont vous avez besoin, y compris les services de marchandisage, une instance Commerce découplée et App Builder, est automatiquement configuré et intégré à vos instances.
 
 Voir [Prise en main](getting-started.md) pour savoir comment créer et gérer des instances Commerce.
 

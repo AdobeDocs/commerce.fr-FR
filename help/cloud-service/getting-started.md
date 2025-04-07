@@ -3,9 +3,9 @@ title: Prise en main de  [!DNL Adobe Commerce as a Cloud Service]
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-source-git-commit: a1b825a819b25d9374eef169c633d54fb94ee26c
+source-git-commit: 9b90e6f79a394ec0941c9e48aee3859f0bcdedd5
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ Ce diagramme présente de manière générale la manière dont les développeurs
 >[!ENDTABS]
 
 ## Création d’une instance
+
+>[!NOTE]
+>
+>Avant de pouvoir créer une instance, l’administrateur produit ou l’administrateur système de votre organisation doit vous ajouter en tant qu’utilisateur du produit [!DNL Adobe Commerce as a Cloud Service]. Voir [ Ajout d’utilisateurs et d’administrateurs ](./user-management.md#add-users-and-admins) pour plus d’informations.
 
 [!DNL Adobe Commerce as a Cloud Service] instances utilisent un système basé sur les crédits. Vous pouvez créer plusieurs instances, mais chaque instance nécessite un montant relatif de crédits. Le montant des crédits dont vous disposez au départ dépend de votre abonnement.
 
