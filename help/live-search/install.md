@@ -2,7 +2,8 @@
 title: Prise en main de  [!DNL Live Search]
 description: Découvrez la configuration requise et les étapes d’installation pour  [!DNL Live Search]  à partir d’Adobe Commerce.
 role: Admin, Developer
-source-git-commit: 039f04814c4e0b0c31f160446c67b2689f687818
+exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
+source-git-commit: 8ebb28641e8db3b88d8f9d818da6301558ed186b
 workflow-type: tm+mt
 source-wordcount: '3122'
 ht-degree: 0%
@@ -470,7 +471,7 @@ Une fois que la recherche en direct est activée, l’extension d’exportation 
 
 ### Inventory management
 
-[!DNL Live Search] prend en charge les fonctionnalités [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) dans Commerce (anciennement appelé Multi-Source Inventory, ou MSI). Pour activer la prise en charge complète, vous devez [mettre à jour](install.md#update) le module de dépendance `commerce-data-export` à la version 102.2.0+.
+[!DNL Live Search] prend en charge les fonctionnalités [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) dans Commerce (anciennement appelé Multi-Source Inventory, ou MSI). Pour activer la prise en charge complète, vous devez [mettre à jour](install.md#updating-live-search) le module de dépendance `commerce-data-export` à la version 102.2.0+.
 
 [!DNL Live Search] renvoie une valeur de type boolean qui indique si un produit est disponible dans Inventory management, mais ne contient aucune information sur la source qui possède le stock.
 

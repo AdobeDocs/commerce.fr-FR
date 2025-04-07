@@ -3,9 +3,9 @@ title: Notes de mise à jour de [!DNL Live Search]
 description: Dernières informations de mise à jour pour  [!DNL Live Search]  à partir d’Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: eb016fa8e53cfb9d035d73979495171feccb764f
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Les mises à jour incluent :
 ## Mises à jour des services hébergés
 
 Ces notes décrivent les mises à jour qui ont été publiées en dehors d’une version versionnée ou les améliorations apportées au service hébergé.
+
+_3 avril 2025_
+
+![Correctif](../assets/fix.svg) Mise à jour de l’extension d’exportation de données SaaS afin de supprimer la limitation « Les produits doivent être affectés à la catégorie racine » [limitation](boundaries-limits.md#b2b-and-category-permissions) pour les commerçants B2B. Voir [Gérer l’extension d’exportation de données](../data-export/manage-extension.md) pour savoir comment mettre à jour l’extension d’exportation de données SaaS vers la version 103.4.0+.
 
 _20 février 2025_
 
@@ -356,7 +360,7 @@ Les installations [!DNL Live Search] existantes doivent être mises à niveau ve
 
 [!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
 
-Le ![nouveau](../assets/new.svg) [Tableau de bord de création de rapports Performance](performance.md) donne des informations sur les termes de recherche utilisés par les acheteurs.
+Le ![nouveau](../assets/new.svg) [tableau de bord de création de rapports Performance](performance.md) fournit insight dans les termes de recherche utilisés par les acheteurs.
 ![Nouveau](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) permet d’accéder à une couche de données commune avec des services, des mesures et des services d’abonnement et de publication d’événements.
 ![Correctif](../assets/fix.svg) La [[!DNL Storefront popover]](storefront-popover.md) comporte une nouvelle classe `active` pour le conteneur `.search-autocomplete` qui contrôle la visibilité.
 ![Correctif](../assets/fix.svg) Dans le storefront, le lien de pied de page [Termes de recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) est supprimé et son cache désactivé pour les installations de [!DNL Live Search].
