@@ -4,9 +4,9 @@ description: Dernières informations de mise  [!DNL Data Export Extension]  jour
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 0d69fce1d6c2fab80065870fe8cdbe73969351cb
+source-git-commit: bb9300c621ceac618c51e4dd787527ac1e960dd8
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Les mises à jour incluent :
 >L’extension d’exportation de données SaaS est un ensemble de modules installés automatiquement avec Live Search, Product Recommendations et Catalog Service. Vous pouvez vérifier la version installée sur votre système à l’aide du compositeur. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Version majeure actuelle
+
+## Version 103.4.2
+
+![Correctif](../assets/fix.svg) Ajout de la possibilité de collecter les payloads des entités dans le `saas-export.log` lors de l’exécution de la resynchronisation de test à l’aide de la commande `saas:resync --dry-run` avec la variable d’environnement `EXPORTER_EXTENDED_LOG=1`. <!--MDEE-1023-->
 
 ## Version 103.4.1
 
