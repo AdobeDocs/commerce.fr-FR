@@ -3,9 +3,9 @@ title: Notes de mise à jour de [!DNL Live Search]
 description: Dernières informations de mise à jour pour  [!DNL Live Search]  à partir d’Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
+source-git-commit: 5c34bf61ee441ef20a680a4f071308d17379f49d
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2399'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Les mises à jour incluent :
 ## Mises à jour des services hébergés
 
 Ces notes décrivent les mises à jour qui ont été publiées en dehors d’une version versionnée ou les améliorations apportées au service hébergé.
+
+_21 avril 2025_
+
+![Correction](../assets/fix.svg) Correction d’un problème lié au filtre de plage pour les prix, de sorte que les produits égaux à la plage supérieure ne soient pas inclus dans les résultats. Cette modification correspond à la façon dont les plages de prix sont définies pour les facettes.
 
 _3 avril 2025_
 
@@ -82,7 +86,7 @@ _27 octobre 2023_
 
 _1 mars 2025_
 
-[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ![Fix](../assets/fix.svg) [!DNL Live Search] prend désormais en charge PHP 8.4 pour les installations exécutant Adobe Commerce 2.4.8-beta2.
 ![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel l’adaptateur de recherche n’était pas compatible avec `psr/http-message:2.0`.
@@ -91,7 +95,7 @@ _1 mars 2025_
 
 _13 février 2025_
 
-[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ![Correction](../assets/fix.svg) Correction d’un problème en raison duquel la page des détails de la commande ne comportait pas le numéro de commande, la date et le bouton de **[!UICONTROL Reorder]**.
 
@@ -99,7 +103,7 @@ _13 février 2025_
 
 _6 janvier 2025_
 
-[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ![Correctif](../assets/fix.svg) Correction d’un problème qui provoquait une erreur avec la requête `categoryList` GraphqL sur Adobe Commerce version 2.4.5 et antérieure.
 
@@ -107,7 +111,7 @@ _6 janvier 2025_
 
 _31 juillet 2024_
 
-[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel certains scripts ne se chargeaient pas sur la page de passage en caisse.
 ![Correctif](../assets/fix.svg) Correction d’une version de dépendance dans le fichier `composer.json`.
@@ -116,7 +120,7 @@ _31 juillet 2024_
 
 _31 mai 2024_
 
-[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ![Nouveau](../assets/new.svg) Extension Live Search mise à jour pour utiliser les widgets PLP version 2.0.0.
 
@@ -124,7 +128,7 @@ _31 mai 2024_
 
 _16 mai 2024_
 
-[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ### Mises à jour
 
@@ -134,7 +138,7 @@ _16 mai 2024_
 
 _19 mars 2024_
 
-[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ### Nouvelles fonctionnalités
 
@@ -145,7 +149,7 @@ _19 mars 2024_
 
 _2 février 2024_
 
-[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ### Nouvelles fonctionnalités
 
@@ -161,7 +165,7 @@ _2 février 2024_
 
 _13 novembre 2023_
 
-[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ### Nouvelles fonctionnalités
 
@@ -192,7 +196,7 @@ Après la mise à niveau, testez la configuration mise à jour dans le contrôle
 
 _15 septembre 2023_
 
-[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ![Nouveau](../assets/new.svg) Un nouvel onglet Marchandisage de catégorie a été ajouté. Les utilisateurs peuvent désormais ajouter des classements intelligents et des classements manuels (épingle, boost, bury, hide) par catégorie
 ![Nouveau](../assets/new.svg) Les utilisateurs peuvent ajouter une règle de catégorie unique avec un classement intelligent ou manuel
@@ -221,7 +225,7 @@ Les composants ![Nouveau](../assets/new.svg) CIF AEM [Widget contextuel](https:/
 
 _1er septembre 2023_
 
-[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type="Informative" tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 #### Mises à jour
 
@@ -231,7 +235,7 @@ _1er septembre 2023_
 
 _7 août 2023_
 
-[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type="Informative" tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 #### Nouvelles fonctionnalités
 
@@ -260,7 +264,7 @@ L’utilisation du widget Page de liste de produits Live Search entraîne l’é
 
 _14 mars 2023_
 
-[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type="Informative" tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 #### Nouvelles fonctionnalités
 
@@ -301,7 +305,7 @@ Il est recommandé de mettre à niveau et de tester avant de passer en productio
 
 ### [!DNL Live Search] 2.0.5
 
-[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type="Informative" tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ![Correctif](../assets/fix.svg) - La recherche en direct générait une erreur lorsque les ressources SDK n’étaient pas disponibles en raison de problèmes réseau. Ce bogue est corrigé.
 
@@ -311,7 +315,7 @@ Il est recommandé de mettre à niveau et de tester avant de passer en productio
 
 ### [!DNL Live Search] 2.0.4
 
-[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type="Informative" tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ![Nouveau](../assets/new.svg) la recherche en direct prend désormais en charge le filtrage par le paramètre « Afficher les produits en rupture de stock » dans l’administration. Si Afficher les produits en rupture de stock est défini sur false, `inStock = true` est ajouté au filtre.
 ![Correctif](../assets/fix.svg) Pour améliorer les performances, le bloc « Suggestions » a été supprimé de la fenêtre contextuelle de recherche en direct. Les données sont toujours transmises par GraphQL, au cas où vous voudriez remplacer la fonction.
@@ -325,7 +329,7 @@ Il est conseillé aux utilisateurs de mettre à niveau et de tester avant de pas
 
 ### [!DNL Live Search] 2.0.3
 
-[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type="Informative" tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ![Nouveau](../assets/new.svg) la recherche en direct prend désormais en charge les fonctionnalités B2B en respectant les autorisations de catégorie, les catalogues partagés et la tarification spécifique au groupe client.
 
@@ -335,7 +339,7 @@ Il est conseillé aux utilisateurs de mettre à niveau et de tester avant de pas
 
 ### [!DNL Live Search] 2.0
 
-[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type="Informative" tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
 Les installations [!DNL Live Search] existantes doivent être mises à niveau vers la version 2.0.0 de [!DNL Live Search] pour tirer parti des nouvelles fonctionnalités, des correctifs et des améliorations suivants :
 
@@ -350,7 +354,7 @@ Les installations [!DNL Live Search] existantes doivent être mises à niveau ve
 
 ### [!DNL Live Search] 3.1
 
-[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type="Informative" tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Correctif](../assets/fix.svg) [Attribut de prix personnalisé](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) ne renvoie plus d’erreur lorsqu’il est configuré en tant que [facette](facets-add.md).
 ![Correctif](../assets/fix.svg) Correction d’un problème qui entraînait l’apparition d’une erreur lorsqu’aucun [symbole de devise](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`) n’était disponible.
@@ -358,7 +362,7 @@ Les installations [!DNL Live Search] existantes doivent être mises à niveau ve
 
 ### [!DNL Live Search] 1.3.0
 
-[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type="Informative" tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 Le ![nouveau](../assets/new.svg) [tableau de bord de création de rapports Performance](performance.md) fournit insight dans les termes de recherche utilisés par les acheteurs.
 ![Nouveau](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) permet d’accéder à une couche de données commune avec des services, des mesures et des services d’abonnement et de publication d’événements.
@@ -369,7 +373,7 @@ Le ![nouveau](../assets/new.svg) [tableau de bord de création de rapports Perfo
 
 ### [!DNL Live Search] 1.2.0
 
-[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type="Informative" tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Nouveau](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) affiche les suggestions de produits et des images miniatures des principaux résultats de recherche lorsque les acheteurs saisissent des requêtes dans la zone de recherche.
 La session ![New](../assets/new.svg) Commerce *Admin* reste ouverte pendant de longues périodes d’inactivité du clavier
@@ -382,7 +386,7 @@ La session ![New](../assets/new.svg) Commerce *Admin* reste ouverte pendant de l
 
 ### [!DNL Live Search] 1.1.0
 
-[!BADGE Pris en charge]{type="Informatif" tooltip="Pris en charge"}
+[!BADGE Pris en charge]{type="Informative" tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Bogue](../assets/bug.svg) Le service [!DNL Live Search] prend uniquement en charge la [devise de base](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) de l’installation d’Adobe Commerce.
 ![Bogue](../assets/bug.svg) lors de l’ajout d’une facette, le flux des attributs de produit ne se met pas correctement à jour lorsqu’il est défini sur `Update on Save`. Pour éviter ce problème, accédez à [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) et définissez le flux des attributs de produit sur `Update by Schedule`.

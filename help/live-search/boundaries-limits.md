@@ -3,9 +3,9 @@ title: Limites et limites
 description: Découvrez les limites et les limites de pour  [!DNL Live Search]  assurer qu’il répond aux besoins de votre entreprise.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
+source-git-commit: eaea7d847be04956299a80ba3bccd90be527c482
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 - [Tarification de niveau](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) n’est pas pris en charge dans le champ [!DNL Live Search] et le widget de page de liste de produits.
 - Les prix des produits ne comprennent pas la taxe sur la valeur ajoutée (TVA).
 - La recherche de contenu (pages et blocs CMS) n’est pas prise en charge.
-- Il existe une limite de 10 000 produits pouvant être paginés. Bien que cette limite puisse être augmentée, elle peut avoir un impact sur les performances. Veillez à fournir des moyens significatifs de filtrer les produits au cas où une catégorie ou un résultat de recherche comporte un grand nombre de produits afin que les acheteurs n’aient pas à utiliser une pagination profonde.
+- Le nombre maximal de résultats pouvant être paginés est de 10 000. Pour vous assurer que les acheteurs n’ont pas à utiliser une pagination profonde lorsqu’une catégorie ou un résultat de recherche inclut un grand nombre de produits, fournissez des moyens significatifs de filtrer les produits.
 - La limite stricte est de 1 Mo par attribut, y compris la description et les attributs personnalisés.
 - L’adaptateur de recherche ne prend pas en charge les attributs de produit créés avec un modèle source personnalisé et utilisés comme facettes. Pour prendre en charge cette fonctionnalité, vous devez utiliser le [widget de page de liste de produits](plp-styling.md).
 - Les types de produits personnalisés ne sont pas pris en charge.
