@@ -5,25 +5,26 @@ title: Services pour Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: bdca30390e28b639a49eee269a64e56389d10709
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 38%
+source-wordcount: '64'
+ht-degree: 37%
 
 ---
 
 # Documentation sur les services de données pour Adobe Commerce {#user-guides}
 
 - [Vue d’ensemble](home.md)
-- {#release-information} des informations de mise à jour
+- Informations sur la version {#release-information}
    - [Notes de mise à jour](/help/landing/release-notes-all.md)
-- {#commerce-services} des services Commerce
-   - {#commerce-services} des services Commerce
+- [Solutions de produit](product-solutions.md)
+- Services Commerce {#commerce-services}
+   - Services Commerce {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
    - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html)
    - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html)
-- {#integration-services} des services d’intégration
+- Services d’intégration {#integration-services}
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html)
    - [Connecteur de services](/help/landing/saas.md)
 - Outils de données {#data-services}
