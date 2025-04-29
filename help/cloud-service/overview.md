@@ -4,9 +4,9 @@ description: Découvrez les principales fonctionnalités et avantages de  [!DNL 
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
+source-git-commit: 4cd5847eee52ff43e2fae27080a5971ceb939875
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1475'
 ht-degree: 0%
 
 ---
@@ -148,6 +148,5 @@ L’interface utilisateur [Admin](https://experienceleague.adobe.com/en/docs/com
 | [Évaluation du contenu](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [Service de catalogue](../catalog-service/overview.md) | Feuille de route | Outil de gestion de catalogues lié à Adobe Experience Platform, permettant la gestion de catalogues volumineux. |
 | [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Available | CMS de base permettant aux utilisateurs de créer et de gérer facilement des documents et du contenu de site web à l’aide de la création basée sur des documents. Vous pouvez également utiliser un éditeur universel qui permet une gestion et une personnalisation de contenu plus avancées sur plusieurs plateformes. |
 | [ Paiements ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [ Services de paiement pour Adobe Commerce ](../payment-services/overview.md) | Available | Un service de paiement intégré qui facilite les transactions sécurisées et efficaces. |
-| [ Catalogue partagé ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) | [Service d’indexation des prix](../price-index/price-indexing.md) | Feuille de route | Analyse les données de tarification et suggère des stratégies de tarification optimales pour les produits en fonction de divers facteurs. |
 | [Réécritures d’URL](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce Storefront](https://www.aem.live/) | Available | CMS de base permettant aux utilisateurs de créer et de gérer facilement des documents et du contenu de site web à l’aide de la création basée sur des documents. Vous pouvez également utiliser un éditeur universel qui permet une gestion et une personnalisation de contenu plus avancées sur plusieurs plateformes. |
 | [Marchandiseur visuel](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Service de catalogue](../catalog-service/overview.md) | Feuille de route | Outil de gestion de catalogues lié à Adobe Experience Platform, permettant la gestion de catalogues volumineux. |
