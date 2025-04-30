@@ -3,9 +3,9 @@ title: Notes de mise à jour de [!DNL Payment Services]
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes  [!DNL Payment Services]  versions.
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 359143c4f48ff911d6dbe9105f364615525fab8c
+source-git-commit: eb2e99dc3a0dbe1e27524c554886a57a4c8a1c30
 workflow-type: tm+mt
-source-wordcount: '3971'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Ces notes de mise à jour décrivent les modifications et correctifs de fonction
 
 +++Mises à jour des services hébergés
 
+_25 avril 2025_
+
+![Nouvel événement ](../assets/new.svg)<!-- Issue PAY-6051 --> Désormais, [!DNL Payment Services] tableau de bord affiche à la fois la version actuelle de l’extension et la version du tableau de bord.
+
 _30 août 2024_
 
 ![Nouvel événement](../assets/new.svg)<!-- Issue PAY-5658 --> Désormais, les commerçants peuvent filtrer les transactions en fonction des Détails de paiement dans le [rapport des transactions](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/transactions.html) pour obtenir des données plus détaillées et plus précises sur les modes de paiement.
@@ -42,7 +46,7 @@ _9 juillet 2024_
 
 _5 mars 2024_
 
-![Problème résolu](../assets/fix.svg)<!-- Issue PAY-5252 --> Désormais, les commerçants peuvent copier les données des grilles du Tableau de bord en sélectionnant le contenu d’une seule cellule.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-5252 --> Désormais, les commerçants peuvent copier les données des grilles du tableau de bord en sélectionnant le contenu d’une seule cellule.
 
 _10 octobre 2023_
 
