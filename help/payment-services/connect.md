@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] est optimisé par Commerce Services et déployé en tant que SaaS (logiciel en tant que service). Connectez votre instance Commerce à l’aide d’une clé API et d’une clé privée, puis spécifiez l’espace de données dans la configuration à l’aide du [connecteur de services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html). **Vous ne configurez cette connexion qu’une seule fois.**
 
->[!VIDEO](https://video.tv.adobe.com/v/3447835)
+>[!VIDEO](https://video.tv.adobe.com/v/3448019?captions=fre_fr)
 
 >[!INFO]
 >

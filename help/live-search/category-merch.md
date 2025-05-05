@@ -16,7 +16,7 @@ Le marchandisage de catégorie permet aux propriétaires de magasin d’applique
 
 Cette vidéo présente le marchandisage des catégories.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424617)
+>[!VIDEO](https://video.tv.adobe.com/v/3448853?captions=fre_fr)
 
 Cette fonctionnalité est accessible dans l’administration à l’adresse **Marketing** > SEO et recherche > **[!DNL Live Search]** > **Marchandisage de catégorie**.
 
