@@ -85,4 +85,4 @@ Le service de catalogue garantit la précision des mises à jour et des calculs 
 
 ## Mise en œuvre
 
-Le processus d&#39;installation nécessite la configuration du connecteur de services Commerce [](../landing/saas.md). Une fois cette opération effectuée, l’étape suivante consiste, pour un intégrateur de systèmes, à mettre à jour le code du storefront pour incorporer les requêtes [!DNL Catalog Service]. Toutes les requêtes [!DNL Catalog Service] sont acheminées vers la passerelle GraphQL. L’URL est fournie pendant le processus d’intégration.
+Le processus d&#39;installation nécessite la configuration du connecteur de services Commerce [&#128279;](../landing/saas.md). Une fois cette opération effectuée, l’étape suivante consiste, pour un intégrateur de systèmes, à mettre à jour le code du storefront pour incorporer les requêtes [!DNL Catalog Service]. Toutes les requêtes [!DNL Catalog Service] sont acheminées vers la passerelle GraphQL. L’URL est fournie pendant le processus d’intégration.

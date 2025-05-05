@@ -15,13 +15,13 @@ ht-degree: 5%
 
 - [Présentation du guide](overview.md)
 - [Synchronisation des données](data-synchronization.md)
-- Exporter les {#performance} de planification et de performances
+- Exporter les de planification et de performances {#performance}
    - [Estimation du volume de données et de la durée de transmission](estimate-data-volume-sync-time.md)
    - [Amélioration des performances d’exportation](customize-export-processing.md)
 - [Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce](data-export-cli-commands.md)
 - [Consulter les journaux et résoudre les problèmes](troubleshooting-logging.md)
 - [Gérer l&#39;extension d&#39;export de données SaaS](manage-extension.md)
-- {#extensibility} d’extensibilité
+- d’extensibilité{#extensibility}
    - [Extension et personnalisation des flux d’exportation de données SaaS](extensibility-and-customizations.md)
    - [Ajout dynamique d’un attribut de produit](add-attribute-dynamically.md)
 - [Notes de mise à jour](release-notes.md)

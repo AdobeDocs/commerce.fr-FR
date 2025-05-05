@@ -294,7 +294,7 @@ Ajoutez la configuration du projet pour l’extension Sidekick. Sidekick permet 
    }
    ```
 
-   Pour plus d’informations, consultez la documentation de la bibliothèque Sidekick [](https://www.aem.live/docs/sidekick-library).
+   Pour plus d’informations, consultez la documentation de la bibliothèque Sidekick [&#128279;](https://www.aem.live/docs/sidekick-library).
 
 +++
 
@@ -487,6 +487,6 @@ Voir le cas d’utilisation complet [Storefront and Catalog Administrator](./use
 
 >[!MORELIKETHIS]
 >
->* Si vous envisagez de l’utiliser [!DNL Adobe Commerce Optimizer] sans Adobe Commerce, consultez la documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) Adobe Experience Manager Storefront pour en savoir plus sur la [mise à jour du contenu du site et l’intégration avec vos composants frontaux Commerce et vos données principales.
+>* Si vous envisagez de l’utiliser [!DNL Adobe Commerce Optimizer] sans Adobe Commerce, consultez la documentation[&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/) Adobe Experience Manager Storefront pour en savoir plus sur la mise à jour du contenu du site et l’intégration avec vos composants frontaux Commerce et vos données principales.
 ></br></br>
->* Si vous envisagez d’utiliser [!DNL Adobe Commerce Optimizer] un serveur principal Adobe Commerce, consultez la documentation](https://experienceleague.adobe.com/developer/commerce/storefront/) Adobe Boutique Commerce pour savoir comment mettre à jour le contenu et configurer les composants de la vitrine pour la gestion des comptes, le [paiement et d’autres fonctionnalités.
+>* Si vous envisagez d’utiliser [!DNL Adobe Commerce Optimizer] un serveur principal Adobe Commerce, consultez la documentation[&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/) Adobe Boutique Commerce pour savoir comment mettre à jour le contenu et configurer les composants de la vitrine pour la gestion des comptes, le paiement et d’autres fonctionnalités.

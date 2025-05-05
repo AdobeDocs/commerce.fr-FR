@@ -31,7 +31,7 @@ ht-degree: 13%
    - [Types de recommandations](type.md)
    - [Filtres](filters.md)
    - [Emplacement et libellés](placement.md)
-- {#developer} du développeur [!DNL Product Recommendations]
+- du développeur [!DNL Product Recommendations]{#developer}
    - [Vue d’ensemble](development-overview.md)
    - [Collecter des données](events.md)
    - [Vérifier](verify.md)

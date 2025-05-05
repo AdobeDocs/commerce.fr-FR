@@ -21,20 +21,20 @@ ht-degree: 8%
 - [Workflows d’assistance au stockage](store-assist-modules.md)
 - [Conditions requises](solution-requirements.md)
 - [Notes de mise à jour](release-notes.md)
-- {#onboarding} d’exécution de la boutique intégrée
+- d’exécution de la boutique intégrée{#onboarding}
    - [Présentation de l’intégration](onboard.md)
    - [Installation de l’extension](install.md)
    - [Connecter l&#39;exécution de la boutique](connect-set-up-service.md)
    - [Tester et déployer](test-and-deploy.md)
 - [Présentation de la configuration](service-config-settings-overview.md)
-- {#store-configuration} de configuration de la boutique
+- de configuration de la boutique{#store-configuration}
    - [Configuration générale](enable-general.md)
    - [Modèles d’e-mail de vente](sales-emails.md)
    - [Magasin marchand (sources)](merchant-store-configuration.md)
    - [Gestion des stocks de produits](product-stock.md)
    - [Transfert de source Inventory management](inventory-stock-transfer.md)
    - [Site web/étendue multiple](multi-site-and-scope-config.md)
-- {#system-configuration} de configuration du système
+- de configuration du système{#system-configuration}
    - [Processus en arrière-plan](background-processes.md)
    - [Emplacement du magasin et configuration du mappage](store-location-map-provider-setup.md)
    - [Configuration de l’expérience d’enregistrement](check-in-experience-setup.md)

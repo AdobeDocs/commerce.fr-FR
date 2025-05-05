@@ -82,7 +82,7 @@ _12 octobre 2022_
 
 _21 mars 2025_
 
-[!BADGE Compatibilité ]{type=Informative tooltip="Compatibilité"}
+[!BADGE Compatibilité &#x200B;]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge de PHP 8.4.
 
@@ -90,7 +90,7 @@ _21 mars 2025_
 
 _17 janvier 2025_
 
-[!BADGE Compatibilité ]{type=Informative tooltip="Compatibilité"}
+[!BADGE Compatibilité &#x200B;]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) - Ajout de l’extension [conforme à la loi HIPAA](hipaa-readiness.md) à [!DNL Data Connection] afin que les commerçants puissent partager [!DNL Commerce] données d’événement back-office avec Experience Platform et respecter la loi HIPAA.
 ![Correctif](../assets/fix.svg) - Correction d’un problème en raison duquel l’extension [!DNL Data Connection] remplaçait les données `eventForwarding` et définissait l’indicateur `HIPAA` pour tous les clients. Désormais, l’extension définit uniquement l’indicateur pour les clients HIPAA.
@@ -99,7 +99,7 @@ _17 janvier 2025_
 
 _7 octobre 2024_
 
-[!BADGE Compatibilité ]{type=Informative tooltip="Compatibilité"}
+[!BADGE Compatibilité &#x200B;]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) - Possibilité de créer des [attributs de commande personnalisés](custom-attributes.md) pour les données de back-office.
 ![Nouveau](../assets/new.svg) - Ajout d’un nouveau tableau [Attributs de commande personnalisés](connect-data.md#data-customization) pour vous aider à afficher les attributs personnalisés configurés dans [!DNL Commerce] et envoyés à Experience Platform.
@@ -109,7 +109,7 @@ _7 octobre 2024_
 
 _27 août 2024_
 
-[!BADGE Compatibilité ]{type=Informative tooltip="Compatibilité"}
+[!BADGE Compatibilité &#x200B;]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) - Si vous participez à la version bêta, assurez-vous que votre fichier `composer.json` comporte les éléments suivants au niveau racine : ` "minimum-stability": "beta"`. Ajoutez également des `composer require "magento/customers-connector: ^1.2.0"` pour envoyer les profils client de votre instance Commerce à SaaS.
 ![Nouveau](../assets/new.svg) - Cette version contient les correctifs publiés dans 3.1.1, 3.1.2, 3.1.3 et 3.1.4.
@@ -118,7 +118,7 @@ _27 août 2024_
 
 _9 août 2024_
 
-[!BADGE Compatibilité ]{type=Informative tooltip="Compatibilité"}
+[!BADGE Compatibilité &#x200B;]{type=Informative tooltip="Compatibilité"}
 
 ![Correctif](../assets/fix.svg) - Mise à jour du métapaquet `experience-platform-connector` pour supprimer les autres exportateurs et indexeurs de données inutilisés.
 
@@ -126,7 +126,7 @@ _9 août 2024_
 
 _2 juillet 2024_
 
-[!BADGE Compatibilité ]{type=Informative tooltip="Compatibilité"}
+[!BADGE Compatibilité &#x200B;]{type=Informative tooltip="Compatibilité"}
 
 ![Correctif](../assets/fix.svg) - Mise à jour du métapaquet `experience-platform-connector` pour supprimer les exportateurs de données et les indexeurs inutilisés.
 
@@ -134,7 +134,7 @@ _2 juillet 2024_
 
 _5 juin 2024_
 
-[!BADGE Compatibilité ]{type=Informative tooltip="Compatibilité"}
+[!BADGE Compatibilité &#x200B;]{type=Informative tooltip="Compatibilité"}
 
 ![Correctif](../assets/fix.svg) - Correction d’un problème en raison duquel un format de date incorrect était utilisé lors du lancement d’une [synchronisation historique](connect-data.md#specify-order-history-date-range).
 ![Correctif](../assets/fix.svg) - Correction d’un problème où l’événement [startCheckout](events.md#startcheckout) n’était pas envoyé sur Adobe Commerce 2.4.7.
@@ -143,7 +143,7 @@ _5 juin 2024_
 
 _4 avril 2024_
 
-[!BADGE Compatibilité ]{type=Informative tooltip="Compatibilité"}
+[!BADGE Compatibilité &#x200B;]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) - Ajout de la prise en charge de PHP 8.3 pour toutes les extensions [!DNL Data Connection].
 ![Nouveau](../assets/new.svg) - Ajout d’un article sur l’[intégration](mobile-sdk-epc.md) de Adobe Experience Platform Mobile SDK à Commerce.
@@ -152,7 +152,7 @@ _4 avril 2024_
 
 _4 mars 2024_
 
-[!BADGE Compatibilité ]{type=Informative tooltip="Compatibilité"}
+[!BADGE Compatibilité &#x200B;]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) - Si vous participez à la version bêta, assurez-vous que votre fichier `composer.json` comporte les éléments suivants au niveau racine : ` "minimum-stability": "beta"`. Ajoutez également des `composer require "magento/customers-connector: ^1.2.0"` pour envoyer les profils client de votre instance Commerce à SaaS.
 ![Nouveau](../assets/new.svg) - Possibilité d’[ajouter des attributs personnalisés](custom-attributes.md).
@@ -162,7 +162,7 @@ _4 mars 2024_
 
 _16 novembre 2023_
 
-[!BADGE Compatibilité ]{type=Informative tooltip="Compatibilité"}
+[!BADGE Compatibilité &#x200B;]{type=Informative tooltip="Compatibilité"}
 
 ![Nouveau](../assets/new.svg) - Le connecteur Experience Platform a été renommé [!DNL Data Connection].
 ![Correctif](../assets/fix.svg) - Possibilité de consigner la réponse d’erreur si Adobe IMS ne peut pas générer le jeton d’accès.
@@ -172,7 +172,7 @@ _16 novembre 2023_
 
 _10 octobre 2023_
 
-[!BADGE Compatibilité ]{type=Informative tooltip="Compatibilité"}
+[!BADGE Compatibilité &#x200B;]{type=Informative tooltip="Compatibilité"}
 
 Il s’agit d’une version majeure. [Modifiez](install.md#update-the-data-connection) le fichier racine composer.json de votre projet.
 

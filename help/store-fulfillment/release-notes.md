@@ -50,9 +50,9 @@ Cette version comprend les mises à jour suivantes :
 
 ![Problème résolu](../assets/fix.svg) Mises à jour de l’installation :
 
-- <!-- WMTP-880--> Correction d’un problème en raison duquel un code de site web incorrect était renvoyé lors de l’installation de l’extension [!DNL Store Fulfillment].
+- &#x200B;<!-- WMTP-880--> Correction d’un problème en raison duquel un code de site web incorrect était renvoyé lors de l’installation de l’extension [!DNL Store Fulfillment].
 
-- <!-- WMTP-878--> Correction d’un problème lié aux entiers de SKU qui nécessitait que le type de données soit converti en type chaîne lors de l’installation.
+- &#x200B;<!-- WMTP-878--> Correction d’un problème lié aux entiers de SKU qui nécessitait que le type de données soit converti en type chaîne lors de l’installation.
 
 ![Correction d’un problème](../assets/fix.svg)<!-- WMTP-915--> Correction d’un échec provoqué par un code d’erreur d’archivage manquant.
 

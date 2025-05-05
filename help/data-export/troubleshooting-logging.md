@@ -148,7 +148,7 @@ Si la synchronisation ne s’exécute pas selon un planning ou si rien n’est s
 
 #### Échec de la synchronisation
 
-Si la synchronisation du catalogue a le statut **Échec**, envoyez un ticket d’assistance [](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Si la synchronisation du catalogue a le statut **Échec**, envoyez un ticket d’assistance [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Journalisation étendue
 

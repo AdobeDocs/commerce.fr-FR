@@ -19,7 +19,7 @@ ht-degree: 11%
 - [Limites et limites](boundaries-limits.md)
 - [Bonnes pratiques](best-practice.md)
 - [Notes de mise à jour](release-notes.md)
-- {#live-search-storefront} Storefront
+- Storefront{#live-search-storefront}
    - [Widgets de storefront](storefront-widgets.md)
    - [Page de liste de produits](plp-styling.md)
    - [Storefront  [!DNL Popover]](storefront-popover.md)
@@ -36,7 +36,7 @@ ht-degree: 11%
       - [Types de synonymes](synonyms-type.md)
       - [Ajouter des synonymes](synonyms-add.md)
       - [Gérer les synonymes](synonyms-manage.md)
-   - Rechercher des {#rules} de marchandisage
+   - Rechercher des de marchandisage {#rules}
       - [Vue d’ensemble](rules.md)
       - [Workspace](rules-workspace.md)
       - [Ajouter des règles](rules-add.md)

@@ -102,7 +102,7 @@ Lorsque vous [créez](create.md) une recommandation, vous spécifiez son [emplac
 
    Cette modification entraîne l’affichage de votre unité de recommandation après l’image du produit sur la page des détails du produit. Si vous souhaitez que l’unité de recommandation apparaisse avant le `product.info.media`, définissez l’attribut `after="-"` sur `before="-"`. L’argument `pagePlacement` est un argument interne qui ne doit pas être modifié.
 
-Pour plus d’informations sur les types de blocs sur la page](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) voir [présentation de la disposition.
+Pour plus d’informations sur les types de blocs sur la page[&#128279;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) voir présentation de la disposition.
 
 ## Attributs de produit personnalisés
 

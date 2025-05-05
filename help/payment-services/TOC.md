@@ -31,23 +31,23 @@ ht-degree: 3%
    - [Configuration de la ligne de commande](configure-cli.md)
    - [Configuration héritée](configure-admin.md)
    - [Tester et valider](test-validate.md)
-- Paiements et {#payments-checkout} de paiement
+- Paiements et de paiement {#payments-checkout}
    - [Options de paiement](payments-options.md)
    - [Chambre forte de carte de crédit](vaulting.md)
    - [Extraire [!DNL Payment Services]](checkout.md)
-   - Gérer les {#manage} de paiement
+   - Gérer les de paiement {#manage}
       - [Éléments de ligne pour  [!DNL Payment Services]](line-items.md)
       - [Remboursements](refunds.md)
       - [Vides](voids.md)
    - [Création d’une commande dans l’Admin](create-order.md)
    - [Suivi de vos expéditions dans  [!DNL Payment Services]](track-shipment.md)
-- {#reporting} de reporting financier
+- de reporting financier{#reporting}
    - [Rapport des transactions](transactions.md)
    - [Etat du statut de paiement de la commande](order-payment-status.md)
    - [Rapport Paiements](payouts.md)
    - [Données disponibles](data.md)
    - [Traitement de niveau 2 et de niveau 3](levels-card-payment-transactions.md)
-- {#security-compliance} de sécurité et de conformité
+- de sécurité et de conformité{#security-compliance}
    - [Sécurité](security.md)
    - [Protection contre les fraudes signalées](fraud-protection.md)
 - [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

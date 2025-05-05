@@ -1,6 +1,6 @@
 ---
 title: Configuration de l’expérience d’enregistrement
-description: Configurez les sélections de marque et de modèle de voiture] disponibles pour les clients ramassant sur le trottoir lorsqu’ils remplissent le formulaire de commande de ramassage.
+description: Configurez les sélections de marque et de modèle de voiture&rbrack; disponibles pour les clients ramassant sur le trottoir lorsqu’ils remplissent le formulaire de commande de ramassage.
 role: Admin
 level: Intermediate
 source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1

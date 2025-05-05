@@ -15,7 +15,7 @@ ht-degree: 8%
 # Indexeur De Prix Saas {#price-indexer}
 
 - [Indexation des prix SaaS - Aperçu](price-indexing.md)
-- {#catalog-adapter} d&#39;adaptateur de catalogue
+- d&#39;adaptateur de catalogue{#catalog-adapter}
    - [Vue d’ensemble](catalog-adapter.md)
    - [Notes de mise à jour](release-notes.md)
 - [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
