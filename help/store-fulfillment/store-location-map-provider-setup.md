@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Emplacement du magasin et configuration du mappage
 
-Activez les fonctionnalités d&#39;emplacement de magasin et de mappage pour l&#39;exécution de magasin en configurant un [fournisseur à distance](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) pour rechercher des emplacements de magasin de vente au détail.
+Activez les fonctionnalités d&#39;emplacement de magasin et de mappage pour l&#39;exécution de magasin en configurant un [fournisseur à distance](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) pour rechercher des emplacements de magasin de vente au détail.
 
 **Conditions requises**
 
-Pendant le processus de configuration, vous fournissez une clé API Google pour la plateforme Google Maps. Si vous n’en avez pas, [générez-en un à partir de la plateforme Google Maps](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
+Pendant le processus de configuration, vous fournissez une clé API Google pour la plateforme Google Maps. Si vous n’en avez pas, [générez-en un à partir de la plateforme Google Maps](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
 
 Pour configurer le fournisseur à distance :
 

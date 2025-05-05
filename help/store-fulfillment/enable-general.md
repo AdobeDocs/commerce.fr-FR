@@ -150,7 +150,7 @@ Demandez à l’administrateur système de configurer vos environnements pour au
 
 >[!TIP]
 >
->Pour les installations sur site d’Adobe Commerce, demandez à votre administrateur système de configurer la rotation des journaux pour le fichier `var/log/walmart-bopis.log` afin de réduire la taille. Pour les installations sur site d’Adobe Commerce, consultez [Rotation des journaux](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) dans le _Guide d’installation d’Adobe Commerce_. Pour les projets d’infrastructure cloud d’Adobe Commerce, voir [Afficher et gérer les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Pour les installations sur site d’Adobe Commerce, demandez à votre administrateur système de configurer la rotation des journaux pour le fichier `var/log/walmart-bopis.log` afin de réduire la taille. Pour les installations sur site d’Adobe Commerce, consultez [Rotation des journaux](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=fr#server-settings) dans le _Guide d’installation d’Adobe Commerce_. Pour les projets d’infrastructure cloud d’Adobe Commerce, voir [Afficher et gérer les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=fr).
 
 <table>
 <thead>
@@ -355,7 +355,7 @@ Configurez ces paramètres à partir de l’Administration en sélectionnant <st
 
 >[!NOTE]
 >
->Pour plus d’informations sur la configuration des options de diffusion en magasin, voir [Diffusion en magasin](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) dans le _Guide de l’utilisateur d’Adobe Commerce_.
+>Pour plus d’informations sur la configuration des options de diffusion en magasin, voir [Diffusion en magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) dans le _Guide de l’utilisateur d’Adobe Commerce_.
 
 
 ### Configuration des méthodes de diffusion

@@ -105,7 +105,7 @@ Détecter quand une transaction de capture en attente passe en statut `Completed
 
 Pour que ce processus fonctionne comme prévu, les commerçants doivent configurer une nouvelle tâche cron. Une fois le traitement configuré pour s&#39;exécuter automatiquement, aucune autre intervention n&#39;est attendue du commerçant.
 
-Voir [ Configuration des tâches cron ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Une fois configuré, le nouveau traitement s’exécute toutes les 30 minutes pour récupérer les mises à jour des commandes dont le statut est défini sur `Payment Review`.
+Voir [ Configuration des tâches cron ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=fr). Une fois configuré, le nouveau traitement s’exécute toutes les 30 minutes pour récupérer les mises à jour des commandes dont le statut est défini sur `Payment Review`.
 
 Les commerçants peuvent vérifier le statut de paiement mis à jour à partir de la vue du rapport Statut du paiement de la commande.
 
@@ -113,11 +113,11 @@ Les commerçants peuvent vérifier le statut de paiement mis à jour à partir d
 
 [!DNL Payment Services] utilise les données de commande et les combine avec les données de paiement agrégées provenant d&#39;autres sources (y compris PayPal), pour fournir des rapports significatifs et très utiles.
 
-Les données de commande sont exportées et conservées dans le service de paiement. Lorsque vous [modifiez ou ajoutez des statuts de commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) ou [modifiez une vue de magasin](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), un [magasin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information) ou un nom de site web, ces données sont combinées aux données de paiement et l&#39;état Statut du paiement des commandes est renseigné avec les informations combinées.
+Les données de commande sont exportées et conservées dans le service de paiement. Lorsque vous [modifiez ou ajoutez des statuts de commande](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) ou [modifiez une vue de magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), un [magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/store-details#store-information) ou un nom de site web, ces données sont combinées aux données de paiement et l&#39;état Statut du paiement des commandes est renseigné avec les informations combinées.
 
 Ce processus comporte deux étapes :
 
-1. L’index est modifié en données `ON SAVE` (à chaque modification des informations de commande ou de magasin) ou `BY SCHEDULE` (selon un planning cron préconfiguré), selon la manière dont il est configuré dans [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) dans l’administrateur.
+1. L’index est modifié en données `ON SAVE` (à chaque modification des informations de commande ou de magasin) ou `BY SCHEDULE` (selon un planning cron préconfiguré), selon la manière dont il est configuré dans [Gestion des index](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management) dans l’administrateur.
 
    Par défaut, l’indexation des données se produit `ON SAVE`, ce qui signifie que chaque fois qu’un élément change dans la commande, le statut de la commande, l’affichage du magasin, le magasin ou le site web, le processus de réindexation se produit immédiatement.
 
@@ -133,7 +133,7 @@ Les seules données exportées et collectées à des fins de reporting sont les 
 
 Bien que, par défaut, la réindexation se produise en mode `ON SAVE`, il est recommandé de procéder à l’indexation en mode `BY SCHEDULE`. L’index `BY SCHEDULE` s’exécute selon un planning cron d’une minute et toutes les données modifiées apparaissent dans le rapport État de la commande dans les deux minutes suivant la modification des données. Cette réindexation planifiée vous permet de réduire la pression sur votre magasin, en particulier si vous avez un grand volume de commandes entrantes, car elle se produit selon un planning (et non pas lorsque chaque commande est passée).
 
-Vous pouvez modifier le mode d’index (`ON SAVE` ou `BY SCHEDULE`) [dans l’Administration](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+Vous pouvez modifier le mode d’index (`ON SAVE` ou `BY SCHEDULE`) [dans l’Administration](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Pour savoir comment configurer l’exportation des données, voir [Configuration de ligne de commande](configure-cli.md#configure-data-export).
 
@@ -244,10 +244,10 @@ Les états de statut du paiement de la commande contiennent les informations sui
 
 | Colonne | Description |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID de commande Commerce <br> <br>Pour afficher les [informations de commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} associées, cliquez sur l’ID. |
+| [!UICONTROL Order ID] | ID de commande Commerce <br> <br>Pour afficher les [informations de commande](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} associées, cliquez sur l’ID. |
 | [!UICONTROL Order Date] | Date et heure de commande |
 | [!UICONTROL Authorized Date] | Date et heure de l’autorisation de paiement |
-| [!UICONTROL Order Status] | Commerce actuel [statut de la commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | Commerce actuel [statut de la commande](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | Statut de la facture de la commande : *[!UICONTROL No]*, *[!UICONTROL Partial]* ou *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Statut d’expédition de la commande : *[!UICONTROL No]*, *[!UICONTROL Partial]* ou *[!UICONTROL Yes]*. |
 | [!UICONTROL Order Amt] | Montant total général de la commande |

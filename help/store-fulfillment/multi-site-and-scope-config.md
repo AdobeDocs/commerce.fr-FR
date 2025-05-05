@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Configuration de plusieurs sites web et d’étendues
 
-Vous pouvez définir la [Portée](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) de quelques éléments pour qu’ils s’adaptent à plusieurs sites web, boutiques et vues de boutique :
+Vous pouvez définir la [Portée](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) de quelques éléments pour qu’ils s’adaptent à plusieurs sites web, boutiques et vues de boutique :
 
-- [Gérer les stocks](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) par étendue
+- [Gérer les stocks](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/stocks/stocks-manage) par étendue
 
 - Gérer les [!DNL Delivery Methods] par étendue
 

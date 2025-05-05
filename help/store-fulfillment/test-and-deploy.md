@@ -644,4 +644,4 @@ Le déploiement et les tests varient en fonction de votre infrastructure et de v
 
 >[!TIP]
 >
->Pour obtenir des instructions sur le déploiement, des listes de contrôle et des bonnes pratiques pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Déployer votre boutique](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) dans la documentation Adobe Commerce Developer.
+>Pour obtenir des instructions sur le déploiement, des listes de contrôle et des bonnes pratiques pour Adobe Commerce sur les projets d’infrastructure cloud, voir [Déployer votre boutique](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) dans la documentation Adobe Commerce Developer.

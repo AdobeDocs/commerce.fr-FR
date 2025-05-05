@@ -14,7 +14,7 @@ ht-degree: 0%
 
 L&#39;indexation des prix SaaS optimise les performances du site en déchargeant les tâches gourmandes en ressources (comme l&#39;indexation et le calcul des prix) de l&#39;application Commerce vers l&#39;infrastructure cloud Adobe. Cette approche permet aux commerçants de mettre rapidement à l&#39;échelle leurs ressources afin d&#39;accélérer les délais d&#39;indexation des prix et de fournir plus rapidement des mises à jour de prix au storefront et aux services Commerce connectés.
 
-Le diagramme suivant montre le flux de données d’indexation sur les services SaaS lorsque Commerce utilise le processus [indexation des prix](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) inclus dans l’application Commerce :
+Le diagramme suivant montre le flux de données d’indexation sur les services SaaS lorsque Commerce utilise le processus [indexation des prix](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers) inclus dans l’application Commerce :
 
 ![ Flux de données par défaut ](assets/old_way.png)
 

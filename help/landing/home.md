@@ -143,11 +143,11 @@ Adobe fournit un ensemble de services Commerce, de services d’intégration et 
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="Surveiller la synchronisation des données" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>Tableau de bord de gestion des données</strong>
          </a>
       </div>

@@ -16,7 +16,7 @@ L’espace de travail *Facettisation* répertorie toutes les facettes actuelleme
 
 ## Définir la portée
 
-Si votre installation d’Adobe Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la vue de [magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où s’appliquent vos paramètres de facettes.
+Si votre installation d’Adobe Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la vue de [magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) où s’appliquent vos paramètres de facettes.
 
 ## Filtrer la liste
 

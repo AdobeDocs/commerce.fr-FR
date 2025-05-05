@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Événements [!DNL Live Search]
 
-[!DNL Live Search] utilise des événements pour alimenter les algorithmes de recherche tels que « Les plus consultés » et « Affiché ceci, Affiché cela ». Tandis que l’exemple de thème Luma [Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) met en œuvre des événements prêts à l’emploi, les implémentations découplées et autres implémentations personnalisées doivent mettre en œuvre des événements en fonction de leurs propres besoins.
+[!DNL Live Search] utilise des événements pour alimenter les algorithmes de recherche tels que « Les plus consultés » et « Affiché ceci, Affiché cela ». Tandis que l’exemple de thème Luma [Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) met en œuvre des événements prêts à l’emploi, les implémentations découplées et autres implémentations personnalisées doivent mettre en œuvre des événements en fonction de leurs propres besoins.
 
 Ce tableau décrit les événements utilisés par [!DNL Live Search] [stratégies de classement](rules-add.md#intelligent-ranking).
 
@@ -68,4 +68,4 @@ mse.publish.searchRequestSent("search-bar");
 
 >[!NOTE]
 >
->Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) est activé, Adobe Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas consenti à l’utilisation de cookies. Si le Mode de restriction des cookies est désactivé, Adobe Commerce collecte des données comportementales par défaut.
+>Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) est activé, Adobe Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas consenti à l’utilisation de cookies. Si le Mode de restriction des cookies est désactivé, Adobe Commerce collecte des données comportementales par défaut.

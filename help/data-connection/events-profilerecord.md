@@ -24,7 +24,7 @@ La section suivante décrit les données capturées pour un enregistrement de pr
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/namespaces). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Contient des informations sur le client. |
@@ -59,6 +59,6 @@ La section suivante décrit les données capturées pour un enregistrement de pr
 
 >[!NOTE]
 >
->Chaque enregistrement de profil inclut également le champ [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) , qui inclut l’ID de client Commerce généré par le système comme identifiant principal du profil et un ID d’e-mail utilisé comme identifiant secondaire.
+>Chaque enregistrement de profil inclut également le champ [`identityMap`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/profile/identitymap) , qui inclut l’ID de client Commerce généré par le système comme identifiant principal du profil et un ID d’e-mail utilisé comme identifiant secondaire.
 
 Découvrez comment [créer un schéma spécifique aux enregistrements de profil](profile-data.md) qui peut ingérer les données de vos enregistrements de profil.

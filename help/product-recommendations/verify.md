@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # Vérifier la collecte des événements
 
-Après avoir [installé et configuré](install-configure.md) le module `magento/product-recommendations`, vous pouvez vérifier que les données comportementales sont envoyées à Adobe Commerce. Vous pouvez utiliser les outils de développement disponibles dans Chrome ou installer l’extension Snowplow Chrome. Si vous avez besoin d’aide supplémentaire, reportez-vous à la section [Dépannage [!DNL Product Recommendations] module](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) de la base de connaissances du support.
+Après avoir [installé et configuré](install-configure.md) le module `magento/product-recommendations`, vous pouvez vérifier que les données comportementales sont envoyées à Adobe Commerce. Vous pouvez utiliser les outils de développement disponibles dans Chrome ou installer l’extension Snowplow Chrome. Si vous avez besoin d’aide supplémentaire, reportez-vous à la section [Dépannage [!DNL Product Recommendations] module](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html?lang=fr) de la base de connaissances du support.
 
 ## Vérification à l’aide des outils de développement dans Chrome
 
@@ -50,7 +50,7 @@ Installez l’extension [Snowplow Analytics Debugger pour Chrome](https://chrome
 
 1. Faites défiler jusqu’à afficher **Données contextuelles _n_**. Recherchez l’instance storefront dans le **schéma**.
 
-1. Vérifiez que l&#39;identifiant de l&#39;espace de données [SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) est correctement défini.
+1. Vérifiez que l&#39;identifiant de l&#39;espace de données [SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html?lang=fr) est correctement défini.
 
 ![Filtre Snowplow](assets/snowplow-filter.png)
 _Filtre Snowplow_
@@ -61,8 +61,8 @@ _Filtre Snowplow_
 
 ## Vérifier que les événements se déclenchent correctement
 
-Pour vérifier que les événements utilisés pour les mesures se déclenchent correctement, recherchez les événements `impression-render`, `view` et `rec-click` dans le débogueur Snowplow Analytics. Voir la [liste complète des événements](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html).
+Pour vérifier que les événements utilisés pour les mesures se déclenchent correctement, recherchez les événements `impression-render`, `view` et `rec-click` dans le débogueur Snowplow Analytics. Voir la [liste complète des événements](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=fr).
 
 >[!NOTE]
 >
-> Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) est activé, Adobe Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas donné son consentement. Si le Mode de restriction des cookies est désactivé, les données comportementales sont collectées par défaut.
+> Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) est activé, Adobe Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas donné son consentement. Si le Mode de restriction des cookies est désactivé, les données comportementales sont collectées par défaut.

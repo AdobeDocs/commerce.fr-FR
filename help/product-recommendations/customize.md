@@ -112,7 +112,7 @@ Par exemple, si votre boutique vend certains produits biologiques, vous pouvez a
 
 ![Ajouter un badge](assets/unit-custom.png)
 
-Pour vous assurer qu’un attribut de produit personnalisé est disponible lorsque vous effectuez le rendu de l’unité de recommandation sur la page, définissez la propriété `Used in Product Listing` sur `Yes` dans la page [Attributs du produit](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) dans l’Administration.
+Pour vous assurer qu’un attribut de produit personnalisé est disponible lorsque vous effectuez le rendu de l’unité de recommandation sur la page, définissez la propriété `Used in Product Listing` sur `Yes` dans la page [Attributs du produit](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=fr) dans l’Administration.
 
 Lorsque cette propriété est définie, la payload JSON inclut un objet `attributes` qui contient un tableau de codes et de valeurs d’attribut. Vous pouvez ensuite appliquer un style de storefront personnalisé en fonction de ces valeurs d’attribut, par exemple en ajoutant des traitements visuels spéciaux ou des badges comme mentionné précédemment.
 

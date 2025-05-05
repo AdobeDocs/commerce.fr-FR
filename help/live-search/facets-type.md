@@ -34,7 +34,7 @@ En revanche, les implémentations [découplées](https://developer.adobe.com/com
 
 ### Libellés de facettes
 
-Pour les storefronts [!DNL Commerce], le libellé de la facette est déterminé par le [*Propriétés de l’attribut*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Pour les magasins comportant plusieurs vues, des libellés supplémentaires peuvent être définis sous *Gérer les libellés*. Pour les implémentations découplées, les libellés sont modifiés à partir de l’espace de travail [à facettes](faceting-workspace.md).
+Pour les storefronts [!DNL Commerce], le libellé de la facette est déterminé par le [*Propriétés de l’attribut*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=fr). Pour les magasins comportant plusieurs vues, des libellés supplémentaires peuvent être définis sous *Gérer les libellés*. Pour les implémentations découplées, les libellés sont modifiés à partir de l’espace de travail [à facettes](faceting-workspace.md).
 
 ### Type de tri
 

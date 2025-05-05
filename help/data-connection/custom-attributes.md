@@ -344,7 +344,7 @@ ComponentRegistrar::register(
 
 Pour vous assurer que les nouveaux attributs de commande personnalisés peuvent être ingérés par votre schéma [!DNL Commerce] dans Experience Platform, vous devez étendre le schéma afin d’inclure ces champs personnalisés.
 
-Pour savoir comment étendre un schéma XDM existant afin d’inclure ces champs personnalisés, consultez l’article [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) dans la documentation d’Experience Platform. Le champ ID de client est généré dynamiquement. Cependant, la structure des champs doit ressembler à l’exemple fourni dans la documentation d’Experience Platform.
+Pour savoir comment étendre un schéma XDM existant afin d’inclure ces champs personnalisés, consultez l’article [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) dans la documentation d’Experience Platform. Le champ ID de client est généré dynamiquement. Cependant, la structure des champs doit ressembler à l’exemple fourni dans la documentation d’Experience Platform.
 
 >[!IMPORTANT]
 >

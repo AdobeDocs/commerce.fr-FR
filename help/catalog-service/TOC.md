@@ -25,5 +25,5 @@ ht-degree: 10%
    - [requête productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
    - [requête refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [Notes de mise à jour](release-notes.md)
-- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)
 

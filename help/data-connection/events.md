@@ -14,13 +14,13 @@ ht-degree: 0%
 
 Vous trouverez ci-dessous la liste des événements comportementaux Commerce disponibles lorsque vous installez l’extension [!DNL Data Connection]. Les données collectées par ces événements sont envoyées au Adobe Experience Platform. Vous pouvez également créer des [événements personnalisés](custom-events.md) pour collecter des données supplémentaires non prêtes à l’emploi.
 
-Outre les données collectées par les événements ci-après, vous obtenez également [d’autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fournies par le SDK Web Adobe Experience Platform.
+Outre les données collectées par les événements ci-après, vous obtenez également [d’autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=fr) fournies par le SDK Web Adobe Experience Platform.
 
 Les événements comportementaux collectent des données comportementales anonymes auprès de vos clients lorsqu’ils parcourent votre site. Vous pouvez utiliser les données collectées par ces événements pour créer des promotions et des campagnes ciblées sur un ensemble spécifique d’acheteurs.
 
 >[!NOTE]
 >
->Tous les événements comportementaux incluent le champ [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , qui inclut l’adresse e-mail de l’acheteur, le cas échéant, et l’ECID.
+>Tous les événements comportementaux incluent le champ [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=fr) , qui inclut l’adresse e-mail de l’acheteur, le cas échéant, et l’ECID.
 
 ## Événements Storefront
 
@@ -38,7 +38,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.productListAdds` | Indique si un produit a été ajouté à un panier. Une valeur `1` indique qu’un produit a été ajouté. |
@@ -72,7 +72,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.productListOpens` | Indique si un panier a été créé. Une valeur `1` indique qu’un panier a été créé. |
@@ -106,7 +106,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.productListRemovals` | Indique si un produit a été supprimé du panier. Une valeur `1` indique qu’un produit a été supprimé du panier. |
@@ -140,7 +140,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.productListViews` | Indique si une liste de produits a été consultée. |
@@ -176,7 +176,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `web.webPageDetails.pageViews` | Indique si une page a été chargée. Une `value` de `1` indique que la page a été chargée. |
@@ -201,7 +201,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.productViews` | Indique si le produit a été consulté. |
@@ -234,7 +234,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.checkouts` | Indique si une action s’est produite pendant le processus de passage en caisse. |
@@ -268,7 +268,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.purchases` | Indique si une commande a été acceptée. |
@@ -324,7 +324,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Acteur, contact ou propriétaire. |
@@ -357,7 +357,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `userAccount` | Indique les détails de fidélité, les préférences, les processus de connexion et d’autres préférences du compte. |
@@ -384,7 +384,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Acteur, contact ou propriétaire. |
@@ -417,7 +417,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Acteur, contact ou propriétaire. |
@@ -456,7 +456,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `searchRequest` | Indique si une requête de recherche a été envoyée. |
@@ -493,7 +493,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `searchResponse` | Indique si une réponse de recherche a été reçue. |
@@ -515,7 +515,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 ![B2B pour Adobe Commerce](../assets/b2b.svg) Pour les commerçants B2B, vous devez [installer](install.md#install-the-b2b-extension) l’extension `experience-platform-connector-b2b` pour accéder à ces événements.
 
-Les événements B2B contiennent des informations [liste de demandes d&#39;approvisionnement](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) comme si une liste de demandes d&#39;approvisionnement avait été créée, ajoutée ou supprimée. En suivant les événements spécifiques aux listes de demandes d&#39;approvisionnement, vous pouvez voir quels produits vos clients achètent fréquemment et créer des campagnes basées sur ces données.
+Les événements B2B contiennent des informations [liste de demandes d&#39;approvisionnement](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=fr) comme si une liste de demandes d&#39;approvisionnement avait été créée, ajoutée ou supprimée. En suivant les événements spécifiques aux listes de demandes d&#39;approvisionnement, vous pouvez voir quels produits vos clients achètent fréquemment et créer des campagnes basées sur ces données.
 
 ### createRequisitionList
 
@@ -529,7 +529,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.requisitionListOpens` | Indique l&#39;initialisation d&#39;une nouvelle liste de demandes d&#39;approvisionnement. |
@@ -555,7 +555,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.requisitionListAdds` | Indique l&#39;ajout d&#39;un ou plusieurs produits à une liste de demandes d&#39;approvisionnement. |
@@ -591,7 +591,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.requsitionListRemovals` | Indique la suppression d&#39;un ou de plusieurs produits d&#39;une liste de demandes d&#39;approvisionnement. |
@@ -627,7 +627,7 @@ Le tableau suivant décrit les données collectées pour cet événement.
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=fr). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `commerce.requisitionListDeletes` | Indique qu&#39;une liste de demandes d&#39;approvisionnement a été supprimée. |

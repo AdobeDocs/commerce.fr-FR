@@ -68,7 +68,7 @@ La migration de votre instance Adobe Commerce actuelle vers une nouvelle instanc
 
    * [Adobe Commerce sur l’architecture des services cloud](./overview.md) : passez en revue l’architecture de la plateforme et ses différences par rapport à votre instance Adobe Commerce actuelle.
    * [Adobe Commerce Extensibility Framework](https://developer.adobe.com/commerce/extensibility/) : déterminez comment vous souhaitez effectuer la transition de vos personnalisations actuelles.
-   * [Commerce Storefront optimisé par Edge Delivery ](https://experienceleague.adobe.com/developer/commerce/storefront/)—Examinez la solution storefront recommandée.
+   * [Commerce Storefront optimisé par Edge Delivery ](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)—Examinez la solution storefront recommandée.
 
 1. Contrôlez la compatibilité de votre personnalisation :
 
@@ -90,7 +90,7 @@ Les étapes suivantes décrivent le processus de développement et d’exécutio
 
 1. Configurez l’un des storefronts GraphQL suivants :
 
-   * [Création d’un storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
+   * [Création d’un storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=fr)
    * [Utilisez PWA Studio pour créer un storefront personnalisé basé sur GraphQL](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. Migrez vos données de votre instance Commerce précédente vers ACCS :

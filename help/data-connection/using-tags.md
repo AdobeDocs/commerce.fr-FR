@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Collecter des données Commerce à l’aide de balises Adobe Experience Platform
 
-Bien que vous puissiez utiliser l’extension [!DNL Data Connection] pour publier des événements de storefront et vous y abonner, certains commerçants peuvent déjà utiliser une solution de collecte de données, telle que les balises [Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Pour ces commerçants, Adobe Commerce fournit une option de publication uniquement dans l’extension [!DNL Data Connection] qui utilise le SDK d’événement Adobe Commerce.
+Bien que vous puissiez utiliser l’extension [!DNL Data Connection] pour publier des événements de storefront et vous y abonner, certains commerçants peuvent déjà utiliser une solution de collecte de données, telle que les balises [Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=fr). Pour ces commerçants, Adobe Commerce fournit une option de publication uniquement dans l’extension [!DNL Data Connection] qui utilise le SDK d’événement Adobe Commerce.
 
 Flux de données d’extension ![[!DNL Data Connection]](assets/tags-data-flow.png)
 _[!DNL Data Connection]le flux de données d’extension avec des balises_
@@ -33,15 +33,15 @@ Pour collecter des données d’événement Commerce :
 
 Pour mapper les données du storefront Commerce à Adobe Experience Platform, configurez et installez les éléments suivants à partir des balises Adobe Experience Platform :
 
-1. [Configurer une propriété de balise](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) dans la collecte de données Adobe Experience Platform.
+1. [Configurer une propriété de balise](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=fr) dans la collecte de données Adobe Experience Platform.
 
 1. Sous **Création**, sélectionnez **Extensions** et installez et configurez les extensions suivantes :
 
-   - [Couche de données client Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)
+   - [Couche de données client Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html?lang=fr)
 
-   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
+   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=fr)
 
-1. [Publier la balise](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) dans votre environnement de développement.
+1. [Publier la balise](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=fr) dans votre environnement de développement.
 
 1. Suivez les étapes **Mappage d’événements** ci-dessous pour configurer des éléments de données et des règles pour des événements spécifiques.
 
@@ -57,7 +57,7 @@ La collecte de données à l’aide de balises étant différente de l’utilisa
 
 Lorsque vous mettez à jour les éléments de données et les règles dans les balises Adobe Experience Platform avec des données d’événement spécifiques à Adobe Commerce, vous suivez certaines étapes courantes.
 
-Par exemple, ajoutons l’événement Adobe Commerce `signOut` aux balises Adobe Experience Platform. Les étapes décrites ci-dessous, à l’exception des valeurs spécifiques que vous définissez, décrivent comment ajouter des [éléments de données](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) et des [règles](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule), qui s’appliquent à tous les événements Adobe Commerce que vous ajoutez aux balises.
+Par exemple, ajoutons l’événement Adobe Commerce `signOut` aux balises Adobe Experience Platform. Les étapes décrites ci-dessous, à l’exception des valeurs spécifiques que vous définissez, décrivent comment ajouter des [éléments de données](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=fr#data-element) et des [règles](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=fr#create-a-rule), qui s’appliquent à tous les événements Adobe Commerce que vous ajoutez aux balises.
 
 1. Créer un élément de données :
 
@@ -1411,7 +1411,7 @@ return IdentityMap;
 
 ## Définition du consentement
 
-Lorsque vous installez l’extension [!DNL Data Connection] dans Adobe Commerce, le consentement de la collecte de données est activé par défaut. Le droit d’opposition est géré par le biais du cookie [`mg_dnt`. ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) Vous pouvez suivre les étapes décrites ici si vous choisissez d’utiliser `mg_dnt` pour gérer le consentement. La documentation de Adobe Experience Platform Web SDK [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) propose plusieurs options supplémentaires pour gérer le consentement.
+Lorsque vous installez l’extension [!DNL Data Connection] dans Adobe Commerce, le consentement de la collecte de données est activé par défaut. Le droit d’opposition est géré par le biais du cookie [`mg_dnt`. ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) Vous pouvez suivre les étapes décrites ici si vous choisissez d’utiliser `mg_dnt` pour gérer le consentement. La documentation de Adobe Experience Platform Web SDK [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=fr) propose plusieurs options supplémentaires pour gérer le consentement.
 
 1. Créez un élément de données **Code personnalisé principal** (`%do not track cookie%`) pour le cookie `mg_dnt` :
 

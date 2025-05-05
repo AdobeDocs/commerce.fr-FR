@@ -20,16 +20,16 @@ ht-degree: 37%
 - [Solutions de produit](product-solutions.md)
 - Services Commerce {#commerce-services}
    - Services Commerce {#commerce-services}
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
-   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
-   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html)
-   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html)
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=fr)
+   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=fr)
+   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=fr)
+   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=fr)
 - Services d’intégration {#integration-services}
-   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html)
+   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=fr)
    - [Connecteur de services](/help/landing/saas.md)
 - Outils de données {#data-services}
-   - [Exportation de données SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html)
-   - [ Indexation des prix SaaS ](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html)
+   - [Exportation de données SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=fr)
+   - [ Indexation des prix SaaS ](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=fr)
    - [Synchronisation des catalogues](/help/landing/catalog-sync.md)
 
 

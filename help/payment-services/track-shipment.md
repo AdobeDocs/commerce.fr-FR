@@ -13,7 +13,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] permet aux commerçants de voir les informations de suivi d&#39;une expédition dans leur tableau de bord de commerçants PayPal.
 
-Voir la rubrique [expéditions](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} pour plus d’informations sur la grille des expéditions pour Adobe Commerce.
+Voir la rubrique [expéditions](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} pour plus d’informations sur la grille des expéditions pour Adobe Commerce.
 
 ## Fonctionnement du suivi de votre expédition
 

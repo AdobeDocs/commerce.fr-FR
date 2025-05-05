@@ -20,7 +20,7 @@ Un catalogue de produits est essentiel pour les expériences d’achat en ligne,
 - Déverrouillez la syndication du catalogue et diffusez le contenu approprié en concevant votre catalogue de produits de manière à refléter votre activité, notamment les produits, les clients, les prix et la distribution.
 - Ingérez et mettez à jour rapidement les données de catalogue et diffusez rapidement les mises à jour sur le storefront pour vos promotions et besoins de campagne.
 - Obtenez des scores lighthouse parfaits avec des composants d’interface utilisateur prêts à l’emploi et ultra-rapides optimisés par Edge Delivery Services pour une navigation transparente et des recommandations de produits.
-- Adoptez une architecture composable moderne à l’aide de l’architecture d’extensibilité d’Adobe ([App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) pour importer des données de produit et alimenter les storefronts de commerce découplé à l’aide d’Adobe [maillage API](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh).
+- Adoptez une architecture composable moderne à l’aide de l’architecture d’extensibilité d’Adobe ([App Builder](https://experienceleague.adobe.com/fr/playlists/commerce-get-started-app-builder-development)) pour importer des données de produit et alimenter les storefronts de commerce découplé à l’aide d’Adobe [maillage API](https://experienceleague.adobe.com/fr/playlists/commerce-get-started-app-builder-and-api-mesh).
 
 >[!INFO]
 >

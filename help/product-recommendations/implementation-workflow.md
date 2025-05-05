@@ -28,7 +28,7 @@ Lors de l’installation du `magento/product-recommendations module`, Adobe Sens
 
    Le déploiement de [!DNL Product Recommendations] nécessite deux [sources de données](type.md) principales : le catalogue et le comportement. La production étant le seul environnement où les actions de vos acheteurs sont capturées et analysées, commencez la collecte de données en production dès que possible. [Découvrez ](events.md) comment Adobe Sensei entraîne des modèles de machine learning qui génèrent des recommandations de meilleure qualité. Lorsque vous commencez à collecter des données comportementales en production, vous pouvez en outre [récupérer des recommandations](verify.md) basées sur ces données de production, tout en opérant dans des environnements hors production. Vous pouvez ensuite tester et tester différentes recommandations qui sont calculées en fonction des données réelles d’acheteurs collectées en production.
 
-   Pour déployer la collecte de données en production, vous devez [installer et configurer](install-configure.md) le module [!DNL Product Recommendations] en fournissant une clé [API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html).
+   Pour déployer la collecte de données en production, vous devez [installer et configurer](install-configure.md) le module [!DNL Product Recommendations] en fournissant une clé [API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=fr).
 
    >[!TIP]
    >
@@ -42,7 +42,7 @@ Lors de l’installation du `magento/product-recommendations module`, Adobe Sens
    >
    > En personnalisant le modèle, vous pouvez spécifier votre feuille de style, remplacer l’emplacement où une unité de recommandation apparaît sur une page, etc.
 
-   Voir [Personnaliser](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html) dans la documentation destinée aux développeurs pour savoir comment effectuer cette étape.
+   Voir [Personnaliser](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=fr) dans la documentation destinée aux développeurs pour savoir comment effectuer cette étape.
 
 1. **Test de recommandations sur votre environnement hors production**
 

@@ -22,27 +22,27 @@ La solution [!DNL Store Fulfillment] utilise Adobe Commerce Inventory management
 
 Ces modifications de configuration vous permettent d’accomplir trois choses :
 
-1. [Transférer le stock vers l&#39;origine](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer) pour déplacer le stock du stock/de l&#39;origine par défaut vers le nouveau stock/la nouvelle source.
+1. [Transférer le stock vers l&#39;origine](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/quantities/inventory-transfer) pour déplacer le stock du stock/de l&#39;origine par défaut vers le nouveau stock/la nouvelle source.
 
-1. [Affecter des sources en bloc](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment) pour ajouter de nouvelles sources pour tous vos produits.
+1. [Affecter des sources en bloc](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/quantities/bulk-assignment) pour ajouter de nouvelles sources pour tous vos produits.
 
-1. [Effectuez des mises à jour en bloc des attributs de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) pour ajouter les attributs de `Allow Store Pickup` et de `Allow Home Delivery` aux produits existants. Lorsque la solution est installée, les attributs ont les valeurs optimales *par défaut*. Toutefois, ces attributs ne sont pas appliqués aux produits existants tant que vous n’avez pas terminé le processus updateContes en bloc.
+1. [Effectuez des mises à jour en bloc des attributs de produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) pour ajouter les attributs de `Allow Store Pickup` et de `Allow Home Delivery` aux produits existants. Lorsque la solution est installée, les attributs ont les valeurs optimales *par défaut*. Toutefois, ces attributs ne sont pas appliqués aux produits existants tant que vous n’avez pas terminé le processus updateContes en bloc.
 
-Le stock est déduit de l&#39;origine sélectionnée (magasin de vente au détail ou entrepôt de commerce électronique). Les sources utilisées comme entrepôts d&#39;e-commerce doivent être affectées au même stock que le lieu de retrait du magasin et être hiérarchisées avant les lieux de vente au détail. Pour plus d’informations, voir [Hiérarchisation des sources pour un stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
+Le stock est déduit de l&#39;origine sélectionnée (magasin de vente au détail ou entrepôt de commerce électronique). Les sources utilisées comme entrepôts d&#39;e-commerce doivent être affectées au même stock que le lieu de retrait du magasin et être hiérarchisées avant les lieux de vente au détail. Pour plus d’informations, voir [Hiérarchisation des sources pour un stock](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
 
 Pour plus d’informations sur la gestion des stocks, des stocks et des sources, consultez la documentation destinée aux utilisateurs d’Adobe Commerce :
 
-- [Gestion des stocks](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
+- [Gestion des stocks](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/introduction)
 
-- [Gestion des quantités en stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
+- [Gestion des quantités en stock](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [Gestion des stocks](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
+- [Gestion des stocks](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [Gestion des sources](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
+- [Gestion des sources](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [Hiérarchisation des sources pour un stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
+- [Hiérarchisation des sources pour un stock](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [ Mises à jour en bloc des attributs de produit ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
+- [ Mises à jour en bloc des attributs de produit ](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

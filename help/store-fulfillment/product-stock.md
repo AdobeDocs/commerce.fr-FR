@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Gestion des stocks de produits
 
-En tant que commerçant, vous pouvez utiliser les options Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) stock et source. En outre, vous pouvez utiliser la solution Store Fulfillment pour contrôler d&#39;autres options de disponibilité des stocks liées aux opérations de votre boutique.
+En tant que commerçant, vous pouvez utiliser les options Adobe Commerce [Inventory management](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/introduction) stock et source. En outre, vous pouvez utiliser la solution Store Fulfillment pour contrôler d&#39;autres options de disponibilité des stocks liées aux opérations de votre boutique.
 
 - Option de livraison à domicile dans les magasins marchands
 

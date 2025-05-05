@@ -46,4 +46,4 @@ ht-degree: 11%
    - [GraphQL](graphql.md)
    - [Paramètres](settings.md)
 - [Événements](events.md)
-- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr)
