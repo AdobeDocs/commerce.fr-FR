@@ -2,9 +2,9 @@
 title: Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce
 description: Découvrez comment utiliser les commandes de l’interface de ligne de commande pour gérer les flux et les processus pour les services SaaS  [!DNL data export extension] ’Adobe Commerce.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 6f578dfaf3d3e77d7b541714de613025b8c789a4
+source-git-commit: 8233b2e184c8af293ffc41cb22e085388cf18049
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ La commande `saas:resync` du package `magento/saas-export` permet de gérer la s
 Adobe déconseille d&#39;utiliser régulièrement la commande `saas:resync`. Les scénarios classiques d’utilisation de la commande sont les suivants :
 
 - Synchronisation initiale
-- Synchronisez les données avec le nouvel espace de données après avoir modifié l’identifiant [SaaS Data Space](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/services/saas)
+- Synchronisez les données avec un nouvel espace de données après avoir modifié l’identifiant de l’espace de données [SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Dépannage
 
 Surveillez les opérations de synchronisation dans le fichier `var/log/saas-export.log`.
@@ -68,7 +68,7 @@ Consultez les sections suivantes pour obtenir une description des options ainsi 
 
 Resynchronisez partiellement des entités spécifiques en fonction de leurs identifiants. Prend en charge les flux `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` et `categoryPermissions`.
 
-Par défaut, les entités sont spécifiées dans une liste séparée par des virgules par SKU de produit. Pour utiliser des ID de produit à la place, ajoutez l’option `--id-type=ProductID` .
+Par défaut, lorsque vous utilisez l’option `--by-ids` , vous spécifiez des valeurs à l’aide des valeurs de SKU du produit. Pour utiliser des ID de produit à la place, ajoutez l’option `--id-type=ProductID` .
 
 **Exemples :**
 
@@ -81,13 +81,13 @@ bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-Nettoyez la table de flux de la table de l’indexeur de flux avant de réindexer et d’envoyer des données au SaaS. Pris en charge uniquement pour `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` et `categoryPermissions`.
+Nettoyez la table de l’indexeur de flux avant de réindexer et d’envoyer des données au SaaS. Pris en charge uniquement pour `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` et `categoryPermissions`.
 
 Si elle est utilisée avec l’option `--dry-run` , l’opération effectue une opération de resynchronisation d’essai pour tous les éléments.
 
 >[!IMPORTANT]
 >
->À utiliser uniquement après le nettoyage de l’environnement ou avec l’option `--dry-run` . Si elle est utilisée dans d’autres cas, l’opération de nettoyage entraîne des pertes de données et des problèmes de synchronisation des données où les éléments qui doivent être supprimés dans Adobe Commerce ne seront pas supprimés de l’espace de données SaaS.
+>À utiliser uniquement après le nettoyage de l’environnement ou avec l’option `--dry-run` . Si elle est utilisée dans d’autres cas, l’opération de nettoyage peut entraîner une perte de données et des problèmes de synchronisation des données.
 
 **Exemple:**
 
@@ -124,7 +124,7 @@ Testez des éléments de flux spécifiques en ajoutant l’option `--by-ids` ave
 **Exemple:**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='ADB102,ADB111,ADB112'
 ```
 
 ### Tester tous les éléments de flux
