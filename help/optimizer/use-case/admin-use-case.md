@@ -232,7 +232,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
 
 1. Dans le répertoire racine du dossier, ouvrez le fichier `config.json`.
 
-   Code +++config.json
+   +++Code config.json
 
    ```json
    {
@@ -270,7 +270,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
    - `ac-environment-id` : `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id` : `"west_coast_inc"`
 
-+++
+   +++
 
 1. Remplacez la valeur `ac-channel-id` par l’identifiant de canal Celport que vous avez copié précédemment.
 1. Remplacez la valeur `ac-environment-id` par l’ID du client pour votre instance [!DNL Adobe Commerce Optimizer]. Vous pouvez trouver l’identifiant dans l’e-mail d’intégration du programme d’accès anticipé ou en contactant votre représentant de compte Adobe.
