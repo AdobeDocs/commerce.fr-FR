@@ -103,7 +103,7 @@ Adobe fournit un ensemble de services Commerce, de services d’intégration et 
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce Services Connector </strong> [!BADGE PaaS uniquement]{type=Informative url= »https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions » tooltip=« S’applique à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe) et les projets On-Premise uniquement.« }
+         <strong>Commerce Services Connector </strong> [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe) et les projets On-Premise uniquement."}
          </a>
       </div>
       <p>
