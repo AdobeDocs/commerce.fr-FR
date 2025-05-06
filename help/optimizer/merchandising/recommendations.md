@@ -2,9 +2,10 @@
 title: Recommendations
 description: Les recommandations sont un puissant outil marketing que vous pouvez utiliser pour augmenter les conversions, augmenter le chiffre d’affaires et stimuler l’engagement des acheteurs.
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: 04228203-37a3-4535-ad61-d5e586e57d63
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -31,3 +32,11 @@ La page principale **Recommendations** contient l’[espace de travail](../../pr
 - [Modifier](../../product-recommendations/edit.md) une recommandation existante.
 
 Vous affichez ces recommandations de produits sur votre storefront à l’aide du composant storefront de recommandations.
+
+## Restrictions
+
+Vous trouverez ci-dessous les limites des recommandations relatives à l’accès anticipé.
+
+- [!DNL Adobe Commerce Optimizer] prend en charge le type de recommandation _Récemment consultés_.
+- Les inclusions ou exclusions de catégories ou d’attributs ne sont pas prises en charge.
+- Vous ne pouvez pas prévisualiser les recommandations dans [!DNL Adobe Commerce Optimizer].

@@ -3,9 +3,10 @@ title: Prise en main de  [!DNL Adobe Commerce Optimizer]
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce Optimizer].
 hide: true
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
+source-git-commit: ac79c8aa43ced017743fbef1f181b4eaf8e0a754
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Ce guide vous guide tout au long de la création et de l’utilisation d’une i
 
 >[!TAB Administrator and merchant workflow]
 
-This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/fr/enterprise/admin-guide.html) for more information about administrator workflows.
+This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
 
 NEED DIAGRAM
 
@@ -50,6 +51,10 @@ Une fois les instances [!DNL Adobe Commerce Optimizer] prêtes, l’équipe d’
 | Interface utilisateur [!DNL Adobe Commerce Optimizer] | `https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>` | Accédez à l’interface utilisateur de Commerce Optimizer pour gérer votre catalogue dans :<br>1. Règles de marchandisage (découverte de produit, recommandations de produit).<br>2. Gestion de catalogue (création de canaux et de politiques).3 <br>. Insights de données (afficher le statut d’ingestion des données de votre catalogue). |
 | API Storefront | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql` | Accédez aux API nécessaires pour configurer votre storefront Commerce optimisé par Edge Delivery Services. |
 | API d’ingestion des données de catalogue | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>` | Accédez aux API nécessaires pour ingérer les données de votre catalogue. |
+
+>[!NOTE]
+>
+>Consultez la [documentation pour les développeurs](https://developer-stage.adobe.com/commerce/services/composable-catalog/) pour en savoir plus sur les API nécessaires à la configuration de Storefront et à l’ingestion de catalogues.
 
 En tant que participant à l’accès anticipé, vous recevrez un e-mail contenant un lien sécurisé qui, avec votre jeton IMS, vous permettra de vous connecter à [!DNL Adobe Commerce Optimizer] ou d’effectuer des appels API.
 

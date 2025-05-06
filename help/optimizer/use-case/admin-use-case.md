@@ -4,9 +4,10 @@ description: Découvrez comment utiliser  [!DNL Adobe Commerce Optimizer]  gére
 hide: true
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---
@@ -78,7 +79,7 @@ Carvelo souhaite vendre des pièces de ses trois marques (Aurora, Bolt et Cruz) 
 En fin de compte, Carvelo a deux objectifs principaux :
 
 1. Tenez à jour un site web « mondial », qui comporte tous les SKU des trois marques.
-1. Offrez aux concessionnaires un moyen de créer leurs propres vitrines en fonction de la visibilité et des prix uniques des SKU pour chaque SKU de chaque concessionnaire.
+1. Offrez aux concessionnaires un moyen de créer leurs propres vitrines en fonction de la visibilité et des prix uniques des SKU pour chaque SKU de chaque concessionnaire. Le tout lors de l’utilisation d’un seul catalogue de base, ce qui élimine la duplication de catalogue.
 
 >[!ENDSHADEBOX]
 
@@ -231,7 +232,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
 
 1. Dans le répertoire racine du dossier, ouvrez le fichier `config.json`.
 
-   +++Code config.json
+   Code +++config.json
 
    ```json
    {
@@ -269,12 +270,14 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
    - `ac-environment-id` : `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id` : `"west_coast_inc"`
 
-   +++
++++
 
 1. Remplacez la valeur `ac-channel-id` par l’identifiant de canal Celport que vous avez copié précédemment.
-1. Si nécessaire, remplacez la valeur `ac-environment-id` par l’ID du client pour votre instance [!DNL Adobe Commerce Optimizer]. Vous pouvez trouver l’identifiant dans l’e-mail d’intégration du programme d’accès anticipé ou en contactant votre représentant de compte Adobe.
+1. Remplacez la valeur `ac-environment-id` par l’ID du client pour votre instance [!DNL Adobe Commerce Optimizer]. Vous pouvez trouver l’identifiant dans l’e-mail d’intégration du programme d’accès anticipé ou en contactant votre représentant de compte Adobe.
 
-   Assurez-vous que la valeur `commerce-endpoint` correspond au point d’entrée GraphQL de votre instance [!DNL Adobe Commerce Optimizer].
+   >[!IMPORTANT]
+   >
+   >Assurez-vous que la valeur `commerce-endpoint` correspond au point d’entrée GraphQL de votre instance [!DNL Adobe Commerce Optimizer]. Ceci est fourni dans votre e-mail de bienvenue.
 
 1. Remplacez la valeur `ac-price-book-id` par `"east_coast_inc"`.
 1. Enregistrez le fichier.
@@ -317,7 +320,7 @@ Lorsque vous enregistrez les modifications, vous mettez à jour la configuration
 
       Lorsque vous enregistrez le fichier, l’aperçu du storefront local se met automatiquement à jour.
 
-   1. Prévisualisez les modifications dans le navigateur à l’aide de la fonction Rechercher pour rechercher des pièces de pneumatique .
+   1. Prévisualisez les modifications dans le navigateur à l&#39;aide de la fonction Rechercher pour rechercher des pièces de pneumatique.
 
       Notez les différents types de pièces disponibles et les prix attribués au canal Kingsbluff.
 
