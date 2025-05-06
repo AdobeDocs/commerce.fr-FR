@@ -174,8 +174,8 @@ Vous pouvez implémenter ces nouvelles conditions sur votre page de résultats d
 | Champ | Description |
 |--- |--- |
 | `Autocomplete` | Activé par défaut et non modifiable. Avec `Autocomplete`, vous pouvez utiliser `contains` dans le [filtre de recherche](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). Ici, la requête de recherche dans `contains` renvoie une réponse de recherche de type saisie automatique. Adobe vous recommande d’utiliser ce type de recherche pour les champs de description, qui comportent généralement plus de 50 caractères. |
-| `Contains` | Active une recherche « texte contenu dans une chaîne » au lieu d’une recherche de saisie semi-automatique. Utiliser `contains` dans le filtre](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) de [recherche. Reportez-vous aux Restrictions](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) pour plus d’informations[. |
-| `Starts with` | Permet d’interroger les chaînes qui commencent par une valeur particulière. Utiliser `startsWith` dans le filtre](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) de [recherche. |
+| `Contains` | Active une recherche « texte contenu dans une chaîne » au lieu d’une recherche de saisie semi-automatique. Utiliser `contains` dans le filtre[&#128279;](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) de [recherche. Reportez-vous aux Restrictions](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) pour plus d’informations. |
+| `Starts with` | Permet d’interroger les chaînes qui commencent par une valeur particulière. Utiliser `startsWith` dans le filtre[&#128279;](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) de recherche. |
 
 ## 2. Configurer les clés API
 
@@ -288,7 +288,7 @@ Pour autoriser le [!DNL Live Search] à travers un pare-feu, ajoutez des `commer
 
 Assurez-vous que les événements storefront déployés sur votre site fonctionnent. Cela est particulièrement important pour les implémentations découplées.
 
-- Passez en revue les événements](events.md) requis pour [!DNL Live Search].[
+- Passez en revue les événements[&#128279;](events.md) requis pour [!DNL Live Search].
 - Assurez-vous que le [tableau de bord](performance.md) Live Search affiche les données de votre ou de vos environnements hors production.
 - [Vérifiez la collecte des](../product-recommendations/verify.md) événements. Bien que cette page figure dans le [!DNL Product Recommendations] guide, les étapes de vérification s’appliquent également [!DNL Live Search] .
 
