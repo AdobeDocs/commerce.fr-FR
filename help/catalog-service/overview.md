@@ -3,13 +3,13 @@ title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] pour Adobe Commerce permet de récupérer le contenu des pages d’affichage des produits et des pages de liste de produits beaucoup plus rapidement que les requêtes GraphQL natives d’Adobe Commerce.'
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
+source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] pour Adobe Commerce
 
@@ -85,4 +85,6 @@ Le service de catalogue garantit la précision des mises à jour et des calculs 
 
 ## Mise en œuvre
 
-Le processus d&#39;installation nécessite la configuration du connecteur de services Commerce [&#128279;](../landing/saas.md). Une fois cette opération effectuée, l’étape suivante consiste, pour un intégrateur de systèmes, à mettre à jour le code du storefront pour incorporer les requêtes [!DNL Catalog Service]. Toutes les requêtes [!DNL Catalog Service] sont acheminées vers la passerelle GraphQL. L’URL est fournie pendant le processus d’intégration.
+[!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
+
+Le processus d&#39;installation nécessite la configuration du connecteur de services Commerce [](../landing/saas.md). Une fois cette opération effectuée, l’étape suivante consiste, pour un intégrateur de systèmes, à mettre à jour le code du storefront pour incorporer les requêtes [!DNL Catalog Service]. Toutes les requêtes [!DNL Catalog Service] sont acheminées vers la passerelle GraphQL. L’URL est fournie pendant le processus d’intégration.
