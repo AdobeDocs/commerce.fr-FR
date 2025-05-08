@@ -2,41 +2,44 @@
 title: Traitement de niveau 2 et de niveau 3
 description: Niveaux de traitement des paiements par carte dans  [!DNL Payment Services]  transactions.
 role: Admin
-feature: Payments
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Paas, Saas
+exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
 # Traitement de niveau 2 et de niveau 3
 
-Il existe trois niveaux de traitement des cartes disponibles via [!DNL Payment Services] :
+[!DNL Payment Services] offre des fonctionnalités avancées de traitement des cartes pour aider les commerçants à optimiser leurs transactions de paiement et à réduire les frais d&#39;interchange. Il existe trois niveaux de traitement des cartes, chacun avec des exigences différentes en matière de données de transaction.
 
-* Le niveau 1 est le plus courant, nécessite moins d&#39;information et, par conséquent, entraîne généralement des frais d&#39;interchange plus élevés par rapport aux transactions traitées avec des données de niveau 2 ou 3, qui sont généralement liées aux cartes de crédit d&#39;entreprise et d&#39;achat.
+## Exigences en matière de données par niveau de traitement
 
-* Avec les niveaux 2 et 3, les clients [!DNL Payment Services] au niveau de tarification Interchange Plus (IC++) qui acceptent un grand nombre de transactions par carte d’achat ou par carte d’entreprise peuvent potentiellement bénéficier d’un taux de traitement plus faible en [!DNL Payment Services] permettant d’envoyer davantage d’informations sur une transaction. Si la transaction est admissible, selon les exigences du réseau de cartes, le commerçant peut alors recevoir un taux de traitement inférieur pour une transaction particulière.
-
->[!NOTE]
->
->Les tarifs des niveaux 2 et 3 s&#39;appliquent uniquement aux transactions Visa et MasterCard. American Express propose uniquement des tarifs de niveau 2. Discover n’offre pas de tarification de niveau 2 ni de niveau 3. Voir [traitement des paiements](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} dans la documentation destinée aux développeurs PayPal pour plus d’informations.
-
-Voir [ Qu’est-ce qu’IC ++?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} dans la documentation PayPal destinée aux développeurs pour plus d&#39;informations.
-
-Les données de traitement de niveaux 2 et 3 permettent aux commerçants de réduire leur prix IC++ s&#39;ils fournissent des détails supplémentaires sur l&#39;achat, ce qui réduit le risque du processeur et présente des avantages :
-
-* Les gros clients paieront moins cher en fournissant ces données de traitement.
-
-* Les clients sont moins susceptibles de se retrouver dans des situations frauduleuses puisque les commandes sont plus informées.
-
-Cependant, les réseaux de cartes, comme Visa et Mastercard, déterminent en fin de compte si une transaction est admissible pour le traitement de niveau 2 ou de niveau 3 :
-
-* Les données de niveau 2 contiennent des informations supplémentaires, telles que le montant de taxe de la commande, le code client ou le numéro de bon de commande.
-
-* Les données de niveau 3 sont des informations plus détaillées sur la vente, ce qui permet de bénéficier de taux d&#39;interchange encore plus bas par rapport au niveau 2. Les données de niveau 3 contiennent des informations telles qu’une description de l’article acheté, la quantité d’unités achetées, l’unité de mesure des articles commandés et d’autres détails spécifiques.
+![Rapport des transactions](assets/level-processing-details.png){width="500" zoomable="yes"}
 
 [!DNL Payment Services] collecte ces données et fournit des rapports détaillés sur vos opérations de paiement.
+
+## Niveaux de traitement disponibles par réseau de cartes
+
+![Détails de la carte](assets/cards-details-level-processing.png){width="500" zoomable="yes"}
+
+Voir [traitement des paiements](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} dans la documentation destinée aux développeurs PayPal pour plus d’informations.
+
+### Niveau 1
+
+Le niveau 1 est le plus courant, nécessite moins d&#39;information et, par conséquent, entraîne généralement des frais d&#39;interchange plus élevés par rapport aux transactions traitées avec des données de niveau 2 ou 3, qui sont généralement liées aux cartes de crédit d&#39;entreprise et d&#39;achat.
+
+### Niveau 2 et niveau 3
+
+Les commerçants [!DNL Payment Services] sur Interchange Plus Plus (IC++) peuvent être admissibles au traitement de niveau 2/niveau 3 s&#39;ils fournissent des détails de transaction supplémentaires aux réseaux de cartes et répondent à des critères de qualification spécifiques. Ces niveaux sont particulièrement avantageux pour les commerçants qui traitent des volumes importants d&#39;achats ou de cartes d&#39;entreprise, car ils peuvent entraîner des économies importantes. La fourniture de données détaillées de niveau 2 ou 3 peut :
+
+* Réduire les frais de traitement et optimiser les coûts globaux
+* Prévenir les fraudes et réduire les risques associés aux processeurs
+* Amélioration de la sécurité des transactions
+
+Voir [ Qu’est-ce qu’IC ++?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} dans la documentation PayPal destinée aux développeurs pour plus d&#39;informations.
 
 ## Opérations de paiement par carte de niveau 2 et de niveau 3 en [!DNL Payment Services]
 

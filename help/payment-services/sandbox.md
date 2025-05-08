@@ -1,8 +1,9 @@
 ---
 title: Configuration du sandbox de test
 description: Utilisez un compte sandbox PayPal à utiliser  [!DNL Payment Services]  mode test.
-feature: Payments, Checkout, Configuration, Install
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
+feature: Payments, Checkout, Configuration, Install, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -28,7 +29,7 @@ Pour terminer l’intégration au sandbox :
       Si vous avez créé un compte sandbox PayPal pendant le processus d’intégration de PayPal, vous devez [réinitialiser votre sandbox d’intégration](#reset-your-sandbox-account) car vous ne pouvez pas vérifier votre adresse e-mail.
 
    1. Sélectionnez **[!UICONTROL Business]** comme type de compte, puis cliquez sur **[!UICONTROL Create]**.
-   1. Dans la section _[!UICONTROL Sandbox Accounts]_, cliquez sur les trois points de la colonne&#x200B;_[!UICONTROL Manage accounts]_ pour le compte sandbox que vous avez créé.
+   1. Dans la section _[!UICONTROL Sandbox Accounts]_, cliquez sur les trois points de la colonne_[!UICONTROL Manage accounts]_ pour le compte sandbox que vous avez créé.
    1. Cliquez sur **[!UICONTROL View/edit account]**.
 
       ![PayPal - Afficher/modifier le compte sandbox](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}

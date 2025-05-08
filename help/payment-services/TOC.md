@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: eba63e5a0086689ae254545c1ad9a1430fc8a524
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '109'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,10 @@ ht-degree: 3%
 # [!DNL Payment Services] pour Commerce {#payment-services}
 
 - [Présentation du guide](guide-overview.md)
-- [Présentation de  [!DNL Payment Services]](overview.md)
+- [Présentation de  [!DNL Payment Services]](introduction.md)
+- [Compatibilité avec  [!DNL Payment Services]](compatibility.md)
 - [Notes de mise à jour](release-notes.md)
-- Intégration d’[!DNL Payment Services] {#get-started}
+- [!DNL Payment Services] intégré {#get-started}
    - [Présentation de l’intégration](onboard.md)
    - [Installation de l’extension  [!DNL Payment Services] ](install.md)
    - [Connexion de votre instance](connect.md)
@@ -31,23 +32,23 @@ ht-degree: 3%
    - [Configuration de la ligne de commande](configure-cli.md)
    - [Configuration héritée](configure-admin.md)
    - [Tester et valider](test-validate.md)
-- Paiements et de paiement {#payments-checkout}
+- Paiements et passage en caisse {#payments-checkout}
    - [Options de paiement](payments-options.md)
    - [Chambre forte de carte de crédit](vaulting.md)
    - [Extraire [!DNL Payment Services]](checkout.md)
-   - Gérer les de paiement {#manage}
+   - Gestion des paiements {#manage}
       - [Éléments de ligne pour  [!DNL Payment Services]](line-items.md)
       - [Remboursements](refunds.md)
       - [Vides](voids.md)
    - [Création d’une commande dans l’Admin](create-order.md)
    - [Suivi de vos expéditions dans  [!DNL Payment Services]](track-shipment.md)
-- de reporting financier{#reporting}
-   - [Rapport des transactions](transactions.md)
+- Rapports financiers {#financial-reports}
+   - [Création de rapports](reporting.md)
    - [Etat du statut de paiement de la commande](order-payment-status.md)
    - [Rapport Paiements](payouts.md)
    - [Données disponibles](data.md)
    - [Traitement de niveau 2 et de niveau 3](levels-card-payment-transactions.md)
-- de sécurité et de conformité{#security-compliance}
+- Sécurité et conformité {#security-compliance}
    - [Sécurité](security.md)
    - [Protection contre les fraudes signalées](fraud-protection.md)
-- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr)
+- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

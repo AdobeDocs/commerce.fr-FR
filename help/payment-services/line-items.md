@@ -1,9 +1,10 @@
 ---
 title: Éléments de ligne pour  [!DNL Payment Services]
 description: Découvrez les lignes pour et comment afficher les lignes  [!DNL Payment Services]  tableau de bord du commerçant.
-feature: Payments
+feature: Payments, Paas, Saas
 role: User
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -126,7 +127,7 @@ Voir [Documentation PayPal pour les développeurs sur les éléments de ligne](h
 
 ## Gérer les éléments de ligne
 
-Adobe Commerce [calcule la taxe en fonction du montant total de chaque ligne](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, ce qui peut entraîner des problèmes d&#39;arrondi si plusieurs quantités du même article sont commandées ou si des prix incluant la taxe sont affichés dans le catalogue. Dans ce cas, la quantité totale peut être fractionnée en deux lignes, mais la quantité sera égale au total des articles commandés.
+Adobe Commerce [calcule la taxe en fonction du montant total de chaque ligne](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, ce qui peut entraîner des problèmes d&#39;arrondi si plusieurs quantités du même article sont commandées ou si des prix incluant la taxe sont affichés dans le catalogue. Dans ce cas, la quantité totale peut être fractionnée en deux lignes, mais la quantité sera égale au total des articles commandés.
 
 > Exemple d&#39;éléments de ligne avec des problèmes d&#39;arrondi dans la vue du tableau de bord du commerçant
 

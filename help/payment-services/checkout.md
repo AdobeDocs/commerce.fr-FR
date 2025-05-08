@@ -1,8 +1,9 @@
 ---
 title: Extraire [!DNL Payment Services]
 description: Personnalisez  [!DNL Payment Services]  passage en caisse pour répondre aux besoins de votre client.
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Checkout, Paas, Saas
+exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Un message d’erreur s’affiche sur la page de passage en caisse de l’achete
 
 ![Erreur lors de la vérification](assets/user-checkout-error.png "Erreur lors de la récupération"){width="600" zoomable="yes"}
 
-Un commentaire concernant la commande annulée s’affiche également dans l’Administration pour une [commande](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=fr) spécifique.
+Un commentaire concernant la commande annulée s’affiche également dans l’Administration pour une [commande](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en) spécifique.
 
 ![Commentaire de commande annulé dans Admin pour la commande](assets/admin-checkout-error.png "Commentaire de commande annulé dans Admin pour la commande"){width="600" zoomable="yes"}
 

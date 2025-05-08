@@ -3,11 +3,12 @@ title: Configuration de ligne de commande
 description: Après l’installation, vous pouvez configurer à l [!DNL Payment Services] aide de l’interface de ligne de commande (CLI).
 role: Admin, Developer
 level: Intermediate
-feature: Payments, Checkout, Configuration, Integration
-exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
-source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
+exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
+feature: Payments, Checkout, Configuration, Integration, Paas
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Pour en savoir plus sur les données utilisées dans [!DNL Payment Services] rep
 
 ### Configuration de cron sur [!DNL Magento Open Source]
 
-Si vous souhaitez utiliser un mode d’index `BY SCHEDULE` sur [!DNL Magento Open Source], vous devez configurer cron. Voir [Configuration et exécution de cron](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
+Si vous souhaitez utiliser un mode d’index `BY SCHEDULE` sur [!DNL Magento Open Source], vous devez configurer cron. Voir [Configuration et exécution de cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 ### Définition des indexeurs
 
@@ -48,13 +49,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Si vous ne spécifiez aucun indexeur dans votre commande, tous les indexeurs sont mis à jour vers la même valeur. Si vous souhaitez modifier un indexeur spécifique, vous devez le répertorier dans votre commande.
 
-Pour en savoir plus sur la modification manuelle du mode d’un indexeur, consultez [Configuration des indexeurs](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} dans la documentation du développeur. Pour savoir comment le modifier dans l’administration, consultez [Gestion des index](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} dans le guide d’utilisation principal.
+Pour en savoir plus sur la modification manuelle du mode d’un indexeur, consultez [Configuration des indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} dans la documentation du développeur. Pour savoir comment le modifier dans l’administration, consultez [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} dans le guide d’utilisation principal.
 
 ### Réindexation manuelle des données
 
-Vous pouvez réindexer manuellement les données, au lieu d’attendre qu’elles se produisent automatiquement. Pour plus d’informations, consultez [Réindexation](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} dans [Gestion des indexeurs](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}.
+Vous pouvez réindexer manuellement les données, au lieu d’attendre qu’elles se produisent automatiquement. Pour plus d’informations, consultez [Réindexation](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} dans [Gestion des indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}.
 
-Lorsque `BY SCHEDULE` mode est défini, le système suit les entités modifiées et la tâche cron met à jour l’index de ces entités selon un planning défini. Voir [Exécuter cron à partir de la ligne de commande](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) dans [Configurer et exécuter cron](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) pour savoir comment déclencher manuellement l’indexation à l’aide de tâches cron.
+Lorsque `BY SCHEDULE` mode est défini, le système suit les entités modifiées et la tâche cron met à jour l’index de ces entités selon un planning défini. Voir [Exécuter cron à partir de la ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) dans [Configurer et exécuter cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) pour savoir comment déclencher manuellement l’indexation à l’aide de tâches cron.
 
 ### Envoyer les données réindexées au service de paiement
 
@@ -88,7 +89,7 @@ Toutes les données nécessaires aux rapports sont envoyées automatiquement à 
 bin/magento cron:run --group payment_services_data_export
 ```
 
-Pour en savoir plus sur la réindexation et les indexeurs, consultez la rubrique [Gérer les indexeurs](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers) dans la documentation destinée aux développeurs.
+Pour en savoir plus sur la réindexation et les indexeurs, consultez la rubrique [Gérer les indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) dans la documentation destinée aux développeurs.
 
 ## Configuration de l’étendue via l’interface de ligne de commande
 
