@@ -30,4 +30,4 @@ Voir [ Émission d&#39;un avoir](https://experienceleague.adobe.com/en/docs/comm
 
 Le paramètre [!UICONTROL Payment Action] de votre configuration [!UICONTROL Payment Settings] (`Authorize` ou `Authorize and Capture`) détermine le [workflow de remboursement de base](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos#refund-workflow){target="_blank"} pour les commandes.
 
-Pour plus d&#39;informations](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memo-create#payment-action-setting){target="_blank"} reportez-vous à la section [Paramétrage de l&#39;action de paiement de _Émission d&#39;un avoir_.
+Pour plus d&#39;informations[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memo-create#payment-action-setting){target="_blank"} reportez-vous à la section Paramétrage de l&#39;action de paiement de _Émission d&#39;un avoir_.

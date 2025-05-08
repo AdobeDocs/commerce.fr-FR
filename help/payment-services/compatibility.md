@@ -96,7 +96,7 @@ Voir [Connect](connect.md) pour plus d’informations sur la configuration de vo
 
 >[!ENDTABS]
 
-Pour plus d’informations sur les versions et les notes de mise à jour](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) consultez les pages [Politique de cycle de vie et [[!DNL Payment Services] Notes de mise à jour](release-notes.md).
+Pour plus d’informations sur les versions et les notes de mise à jour[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) consultez les pages Politique de cycle de vie et [[!DNL Payment Services] Notes de mise à jour](release-notes.md).
 
 Pour obtenir les instructions complètes et démarrer le processus d’intégration, reportez-vous à la section [Prise en main d’ [!DNL Payment Services]](onboard.md).
 

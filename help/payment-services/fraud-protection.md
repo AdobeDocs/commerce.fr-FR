@@ -41,12 +41,12 @@ Lors de l’intégration à Signifyd, vous devez :
 
 Ces options de configuration ne sont pas compatibles avec les services de paiement et l’intégration de Signify :
 
-* Lorsque [!DNL Payment Services] est configuré avec l&#39;action de paiement `Authorize` _et_ Signifyd est en mode `PostAuth` avec l&#39;option _[!UICONTROL Decline Guarantees]_définie sur **Créer un avoir**.
+* Lorsque [!DNL Payment Services] est configuré avec l&#39;action de paiement `Authorize` _et_ Signifyd est en mode `PostAuth` avec l&#39;option _[!UICONTROL Decline Guarantees]_&#x200B;définie sur **Créer un avoir**.
 
   Motif : [!DNL Payment Services] crée une transaction d’autorisation que Signify tente ensuite de rembourser.
 
 
-* [!DNL Payment Services] est configuré avec l’action de paiement `Authorize and Capture` _et_ Signifyd est en mode `PostAuth` avec l’option _[!UICONTROL Decline Guarantees]_définie sur **Annuler la commande**.
+* [!DNL Payment Services] est configuré avec l’action de paiement `Authorize and Capture` _et_ Signifyd est en mode `PostAuth` avec l’option _[!UICONTROL Decline Guarantees]_&#x200B;définie sur **Annuler la commande**.
 
   Motif : [!DNL Payment Services] crée une transaction de capture que Signifyd tente ensuite d’annuler.
 

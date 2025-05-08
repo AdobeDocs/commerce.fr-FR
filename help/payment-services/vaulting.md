@@ -74,7 +74,7 @@ Vous ne pouvez utiliser des cartes voûtées dans l&#39;Admin que si le client d
 Pour créer une commande dans l’Administration pour un client à l’aide de sa carte de crédit voûtée :
 
 1. [Créer une commande et ajouter des produits](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
-1. Dans _[!UICONTROL Payment & Shipping Information]_, sélectionnez **[!UICONTROL Stored Cards]**comme mode de paiement.
+1. Dans _[!UICONTROL Payment & Shipping Information]_, sélectionnez **[!UICONTROL Stored Cards]**&#x200B;comme mode de paiement.
 1. Sélectionnez le mode de paiement par carte de crédit en chambre forte souhaité.
 1. Après avoir effectué toutes les autres étapes nécessaires pour la commande, [envoyez-la](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 

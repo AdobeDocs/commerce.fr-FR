@@ -69,7 +69,7 @@ La vue de visualisation des données des paiements comprend les informations sui
 
 La vue Rapport des paiements est disponible dans la vue Paiements des Services de paiement. Il comprend toutes les informations disponibles sur les paiements pour vos magasins.
 
-Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**pour afficher la vue détaillée du rapport tabulaire des paiements.
+Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;pour afficher la vue détaillée du rapport tabulaire des paiements.
 
 ![Transactions de paiement dans l’administrateur](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -89,7 +89,7 @@ Dans la vue Rapport des paiements, vous pouvez sélectionner la source de donné
 
 ![Sélection des sources de données](assets/datasource.png){width="300" zoomable="yes"}
 
-Si _[!UICONTROL Live]_est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour les magasins en mode de production. Si_[!UICONTROL Sandbox]_ est la source de données sélectionnée, vous pouvez afficher les informations de rapport stockées en mode sandbox.
+Si _[!UICONTROL Live]_&#x200B;est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour les magasins en mode de production. Si&#x200B;_[!UICONTROL Sandbox]_ est la source de données sélectionnée, vous pouvez afficher les informations de rapport stockées en mode sandbox.
 
 Les sélections de sources de données fonctionnent comme suit :
 
