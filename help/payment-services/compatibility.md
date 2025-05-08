@@ -26,7 +26,7 @@ Pour utiliser [!DNL Payment Services], vous devez d’abord connecter votre inst
 
    >[!TIP]
    >
-   > Pour plus d’informations, consultez notre tutoriel vidéo [Adobe Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) .
+   > Pour plus d’informations, consultez notre tutoriel vidéo [Adobe Commerce Services Connector](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) .
 
 1. Si vous avez déjà connecté votre instance, accédez à la page [intégration](onboard.md) pour connaître les étapes suivantes.
 
@@ -96,13 +96,13 @@ Voir [Connect](connect.md) pour plus d’informations sur la configuration de vo
 
 >[!ENDTABS]
 
-Pour plus d’informations sur les versions et les notes de mise à jour[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) consultez les pages Politique de cycle de vie et [[!DNL Payment Services] Notes de mise à jour](release-notes.md).
+Pour plus d’informations sur les versions et les notes de mise à jour[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=fr) consultez les pages Politique de cycle de vie et [[!DNL Payment Services] Notes de mise à jour](release-notes.md).
 
 Pour obtenir les instructions complètes et démarrer le processus d’intégration, reportez-vous à la section [Prise en main d’ [!DNL Payment Services]](onboard.md).
 
 ### Cartes de crédit et devises acceptées
 
-[!DNL Payment Services] accepte les devises des pays [dans lesquels il est disponible](#availability). Voir [Configuration de la devise](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) pour plus d’informations sur la configuration des taux de change.
+[!DNL Payment Services] accepte les devises des pays [dans lesquels il est disponible](#availability). Voir [Configuration de la devise](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=fr) pour plus d’informations sur la configuration des taux de change.
 
 Pour plus d&#39;informations sur les devises et les modes de paiement disponibles avec les produits et services PayPal, consultez les pages suivantes :
 

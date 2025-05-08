@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Vous pouvez personnaliser les Services de paiement selon vos besoins à l’aide des [[!DNL Payment Services] paramètres](settings.md).
 
-[!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous permet d&#39;exécuter une commande directement depuis l&#39;Admin par un commerçant pour ses clients qui ont besoin d&#39;aide. Le formulaire **[!UICONTROL Create New Order]** contient toutes les informations requises pour terminer le processus de passage en caisse normal, y compris les champs hébergés avec des informations de carte de crédit. Voir [Création d’une commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} pour obtenir des informations détaillées sur les étapes requises.
+[!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] vous permet d&#39;exécuter une commande directement depuis l&#39;Admin par un commerçant pour ses clients qui ont besoin d&#39;aide. Le formulaire **[!UICONTROL Create New Order]** contient toutes les informations requises pour terminer le processus de passage en caisse normal, y compris les champs hébergés avec des informations de carte de crédit. Voir [Création d’une commande](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"} pour obtenir des informations détaillées sur les étapes requises.
 
 ## Champs de carte de crédit hébergés
 
@@ -22,6 +22,6 @@ Vous pouvez personnaliser les Services de paiement selon vos besoins à l’aide
 
 1. Dans la barre latérale _Admin_, développez **[!UICONTROL Sales]** et choisissez **[!UICONTROL Orders]**.
 1. Cliquez sur **[!UICONTROL Create New Order]**.
-1. Renseignez les sections nécessaires pour la commande (détails expliqués dans [Création d’une commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}).
+1. Renseignez les sections nécessaires pour la commande (détails expliqués dans [Création d’une commande](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}).
 1. Dans la section _[!UICONTROL Payment Method]_, vous devriez être en mesure d&#39;utiliser votre [!DNL Payment Services] comme mode de paiement.
 1. Cliquez sur **[!UICONTROL Submit Order]**.

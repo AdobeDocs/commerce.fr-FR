@@ -132,9 +132,9 @@ Les rapports de transactions contiennent les informations suivantes.
 
 | Colonne | Description |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID de commande Commerce (contient uniquement des valeurs pour les transactions réussies et est vide pour les transactions rejetées)<br> <br>Pour afficher les [informations de commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} associées, cliquez sur l’ID. |
+| [!UICONTROL Order ID] | ID de commande Commerce (contient uniquement des valeurs pour les transactions réussies et est vide pour les transactions rejetées)<br> <br>Pour afficher les [informations de commande](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} associées, cliquez sur l’ID. |
 | [!UICONTROL PayPal Transaction ID] | Identifiant de transaction fourni par le fournisseur de paiement ; contient uniquement des valeurs pour les transactions réussies et un tiret pour les transactions rejetées. Vous pouvez cliquer sur cet ID pour accéder à la page des détails de la transaction PayPal. |
-| [!UICONTROL Customer ID] | ID de client Commerce d’une commande<br> <br>Voir la rubrique [Informations sur le client](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} pour plus d’informations. |
+| [!UICONTROL Customer ID] | ID de client Commerce d’une commande<br> <br>Voir la rubrique [Informations sur le client](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} pour plus d’informations. |
 | [!UICONTROL Transaction Date] | Date et heure de la transaction |
 | [!UICONTROL Payment Method] | Type de paiement utilisé pour la transaction avec des informations sur la marque et le type de carte. Voir [types de carte](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) pour plus d’informations ; disponible pour les versions 1.6.0 et ultérieures des services de paiement |
 | [!UICONTROL Payment Detail] | Fournit des informations supplémentaires sur le type de paiement utilisé pour la transaction, le cas échéant. |
