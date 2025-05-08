@@ -113,16 +113,16 @@ Pour une présentation des solutions de paiement prêtes à l’emploi, y compri
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4 Guide de l’utilisateur ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=fr) - Documentation destinée aux commerçants pour [!DNL Adobe Commerce] et [!DNL Magento Open Source]
-> * [[!DNL Adobe Commerce] 2.4 Guide de l’utilisateur ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=fr)—Documentation destinée aux développeurs et développeuses utilisée pour créer et personnaliser des [!DNL Adobe Commerce] ou des [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4 Guide de l’utilisateur ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) - Documentation destinée aux commerçants pour [!DNL Adobe Commerce] et [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4 Guide de l’utilisateur ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)—Documentation destinée aux développeurs et développeuses utilisée pour créer et personnaliser des [!DNL Adobe Commerce] ou des [!DNL Magento Open Source]
 > * [Notes de mise à jour](release-notes.md) : découvrez les prochaines versions, les détails des produits et les versions d’Adobe Commerce qui prennent en charge l’extension [!DNL Payment Services]
-> * [Centre d&#39;aide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=fr) : recherchez des articles de dépannage liés aux [!DNL Payment Services] dans la base de connaissances.
-> * [tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) : les clients Commerce peuvent envoyer un ticket pour recevoir de l’aide supplémentaire
+> * [Centre d&#39;aide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) : recherchez des articles de dépannage liés aux [!DNL Payment Services] dans la base de connaissances.
+> * [tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) : les clients Commerce peuvent envoyer un ticket pour recevoir de l’aide supplémentaire
 
 ## Support technique
 
 Si vous avez besoin d&#39;informations ou si vous avez des questions non abordées dans ce guide, contactez votre représentant commercial [!DNL Payment Services] ou utilisez les ressources disponibles dans votre page d&#39;accueil [!DNL Payment Services] :
 
->[!VIDEO](https://video.tv.adobe.com/v/3448229?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3447836)
 
 Pour plus d&#39;informations, consultez la section [Quelle [!DNL Payment Services] option vous convient ?](compatibility.md#which-payment-services-option-is-right-for-you) rubrique pour vérifier quelle option [!DNL Payment Services] vous convient le mieux.
