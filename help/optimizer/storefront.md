@@ -276,7 +276,7 @@ Ajoutez la configuration du projet pour l’extension Sidekick. Cette configurat
    }
    ```
 
-   Pour plus d’informations, consultez la documentation de la bibliothèque Sidekick [](https://www.aem.live/docs/sidekick-library).
+   Pour plus d’informations, consultez la documentation de la bibliothèque Sidekick [&#128279;](https://www.aem.live/docs/sidekick-library).
 
 +++
 
@@ -318,7 +318,7 @@ Ajoutez la configuration du projet pour l’extension Sidekick. Cette configurat
    }
    ```
 
-+++
+   +++
 
 1. Enregistrez le fichier.
 
