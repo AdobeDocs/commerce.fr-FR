@@ -3,9 +3,9 @@ title: Limites et limites
 description: Découvrez les limites et les limites de pour  [!DNL Live Search]  assurer qu’il répond aux besoins de votre entreprise.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: eaea7d847be04956299a80ba3bccd90be527c482
+source-git-commit: 29374c45f57e923666e255bfefadd9a1e736cfef
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 
 ## Général
 
-- Le module [Recherche avancée](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search) est désactivé lors de l’installation de [!DNL Live Search] et le lien Recherche avancée dans le pied de page du storefront est supprimé.
-- [Tarification de niveau](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/pricing/product-price-tier) n’est pas pris en charge dans le champ [!DNL Live Search] et le widget de page de liste de produits.
-- Les prix des produits ne comprennent pas la taxe sur la valeur ajoutée (TVA).
+- Le module [Recherche avancée](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) est désactivé lors de l’installation de [!DNL Live Search] et le lien Recherche avancée dans le pied de page du storefront est supprimé.
+- [Tarification de niveau](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) n’est pas pris en charge dans le champ [!DNL Live Search] et le widget de page de liste de produits.
+- Les prix des produits incluent la taxe sur la valeur ajoutée (TVA), mais [!DNL Live Search] ne pouvez pas afficher la TVA comme une valeur distincte.
 - La recherche de contenu (pages et blocs CMS) n’est pas prise en charge.
 - Le nombre maximal de résultats pouvant être paginés est de 10 000. Pour vous assurer que les acheteurs n’ont pas à utiliser une pagination profonde lorsqu’une catégorie ou un résultat de recherche inclut un grand nombre de produits, fournissez des moyens significatifs de filtrer les produits.
 - La limite stricte est de 1 Mo par attribut, y compris la description et les attributs personnalisés.
@@ -27,6 +27,7 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 - Les attributs personnalisés créés par programmation avec `"is_user_defined": false` ne sont pas pris en charge.
 - Vous pouvez filtrer les résultats à l’aide des conditions « commence par » ou « contient » avec certaines limitations comme décrit [ici](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations).
 - Vous ne pouvez effectuer le suivi des mesures de performances que l’année dernière.
+- Si une requête de recherche contient plusieurs mots, l’espace vide entre les mots les traite comme des termes de recherche distincts. Utilisez [synonymes](./synonyms.md) si vous souhaitez tenir compte des requêtes de recherche à plusieurs mots.
 
 ## Indexation
 
@@ -41,7 +42,7 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 ## Facettes
 
 - Un maximum de 100 attributs peuvent être configurés en tant que facettes à partir des 200 attributs filtrables qui peuvent être indexés.
-- Dans une facette, 100 intervalles au maximum peuvent être renvoyés. Si vous devez renvoyer plus de 100 compartiments, [créez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) afin qu’Adobe puisse analyser l’impact sur les performances et déterminer s’il est possible d’augmenter cette limite pour votre environnement.
+- Dans une facette, 100 intervalles au maximum peuvent être renvoyés. Si vous devez renvoyer plus de 100 compartiments, [créez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) afin qu’Adobe puisse analyser l’impact sur les performances et déterminer s’il est possible d’augmenter cette limite pour votre environnement.
 - Les facettes dynamiques peuvent entraîner des problèmes de performances dans les index volumineux et les index de haute ordinalité. Si vous avez créé des facettes dynamiques et que vous constatez une dégradation des performances ou que la page ne se charge pas avec des erreurs de délai d’expiration, essayez de remplacer vos facettes par épinglées afin de déterminer si cela résout votre problème de performances.
 - L’état des stocks (`quantity_and_stock_status`) n’est pas pris en charge en tant que facette. Vous pouvez utiliser `inStock: 'true'` pour filtrer les produits en rupture de stock. Cette fonctionnalité est prise en charge prête à l’emploi dans le module `LiveSearchAdapter` lorsque la valeur « True » est affectée à « Afficher les produits en rupture de stock » dans l’Administration des [!DNL Commerce].
 - Les attributs de type date ne sont pas pris en charge sous la forme d’une facette.
@@ -76,12 +77,12 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 ## Autorisations B2B et de catégorie
 
 - Les produits ne s’affichent pas s’ils ne sont pas ajoutés à un catalogue partagé par défaut.
-- Pour restreindre les groupes de clients à l’aide des [autorisations de catégorie](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/categories/category-permissions) :
+- Pour restreindre les groupes de clients à l’aide des [autorisations de catégorie](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions) :
    - Les produits doivent être affectés à la catégorie racine. (**Remarque :** vous pouvez supprimer cette limitation en mettant à jour l’extension d’exportation de données SaaS vers la version 103.4.0+. Voir [Gérer l’extension d’exportation des données](../data-export/manage-extension.md).
    - Le groupe de clients « Non connecté » doit se voir attribuer des autorisations de navigation « Autoriser ».
-   - Pour limiter les produits au groupe de clients « Non connecté », accédez à chaque catégorie et définissez des autorisations pour chaque [groupe de clients](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
+   - Pour limiter les produits au groupe de clients « Non connecté », accédez à chaque catégorie et définissez des autorisations pour chaque [groupe de clients](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - La prise en charge prête à l’emploi du B2B avec le widget PLP sur PWA Studio n’est pas prise en charge à ce stade. Cependant, vous pouvez [utiliser l’API](install.md#pwa-support) pour implémenter cette fonctionnalité.
-- Les facettes de catégories dans [!DNL Live Search] peuvent afficher des catégories qui ne sont pas affichables pour un [groupe de clients](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) spécifique.
+- Les facettes de catégories dans [!DNL Live Search] peuvent afficher des catégories qui ne sont pas affichables pour un [groupe de clients](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) spécifique.
 - [!DNL Live Search] peut prendre en charge jusqu’à 1 000 groupes de clients.
 
 ## [!DNL Storefront popover]
@@ -96,9 +97,9 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 
 Pour obtenir de l’aide sur la résolution de certains problèmes courants dans [!DNL Live Search], consultez les articles de la base de connaissances suivants :
 
-- [[!DNL Live Search] catalogue non synchronisé](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
-- [[!DNL Live Search] le tableau de bord et le classement des résultats de recherche sont incorrects](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
-- [[!DNL Live Search] affiche les produits en rupture de stock, quels que soient les paramètres d’état de stock dans Admin](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
-- [[!DNL Live Search] les facettes ne sont pas triées par ordre alphabétique](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+- [[!DNL Live Search] catalogue non synchronisé](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search] le tableau de bord et le classement des résultats de recherche sont incorrects](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search] affiche les produits en rupture de stock, quels que soient les paramètres d’état de stock dans Admin](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
+- [[!DNL Live Search] les facettes ne sont pas triées par ordre alphabétique](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
 
-Si vous avez besoin d’aide supplémentaire, contactez l’[assistance ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si vous avez besoin d’aide supplémentaire, contactez l’[assistance ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

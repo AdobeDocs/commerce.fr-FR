@@ -2,16 +2,17 @@
 title: Qu'est-ce que  [!DNL Live Search] ?
 description: '[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, pertinente et intuitive.'
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
+source-git-commit: 29374c45f57e923666e255bfefadd9a1e736cfef
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
 
 # Qu’est-ce qu’[!DNL Live Search] ?
 
-[!DNL Live Search] est une fonctionnalité qui remplace les fonctionnalités de recherche standard d’Adobe Commerce. La fonctionnalité [!DNL Live Search] est installée avec le compositeur et connecte votre magasin de [!DNL Commerce] au connecteur de services Commerce [&#128279;](../landing/saas.md). Lorsqu’il est configuré, le champ de texte de recherche par défaut est remplacé par le champ de texte [!DNL Live Search]. [!DNL Live Search] installe également le widget Page de liste de produits (PLP), qui offre des fonctionnalités de filtrage robustes lors de la navigation dans les résultats de recherche.
+[!DNL Live Search] est une fonctionnalité qui remplace les fonctionnalités de recherche standard d’Adobe Commerce. La fonctionnalité [!DNL Live Search] est installée avec le compositeur et connecte votre magasin de [!DNL Commerce] au connecteur de services Commerce [](../landing/saas.md). Lorsqu’il est configuré, le champ de texte de recherche par défaut est remplacé par le champ de texte [!DNL Live Search]. [!DNL Live Search] installe également le widget Page de liste de produits (PLP), qui offre des fonctionnalités de filtrage robustes lors de la navigation dans les résultats de recherche.
 
 Avec [!DNL Live Search], vous pouvez :
 
@@ -34,13 +35,13 @@ Du côté Adobe Commerce de l’architecture, vous pouvez héberger la recherche
 
 En mettant l&#39;accent sur la vitesse, la pertinence et la facilité d&#39;utilisation, [!DNL Live Search] change la donne pour les acheteurs et les commerçants. Regardez la vidéo suivante, puis faites un tour rapide de [!DNL Live Search] depuis le storefront.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452571?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-Pour visionner une vidéo plus détaillée sur l’utilisation et la configuration de la recherche en direct, reportez-vous à la rubrique [Démonstration complète sur [!DNL Live Search]](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
+Pour visionner une vidéo plus détaillée sur l’utilisation et la configuration de la recherche en direct, reportez-vous à la rubrique [Démonstration complète sur [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
 ### Rechercher en cours de frappe
 
-[!DNL Live Search] répond avec des suggestions de produits et une image miniature des principaux résultats de recherche dans une [fenêtre contextuelle](storefront-popover.md) lorsque les acheteurs saisissent des requêtes dans la zone [Rechercher](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search). La page [détails du produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/storefront/storefront) s’affiche lorsque les acheteurs cliquent sur un produit suggéré ou en vedette. Un lien _Afficher tout_ dans le pied de page de la fenêtre contextuelle affiche la page des résultats de la recherche.
+[!DNL Live Search] répond avec des suggestions de produits et une image miniature des principaux résultats de recherche dans une [fenêtre contextuelle](storefront-popover.md) lorsque les acheteurs saisissent des requêtes dans la zone [Rechercher](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search). La page [détails du produit](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) s’affiche lorsque les acheteurs cliquent sur un produit suggéré ou en vedette. Un lien _Afficher tout_ dans le pied de page de la fenêtre contextuelle affiche la page des résultats de la recherche.
 
 [!DNL Live Search] renvoie des résultats de type « recherche en cours de frappe » pour une requête comportant au moins deux caractères. Pour une correspondance partielle, le nombre maximal de caractères par mot est de 20. Le nombre de caractères de la requête n’est pas configurable. La fenêtre contextuelle inclut les champs `name`, `sku` et `category_ids`.
 
@@ -51,6 +52,18 @@ Pour visionner une vidéo plus détaillée sur l’utilisation et la configurati
 Pour répertorier tous les produits renvoyés par la requête « rechercher en cours de frappe », cliquez sur _Afficher tout_ dans le pied de page de la fenêtre contextuelle.
 
 ![Exemple de storefront - facettes de prix](assets/storefront-view-all-search-results.png)
+
+### Gestion [!DNL Live Search] fautes de frappe
+
+Lorsqu’une recherche est effectuée, [!DNL Live Search] exécute une recherche non floue qui ne tient pas compte des fautes de frappe. Si aucun résultat n’est trouvé, [!DNL Live Search] effectue une seconde recherche floue, qui prend en compte les fautes de frappe mineures. La recherche floue est exécutée avec une distance de modification maximale de 1. Cette distance de modification utilise le concept de [distance de Levenshtein](https://en.wikipedia.org/wiki/Levenshtein_distance) et permet trois types d&#39;opérations :
+
+| Fonctionnement | Description | Exemple |
+|---|---|---|
+| Insertion | Ajout d’un caractère. | « cat » -> « panier » |
+| Suppression | Suppression d’un caractère. | « cart » -> « cat » |
+| Substitution | Remplacer un caractère par un autre. | « cart » -> « cast » |
+
+En plus de la logique de recherche floue, les transpositions sont également prises en compte, c’est-à-dire que deux caractères adjacents d’un mot sont intervertis, par exemple « the » au lieu de « the ». Notez que ces limites de modification sont définies par mot et non par expression dans son ensemble.
 
 ### Recherche filtrée avec facettes
 
@@ -68,7 +81,7 @@ Le marchandisage [règles](rules.md) façonne l’expérience d’achat avec des
 
 ### Prise en charge des termes de recherche
 
-[!DNL Live Search] prend en charge Commerce [redirections de termes de recherche](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-terms). Par exemple, les utilisateurs peuvent rechercher un terme tel que « Frais d’expédition » et accéder directement à la page des frais d’expédition.
+[!DNL Live Search] prend en charge Commerce [redirections de termes de recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). Par exemple, les utilisateurs peuvent rechercher un terme tel que « Frais d’expédition » et accéder directement à la page des frais d’expédition.
 
 ## Composants Live Search
 
@@ -88,4 +101,4 @@ L’[!DNL Live Search] [espace de travail](workspace.md) est la zone de l’Admi
 
 Si vous n’envoyez pas de requête de recherche pour les données du catalogue dans votre environnement de test pendant 90 jours consécutifs, les données du catalogue sont définies en mode veille et aucune donnée n’est renvoyée pour une requête de recherche. Les données de catalogue de votre environnement de production ne sont pas affectées par cette politique.
 
-Pour réactiver les données du catalogue dans votre environnement de test, [envoyez une demande d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Live Search] » et incluez les identifiants d’environnement. Les données du catalogue de votre environnement de test doivent être restaurées dans les heures qui suivent.
+Pour réactiver les données du catalogue dans votre environnement de test, [envoyez une demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Live Search] » et incluez les identifiants d’environnement. Les données du catalogue de votre environnement de test doivent être restaurées dans les heures qui suivent.

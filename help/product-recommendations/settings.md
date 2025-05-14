@@ -1,9 +1,10 @@
 ---
 title: Paramètres
 description: Découvrez comment modifier la source de vos  [!DNL Product Recommendations]  et comment activer les recommandations visuelles.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
+source-git-commit: c11e3fbc871600f413867e0c5c0b75ad705cf115
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Les ordres intermédiaires sont enregistrés à l’aide de l’`environmentId` 
 
 >[!NOTE]
 >
->Lors de l’utilisation de Product Recommendations via REST, le paramètre `alternateEnvironmentId` peut être utilisé pour spécifier d’autres espaces de données. Ce paramètre n’est pas disponible lors de l’utilisation de Product Recommendations via GraphQL.
+>Lors de l’utilisation de Product Recommendations via REST, le paramètre `alternateEnvironmentId` peut être utilisé pour spécifier d’autres espaces de données. Lors de l’utilisation de Product Recommendations via [GraphQL](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/), ce paramètre n’est pas disponible.
 
 ## Choisir la source des recommandations
 
