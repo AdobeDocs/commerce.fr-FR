@@ -272,7 +272,7 @@ Ces valeurs définissent l&#39;identifiant du canal, le paramètre régional et 
    }
    ```
 
-   Pour plus d’informations, consultez la documentation de la bibliothèque Sidekick [](https://www.aem.live/docs/sidekick-library).
+   Pour plus d’informations, consultez la documentation de la bibliothèque Sidekick [&#128279;](https://www.aem.live/docs/sidekick-library).
 
 +++
 
@@ -314,7 +314,7 @@ Ces valeurs définissent l&#39;identifiant du canal, le paramètre régional et 
    }
    ```
 
-+++
+   +++
 
 1. Enregistrez le fichier.
 
