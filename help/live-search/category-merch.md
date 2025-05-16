@@ -3,9 +3,10 @@ title: Marchandisage de catégorie
 description: Utilisez  [!DNL Live Search]  marchandisage de catégorie pour une expérience d’achat plus rapide.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-source-git-commit: e5e5443e0bdb12e4774856336157067b4ff6eb7c
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ Le marchandisage de catégorie permet aux propriétaires de magasin d’applique
 
 Cette vidéo présente le marchandisage des catégories.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448853?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 Cette fonctionnalité est accessible dans l’administration à l’adresse **Marketing** > SEO et recherche > **[!DNL Live Search]** > **Marchandisage de catégorie**.
 
