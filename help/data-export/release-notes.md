@@ -4,9 +4,9 @@ description: Dernières informations de mise  [!DNL Data Export Extension]  jour
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 5e5b3340f45b5db7a6a01ed1b89c42f6399f66b9
+source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,14 @@ Les mises à jour incluent :
 >L’extension d’exportation de données SaaS est un ensemble de modules installés automatiquement avec Live Search, Product Recommendations et Catalog Service. Vous pouvez vérifier la version installée sur votre système à l’aide du compositeur. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Version majeure actuelle
+
+## Version 103.4.4
+
+![Nouveau](../assets/new.svg) Ajout d’un message d’avertissement qui s’affiche lorsque l’argument `cleanup-feed` est ajouté à la commande de l’interface de ligne de commande `saas:resync`. L’option `--cleanup-feed` doit être utilisée avec précaution et uniquement dans des scénarios spécifiques, comme après le nettoyage de l’environnement ou avec l’option `--dry-run` . Son utilisation dans d’autres cas peut entraîner une perte de données et des problèmes de synchronisation. <!--MDEE-1047-->
+![Correctif](../assets/fix.svg) Ajout du `x-request-id` de la réponse du serveur pour une meilleure traçabilité. <!--MDEE-1041-->
+![Correction](../assets/fix.svg) correction d’un problème en raison duquel l’état de synchronisation n’était pas enregistré pour l’ensemble du lot de flux, ce qui entraînait une resynchronisation inutile. <!--MDEE-1049-->
+![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel tous les flux du lot de flux étaient ignorés lors de la synchronisation si un flux contenait une erreur. <!--MDEE-976-->
+![Correctif](../assets/fix.svg) Ajout de la prise en charge des dimensions dans l’indexeur des autorisations de catégorie. <!--MDEE-654-->
 
 ## Version 103.4.3
 
