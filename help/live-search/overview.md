@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Qu’est-ce qu’[!DNL Live Search] ?
 
-[!DNL Live Search] est une fonctionnalité qui remplace les fonctionnalités de recherche standard d’Adobe Commerce. La fonctionnalité [!DNL Live Search] est installée avec le compositeur et connecte votre magasin de [!DNL Commerce] au connecteur de services Commerce [](../landing/saas.md). Lorsqu’il est configuré, le champ de texte de recherche par défaut est remplacé par le champ de texte [!DNL Live Search]. [!DNL Live Search] installe également le widget Page de liste de produits (PLP), qui offre des fonctionnalités de filtrage robustes lors de la navigation dans les résultats de recherche.
+[!DNL Live Search] est une fonctionnalité qui remplace les fonctionnalités de recherche standard d’Adobe Commerce. La fonctionnalité [!DNL Live Search] est installée avec le compositeur et connecte votre magasin de [!DNL Commerce] au connecteur de services Commerce [&#128279;](../landing/saas.md). Lorsqu’il est configuré, le champ de texte de recherche par défaut est remplacé par le champ de texte [!DNL Live Search]. [!DNL Live Search] installe également le widget Page de liste de produits (PLP), qui offre des fonctionnalités de filtrage robustes lors de la navigation dans les résultats de recherche.
 
 Avec [!DNL Live Search], vous pouvez :
 
