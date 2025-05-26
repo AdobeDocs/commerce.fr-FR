@@ -4,7 +4,7 @@ description: Découvrez les principales fonctionnalités et avantages de  [!DNL 
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 source-git-commit: 8fd5e1570b74651b8576d72d57eb8f7f67bbd450
 workflow-type: tm+mt
 source-wordcount: '1164'
@@ -40,13 +40,13 @@ Ce diagramme illustre le flux de données entre [!DNL Adobe Commerce as a Cloud 
 
 ## Commerce Storefront
 
-Utilisez Adobe [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) optimisé par Edge Delivery Services pour créer des expériences riches en quelques minutes avec une création simple basée sur des documents ou une modification visuelle avec Storefront Builder.
+Utilisez Adobe [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=fr) optimisé par Edge Delivery Services pour créer des expériences riches en quelques minutes avec une création simple basée sur des documents ou une modification visuelle avec Storefront Builder.
 
 Le storefront Commerce est entièrement découplé avec une architecture découplée qui fournit tous les services et données de marchandisage via une couche d’API GraphQL. Cette architecture permet aux équipes de développer leurs interfaces indépendamment de Commerce Foundation, offrant ainsi l’agilité nécessaire pour créer et tester de nouveaux points de contact avec les technologies émergentes.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] ne prend pas en charge les storefronts Luma. Si vous migrez depuis Adobe Commerce on Cloud ou on-premise, consultez [storefronts existants](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) pour obtenir des conseils sur la transition.
+>[!DNL Adobe Commerce as a Cloud Service] ne prend pas en charge les storefronts Luma. Si vous migrez depuis Adobe Commerce on Cloud ou on-premise, consultez [storefronts existants](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=fr#existing-storefronts) pour obtenir des conseils sur la transition.
 
 ## Services de marchandisage et services de paiement
 
@@ -61,7 +61,7 @@ Adobe fournit un ensemble riche de services de marchandisage intelligents et com
 
 Simplifiez la gestion des ressources à l’aide d’un système de gestion des ressources numériques (DAM) robuste qui s’intègre à Adobe Experience Manager pour gérer le contenu multimédia. Sinon, la mini-gestion des ressources numériques native fournit des outils de gestion des ressources de base pour le stockage et la gestion des ressources numériques.
 
-Voir [Gestion des ressources](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) pour en savoir plus.
+Voir [Gestion des ressources](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) pour en savoir plus.
 
 ## Plateforme du développeur
 
@@ -116,7 +116,7 @@ Les développeurs peuvent utiliser des API [GraphQL et REST complètes](https://
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 
