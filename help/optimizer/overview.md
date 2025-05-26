@@ -35,7 +35,7 @@ Si vous souhaitez en savoir plus sur le programme d’accès anticipé [!DNL Ado
 
 Regardez la vidéo suivante pour un aperçu général de [!DNL Adobe Commerce Optimizer] :
 
->[!VIDEO](https://video.tv.adobe.com/v/3450465?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Qui profite le plus de [!DNL Adobe Commerce Optimizer] ?
 
