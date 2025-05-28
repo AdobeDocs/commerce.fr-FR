@@ -5,10 +5,10 @@ title: Services pour Adobe Commerce
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: bdca30390e28b639a49eee269a64e56389d10709
+source-git-commit: a6cb62e63a057cdad092bcc283c86c6aa003d438
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 37%
+source-wordcount: '62'
+ht-degree: 38%
 
 ---
 
@@ -19,17 +19,16 @@ ht-degree: 37%
    - [Notes de mise à jour](/help/landing/release-notes-all.md)
 - [Solutions de produit](product-solutions.md)
 - Services Commerce {#commerce-services}
-   - Services Commerce {#commerce-services}
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=fr)
-   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=fr)
-   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=fr)
-   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=fr)
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
+   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
+   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html)
+   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html)
 - Services d’intégration {#integration-services}
-   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=fr)
+   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html)
    - [Connecteur de services](/help/landing/saas.md)
 - Outils de données {#data-services}
-   - [Exportation de données SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=fr)
-   - [ Indexation des prix SaaS ](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=fr)
+   - [Exportation de données SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html)
+   - [ Indexation des prix SaaS ](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html)
    - [Synchronisation des catalogues](/help/landing/catalog-sync.md)
 
 
