@@ -25,5 +25,5 @@ Le service de catalogue fournit les requêtes suivantes :
 | `variants` | Renvoie des détails sur toutes les variations d’un produit. | Utile pour afficher des images de variantes sur les détails du produit ou répertorier les pages sans envoyer plusieurs requêtes d’API. [Voir exemple.](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-variants/) |
 
 
-Pour plus d’informations sur l’utilisation de ces requêtes](https://developer.adobe.com/commerce/services/graphql/catalog-service/) consultez le [ Guide de l’API Catalog Service
+Pour plus d’informations sur l’utilisation de ces requêtes[&#128279;](https://developer.adobe.com/commerce/services/graphql/catalog-service/) consultez le  Guide de l’API Catalog Service
 
