@@ -18,7 +18,7 @@ Améliorez l’engagement des clients en ajoutant votre propre liste de synonyme
 ## Étape 1 : ajouter un synonyme
 
 1. Dans Admin, accédez à **Marketing** > SEO et recherche > **[!DNL Live Search]**.
-1. Pour plusieurs magasins, définissez **Portée** sur la vue [ magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où les paramètres de synonyme s’appliquent.
+1. Pour plusieurs magasins, définissez **Portée** sur la vue [ magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) où les paramètres de synonyme s’appliquent.
 1. Cliquez sur l’onglet **Synonymes**.
 1. Cliquez sur le bouton **Ajouter des synonymes**.
 
