@@ -2,23 +2,23 @@
 title: Ajouter des synonymes
 description: Ajoutez  [!DNL Live Search]  synonymes pour améliorer la réponse aux requêtes de recherche.
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: 6dcfd0a54e6a6814b7f5708e0c221452b8af4537
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # Ajouter des synonymes
 
-Améliorez l’engagement des clients en ajoutant votre propre liste de synonymes [!DNL Live Search]. [!DNL Live Search] pouvez gérer jusqu’à 200 synonymes par `Data Space ID`.
+Améliorez l’engagement des clients en ajoutant votre propre liste de synonymes [!DNL Live Search]. [!DNL Live Search] pouvez gérer jusqu’à 200 synonymes par affichage de magasin.
 
 ![[!DNL Live Search] synonymes ](assets/synonym-workspace.png)
 
 ## Étape 1 : ajouter un synonyme
 
 1. Dans Admin, accédez à **Marketing** > SEO et recherche > **[!DNL Live Search]**.
-1. Pour plusieurs magasins, définissez **Portée** sur la vue [ magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) où les paramètres de synonyme s’appliquent.
+1. Pour plusieurs magasins, définissez **Portée** sur la vue [ magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où les paramètres de synonyme s’appliquent.
 1. Cliquez sur l’onglet **Synonymes**.
 1. Cliquez sur le bouton **Ajouter des synonymes**.
 
