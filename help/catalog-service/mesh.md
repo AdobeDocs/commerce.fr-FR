@@ -3,9 +3,10 @@ title: '[!DNL Catalog Service and API Mesh]'
 description: '[!DNL API Mesh] pour Adobe Commerce permet d’intégrer plusieurs sources de données par le biais d’un point d’entrée GraphQL commun.'
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
+source-git-commit: ca0b2b2a158b9a376724b30c80a6bf9a60e3d1ba
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -16,26 +17,31 @@ Le [maillage API pour Adobe Developer App Builder](https://developer.adobe.com/g
 
 ![Diagramme d’architecture de catalogue](assets/catalog-service-architecture-mesh.png)
 
-La première étape pour utiliser le maillage API avec Catalog Service consiste à connecter le maillage API à votre instance. Voir les instructions détaillées dans [Création d’un maillage](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+Pour utiliser le maillage API avec le service de catalogue, vous devez connecter le maillage API à votre instance, puis ajouter la source de maillage API [CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/) qui fournit la configuration pour la connexion au service de catalogue.
 
-Pour terminer la configuration, installez le package [Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+## Connectez-vous et configurez le maillage API.
 
-Une fois que le maillage est configuré sur Adobe I/O Runtime, exécutez la commande suivante afin d’ajouter une source de `CommerceCatalogServiceGraph` à votre maillage.
+1. Connectez le maillage API à votre instance Adobe Commerce en suivant les instructions de la section [Création d’un maillage](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) du guide de développement du _maillage API_.
 
-```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
-```
+   Si c’est la première fois que vous utilisez le maillage API, suivez le processus [Prise en main](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) avant de créer le maillage.
 
-Où `variables.json` est un fichier distinct qui stocke les valeurs couramment utilisées pour Adobe I/O Runtime.
-Par exemple, la clé API peut être enregistrée dans le fichier :
+1. Créez un fichier JSON, tel que `variables.json` qui contient la clé API Catalog Service pour votre projet à l’aide du format suivant.
 
-```json
-{
-    "CATALOG_SERVICE_API_KEY":"your_api_key"
-}
-```
+   ```json
+   {
+       "CATALOG_SERVICE_API_KEY":"your_api_key"
+   }
+   ```
 
-Après avoir exécuté cette commande, le service de catalogue doit s’exécuter via le maillage API. Vous pouvez exécuter la commande `aio api-mesh:get` pour afficher la configuration du maillage mis à jour.
+1. Ajoutez la source `CommerceCatalogServiceGraph` à votre maillage à l’aide de l’[interface de ligne de commande Adobe I/O extensible](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli).
+
+   ```bash
+   aio api-mesh source install "CommerceCatalogServiceGraph" -f variables.json
+   ```
+
+   L’option `-f variables.json` fournit la valeur de clé API Catalog Service requise pour mettre à jour la configuration.
+
+Après avoir exécuté cette commande, le service de catalogue doit s’exécuter via le maillage API. Utilisez la commande `aio api-mesh get` pour afficher la configuration du maillage mis à jour.
 
 ## Exemples de maillage API
 
