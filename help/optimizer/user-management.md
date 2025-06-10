@@ -48,7 +48,7 @@ Vous pouvez affecter des utilisateurs à l’un des rôles suivants :
 
 >[!BEGINSHADEBOX « Conditions préalables »]
 >
-La mise en service suivante est requise pour User Management :
+>La mise en service suivante est requise pour User Management :
 
 * Organisation IMS configurée pour [!DNL Adobe Commerce Optimizer]
 * Un compte Adobe Experience Cloud dans la même organisation IMS avec le rôle d’administrateur système ou de produit.
