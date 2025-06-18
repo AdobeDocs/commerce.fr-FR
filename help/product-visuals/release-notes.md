@@ -20,7 +20,7 @@ Ces notes de mise à jour décrivent la version initiale des visuels de produit 
 
 Pour les modifications et correctifs de fonctionnalités publiés en dehors de la version standard de mise à jour des fonctionnalités, consultez les sections _Mises à jour de service hébergées_ .
 
-Pour en savoir plus sur les prochaines versions, la prise en charge des produits et les versions d’Adobe Commerce qui prennent en charge l’extension d’intégration d’AEM Assets, consultez les rubriques Adobe Commerce [Calendrier des versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) et [Disponibilité du produit](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Pour en savoir plus sur les prochaines versions, la prise en charge des produits et les versions d’Adobe Commerce qui prennent en charge l’extension d’intégration d’AEM Assets, consultez les rubriques Adobe Commerce [Calendrier des versions](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule) et [Disponibilité du produit](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability).
 
 ## Mises à jour des services hébergés
 

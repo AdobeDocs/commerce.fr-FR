@@ -26,4 +26,4 @@ ht-degree: 6%
    - [Correspondance automatique personnalisée](synchronize/custom-match.md)
    - [Sélection manuelle des ressources](synchronize/asset-selector-integration.md)
 - [Types de médias et cas d’utilisation](manage-assets.md)
-- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)

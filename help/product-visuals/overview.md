@@ -30,7 +30,7 @@ L’intégration d’Adobe Commerce et de Product Visuals relève ce défi en au
 
 Pour tirer parti de cette intégration, les entreprises doivent répondre aux exigences suivantes :
 
-* Licences actives pour Adobe Commerce, Adobe Experience Manager Assets et [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
+* Licences actives pour Adobe Commerce, Adobe Experience Manager Assets et [AEM Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
 
 * Adobe Commerce 2.4.5+
 
@@ -40,7 +40,7 @@ Pour tirer parti de cette intégration, les entreprises doivent répondre aux ex
 
 * Adobe Experience Manager est configuré avec [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/overview)
 
-* L’utilisateur d’Adobe Commerce qui configure l’intégration doit avoir accès à l’organisation [IMS](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) où le projet AEM Assets est configuré.
+* L’utilisateur d’Adobe Commerce qui configure l’intégration doit avoir accès à l’organisation [IMS](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) où le projet AEM Assets est configuré.
 
 >[!BEGINSHADEBOX]
 
@@ -70,4 +70,4 @@ L’activation de l’intégration de Commerce à Experience Manager Assets est 
 
 ## Support technique
 
-Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, contactez votre représentant commercial chargé de l’intégration AEM Assets ou créez un [ ticket d’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour recevoir de l’aide supplémentaire.
+Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, contactez votre représentant commercial chargé de l’intégration AEM Assets ou créez un [ ticket d’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour recevoir de l’aide supplémentaire.

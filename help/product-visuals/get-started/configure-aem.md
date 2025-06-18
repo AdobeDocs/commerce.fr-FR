@@ -47,9 +47,9 @@ Le modèle standard ajoute les ressources suivantes à l’environnement de cré
 
 Vous avez besoin des ressources et autorisations suivantes pour déployer le package `commerce-assets` dans l’environnement AEM Assets as a Cloud Service AEM :
 
-* [Accès au programme et aux environnements AEM Assets Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) avec les rôles Responsable de programme et de déploiement .
+* [Accès au programme et aux environnements AEM Assets Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) avec les rôles Responsable de programme et de déploiement .
 
-* Un [environnement de développement AEM local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) et une connaissance du processus de développement local d’AEM.
+* Un [environnement de développement AEM local](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) et une connaissance du processus de développement local d’AEM.
 
 * Découvrez la structure de projet [AEM et comment déployer ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) packages de contenu personnalisés à l’aide de Cloud Manager.
 
@@ -61,11 +61,11 @@ Vous avez besoin des ressources et autorisations suivantes pour déployer le pac
 
 1. À partir de GitHub, téléchargez le code à partir du fichier standard AEM Commerce [&#128279;](https://github.com/ankumalh/assets-commerce).
 
-1. À partir de votre [environnement de développement AEM local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), installez le code personnalisé dans la configuration de votre environnement AEM Assets sous la forme d’un package Maven ou en copiant manuellement le code dans la configuration du projet existant.
+1. À partir de votre [environnement de développement AEM local](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), installez le code personnalisé dans la configuration de votre environnement AEM Assets sous la forme d’un package Maven ou en copiant manuellement le code dans la configuration du projet existant.
 
 1. Validez les modifications et envoyez votre branche de développement local au référentiel Git de Cloud Manager.
 
-1. Depuis AEM Cloud Manager, [déployez votre code pour mettre à jour l’environnement AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
+1. Depuis AEM Cloud Manager, [déployez votre code pour mettre à jour l’environnement AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
 ## Facultatif. Configuration d’un profil de métadonnées
 

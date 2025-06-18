@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Correspondance automatique personnalisée
 
-Si la stratégie de correspondance automatique par défaut (**correspondance automatique prête à l’emploi**) n’est pas alignée avec les besoins spécifiques de votre entreprise, sélectionnez l’option Correspondance personnalisée . Cette option prend en charge l’utilisation de [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) pour développer une application de correspondance personnalisée qui gère une logique de correspondance complexe, ou des ressources provenant d’un système tiers qui ne peut pas renseigner les métadonnées des visuels de produit dans AEM Assets.
+Si la stratégie de correspondance automatique par défaut (**correspondance automatique prête à l’emploi**) n’est pas alignée avec les besoins spécifiques de votre entreprise, sélectionnez l’option Correspondance personnalisée . Cette option prend en charge l’utilisation de [Adobe Developer App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) pour développer une application de correspondance personnalisée qui gère une logique de correspondance complexe, ou des ressources provenant d’un système tiers qui ne peut pas renseigner les métadonnées des visuels de produit dans AEM Assets.
 
 ## Configuration de la correspondance automatique personnalisée
 
@@ -24,7 +24,7 @@ Si la stratégie de correspondance automatique par défaut (**correspondance aut
 
 ## Points d’entrée de l’API de correspondance personnalisés
 
-Lorsque vous créez une application de correspondance personnalisée à l’aide d’[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l’application doit exposer les points d’entrée suivants :
+Lorsque vous créez une application de correspondance personnalisée à l’aide d’[App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l’application doit exposer les points d’entrée suivants :
 
 * **Ressource App Builder vers l’URL du produit** point d’entrée
 * **Point d’entrée du produit App Builder vers l’URL de la ressource**
@@ -144,4 +144,4 @@ GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to
 
 >[!TIP]
 >
-> Dans la clé `asset_roles`, utilisez les rôles de ressources [Commerce pris en charge](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) tels que `thumbnail`, `image`, `small_image` et `swatch_image`.
+> Dans la clé `asset_roles`, utilisez les rôles de ressources [Commerce pris en charge](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) tels que `thumbnail`, `image`, `small_image` et `swatch_image`.
