@@ -56,7 +56,7 @@ Pour tirer parti de cette intégration, les entreprises doivent répondre aux ex
 
 Regardez cette vidéo pour découvrir comment Adobe Commerce et AEM Assets fonctionnent ensemble pour rationaliser les workflows de contenu :
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447885?captions=fre_fr)
 
 ## Étapes suivantes
 
