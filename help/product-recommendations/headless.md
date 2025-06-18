@@ -2,7 +2,7 @@
 title: Découplé
 description: Découvrez comment intégrer  [!DNL Product Recommendations]  dans un storefront découplé.
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
-source-git-commit: 45bf78cb4ed975e0803e5ab2701d444fed16d2bb
+source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Vous pouvez intégrer [!DNL Product Recommendations] dans un storefront découpl
 
 Les intégrateurs personnalisés et découplés doivent se reporter à ces instructions Luma et PWA en tant que mise en œuvre suggérée. Il existe de nombreuses façons d’implémenter les recommandations de produits dans des solutions découplées et cette documentation ne couvre pas tous les scénarios. Les intégrateurs doivent prendre en charge les événements, la conception et les tests pour leurs implémentations.
 
-[!DNL Product Recommendations] nécessitent des [données comportementales et de catalogue](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=fr) pour fonctionner. Le processus de synchronisation des données de catalogue reste inchangé dans une implémentation découplée, mais des modifications sont nécessaires pour la collecte de données comportementales.
+[!DNL Product Recommendations] nécessitent des [données comportementales et de catalogue](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) pour fonctionner. Le processus de synchronisation des données de catalogue reste inchangé dans une implémentation découplée, mais des modifications sont nécessaires pour la collecte de données comportementales.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
 
 1. [Installez](install-configure.md) le module [!DNL Product Recommendations].
 
-1. Installez et utilisez le [SDK d’événement de storefront d’Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) pour déclencher les [événements comportementaux](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=fr).
+1. Installez et utilisez le [SDK d’événement de storefront d’Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) pour déclencher les [événements comportementaux](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html).
 
    Événements minimaux requis pour renvoyer [!DNL Product Recommendations] résultats :
 
@@ -56,4 +56,4 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
 
 1. Utilisez le [SDK Recommendations](https://developer.adobe.com/commerce/services/product-recommendations/) pour récupérer les unités de recommandation sur le storefront. Le SDK renvoie les données de produit nécessaires pour effectuer le rendu des unités de recommandation sur une page.
 
-1. Découvrez comment utiliser la requête [`recommendations` GraphQL](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) pour renvoyer des informations sur les blocs de recommandation de produit pour un SKU donné, etc.
+1. Découvrez comment utiliser la requête [`recommendations` GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) pour renvoyer des informations sur les blocs de recommandation de produit pour un SKU donné, etc.

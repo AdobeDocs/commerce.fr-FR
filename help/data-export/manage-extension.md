@@ -2,7 +2,8 @@
 title: '[!DNL Manage the Data Export extension]'
 description: Découvrez comment mettre à niveau l’extension et supprimer ou désactiver  [!DNL Data Export]  services d’exportation de données qui ne sont pas requis.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 94702995-d272-47b9-9560-198eee3250a6
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -20,7 +21,7 @@ comme [Live Search](/help/live-search/overview.md), [Product Recommendations](/h
 
 Si vous n’avez pas besoin de l’un des modules d’exportation de données de commerce installés, utilisez la commande de l’interface de ligne de commande `magento:module:disable` pour le désactiver.
 
-Par exemple, il existe une [API Categories](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) qui utilise en interne les données de flux des autorisations relatives aux catégories. Si vous n’utilisez pas cette API, vous pouvez désactiver l’exportation des données pour le flux d’autorisations des catégories.
+Par exemple, il existe une [API Categories](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) qui utilise en interne les données de flux des autorisations relatives aux catégories. Si vous n’utilisez pas cette API, vous pouvez désactiver l’exportation des données pour le flux d’autorisations des catégories.
 
 ```shell script
 bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCategoryPermissions
@@ -38,4 +39,4 @@ Vous pouvez mettre à jour n’importe quel module d’exportation de données C
    composer require magento/module-saas-price:103.3.1 --with-all-dependencies
    ```
 
-Si l’instance Commerce est déployée sur une infrastructure cloud, mettez à jour l’extension à partir du répertoire de votre projet cloud. Voir [Mettre à niveau une extension](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) dans le _Guide d’Adobe Commerce sur les infrastructures cloud_.
+Si l’instance Commerce est déployée sur une infrastructure cloud, mettez à jour l’extension à partir du répertoire de votre projet cloud. Voir [Mettre à niveau une extension](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) dans le _Guide d’Adobe Commerce sur les infrastructures cloud_.

@@ -3,7 +3,7 @@ title: Extension et personnalisation des données de flux d’exportation SaaS
 description: Découvrez comment étendre et personnaliser les données  [!DNL SaaS Data Export]  flux.
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
-source-git-commit: ac6c690f87e3df2ac4997d80453028829be8e657
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 L’extension [!DNL Commerce Data Export] permet d’exporter des données de l’application [!DNL Commerce] vers les services Commerce tels que Live Search, Catalog Service et Product Recommendations. Si nécessaire, vous pouvez étendre et personnaliser les données de flux pour inclure des données d’attribut supplémentaires ou modifier les données collectées.
 
-Après avoir ajouté des données d’attribut, elles sont accessibles à partir du champ [attributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type) dans le schéma GraphQL pour le service storefront.
+Après avoir ajouté des données d’attribut, elles sont accessibles à partir du champ [attributes](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) dans le schéma GraphQL pour le service storefront.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Ajoutez les attributs à la ou aux requête(`Magento\CatalogDataExporter\Model\Q
 
 ## Ajout d’attributs de produit à Adobe Commerce
 
-L’équipe de développement peut ajouter des attributs de produit accessibles à partir du champ [attributs de produit](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#output-fields) en utilisant l’une des méthodes suivantes :
+L’équipe de développement peut ajouter des attributs de produit accessibles à partir du champ [attributs de produit](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields) en utilisant l’une des méthodes suivantes :
 
 - Ajoutez l’attribut à Adobe Commerce pour l’inclure dans les données de flux `products` exportées vers les services de storefront Commerce.
 - Ajoutez l’attribut de manière dynamique pendant le processus de synchronisation des flux à l’aide d’un module externe.
@@ -59,7 +59,7 @@ Vous pouvez ajouter un attribut de produit à partir de l’administration Comme
 
 1. Ajoutez l’attribut à un jeu d’attributs selon vos besoins.
 
-Voir [Créer des attributs de produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) dans le *Guide d’administration d’Adobe Commerce*.
+Voir [Créer des attributs de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) dans le *Guide d’administration d’Adobe Commerce*.
 
 #### Créer l’attribut de produit par programmation
 
