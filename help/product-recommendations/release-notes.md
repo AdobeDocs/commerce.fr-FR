@@ -266,7 +266,7 @@ _Mars 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Correctif](../assets/fix.svg) Correction de l’erreur « Impossible de récupérer les données des options du produit » qui pouvait se produire lors de l’exportation du catalogue.
-![Correctif](../assets/fix.svg) Le symbole de devise dans la colonne _Chiffre d’affaires_ du tableau de bord _[!DNL Product Recommendations]_reflète désormais correctement la devise de base configurée.
+![Correctif](../assets/fix.svg) Le symbole de devise dans la colonne _Chiffre d’affaires_ du tableau de bord _[!DNL Product Recommendations]_&#x200B;reflète désormais correctement la devise de base configurée.
 
 ### 3.0.4 de magento/product-recommendations
 

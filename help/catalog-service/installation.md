@@ -182,7 +182,7 @@ Pour autoriser le [!DNL Catalog Service] à travers un pare-feu, ajoutez des `co
 
 Le [maillage API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces aux produits Adobe à l’aide d’Adobe IO.
 
-Pour plus d’informations sur l’installation et la configuration](mesh.md) consultez la rubrique [[!DNL Catalog Service]  et Maillage API .
+Pour plus d’informations sur l’installation et la configuration[&#128279;](mesh.md) consultez la rubrique [!DNL Catalog Service]  et Maillage API .
 
 ## Tableau de bord de gestion des données
 

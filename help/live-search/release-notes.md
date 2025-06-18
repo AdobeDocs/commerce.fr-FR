@@ -360,8 +360,8 @@ Les installations [!DNL Live Search] existantes doivent être mises à niveau ve
 ![Nouveau](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) pris en charge pour [!DNL Live Search].
 ![Nouveau](../assets/new.svg) Le processus d&#39;installation de [!DNL Live Search] est mis à jour avec des modifications de processus avancées.
 ![Correctif](../assets/fix.svg) [Recherche avancée](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) lien supprimé du pied de page du storefront.
-![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par l’API Commerce GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) lorsqu’ils sont utilisés dans le cadre de la version bêta de PWA : `description`, `name`, `short_description`
-![Bogue](../assets/bug.svg) la version bêta de PWA for [!DNL Live Search] ne prend pas en charge [la gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).[
+![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par l’API Commerce GraphQL lorsqu’ils sont utilisés dans le cadre de la version bêta de PWA : `description`, `name`, `short_description`
+![Bogue](../assets/bug.svg) la version bêta de PWA for [!DNL Live Search] ne prend pas en charge [la gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).[&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)
 
 ### [!DNL Live Search] 3.1
 
