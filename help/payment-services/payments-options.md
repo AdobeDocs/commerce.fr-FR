@@ -3,9 +3,9 @@ title: Options de paiement
 description: Définissez les options de paiement afin de personnaliser les méthodes disponibles pour les clients de votre boutique.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 0d00ce6e5291b3753cb7e2ee9e8af262b2c8894f
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,10 @@ Avec [!DNL Apple Pay], les commerçants peuvent offrir une expérience de passag
 ![Bouton Apple Pay dans le mini-graphique](assets/applepay-button.png){width="500" zoomable="yes"}
 
 Lorsqu’il est activé, le bouton [!DNL Apple Pay] est visible à partir de la page produit, du mini-panier, du panier et des vues de passage en caisse. Vous pouvez configurer [!DNL Apple Pay] dans la configuration du magasin ou dans l’Accueil de l’extension.
+
+>[!NOTE]
+>
+>  Le certificat de vérification du domaine Apple Pay est déjà inclus dans le code Payment Services. Vérifiez que le chemin d’accès `/.well-known/apple-developer-merchantid-domain-association` renvoie un code de réponse 200. Pour plus d’informations sur le certificat **Vérification du domaine Pay d’Apple**, consultez la documentation du développeur [PayPal sur l’intégration à Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file).
 
 Voir [Paramètres](settings.md#apple-pay) pour plus d’informations.
 
@@ -130,7 +134,7 @@ Pour **capturer des paiements avec votre fournisseur de carte de crédit existan
 1. Assurez-vous que votre boutique est [en mode production](settings.md#enable-payment-services).
 1. [Configurez les boutons de paiement PayPal souhaités](settings.md#payment-buttons).
 1. Désactivez _off_ l’option **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** dans la section _[!UICONTROL Payment buttons]_.
-1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_&#x200B;et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=fr#payments).
+1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
 ## Options de passage en caisse
 
