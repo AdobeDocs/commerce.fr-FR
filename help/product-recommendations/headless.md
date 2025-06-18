@@ -15,7 +15,7 @@ Vous pouvez intégrer [!DNL Product Recommendations] dans un storefront découpl
 
 Les intégrateurs personnalisés et découplés doivent se reporter à ces instructions Luma et PWA en tant que mise en œuvre suggérée. Il existe de nombreuses façons d’implémenter les recommandations de produits dans des solutions découplées et cette documentation ne couvre pas tous les scénarios. Les intégrateurs doivent prendre en charge les événements, la conception et les tests pour leurs implémentations.
 
-[!DNL Product Recommendations] nécessitent des [données comportementales et de catalogue](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) pour fonctionner. Le processus de synchronisation des données de catalogue reste inchangé dans une implémentation découplée, mais des modifications sont nécessaires pour la collecte de données comportementales.
+[!DNL Product Recommendations] nécessitent des [données comportementales et de catalogue](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=fr) pour fonctionner. Le processus de synchronisation des données de catalogue reste inchangé dans une implémentation découplée, mais des modifications sont nécessaires pour la collecte de données comportementales.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
 
 1. [Installez](install-configure.md) le module [!DNL Product Recommendations].
 
-1. Installez et utilisez le [SDK d’événement de storefront d’Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) pour déclencher les [événements comportementaux](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html).
+1. Installez et utilisez le [SDK d’événement de storefront d’Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) pour déclencher les [événements comportementaux](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=fr).
 
    Événements minimaux requis pour renvoyer [!DNL Product Recommendations] résultats :
 
