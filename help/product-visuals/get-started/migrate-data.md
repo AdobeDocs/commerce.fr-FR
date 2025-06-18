@@ -62,7 +62,7 @@ Pour chaque fichier multimédia que vous prévoyez de migrer, saisissez les vale
 | commerce:sku | SKU de produit associés à cette ressource | Plusieurs valeurs de chaîne séparées par une barre verticale (voir le fichier csv) |
 | commerce:roles | Les rôles ou types d’images pour la ressource (par exemple, `thumbnail`, `main image`, `swatch`) | Plusieurs valeurs séparées par des points-virgules (par exemple, « miniature ; image ; image_échantillon ; image_petite ») |
 
-Code +++CSV
++++Code CSV
 
 Utilisez cet exemple de code CSV pour créer le fichier dans un éditeur de code ou une tableur telle que Microsoft Excel.
 
@@ -106,5 +106,5 @@ Voici un aperçu général de l’utilisation de l’outil.
 >[!MORELIKETHIS]
 >
 > [ Démonstration vidéo de l’outil d’importation en bloc ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
-> > [Conseils, bonnes pratiques et restrictions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> > [Chargement ou ingestion de ressources à l’aide d’API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> &#x200B;> [Conseils, bonnes pratiques et restrictions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
+> &#x200B;> [Chargement ou ingestion de ressources à l’aide d’API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)

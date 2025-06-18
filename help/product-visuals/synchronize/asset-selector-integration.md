@@ -15,7 +15,7 @@ Le **sélecteur de ressources AEM** permet aux marketeurs et aux marketeurs d’
 
 Le **sélecteur de ressources AEM** est disponible lorsque l’identifiant client IMS du projet AEM Assets a été configuré dans l’administrateur Commerce. Voir [Configuration du sélecteur de ressources AEM]&#x200B;(#configure-the-aem-asset-selector-in-adobe-commerce.
 
-Lorsque l’intégration du sélecteur de ressources AEM **** est configurée, les marketeurs et les marketeurs peuvent :
+Lorsque l’intégration du sélecteur de ressources AEM **&#x200B;**&#x200B;est configurée, les marketeurs et les marketeurs peuvent :
 
 * Gérez facilement les images de catégorie, en vous assurant qu’elles sont conformes aux directives de la marque et de la campagne.
 * [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} Attribuez des ressources directement dans Page Builder pour obtenir du contenu visuellement riche.
