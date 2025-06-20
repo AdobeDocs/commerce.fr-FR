@@ -4,9 +4,9 @@ description: Dernières informations de mise  [!DNL Data Export Extension]  jour
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: c9a87df4aa64081b51fd52d84d97fe3949045e31
+source-git-commit: 597cdd929f7abed24a68f1347a214b46664b1c75
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ Les mises à jour incluent :
 >L’extension d’exportation de données SaaS est un ensemble de modules installés automatiquement avec Live Search, Product Recommendations et Catalog Service. Vous pouvez vérifier la version installée sur votre système à l’aide du compositeur. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Version majeure actuelle
+
+## Version 103.4.6
+
+![Correctif](../assets/fix.svg) Exportez les données de produit téléchargeables Adobe Commerce à l’aide de l’attribut `ac_downloadable` à utiliser avec Adobe Commerce Optimizer. <!--MDEE-1043-->
+![Correctif](../assets/fix.svg) Correctif d’erreur d’installation critique pour Adobe Commerce version 2.4.4. <!--MDEE-1074-->
 
 ## Version 103.4.5
 
