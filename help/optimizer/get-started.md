@@ -1,75 +1,123 @@
 ---
-title: Prise en main de  [!DNL Adobe Commerce Optimizer]
+title: Prise en main
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce Optimizer].
-hide: true
+role: Admin, Developer
 recommendations: noCatalog
-exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 9c3f5d1d5e7fd57d2306502d654a854bc5c66c71
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
 
 # Prise en main
 
->[!NOTE]
->
->Cette documentation décrit un produit en développement à accès anticipé et ne reflète pas toutes les fonctionnalités destinées à une disponibilité générale.
+Cet article vous explique comment vous familiariser avec [!DNL Adobe Commerce Optimizer]. Bien que ce guide se concentre sur les rôles de marchandiseur et d’administrateur, il inclut toutefois de brèves tâches générales qu’un développeur pourrait effectuer. Voir la [documentation pour les développeurs](https://developer-stage.adobe.com/commerce/services/composable-catalog/) pour obtenir un contenu détaillé spécifique au développeur.
 
-Ce guide vous guide tout au long de la création et de l’utilisation d’une instance [!DNL Adobe Commerce Optimizer].
+## Quel est votre rôle ?
 
-<!--Click the tabs below to see high-level workflow overviews for the following user types:
+La configuration réussie d’[!DNL Adobe Commerce Optimizer] implique généralement les membres d’équipe suivants :
 
-- Administrators
-- Merchants
-- Developers
+- Administrateur
+- Développeur
+- Marchandiseur
 
->[!BEGINTABS]
+Chaque membre de l’équipe possède son propre ensemble de rôles et de responsabilités, comme décrit dans le tableau suivant :
 
->[!TAB Administrator and merchant workflow]
+| Rôle(s) | Tâche |
+|---|---|
+| Administrateur | Utilisez Admin Console pour créer des administrateurs, des groupes d’utilisateurs, des utilisateurs et des développeurs&#x200B;. |
+|  | Créez une instance [!DNL Adobe Commerce Optimizer] dans Commerce Cloud Manager&#x200B; |
+|  | Configurez vos politiques et vues de catalogue. |
+| Développeur | Utilisez Developer Console pour créer un projet, accorder aux développeurs l’accès à l’API et installer les applications et personnalisations requises. |
+|  | Connectez-vous à votre système de back-office (panier, passage en caisse) à l’aide du maillage API et d’App Builder&#x200B;. |
+|  | Ingérez les données du catalogue à partir de vos solutions de commerce existantes à l’aide de l’API Merchandising Services Data Ingestion&#x200B; |
+|  | Configurer votre storefront |
+| Marchandiseur | Configurer la découverte de produits&#x200B;. |
+|  | Configurez les recommandations de produits. |
 
-This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/fr/enterprise/admin-guide.html) for more information about administrator workflows.
+Chaque rôle fait partie intégrante de l’intégration et du lancement réussis de votre environnement de [!DNL Adobe Commerce Optimizer]. Le diagramme suivant montre un workflow de début à fin général pour chaque rôle de votre organisation :
 
-NEED DIAGRAM
+![Workflow de haut niveau](./assets/high-level-workflow.png){zoomable="yes"}
 
->[!TAB Developer workflow]
+### Administrateur
 
-This diagram provides a high-level overview of how developers create integrations for [!DNL Adobe Commerce Optimizer] using App Builder. See the [API documentation](https://developer.adobe.com/commerce/webapi/rest/) for more information.
+Les administrateurs sont chargés de configurer les instances, de gérer les utilisateurs, les groupes et les droits de votre organisation.
 
-NEED DIAGRAM
+- **[Accéder à Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html)** - Gérez les droits Adobe dans l’ensemble de votre organisation. Voir [gestion des utilisateurs](./user-management.md) pour savoir comment vous, l’administrateur produit de votre entreprise ou l’administrateur système pouvez ajouter des utilisateurs au produit [!DNL Adobe Commerce Optimizer].
 
->[!ENDTABS]
--->
+- **Créer une instance** - [!DNL Adobe Commerce Optimizer] instances utilisent un système basé sur les crédits. Vous pouvez créer plusieurs instances Sandbox et de Production, chaque instance nécessitant un crédit correspondant. Le montant des crédits dont vous disposez au départ dépend de votre abonnement. [En savoir plus](#create-an-instance).
 
-## Configuration
+- **Accéder à une instance** - Après avoir créé une instance, vous pouvez y accéder à partir du [!UICONTROL Commerce Cloud Manager]. [En savoir plus](#access-an-instance).
 
-Une fois les instances [!DNL Adobe Commerce Optimizer] prêtes, l’équipe d’approvisionnement [!DNL Adobe Commerce Optimizer] vous fournit les points d’entrée suivants :
+- **Configurer des vues et des politiques de catalogue** - Découvrez comment [définir vos vues et politiques de catalogue](./setup/catalog-view.md). Le catalogue contient non seulement vos données de produit, mais il vous aide également à définir la structure de votre entreprise.
 
-| Poste | Exemple d’URL | Objectif |
-|---|---|---|
-| Interface utilisateur [!DNL Adobe Commerce Optimizer] | `https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>` | Accédez à l’interface utilisateur de Commerce Optimizer pour gérer votre catalogue dans :<br>1. Règles de marchandisage (découverte de produit, recommandations de produit).<br>2. Gestion de catalogue (création de canaux et de politiques).3 <br>. Insights de données (afficher le statut d’ingestion des données de votre catalogue). |
-| API Storefront | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql` | Accédez aux API nécessaires pour configurer votre storefront Commerce optimisé par Edge Delivery Services. |
-| API d’ingestion des données de catalogue | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>` | Accédez aux API nécessaires pour ingérer les données de votre catalogue. |
+### Développeur
 
->[!NOTE]
->
->Consultez la [documentation pour les développeurs](https://developer-stage.adobe.com/commerce/services/composable-catalog/) pour en savoir plus sur les API nécessaires à la configuration de Storefront et à l’ingestion de catalogues.
+L’équipe de développement crée des projets et des informations d’identification, installe des extensions, ingère des données de catalogue et effectue des tâches générales d’architecture de Platform. Voir la [documentation pour les développeurs](https://developer-stage.adobe.com/commerce/services/composable-catalog/) pour obtenir un contenu détaillé spécifique au développeur.
 
-En tant que participant à l’accès anticipé, vous recevrez un e-mail contenant un lien sécurisé qui, avec votre jeton IMS, vous permettra de vous connecter à [!DNL Adobe Commerce Optimizer] ou d’effectuer des appels API.
+- **Accéder à Developer Console** - Accédez au [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) pour créer un projet à [!DNL Adobe Commerce Optimizer], générer des jetons d’accès et installer les applications et personnalisations requises.
 
-## Configurer le storefront
+- **Ingérer des données de catalogue** - Consultez la documentation de l’[API d’ingestion de données](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) pour savoir comment importer des données de catalogue dans [!DNL Adobe Commerce Optimizer].
 
-Maintenant que vous disposez d’une instance [!DNL Adobe Commerce Optimizer], vous êtes prêt à poursuivre [la configuration](./storefront.md) votre storefront Commerce optimisé par Edge Delivery Services.
+  Les données de catalogue ingérées sont visibles dans la page [synchronisation des données](./setup/data-sync.md).
 
-## Données de catalogue disponibles pour les participants bénéficiant d’un accès anticipé
+- **Configuration du storefront** - Avant de configurer le storefront, vous devez d’abord créer une instance , qui est une tâche généralement effectuée par l’[administrateur](#administrator) de votre organisation. Une fois votre instance créée, vous êtes prêt à poursuivre la [configuration](./storefront.md) de votre storefront Commerce optimisé par Edge Delivery Services.
 
-En tant que participant à l’accès anticipé, l’instance de [!DNL Adobe Commerce Optimizer] contient des données de catalogue simulées basées sur le cas d’utilisation [ Carvelo](./use-case/admin-use-case.md). Les données simulées, ainsi que certains canaux et politiques préconfigurés, vous permettent de vous familiariser avec l’interface utilisateur de [!DNL Adobe Commerce Optimizer].
+### Marchandiseur
 
-<!--Ingest catalog data
+Le marchandiseur utilise les données et les analyses des acheteurs pour prendre des décisions stratégiques sur le placement, les prix et les promotions des produits sur le storefront, tout en optimisant les expériences d’achat grâce à la découverte et aux recommandations de produits.
 
-By default, [!DNL Adobe Commerce Optimizer] instances do not include any product data.
+- **Configurer la découverte de produits et les recommandations** - Découvrez comment [créer des expériences personnalisées](./merchandising/overview.md) pour vos acheteurs grâce à la découverte de produits et aux recommandations.
 
-See the [Ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) documentation to learn how you can import your catalog data into [!DNL Adobe Commerce Optimizer].
+## Création d’une instance
 
-The catalog data that you ingest is visible in the [data insights](./insights-overview.md) page. Additionally, you can use the [Catalog](./catalog-overview.md) page to define the channels and policies.-->
+1. Connectez-vous à votre compte [Adobe Experience Cloud](https://experience.adobe.com/).
+
+1. Sous [!UICONTROL Quick access], cliquez sur [!UICONTROL **Commerce**] pour ouvrir le [!UICONTROL Commerce Cloud Manager].
+
+   La [!UICONTROL Commerce Cloud Manager] affiche une liste des instances [!DNL Adobe Commerce] disponibles dans votre organisation Adobe IMS, y compris les deux instances configurées pour [!DNL Adobe Commerce Optimizer] et [!DNL Adobe Commerce as a Cloud Service].
+
+1. Cliquez sur [!UICONTROL **Ajouter une instance**] dans le coin supérieur droit de l’écran.
+
+   ![Créer une instance](./assets/create-aco-instance.png){width="100%" align="center" zoomable="yes"}
+
+1. Sélectionnez [!UICONTROL **Commerce Optimizer**].
+
+1. Saisissez un **Nom** et un **Description** pour votre instance.
+
+1. Sélectionnez la région dans laquelle vous souhaitez que votre instance soit hébergée.
+
+   >[!NOTE]
+   >
+   >Après avoir créé une instance, vous ne pouvez pas modifier la région.
+
+1. Sélectionnez l’un des [!UICONTROL **type d’environnement**] suivants pour votre instance :
+
+   - [!UICONTROL **Sandbox**] - Idéal pour la conception et les tests. Commencez votre parcours de [!DNL Adobe Commerce Optimizer] à l’aide de l’environnement Sandbox.
+   - [!UICONTROL **Production**] - Pour les magasins en ligne et les sites orientés clients.
+
+   >[!NOTE]
+   >
+   >Les instances Sandbox sont actuellement limitées à la région Amérique du Nord.
+
+1. Cliquez sur [!UICONTROL **Ajouter une instance**].
+
+   La nouvelle instance est désormais disponible dans Cloud Manager.
+
+1. Pour afficher les détails de l’instance, notamment les points d’entrée GraphQL et Catalog Service, l’URL d’accès à l’application Adobe Commerce Optimizer et l’ID d’instance (ID de client), cliquez sur l’icône d’information en regard du nom de l’instance.
+
+   ![Créer une instance](./assets/aco-instance-details.png){width="100%" align="center" zoomable="yes"}
+
+## Accès à une instance
+
+1. Connectez-vous à votre compte [Adobe Experience Cloud](https://experience.adobe.com/).
+
+1. Sous [!UICONTROL Quick access], cliquez sur [!UICONTROL **Commerce**] pour ouvrir le [!UICONTROL Commerce Cloud Manager].
+
+   La [!UICONTROL Commerce Cloud Manager] affiche une liste des instances disponibles dans votre organisation Adobe IMS.
+
+1. Pour ouvrir l’application [!UICONTROL Commerce Optimizer] associée à une instance, cliquez sur le nom de l’instance.
+
+
