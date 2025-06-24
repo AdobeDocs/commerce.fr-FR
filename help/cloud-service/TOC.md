@@ -25,4 +25,4 @@ ht-degree: 13%
 - Migration {#migration}
    - [Vue d’ensemble](migration/overview.md)
    - [Outil de migration de données en bloc](migration/bulk-data.md)
-- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)
