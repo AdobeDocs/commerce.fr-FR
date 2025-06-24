@@ -264,7 +264,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
 
 1. Dans le répertoire racine du dossier, ouvrez le fichier `config.json`.
 
-   Code +++config.json
+   +++Code config.json
 
    ```json
    {
