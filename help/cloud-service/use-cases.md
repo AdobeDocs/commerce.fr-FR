@@ -3,7 +3,7 @@ title: Cas d’utilisation
 description: Découvrez comment réaliser des cas d’utilisation pratiques et des scénarios commerciaux pris en charge avec  [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 source-git-commit: a06d64566fda76c0527aabfa9e8fdf27e7c149ca
 workflow-type: tm+mt
 source-wordcount: '1326'
@@ -198,7 +198,7 @@ Supposons que vous souhaitiez modifier rapidement l’arrière-plan d’une imag
 
 #### Ajouter l’image à Commerce AEM Assets
 
-1. Dans le [Panneau de navigation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) d’AEM as a Cloud Service, sélectionnez **Assets** > **Fichiers** > **Commerce** et cliquez sur la ressource que vous avez créée dans la section précédente.
+1. Dans le [Panneau de navigation](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) d’AEM as a Cloud Service, sélectionnez **Assets** > **Fichiers** > **Commerce** et cliquez sur la ressource que vous avez créée dans la section précédente.
 
    ![dossier commerce](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -248,7 +248,7 @@ Adobe Commerce Generate Variations exploite Generative AI pour automatiser la g�
 
 ### Générer du texte
 
-1. Ouvrez votre site storefront à l’aide de l’[éditeur universel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Ouvrez votre site storefront à l’aide de l’[éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Sélectionnez le bloc de texte à modifier.
 
@@ -262,7 +262,7 @@ Adobe Commerce Generate Variations exploite Generative AI pour automatiser la g�
 
 ### Générer du contenu et des images
 
-1. Ouvrez [ Générer des variations ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Ouvrez [ Générer des variations ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Sélectionnez le modèle [!UICONTROL **Bannière héroïque**].
 
