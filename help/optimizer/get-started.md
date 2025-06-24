@@ -3,7 +3,7 @@ title: Prise en main
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
 source-wordcount: '753'
@@ -45,7 +45,7 @@ Chaque rôle fait partie intégrante de l’intégration et du lancement réussi
 
 Les administrateurs sont chargés de configurer les instances, de gérer les utilisateurs, les groupes et les droits de votre organisation.
 
-- **[Accéder à Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html)** - Gérez les droits Adobe dans l’ensemble de votre organisation. Voir [gestion des utilisateurs](./user-management.md) pour savoir comment vous, l’administrateur produit de votre entreprise ou l’administrateur système pouvez ajouter des utilisateurs au produit [!DNL Adobe Commerce Optimizer].
+- **[Accéder à Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/admin-guide.html)** - Gérez les droits Adobe dans l’ensemble de votre organisation. Voir [gestion des utilisateurs](./user-management.md) pour savoir comment vous, l’administrateur produit de votre entreprise ou l’administrateur système pouvez ajouter des utilisateurs au produit [!DNL Adobe Commerce Optimizer].
 
 - **Créer une instance** - [!DNL Adobe Commerce Optimizer] instances utilisent un système basé sur les crédits. Vous pouvez créer plusieurs instances Sandbox et de Production, chaque instance nécessitant un crédit correspondant. Le montant des crédits dont vous disposez au départ dépend de votre abonnement. [En savoir plus](#create-an-instance).
 
