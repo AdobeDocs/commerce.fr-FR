@@ -33,8 +33,8 @@ Le tableau suivant décrit les fonctionnalités et solutions de remplacement dis
 <table>
     <thead>
         <tr>
-            <th>Modèle PaaS [!BADGE PaaS only]{type=Informative url= »https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions » tooltip=« S’applique aux projets Adobe Commerce sur Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-Premise uniquement. »}</th>
-            <th>Modèle SaaS [!BADGE SaaS only]{type=Positive url= »https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions » tooltip=« S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe). »}</th>
+            <th>Modèle PaaS [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique aux projets Adobe Commerce sur Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-Premise uniquement."}</th>
+            <th>Modèle SaaS [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}</th>
             <th>Détails</th>
         </tr>
     </thead>
@@ -79,8 +79,8 @@ Le tableau suivant compare les fonctionnalités de la plateforme et les fonction
     <thead>
         <tr>
             <th>Fonctionnalité</th>
-            <th>Modèle PaaS [!BADGE PaaS only]{type=Informative url= »https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions » tooltip=« S’applique aux projets Adobe Commerce sur Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-Premise uniquement. »}</th>
-            <th>Modèle SaaS [!BADGE SaaS only]{type=Positive url= »https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions » tooltip=« S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe). »}</th>
+            <th>Modèle PaaS [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique aux projets Adobe Commerce sur Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-Premise uniquement."}</th>
+            <th>Modèle SaaS [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}</th>
         </tr>
     </thead>
     <tbody>
