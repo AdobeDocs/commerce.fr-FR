@@ -141,7 +141,7 @@ Fournissez les valeurs suivantes dans la configuration :
 - Nom de l’espace de données (identifiant SaaS) pour un stockage dans le cloud sécurisé
 - Identifiant de l’organisation IMS dans lequel vos environnements Commerce et AEM Assets sont configurés
 
-Pour obtenir des instructions détaillées, regardez la vidéo de configuration du connecteur de services Commerce [](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs) ou consultez la documentation du connecteur de services Commerce [](../../landing/saas.md#organizationid).
+Pour obtenir des instructions détaillées, regardez la vidéo de configuration du connecteur de services Commerce [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs) ou consultez la documentation du connecteur de services Commerce [&#128279;](../../landing/saas.md#organizationid).
 
 Lorsque vous enregistrez la configuration, le système génère les identifiants de projet SaaS et de base de données pour votre environnement. Ces valeurs sont requises pour activer la synchronisation des ressources entre Adobe Commerce et AEM Assets.
 
