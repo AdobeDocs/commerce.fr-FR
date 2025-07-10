@@ -3,9 +3,10 @@ title: Extension de la carte catalogue
 description: Utilisation de l’adaptateur de catalogue pour effectuer le rendu des prix à partir des services Commerce
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: e42101fa-9c30-482c-a649-44dc35376abb
+source-git-commit: 74f6cb64724194651c4eeb538c0c69142b01ac5d
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Vous pouvez réactiver l&#39;indexation des prix dans l&#39;application Commerce
 ## Conditions requises
 
 - Adobe Commerce 2.4.4+
-- Installez l’un des services Commerce suivants :
+- L’un des services Commerce suivants doit être activé et configuré pour votre environnement Adobe Commerce :
 
    - [Recherche en direct](../live-search/install.md)
    - [Recommandations de produit](../product-recommendations/install-configure.md)
@@ -55,7 +56,7 @@ Utilisez cette méthode pour installer le [!DNL Catalog Adapter] pour une instan
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur la gestion locale des environnements de projet Commerce, voir [Gestion des branches avec l’interface de ligne de commande](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/cli-branches) dans le _Guide d’utilisation d’Adobe Commerce sur les infrastructures cloud_.
+   >Pour plus d’informations sur la gestion locale des environnements de projet Commerce, voir [Gestion des branches avec l’interface de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) dans le _Guide d’utilisation d’Adobe Commerce sur les infrastructures cloud_.
 
 1. Consultez la branche d’environnement pour effectuer la mise à jour à l’aide de l’interface de ligne de commande Adobe Commerce Cloud.
 
@@ -85,7 +86,7 @@ Utilisez cette méthode pour installer le [!DNL Catalog Adapter] pour une instan
    git push origin <branch-name>
    ```
 
-   L’envoi des mises à jour à l’environnement cloud lance le processus de déploiement cloud de [Commerce](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/deploy/process) pour appliquer les modifications. Vérifiez le statut du déploiement dans le [journal de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   L’envoi des mises à jour à l’environnement cloud lance le processus de déploiement cloud de [Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) pour appliquer les modifications. Vérifiez le statut du déploiement dans le [journal de déploiement](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB Sur site]
 
@@ -166,4 +167,3 @@ Voici quelques scénarios de `[!DNL Catalog Adapter]` courants.
 - Pas de dépendance à l’indexeur de prix de produit par défaut d’Adobe Commerce
 
 1. Installez le module `magento/module-price-indexer-disabler` à partir du package [!DNL Catalog Adapter].
-
