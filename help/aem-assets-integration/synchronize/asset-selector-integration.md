@@ -20,11 +20,11 @@ Lorsque l’intégration du sélecteur de ressources AEM **&#x200B;**&#x200B;est
 
 * Gérez facilement les images de catégorie, en vous assurant qu’elles sont conformes aux directives de la marque et de la campagne.
 * [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} Attribuez des ressources directement dans Page Builder pour obtenir du contenu visuellement riche.
-* [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} Attribuez Assets directement dans le storefront Commerce optimisé par Edge Delivery Services pour un contenu enrichi visuellement.
+* [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} Attribuez Assets directement dans le storefront Commerce optimisé par Edge Delivery Services pour un contenu enrichi visuellement.
 
 >[!NOTE]
 >
-> Le sélecteur de ressources AEM est un composant front-end d’AEM Assets qui permet d’intégrer AEM Assets aux applications de création. Pour plus d’informations sur ce composant, consultez le [Sélecteur de ressources micro front-end](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} dans le *Guide d’utilisation d’AEM as a Cloud Service*.
+> Le sélecteur de ressources AEM est un composant front-end d’AEM Assets qui permet d’intégrer AEM Assets aux applications de création. Pour plus d’informations sur ce composant, consultez le [Sélecteur de ressources micro front-end](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} dans le *Guide d’utilisation d’AEM as a Cloud Service*.
 
 ## Principaux avantages
 
