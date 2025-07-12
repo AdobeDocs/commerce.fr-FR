@@ -48,7 +48,7 @@ _23 avril 2025_
 
 [!BADGE pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce version 2.4.5 et versions ultérieures.
 
-![Nouveau problème ](../assets/new.svg)<!-- Issue ACAP-955 --> désormais, il est possible d’utiliser une [URL de domaine personnalisée](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) au lieu de l’URL de diffusion AEM. Si un commerçant définit un **Nom de domaine personnalisé** dans son tableau de bord AEM, il est nécessaire d’ajouter cette **URL de domaine personnalisé** dans Commerce.
+![Nouveau problème ](../assets/new.svg)<!-- Issue ACAP-955 --> désormais, il est possible d’utiliser une [URL de domaine personnalisée](https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) au lieu de l’URL de diffusion AEM. Si un commerçant définit un **Nom de domaine personnalisé** dans son tableau de bord AEM, il est nécessaire d’ajouter cette **URL de domaine personnalisé** dans Commerce.
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue ACAP-987 --> Amélioration des journaux globaux pour les processus de synchronisation AEM Assets.
 
@@ -58,7 +58,7 @@ _12 mars 2025_
 
 [!BADGE pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce version 2.4.5 et versions ultérieures.
 
-![Nouveau problème](../assets/new.svg)<!-- Issue ACAP-xx --> Désormais, le [identifiant du client IMS du sélecteur Assets](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization) est requis par le sélecteur Assets pour activer le mappage des images AEM Assets avec les catégories de produits et le contenu généré par Page Builder.
+![Nouveau problème](../assets/new.svg)<!-- Issue ACAP-xx --> Désormais, le [identifiant du client IMS du sélecteur Assets](https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/setup-synchronization) est requis par le sélecteur Assets pour activer le mappage des images AEM Assets avec les catégories de produits et le contenu généré par Page Builder.
 
 ## v1.0.20
 
