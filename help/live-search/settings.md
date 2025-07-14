@@ -1,9 +1,10 @@
 ---
 title: Paramètres
 description: Configurez les paramètres du service  [!DNL Live Search]  .
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 6387a365-7e23-4023-95ac-27908164d81c
+source-git-commit: 70ff444afbe7ddf41e966e479e03975a02f4e10f
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Vous pouvez spécifier le nombre de groupes de fourchettes de prix et la manièr
 
 1. Dans Admin, accédez à **Marketing** > *SEO et recherche* > **[!DNL Live Search]**.
 1. Dans l’espace de travail **Paramètres** sous *Facettisation des prix*, procédez comme suit :
-   * Entrez le **nombre de sélections** ou les regroupements de prix à rendre disponibles. Jusqu&#39;à 50 regroupements de prix peuvent être définis.
+   * Entrez le **nombre de sélections** ou les regroupements de prix à rendre disponibles. Avec [!DNL Live Search] 4.4.0, vous pouvez définir jusqu’à 100 regroupements de prix. Les versions antérieures autorisaient 50 regroupements de prix.
    * Entrez la **valeur de l&#39;intervalle** ou la fourchette de prix pour chaque groupe. La valeur maximale est de 40 000 000.
 1. Cliquez sur **Enregistrer**.
 
@@ -34,7 +35,7 @@ Vous pouvez spécifier le nombre de groupes de fourchettes de prix et la manièr
 
 | Champ | Description |
 |--- |--- |
-| Nombre de sélections | Spécifie le nombre de regroupements de plages de prix qui peuvent être utilisés comme filtres de recherche dans le storefront. Valeur par défaut : 8, valeur maximale : 50 |
+| Nombre de sélections | Spécifie le nombre de regroupements de plages de prix qui peuvent être utilisés comme filtres de recherche dans le storefront. Valeur par défaut : 8, Valeur maximale : 100 (à partir de la [!DNL Live Search] 4.4.0) |
 | Valeur de l’intervalle | Spécifie l&#39;intervalle de fourchette de prix pour chaque groupe. Par exemple, cinq sélections avec une valeur d’intervalle de 20 créent cinq regroupements de 0 à 20, 20 à 40, 40 à 60, 60 à 80 et >80. Valeur par défaut : 5, valeur maximale : 40 000 000 |
 
 ## Langue
