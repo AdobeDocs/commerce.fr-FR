@@ -3,9 +3,9 @@ title: Collecter des données
 description: Découvrez comment les événements collectent des données pour  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
+source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ Le [collecteur d’événements du storefront Adobe Commerce](https://developer.
 | `rec-click` | L’acheteur clique sur un produit dans l’unité de recommandation. |
 | `view` | Envoyé lorsque l’unité de recommandation devient visible à au moins 50 %, par exemple en faisant défiler la page vers le bas. Par exemple, si une unité de recommandation comporte deux lignes, un événement `view` est envoyé lorsqu’une ligne plus un pixel de la deuxième ligne devient visible pour l’acheteur. Si l’acheteur fait défiler la page de haut en bas plusieurs fois, l’événement `view` est envoyé autant de fois qu’il voit à nouveau l’ensemble de l’unité de recommandation sur la page. |
 
->[!NOTE]
->
->Les mesures de recommandations de produits sont optimisées pour les storefronts Luma. Si votre storefront est implémenté avec PWA Studio, consultez la documentation de [PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Si vous utilisez une technologie frontale personnalisée, telle que React ou Vue JS, découvrez comment intégrer [Product Recommendations dans un environnement découplé](headless.md).
+Bien que les mesures de recommandations de produits soient optimisées pour les storefronts Luma, elles fonctionnent également avec d’autres implémentations de storefront :
+
+- [Edge Delivery Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
+- [Custom frontent (React, Vue JS)](headless.md)
 
 #### Événements de tableau de bord requis
 
@@ -138,4 +140,4 @@ Ce tableau décrit les événements utilisés par chaque type de recommandation.
 
 >[!NOTE]
 >
->Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) est activé, Adobe Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas consenti à l’utilisation de cookies. Si le Mode de restriction des cookies est désactivé, Adobe Commerce collecte des données comportementales par défaut.
+>Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) est activé, Adobe Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas consenti à l’utilisation de cookies. Si le Mode de restriction des cookies est désactivé, Adobe Commerce collecte des données comportementales par défaut.

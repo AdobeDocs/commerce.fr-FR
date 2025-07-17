@@ -2,16 +2,16 @@
 title: Facettes
 description: '[!DNL Live Search] facettes utilisent plusieurs dimensions de valeurs d’attribut comme critères de recherche.'
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
+source-git-commit: 58252ffc7417f30b835ec1baf21a709191afd033
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 # Facettes
 
-La facettisation est une méthode de filtrage haute performance qui utilise plusieurs dimensions de valeurs d’attribut comme critères de recherche. La recherche à facettes est similaire, mais considérablement plus « intelligente » que la [navigation par couches](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=fr) standard. La liste des filtres disponibles est déterminée par les [ attributs filtrables ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=fr#filterable-attributes) des produits renvoyés dans les résultats de recherche.
+La facettisation est une méthode de filtrage haute performance qui utilise plusieurs dimensions de valeurs d’attribut comme critères de recherche. La recherche à facettes est similaire, mais considérablement plus « intelligente » que la [navigation par couches](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html) standard. La liste des filtres disponibles est déterminée par les [ attributs filtrables ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) des produits renvoyés dans les résultats de recherche.
 
 [!DNL Live Search] utilise la requête `productSearch`, qui renvoie des données de facettes et d’autres données spécifiques à [!DNL Live Search]. Reportez-vous à [`productSearch` requête ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) la documentation destinée aux développeurs pour obtenir des exemples de code.
 
@@ -25,23 +25,20 @@ Toute facette définie peut être utilisée comme paramètre d’URL et les rés
 
 Les exigences des attributs de catégorie et de produit pour la facettisation sont similaires aux attributs filtrables utilisés pour la navigation superposée. La valeur « Utiliser dans la navigation par couches des résultats de recherche » de chaque propriété storefront d’un attribut doit être définie sur « Oui ».
 
-[!DNL Live Search] prend en charge jusqu’à :
-
-* 100 attributs configurés sous forme de facettes
-* 50 attributs triables
-* 200 attributs filtrables
-* 200 attributs interrogeables
-
 >[!NOTE]
 >
-> Si plus de 200 attributs filtrables sont définis, il n’est pas déterministe de savoir quels 200 attributs seront réellement indexés.
+>Si vous définissez une catégorie de produits comme facette, la facette affiche la catégorie et la sous-catégorie.
+>
+>![Facette Catégorie](assets/facet-category.png)
+
+Voir [limites et limites](./boundaries-limits.md#facets) pour en savoir plus sur les exigences des facettes dans [!DNL Live Search].
 
 Si vous devez composer avec un grand nombre d’attributs, envisagez de combiner les attributs en un seul « méta-attribut ». Par exemple, les chaussures ont généralement des tailles numériques, tandis que les chemises sont généralement de taille « S/M/L/XL ». Ces deux types de tailles peuvent être combinés en un seul attribut consultable.
 
 | Paramètre | Description |
 |--- |--- |
-| [Paramètres d’affichage des catégories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=fr) | Ancre - `Yes` |
-| [Propriétés des attributs](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=fr) | [Type d’entrée du catalogue](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=fr) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (widget uniquement), `Text swatch` (widget uniquement) |
+| [Paramètres d’affichage des catégories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Ancre - `Yes` |
+| [Propriétés des attributs](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Type d’entrée du catalogue](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (widget uniquement), `Text swatch` (widget uniquement) |
 | Propriétés du storefront des attributs | Utiliser dans les résultats de recherche Navigation par couches - `Yes` |
 
 ## Agrégation de facettes
@@ -54,7 +51,7 @@ L’agrégation des facettes est effectuée comme suit : si le storefront compor
 
 ## Valeurs d’attribut par défaut
 
-Les attributs de produit suivants possèdent des [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=fr) qui sont utilisées par [!DNL Live Search] et activées par défaut.
+Les attributs de produit suivants possèdent des [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) qui sont utilisées par [!DNL Live Search] et activées par défaut.
 
 | Propriété | Storefront, propriété | Attribut |
 |---|---|---|
