@@ -90,7 +90,7 @@ Le [collecteur d’événements du storefront Adobe Commerce](https://developer.
 
 Bien que les mesures de recommandations de produits soient optimisées pour les storefronts Luma, elles fonctionnent également avec d’autres implémentations de storefront :
 
-- [Edge Delivery Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [Edge Delivery Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=fr)
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
 - [Custom frontent (React, Vue JS)](headless.md)
 
@@ -140,4 +140,4 @@ Ce tableau décrit les événements utilisés par chaque type de recommandation.
 
 >[!NOTE]
 >
->Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) est activé, Adobe Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas consenti à l’utilisation de cookies. Si le Mode de restriction des cookies est désactivé, Adobe Commerce collecte des données comportementales par défaut.
+>Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) est activé, Adobe Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas consenti à l’utilisation de cookies. Si le Mode de restriction des cookies est désactivé, Adobe Commerce collecte des données comportementales par défaut.
