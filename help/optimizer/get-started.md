@@ -3,7 +3,7 @@ title: Prise en main
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
 workflow-type: tm+mt
@@ -190,5 +190,5 @@ Une fois la configuration terminée :
 ### Obtenir de l’aide
 
 - **Ressources pour les développeurs** : [Documentation destinée aux développeurs](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Ressources Storefront** : [Documentation Du Storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
-- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+- **Ressources Storefront** : [Documentation Du Storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
+- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview)
