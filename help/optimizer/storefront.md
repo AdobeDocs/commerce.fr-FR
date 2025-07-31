@@ -224,7 +224,7 @@ Vous avez besoin des informations suivantes pour mettre à jour le code standard
    }
    ```
 
-   Pour plus d’informations, consultez la documentation de la bibliothèque Sidekick [](https://www.aem.live/docs/sidekick-library).
+   Pour plus d’informations, consultez la documentation de la bibliothèque Sidekick [&#128279;](https://www.aem.live/docs/sidekick-library).
 
 +++
 
@@ -266,7 +266,7 @@ Vous avez besoin des informations suivantes pour mettre à jour le code standard
    }
    ```
 
-+++
+   +++
 
 1. Enregistrez le fichier.
 
