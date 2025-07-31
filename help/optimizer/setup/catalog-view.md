@@ -3,11 +3,11 @@ title: Vue Catalogue
 description: Découvrez les vues de catalogue et comment les créer pour organiser votre catalogue de produits par structure d’entreprise, politiques et prix.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: f67a5327b742338655b0f7ffa4076a174219f711
+source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Avant de créer une vue de catalogue, vérifiez que vous disposez des éléments
 
 - [Politiques créées](policies.md) pour définir des filtres de produit
 
-- [Configurer des tarifs](pricebooks.md) pour la tarification
+- [Catalogues de prix ingérés](pricebooks.md) pour la tarification
 
 1. Dans le menu de gauche, accédez à _Configuration du magasin_ , puis cliquez sur **[!UICONTROL Catalog views]**.
 
@@ -49,14 +49,16 @@ Avant de créer une vue de catalogue, vérifiez que vous disposez des éléments
 1. Configurez les détails de la vue Catalogue :
 
    - **Nom** : saisissez le nom de la vue du catalogue, par exemple `Celport`. &#x200B;
-   - **Sources de catalogue** : ajoutez la source du catalogue (paramètres régionaux), par exemple `en-US`. Appuyez sur **entrée**.
+   - **Sources de catalogue** : sélectionnez la source du catalogue (paramètres régionaux), par exemple `en-US`.
    - **Politiques** : utilisez la liste déroulante pour sélectionner les politiques appropriées. Par exemple, « Marque », « Modèle ». &#x200B;Vérifiez que vous avez déjà [créé une politique](policies.md).
 
 1. Sélectionnez le catalogue à lier à la vue du catalogue.
 
-1. Cliquez sur **[!UICONTROL Add]** pour créer la vue du catalogue avec le catalogue et les politiques associés.
+   - **Utiliser tous les tarifs disponibles**-Cette option extrait les données de tarification de tous les tarifs disponibles.
+   - **Autoriser uniquement les catalogues de prix sélectionnés**-Cette option affiche la boîte de dialogue **Ajouter des catalogues de prix autorisés** dans laquelle vous pouvez sélectionner le catalogue spécifique à utiliser pour la vue catalogue.
+   - **Désactiver le prix**-Cette option n’est pas disponible pour le moment.
 
-   Si le bouton **[!UICONTROL Add]** n&#39;est pas actif, assurez-vous que la source du catalogue est correctement ajoutée en plaçant votre curseur dans le champ Sources du catalogue et en appuyant sur **entrée**. &#x200B;
+1. Cliquez sur **[!UICONTROL Add]** pour créer la vue du catalogue avec les tarifs et les politiques associés.
 
 La page Vues du catalogue se met à jour pour afficher la nouvelle vue du catalogue&#x200B;
 
@@ -71,7 +73,7 @@ Les vues de catalogue font partie de la structure des services de marchandisage 
 ### Fonctionnement
 
 **1. Ingestion de données**
-Les données de catalogue provenant de PIM, ERP et d’autres systèmes sont ingérées dans le framework de services de marchandisage. Chaque SKU contient des informations sur les paramètres régionaux et des attributs de produit qui correspondent aux vues de catalogue, aux politiques et aux paramètres régionaux. Pour plus d’informations sur l’ingestion de données, consultez la [documentation destinée aux développeurs](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+Les données de catalogue provenant de PIM, ERP et d’autres systèmes sont ingérées dans le framework de services de marchandisage. Chaque SKU contient des informations sur les paramètres régionaux et des attributs de produit qui correspondent aux vues de catalogue, aux politiques et aux paramètres régionaux. Pour plus d’informations sur l’ingestion de données, consultez la [documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/optimizer/).
 
 **2. Catalogue de base unifié**
 Les données ingérées créent un catalogue de base unifié dans le pipeline de données du service de catalogue. Cette source unique élimine la duplication des données entre les unités opérationnelles.
@@ -80,7 +82,7 @@ Les données ingérées créent un catalogue de base unifié dans le pipeline de
 Plusieurs vues de catalogue représentent différentes unités commerciales (par exemple, « Texas Retail », « Texas Retail Seasonal »). Pour plus de flexibilité, les paramètres régionaux, les politiques et les tarifs peuvent être partagés entre les vues de catalogue.
 
 4 **. Diffusion Multicanal**
-Les données de catalogue filtrées sont diffusées vers diverses destinations, notamment les vitrines Edge Delivery Services, les marchés, les plateformes publicitaires et les micro-vitrines personnalisées. Pour plus d’informations sur la diffusion des données de catalogue, consultez la [documentation destinée aux développeurs](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+Les données de catalogue filtrées sont diffusées vers diverses destinations, notamment les vitrines Edge Delivery Services, les marchés, les plateformes publicitaires et les micro-vitrines personnalisées. Pour plus d’informations sur la diffusion des données de catalogue, consultez la [documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/optimizer/).
 
 ### Composants clés
 
@@ -126,4 +128,4 @@ Les données de catalogue filtrées sont diffusées vers diverses destinations, 
 
 >[!INFO]
 >
->Pour plus d’informations sur l’ingestion et la diffusion des données de catalogue, consultez la [documentation destinée aux développeurs](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+>Pour plus d’informations sur l’ingestion et la diffusion des données de catalogue, consultez la [documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/optimizer/).

@@ -3,10 +3,11 @@ title: Cas d’utilisation complet de Storefront et de Catalog Administrator
 description: Découvrez comment utiliser  [!DNL Adobe Commerce Optimizer]  gérer votre catalogue à l’aide de vues et de politiques de catalogue et comment configurer votre storefront en fonction de la configuration de votre catalogue.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 474426ef1f99eed8d2c1b5d736332aaa666872fa
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2158'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ Avant de commencer ce tutoriel, assurez-vous que les conditions préalables suiv
 - **Autorisations utilisateur**
    - Accès des administrateurs à Adobe Admin Console
    - Voir [User Management](../user-management.md) pour la configuration des comptes
-   - Si vous n’y avez pas accès, contactez votre représentant de compte Adobe ou remplissez le formulaire [ Programme d’accès anticipé ](https://experienceleague.adobe.com/go/aco-early-access-program)
+   - Si vous n’y avez pas accès, contactez votre représentant de compte Adobe.
 
 - **Données d’exemple**
    - Données du catalogue Carvelo Automobile chargées dans votre instance
@@ -46,7 +47,7 @@ Avant de commencer ce tutoriel, assurez-vous que les conditions préalables suiv
 
 ## Commençons
 
-Dans ce cas d’utilisation, vous utiliserez les éléments suivants :
+Dans ce cas d’utilisation, vous travaillez avec les éléments suivants :
 
 1. Interface utilisateur de [!DNL Adobe Commerce Optimizer] - Configurez des vues et des politiques de catalogue pour gérer la configuration opérationnelle complexe du catalogue pour le cas d’utilisation de Carvelo.
 
@@ -54,7 +55,7 @@ Dans ce cas d’utilisation, vous utiliserez les éléments suivants :
 
 >[!NOTE]
 >
-> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=fr) dans la documentation du storefront Adobe Commerce.
+> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) dans la documentation du storefront Adobe Commerce.
 
 ### ‌Principaux points à retenir
 
@@ -156,7 +157,7 @@ Le directeur du commerce de Carvelo doit mettre en place une nouvelle vitrine po
 1. Créez une nouvelle politique appelée *Catégories de pièces Celport* pour que Celport vende uniquement des pièces de frein et de suspension.
 1. Créez une vue de catalogue pour le storefront Celport.
 
-   Cette vue de catalogue utilise votre nouvelle politique *catégories de pièces Celport* et les marques existantes *East Coast Inc* pour vous assurer que Celport ne peut vendre que les marques Bolt et Cruz dans le cadre de l&#39;accord avec East Coast Inc. La vue de catalogue Celport utilisera le catalogue `east_coast_inc` pour prendre en charge les barèmes de prix de produits conformes aux accords de licence de la marque.
+   Cette vue catalogue utilise votre nouvelle politique *catégories de pièces Celport* et les marques existantes *East Coast Inc* pour vous assurer que Celport ne peut vendre que les marques Bolt et Cruz dans le cadre de l&#39;accord avec East Coast Inc. La vue catalogue Celport utilise le catalogue `east_coast_inc` pour prendre en charge les barèmes de prix de produits qui s&#39;alignent sur les accords de licence de la marque.
 1. Mettez à jour la configuration du storefront Commerce pour utiliser les données de la vue de catalogue Celport que vous avez créée.
 
 À la fin de cette section, Celport sera opérationnel et prêt à vendre les produits de Carvelo.
@@ -228,17 +229,13 @@ Créez une nouvelle vue de catalogue pour le concessionnaire *Celport* et liez l
 1. Renseignez les détails de la vue Catalogue :
 
    - **Name** = *Celport*
-   - **Sources de catalogue** = *fr-FR* (appuyez sur Entrée)
+   - **Sources de catalogue** = *fr-FR*
    - **Politiques** (liste déroulante d’utilisation) = *Marques East Coast Inc*; *Catégories de pièces Celport*; *Marque*; *Modèle*                          
 1. Cliquez sur **[!UICONTROL Add]** pour créer la vue de catalogue.
 
    La page Vues du catalogue se met à jour pour afficher la nouvelle vue du catalogue.
 
    ![Liste des vues de catalogue mise à jour](../assets/updated-catalog-view-list.png)
-
-   >[!NOTE]
-   >
-   >Si le bouton **[!UICONTROL Add]** n’est pas bleu, assurez-vous que la source du catalogue est sélectionnée en plaçant le curseur dans la section **[!UICONTROL Catalog sources]** et en appuyant sur **Entrée**.
 
 1. Obtenez l’identifiant de vue du catalogue Celport.
 
@@ -264,7 +261,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
 
 1. Dans le répertoire racine du dossier, ouvrez le fichier `config.json`.
 
-   +++Code config.json
+   Code +++config.json
 
    ```json
    {
@@ -415,10 +412,6 @@ Si vous rencontrez des problèmes au cours de ce tutoriel, essayez les solutions
 
 - **Solution :** vérifiez que toutes les politiques associées sont activées et correctement configurées
 
-**Problème :** le bouton Ajouter n’est pas bleu
-
-- **Solution :** Assurez-vous que la source du catalogue est sélectionnée en plaçant votre curseur dans le champ et en appuyant sur Entrée
-
 ### Problèmes de configuration du storefront
 
 **Problème : le storefront** ne se charge pas
@@ -427,7 +420,7 @@ Si vous rencontrez des problèmes au cours de ce tutoriel, essayez les solutions
 
 **Problème :** Aucun produit ne s’affiche
 
-- **Solution :** vérifiez que l&#39;ID du catalogue des prix correspond à un ID disponible dans votre instance Adobe Commerce Optimizer
+- **Solution :** vérifiez que l&#39;ID du catalogue des prix correspond à celui disponible dans votre instance Adobe Commerce Optimizer
 
 **Problème :** recherche ne renvoyant aucun résultat
 
@@ -451,7 +444,5 @@ Pour continuer à en savoir plus sur Adobe Commerce Optimizer :
 - Explorez les [fonctionnalités de marchandisage](../merchandising/overview.md) pour personnaliser l’expérience d’achat
 - En savoir plus sur les [configurations de politique avancées](../setup/policies.md)
 - Configurer [vues de catalogue supplémentaires](../setup/catalog-view.md) pour d&#39;autres concessionnaires
-- Consultez la [documentation de l’API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) pour la gestion programmatique du catalogue
-- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=fr)
-
-
+- Consultez la [documentation de l’API](https://developer.adobe.com/commerce/services/optimizer/) pour la gestion programmatique du catalogue
+- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

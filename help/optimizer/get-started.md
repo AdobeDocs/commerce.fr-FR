@@ -3,11 +3,11 @@ title: Prise en main
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 036e04a02edadf4b8a48fc38e784d9dde734ba45
+source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,11 @@ Les marchandiseurs optimisent et personnalisent l’expérience d’achat par le
 
 1. Accédez à votre instance :
 
-   Cliquez sur le nom de l’instance pour ouvrir l’application [!DNL Adobe Commerce Optimizer].
+   Cliquez sur le nom de l’instance pour ouvrir l’application [!DNL Adobe Commerce Optimizer]. Au sein de l’application, vous pouvez basculer entre différentes instances [!DNL Adobe Commerce Optimizer] à l’aide du menu déroulant situé en haut de la page :
+
+   ![Sélecteur d’instances](./assets/context-switcher.png){zoomable="yes"}
+
+   Toutes les instances affichées appartiennent à la même organisation. Vous pouvez basculer entre les instances pour afficher les données et les paramètres de chacune d’elles, par exemple entre le sandbox et les environnements de production.
 
 1. Obtenir les détails de l’instance :
    - Cliquez sur l’icône d’informations en regard du nom de votre instance.
@@ -186,5 +190,5 @@ Une fois la configuration terminée :
 ### Obtenir de l’aide
 
 - **Ressources pour les développeurs** : [Documentation destinée aux développeurs](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Ressources Storefront** : [Documentation Du Storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
-- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview)
+- **Ressources Storefront** : [Documentation Du Storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
