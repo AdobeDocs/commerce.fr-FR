@@ -64,7 +64,7 @@ Les options spécifiées sur la ligne de commande remplacent la configuration d�
 
 Pour traiter toutes les opérations d’exportation de données à l’aide du multithread, les intégrateurs système ou les développeurs peuvent modifier le nombre de threads et la taille du lot pour chaque flux dans la configuration de l’application Commerce.
 
-Ces modifications peuvent être appliquées en ajoutant des valeurs personnalisées à la [section système](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) du fichier de configuration, `app/etc/config.php`.
+Ces modifications peuvent être appliquées en ajoutant des valeurs personnalisées à la [section système](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) du fichier de configuration, `app/etc/config.php`.
 
 **Exemple : configuration du multithreading pour les produits et les prix**
 
