@@ -72,7 +72,7 @@ Avant d’exécuter la commande `aio commerce init`, vous devez remplir les cond
 
    Si la commande `aio login` ne lance pas de fenêtre de navigateur, reportez-vous à la section [Dépannage](#troubleshooting).
 
-1. Sélectionnez l’organisation IMS, le projet et l’espace de travail. Utilisez les touches fléchées et appuyez sur **Entrée** pour effectuer votre sélection. Pour plus d’informations sur les commandes `aio`, consultez la documentation de l’interface de ligne de commande Adobe I/O [](https://github.com/adobe/aio-cli-plugin-console?tab=readme-ov-file#commands).
+1. Sélectionnez l’organisation IMS, le projet et l’espace de travail. Utilisez les touches fléchées et appuyez sur **Entrée** pour effectuer votre sélection. Pour plus d’informations sur les commandes `aio`, consultez la documentation de l’interface de ligne de commande Adobe I/O [&#128279;](https://github.com/adobe/aio-cli-plugin-console?tab=readme-ov-file#commands).
 
    ```bash
    aio console org select
