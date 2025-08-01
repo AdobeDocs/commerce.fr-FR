@@ -3,11 +3,11 @@ title: Prise en main
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
+source-git-commit: f920cfe7cd433e85f343fefe1062a1972e5e5e5f
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,6 @@ Pour que votre environnement [!DNL Adobe Commerce Optimizer] fonctionne, procéd
 Après avoir créé votre instance :
 
 1. [Gérez votre instance](#manage-an-instance) à partir de Commerce Cloud Manager.
-1. Configurez les vues et les politiques de catalogue à l’aide du [guide de la vue Catalogue](./setup/catalog-view.md).
 1. Configurez l’accès des utilisateurs et utilisatrices à l’aide du [ guide de gestion des utilisateurs ](./user-management.md).
 
 ### Étape 3. Ajouter des données d’exemple (facultatif)
@@ -146,15 +145,12 @@ Les données d’exemple sont basées sur le [scénario commercial Carvelo](./us
 
 1. Accédez au référentiel GitHub :
    - Accédez au [Référentiel d’ingestion de données de catalogue d’exemples](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
-   - Suivez les instructions de configuration fournies dans le fichier LISEZ-MOI du référentiel.
 
-2. Exécutez l’ingestion :
-   - Utilisez les scripts fournis pour charger des données d’exemple dans votre environnement d’évaluation Adobe Commerce Optimizer.
-   - Vérifiez que les données apparaissent sur votre page [Synchronisation des données](./setup/data-sync.md).
+1. Suivez les instructions de configuration fournies dans le fichier LISEZ-MOI du référentiel.
 
-3. Nettoyage (facultatif) :
-
-   Supprimez les données d’exemple à l’aide du script `reset.js` inclus dans le code source du chargeur de données d’exemple.
+   - Configuration et exécution de l’ingestion des données
+   - Configuration des politiques et des vues de catalogue à l’aide des données d’exemple
+   - Nettoyer les données d’exemple (facultatif)
 
 ## Étapes suivantes
 
@@ -190,5 +186,5 @@ Une fois la configuration terminée :
 ### Obtenir de l’aide
 
 - **Ressources pour les développeurs** : [Documentation destinée aux développeurs](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Ressources Storefront** : [Documentation Du Storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
-- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview)
+- **Ressources Storefront** : [Documentation Du Storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
