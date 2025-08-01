@@ -2,9 +2,10 @@
 title: Amélioration des performances d’exportation des données SaaS
 description: Découvrez comment améliorer les performances d’exportation des données SaaS pour les services Commerce à l’aide du mode d’exportation de données multithread.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ N’oubliez pas qu’une planification minutieuse, y compris l’estimation du v
 
 >[!NOTE]
 >
->Adobe recommande de faire preuve de prudence lors de l’utilisation du traitement multithread. Cette fonctionnalité est une fonctionnalité d’accès anticipé qui est toujours en cours d’amélioration. Si vous configurez le multithread pour des performances plus rapides, vous pouvez déclencher les mécanismes de sécurisation des services Adobe Commerce inclus pour éviter toute utilisation abusive du système lors de l’ingestion des données. Ces mécanismes de sécurisation empêchent également les utilisateurs de déclencher des modifications de synchronisation susceptibles de surcharger le système. Lorsque les mécanismes de sécurisation sont déclenchés, les requêtes sont bloquées et le système renvoie des erreurs 429. Si vous rencontrez ces erreurs, ajustez votre configuration et envoyez un ticket d’assistance pour obtenir de l’aide.
+>Adobe recommande de faire preuve de prudence lors de l’utilisation du traitement multithread. Si vous configurez le multithread pour des performances plus rapides, vous pouvez déclencher les mécanismes de sécurisation des services Adobe Commerce inclus pour éviter toute utilisation abusive du système lors de l’ingestion des données. Ces mécanismes de sécurisation empêchent également les utilisateurs de déclencher des modifications de synchronisation susceptibles de surcharger le système. Lorsque les mécanismes de sécurisation sont déclenchés, les requêtes sont bloquées et le système renvoie des erreurs 429. Si vous rencontrez ces erreurs, ajustez votre configuration et envoyez un ticket d’assistance pour obtenir de l’aide.
 
 ## Configuration du multithread
 
@@ -63,7 +64,7 @@ Les options spécifiées sur la ligne de commande remplacent la configuration d�
 
 Pour traiter toutes les opérations d’exportation de données à l’aide du multithread, les intégrateurs système ou les développeurs peuvent modifier le nombre de threads et la taille du lot pour chaque flux dans la configuration de l’application Commerce.
 
-Ces modifications peuvent être appliquées en ajoutant des valeurs personnalisées à la [section système](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) du fichier de configuration, `app/etc/config.php`.
+Ces modifications peuvent être appliquées en ajoutant des valeurs personnalisées à la [section système](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) du fichier de configuration, `app/etc/config.php`.
 
 **Exemple : configuration du multithreading pour les produits et les prix**
 

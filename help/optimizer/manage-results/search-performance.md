@@ -1,8 +1,9 @@
 ---
 title: Performances de recherche
 description: La page Performances de la recherche fournit insight dans les termes de recherche utilisés par les acheteurs.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 0%
@@ -51,7 +52,7 @@ La section suivante fournit des stratégies que vous pouvez utiliser pour améli
 Plusieurs facteurs clés déterminent la pertinence et l’efficacité des résultats de recherche :
 
 - Des données de produit bien structurées garantissent que les algorithmes de recherche peuvent efficacement faire correspondre les produits aux requêtes. Des données de produit de faible qualité entraînent des résultats de recherche moins pertinents. Pour influencer directement le succès de votre stratégie de marchandisage :
-   - Paramétrez les [attributs corrects comme pouvant faire l’objet d’une recherche](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) avec leur poids correspondant.
+   - Paramétrez les [attributs corrects comme pouvant faire l’objet d’une recherche](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) avec leur poids correspondant.
    - Assurez-vous que les données contenues dans ces attributs sont pertinentes.
 - Une expérience de recherche bien conçue renforce la confiance des clients et les incite à croire qu’ils trouveront ce dont ils ont besoin.
 - Les règles de recherche sont essentielles, car elles peuvent améliorer la visibilité de certains produits en fonction de leur popularité, des nouveaux arrivants, des critères promotionnels ou de toute autre stratégie de marchandisage pour répondre aux besoins de votre entreprise.
@@ -97,7 +98,7 @@ Pour optimiser votre fonctionnalité de recherche, utilisez [synonymes et orthog
 
 ## Améliorer la pertinence des résultats de recherche
 
-Pour améliorer la pertinence des résultats de recherche, implémentez des [règles de recherche](../merchandising/rules/overview.md) efficaces et utilisez les métadonnées du produit afin de garantir que les attributs [ précis et détaillés sont consultables](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata).
+Pour améliorer la pertinence des résultats de recherche, implémentez des [règles de recherche](../merchandising/rules/overview.md) efficaces et utilisez les métadonnées du produit afin de garantir que les attributs [ précis et détaillés sont consultables](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
 
 ### Images
 
@@ -109,7 +110,7 @@ Assurez-vous que les produits enfants des produits configurables possèdent des 
 
 ### Utilisation des métadonnées de produit
 
-Assurez-vous que les attributs de produit [attributs) précis et détaillés sont configurés comme pouvant faire l’objet de recherches](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata). Notez que les attributs SKU, nom et catégorie peuvent être recherchés par défaut et ne peuvent pas être exclus de la recherche. Pour de meilleurs résultats, n’utilisez pas d’espaces dans vos SKU.
+Assurez-vous que les attributs de produit [attributs) précis et détaillés sont configurés comme pouvant faire l’objet de recherches](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata). Notez que les attributs SKU, nom et catégorie peuvent être recherchés par défaut et ne peuvent pas être exclus de la recherche. Pour de meilleurs résultats, n’utilisez pas d’espaces dans vos SKU.
 
 Pour accroître la pertinence de la recherche, attribuez un poids à chaque attribut consultable. Les attributs ayant un poids plus élevé doivent apparaître plus haut dans les résultats de la recherche. Le tri par pertinence est affecté par plusieurs critères, tels que le poids de la recherche. Cela signifie que parfois les attributs ayant un poids de recherche inférieur peuvent toujours avoir plus de pertinence que les attributs ayant un poids de recherche supérieur. D’autres critères peuvent inclure le nombre de correspondances dans un attribut donné, la position du terme de recherche trouvé et la structure textuelle globale avant et après un terme de recherche.
 
@@ -117,8 +118,8 @@ Assurez-vous que chaque produit possède du contenu pertinent dans chaque attrib
 
 En savoir plus sur les attributs de produit pour la recherche :
 
-- [Définir les attributs comme pouvant faire l’objet d’une recherche](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata)
-- [Attribuer un poids aux attributs](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata)
+- [Définir les attributs comme pouvant faire l’objet d’une recherche](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
+- [Attribuer un poids aux attributs](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
 
 ## Descriptions des champs
 

@@ -1,10 +1,11 @@
 ---
 title: Présentation des facettes
 description: Découvrez les facettes d [!DNL Adobe Commerce Optimizer] et comment elles améliorent les résultats de recherche.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -29,12 +30,14 @@ L’agrégation des facettes est effectuée comme suit : si le storefront compor
 
 ## Valeurs d’attribut par défaut
 
-Les [attributs de produit](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) suivants sont utilisés par [!DNL Adobe Commerce Optimizer] et activés par défaut.
+Les attributs de produit suivants sont utilisés par [!DNL Adobe Commerce Optimizer] et activés par défaut.
 
 | Propriété | Description | Attribut |
 |---|---|---|
 | Triable | Utilisé pour le tri dans la liste de produits | `price` |
 | Indexable | Utiliser dans la recherche | `price` <br />`sku`<br />`name` |
+
+Consultez la section [API de métadonnées d’ingestion de données](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) pour en savoir plus sur les attributs de produit et leurs propriétés.
 
 ## Propriétés d’attribut non système par défaut
 

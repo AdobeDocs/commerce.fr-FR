@@ -3,9 +3,9 @@ title: Cas d’utilisation complet de Storefront et de Catalog Administrator
 description: Découvrez comment utiliser  [!DNL Adobe Commerce Optimizer]  gérer votre catalogue à l’aide de vues et de politiques de catalogue et comment configurer votre storefront en fonction de la configuration de votre catalogue.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
+source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
 workflow-type: tm+mt
 source-wordcount: '2158'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Dans ce cas d’utilisation, vous travaillez avec les éléments suivants :
 
 >[!NOTE]
 >
-> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=fr) dans la documentation du storefront Adobe Commerce.
+> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) dans la documentation du storefront Adobe Commerce.
 
 ### ‌Principaux points à retenir
 
@@ -261,7 +261,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
 
 1. Dans le répertoire racine du dossier, ouvrez le fichier `config.json`.
 
-   +++Code config.json
+   Code +++config.json
 
    ```json
    {
@@ -271,7 +271,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
       "headers": {
          "cs": {
-            "ac-catalog-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
+            "ac-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
             "ac-price-book-id": "west_coast_inc",
             "ac-source-locale": "en-US"
            }
@@ -295,7 +295,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
    Notez que l’en-tête de la vue Catalogue comprend les valeurs suivantes :
 
    - `commerce-endpoint` : `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
-   - `ac-catalog-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
+   - `ac-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
    - `ac-price-book-id` : `"west_coast_inc"`
    - `ac-source-locale` : `"en-US"`
 
@@ -307,7 +307,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
    https://experience.adobe.com/#/@commerceprojectbeacon/in:XDevkG9W6UbwgQmPn995r3/commerce-optimizer-studio/catalog
    ```
 
-1. Remplacez la valeur `ac-catalog-view-id` par l’ID de vue du catalogue Celport que vous avez copié précédemment.
+1. Remplacez la valeur `ac-view-id` par l’ID de vue du catalogue Celport que vous avez copié précédemment.
 
 1. Remplacez la valeur `ac-price-book-id` par `"east_coast_inc"`.
 
@@ -321,7 +321,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
         "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
         "headers": {
             "cs": {
-                "ac-catalog-view-id": "{{celport-catalog-view-id}}",
+                "ac-view-id": "{{celport-catalog-view-id}}",
                 "ac-price-book-id": "east_coast_inc",
                 "ac-source-locale": "en-US"
               }
@@ -378,7 +378,7 @@ Maintenant que vous avez mis à jour la configuration du storefront pour utilise
 
 1. Testez la mise à jour de votre fichier de configuration de storefront (`config.json`).
 
-   1. Modifiez les valeurs `ac-catalog-view-id` et `ac-price-book`.
+   1. Modifiez les valeurs `ac-view-id` et `ac-price-book`.
 
    Par exemple, vous pouvez remplacer l&#39;ID de vue de catalogue par la vue de catalogue Kingsbluff et l&#39;ID de catalogue par `east_coast_inc`. Vous pouvez voir les catégories de pièces disponibles pour Kingsbluff en examinant la politique *Catégories de pièces Kingsbluff*.
 
@@ -445,4 +445,4 @@ Pour continuer à en savoir plus sur Adobe Commerce Optimizer :
 - En savoir plus sur les [configurations de politique avancées](../setup/policies.md)
 - Configurer [vues de catalogue supplémentaires](../setup/catalog-view.md) pour d&#39;autres concessionnaires
 - Consultez la [documentation de l’API](https://developer.adobe.com/commerce/services/optimizer/) pour la gestion programmatique du catalogue
-- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=fr)
+- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

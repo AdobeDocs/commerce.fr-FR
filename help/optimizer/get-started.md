@@ -3,11 +3,11 @@ title: Prise en main
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: f920cfe7cd433e85f343fefe1062a1972e5e5e5f
+source-git-commit: b0ce0a399e89baaeabe87c53d069df866378f8c8
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Les développeurs gèrent l’implémentation technique et l’intégration des 
 | Tâche | Description | Lien |
 |---|---|---|
 | **Accéder à Developer Console** | Créer des projets et générer des informations d’identification | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **Ingérer des données de catalogue** | Importer les données de produit des systèmes existants | [API Data Ingestion](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) |
+| **Ingérer des données de catalogue** | Importer les données de produit des systèmes existants | [API Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) |
 | **Configurer Storefront** | Configuration du storefront Edge Delivery Services | [Configuration de Storefront](./storefront.md) |
 
 ### Tâches du marchandiseur
@@ -143,14 +143,14 @@ Les données d’exemple sont basées sur le [scénario commercial Carvelo](./us
 
 **Chargez les exemples de données :**
 
-1. Accédez au référentiel GitHub :
-   - Accédez au [Référentiel d’ingestion de données de catalogue d’exemples](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+1. Accédez au référentiel GitHub [ingestion de données de catalogue d’exemples](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion).
 
-1. Suivez les instructions de configuration fournies dans le fichier LISEZ-MOI du référentiel.
+1. Suivez les instructions de configuration du fichier LISEZ-MOI du référentiel pour effectuer les tâches suivantes :
 
-   - Configuration et exécution de l’ingestion des données
-   - Configuration des politiques et des vues de catalogue à l’aide des données d’exemple
-   - Nettoyer les données d’exemple (facultatif)
+   - Configuration de votre environnement
+   - Terminer le processus d’ingestion des données
+   - Créer des vues de catalogue et des politiques à l’aide des données d’exemple
+   - Vérifiez l’ingestion des données en vérifiant les données du service de catalogue sur la page [ Synchronisation des données ](./setup/data-sync.md)
 
 ## Étapes suivantes
 
@@ -185,6 +185,6 @@ Une fois la configuration terminée :
 
 ### Obtenir de l’aide
 
-- **Ressources pour les développeurs** : [Documentation destinée aux développeurs](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Ressources Storefront** : [Documentation Du Storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
-- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview)
+- **Ressources pour les développeurs** : [Documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/optimizer/)
+- **Ressources Storefront** : [Documentation Du Storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

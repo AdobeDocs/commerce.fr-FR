@@ -3,11 +3,11 @@ title: Livres de prix
 description: Découvrez comment gérer les tarifs dans  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 513ed97442bfffe74d64f4eb0484cfa8f25b5ecc
+source-git-commit: 502d8d21ff052f4ecb212176459b38ce51f85dfc
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Les livres de prix vous permettent de définir les prix de produit pour une sour
 
 Le livre de prix de base définit la devise pour lui-même et tous ses livres de prix enfants. Les livres de prix enfants héritent de cette devise et ne peuvent pas la remplacer.
 
-Consultez la [documentation pour les développeurs](https://developer.adobe.com/commerce/services/reference/rest/) pour savoir comment créer, mettre à jour et supprimer des [!DNL Adobe Commerce Optimizer] de prix à l’aide de l’API Price Book.
+Consultez la [documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/reference/rest/) pour savoir comment créer, mettre à jour et supprimer des tarifs à l’aide de l’API Price Book pour les [!DNL Adobe Commerce Optimizer].
 
 ## Concepts clés
 
