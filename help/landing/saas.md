@@ -84,7 +84,7 @@ Par [!DNL Product Recommendations], l’espace de données SaaS contient des don
 >[!WARNING]
 >
 > Utilisez votre **espace de données SaaS de production** uniquement sur votre installation de [!DNL Commerce] de production pour éviter les collisions de données. Dans le cas contraire, vous risquez de polluer les données de votre site de production avec des données de test, ce qui entraîne des retards de déploiement. Par exemple, vos données de produit de production peuvent être écrasées par erreur à partir de données d’évaluation, telles que les URL d’évaluation.
-> > Si cela se produit, [envoyez une demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) pour demander le nettoyage des données.
+> &#x200B;> Si cela se produit, [envoyez une demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) pour demander le nettoyage des données.
 
 Si vous ne trouvez pas les champs de configuration LiveSearch dans le panneau d’administration, vérifiez que vous avez saisi la clé API SaaS appropriée.  Assurez-vous d’avoir ajouté la clé SaaS de production lors de la configuration de l’espace de données de production et d’avoir ajouté la clé d’évaluation lors de la configuration de l’espace de données d’évaluation. Si vous configurez la clé incorrecte, les services SaaS, tels que LiveSearch, ne sont pas disponibles dans l’environnement Adobe Commerce.
 
@@ -116,7 +116,7 @@ Pour sélectionner ou créer un projet SaaS, demandez la clé API [!DNL Commerce
 
    Si la section **[!UICONTROL Commerce Services Connector]** n’apparaît pas dans la configuration [!DNL Commerce], installez les modules [!DNL Commerce] correspondant au [[!DNL Commerce] service](#availableservices) souhaité. Assurez-vous également que le package `magento/module-services-id` est installé.
 
-1. Dans les sections _[!UICONTROL Sandbox API Keys]_et_[!UICONTROL Production API Keys]_, collez vos valeurs clés.
+1. Dans les sections _[!UICONTROL Sandbox API Keys]_&#x200B;et&#x200B;_[!UICONTROL Production API Keys]_, collez vos valeurs clés.
 
    - Les clés privées doivent inclure des `----BEGIN PRIVATE KEY---` au début de la clé et des `----END PRIVATE KEY----` à la fin de la clé.
    - Si vous ne disposez pas d’une copie des clés réelles, demandez-les au propriétaire du compte, puis connectez les valeurs à la configuration.
