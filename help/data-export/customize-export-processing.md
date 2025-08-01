@@ -1,18 +1,18 @@
 ---
 title: Amélioration des performances d’exportation des données SaaS
-description: Découvrez comment améliorer les performances d’exportation des données SaaS pour les services Commerce à l’aide du mode d’exportation de données multithread.
+description: Découvrez comment améliorer les performances d’exportation des données SaaS pour les services Commerce à l’aide d’un mode d’exportation de données multithread.
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: 9b28da0bf861a266e9d679ba59470f46d9a89c1c
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
 # Amélioration des performances d’exportation des données SaaS
 
-Le **mode d’exportation de données multithread** accélère le processus d’exportation en divisant les données de flux en lots et en les traitant en parallèle.
+Le **mode d’exportation de données multithread** accélère le processus d’exportation en divisant les données de flux en lots et en les traitant simultanément.
 
 Les développeurs ou les intégrateurs système peuvent améliorer les performances en utilisant le mode d’exportation de données multithread au lieu du mode par défaut à thread unique. En mode thread unique, il n’existe aucune parallélisation du processus d’envoi des flux. En outre, en raison des limites par défaut définies, tous les clients sont limités à l’utilisation d’un seul thread. Dans la plupart des cas, il n’est pas nécessaire de personnaliser la configuration.
 
@@ -64,7 +64,7 @@ Les options spécifiées sur la ligne de commande remplacent la configuration d�
 
 Pour traiter toutes les opérations d’exportation de données à l’aide du multithread, les intégrateurs système ou les développeurs peuvent modifier le nombre de threads et la taille du lot pour chaque flux dans la configuration de l’application Commerce.
 
-Ces modifications peuvent être appliquées en ajoutant des valeurs personnalisées à la [section système](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) du fichier de configuration, `app/etc/config.php`.
+Ces modifications peuvent être appliquées en ajoutant des valeurs personnalisées à la [section système](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) du fichier de configuration, `app/etc/config.php`.
 
 **Exemple : configuration du multithreading pour les produits et les prix**
 
