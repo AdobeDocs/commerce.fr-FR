@@ -3,7 +3,7 @@ title: Cas d’utilisation complet de Storefront et de Catalog Administrator
 description: Découvrez comment utiliser  [!DNL Adobe Commerce Optimizer]  gérer votre catalogue à l’aide de vues et de politiques de catalogue et comment configurer votre storefront en fonction de la configuration de votre catalogue.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
 workflow-type: tm+mt
@@ -55,7 +55,7 @@ Dans ce cas d’utilisation, vous travaillez avec les éléments suivants :
 
 >[!NOTE]
 >
-> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) dans la documentation du storefront Adobe Commerce.
+> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=fr) dans la documentation du storefront Adobe Commerce.
 
 ### ‌Principaux points à retenir
 
@@ -445,4 +445,4 @@ Pour continuer à en savoir plus sur Adobe Commerce Optimizer :
 - En savoir plus sur les [configurations de politique avancées](../setup/policies.md)
 - Configurer [vues de catalogue supplémentaires](../setup/catalog-view.md) pour d&#39;autres concessionnaires
 - Consultez la [documentation de l’API](https://developer.adobe.com/commerce/services/optimizer/) pour la gestion programmatique du catalogue
-- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
+- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=fr)
