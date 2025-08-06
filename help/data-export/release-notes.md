@@ -4,9 +4,9 @@ description: Dernières informations de mise  [!DNL Data Export Extension]  jour
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
+source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ Les mises à jour incluent :
 >L’extension d’exportation de données SaaS est un ensemble de modules installés automatiquement avec Live Search, Product Recommendations et Catalog Service. Vous pouvez vérifier la version installée sur votre système à l’aide du compositeur. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Version majeure actuelle
+
+## Version 103.4.8
+
+![Nouveau](../assets/new.svg) Ajout d’informations de prix de niveau au flux de prix. <!--MDEE-1070-->
+![Correction](../assets/fix.svg) L’extension d’exportateur de données exporte désormais correctement les prix de sélection des lots à l’échelle du site web, en veillant à ce que les prix du storefront reflètent des valeurs précises en fonction de la configuration « Étendue du prix du catalogue ».<!--MDEE-1115-->
+![Correctif](../assets/fix.svg) Auparavant, les produits étaient synchronisés avec un statut de `lowStock=true` incorrect lors de l’utilisation d’Inventory management (Inventory management multi-sources) avec une configuration de seuil. Ce problème a été corrigé afin d’assurer la précision des rapports de stock faible.<!--MDEE-1113-->
 
 ## Version 103.4.7
 
