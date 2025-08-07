@@ -1,18 +1,23 @@
 ---
-title: Ajouter des attributs de commande personnalisés
+title: Ajout d’attributs personnalisés aux commandes
 description: Découvrez comment ajouter des attributs de commande personnalisés à vos données de back-office et envoyer ces attributs à Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
+source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '602'
 ht-degree: 2%
 
 ---
 
-# Ajouter des attributs de commande personnalisés
+# Ajout d’attributs personnalisés aux commandes
 
 Dans cet article, vous apprendrez à ajouter des attributs personnalisés aux événements back-office. Les attributs personnalisés vous permettent de capturer des informations de données riches afin d’améliorer les analyses et de créer davantage d’expériences personnalisées pour vos clientes et clients.
+
+>[!NOTE]
+>
+>Découvrez comment [ajouter des identités personnalisées](custom-identities.md) aux profils.
 
 Les attributs personnalisés sont pris en charge à deux niveaux :
 
@@ -344,7 +349,7 @@ ComponentRegistrar::register(
 
 Pour vous assurer que les nouveaux attributs de commande personnalisés peuvent être ingérés par votre schéma [!DNL Commerce] dans Experience Platform, vous devez étendre le schéma afin d’inclure ces champs personnalisés.
 
-Pour savoir comment étendre un schéma XDM existant afin d’inclure ces champs personnalisés, consultez l’article [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) dans la documentation d’Experience Platform. Le champ ID de client est généré dynamiquement. Cependant, la structure des champs doit ressembler à l’exemple fourni dans la documentation d’Experience Platform.
+Pour savoir comment étendre un schéma XDM existant afin d’inclure ces champs personnalisés, consultez l’article [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) dans la documentation d’Experience Platform. Le champ ID de client est généré dynamiquement. Cependant, la structure des champs doit ressembler à l’exemple fourni dans la documentation d’Experience Platform.
 
 >[!IMPORTANT]
 >
