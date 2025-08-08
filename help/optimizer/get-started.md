@@ -3,11 +3,11 @@ title: Prise en main
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: b0ce0a399e89baaeabe87c53d069df866378f8c8
+source-git-commit: ee11900f0ddf77a8cb7df7d5ae378924bdf1f2d7
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
 - Compte **Adobe Experience Cloud** avec droits [!DNL Adobe Commerce Optimizer]
 - **Accès administrateur de l’organisation** pour créer des instances et gérer les utilisateurs
-- **Compte GitHub** (pour le chargement des données d’exemple et le développement du storefront)
+- **Compte GitHub** pour le chargement de données d’exemple et le développement du storefront
 - **Compréhension de base** des concepts du commerce électronique
 
 ## Guide de démarrage rapide
@@ -76,6 +76,7 @@ Les administrateurs gèrent les instances, les utilisateurs et les paramètres o
 |---|---|---|
 | **Gérer les utilisateurs** | Ajouter des utilisateurs, des développeurs et des administrateurs | [Gestion des utilisateurs](./user-management.md) |
 | **Créer des instances** | Configurer des environnements de sandbox et de production | [Créer une instance](#create-an-instance) |
+| **Gérer les instances** | Vérifiez le statut, mettez à jour le nom et la description de l’instance et obtenez les URL clés pour l’accès aux applications et aux API | [Gérer les instances](#manage-instances) |
 | **Configurer l’accès** | Configurer des vues et des politiques de catalogue | [Vues du catalogue](./setup/catalog-view.md) |
 
 ### Tâches du développeur
@@ -86,7 +87,7 @@ Les développeurs gèrent l’implémentation technique et l’intégration des 
 |---|---|---|
 | **Accéder à Developer Console** | Créer des projets et générer des informations d’identification | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
 | **Ingérer des données de catalogue** | Importer les données de produit des systèmes existants | [API Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) |
-| **Configurer Storefront** | Configuration du storefront Edge Delivery Services | [Configuration de Storefront](./storefront.md) |
+| **Configuration du storefront** | Configuration du storefront Edge Delivery Services | [Configuration de Storefront](./storefront.md) |
 
 ### Tâches du marchandiseur
 
@@ -98,38 +99,63 @@ Les marchandiseurs optimisent et personnalisent l’expérience d’achat par le
 | **Recommandations** | Configurer des recommandations de produits optimisées par l’IA | [Recommandations de produits](./merchandising/recommendations/overview.md) |
 | **Suivi des performances** | Surveiller les mesures de succès | [Mesures de succès](./manage-results/success-metrics.md) |
 
-## Gestion d’une instance
+## Gestion des instances
+
+Gérez les instances à partir du gestionnaire Commerce Cloud.
+
+>[!NOTE]
+>
+>Tous les utilisateurs de Adobe Commerce Optimizer n’ont pas accès à Cloud Manager. L’accès dépend du rôle et des autorisations attribués au compte d’utilisateur.
 
 1. Connectez-vous à [Adobe Experience Cloud](https://experience.adobe.com/).
 
 1. Ouvrez Commerce Cloud Manager :
+
    - Sous **Accès rapide**, cliquez sur **Commerce**.
    - Affichez les instances disponibles.
 
-1. Accédez à votre instance :
+### Rechercher et filtrer des instances
 
-   Cliquez sur le nom de l’instance pour ouvrir l’application [!DNL Adobe Commerce Optimizer]. Au sein de l’application, vous pouvez basculer entre différentes instances [!DNL Adobe Commerce Optimizer] à l’aide du menu déroulant situé en haut de la page :
+Après vous être connecté, le tableau de bord affiche toutes les instances de produit Commerce disponibles dans l’organisation.
+La colonne Produit indique pour quelle application Commerce l’instance est configurée.
+
+Utilisez les options Filtrer et Rechercher pour trouver rapidement des instances spécifiques. Vous pouvez effectuer une recherche par données créées, région, création par, type de produit, environnement et statut.
+
+### Accès à l’application [!DNL Adobe Commerce Optimizer]
+
+Une fois l’application ouverte, vous pouvez facilement basculer entre des environnements tels que le sandbox et la production pour afficher les données et les paramètres de chacun sans devoir revenir au gestionnaire Commerce Cloud.
+
+1. Dans Commerce Cloud Manager, cliquez sur le nom de l’instance pour ouvrir l’application [!DNL Adobe Commerce Optimizer].
+
+1. Basculez entre les instances [!DNL Adobe Commerce Optimizer] sans quitter l’application.
+
+   La liste déroulante Instance répertorie toutes les instances d’Optimizer disponibles dans l’organisation. Sélectionnez l’instance à afficher.
 
    ![Sélecteur d’instances](./assets/context-switcher.png){zoomable="yes"}
 
-   Toutes les instances affichées appartiennent à la même organisation. Vous pouvez basculer entre les instances pour afficher les données et les paramètres de chacune d’elles, par exemple entre le sandbox et les environnements de production.
+### Obtention des détails de l’instance**
 
-1. Obtenir les détails de l’instance :
-   - Cliquez sur l’icône d’informations en regard du nom de votre instance.
-   - Notez le point d’entrée GraphQL, le point d’entrée du service de catalogue pour l’ingestion de données et l’ID d’instance (également appelé `tenant ID`).
+Affichez les détails de l’instance en cliquant sur l’icône d’information en regard de son nom.
 
-   ![Détails de l’instance](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+![Détails de l’instance](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
-   Les détails du point d’entrée et de l’ID d’instance (ID de client) sont requis pour l’intégration aux applications frontales et aux systèmes principaux. L’URL d’accès à l’application [!DNL Adobe Commerce Optimizer] est également fournie ici.
+Notez les informations clés suivantes :
 
-   Tous les utilisateurs de Adobe Commerce Optimizer n’ont pas accès à Cloud Manager et aux détails de l’instance. L’accès dépend du rôle et des autorisations attribués au compte d’utilisateur. Si vous n’y avez pas accès, contactez l’administrateur ou administratrice de votre organisation pour obtenir les détails de l’instance.
+- Point d’entrée **GraphQL** pour récupérer les données du catalogue Commerce à l’aide de l’API de marchandisage.
+- **Point d’entrée du service de catalogue** pour l’ingestion de données à l’aide de l’API REST
+- **URL Commerce Optimizer** pour accéder à l&#39;application [!DNL Adobe Commerce Optimizer]
+- **ID de l’instance** identifiant client unique qui identifie l’instance
 
-1. Modifiez le nom et la description de l’instance :
-   - Cliquez sur l’icône **Modifier** en regard d’un nom d’instance.
-   - Mettez à jour le nom et la description si nécessaire.
-   - Cliquez sur **Enregistrer**.
+Les détails du point d’entrée et de l’ID d’instance sont requis pour configurer l’accès API et l’intégration aux applications frontales et aux systèmes principaux.
+Si vous n’avez pas accès aux détails de l’instance, contactez l’administrateur ou administratrice de votre organisation pour obtenir les valeurs.
 
-   Vous pouvez également utiliser les options de recherche et de filtrage pour rechercher rapidement des instances spécifiques.
+### Modifier le nom et la description de l’instance
+
+Mettez à jour le nom et la description de l’instance si nécessaire.
+
+1. Cliquez sur l’icône **Modifier** en regard d’un nom d’instance.
+1. Mettez à jour le **nom de l’instance** et le **description** selon les besoins.
+1. Cliquez sur **Enregistrer**.
 
 ## Ajout de données d’exemple
 
@@ -186,5 +212,5 @@ Une fois la configuration terminée :
 ### Obtenir de l’aide
 
 - **Ressources pour les développeurs** : [Documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/optimizer/)
-- **Ressources Storefront** : [Documentation Du Storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
-- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview)
+- **Ressources Storefront** : [Documentation Du Storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
