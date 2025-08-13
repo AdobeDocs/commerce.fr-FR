@@ -3,11 +3,11 @@ title: Vue Catalogue
 description: Découvrez les vues de catalogue et comment les créer pour organiser votre catalogue de produits par structure d’entreprise, politiques et prix.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
+source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,43 @@ Avant de créer une vue de catalogue, vérifiez que vous disposez des éléments
 La page Vues du catalogue se met à jour pour afficher la nouvelle vue du catalogue&#x200B;
 
 Une fois ces étapes terminées, la vue de catalogue est maintenant configurée pour afficher les produits et les prix en fonction des sources et des politiques sélectionnées.
+
+## Gérer la vue du catalogue
+
+Suivez ces instructions pour mettre à jour ou afficher les propriétés des vues de catalogue existantes.
+
+### Modifier la vue du catalogue
+
+1. Dans l’espace de travail *Vues du catalogue*, recherchez la vue du catalogue dans la grille à modifier, puis cliquez sur **...** pour ouvrir le menu d’actions.
+1. Cliquez sur **Modifier** pour accéder à l’éditeur de vue de catalogue.
+1. Mettez à jour le nom, les sources de catalogue, les politiques et les informations du catalogue selon les besoins.
+1. Enregistrez les modifications.
+
+### Supprimer la vue Catalogue
+
+1. Dans l’espace de travail *Vues du catalogue*, recherchez la vue du catalogue dans la grille à modifier, puis cliquez sur **...** pour ouvrir le menu d’actions.
+1. Cliquez sur **Supprimer**.
+
+   Lorsque la boîte de dialogue de confirmation s’affiche, cliquez sur **[!UICONTROL Delete]**.
+
+### Afficher les détails
+
+Cette option permet d’afficher rapidement tous les paramètres de la vue de catalogue, tout en restant dans le tableau *Vues du catalogue*.
+
+Dans l’espace de travail *Vues du catalogue*, recherchez la vue du catalogue dans la grille à modifier, puis cliquez sur l’icône ![informations](../assets/info-icon.png).
+
+![Vue Catalogue Détails](../assets/catalog-view-details.png)
+
+De là, vous pouvez voir les détails de configuration de la vue de catalogue, tels que :
+
+- Afficher l’ID
+- Nom
+- Sources de catalogue
+- Politiques
+- Date de création
+- Données modifiées
+
+Certains de ces paramètres de configuration sont nécessaires lorsque vous configurez votre storefront ou que vous utilisez l’API d’ingestion de données.
 
 ## Aperçu de l’architecture
 
