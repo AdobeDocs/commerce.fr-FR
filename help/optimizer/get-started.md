@@ -3,7 +3,7 @@ title: Prise en main
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 source-git-commit: 5cb7dc4d2bd1b9bd43d4a858e4814ca803a49027
 workflow-type: tm+mt
@@ -217,6 +217,6 @@ Une fois la configuration terminée :
 ### Obtenir de l’aide
 
 - **Ressources pour les développeurs** : [documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/optimizer/)
-- **Ressources Storefront** : [documentation du storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
-- **Tutoriels** : [tutoriels Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+- **Ressources Storefront** : [documentation du storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
+- **Tutoriels** : [tutoriels Commerce Optimizer](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview)
