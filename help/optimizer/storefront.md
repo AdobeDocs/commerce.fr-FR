@@ -2,29 +2,30 @@
 title: Configurer votre storefront
 description: 'Découvrez comment configurer votre storefront [!DNL Adobe Commerce Optimizer] '
 role: Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 7ff78711972cbd73fc75f7523d8ac734081dbe10
+source-git-commit: 475706df971e75091ee72e89d64088fa56aec4dd
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 # Configurer votre storefront
 
->[!NOTE]
+Ce tutoriel fournit des instructions détaillées sur la configuration et l’utilisation du [storefront Adobe Commerce optimisé par Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) afin de créer un storefront Commerce performant, évolutif et sécurisé, optimisé par les données de votre instance [!DNL Adobe Commerce Optimizer].
+
+
+>[!TIP]
 >
->Cette documentation décrit un produit en développement à accès anticipé et ne reflète pas toutes les fonctionnalités destinées à une disponibilité générale.
-
-Ce tutoriel explique comment configurer et utiliser le [storefront Adobe Commerce optimisé par Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=fr) pour créer un storefront Commerce performant, évolutif et sécurisé optimisé par les données de votre instance [!DNL Adobe Commerce Optimizer].
-
+>Accélérez le processus de configuration du storefront à l’aide de l’outil Créateur de site pour configurer votre référentiel de code storefront et votre environnement de création de documents
+>>automatiquement. Ensuite, vous pouvez utiliser ces instructions pour comprendre comment le storefront a été créé et en savoir plus sur les composants disponibles.
 
 ## Conditions préalables
 
 * Assurez-vous de disposer d’un compte GitHub (github.com) capable de créer des référentiels et configuré pour le développement local.
 
-* Découvrez les concepts et le workflow de développement des storefronts Commerce sur Adobe Edge Delivery Services en consultant la [Présentation](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=fr) dans la documentation du storefront Adobe Commerce.
+* Découvrez les concepts et le workflow de développement des storefronts Commerce sur Adobe Edge Delivery Services en consultant la [Présentation](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) dans la documentation du storefront Adobe Commerce.
 * Configuration de votre environnement de développement
 
 
@@ -60,7 +61,7 @@ Installez Node Version Manager (NVM) et la version requise de Node.js (22.13.1 L
 
 >[!TIP]
 >
->Des ressources supplémentaires pour étendre et personnaliser votre solution [!DNL Adobe Commerce Optimizer] sont disponibles via [App Builder pour Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) et [le maillage API pour Adobe Developer App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Pour obtenir des informations d’accès et d’utilisation, contactez votre représentant de compte Adobe.
+>Des ressources supplémentaires pour étendre et personnaliser votre solution [!DNL Adobe Commerce Optimizer] sont disponibles via [App Builder pour Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) et [le maillage API pour Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Pour obtenir des informations d’accès et d’utilisation, contactez votre représentant de compte Adobe.
 
 #### Installation de Sidekick
 
@@ -68,7 +69,7 @@ Installez l’extension de navigateur Sidekick pour modifier, prévisualiser et 
 
 ## Création de votre storefront
 
-Le storefront que vous créez pour votre projet [!DNL Adobe Commerce Optimizer] utilise une version personnalisée de la norme standard du storefront d’Adobe Commerce sur Edge Delivery Services. Le standard est un ensemble de fichiers et de dossiers qui constituent un point de départ pour le développement du storefront. Ce processus de configuration est différent du processus de configuration standard pour un [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=fr).
+Le storefront que vous créez pour votre projet [!DNL Adobe Commerce Optimizer] utilise une version personnalisée de la norme standard du storefront d’Adobe Commerce sur Edge Delivery Services. Le standard est un ensemble de fichiers et de dossiers qui constituent un point de départ pour le développement du storefront. Ce processus de configuration est différent du processus de configuration standard pour un [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 >[!NOTE]
 >
@@ -107,7 +108,6 @@ Créez un référentiel GitHub pour le code standard du site pour votre storefro
 1. Remplissez le formulaire de configuration avec les détails suivants :
 
    * **Modèle de référentiel** : `hlxsites/aem-boilerplate-commerce` (par défaut).
-   * **Inclure toutes les branches** : sélectionnez cette option pour inclure toutes les branches.
    * **Propriétaire** : votre organisation ou compte (obligatoire).
    * **Nom du référentiel** : nom unique de votre nouveau référentiel (obligatoire).
    * **Description** : brève description de votre référentiel (facultatif).
@@ -145,12 +145,6 @@ Vous avez besoin des informations suivantes pour mettre à jour le code standard
 
 1. Ouvrez le référentiel dans votre terminal ou IDE.
 
-1. Extrayez la branche `aco`
-
-   ```bash
-   git checkout aco
-   ```
-
 1. Créez votre fichier de configuration en copiant le fichier `default-fstab.yaml` dans `fstab.yaml`.
 
    ```bash
@@ -159,7 +153,7 @@ Vous avez besoin des informations suivantes pour mettre à jour le code standard
 
 1. Mettez à jour le point de montage dans le fichier de configuration du storefront pour pointer vers votre URL de contenu.
 
-   1. Ouvrez le fichier de configuration [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=fr#vocabulary).
+   1. Ouvrez le fichier de configuration [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary).
 
       ```yaml
       mountpoints:
@@ -192,47 +186,39 @@ Vous avez besoin des informations suivantes pour mettre à jour le code standard
 >
 >Assurez-vous d’avoir installé l’extension [Sidekick](https://www.aem.live/docs/sidekick#installation) dans votre navigateur.
 
-1. Ouvrez le fichier `tools/sidekick/config.json`.
+1. Créez un `tools/sidekick` de répertoire.
 
-   Fichier de configuration de Sidekick
+   ```shell
+   mkdir tools/sidekick
+   ```
+
+1. Copiez le fichier `demo-sidekick.json` du répertoire racine dans le répertoire `tools/sidekick` et renommez-le en `config.json`.
+
+   ```shell
+   cp demo-sidekick.json tools/sidekick/config.json
+   ```
+
+1. Personnalisez la configuration Sidekick de votre site.
+
+   Dans `tools/sidekick/` répertoire , modifiez le fichier `config.json`.
+
+   +++Fichier de configuration Sidekick
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/{{org}}/{{site}}{{pathname}}"
    }
    ```
 
-   Pour plus d’informations, consultez la documentation de la bibliothèque Sidekick [&#128279;](https://www.aem.live/docs/sidekick-library).
-
-+++
-
 1. Mettez à jour les valeurs de clé `url` avec les valeurs de votre référentiel GitHub.
 
-   * Remplacez la chaîne `{ORG}` par l’organisation ou le nom d’utilisateur de votre référentiel.
+   * Remplacez la chaîne `{{ORG}}` par l’organisation ou le nom d’utilisateur de votre référentiel.
 
-   * Remplacez la chaîne `{SITE}` par le nom du référentiel.
+   * Remplacez la chaîne `{{SITE}}` par le nom du référentiel.
+
+   * La variable `pathname` est renseignée par le système.
 
    +++Exemple de fichier de configuration mis à jour
 
@@ -240,29 +226,9 @@ Vous avez besoin des informations suivantes pour mettre à jour le code standard
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/aco-storefront/early-adopter{{pathname}}"
    }
    ```
 
@@ -284,8 +250,8 @@ Pour utiliser le code standard personnalisé du storefront, remplacez le code su
 
    ```bash
    git status
-   On branch aco
-   Your branch is up to date with 'origin/aco'.
+   On branch main
+   Your branch is up to date with 'origin/main'.
    
    Changes to be committed:
     (use "git restore --staged <file>..." to unstage)
@@ -293,16 +259,16 @@ Pour utiliser le code standard personnalisé du storefront, remplacez le code su
         modified:   tools/sidekick/config.json
    ```
 
-1. Validez les modifications dans la branche `aco`.
+1. Validez les modifications.
 
    ```bash
    git commit -m "Update storefront boilerplate for Adobe Commerce Optimizer"
    ```
 
-1. Remplacez la norme standard sur la branche `main` par les modifications sur la branche `aco`.
+1. Appliquez vos modifications.
 
    ```bash
-   git push origin aco:main -f
+   git push
    ```
 
 ### Étape 5 : ajouter l’application de synchronisation du code AEM
@@ -327,7 +293,7 @@ Connectez votre référentiel au service Edge Delivery en ajoutant l’applicati
 
 Créez et initialisez votre contenu storefront dans l’environnement de création de documents hébergé sur `https://da.live` à l’aide de l’outil Créateur de site. Cet outil importe l’exemple de contenu dans l’environnement de création de documents et termine le processus de prévisualisation et de publication du contenu pour tous les documents de l’exemple de contenu. L’exemple de contenu comprend les mises en page, les bannières, les libellés et d’autres éléments pour renseigner votre storefront.
 
-1. Ouvrez l’[outil de création de site](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
+1. Ouvrez l’outil [ Créateur de site ](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
 
 1. Configurez votre référentiel :
 
@@ -474,4 +440,4 @@ Voir le cas pratique complet [Storefront and Catalog Administrator](./use-case/a
 
 >[!MORELIKETHIS]
 >
-> Consultez la [documentation du storefront Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr) pour en savoir plus sur la mise à jour du contenu du site et l’intégration aux composants frontend Commerce et aux données principales.
+> Consultez la [documentation du storefront Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/) pour en savoir plus sur la mise à jour du contenu du site et l’intégration aux composants frontend Commerce et aux données principales.
