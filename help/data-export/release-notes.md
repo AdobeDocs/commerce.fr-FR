@@ -4,9 +4,9 @@ description: Dernières informations de mise  [!DNL Data Export Extension]  jour
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
+source-git-commit: 0722458a67a945b13d2cb27d8848d58d909aea35
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ Les mises à jour incluent :
 >L’extension d’exportation de données SaaS est un ensemble de modules installés automatiquement avec Live Search, Product Recommendations et Catalog Service. Vous pouvez vérifier la version installée sur votre système à l’aide du compositeur. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Version majeure actuelle
+
+## Version 103.4.8
+
+![Correctif](../assets/fix.svg) Correction d’un problème où les flux de prix de produit n’étaient pas régénérés lorsqu’un produit était supprimé ou que le SKU du produit était modifié.<!--MDEE-1125-->
+![Correctif](../assets/fix.svg) Amélioration du traitement des mises à jour des produits afin de s’assurer que les modifications sont correctement prises en compte lors de la mise à jour d’un nouveau produit avec le même SKU qu’un produit précédemment supprimé. La synchronisation des produits utilise désormais correctement les identifiants de produit mis à jour, ce qui garantit une exportation des données précise et fiable.<!--MDEE-1126-->
+![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel le service de catalogue pouvait renvoyer des données de variante obsolètes pour les produits configurables en s’assurant que les événements de mise à jour du produit étaient publiés après les suppressions d’attributs.<!--MDEE-1127-->
 
 ## Version 103.4.8
 
