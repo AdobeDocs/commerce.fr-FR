@@ -2,10 +2,11 @@
 title: Politiques
 description: Découvrez comment créer et gérer des politiques dans  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
+source-git-commit: 845d93e367c8e2495943afe8c7d5d0a4bde990c2
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -75,7 +76,10 @@ Dans cette section, vous allez créer une nouvelle politique. La politique peut 
    1. **Attribut** - Saisissez un attribut de votre catalogue. Par exemple, « part_category ». Ce nom doit correspondre exactement au nom de l’attribut dans votre catalogue.
    1. **Opérateur** - Sélectionnez l’opérateur. Par exemple, **IN**. &#x200B;
    1. **Valeur Source** - Sélectionnez **STATIQUE**. &#x200B;
-   1. **Valeur** - Saisissez la ou les valeurs dans l’attribut que vous avez précédemment spécifié. Par exemple, « freins, suspension ». &#x200B;Ces noms doivent correspondre exactement aux noms des valeurs de l’attribut que vous avez précédemment spécifié.
+   1. **Valeur** - Saisissez une valeur à partir de la définition d’attribut que vous avez précédemment spécifiée. Par exemple, entrez « freins » pour créer un filtre pour les pièces de frein. &#x200B;La valeur doit correspondre exactement au nom de l’attribut.
+   1. Pour enregistrer la valeur, appuyez sur **Entrée**.
+
+      Si la politique est conçue pour filtrer selon plusieurs valeurs, saisissez chaque valeur séparément.
 
 1. Cliquez sur le bouton **[!UICONTROL Save]** dans la boîte de dialogue Détails du filtre. &#x200B;
 

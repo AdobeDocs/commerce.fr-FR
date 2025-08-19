@@ -3,11 +3,11 @@ title: Cas d’utilisation complet de Storefront et de Catalog Administrator
 description: Découvrez comment utiliser  [!DNL Adobe Commerce Optimizer]  gérer votre catalogue à l’aide de vues et de politiques de catalogue et comment configurer votre storefront en fonction de la configuration de votre catalogue.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
+source-git-commit: e5844cad1d666a81042db64e51e124e6444d19ac
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2179'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Dans ce cas d’utilisation, vous travaillez avec les éléments suivants :
 
 >[!NOTE]
 >
-> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=fr) dans la documentation du storefront Adobe Commerce.
+> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) dans la documentation du storefront Adobe Commerce.
 
 ### ‌Principaux points à retenir
 
@@ -185,11 +185,12 @@ Créons une nouvelle politique appelée *Catégories de pièces Celport* pour fi
    - **Attribute** = *part_category*
    - **Opérateur** = **IN**
    - **Valeur Source** = **STATIC**
-   - **Valeur** = *freins*, *suspension*
+   - **Valeur** = *freins*
+   - **Valeur** = *suspension*
 
    >[!IMPORTANT]
    >
-   >Assurez-vous que le nom d’attribut que vous spécifiez correspond exactement au nom d’attribut de SKU dans le catalogue.
+   >Chaque valeur d’attribut doit être saisie séparément. Après avoir saisi une valeur, appuyez sur **Entrée** pour l’ajouter à la configuration du filtre. Saisissez ensuite la valeur suivante. Toutes les valeurs doivent correspondre exactement au nom de l’attribut SKU dans le catalogue.
 
    Pour en savoir plus sur la différence entre une source de valeurs STATIQUE et TRIGGER, voir [types de sources de valeurs](../setup/policies.md#value-source-types).
 
@@ -230,7 +231,8 @@ Créez une nouvelle vue de catalogue pour le concessionnaire *Celport* et liez l
 
    - **Name** = *Celport*
    - **Sources de catalogue** = *fr-FR*
-   - **Politiques** (liste déroulante d’utilisation) = *Marques East Coast Inc*; *Catégories de pièces Celport*; *Marque*; *Modèle*                          
+   - **Politiques** (liste déroulante d’utilisation) = *Marques East Coast Inc*; *Catégories de pièces Celport*; *Marque*; *Modèle*
+                         
 1. Cliquez sur **[!UICONTROL Add]** pour créer la vue de catalogue.
 
    La page Vues du catalogue se met à jour pour afficher la nouvelle vue du catalogue.
@@ -261,7 +263,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
 
 1. Dans le répertoire racine du dossier, ouvrez le fichier `config.json`.
 
-   +++Code config.json
+   +++code config.json
 
    ```json
    {
@@ -445,4 +447,4 @@ Pour continuer à en savoir plus sur Adobe Commerce Optimizer :
 - En savoir plus sur les [configurations de politique avancées](../setup/policies.md)
 - Configurer [vues de catalogue supplémentaires](../setup/catalog-view.md) pour d&#39;autres concessionnaires
 - Consultez la [documentation de l’API](https://developer.adobe.com/commerce/services/optimizer/) pour la gestion programmatique du catalogue
-- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=fr)
+- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
