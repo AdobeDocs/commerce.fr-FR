@@ -19,7 +19,7 @@ Ce tutoriel fournit des instructions détaillées sur la configuration et l’ut
 >[!TIP]
 >
 >Accélérez le processus de configuration du storefront à l’aide de l’outil Créateur de site pour configurer votre référentiel de code storefront et votre environnement de création de documents
->>automatiquement. Ensuite, vous pouvez utiliser ces instructions pour comprendre comment le storefront a été créé et en savoir plus sur les composants disponibles.
+>&#x200B;>automatiquement. Ensuite, vous pouvez utiliser ces instructions pour comprendre comment le storefront a été créé et en savoir plus sur les composants disponibles.
 
 ## Conditions préalables
 
