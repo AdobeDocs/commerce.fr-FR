@@ -2,30 +2,30 @@
 title: Configurer votre storefront
 description: 'Découvrez comment configurer votre storefront [!DNL Adobe Commerce Optimizer] '
 role: Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 475706df971e75091ee72e89d64088fa56aec4dd
+source-git-commit: 2b35e822e192bdac316379f55c3bc924d62ca008
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1855'
 ht-degree: 0%
 
 ---
 
 # Configurer votre storefront
 
-Ce tutoriel fournit des instructions détaillées sur la configuration et l’utilisation du [storefront Adobe Commerce optimisé par Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=fr) afin de créer un storefront Commerce performant, évolutif et sécurisé, optimisé par les données de votre instance [!DNL Adobe Commerce Optimizer].
+Ce tutoriel fournit des instructions détaillées sur la configuration et l’utilisation du [storefront Adobe Commerce optimisé par Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) afin de créer un storefront Commerce performant, évolutif et sécurisé, optimisé par les données de votre instance [!DNL Adobe Commerce Optimizer].
 
 
 >[!TIP]
 >
 >Accélérez le processus de configuration du storefront à l’aide de l’outil Créateur de site pour configurer votre référentiel de code storefront et votre environnement de création de documents
->&#x200B;>automatiquement. Ensuite, vous pouvez utiliser ces instructions pour comprendre comment le storefront a été créé et en savoir plus sur les composants disponibles.
+>>automatiquement. Ensuite, vous pouvez utiliser ces instructions pour comprendre comment le storefront a été créé et en savoir plus sur les composants disponibles.
 
 ## Conditions préalables
 
 * Assurez-vous de disposer d’un compte GitHub (github.com) capable de créer des référentiels et configuré pour le développement local.
 
-* Découvrez les concepts et le workflow de développement des storefronts Commerce sur Adobe Edge Delivery Services en consultant la [Présentation](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=fr) dans la documentation du storefront Adobe Commerce.
+* Découvrez les concepts et le workflow de développement des storefronts Commerce sur Adobe Edge Delivery Services en consultant la [Présentation](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) dans la documentation du storefront Adobe Commerce.
 * Configuration de votre environnement de développement
 
 
@@ -61,7 +61,7 @@ Installez Node Version Manager (NVM) et la version requise de Node.js (22.13.1 L
 
 >[!TIP]
 >
->Des ressources supplémentaires pour étendre et personnaliser votre solution [!DNL Adobe Commerce Optimizer] sont disponibles via [App Builder pour Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) et [le maillage API pour Adobe Developer App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Pour obtenir des informations d’accès et d’utilisation, contactez votre représentant de compte Adobe.
+>Des ressources supplémentaires pour étendre et personnaliser votre solution [!DNL Adobe Commerce Optimizer] sont disponibles via [App Builder pour Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) et [le maillage API pour Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Pour obtenir des informations d’accès et d’utilisation, contactez votre représentant de compte Adobe.
 
 #### Installation de Sidekick
 
@@ -69,7 +69,7 @@ Installez l’extension de navigateur Sidekick pour modifier, prévisualiser et 
 
 ## Création de votre storefront
 
-Le storefront que vous créez pour votre projet [!DNL Adobe Commerce Optimizer] utilise une version personnalisée de la norme standard du storefront d’Adobe Commerce sur Edge Delivery Services. Le standard est un ensemble de fichiers et de dossiers qui constituent un point de départ pour le développement du storefront. Ce processus de configuration est différent du processus de configuration standard pour un [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=fr).
+Le storefront que vous créez pour votre projet [!DNL Adobe Commerce Optimizer] utilise une version personnalisée de la norme standard du storefront d’Adobe Commerce sur Edge Delivery Services. Le standard est un ensemble de fichiers et de dossiers qui constituent un point de départ pour le développement du storefront. Ce processus de configuration est différent du processus de configuration standard pour un [Adobe Commerce on Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 >[!NOTE]
 >
@@ -80,9 +80,9 @@ Le storefront que vous créez pour votre projet [!DNL Adobe Commerce Optimizer] 
 Pour configurer un storefront à utiliser avec [!DNL Adobe Commerce Optimizer], procédez comme suit.
 
 1. **[Créer un référentiel de code](#step-1-create-site-code-repository)**-Créez un référentiel GitHub à partir du modèle standard Adobe Commerce + Edge Delivery Services. Incluez toutes les branches du référentiel source.
-1. **[Mettre à jour le modèle standard du storefront](#step-2-update-the-storefront-boilerplate)**-Mettez à jour le modèle standard personnalisé sur la branche `aco` pour connecter votre dossier de contenu au storefront.
-1. **[Déployer les modifications](#step-3-deploy-changes)**-Remplacez le code de la branche `main` par le code mis à jour de la branche `aco`.
-1. **[Ajoutez l’application CodeSync](#step-5-add-the-aem-code-sync-app)** connectez votre référentiel au service Edge Delivery. Ne connectez pas l’application de synchronisation du code tant que vous n’avez pas terminé la personnalisation du code source et envoyé le code vers la branche `main`.
+1. **[Mettre à jour le modèle standard du storefront](#step-2-update-the-storefront-boilerplate)**-Mettez à jour le modèle standard personnalisé pour connecter votre dossier de contenu au storefront.
+1. **[Déployer les modifications](#step-3-deploy-changes)**-Valider et pousser votre personnalisation standard vers GitHub pour appliquer les modifications.
+1. **[Ajoutez l’application CodeSync](#step-5-add-the-aem-code-sync-app)** connectez votre référentiel au service Edge Delivery. Ne connectez pas l’application de synchronisation du code tant que vous n’avez pas terminé la personnalisation du code source et envoyé le code vers votre référentiel GitHub.
 1. **[Ajouter du contenu](#step-6-add-content)**-Utilisez l’outil de clonage de contenu de démonstration pour créer et initialiser votre contenu storefront dans l’environnement de création de documents hébergé sur `https://da.live`.
 1. **[Prévisualiser le site de démonstration](#step-7-preview-demo-site)**-Connectez-vous à votre site storefront pour afficher l’exemple de contenu et les données de l’instance de démonstration [!DNL Adobe Commerce Optimizer].
 1. **[Développez dans votre environnement local](#step-8-develop-in-your-local-environment)**-Installez les dépendances requises. Démarrez le serveur de développement local et mettez à jour la configuration du storefront pour vous connecter à l’instance [!DNL Adobe Commerce Optimizer] qu’Adobe a configurée pour vous.
@@ -153,7 +153,7 @@ Vous avez besoin des informations suivantes pour mettre à jour le code standard
 
 1. Mettez à jour le point de montage dans le fichier de configuration du storefront pour pointer vers votre URL de contenu.
 
-   1. Ouvrez le fichier de configuration [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=fr#vocabulary).
+   1. Ouvrez le fichier de configuration [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary).
 
       ```yaml
       mountpoints:
@@ -440,4 +440,4 @@ Voir le cas pratique complet [Storefront and Catalog Administrator](./use-case/a
 
 >[!MORELIKETHIS]
 >
-> Consultez la [documentation du storefront Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr) pour en savoir plus sur la mise à jour du contenu du site et l’intégration aux composants frontend Commerce et aux données principales.
+> Consultez la [documentation du storefront Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/) pour en savoir plus sur la mise à jour du contenu du site et l’intégration aux composants frontend Commerce et aux données principales.
