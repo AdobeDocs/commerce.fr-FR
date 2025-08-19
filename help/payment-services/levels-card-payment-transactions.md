@@ -4,9 +4,9 @@ description: Niveaux de traitement des paiements par carte dans  [!DNL Payment S
 role: Admin
 feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # Traitement de niveau 2 et de niveau 3
 
 [!DNL Payment Services] offre des fonctionnalités avancées de traitement des cartes pour aider les commerçants à optimiser leurs transactions de paiement et à réduire les frais d&#39;interchange. Il existe trois niveaux de traitement des cartes, chacun avec des exigences différentes en matière de données de transaction.
+
+>[!CAUTION]
+>
+> Les commandes [Fastlane](payments-options.md#fastlane-button) n&#39;incluent pas les données, les postes et la répartition des montants de niveau 2/niveau 3.
 
 ## Exigences en matière de données par niveau de traitement
 

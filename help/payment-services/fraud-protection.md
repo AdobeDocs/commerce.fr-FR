@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security, Paas, Saas
 exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ Vous pouvez activer la protection automatique contre la fraude pour les [!DNL Pa
 Adobe Commerce prend en charge Signifyd versions 5.4.0 et ultérieures. [!DNL Payment Services] prend en charge les flux Signifyd avant et après authentification.
 
 L’intégration Signifyd/[!DNL Payment Services] couvre les cartes de crédit, les cartes de débit, les cartes voûtées, le passage en caisse par l’intermédiaire de l’administrateur et les méthodes de paiement PayPal et Apple Pay. Bien que certains détails des transactions ne soient pas partagés entre les Services de paiement et Signifyd, Signifyd fournit une couverture complète des risques pour tous les modes de paiement, assurant ainsi une protection maximale.
+
+>[!CAUTION]
+>
+> [Fastlane](payments-options.md#fastlane-button) n’est pas compatible avec Signifyd.
 
 Voir [Documentation Signifyd](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) pour en savoir plus sur l’installation et la configuration de l’extension.
 
@@ -41,12 +45,12 @@ Lors de l’intégration à Signifyd, vous devez :
 
 Ces options de configuration ne sont pas compatibles avec les services de paiement et l’intégration de Signify :
 
-* Lorsque [!DNL Payment Services] est configuré avec l&#39;action de paiement `Authorize` _et_ Signifyd est en mode `PostAuth` avec l&#39;option _[!UICONTROL Decline Guarantees]_&#x200B;définie sur **Créer un avoir**.
+* Lorsque [!DNL Payment Services] est configuré avec l&#39;action de paiement `Authorize` _et_ Signifyd est en mode `PostAuth` avec l&#39;option _[!UICONTROL Decline Guarantees]_définie sur **Créer un avoir**.
 
   Motif : [!DNL Payment Services] crée une transaction d’autorisation que Signify tente ensuite de rembourser.
 
 
-* [!DNL Payment Services] est configuré avec l’action de paiement `Authorize and Capture` _et_ Signifyd est en mode `PostAuth` avec l’option _[!UICONTROL Decline Guarantees]_&#x200B;définie sur **Annuler la commande**.
+* [!DNL Payment Services] est configuré avec l’action de paiement `Authorize and Capture` _et_ Signifyd est en mode `PostAuth` avec l’option _[!UICONTROL Decline Guarantees]_définie sur **Annuler la commande**.
 
   Motif : [!DNL Payment Services] crée une transaction de capture que Signifyd tente ensuite d’annuler.
 
