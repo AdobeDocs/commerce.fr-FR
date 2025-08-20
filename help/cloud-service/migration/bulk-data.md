@@ -1,10 +1,10 @@
 ---
 title: Outil de migration de données en bloc
 description: Découvrez comment utiliser l’outil de migration de données en bloc pour migrer les données de votre instance Adobe Commerce on Cloud existante vers  [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Architect
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 8bf8eb58aa9c1ae965f4bbf5a2987fb22f004769
+source-git-commit: 131d3bdb7e6ef2622236ddf08f306639396d6ffa
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 0%
@@ -39,8 +39,8 @@ Les sections suivantes décrivent ces étapes en détail.
 
 La disponibilité de l’outil de migration de données en bloc est la suivante :
 
-- **T3 2025** - Pour accéder à l’outil de migration de données en masse, envoyez un ticket d’assistance.
-- **T3 2025** - L’outil de migration de données en masse sera disponible publiquement et accessible à partir de cette page.
+- **T4 2025** - Pour accéder à l’outil de migration de données en bloc, envoyez un ticket d’assistance.
+- **T4 2025** - L’outil de migration de données en bloc sera disponible publiquement et accessible à partir de cette page.
 
 ## Créer un environnement cible
 
