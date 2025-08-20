@@ -2,9 +2,9 @@
 title: Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce
 description: Découvrez comment utiliser les commandes de l’interface de ligne de commande pour gérer les flux et les processus pour les services SaaS  [!DNL data export extension] ’Adobe Commerce.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 8233b2e184c8af293ffc41cb22e085388cf18049
+source-git-commit: 0f1d55f81cb030d218f0aa8dfa2af4dfd8f640c1
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ La commande `saas:resync` du package `magento/saas-export` permet de gérer la s
 Adobe déconseille d&#39;utiliser régulièrement la commande `saas:resync`. Les scénarios classiques d’utilisation de la commande sont les suivants :
 
 - Synchronisation initiale
-- Synchronisez les données avec un nouvel espace de données après avoir modifié l’identifiant de l’espace de données [SaaS](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/services/saas)
+- Synchronisez les données avec un nouvel espace de données après avoir modifié l’identifiant de l’espace de données [SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Dépannage
 
 Surveillez les opérations de synchronisation dans le fichier `var/log/saas-export.log`.
@@ -145,7 +145,6 @@ Flux disponibles :
 
 - `categories`
 - `categoryPermissions`
-- `inventoryStockStatus`
 - `orders`
 - `prices`
 - `products`
@@ -154,6 +153,10 @@ Flux disponibles :
 - `scopesWebsite`
 - `scopesCustomerGroup`
 - `variants`
+
+>[!NOTE]
+>
+>Les flux disponibles dans votre environnement peuvent être différents en fonction des modules installés dans votre environnement Adobe Commerce.
 
 **Exemple:**
 
