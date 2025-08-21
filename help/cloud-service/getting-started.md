@@ -3,10 +3,10 @@ title: Prise en main de  [!DNL Adobe Commerce as a Cloud Service]
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 81dd617b0a6460b8dcb01c0a21b696663b0ae493
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+source-git-commit: d8c0cf5f54a8518b033013cdb24b25f8ff363f02
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Cliquez sur les onglets ci-dessous pour afficher des vues d’ensemble général
 
 >[!TAB Workflow administrateur et commerçant]
 
-Ce diagramme présente de manière générale la manière dont les administrateurs et les commerçants accèdent aux instances [!DNL Adobe Commerce as a Cloud Service] et les gèrent. Voir le [Guide Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/admin-guide.html) pour plus d&#39;informations sur les workflows d&#39;administration.
+Ce diagramme présente de manière générale la manière dont les administrateurs et les commerçants accèdent aux instances [!DNL Adobe Commerce as a Cloud Service] et les gèrent. Voir le [Guide Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) pour plus d&#39;informations sur les workflows d&#39;administration.
 
 ![[!DNL Adobe Commerce as a Cloud Service] diagramme de flux des commerçants](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -59,12 +59,6 @@ Ce diagramme présente de manière générale la manière dont les développeurs
 
 1. Saisissez un **Nom** et un **Description** pour votre instance.
 
-1. Sélectionnez la région dans laquelle vous souhaitez que votre instance soit hébergée.
-
-   >[!NOTE]
-   >
-   >Une fois votre instance créée, vous ne pourrez plus modifier la région.
-
 1. Sélectionnez le [!UICONTROL **type d’environnement**] de votre instance. Vous pouvez choisir entre les options suivantes :
 
    * [!UICONTROL **Sandbox**] - Idéal pour la conception et les tests. Commencez votre parcours de [!DNL Adobe Commerce as a Cloud Service] à l’aide de l’environnement Sandbox.
@@ -72,8 +66,14 @@ Ce diagramme présente de manière générale la manière dont les développeurs
 
    >[!NOTE]
    >
-   >* Les instances Sandbox sont actuellement limitées à la région Amérique du Nord.
+   >* Les instances Sandbox sont limitées à la région Amérique du Nord.
    >* L’option permettant d’installer des données d’exemple n’est actuellement pas disponible.
+
+1. Sélectionnez la région dans laquelle vous souhaitez que votre instance soit hébergée.
+
+   >[!NOTE]
+   >
+   >Une fois votre instance créée, vous ne pourrez plus modifier la région.
 
 1. Cliquez sur [!UICONTROL **Ajouter une instance**].
 
@@ -99,7 +99,7 @@ Par défaut, les instances de [!DNL Adobe Commerce as a Cloud Service] n’inclu
 
 Pour importer votre catalogue dans [!DNL Adobe Commerce as a Cloud Service], deux méthodes sont possibles :
 
-* [**Commerce Admin**](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/import/data-import) - Une interface conviviale qui vous permet d&#39;importer vos données de catalogue en quelques clics.
+* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Une interface conviviale qui vous permet d&#39;importer vos données de catalogue en quelques clics.
 * [**Importer l’API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Une API REST qui vous permet d’importer les données de votre catalogue par programmation.
 
 <!-- TODO
