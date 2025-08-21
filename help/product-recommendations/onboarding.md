@@ -2,7 +2,7 @@
 title: Intégration
 description: Découvrez les exigences et les plateformes prises en charge dans  [!DNL Product Recommendations].
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
 source-wordcount: '294'
@@ -47,7 +47,7 @@ Les clients de Product Recommendations peuvent utiliser l’indexation des prix 
 
 ### Prise en charge B2B {#b2bsupport}
 
-Les vitrines B2B nécessitent souvent une logique complexe qui détermine la visibilité des produits et les prix pour chaque acheteur ou groupe de clients. [!DNL Product Recommendations] désormais [prise en charge](release-notes.md) cette fonctionnalité en respectant les [autorisations de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catalogues partagés](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) et [tarification spécifique au groupe client](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Par exemple, si vous avez masqué certaines catégories de votre segment de clients de détail, un acheteur de ce segment n’aura pas de recommandations pour les produits de ces catégories. En outre, lorsque vous définissez un catalogue partagé pour des groupes de clients et des sociétés spécifiques, ces acheteurs ne voient des recommandations que pour les produits auxquels ils ont accès. Tous les produits recommandés reflètent un prix correct spécifique au groupe de clients en fonction du groupe de clients de chaque acheteur.
+Les vitrines B2B nécessitent souvent une logique complexe qui détermine la visibilité des produits et les prix pour chaque acheteur ou groupe de clients. [!DNL Product Recommendations] désormais [prise en charge](release-notes.md) cette fonctionnalité en respectant les [autorisations de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=fr), [catalogues partagés](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=fr) et [tarification spécifique au groupe client](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=fr). Par exemple, si vous avez masqué certaines catégories de votre segment de clients de détail, un acheteur de ce segment n’aura pas de recommandations pour les produits de ces catégories. En outre, lorsque vous définissez un catalogue partagé pour des groupes de clients et des sociétés spécifiques, ces acheteurs ne voient des recommandations que pour les produits auxquels ils ont accès. Tous les produits recommandés reflètent un prix correct spécifique au groupe de clients en fonction du groupe de clients de chaque acheteur.
 
 >[!NOTE]
 >
