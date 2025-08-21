@@ -2,9 +2,9 @@
 title: Paramètres
 description: Découvrez comment modifier la source de vos  [!DNL Product Recommendations]  et comment activer les recommandations visuelles.
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Les ordres intermédiaires sont enregistrés à l’aide de l’`environmentId` 
 
 Pour modifier la source des données de vos recommandations de produits, choisissez l’espace de données SaaS avec les données comportementales que vous souhaitez utiliser. Avant de commencer, assurez-vous des points suivants :
 
-- La collecte de données Storefront doit être [configurée et activée](install-configure.md) pour votre environnement de production et [vérifiée](verify.md) que les données comportementales sont envoyées à Adobe Commerce.
+- La collecte de données Storefront doit être [configurée et activée](install-configure.md) pour votre environnement de production et [vérifiée](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) que les données comportementales sont envoyées à Adobe Commerce.
 - Votre catalogue d’environnements de non-production doit être essentiellement identique à votre catalogue de production. L’utilisation de catalogues similaires garantit que les unités de recommandation de produit renvoyées ressemblent étroitement à celles de la production.
 
 1. Connectez-vous à l’administration de votre environnement Adobe Commerce hors production.
