@@ -315,7 +315,7 @@ Lorsque vous modifiez cette configuration, le message `Page cache is invalidated
    - Cliquez sur le lien **[!UICONTROL Cache Management]** dans le message au-dessus de l’espace de travail.
    - Dans la barre latérale _Admin_, accédez à **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Cache Management]**.
 
-1. Sélectionnez le **** Configuration[!UICONTROL Cache Type] et cliquez sur **[!UICONTROL Flush Magento Cache]**.
+1. Sélectionnez le **&#x200B;**&#x200B;Configuration[!UICONTROL Cache Type] et cliquez sur **[!UICONTROL Flush Magento Cache]**.
 
    Les modifications apportées au storefront sont immédiates après avoir vidé le cache.
 
