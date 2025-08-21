@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Dernières informations de mise à jour pour l [!DNL Data Connection] extension d’Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 43020e33ce57861cf586ace12a0832b24c23872d
+source-git-commit: 90fcaa2cdd7c869ceddaeea7525cac00a41d94c5
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1257'
 ht-degree: 2%
 
 ---
@@ -24,9 +24,9 @@ Ces notes de mise à jour contiennent des mises à jour de l’extension [!DNL D
 
 Pour connaître les modifications de fonctionnalités et les correctifs liés aux extensions utilisées par l’extension [!DNL Data Connection], voir **Mises à jour de service prises en charge**.
 
-Voir [Prochaines versions](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule) pour en savoir plus sur les plannings de publication et la prise en charge.
+Voir [Prochaines versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) pour en savoir plus sur les plannings de publication et la prise en charge.
 
-Consultez la documentation destinée aux développeurs pour [découvrir quelles versions de Commerce prennent en charge ce module](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability).
+Consultez la documentation destinée aux développeurs pour [découvrir quelles versions de Commerce prennent en charge ce module](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Mises à jour de service prises en charge
 
@@ -46,12 +46,12 @@ _2 août 2024_
 
 _24 janvier 2024_
 
-![Nouveau](../assets/new.svg) - Mise à jour de l’extension `data-services-b2b` pour inclure un nouvel événement de demande d’approvisionnement appelé [deleteRequisitionList](events.md#deleterequisitionlist) pour les commerçants B2B.
+![Nouveau](../assets/new.svg) - Mise à jour de l’extension `data-services-b2b` pour inclure un nouvel événement de demande d’approvisionnement appelé `deleteRequisitionList` pour les commerçants B2B.
 
 _16 novembre 2023_
 
 ![Correctif](../assets/fix.svg) - Correction d’un problème en raison duquel un message d’erreur s’affichait incorrectement lorsque vous passiez une commande comportant plusieurs adresses d’expédition.
-![Corriger](../assets/fix.svg) - Correction d’un problème dans l’événement [productPageView](events.md#productpageview) en raison duquel le champ d’événement `productListItems.priceTotal` ne convertissait pas le prix après le changement de devise dans la vue du magasin.
+![Corriger](../assets/fix.svg) - Correction d’un problème dans l’événement `productPageView` en raison duquel le champ d’événement `productListItems.priceTotal` ne convertissait pas le prix après le changement de devise dans la vue de la boutique.
 ![Correctif](../assets/fix.svg) - Correction d’un problème dans le champ d’événement `productListItems` en raison duquel le code de devise n’était pas mis à jour lorsque le commerçant a basculé sur la vue de la boutique.
 
 _10 octobre 2023_
@@ -59,11 +59,11 @@ _10 octobre 2023_
 ![Nouveau](../assets/new.svg) - Ajout de nouveaux événements de statut de commande : [Commande facturée](events-backoffice.md#orderinvoiced), [Retour d&#39;article de commande initié](events-backoffice.md#orderitemsreturninitiated) et [Retour d&#39;article de commande terminé](events-backoffice.md#orderitemreturncompleted).
 ![Correctif](../assets/fix.svg) - Correction d’un problème en raison duquel les modifications de configuration de devise n’étaient pas reflétées dans les événements après l’actualisation du cache.
 ![Correctif](../assets/fix.svg) - Correction d’une erreur qui empêchait l’affichage du message de confirmation de commande si le placement de commande asynchrone était activé.
-![Nouveau](../assets/new.svg) - Ajout de données à l’événement [addToRequisitionList](events.md#addtorequisitionlist) pour les produits simples sur la page Affichage des catégories.
-![Correctif](../assets/fix.svg) - Correction d’un problème dans les données `selectedOptions` de l’événement [addToRequisitionList](events.md#addtorequisitionlist) lorsque des produits sont ajoutés à partir de la page de confirmation de commande.
-![Nouveau](../assets/new.svg) - Ajout de données de produit à l&#39;événement [addToRequisitionList](events.md#addtorequisitionlist) lorsque des produits sont ajoutés à la liste de demandes d&#39;approvisionnement à partir de la page de vue Catégorie.
-![Nouveau](../assets/new.svg) - Événement ajouté [addToRequisitionList](events.md#addtorequisitionlist) lorsque des produits configurables sont ajoutés à la liste de demandes d&#39;approvisionnement à partir de la page d&#39;affichage des produits.
-![Nouveau](../assets/new.svg) - Ajout d&#39;événements [addToRequisitionList](events.md#addtorequisitionlist) et [removeFromRequisitionList](events.md#removefromrequisitionlist) lorsque la quantité de produits est augmentée et/ou diminuée à partir d&#39;une liste de demandes d&#39;approvisionnement.
+![Nouveau](../assets/new.svg) - Ajout de données à `addToRequisitionList` événement pour les produits simples sur la page d’affichage des catégories.
+![Correctif](../assets/fix.svg) - Correction d’un problème dans les données `selectedOptions` de l’événement `addToRequisitionList` lorsque des produits sont ajoutés à partir de la page de confirmation de commande.
+![Nouveau](../assets/new.svg) - Ajout de données de produit à `addToRequisitionList` événement lorsque des produits sont ajoutés à la liste de demandes d&#39;approvisionnement à partir de la page de vue Catégorie.
+![Nouveau](../assets/new.svg) - Ajout d&#39;un événement `addToRequisitionList` lorsque des produits configurables sont ajoutés à la liste de demandes d&#39;approvisionnement à partir de la page d&#39;affichage des produits.
+![Nouveau](../assets/new.svg) - Ajout d&#39;événements `addToRequisitionList` et `removeFromRequisitionList` lorsque la quantité de produit est augmentée et/ou diminuée à partir d&#39;une liste de demandes d&#39;approvisionnement.
 
 _10 juin 2023_
 
@@ -141,7 +141,7 @@ _5 juin 2024_
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"} Adobe Commerce versions 2.4.4 et ultérieures
 
 ![Correctif](../assets/fix.svg) - Correction d’un problème en raison duquel un format de date incorrect était utilisé lors du lancement d’une [synchronisation historique](connect-data.md#specify-order-history-date-range).
-![Correctif](../assets/fix.svg) - Correction d’un problème où l’événement [startCheckout](events.md#startcheckout) n’était pas envoyé sur Adobe Commerce 2.4.7.
+![Correctif](../assets/fix.svg) - Correction d’un problème où l’événement `startCheckout` n’était pas envoyé sur Adobe Commerce 2.4.7.
 
 ## 3.1.1
 

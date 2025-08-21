@@ -2,9 +2,10 @@
 title: Bonnes pratiques [!DNL Live Search]
 description: Découvrez les bonnes pratiques d’implémentation  [!DNL Live Search]  dans votre boutique.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2429'
 ht-degree: 0%
 
 ---
@@ -100,7 +101,7 @@ Cas d’utilisation recommandés pour la configuration des redirections de reche
 
 Testez toujours les redirections de recherche pour vous assurer qu’elles fonctionnent correctement et mènent aux pages les plus pertinentes. Surveillez en permanence leur performance et effectuez les ajustements nécessaires.
 
-Découvrez comment [ gérer les redirections de recherche ](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-terms).
+Découvrez comment [ gérer les redirections de recherche ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Améliorer la pertinence des résultats de recherche
 
@@ -128,7 +129,7 @@ Il est essentiel d’établir une règle de recherche par défaut bien pensée. 
 - Hiérarchisez légèrement les produits avec des marges bénéficiaires plus élevées sans compromettre la pertinence.
 - Mettez en avant les produits en vente ou faisant partie de promotions spéciales.
 - Définissez automatiquement des règles de recherche pendant les périodes de promotion ou de vente en utilisant la période pendant votre période de promotion.
-- Adaptez les résultats de la recherche en fonction du comportement de chaque acheteur à l’aide du [classement intelligent](rules-add.md#intelligent-ranking) tel que « recommandé pour vous », « le plus consulté », etc. Pour personnaliser le comportement de l’acheteur, vous devez vous assurer que l’événement est correctement implémenté. Pour les commerçants Luma, les événements sont disponibles clé en main. Pour les implémentations découplées ou personnalisées, vous devez [implémenter les événements](events.md) en fonction de vos besoins spécifiques.
+- Adaptez les résultats de la recherche en fonction du comportement de chaque acheteur à l’aide du [classement intelligent](rules-add.md#intelligent-ranking) tel que « recommandé pour vous », « le plus consulté », etc. Pour personnaliser le comportement de l’acheteur, vous devez vous assurer que l’événement est correctement implémenté. Pour les commerçants Luma, les événements sont disponibles clé en main. Pour les implémentations découplées ou personnalisées, vous devez [implémenter les événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) en fonction de vos besoins spécifiques.
 
 En savoir plus sur les règles de recherche :
 
@@ -139,7 +140,7 @@ En savoir plus sur les règles de recherche :
    - [Créer](rules-add.md)
    - [Modifier, afficher, supprimer](rules-manage.md)
 - Collecte de données
-   - [[!DNL Live Search] des événements](events.md)
+   - [[!DNL Live Search] événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
    - [Collecteur D’Événements Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
    - [Événements Commerce GitHub](https://github.com/adobe/commerce-events/tree/main/examples) 
 
@@ -154,7 +155,7 @@ Assurez-vous que chaque produit possède du contenu pertinent dans chaque attrib
 En savoir plus sur les attributs de produit pour la recherche :
 
 - [Définir les attributs comme pouvant faire l’objet d’une recherche](workspace.md#set-attributes-as-searchable)
-- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Surveillance des résultats de recherche
 
@@ -195,4 +196,4 @@ Vous pouvez utiliser ces données de mesure pour optimiser votre fonctionnalité
 - Analysez les termes de recherche populaires et les données de produit pour identifier les mots-clés importants. Optimisez les attributs pouvant faire l’objet de recherches dans votre produit avec ces mots-clés pour améliorer la pertinence de la recherche.
 - Analysez régulièrement vos données de résultats pour comprendre les tendances changeantes, les préférences et le comportement des acheteurs, identifier les principaux termes de recherche et détecter les problèmes. Utilisez cette boucle de commentaires pour affiner et améliorer en permanence vos règles de recherche et vos offres de produits
 
-Pour obtenir des données correctes dans votre rapport [!DNL Live Search], vous devez vous assurer que les événements sont correctement implémentés. Pour les commerçants Luma, les événements sont disponibles clé en main. Pour les implémentations découplées ou personnalisées, vous devez [implémenter les événements](events.md) en fonction de vos besoins spécifiques.
+Pour obtenir des données correctes dans votre rapport [!DNL Live Search], vous devez vous assurer que les événements sont correctement implémentés. Pour les commerçants Luma, les événements sont disponibles clé en main. Pour les implémentations découplées ou personnalisées, vous devez [implémenter les événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) en fonction de vos besoins spécifiques.
