@@ -2,10 +2,11 @@
 title: Présentation du marchandisage
 description: En savoir plus sur les fonctionnalités de marchandisage dans  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
+source-git-commit: 17d1872321e664ca58a702b0948fd5e6d2f33202
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -16,13 +17,17 @@ Dans cette section, vous apprendrez à créer des expériences personnalisées p
 
 ## Découverte de produits
 
-La découverte de produits améliore les fonctionnalités de recherche de votre site, offrant ainsi une expérience d’achat transparente et efficace qui optimise les taux de conversion. Il permet aux commerçants de s’assurer que les acheteurs reçoivent les bons produits au bon moment.
+La détection de produits dote les commerçants d’outils puissants pour organiser et optimiser l’expérience d’achat, en veillant à ce que les clients trouvent les bons produits rapidement et au bon moment. En affinant le comportement de la recherche, vous pouvez directement influencer la visibilité, la pertinence et la conversion des produits.
 
-Avec la découverte de produits, vous configurez des facettes, des règles et des synonymes pour :
+Grâce à la découverte de produits, vous pouvez :
 
-- Créez des expériences de recherche significatives pour aider les acheteurs et les acheteurs à trouver ce qu’ils veulent avec le moins d’effort possible.
-- Tirez parti de la facettisation et du reclassement dynamiques, optimisés par l’IA, des résultats de recherche en réponse aux comportements d’acheteur en session.
+* **Configurez les [facettes](./facets/overview.md), [règles de marchandisage](./rules/overview.md) et [synonymes](./synonyms/overview.md)** pour guider les acheteurs vers les produits les plus pertinents avec un minimum de friction.
+* **Créez des expériences de recherche intuitives et axées sur des objectifs** qui reflètent votre stratégie de marchandisage et vos priorités saisonnières.
+* **Utilisez la facettisation dynamique et le reclassement des résultats pilotés par l’IA** pour adapter les résultats de recherche en temps réel en fonction du comportement de l’acheteur, ce qui stimule l’engagement et les ventes.
+* **Assurez-vous que les éléments promotionnels et hautement prioritaires apparaissent efficacement** pour aligner les résultats de recherche sur les objectifs commerciaux.
 
 ## Recommendations
 
-Recommendations utilise l’intelligence artificielle et des algorithmes de machine learning pour effectuer une analyse approfondie des données agrégées du visiteur. Ces données, lorsqu’elles sont combinées à votre catalogue, offrent une expérience très attrayante, pertinente et personnalisée. Les recommandations sont affichées sur le storefront sous la forme d’unités avec des étiquettes, telles que « Les clients qui ont consulté ce produit ont également consulté ». Vous pouvez créer, gérer et déployer des recommandations directement depuis [!DNL Adobe Commerce Optimizer].
+Les recommandations utilisent l’intelligence artificielle et le machine learning pour analyser le comportement agrégé des visiteurs et les interactions de produits sur votre storefront. En combinant ces données comportementales à votre catalogue de produits, [!DNL Adobe Commerce Optimizer] fournit des suggestions de produits pertinentes et hautement personnalisées qui améliorent l’engagement des acheteurs et augmentent la conversion.
+
+Les recommandations s’affichent sur le storefront sous la forme d’unités étiquetées, telles que « Les clients qui ont consulté ce produit ont également consulté ». Ces unités peuvent être placées stratégiquement dans tout le parcours d&#39;achat. En tant que marchandiseur, vous pouvez facilement créer, gérer et déployer ces unités de recommandation directement dans [!DNL Adobe Commerce Optimizer] pour prendre en charge les objectifs promotionnels, les stratégies de vente croisée et les expériences personnalisées.
