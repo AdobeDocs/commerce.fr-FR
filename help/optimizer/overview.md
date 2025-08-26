@@ -2,11 +2,11 @@
 title: Qu’est-ce que Adobe Commerce Optimizer ?
 description: En savoir plus sur  [!DNL Adobe Commerce Optimizer]  et ses principales fonctionnalités.
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 877f3c377715f204904eefe3b93d796084721aa7
+source-git-commit: 69c752322b01985a2eb55de69d4736d75f6bd60a
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Avec [!DNL Adobe Commerce Optimizer], vous pouvez :
 
 Regardez la vidéo suivante pour un aperçu général de [!DNL Adobe Commerce Optimizer] :
 
->[!VIDEO](https://video.tv.adobe.com/v/3450465?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Qui profite le plus de [!DNL Adobe Commerce Optimizer] ?
 
@@ -79,7 +79,7 @@ Définissez les vues et politiques de catalogue. Le catalogue contient non seule
 
 Les principales fonctionnalités sont les suivantes :
 
-- **Ingestion de catalogue tiers** - Ingérez des données de catalogue à partir de n’importe quelle source tierce (votre catalogue Commerce existant, PIM, ERP, etc.). Les données de votre catalogue sont directement ingérées dans la couche de services de marchandisage, qui est un composant SaaS appelé Services de marchandisage optimisé par des vues et des politiques de catalogue (vues et politiques de catalogue).
+- **Ingestion de catalogue tiers** - Ingérez des données de catalogue à partir de n’importe quelle source tierce (votre catalogue Commerce existant, PIM, ERP, etc.). Les données de votre catalogue sont directement ingérées dans la couche de services de marchandisage, qui est un composant SaaS appelé Services de marchandisage optimisé par des vues et des politiques de catalogue.
 - **Services de marchandisage optimisés par des vues et des politiques de catalogue** - Cette solution est l’élément fondamental de [!DNL Adobe Commerce Optimizer]. Les services de marchandisage optimisés par les vues et politiques de catalogue constituent un modèle de données de catalogue hautement évolutif et flexible qui permet de déverrouiller les cas d’utilisation multimarques, multiservices et multilingues. Ces services de marchandisage fournissent des blocs de création que les commerçants peuvent utiliser pour créer et gérer des catalogues à grande échelle. Dans [!DNL Adobe Commerce Optimizer], vous pouvez gérer votre catalogue en créant des vues de catalogue et des politiques qui définissent le mieux les objectifs de votre entreprise. En outre, le marchandiseur peut fournir des expériences personnalisées pour stimuler le trafic et l’engagement à l’aide de la découverte de produits&#x200B; des recommandations et du marchandisage intelligent.
 - **Mesures avant et après** - Fournit des informations en temps réel sur les performances de vos initiatives commerciales. Vous pouvez afficher les résultats avant et après des indicateurs clés de performance spécifiques, évaluer l’impact des modifications et les optimiser pour de meilleurs résultats. Vous pouvez exporter les résultats dans un PDF.
 - **Commerce storefront optimisé par Edge Delivery** - avec la diffusion Edge, vous pouvez lancer rapidement votre site à l’aide de composants storefront préconfigurés dotés d’une fonctionnalité commerciale intégrée, notamment des pages de liste de produits, des pages de détails de produits, un panier et un passage en caisse.
