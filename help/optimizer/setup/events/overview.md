@@ -3,7 +3,8 @@ title: Présentation des événements
 description: Découvrez les événements que  [!DNL Adobe Commerce Optimizer]  utilise pour améliorer la recherche et les recommandations.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
+source-git-commit: f12aff86957c2f8f1f830da6f481d28cd54e1f20
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -61,7 +62,7 @@ Ce tableau décrit les événements utilisés par la découverte de produits [st
 | Les plus ajoutés au panier | `page-view`<br>`add-to-cart` | Page des détails du produit<br>page de liste des produits<br>panier<br>liste de souhaits |
 | A consulté ceci, a consulté cela | `page-view`<br>`product-view` | Page des détails du produit |
 
-### Événements de tableau de bord requis
+#### Événements de tableau de bord requis
 
 Certains événements sont nécessaires pour renseigner le tableau de bord des performances de recherche [search](../../manage-results/search-performance.md)
 
@@ -173,4 +174,4 @@ Ce tableau décrit les événements utilisés par chaque type de recommandation.
 
 ## Support technique
 
-Si vous constatez des incohérences dans les données ou si les recommandations et les résultats de recherche ne fonctionnent pas comme prévu, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si vous constatez des incohérences dans les données ou si les recommandations et les résultats de recherche ne fonctionnent pas comme prévu, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
