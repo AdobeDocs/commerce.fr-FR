@@ -3,16 +3,16 @@ title: Correspondance automatique personnalisée
 description: Découvrez comment la correspondance automatique personnalisée est particulièrement utile pour les commerçants avec une logique de correspondance complexe ou ceux qui dépendent d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: ff6affa5bcc4111e14054f3f6b3ce970619ca295
+source-git-commit: ee1dd902a883e5653a9fb8764fac708975c37091
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '323'
 ht-degree: 1%
 
 ---
 
 # Correspondance automatique personnalisée
 
-Si la stratégie de correspondance automatique par défaut (**correspondance automatique prête à l’emploi**) n’est pas alignée avec les besoins spécifiques de votre entreprise, sélectionnez l’option Correspondance personnalisée . Cette option prend en charge l’utilisation de [Adobe Developer App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) pour développer une application de correspondance personnalisée qui gère une logique de correspondance complexe, ou des ressources provenant d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
+Si la stratégie de correspondance automatique par défaut (**correspondance automatique prête à l’emploi**) n’est pas alignée avec les besoins spécifiques de votre entreprise, sélectionnez l’option Correspondance personnalisée . Cette option prend en charge l’utilisation de [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) pour développer une application de correspondance personnalisée qui gère une logique de correspondance complexe, ou des ressources provenant d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
 
 ## Configuration de la correspondance automatique personnalisée
 
@@ -24,7 +24,7 @@ Si la stratégie de correspondance automatique par défaut (**correspondance aut
 
 ## Points d’entrée de l’API de correspondance personnalisés
 
-Lorsque vous créez une application de correspondance personnalisée à l’aide d’[App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l’application doit exposer les points d’entrée suivants :
+Lorsque vous créez une application de correspondance personnalisée à l’aide d’[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l’application doit exposer les points d’entrée suivants :
 
 * **Ressource App Builder vers l’URL du produit** point d’entrée
 * **Point d’entrée du produit App Builder vers l’URL de la ressource**
@@ -76,8 +76,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 | Paramètre | Type de données | Description |
 | --- | --- | --- |
-| `assetId` | String | Représente l’ID de ressource mis à jour |
-| `eventData` | String | Renvoie la payload des données associée à la `assetId` |
+| `assetId` | String | Représente l’ID de ressource mis à jour. |
+| `eventData` | String | Renvoie la payload de données associée à l’ID de ressource. |
 
 **Réponse**
 
@@ -136,22 +136,13 @@ exports.main = main;
 **Requête**
 
 ```bash
-GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
+POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
 | Paramètre | Type de données | Description |
 | --- | --- | --- |
 | `productSKU` | String | Représente le SKU de produit mis à jour. |
-| `asset_matches` | String | Renvoie toutes les ressources associées à un `productSku` spécifique. |
-
-Le paramètre `asset_matches` contient les attributs suivants :
-
-| Attribut | Type de données | Description |
-| --- | --- | --- |
-| `asset_id` | String | Représente l’ID de ressource mis à jour. |
-| `asset_roles` | String | Renvoie tous les rôles de ressources disponibles. Utilise les [rôles de ressources Commerce pris en charge](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) tels que `thumbnail`, `image`, `small_image` et `swatch_image`. |
-| `asset_format` | String | Fournit les formats disponibles pour la ressource. Les valeurs possibles sont `image` et `video`. |
-| `asset_position` | String | Affiche la position de la ressource. |
+| `eventData` | String | Renvoie la payload de données associée au SKU du produit. |
 
 **Réponse**
 
@@ -161,12 +152,30 @@ Le paramètre `asset_matches` contient les attributs suivants :
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail","image"],
+      "asset_position": 1,
+      "asset_format": image
     },
     {
       "asset_id": "{ASSET_ID_2}",
       "asset_roles": ["thumbnail"]
+      "asset_position": 2,
+      "asset_format": image     
     }
   ]
 }
 ```
+
+| Paramètre | Type de données | Description |
+| --- | --- | --- |
+| `productSKU` | String | Représente le SKU de produit mis à jour. |
+| `asset_matches` | String | Renvoie toutes les ressources associées à un SKU de produit spécifique. |
+
+Le paramètre `asset_matches` contient les attributs suivants :
+
+| Attribut | Type de données | Description |
+| --- | --- | --- |
+| `asset_id` | String | Représente l’ID de ressource mis à jour. |
+| `asset_roles` | String | Renvoie tous les rôles de ressources disponibles. Utilise les [rôles de ressources Commerce pris en charge](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) tels que `thumbnail`, `image`, `small_image` et `swatch_image`. |
+| `asset_format` | String | Fournit les formats disponibles pour la ressource. Les valeurs possibles sont `image` et `video`. |
+| `asset_position` | String | Affiche la position de la ressource. |
