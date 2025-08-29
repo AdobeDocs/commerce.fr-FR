@@ -3,10 +3,10 @@ title: Prise en main de  [!DNL Adobe Commerce as a Cloud Service]
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: d8c0cf5f54a8518b033013cdb24b25f8ff363f02
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+source-git-commit: a070fa6ba000e1b101deb3f0a96e53c5f2ece9a4
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Cliquez sur les onglets ci-dessous pour afficher des vues d’ensemble général
 
 >[!TAB Workflow administrateur et commerçant]
 
-Ce diagramme présente de manière générale la manière dont les administrateurs et les commerçants accèdent aux instances [!DNL Adobe Commerce as a Cloud Service] et les gèrent. Voir le [Guide Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/admin-guide.html) pour plus d&#39;informations sur les workflows d&#39;administration.
+Ce diagramme présente de manière générale la manière dont les administrateurs et les commerçants accèdent aux instances [!DNL Adobe Commerce as a Cloud Service] et les gèrent. Voir le [Guide Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) pour plus d&#39;informations sur les workflows d&#39;administration.
 
 ![[!DNL Adobe Commerce as a Cloud Service] diagramme de flux des commerçants](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -93,13 +93,24 @@ Après avoir créé une instance, vous pouvez y accéder à partir du [!UICONTRO
 >
 >Pour afficher des informations sur votre instance, notamment les points d’entrée REST et GraphQL ainsi que l’URL d’administration, cliquez sur l’icône d’information en regard du nom de l’instance.
 
+Les URL de base de votre administrateur et de vos points d’entrée diffèrent en fonction de la région et de l’environnement, selon le modèle suivant :
+
+* Admin
+   * Administrateur de production pour l&#39;Amérique du Nord : `https://na1.admin.commerce.adobe.com`
+   * Administrateur sandbox pour l’Amérique du Nord : `https://na1-sandbox.admin.commerce.adobe.com`
+   * Administrateur de production pour l&#39;Europe : `https://eu1.admin.commerce.adobe.com`
+* REST et GraphQL
+   * GraphQL de production nord-américaine : `https://na1.api.commerce.adobe.com`
+   * GraphQL Sandbox Amérique du Nord : `https://na1-sandbox.api.commerce.adobe.com`
+   * GraphQL de production en Europe : `https://eu1.api.commerce.adobe.com`
+
 ## Importer votre catalogue
 
 Par défaut, les instances de [!DNL Adobe Commerce as a Cloud Service] n’incluent aucune donnée de produit. Vous avez la possibilité d’inclure des exemples de données de produit lorsque vous créez une instance à des fins de test et d’apprentissage avant d’importer votre propre catalogue.
 
 Pour importer votre catalogue dans [!DNL Adobe Commerce as a Cloud Service], deux méthodes sont possibles :
 
-* [**Commerce Admin**](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/import/data-import) - Une interface conviviale qui vous permet d&#39;importer vos données de catalogue en quelques clics.
+* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Une interface conviviale qui vous permet d&#39;importer vos données de catalogue en quelques clics.
 * [**Importer l’API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Une API REST qui vous permet d’importer les données de votre catalogue par programmation.
 
 <!-- TODO
