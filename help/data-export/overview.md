@@ -2,7 +2,8 @@
 title: '[!DNL SaaS Data Export Guide]'
 description: Découvrez comment utiliser l [!DNL data export] extension pour les services SaaS Adobe Commerce qui synchronise les données entre Adobe Commerce et les services Commerce connectés.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
+source-git-commit: 8e3e71c7de56b367a73ab048fa13ba2cdeb55f41
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -24,9 +25,9 @@ L&#39;export de données en SaaS est livré sous forme d&#39;extension PHP. Il p
 
 - **Synchronisation manuelle depuis l’Admin ou la ligne de commande**
 
-   - Le tableau de bord [Data Management](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-dashboard) de l’Administration Commerce fournit une vue graphique de l’état de la synchronisation. Vous pouvez utiliser le tableau de bord pour effectuer une resynchronisation complète (_synchronisation complète_) de tous les flux. Cependant, Adobe recommande de n’effectuer une synchronisation complète que la première fois que vous connectez Adobe Commerce à un service Commerce. Voir [Processus de synchronisation](data-synchronization.md).
+   - Le tableau de bord [Data Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) de l’Administration Commerce fournit une vue graphique de l’état de la synchronisation. Vous pouvez utiliser le tableau de bord pour effectuer une resynchronisation complète (_synchronisation complète_) de tous les flux. Cependant, Adobe recommande de n’effectuer une synchronisation complète que la première fois que vous connectez Adobe Commerce à un service Commerce. Voir [Processus de synchronisation](data-synchronization.md).
 
-   - L’outil de ligne de commande [Adobe Commerce ](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fournit des commandes pour synchroniser des flux spécifiques et inclut des options supplémentaires pour personnaliser le traitement des flux.
+   - L’outil de ligne de commande [Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fournit des commandes pour synchroniser des flux spécifiques et inclut des options supplémentaires pour personnaliser le traitement des flux.
 
 - **Synchronisation automatisée avec les tâches cron**
 
