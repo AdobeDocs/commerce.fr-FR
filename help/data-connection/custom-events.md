@@ -3,10 +3,11 @@ title: Créer des événements personnalisés
 description: Découvrez comment créer des événements personnalisés pour connecter vos données Adobe Commerce à d’autres produits Adobe DX.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
+source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 0%
+source-wordcount: '271'
+ht-degree: 1%
 
 ---
 
@@ -76,11 +77,7 @@ Les remplacements d’attributs pour les événements standard sont pris en char
 
 Pour tout événement avec `customContext`, le collecteur remplace les champs de jointure définis dans les contextes appropriés par des champs dans `customContext`. Le cas d’utilisation des remplacements se présente lorsqu’un développeur souhaite réutiliser et étendre des contextes définis par d’autres parties de la page dans des événements déjà pris en charge.
 
->[!NOTE]
->
->Lors du remplacement d’événements personnalisés, le transfert d’événement vers Experience Platform doit être désactivé pour ce type d’événement afin d’éviter un double comptage.
-
-Exemples :
+### Exemples
 
 Vue de produit avec remplacements publiée via Adobe Commerce Events SDK :
 
@@ -131,6 +128,30 @@ Dans Experience Platform Edge :
   }
 }
 ```
+
+Magasins basés sur Luma :
+
+Dans les magasins Luma, les événements de publication sont implémentés en mode natif. Par conséquent, vous pouvez définir des données personnalisées en étendant `customContext`.
+
+Par exemple :
+
+```javascript
+mse.context.setCustom({
+  productListItems: [
+    {
+      productCategories: [
+        {
+          categoryID: "cat_15",
+          categoryName: "summer pants",
+          categoryPath: "pants/mens/summer",
+        },
+      ],
+    },
+  ],
+});
+```
+
+Voir [remplacement d’événement personnalisé](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md) pour en savoir plus sur la gestion des données personnalisées.
 
 >[!NOTE]
 >
