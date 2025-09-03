@@ -1,5 +1,5 @@
 ---
-source-git-commit: 757c1f430346ef82cba0f708cdd17580d8e6dba9
+source-git-commit: c7c9c19936ed1db8e262daaf391bd2d168b91741
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 6%
@@ -23,12 +23,12 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>IL MANQUE quoi de neuf dans la #197 PR de mise à jour majeure : « supprimer le modèle automatique » affecté à jhoover (https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/197)</p>
+      <td><p>Vous pouvez désormais utiliser l’outil <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">outil de création de sites</a> pour configurer votre storefront sans utiliser l’interface de ligne de commande.</p>
 </td>
       <td>
         Mise à jour majeure
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf3954af26fba0aa943261a0673166c0537e692e">validation</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf3954af26fba0aa943261a0673166c0537e692e">validation</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Quoi de neuf manquant dans la nouvelle rubrique PR #158 : « Ajout d’une nouvelle rubrique sur les identités personnalisées » affectée à emarr (https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/158)</p>
+      <td><p>Ajout d’une rubrique sur l’ajout d’attributs <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities"> personnalisés aux profils</a>.</p>
 </td>
       <td>
         Nouvelle rubrique
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/403b15368c52f3965e65a9175c82c2f6cd1773bb">validation</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/403b15368c52f3965e65a9175c82c2f6cd1773bb">validation</a></td>
     </tr>
   </tbody>
 </table>
@@ -72,7 +72,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td>
         Feedback
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad0c36006a01491aee1ca1643c6a3ab63f39f7e4">validation</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ad0c36006a01491aee1ca1643c6a3ab63f39f7e4">validation</a></td>
     </tr>
   </tbody>
 </table>
