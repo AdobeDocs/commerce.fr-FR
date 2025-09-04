@@ -25,4 +25,4 @@ ht-degree: 4%
    - [Ajout dynamique d’un attribut de produit](add-attribute-dynamically.md)
    - [Ajouter une classe de taxe, un jeu d’attributs et des métadonnées d’inventaire](add-tax-attribute-set-inventory-attributes.md)
 - [Notes de mise à jour](release-notes.md)
-- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr)
