@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Gestion des restrictions relatives aux cookies
 
-Adobe Commerce et Magento Open Source demandent l’autorisation avant de stocker des données dans des cookies de navigateur. Pour plus d’informations, voir [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
+Adobe Commerce et Magento Open Source demandent l’autorisation avant de stocker des données dans des cookies de navigateur. Pour plus d’informations, voir [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr).
 
 ## Gestion des restrictions liées aux cookies par les recommandations de produits
 
