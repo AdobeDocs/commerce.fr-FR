@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la documentation relative au module facultatif <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Attributs de produit supplémentaires</a>. Lorsque ce module est installé dans un environnement Adobe Commerce, le processus d’exportation des données exporte automatiquement les métadonnées de classe de taxe, de jeu d’attributs et d’inventaire de la configuration du produit Commerce vers les flux de <code class="language-plaintext highlighter-rouge">products</code> et de <code class="language-plaintext highlighter-rouge">product attributes</code>.</p>
+      <td><p>Ajout de la documentation relative au module facultatif <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Attributs de produit supplémentaires</a>. Lorsque ce module est installé dans un environnement Adobe Commerce, le processus d’exportation des données exporte automatiquement les métadonnées de classe de taxe, de jeu d’attributs et d’inventaire de la configuration du produit Commerce vers les flux de <code class="language-plaintext highlighter-rouge">products</code> et de <code class="language-plaintext highlighter-rouge">product attributes</code>.</p>
 </td>
       <td>
         Nouvelle rubrique
@@ -45,7 +45,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Vous pouvez désormais utiliser l’outil <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">outil de création de sites</a> pour configurer votre storefront sans utiliser l’interface de ligne de commande.</p>
+      <td><p>Vous pouvez désormais utiliser l’outil <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/storefront">outil de création de sites</a> pour configurer votre storefront sans utiliser l’interface de ligne de commande.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -67,7 +67,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une rubrique sur l’ajout d’attributs <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities"> personnalisés aux profils</a>.</p>
+      <td><p>Ajout d’une rubrique sur l’ajout d’attributs <a href="https://experienceleague.adobe.com/fr/docs/commerce/data-connection/customize-data/custom-identities"> personnalisés aux profils</a>.</p>
 </td>
       <td>
         Nouvelle rubrique
