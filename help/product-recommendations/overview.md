@@ -43,7 +43,7 @@ Les recommandations de produits vous permettent d’effectuer les opérations su
 
 Regardez cette vidéo pour en savoir plus sur [!DNL Product Recommendations] :
 
->[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3449946?quality=12&captions=fre_fr)
 
 ## Politique de conservation des données de catalogue
 
