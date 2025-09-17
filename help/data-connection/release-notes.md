@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Dernières informations de mise à jour pour l [!DNL Data Connection] extension d’Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 90fcaa2cdd7c869ceddaeea7525cac00a41d94c5
+source-git-commit: 9c10aecb303dd09a85bdafa93d791d30611ec8b2
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1290'
 ht-degree: 2%
 
 ---
@@ -24,9 +24,9 @@ Ces notes de mise à jour contiennent des mises à jour de l’extension [!DNL D
 
 Pour connaître les modifications de fonctionnalités et les correctifs liés aux extensions utilisées par l’extension [!DNL Data Connection], voir **Mises à jour de service prises en charge**.
 
-Voir [Prochaines versions](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule) pour en savoir plus sur les plannings de publication et la prise en charge.
+Voir [Prochaines versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) pour en savoir plus sur les plannings de publication et la prise en charge.
 
-Consultez la documentation destinée aux développeurs pour [découvrir quelles versions de Commerce prennent en charge ce module](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability).
+Consultez la documentation destinée aux développeurs pour [découvrir quelles versions de Commerce prennent en charge ce module](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Mises à jour de service prises en charge
 
@@ -81,6 +81,14 @@ _12 octobre 2022_
 ![Nouveau](../assets/new.svg) - Ajout de la prise en charge d’un [storefront AEM](overview.md#aem-support).
 
 +++
+
+## 3.4.0
+
+_16 septembre 2025_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"} Adobe Commerce versions 2.4.4 et ultérieures
+
+![Nouveau](../assets/new.svg) [!DNL Data Connection] respecte désormais entièrement le mode de restriction des cookies en empêchant la collecte et le stockage de données dans les cookies/stockage local lorsque les restrictions sont activées.
 
 ## 3.3.0
 
