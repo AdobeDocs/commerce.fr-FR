@@ -2,9 +2,9 @@
 title: Configuration de Live Search
 description: L’espace  [!DNL Live Search]  travail permet de configurer, de gérer et de surveiller les performances des recherches.
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: bb212bf88ba7bad3deb2d2d699124413f4dd76ff
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1068'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ Si vous utilisez un storefront découplé, reportez-vous à la documentation sui
 
 ### Clients du secteur de la santé
 
-Si vous êtes un client du secteur de la santé et que vous avez installé l’extension [Data Services HIPAA](../data-connection/hipaa-readiness.md#installation), qui fait partie de l’extension [Data Connection](../data-connection/overview.md), les données d’événement de storefront utilisées par [!DNL Live Search] ne sont plus capturées. En effet, les données d’événement de storefront sont générées côté client. Pour continuer à capturer et à envoyer des données d’événement de storefront, réactivez la collecte d’événements pour [!DNL Live Search]. Voir [configuration générale](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/general/general#data-services) pour en savoir plus.
+Si vous êtes un client du secteur de la santé et que vous avez installé l’extension [Data Services HIPAA](../data-connection/hipaa-readiness.md#installation), qui fait partie de l’extension [Data Connection](../data-connection/overview.md), les données d’événement de storefront utilisées par [!DNL Live Search] ne sont plus capturées. En effet, les données d’événement de storefront sont générées côté client. Pour continuer à capturer et à envoyer des données d’événement de storefront, réactivez la collecte d’événements pour [!DNL Live Search]. Voir [configuration générale](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) pour en savoir plus.
 
 ## Définir la portée
 
-Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) de tous les paramètres [!DNL Live Search] est définie sur `Default Store View`. Si votre installation [!DNL Commerce] comprend plusieurs vues de magasin, définissez **Portée** sur la vue [magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr) où s’appliquent les paramètres de facettes.
+Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) de tous les paramètres [!DNL Live Search] est définie sur `Default Store View`. Si votre installation [!DNL Commerce] comprend plusieurs vues de magasin, définissez **Portée** sur la vue [magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) où s’appliquent les paramètres de facettes.
 
 ## Options de menu
 
@@ -50,7 +50,7 @@ Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/
 
 ## Définir les attributs comme pouvant faire l’objet d’une recherche
 
-Pour obtenir des résultats hautement ciblés, passez en revue l’ensemble des attributs de produit [consultables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=fr) (`searchable=true`). Pour garantir la pertinence, assurez-vous que les attributs ne peuvent être recherchés que s’ils contiennent du contenu ayant une signification claire et concise. Évitez d’utiliser des attributs contenant du texte moins précis et plus long, comme `description`, qui bien que la recherche soit activée par défaut, peut réduire la précision des résultats de recherche. Par exemple, si une personne recherche un « short » et qu’il existe des chemises dont la description inclut le terme « manches courtes », les chemises sont incluses dans les résultats de la recherche.
+Pour obtenir des résultats hautement ciblés, passez en revue l’ensemble des attributs de produit [consultables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`). Pour garantir la pertinence, assurez-vous que les attributs ne peuvent être recherchés que s’ils contiennent du contenu ayant une signification claire et concise. Évitez d’utiliser des attributs contenant du texte moins précis et plus long, comme `description`, qui bien que la recherche soit activée par défaut, peut réduire la précision des résultats de recherche. Par exemple, si une personne recherche un « short » et qu’il existe des chemises dont la description inclut le terme « manches courtes », les chemises sont incluses dans les résultats de la recherche.
 
 Pour que les attributs puissent faire l’objet de recherches, procédez comme suit :
 
@@ -60,7 +60,7 @@ Pour que les attributs puissent faire l’objet de recherches, procédez comme s
 
    ![Workspace](assets/attribute-searchable.png)
 
-[!DNL Live Search] respecte également le [poids](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=fr#weighted-search) d’un attribut de produit, tel que défini dans Adobe Commerce. Les attributs ayant un poids plus élevé apparaissent plus haut dans les résultats de la recherche.
+[!DNL Live Search] respecte également le [poids](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) d’un attribut de produit, tel que défini dans Adobe Commerce. Les attributs ayant un poids plus élevé apparaissent plus haut dans les résultats de la recherche.
 
 Les attributs suivants peuvent toujours faire l’objet de recherches :
 
@@ -69,6 +69,10 @@ Les attributs suivants peuvent toujours faire l’objet de recherches :
 - `categories`
 
 [Facettes](facets.md) sont des attributs de produit définis dans [!DNL Live Search] pour pouvoir être filtrés. Vous pouvez définir n’importe quel attribut filtrable en tant que facette dans [!DNL Live Search], mais il existe des [limites](boundaries-limits.md) au nombre de facettes que vous pouvez rechercher en même temps.
+
+>[!NOTE]
+>
+>Un attribut de produit ne peut être filtré que si la configuration de l’attribut de produit possède les propriétés requises : *Utiliser dans la recherche = Oui*, *Utiliser dans les résultats de recherche Navigation superposée = oui* et *Utiliser dans la navigation superposée = Filtrable (avec résultats)*. Si ces propriétés sont manquantes, l’attribut n’est pas visible dans la configuration des facettes. Pour obtenir des instructions de configuration, voir [Ajouter une facette](facets-add.md#add-a-facet).
 
 [Synonymes](synonyms.md) sont des termes que vous pouvez définir pour aider les utilisateurs à trouver le bon produit. Les utilisateurs qui recherchent un pantalon peuvent taper « pantalon » ou « pantalon ». Vous pouvez définir des synonymes afin que ces termes de recherche amènent les utilisateurs aux résultats « pantalons ».
 
@@ -105,4 +109,4 @@ Les prix dans la page de liste de produits du widget et la fenêtre contextuelle
 
 ### Termes de recherche
 
-[!DNL Live Search] prend en charge les [redirections de termes de recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=fr) dans les implémentations où Adobe Commerce gère le routage, par exemple sur Luma et d’autres thèmes basés sur php.
+[!DNL Live Search] prend en charge les [redirections de termes de recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) dans les implémentations où Adobe Commerce gère le routage, par exemple sur Luma et d’autres thèmes basés sur php.
