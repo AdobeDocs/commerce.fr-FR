@@ -286,7 +286,7 @@ _4 juin 2024_
 
 ![Nouveau](../assets/new.svg)<!-- PAY-4877 --> Désormais, [!DNL Payment Services] prend en charge les fonctionnalités de tarification [L2/L3](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/levels-card-payment-transactions.html). Cette fonctionnalité est uniquement disponible pour les clients [!DNL Payment Services] pour lesquels le prix IC++ est activé. Si vous souhaitez utiliser des données de traitement L2/L3 pour [!DNL Payment Services], contactez votre gestionnaire de compte [!DNL Payment Services].
 
-![Correctif](../assets/fix.svg)<!-- PAY-5455 -->[!DNL Payment Services] permet d’activer Apple Pay directement à partir de l’extension sans télécharger et héberger le fichier d’association de domaine [](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
+![Correctif](../assets/fix.svg)<!-- PAY-5455 -->[!DNL Payment Services] permet d’activer Apple Pay directement à partir de l’extension sans télécharger et héberger le fichier d’association de domaine [&#128279;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
 
 ## v2.5.0
 
