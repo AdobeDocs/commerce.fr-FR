@@ -1,7 +1,7 @@
 ---
-source-git-commit: e7e0842b0bd793d03725cdffeecff42d6faf1b1c
+source-git-commit: 32664829cb5df011796a9229fa57991ceeac7c2e
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '214'
 ht-degree: 5%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 5%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### mercredi 23 septembre 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Publié <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">notes de mise à jour</a> pour Payment Services v2.12.2.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1e5ee370bf91d33f35585d2d64b393fede721ce6">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### mercredi 9 septembre 2025
 
@@ -23,7 +45,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’informations de configuration AEM Assets à la page <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/user-management">gestion des utilisateurs</a> pour Adobe Commerce as a Cloud Service.</p>
+      <td><p>Ajout d’informations de configuration AEM Assets à la page <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">gestion des utilisateurs</a> pour Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -31,7 +53,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/acce1aad405e74b1171faddf7f0d6681bd0a048d">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout de tâches basées sur les rôles et d’informations sur les workflows à la page <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/getting-started"> Prise en main </a> pour Adobe Commerce as a Cloud Service</p>
+      <td><p>Ajout de tâches basées sur les rôles et d’informations sur les workflows à la page <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/getting-started"> Prise en main </a> pour Adobe Commerce as a Cloud Service</p>
 </td>
       <td>
         Nouvelle rubrique
@@ -53,7 +75,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la documentation relative au module facultatif <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Attributs de produit supplémentaires</a>. Lorsque ce module est installé dans un environnement Adobe Commerce, le processus d’exportation des données exporte automatiquement les métadonnées de classe de taxe, de jeu d’attributs et d’inventaire de la configuration du produit Commerce vers les flux de <code class="language-plaintext highlighter-rouge">products</code> et de <code class="language-plaintext highlighter-rouge">product attributes</code>.</p>
+      <td><p>Ajout de la documentation relative au module facultatif <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">Attributs de produit supplémentaires</a>. Lorsque ce module est installé dans un environnement Adobe Commerce, le processus d’exportation des données exporte automatiquement les métadonnées de classe de taxe, de jeu d’attributs et d’inventaire de la configuration du produit Commerce vers les flux de <code class="language-plaintext highlighter-rouge">products</code> et de <code class="language-plaintext highlighter-rouge">product attributes</code>.</p>
 </td>
       <td>
         Nouvelle rubrique
@@ -75,7 +97,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Vous pouvez désormais utiliser l’outil <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/storefront">outil de création de sites</a> pour configurer votre storefront sans utiliser l’interface de ligne de commande.</p>
+      <td><p>Vous pouvez désormais utiliser l’outil <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">outil de création de sites</a> pour configurer votre storefront sans utiliser l’interface de ligne de commande.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -97,7 +119,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une rubrique sur l’ajout d’attributs <a href="https://experienceleague.adobe.com/fr/docs/commerce/data-connection/customize-data/custom-identities"> personnalisés aux profils</a>.</p>
+      <td><p>Ajout d’une rubrique sur l’ajout d’attributs <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities"> personnalisés aux profils</a>.</p>
 </td>
       <td>
         Nouvelle rubrique
