@@ -241,10 +241,10 @@ _15 septembre 2023_
 ![Nouveau](../assets/new.svg) Un nouvel onglet Marchandisage de catégorie a été ajouté. Les utilisateurs peuvent désormais ajouter des classements intelligents et des classements manuels (épingle, boost, bury, hide) par catégorie
 ![Nouveau](../assets/new.svg) Les utilisateurs peuvent ajouter une règle de catégorie unique avec un classement intelligent ou manuel
 ![Nouveau](../assets/new.svg) les utilisateurs peuvent désormais ajouter des règles de classement intelligent aux sous-catégories
-![Nouveau ](../assets/new.svg) des informations détaillées sont fournies lors de la suppression de sous-catégories avec classement intelligent
+![Nouveau &#x200B;](../assets/new.svg) des informations détaillées sont fournies lors de la suppression de sous-catégories avec classement intelligent
 ![Nouveau](../assets/new.svg) Ajout de la possibilité de supprimer des règles pour les stratégies de classement héritées
 ![Nouveau](../assets/new.svg) Ajout de la possibilité de supprimer des règles pour une seule catégorie
-![Nouveau ](../assets/new.svg) les utilisateurs peuvent désormais effectuer une recherche par nom de catégorie lors de l’ajout d’une règle
+![Nouveau &#x200B;](../assets/new.svg) les utilisateurs peuvent désormais effectuer une recherche par nom de catégorie lors de l’ajout d’une règle
 ![Nouveau](../assets/new.svg) Avec la vue Arborescence des catégories, les utilisateurs peuvent désormais afficher la catégorie à laquelle des règles sont appliquées.
 ![Nouveau](../assets/new.svg) l’aperçu des catégories affiche uniquement la catégorie sélectionnée.
 Les composants ![Nouveau](../assets/new.svg) CIF AEM [Widget contextuel](https://github.com/adobe/aem-cif-guides-venia/pull/319) et [Widget PLP](https://github.com/adobe/aem-cif-guides-venia/pull/320) permettent aux sites AEM de tirer parti de l’[!DNL Live Search].
@@ -326,7 +326,7 @@ _14 mars 2023_
 ![Correctif](../assets/fix.svg) La suppression d’un événement existant met désormais à jour l’aperçu
 ![Correction](../assets/fix.svg) Les règles sans événement peuvent être enregistrées
 ![Corriger](../assets/fix.svg) Supprimer le sélecteur de facettes « Sélectionner le type »
-![Correctif ](../assets/fix.svg) ajout d’un nouveau statut « Modification » pour les règles non enregistrées
+![Correctif &#x200B;](../assets/fix.svg) ajout d’un nouveau statut « Modification » pour les règles non enregistrées
 
 #### Correctifs
 
@@ -389,8 +389,8 @@ Les installations [!DNL Live Search] existantes doivent être mises à niveau ve
 ![Nouveau](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) pris en charge pour [!DNL Live Search].
 ![Nouveau](../assets/new.svg) Le processus d&#39;installation de [!DNL Live Search] est mis à jour avec des modifications de processus avancées.
 ![Correctif](../assets/fix.svg) [Recherche avancée](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) lien supprimé du pied de page du storefront.
-![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par l’API Commerce GraphQL[ lorsqu’ils sont utilisés dans le cadre de la version bêta de PWA : ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/), `description`, `name`
-`short_description`Bogue![ la version bêta de PWA for ](../assets/bug.svg) ne prend pas en charge [!DNL Live Search]la gestion des événements[.](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)
+![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par l’API Commerce GraphQL[&#x200B; lorsqu’ils sont utilisés dans le cadre de la version bêta de PWA : &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/), `description`, `name`
+`short_description`Bogue![&#x200B; la version bêta de PWA for &#x200B;](../assets/bug.svg) ne prend pas en charge [!DNL Live Search]la gestion des événements[.](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)
 
 ### [!DNL Live Search] 3.1
 
