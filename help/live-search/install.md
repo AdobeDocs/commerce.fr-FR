@@ -30,7 +30,7 @@ Cet article est destiné au développeur ou à l’intégrateur système de votr
 
 >[!IMPORTANT]
 >
->Avant d’implémenter [!DNL Live Search], consultez la section [ Limites et limites ](boundaries-limits.md) pour vous assurer que [!DNL Live Search] correspond aux besoins de votre entreprise.
+>Avant d’implémenter [!DNL Live Search], consultez la section [&#x200B; Limites et limites &#x200B;](boundaries-limits.md) pour vous assurer que [!DNL Live Search] correspond aux besoins de votre entreprise.
 
 ## Mises à jour importantes
 
@@ -178,7 +178,7 @@ Après avoir vérifié les indexeurs, l’étape suivante consiste à [configure
 >
 >La fonctionnalité suivante est en version bêta. Pour participer à la version bêta, envoyez une demande par e-mail à [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
-Cette version Beta prend en charge trois nouvelles fonctionnalités dans la requête [`productSearch` ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) :
+Cette version Beta prend en charge trois nouvelles fonctionnalités dans la requête [`productSearch` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) :
 
 - **Recherche superposée** - Effectuez une recherche dans un autre contexte de recherche - Grâce à cette fonctionnalité, vous pouvez effectuer jusqu’à deux couches de recherche pour vos requêtes de recherche. Par exemple :
 
@@ -313,7 +313,7 @@ Lorsque vous modifiez cette configuration, le message `Page cache is invalidated
    - Cliquez sur le lien **[!UICONTROL Cache Management]** dans le message au-dessus de l’espace de travail.
    - Dans la barre latérale _Admin_, accédez à **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Cache Management]**.
 
-1. Sélectionnez le **** Configuration[!UICONTROL Cache Type] et cliquez sur **[!UICONTROL Flush Magento Cache]**.
+1. Sélectionnez le **&#x200B;**&#x200B;Configuration[!UICONTROL Cache Type] et cliquez sur **[!UICONTROL Flush Magento Cache]**.
 
    Les modifications apportées au storefront sont immédiates après avoir vidé le cache.
 
@@ -515,11 +515,11 @@ Le code du widget de page de liste de produits et du widget de champ de [!DNL Li
 Les développeurs qui ont accès au code peuvent entièrement personnaliser son fonctionnement et son aspect. Ils hébergent le code sur leurs propres serveurs, mais utilisent toujours le service [!DNL Live Search].
 
 - [Widget PLP](https://github.com/adobe/storefront-product-listing-page)
-- [ Barre de recherche ](https://github.com/adobe/storefront-search-as-you-type)
+- [&#x200B; Barre de recherche &#x200B;](https://github.com/adobe/storefront-search-as-you-type)
 
 ### Extension Data Export
 
-Une fois [!DNL Live Search] activé, l’extension d’exportation de données synchronise les données Commerce entre l’application Commerce et [!DNL Live Search]. Ce processus garantit que les données Commerce les plus récentes sont disponibles sur le storefront. Dans l’Administration, vous pouvez vérifier l’état de synchronisation à l’aide du tableau de bord Data Management. Vous pouvez gérer et résoudre les problèmes du processus d’exportation des données à l’aide de l’interface de ligne de commande et des journaux Commerce. Pour plus d’informations, consultez le [ Guide d’exportation de données ](../data-export/overview.md).
+Une fois [!DNL Live Search] activé, l’extension d’exportation de données synchronise les données Commerce entre l’application Commerce et [!DNL Live Search]. Ce processus garantit que les données Commerce les plus récentes sont disponibles sur le storefront. Dans l’Administration, vous pouvez vérifier l’état de synchronisation à l’aide du tableau de bord Data Management. Vous pouvez gérer et résoudre les problèmes du processus d’exportation des données à l’aide de l’interface de ligne de commande et des journaux Commerce. Pour plus d’informations, consultez le [&#x200B; Guide d’exportation de données &#x200B;](../data-export/overview.md).
 
 ### Inventory management
 
