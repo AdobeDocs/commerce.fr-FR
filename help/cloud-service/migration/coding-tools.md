@@ -38,7 +38,7 @@ L’utilisation des outils de codage de l’IA offre les avantages suivants :
    npm install -g @adobe/aio-cli
    ```
 
-1. Installez le plug-in Adobe I/O CLI Commerce [](https://github.com/adobe-commerce/aio-cli-plugin-commerce) :
+1. Installez le plug-in Adobe I/O CLI Commerce [&#128279;](https://github.com/adobe-commerce/aio-cli-plugin-commerce) :
 
    ```bash
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
