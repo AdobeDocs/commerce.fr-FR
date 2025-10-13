@@ -4,9 +4,9 @@ description: Dernières informations de mise  [!DNL Data Export Extension]  jour
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: e81eded54df197c92548aae4636da0e885406b60
+source-git-commit: 9cca531a5f50850366a1c942fcda71eacecef5d0
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1775'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Les mises à jour incluent :
 
 ## Version majeure actuelle
 
+## Version 103.4.14
+
+![Correction](../assets/fix.svg) Correction d’un problème en raison duquel la tâche [mview indexer](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) pouvait échouer si la table `cde_product_overrides_feed_cl` était manquante. Le correctif garantit une réindexation stable et empêche les échecs de tâche liés à cette table dans des environnements à plusieurs clients. » <!--MDEE-1175-->
+
 ## Version 103.4.13
 
 ![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel la modification des paramètres de configuration web provoquait la réinitialisation de l’index de flux du produit. <!--MDEE-1154-->
@@ -39,7 +43,7 @@ Les mises à jour incluent :
 
 ## Version 103.4.11
 
-![Nouveau](../assets/new.svg) [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
+![Nouveau](../assets/new.svg) [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
 Ajout de la prise en charge d’attributs de produit supplémentaires pour inclure la classe de taxe, le jeu d’attributs et les données d’inventaire des configurations de produit Commerce dans le flux de produits. Les clients qui souhaitent inclure ces attributs dans les flux d’exportation de produits doivent ajouter le module Attributs de produit supplémentaires à leur projet Adobe Commerce. Voir [Ajouter une classe de taxe, un jeu d&#39;attributs et des attributs de stock](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![Correctif](../assets/fix.svg) Correction d’un problème qui entraînait une synchronisation incorrecte des mises à jour de produits supprimés si une erreur se produisait pendant un index de produit complet. Désormais, toutes les suppressions de produits sont correctement synchronisées, même si une erreur se produit pendant le processus d’indexation. <!--MDEE-1144-->
 
