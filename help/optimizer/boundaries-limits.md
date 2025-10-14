@@ -2,10 +2,11 @@
 title: Limites et limites
 description: Découvrez les limites de  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 553490762ef10e43ccce1654acec59aeb83bb5f9
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
+source-git-commit: 1eb95f26a196ad4e66cbc980c7f8a41cae950cb6
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Vous trouverez ci-dessous les limites et les limites des [!DNL Adobe Commerce Op
 - Le nombre maximal d’attributs pouvant faire l’objet d’une recherche est de 200.
 - Le nombre maximal d’attributs triables est de 50.
 - Le nombre maximal de facettes est de 100. Toutes les facettes doivent être des attributs filtrables.
-- Le nombre maximal d’options qu’un seul chat à facettes renvoie est de 100, ce qui peut être augmenté par demande d’assistance.
+- Le nombre maximal d’options qu’une seule facette peut renvoyer est de 100, ce qui peut être augmenté par demande d’assistance.
 
 ## Vues et politiques de catalogue
 
