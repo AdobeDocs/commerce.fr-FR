@@ -56,7 +56,7 @@ Pour que votre environnement [!DNL Adobe Commerce Optimizer] fonctionne, procéd
 Après avoir créé votre instance :
 
 1. [Gérez votre instance](#manage-instances) à partir de Commerce Cloud Manager.
-1. Configurez l’accès des utilisateurs et utilisatrices à l’aide du [ Guide de gestion des utilisateurs ](./user-management.md).
+1. Configurez l’accès des utilisateurs et utilisatrices à l’aide du [&#x200B; Guide de gestion des utilisateurs &#x200B;](./user-management.md).
 
 ### Étape 3. Ajouter des données d’exemple (facultatif)
 
@@ -181,7 +181,7 @@ Les données d’exemple sont basées sur le [scénario commercial Carvelo](./us
    - Configuration de votre environnement
    - Terminer le processus d’ingestion des données
    - Créer des vues de catalogue et des politiques à l’aide des données d’exemple
-   - Vérifiez l’ingestion des données en vérifiant les données du service de catalogue sur la page [ Synchronisation des données ](./setup/data-sync.md)
+   - Vérifiez l’ingestion des données en vérifiant les données du service de catalogue sur la page [&#x200B; Synchronisation des données &#x200B;](./setup/data-sync.md)
 
 ## Étapes suivantes
 
