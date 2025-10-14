@@ -15,7 +15,7 @@ ht-degree: 0%
 Vous pouvez mettre le service en production et terminer le [processus d’intégration](onboard.md), conformément aux étapes de cette rubrique, après avoir :
 
 * [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} [Installer](install.md) l’extension Payment Services
-* [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} [ Configurer et connecter](connect.md) votre instance
+* [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} [&#x200B; Configurer et connecter](connect.md) votre instance
 * [Configurer](sandbox.md) et [tester](test-validate.md) votre sandbox
 
 ## Définir [!DNL Payment Services] comme mode de paiement

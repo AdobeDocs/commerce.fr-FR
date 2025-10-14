@@ -30,7 +30,7 @@ Vous pouvez activer [!DNL Payment Services] pour votre site web et activer les t
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-1. Cliquez sur **[!UICONTROL Settings]**. Voir [Introduction à l’accueil [!DNL Payment Services]  ](payments-home.md) pour plus d’informations.
+1. Cliquez sur **[!UICONTROL Settings]**. Voir [Introduction à l’accueil [!DNL Payment Services]  &#x200B;](payments-home.md) pour plus d’informations.
 
    ![Vue des paramètres React](assets/react-settings-view.png){width="500" zoomable="yes"}
 
@@ -59,7 +59,7 @@ Vous pouvez maintenant procéder à la modification des paramètres par défaut 
 Vous pouvez ajouter un [!UICONTROL Soft Descriptor] à la configuration de vos sites web ou de vos vues de magasin individuelles. Les descripteurs soft s’affichent sur les relevés bancaires des transactions client. Si vous disposez de plusieurs magasins/marques/catalogues, par exemple, vous pouvez facilement les délimiter en ajoutant du texte personnalisé au champ [!UICONTROL Soft Descriptor].
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Cliquez sur **[!UICONTROL Settings]**. Voir [Introduction à l’accueil [!DNL Payment Services]  ](payments-home.md) pour plus d’informations.
+1. Cliquez sur **[!UICONTROL Settings]**. Voir [Introduction à l’accueil [!DNL Payment Services]  &#x200B;](payments-home.md) pour plus d’informations.
 1. Sélectionnez la vue du site web ou du magasin, dans le menu déroulant **[!UICONTROL Scope]**, pour laquelle vous souhaitez créer un descripteur logiciel. Pour la configuration initiale, laissez ceci comme **[!UICONTROL Default]** pour définir la valeur par défaut.
 1. Ajoutez votre texte personnalisé (jusqu’à 22 caractères) dans le champ de texte, en remplaçant `Soft descriptor`.
 1. Cliquez sur **[!UICONTROL Save]**.
@@ -90,7 +90,7 @@ Vous pouvez ajouter un [!UICONTROL Soft Descriptor] à la configuration de vos s
 Maintenant que vous avez activé [!UICONTROL Payment Services] pour votre site web, vous pouvez modifier les paramètres par défaut des fonctions de paiement et de l’affichage du storefront.
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Cliquez sur **[!UICONTROL Settings]**. Voir [Introduction à l’accueil [!DNL Payment Services]  ](payments-home.md) pour plus d’informations.
+1. Cliquez sur **[!UICONTROL Settings]**. Voir [Introduction à l’accueil [!DNL Payment Services]  &#x200B;](payments-home.md) pour plus d’informations.
 1. Configurez les options de paiement pour [cartes de crédit](#credit-card-fields), [boutons de paiement](#payment-buttons) et [style de bouton](#button-style), conformément aux sections suivantes.
 
 ### Champs de carte de crédit
@@ -244,7 +244,7 @@ Vous pouvez également configurer les options de _[!UICONTROL Button style]_&#x2
 
 1. [Videz le cache](#flush-the-cache).
 
-Vous pouvez configurer le style du bouton de paiement [dans la configuration héritée dans Admin](configure-admin.md#configure-paypal-smart-buttons) ou ici dans [!DNL Payment Services Home]. Pour plus d&#39;informations sur le style des boutons de paiement PayPal[ consultez le ](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/)Guide de style des boutons PayPal.
+Vous pouvez configurer le style du bouton de paiement [dans la configuration héritée dans Admin](configure-admin.md#configure-paypal-smart-buttons) ou ici dans [!DNL Payment Services Home]. Pour plus d&#39;informations sur le style des boutons de paiement PayPal[&#x200B; consultez le &#x200B;](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/)Guide de style des boutons PayPal.
 
 #### Options de configuration
 

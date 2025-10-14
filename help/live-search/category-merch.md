@@ -98,7 +98,7 @@ Pour créer une règle de catégorie, procédez comme suit :
 La page Aperçu de la catégorie affiche les résultats réels du classement sélectionné, à l’aide de vos données Live Search.
 1. Cliquez sur **Enregistrer et publier** pour enregistrer la règle.
 
-![Sélectionnez la méthode de classement Intelligent ](assets/category_ranking.png)
+![Sélectionnez la méthode de classement Intelligent &#x200B;](assets/category_ranking.png)
 
 Le service [!DNL Live Search] traite la règle et l’active sur le magasin une fois l’opération terminée.
 

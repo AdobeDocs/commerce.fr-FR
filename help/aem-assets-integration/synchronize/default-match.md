@@ -32,7 +32,7 @@ L’intégration d’AEM Assets pour Commerce fournit un mécanisme de correspon
 
 Lorsque la règle de correspondance de **[!UICONTROL Match by product SKU]** est configurée dans l’administration Commerce, les fichiers de ressources Commerce se synchronisent automatiquement entre AEM Assets et votre projet Commerce en fonction des métadonnées de ressources configurées pour chaque fichier. Vous configurez les métadonnées à partir de l’onglet AEM **Commerce** dans l’environnement de création **AEM Assets** :
 
-![ Exemple de métadonnées ](../assets/example-metadata.png){width="600" zoomable="yes"}
+![&#x200B; Exemple de métadonnées &#x200B;](../assets/example-metadata.png){width="600" zoomable="yes"}
 
 1. Dans AEM Assets, mettez à jour les métadonnées de l’image pour ajouter l’association Adobe Commerce, `Commerce=yes`.
 

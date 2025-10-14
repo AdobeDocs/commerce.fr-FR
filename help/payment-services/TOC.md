@@ -21,7 +21,7 @@ ht-degree: 2%
 - [Notes de mise à jour](release-notes.md)
 - [!DNL Payment Services] intégré {#get-started}
    - [Présentation de l’intégration](onboard.md)
-   - [Installation de l’extension  [!DNL Payment Services] ](install.md)
+   - [Installation de l’extension  [!DNL Payment Services] &#x200B;](install.md)
    - [Connexion de votre instance](connect.md)
    - [Configurer le sandbox de test](sandbox.md)
    - [Activer pour la production](production.md)

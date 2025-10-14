@@ -365,7 +365,7 @@ Pour `productListItems`, ajoutez des champs pour le niveau Article de commande :
 
 ## Étape 12 : confirmer que les données sont capturées
 
-Consultez l’onglet [ Personnalisation des données ](connect-data.md#data-customization) dans l’interface d’administration pour confirmer que les données d’attribut personnalisé sont capturées et envoyées à Experience Platform.
+Consultez l’onglet [&#x200B; Personnalisation des données &#x200B;](connect-data.md#data-customization) dans l’interface d’administration pour confirmer que les données d’attribut personnalisé sont capturées et envoyées à Experience Platform.
 
 ### Dépannage
 

@@ -62,7 +62,7 @@ Voir [Connect](connect.md) pour plus d’informations sur la configuration de vo
 
 ![check](assets/icon-check.png) **Disponible dans XX pays**
 
-[![ en savoir plus ](assets/learn-more-button.svg)](onboard.md)
+[![&#x200B; en savoir plus &#x200B;](assets/learn-more-button.svg)](onboard.md)
 
 >[!TAB Avancé (Entièrement Pris En Charge)]
 
@@ -92,7 +92,7 @@ Voir [Connect](connect.md) pour plus d’informations sur la configuration de vo
 
 ![check](assets/icon-check.png) **Disponible uniquement aux États-Unis (US), au Canada (CA), en Australie (AUS). France (FR), Royaume-Uni (UK)**
 
-[![ en savoir plus ](assets/learn-more-button.svg)](onboard.md)
+[![&#x200B; en savoir plus &#x200B;](assets/learn-more-button.svg)](onboard.md)
 
 >[!ENDTABS]
 

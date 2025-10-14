@@ -24,7 +24,7 @@ Reportez-vous à [Paramètres](settings.md) pour configurer les intervalles et l
    * Épinglé
    * Dynamique
 
-   Pour en savoir plus, accédez à [ Types de facettes ](facets-type.md).
+   Pour en savoir plus, accédez à [&#x200B; Types de facettes &#x200B;](facets-type.md).
 
    ![Filtrer les facettes](assets/facets-filter-by-cropped.png)
 

@@ -22,7 +22,7 @@ Pour les commandes traitées avec PayPal ou une carte de crédit, vous pouvez :
 * Rembourser un montant partiel d&#39;une commande (ou plusieurs montants partiels)
 * Rembourser un montant inférieur à la valeur d&#39;un article de commande spécifique
 
-Voir [ Émission d&#39;un avoir](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memo-create){target="_blank"} dans notre guide d&#39;utilisation principal pour plus d&#39;informations.
+Voir [&#x200B; Émission d&#39;un avoir](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memo-create){target="_blank"} dans notre guide d&#39;utilisation principal pour plus d&#39;informations.
 
 >[!NOTE]
 >

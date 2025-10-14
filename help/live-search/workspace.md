@@ -42,7 +42,7 @@ Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/
 |--- |--- |
 | [Performances](performance.md) | Le tableau de bord fournit à insight des informations sur les performances de recherche de produits. |
 | [Facettage](facets.md) | Filtrage haute performance qui utilise plusieurs dimensions de valeurs d’attribut pour affiner les critères de recherche. |
-| [ Synonymes ](synonyms.md) | Étendez la portée de la recherche afin d’inclure les mots que les acheteurs peuvent utiliser pour trouver des produits différents de ceux de votre catalogue. |
+| [&#x200B; Synonymes &#x200B;](synonyms.md) | Étendez la portée de la recherche afin d’inclure les mots que les acheteurs peuvent utiliser pour trouver des produits différents de ceux de votre catalogue. |
 | [Recherche de marchandisage](rules.md) | Donnez forme à l’expérience de recherche avec des règles logiques qui déclenchent des actions planifiées. Boostez, enfouissez, épinglez ou masquez des produits pour étalonner les résultats de recherche afin de soutenir les objectifs de votre entreprise. |
 | [Marchandisage de catégorie](category-merch.md) | Appliquez des règles et un marchandisage intelligent au niveau de la catégorie. |
 | [GraphQL](graphql.md) | Les développeurs connectés à l’administrateur de votre boutique peuvent composer et tester des requêtes avec des données de catalogue réelles. Pour en savoir plus, accédez à la section [Présentation de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) dans la documentation destinée aux développeurs [!DNL Live Search]. |
@@ -105,7 +105,7 @@ Les prix dans la page de liste de produits du widget et la fenêtre contextuelle
 | Magasins > Configuration > Catalogue > Storefront > Mode Liste | Détermine le format de la liste des résultats de recherche. | Effectue correctement le rendu, mais les événements ne sont pas envoyés pour certaines interactions de page |
 | Magasins > Configuration > Catalogue > Catalogue > Recherche catalogue > Longueur maximale de la requête | Nombre maximal de caractères autorisés dans une recherche catalogue. | Non implémenté ; les services de recherche acceptent jusqu’à 255 caractères |
 | Configuration > Ventes > Taxe > Paramètres D’Affichage Des Prix > Afficher Les Prix Des Produits Dans Le Catalogue | Détermine si les prix des produits publiés dans le catalogue incluent ou excluent la taxe, ou affichent deux versions du prix ; l&#39;une avec et l&#39;autre sans taxe |  |
-| Magasins > Configuration > Catalogue > Storefront > Liste des produits Trier par | Détermine l’ordre de tri de la liste des résultats de recherche. | Ne s’applique pas au [!DNL Live Search] [ Widget de page de liste de produits ](plp-styling.md) |
+| Magasins > Configuration > Catalogue > Storefront > Liste des produits Trier par | Détermine l’ordre de tri de la liste des résultats de recherche. | Ne s’applique pas au [!DNL Live Search] [&#x200B; Widget de page de liste de produits &#x200B;](plp-styling.md) |
 
 ### Termes de recherche
 

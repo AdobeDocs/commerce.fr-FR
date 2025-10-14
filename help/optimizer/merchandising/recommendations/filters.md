@@ -34,7 +34,7 @@ Les opérateurs logiques `AND` et `OR` sont utilisés pour joindre plusieurs con
 
 ## Types de filtres
 
-![ Filtres ](../../assets/rec-conditions.png)
+![&#x200B; Filtres &#x200B;](../../assets/rec-conditions.png)
 
 ### Produit
 

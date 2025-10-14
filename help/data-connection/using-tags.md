@@ -1411,7 +1411,7 @@ return IdentityMap;
 
 ## Définition du consentement
 
-Lorsque vous installez l’extension [!DNL Data Connection] dans Adobe Commerce, le consentement de la collecte de données est activé par défaut. Le droit d’opposition est géré par le biais du cookie [`mg_dnt`. ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) Vous pouvez suivre les étapes décrites ici si vous choisissez d’utiliser `mg_dnt` pour gérer le consentement. La documentation de Adobe Experience Platform Web SDK [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=fr) propose plusieurs options supplémentaires pour gérer le consentement.
+Lorsque vous installez l’extension [!DNL Data Connection] dans Adobe Commerce, le consentement de la collecte de données est activé par défaut. Le droit d’opposition est géré par le biais du cookie [`mg_dnt`. &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) Vous pouvez suivre les étapes décrites ici si vous choisissez d’utiliser `mg_dnt` pour gérer le consentement. La documentation de Adobe Experience Platform Web SDK [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=fr) propose plusieurs options supplémentaires pour gérer le consentement.
 
 1. Créez un élément de données **Code personnalisé principal** (`%do not track cookie%`) pour le cookie `mg_dnt` :
 

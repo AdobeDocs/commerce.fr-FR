@@ -58,4 +58,4 @@ ht-degree: 12%
 - [Paramètres](settings.md)
 - Cas d’utilisation {#use-case}
    - [Cas d’utilisation complet de Storefront et de Catalog Administrator](./use-case/admin-use-case.md)
-- [ Guide du développeur ](https://developer.adobe.com/commerce/services/optimizer/)
+- [&#x200B; Guide du développeur &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)

@@ -158,7 +158,7 @@ Supposons que vous souhaitiez modifier rapidement l’arrière-plan d’une imag
 
 1. Ouvrez [!UICONTROL AEM Assets] en le sélectionnant dans [Adobe Experience Cloud](https://experience.adobe.com/#/home).
 
-   ![ aem assets ](./assets/select-aem-assets.png){width="600" zoomable="yes"}
+   ![&#x200B; aem assets &#x200B;](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
 1. Cliquez sur [!UICONTROL Assets].
 
@@ -262,7 +262,7 @@ Adobe Commerce Generate Variations exploite Generative AI pour automatiser la g�
 
 ### Générer du contenu et des images
 
-1. Ouvrez [ Générer des variations ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Ouvrez [&#x200B; Générer des variations &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Sélectionnez le modèle [!UICONTROL **Bannière héroïque**].
 

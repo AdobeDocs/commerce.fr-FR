@@ -16,7 +16,7 @@ L&#39;indexation des prix SaaS optimise les performances du site en déchargeant
 
 Le diagramme suivant montre le flux de données d’indexation sur les services SaaS lorsque Commerce utilise le processus [indexation des prix](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers) inclus dans l’application Commerce :
 
-![ Flux de données par défaut ](assets/old_way.png)
+![&#x200B; Flux de données par défaut &#x200B;](assets/old_way.png)
 
 Lorsque l&#39;indexation des prix SaaS est activée, le flux de données change. L&#39;indexation des prix est effectuée à l&#39;aide de l&#39;exportation des données SaaS de [Commerce](../data-export/data-synchronization.md).
 

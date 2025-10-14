@@ -94,7 +94,7 @@ Vous pouvez utiliser les sélecteurs de classe suivants pour appliquer un style 
 
 #### .livesearch.product-name
 
-![ Nom du produit ](assets/livesearch-product-name.png)
+![&#x200B; Nom du produit &#x200B;](assets/livesearch-product-name.png)
 
 #### .livesearch.product-price
 

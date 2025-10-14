@@ -51,7 +51,7 @@ Vous avez besoin des ressources et autorisations suivantes pour déployer le pac
 
 * Un [environnement de développement AEM local](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) et une connaissance du processus de développement local d’AEM.
 
-* Découvrez la structure de projet [AEM et comment déployer ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) packages de contenu personnalisés à l’aide de Cloud Manager.
+* Découvrez la structure de projet [AEM et comment déployer &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) packages de contenu personnalisés à l’aide de Cloud Manager.
 
 ### Installation du package `commerce-assets`
 

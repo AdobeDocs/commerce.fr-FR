@@ -235,7 +235,7 @@ Voir [Options de paiement](payments-options.md#google-pay-button) pour plus d’
 | [!UICONTROL Button Color] | Affichage de la boutique | Définissez la couleur du bouton [!DNL Google Pay]. Options : `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
 | [!UICONTROL Button Type] | Affichage de la boutique | Définissez le type du bouton [!DNL Google Pay]. Options : `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |
 
-Pour plus d’informations[ consultez la documentation Options d’objet de requête de l’API Google Pay ](https://developers.google.com/pay/api/web/reference/request-objects).
+Pour plus d’informations[&#x200B; consultez la documentation Options d’objet de requête de l’API Google Pay &#x200B;](https://developers.google.com/pay/api/web/reference/request-objects).
 
 ## [!DNL PayPal Payment Buttons]
 

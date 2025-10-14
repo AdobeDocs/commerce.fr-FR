@@ -20,7 +20,7 @@ Connectez votre instance Commerce à l’aide d’une clé API et d’une clé p
 
 >[!INFO]
 >
-> Consultez notre vidéo [[!DNL Adobe Commerce]  Connecteur de services ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=fr) pour plus d’informations.
+> Consultez notre vidéo [[!DNL Adobe Commerce]  Connecteur de services &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=fr) pour plus d’informations.
 
 * Si vous avez *déjà connecté votre instance*, en obtenant et en utilisant vos informations d’identification d’API et en configurant les services Commerce, vous pouvez passer à [configuration de votre sandbox de test](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html?lang=fr).
 * Si vous *devez toujours connecter votre instance*, consultez les informations de cette rubrique sur [l’obtention des informations d’identification d’API](#obtain-api-credentials) et [la configuration des services Commerce](#configure-commerce-services).
@@ -46,7 +46,7 @@ En cas de perte de votre clé API, une nouvelle paire de clés API doit être [g
 
 Consultez la [liste des services Commerce disponibles qui utilisent l’API](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices).
 
-Pour savoir comment générer une clé API pour un sandbox ou des environnements de production, voir [ Informations d’identification ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html?lang=fr#apikey).
+Pour savoir comment générer une clé API pour un sandbox ou des environnements de production, voir [&#x200B; Informations d’identification &#x200B;](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html?lang=fr#apikey).
 
 >[!IMPORTANT]
 >
@@ -73,7 +73,7 @@ Maintenant que vous avez obtenu vos informations d’identification, vous pouvez
 
    >[!INFO]
    >
-   > Consultez notre vidéo [[!DNL Adobe Commerce]  Connecteur de services ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=fr#configuration-faqs) pour plus d’informations.
+   > Consultez notre vidéo [[!DNL Adobe Commerce]  Connecteur de services &#x200B;](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=fr#configuration-faqs) pour plus d’informations.
 
 ## Point d’entrée
 

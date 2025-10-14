@@ -33,7 +33,7 @@ Vous devez communiquer directement avec Signifyd pour intégrer l’extension à
 Lors de l’intégration à Signifyd, vous devez :
 
 1. Contactez Signify pour configurer un nouveau compte.
-1. Par défaut, Signifyd est [placé sur la liste autorisée ](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) afin de s&#39;assurer qu&#39;il ne déclenche pas d&#39;autres options de paiement qu&#39;il ne prend actuellement pas en charge. Si vous souhaitez interdire un mode de paiement particulier, vous devez apporter des modifications.
+1. Par défaut, Signifyd est [placé sur la liste autorisée &#x200B;](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) afin de s&#39;assurer qu&#39;il ne déclenche pas d&#39;autres options de paiement qu&#39;il ne prend actuellement pas en charge. Si vous souhaitez interdire un mode de paiement particulier, vous devez apporter des modifications.
 1. Confirmez auprès de Signifyd que PayPal ne rejettera pas les commandes, via le paramètre de protection contre la fraude du commerçant dans Paypal, qui pourraient être approuvées par Signifyd.
 1. Activez l’extension Signifyd pour qu’elle soit compatible avec [!DNL Payment Services] :
    * Lors de l’utilisation de [!DNL Payment Services] en mode _actif_, Signifyd doit être en mode Production.

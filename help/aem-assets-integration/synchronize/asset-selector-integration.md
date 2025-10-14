@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Le **sélecteur de ressources AEM** permet aux marketeurs et aux marketeurs d’ajouter facilement des images d’AEM Assets à Adobe Commerce, en rationalisant le processus de gestion des ressources. Cette méthode garantit la cohérence et la conformité de la marque en limitant la sélection de ressources aux ressources examinées et approuvées dans le [!DNL DAM (Digital Asset Management system)].
 
-Le **sélecteur de ressources AEM** est disponible lorsque l’identifiant client IMS du projet AEM Assets a été configuré dans l’administrateur Commerce. Voir [ Configuration du sélecteur de ressources AEM](#configure-the-aem-asset-selector-in-adobe-commerce).
+Le **sélecteur de ressources AEM** est disponible lorsque l’identifiant client IMS du projet AEM Assets a été configuré dans l’administrateur Commerce. Voir [&#x200B; Configuration du sélecteur de ressources AEM](#configure-the-aem-asset-selector-in-adobe-commerce).
 
 Lorsque l’intégration du sélecteur de ressources AEM **&#x200B;**&#x200B;est configurée, les marketeurs et les marketeurs peuvent :
 
@@ -38,7 +38,7 @@ L’incorporation du sélecteur de ressources AEM dans le panneau d’administra
 
 * **Qualité de contenu améliorée**-Garantit l’utilisation d’images optimisées et haute résolution sur les pages de produits, les catégories et le générateur de page.
 
-![ Sélecteur de ressources ](../assets/asset-selector.png){width="600" zoomable="yes"}
+![&#x200B; Sélecteur de ressources &#x200B;](../assets/asset-selector.png){width="600" zoomable="yes"}
 
 ## Configuration du sélecteur de ressources AEM dans Adobe Commerce
 

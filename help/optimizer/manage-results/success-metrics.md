@@ -66,7 +66,7 @@ Pour le chiffre d’affaires, votre objectif est d’augmenter les ventes totale
 
 Pour améliorer votre taux de conversion, votre objectif est de convertir davantage de visiteurs en clients.
 
-![ Taux de conversion des mesures de succès ](../assets/conversion-rate.png)
+![&#x200B; Taux de conversion des mesures de succès &#x200B;](../assets/conversion-rate.png)
 
 #### Stratégies
 

@@ -26,7 +26,7 @@ Le téléchargement et l’installation de l’extension [!DNL Payment Services]
 
 Vous devez d’abord télécharger l’extension à partir de [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html?lang=fr) avant de l’installer.
 
-1. Accédez à l’extension [ Services de paiement dans Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
+1. Accédez à l’extension [&#x200B; Services de paiement dans Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. Pour choisir l’édition et la version, faites basculer le **[!UICONTROL Edition]** et le **[!UICONTROL Your store version]** vers vos sélections préférées.
 1. Cliquez sur **[!UICONTROL Add to Cart]**.
 1. Effectuez le passage en caisse et cliquez sur **[!UICONTROL Place Order]**.

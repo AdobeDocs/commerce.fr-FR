@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Mettre à jour les schémas d’événement de série temporelle pour l’ingestion de données Commerce
 
-L’une des [ étapes d’intégration ](overview.md#onboarding-steps) pour utiliser l’extension [!DNL Data Connection] consiste à accéder à l’espace de travail du flux de données et [créer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) qui est spécifique à Adobe Commerce. Lorsque vous créez ce flux de données, vous devez également sélectionner un schéma qui décrit les données que vous prévoyez d’ingérer. Ce schéma doit inclure des groupes de champs spécifiques à Commerce.
+L’une des [&#x200B; étapes d’intégration &#x200B;](overview.md#onboarding-steps) pour utiliser l’extension [!DNL Data Connection] consiste à accéder à l’espace de travail du flux de données et [créer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) qui est spécifique à Adobe Commerce. Lorsque vous créez ce flux de données, vous devez également sélectionner un schéma qui décrit les données que vous prévoyez d’ingérer. Ce schéma doit inclure des groupes de champs spécifiques à Commerce.
 
 Cet article vous fournit les groupes de champs que votre schéma doit inclure pour collecter avec succès les données de série temporelle suivantes fournies par les événements Adobe Commerce :
 
@@ -48,7 +48,7 @@ Dans cette section, vous apprendrez à mettre à jour votre schéma existant ou 
    >
    > Ne définissez aucun groupe de champs spécifique à Commerce comme `Primary identity`. Ce faisant, identifie le champ comme requis et Experience Platform s’attend à ce que ce champ soit présent dans chaque événement. Si ce champ est absent, l’ingestion des données échoue.
 
-   Votre schéma contient désormais des groupes de champs spécifiques à Commerce, de sorte que les données de série temporelle collectées à partir des événements Commerce [comportementaux](events.md) et [ back-office](events-backoffice.md) soient représentées dans le schéma.
+   Votre schéma contient désormais des groupes de champs spécifiques à Commerce, de sorte que les données de série temporelle collectées à partir des événements Commerce [comportementaux](events.md) et [&#x200B; back-office](events-backoffice.md) soient représentées dans le schéma.
 
 1. [Activer](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr#profile) le schéma pour Profil.
 

@@ -55,7 +55,7 @@ Pour la configuration initiale, utilisez la règle par défaut *Correspondance p
 
 1. Saisissez le **[!UICONTROL Asset Selector IMS Client ID]**.
 
-   Pour plus d’informations sur le sélecteur de ressources, voir [ Sélection manuelle des ressources ](../synchronize/asset-selector-integration.md)
+   Pour plus d’informations sur le sélecteur de ressources, voir [&#x200B; Sélection manuelle des ressources &#x200B;](../synchronize/asset-selector-integration.md)
 
 1. [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} sélectionnez les [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) d’authentification des requêtes entre Commerce et le service de correspondance des ressources.
 

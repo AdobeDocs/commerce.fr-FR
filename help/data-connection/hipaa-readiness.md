@@ -26,7 +26,7 @@ Dans cet article, vous apprendrez :
 
 ## Installation
 
-Si vous avez acheté le module complémentaire de soins de santé pour Adobe [!DNL Commerce], vous avez probablement déjà installé l’extension [ conforme à la norme HIPAA](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation). Pour vous assurer que vos données d’événement back-office [!DNL Commerce] sont conformes à la loi HIPAA, vous devez également installer l’extension [!DNL Data Connection] avec l’extension **Data Services HIPAA** supplémentaire. L’extension **Data Services HIPAA** garantit que toutes les données de back-office que vous envoyez à Experience Platform sont conformes à la loi HIPAA. Découvrez [ comment installer l’extension ](install.md#install-the-data-services-hipaa-extension).
+Si vous avez acheté le module complémentaire de soins de santé pour Adobe [!DNL Commerce], vous avez probablement déjà installé l’extension [&#x200B; conforme à la norme HIPAA](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation). Pour vous assurer que vos données d’événement back-office [!DNL Commerce] sont conformes à la loi HIPAA, vous devez également installer l’extension [!DNL Data Connection] avec l’extension **Data Services HIPAA** supplémentaire. L’extension **Data Services HIPAA** garantit que toutes les données de back-office que vous envoyez à Experience Platform sont conformes à la loi HIPAA. Découvrez [&#x200B; comment installer l’extension &#x200B;](install.md#install-the-data-services-hipaa-extension).
 
 >[!IMPORTANT]
 >
@@ -36,7 +36,7 @@ Si vous avez acheté le module complémentaire de soins de santé pour Adobe [!D
 
 Toutes les données d’événement back-office envoyées par l’extension [!DNL Data Connection] à Experience Platform sont considérées comme sensibles dans [!DNL Commerce]. Cependant, il est de la responsabilité du commerçant d’appliquer des libellés d’utilisation des données à son schéma de [!DNL Commerce] dans Experience Platform afin d’identifier explicitement les données spécifiques comme sensibles. Lorsque vous appliquez des libellés d’utilisation des données directement à un schéma, ces libellés sont propagés à tous les jeux de données existants et futurs basés sur ce schéma.
 
-Pour obtenir une présentation des libellés d’utilisation des données et de leur rôle dans le cadre de la gouvernance des données, consultez la [ présentation des libellés d’utilisation des données ](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview) dans la documentation d’Experience Platform.
+Pour obtenir une présentation des libellés d’utilisation des données et de leur rôle dans le cadre de la gouvernance des données, consultez la [&#x200B; présentation des libellés d’utilisation des données &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/overview) dans la documentation d’Experience Platform.
 
 ### Appliquer des libellés d’utilisation des données aux champs de [!DNL Commerce]
 

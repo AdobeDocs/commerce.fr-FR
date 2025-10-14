@@ -20,7 +20,7 @@ ht-degree: 2%
 - [Gestion des demandes d’accès à des informations personnelles par les services Commerce](handle-privacy-request.md)
 - [Notes de mise à jour](release-notes.md)
 - Principes fondamentaux {#fundamentals}
-   - [Installation de l’extension  [!DNL Data Connection] ](install.md)
+   - [Installation de l’extension  [!DNL Data Connection] &#x200B;](install.md)
    - [Connexion à Adobe Experience Platform](connect-data.md)
    - [Types de données Commerce](data-ingestion.md)
    - [Mettre à jour le schéma d’événement de série temporelle](update-xdm.md)

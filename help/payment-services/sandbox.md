@@ -20,7 +20,7 @@ Un compte sandbox PayPal vous permet d’utiliser [!DNL Payment Services] en mod
 
 Pour terminer l’intégration au sandbox :
 
-1. Accédez à la page [ Compte de développeur PayPal ](https://developer.paypal.com/developer/accounts/).
+1. Accédez à la page [&#x200B; Compte de développeur PayPal &#x200B;](https://developer.paypal.com/developer/accounts/).
 1. Cliquez sur **[!UICONTROL Log in to Dashboard]** et connectez-vous avec votre compte de test de sandbox d&#39;entreprise généré par PayPal Developer Portal ou cliquez sur **S&#39;inscrire** pour créer un compte.
 1. Créez un compte sandbox PayPal :
    1. Accédez à _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
@@ -72,7 +72,7 @@ Pour réinitialiser votre compte sandbox :
 
 ## Activer le numéro de téléphone du contact
 
-Le numéro de téléphone de contact vous permet d&#39;obtenir les numéros de téléphone de contact que PayPal collecte auprès de vos clients. PayPal recueille toujours les numéros de téléphone des titulaires de compte PayPal pour aider à confirmer leur identité et à les contacter pour résoudre les problèmes sur leurs comptes ou pour terminer leurs processus d&#39;exécution. Cependant, PayPal décourage l&#39;utilisation des numéros de téléphone de contact directement du marchand car cela peut avoir un impact négatif sur les ventes. Pour plus d’informations, consultez la documentation [PayPal obtenir les numéros de téléphone ](https://www.sandbox.paypal.com/businessmanage/preferences/website) contact .
+Le numéro de téléphone de contact vous permet d&#39;obtenir les numéros de téléphone de contact que PayPal collecte auprès de vos clients. PayPal recueille toujours les numéros de téléphone des titulaires de compte PayPal pour aider à confirmer leur identité et à les contacter pour résoudre les problèmes sur leurs comptes ou pour terminer leurs processus d&#39;exécution. Cependant, PayPal décourage l&#39;utilisation des numéros de téléphone de contact directement du marchand car cela peut avoir un impact négatif sur les ventes. Pour plus d’informations, consultez la documentation [PayPal obtenir les numéros de téléphone &#x200B;](https://www.sandbox.paypal.com/businessmanage/preferences/website) contact .
 
 Cette fonctionnalité est `off` par défaut. Lorsque vous l’activez, les administrateurs de magasin peuvent voir les numéros de téléphone lorsqu’un client termine un flux de passage en caisse de marque en dehors de la page de passage en caisse.
 

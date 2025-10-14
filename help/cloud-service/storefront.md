@@ -44,5 +44,5 @@ Consultez les articles suivants pour plus d’informations :
 
 * Pour en savoir plus sur la gestion et l’affichage du contenu et des données dans le storefront, voir [mise à jour du contenu du storefront](./use-cases.md#update-storefront-content).
 * Pour plus d’informations sur les fonctionnalités d’expérimentation contextuelle, voir [expérimentation contextuelle](./use-cases.md#contextual-experimentation).
-* Pour plus d’informations sur l’utilisation de Generative AI pour automatiser la génération de contenu de haute qualité, voir [ Générer des variations ](./use-cases.md#generate-variations).
+* Pour plus d’informations sur l’utilisation de Generative AI pour automatiser la génération de contenu de haute qualité, voir [&#x200B; Générer des variations &#x200B;](./use-cases.md#generate-variations).
 * Pour en savoir plus sur la mise à jour du contenu du site et l’intégration aux composants frontend de Commerce et aux données principales, consultez la [documentation du storefront d’Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr).

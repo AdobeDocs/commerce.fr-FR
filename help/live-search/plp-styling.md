@@ -54,7 +54,7 @@ Vous pouvez personnaliser l’aspect du widget PLP pour qu’il corresponde à v
 
 Les balises div mises en surbrillance contiennent la classe cible `ds-sdk-product-item__product-name`.
 
-![ Pagination ](assets/plp-css-example.png)
+![&#x200B; Pagination &#x200B;](assets/plp-css-example.png)
 
 Personnalisez le nom du produit en ajoutant une règle pour les mettre en majuscules.
 
@@ -64,7 +64,7 @@ Personnalisez le nom du produit en ajoutant une règle pour les mettre en majusc
 }
 ```
 
-![ Pagination ](assets/plp-css-example-after.png)
+![&#x200B; Pagination &#x200B;](assets/plp-css-example-after.png)
 
 ## Classes CSS
 
@@ -73,17 +73,17 @@ Personnalisez le nom du produit en ajoutant une règle pour les mettre en majusc
 - `.ds-sdk-product-list` : div externe
 - `.ds-sdk-product-list__grid` : div interne
 
-![ Pagination ](assets/plp-css-product-list.png)
+![&#x200B; Pagination &#x200B;](assets/plp-css-product-list.png)
 
 #### Pagination de la liste de produits
 
 - `.ds-plp-pagination`
 
-![ Pagination ](assets/plp-css-pagination.png)
+![&#x200B; Pagination &#x200B;](assets/plp-css-pagination.png)
 
 - `.ds-plp-pagination_item`
 
-![ Élément de pagination ](assets/plp-css-pagination-item.png)
+![&#x200B; Élément de pagination &#x200B;](assets/plp-css-pagination-item.png)
 
 - `.ds-plp-pagination_item--current`
 

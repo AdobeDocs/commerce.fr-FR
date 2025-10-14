@@ -106,7 +106,7 @@ Détecter quand une transaction de capture en attente passe en statut `Completed
 
 Pour que ce processus fonctionne comme prévu, les commerçants doivent configurer une nouvelle tâche cron. Une fois le traitement configuré pour s&#39;exécuter automatiquement, aucune autre intervention n&#39;est attendue du commerçant.
 
-Voir [ Configuration des tâches cron ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=fr). Une fois configuré, le nouveau traitement s’exécute toutes les 30 minutes pour récupérer les mises à jour des commandes dont le statut est défini sur `Payment Review`.
+Voir [&#x200B; Configuration des tâches cron &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=fr). Une fois configuré, le nouveau traitement s’exécute toutes les 30 minutes pour récupérer les mises à jour des commandes dont le statut est défini sur `Payment Review`.
 
 Les commerçants peuvent vérifier le statut de paiement mis à jour à partir de la vue du rapport Statut du paiement de la commande.
 

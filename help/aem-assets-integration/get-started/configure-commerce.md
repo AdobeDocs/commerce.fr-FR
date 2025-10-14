@@ -21,11 +21,11 @@ Ajoutez cette extension à l&#39;environnement Commerce en installant l&#39;exte
 
 Vous avez besoin des rôles et autorisations suivants pour activer l’intégration de Commerce à AEM Assets.
 
-- [Administrateur de projet cloud Commerce ](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/project/user-access) : installez les extensions requises et configurez le serveur d’applications Commerce à partir de l’Administration ou de la ligne de commande.
+- [Administrateur de projet cloud Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/project/user-access) : installez les extensions requises et configurez le serveur d’applications Commerce à partir de l’Administration ou de la ligne de commande.
 
    - Accédez à [repo.magento.com](https://repo.magento.com/admin/dashboard) pour installer l’extension.
 
-     Pour la génération des clés et l’obtention des droits nécessaires, voir [ Obtenir vos clés d’authentification ](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Pour les installations cloud, consultez le guide [Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+     Pour la génération des clés et l’obtention des droits nécessaires, voir [&#x200B; Obtenir vos clés d’authentification &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Pour les installations cloud, consultez le guide [Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
 - [Commerce Admin](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/guide-overview)—Mettez à jour la configuration du magasin et gérez les comptes utilisateur Commerce.
 

@@ -49,7 +49,7 @@ Pour les demandes de suppression, Privacy Service supprime [!DNL Commerce] donn�
 Pour envoyer des demandes d’accès et de suppression de données pour Adobe [!DNL Commerce], vous devez disposer des éléments suivants :
 
 * un identifiant de l’organisation IMS ;
-* un identifiant d’identité de la personne sur laquelle vous souhaitez agir et le ou les espaces de noms correspondants. Pour plus d’informations sur les espaces de noms d’identité dans Adobe [!DNL Commerce] et Experience Platform, consultez la [ présentation des espaces de noms d’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces).
+* un identifiant d’identité de la personne sur laquelle vous souhaitez agir et le ou les espaces de noms correspondants. Pour plus d’informations sur les espaces de noms d’identité dans Adobe [!DNL Commerce] et Experience Platform, consultez la [&#x200B; présentation des espaces de noms d’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces).
 
 ### Exemple de demande/suppression d’accès RGPD :
 
