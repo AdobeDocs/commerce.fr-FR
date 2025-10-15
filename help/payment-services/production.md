@@ -131,7 +131,7 @@ Pour activer vos magasins, demandez les droits de paiement à Adobe (pour [Inté
 1. Remplissez le formulaire.
 1. Un membre de l&#39;équipe des ventes vous contactera.
 
-Vous pouvez également demander des droits de paiement à Adobe à l’adresse [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+Vous pouvez également demander des droits de paiement à Adobe à l’adresse [business.adobe.com](https://business.adobe.com/fr/resources/payment-services.html).
 
 >[!IMPORTANT]
 >

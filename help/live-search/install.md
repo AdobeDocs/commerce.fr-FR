@@ -23,7 +23,7 @@ Cet article est destiné au développeur ou à l’intégrateur système de votr
 
 ## Conditions requises
 
-- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
+- [Adobe Commerce](https://business.adobe.com/fr/products/magento/magento-commerce.html) 2.4.4+
 - PHP 8.1, 8.2 ou 8.3
 - [!DNL Composer]
 - Exécution des tâches cron et des indexeurs
