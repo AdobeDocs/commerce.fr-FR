@@ -3,9 +3,9 @@ title: Options de paiement
 description: Définissez les options de paiement afin de personnaliser les méthodes disponibles pour les clients de votre boutique.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Il existe différents comportements pour chaque mode de paiement en fonction de 
 
 [!DNL Payment Services] offre des options de paiement et des flux d’intégration **avancés** (entièrement pris en charge) et **standard** (paiement express), en fonction du pays dans lequel vous opérez.
 
-* **Avancé** - Toutes les [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays actuellement entièrement pris en charge](../payment-services/introduction.md#availability). Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [&#x200B; Intégration avancée &#x200B;](../payment-services/production.md#advanced-onboarding).
+* **Avancé** - Toutes les [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays actuellement entièrement pris en charge](../payment-services/introduction.md#availability). Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [ Intégration avancée ](../payment-services/production.md#advanced-onboarding).
 
-* **Standard** - Un sous-ensemble d’options de paiement (paiement express), à savoir les cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Les champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [&#x200B; Intégration standard &#x200B;](../payment-services/production.md#standard-onboarding).
+* **Standard** - Un sous-ensemble d’options de paiement (paiement express), à savoir les cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Les champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [ Intégration standard ](../payment-services/production.md#standard-onboarding).
 
 Consultez [Activer [!DNL Payment Services] pour la production](../payment-services/production.md#complete-merchant-onboarding) pour plus d’informations sur l’intégration avancée et standard.
 
@@ -57,7 +57,7 @@ Lorsque [!DNL Fastlane] est activé, l’option [!UICONTROL Credit Card Fields] 
 
 >[!NOTE]
 >
-> Actuellement, Fastlane est pris en charge uniquement pour les commerçants américains. Par conséquent, [!UICONTROL 3D Secure authentication] n’est actuellement pas pris en charge.
+> Dans les instances Sandbox, les transactions Fastlane n’affichent pas l’adresse d’expédition dans la vue Activité de transaction .
 
 Voir la rubrique [Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank} pour plus d’informations.
 
@@ -156,7 +156,7 @@ Pour **capturer des paiements avec votre fournisseur de carte de crédit existan
 1. Assurez-vous que votre boutique est [en mode production](configure-admin.md#enable-payment-services).
 1. [Configurez les boutons de paiement PayPal souhaités](configure-admin.md#payment-buttons).
 1. Désactivez _off_ l’option **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** dans la section _[!UICONTROL Payment buttons]_.
-1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_&#x200B;et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=fr#payments).
+1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
 ## Options de passage en caisse
 
