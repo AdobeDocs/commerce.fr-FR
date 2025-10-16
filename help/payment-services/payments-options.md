@@ -31,9 +31,9 @@ Il existe différents comportements pour chaque mode de paiement en fonction de 
 
 [!DNL Payment Services] offre des options de paiement et des flux d’intégration **avancés** (entièrement pris en charge) et **standard** (paiement express), en fonction du pays dans lequel vous opérez.
 
-* **Avancé** - Toutes les [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays actuellement entièrement pris en charge](../payment-services/introduction.md#availability). Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [ Intégration avancée ](../payment-services/production.md#advanced-onboarding).
+* **Avancé** - Toutes les [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays actuellement entièrement pris en charge](../payment-services/introduction.md#availability). Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [&#x200B; Intégration avancée &#x200B;](../payment-services/production.md#advanced-onboarding).
 
-* **Standard** - Un sous-ensemble d’options de paiement (paiement express), à savoir les cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Les champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [ Intégration standard ](../payment-services/production.md#standard-onboarding).
+* **Standard** - Un sous-ensemble d’options de paiement (paiement express), à savoir les cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Les champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [&#x200B; Intégration standard &#x200B;](../payment-services/production.md#standard-onboarding).
 
 Consultez [Activer [!DNL Payment Services] pour la production](../payment-services/production.md#complete-merchant-onboarding) pour plus d’informations sur l’intégration avancée et standard.
 
@@ -156,7 +156,7 @@ Pour **capturer des paiements avec votre fournisseur de carte de crédit existan
 1. Assurez-vous que votre boutique est [en mode production](configure-admin.md#enable-payment-services).
 1. [Configurez les boutons de paiement PayPal souhaités](configure-admin.md#payment-buttons).
 1. Désactivez _off_ l’option **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** dans la section _[!UICONTROL Payment buttons]_.
-1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_&#x200B;et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
 ## Options de passage en caisse
 
