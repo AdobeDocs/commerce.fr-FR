@@ -2,9 +2,9 @@
 title: Types de recommandations
 description: Découvrez les recommandations que vous pouvez déployer sur différentes pages de votre site.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,29 @@ Adobe recommande d’appliquer les recommandations suivantes lors de l’utilisa
 >
 >Pour plus d’informations sur les événements décrits dans cet article, consultez [événements storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) dans la documentation destinée aux développeurs.
 
+## Exigences et comportement en matière de données
+
+Product Recommendations est un système piloté par les données qui repose sur les données comportementales collectées auprès de votre storefront. La qualité et la quantité des recommandations dépendent de la quantité de données d’événement disponibles.
+
+>[!IMPORTANT]
+>
+>La plupart des types de recommandations nécessitent des données comportementales suffisantes (telles que les consultations de produits, les actions d’ajout au panier et les achats) pour générer des résultats significatifs. Le système nécessite généralement plusieurs jours d’activité d’acheteur active pour créer des recommandations précises. Consultez [Indicateurs de préparation](create.md#readiness-indicators) pour découvrir comment le trafic du site permet de renseigner les différents types de recommandations.
+
+### Que se passe-t-il si les données sont insuffisantes ?
+
+Lorsqu’il n’y a pas suffisamment de données d’événement pour générer des recommandations, le système peut :
+
+- Renvoie des résultats vides pour l’unité de recommandation.
+- Déclenchez [recommandations de sauvegarde](events.md#backup-recommendations), par exemple en affichant les produits `Most viewed` lorsque des recommandations personnalisées ne sont pas encore disponibles.
+- Afficher moins de produits que [configuré](create.md) dans l’unité de recommandation.
+
 ## Personnalisé {#personalized}
 
 Ces types de recommandations recommandent des produits en fonction de l’historique comportemental de l’acheteur spécifique sur votre site. Par exemple, si un acheteur a déjà recherché une veste ou acheté une veste sur votre site, ces recommandations reprennent essentiellement là où il s’était arrêté et recommandent d’autres vestes ou produits similaires.
+
+>[!NOTE]
+>
+>Les recommandations personnalisées exigent que les acheteurs aient un historique comportemental établi. Les nouveaux visiteurs ou acheteurs sans historique d’interaction suffisant verront [recommandations de sauvegarde](events.md#backup-recommendations) telles que Produits les plus consultés jusqu’à ce qu’ils génèrent suffisamment de signaux comportementaux sur votre site.
 
 | Type | Description |
 |---|---|
@@ -48,6 +68,8 @@ Ces types de recommandations sont pilotés par les réseaux sociaux pour aider l
 >[!NOTE]
 >
 >Les types de recommandation « vu ceci, vu cela », « vu ceci, acheté cela » et « acheté ceci, acheté cela » n’utilisent pas de mesure d’occurrence simple, mais plutôt un algorithme de filtrage collaboratif plus sophistiqué qui recherche des *similitudes intéressantes* qui ne sont pas biaisées vers des produits populaires. Les données utilisées pour informer ces types de recommandations sont basées sur le comportement agrégé de l’acheteur dérivé de plusieurs sessions sur votre site. Les données ne sont pas basées sur le comportement de l’acheteur dérivé d’une seule occurrence en session sur votre site. Ces types de recommandations aident les acheteurs à trouver les produits adjacents qui ne sont pas nécessairement évidents à associer au produit actuellement consulté.
+>
+>Ces types de recommandations nécessitent d’importantes données d’interaction entre produits pour identifier des corrélations significatives. Les magasins avec une diversité de catalogue de produits limitée ou un faible trafic peuvent afficher moins de recommandations jusqu’à ce que des modèles de comportement suffisants émergent.
 
 | Type | Description |
 |---|---|
@@ -61,6 +83,10 @@ Ces types de recommandations sont pilotés par les réseaux sociaux pour aider l
 
 Ces types de recommandations recommandent les produits les plus populaires ou les plus en vogue au cours des sept derniers jours.
 
+>[!NOTE]
+>
+>Les recommandations basées sur la popularité nécessitent des données d’événement suffisantes de votre storefront. Si votre boutique est nouvelle ou a un faible trafic, ces types de recommandations peuvent renvoyer des résultats limités ou aucun résultat jusqu’à ce que des données comportementales adéquates aient été collectées. Surveillez votre [ indicateur de préparation des données ](workspace.md) pour garantir des performances optimales.
+
 | Type | Description |
 |---|---|
 | Les plus consultés | Recommande les produits qui ont été consultés le plus en comptant le nombre de sessions pour lesquelles une action d’affichage a eu lieu au cours des sept derniers jours.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Les plus populaires<br/>- Tendance<br/>- Populaire en ce moment<br/>- Récemment populaire<br/>- Produits populaires inspirés par ce produit (PDP)<br/>- Meilleures ventes |
@@ -71,6 +97,10 @@ Ces types de recommandations recommandent les produits les plus populaires ou le
 ## Très performant {#highperf}
 
 Ces types de recommandations recommandent des produits les plus performants en fonction de critères de réussite tels que les ajouts au panier ou les taux de conversion.
+
+>[!NOTE]
+>
+>Les types de recommandations les plus performants reposent sur des données de conversion (achats et actions d’ajout au panier). Les nouveaux magasins ou ceux qui enregistrent de faibles volumes de conversion peuvent avoir besoin de collecter des données pendant 7 à 14 jours avant que ces recommandations ne prennent effet.
 
 | Type | Description |
 |---|---|
