@@ -60,5 +60,5 @@ ht-degree: 10%
    - [Cas d’utilisation de bout en bout de Storefront et de Catalog Admin](./use-case/admin-use-case.md)
 - Ressources pour les développeurs {#developer}
    - [Connecteur Salesforce Commerce](./developer/salesforce-connector.md)
-   - [ Référence de l’API REST d’ingestion de données ](https://developer.adobe.com/commerce/services/reference/rest/)
+   - [&#x200B; Référence de l’API REST d’ingestion de données &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/)
    - [Référence de l’API Merchandising GraphQL](https://developer.adobe.com/commerce/services/reference/graphql/)
