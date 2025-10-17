@@ -1,11 +1,11 @@
 ---
-title: Gestion des utilisateurs et utilisatrices
+title: Utilisateur et Identity Management
 description: Découvrez comment créer et gérer des utilisateurs et affecter des rôles utilisateur à  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
-source-git-commit: 36a953d4fb0e1e14c7cb88a80f3b59d6fe8eb49e
+source-git-commit: b88406169191cb9d4f0d2b5ef113703f5afcd589
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,10 @@ Vous pouvez affecter des utilisateurs à l’un des rôles suivants :
 
 - **Utilisateur**— Les utilisateurs ont accès à l’interface utilisateur [!DNL Adobe Commerce Optimizer] pour afficher et gérer les vues de catalogue et les règles de marchandisage, ainsi que pour effectuer le suivi des mesures de performances.
 
-- [**Développeur**](https://helpx.adobe.com/fr/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}— Les développeurs disposent d’autorisations utilisateur et d’un accès au Adobe Developer Console. Cela signifie qu’ils peuvent créer des projets et configurer des informations d’identification pour utiliser des outils de développement tels que les API et les SDK [!DNL Adobe Commerce Optimizer], ainsi que des outils d’extensibilité d’Adobe tels qu’App Builder et le maillage API.
+- [**Développeur**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}— Les développeurs disposent d’autorisations utilisateur et d’un accès au Adobe Developer Console. Cela signifie qu’ils peuvent créer des projets et configurer des informations d’identification pour utiliser des outils de développement tels que les API et les SDK [!DNL Adobe Commerce Optimizer], ainsi que des outils d’extensibilité d’Adobe tels qu’App Builder et le maillage API.
 
 - **Admin** - Il existe trois types différents de rôles d’administrateur :
-   - [Administrateurs système](https://helpx.adobe.com/fr/enterprise/using/admin-roles.html){target="_blank"} - L’administrateur système a accès à tous les produits et profils de produits de l’organisation via Adobe Admin Console.
+   - [Administrateurs système](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - L’administrateur système a accès à tous les produits et profils de produits de l’organisation via Adobe Admin Console.
    - [Administrateurs de produit](#add-a-product-admin) - Les administrateurs de produit peuvent [gérer les utilisateurs, les rôles et les autorisations pour le produit](#add-users-and-admins) dans le [!DNL Adobe Admin Console].
    - [Administrateurs de profil de produit](#add-users-developers-and-product-profile-admins) - Les administrateurs de profil de produit peuvent gérer les utilisateurs du produit dans l’[!DNL Adobe Admin Console].
 
@@ -143,6 +143,9 @@ Pour ajouter des développeurs et des administrateurs de profil de produit, rép
 
 Vous pouvez ajouter plusieurs utilisateurs plus efficacement par l’une des méthodes suivantes :
 
-- Utilisez la fonction **Ajouter des utilisateurs par fichier CSV** du Adobe Admin Console pour effectuer un [chargement CSV en bloc](https://helpx.adobe.com/fr/enterprise/using/bulk-upload-users.html){target="_blank"}.
-- Ajoutez plusieurs utilisateurs et utilisatrices à un rôle en créant un [groupe d’utilisateurs](https://helpx.adobe.com/fr/enterprise/using/user-groups.html){target="_blank"}. Ajoutez ensuite le produit [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] au groupe d’utilisateurs.
+- Utilisez la fonction **Ajouter des utilisateurs par fichier CSV** du Adobe Admin Console pour effectuer un [chargement CSV en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
+- Ajoutez plusieurs utilisateurs et utilisatrices à un rôle en créant un [groupe d’utilisateurs](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Ajoutez ensuite le produit [!UICONTROL **Adobe Commerce - Commerce Cloud Manager**] au groupe d’utilisateurs.
 
+## Gestion des identités et configuration de l’authentification unique
+
+{{ims-identity-and-sso-config}}

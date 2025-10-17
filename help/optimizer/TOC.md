@@ -4,9 +4,9 @@ user-guide-description: Documentation et ressources pour  [!DNL Adobe Commerce O
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b524c75b59984ddfa63ce133a917b9891dd6719f
+source-git-commit: d788c6419831814f2a81229c2354ffc41b637873
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '106'
 ht-degree: 10%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 10%
 
 - [Qu’est-ce que Adobe Commerce Optimizer ?](overview.md)
 - [Prise en main](get-started.md)
-- [Gestion des utilisateurs](user-management.md)
+- [Gestion des utilisateurs et des identités](user-management.md)
 - [Responsabilité partagée](shared-responsibility.md)
-- [Limites et restrictions](boundaries-limits.md)
+- [Limites et limitations](boundaries-limits.md)
 - [Notes de mise à jour](release-notes.md)
 - Gestion des résultats {#manage-results}
    - [Mesures de succès](./manage-results/success-metrics.md)
@@ -57,8 +57,8 @@ ht-degree: 10%
 - [Storefront](storefront.md)
 - [Paramètres](settings.md)
 - Cas d’utilisation {#use-case}
-   - [Cas d’utilisation complet de Storefront et de Catalog Administrator](./use-case/admin-use-case.md)
+   - [Cas d’utilisation de bout en bout de Storefront et de Catalog Admin](./use-case/admin-use-case.md)
 - Ressources pour les développeurs {#developer}
    - [Connecteur Salesforce Commerce](./developer/salesforce-connector.md)
-   - [&#x200B; Référence de l’API REST d’ingestion de données &#x200B;](https://developer.adobe.com/commerce/services/reference/rest/)
+   - [ Référence de l’API REST d’ingestion de données ](https://developer.adobe.com/commerce/services/reference/rest/)
    - [Référence de l’API Merchandising GraphQL](https://developer.adobe.com/commerce/services/reference/graphql/)
