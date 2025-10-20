@@ -1,13 +1,13 @@
 ---
 title: Outils de codage de l’IA pour les extensions
 description: Découvrez comment utiliser les outils d’IA pour créer des extensions Commerce App Builder.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Architect
 hide: true
 hidefromtoc: true
-source-git-commit: e032571ba0dd8a2f71813f9e3114afa3f7d617bf
+source-git-commit: 4ee3a547aa292f3e52cf424e368c9fba12d3e4e0
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ L’utilisation des outils de codage de l’IA offre les avantages suivants :
 
 ## Conditions préalables
 
-* [Curseur](https://cursor.com/download)
+* Un agent de codage, tel que [Cursor](https://cursor.com/download) (recommandé), [Copilote Github](https://github.com/features/copilot), [CLI Google Gemini](https://github.com/google-gemini/gemini-cli) ou [Code Claude](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download) : version LTS
 * Gestionnaire de packages : [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) ou [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git) : pour le clonage du référentiel et le contrôle de version
@@ -38,7 +38,7 @@ L’utilisation des outils de codage de l’IA offre les avantages suivants :
    npm install -g @adobe/aio-cli
    ```
 
-1. Installez le plug-in Adobe I/O CLI Commerce [&#128279;](https://github.com/adobe-commerce/aio-cli-plugin-commerce) :
+1. Installez le plug-in Adobe I/O CLI Commerce [](https://github.com/adobe-commerce/aio-cli-plugin-commerce) :
 
    ```bash
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
@@ -68,6 +68,16 @@ Le processus d’installation vous invite à définir les options de configurati
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
+```
+
+Lors de la sélection de l’agent de codage, Adobe recommande de sélectionner `Cursor` pour une expérience de développement optimale :
+
+```terminal
+? Which coding agent would you like to use?
+❯ Cursor
+  Copilot
+  Gemini CLI
+  Claude Code
 ```
 
 Lors de la sélection du gestionnaire de packages, Adobe recommande d’utiliser `npm` par souci de cohérence :
@@ -164,7 +174,7 @@ Consultez les ressources suivantes pour commencer :
 
 * [Kit de démarrage d’intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Modèles de kit de démarrage Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Exemples d’applications App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Pourquoi utiliser ces ressources ?
