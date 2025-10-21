@@ -101,7 +101,7 @@ Cas d’utilisation recommandés pour la configuration des redirections de reche
 
 Testez toujours les redirections de recherche pour vous assurer qu’elles fonctionnent correctement et mènent aux pages les plus pertinentes. Surveillez en permanence leur performance et effectuez les ajustements nécessaires.
 
-Découvrez comment [&#x200B; gérer les redirections de recherche &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
+Découvrez comment [&#x200B; gérer les redirections de recherche &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Améliorer la pertinence des résultats de recherche
 
@@ -155,7 +155,7 @@ Assurez-vous que chaque produit possède du contenu pertinent dans chaque attrib
 En savoir plus sur les attributs de produit pour la recherche :
 
 - [Définir les attributs comme pouvant faire l’objet d’une recherche](workspace.md#set-attributes-as-searchable)
-- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Surveillance des résultats de recherche
 
