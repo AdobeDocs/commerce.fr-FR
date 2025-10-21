@@ -3,9 +3,9 @@ title: Conserver un contenu précis et pertinent
 description: Une plateforme eCommerce est l’un des canaux d’engagement les plus cruciaux. Grâce aux mises à jour transparentes du système de gestion des ressources, les vitrines commerciales affichent toujours les informations les plus récentes sur les produits.
 feature: CMS, Media, Integration
 exl-id: 2c749e84-fcc4-4bf9-90b2-87438329889e
-source-git-commit: 6640635fca5c53fe4b06b9bbb3120fffc46cb0b8
+source-git-commit: 141f2291d1ead324a159053145e92ee7d4237a7d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ En découplant la création de contenu de la gestion de catalogues, les entrepri
 * Les mises à jour des produits restent rapides, car la création de ressources ne retarde pas les modifications de catalogue, ce qui permet une plus grande agilité dans la gestion des nouveaux produits.
 
 * L’automatisation améliore l’efficacité et la précision, réduisant les incohérences entre les données de produit et le contenu associé.
+
+>[!NOTE]
+>
+> Les importations de produits CSV en PaaS et SaaS ne déclenchent pas d’événements de mise à jour. Utilisez l’API pour les importations et mises à jour de catalogues.
 
 ## Modifications du cycle de vie d’AEM Assets
 
