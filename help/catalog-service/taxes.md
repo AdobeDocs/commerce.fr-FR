@@ -21,8 +21,8 @@ Dans cette rubrique, le maillage API est utilisé pour afficher les prix des pro
 
 Les taxes doivent être configurées pour qu’elles s’affichent sur la page Détails du produit.
 
-1. [Configurer des taux de taxe](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html).
-1. Activez l’affichage des taxes [dans le catalogue](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings) et définissez-les sur `Including and Excluding Tax` ou `Including Tax`.
+1. [Configurer des taux de taxe](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=fr).
+1. Activez l’affichage des taxes [dans le catalogue](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=fr#step-1%3A-configure-catalog-prices-display-settings) et définissez-les sur `Including and Excluding Tax` ou `Including Tax`.
 
 Vérifiez que le service de catalogue fonctionne en consultant une page de détails du produit.
 
