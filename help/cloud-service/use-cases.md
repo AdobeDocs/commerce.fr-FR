@@ -3,8 +3,8 @@ title: Cas d’utilisation
 description: Découvrez comment réaliser des cas d’utilisation pratiques et des scénarios commerciaux pris en charge avec  [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 0%
@@ -158,7 +158,7 @@ Supposons que vous souhaitiez modifier rapidement l’arrière-plan d’une imag
 
 1. Ouvrez [!UICONTROL AEM Assets] en le sélectionnant dans [Adobe Experience Cloud](https://experience.adobe.com/#/home).
 
-   ![&#x200B; aem assets &#x200B;](./assets/select-aem-assets.png){width="600" zoomable="yes"}
+   ![ aem assets ](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
 1. Cliquez sur [!UICONTROL Assets].
 
@@ -198,7 +198,7 @@ Supposons que vous souhaitiez modifier rapidement l’arrière-plan d’une imag
 
 #### Ajouter l’image à Commerce AEM Assets
 
-1. Dans le [Panneau de navigation](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) d’AEM as a Cloud Service, sélectionnez **Assets** > **Fichiers** > **Commerce** et cliquez sur la ressource que vous avez créée dans la section précédente.
+1. Dans le [Panneau de navigation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) d’AEM as a Cloud Service, sélectionnez **Assets** > **Fichiers** > **Commerce** et cliquez sur la ressource que vous avez créée dans la section précédente.
 
    ![dossier commerce](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -248,7 +248,7 @@ Adobe Commerce Generate Variations exploite Generative AI pour automatiser la g�
 
 ### Générer du texte
 
-1. Ouvrez votre site storefront à l’aide de l’[éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Ouvrez votre site storefront à l’aide de l’[éditeur universel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Sélectionnez le bloc de texte à modifier.
 
@@ -262,7 +262,7 @@ Adobe Commerce Generate Variations exploite Generative AI pour automatiser la g�
 
 ### Générer du contenu et des images
 
-1. Ouvrez [&#x200B; Générer des variations &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Ouvrez [ Générer des variations ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Sélectionnez le modèle [!UICONTROL **Bannière héroïque**].
 
@@ -290,30 +290,36 @@ Adobe Commerce Generate Variations exploite Generative AI pour automatiser la g�
 Suivez les suggestions suivantes pour résoudre les problèmes rencontrés lors de ces tutoriels.
 
 * Si vous avez besoin de conseils sur les commandes ou les indicateurs :
+
    1. Exécutez `aio --help` pour afficher toutes les commandes et indicateurs disponibles.
    1. Pour des commandes spécifiques, utilisez l’indicateur `--help` . Par exemple :
       * `aio console --help`
       * `aio commerce –help`
 
 * Si vous rencontrez des problèmes de connexion non valides :
-   1. Exécutez `aio config clear `.
-   1. Exécutez `aio auth login –-force `.
+
+   1. Exécutez `aio config clear`.
+   1. Exécutez `aio auth login –-force`.
    1. Connectez-vous à votre navigateur.
    1. Sélectionnez votre profil.
    1. Revenez au terminal pour continuer.
 
 * Si la commande `init` échoue :
+
    1. Exécutez `aio api-mesh delete`.
    1. Réexécutez `aio commerce init`.
 
 * Si vous n’avez pas sélectionné l’organisation, le projet ou l’espace de travail approprié avant d’exécuter la commande `init` :
+
    1. Exécutez `aio console org select`.
    1. Exécutez `aio console project select`.
    1. Exécutez `aio console workspace select`.
 
 * Si vous avez une sélection de client non valide :
+
    1. Annulez l’exécution actuelle de l’interface de ligne de commande en appuyant sur **Ctrl+C**.
    1. Exécutez `aio commerce init`.
 
 * Si vous rencontrez une installation du maillage API non valide :
+
    * Exécutez `aio api-mesh update mesh-config.json`.

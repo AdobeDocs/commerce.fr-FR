@@ -1,9 +1,9 @@
 ---
 title: Présentation des facettes
 description: Découvrez les facettes d [!DNL Adobe Commerce Optimizer] et comment elles améliorent les résultats de recherche.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
-source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Le tableau suivant présente les propriétés de recherche et de filtrage par d�
 | collier | Oui |
 | couleur | Oui |
 | coût | Oui |
-| eco_collection |
+| eco_collection |  |
 | sexe | Oui |
 | fabricant | Oui |
 | matériau | Oui |

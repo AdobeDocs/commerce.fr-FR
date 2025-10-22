@@ -3,7 +3,7 @@ title: Notes de mise à jour
 description: Dernières informations de mise à jour pour l [!DNL Data Connection] extension d’Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 9c10aecb303dd09a85bdafa93d791d30611ec8b2
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 2%
@@ -24,9 +24,9 @@ Ces notes de mise à jour contiennent des mises à jour de l’extension [!DNL D
 
 Pour connaître les modifications de fonctionnalités et les correctifs liés aux extensions utilisées par l’extension [!DNL Data Connection], voir **Mises à jour de service prises en charge**.
 
-Voir [Prochaines versions](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule) pour en savoir plus sur les plannings de publication et la prise en charge.
+Voir [Prochaines versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) pour en savoir plus sur les plannings de publication et la prise en charge.
 
-Consultez la documentation destinée aux développeurs pour [découvrir quelles versions de Commerce prennent en charge ce module](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability).
+Consultez la documentation destinée aux développeurs pour [découvrir quelles versions de Commerce prennent en charge ce module](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Mises à jour de service prises en charge
 
@@ -123,7 +123,7 @@ _27 août 2024_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Nouveau](../assets/new.svg) - Si vous participez à la version bêta, assurez-vous que votre fichier `composer.json` comporte les éléments suivants au niveau racine : ` "minimum-stability": "beta"`. Ajoutez également des `composer require "magento/customers-connector: ^1.2.0"` pour envoyer les profils client de votre instance Commerce à SaaS.
+![Nouveau](../assets/new.svg) - Si vous participez à la version bêta, assurez-vous que votre fichier `composer.json` comporte les éléments suivants au niveau racine : `"minimum-stability": "beta"`. Ajoutez également des `composer require "magento/customers-connector: ^1.2.0"` pour envoyer les profils client de votre instance Commerce à SaaS.
 ![Nouveau](../assets/new.svg) - Cette version contient les correctifs publiés dans 3.1.1, 3.1.2, 3.1.3 et 3.1.4.
 
 ## 3.1.4
@@ -166,7 +166,7 @@ _4 mars 2024_
 
 [!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Nouveau](../assets/new.svg) - Si vous participez à la version bêta, assurez-vous que votre fichier `composer.json` comporte les éléments suivants au niveau racine : ` "minimum-stability": "beta"`. Ajoutez également des `composer require "magento/customers-connector: ^1.2.0"` pour envoyer les profils client de votre instance Commerce à SaaS.
+![Nouveau](../assets/new.svg) - Si vous participez à la version bêta, assurez-vous que votre fichier `composer.json` comporte les éléments suivants au niveau racine : `"minimum-stability": "beta"`. Ajoutez également des `composer require "magento/customers-connector: ^1.2.0"` pour envoyer les profils client de votre instance Commerce à SaaS.
 ![Nouveau](../assets/new.svg) - Possibilité d’[ajouter des attributs personnalisés](custom-attributes.md).
 ![Nouveau](../assets/new.svg) - Possibilité de [collecter et envoyer des enregistrements de profil](connect-data.md#send-customer-profile-data) et des données à Experience Platform.
 

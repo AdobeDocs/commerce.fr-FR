@@ -4,7 +4,7 @@ description: '[!DNL API Mesh] pour Adobe Commerce permet d’intégrer plusieurs
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
-source-git-commit: ca0b2b2a158b9a376724b30c80a6bf9a60e3d1ba
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Le maillage API permet aux utilisateurs de consommer des sources de données ext
 ### Activer les prix de niveau
 
 Dans cet exemple, le maillage API est utilisé pour activer les prix de niveau dans Adobe Commerce.
-Remplacez les valeurs `name `, `endpoint` et `x-api-key`.
+Remplacez les valeurs `name`, `endpoint` et `x-api-key`.
 
 ```json
 {
@@ -165,7 +165,7 @@ query {
 
 ### Obtenir un ID d’entité
 
-Ce maillage ajoute le `entityId` à l’interface ProductView. Remplacez les valeurs `name `, `endpoint` et `x-api-key`.
+Ce maillage ajoute le `entityId` à l’interface ProductView. Remplacez les valeurs `name`, `endpoint` et `x-api-key`.
 
 ```json
 {

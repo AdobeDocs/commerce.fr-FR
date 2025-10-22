@@ -3,7 +3,7 @@ title: Gestion des ressources
 description: Utilisez l’intégration AEM Assets pour Commerce afin de gérer les ressources multimédias de votre storefront.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 394a958250fcc9b0d9f672c1daf46a6d7c16a71d
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Les images des produits sont automatiquement extraites d’AEM Assets en fonctio
 
 1. Ouvrez la section **Images et vidéos**.
 
-   ![&#x200B; Image du produit &#x200B;](assets/product-image.png){width="600" zoomable="yes"}
+   ![ Image du produit ](assets/product-image.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -79,7 +79,7 @@ L’association à l’image sélectionnée sera stockée dans Adobe Commerce en
 
 >[!TIP]
 >
-> [DA.live (création de documents)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=fr#dalive-document-authoring){target=_blank} fournit également un sélecteur de ressources pour enrichir les données.
+> [DA.live (création de documents)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} fournit également un sélecteur de ressources pour enrichir les données.
 
 ## Vidéos sur les produits
 
@@ -93,7 +93,7 @@ Adobe Commerce sert de canal d’engagement essentiel pour les ressources numér
 
 1. Ouvrez la section **Images et vidéos**.
 
-   ![&#x200B; Image du produit &#x200B;](assets/product-image.png){width="600" zoomable="yes"}
+   ![ Image du produit ](assets/product-image.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -149,7 +149,7 @@ Après avoir configuré le sélecteur de ressources [AEM](synchronize/asset-sele
 
 1. Cliquez sur **[!UICONTROL Save]** et continuez.
 
-   Pour plus d’informations sur la création d’une catégorie, voir [Compléter le contenu de la catégorie](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) dans le **Guide de gestion des catalogues Commerce**.
+   Pour plus d’informations sur la création d’une catégorie, voir [Compléter le contenu de la catégorie](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) dans le **Guide de gestion des catalogues Commerce**.
 
 ## Mise à jour d’une ressource
 
@@ -157,6 +157,6 @@ Une fois que vous avez mis à jour et approuvé une ressource dans AEM Assets, l
 
 Pour plus d’informations, consultez la documentation d’AEM Assets ci-après.
 
-* [&#x200B; Retraitement des ressources numériques &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [ Retraitement des ressources numériques ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Approuver une ressource](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Approuver une ressource](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
