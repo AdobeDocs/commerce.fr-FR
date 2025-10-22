@@ -35,7 +35,7 @@ Les images des produits sont automatiquement extraites d’AEM Assets en fonctio
 
 1. Ouvrez la section **Images et vidéos**.
 
-   ![ Image du produit ](assets/product-image.png){width="600" zoomable="yes"}
+   ![&#x200B; Image du produit &#x200B;](assets/product-image.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -93,7 +93,7 @@ Adobe Commerce sert de canal d’engagement essentiel pour les ressources numér
 
 1. Ouvrez la section **Images et vidéos**.
 
-   ![ Image du produit ](assets/product-image.png){width="600" zoomable="yes"}
+   ![&#x200B; Image du produit &#x200B;](assets/product-image.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -157,6 +157,6 @@ Une fois que vous avez mis à jour et approuvé une ressource dans AEM Assets, l
 
 Pour plus d’informations, consultez la documentation d’AEM Assets ci-après.
 
-* [ Retraitement des ressources numériques ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [&#x200B; Retraitement des ressources numériques &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
 * [Approuver une ressource](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

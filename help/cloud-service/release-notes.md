@@ -24,7 +24,7 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 ### Région de l’UE désormais disponible
 
-La prise en charge de la Région de l’Union européenne (eu1) pour les organisations IMS clientes est désormais disponible. Vous pouvez désormais sélectionner **Union européenne** en tant que **Région** lors de l’[ d’une instance SaaS Commerce](./getting-started.md#create-an-instance) dans Cloud Manager. La région de l’Union européenne n’est disponible que pour les environnements de production.
+La prise en charge de la Région de l’Union européenne (eu1) pour les organisations IMS clientes est désormais disponible. Vous pouvez désormais sélectionner **Union européenne** en tant que **Région** lors de l’[&#x200B; d’une instance SaaS Commerce](./getting-started.md#create-an-instance) dans Cloud Manager. La région de l’Union européenne n’est disponible que pour les environnements de production.
 
 Les URL de production de base pour la région de l’Union européenne sont les suivantes :
 

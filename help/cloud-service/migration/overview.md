@@ -17,13 +17,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Pour plus d’informations sur les outils de migration, consultez la section [ Outil de migration de données en bloc ](./bulk-data.md).
+>Pour plus d’informations sur les outils de migration, consultez la section [&#x200B; Outil de migration de données en bloc &#x200B;](./bulk-data.md).
 
 ## Comprendre le changement - comparer PaaS et SaaS
 
 **Principales différences**
 
-* [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **PaaS (actuel)** : le commerçant gère le code de l’application, les mises à niveau, les correctifs et la configuration de l’infrastructure dans l’environnement hébergé d’Adobe. [ Modèle de responsabilité partagée ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) pour les services (MySQL, Elasticsearch et autres).
+* [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **PaaS (actuel)** : le commerçant gère le code de l’application, les mises à niveau, les correctifs et la configuration de l’infrastructure dans l’environnement hébergé d’Adobe. [&#x200B; Modèle de responsabilité partagée &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) pour les services (MySQL, Elasticsearch et autres).
 * [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} **SaaS (nouveau - [!DNL Adobe Commerce as a Cloud Service])** : Adobe gère entièrement l’application principale, l’infrastructure et les mises à jour. Les commerçants se concentrent sur la personnalisation via des points d’extensibilité (API, App Builder, SDK d’interface utilisateur). Le code de l’application principale est verrouillé.
 
 **Implications architecturales**
@@ -52,7 +52,7 @@ Au lieu d’une migration complète, [!DNL Adobe Commerce as a Cloud Service] pr
 
 * **Commerce Optimizer**—Cette approche vous permet de migrer de manière itérative, en utilisant Commerce Optimizer comme phase de transition pour déplacer des personnalisations et des données complexes vers [!DNL Adobe Commerce as a Cloud Service] à votre propre rythme. Commerce Optimizer permet d’accéder aux services de marchandisage optimisés par les vues et politiques de catalogue, au storefront Commerce optimisé par Edge Delivery et aux visuels de produit optimisés par AEM Assets.
 
-![ migration itérative ](../assets/optimizer.png){width="600" zoomable="yes"}
+![&#x200B; migration itérative &#x200B;](../assets/optimizer.png){width="600" zoomable="yes"}
 
 * **Migration complète** : cette approche implique la migration de toutes les données, personnalisations et intégrations en une seule fois. Cette approche est idéale pour les petits commerçants ayant peu de personnalisations et qui souhaitent passer rapidement au [!DNL Adobe Commerce as a Cloud Service].
 
