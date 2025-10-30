@@ -3,7 +3,7 @@ title: Bonnes pratiques [!DNL Live Search]
 description: Découvrez les bonnes pratiques d’implémentation  [!DNL Live Search]  dans votre boutique.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: 4ba9734946f551784cd429ffa7cb23358f0f9710
+source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
 workflow-type: tm+mt
 source-wordcount: '2429'
 ht-degree: 0%
@@ -63,13 +63,13 @@ La fonctionnalité de filtre et de facette est un composant essentiel de votre s
 
 Pour configurer un attribut de produit en tant que facette, les [propriétés](facets-add.md#step-1-add-a-facet) suivantes doivent être définies :
 
-- **[!UICONTROL Use in Search]** -  `No`
+- **[!UICONTROL Use in Search]** -  `Yes`
 - **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
 - **[!UICONTROL Use in Search Results Layered Navigation]** -  `Yes`
 
 #### Conseils pour optimiser les facettes
 
-- Déterminez les attributs les plus pertinents et utiles de vos produits, tels que le titre, la catégorie, la marque, la gamme de prix, la couleur et la taille, puis définissez-les comme [&#x200B; facettes dynamiques &#x200B;](facets-type.md). 
+- Déterminez les attributs les plus pertinents et utiles de vos produits, tels que le titre, la catégorie, la marque, la gamme de prix, la couleur et la taille, puis définissez-les comme [ facettes dynamiques ](facets-type.md). 
 - Définissez et triez des attributs de produit cohérents dans l’ensemble de votre catalogue et hautement pertinents pour vos produits afin d’améliorer la pertinence et les fonctionnalités de filtrage de vos acheteurs.
 - Assurez-vous que les libellés des facettes sont faciles à comprendre et nommés de manière cohérente sur l’ensemble du site. Par exemple, utilisez « Plage de prix » au lieu de « Coût ».
 - Évitez d’accabler les acheteurs en limitant le nombre de facettes aux plus importantes. Un nombre trop élevé d’options peut entraîner une fatigue liée aux décisions. Par défaut, la [!DNL Live Search] est limitée à un maximum de 100 attributs configurés en tant que facettes et 30 intervalles renvoyés dans chaque facette. En savoir plus sur les [limites des facettes](boundaries-limits.md#facets). 
@@ -101,7 +101,7 @@ Cas d’utilisation recommandés pour la configuration des redirections de reche
 
 Testez toujours les redirections de recherche pour vous assurer qu’elles fonctionnent correctement et mènent aux pages les plus pertinentes. Surveillez en permanence leur performance et effectuez les ajustements nécessaires.
 
-Découvrez comment [&#x200B; gérer les redirections de recherche &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-terms).
+Découvrez comment [ gérer les redirections de recherche ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Améliorer la pertinence des résultats de recherche
 
@@ -155,7 +155,7 @@ Assurez-vous que chaque produit possède du contenu pertinent dans chaque attrib
 En savoir plus sur les attributs de produit pour la recherche :
 
 - [Définir les attributs comme pouvant faire l’objet d’une recherche](workspace.md#set-attributes-as-searchable)
-- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Surveillance des résultats de recherche
 
