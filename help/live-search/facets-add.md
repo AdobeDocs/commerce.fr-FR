@@ -24,7 +24,7 @@ Tout attribut de produit filtrable peut être utilisé comme facette. Le panneau
    * Dans la liste *Attributs de facettes*, sélectionnez l’attribut de produit à utiliser comme facette et cliquez sur **Ajouter**.
    * Pour rechercher un attribut de produit spécifique, saisissez les premiers caractères du nom de l’attribut dans la zone *Rechercher*. Cliquez ensuite sur **Ajouter**.
 
-     Pour configurer les intervalles et les regroupements de facettes de prix, reportez-vous à [Paramètres](settings.md). Pour en savoir plus, accédez à [ Types de facettes ](facets-type.md).
+     Pour configurer les intervalles et les regroupements de facettes de prix, reportez-vous à [Paramètres](settings.md). Pour en savoir plus, accédez à [&#x200B; Types de facettes &#x200B;](facets-type.md).
 La facette est ajoutée en bas de la liste *Facettes dynamiques* et le bouton *Publier les modifications* devient disponible.
 
 1. Si la facette à ajouter est introuvable, accédez à **Magasins** > Attributs > **Produit** et vérifiez que l’attribut possède les [propriétés requises](facets.md) à utiliser comme facette. Si nécessaire, mettez à jour les propriétés storefront suivantes de l’attribut :
@@ -73,4 +73,4 @@ Si la facette n’est pas disponible au bout de deux heures, consultez la sectio
 |--- |--- |
 | ![Sélecteur d’épingle](assets/btn-pin-blue.png) | Épingle ou détache une facette en haut de la liste *Filtres*. |
 | ![Plus de sélecteur](assets/btn-more.png) | Affiche un menu d&#39;actions supplémentaires pouvant être appliquées à la facette sélectionnée. Options : Modifier, Supprimer |
-| ![ Déplacer le sélecteur ](assets/btn-move.png) | Utilisez l’icône *Déplacer* pour faire glisser une facette épinglée vers un autre emplacement de la section *Facettes épinglées*. |
+| ![&#x200B; Déplacer le sélecteur &#x200B;](assets/btn-move.png) | Utilisez l’icône *Déplacer* pour faire glisser une facette épinglée vers un autre emplacement de la section *Facettes épinglées*. |
