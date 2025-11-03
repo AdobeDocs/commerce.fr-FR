@@ -15,4 +15,4 @@ Les synonymes étendent la requête de recherche pour inclure des mots que les a
 
 >[!IMPORTANT]
 >
->Pour les installations Adobe Commerce sur lesquelles [!DNL Live Search] est installé, [!DNL Live Search] Synonymes remplace la fonctionnalité Adobe Commerce [Synonymes de recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms), bien que les deux apparaissent dans la section *SEO et recherche* du menu Marketing. Si vous utilisez [!DNL Live Search], suivez les instructions de cette section.
+>Pour les installations Adobe Commerce sur lesquelles [!DNL Live Search] est installé, [!DNL Live Search] Synonymes remplace la fonctionnalité Adobe Commerce [Synonymes de recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=fr#search-synonyms), bien que les deux apparaissent dans la section *SEO et recherche* du menu Marketing. Si vous utilisez [!DNL Live Search], suivez les instructions de cette section.
