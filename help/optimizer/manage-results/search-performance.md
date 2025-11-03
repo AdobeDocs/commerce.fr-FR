@@ -1,11 +1,11 @@
 ---
 title: Performances de recherche
 description: La page Performances de la recherche fournit insight dans les termes de recherche utilisés par les acheteurs.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1837'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Pour optimiser votre fonctionnalité de recherche, utilisez [synonymes et orthog
 
 ## Améliorer la pertinence des résultats de recherche
 
-Pour améliorer la pertinence des résultats de recherche, implémentez des [règles de recherche](../merchandising/rules/overview.md) efficaces et utilisez les métadonnées du produit afin de garantir que les attributs [&#x200B; précis et détaillés sont consultables](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
+Pour améliorer la pertinence des résultats de recherche, implémentez des [règles de recherche](../merchandising/rules/overview.md) efficaces et utilisez les métadonnées du produit afin de garantir que les attributs [ précis et détaillés sont consultables](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
 
 ### Images
 
@@ -136,3 +136,41 @@ En savoir plus sur les attributs de produit pour la recherche :
 | Zéro résultat | Répertorie les requêtes de recherche qui ne renvoient aucun résultat et le nombre de fois où elles ont été utilisées au cours de la période spécifiée. Limite de rapport : 500 premiers termes |
 | Résultats populaires | Répertorie les noms des produits qui ont reçu le plus de vues au cours de la période spécifiée. Les résultats populaires sont calculés en fonction des impressions uniquement et ne sont pas affectés par le nombre de clics ou le chiffre d’affaires généré. Limite de rapport : 500 premiers termes |
 | Recherches uniques | Répertorie les requêtes de recherche uniques utilisées au cours de la période spécifiée. Les données du rapport sont calculées de la même manière que les données d’instantané de recherche unique. Si un acheteur saisit deux fois la même requête de recherche, mais à plus d’une heure d’intervalle, la recherche est considérée comme deux recherches uniques. Limite de rapport : 500 premiers termes |
+
+## Propriétés d’attribut non système par défaut
+
+Le tableau suivant présente les propriétés de recherche et de filtrage par défaut des attributs non système. Définir la propriété d’attribut *Utiliser dans la recherche* sur `Yes` rend l’attribut consultable dans [!DNL Adobe Commerce Optimizer].
+
+| Code attribut | Indexable |
+|--- |--- |
+| activité | Oui |
+| attributes_brand | Oui |
+| marque | Oui |
+| climat | Oui |
+| collier | Oui |
+| couleur | Oui |
+| coût | Oui |
+| eco_collection |  |
+| sexe | Oui |
+| fabricant | Oui |
+| matériau | Oui |
+| objectif | Oui |
+| strap_bag | Oui |
+| style_general | Oui |
+
+## Propriétés d’attribut système par défaut
+
+Le tableau suivant présente les propriétés de recherche et de filtrage par défaut des attributs système.
+
+| Code attribut | Indexable |
+|--- |--- |
+| allow_open_amount | Oui |
+| description | Oui |
+| name | Oui |
+| prix | Oui |
+| short_description | Oui |
+| sku | Oui |
+| statut | Oui |
+| tax_class_id | Oui |
+| url_key | Oui |
+| poids | Oui |

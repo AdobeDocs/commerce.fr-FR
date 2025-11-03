@@ -3,9 +3,9 @@ title: Notes de mise à jour de [!DNL Product Recommendations]
 description: Dernières informations de mise à jour pour  [!DNL Product Recommendations]  à partir d’Adobe Commerce.
 feature: Services, Recommendations, Release Notes
 exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
-source-git-commit: 6b74580a3135322f222b8cfa5c51277a34e6bb83
+source-git-commit: 65aedb6cb8888ddc4cb6278c83b38b733864e324
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Les notes de mise à jour incluent les éléments suivants :
 ![Correctifs](../assets/fix.svg) Correctifs et améliorations
 ![Bogue](../assets/bug.svg) Problèmes connus
 
-Consultez la documentation destinée aux développeurs pour [en savoir plus sur la prise en charge des produits](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability).
+Consultez la documentation destinée aux développeurs pour [en savoir plus sur la prise en charge des produits](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Mises à jour des services hébergés
 
@@ -54,6 +54,16 @@ _25 avril 2023_
 
 ## Version majeure actuelle
 
+### 6.5.0 magento/product-recommendations
+
+_3 novembre 2025_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
+
+![Correctif](../assets/fix.svg) Amélioration de la manière dont les unités de recommandation de produit interagissent sur différents environnements.
+
+### Versions précédentes
+
 ### 6.4.0 magento/product-recommendations
 
 _17 septembre 2025_
@@ -62,8 +72,6 @@ _17 septembre 2025_
 
 ![Correctif](../assets/fix.svg) Résolution d’un problème intermittent où les unités de recommandation de produit disparaissaient en raison d’une erreur JavaScript lorsque les données de stockage local n’étaient pas disponibles. Ce correctif garantit que PREX ne renvoie plus d’erreurs si le `ds-view-history-time-decay` est manquant dans le stockage local.
 ![Nouveau](../assets/new.svg) Mise à jour des URL du réseau CDN pour l’`recommendations-sdk` au domaine `adobe.io`.
-
-### Versions précédentes
 
 ### 6.3.0 de magento/product-recommendations
 
@@ -130,7 +138,7 @@ _2 février 2024_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Nouveau](../assets/new.svg) Le [!DNL Catalog Sync Dashboard] est désormais le [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-dashboard). Ce tableau de bord remanié fournit des informations sur les flux de données pour [!DNL Product Recommendations], [!DNL Live Search] et [!DNL Catalog Service].
+![Nouveau](../assets/new.svg) Le [!DNL Catalog Sync Dashboard] est désormais le [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Ce tableau de bord remanié fournit des informations sur les flux de données pour [!DNL Product Recommendations], [!DNL Live Search] et [!DNL Catalog Service].
 ![Correctif](../assets/fix.svg) Correction d’un problème qui provoquait des erreurs de passage en caisse pour [!DNL Product Recommendations].
 
 +++5.0.0 et versions antérieures
@@ -157,7 +165,7 @@ _Mars 2023_
 
 ![Nouveau](../assets/new.svg) Mise à jour de la [!DNL Product Recommendations] pour la prise en charge d’Adobe Commerce 2.4.6.
 ![Nouveau](../assets/new.svg) Il s’agit d’une version majeure. [Modifier](install-configure.md#update) le fichier de `composer.json` racine de votre projet.
-![Nouveau](../assets/new.svg) [!DNL Product Recommendations] prend désormais en charge les fonctionnalités [Inventory management](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/introduction) complètes dans Commerce (anciennement connu sous le nom de Multi-Source Inventory, ou MSI). Pour activer la prise en charge complète, vous devez [mettre à jour](install-configure.md#update) le module de dépendance `commerce-data-export` à la version 102.2.0+.
+![Nouveau](../assets/new.svg) [!DNL Product Recommendations] prend désormais en charge les fonctionnalités [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) complètes dans Commerce (anciennement connu sous le nom de Multi-Source Inventory, ou MSI). Pour activer la prise en charge complète, vous devez [mettre à jour](install-configure.md#update) le module de dépendance `commerce-data-export` à la version 102.2.0+.
 
 ### 4.0.1 de magento/product-recommendations
 
@@ -181,7 +189,7 @@ _Mars 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge de PHP 8.1
-![Nouveau &#x200B;](../assets/new.svg) redimensionnement amélioré des images afin que le dimensionnement des images soit géré de manière plus cohérente dans le modèle d’affichage de référence
+![Nouveau ](../assets/new.svg) redimensionnement amélioré des images afin que le dimensionnement des images soit géré de manière plus cohérente dans le modèle d’affichage de référence
 
 ### 3.3.6 de magento/product-recommendations
 
@@ -194,7 +202,7 @@ _Mars 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge [B2B](onboarding.md#b2bsupport) dans [!DNL Product Recommendations]
-![Nouveau](../assets/new.svg) Ajout de nouveaux flux pour [synchroniser les données du catalogue](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/data-services/catalog-sync) aux services Commerce via la ligne de commande.
+![Nouveau](../assets/new.svg) Ajout de nouveaux flux pour [synchroniser les données du catalogue](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) aux services Commerce via la ligne de commande.
 
 ### 3.3.3 de magento/product-recommendations
 
@@ -234,7 +242,7 @@ _Mars 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
-![Nouveau](../assets/new.svg) Services Magento renommés en [Services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/integration-services/saas) et amélioration de la convivialité dans l’administration
+![Nouveau](../assets/new.svg) Services Magento renommés en [Services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) et amélioration de la convivialité dans l’administration
 
 ### 3.2.4 de magento/product-recommendations
 
@@ -255,7 +263,7 @@ _Mars 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Nouveau](../assets/new.svg) Ajout de la possibilité de [prévisualiser les résultats des recommandations](create.md) au moment de la création. Cela peut nécessiter la mise à jour de votre module vers la dernière version.
-![Nouveau](../assets/new.svg) Ajout de la possibilité de [surveiller et gérer](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/data-services/catalog-sync) le processus de synchronisation du catalogue à partir de l’administration.
+![Nouveau](../assets/new.svg) Ajout de la possibilité de [surveiller et gérer](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) le processus de synchronisation du catalogue à partir de l’administration.
 ![Nouveau](../assets/new.svg) Ajout de [filtres](filters.md) pour contrôler quels produits sont affichés dans les recommandations.
 ![Nouveau](../assets/new.svg) Ajout du type de recommandation [Similarité visuelle](type.md#visualsim).
 
@@ -269,7 +277,7 @@ _Mars 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
-![Nouveau](../assets/new.svg) possibilité de [resynchroniser](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/data-services/catalog-sync) votre catalogue avec les services SaaS via la ligne de commande.
+![Nouveau](../assets/new.svg) possibilité de [resynchroniser](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) votre catalogue avec les services SaaS via la ligne de commande.
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge des préfixes de table de base de données
 ![Correctif](../assets/fix.svg) Suppression de la prise en charge de PHP 7.1
 
@@ -296,7 +304,7 @@ _Mars 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Correctif](../assets/fix.svg) Correction de l’erreur « Impossible de récupérer les données des options du produit » qui pouvait se produire lors de l’exportation du catalogue.
-![Correctif](../assets/fix.svg) Le symbole de devise dans la colonne _Chiffre d’affaires_ du tableau de bord _[!DNL Product Recommendations]_&#x200B;reflète désormais correctement la devise de base configurée.
+![Correctif](../assets/fix.svg) Le symbole de devise dans la colonne _Chiffre d’affaires_ du tableau de bord _[!DNL Product Recommendations]_reflète désormais correctement la devise de base configurée.
 
 ### 3.0.4 de magento/product-recommendations
 
@@ -314,7 +322,7 @@ _Mars 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
-![Nouveau &#x200B;](../assets/new.svg) ajout du nom de la recommandation de produit lors de la modification du type de contenu Page Builder
+![Nouveau ](../assets/new.svg) ajout du nom de la recommandation de produit lors de la modification du type de contenu Page Builder
 
 ### 3.0.2 magento/product-recommendations
 
@@ -338,7 +346,7 @@ Il s’agit d’une version majeure. [Modifiez](install-configure.md#update) le 
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
-![Nouveau](../assets/new.svg) prise en charge de Page Builder. Grâce à l’intégration de Page Builder, vous pouvez placer des unités de recommandation de manière précise et granulaire à n’importe quel emplacement arbitraire sur le contenu créé par Page Builder. Vous pouvez également mettre en forme les en-têtes et les unités de recommandation eux-mêmes. Accédez à [Page Builder](https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/add-content/recommendations) pour plus d’informations.
+![Nouveau](../assets/new.svg) prise en charge de Page Builder. Grâce à l’intégration de Page Builder, vous pouvez placer des unités de recommandation de manière précise et granulaire à n’importe quel emplacement arbitraire sur le contenu créé par Page Builder. Vous pouvez également mettre en forme les en-têtes et les unités de recommandation eux-mêmes. Accédez à [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) pour plus d’informations.
 
 ### 2.0.0 de magento/product-recommendations
 
@@ -353,4 +361,4 @@ Il s’agit d’une version majeure. [Modifiez](install-configure.md#update) le 
 Pour en savoir plus sur le développement [!DNL Product Recommendations] et [!DNL Product Recommendations] :
 
 * [Guide d’utilisation](overview.md)
-* [Documentation destinée aux développeurs](https://experienceleague.adobe.com/fr/docs/commerce/product-recommendations/developer/development-overview)
+* [Documentation destinée aux développeurs](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/development-overview)

@@ -3,9 +3,9 @@ title: Qu'est-ce que  [!DNL Live Search] ?
 description: '[!DNL Live Search] d’Adobe Commerce offre une expérience de recherche rapide, pertinente et intuitive.'
 recommendations: noCatalog
 exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: f96e7d8d2a31d5e0f49bd3ac2da320313908a868
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '925'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,13 @@ Du côté Adobe Commerce de l’architecture, vous pouvez héberger la recherche
 
 En mettant l&#39;accent sur la vitesse, la pertinence et la facilité d&#39;utilisation, [!DNL Live Search] change la donne pour les acheteurs et les commerçants. Regardez la vidéo suivante, puis faites un tour rapide de [!DNL Live Search] depuis le storefront.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452571?learn=on&captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-Pour visionner une vidéo plus détaillée sur l’utilisation et la configuration de la recherche en direct, reportez-vous à la rubrique [Démonstration complète sur [!DNL Live Search]](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
+Pour visionner une vidéo plus détaillée sur l’utilisation et la configuration de la recherche en direct, reportez-vous à la rubrique [Démonstration complète sur [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
 ### Rechercher en cours de frappe
 
-[!DNL Live Search] répond avec des suggestions de produits et une image miniature des principaux résultats de recherche dans une [fenêtre contextuelle](storefront-popover.md) lorsque les acheteurs saisissent des requêtes dans la zone [Rechercher](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search). La page [détails du produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/storefront/storefront) s’affiche lorsque les acheteurs cliquent sur un produit suggéré ou en vedette. Un lien _Afficher tout_ dans le pied de page de la fenêtre contextuelle affiche la page des résultats de la recherche.
+[!DNL Live Search] répond avec des suggestions de produits et une image miniature des principaux résultats de recherche dans une [fenêtre contextuelle](storefront-popover.md) lorsque les acheteurs saisissent des requêtes dans la zone [Rechercher](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search). La page [détails du produit](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) s’affiche lorsque les acheteurs cliquent sur un produit suggéré ou en vedette. Un lien _Afficher tout_ dans le pied de page de la fenêtre contextuelle affiche la page des résultats de la recherche.
 
 [!DNL Live Search] renvoie des résultats de type « recherche en cours de frappe » pour une requête comportant au moins deux caractères. Pour une correspondance partielle, le nombre maximal de caractères par mot est de 20. Le nombre de caractères de la requête n’est pas configurable. La fenêtre contextuelle inclut les champs `name`, `sku` et `category_ids`.
 
@@ -79,10 +79,6 @@ Utilisez les facettes comme paramètres d’URL `http://yourwebsite.com?color=re
 
 Le marchandisage [règles](rules.md) façonne l’expérience d’achat avec des instructions if-then qui ajoutent une logique et des événements à la recherche. Vous pouvez facilement booster ou enterrer des produits pour une promotion, une saison ou une autre période.
 
-### Prise en charge des termes de recherche
-
-[!DNL Live Search] prend en charge Commerce [redirections de termes de recherche](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-terms). Par exemple, les utilisateurs peuvent rechercher un terme tel que « Frais d’expédition » et accéder directement à la page des frais d’expédition.
-
 ## Composants Live Search
 
 - [!DNL Live Search] [widget contextuel](storefront-popover.md) est la zone qui s’ouvre sous le champ de recherche qui contient les résultats de la recherche.
@@ -101,4 +97,4 @@ L’[!DNL Live Search] [espace de travail](workspace.md) est la zone de l’Admi
 
 Si vous n’envoyez pas de requête de recherche pour les données du catalogue dans votre environnement de test pendant 90 jours consécutifs, les données du catalogue sont définies en mode veille et aucune donnée n’est renvoyée pour une requête de recherche. Les données de catalogue de votre environnement de production ne sont pas affectées par cette politique.
 
-Pour réactiver les données du catalogue dans votre environnement de test, [envoyez une demande d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Live Search] » et incluez les identifiants d’environnement. Les données du catalogue de votre environnement de test doivent être restaurées dans les heures qui suivent.
+Pour réactiver les données du catalogue dans votre environnement de test, [envoyez une demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Live Search] » et incluez les identifiants d’environnement. Les données du catalogue de votre environnement de test doivent être restaurées dans les heures qui suivent.

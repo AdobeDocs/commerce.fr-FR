@@ -3,9 +3,9 @@ title: Bonnes pratiques [!DNL Live Search]
 description: Découvrez les bonnes pratiques d’implémentation  [!DNL Live Search]  dans votre boutique.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
+source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
 workflow-type: tm+mt
-source-wordcount: '2429'
+source-wordcount: '2180'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Pour gérer les [!DNL Live Search], accédez à **Marketing** > *SEO et recherch
 
 ## Optimisation de votre fonctionnalité de recherche
 
-Dans cette section, vous apprendrez à optimiser votre fonctionnalité de recherche en utilisant des fonctionnalités telles que la saisie semi-automatique pour fournir des suggestions en temps réel au fur et à mesure que les acheteurs saisissent des caractères, des synonymes et des orthographes afin de vous assurer que les acheteurs trouvent des produits même s’ils utilisent des mots différents, des facettes pour permettre aux acheteurs de réduire les résultats de recherche et des redirections de recherche pour rediriger automatiquement les acheteurs d’une requête de recherche vers une page spécifique.
+Dans cette section, vous apprendrez à optimiser votre fonctionnalité de recherche en utilisant des fonctionnalités telles que la saisie semi-automatique pour fournir des suggestions en temps réel au fur et à mesure que les acheteurs saisissent des caractères, des synonymes et des orthographes afin de vous assurer que les acheteurs trouvent des produits même s’ils utilisent des mots différents, ainsi que des facettes pour permettre aux acheteurs de réduire les résultats de recherche.
 
 ### Saisie automatique
 
@@ -69,7 +69,7 @@ Pour configurer un attribut de produit en tant que facette, les [propriétés](f
 
 #### Conseils pour optimiser les facettes
 
-- Déterminez les attributs les plus pertinents et utiles de vos produits, tels que le titre, la catégorie, la marque, la gamme de prix, la couleur et la taille, puis définissez-les comme [&#x200B; facettes dynamiques &#x200B;](facets-type.md). 
+- Déterminez les attributs les plus pertinents et utiles de vos produits, tels que le titre, la catégorie, la marque, la gamme de prix, la couleur et la taille, puis définissez-les comme [ facettes dynamiques ](facets-type.md). 
 - Définissez et triez des attributs de produit cohérents dans l’ensemble de votre catalogue et hautement pertinents pour vos produits afin d’améliorer la pertinence et les fonctionnalités de filtrage de vos acheteurs.
 - Assurez-vous que les libellés des facettes sont faciles à comprendre et nommés de manière cohérente sur l’ensemble du site. Par exemple, utilisez « Plage de prix » au lieu de « Coût ».
 - Évitez d’accabler les acheteurs en limitant le nombre de facettes aux plus importantes. Un nombre trop élevé d’options peut entraîner une fatigue liée aux décisions. Par défaut, la [!DNL Live Search] est limitée à un maximum de 100 attributs configurés en tant que facettes et 30 intervalles renvoyés dans chaque facette. En savoir plus sur les [limites des facettes](boundaries-limits.md#facets). 
@@ -84,24 +84,6 @@ En savoir plus sur les facettes :
 - [Ajout de facettes](facets-add.md)
 - [Gestion des facettes](facets-manage.md) (modification, épinglage d’une facette, suppression, publication)
 - [Facettage des prix](settings.md#price-faceting)
-
-### Redirections de recherche
-
-Une redirection de recherche vous permet de rediriger automatiquement les acheteurs d’une requête de recherche vers une page spécifique. Les redirections de recherche peuvent améliorer l’expérience de l’acheteur et guider les clients vers le contenu le plus pertinent, tel qu’une page de produit, une catégorie, une page de destination ou un ensemble personnalisé de résultats de recherche. Les redirections de recherche permettent de rationaliser l’expérience d’achat et de s’assurer que les acheteurs trouvent ce qu’ils recherchent rapidement et efficacement.
-
-Cas d’utilisation recommandés pour la configuration des redirections de recherche :
-
-- **Produits ou catégories populaires** - Redirigez les acheteurs vers une page de produits ou une catégorie spécifique lorsqu’ils recherchent des termes courants ou populaires. Par exemple, la recherche de « iPhone » peut rediriger directement vers la page de catégorie iPhone ou une page de modèle spécifique.
-
-- **Campagnes promotionnelles** - Lors d’événements promotionnels ou de ventes, redirigez les termes de recherche pertinents vers des pages de destination qui mettent en évidence des offres spéciales ou des produits en vedette.
-
-- **Recherches de marque** - Lorsque les acheteurs recherchent un nom de marque, redirigez-les vers la page dédiée de la marque où tous les produits de cette marque sont répertoriés.
-
-- **Abandon du produit** - Si un produit est interrompu, vous pouvez rediriger les recherches pour ce produit vers des produits similaires ou la nouvelle version du produit.
-
-Testez toujours les redirections de recherche pour vous assurer qu’elles fonctionnent correctement et mènent aux pages les plus pertinentes. Surveillez en permanence leur performance et effectuez les ajustements nécessaires.
-
-Découvrez comment [&#x200B; gérer les redirections de recherche &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Améliorer la pertinence des résultats de recherche
 
@@ -155,7 +137,7 @@ Assurez-vous que chaque produit possède du contenu pertinent dans chaque attrib
 En savoir plus sur les attributs de produit pour la recherche :
 
 - [Définir les attributs comme pouvant faire l’objet d’une recherche](workspace.md#set-attributes-as-searchable)
-- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Surveillance des résultats de recherche
 
@@ -182,7 +164,6 @@ Vous pouvez surveiller ces KPI dans l’espace de travail [!DNL Live Search] [Pe
   Pour réduire le taux de résultats nul, vous pouvez :
 
    - Proposez des termes de recherche alternatifs ou apparentés, tels que des [synonymes](synonyms.md) si aucune correspondance exacte n’est trouvée.
-   - Fournissez aux acheteurs des suggestions connexes ou alternatives lorsque leur recherche ne génère aucun résultat en définissant des redirections de recherche.
    - Passez régulièrement en revue les requêtes sans résultat pour identifier les modèles et apporter les ajustements nécessaires à votre catalogue de produits et à vos paramètres de recherche.
 
 - **Résultats populaires** - Peut améliorer considérablement vos résultats de recherche en les alignant avec les préférences et les comportements des acheteurs.
