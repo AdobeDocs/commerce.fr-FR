@@ -2,9 +2,9 @@
 title: Connecteur Salesforce Commerce
 description: Découvrez le  [!DNL Commerce Optimizer SFCC Connector]  qui fournit un point de départ pour l’intégration de Salesforce Commerce B2C à afin de synchroniser les données de catalogue et d [!DNL Adobe Commerce Optimizer] implémenter et de personnaliser le connecteur pour prendre en charge les opérations commerciales.
 role: Admin, Developer
-source-git-commit: f3da99ec4d2c518748d0911d6cf5d2d89ab45a47
+source-git-commit: fc6f8566a1932e830a37bcfa32cd1c4168c67c68
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 Basée sur la technologie Adobe App Builder, la [!DNL Commerce Optimizer Salesforce Commerce Connector] permet un transfert et une gestion transparents des données de catalogue de Salesforce Commerce Cloud B2C vers [!DNL Adobe Commerce Optimizer]. Il relie les deux plateformes, en conservant les informations sur les produits, les prix et les mises à jour synchronisés, sans reconfiguration de la plateforme.
 
 Le connecteur prêt à l’emploi offre des fonctionnalités de synchronisation des données fiables et la possibilité de personnaliser les workflows en fonction des besoins de votre entreprise.
+
+Pour une série complète de tutoriels vidéo, consultez [En savoir plus sur le kit de démarrage cloud de Salesforce Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 ## Fonctionnalités clés
 
@@ -26,7 +28,7 @@ Le connecteur prêt à l’emploi offre des fonctionnalités de synchronisation 
    * **Mises à jour à la demande :** déclenchez instantanément des mises à jour au niveau des SKU pour des modifications, des corrections ou des lancements de produits urgents.
 
 * **Conçu pour l’extensibilité**
-   * Utilise des points d’entrée SCAPI (Salesforce B2C API[&#x200B; &#x200B;](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html)Commerce personnalisés pour garantir la compatibilité et une adaptation facile à des cas d’utilisation uniques ou avancés.
+   * Utilise des points d’entrée SCAPI (Salesforce B2C API[ ](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html)Commerce personnalisés pour garantir la compatibilité et une adaptation facile à des cas d’utilisation uniques ou avancés.
    * Évolue en fonction de la phase de démarrage de votre entreprise avec la synchronisation des catalogues et des prix, puis étend les workflows pour prendre en charge des intégrations supplémentaires ou la logique commerciale.
    * Configurez et faites évoluer les workflows sans reconstruire les intégrations principales.
 
@@ -87,7 +89,6 @@ Le [!DNL Commerce Optimizer SFCC Connector] se compose de plusieurs composants c
 * **Application App Builder ACO SFCC Starter Kit**-fournit des fonctions sans serveur qui gèrent la synchronisation des données entre SFCC et Adobe Commerce Optimizer.
 * **Cartouche SFCC personnalisée** - Cartouche requise qui étend votre instance Salesforce Commerce Cloud avec les API nécessaires à l’extraction des données.
 * **Interface utilisateur de gestion** : interface web permettant de surveiller le statut de synchronisation et de gérer les opérations du connecteur.
-
 
 ### Processus de synchronisation
 
