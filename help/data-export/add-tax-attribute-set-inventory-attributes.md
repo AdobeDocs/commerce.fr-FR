@@ -158,7 +158,7 @@ Le module Attributs de produit supplémentaires améliore les flux de produits e
 * [Extension Adobe Commerce Data Export](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 ou ultérieure
 * Accès à [repo.magento.com](https://repo.magento.com)
 
-  Pour générer des clés et obtenir les droits nécessaires, voir [ Obtenir vos clés d’authentification ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Pour les installations cloud, consultez le guide [Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+  Pour générer des clés et obtenir les droits nécessaires, voir [&#x200B; Obtenir vos clés d’authentification &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Pour les installations cloud, consultez le guide [Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Accès à la ligne de commande du serveur applicatif Adobe Commerce.
 
 ### Etapes d&#39;installation

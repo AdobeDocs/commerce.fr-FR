@@ -104,4 +104,4 @@ Pour obtenir de l’aide sur la résolution de certains problèmes courants dans
 - [[!DNL Live Search] le tableau de bord et le classement des résultats de recherche sont incorrects](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
 - [[!DNL Live Search] les facettes ne sont pas triées par ordre alphabétique](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
 
-Si vous avez besoin d’aide supplémentaire, contactez l’[assistance ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si vous avez besoin d’aide supplémentaire, contactez l’[assistance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
