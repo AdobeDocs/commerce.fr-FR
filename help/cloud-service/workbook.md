@@ -214,13 +214,13 @@ Deploy the ratings API.
 
 L’agent effectue une évaluation de préparation avant le déploiement.
 
-![ Évaluation préalable au déploiement ](./assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+![&#x200B; Évaluation préalable au déploiement &#x200B;](./assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 #### Déployer
 
 Lorsque vous êtes certain des résultats de l’évaluation, demandez à l’agent de procéder au déploiement. L’agent utilise la boîte à outils MCP pour vérifier, créer et déployer automatiquement.
 
-![ Déploiement ](./assets/deployment-process.png){width="600" zoomable="yes"}
+![&#x200B; Déploiement &#x200B;](./assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### Tester l’API
 
@@ -248,7 +248,7 @@ Pour intégrer l’API de notes à un storefront [!DNL Adobe Commerce] optimisé
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![ Contrat de service ](./assets/create-contract.png){width="600" zoomable="yes"}
+![&#x200B; Contrat de service &#x200B;](./assets/create-contract.png){width="600" zoomable="yes"}
 
 ![Détails du contrat de service](./assets/contract.png){width="600" zoomable="yes"}
 
