@@ -33,7 +33,7 @@ Ces services vous aident à augmenter les conversions, à offrir des expérience
 >
 >Adobe recommande d’effectuer une mise à niveau vers la dernière version prise en charge de tous les services Commerce. Voir les [notes de mise à jour](release-notes-all.md).
 
-Outre ces fonctionnalités, des outils permettent de surveiller le flux de données entre votre instance Commerce et la plateforme SaaS. Ces outils peuvent synchroniser automatiquement les données et vous aider à optimiser les performances. En savoir plus sur les [ outils de données ](#data-tools) disponibles.
+Outre ces fonctionnalités, des outils permettent de surveiller le flux de données entre votre instance Commerce et la plateforme SaaS. Ces outils peuvent synchroniser automatiquement les données et vous aider à optimiser les performances. En savoir plus sur les [&#x200B; outils de données &#x200B;](#data-tools) disponibles.
 
 ## Services disponibles
 
