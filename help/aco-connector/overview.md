@@ -57,7 +57,7 @@ Le connecteur permet plusieurs workflows clés :
 
 * Accès à [repo.magento.com](https://repo.magento.com) pour télécharger le métapaquet du connecteur Commerce à l’aide du compositeur.
 
-* Accès administrateur à une instance sandbox Adobe Commerce Optimizer [](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance).
+* Accès administrateur à une instance sandbox Adobe Commerce Optimizer [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance).
 
 L’utilisateur d’Adobe Commerce configurant l’intégration doit disposer des éléments suivants :
 
@@ -79,7 +79,7 @@ L’utilisateur d’Adobe Commerce configurant l’intégration doit disposer de
 
    1. [Vérifiez que la synchronisation des données fonctionne](#verify-that-the-data-sync-is-working).
 
-   1. [ Personnaliser la configuration de l’exportation des données ](#customize-commerce-data-export-configuration) (facultatif).
+   1. [&#x200B; Personnaliser la configuration de l’exportation des données &#x200B;](#customize-commerce-data-export-configuration) (facultatif).
 
 1. **[Configuration des magasins Adobe Commerce Optimizer](#configure-adobe-commerce-optimizer-stores)**
 
@@ -129,11 +129,11 @@ Après avoir créé le projet, enregistrez les valeurs suivantes à partir de la
 
 Enregistrez les valeurs suivantes à partir des détails de votre instance Adobe Commerce Optimizer.
 
-* **Identifiant d’instance : ** identifiant unique de votre instance Adobe Commerce Optimizer. Également appelé identifiant client.
+* **Identifiant d’instance : &#x200B;** identifiant unique de votre instance Adobe Commerce Optimizer. Également appelé identifiant client.
 
   Obtenez l’ID d’instance à partir de l’URL pour accéder à votre instance Adobe Commerce Optimizer. Par exemple, dans le `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef` URL, l’ID d’instance est `1234567890abcdef`.
 
-* **Region—**Région dans laquelle votre instance Sandbox Adobe Commerce Optimizer est hébergée.
+* **Region—**&#x200B;Région dans laquelle votre instance Sandbox Adobe Commerce Optimizer est hébergée.
 
   Récupérez la région à partir de l’URL Adobe Commerce Optimizer. Par exemple, dans le `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef` URL, la région est `na1`.
 
@@ -167,11 +167,11 @@ Vous pouvez vérifier la synchronisation des données à partir de l’administr
 
 * La **[page Statut de la synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.md)** indique la progression de la synchronisation des données du catalogue de Commerce vers Adobe Commerce Optimizer.
 
-* La **[[!UICONTROL Data Sync]page ](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)** dans Adobe Commerce Optimizer affiche les données de catalogue transférées à partir de votre instance Commerce.
+* La **[[!UICONTROL Data Sync]page &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)** dans Adobe Commerce Optimizer affiche les données de catalogue transférées à partir de votre instance Commerce.
 
 1. Vérifiez que les données du catalogue circulent de Commerce vers Commerce Optimizer :
 
-   Dans Commerce Admin, ouvrez la page [!UICONTROL Data Feed Sync Status] en sélectionnant [!UICONTROL System]** > [!UICONTROL Data Transfer] > **[!UICONTROL Data Feed Sync Status]**.
+   Dans Commerce Admin, ouvrez la page [!UICONTROL Data Feed Sync Status] en sélectionnant [!UICONTROL System] **&#x200B; > [!UICONTROL Data Transfer] > &#x200B;** [!UICONTROL Data Feed Sync Status]**.
 
    ![Page État de synchronisation des flux de données avec rapport sur l’état des éléments de flux](./assets/data-feed-sync-status.png)
 
@@ -242,9 +242,9 @@ Dans le référentiel GitHub du code standard Storefront, mettez à jour le fich
 
 * `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint"`
 
-* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"` - Obtenez cette valeur à partir de la page des détails de l’instance Commerce Optimizer [](https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started#get-instance-details)&#x200B;
+* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"` - Obtenez cette valeur à partir de la page des détails de l’instance Commerce Optimizer [&#128279;](https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started#get-instance-details)&#x200B;
 
-* `"AC-Environment-Id": "Customer organization ID"` - Obtenez cette valeur à partir du projet cloud Commerce [](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#project-overview)
+* `"AC-Environment-Id": "Customer organization ID"` - Obtenez cette valeur à partir du projet cloud Commerce [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#project-overview)
 
 * `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` - Obtenez cette valeur auprès de l’administrateur Adobe Commerce Optimizer.
 
