@@ -1,10 +1,11 @@
 ---
 title: Performances de Recommendations
 description: La page Performances de Recommendations fournit à insight des informations sur les performances de vos recommandations de produits.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
+source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -27,14 +28,11 @@ Sélectionnez la vue [catalogue](../setup/catalog-view.md) où vos recommandatio
 
 ## Affichage d’un rapport
 
-Cliquez sur le calendrier et effectuez l’une des opérations suivantes :
+Cliquez sur le **[!UICONTROL Date Range]** et sélectionnez l’une des plages suivantes :
 
-- Pour spécifier une seule date, double-cliquez sur la date dans le calendrier.
-- Pour spécifier une plage de dates, cliquez sur la première et la dernière date du calendrier.
+![Période des recommandations](../assets/rec-perf-date-range.png)
 
->[!NOTE]
->
->La plage de dates ne peut pas dépasser un an.
+Le tableau de recommandations est mis à jour pour afficher les mesures de cette période.
 
 ## Personnaliser le tableau
 
@@ -71,9 +69,9 @@ Découvrez comment [créer ou gérer une recommandation existante](../merchandis
 
 | Contrôle | Description |
 |---|---|
-| ![&#x200B; Sélecteur de calendrier &#x200B;](../assets/icon-calendar.png) | Détermine la période utilisée pour les calculs des mesures. |
+| ![Période](../assets/rec-perf-date-range.png) | Détermine la période utilisée pour les calculs des mesures. |
 | ![Sélecteur de colonnes](../assets/icon-show-hide-columns.png) | Détermine les colonnes qui apparaissent dans le tableau Recommendations. |
-| Créer une recommandation | Ouvre la page [&#x200B; Créer une recommandation &#x200B;](../merchandising/recommendations/create.md). |
+| Créer une recommandation | Ouvre la page [ Créer une recommandation ](../merchandising/recommendations/create.md). |
 
 ## Descriptions des colonnes
 
