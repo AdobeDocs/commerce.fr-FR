@@ -1,11 +1,11 @@
 ---
 title: Performances de Recommendations
 description: La page Performances de Recommendations fournit à insight des informations sur les performances de vos recommandations de produits.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
+source-git-commit: 177ebffe0295fdc87b6f4a60473ebfda6bea0f01
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,15 @@ La page Performances des recommandations affiche une liste des recommandations c
 
 ![Performances de Recommendations](../assets/rec-performance.png){zoomable="yes"}
 
-## Choisissez la vue **Catalogue**
-
-Sélectionnez la vue [catalogue](../setup/catalog-view.md) où vos recommandations s’appliquent.
-
-![Vue Catalogue](../assets/catalog-view.png)
-
 ## Affichage d’un rapport
 
-Cliquez sur le **[!UICONTROL Date Range]** et sélectionnez l’une des plages suivantes :
+1. Choisissez la **source du catalogue**, par exemple l’`en-US` où vos recommandations s’appliquent.
 
-![Période des recommandations](../assets/rec-perf-date-range.png)
+1. Cliquez sur le **[!UICONTROL Date Range]** et sélectionnez l’une des plages suivantes :
 
-Le tableau de recommandations est mis à jour pour afficher les mesures de cette période.
+   ![Période des recommandations](../assets/rec-perf-date-range.png)
+
+   Le tableau de recommandations est mis à jour pour afficher les mesures de cette période.
 
 ## Personnaliser le tableau
 
@@ -46,14 +42,6 @@ Le tableau de recommandations est mis à jour pour afficher les mesures de cette
    - Pour masquer une colonne visible, cliquez sur un nom de colonne avec une coche.
 
    Le tableau est actualisé pour n’inclure que les colonnes sélectionnées.
-
-## Définition de filtres
-
-Cliquez sur l’icône de filtre pour filtrer les mesures dans l’espace de travail des performances des recommandations.
-
-![Filtrer les mesures](../assets/rec-filters.png)
-
-Vous pouvez configurer plusieurs valeurs pour chacun des filtres. Consultez le [tableau ci-dessous](#column-descriptions) pour obtenir une description de chaque filtre.
 
 ## Afficher les détails
 
@@ -71,7 +59,7 @@ Découvrez comment [créer ou gérer une recommandation existante](../merchandis
 |---|---|
 | ![Période](../assets/rec-perf-date-range.png) | Détermine la période utilisée pour les calculs des mesures. |
 | ![Sélecteur de colonnes](../assets/icon-show-hide-columns.png) | Détermine les colonnes qui apparaissent dans le tableau Recommendations. |
-| Créer une recommandation | Ouvre la page [&#x200B; Créer une recommandation &#x200B;](../merchandising/recommendations/create.md). |
+| Créer une recommandation | Ouvre la page [ Créer une recommandation ](../merchandising/recommendations/create.md). |
 
 ## Descriptions des colonnes
 
