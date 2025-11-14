@@ -1,13 +1,13 @@
 ---
 title: Outils de codage de l’IA pour les extensions
 description: Découvrez comment utiliser les outils d’IA pour créer des extensions Commerce App Builder.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 9382ce8f139f9d2f4ec1732c0d83b466cd54fa37
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ L’utilisation des outils de codage de l’IA offre les avantages suivants :
    npm install -g @adobe/aio-cli
    ```
 
-1. Installez le plug-in Adobe I/O CLI Commerce [&#128279;](https://github.com/adobe-commerce/aio-cli-plugin-commerce) :
+1. Installez le plug-in Adobe I/O CLI Commerce [](https://github.com/adobe-commerce/aio-cli-plugin-commerce) :
 
    ```bash
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
@@ -96,10 +96,19 @@ Lors de la sélection du gestionnaire de packages, Adobe recommande d’utiliser
 
    Les fichiers suivants sont ajoutés à votre espace de travail :
 
+   **Curseur**
+
    * Configuration MCP : `.cursor/mcp.json`
    * Répertoire des règles : `.cursor/rules/`
 
+   **Copilote**
+
+   * Configuration MCP : `.vscode/mcp.json`
+   * Répertoire des règles : `.github/copilot-instructions.md`
+
 ## Configuration post-installation
+
+### Curseur
 
 1. Redémarrez l’IDE Cursor pour charger les nouveaux outils et la nouvelle configuration MCP.
 
@@ -119,6 +128,45 @@ Lors de la sélection du gestionnaire de packages, Adobe recommande d’utiliser
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
    ```
+
+1. Utilisez l’invite suivante pour voir si l’agent utilise le serveur MCP. Si ce n’est pas le cas, demandez explicitement à l’agent d’utiliser les outils MCP disponibles.
+
+```terminal
+What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
+```
+
+### Copilote
+
+1. Redémarrez Visual Studio Code pour charger les nouveaux outils et la nouvelle configuration MCP.
+
+1. Vérifiez l’installation en vous assurant que le fichier `copilot-instructions.md` existe dans le dossier `.github`.
+
+1. Activez le serveur MCP :
+
+   * Ouvrez le panneau Extensions en cliquant sur l’icône **Extensions** dans la barre d’activités située sur la barre latérale gauche, ou à l’aide des combinaisons **Cmd+Maj+X** (macOs) ou **Ctrl+Maj+X** (Windows et Linux).
+   * Cliquez sur **SERVEURS MCP - INSTALLÉS**.
+   * Cliquez sur l’icône d’engrenage en regard de **Serveur MCP d’extensibilité de commerce** et sélectionnez **Démarrer le serveur**, si le serveur est arrêté.
+   * Cliquez à nouveau sur l’icône d’engrenage, puis sélectionnez **Afficher la sortie**.
+
+1. Vérifiez l’état du serveur. La sortie `MCP:commerce-extensibility` doit correspondre aux éléments suivants :
+
+   ```terminal
+   2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
+   2025-11-13 12:58:50.652 [info] Connection state: Starting
+   2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
+   2025-11-13 12:58:50.657 [info] Connection state: Starting
+   2025-11-13 12:58:50.657 [info] Connection state: Running
+   
+   (...)
+   
+   2025-11-13 12:58:50.753 [info] Discovered 10 tools
+   ```
+
+1. Utilisez l’invite suivante pour voir si l’agent utilise le serveur MCP. Si ce n’est pas le cas, demandez explicitement à l’agent d’utiliser les outils MCP disponibles.
+
+```terminal
+What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+```
 
 ## Exemple d’invite
 
@@ -174,7 +222,7 @@ Consultez les ressources suivantes pour commencer :
 
 * [Kit de démarrage d’intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Modèles de kit de démarrage Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Exemples d’applications App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Pourquoi utiliser ces ressources ?
