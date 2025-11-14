@@ -1,8 +1,8 @@
 ---
-source-git-commit: 27a593d86255cb48b04a876cbfd8e5413bbfa6f4
+source-git-commit: 6d525aba0207ce525f6408945b8c8329325fb865
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 5%
+source-wordcount: '221'
+ht-degree: 6%
 
 ---
 # Nouveautés du modèle
@@ -10,6 +10,28 @@ ht-degree: 5%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### mercredi 11 novembre 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">notes de mise à jour</a> pour les services de paiement version 2.13.0.</p>
+</td>
+      <td>
+        Technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1c02122cd58234268ba9f07aaba96f83f929720">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### vendredi 6 novembre 2025
 
@@ -23,7 +45,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/release-notes">notes de mise à jour</a> pour l’intégration d’AEM Assets version 1.2.7.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">notes de mise à jour</a> pour l’intégration d’AEM Assets version 1.2.7.</p>
 </td>
       <td>
         Technique
@@ -45,7 +67,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des rubriques suivantes pour inclure des informations sur la configuration de la gestion des identités et de l’authentification unique à partir de Adobe Admin Console :<br />- <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/user-management">Utilisateur Adobe Commerce as a Cloud Service et Identity Management</a><br />- <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer : Utilisateur et Identity Management</a></p>
+      <td><p>Mise à jour des rubriques suivantes pour inclure des informations sur la configuration de la gestion des identités et de l’authentification unique à partir de Adobe Admin Console :<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Utilisateur Adobe Commerce as a Cloud Service et Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer : Utilisateur et Identity Management</a></p>
 </td>
       <td>
         Commentaires, technique
@@ -67,7 +89,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des étapes <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/user-management">User Management</a> pour ajouter un utilisateur.</p>
+      <td><p>Mise à jour des étapes <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">User Management</a> pour ajouter un utilisateur.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -89,7 +111,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour du <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/storefront">guide de configuration du storefront</a> pour Adobe Commerce Optimizer afin de fournir des instructions sur la création d’un projet de storefront avec l’outil de création de site, la personnalisation de la configuration du storefront et la vérification des données du site et du catalogue en vérifiant les pages de détails du produit et de résultats de recherche de produits par défaut.</p>
+      <td><p>Mise à jour du <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">guide de configuration du storefront</a> pour Adobe Commerce Optimizer afin de fournir des instructions sur la création d’un projet de storefront avec l’outil de création de site, la personnalisation de la configuration du storefront et la vérification des données du site et du catalogue en vérifiant les pages de détails du produit et de résultats de recherche de produits par défaut.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -111,7 +133,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/user-management">User management</a> nécessite désormais que tous les développeurs et administrateurs de produit ajoutent d’abord le rôle d’utilisateur.</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">User management</a> nécessite désormais que tous les développeurs et administrateurs de produit ajoutent d’abord le rôle d’utilisateur.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -133,7 +155,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Publié <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/release-notes">notes de mise à jour</a> pour Payment Services v2.12.2.</p>
+      <td><p>Publié <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">notes de mise à jour</a> pour Payment Services v2.12.2.</p>
 </td>
       <td>
         Mise à jour majeure
