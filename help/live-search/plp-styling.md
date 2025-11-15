@@ -1,9 +1,10 @@
 ---
 title: Widget de page de liste de produits
 description: Activation et mise en forme du  [!DNL Live Search Product Listing Page Widget]
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
+source-git-commit: 7684d5cded63f2b0805ee307dff77932607c47eb
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,15 @@ Le [!DNL Live Search Product Listing Page Widget] (PLP) utilise la plateforme de
 
 Lors de l’installation du service [!DNL Live Search], la fonctionnalité de recherche par défaut est automatiquement convertie en [!DNL Live Search].
 
-Le widget PLP [!DNL Live Search] est activé par défaut pour les nouvelles installations. Si vous effectuez une mise à niveau [!DNL Live Search] et que le widget PLP a déjà été désactivé, il le restera.
+Le widget PLP [!DNL Live Search] est activé par défaut pour les nouvelles installations.
+
+Si vous effectuez une mise à niveau [!DNL Live Search] et que le widget PLP a déjà été désactivé, il le restera. Pour l’activer :
+1. Dans votre administrateur Adobe Commerce, accédez à Magasins → Paramètres → Configuration.
+1. Dans le volet de navigation de gauche, cliquez sur **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**.
+1. Cliquez sur la section [!UICONTROL Storefront Features] .
+1. Définir [!UICONTROL Enable Product Listing Widget] = Oui
+1. Enregistrer la configuration
+1. Si vous y êtes invité, videz le cache ( accédez à Système > Outils > Gestion du cache > [!UICONTROL Flush Magento Cache]).
 
 >[!IMPORTANT]
 >
@@ -54,7 +63,7 @@ Vous pouvez personnaliser l’aspect du widget PLP pour qu’il corresponde à v
 
 Les balises div mises en surbrillance contiennent la classe cible `ds-sdk-product-item__product-name`.
 
-![&#x200B; Pagination &#x200B;](assets/plp-css-example.png)
+![ Pagination ](assets/plp-css-example.png)
 
 Personnalisez le nom du produit en ajoutant une règle pour les mettre en majuscules.
 
@@ -64,7 +73,7 @@ Personnalisez le nom du produit en ajoutant une règle pour les mettre en majusc
 }
 ```
 
-![&#x200B; Pagination &#x200B;](assets/plp-css-example-after.png)
+![ Pagination ](assets/plp-css-example-after.png)
 
 ## Classes CSS
 
@@ -73,17 +82,17 @@ Personnalisez le nom du produit en ajoutant une règle pour les mettre en majusc
 - `.ds-sdk-product-list` : div externe
 - `.ds-sdk-product-list__grid` : div interne
 
-![&#x200B; Pagination &#x200B;](assets/plp-css-product-list.png)
+![ Pagination ](assets/plp-css-product-list.png)
 
 #### Pagination de la liste de produits
 
 - `.ds-plp-pagination`
 
-![&#x200B; Pagination &#x200B;](assets/plp-css-pagination.png)
+![ Pagination ](assets/plp-css-pagination.png)
 
 - `.ds-plp-pagination_item`
 
-![&#x200B; Élément de pagination &#x200B;](assets/plp-css-pagination-item.png)
+![ Élément de pagination ](assets/plp-css-pagination-item.png)
 
 - `.ds-plp-pagination_item--current`
 
