@@ -1,11 +1,11 @@
 ---
 title: Création et gestion de Recommendations
 description: Découvrez comment créer et gérer des recommandations.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
+source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1369'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,10 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
    - **Activer** pour activer l’unité de recommandation sur votre storefront.
 
 1. À l’invite, copiez l’ID de recommandation. Utilisez cet identifiant pour vous aider à identifier l’unité de recommandation utilisée dans le menu déroulant de recommandation de votre storefront Edge Delivery Services.
+
+>[!NOTE]
+>
+> Vous pouvez créer jusqu’à 50 unités de recommandation actives.
 
 >[!IMPORTANT]
 >
