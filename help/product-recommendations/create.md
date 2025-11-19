@@ -2,9 +2,9 @@
 title: Créer une recommandation
 description: Découvrez comment créer une unité de recommandation de produit.
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
+source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1505'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
 1. Dans la barre latérale _Admin_, accédez à **Marketing** > _Promotions_ > **Recommandations de produit** pour afficher l’espace de travail _Recommandations de produit_.
 
-1. Spécifiez l’[Affichage de la boutique](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views) où vous souhaitez que les recommandations s’affichent.
+1. Spécifiez l’[Affichage de la boutique](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) où vous souhaitez que les recommandations s’affichent.
 
    >[!NOTE]
    >
-   > Les unités de recommandation Page Builder doivent être créées dans la vue de magasin par défaut, mais peuvent ensuite être utilisées n’importe où. Pour en savoir plus sur la création de recommandations de produit avec Page Builder, voir [Ajouter du contenu - Recommandations de produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Les unités de recommandation Page Builder doivent être créées dans la vue de magasin par défaut, mais peuvent ensuite être utilisées n’importe où. Pour en savoir plus sur la création de recommandations de produit avec Page Builder, voir [Ajouter du contenu - Recommandations de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Cliquez sur **Créer une recommandation**.
 
@@ -38,18 +38,18 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
    >[!NOTE]
    >
-   > Les recommandations de produits ne sont pas prises en charge sur la page Panier lorsque votre boutique est configurée pour [afficher la page du panier immédiatement après l’ajout d’un produit au panier](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > Les recommandations de produits ne sont pas prises en charge sur la page Panier lorsque votre boutique est configurée pour [afficher la page du panier immédiatement après l’ajout d’un produit au panier](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Page d’accueil
    * Catégorie
    * Détails du produit
    * Panier
    * Confirmation
-   * [Page Builder](https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
-   Vous pouvez créer jusqu’à cinq unités de recommandation actives pour chaque type de page, et jusqu’à 25 pour Page Builder. Le type de page est grisé lorsque la limite est atteinte.
+   Vous pouvez créer jusqu’à 50 unités de recommandation actives pour chaque type de page. Le type de page est grisé lorsque la limite est atteinte.
 
-   ![&#x200B; Nom et page de la recommandation &#x200B;](assets/create-recommendation.png)
+   ![ Nom et page de la recommandation ](assets/create-recommendation.png)
    _Nom de la recommandation et emplacement de la page_
 
 1. Dans la section _Sélectionner le type de recommandation_, indiquez le [type de recommandation](type.md) qui doit apparaître sur la page sélectionnée. Pour certaines pages, l’[emplacement](placement.md) des recommandations est limité à certains types.
