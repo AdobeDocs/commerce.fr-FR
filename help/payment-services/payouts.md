@@ -27,7 +27,7 @@ Vous pouvez [télécharger les transactions de paiement](#download-transactions)
 
 >[!NOTE]
 >
->Les rapports de paiements affichent uniquement les commandes capturées (l’action de paiement est définie sur [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) ou [marquées comme `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>Les rapports de paiements affichent uniquement les commandes capturées (l’action de paiement est définie sur [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=fr#set-payment-services-as-payment-method)) ou [marquées comme `Invoiced`](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Vue de visualisation des données des paiements
 
@@ -155,7 +155,7 @@ Les rapports de paiement contiennent les informations suivantes.
 | [!UICONTROL Code] | Code transaction qui indique soit Crédit (*CR*) soit Débit (*DR*) |
 | [!UICONTROL Reference ID] | ID de transaction d&#39;origine auquel cet événement est associé |
 | [!UICONTROL Invoice] | Identifiant de la facture (un par commande) de la transaction |
-| [!UICONTROL Commerce order] | ID de commande Commerce <br> <br>Pour afficher les [informations de commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) associées, cliquez sur l’ID. |
+| [!UICONTROL Commerce order] | ID de commande Commerce <br> <br>Pour afficher les [informations de commande](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/orders) associées, cliquez sur l’ID. |
 | [!UICONTROL Commerce trans] | ID de transaction Commerce |
 | [!UICONTROL Pay method] | Type de carte de crédit (*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*) et fournisseur de carte associé (tel que *Visa* ou *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Montant de la transaction |

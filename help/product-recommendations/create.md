@@ -24,11 +24,11 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
 1. Dans la barre latérale _Admin_, accédez à **Marketing** > _Promotions_ > **Recommandations de produit** pour afficher l’espace de travail _Recommandations de produit_.
 
-1. Spécifiez l’[Affichage de la boutique](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) où vous souhaitez que les recommandations s’affichent.
+1. Spécifiez l’[Affichage de la boutique](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views) où vous souhaitez que les recommandations s’affichent.
 
    >[!NOTE]
    >
-   > Les unités de recommandation Page Builder doivent être créées dans la vue de magasin par défaut, mais peuvent ensuite être utilisées n’importe où. Pour en savoir plus sur la création de recommandations de produit avec Page Builder, voir [Ajouter du contenu - Recommandations de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Les unités de recommandation Page Builder doivent être créées dans la vue de magasin par défaut, mais peuvent ensuite être utilisées n’importe où. Pour en savoir plus sur la création de recommandations de produit avec Page Builder, voir [Ajouter du contenu - Recommandations de produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Cliquez sur **Créer une recommandation**.
 
@@ -38,14 +38,14 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
    >[!NOTE]
    >
-   > Les recommandations de produits ne sont pas prises en charge sur la page Panier lorsque votre boutique est configurée pour [afficher la page du panier immédiatement après l’ajout d’un produit au panier](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > Les recommandations de produits ne sont pas prises en charge sur la page Panier lorsque votre boutique est configurée pour [afficher la page du panier immédiatement après l’ajout d’un produit au panier](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Page d’accueil
    * Catégorie
    * Détails du produit
    * Panier
    * Confirmation
-   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Vous pouvez créer jusqu’à 50 unités de recommandation actives pour chaque type de page. Le type de page est grisé lorsque la limite est atteinte.
 
