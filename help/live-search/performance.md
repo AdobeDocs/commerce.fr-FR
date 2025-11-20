@@ -19,7 +19,7 @@ L’espace de travail *Performances* fournit insight dans les termes de recherch
 
 ![Performances](assets/performance-unique-searches.png)
 
-Vous pouvez également consulter le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) pour plus d’informations sur la synchronisation des données.
+Vous pouvez également consulter le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=fr) pour plus d’informations sur la synchronisation des données.
 
 >[!NOTE]
 >
