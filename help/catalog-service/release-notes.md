@@ -94,7 +94,7 @@ _1 avril 2024_
 
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge de PHP 8.3.
 
-![Nouveau ](../assets/new.svg) les requêtes [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) et [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) renvoient désormais des données d’options personnalisables pour les produits simples et complexes.<!--DATA-5538-->
+![Nouveau &#x200B;](../assets/new.svg) les requêtes [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) et [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) renvoient désormais des données d’options personnalisables pour les produits simples et complexes.<!--DATA-5538-->
 
 ### Version 1.17
 
@@ -110,7 +110,7 @@ _13 février 2024_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Les nouvelles vidéos produit ](../assets/new.svg) sont désormais prises en charge par l’API Catalog Service.
+![Les nouvelles vidéos produit &#x200B;](../assets/new.svg) sont désormais prises en charge par l’API Catalog Service.
 ![Correctif](../assets/fix.svg) Les options en rupture de stock s’affichent désormais dans le widget PDP.
 
 #### Limites connues
@@ -204,7 +204,7 @@ _17 janvier 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Nouveau](../assets/new.svg) Expérience d’intégration simplifiée et améliorée.
-![Nouveau ](../assets/new.svg) de nouveaux points d’entrée de sandbox client sont disponibles pour les tests de pré-production.
+![Nouveau &#x200B;](../assets/new.svg) de nouveaux points d’entrée de sandbox client sont disponibles pour les tests de pré-production.
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge des produits virtuels.
 ![Correctif](../assets/fix.svg) Amélioration de l’évolutivité et des performances de l’API.
 

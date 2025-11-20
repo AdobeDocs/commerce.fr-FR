@@ -31,7 +31,7 @@ Ces notes de mise à jour décrivent les modifications et correctifs de fonction
 
 _25 avril 2025_
 
-![Nouvel événement ](../assets/new.svg)<!-- Issue PAY-6051 --> Désormais, [!DNL Payment Services] tableau de bord affiche à la fois la version actuelle de l’extension et la version du tableau de bord.
+![Nouvel événement &#x200B;](../assets/new.svg)<!-- Issue PAY-6051 --> Désormais, [!DNL Payment Services] tableau de bord affiche à la fois la version actuelle de l’extension et la version du tableau de bord.
 
 _30 août 2024_
 
@@ -304,7 +304,7 @@ _4 juin 2024_
 
 ![Nouveau](../assets/new.svg)<!-- PAY-4877 --> Désormais, [!DNL Payment Services] prend en charge les fonctionnalités de tarification [L2/L3](/help/payment-services/levels-card-payment-transactions.md#level-2-and-level-3). Cette fonctionnalité est uniquement disponible pour les clients [!DNL Payment Services] pour lesquels le prix IC++ est activé. Si vous souhaitez utiliser des données de traitement L2/L3 pour [!DNL Payment Services], contactez votre gestionnaire de compte [!DNL Payment Services].
 
-![Correctif](../assets/fix.svg)<!-- PAY-5455 -->[!DNL Payment Services] permet d’activer Apple Pay directement à partir de l’extension sans télécharger et héberger le fichier d’association de domaine [](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
+![Correctif](../assets/fix.svg)<!-- PAY-5455 -->[!DNL Payment Services] permet d’activer Apple Pay directement à partir de l’extension sans télécharger et héberger le fichier d’association de domaine [&#128279;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
 
 ## v2.5.0
 
@@ -574,7 +574,7 @@ _29 juin 2022_
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> lorsque les informations d’identification des services Commerce ne sont pas valides[!DNL Payment Services] vous avertit désormais en affichant une erreur d’informations d’identification dans l’Accueil [!DNL Payment Services] de l’administrateur.
 
-![Problème connu](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] est incompatible avec `commerce-data-export` v101.20 et les versions ultérieures, ce qui le rend incompatible avec l’extension [[!DNL Channel manager] ](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] est incompatible avec `commerce-data-export` v101.20 et les versions ultérieures, ce qui le rend incompatible avec l’extension [[!DNL Channel manager] &#x200B;](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
 
 ## v1.1.0
 
@@ -582,7 +582,7 @@ _31 mars 2022_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.0 et ultérieures
 
-![Nouvelle](../assets/new.svg)<!-- Issue PAY-2127 --> Mise à jour de la disponibilité générale - [!DNL Payment Services] est désormais [prise en charge par les versions 2.4.0 à 2.4.4 [!DNL Adobe Commerce]  [!DNL Magento Open Source]  ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+![Nouvelle](../assets/new.svg)<!-- Issue PAY-2127 --> Mise à jour de la disponibilité générale - [!DNL Payment Services] est désormais [prise en charge par les versions 2.4.0 à 2.4.4 [!DNL Adobe Commerce]  [!DNL Magento Open Source]  &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2682 --> L&#39;extension [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] est maintenant disponible pour les commerçants canadiens. Les commerçants peuvent afficher la configuration des paiements en [français](introduction.md?lang=fr#accepted-credit-cards-and-currencies) ou [anglais](introduction.md#accepted-credit-cards-and-currencies).
 
