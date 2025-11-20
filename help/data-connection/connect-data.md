@@ -195,7 +195,7 @@ Bien que Commerce collecte déjà les données de commande historiques, vous dev
 
 Regardez cette vidéo pour en savoir plus sur les ordres historiques, puis effectuez les étapes suivantes pour implémenter la collecte des ordres historiques.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
+>[!VIDEO](https://video.tv.adobe.com/v/3450229?captions=fre_fr)
 
 #### Configurer le service de synchronisation des commandes
 
