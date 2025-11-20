@@ -3,10 +3,10 @@ title: Prise en main de  [!DNL Adobe Commerce as a Cloud Service]
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 911d984efa9587c0154db3ab97f6136bf6c34166
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+source-git-commit: 69870bc7037bdad5a8d5fa769a06c07f8cd920aa
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service] comprend les composants suivants :
 
-* **[Adobe Experience Cloud &#x200B;](https://experience.adobe.com/)** - Point d’entrée central pour tous les produits [!DNL Adobe Commerce] sur [experience.adobe.com](https://experience.adobe.com/)
+* **[Adobe Experience Cloud ](https://experience.adobe.com/)** - Point d’entrée central pour tous les produits [!DNL Adobe Commerce] sur [experience.adobe.com](https://experience.adobe.com/)
    * Cliquez sur [!UICONTROL **Commerce**] sous [!UICONTROL **Accès rapide**] pour ouvrir Commerce Cloud Manager
 * **[Commerce Cloud Manager](https://experience.adobe.com/#/commerce/cloud-service)** - Créez et gérez des instances, accédez aux URL d’API et à votre administrateur Commerce
 * **[Adobe Admin Console](https://adminconsole.adobe.com/)** - Gérer les utilisateurs et les rôles
 * **Administrateur Commerce** - Gérer les produits, les commandes, les clients et la configuration de la boutique
 * **[Storefront optimisé par Edge Delivery Services](./storefront.md)** - Créez et personnalisez un storefront orienté client à l’aide d’un système composable et haute performance qui offre une vitesse, un référencement et une expérience utilisateur exceptionnels pour les commerçants et les développeurs
-* **[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)** - Créez des intégrations personnalisées à l’aide d’App Builder, ainsi que d’autres outils d’extensibilité tels que le [&#x200B; kit de démarrage de l’intégration &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) et le [&#x200B; maillage API](https://developer.adobe.com/graphql-mesh-gateway/)
+* **[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)** - Créez des intégrations personnalisées à l’aide d’App Builder, ainsi que d’autres outils d’extensibilité tels que le [ kit de démarrage de l’intégration ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) et le [ maillage API](https://developer.adobe.com/graphql-mesh-gateway/)
 
 ## Configuration et gestion
 
@@ -58,7 +58,7 @@ Sélectionnez un onglet ci-dessous pour afficher les graphiques de workflow de h
 
 >[!TAB Workflow de l’administrateur système et du commerçant]
 
-Ce diagramme présente de manière générale la manière dont les administrateurs système et les commerçants accèdent aux instances [!DNL Adobe Commerce as a Cloud Service] et les gèrent. Voir le [Guide Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/admin-guide.html) pour plus d&#39;informations sur les workflows d&#39;administration.
+Ce diagramme présente de manière générale la manière dont les administrateurs système et les commerçants accèdent aux instances [!DNL Adobe Commerce as a Cloud Service] et les gèrent. Voir le [Guide Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) pour plus d&#39;informations sur les workflows d&#39;administration.
 
 ![[!DNL Adobe Commerce as a Cloud Service] diagramme de flux des commerçants](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -128,7 +128,7 @@ Les sections suivantes décrivent les processus de base à effectuer pour que vo
 
 >[!NOTE]
 >
->Avant de pouvoir créer une instance, l’administrateur produit ou l’administrateur système de votre organisation doit vous ajouter en tant qu’utilisateur du produit [!DNL Adobe Commerce as a Cloud Service]. Voir [&#x200B; Ajout d’utilisateurs et d’administrateurs &#x200B;](./user-management.md#add-users-and-admins) pour plus d’informations.
+>Avant de pouvoir créer une instance, l’administrateur produit ou l’administrateur système de votre organisation doit vous ajouter en tant qu’utilisateur du produit [!DNL Adobe Commerce as a Cloud Service]. Voir [ Ajout d’utilisateurs et d’administrateurs ](./user-management.md#add-users-and-admins) pour plus d’informations.
 
 [!DNL Adobe Commerce as a Cloud Service] instances utilisent un système basé sur les crédits. Vous pouvez créer plusieurs instances, mais chaque instance nécessite des crédits disponibles. Le nombre de crédits dont vous disposez au départ dépend de votre abonnement.
 
@@ -148,13 +148,19 @@ Les sections suivantes décrivent les processus de base à effectuer pour que vo
 
 1. Sélectionnez le [!UICONTROL **type d’environnement**] de votre instance. Vous pouvez choisir entre les options suivantes :
 
-   * [!UICONTROL **Sandbox**] - Idéal pour la conception et les tests. Commencez votre parcours de [!DNL Adobe Commerce as a Cloud Service] à l’aide de l’environnement Sandbox.
+   * [!UICONTROL **Sandbox**] - À des fins de conception et de test uniquement. Commencez votre parcours de [!DNL Adobe Commerce as a Cloud Service] à l’aide de l’environnement Sandbox.
+
+   >[!NOTE]
+   >
+   > Les instances Sandbox sont uniquement destinées à des fins de conception et de test. Vous ne devez pas utiliser de données de production dans un environnement sandbox.
+   >
+   >Les instances Sandbox sont limitées à la région Amérique du Nord.
+
    * [!UICONTROL **Production**] - Pour les magasins en ligne et les sites orientés clients.
 
    >[!NOTE]
    >
-   >* Les instances Sandbox sont limitées à la région Amérique du Nord.
-   >* L’option permettant d’installer des données d’exemple n’est actuellement pas disponible.
+   >L’infrastructure Adobe Commerce as a Cloud Service est disponible dans le monde entier. Pour plus d’informations sur les environnements de production de votre région, contactez votre représentant du service client.
 
 1. Sélectionnez la région dans laquelle vous souhaitez que votre instance soit hébergée.
 
@@ -197,7 +203,7 @@ Par défaut, les instances de [!DNL Adobe Commerce as a Cloud Service] n’inclu
 
 Pour importer votre catalogue dans [!DNL Adobe Commerce as a Cloud Service], deux méthodes sont possibles :
 
-* [**Commerce Admin**](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/import/data-import) - Une interface conviviale qui vous permet d&#39;importer vos données de catalogue en quelques clics.
+* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Une interface conviviale qui vous permet d&#39;importer vos données de catalogue en quelques clics.
 * [**Importer l’API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Une API REST qui vous permet d’importer les données de votre catalogue par programmation.
 
 ### Configurer le storefront
@@ -208,4 +214,4 @@ Maintenant que vous avez créé une instance , vous êtes prêt à [configurer v
 
 * [Notes de mise à jour](release-notes.md)
 * [Guide de migration](migration/overview.md)
-* [Documentation de Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
+* [Documentation de Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
