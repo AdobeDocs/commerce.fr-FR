@@ -23,15 +23,15 @@ Ce guide est destiné aux administrateurs d’Adobe [!DNL Commerce]. Elle contie
 
 | Guide | Description |
 |------ | ----------- |
-| [Guide de l’utilisateur d’Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html?lang=fr) | Documentation axée sur les commerçants pour Adobe Commerce et Magento Open Source |
+| [Guide de l’utilisateur d’Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentation axée sur les commerçants pour Adobe Commerce et Magento Open Source |
 | [Guide du développeur d’Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source. |
 
 ## Support technique
 
-Le [processus d’intégration](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html?lang=fr) est conçu pour vous guider tout au long des étapes nécessaires à la configuration et à l’activation de la fonctionnalité [!DNL Catalog Service].
+Le [processus d’intégration](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html) est conçu pour vous guider tout au long des étapes nécessaires à la configuration et à l’activation de la fonctionnalité [!DNL Catalog Service].
 
 Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, utilisez les ressources suivantes :
 
-* [Centre d’aide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=fr) pour des articles de dépannage.
-* [Tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) - Envoyez un ticket pour recevoir de l’aide supplémentaire.
+* [Centre d’aide](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) pour des articles de dépannage.
+* [Tickets d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Envoyez un ticket pour recevoir de l’aide supplémentaire.
 * Rejoignez l’équipe d’ingénieurs d’Adobe Commerce et les utilisateurs des services de storefront SaaS dans le canal Slack public [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) pour être à jour.
