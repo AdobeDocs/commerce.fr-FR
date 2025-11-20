@@ -1,7 +1,8 @@
 ---
 title: Performances
-description: L’espace de travail  [!DNL Live Search]  performances fournit des informations sur les termes de recherche utilisés par les acheteurs.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+description: L’espace de travail  [!DNL Live Search]  performances fournit insight dans les termes de recherche utilisés par les acheteurs.
+exl-id: 07a63df8-b981-4913-841a-7e81ec634281
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # Performances
 
-L’espace de travail *Performances* donne des informations sur les termes de recherche utilisés par les acheteurs. Ces informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. L’espace de travail Performances fournit un instantané des mesures de recherche pour une période spécifique et inclut les rapports suivants :
+L’espace de travail *Performances* fournit insight dans les termes de recherche utilisés par les acheteurs. Ces informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. L’espace de travail Performances fournit un instantané des mesures de recherche pour une période spécifique et inclut les rapports suivants :
 
 * Recherches uniques
 * Zéro résultat
@@ -18,7 +19,7 @@ L’espace de travail *Performances* donne des informations sur les termes de re
 
 ![Performances](assets/performance-unique-searches.png)
 
-Vous pouvez également consulter le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=fr) pour plus d’informations sur la synchronisation des données.
+Vous pouvez également consulter le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) pour plus d’informations sur la synchronisation des données.
 
 >[!NOTE]
 >

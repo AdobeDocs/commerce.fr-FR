@@ -3,7 +3,7 @@ title: Notes de mise à jour de [!DNL Catalog Service]
 description: Dernières informations de mise  [!DNL Catalog Service]  jour pour Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 93adab667d1d8ed40c9d5668db376493bd8ae684
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -68,7 +68,7 @@ _23 mai 2024_
 
 ![Correctif](../assets/fix.svg) <!--DATA-5033-->L’indicateur `InStock` pour les valeurs d’option prend désormais en compte le statut de `enabled` défini de la variante de produit.
 
-![Correctif](../assets/fix.svg) <!--DATA-5888-->Ajoutez la prise en charge des prix de produits qui nécessitent de grands nombres (jusqu’à 16 chiffres) et une plus grande précision décimale (jusqu’à 4 décimales). Pour appliquer les mises à jour de configuration des prix à votre catalogue existant, resynchronisez les données du catalogue à partir du tableau de bord [Data Management](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-dashboard) ou à l’aide de l’interface de ligne de commande [Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+![Correctif](../assets/fix.svg) <!--DATA-5888-->Ajoutez la prise en charge des prix de produits qui nécessitent de grands nombres (jusqu’à 16 chiffres) et une plus grande précision décimale (jusqu’à 4 décimales). Pour appliquer les mises à jour de configuration des prix à votre catalogue existant, resynchronisez les données du catalogue à partir du tableau de bord [Data Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou à l’aide de l’interface de ligne de commande [Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
 
 #### Limites connues
 
@@ -94,7 +94,7 @@ _1 avril 2024_
 
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge de PHP 8.3.
 
-![Nouveau &#x200B;](../assets/new.svg) les requêtes [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) et [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) renvoient désormais des données d’options personnalisables pour les produits simples et complexes.<!--DATA-5538-->
+![Nouveau ](../assets/new.svg) les requêtes [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) et [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) renvoient désormais des données d’options personnalisables pour les produits simples et complexes.<!--DATA-5538-->
 
 ### Version 1.17
 
@@ -102,7 +102,7 @@ _2 février 2024_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Nouveau](../assets/new.svg) Le [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=fr) est maintenant disponible. Ce tableau de bord remanié fournit des informations sur les flux de données pour [!DNL Product Recommendations], [!DNL Live Search] et [!DNL Catalog Service]. La prise en charge de cette fonctionnalité a été introduite dans la version 3.1.0 du métapaquet `catalog-service`.
+![Nouveau](../assets/new.svg) Le [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) est maintenant disponible. Ce tableau de bord remanié fournit des informations sur les flux de données pour [!DNL Product Recommendations], [!DNL Live Search] et [!DNL Catalog Service]. La prise en charge de cette fonctionnalité a été introduite dans la version 3.1.0 du métapaquet `catalog-service`.
 
 ### Version 1.16
 
@@ -110,7 +110,7 @@ _13 février 2024_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Les nouvelles vidéos produit &#x200B;](../assets/new.svg) sont désormais prises en charge par l’API Catalog Service.
+![Les nouvelles vidéos produit ](../assets/new.svg) sont désormais prises en charge par l’API Catalog Service.
 ![Correctif](../assets/fix.svg) Les options en rupture de stock s’affichent désormais dans le widget PDP.
 
 #### Limites connues
@@ -151,7 +151,7 @@ _18 juillet 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Nouveau](../assets/new.svg) le service de catalogue prend désormais en charge la requête [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/recommendations/) GraphQL pour les recommandations de produits.
+![Nouveau](../assets/new.svg) le service de catalogue prend désormais en charge la requête [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL pour les recommandations de produits.
 
 ### Version 1.10
 
@@ -204,7 +204,7 @@ _17 janvier 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Nouveau](../assets/new.svg) Expérience d’intégration simplifiée et améliorée.
-![Nouveau &#x200B;](../assets/new.svg) de nouveaux points d’entrée de sandbox client sont disponibles pour les tests de pré-production.
+![Nouveau ](../assets/new.svg) de nouveaux points d’entrée de sandbox client sont disponibles pour les tests de pré-production.
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge des produits virtuels.
 ![Correctif](../assets/fix.svg) Amélioration de l’évolutivité et des performances de l’API.
 
