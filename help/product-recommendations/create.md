@@ -49,7 +49,7 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
    Vous pouvez créer jusqu’à 50 unités de recommandation actives pour chaque type de page. Le type de page est grisé lorsque la limite est atteinte.
 
-   ![ Nom et page de la recommandation ](assets/create-recommendation.png)
+   ![&#x200B; Nom et page de la recommandation &#x200B;](assets/create-recommendation.png)
    _Nom de la recommandation et emplacement de la page_
 
 1. Dans la section _Sélectionner le type de recommandation_, indiquez le [type de recommandation](type.md) qui doit apparaître sur la page sélectionnée. Pour certaines pages, l’[emplacement](placement.md) des recommandations est limité à certains types.
