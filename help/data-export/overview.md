@@ -25,9 +25,9 @@ L&#39;export de données en SaaS est livré sous forme d&#39;extension PHP. Il p
 
 - **Synchronisation manuelle depuis l’Admin ou la ligne de commande**
 
-   - Le tableau de bord [Data Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) de l’Administration Commerce fournit une vue graphique de l’état de la synchronisation. Vous pouvez utiliser le tableau de bord pour effectuer une resynchronisation complète (_synchronisation complète_) de tous les flux. Cependant, Adobe recommande de n’effectuer une synchronisation complète que la première fois que vous connectez Adobe Commerce à un service Commerce. Voir [Processus de synchronisation](data-synchronization.md).
+   - Le tableau de bord [Data Management](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) de l’Administration Commerce fournit une vue graphique de l’état de la synchronisation. Vous pouvez utiliser le tableau de bord pour effectuer une resynchronisation complète (_synchronisation complète_) de tous les flux. Cependant, Adobe recommande de n’effectuer une synchronisation complète que la première fois que vous connectez Adobe Commerce à un service Commerce. Voir [Processus de synchronisation](data-synchronization.md).
 
-   - L’outil de ligne de commande [Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fournit des commandes pour synchroniser des flux spécifiques et inclut des options supplémentaires pour personnaliser le traitement des flux.
+   - L’outil de ligne de commande [Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fournit des commandes pour synchroniser des flux spécifiques et inclut des options supplémentaires pour personnaliser le traitement des flux.
 
 - **Synchronisation automatisée avec les tâches cron**
 
