@@ -28,7 +28,7 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
    * [Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)
    * [Maillage API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)
    * [Événements](https://developer.adobe.com/commerce/extensibility/events/release-notes/)
-   * [ Webhooks ](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)
+   * [&#x200B; Webhooks &#x200B;](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)
 
 ## Novembre 2025
 
