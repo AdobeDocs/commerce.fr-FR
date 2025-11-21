@@ -2,7 +2,7 @@
 title: Bonnes pratiques relatives aux règles de marchandisage
 description: Découvrez les bonnes pratiques relatives à l’implémentation de règles de marchandisage dans votre boutique.
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
 workflow-type: tm+mt
