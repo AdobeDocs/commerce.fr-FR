@@ -2,9 +2,9 @@
 title: Ajouter des règles
 description: Découvrez comment créer des règles de marchandisage de recherche.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
+source-git-commit: 0b8ab786bb6ec333337dc114de214b6d8e4df427
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 ## Ajouter une règle
 
 1. Dans Admin, accédez à **Marketing** > SEO et recherche > **[!DNL Live Search]**.
-1. Définissez la **Portée** pour identifier la [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) où la règle s’applique.
+1. Définissez la **Portée** pour identifier la [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où la règle s’applique.
 1. Cliquez sur l’espace de travail **Recherche de marchandisage**.
 1. Cliquez sur **Ajouter une règle** pour lancer l’éditeur de règles.
 
@@ -90,6 +90,33 @@ Les propriétaires de magasin peuvent configurer les types de stratégies de cla
 * Aucun : les produits sont triés par pertinence.
 
 Sélectionnez le type de stratégie de la règle. La fenêtre **Tester votre règle** affiche les résultats attendus.
+
+### Fonctionnement de la notation intelligente
+
+Le classement intelligent détermine l’ordre final des produits en combinant deux facteurs clés : **pertinence textuelle** et **signaux comportementaux**. Comprendre l’interaction de ces facteurs vous permet de définir des attentes réalistes pour vos résultats de recherche.
+
+**Composants de notation :**
+
+* **Pertinence textuelle** : le facteur dominant dans la notation. Cela permet de mesurer la correspondance entre le nom, la description et les attributs d’un produit et la requête de recherche. Le score de pertinence du texte est illimité (il n’a pas de limite supérieure spécifique) et est influencé par des facteurs tels que :
+
+   * Fréquence d&#39;occurrence des mots correspondants.
+   * Longueur (en mots) des noms/descriptions des produits.
+
+* **Signaux comportementaux** : un coup de pouce limité est appliqué en plus du score de pertinence du texte. Lorsque vous sélectionnez une stratégie de classement intelligente telle que « Les plus consultés » ou « Les plus achetés », les produits présentant des signaux comportementaux plus élevés bénéficient d’une amélioration fixe de leurs scores. Cependant, ce coup de pouce a une limite définie.
+
+**Pourquoi le produit le plus consulté peut ne pas apparaître en premier :**
+
+La pertinence textuelle domine généralement le classement parce que son score est illimité, alors que les encouragements comportementaux sont fixes. Par conséquent, les produits dotés de correspondances textuelles solides l’emportent souvent sur ceux présentant des signaux d’engagement plus élevés. Les stimuli comportementaux seuls peuvent ne pas compenser les larges écarts de pertinence du texte. Le classement intelligent résout ce problème en tenant compte à la fois de la qualité des correspondances et de l’interaction client, ce qui améliore la pertinence globale. Cependant, la qualité de la correspondance de texte reste le principal moteur du classement.
+
+**Exemple:**
+
+Un commerçant utilise la stratégie de classement intelligente « Les plus consultés » et recherche « bougie ». Ils s’attendent à ce que le SKU de produit YAN-K-E-512 apparaisse en haut des résultats, car il possède le nombre de vues le plus élevé. Cependant, d’autres produits se classent plus haut :
+
+* **Texas Candle** (1ère position) : a un nom de produit plus court et plus propre qui crée un score de pertinence du texte très élevé. Même s&#39;il a moins de vues que YAN-K-E-512, sa correspondance de texte supérieure l&#39;emporte sur l&#39;amplification comportementale.
+
+* **YAN-K-E-512** (position inférieure) : bien que disposant du centile de vue le plus élevé dans les données comportementales « Les plus consultés », son nom complexe basé sur un SKU génère un score de pertinence du texte inférieur. L’augmentation fixe des comportements ne suffit pas à combler ce fossé de pertinence du texte.
+
+Consultez [règles de recherche](./best-practice.md#search-rules) pour savoir comment améliorer la recherche de produit à l’aide de règles.
 
 ### Avertissements
 

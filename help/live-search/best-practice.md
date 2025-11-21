@@ -3,9 +3,9 @@ title: Bonnes pratiques [!DNL Live Search]
 description: Découvrez les bonnes pratiques d’implémentation  [!DNL Live Search]  dans votre boutique.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
+source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2201'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Pour configurer un attribut de produit en tant que facette, les [propriétés](f
 
 #### Conseils pour optimiser les facettes
 
-- Déterminez les attributs les plus pertinents et utiles de vos produits, tels que le titre, la catégorie, la marque, la gamme de prix, la couleur et la taille, puis définissez-les comme [&#x200B; facettes dynamiques &#x200B;](facets-type.md). 
+- Déterminez les attributs les plus pertinents et utiles de vos produits, tels que le titre, la catégorie, la marque, la gamme de prix, la couleur et la taille, puis définissez-les comme [ facettes dynamiques ](facets-type.md). 
 - Définissez et triez des attributs de produit cohérents dans l’ensemble de votre catalogue et hautement pertinents pour vos produits afin d’améliorer la pertinence et les fonctionnalités de filtrage de vos acheteurs.
 - Assurez-vous que les libellés des facettes sont faciles à comprendre et nommés de manière cohérente sur l’ensemble du site. Par exemple, utilisez « Plage de prix » au lieu de « Coût ».
 - Évitez d’accabler les acheteurs en limitant le nombre de facettes aux plus importantes. Un nombre trop élevé d’options peut entraîner une fatigue liée aux décisions. Par défaut, la [!DNL Live Search] est limitée à un maximum de 100 attributs configurés en tant que facettes et 30 intervalles renvoyés dans chaque facette. En savoir plus sur les [limites des facettes](boundaries-limits.md#facets). 
@@ -111,6 +111,7 @@ Il est essentiel d’établir une règle de recherche par défaut bien pensée. 
 - Hiérarchisez légèrement les produits avec des marges bénéficiaires plus élevées sans compromettre la pertinence.
 - Mettez en avant les produits en vente ou faisant partie de promotions spéciales.
 - Définissez automatiquement des règles de recherche pendant les périodes de promotion ou de vente en utilisant la période pendant votre période de promotion.
+- Utilisez toujours le panneau « Tester votre règle » pour prévisualiser l’impact de votre stratégie de classement intelligente sur les résultats de recherche réels pour différentes requêtes.
 - Adaptez les résultats de la recherche en fonction du comportement de chaque acheteur à l’aide du [classement intelligent](rules-add.md#intelligent-ranking) tel que « recommandé pour vous », « le plus consulté », etc. Pour personnaliser le comportement de l’acheteur, vous devez vous assurer que l’événement est correctement implémenté. Pour les commerçants Luma, les événements sont disponibles clé en main. Pour les implémentations découplées ou personnalisées, vous devez [implémenter les événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) en fonction de vos besoins spécifiques.
 
 En savoir plus sur les règles de recherche :
@@ -137,7 +138,7 @@ Assurez-vous que chaque produit possède du contenu pertinent dans chaque attrib
 En savoir plus sur les attributs de produit pour la recherche :
 
 - [Définir les attributs comme pouvant faire l’objet d’une recherche](workspace.md#set-attributes-as-searchable)
-- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Surveillance des résultats de recherche
 

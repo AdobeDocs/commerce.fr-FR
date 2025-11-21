@@ -2,10 +2,11 @@
 title: Bonnes pratiques relatives aux règles de marchandisage
 description: Découvrez les bonnes pratiques relatives à l’implémentation de règles de marchandisage dans votre boutique.
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 09b6b1dea5916c5671c0eb58a551295b5be35fc0
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
+source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -25,3 +26,4 @@ Il est essentiel d’établir une règle de recherche par défaut bien pensée. 
 - Mettez en avant les produits en vente ou faisant partie de promotions spéciales.
 - Définissez automatiquement des règles de recherche pendant les périodes de promotion ou de vente en utilisant la période pendant votre période de promotion.
 - Adaptez les résultats de la recherche en fonction du comportement de chaque acheteur à l’aide du [classement intelligent](add.md#intelligent-ranking) tel que « recommandé pour vous », « le plus consulté », etc.
+- Utilisez toujours le panneau « Tester votre règle » pour prévisualiser l’impact de votre stratégie de classement intelligente sur les résultats de recherche réels pour différentes requêtes.
