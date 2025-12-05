@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7e3a7794e417ecbc48cd4258b355dceeee138061
+source-git-commit: e7b8127f3d4f80366a072f3df7e2e216503c9e33
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '245'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour la version de novembre d’Adobe Commerce as a Cloud Service.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour la version de novembre d’Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -45,7 +45,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Documentation sur la manière dont les clients Commerce Optimizer se connectant à un serveur principal Adobe Commerce peuvent surveiller et résoudre les problèmes d’exportation des flux de données à partir de la page Statut de la synchronisation des flux . Voir <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/data-sync">Synchronisation des données</a> dans le guide de Adobe Commerce Optimizer.</p>
+      <td><p>Documentation sur la manière dont les clients Commerce Optimizer se connectant à un serveur principal Adobe Commerce peuvent surveiller et résoudre les problèmes d’exportation des flux de données à partir de la page Statut de la synchronisation des flux . Voir <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Synchronisation des données</a> dans le guide de Adobe Commerce Optimizer.</p>
 </td>
       <td>
         Technique
@@ -67,7 +67,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/release-notes">notes de mise à jour</a> pour les services de paiement version 2.13.0.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">notes de mise à jour</a> pour les services de paiement version 2.13.0.</p>
 </td>
       <td>
         Technique
@@ -89,7 +89,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/release-notes">notes de mise à jour</a> pour l’intégration d’AEM Assets version 1.2.7.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">notes de mise à jour</a> pour l’intégration d’AEM Assets version 1.2.7.</p>
 </td>
       <td>
         Technique
@@ -111,7 +111,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des rubriques suivantes pour inclure des informations sur la configuration de la gestion des identités et de l’authentification unique à partir de Adobe Admin Console :<br />- <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/user-management">Utilisateur Adobe Commerce as a Cloud Service et Identity Management</a><br />- <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer : Utilisateur et Identity Management</a></p>
+      <td><p>Mise à jour des rubriques suivantes pour inclure des informations sur la configuration de la gestion des identités et de l’authentification unique à partir de Adobe Admin Console :<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Utilisateur Adobe Commerce as a Cloud Service et Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer : Utilisateur et Identity Management</a></p>
 </td>
       <td>
         Commentaires, technique
@@ -133,7 +133,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des étapes <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/user-management">User Management</a> pour ajouter un utilisateur.</p>
+      <td><p>Mise à jour des étapes <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">User Management</a> pour ajouter un utilisateur.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -155,34 +155,12 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour du <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/storefront">guide de configuration du storefront</a> pour Adobe Commerce Optimizer afin de fournir des instructions sur la création d’un projet de storefront avec l’outil de création de site, la personnalisation de la configuration du storefront et la vérification des données du site et du catalogue en vérifiant les pages de détails du produit et de résultats de recherche de produits par défaut.</p>
+      <td><p>Mise à jour du <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">guide de configuration du storefront</a> pour Adobe Commerce Optimizer afin de fournir des instructions sur la création d’un projet de storefront avec l’outil de création de site, la personnalisation de la configuration du storefront et la vérification des données du site et du catalogue en vérifiant les pages de détails du produit et de résultats de recherche de produits par défaut.</p>
 </td>
       <td>
         Mise à jour majeure
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4c2d5fc7ad0febbeef2ff0b8ee3bdec5e9b5710c">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### vendredi 2 octobre 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/user-management">User management</a> nécessite désormais que tous les développeurs et administrateurs de produit ajoutent d’abord le rôle d’utilisateur.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e12b4c18cacd43d73ced180a62d7162a745ced56">validation</a></td>
     </tr>
   </tbody>
 </table>
