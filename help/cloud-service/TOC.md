@@ -29,4 +29,4 @@ ht-degree: 11%
    - [Conditions préalables du tutoriel de l’extension d’évaluation](tutorials/tutorial-prerequisites.md)
    - [Tutoriel sur l’extension d’évaluations](tutorials/ratings-extension.md)
 - [Notes de mise à jour](release-notes.md)
-- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)
