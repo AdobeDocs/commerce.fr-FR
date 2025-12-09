@@ -1,11 +1,11 @@
 ---
 title: Création et gestion de Recommendations
 description: Découvrez comment créer et gérer des recommandations.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
+source-git-commit: 032a19183b79cea1bfe27e8a4e20c60ba5ac6b8b
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -161,11 +161,9 @@ Vous trouverez ci-dessous la liste des raisons possibles et des solutions aux fa
 
 ## Aperçu de Recommendations
 
->[!IMPORTANT]
->
->Cette fonctionnalité n’est pas encore disponible.
-
 Le panneau _Aperçu des produits recommandés_ est toujours disponible avec un exemple de sélection de produits qui peuvent apparaître dans l’unité de recommandation lors de son déploiement sur le storefront.
+
+![Aperçu de Recommendations](../../assets/rec-preview.png)
 
 Pour tester une recommandation lorsque vous travaillez dans un environnement hors production, vous pouvez récupérer les données de recommandation d’une autre source. Cela permet aux commerçants de tester les règles et de prévisualiser les recommandations avant le déploiement en production.
 
