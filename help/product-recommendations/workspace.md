@@ -101,10 +101,10 @@ Sur la page Détails de la recommandation, cliquez sur **Créer**. Pour en savoi
 
 | Contrôle | Description |
 |---|---|
-| ![ Sélecteur de calendrier ](assets/icon-calendar.png) | Détermine la période utilisée pour les calculs des mesures. Options : 24 heures / 7 jours / 30 jours |
+| ![&#x200B; Sélecteur de calendrier &#x200B;](assets/icon-calendar.png) | Détermine la période utilisée pour les calculs des mesures. Options : 24 heures / 7 jours / 30 jours |
 | ![Sélecteur de colonnes](assets/icon-show-hide-columns.png) | Détermine les colonnes qui apparaissent dans le tableau [!DNL Product Recommendations]. |
 | Paramètres | Détermine l’espace de données SaaS où sont récupérées les données comportementales de recommandation et active également le type de recommandation de similarité visuelle. |
-| Créer une recommandation | Ouvre la page [ Créer une recommandation ](create.md). |
+| Créer une recommandation | Ouvre la page [&#x200B; Créer une recommandation &#x200B;](create.md). |
 
 ## Descriptions des colonnes
 

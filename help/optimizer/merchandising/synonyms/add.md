@@ -70,7 +70,7 @@ Dans cet exemple, le mot-clé à associer est « pantalon » et l’ensemble des
 
 | Champ | Description |
 |--- |--- |
-| [Type ](type.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options : <br />Bidirectionnel (par défaut) - Termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />Unidirectionnel - Termes qui sont un sous-ensemble du mot-clé. Les synonymes à sens unique renvoient une liste plus étroite de produits spécifiques. |
+| [Type &#x200B;](type.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options : <br />Bidirectionnel (par défaut) - Termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />Unidirectionnel - Termes qui sont un sous-ensemble du mot-clé. Les synonymes à sens unique renvoient une liste plus étroite de produits spécifiques. |
 | Mot-clé | Mot généralement associé à une sélection de produits dans votre catalogue. |
 | Extension | Termes supplémentaires ayant la même signification ou une signification similaire au mot-clé. |
 

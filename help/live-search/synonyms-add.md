@@ -13,12 +13,12 @@ ht-degree: 0%
 
 Améliorez l’engagement des clients en ajoutant votre propre liste de synonymes [!DNL Live Search]. [!DNL Live Search] pouvez gérer jusqu’à 200 synonymes par affichage de magasin.
 
-![[!DNL Live Search] synonymes ](assets/synonym-workspace.png)
+![[!DNL Live Search] synonymes &#x200B;](assets/synonym-workspace.png)
 
 ## Étape 1 : ajouter un synonyme
 
 1. Dans Admin, accédez à **Marketing** > SEO et recherche > **[!DNL Live Search]**.
-1. Pour plusieurs magasins, définissez **Portée** sur la vue [ magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où les paramètres de synonyme s’appliquent.
+1. Pour plusieurs magasins, définissez **Portée** sur la vue [&#x200B; magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où les paramètres de synonyme s’appliquent.
 1. Cliquez sur l’onglet **Synonymes**.
 1. Cliquez sur le bouton **Ajouter des synonymes**.
 
@@ -69,6 +69,6 @@ L’ensemble de synonymes apparaît dans la liste avec une flèche à sens uniqu
 
 | Champ | Description |
 |--- |--- |
-| [Type ](synonyms.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options : <br />Bidirectionnel (par défaut) - Termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />Unidirectionnel - Termes qui sont un sous-ensemble du mot-clé. Les synonymes à sens unique renvoient une liste plus étroite de produits spécifiques. |
+| [Type &#x200B;](synonyms.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options : <br />Bidirectionnel (par défaut) - Termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />Unidirectionnel - Termes qui sont un sous-ensemble du mot-clé. Les synonymes à sens unique renvoient une liste plus étroite de produits spécifiques. |
 | Mot-clé | Mot généralement associé à une sélection de produits dans votre catalogue. |
 | Extension | Termes supplémentaires ayant la même signification ou une signification similaire au mot-clé. |
