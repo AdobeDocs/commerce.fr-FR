@@ -4,9 +4,9 @@ description: Découvrez les conditions préalables requises pour l’atelier d�
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: e153e974be1dc5ec8ff2eff8d699ce87ef6708dc
+source-git-commit: fda04de3301a305c897c34d3dd0166d50fc3c12a
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,10 @@ Cette page répertorie les conditions préalables et les étapes de configuratio
   npm install -g @adobe/aio-cli
   ```
 
-* Installation du plug-in Commerce
+* Installez les plug-ins [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) et [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev) :
 
   ```bash
-  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
+  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
 * Téléchargez un IDE assisté par l’IA, tel que [Cursor](https://cursor.com/download) (recommandé). D’autres IDE, tels que Claude Code, Gemini CLI ou Copilot, sont également pris en charge, mais peuvent nécessiter des modifications des invites et d’autres étapes du tutoriel.
@@ -137,7 +137,7 @@ OAUTH_ORG_ID=
 
 Vous pouvez copier ces valeurs à partir de la page **[!UICONTROL Credential details]** dans [Developer Console](https://developer.adobe.com/) en cliquant sur l&#39;onglet **[!UICONTROL OAuth Server-to-Server]** dans votre espace de travail.
 
-![&#x200B; Informations d’identification OAuth &#x200B;](../assets/oauth-credentials.png){width="600" zoomable="yes"}
+![ Informations d’identification OAuth ](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
 #### Ajout de la configuration Commerce
 
@@ -169,6 +169,12 @@ Exécutez la commande suivante pour télécharger le fichier de configuration de
 
 ```bash
 aio console workspace download workspace.json
+```
+
+Copiez le fichier de configuration de l’espace de travail dans le répertoire `scripts` :
+
+```bash
+cp workspace.json scripts/
 ```
 
 ### Connecter l’espace de travail local à l’espace de travail distant
