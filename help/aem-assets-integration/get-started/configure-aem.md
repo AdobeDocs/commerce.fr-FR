@@ -3,9 +3,9 @@ title: Configuration du projet AEM Assets
 description: Activez la synchronisation transparente des ressources entre Adobe Commerce et AEM Assets en ajoutant les métadonnées requises pour l’intégration.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
-source-git-commit: 995fb071953ddad6cb2076207910679905bb0347
+source-git-commit: 6cd37fda03bb51a1375b0e9dc542f9e02d3c6e54
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -41,17 +41,17 @@ Le modèle standard ajoute les ressources suivantes à l’environnement de cré
 
 >[!NOTE]
 >
-> Voir la page [readme](https://github.com/ankumalh/assets-commerce) pour plus d&#39;informations sur le modèle AEM Commerce **&#x200B;**.
+> Voir la page [readme](https://github.com/ankumalh/assets-commerce) pour plus d&#39;informations sur le modèle AEM Commerce ****.
 
 ### Conditions préalables
 
 Vous avez besoin des ressources et autorisations suivantes pour déployer le package `commerce-assets` dans l’environnement AEM Assets as a Cloud Service AEM :
 
-* [Accès au programme et aux environnements AEM Assets Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) avec les rôles Responsable de programme et de déploiement .
+* [Accès au programme et aux environnements AEM Assets Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) avec les rôles Responsable de programme et de déploiement .
 
-* Un [environnement de développement AEM local](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) et une connaissance du processus de développement local d’AEM.
+* Un [environnement de développement AEM local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) et une connaissance du processus de développement local d’AEM.
 
-* Découvrez la structure de projet [AEM et comment déployer &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) packages de contenu personnalisés à l’aide de Cloud Manager.
+* Découvrez la structure de projet [AEM et comment déployer ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) packages de contenu personnalisés à l’aide de Cloud Manager.
 
 ### Installation du package `commerce-assets`
 
@@ -59,13 +59,13 @@ Vous avez besoin des ressources et autorisations suivantes pour déployer le pac
 
 1. Configurez un pipeline de déploiement, si nécessaire.
 
-1. À partir de GitHub, téléchargez le code à partir du fichier standard AEM Commerce [&#128279;](https://github.com/ankumalh/assets-commerce).
+1. À partir de GitHub, téléchargez le code à partir du fichier standard AEM Commerce [](https://github.com/ankumalh/assets-commerce).
 
-1. À partir de votre [environnement de développement AEM local](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), installez le code personnalisé dans la configuration de votre environnement AEM Assets sous la forme d’un package Maven ou en copiant manuellement le code dans la configuration du projet existant.
+1. À partir de votre [environnement de développement AEM local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), installez le code personnalisé dans la configuration de votre environnement AEM Assets sous la forme d’un package Maven ou en copiant manuellement le code dans la configuration du projet existant.
 
 1. Validez les modifications et envoyez votre branche de développement local au référentiel Git de Cloud Manager.
 
-1. Depuis AEM Cloud Manager, [déployez votre code pour mettre à jour l’environnement AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
+1. Depuis AEM Cloud Manager, [déployez votre code pour mettre à jour l’environnement AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
 ## Facultatif. Configuration d’un profil de métadonnées
 
@@ -122,13 +122,13 @@ Le composant d’interface utilisateur des données de produit est ajouté autom
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Facultatif. Pour synchroniser automatiquement les ressources Commerce approuvées lors de leur chargement dans l’environnement AEM Assets, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_&#x200B;de l’onglet `Basic` sur `approved`.
+1. Facultatif. Pour synchroniser automatiquement les ressources Commerce approuvées lors de leur chargement dans l’environnement AEM Assets, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_de l’onglet `Basic` sur `approved`.
 
 1. Enregistrez la mise à jour.
 
 #### Application du profil de métadonnées au dossier source des ressources Commerce
 
-1. Sur la page [!UICONTROL &#x200B; Metadata Profiles], sélectionnez le profil d’intégration de Commerce.
+1. Sur la page [!UICONTROL  Metadata Profiles], sélectionnez le profil d’intégration de Commerce.
 
 1. Dans le menu d’actions, sélectionnez **[!UICONTROL Apply Metadata Profiles to Folders]**.
 
@@ -138,6 +138,8 @@ Le composant d’interface utilisateur des données de produit est ajouté autom
 
 1. Cliquez sur **[!UICONTROL Apply]**.
 
-## Étape suivante
+## Étapes suivantes
 
 [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} [installer les packages Adobe Commerce](configure-commerce.md)
+
+**Configuration de votre storefront Commerce** : pour utiliser AEM Assets avec le storefront Commerce optimisé par Edge Delivery Services, effectuez la configuration de storefront décrite dans la rubrique [Configuration d’EDS AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/).
