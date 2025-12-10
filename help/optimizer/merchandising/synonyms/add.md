@@ -1,8 +1,9 @@
 ---
 title: Créer et gérer des synonymes
 description: Découvrez comment créer et gérer des synonymes pour  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -69,11 +70,11 @@ Dans cet exemple, le mot-clé à associer est « pantalon » et l’ensemble des
 
 | Champ | Description |
 |--- |--- |
-| [Type &#x200B;](type.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options : <br />Bidirectionnel (par défaut) - Termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />Unidirectionnel - Termes qui sont un sous-ensemble du mot-clé. Les synonymes à sens unique renvoient une liste plus étroite de produits spécifiques. |
+| [Type ](type.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options : <br />Bidirectionnel (par défaut) - Termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />Unidirectionnel - Termes qui sont un sous-ensemble du mot-clé. Les synonymes à sens unique renvoient une liste plus étroite de produits spécifiques. |
 | Mot-clé | Mot généralement associé à une sélection de produits dans votre catalogue. |
 | Extension | Termes supplémentaires ayant la même signification ou une signification similaire au mot-clé. |
 
-## Gérer les synonymes
+## Gestion des synonymes
 
 Suivez ces instructions pour gérer les [!DNL Adobe Commerce Optimizer] existants [synonymes](overview.md).
 

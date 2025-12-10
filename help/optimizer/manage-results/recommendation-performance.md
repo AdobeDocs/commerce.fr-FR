@@ -1,12 +1,12 @@
 ---
 title: Performances de Recommendations
 description: La page Performances de Recommendations fournit à insight des informations sur les performances de vos recommandations de produits.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: 177ebffe0295fdc87b6f4a60473ebfda6bea0f01
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '647'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,7 @@ Découvrez comment [créer ou gérer une recommandation existante](../merchandis
 |---|---|
 | ![Période](../assets/rec-perf-date-range.png) | Détermine la période utilisée pour les calculs des mesures. |
 | ![Sélecteur de colonnes](../assets/icon-show-hide-columns.png) | Détermine les colonnes qui apparaissent dans le tableau Recommendations. |
-| Créer une recommandation | Ouvre la page [&#x200B; Créer une recommandation &#x200B;](../merchandising/recommendations/create.md). |
+| Créer une recommandation | Ouvre la page [ Créer une recommandation ](../merchandising/recommendations/create.md). |
 
 ## Descriptions des colonnes
 

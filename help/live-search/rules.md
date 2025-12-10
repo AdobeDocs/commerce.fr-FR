@@ -1,7 +1,8 @@
 ---
 title: Rechercher dans le marchandisage
 description: '[!DNL Live Search] règles de marchandisage combinent la logique aux actions pour façonner l’expérience d’achat.'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 9894bf2b-8556-4057-aa23-ebdcb1599914
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 0%
@@ -37,7 +38,7 @@ Le texte de la requête peut contenir :
 
 Les opérateurs logiques `AND` et `OR` joignent deux conditions et renvoient des résultats différents. Tous les opérateurs logiques utilisés dans une règle avec plusieurs conditions sont identiques. Il n’est pas possible d’utiliser à la fois `AND` et `OR` dans la même règle.
 
-### Opérateurs de correspondance
+### Faire correspondre les opérateurs
 
 Les opérateurs de correspondance `All` et `Any` déterminent l’opérateur logique utilisé pour joindre plusieurs conditions dans la règle et peuvent être utilisés pour modifier l’opérateur existant.
 
@@ -74,4 +75,4 @@ La requête effectuée dans l’administrateur fonctionne légèrement différem
 ## Marchandisage de catégorie et affectations de produits de catégorie
 
 [!DNL Live Search] vous permet de filtrer par catégories. Voir [Marchandisage de catégorie](category-merch.md) pour plus d’informations.
-Cependant, dans Adobe Commerce, vous pouvez créer une catégorie virtuelle avec des [affectations de produits de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html?lang=fr). Ce type de catégorie est créé lors de l’exécution et n’existe pas dans la base de données des catégories. Par conséquent, [!DNL Live Search] ne pouvez pas lire ni utiliser ce type de catégorie.
+Cependant, dans Adobe Commerce, vous pouvez créer une catégorie virtuelle avec des [affectations de produits de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Ce type de catégorie est créé lors de l’exécution et n’existe pas dans la base de données des catégories. Par conséquent, [!DNL Live Search] ne pouvez pas lire ni utiliser ce type de catégorie.

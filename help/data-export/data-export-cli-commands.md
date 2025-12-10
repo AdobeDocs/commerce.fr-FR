@@ -2,7 +2,7 @@
 title: Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce
 description: Découvrez comment utiliser les commandes de l’interface de ligne de commande pour gérer les flux et les processus pour les services SaaS  [!DNL data export extension] ’Adobe Commerce.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 37d5699315e34f1504602090fae5201ee51cf470
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -16,7 +16,7 @@ La commande `saas:resync` du package `magento/saas-export` permet de gérer la s
 Adobe déconseille d&#39;utiliser régulièrement la commande `saas:resync`. Les scénarios classiques d’utilisation de la commande sont les suivants :
 
 - Synchronisation initiale
-- Synchronisez les données avec un nouvel espace de données après avoir modifié l’identifiant de l’espace de données [SaaS](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/services/saas)
+- Synchronisez les données avec un nouvel espace de données après avoir modifié l’identifiant de l’espace de données [SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Dépannage
 
 Surveillez les opérations de synchronisation dans le fichier `var/log/saas-export.log`.
@@ -62,7 +62,7 @@ Consultez les sections suivantes pour obtenir une description des options ainsi 
 
 >[!NOTE]
 >
->Pour obtenir des options avancées de gestion du traitement des exportations, voir [&#x200B; Personnaliser le traitement des exportations &#x200B;](customize-export-processing.md).
+>Pour obtenir des options avancées de gestion du traitement des exportations, voir [ Personnaliser le traitement des exportations ](customize-export-processing.md).
 
 ## `--by-ids`
 

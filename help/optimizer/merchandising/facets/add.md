@@ -1,9 +1,9 @@
 ---
 title: Création et gestion des facettes
 description: Découvrez comment ajouter et gérer des facettes dans  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: d6b7ff1f-a9b8-4fb8-8bd3-b3596695045c
-source-git-commit: dc751a54c654980a29606c85cdd1cd3324973aab
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Tout attribut de produit filtrable peut être utilisé comme facette. Les facett
 
 1. Une fois l’opération terminée, cliquez sur **Enregistrer**.
 
-## Épingler/Détacher Les Facettes
+## Épingler/désépingler les facettes
 
 L’épingle change de couleur lorsque vous cliquez dessus et est utilisée pour déplacer la facette vers la section *Facettes épinglées* ou *Facettes dynamiques*.
 

@@ -2,10 +2,10 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: Découvrez comment configurer, gérer et surveiller les performances des recommandations de produits.
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
-source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -35,7 +35,7 @@ Si vous utilisez un storefront découplé, reportez-vous à la documentation sui
 
 ## Définir la portée
 
-Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr) de tous les paramètres de recommandation est définie sur `Default Store View`. Si votre installation de Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la vue de [magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) où vos recommandations s’appliquent.
+Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) de tous les paramètres de recommandation est définie sur `Default Store View`. Si votre installation de Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la vue de [magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où vos recommandations s’appliquent.
 
 ## Définition de la période des mesures
 
@@ -101,10 +101,10 @@ Sur la page Détails de la recommandation, cliquez sur **Créer**. Pour en savoi
 
 | Contrôle | Description |
 |---|---|
-| ![&#x200B; Sélecteur de calendrier &#x200B;](assets/icon-calendar.png) | Détermine la période utilisée pour les calculs des mesures. Options : 24 heures / 7 jours / 30 jours |
+| ![ Sélecteur de calendrier ](assets/icon-calendar.png) | Détermine la période utilisée pour les calculs des mesures. Options : 24 heures / 7 jours / 30 jours |
 | ![Sélecteur de colonnes](assets/icon-show-hide-columns.png) | Détermine les colonnes qui apparaissent dans le tableau [!DNL Product Recommendations]. |
 | Paramètres | Détermine l’espace de données SaaS où sont récupérées les données comportementales de recommandation et active également le type de recommandation de similarité visuelle. |
-| Créer une recommandation | Ouvre la page [&#x200B; Créer une recommandation &#x200B;](create.md). |
+| Créer une recommandation | Ouvre la page [ Créer une recommandation ](create.md). |
 
 ## Descriptions des colonnes
 

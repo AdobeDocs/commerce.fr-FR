@@ -4,7 +4,7 @@ description: Découvrez comment les services  [!DNL Commerce]  gèrent les deman
 role: Admin, Leader
 feature: Security, Compliance
 exl-id: 1408ca77-6956-4519-93a6-bc9be9bffeff
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 0%
@@ -17,21 +17,21 @@ Adobe Experience Platform Privacy Service fournit une API RESTful et une interfa
 
 Pour plus d’informations sur Privacy Service et sur la création et la gestion des demandes d’accès à des informations personnelles, consultez la documentation de Adobe Experience Platform :
 
-* Présentation de [Privacy Service](https://experienceleague.adobe.com/fr/docs/experience-platform/privacy/home)
-* [Gestion des tâches de confidentialité dans l’interface utilisateur de Privacy Service](https://experienceleague.adobe.com/fr/docs/experience-platform/privacy/ui/user-guide)
+* Présentation de [Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home)
+* [Gestion des tâches de confidentialité dans l’interface utilisateur de Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide)
 
 ## Gestion des demandes individuelles de confidentialité des données
 
 Vous pouvez soumettre des requêtes individuelles pour accéder aux données des clients et les supprimer de [!DNL Commerce] de deux manières :
 
-* Via l’interface utilisateur de **Privacy Service**. Voir la documentation [ici](https://experienceleague.adobe.com/fr/docs/experience-platform/privacy/ui/user-guide#_blank).
+* Via l’interface utilisateur de **Privacy Service**. Voir la documentation [ici](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide#_blank).
 * Via l’API **Privacy Service**. Consultez la documentation [ici](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) et les informations d’API [ici](https://developer.adobe.com/experience-platform-apis/#_blank).
 
 Privacy Service prend en charge deux types de demandes : **accès aux données** et **suppression des données**.
 
 >[!NOTE]
 >
->Cet article se concentre sur les demandes d’accès à des informations personnelles pour [!DNL Commerce]. Si vous prévoyez d’effectuer des demandes d’accès à des informations personnelles pour [lac de données Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/privacy), [profil client en temps réel](https://experienceleague.adobe.com/fr/docs/experience-platform/profile/privacy) ou [service d’identités](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/privacy), reportez-vous à leurs guides d’utilisation respectifs. Notez que les demandes de suppression et d’accès doivent être envoyées individuellement à chaque système, car une demande d’accès à des informations personnelles envoyée à Commerce ne supprime pas les données de tous ces systèmes.
+>Cet article se concentre sur les demandes d’accès à des informations personnelles pour [!DNL Commerce]. Si vous prévoyez d’effectuer des demandes d’accès à des informations personnelles pour [lac de données Platform](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy), [profil client en temps réel](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) ou [service d’identités](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy), reportez-vous à leurs guides d’utilisation respectifs. Notez que les demandes de suppression et d’accès doivent être envoyées individuellement à chaque système, car une demande d’accès à des informations personnelles envoyée à Commerce ne supprime pas les données de tous ces systèmes.
 
 ## Accès aux données
 
@@ -39,7 +39,7 @@ Pour les **demandes d’accès**, spécifiez « Commerce (Personalization) » à
 
 ## Suppression de données
 
-Pour les demandes de suppression, Privacy Service supprime [!DNL Commerce] données stockées dans les services SaaS Commerce à des fins marketing, ce qui signifie que les profils et les commandes des titulaires de données ne sont plus envoyés aux applications marketing Adobe pour être utilisés dans les campagnes et les parcours clients. Cependant, Privacy Service ne supprime pas les données de l’application [!DNL Commerce], car elles peuvent être nécessaires pour les besoins transactionnels des commerçants. Les commerçants sont responsables de toutes les demandes de suppression/d’accès aux données dans l’application [!DNL Commerce]. Voir [Sécurité de la responsabilité partagée et modèle opérationnel](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/shared-responsibility) pour en savoir plus.
+Pour les demandes de suppression, Privacy Service supprime [!DNL Commerce] données stockées dans les services SaaS Commerce à des fins marketing, ce qui signifie que les profils et les commandes des titulaires de données ne sont plus envoyés aux applications marketing Adobe pour être utilisés dans les campagnes et les parcours clients. Cependant, Privacy Service ne supprime pas les données de l’application [!DNL Commerce], car elles peuvent être nécessaires pour les besoins transactionnels des commerçants. Les commerçants sont responsables de toutes les demandes de suppression/d’accès aux données dans l’application [!DNL Commerce]. Voir [Sécurité de la responsabilité partagée et modèle opérationnel](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) pour en savoir plus.
 
 [!DNL Commerce] informera les commerçants des demandes de suppression en leur envoyant des informations pour les titulaires de données qui demandent la suppression de certaines données.
 
@@ -50,7 +50,7 @@ Pour les demandes de suppression, Privacy Service supprime [!DNL Commerce] donn�
 Pour envoyer des demandes d’accès et de suppression de données pour Adobe [!DNL Commerce], vous devez disposer des éléments suivants :
 
 * un identifiant de l’organisation IMS ;
-* un identifiant d’identité de la personne sur laquelle vous souhaitez agir et le ou les espaces de noms correspondants. Pour plus d’informations sur les espaces de noms d’identité dans Adobe [!DNL Commerce] et Experience Platform, consultez la [&#x200B; présentation des espaces de noms d’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces).
+* un identifiant d’identité de la personne sur laquelle vous souhaitez agir et le ou les espaces de noms correspondants. Pour plus d’informations sur les espaces de noms d’identité dans Adobe [!DNL Commerce] et Experience Platform, consultez la [ présentation des espaces de noms d’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces).
 
 ### Exemple de demande/suppression d’accès RGPD :
 
@@ -64,8 +64,8 @@ Pour les **requêtes de suppression**, assurez-vous que la case à cocher « Com
 
 Pour envoyer des demandes d’accès et de suppression via l’API Privacy, vous devez vous authentifier et gérer les autorisations pour Privacy Service :
 
-* [Authentification et accès à l’API Privacy Service](https://experienceleague.adobe.com/fr/docs/experience-platform/privacy/api/getting-started)
-* [Gestion des autorisations pour Privacy Service](https://experienceleague.adobe.com/fr/docs/experience-platform/privacy/permissions)
+* [Authentification et accès à l’API Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/getting-started)
+* [Gestion des autorisations pour Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/permissions)
 
 **En-têtes obligatoires**
 
