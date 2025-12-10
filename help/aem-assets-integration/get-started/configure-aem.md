@@ -41,7 +41,7 @@ Le modèle standard ajoute les ressources suivantes à l’environnement de cré
 
 >[!NOTE]
 >
-> Voir la page [readme](https://github.com/ankumalh/assets-commerce) pour plus d&#39;informations sur le modèle AEM Commerce ****.
+> Voir la page [readme](https://github.com/ankumalh/assets-commerce) pour plus d&#39;informations sur le modèle AEM Commerce **&#x200B;**.
 
 ### Conditions préalables
 
@@ -51,7 +51,7 @@ Vous avez besoin des ressources et autorisations suivantes pour déployer le pac
 
 * Un [environnement de développement AEM local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) et une connaissance du processus de développement local d’AEM.
 
-* Découvrez la structure de projet [AEM et comment déployer ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) packages de contenu personnalisés à l’aide de Cloud Manager.
+* Découvrez la structure de projet [AEM et comment déployer &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) packages de contenu personnalisés à l’aide de Cloud Manager.
 
 ### Installation du package `commerce-assets`
 
@@ -59,7 +59,7 @@ Vous avez besoin des ressources et autorisations suivantes pour déployer le pac
 
 1. Configurez un pipeline de déploiement, si nécessaire.
 
-1. À partir de GitHub, téléchargez le code à partir du fichier standard AEM Commerce [](https://github.com/ankumalh/assets-commerce).
+1. À partir de GitHub, téléchargez le code à partir du fichier standard AEM Commerce [&#128279;](https://github.com/ankumalh/assets-commerce).
 
 1. À partir de votre [environnement de développement AEM local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), installez le code personnalisé dans la configuration de votre environnement AEM Assets sous la forme d’un package Maven ou en copiant manuellement le code dans la configuration du projet existant.
 
@@ -122,13 +122,13 @@ Le composant d’interface utilisateur des données de produit est ajouté autom
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Facultatif. Pour synchroniser automatiquement les ressources Commerce approuvées lors de leur chargement dans l’environnement AEM Assets, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_de l’onglet `Basic` sur `approved`.
+1. Facultatif. Pour synchroniser automatiquement les ressources Commerce approuvées lors de leur chargement dans l’environnement AEM Assets, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_&#x200B;de l’onglet `Basic` sur `approved`.
 
 1. Enregistrez la mise à jour.
 
 #### Application du profil de métadonnées au dossier source des ressources Commerce
 
-1. Sur la page [!UICONTROL  Metadata Profiles], sélectionnez le profil d’intégration de Commerce.
+1. Sur la page [!UICONTROL &#x200B; Metadata Profiles], sélectionnez le profil d’intégration de Commerce.
 
 1. Dans le menu d’actions, sélectionnez **[!UICONTROL Apply Metadata Profiles to Folders]**.
 
