@@ -4,7 +4,7 @@ description: Découvrez comment créer une extension d’évaluations de produit
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: e153e974be1dc5ec8ff2eff8d699ce87ef6708dc
+source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Cette section vous guide tout au long du processus de développement d’une ext
    - Dans la fenêtre de conversation avec le curseur, sélectionnez le mode **Agent**.
    - Saisissez l’invite suivante :
 
-   ```text
+   ```plain
    Implement an Adobe Commerce as a Cloud Service extension to handle Product Ratings.
    
    Implement a REST API to handle GET ratings requests.
@@ -86,7 +86,7 @@ Cette section vous guide tout au long du processus de développement d’une ext
 
 1. Utilisez l’exemple de texte suivant pour répondre aux questions de l’agent afin de configurer les données d’évaluation randomisées :
 
-   ```text
+   ```plain
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
    
@@ -122,7 +122,7 @@ Cette section vous guide tout au long du processus de développement d’une ext
 
 1. Demandez à l’agent de vous aider à tester le code localement.
 
-   ```text
+   ```plain
    Test the ratings API locally on a dev server using cURL.
    ```
 
@@ -136,19 +136,19 @@ Cette section vous guide tout au long du processus de développement d’une ext
 
 1. Après avoir vérifié le code généré, déployez l’extension à l’aide de l’invite suivante :
 
-   ```text
+   ```plain
    Deploy the ratings API.
    ```
 
    L’agent effectue une évaluation de préparation avant le déploiement.
 
-   ![&#x200B; Évaluation préalable au déploiement &#x200B;](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+   ![ Évaluation préalable au déploiement ](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 1. Lorsque vous êtes certain des résultats de l’évaluation, demandez à l’agent de procéder au déploiement.
 
    L’agent utilise la boîte à outils MCP pour vérifier, créer et déployer automatiquement.
 
-   ![&#x200B; Déploiement &#x200B;](../assets/deployment-process.png){width="600" zoomable="yes"}
+   ![ Déploiement ](../assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### Après le déploiement
 
@@ -168,11 +168,11 @@ Test ![cURL](../assets/curl-test.png){width="600" zoomable="yes"}
 
 Pour intégrer l’API de notes à un storefront [!DNL Adobe Commerce] optimisé par [!DNL Edge Delivery Services], demandez à l’agent de créer un contrat de service avec les exigences de l’API de notes :
 
-```text
+```plain
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![&#x200B; Contrat de service &#x200B;](../assets/create-contract.png){width="600" zoomable="yes"}
+![ Contrat de service ](../assets/create-contract.png){width="600" zoomable="yes"}
 
 ![Détails du contrat de service](../assets/contract.png){width="600" zoomable="yes"}
 <!-- 
@@ -223,7 +223,7 @@ This section teaches you how to implement real storefront features and communica
 
 1. In a browser, navigate to the Apparel page:
 
-   ```text
+   ```plain
    http://localhost:3000/apparel
    ```
 
@@ -231,7 +231,7 @@ This section teaches you how to implement real storefront features and communica
 
 1. Use the following prompt with your agent:
 
-   ```text
+   ```plain
    Implement product ratings in the storefront.
 
    Add a 5-star rating display with a review count underneath each product name on the product list page, product details page, and product recommendations.
@@ -246,7 +246,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=fr).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
@@ -269,7 +269,7 @@ For further experimentation with this tutorial, use the following suggestions to
 
 Use the following prompt to your agent:
 
-```text
+```plain
 Change the star fill color to red.
 ```
 
@@ -305,7 +305,7 @@ The following steps show how the agent handles complex UI features with visual r
 * If the modal does not appear, check the browser console for errors.
 * If positioning is off, ask the agent to fix it using the following format:
 
-   ```text
+   ```plain
    adjust the modal position to be...
    ```
 
