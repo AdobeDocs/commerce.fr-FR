@@ -4,7 +4,7 @@ description: Découvrez les conditions préalables requises pour l’atelier d�
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
+source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -127,7 +127,7 @@ cp env.dist .env
 
 Ouvrez le fichier `.env` dans un éditeur de texte et ajoutez les informations d’identification OAuth suivantes :
 
-```plain
+```shell-session
 OAUTH_CLIENT_ID=
 OAUTH_CLIENT_SECRET=
 OAUTH_TECHNICAL_ACCOUNT_ID=
@@ -137,13 +137,13 @@ OAUTH_ORG_ID=
 
 Vous pouvez copier ces valeurs à partir de la page **[!UICONTROL Credential details]** dans [Developer Console](https://developer.adobe.com/) en cliquant sur l&#39;onglet **[!UICONTROL OAuth Server-to-Server]** dans votre espace de travail.
 
-![&#x200B; Informations d’identification OAuth &#x200B;](../assets/oauth-credentials.png){width="600" zoomable="yes"}
+![ Informations d’identification OAuth ](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
 #### Ajout de la configuration Commerce
 
 Ajoutez les détails d’instance Commerce suivants à votre fichier `.env` :
 
-```plain
+```shell-session
 COMMERCE_BASE_URL=
 COMMERCE_GRAPHQL_ENDPOINT=
 ```
@@ -159,7 +159,7 @@ Pour rechercher ces valeurs :
 
 Définissez une valeur temporaire pour le préfixe d’événement :
 
-```plain
+```shell-session
 EVENT_PREFIX=test
 ```
 
@@ -331,7 +331,7 @@ Check that the MCP server is running correctly:
 1. Look for an indicator showing the MCP server is connected. This indicator is typically located in the chat interface.
 1. Try entering a prompt like the following:
 
-   ```plain
+   ```shell-session
    Search the storefront docs for information about slots
    ```
 

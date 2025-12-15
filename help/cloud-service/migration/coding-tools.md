@@ -1,11 +1,11 @@
 ---
 title: Outils de codage de l’IA pour les extensions
 description: Découvrez comment utiliser les outils d’IA pour créer des extensions Commerce App Builder.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
+source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 0%
@@ -27,7 +27,7 @@ L’utilisation des outils de codage de l’IA offre les avantages suivants :
 
 * Un des agents de codage suivants :
    * [Cursor](https://cursor.com/download) (recommandé)
-   * [&#x200B; Copilote Github &#x200B;](https://github.com/features/copilot)
+   * [ Copilote Github ](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [Code Claude](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download) : version LTS
@@ -72,7 +72,7 @@ L’utilisation des outils de codage de l’IA offre les avantages suivants :
 
 Le processus d’installation vous invite à définir les options de configuration. Pour l’emplacement de configuration, choisissez « Répertoire actuel » pour installer les outils dans votre espace de travail actuel :
 
-```plain
+```shell-session
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
@@ -80,7 +80,7 @@ Le processus d’installation vous invite à définir les options de configurati
 
 Lors de la sélection de l’agent de codage, Adobe recommande de sélectionner `Cursor` pour une expérience de développement optimale :
 
-```plain
+```shell-session
 ? Which coding agent would you like to use?
 ❯ Cursor
   Copilot
@@ -90,7 +90,7 @@ Lors de la sélection de l’agent de codage, Adobe recommande de sélectionner 
 
 Lors de la sélection du gestionnaire de packages, Adobe recommande d’utiliser `npm` par souci de cohérence :
 
-```plain
+```shell-session
 ? Which package manager would you like to use?
 ❯ npm
   yarn
@@ -119,7 +119,7 @@ Lors de la sélection du gestionnaire de packages, Adobe recommande d’utiliser
 >Avant de déployer votre projet, vous devez effectuer les tâches de configuration suivantes :
 >
 >* Connectez-vous à [Adobe Developer Console](https://developer.adobe.com/console) à l’aide de l’interface de ligne de commande Adobe I/O.
->* Créez un projet App Builder (voir [&#x200B; Configuration du projet &#x200B;](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Créez un projet App Builder (voir [ Configuration du projet ](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Configurez les variables d’environnement dans un fichier `.env`.
 >
 >Vous pouvez effectuer ces étapes de configuration manuellement ou utiliser les outils de codage de l’IA pour vous guider tout au long du processus. Voir [Création d’une intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) pour obtenir des instructions de configuration détaillées.
@@ -168,7 +168,7 @@ aio auth login
 
 1. Vérifiez l’état du serveur : le serveur MCP d’extensibilité de Commerce doit apparaître comme suit :
 
-   ```plain
+   ```shell-session
    Status: Connected/Active
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
@@ -176,7 +176,7 @@ aio auth login
 
 1. Utilisez l’invite suivante pour voir si l’agent utilise le serveur MCP. Si ce n’est pas le cas, demandez explicitement à l’agent d’utiliser les outils MCP disponibles.
 
-```plain
+```shell-session
 What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
 ```
 
@@ -195,7 +195,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Vérifiez l’état du serveur. La sortie `MCP:commerce-extensibility` doit correspondre aux éléments suivants :
 
-   ```plain
+   ```shell-session
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
    2025-11-13 12:58:50.652 [info] Connection state: Starting
    2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
@@ -209,7 +209,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Utilisez l’invite suivante pour voir si l’agent utilise le serveur MCP. Si ce n’est pas le cas, demandez explicitement à l’agent d’utiliser les outils MCP disponibles.
 
-   ```plain
+   ```shell-session
    What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
    ```
 
@@ -217,7 +217,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 L’exemple d’invite suivant crée une extension pour envoyer des notifications lorsqu’une commande est passée.
 
-```plain
+```shell-session
 Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
@@ -230,7 +230,7 @@ Payment Type -> pType
 
 Outre l’invite, vous pouvez utiliser la commande `/search-commerce-docs` pour rechercher de la documentation dans les conversations avec votre agent. Par exemple :
 
-```plain
+```shell-session
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
@@ -275,7 +275,7 @@ Consultez les ressources suivantes pour commencer :
 
 * [Kit de démarrage d’intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Modèles de kit de démarrage Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Exemples d’applications App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Pourquoi utiliser ces ressources ?
@@ -304,7 +304,7 @@ Le protocole en quatre phases suivant est automatiquement appliqué par le syst�
 
 Pour un développement complexe impliquant plusieurs actions d’exécution, points de contact ou intégrations, demandez explicitement aux outils d’IA de créer un plan de mise en œuvre détaillé. Lorsque vous voyez un plan général en [Phase 2](#protocol) qui implique plusieurs composants, demandez un plan d’implémentation détaillé pour le diviser en tâches gérables :
 
-```plain
+```shell-session
 Create a detailed implementation plan for this complex development.
 ```
 
@@ -326,7 +326,7 @@ L’outil est défini par défaut sur les outils MCP, mais dans certains cas, il
 
 Si des commandes d’interface de ligne de commande sont utilisées et que vous souhaitez utiliser des outils MCP à la place, utilisez l’invite suivante :
 
-```plain
+```shell-session
 Use only MCP tools and not CLI commands
 ```
 
@@ -346,7 +346,7 @@ Il est important de remettre en question la complexité inutile créée par les 
 
 Lorsque des fichiers inutiles sont ajoutés (`validator.js`, `transformer.js`, `sender.js`) pour des points d’entrée en lecture seule simples, utilisez les invites suivantes :
 
-```plain
+```shell-session
 Why do we need these files for a simple read-only endpoint?
 Perform a root cause analysis before adding complexity
 Verify if simpler solutions exist
@@ -402,47 +402,47 @@ Demandez de l’aide pour les tests. Les outils peuvent vous aider à déboguer,
 
 **Tester les actions d’exécution** :
 
-```plain
+```shell-session
 Help me test the customer-created runtime action running locally
 ```
 
 **Échecs de débogage** :
 
-```plain
+```shell-session
 Why did the subscription-updated runtime action activation fail?
 ```
 
 **Vérifier les journaux** :
 
-```plain
+```shell-session
 Help me check the logs for the last stock-monitoring runtime action invocation
 ```
 
 **Création de payloads de test** :
 
-```plain
+```shell-session
 Generate test data for this Commerce event
 ```
 
-```plain
+```shell-session
 Create a test payload for the customer_save_after event
 ```
 
 **Rechercher des points d’entrée d’exécution** :
 
-```plain
+```shell-session
 What's the URL for this deployed action?
 ```
 
 **Gérer l’authentification** :
 
-```plain
+```shell-session
 How do I authenticate with this external API?
 ```
 
 **Résolution des problèmes** :
 
-```plain
+```shell-session
 Help me debug why this action is returning 500 errors
 ```
 
@@ -477,19 +477,19 @@ Déployez uniquement les actions modifiées pour accélérer le développement. 
 
 Après des modifications majeures, utilisez les outils pour nettoyer les actions orphelines. Laissez l’outil d’IA gérer le processus de nettoyage de manière systématique, il peut identifier efficacement les actions orphelines, vérifier leur statut et les supprimer en toute sécurité sans intervention manuelle.
 
-```plain
+```shell-session
 Help me identify and clean up orphaned runtime actions
 ```
 
 Demandez à l’outil IA de répertorier les actions déployées et d’identifier celles qui ne sont pas utilisées
 
-```plain
+```shell-session
 List all deployed actions and identify which ones are no longer needed
 ```
 
 Demandez aux outils d’IA de supprimer les actions orphelines à l’aide des commandes appropriées
 
-```plain
+```shell-session
 Remove the orphaned actions that are no longer part of the current implementation
 ```
 
