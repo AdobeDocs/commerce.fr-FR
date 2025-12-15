@@ -3,11 +3,11 @@ title: Vue Catalogue
 description: Découvrez les vues de catalogue et comment les créer pour organiser votre catalogue de produits par structure d’entreprise, politiques et prix.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 769aafeb261d978623e68c466888924c92632883
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,11 @@ Dans cette section, créez une vue de catalogue, sélectionnez une [politique](p
 
 Avant de créer une vue de catalogue, vérifiez que vous disposez des éléments suivants :
 
-- [Politiques créées](policies.md) pour définir des filtres de produit
+- [Politiques créées](policies.md) pour définir des filtres de produit.
 
-- [Catalogues de prix ingérés](pricebooks.md) pour la tarification
+- [Calques de catalogue définis](catalog-layer.md) pour définir des variantes de vos produits.
+
+- [Catalogues de prix ingérés](pricebooks.md) pour la tarification.
 
 1. Dans le menu de gauche, accédez à _Configuration du magasin_ , puis cliquez sur **[!UICONTROL Catalog views]**.
 
@@ -50,6 +52,7 @@ Avant de créer une vue de catalogue, vérifiez que vous disposez des éléments
 
    - **Nom** : saisissez le nom de la vue du catalogue, par exemple `Celport`. &#x200B;
    - **Sources de catalogue** : sélectionnez la source du catalogue (paramètres régionaux), par exemple `en-US`.
+   - **Calques du catalogue**-Examinez les calques ingérés et la priorité.
    - **Politiques** : utilisez la liste déroulante pour sélectionner les politiques appropriées. Par exemple, « Marque », « Modèle ». &#x200B;Vérifiez que vous avez déjà [créé une politique](policies.md).
 
 1. Sélectionnez le catalogue à lier à la vue du catalogue.
@@ -63,6 +66,20 @@ Avant de créer une vue de catalogue, vérifiez que vous disposez des éléments
 La page Vues du catalogue se met à jour pour afficher la nouvelle vue du catalogue&#x200B;
 
 Une fois ces étapes terminées, la vue de catalogue est maintenant configurée pour afficher les produits et les prix en fonction des sources et des politiques sélectionnées.
+
+## Calques de catalogue
+
+Les calques de catalogue vous permettent de modifier les données de produit dans une vue de catalogue sans modifier les données source d’origine. Les calques appliquent des modifications à des attributs de produit spécifiques, tels que le nom, la description, les images, les liens et les métadonnées, en créant un calque au-dessus de votre catalogue de base. Vos données de produit d’origine restent intactes, ce qui vous permet de personnaliser les produits en toute sécurité et d’annuler les modifications à tout moment.
+
+Les cas d’utilisation courants des calques de catalogue sont les suivants :
+
+- **Optimisation de l’optimisation du référencement** : remplacez les titres et descriptions des métadonnées de produit en fonction des recommandations de l’IA de [Sites Optimizer](../manage-results/opportunities.md)
+- **Campagnes saisonnières**—Mettez temporairement à jour les noms, descriptions ou images de produits pour les promotions
+- **Personnalisation régionale**—Affichez différentes informations sur les produits en fonction de l&#39;emplacement géographique ou de la langue
+- **A/B testing** : testez différentes présentations de produits pour optimiser les taux de conversion.
+- **Gestion multimarque** : personnalisez les attributs de produit pour différentes vues de catalogue de marque.
+
+Pour en savoir plus sur la création, la gestion et la hiérarchisation des calques de catalogue, voir [Calques de catalogue](catalog-layer.md).
 
 ## Gérer la vue du catalogue
 
@@ -105,7 +122,7 @@ Certains de ces paramètres de configuration sont nécessaires lorsque vous conf
 
 Les vues de catalogue font partie de la structure des services de marchandisage qui remplace la structure du site web, du magasin et du magasin utilisée dans les bases d’Adobe Commerce par un modèle plus flexible :
 
-![[!DNL Merchandising Services] Architecture &#x200B;](../assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] Architecture ](../assets/merchandising-svcs-architecture.png)
 
 ### Fonctionnement
 
@@ -166,3 +183,9 @@ Les données de catalogue filtrées sont diffusées vers diverses destinations, 
 >[!INFO]
 >
 >Pour plus d’informations sur l’ingestion et la diffusion des données de catalogue, consultez la [documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/optimizer/).
+
+## Plus comme ceci
+
+- [Calques de catalogue](catalog-layer.md) - Découvrez comment modifier les données de produit sans modifier la source d’origine.
+- [Politiques](policies.md) - Créez des politiques pour filtrer les produits dans les vues du catalogue
+- [Classeurs de prix](pricebooks.md) - Gérez les structures de prix pour différents segments de clientèle
