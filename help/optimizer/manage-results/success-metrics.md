@@ -171,7 +171,7 @@ Total Revenue = Sum of (Product Base Price × Quantity) for all completed orders
 
 Pour améliorer votre taux de conversion, votre objectif est de convertir davantage de visiteurs en clients.
 
-![ Taux de conversion des mesures de succès ](../assets/conversion-rate.png)
+![&#x200B; Taux de conversion des mesures de succès &#x200B;](../assets/conversion-rate.png)
 
 ### Comprendre la mesure du taux de conversion
 

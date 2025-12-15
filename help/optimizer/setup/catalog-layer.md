@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine. Les calques appliquent des modifications à des attributs de produit spécifiques, tels que le nom, la description, les images, les liens et les métadonnées, en créant un calque au-dessus de votre catalogue de base. Vos données de produit d’origine restent intactes, ce qui vous permet de personnaliser les produits en toute sécurité et d’annuler les modifications à tout moment.
 
-![ Calques de catalogue ](../assets/catalog-layers.png)
+![&#x200B; Calques de catalogue &#x200B;](../assets/catalog-layers.png)
 
 ## Fonctionnement des calques de catalogue
 
