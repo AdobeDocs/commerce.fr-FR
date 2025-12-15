@@ -1,7 +1,7 @@
 ---
 title: Mesures de succès
 description: Les mesures de succès fournissent insight dans les mesures de performances clés de votre  [!DNL Adobe Commerce Optimizer] .
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 source-git-commit: 4e85d70dc1b099a5b40a807a76ca589aa9a28f07
 workflow-type: tm+mt

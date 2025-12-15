@@ -3,7 +3,7 @@ title: Couche Catalogue
 description: Découvrez comment les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine, afin que vous puissiez les personnaliser en toute sécurité et annuler les modifications à tout moment.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 source-git-commit: 4a904527af172a5e35b87410135d55484d07ad84
 workflow-type: tm+mt
 source-wordcount: '1207'
