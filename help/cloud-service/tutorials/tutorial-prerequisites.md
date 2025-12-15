@@ -137,7 +137,7 @@ OAUTH_ORG_ID=
 
 Vous pouvez copier ces valeurs à partir de la page **[!UICONTROL Credential details]** dans [Developer Console](https://developer.adobe.com/) en cliquant sur l&#39;onglet **[!UICONTROL OAuth Server-to-Server]** dans votre espace de travail.
 
-![ Informations d’identification OAuth ](../assets/oauth-credentials.png){width="600" zoomable="yes"}
+![&#x200B; Informations d’identification OAuth &#x200B;](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
 #### Ajout de la configuration Commerce
 

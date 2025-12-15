@@ -27,7 +27,7 @@ L’utilisation des outils de codage de l’IA offre les avantages suivants :
 
 * Un des agents de codage suivants :
    * [Cursor](https://cursor.com/download) (recommandé)
-   * [ Copilote Github ](https://github.com/features/copilot)
+   * [&#x200B; Copilote Github &#x200B;](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [Code Claude](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download) : version LTS
@@ -119,7 +119,7 @@ Lors de la sélection du gestionnaire de packages, Adobe recommande d’utiliser
 >Avant de déployer votre projet, vous devez effectuer les tâches de configuration suivantes :
 >
 >* Connectez-vous à [Adobe Developer Console](https://developer.adobe.com/console) à l’aide de l’interface de ligne de commande Adobe I/O.
->* Créez un projet App Builder (voir [ Configuration du projet ](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Créez un projet App Builder (voir [&#x200B; Configuration du projet &#x200B;](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Configurez les variables d’environnement dans un fichier `.env`.
 >
 >Vous pouvez effectuer ces étapes de configuration manuellement ou utiliser les outils de codage de l’IA pour vous guider tout au long du processus. Voir [Création d’une intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) pour obtenir des instructions de configuration détaillées.
