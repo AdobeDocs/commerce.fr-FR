@@ -2,9 +2,9 @@
 title: Ajouter des règles
 description: Découvrez comment créer des règles de marchandisage de recherche.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 085eb0fa1a278701cc889d219db7e8571327a632
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2067'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 ## Ajouter une règle
 
 1. Dans Admin, accédez à **Marketing** > SEO et recherche > **[!DNL Live Search]**.
-1. Définissez la **Portée** pour identifier la [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) où la règle s’applique.
+1. Définissez la **Portée** pour identifier la [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où la règle s’applique.
 1. Cliquez sur l’espace de travail **Recherche de marchandisage**.
 1. Cliquez sur **Ajouter une règle** pour lancer l’éditeur de règles.
 
@@ -181,6 +181,10 @@ Les informations saisies ici apparaissent dans le panneau [Détails de la règle
 1. Une fois l’opération terminée, cliquez sur **Enregistrer et publier**.
 
    La règle est ajoutée à la liste dans l’espace de travail *Règles*.
+
+   >[!IMPORTANT]
+   >
+   >Si le bouton **[!UICONTROL Save and publish]** est grisé, assurez-vous d’avoir saisi toutes les informations requises pour la règle, y compris le nom de la règle.
 
 1. Bien que les règles actives prennent immédiatement effet, vous devrez peut-être attendre jusqu’à 15 minutes pour que les résultats de la requête mise en cache dans le storefront soient actualisés.
 
