@@ -3,9 +3,9 @@ title: Intégration d’AEM Assets pour Commerce
 description: Découvrez comment intégrer Adobe Experience Manager Assets à votre instance  [!DNL Commerce]  créer et gérer les fichiers multimédias pour votre storefront Commerce.
 feature: CMS, Media, Configuration, Integration
 exl-id: f450752a-bef1-419e-ad14-ff8879ab204b
-source-git-commit: 9e6f8ae86b28577e2b2c675dbf274c762abe9f3f
+source-git-commit: d46526db56dad08a8f865664c92d1214bbf063d8
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -28,17 +28,17 @@ L’intégration d’AEM Assets relève ce défi en automatisant les workflows d
 
 ## Conditions requises pour utiliser l’intégration
 
-Pour tirer parti de cette intégration avec les visuels de produit ou AEM Assets, les entreprises doivent répondre aux exigences suivantes :
+Pour tirer parti de cette intégration avec [Product Visuals ou AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets), les entreprises doivent répondre aux exigences suivantes :
 
 >[!BEGINTABS]
 
 >[!TAB Visuels du produit]
 
-[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} licences actives pour Adobe Commerce, Product Visuals optimisé par AEM Assets et [AEM Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) (ces licences sont disponibles clé en main avec [!DNL Adobe Commerce as a Cloud Service] et [!DNL Adobe Commerce Optimizer]).
+[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} licences actives pour Adobe Commerce, Product Visuals optimisé par AEM Assets et [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) (ces licences sont disponibles clé en main avec [!DNL Adobe Commerce as a Cloud Service] et [!DNL Adobe Commerce Optimizer]).
 
 >[!TAB AEM Assets]
 
-[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} licences actives pour Adobe Commerce, Adobe Experience Manager Assets et [AEM Dynamic Media](https://experienceleague.adobe.com/fr/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
+[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} licences actives pour Adobe Commerce, Adobe Experience Manager Assets et [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
 
 [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} Adobe Commerce 2.4.5+
 
@@ -46,11 +46,11 @@ Pour tirer parti de cette intégration avec les visuels de produit ou AEM Assets
 
 * Compositeur 2.x
 
-[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} Adobe Experience Manager est configuré avec [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/overview)
+[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} Adobe Experience Manager est configuré avec [Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/overview)
 
 >[!ENDTABS]
 
-L’utilisateur d’Adobe Commerce qui configure l’intégration doit avoir accès à l’organisation [IMS](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) où le projet AEM Assets est configuré.
+L’utilisateur d’Adobe Commerce qui configure l’intégration doit avoir accès à l’organisation [IMS](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) où le projet AEM Assets est configuré.
 
 >[!BEGINSHADEBOX]
 
@@ -62,13 +62,13 @@ L’utilisateur d’Adobe Commerce qui configure l’intégration doit avoir acc
 
 ![check](assets/icon-check.png) **Le modèle d’assistance gérée par Adobe**-l’assistance et le dépannage sont gérés directement par Adobe, ce qui offre une tranquillité d’esprit et une résolution rationalisée des problèmes.
 
-![check](assets/icon-check.png) **Fonctionnalités du Storefront Builder d’Adobe**-La solution de gestion des ressources numériques (DAM) permet d’utiliser des ressources telles que des images, des vidéos et d’autres médias sur le [Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=fr#userlabs-commerce-genai-product-visuals).
+![check](assets/icon-check.png) **Fonctionnalités du Storefront Builder d’Adobe**-La solution de gestion des ressources numériques (DAM) permet d’utiliser des ressources telles que des images, des vidéos et d’autres médias sur le [Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#userlabs-commerce-genai-product-visuals).
 
 >[!ENDSHADEBOX]
 
 Regardez cette vidéo pour découvrir comment Adobe Commerce et AEM Assets fonctionnent ensemble pour rationaliser les workflows de contenu :
 
->[!VIDEO](https://video.tv.adobe.com/v/3447885?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3447837)
 
 ## Étapes suivantes
 
@@ -82,4 +82,4 @@ L’activation de l’intégration de Commerce à Experience Manager Assets est 
 
 ## Support technique
 
-Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, contactez votre représentant commercial chargé de l’intégration AEM Assets ou créez un [&#x200B; ticket d’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) pour recevoir de l’aide supplémentaire.
+Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, contactez votre représentant commercial chargé de l’intégration AEM Assets ou créez un [ ticket d’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) pour recevoir de l’aide supplémentaire.
