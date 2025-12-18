@@ -14,4 +14,4 @@ ht-degree: 0%
 
 L’intégration d’AEM Assets affiche les images de produit gérées dans AEM Assets au lieu des images traditionnelles hébergées sur Commerce. L’intégration offre des fonctionnalités améliorées de gestion des images : optimisation, recadrage et diffusion avancés via le réseau de diffusion de contenu (CDN) d’Adobe.
 
-Pour utiliser AEM Assets avec le storefront Commerce optimisé par Edge Delivery Services, effectuez la configuration du storefront décrite dans la rubrique [Configuration d’EDS AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/).
+Pour utiliser AEM Assets avec le storefront Commerce optimisé par Edge Delivery Services, effectuez la configuration du storefront décrite dans la rubrique [Configuration d’EDS AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=fr).
