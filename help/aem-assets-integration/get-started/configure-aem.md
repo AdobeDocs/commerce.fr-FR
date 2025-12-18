@@ -48,7 +48,7 @@ Vous avez besoin des ressources et autorisations suivantes pour déployer le cod
 
 * Un [environnement de développement AEM local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) et une connaissance du processus de développement local d’AEM.
 
-* Découvrez la structure de projet [AEM et comment déployer ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) packages de contenu personnalisés à l’aide de Cloud Manager.
+* Découvrez la structure de projet [AEM et comment déployer &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) packages de contenu personnalisés à l’aide de Cloud Manager.
 
 ### Étape 1 : installer le package `assets-commerce`
 
@@ -134,13 +134,13 @@ Le composant d’interface utilisateur des données de produit est ajouté autom
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Facultatif. Pour synchroniser automatiquement les ressources Commerce approuvées lors de leur chargement dans l’environnement AEM Assets, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_de l’onglet `Basic` sur `approved`.
+1. Facultatif. Pour synchroniser automatiquement les ressources Commerce approuvées lors de leur chargement dans l’environnement AEM Assets, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_&#x200B;de l’onglet `Basic` sur `approved`.
 
 1. Enregistrez la mise à jour.
 
 #### Application du profil de métadonnées au dossier source des ressources Commerce
 
-1. Sur la page [!UICONTROL  Metadata Profiles], sélectionnez le profil d’intégration de Commerce.
+1. Sur la page [!UICONTROL &#x200B; Metadata Profiles], sélectionnez le profil d’intégration de Commerce.
 
 1. Dans le menu d’actions, sélectionnez **[!UICONTROL Apply Metadata Profiles to Folders]**.
 
