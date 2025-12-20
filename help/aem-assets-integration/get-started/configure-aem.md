@@ -64,7 +64,7 @@ Vous avez besoin des ressources et autorisations suivantes pour déployer le cod
 
 1. Configurez un [pipeline de déploiement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) ou vérifiez que votre pipeline peut déployer les modifications dans l’environnement sélectionné.
 
-1. [Clonez le référentiel Git géré par Adobe](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) pour le programme sélectionné.
+1. [Clonez le référentiel Git géré par Adobe](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) pour le programme sélectionné.
 
 1. À partir de GitHub, téléchargez le code du package à partir du [référentiel AEM Assets Commerce](https://github.com/ankumalh/assets-commerce).
 
