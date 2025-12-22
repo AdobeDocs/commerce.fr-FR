@@ -2,9 +2,9 @@
 title: Configurer votre storefront
 description: 'Découvrez comment configurer votre storefront [!DNL Adobe Commerce Optimizer] '
 role: Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: d6d559728361f4421829f34818aa368eac407225
+source-git-commit: e46c55cba21501c6fa12db6c130493b99de0e4da
 workflow-type: tm+mt
 source-wordcount: '1351'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Avant de commencer, collectez les informations suivantes à partir de votre inst
 * **Identifiant de la vue Catalogue** pour la vue Catalogue globale
    * Disponible à partir de la page [Détails du catalogue](./setup/catalog-view.md#manage-catalog-view)
 * **Paramètres régionaux Source** pour la vue de votre catalogue
-   * La valeur par défaut pour les données d’exemple est `en_US`
+   * La valeur par défaut pour les données d’exemple est `en-US`
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Mettez à jour la configuration de storefront pour vous connecter à votre insta
    ```json
    "cs": {
       "AC-View-ID": "{catalogViewId}",
-      "AC-Source-Locale": "en_US",
+      "AC-Source-Locale": "en-US",
       "AC-Price-Book-ID": "{priceBookId}"
    }
    ```
@@ -209,7 +209,7 @@ Avant de passer aux étapes suivantes, vérifiez que votre storefront fonctionne
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Les valeurs de configuration correspondent aux paramètres de votre instance<br>
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) la page d’accueil de Storefront se charge sans erreur<br>
-![&#x200B; Liste de contrôle &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) au moins une page de détails du produit affiche des informations complètes<br>
+![ Liste de contrôle ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) au moins une page de détails du produit affiche des informations complètes<br>
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) la fonctionnalité de recherche renvoie des résultats pertinents<br>
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Les images du produit se chargent correctement<br>
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Les valeurs de configuration correspondent aux paramètres de votre instance<br>
@@ -218,26 +218,26 @@ Avant de passer aux étapes suivantes, vérifiez que votre storefront fonctionne
 
 Si les problèmes persistent :
 
-* Consultez la [documentation du storefront Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
-* Consultez le guide du développeur de Adobe Commerce Optimizer [&#128279;](https://developer.adobe.com/commerce/services/optimizer/)
-* Consultez les [ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview)
+* Consultez la [documentation du storefront Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* Consultez le guide du développeur de Adobe Commerce Optimizer [](https://developer.adobe.com/commerce/services/optimizer/)
+* Consultez les [ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
 
 ## Étapes suivantes
 
 Après avoir configuré et vérifié votre storefront, vous pouvez :
 
-1. **[Installer Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr#install-and-configure-sidekick)** - Extension de navigateur pour la modification, la prévisualisation et la publication de contenu directement à partir de votre site web
+1. **[Installer Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** - Extension de navigateur pour la modification, la prévisualisation et la publication de contenu directement à partir de votre site web
 
-2. **[Configuration d’un environnement de développement local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr#set-up-local-environment)** - Créez un environnement local pour personnaliser le code et le contenu de votre storefront
+2. **[Configuration d’un environnement de développement local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** - Créez un environnement local pour personnaliser le code et le contenu de votre storefront
 
 ### Apprendre et explorer
 
 * **[Complétez le cas pratique de bout en bout](./use-case/admin-use-case.md)** - En savoir plus sur la configuration de storefront et la gestion des catalogues à l’aide de [!DNL Adobe Commerce Optimizer]
 
-* **[Explorer la personnalisation du storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=fr)** - Découvrez les options de configuration et de configuration avancées.
+* **[Explorer la personnalisation du storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)** - Découvrez les options de configuration et de configuration avancées.
 
-* **[Utiliser les listes déroulantes Commerce pour personnaliser l’expérience storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=fr)**-Ajoutez des composants préconfigurés pour améliorer votre expérience storefront
+* **[Utiliser les listes déroulantes Commerce pour personnaliser l’expérience storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**-Ajoutez des composants préconfigurés pour améliorer votre expérience storefront
 
 >[!MORELIKETHIS]
 >
-> Consultez la [documentation du storefront Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr) pour en savoir plus sur la mise à jour du contenu du site et l’intégration aux composants frontend Commerce et aux données principales.
+> Consultez la [documentation du storefront Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/) pour en savoir plus sur la mise à jour du contenu du site et l’intégration aux composants frontend Commerce et aux données principales.
