@@ -160,7 +160,7 @@ Supposons que vous souhaitiez modifier rapidement l’arrière-plan d’une imag
 
 1. Ouvrez [!DNL AEM Assets] en le sélectionnant dans [Adobe Experience Cloud](https://experience.adobe.com/#/home).
 
-   ![[!DNL AEM Assets] sélecteur affichant l’interface [!DNL Adobe Experience Cloud] ](./assets/select-aem-assets.png){width="600" zoomable="yes"}
+   ![[!DNL AEM Assets] sélecteur affichant l’interface [!DNL Adobe Experience Cloud] &#x200B;](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
 1. Cliquez sur [!UICONTROL **Assets**].
 
