@@ -4,7 +4,7 @@ description: Découvrez les dernières fonctionnalités et améliorations d’ [
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Notes de mise à jour
 
-Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe Commerce as a Cloud Service]. Pour obtenir des informations sur la mise à jour d’autres produits, consultez [Adobe Commerce Optimizer](../optimizer/release-notes.md) ou [Adobe Commerce On-premise et Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe Commerce as a Cloud Service]. Pour obtenir des informations sur la mise à jour d’autres produits, consultez [Adobe Commerce Optimizer](../optimizer/release-notes.md) ou [Adobe Commerce On-premise et Adobe Commerce on Cloud](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview).
 
 [!DNL Adobe Commerce as a Cloud Service] contient les dernières versions des services de marchandisage, des services de paiement et des versions d’extensibilité. Utilisez les liens suivants pour afficher les notes de mise à jour de chacune d’elles :
 
@@ -49,6 +49,6 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 #### Attributs d’ordre personnalisés
 
-* Les utilisateurs administrateurs peuvent désormais afficher et modifier les [attributs de commande personnalisés](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) directement à partir des écrans Afficher, Modifier et Créer dans le panneau d’administration. Cette amélioration améliore la gestion des données de commande personnalisées créées via GraphQL. <!-- CEXT-5044 -->
+* Les utilisateurs administrateurs peuvent désormais afficher et modifier les [attributs de commande personnalisés](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) directement à partir des écrans Afficher, Modifier et Créer dans le panneau d’administration. Cette amélioration améliore la gestion des données de commande personnalisées créées via GraphQL. <!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
