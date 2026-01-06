@@ -1,22 +1,24 @@
 ---
 title: Outils de codage de l’IA pour les extensions
 description: Découvrez comment utiliser les outils d’IA pour créer des extensions Commerce App Builder.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+feature: App Builder, Cloud
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: d2f2563a1f3a656d7bfaa12a0c3ca2b828e7fc33
+source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
 
 # Outils de codage de l’IA pour les extensions
 
-Lors de la migration vers [!DNL Adobe Commerce as a Cloud Service], vous pouvez utiliser les outils de codage de l’IA pour convertir les extensions existantes [!DNL Adobe Commerce] PHP en extensions [!DNL Adobe Developer App Builder]. Il peut également être utilisé pour créer de nouvelles extensions [!DNL App Builder].
+Lors de la migration vers [!DNL Adobe Commerce as a Cloud Service], vous pouvez utiliser les outils de codage de l’IA pour convertir les extensions existantes [!DNL Adobe Commerce] PHP en extensions [!DNL Adobe Developer App Builder]. Vous pouvez également utiliser ces outils pour créer de nouvelles extensions [!DNL App Builder].
 
-L’utilisation des outils de codage de l’IA offre les avantages suivants :
+Les outils de codage de l’IA offrent les avantages suivants :
 
 * **Workflow de développement amélioré** : outils de développement Adobe Commerce intégrés.
 * **Assistance optimisée par l’IA** : génération et débogage de code contextuel.
@@ -27,7 +29,7 @@ L’utilisation des outils de codage de l’IA offre les avantages suivants :
 
 * Un des agents de codage suivants :
    * [Cursor](https://cursor.com/download) (recommandé)
-   * [&#x200B; Copilote Github &#x200B;](https://github.com/features/copilot)
+   * [ Copilote Github ](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [Code Claude](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download) : version LTS
@@ -74,7 +76,7 @@ L’utilisation des outils de codage de l’IA offre les avantages suivants :
    aio commerce extensibility tools-setup
    ```
 
-Le processus d’installation vous invite à définir les options de configuration. Pour l’emplacement de configuration, choisissez « Répertoire actuel » pour installer les outils dans votre espace de travail actuel :
+Le processus de configuration vous invite à spécifier les options de configuration. Pour l’emplacement de configuration, choisissez « Répertoire actuel » pour installer les outils dans votre espace de travail actuel :
 
 ```shell-session
 ? Where would you like to setup the tools?
@@ -123,14 +125,14 @@ Lors de la sélection du gestionnaire de packages, Adobe recommande d’utiliser
 >Avant de déployer votre projet, vous devez effectuer les tâches de configuration suivantes :
 >
 >* Connectez-vous à [Adobe Developer Console](https://developer.adobe.com/console) à l’aide de l’interface de ligne de commande Adobe I/O.
->* Créez un projet App Builder (voir [&#x200B; Configuration du projet &#x200B;](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Créez un projet App Builder (voir [ Configuration du projet ](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Configurez les variables d’environnement dans un fichier `.env`.
 >
 >Vous pouvez effectuer ces étapes de configuration manuellement ou utiliser les outils de codage de l’IA pour vous guider tout au long du processus. Voir [Création d’une intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) pour obtenir des instructions de configuration détaillées.
 
 ## Configuration post-installation
 
-### Connectez-vous au [!DNL Adobe I/O CLI] .
+### Connexion à l’interface de ligne de commande d’Adobe I/O
 
 Après avoir installé le [!DNL Adobe I/O CLI], vous devez vous connecter à chaque fois que vous souhaitez utiliser le serveur MCP.
 
@@ -193,9 +195,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 1. Activez le serveur MCP :
 
    * Ouvrez le panneau Extensions en cliquant sur l’icône **Extensions** dans la barre d’activités située sur la barre latérale gauche, ou à l’aide des combinaisons **Cmd+Maj+X** (macOs) ou **Ctrl+Maj+X** (Windows et Linux).
-   * Cliquez sur **SERVEURS MCP - INSTALLÉS**.
-   * Cliquez sur l’icône d’engrenage en regard de **Serveur MCP d’extensibilité de commerce** et sélectionnez **Démarrer le serveur**, si le serveur est arrêté.
-   * Cliquez à nouveau sur l’icône d’engrenage, puis sélectionnez **Afficher la sortie**.
+   * Cliquez sur [!UICONTROL **SERVEURS MCP - INSTALLÉS**].
+   * Cliquez sur l’icône d’engrenage en regard de [!UICONTROL **Serveur MCP d’extensibilité de commerce**] et sélectionnez [!UICONTROL **Démarrer le serveur**], si le serveur est arrêté.
+   * Cliquez à nouveau sur l’icône d’engrenage, puis sélectionnez [!UICONTROL **Afficher la sortie**].
 
 1. Vérifiez l’état du serveur. La sortie `MCP:commerce-extensibility` doit correspondre aux éléments suivants :
 
@@ -279,7 +281,7 @@ Consultez les ressources suivantes pour commencer :
 
 * [Kit de démarrage d’intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Modèles de kit de démarrage Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Exemples d’applications App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Pourquoi utiliser ces ressources ?
@@ -326,7 +328,7 @@ Les extensions Adobe Commerce complexes impliquent souvent :
 >
 >Avant d’utiliser les outils MCP, vérifiez que vous êtes [connecté à l’interface de ligne de commande Adobe I/O](#log-in-to-the-adobe-io-cli).
 
-L’outil est défini par défaut sur les outils MCP, mais dans certains cas, il peut utiliser des commandes d’interface de ligne de commande à la place. Si vous souhaitez garantir l’utilisation de l’outil MCP, demandez-le explicitement à l’invite.
+L’outil est défini par défaut sur les outils MCP, mais dans certains cas, il peut utiliser des commandes d’interface de ligne de commande à la place. Pour garantir l’utilisation de l’outil MCP, demandez-le explicitement à l’invite.
 
 Si des commandes d’interface de ligne de commande sont utilisées et que vous souhaitez utiliser des outils MCP à la place, utilisez l’invite suivante :
 
@@ -346,7 +348,7 @@ Les commandes de l’interface de ligne de commande peuvent être utilisées dan
 
 ### Développement
 
-Il est important de remettre en question la complexité inutile créée par les outils de l’IA.
+Remettez en question la complexité inutile créée par les outils d’IA.
 
 Lorsque des fichiers inutiles sont ajoutés (`validator.js`, `transformer.js`, `sender.js`) pour des points d’entrée en lecture seule simples, utilisez les invites suivantes :
 
@@ -466,7 +468,7 @@ Appliquez les bonnes pratiques suivantes lors du déploiement d’ :
 
 #### Déploiement incrémentiel
 
-Déployez uniquement les actions modifiées pour accélérer le développement. Cela réduit le risque de rompre les fonctionnalités existantes et permet de réagir plus rapidement aux modifications. Cela réduit également le risque de rompre les fonctionnalités existantes.
+Déployez uniquement les actions modifiées pour accélérer le développement. Cette approche réduit le risque de rompre les fonctionnalités existantes et fournit des commentaires plus rapides sur les modifications.
 
 * Utilisation des outils MCP pour déployer des actions spécifiques
 
@@ -479,7 +481,7 @@ Déployez uniquement les actions modifiées pour accélérer le développement. 
 
 #### Nettoyage de l’exécution
 
-Après des modifications majeures, utilisez les outils pour nettoyer les actions orphelines. Laissez l’outil d’IA gérer le processus de nettoyage de manière systématique, il peut identifier efficacement les actions orphelines, vérifier leur statut et les supprimer en toute sécurité sans intervention manuelle.
+Après des modifications majeures, utilisez les outils pour nettoyer les actions orphelines. Laissez l’outil d’IA gérer le processus de nettoyage de manière systématique. Il peut identifier efficacement les actions orphelines, vérifier leur statut et les supprimer en toute sécurité sans intervention manuelle.
 
 ```shell-session
 Help me identify and clean up orphaned runtime actions
@@ -520,7 +522,7 @@ Suivre les modèles d’utilisation des jetons :
 
 ## Éléments à éviter
 
-Vous devez éviter les antimodèles suivants lors de l’utilisation des outils de codage de l’IA :
+Évitez les antimodèles suivants lors de l’utilisation des outils de codage de l’IA :
 
 * **Ne pas ignorer la phase de clarification** - Assurez-vous toujours que la phase 1 est terminée avant la mise en œuvre.
 * **Ne pas ignorer le test après chaque fonctionnalité** - Effectuez un test incrémentiel, n’attendez pas que tout soit terminé.

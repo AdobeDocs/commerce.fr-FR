@@ -1,27 +1,29 @@
 ---
 title: Outil de migration de données en bloc
 description: Découvrez comment utiliser l’outil de migration de données en bloc pour migrer les données de votre instance Adobe Commerce on Cloud existante vers  [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+feature: Cloud
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
+level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 06bdcfbff5d376064b18bdab3945e7609075b8bc
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
 
 # Outil de migration de données en bloc
 
-L’outil de migration de données en masse suit une architecture distribuée qui permet une migration sécurisée et efficace des données de PaaS vers des environnements SaaS. Cet outil est conçu pour permettre aux personnes qui mettent en œuvre des solutions de migrer les données d’une instance Adobe Commerce on Cloud existante (PaaS) vers une instance [!DNL Adobe Commerce as a Cloud Service] (SaaS). Pour plus d’informations sur le processus de migration, consultez la [présentation de la migration](./overview.md).
+L’outil de migration de données en masse suit une architecture distribuée qui permet une migration sécurisée et efficace des données de PaaS vers des environnements SaaS. Cet outil permet aux personnes en charge de l’implémentation de la solution de migrer les données d’une instance Adobe Commerce on Cloud existante (PaaS) vers une instance [!DNL Adobe Commerce as a Cloud Service] (SaaS). Pour plus d’informations sur le processus de migration, consultez la [présentation de la migration](./overview.md).
 
 >[!NOTE]
 >
->L’outil de migration de données en bloc ne prend en charge que la migration des données commerciales de base propriétaires. La migration de données personnalisées n’est actuellement pas prise en charge.
+>L’outil de migration de données en bloc prend uniquement en charge la migration des données commerciales de base propriétaires. La migration de données personnalisées n’est actuellement pas prise en charge.
 
 L’image suivante présente l’architecture et les composants clés pour l’utilisation de l’outil de migration de données en bloc.
 
-![Architecture de l’outil de migration groupée de données](../assets/bulk-data-diagram.png)
+![Diagramme d’architecture de l’outil de migration de données en bloc présentant le flux de données PaaS vers SaaS](../assets/bulk-data-diagram.png){zoomable="yes"}
 
 ## Workflow de migration
 
@@ -44,13 +46,13 @@ La disponibilité de l’outil de migration de données en bloc est la suivante 
 
 ## Créer un environnement cible
 
-Le programme de mise en œuvre de solutions (SI) crée un environnement cible pour la migration. Cet environnement est utilisé pour stocker les données migrées à partir de l’instance source.
+Le programme de mise en œuvre de solutions (SI) crée un environnement cible pour la migration. Cet environnement stocke les données migrées à partir de l’instance source.
 
 Tout d’abord, [créez une nouvelle instance  [!DNL Adobe Commerce as a Cloud Service] (SaaS)](../getting-started.md#create-an-instance).
 
 ### Configuration de l’outil d’extraction
 
-L’outil d’extraction est utilisé pour extraire les données de l’instance source.
+Utilisez l’outil d’extraction pour extraire des données de l’instance source.
 
 1. Téléchargez l’outil d’extraction à partir du lien fourni par Adobe.
 1. Définissez les variables d’environnement suivantes dans l’outil d’extraction :
@@ -87,13 +89,13 @@ Exécutez l’outil de chargement de données fourni par Adobe. Cet outil :
 1. Générer un plan de chargement.
 1. Exécutez le plan en déplaçant les données par lots vers la base de données cliente SaaS.
 1. Traitez les supports du catalogue et transférez-les vers l’environnement cible.
-1. Vidange le cache Redis SaaS et invalide les index de base de données pour le client.
+1. Videz le cache Redis SaaS et invalidez les index de base de données pour le client.
 
 ### Ingestion des données de catalogue
 
 Une fois les données chargées, elles sont automatiquement transférées de la base de données du client SaaS vers le service de catalogue.
 
-Le service de catalogue partage ces données avec Live Search et les recommandations de produits. Aucune intervention manuelle n’est nécessaire pour ce processus. Les données seront disponibles dans tous les services une fois l’ingestion terminée.
+Le service de catalogue partage ces données avec Live Search et les recommandations de produits. Aucune intervention manuelle n’est nécessaire pour ce processus. Les données sont disponibles dans tous les services une fois l’ingestion terminée.
 
 ### Vérification de l&#39;intégrité des données
 

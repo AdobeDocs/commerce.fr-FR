@@ -1,12 +1,14 @@
 ---
 title: Conditions préalables du tutoriel de l’extension d’évaluation
 description: Découvrez les conditions préalables requises pour l’atelier d’extension des évaluations.
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -17,7 +19,7 @@ ht-degree: 0%
 >
 >L’outil d’IA utilisé dans ce tutoriel est actuellement dans Beta et peut inclure des bogues ou d’autres problèmes.
 
-Cette page répertorie les conditions préalables et les étapes de configuration pour les tutoriels utilisant [!DNL Adobe Commerce as a Cloud Service], comme le tutoriel sur l’extension [ratings](./ratings-extension.md).
+Cette page répertorie les conditions préalables et les étapes de configuration pour les tutoriels [!DNL Adobe Commerce as a Cloud Service], tels que le tutoriel [évaluation des extensions](./ratings-extension.md).
 
 ## Conditions préalables d’Adobe Commerce as a Cloud Service
 
@@ -48,15 +50,15 @@ Cette page répertorie les conditions préalables et les étapes de configuratio
 1. Saisissez un [!UICONTROL **Titre du projet**] et un [!UICONTROL **Nom de l’application**].
 1. Assurez-vous que la case **[!UICONTROL Include Runtime]** est cochée.
 
-   ![Créer un projet avec un modèle App Builder](../assets/app-builder-template.png){width="600" zoomable="yes"}
+   ![Création de projet Adobe Developer Console avec le modèle App Builder sélectionné](../assets/app-builder-template.png){width="600" zoomable="yes"}
 
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur [!UICONTROL **Enregistrer**].
 
 #### Ajouter des API à l’espace de travail
 
 1. Cliquez sur l’espace de travail [!UICONTROL **Stage**], puis répétez les étapes suivantes pour chaque API.
 
-   ![API ajoutées à Workspace](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
+   ![Espace de travail d’évaluation avec l’option Ajouter un service pour les API](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
 1. Cliquez sur [!UICONTROL **Ajouter un service**] et sélectionnez [!UICONTROL **API**].
 
@@ -74,7 +76,7 @@ Cette page répertorie les conditions préalables et les étapes de configuratio
 
 1. Répétez les étapes précédentes jusqu’à ce que toutes les API soient ajoutées à l’espace de travail.
 
-   ![API ajoutées à Workspace](../assets/apis-added.png){width="600" zoomable="yes"}
+   ![Workspace affichant toutes les API requises ajoutées](../assets/apis-added.png){width="600" zoomable="yes"}
 
 ### Configuration de l’interface de ligne de commande Adobe I/O
 
@@ -104,7 +106,7 @@ Cette page répertorie les conditions préalables et les étapes de configuratio
    aio console workspace select
    ```
 
-   ![configuration de l’interface de ligne de commande](../assets/cli-configuration.png){width="600" zoomable="yes"}
+   ![Terminal affichant la sélection de projet d’organisation et d’espace de travail de l’interface de ligne de commande Adobe I/O](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
 ### Clonage du kit de démarrage de l’intégration
 
@@ -115,7 +117,7 @@ git clone https://github.com/adobe/commerce-integration-starter-kit.git extensio
 cd extension
 ```
 
-![Cloner le kit de démarrage](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
+![Sortie de terminal affichant la commande de clone Git pour le kit de démarrage de l’intégration Commerce](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
 
 ### Créer un fichier .env
 
@@ -137,7 +139,7 @@ OAUTH_ORG_ID=
 
 Vous pouvez copier ces valeurs à partir de la page **[!UICONTROL Credential details]** dans [Developer Console](https://developer.adobe.com/) en cliquant sur l&#39;onglet **[!UICONTROL OAuth Server-to-Server]** dans votre espace de travail.
 
-![&#x200B; Informations d’identification OAuth &#x200B;](../assets/oauth-credentials.png){width="600" zoomable="yes"}
+![Page d’identification de serveur à serveur OAuth dans Adobe Developer Console](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
 #### Ajout de la configuration Commerce
 
@@ -185,7 +187,7 @@ Liez votre projet local à l’espace de travail distant :
 aio app use workspace.json -m
 ```
 
-![Se connecter à l’espace de travail](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![Terminal affichant une connexion réussie à l’espace de travail avec la commande d’utilisation de l’application aio](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 ### Installation des outils d’IA dédiés à l’extensibilité
 
@@ -201,7 +203,7 @@ Mettez à jour le fichier de règles de curseur et la configuration MCP pour inc
    aio commerce extensibility tools-setup
    ```
 
-   ![Installation des outils d’IA](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+   ![Terminal affichant la sortie de commande de configuration des outils d’extensibilité de l’IA](../assets/install-ai-tools.png){width="600" zoomable="yes"}
 <!--
 ## Storefront prerequisites
 

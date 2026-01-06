@@ -1,12 +1,14 @@
 ---
 title: Tutoriel sur l’extension d’évaluations
 description: Découvrez comment créer une extension d’évaluations de produit pour Adobe Commerce as a Cloud Service à l’aide d’App Builder et d’outils de développement assistés par l’IA.
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -39,29 +41,29 @@ git --version
 bash --version
 ```
 
-Si l’une des commandes précédentes ne renvoie pas les résultats attendus, consultez les [conditions préalables](tutorial-prerequisites.md) pour obtenir des conseils.
+Si l’une des commandes précédentes ne renvoie pas les résultats attendus, reportez-vous à la [conditions préalables](tutorial-prerequisites.md) pour obtenir des conseils.
 
 ## Développement d’extension
 
-Cette section vous guide tout au long du processus de développement d’une extension de notes pour Adobe Commerce as a Cloud Service à l’aide d’outils de développement assistés par l’IA.
+Cette section vous guide tout au long du développement d’une extension d’évaluations pour Adobe Commerce as a Cloud Service à l’aide d’outils de développement assistés par l’IA.
 
 1. Accédez à **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]** et vérifiez que l’ensemble d’outils `commerce-extensibility` est activé sans erreur. Si des erreurs s’affichent, désactivez la palette d’outils et activez-la.
 
-   ![Paramètres du curseur](../assets/cursor-settings.png){width="600" zoomable="yes"}
+   ![Paramètres de l’IDE du curseur affichant le jeu d’outils d’extensibilité de commerce MCP activé](../assets/cursor-settings.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
-   >Lorsque vous travaillez avec des outils de développement assistés par l’IA, il existe des variations naturelles dans le code et les réponses générées par l’agent.
+   >Lorsque vous utilisez des outils de développement assistés par l’IA, attendez-vous à des variations naturelles du code et des réponses générées par l’agent.
    >Si vous rencontrez des problèmes avec votre code, vous pouvez toujours demander à l’agent de vous aider à le déboguer.
 
 1. Si de la documentation est ajoutée au contexte du curseur, désactivez-la :
 
    - Accédez à [!UICONTROL **Curseur**] > [!UICONTROL **Paramètres**] > [!UICONTROL **Paramètres du curseur**] > [!UICONTROL **Indexation et documents**] et supprimez toute documentation répertoriée.
 
-   ![Désactiver la documentation](../assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![Indexation du curseur et paramètres des documents avec la liste de documentation vide](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. Générer le code pour une extension d’évaluation de produit :
-   - Dans la fenêtre de conversation avec le curseur, sélectionnez le mode **Agent**.
+   - Dans la fenêtre de conversation Cursor, sélectionnez le mode [!UICONTROL **Agent**].
    - Saisissez l’invite suivante :
 
    ```shell-session
@@ -80,9 +82,9 @@ Cette section vous guide tout au long du processus de développement d’une ext
 
 1. Répondez précisément aux questions de l’agent pour l’aider à générer le meilleur code.
 
-   ![Entrez l&#39;invite dans Cursor](../assets/enter-prompt.png){width="600" zoomable="yes"}
+   ![Fenêtre de conversation du curseur en mode Agent avec invite d’extension entrée](../assets/enter-prompt.png){width="600" zoomable="yes"}
 
-   ![L’agent pose des questions pour clarifier les choses](../assets/agent-questions.png){width="600" zoomable="yes"}
+   ![Un agent d’IA pose des questions pour clarifier les exigences d’extension](../assets/agent-questions.png){width="600" zoomable="yes"}
 
 1. Utilisez l’exemple de texte suivant pour répondre aux questions de l’agent afin de configurer les données d’évaluation randomisées :
 
@@ -90,7 +92,7 @@ Cette section vous guide tout au long du processus de développement d’une ext
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
    
-   This extension will be called directly from the storefront, no async invocation, such as events or webhooks, is required.
+   This extension is called directly from the storefront, no async invocation, such as events or webhooks, is required.
    
    Start with just the GET API for now, we will implement other CRUD operations at a later time.
    
@@ -102,7 +104,7 @@ Cette section vous guide tout au long du processus de développement d’une ext
 
    L’agent crée un fichier `requirements.md` qui sert de source de vérité pour l’implémentation.
 
-   ![Fichier d’exigences créé](../assets/requirements-file.png){width="600" zoomable="yes"}
+   ![Fichier Requirements.md créé par l’agent AI avec les détails d’implémentation](../assets/requirements-file.png){width="600" zoomable="yes"}
 
 1. Consultez le fichier `requirements.md` et vérifiez le plan.
 
@@ -112,11 +114,11 @@ Cette section vous guide tout au long du processus de développement d’une ext
 
    L’agent génère le code nécessaire et fournit un résumé détaillé des étapes suivantes.
 
-   ![Planification de l’architecture](../assets/architecture-planning.png){width="600" zoomable="yes"}
+   ![Plan d’architecture de l’agent AI Phase 2 pour l’API de notation](../assets/architecture-planning.png){width="600" zoomable="yes"}
 
-   ![Résumé de la génération du code](../assets/code-generation-summary.png){width="600" zoomable="yes"}
+   ![Résumé des fichiers de code générés et structure](../assets/code-generation-summary.png){width="600" zoomable="yes"}
 
-   ![Étapes suivantes](../assets/next-steps.png){width="600" zoomable="yes"}
+   Agent ![AI fournissant les étapes suivantes pour le test et le déploiement](../assets/next-steps.png){width="600" zoomable="yes"}
 
 ### Test local
 
@@ -128,9 +130,9 @@ Cette section vous guide tout au long du processus de développement d’une ext
 
 1. Suivez les instructions de l’agent et vérifiez que l’API fonctionne localement.
 
-   ![Test local](../assets/local-testing.png){width="600" zoomable="yes"}
+   ![Instructions de l’agent AI pour les tests d’API locaux](../assets/local-testing.png){width="600" zoomable="yes"}
 
-   ![Résultats des tests locaux](../assets/local-testing-1.png){width="600" zoomable="yes"}
+   ![Terminal affichant les résultats du test d’API local avec cURL](../assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### Déployer l’extension
 
@@ -142,19 +144,19 @@ Cette section vous guide tout au long du processus de développement d’une ext
 
    L’agent effectue une évaluation de préparation avant le déploiement.
 
-   ![&#x200B; Évaluation préalable au déploiement &#x200B;](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+   ![Liste de contrôle d’évaluation du niveau de préparation au déploiement de l’agent AI](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 1. Lorsque vous êtes certain des résultats de l’évaluation, demandez à l’agent de procéder au déploiement.
 
    L’agent utilise la boîte à outils MCP pour vérifier, créer et déployer automatiquement.
 
-   ![&#x200B; Déploiement &#x200B;](../assets/deployment-process.png){width="600" zoomable="yes"}
+   ![Création et processus de déploiement de la vérification de la boîte à outils MCP](../assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### Après le déploiement
 
 Vous pouvez tester l’API avant de l’intégrer au storefront. L’agent doit indiquer l’emplacement de la nouvelle action et une stratégie de test.
 
-![Stratégie de test](../assets/testing-strategy.png){width="600" zoomable="yes"}
+Stratégie de test de l’agent ![AI avec URL d’action déployée et commandes de test](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
 Vous pouvez également tester l’API manuellement à l’aide de cURL dans un terminal :
 
@@ -162,7 +164,7 @@ Vous pouvez également tester l’API manuellement à l’aide de cURL dans un t
 curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
-Test ![cURL](../assets/curl-test.png){width="600" zoomable="yes"}
+![Terminal affichant le test cURL réussi de l’API de notation déployée](../assets/curl-test.png){width="600" zoomable="yes"}
 
 ### Intégration à Edge Delivery Services
 
@@ -172,9 +174,9 @@ Pour intégrer l’API de notes à un storefront [!DNL Adobe Commerce] optimisé
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![&#x200B; Contrat de service &#x200B;](../assets/create-contract.png){width="600" zoomable="yes"}
+![Agent AI créant un fichier de contrat de service pour l’intégration de storefront](../assets/create-contract.png){width="600" zoomable="yes"}
 
-![Détails du contrat de service](../assets/contract.png){width="600" zoomable="yes"}
+![Fichier Markdown de contrat de l’API Ratings avec le point d’entrée et les détails de réponse](../assets/contract.png){width="600" zoomable="yes"}
 <!-- 
 Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
 
@@ -246,7 +248,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=fr).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
