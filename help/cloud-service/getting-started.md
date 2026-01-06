@@ -29,7 +29,7 @@ ht-degree: 0%
 * **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** - Gestion des utilisateurs et des rôles
 * **Administrateur Commerce** - Gérer les produits, les commandes, les clients et la configuration de la boutique
 * **[Storefront optimisé par [!DNL Edge Delivery Services]](./storefront.md)** - Créez et personnalisez un storefront orienté client à l’aide d’un système composable et haute performance qui offre une vitesse, un référencement et une expérience utilisateur exceptionnels pour les commerçants et les développeurs
-* **[[!DNL Adobe Developer App Builder]](https://developer.adobe.com/app-builder/)** - Créez des intégrations personnalisées à l’aide de [!DNL App Builder], ainsi que d’autres outils d’extensibilité tels que le [ kit de démarrage d’intégration ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) et [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/)
+* **[[!DNL Adobe Developer App Builder]](https://developer.adobe.com/app-builder/)** - Créez des intégrations personnalisées à l’aide de [!DNL App Builder], ainsi que d’autres outils d’extensibilité tels que le [&#x200B; kit de démarrage d’intégration &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) et [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/)
 
 ## Configuration et gestion
 
@@ -130,7 +130,7 @@ Les sections suivantes décrivent les processus de base à effectuer pour que vo
 
 >[!NOTE]
 >
->Avant de pouvoir créer une instance, l’administrateur produit ou l’administrateur système de votre organisation doit vous ajouter en tant qu’utilisateur du produit [!DNL Adobe Commerce as a Cloud Service]. Voir [ Ajout d’utilisateurs et d’administrateurs ](./user-management.md#add-users-and-admins) pour plus d’informations.
+>Avant de pouvoir créer une instance, l’administrateur produit ou l’administrateur système de votre organisation doit vous ajouter en tant qu’utilisateur du produit [!DNL Adobe Commerce as a Cloud Service]. Voir [&#x200B; Ajout d’utilisateurs et d’administrateurs &#x200B;](./user-management.md#add-users-and-admins) pour plus d’informations.
 
 [!DNL Adobe Commerce as a Cloud Service] instances utilisent un système basé sur les crédits. Vous pouvez créer plusieurs instances, mais chaque instance nécessite des crédits disponibles. Le nombre de crédits dont vous disposez au départ dépend de votre abonnement.
 
