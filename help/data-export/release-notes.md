@@ -41,7 +41,7 @@ Les mises à jour incluent :
 
 ## Version 103.4.15
 
-![Nouveau](../assets/new.svg) Ajout de la prise en charge de l’extension Statut de synchronisation des flux de données pour surveiller et résoudre les problèmes de transfert de données d’Adobe Commerce vers les services connectés (service de catalogue, recherche en direct et recommandations de produits). Pour plus d’informations sur l’installation et l’utilisation de cette extension, voir [Surveillance de l’état de synchronisation des flux de données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) dans le *Guide d’administration de Commerce*. <!--MDEE-954-->
+![Nouveau](../assets/new.svg) Ajout de la prise en charge de l’extension Statut de synchronisation des flux de données pour surveiller et résoudre les problèmes de transfert de données d’Adobe Commerce vers les services connectés (service de catalogue, recherche en direct et recommandations de produits). Pour plus d’informations sur l’installation et l’utilisation de cette extension, voir [Surveillance de l’état de synchronisation des flux de données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=fr) dans le *Guide d’administration de Commerce*. <!--MDEE-954-->
 
 ## Version 103.4.14
 
@@ -58,7 +58,7 @@ Les mises à jour incluent :
 
 ## Version 103.4.11
 
-![Nouveau](../assets/new.svg) [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
+![Nouveau](../assets/new.svg) [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
 Ajout de la prise en charge d’attributs de produit supplémentaires pour inclure la classe de taxe, le jeu d’attributs et les données d’inventaire des configurations de produit Commerce dans le flux de produits. Les clients qui souhaitent inclure ces attributs dans les flux d’exportation de produits doivent ajouter le module Attributs de produit supplémentaires à leur projet Adobe Commerce. Voir [Ajouter une classe de taxe, un jeu d&#39;attributs et des attributs de stock](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![Correctif](../assets/fix.svg) Correction d’un problème qui entraînait une synchronisation incorrecte des mises à jour de produits supprimés si une erreur se produisait pendant un index de produit complet. Désormais, toutes les suppressions de produits sont correctement synchronisées, même si une erreur se produit pendant le processus d’indexation. <!--MDEE-1144-->
 
