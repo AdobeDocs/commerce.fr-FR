@@ -3,9 +3,9 @@ title: Tester et valider
 description: Les tests et la validation permettent de s [!DNL Payment Services] assurer que les fonctions fonctionnent comme prévu et offrent les meilleures options de paiement pour vos clients
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: b75cad4fd71b5ab9c0199ca47800c36cbd1ae76c
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,35 @@ Avant d’exposer [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Ma
 Tester les [!DNL Payment Services] dans un environnement sandbox est une étape de validation importante, même s’il s’agit d’un environnement simulé connecté uniquement au sandbox PayPal, et non à de vraies banques et commerçants.
 
 1. Effectuez un passage en caisse réussi à partir de votre boutique, soit avec les [champs de carte de crédit](payments-options.md#credit-card-fields) ou l&#39;un des [boutons de paiement PayPal](payments-options.md#paypal-smart-buttons). Consultez [Test des informations d’identification](#testing-credentials) pour plus d’informations sur l’utilisation de fausses cartes de crédit pour les tests.
-1. Capturez (lorsque votre action de paiement est [définie sur `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [remboursez](refunds.md) ou [annulez](voids.md) la commande qui vient d’être terminée. Vous pouvez également simplement [créer une facture](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} pour une commande, si votre action de paiement est définie sur `Authorize` au lieu de `Authorize and Capture`.
+1. Capturez (lorsque votre action de paiement est [définie sur `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [remboursez](refunds.md) ou [annulez](voids.md) la commande qui vient d’être terminée. Vous pouvez également simplement [créer une facture](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} pour une commande, si votre action de paiement est définie sur `Authorize` au lieu de `Authorize and Capture`.
 1. Dans les 24 à 48 heures, affichez la transaction et d&#39;autres informations dans le [rapport des paiements](payouts.md).
 1. Voir les détails de la commande dans l&#39;état [Statut du paiement de la commande](order-payment-status.md).
+
+### Test sur les environnements de développement locaux
+
+Le test des méthodes de paiement PayPal, PayLater et Venmo sur les environnements de développement locaux nécessite que votre environnement soit accessible à partir d&#39;Internet. Ces méthodes de paiement utilisent un [rappel d’expédition côté serveur](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) qui nécessite que PayPal communique avec votre instance Commerce pour récupérer les options d’expédition et calculer les totaux.
+
+>[!INFO]
+>
+>Sans une URL accessible sur Internet, le rappel d’expédition ne peut pas fonctionner, ce qui entraîne un flux de passage en caisse différent de celui de la production. Effectuez toujours un test avec une URL accessible pour garantir des résultats précis.
+
+Pour exposer votre environnement local :
+
+1. Utilisez un service de tunneling tel que [ngrok](https://ngrok.com/) pour créer une URL accessible au public pour votre environnement local.
+
+1. Mettez à jour la configuration de votre URL de base Commerce pour qu’elle corresponde à l’URL du groupe :
+
+   ```bash
+   bin/magento config:set web/unsecure/base_url https://your-ngrok-url.ngrok.io/
+   bin/magento config:set web/secure/base_url https://your-ngrok-url.ngrok.io/
+   bin/magento cache:flush
+   ```
+
+1. Complétez vos tests avec les méthodes de paiement PayPal, PayLater ou Venmo.
+
+1. Restaurez la configuration de l’URL de base d’origine une fois le test terminé.
+
+Si le temps de réponse du point d&#39;entrée est inférieur à 5 secondes, PayPal affiche un message d&#39;erreur dans le pop-up.
 
 ### Test des informations d’identification
 
