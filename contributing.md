@@ -58,7 +58,7 @@ Pour signaler un problème de sécurité, [signalez-le à nos experts en sécuri
 
 ## Nouveautés
 
-Si vos modifications introduisent de nouvelles rubriques, des mises à jour importantes ou des corrections qui doivent être mises en évidence, vous pouvez ajouter une brève description à la section [Quoi de neuf ](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) directement à partir du corps de votre requête d’extraction.
+Si vos modifications introduisent de nouvelles rubriques, des mises à jour importantes ou des corrections qui doivent être mises en évidence, vous pouvez ajouter une brève description à la section [Quoi de neuf &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) directement à partir du corps de votre requête d’extraction.
 
 Pour ajouter une mise en surbrillance Nouveautés :
 
