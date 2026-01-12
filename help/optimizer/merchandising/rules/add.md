@@ -1,11 +1,11 @@
 ---
 title: Créer et gérer des règles
 description: Découvrez comment créer et gérer des règles de marchandisage.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2146'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,9 @@ Vous pouvez également cliquer sur l’icône d’épingle pour épingler un pro
 
 >[!NOTE]
 >
->Vous ne pouvez épingler que les produits renvoyés dans la requête.
+>Vous pouvez uniquement épingler les produits qui apparaissent dans les résultats de recherche pour les conditions de requête et de règle configurées.
+>
+>Les produits doivent être indexés, visibles, en stock et respecter tous les filtres de règle pour pouvoir être épinglés. Si un produit n’apparaît pas dans l’aperçu ou dans les résultats de votre règle, l’épinglage n’a aucun effet.
 
 Les événements ou peuvent être définis manuellement :
 
