@@ -1,7 +1,7 @@
 ---
-source-git-commit: f71795ab6a10a28e6352d7adfcffd11a40e8ef67
+source-git-commit: a89282dde7bc6221e8fca79af19ac388e010a143
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,10 @@ ht-degree: 0%
 <table style="table-layout:fixed">
   <tr>
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/?lang=fr"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
 
@@ -41,4 +41,14 @@ ht-degree: 0%
 
 L’authentification et la gestion des identités Adobe Commerce sont gérées par Adobe Identity Management System (IMS) via Adobe Admin Console.
 
-Pour plus d’informations sur les options de configuration de l’identité, notamment Adobe ID, Enterprise ID et Federated ID, ainsi que pour obtenir des instructions sur la configuration de l’authentification unique (SSO) pour un accès sécurisé aux applications Adobe, consultez [Configuration de l’identité et de l’authentification unique](https://helpx.adobe.com/fr/enterprise/using/set-up-identity.html) dans la documentation d’*Enterprise Admin Console*.
+Pour plus d’informations sur les options de configuration de l’identité, notamment Adobe ID, Enterprise ID et Federated ID, ainsi que pour obtenir des instructions sur la configuration de l’authentification unique (SSO) pour un accès sécurisé aux applications Adobe, consultez [Configuration de l’identité et de l’authentification unique](https://helpx.adobe.com/enterprise/using/set-up-identity.html) dans la documentation d’*Enterprise Admin Console*.
+
+## Notes de mise à jour des services et de l’extensibilité d’ACCS {#accs-release}
+
+### Notes de mise à jour supplémentaires
+
+[!DNL Adobe Commerce as a Cloud Service] contient les dernières versions des services de marchandisage, des services de paiement et des versions d’extensibilité. Utilisez les liens suivants pour afficher les notes de mise à jour de chacune d’elles :
+
+| Services tertiaires | Extensibilité | Storefront |
+| --- | --- | --- |
+| <ul><li>[Service de catalogue](../catalog-service/release-notes.md)</li><li>[Recherche en direct](../live-search/release-notes.md)</li><li>[ Services de paiement ](../payment-services/release-notes.md)</li><li>[Recommandations de produits](../product-recommendations/release-notes.md)</li><li>[Exportation de données SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Maillage API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Événements](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[ Webhooks ](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Informations de mise à jour](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[Journal des modifications](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
