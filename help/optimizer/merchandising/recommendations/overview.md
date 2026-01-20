@@ -2,7 +2,7 @@
 title: Présentation de Recommendations
 description: Les recommandations sont un puissant outil marketing que vous pouvez utiliser pour augmenter les conversions, augmenter le chiffre d’affaires et stimuler l’engagement des acheteurs.
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: cb10c802-afaf-40fa-b463-73f5ae507d66
 source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Présentation de Recommendations
 
-Les recommandations sont un puissant outil marketing que vous pouvez utiliser pour augmenter les conversions, augmenter le chiffre d’affaires et stimuler l’engagement des acheteurs. Les recommandations sont optimisées par [Adobe AI](https://business.adobe.com/ai.html), qui utilise l’intelligence artificielle et des algorithmes de machine learning pour effectuer une analyse approfondie des données agrégées des visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, offrent une expérience très attrayante, pertinente et personnalisée.
+Les recommandations sont un puissant outil marketing que vous pouvez utiliser pour augmenter les conversions, augmenter le chiffre d’affaires et stimuler l’engagement des acheteurs. Les recommandations sont optimisées par [Adobe AI](https://business.adobe.com/fr/ai.html), qui utilise l’intelligence artificielle et des algorithmes de machine learning pour effectuer une analyse approfondie des données agrégées des visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, offrent une expérience très attrayante, pertinente et personnalisée.
 
 Les recommandations sont affichées sur le storefront sous la forme d’unités avec des étiquettes, telles que « Les clients qui ont consulté ce produit ont également consulté ». Vous pouvez créer, gérer et déployer des recommandations dans les vues de votre boutique directement depuis Adobe Commerce Optimizer.
 

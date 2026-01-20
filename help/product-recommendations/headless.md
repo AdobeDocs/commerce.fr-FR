@@ -15,7 +15,7 @@ Vous pouvez intégrer [!DNL Product Recommendations] dans un storefront découpl
 
 Les intégrateurs personnalisés et découplés doivent se reporter à ces instructions Luma et PWA en tant que mise en œuvre suggérée. Il existe de nombreuses façons d’implémenter les recommandations de produits dans des solutions découplées et cette documentation ne couvre pas tous les scénarios. Les intégrateurs doivent prendre en charge les événements, la conception et les tests pour leurs implémentations.
 
-[!DNL Product Recommendations] nécessitent des [données comportementales et de catalogue](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) pour fonctionner. Le processus de synchronisation des données de catalogue reste inchangé dans une implémentation découplée, mais des modifications sont nécessaires pour la collecte de données comportementales.
+[!DNL Product Recommendations] nécessitent des [données comportementales et de catalogue](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=fr) pour fonctionner. Le processus de synchronisation des données de catalogue reste inchangé dans une implémentation découplée, mais des modifications sont nécessaires pour la collecte de données comportementales.
 
 >[!NOTE]
 >

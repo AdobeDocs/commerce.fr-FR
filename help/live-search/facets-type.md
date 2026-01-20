@@ -14,7 +14,7 @@ ht-degree: 0%
 [!DNL Live Search] utilise différents types de facettes qui n’apparaissent dans la liste *Filtres* que lorsque cela est pertinent. La liste des facettes disponibles change en fonction des produits renvoyés. Les caractéristiques suivantes affectent leur présentation et leur comportement :
 
 * Facettes épinglées - Les facettes les plus couramment utilisées peuvent être épinglées en haut de la liste. Les facettes restantes sont répertoriées dans l’ordre *Type de tri* après les facettes épinglées.
-* Facettes dynamiques - Attributs de produit que [Adobe AI](https://business.adobe.com/ai.html) trouve les plus pertinents pour un ensemble de produits et une requête. Le calcul prend en compte les métadonnées d’attribut de l’ensemble du catalogue et détermine au moment de la requête les facettes les plus pertinentes pour la requête.
+* Facettes dynamiques - Attributs de produit que [Adobe AI](https://business.adobe.com/fr/ai.html) trouve les plus pertinents pour un ensemble de produits et une requête. Le calcul prend en compte les métadonnées d’attribut de l’ensemble du catalogue et détermine au moment de la requête les facettes les plus pertinentes pour la requête.
 
   >[!NOTE]
   >
@@ -35,7 +35,7 @@ En revanche, les implémentations [découplées](https://developer.adobe.com/com
 
 ### Libellés de facettes
 
-Pour les storefronts [!DNL Commerce], le libellé de la facette est déterminé par le [*Propriétés de l’attribut*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Pour les magasins comportant plusieurs vues, des libellés supplémentaires peuvent être définis sous *Gérer les libellés*. Pour les implémentations découplées, les libellés sont modifiés à partir de l’espace de travail [à facettes](faceting-workspace.md).
+Pour les storefronts [!DNL Commerce], le libellé de la facette est déterminé par le [*Propriétés de l’attribut*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=fr). Pour les magasins comportant plusieurs vues, des libellés supplémentaires peuvent être définis sous *Gérer les libellés*. Pour les implémentations découplées, les libellés sont modifiés à partir de l’espace de travail [à facettes](faceting-workspace.md).
 
 ### Type de tri
 
