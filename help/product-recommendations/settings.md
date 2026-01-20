@@ -2,7 +2,7 @@
 title: Paramètres
 description: Découvrez comment modifier la source de vos  [!DNL Product Recommendations]  et comment activer les recommandations visuelles.
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Paramètres
 
-Lorsque vous [configurez un espace de données SaaS](../landing/saas.md#saas-configuration) pour Recommendations, l’espace de données SaaS collecte des données de catalogue et stocke les données comportementales. [Adobe Sensei](https://www.adobe.com/sensei.html) analyse les données et calcule les associations de produits utilisées pour les recommandations de produits.
+Lorsque vous [configurez un espace de données SaaS](../landing/saas.md#saas-configuration) pour Recommendations, l’espace de données SaaS collecte des données de catalogue et stocke les données comportementales. [Adobe AI](https://business.adobe.com/ai.html) analyse les données et calcule les associations de produits utilisées pour les recommandations de produits.
 
 Les environnements hors production à des fins de test ou d&#39;évaluation ne disposent généralement pas de la quantité ou de la qualité des données comportementales du storefront pour fournir des recommandations de produits réalistes. Le comportement réel de l’acheteur à grande échelle ne peut être capturé que dans un environnement de production. Pour résoudre ce problème, Adobe Commerce vous permet d’utiliser les recommandations de produits de votre environnement de production avec d’autres espaces de données SaaS hors production. L’utilisation de données storefront réelles dans un environnement hors production vous permet de prévisualiser les recommandations que vos clients voient et d’expérimenter avec différents types de recommandations et emplacements d’emplacement. Les recommandations d’un autre espace de données SaaS peuvent être prévisualisées par les acheteurs, mais pas cliquées.
 

@@ -2,7 +2,7 @@
 title: Découplé
 description: Découvrez comment intégrer  [!DNL Product Recommendations]  dans un storefront découplé.
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Vous pouvez intégrer [!DNL Product Recommendations] dans un storefront découpl
 
 Les intégrateurs personnalisés et découplés doivent se reporter à ces instructions Luma et PWA en tant que mise en œuvre suggérée. Il existe de nombreuses façons d’implémenter les recommandations de produits dans des solutions découplées et cette documentation ne couvre pas tous les scénarios. Les intégrateurs doivent prendre en charge les événements, la conception et les tests pour leurs implémentations.
 
-[!DNL Product Recommendations] nécessitent des [données comportementales et de catalogue](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=fr) pour fonctionner. Le processus de synchronisation des données de catalogue reste inchangé dans une implémentation découplée, mais des modifications sont nécessaires pour la collecte de données comportementales.
+[!DNL Product Recommendations] nécessitent des [données comportementales et de catalogue](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) pour fonctionner. Le processus de synchronisation des données de catalogue reste inchangé dans une implémentation découplée, mais des modifications sont nécessaires pour la collecte de données comportementales.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Les intégrateurs personnalisés et découplés doivent se reporter à ces instr
 
 Pour intégrer [!DNL Product Recommendations] dans un storefront découplé, vous devez :
 
-1. Envoyez des données comportementales à Adobe Sensei pour analyser et calculer les résultats des recommandations de produits. Vous pouvez également envoyer des données supplémentaires pour activer la recommandation de produit [rapport de mesures](workspace.md).
+1. Envoyez des données comportementales à l’IA d’Adobe pour analyser et calculer les résultats des recommandations de produits. Vous pouvez également envoyer des données supplémentaires pour activer la recommandation de produit [rapport de mesures](workspace.md).
 
 1. Récupérez les résultats des recommandations de produits et effectuez leur rendu sur la page.
 
@@ -50,7 +50,7 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
    | `rec-click` | recommendation-unit |
    | `rec-add-to-cart-click` | recommendation-unit (si un bouton « Ajouter au panier » est présent dans le modèle de recommandations) |
 
-1. Lorsque les événements sont déclenchés, utilisez le [collecteur d’événements du storefront d’Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) pour gérer les événements et les envoyer à Adobe Sensei.
+1. Lorsque les événements sont déclenchés, utilisez le [collecteur d’événements du storefront Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) pour gérer les événements et les envoyer à l’IA Adobe.
 
 1. Une fois les données comportementales collectées, vous pouvez [créer](create.md) [!DNL Product Recommendations] dans l’Administration.
 

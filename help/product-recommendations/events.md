@@ -3,7 +3,7 @@ title: Collecter des données
 description: Découvrez comment les événements collectent des données pour  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: d770d4d99802f7ecf6e395518dfc9aeaac9aa130
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Consultez la [documentation pour les développeurs](https://developer.adobe.com/
 
 ## Clients du secteur de la santé
 
-Si vous êtes un client du secteur de la santé et que vous avez installé l’extension [Data Services HIPAA](../data-connection/hipaa-readiness.md#installation), qui fait partie de l’extension [Data Connection](../data-connection/overview.md), les données d’événement de storefront utilisées par [!DNL Product Recommendations] ne sont plus capturées. En effet, les données d’événement de storefront sont générées côté client. Pour continuer à capturer et à envoyer des données d’événement de storefront, réactivez la collecte d’événements pour [!DNL Product Recommendations]. Voir [configuration générale](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/general/general#data-services) pour en savoir plus.
+Si vous êtes un client du secteur de la santé et que vous avez installé l’extension [Data Services HIPAA](../data-connection/hipaa-readiness.md#installation), qui fait partie de l’extension [Data Connection](../data-connection/overview.md), les données d’événement de storefront utilisées par [!DNL Product Recommendations] ne sont plus capturées. En effet, les données d’événement de storefront sont générées côté client. Pour continuer à capturer et à envoyer des données d’événement de storefront, réactivez la collecte d’événements pour [!DNL Product Recommendations]. Voir [configuration générale](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) pour en savoir plus.
 
 ## Types de données et événements
 
@@ -31,7 +31,7 @@ Il existe deux types de données utilisées dans les recommandations de produits
 - **Comportemental** - Données provenant de l’engagement d’un acheteur sur votre site, telles que les consultations de produits, les articles ajoutés au panier et les achats.
 - **Catalogue** - Métadonnées du produit, telles que le nom, le prix, la disponibilité, etc.
 
-Lorsque vous installez le module `magento/product-recommendations`, Adobe Sensei agrège les données comportementales et de catalogue, créant des recommandations de produits pour chaque type de recommandation. Le service de recommandations de produits déploie ensuite ces recommandations sur votre storefront sous la forme d’un widget qui contient les _éléments_ de produit recommandés.
+Lorsque vous installez le module `magento/product-recommendations`, l’IA d’Adobe agrège les données comportementales et de catalogue, créant des recommandations de produits pour chaque type de recommandation. Le service de recommandations de produits déploie ensuite ces recommandations sur votre storefront sous la forme d’un widget qui contient les _éléments_ de produit recommandés.
 
 Certains types de recommandations utilisent les données comportementales de vos clients pour entraîner des modèles de machine learning afin de créer des recommandations personnalisées. D’autres types de recommandations utilisent uniquement les données de catalogue et n’utilisent aucune donnée comportementale. Si vous souhaitez commencer rapidement à utiliser les recommandations de produits sur votre site, vous pouvez utiliser les types de recommandations de catalogue uniquement suivants :
 
@@ -42,7 +42,7 @@ Certains types de recommandations utilisent les données comportementales de vos
 
 Quand pouvez-vous commencer à utiliser des types de recommandations qui utilisent des données comportementales ? Ça dépend. C’est ce qu’on appelle le problème _Cold Start_.
 
-Le problème du _démarrage à froid_ fait référence au temps nécessaire pour qu’un modèle s’entraîne et devienne efficace. Pour les recommandations de produits, cela signifie attendre qu’Adobe Sensei collecte suffisamment de données pour entraîner ses modèles de machine learning avant de déployer des unités de recommandation sur votre site. Plus les modèles contiennent de données, plus les recommandations sont précises et utiles. Comme la collecte de données se produit sur un site en ligne, il est préférable de démarrer ce processus rapidement en installant et en configurant le module `magento/production-recommendations`.
+Le problème du _démarrage à froid_ fait référence au temps nécessaire pour qu’un modèle s’entraîne et devienne efficace. Pour les recommandations de produits, cela signifie attendre que l’IA dédiée à Adobe collecte suffisamment de données pour entraîner ses modèles de machine learning avant de déployer des unités de recommandation sur votre site. Plus les modèles contiennent de données, plus les recommandations sont précises et utiles. Comme la collecte de données se produit sur un site en ligne, il est préférable de démarrer ce processus rapidement en installant et en configurant le module `magento/production-recommendations`.
 
 Le tableau suivant fournit des instructions générales sur le temps nécessaire à la collecte de suffisamment de données pour chaque type de recommandation :
 
@@ -87,4 +87,4 @@ Si la collecte des données d’entrée est insuffisante, les types de recommand
 
 >[!NOTE]
 >
->Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) est activé, Adobe Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas consenti à l’utilisation de cookies. Si le Mode de restriction des cookies est désactivé, Adobe Commerce collecte des données comportementales par défaut.
+>Si le [Mode de restriction des cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) est activé, Adobe Commerce ne collecte pas de données comportementales tant que l’acheteur n’a pas consenti à l’utilisation de cookies. Si le Mode de restriction des cookies est désactivé, Adobe Commerce collecte des données comportementales par défaut.

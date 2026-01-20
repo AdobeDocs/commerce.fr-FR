@@ -3,8 +3,8 @@ title: Marchandisage de catégorie
 description: Utilisez  [!DNL Live Search]  marchandisage de catégorie pour une expérience d’achat plus rapide.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
-source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Le marchandisage de catégorie permet aux propriétaires de magasin d’applique
 
 Cette vidéo présente le marchandisage des catégories.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448853?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 Cette fonctionnalité est accessible dans l’administration à l’adresse **Marketing** > SEO et recherche > **[!DNL Live Search]** > **Marchandisage de catégorie**.
 
@@ -42,7 +42,7 @@ Vous pouvez rechercher une catégorie ou une sous-catégorie dans le champ « Re
 Le marchandisage de catégorie utilise les mêmes types de classement que pour les [produits individuels](rules-workspace.md).
 Il existe deux types de classement : Intelligent et Manuel.
 
-**Classement intelligent** exploite l’analyse des données comportementales du storefront par [Adobe Sensei](https://www.adobe.com/sensei.html) pour trier tous les produits dans les catégories sélectionnées selon un certain algorithme. Une fois le classement intelligent choisi, l’ordre spécifique des produits devrait changer au fil du temps, car les données sous-jacentes sont réanalysées régulièrement par Adobe Sensei. Par exemple, les produits les plus en vogue changent automatiquement au fil du temps en fonction des préférences des acheteurs.
+**Classement intelligent** exploite l’analyse des données comportementales du storefront par l’[IA dédiée à Adobe](https://business.adobe.com/ai.html) pour trier tous les produits au sein des catégories sélectionnées selon un certain algorithme. Une fois un classement intelligent choisi, l’ordre spécifique des produits devrait changer au fil du temps, car les données sous-jacentes sont réanalysées en permanence par l’IA dédiée à Adobe. Par exemple, les produits les plus en vogue changent automatiquement au fil du temps en fonction des préférences des acheteurs.
 Les méthodes de classement intelligentes sont les suivantes :
 
 * Les plus achetés : classe les produits en fonction de la fréquence à laquelle ils ont été achetés par les acheteurs au cours des sept jours précédents.
@@ -98,7 +98,7 @@ Pour créer une règle de catégorie, procédez comme suit :
 La page Aperçu de la catégorie affiche les résultats réels du classement sélectionné, à l’aide de vos données Live Search.
 1. Cliquez sur **Enregistrer et publier** pour enregistrer la règle.
 
-![Sélectionnez la méthode de classement Intelligent &#x200B;](assets/category_ranking.png)
+![Sélectionnez la méthode de classement Intelligent ](assets/category_ranking.png)
 
 Le service [!DNL Live Search] traite la règle et l’active sur le magasin une fois l’opération terminée.
 

@@ -2,7 +2,7 @@
 title: Types de recommandations
 description: Découvrez les recommandations que vous pouvez déployer sur différentes pages de votre site.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
-source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 0%
@@ -85,14 +85,14 @@ Ces types de recommandations recommandent les produits les plus populaires ou le
 
 >[!NOTE]
 >
->Les recommandations basées sur la popularité nécessitent des données d’événement suffisantes de votre storefront. Si votre boutique est nouvelle ou a un faible trafic, ces types de recommandations peuvent renvoyer des résultats limités ou aucun résultat jusqu’à ce que des données comportementales adéquates aient été collectées. Surveillez votre [&#x200B; indicateur de préparation des données &#x200B;](workspace.md) pour garantir des performances optimales.
+>Les recommandations basées sur la popularité nécessitent des données d’événement suffisantes de votre storefront. Si votre boutique est nouvelle ou a un faible trafic, ces types de recommandations peuvent renvoyer des résultats limités ou aucun résultat jusqu’à ce que des données comportementales adéquates aient été collectées. Surveillez votre [ indicateur de préparation des données ](workspace.md) pour garantir des performances optimales.
 
 | Type | Description |
 |---|---|
 | Les plus consultés | Recommande les produits qui ont été consultés le plus en comptant le nombre de sessions pour lesquelles une action d’affichage a eu lieu au cours des sept derniers jours.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Les plus populaires<br/>- Tendance<br/>- Populaire en ce moment<br/>- Récemment populaire<br/>- Produits populaires inspirés par ce produit (PDP)<br/>- Meilleures ventes |
 | Les plus achetés | Recommande les produits achetés le plus souvent par les acheteurs au cours des sept derniers jours.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/> - Les plus populaires<br/>- Tendance<br/>- Populaire en ce moment<br/>- Récemment populaire<br/>- Produits populaires inspirés par ce produit (PDP)<br/>- Meilleures ventes |
 | Les plus ajoutés au panier | Recommande les produits les plus fréquemment ajoutés au panier par les acheteurs au cours des sept derniers jours. Ce type de recommandation peut être utilisé sur toutes les pages.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/> - Les plus populaires<br/>- Tendance<br/>- Populaire en ce moment<br/>- Récemment populaire<br/>- Produits populaires inspirés par ce produit (PDP)<br/>- Meilleures ventes |
-| En Tendance | Recommande des produits en fonction de l’élan récent de popularité d’un produit sur l’ensemble de votre site.<br/><br/>Adobe Sensei agrège les données de navigation et d’achat sur votre site afin de déterminer et de classer les produits les plus récemment populaires auprès de vos clientes et clients. Parce que Trending analyse l’élan récent d’un produit, il s’agit d’un type de recommandation efficace pour les catalogues qui ont un chiffre d’affaires élevé. Si votre catalogue est plus statique, il peut ne pas être aussi utile sauf si les modèles d’achat de votre audience sont très variables.<br/><br/>Lorsqu’il est utilisé sur la page d’accueil, Trending recommande des produits qui sont récemment populaires sur l’ensemble du site. La tendance n’affiche pas les produits qui sont constamment populaires, mais plutôt ceux qui sont récemment devenus populaires. Par exemple, si vous disposez d’une campagne de marketing par e-mail faisant la promotion de certains produits, l’augmentation de popularité générée par l’e-mail augmente la probabilité que les produits promus soient classés comme étant en tendance.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Tendance<br/>- Tendance actuelle<br/>- Tendance récente<br/>- Produits chauds<br/>- Tendance des produits associés (PDP) |
+| En Tendance | Recommande des produits en fonction de l’élan récent de popularité d’un produit sur l’ensemble de votre site.<br/><br/>L’IA d’Adobe agrège les données de navigation et d’achat sur votre site afin de déterminer et de classer les produits les plus récemment populaires auprès de vos clientes et clients. Parce que Trending analyse l’élan récent d’un produit, il s’agit d’un type de recommandation efficace pour les catalogues qui ont un chiffre d’affaires élevé. Si votre catalogue est plus statique, il peut ne pas être aussi utile sauf si les modèles d’achat de votre audience sont très variables.<br/><br/>Lorsqu’il est utilisé sur la page d’accueil, Trending recommande des produits qui sont récemment populaires sur l’ensemble du site. La tendance n’affiche pas les produits qui sont constamment populaires, mais plutôt ceux qui sont récemment devenus populaires. Par exemple, si vous disposez d’une campagne de marketing par e-mail faisant la promotion de certains produits, l’augmentation de popularité générée par l’e-mail augmente la probabilité que les produits promus soient classés comme étant en tendance.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Tendance<br/>- Tendance actuelle<br/>- Tendance récente<br/>- Produits chauds<br/>- Tendance des produits associés (PDP) |
 
 ## Très performant {#highperf}
 
@@ -124,7 +124,7 @@ Le type de recommandation _Similarité visuelle_ offre des recommandations pour 
 - Matériau
 - Style
 
-Adobe Sensei utilise l’IA pour traiter et analyser les images de votre catalogue et créer des attributs utilisés pour déterminer les similitudes visuelles.
+L’IA d’Adobe utilise l’IA pour traiter et analyser les images de votre catalogue et créer des attributs utilisés pour déterminer les similitudes visuelles.
 
 >[!NOTE]
 >
@@ -152,7 +152,7 @@ Comme ce type de recommandation ne s’applique pas à la plupart des catalogues
 
    La page [Créer une recommandation](create.md) affiche désormais **Similarité visuelle** comme un type de recommandation sélectionnable lorsque le type de page est **Détails du produit**.
 
-Après avoir activé les recommandations visuelles, Adobe Sensei lance le traitement des images. Sa durée dépend de la taille de votre catalogue.
+Une fois que vous avez activé les recommandations visuelles, l’IA Adobe lance le traitement des images. Sa durée dépend de la taille de votre catalogue.
 
 ### Cas d’utilisation
 

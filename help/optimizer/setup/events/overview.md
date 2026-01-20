@@ -4,7 +4,7 @@ description: Découvrez les événements que  [!DNL Adobe Commerce Optimizer]  u
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Les recommandations utilisent deux types de données :
 - **Comportemental** - Données provenant de l’engagement d’un acheteur sur votre site, telles que les consultations de produits, les articles ajoutés au panier et les achats.
 - **Catalogue** - Métadonnées du produit, telles que le nom, le prix, la disponibilité, etc.
 
-Adobe Sensei agrège les données comportementales et de catalogue, créant des recommandations pour chaque type de recommandation. Le service Recommendations déploie ensuite ces recommandations sur votre storefront sous la forme d’un widget qui contient les _éléments_ de produit recommandés.
+L’IA d’Adobe agrège les données comportementales et de catalogue, créant des recommandations pour chaque type de recommandation. Le service Recommendations déploie ensuite ces recommandations sur votre storefront sous la forme d’un widget qui contient les _éléments_ de produit recommandés.
 
 Certains types de recommandations utilisent les données comportementales de vos clients pour entraîner des modèles de machine learning afin de créer des recommandations personnalisées. D’autres types de recommandations utilisent uniquement les données de catalogue et n’utilisent aucune donnée comportementale. Si vous souhaitez commencer rapidement à utiliser Recommendations sur votre site, vous pouvez utiliser le type de recommandation `More like this`.
 
@@ -86,7 +86,7 @@ Certains types de recommandations utilisent les données comportementales de vos
 
 Quand pouvez-vous commencer à utiliser des types de recommandations qui utilisent des données comportementales ? Ça dépend. C’est ce qu’on appelle le problème _Cold Start_.
 
-Le problème du _démarrage à froid_ fait référence au temps nécessaire pour qu’un modèle s’entraîne et devienne efficace. Pour les recommandations, cela signifie qu’il faut attendre qu’Adobe Sensei collecte suffisamment de données pour entraîner ses modèles de machine learning avant de déployer des unités de recommandation sur votre site. Plus les modèles contiennent de données, plus les recommandations sont précises et utiles. Étant donné que la collecte de données se produit sur un site en ligne, il est préférable de démarrer ce processus rapidement.
+Le problème du _démarrage à froid_ fait référence au temps nécessaire pour qu’un modèle s’entraîne et devienne efficace. Pour les recommandations, cela signifie attendre que l’IA dédiée à Adobe collecte suffisamment de données pour entraîner ses modèles de machine learning avant de déployer des unités de recommandation sur votre site. Plus les modèles contiennent de données, plus les recommandations sont précises et utiles. Étant donné que la collecte de données se produit sur un site en ligne, il est préférable de démarrer ce processus rapidement.
 
 Le tableau suivant fournit des instructions générales sur le temps nécessaire à la collecte de suffisamment de données pour chaque type de recommandation :
 
@@ -148,7 +148,7 @@ Les événements suivants sont requis pour renseigner le tableau de bord [Perfor
 | CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 | vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 
-Les événements suivants ne sont pas spécifiques à Recommendations, mais sont nécessaires pour qu’Adobe Sensei interprète correctement les données de l’acheteur :
+Les événements suivants ne sont pas spécifiques à Recommendations, mais sont nécessaires pour que l’IA dédiée à Adobe interprète correctement les données de l’acheteur :
 
 - `view`
 - `add-to-cart`
@@ -174,4 +174,4 @@ Ce tableau décrit les événements utilisés par chaque type de recommandation.
 
 ## Support technique
 
-Si vous constatez des incohérences dans les données ou si les recommandations et les résultats de recherche ne fonctionnent pas comme prévu, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si vous constatez des incohérences dans les données ou si les recommandations et les résultats de recherche ne fonctionnent pas comme prévu, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
