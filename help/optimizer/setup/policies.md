@@ -2,11 +2,11 @@
 title: Politiques
 description: Découvrez comment créer et gérer des politiques dans  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: 845d93e367c8e2495943afe8c7d5d0a4bde990c2
+source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Dans cette section, vous allez créer une nouvelle politique. La politique peut 
    1. **Attribut** - Saisissez un attribut de votre catalogue. Par exemple, « part_category ». Ce nom doit correspondre exactement au nom de l’attribut dans votre catalogue.
    1. **Opérateur** - Sélectionnez l’opérateur. Par exemple, **IN**. &#x200B;
    1. **Valeur Source** - Sélectionnez **STATIQUE**. &#x200B;
-   1. **Valeur** - Saisissez une valeur à partir de la définition d’attribut que vous avez précédemment spécifiée. Par exemple, entrez « freins » pour créer un filtre pour les pièces de frein. &#x200B;La valeur doit correspondre exactement au nom de l’attribut.
+   1. **Valeur** - Saisissez une valeur à partir de la définition d’attribut que vous avez précédemment spécifiée. Par exemple, entrez « freins » pour créer un filtre pour les pièces de frein.
    1. Pour enregistrer la valeur, appuyez sur **Entrée**.
 
       Si la politique est conçue pour filtrer selon plusieurs valeurs, saisissez chaque valeur séparément.

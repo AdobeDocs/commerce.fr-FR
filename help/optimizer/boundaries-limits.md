@@ -2,11 +2,11 @@
 title: Limites et limites
 description: Comprenez  [!DNL Adobe Commerce Optimizer]  limites et les limites pour planifier la capacité et éviter les problèmes de performances.
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: f9ac230d448f071e6e8e6368b940f0c415abb02b
+source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1337'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ Votre utilisation doit respecter ces limites. Leur dépassement peut entraîner 
 
 ## Demander une capacité supplémentaire
 
-Les limites de licence peuvent être augmentées en achetant les packages de licence décrits dans la section [&#x200B; Limites de licence et limites système &#x200B;](#license-limits-and-system-boundaries) ou en négociant des licences personnalisées pour des cas d’utilisation uniques. Contactez votre représentant de compte Adobe pour discuter de vos besoins.
+Les limites de licence peuvent être augmentées en achetant les packages de licence décrits dans la section [ Limites de licence et limites système ](#license-limits-and-system-boundaries) ou en négociant des licences personnalisées pour des cas d’utilisation uniques. Contactez votre représentant de compte Adobe pour discuter de vos besoins.
 
-Pour toute question sur les limites du système, contactez l’[assistance Adobe](https://experienceleague.adobe.com/home?lang=fr#support).
+Pour toute question sur les limites du système, contactez l’[assistance Adobe](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Prévention des problèmes de performances
 
@@ -149,7 +149,6 @@ Les fonctionnalités suivantes sont disponibles pour les recommandations de prod
 | --- | --- | --- | --- |
 | Unités de recommandation actives | Nombre de composants de recommandations en direct sur votre storefront (par exemple, « Les clients ont également consulté » ou « Vous pourriez également aimer ») | 50 | Non |
 | Inclusions/exclusions de catégories ou d’attributs | Filtrer les produits selon un ensemble spécifique éligible aux recommandations | Non pris en charge | |
-| Prévisualiser les recommandations | Prévisualiser l’affichage des recommandations sur le storefront avant publication | Non pris en charge | |
 
 {style="table-layout:auto"}
 
@@ -157,7 +156,7 @@ Les fonctionnalités suivantes sont disponibles pour les recommandations de prod
 
 | **Fonction** | **Description** | **Affectation de base** | **Extensible ?** | **Notes** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacité à créer des extensions et des intégrations natives au cloud | Basé sur le niveau GMV<p>Allocation minimale : 1 pack/an</p> | Oui<p>Ajouter des packs supplémentaires</p> | Pour les limites définies par pack, voir :<ul><li>[Description du produit App Builder](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-developer-app-builder.html) pour les limites définies par pack.</li><li>[Paramètres système et limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) dans les *Guides d’exécution d’App Builder*.</li><li>[Exigences de stockage App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacité à créer des extensions et des intégrations natives au cloud | Basé sur le niveau GMV<p>Allocation minimale : 1 pack/an</p> | Oui<p>Ajouter des packs supplémentaires</p> | Pour les limites définies par pack, voir :<ul><li>[Description du produit App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) pour les limites définies par pack.</li><li>[Paramètres système et limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) dans les *Guides d’exécution d’App Builder*.</li><li>[Exigences de stockage App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
