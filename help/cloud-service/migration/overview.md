@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Pour plus d’informations sur les outils de migration, consultez la section [ Outil de migration de données en bloc ](./bulk-data.md).
+>Pour plus d’informations sur les outils de migration, consultez la section [&#x200B; Outil de migration de données en bloc &#x200B;](./bulk-data.md).
 
 ## Comprendre le changement - comparer PaaS et SaaS
 
@@ -75,7 +75,7 @@ Comme l’indique le tableau, les mesures d’atténuation pour chaque migration
 * **Migration des données** : à l’aide de l’[outil de migration](./bulk-data.md) fourni pour migrer les données de votre instance existante vers [!DNL Adobe Commerce as a Cloud Service].
 * **Storefront** : les vitrines Commerce existantes optimisées par Edge Delivery et les vitrines sans tête ne nécessitent pas d’atténuation, mais les vitrines Luma nécessitent une migration vers Commerce Storefront optimisées par Edge Delivery. PWA Studio vitrines peuvent être migrées vers Commerce Storefront optimisées par Edge Delivery ou conservées dans leur état actuel. Adobe fournira des accélérateurs pour faciliter la migration des vitrines.
 * **[Maillage](https://developer.adobe.com/graphql-mesh-gateway)** API : créez un maillage ou modifiez le maillage existant. Adobe fournirons des maillages préconfigurés pour faciliter ce processus.
-* **Intégrations : toutes les intégrations** doivent tirer parti du [kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) de démarrage d’intégration ou de l’API [[!DNL Adobe Commerce as a Cloud Service] ](https://developer.adobe.com/commerce/webapi/reference/rest/saas/)REST.
+* **Intégrations : toutes les intégrations** doivent tirer parti du [kit](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) de démarrage d’intégration ou de l’API [[!DNL Adobe Commerce as a Cloud Service] &#x200B;](https://developer.adobe.com/commerce/webapi/reference/rest/saas/)REST.
 * **Personnalisations** : toutes les personnalisations doivent être déplacées vers App Builder et API Mesh.
 * **Gestion Assets**—La gestion de toutes les ressources nécessite une migration. Si vous utilisez déjà [!DNL AEM Assets], il n’est pas nécessaire d’effectuer une migration.
 * **Extensions** : toutes les extensions en cours de traitement doivent être recréées en tant qu’extensions hors processus. D’ici la fin de l’année 2025, Adobe donnera accès à nos extensions les plus populaires afin de réduire les temps de création.
