@@ -1,12 +1,12 @@
 ---
 title: Outil de migration de données en bloc
-description: Découvrez comment utiliser l’outil de migration de données en bloc pour migrer les données de votre instance Adobe Commerce on Cloud existante vers  [!DNL Adobe Commerce as a Cloud Service].
+description: Découvrez comment utiliser l’outil de migration de données en masse pour migrer des données de votre instance [!DNL Adobe Commerce as a Cloud Service] Adobe Commerce on Cloud existante.
 feature: Cloud
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 06bdcfbff5d376064b18bdab3945e7609075b8bc
+source-git-commit: e582ce85b58b57922a8cdd63dbe32bd0f08c64f9
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 0%
@@ -30,10 +30,10 @@ L’image suivante présente l’architecture et les composants clés pour l’u
 Le workflow de migration des données en masse comprend les étapes suivantes :
 
 1. Configurez un nouvel environnement pour la migration.
-1. Copiez les données de l’ancien système.
-1. Déplacez vos données vers le nouveau système.
-1. Rendez votre catalogue de produits disponible dans le nouveau système.
-1. Vérifiez que vos données ont été correctement migrées.
+1. Copiez les données de votre ancien système.
+1. Déplacez vos données dans le nouveau système.
+1. Rendre votre catalogue de produits disponible dans le nouveau système.
+1. Vérifiez que vos données ont été migrées correctement.
 
 Les sections suivantes décrivent ces étapes en détail.
 
@@ -41,12 +41,12 @@ Les sections suivantes décrivent ces étapes en détail.
 
 La disponibilité de l’outil de migration de données en bloc est la suivante :
 
-- **T4 2025** (pas encore disponible) - Après la version initiale de l’outil de migration de données en masse, vous pourrez y accéder en soumettant un ticket d’assistance.
-- **T4 2025** (pas encore disponible) - Après la publication publique de l’outil de migration de données en masse, il sera accessible à partir de cette page.
+- **T1 2026** (pas encore disponible) - Après la version initiale de l’outil de migration de données en masse, vous pourrez y accéder en envoyant un ticket d’assistance.
+- **T1 2026** (pas encore disponible) - Après la publication publique de l’outil de migration de données en masse, il sera accessible à partir de cette page.
 
-## Créer un environnement cible
+## Création d’un environnement cible
 
-Le programme de mise en œuvre de solutions (SI) crée un environnement cible pour la migration. Cet environnement stocke les données migrées à partir de l’instance source.
+L’implémentateur de solutions (SI) crée un environnement cible pour la migration. Cet environnement stocke les données migrées depuis l’instance source.
 
 Tout d’abord, [créez une nouvelle instance  [!DNL Adobe Commerce as a Cloud Service] (SaaS)](../getting-started.md#create-an-instance).
 
@@ -62,7 +62,7 @@ Utilisez l’outil d’extraction pour extraire des données de l’instance sou
       - Identifiant client
       - Secret client
       - Portées IMS
-      - URL IMS : URL de base. Par exemple, `https://ims-na1.adobelogin.com/`.
+      - URL IMS - URL de base. Par exemple, `https://ims-na1.adobelogin.com/`.
       - Identifiant de l’organisation IMS
 
    Pour les étendues IMS et d’autres valeurs, sélectionnez votre type OAuth dans la section **Informations d’identification** au sein de votre projet dans le [Adobe Developer Console](https://developer.adobe.com/console/). Vous trouverez plus d’informations dans le fichier `.example.env` inclus avec l’outil d’extraction.
@@ -75,11 +75,11 @@ Avant d’exécuter l’outil d’extraction, le responsable de la mise en œuvr
 magento-cloud tunnel:open
 ```
 
-Exécutez ensuite l’outil d’extraction qui :
+Lancez ensuite l’outil d’extraction, qui va :
 
-1. Connectez-vous à la base de données PaaS, analysez son schéma et comparez-le aux détails du schéma du client SaaS.
-1. Générer un plan d&#39;extraction et de transformation basé sur les éléments de schéma communs entre PaaS et SaaS.
-1. Extrayez les données à l’aide du service de gestion des données de catalogue (CDMS).
+1. Connectez-vous à la base de données PaaS, analysez son schéma et comparez-le avec les détails du schéma du locataire SaaS.
+1. Générer un plan d’extraction et de transformation basé sur les éléments de schéma communs entre PaaS et SaaS.
+1. Extract les données à l’aide du service CDMS (Catalog Data Management Service).
 
 ### Charger les données
 
@@ -91,21 +91,21 @@ Exécutez l’outil de chargement de données fourni par Adobe. Cet outil :
 1. Traitez les supports du catalogue et transférez-les vers l’environnement cible.
 1. Videz le cache Redis SaaS et invalidez les index de base de données pour le client.
 
-### Ingestion des données de catalogue
+### Ingestion des données du catalogue
 
-Une fois les données chargées, elles sont automatiquement transférées de la base de données du client SaaS vers le service de catalogue.
+Une fois les données chargées, les données de catalogue circulent automatiquement de la base de données client SaaS vers le service de catalogue.
 
-Le service de catalogue partage ces données avec Live Search et les recommandations de produits. Aucune intervention manuelle n’est nécessaire pour ce processus. Les données sont disponibles dans tous les services une fois l’ingestion terminée.
+Le service de catalogue partage ces données avec Live Search et les Recommendations de produits. Aucune intervention manuelle n’est nécessaire pour ce processus. Une fois l’ingestion terminée, les données sont disponibles dans tous les services.
 
 ### Vérification de l&#39;intégrité des données
 
 Après la migration, CDMS effectue les contrôles automatiques d’intégrité des données suivants pour s’assurer de la précision et de l’exhaustivité des données migrées :
 
-**Vérification basée sur les API**
+**Vérification basée sur une API**
 
-Lors de la vérification, le système de gestion de la cohérence des données compare les réponses de l’API REST et GraphQL des requêtes précédemment exécutées aux enregistrements correspondants de l’instance cible. Toutes les incohérences sont visibles dans le statut de migration.
+Lors de la vérification, CDMS compare les réponses de l’API REST et GraphQL des requêtes précédemment exécutées avec les enregistrements correspondants de l’instance cible. Les écarts sont visibles dans l’état de migration.
 
-**Vérification au niveau de la base**
+**Vérification au niveau de la base de données**
 
 Lors de la vérification, le CDMS compte le nombre d’enregistrements extraits et compare ce nombre à la quantité d’enregistrements chargés.
 
