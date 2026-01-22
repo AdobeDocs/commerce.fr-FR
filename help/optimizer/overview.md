@@ -93,4 +93,4 @@ Les principales fonctionnalités sont les suivantes :
 
 Le diagramme suivant décrit l’architecture de base de [!DNL Adobe Commerce Optimizer], de l’ingestion des données du catalogue à la relation entre les services de marchandisage, votre storefront, l’intégration à un panier tiers et le processus de passage en caisse.
 
-![[!DNL Adobe Commerce Optimizer] Architecture ](./assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] Architecture &#x200B;](./assets/architecture.png)
