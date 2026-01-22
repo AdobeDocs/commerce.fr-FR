@@ -2,11 +2,11 @@
 title: Qu’est-ce que Adobe Commerce Optimizer ?
 description: En savoir plus sur  [!DNL Adobe Commerce Optimizer]  et ses principales fonctionnalités.
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Avec [!DNL Adobe Commerce Optimizer], vous pouvez :
 
 Regardez la vidéo suivante pour un aperçu général de [!DNL Adobe Commerce Optimizer] :
 
->[!VIDEO](https://video.tv.adobe.com/v/3450465?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Qui profite le plus de [!DNL Adobe Commerce Optimizer] ?
 
@@ -85,8 +85,12 @@ Les principales fonctionnalités sont les suivantes :
 - **Commerce storefront optimisé par Edge Delivery** - avec la diffusion Edge, vous pouvez lancer rapidement votre site à l’aide de composants storefront préconfigurés dotés d’une fonctionnalité commerciale intégrée, notamment des pages de liste de produits, des pages de détails de produits, un panier et un passage en caisse.
 - **Panier et passage en caisse tiers** - Utilisez le maillage API et le créateur d’applications pour l’intégration aux systèmes de panier et de passage en caisse tiers.
 
+>[!NOTE]
+>
+>Pour comprendre les limites du système et les licences pour les fonctionnalités de [!DNL Adobe Commerce Optimizer], consultez la rubrique [Limites et limites](boundaries-limits.md).
+
 ## Architecture
 
 Le diagramme suivant décrit l’architecture de base de [!DNL Adobe Commerce Optimizer], de l’ingestion des données du catalogue à la relation entre les services de marchandisage, votre storefront, l’intégration à un panier tiers et le processus de passage en caisse.
 
-![[!DNL Adobe Commerce Optimizer] Architecture &#x200B;](./assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] Architecture ](./assets/architecture.png)
