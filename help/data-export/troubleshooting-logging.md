@@ -3,7 +3,7 @@ title: Consulter les journaux et résoudre les problèmes
 description: Découvrez comment résoudre les erreurs  [!DNL data export]  l’aide des journaux data-export et saas-export .
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
+source-git-commit: a1afed7b635a2b05c5c0e0d1c9bf4a07fc5eef31
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -116,7 +116,7 @@ Si vous stockez les journaux Adobe Commerce dans le New Relic, vous pouvez ajout
 
    - **Règle d&#39;analyse**
 
-     `\[%{DATA:timestamp}\] report.%{DATA:logLevel} %{GREEDYDATA:feed:json}`
+     `\[%{DATA:timestamp}\] report.%{DATA:logLevel}: %{GREEDYDATA:feed:json}`
 
 Cet exemple ajoute une règle qui vous permet d’interroger les journaux New Relic par type de flux spécifique, opération, etc.
 
@@ -129,7 +129,7 @@ Si des données sont manquantes ou incorrectes dans les services Commerce, reche
 - Le journal des erreurs d’exportation des données (`commerce-data-export-errors.log`) capture les erreurs qui se produisent pendant la phase de collecte.
 - Le journal des erreurs d’exportation SaaS (`saas-export-errors.log`) capture les erreurs qui se produisent pendant la phase de transmission.
 
-Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) avec autant d’informations que possible.
+Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) avec autant d’informations que possible.
 
 ### Résolution des problèmes de synchronisation des catalogues {#resolvesync}
 
@@ -144,11 +144,11 @@ Lorsque vous déclenchez une resynchronisation des données, la mise à jour des
 
 #### Synchronisation non exécutée
 
-Si la synchronisation ne s’exécute pas selon un planning ou si rien n’est synchronisé, consultez cet article [Base de connaissances](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
+Si la synchronisation ne s’exécute pas selon un planning ou si rien n’est synchronisé, consultez cet article [Base de connaissances](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Échec de la synchronisation
 
-Si la synchronisation du catalogue a le statut **Échec**, envoyez un ticket d’assistance [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Si la synchronisation du catalogue a le statut **Échec**, envoyez un ticket d’assistance [](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Journalisation étendue
 
