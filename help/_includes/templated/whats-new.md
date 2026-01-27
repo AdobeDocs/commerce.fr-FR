@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1e92a2aec0429225c89e986884f5de920e6a1928
+source-git-commit: 0aa2a1cac270fd1330666d9a23a6cc201e781427
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '329'
 ht-degree: 6%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 6%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### vendredi 22 janvier 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour des guides de configuration de Storefront pour <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a> afin d’inclure des informations sur la migration de la configuration de storefront Commerce pour Edge Delivery Services afin d’utiliser le service de configuration au lieu de <code class="language-plaintext highlighter-rouge">config.json</code> fichier dans le référentiel standard de storefront. Adobe recommande d’utiliser le service de configuration pour gérer la configuration des storefronts déployés sur Edge Delivery Services.</p>
+</td>
+      <td>
+        Commentaires, technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e1fd1f6fbfb326f4110660a6097bc73eff9e0fc6">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### jeudi 21 janvier 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Notes de mise à jour des sandbox déplacées vers la production.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/3b90cb8e0067089d7079ca4e21e050a5488c7dcd">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### mercredi 20 janvier 2026
 
@@ -45,7 +89,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes#latest"> notes de mise à jour </a> pour Adobe Commerce as a Cloud Service.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest"> notes de mise à jour </a> pour Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -67,7 +111,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la rubrique <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits">Limites et limites</a> pour Adobe Commerce Optimizer afin de décrire les limites de licence et les limites système, d’ajouter des descriptions de limite et d’inclure des conseils pour la planification de la capacité et la prévention des problèmes de performances.</p>
+      <td><p>Mise à jour de la rubrique <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">Limites et limites</a> pour Adobe Commerce Optimizer afin de décrire les limites de licence et les limites système, d’ajouter des descriptions de limite et d’inclure des conseils pour la planification de la capacité et la prévention des problèmes de performances.</p>
 </td>
       <td>
         Commentaires, technique
@@ -89,7 +133,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de notes de mise à jour pour l’<a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/release-notes">exportation de données SaaS Adobe Commerce versions 103.4.16 et 103.4.17</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/price-indexer/catalog-adapter/release-notes">adaptateur de catalogue version 1.10.0</a>.</p>
+      <td><p>Ajout de notes de mise à jour pour l’<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">exportation de données SaaS Adobe Commerce versions 103.4.16 et 103.4.17</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes">adaptateur de catalogue version 1.10.0</a>.</p>
 </td>
       <td>
         Technique
@@ -111,7 +155,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la rubrique <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">configurer AEM</a> dans la documentation sur l’intégration AEM Assets.</p>
+      <td><p>Mise à jour de la rubrique <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">configurer AEM</a> dans la documentation sur l’intégration AEM Assets.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -133,7 +177,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de nouvelles rubriques :<br />- <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/manage-results/opportunities">Opportunités</a> pour documenter les recommandations d’optimisation de site optimisées par l’IA grâce à l’intégration d’Adobe Sites Optimizer, y compris les workflows de détection automatique et de correction automatique pour améliorer l’optimisation du référencement, les métadonnées et la qualité des données de produit.<br />- <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-layer">Calques de catalogue</a> pour expliquer comment modifier les données de produit sans modifier les données sources, y compris la gestion de la priorité des calques et l’intégration aux fonctionnalités de correctif automatique de Sites Optimizer.</p>
+      <td><p>Ajout de nouvelles rubriques :<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities">Opportunités</a> pour documenter les recommandations d’optimisation de site optimisées par l’IA grâce à l’intégration d’Adobe Sites Optimizer, y compris les workflows de détection automatique et de correction automatique pour améliorer l’optimisation du référencement, les métadonnées et la qualité des données de produit.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer">Calques de catalogue</a> pour expliquer comment modifier les données de produit sans modifier les données sources, y compris la gestion de la priorité des calques et l’intégration aux fonctionnalités de correctif automatique de Sites Optimizer.</p>
 </td>
       <td>
         Mise à jour majeure, nouvelle rubrique
@@ -155,7 +199,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>La mise à jour de la fonctionnalité Recommendations dans la documentation de Commerce Optimizer en tant que <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">volet d’aperçu</a> est désormais prise en charge.</p>
+      <td><p>La mise à jour de la fonctionnalité Recommendations dans la documentation de Commerce Optimizer en tant que <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">volet d’aperçu</a> est désormais prise en charge.</p>
 </td>
       <td>
         Technique
