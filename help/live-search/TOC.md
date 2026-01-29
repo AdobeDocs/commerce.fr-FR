@@ -3,10 +3,10 @@ user-guide-title: Guide [!DNL Live Search]
 user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation  [!DNL Live Search]  à partir d’Adobe Commerce.
 role: Admin
 feature: Services, Search
-source-git-commit: 2796cefcc9edf6247efdb9ad275048566e94c559
+source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 10%
+source-wordcount: '81'
+ht-degree: 9%
 
 ---
 
@@ -22,6 +22,7 @@ ht-degree: 10%
    - [Widgets de storefront](storefront-widgets.md)
    - [Page de liste de produits](plp-styling.md)
    - [Storefront  [!DNL Popover]](storefront-popover.md)
+   - [Migration vers le widget PLP](migrate-to-plp.md)
 - Admin {#live-search-admin}
    - [Performances](performance.md)
    - Facettes {#facets}
@@ -44,5 +45,5 @@ ht-degree: 10%
    - [Indexation](indexing.md)
    - [GraphQL](graphql.md)
    - [Paramètres](settings.md)
-- [&#x200B; Guide du développeur &#x200B;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr)
+- [ Guide du développeur ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
+- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
