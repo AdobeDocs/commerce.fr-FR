@@ -428,7 +428,7 @@ Tenez compte de ces limites lors de la migration :
 
 Contactez la ressource appropriée en fonction de vos besoins spécifiques.
 
-L’assistance Adobe **** peut vous aider à :
+L’assistance Adobe **&#x200B;**&#x200B;peut vous aider à :
 
 - Procédures de migration standard de Live Search
 - Problèmes de configuration du widget PLP
