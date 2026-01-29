@@ -319,7 +319,7 @@ Dans ce scénario, il existe un problème connu en raison duquel l’activation 
 
 **Option 3 : Remplacer GTM par Adobe Analytics**
 
-- Envisagez d’effectuer une migration vers [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) le cas échéant.
+- Envisagez d’effectuer une migration vers [Adobe Analytics](https://business.adobe.com/fr/products/adobe-analytics.html) le cas échéant.
 - Contactez l’ingénierie client pour obtenir des conseils.
 
 **Qui contacter** : envoyez un ticket d’assistance pour obtenir des mises à jour de compatibilité avec GTM ou une assistance en ingénierie client.
@@ -444,7 +444,7 @@ L’assistance Adobe **&#x200B;**&#x200B;peut vous aider à :
 - Implémentations découplées ou PWA
 - Suivi des événements personnalisés
 
-Pour contacter l’assistance Adobe, consultez le [Guide d’utilisation du centre d’aide](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Pour contacter l’assistance Adobe, consultez le [Guide d’utilisation du centre d’aide](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 ## FAQ
 
