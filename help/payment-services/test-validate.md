@@ -3,9 +3,9 @@ title: Tester et valider
 description: Les tests et la validation permettent de s [!DNL Payment Services] assurer que les fonctions fonctionnent comme prévu et offrent les meilleures options de paiement pour vos clients
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: b75cad4fd71b5ab9c0199ca47800c36cbd1ae76c
+source-git-commit: 91a4b8fa7228fb91c8ee0bf0a1623d104f061894
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Avant d’exposer [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Ma
 Tester les [!DNL Payment Services] dans un environnement sandbox est une étape de validation importante, même s’il s’agit d’un environnement simulé connecté uniquement au sandbox PayPal, et non à de vraies banques et commerçants.
 
 1. Effectuez un passage en caisse réussi à partir de votre boutique, soit avec les [champs de carte de crédit](payments-options.md#credit-card-fields) ou l&#39;un des [boutons de paiement PayPal](payments-options.md#paypal-smart-buttons). Consultez [Test des informations d’identification](#testing-credentials) pour plus d’informations sur l’utilisation de fausses cartes de crédit pour les tests.
-1. Capturez (lorsque votre action de paiement est [définie sur `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [remboursez](refunds.md) ou [annulez](voids.md) la commande qui vient d’être terminée. Vous pouvez également simplement [créer une facture](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} pour une commande, si votre action de paiement est définie sur `Authorize` au lieu de `Authorize and Capture`.
+1. Capturez (lorsque votre action de paiement est [définie sur `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [remboursez](refunds.md) ou [annulez](voids.md) la commande qui vient d’être terminée. Vous pouvez également simplement [créer une facture](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} pour une commande, si votre action de paiement est définie sur `Authorize` au lieu de `Authorize and Capture`.
 1. Dans les 24 à 48 heures, affichez la transaction et d&#39;autres informations dans le [rapport des paiements](payouts.md).
 1. Voir les détails de la commande dans l&#39;état [Statut du paiement de la commande](order-payment-status.md).
 
@@ -49,6 +49,17 @@ Pour exposer votre environnement local :
 
 Si le temps de réponse du point d&#39;entrée est inférieur à 5 secondes, PayPal affiche un message d&#39;erreur dans le pop-up.
 
+#### Développement local d’Apple Pay
+
+Apple Pay nécessite une configuration supplémentaire pour le développement local. Apple Pay utilise l’enregistrement de domaine pour vérifier que votre site est autorisé à accepter les paiements Apple Pay. Cela signifie qu’Apple doit être en mesure d’accéder à votre domaine pour valider un fichier de vérification de domaine à l’`/.well-known/apple-developer-merchantid-domain-association`.
+
+Pour le développement local, votre environnement doit répondre aux exigences suivantes :
+
+* **accessible au public**, Apple doit pouvoir accéder à votre domaine à partir d’Internet.
+* **protocole HTTPS**, Apple Pay ne fonctionne que sur des connexions sécurisées.
+
+L’utilisation d’un service de tunneling tel que [ngrok](https://ngrok.com/) répond aux deux exigences. Après avoir configuré ngrok comme décrit ci-dessus, [enregistrez votre domaine sandbox](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains) avec PayPal en utilisant l’URL **ngrok**.
+
 ### Test des informations d’identification
 
 Lors du test et de la validation de votre sandbox , vous devez utiliser de faux numéros de carte de crédit, afin de ne pas créer de frais réels sur un compte de carte de crédit existant.
@@ -76,5 +87,7 @@ Vous pouvez tester les [!DNL Payment Services] en production de deux manières :
 Complétez vos tests de production avec des cartes de crédit et des comptes PayPal réels, en testant l&#39;ensemble du cycle de vie d&#39;un paiement, y compris la capture et le remboursement. En complétant l’ensemble du flux de paiement et de passage en caisse pendant les tests, vous avez une idée précise du fonctionnement de votre fonctionnalité de [!DNL Payment Services] lorsque les acheteurs en direct l’utilisent.
 
 Vous devez également vérifier que les renseignements qui figurent sur les relevés bancaires pour les méthodes de paiement que vous utilisez dans les tests de production sont corrects et attendus (y compris la description de votre entreprise).
+
+### Tester Apple Pay en production
 
 Pour tester Apple Pay en mode production, vous devez [enregistrer vos domaines de production](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
