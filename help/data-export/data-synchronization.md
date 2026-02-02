@@ -28,7 +28,7 @@ Les principaux composants du flux d&#39;exportation de données SaaS sont les su
 
 >[!NOTE]
 >
->Pour garantir une planification fluide et éviter toute perturbation du fonctionnement du site, Adobe recommande d’estimer le volume de données et l’heure de synchronisation avant de démarrer la synchronisation des flux de données. Cette estimation est importante lors de la planification de synchronisations initiales ou de mises à jour de catalogue à grande échelle, telles que des modifications de prix en masse. Pour plus d’informations, voir [ Estimation du volume de données et de la durée de transmission pour la synchronisation des données](estimate-data-volume-sync-time.md)
+>Pour garantir une planification fluide et éviter toute perturbation du fonctionnement du site, Adobe recommande d’estimer le volume de données et l’heure de synchronisation avant de démarrer la synchronisation des flux de données. Cette estimation est importante lors de la planification de synchronisations initiales ou de mises à jour de catalogue à grande échelle, telles que des modifications de prix en masse. Pour plus d’informations, voir [&#x200B; Estimation du volume de données et de la durée de transmission pour la synchronisation des données](estimate-data-volume-sync-time.md)
 
 ## Modes de synchronisation
 
