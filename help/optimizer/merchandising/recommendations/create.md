@@ -1,7 +1,7 @@
 ---
 title: Création et gestion de Recommendations
 description: Découvrez comment créer et gérer des recommandations.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
 workflow-type: tm+mt
@@ -65,7 +65,7 @@ Après avoir créé une recommandation, vous devez récupérer son identifiant p
 
 1. Dans la section **ID de recommandation**, copiez l’ID.
 
-1. Utilisez cet identifiant pour configurer le [menu déroulant de recommandations](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) sur votre storefront Edge Delivery Services.
+1. Utilisez cet identifiant pour configurer le [menu déroulant de recommandations](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=fr) sur votre storefront Edge Delivery Services.
 
 ## Gestion des recommandations existantes
 
