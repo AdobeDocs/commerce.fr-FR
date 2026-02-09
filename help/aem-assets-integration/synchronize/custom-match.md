@@ -3,16 +3,16 @@ title: Correspondance automatique personnalisée
 description: Découvrez comment la correspondance automatique personnalisée est particulièrement utile pour les commerçants avec une logique de correspondance complexe ou ceux qui dépendent d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: ee1dd902a883e5653a9fb8764fac708975c37091
+source-git-commit: dfc4aaf1f780eb4a57aa4b624325fa24e571017d
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '432'
 ht-degree: 1%
 
 ---
 
 # Correspondance automatique personnalisée
 
-Si la stratégie de correspondance automatique par défaut (**correspondance automatique prête à l’emploi**) n’est pas alignée avec les besoins spécifiques de votre entreprise, sélectionnez l’option Correspondance personnalisée . Cette option prend en charge l’utilisation de [Adobe Developer App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) pour développer une application de correspondance personnalisée qui gère une logique de correspondance complexe, ou des ressources provenant d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
+Si la stratégie de correspondance automatique par défaut (**correspondance automatique prête à l’emploi**) n’est pas alignée avec les besoins spécifiques de votre entreprise, sélectionnez l’option Correspondance personnalisée . Cette option prend en charge l’utilisation de [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) pour développer une application de correspondance personnalisée qui gère une logique de correspondance complexe, ou des ressources provenant d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
 
 ## Configuration de la correspondance automatique personnalisée
 
@@ -22,9 +22,99 @@ Si la stratégie de correspondance automatique par défaut (**correspondance aut
 
 1. Lorsque vous sélectionnez cette règle de correspondance, Admin affiche des champs supplémentaires pour configurer les **points d’entrée** et les **paramètres d’authentification** nécessaires à la logique de correspondance personnalisée.
 
+### workspace.json
+
+Le champ **[!UICONTROL Adobe I/O Workspace Configuration]** permet de configurer votre correspondant personnalisé de manière simplifiée en important votre fichier de configuration de `workspace.json` App Builder.
+
+Vous pouvez télécharger le fichier `workspace.json` à partir de [Adobe Developer Console](https://developer.adobe.com/console). Le fichier contient toutes les informations d’identification et de configuration pour votre espace de travail App Builder.
+
++++Exemple de `workspace.json`
+
+```json
+{
+  "project": {
+    "id": "project_id",
+    "name": "project_name",
+    "title": "title_name",
+    "org": {
+      "id": "id",
+      "name": "Organization_name",
+      "ims_org_id": "ims_id"
+    },
+    "workspace": {
+      "id": "workspace_id",
+      "name": "workspace_name_id",
+      "title": "workspace_title_id",
+      "action_url": "https://action_url.net",
+      "app_url": "https://app_url.net",
+      "details": {
+        "credentials": [
+          {
+            "id": "credential_id",
+            "name": "credential_name_id",
+            "integration_type": "oauth_server_to_server",
+            "oauth_server_to_server": {
+              "client_id": "client_id",
+              "client_secrets": ["secret"],
+              "technical_account_email": "xx@technical_account_email.com",
+              "technical_account_id": "technical_account_id",
+              "scopes": [
+                "AdobeID",
+                "openid",
+                "read_organizations",
+                "additional_info.projectedProductContext",
+                "additional_info.roles",
+                "adobeio_api",
+                "read_client_secret",
+                "manage_client_secrets"
+              ]
+            }
+          }
+        ],
+        "services": [
+          {
+            "code": "AdobeIOManagementAPISDK",
+            "name": "I/O Management API"
+          }
+        ],
+        "runtime": {
+          "namespaces": [
+            {
+              "name": "namespace_name",
+              "auth": "example_auth"
+            }
+          ]
+        },
+        "events": {
+          "registrations": []
+        },
+        "mesh": {}
+      }
+    }
+  }
+}
+```
+
++++
+
+1. Effectuez un glisser-déposer de votre fichier `workspace.json` de votre projet App Builder vers le champ **[!UICONTROL Adobe I/O Workspace Configuration]** . Vous pouvez également cliquer sur pour parcourir et sélectionner le fichier.
+
+![Configuration Workspace](../assets/workspace-configuration.png){width="600" zoomable="yes"}
+
+1. Le système effectue automatiquement les opérations suivantes :
+
+   * Valide la structure JSON.
+   * Extrait et renseigne les informations d’identification OAuth
+   * Récupère les actions d’exécution disponibles pour l’espace de travail
+   * Remplit les options de liste déroulante pour les champs **[!UICONTROL Product to Asset URL]** et **[!UICONTROL Asset to Product URL]**
+
+1. Sélectionnez les actions d’exécution appropriées dans les menus déroulants de chaque flux.
+
+1. Cliquez sur **[!UICONTROL Save Config]**.
+
 ## Points d’entrée de l’API de correspondance personnalisés
 
-Lorsque vous créez une application de correspondance personnalisée à l’aide d’[App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l’application doit exposer les points d’entrée suivants :
+Lorsque vous créez une application de correspondance personnalisée à l’aide d’[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l’application doit exposer les points d’entrée suivants :
 
 * **Ressource App Builder vers l’URL du produit** point d’entrée
 * **Point d’entrée du produit App Builder vers l’URL de la ressource**
@@ -176,6 +266,6 @@ Le paramètre `asset_matches` contient les attributs suivants :
 | Attribut | Type de données | Description |
 | --- | --- | --- |
 | `asset_id` | String | Représente l’ID de ressource mis à jour. |
-| `asset_roles` | String | Renvoie tous les rôles de ressources disponibles. Utilise les [rôles de ressources Commerce pris en charge](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) tels que `thumbnail`, `image`, `small_image` et `swatch_image`. |
+| `asset_roles` | String | Renvoie tous les rôles de ressources disponibles. Utilise les [rôles de ressources Commerce pris en charge](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) tels que `thumbnail`, `image`, `small_image` et `swatch_image`. |
 | `asset_format` | String | Fournit les formats disponibles pour la ressource. Les valeurs possibles sont `image` et `video`. |
 | `asset_position` | String | Affiche la position de la ressource. |
