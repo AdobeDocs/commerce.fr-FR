@@ -3,9 +3,9 @@ title: Options de paiement
 description: Définissez les options de paiement afin de personnaliser les méthodes disponibles pour les clients de votre boutique.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
+source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Il existe différents comportements pour chaque mode de paiement en fonction de 
 
 [!DNL Payment Services] offre des options de paiement et des flux d’intégration **avancés** (entièrement pris en charge) et **standard** (paiement express), en fonction du pays dans lequel vous opérez.
 
-* **Avancé** - Toutes les [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays actuellement entièrement pris en charge](../payment-services/introduction.md#availability). Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [&#x200B; Intégration avancée &#x200B;](../payment-services/production.md#advanced-onboarding).
+* **Avancé** - Toutes les [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays actuellement entièrement pris en charge](../payment-services/introduction.md#availability). Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [ Intégration avancée ](../payment-services/production.md#advanced-onboarding).
 
-* **Standard** - Un sous-ensemble d’options de paiement (paiement express), à savoir les cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Les champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [&#x200B; Intégration standard &#x200B;](../payment-services/production.md#standard-onboarding).
+* **Standard** - Un sous-ensemble d’options de paiement (paiement express), à savoir les cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Les champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [ Intégration standard ](../payment-services/production.md#standard-onboarding).
 
 Consultez [Activer [!DNL Payment Services] pour la production](../payment-services/production.md#complete-merchant-onboarding) pour plus d’informations sur l’intégration avancée et standard.
 
@@ -135,6 +135,16 @@ Découvrez comment désactiver ou activer la messagerie [!DNL Pay Later] en mett
 
 ![Message de paiement différé](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
+### Rappels d’expédition côté serveur pour les boutons de paiement PayPal
+
+Les méthodes de paiement PayPal, Pay Later et Venmo utilisent un [rappel d’expédition côté serveur](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) qui permet à PayPal de communiquer directement avec votre instance Commerce pour récupérer les options d’expédition et calculer les totaux en temps réel.
+
+Cette approche côté serveur [!DNL Payment Services] permet d’ignorer le pop-up de confirmation de commande, offrant ainsi une expérience d’achat plus rapide et rationalisée. Comme les frais d&#39;expédition et les taxes sont calculés dynamiquement par le biais de rappels, l&#39;acheteur peut voir des totaux précis directement sur la page d&#39;examen PayPal ou Venmo.
+
+>[!NOTE]
+>
+>Le point d’entrée de rappel doit être accessible au public et répondre dans les 5 secondes. Si le temps de réponse dépasse cette limite, PayPal affiche un message d&#39;erreur dans le pop-up. Consultez [Test sur les environnements de développement locaux](test-validate.md#test-on-local-development-environments) pour plus d’informations sur le test local de ces modes de paiement.
+
 ### Utiliser uniquement les boutons de paiement PayPal
 
 Pour mettre rapidement votre boutique en mode production, vous pouvez configurer _uniquement_ les boutons de paiement PayPal (Venmo, PayPal, etc.)... au lieu d&#39;utiliser également l&#39;option de paiement par carte de crédit PayPal.
@@ -156,7 +166,7 @@ Pour **capturer des paiements avec votre fournisseur de carte de crédit existan
 1. Assurez-vous que votre boutique est [en mode production](configure-admin.md#enable-payment-services).
 1. [Configurez les boutons de paiement PayPal souhaités](configure-admin.md#payment-buttons).
 1. Désactivez _off_ l’option **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** dans la section _[!UICONTROL Payment buttons]_.
-1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_&#x200B;et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=fr#payments).
+1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
 
 ## Options de passage en caisse
 
