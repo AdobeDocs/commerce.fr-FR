@@ -2,9 +2,9 @@
 title: Filtrer les produits
 description: Définissez des conditions qui incluent ou excluent l’utilisation de produits comme recommandations.
 exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
-source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
+source-git-commit: 1b10163c39d9f309afd24aa2e808a57e069258f8
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Les opérateurs logiques `AND` et `OR` sont utilisés pour joindre plusieurs con
 
 ## Types de filtres {#filtertypes}
 
-![&#x200B; Filtres &#x200B;](assets/rec-conditions.png)
+![ Filtres ](assets/rec-conditions.png)
 
 ### Catégorie
 
@@ -48,7 +48,7 @@ Le champ Catégorie affiche les catégories qui appartiennent à la boutique act
 
 >[!NOTE]
 >
->Pour les commerçants B2B, le filtre Catégorie adhère à toutes les [catégories de produits spécifiques aux clients](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=fr) que vous avez configurées.
+>Pour les commerçants B2B, le filtre Catégorie adhère à toutes les [catégories de produits spécifiques aux clients](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) que vous avez configurées.
 
 Adobe Commerce vous recommande d’utiliser la configuration de filtre de catégorie suivante lorsque vous déployez des recommandations sur vos types de page :
 
@@ -78,11 +78,11 @@ Filtre les produits en fonction de leur visibilité, par exemple : _Catalogue_, 
 
 ### Prix
 
-Un filtre basé sur le prix du produit utilise le prix final pour effectuer la comparaison. Le prix final inclut toutes les remises ou tous les tarifs spéciaux disponibles pour les acheteurs anonymes. Pour les commerçants B2B, le prix affiché reflète le [prix de groupe spécifique au client](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=fr) que vous avez configuré.
+Un filtre basé sur le prix du produit utilise le prix final pour effectuer la comparaison. Le prix final inclut toutes les remises disponibles pour les acheteurs anonymes. Pour les commerçants B2B, le prix affiché reflète le [prix de groupe spécifique au client](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) que vous avez configuré.
 
 ### Statut des stocks
 
 Les filtres d’exclusion suivants peuvent être utilisés pour filtrer les produits en fonction du statut du stock :
 
 - En rupture de stock - (Exclusion uniquement) Exclut les produits en rupture de stock.
-- Faible en stock - (Exclusion uniquement) Exclut les produits peu en stock. Le statut de stock faible est basé sur la valeur _Seuil gauche X uniquement_ dans [Configuration du stock](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=fr).
+- Faible en stock - (Exclusion uniquement) Exclut les produits peu en stock. Le statut de stock faible est basé sur la valeur _Seuil gauche X uniquement_ dans [Configuration du stock](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
