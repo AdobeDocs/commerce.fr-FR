@@ -40,7 +40,7 @@ Examinez les limites suivantes pour vous assurer qu’[!DNL Product Recommendati
 
 ## API et configuration
 
-- **Clés API (4.x et ultérieures)** - Vous devez fournir des clés API publiques et privées pour les environnements de sandbox et de production. Si vous ne fournissez pas les deux paires de clés API, vous ne pouvez pas accéder à la fonctionnalité de recommandations de produits dans l’Administration. La collecte de données sur votre storefront et les recommandations existantes continuent de fonctionner. Voir [ Installation et configuration ](install-configure.md).
+- **Clés API (4.x et ultérieures)** - Vous devez fournir des clés API publiques et privées pour les environnements de sandbox et de production. Si vous ne fournissez pas les deux paires de clés API, vous ne pouvez pas accéder à la fonctionnalité de recommandations de produits dans l’Administration. La collecte de données sur votre storefront et les recommandations existantes continuent de fonctionner. Voir [&#x200B; Installation et configuration &#x200B;](install-configure.md).
 
 ## Restrictions des cookies
 
@@ -50,11 +50,11 @@ Examinez les limites suivantes pour vous assurer qu’[!DNL Product Recommendati
 
 ## Page Builder
 
-- **Mesures et vues de magasin** - Les mesures des unités de recommandation de Page Builder s’affichent uniquement sur la vue de magasin par défaut dans l’espace de travail des recommandations de produits. Pour afficher les mesures de recommandation de Page Builder sur une vue de magasin autre que la vue par défaut, vous devez ouvrir et [modifier](edit.md) l’unité de recommandation Page Builder dans cette vue de magasin et l’enregistrer ; les mesures s’affichent alors pour cette vue de magasin. Voir [ Intégration de Page Builder ](page-builder.md).
+- **Mesures et vues de magasin** - Les mesures des unités de recommandation de Page Builder s’affichent uniquement sur la vue de magasin par défaut dans l’espace de travail des recommandations de produits. Pour afficher les mesures de recommandation de Page Builder sur une vue de magasin autre que la vue par défaut, vous devez ouvrir et [modifier](edit.md) l’unité de recommandation Page Builder dans cette vue de magasin et l’enregistrer ; les mesures s’affichent alors pour cette vue de magasin. Voir [&#x200B; Intégration de Page Builder &#x200B;](page-builder.md).
 
 ## B2B
 
-- Les recommandations de produits respectent les [autorisations de catégorie](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions.html), [catalogues partagés](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) et la tarification spécifique au groupe de clients. Les acheteurs ne voient que les recommandations des produits auxquels ils peuvent accéder en fonction de leur affectation de segment et de catalogue. Voir [ Intégration ](onboarding.md).
+- Les recommandations de produits respectent les [autorisations de catégorie](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions.html), [catalogues partagés](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) et la tarification spécifique au groupe de clients. Les acheteurs ne voient que les recommandations des produits auxquels ils peuvent accéder en fonction de leur affectation de segment et de catalogue. Voir [&#x200B; Intégration &#x200B;](onboarding.md).
 
 ## Données et préparation
 
