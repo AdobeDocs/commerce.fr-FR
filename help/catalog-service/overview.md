@@ -129,7 +129,7 @@ Le service de catalogue garantit la précision des mises à jour et des calculs 
 
 Le processus de mise en œuvre implique :
 
-1. [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **[Installer et configurer le service de catalogue](installation.md)** : installez et configurez l’extension du service de catalogue et configurez la connexion SaaS à l’aide de l’[!DNL Commerce Services Connector].
+1. [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **[Installer et configurer le service de catalogue](installation.md)** : installez et configurez l’extension du service de catalogue et configurez la connexion SaaS à l’aide de l’[!DNL Commerce Services Connector].
 2. **Mettre à jour le code storefront** : intégrez les requêtes GraphQL du service de catalogue à votre serveur frontal.
 3. **Requêtes d’itinéraire** : toutes les requêtes du service de catalogue passent par la passerelle GraphQL (URL fournie lors de l’intégration)
 4. **Surveillance et dépannage de la synchronisation des données** : vérification des performances améliorées et surveillance des résultats
