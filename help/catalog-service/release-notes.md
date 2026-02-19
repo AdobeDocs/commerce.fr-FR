@@ -224,7 +224,7 @@ _20 juin 2025_
 
 _20 juin 2025_
 
-![Nouvel ](../assets/new.svg) **Événements d’E/S publics pour Catalog Storefront** : ajout d’événements d’E/S publics pour une intégration et une observabilité en temps réel (CSS et EDS).<!--DATA-6329-->
+![Nouvel &#x200B;](../assets/new.svg) **Événements d’E/S publics pour Catalog Storefront** : ajout d’événements d’E/S publics pour une intégration et une observabilité en temps réel (CSS et EDS).<!--DATA-6329-->
 
 ![Nouveau](../assets/new.svg) **Rendu côté serveur (SSR)** : améliorations architecturales pour prendre en charge le rendu côté serveur afin d’améliorer les performances, l’optimisation du moteur de recherche et l’expérience utilisateur sur les catalogues volumineux.<!--DATA-6278, DATA-6280-->
 
@@ -371,7 +371,7 @@ _1 avril 2024_
 
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge de PHP 8.3.
 
-![Nouveau ](../assets/new.svg) les requêtes [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) et [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) renvoient désormais des données d’options personnalisables pour les produits simples et complexes.<!--DATA-5538-->
+![Nouveau &#x200B;](../assets/new.svg) les requêtes [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) et [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) renvoient désormais des données d’options personnalisables pour les produits simples et complexes.<!--DATA-5538-->
 
 ### version 1.17
 
@@ -379,7 +379,7 @@ _2 février 2024_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Nouveau ](../assets/new.svg) l’[[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) est désormais disponible pour les flux de données (recommandations de produits, recherche en direct, service de catalogue). Nécessite `catalog-service` métapaquet v3.1.0+.
+![Nouveau &#x200B;](../assets/new.svg) l’[[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) est désormais disponible pour les flux de données (recommandations de produits, recherche en direct, service de catalogue). Nécessite `catalog-service` métapaquet v3.1.0+.
 
 ### version 1.16
 
@@ -387,7 +387,7 @@ _13 février 2024_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Les nouvelles vidéos produit ](../assets/new.svg) sont désormais prises en charge par l’API Catalog Service.
+![Les nouvelles vidéos produit &#x200B;](../assets/new.svg) sont désormais prises en charge par l’API Catalog Service.
 ![Correctif](../assets/fix.svg) Les options en rupture de stock s’affichent désormais dans le widget PDP.
 
 #### Limites connues
@@ -481,7 +481,7 @@ _17 janvier 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Nouveau](../assets/new.svg) Expérience d’intégration simplifiée et améliorée.
-![Nouveau ](../assets/new.svg) de nouveaux points d’entrée de sandbox client sont disponibles pour les tests de pré-production.
+![Nouveau &#x200B;](../assets/new.svg) de nouveaux points d’entrée de sandbox client sont disponibles pour les tests de pré-production.
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge des produits virtuels.
 ![Correctif](../assets/fix.svg) Amélioration de l’évolutivité et des performances de l’API.
 
@@ -579,11 +579,11 @@ _26 janvier 2024_
    - [Guide de Catalog Service](overview.md)
    - [Référence de l’API GraphQL du service de catalogue](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
    - [Guide de l’administrateur Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/)
-   - [Guide d’Adobe Commerce as a Cloud Service ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
+   - [Guide d’Adobe Commerce as a Cloud Service &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
    - [Guide d’Adobe Commerce sur le cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
 
 - Pour les projets utilisant **Adobe Commerce Optimizer** ou **Adobe Commerce Optimizer Connector**, consultez la documentation suivante :
 
-   - [ Guide du développeur des services de marchandisage ](https://developer.adobe.com/commerce/services/optimizer/)
+   - [&#x200B; Guide du développeur des services de marchandisage &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)
    - [Référence de l’API Merchandising GraphQL](https://developer.adobe.com/commerce/services/reference/graphql/)
    - [Guide de Adobe Commerce Optimizer](../optimizer/overview.md)
