@@ -16,7 +16,7 @@ Configurez l’intégration en connectant Commerce à l’instance AEM Assets et
 
 Après avoir identifié le projet AEM Assets, sélectionnez la règle correspondante pour synchroniser les ressources entre Adobe Commerce et AEM Assets.
 
-* **[!UICONTROL Match by product SKU]** : règle par défaut qui associe le SKU dans les métadonnées de ressource au [SKU de produit Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) pour s’assurer que les ressources sont associées aux produits appropriés.
+* **[!UICONTROL Match by product SKU]** : règle par défaut qui associe le SKU dans les métadonnées de ressource au [SKU de produit Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary#sku) pour s’assurer que les ressources sont associées aux produits appropriés.
 
 * **[!UICONTROL Custom match]** : règle de correspondance pour les scénarios plus complexes ou pour les besoins spécifiques de l&#39;entreprise qui nécessitent une logique de correspondance personnalisée. L’implémentation d’une correspondance personnalisée nécessite le développement d’un code personnalisé dans Adobe Developer App Builder pour définir la manière dont les ressources sont associées aux produits. Plus de détails bientôt disponibles...
 
@@ -48,9 +48,9 @@ L’authentification IMS est activée par défaut. Ajoutez l’utilisateur au pr
 
 [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."}
 
-1. [Activez Adobe IMS pour Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html){target=_blank} en suivant les instructions du *Guide d’administration de Commerce*.
+1. [Activez Adobe IMS pour Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=fr){target=_blank} en suivant les instructions du *Guide d’administration de Commerce*.
 
-1. [Ouvrez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) pour demander un identifiant client IMS personnalisé pour le sélecteur de ressources.
+1. [Ouvrez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) pour demander un identifiant client IMS personnalisé pour le sélecteur de ressources.
 
 1. Ajoutez l’utilisateur au profil de produit **Utilisateurs OpenAPI AEM Assets DM - diffusion** dans le [Adobe Admin Console](https://adminconsole.adobe.com/) pour accorder l’accès à la couche de diffusion AEM Assets.
 
@@ -89,7 +89,7 @@ L’authentification IMS est activée par défaut. Ajoutez l’utilisateur au pr
 1. Sélectionnez l’une des règles de correspondance de ressources pour la synchronisation des ressources dans la liste déroulante **[!UICONTROL Asset matching rule]** .
 
    * Sélectionnez **[!UICONTROL Match by SKU]** pour [correspondance automatique par défaut](../synchronize/default-match.md),
-   * Sélectionnez **[!UICONTROL Custom match]** pour [correspondance automatique personnalisée](../synchronize/custom-match.md) (nécessite [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder).)
+   * Sélectionnez **[!UICONTROL Custom match]** pour [correspondance automatique personnalisée](../synchronize/custom-match.md) (nécessite [Adobe Developer App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder).)
 
 1. Ajoutez le [nom du champ de métadonnées AEM Assets](configure-aem.md#configure-metadata) défini pour les SKU de produit Commerce dans le champ **[!UICONTROL Match by product SKU attribute name]**, `commerce:skus` par défaut.
 
@@ -117,7 +117,7 @@ Le paramètre **Propriétaire de la visualisation** détermine le système qui d
 
 L’administrateur affiche les images disponibles pour ce propriétaire, tandis que le reste des images est grisé et affiché avec un libellé **masqué**.
 
-Voir la rubrique [Définition des détails de l’image](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} pour plus d’informations sur le comportement d’affichage des images.
+Voir la rubrique [Définition des détails de l’image](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} pour plus d’informations sur le comportement d’affichage des images.
 
 >[!TIP]
 >
@@ -145,7 +145,7 @@ Si le projet AEM Assets as a Cloud Service a été configuré avec un [nom de do
 
 ## Étape suivante
 
-* **Configurer votre storefront Commerce** : pour utiliser AEM Assets avec le storefront Commerce optimisé par Edge Delivery Services, effectuez la configuration de storefront décrite dans la rubrique [Intégration d’AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) dans la *documentation du storefront Adobe Commerce*.
+* **Configurer votre storefront Commerce** : pour utiliser AEM Assets avec le storefront Commerce optimisé par Edge Delivery Services, effectuez la configuration de storefront décrite dans la rubrique [Intégration d’AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=fr) dans la *documentation du storefront Adobe Commerce*.
 
 * Configurez les [règles correspondantes](../synchronize/default-match.md) entre Adobe Commerce et l’intégration AEM Assets.
 
