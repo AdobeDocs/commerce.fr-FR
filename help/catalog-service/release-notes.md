@@ -3,9 +3,9 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: Dernières informations de mise  [!DNL Catalog Service]  jour pour Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: 7e7ffa0684d0135baf362f94d286d80de89a6bd6
+source-git-commit: 7b05da07d185c5495642037c6ef3b7ff5fcaa8e6
 workflow-type: tm+mt
-source-wordcount: '2132'
+source-wordcount: '2193'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,12 @@ Les mises à jour sont classées par type :
 La prise en charge est fournie pour la dernière version. Les notes de mise à jour des versions plus anciennes sont incluses à titre de référence.
 
 ## Service de catalogue Storefront
+
+### version 1.47
+
+_12 février 2025_
+
+![Nouveau](../assets/new.svg) Le service d’API prend désormais en charge le type de `CategoryProductView` , ce qui permet d’améliorer les vues et les requêtes pour les produits par catégorie. Cette mise à jour permet aux développeurs et développeuses de récupérer et de filtrer efficacement les données de produit en fonction de la catégorie, ce qui améliore la flexibilité et les performances pour les cas d’utilisation orientés catégorie. Pour plus d’informations, consultez [Implémentation de catégories sur le storefront](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/). Pris en charge uniquement sur les implémentations Commerce utilisant le [modèle de données de catalogue composable](https://developer.adobe.com/commerce/services/optimizer/) pour les storefronts découplés<!--DATA-6949-->
 
 ### version 1.46
 
@@ -99,7 +105,7 @@ _3 novembre 2025_
 - Contrôle des remplacements au niveau du champ avec des masques de calque
 - Prise en charge des calques de contenu premium, saisonniers et optimisés pour les appareils mobiles
 
-  Les calques sont récupérés à l’aide de la requête `products` existante, sont appliqués côté serveur à partir des en-têtes de requête et ne nécessitent aucune modification de schéma. Voir [Calque de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-layer) dans le guide de Adobe Commerce Optimizer __.
+  Les calques sont récupérés à l’aide de la requête `products` existante, sont appliqués côté serveur à partir des en-têtes de requête et ne nécessitent aucune modification de schéma. Voir [Calque de catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) dans le guide de Adobe Commerce Optimizer __.
 
 ![Correctif](../assets/fix.svg) Les produits regroupés peuvent désormais être interrogés lorsque le parent n’a pas de tarification ; les produits enfants renvoient leurs propres rôles de visibilité.<!--DATA-6779-->
 
@@ -210,7 +216,7 @@ _15 juillet 2025_
 
 _20 juin 2025_
 
-![Nouveau](../assets/new.svg) **Configuration hiérarchique du catalogue des prix** : plages de prix précises pour les catalogues des prix parent-enfant. Les calculs respectent la hiérarchie et les règles héritées ; réduit les erreurs de tarification lorsque plusieurs tarifs sont liés. Adobe Commerce Optimizer uniquement. Voir [Livres de prix](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/pricebooks).
+![Nouveau](../assets/new.svg) **Configuration hiérarchique du catalogue des prix** : plages de prix précises pour les catalogues des prix parent-enfant. Les calculs respectent la hiérarchie et les règles héritées ; réduit les erreurs de tarification lorsque plusieurs tarifs sont liés. Adobe Commerce Optimizer uniquement. Voir [Livres de prix](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
 ![Nouvelles](../assets/new.svg) **clés non sensibles à la casse** : les recherches de clés dans les requêtes ne sont désormais plus sensibles à la casse, ce qui réduit les erreurs de casse des clés. <!--DATA-6494, DCAT-2495-->
 
@@ -218,7 +224,7 @@ _20 juin 2025_
 
 _20 juin 2025_
 
-![Nouvel &#x200B;](../assets/new.svg) **Événements d’E/S publics pour Catalog Storefront** : ajout d’événements d’E/S publics pour une intégration et une observabilité en temps réel (CSS et EDS).<!--DATA-6329-->
+![Nouvel ](../assets/new.svg) **Événements d’E/S publics pour Catalog Storefront** : ajout d’événements d’E/S publics pour une intégration et une observabilité en temps réel (CSS et EDS).<!--DATA-6329-->
 
 ![Nouveau](../assets/new.svg) **Rendu côté serveur (SSR)** : améliorations architecturales pour prendre en charge le rendu côté serveur afin d’améliorer les performances, l’optimisation du moteur de recherche et l’expérience utilisateur sur les catalogues volumineux.<!--DATA-6278, DATA-6280-->
 
@@ -240,7 +246,7 @@ _13 juin 2025_
 
 ![Nouveau](../assets/new.svg) Mise à jour de la validation des prix sur l’ingestion des données pour prendre en charge les produits sans prix.<!--DATA-6098-->
 
-![Correctif](../assets/fix.svg) Amélioration de la gestion des erreurs pour une tarification simple des offres groupées dans Adobe Commerce Optimizer, en veillant à la conformité avec la documentation de l’API.<!--DATA-6541-->
+![Correctif](../assets/fix.svg) Amélioration de la gestion des erreurs pour une tarification simple des offres groupées dans Adobe Commerce Optimizer.<!--DATA-6541-->
 
 ![Correctif](../assets/fix.svg) améliorations apportées au niveau du système et de l’infrastructure pour améliorer la sécurité, les performances et la stabilité.<!--DATA-6273, DATA-6485, -->
 
@@ -339,7 +345,7 @@ _23 mai 2024_
 
 ![Correctif](../assets/fix.svg) <!--DATA-5033-->L’indicateur `InStock` pour les valeurs d’option respecte désormais le statut de `enabled` défini de la variante de produit.
 
-![Correctif](../assets/fix.svg) <!--DATA-5888-->Ajout de la prise en charge des prix des produits avec jusqu’à 16 chiffres et 4 décimales. Resynchronisez à partir du [tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou de l’[interface de ligne de commande](../landing/catalog-sync.md#command-line-interface) pour appliquer les mises à jour.
+![Correctif](../assets/fix.svg) <!--DATA-5888-->Ajout de la prise en charge des prix des produits avec jusqu’à 16 chiffres et 4 décimales. Resynchronisez à partir du [tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou de l’[interface de ligne de commande](../landing/catalog-sync.md#command-line-interface) pour appliquer les mises à jour.
 
 #### Limites connues
 
@@ -365,7 +371,7 @@ _1 avril 2024_
 
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge de PHP 8.3.
 
-![Nouveau &#x200B;](../assets/new.svg) les requêtes [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) et [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) renvoient désormais des données d’options personnalisables pour les produits simples et complexes.<!--DATA-5538-->
+![Nouveau ](../assets/new.svg) les requêtes [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) et [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) renvoient désormais des données d’options personnalisables pour les produits simples et complexes.<!--DATA-5538-->
 
 ### version 1.17
 
@@ -373,7 +379,7 @@ _2 février 2024_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Nouveau &#x200B;](../assets/new.svg) l’[[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=fr) est désormais disponible pour les flux de données (recommandations de produits, recherche en direct, service de catalogue). Nécessite `catalog-service` métapaquet v3.1.0+.
+![Nouveau ](../assets/new.svg) l’[[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) est désormais disponible pour les flux de données (recommandations de produits, recherche en direct, service de catalogue). Nécessite `catalog-service` métapaquet v3.1.0+.
 
 ### version 1.16
 
@@ -381,7 +387,7 @@ _13 février 2024_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Les nouvelles vidéos produit &#x200B;](../assets/new.svg) sont désormais prises en charge par l’API Catalog Service.
+![Les nouvelles vidéos produit ](../assets/new.svg) sont désormais prises en charge par l’API Catalog Service.
 ![Correctif](../assets/fix.svg) Les options en rupture de stock s’affichent désormais dans le widget PDP.
 
 #### Limites connues
@@ -475,7 +481,7 @@ _17 janvier 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Nouveau](../assets/new.svg) Expérience d’intégration simplifiée et améliorée.
-![Nouveau &#x200B;](../assets/new.svg) de nouveaux points d’entrée de sandbox client sont disponibles pour les tests de pré-production.
+![Nouveau ](../assets/new.svg) de nouveaux points d’entrée de sandbox client sont disponibles pour les tests de pré-production.
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge des produits virtuels.
 ![Correctif](../assets/fix.svg) Amélioration de l’évolutivité et des performances de l’API.
 
@@ -573,11 +579,11 @@ _26 janvier 2024_
    - [Guide de Catalog Service](overview.md)
    - [Référence de l’API GraphQL du service de catalogue](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
    - [Guide de l’administrateur Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/)
-   - [Guide d’Adobe Commerce as a Cloud Service &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
+   - [Guide d’Adobe Commerce as a Cloud Service ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
    - [Guide d’Adobe Commerce sur le cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
 
 - Pour les projets utilisant **Adobe Commerce Optimizer** ou **Adobe Commerce Optimizer Connector**, consultez la documentation suivante :
 
-   - [&#x200B; Guide du développeur des services de marchandisage &#x200B;](https://developer.adobe.com/commerce/services/optimizer/)
+   - [ Guide du développeur des services de marchandisage ](https://developer.adobe.com/commerce/services/optimizer/)
    - [Référence de l’API Merchandising GraphQL](https://developer.adobe.com/commerce/services/reference/graphql/)
    - [Guide de Adobe Commerce Optimizer](../optimizer/overview.md)
