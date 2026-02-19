@@ -205,7 +205,7 @@ _Mars 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge de PHP 8.1
-![Nouveau ](../assets/new.svg) redimensionnement amélioré des images afin que le dimensionnement des images soit géré de manière plus cohérente dans le modèle d’affichage de référence
+![Nouveau &#x200B;](../assets/new.svg) redimensionnement amélioré des images afin que le dimensionnement des images soit géré de manière plus cohérente dans le modèle d’affichage de référence
 
 ### 3.3.6 de magento/product-recommendations
 
@@ -320,7 +320,7 @@ _Mars 2023_
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Correctif](../assets/fix.svg) Correction de l’erreur « Impossible de récupérer les données des options du produit » qui pouvait se produire lors de l’exportation du catalogue.
-![Correctif](../assets/fix.svg) Le symbole de devise dans la colonne _Chiffre d’affaires_ du tableau de bord _[!DNL Product Recommendations]_reflète désormais correctement la devise de base configurée.
+![Correctif](../assets/fix.svg) Le symbole de devise dans la colonne _Chiffre d’affaires_ du tableau de bord _[!DNL Product Recommendations]_&#x200B;reflète désormais correctement la devise de base configurée.
 
 ### 3.0.4 de magento/product-recommendations
 
@@ -338,7 +338,7 @@ _Mars 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
-![Nouveau ](../assets/new.svg) ajout du nom de la recommandation de produit lors de la modification du type de contenu Page Builder
+![Nouveau &#x200B;](../assets/new.svg) ajout du nom de la recommandation de produit lors de la modification du type de contenu Page Builder
 
 ### 3.0.2 magento/product-recommendations
 
