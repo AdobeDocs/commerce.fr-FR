@@ -2,9 +2,9 @@
 title: Types de recommandations
 description: Découvrez les recommandations que vous pouvez déployer sur différentes pages de votre site.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+source-git-commit: ee773b29fae84141dbb383d0a4cb6c09c49fbe70
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '1873'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Ces types de recommandations sont pilotés par les réseaux sociaux pour aider l
 | Type | Description |
 |---|---|
 | A consulté ceci, a consulté cela | Recommande des produits que les acheteurs consultent plus souvent de manière disproportionnée avec le produit actuellement consulté.<br/><br/>**Utilisation :**<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Les clients qui ont consulté ce produit ont également consulté (PDP) |
-| A vu ceci, a acheté cela | Recommande des produits que les acheteurs ont tendance à acheter de manière disproportionnée plus souvent après avoir consulté le produit actuel. Ce type permet aux acheteurs de découvrir des produits qu’ils n’auraient pas remarqués autrement.<br/><br/>**Où l’utiliser :**<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Clients qui ont consulté ce produit final ont acheté<br/>- Clients qui l’ont finalement acheté<br/>- Que achètent les autres après l’avoir consulté ? |
+| A vu ceci, a acheté cela | Recommande des produits que les acheteurs ont tendance à acheter de manière disproportionnée plus souvent après avoir consulté le produit actuel. Ce type permet aux acheteurs de découvrir des produits qu’ils n’auraient pas remarqués autrement.<br/><br/>**Utilisation :**<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Clients qui ont consulté ce produit ont finalement acheté<br/>- Clients qui l’ont finalement acheté<br/>- Que achètent les autres après avoir consulté ce produit ? |
 | J&#39;ai acheté ça, acheté ça | Recommande des produits que les acheteurs achètent plus souvent de manière disproportionnée par rapport au produit actuellement consulté. Ce type affiche des produits très pertinents que les acheteurs peuvent ajouter à leur panier en agrégeant ce que les autres acheteurs ont acheté avec le produit actuel.<br/><br/>**Où utilisé :**<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Obtenez tout ce dont vous avez besoin<br/>- N&#39;oubliez pas ces<br/>- Fréquemment achetés ensemble |
 | Plus comme ceci | Recommande des produits en fonction de métadonnées similaires telles que le nom, la description, l’affectation de catégorie et les attributs. En évaluant les attributs des produits affichés, ce type recommande des produits similaires dans la même catégorie. Par exemple, si un acheteur navigue sur des tapis de yoga, d&#39;autres produits de la catégorie d&#39;équipement sont recommandés. Comme ce type de recommandation ne fait pas de distinction entre les sexes, il n&#39;est pas recommandé pour les vêtements, la mode ou d&#39;autres verticales spécifiques au sexe.<br/><br/>**Utilisation :**<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/> - Plus de produits comme celui-ci<br/>- Similaire à ceci |
 | [Similarité visuelle](#visualsim) | Recommande des produits d’aspect similaire au produit en cours de consultation. Ce type de recommandation est particulièrement utile si les images et les aspects visuels des produits sont importants pour l’expérience d’achat. |
@@ -85,14 +85,14 @@ Ces types de recommandations recommandent les produits les plus populaires ou le
 
 >[!NOTE]
 >
->Les recommandations basées sur la popularité nécessitent des données d’événement suffisantes de votre storefront. Si votre boutique est nouvelle ou a un faible trafic, ces types de recommandations peuvent renvoyer des résultats limités ou aucun résultat jusqu’à ce que des données comportementales adéquates aient été collectées. Surveillez votre [&#x200B; indicateur de préparation des données &#x200B;](workspace.md) pour garantir des performances optimales.
+>Les recommandations basées sur la popularité nécessitent des données d’événement suffisantes de votre storefront. Si votre boutique est nouvelle ou a un faible trafic, ces types de recommandations peuvent renvoyer des résultats limités ou aucun résultat jusqu’à ce que des données comportementales adéquates aient été collectées. Surveillez votre [ indicateur de préparation des données ](workspace.md) pour garantir des performances optimales.
 
 | Type | Description |
 |---|---|
 | Les plus consultés | Recommande les produits qui ont été consultés le plus en comptant le nombre de sessions pour lesquelles une action d’affichage a eu lieu au cours des sept derniers jours.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Les plus populaires<br/>- Tendance<br/>- Populaire en ce moment<br/>- Récemment populaire<br/>- Produits populaires inspirés par ce produit (PDP)<br/>- Meilleures ventes |
 | Les plus achetés | Recommande les produits achetés le plus souvent par les acheteurs au cours des sept derniers jours.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/> - Les plus populaires<br/>- Tendance<br/>- Populaire en ce moment<br/>- Récemment populaire<br/>- Produits populaires inspirés par ce produit (PDP)<br/>- Meilleures ventes |
 | Les plus ajoutés au panier | Recommande les produits les plus fréquemment ajoutés au panier par les acheteurs au cours des sept derniers jours. Ce type de recommandation peut être utilisé sur toutes les pages.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/> - Les plus populaires<br/>- Tendance<br/>- Populaire en ce moment<br/>- Récemment populaire<br/>- Produits populaires inspirés par ce produit (PDP)<br/>- Meilleures ventes |
-| En Tendance | Recommande des produits en fonction de l’élan récent de popularité d’un produit sur l’ensemble de votre site.<br/><br/>L’IA d’Adobe agrège les données de navigation et d’achat sur votre site afin de déterminer et de classer les produits les plus récemment populaires auprès de vos clientes et clients. Parce que Trending analyse l’élan récent d’un produit, il s’agit d’un type de recommandation efficace pour les catalogues qui ont un chiffre d’affaires élevé. Si votre catalogue est plus statique, il peut ne pas être aussi utile sauf si les modèles d’achat de votre audience sont très variables.<br/><br/>Lorsqu’il est utilisé sur la page d’accueil, Trending recommande des produits qui sont récemment populaires sur l’ensemble du site. La tendance n’affiche pas les produits qui sont constamment populaires, mais plutôt ceux qui sont récemment devenus populaires. Par exemple, si vous disposez d’une campagne de marketing par e-mail faisant la promotion de certains produits, l’augmentation de popularité générée par l’e-mail augmente la probabilité que les produits promus soient classés comme étant en tendance.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Tendance<br/>- Tendance actuelle<br/>- Tendance récente<br/>- Produits chauds<br/>- Tendance des produits associés (PDP) |
+| En Tendance | Recommande des produits en fonction de l’élan récent de popularité d’un produit sur l’ensemble de votre site.<br/><br/>Adobe AI agrège les données de navigation et d’achat sur votre site afin de déterminer et de classer les produits les plus récemment populaires auprès de vos clientes et clients. Parce que Trending analyse l’élan récent d’un produit, il s’agit d’un type de recommandation efficace pour les catalogues qui ont un chiffre d’affaires élevé. Si votre catalogue est plus statique, il peut ne pas être aussi utile sauf si les modèles d’achat de votre audience sont très variables.<br/><br/>Lorsqu’il est utilisé sur la page d’accueil, Trending recommande des produits qui sont récemment populaires sur l’ensemble du site. La tendance n’affiche pas les produits qui sont constamment populaires, mais plutôt ceux qui sont récemment devenus populaires. Par exemple, si vous disposez d’une campagne de marketing par e-mail faisant la promotion de certains produits, l’augmentation de popularité générée par l’e-mail augmente la probabilité que les produits promus soient classés comme étant en tendance.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/>- Tendance<br/>- Tendance actuelle<br/>- Tendance récente<br/>- Produits chauds<br/>- Tendance des produits associés (PDP) |
 
 ## Très performant {#highperf}
 
@@ -106,8 +106,6 @@ Ces types de recommandations recommandent des produits les plus performants en f
 |---|---|
 | Conversion de la vue à l’achat | Recommande les produits présentant le taux de conversion de consultation à l’achat le plus élevé. De toutes les sessions d’acheteur qui ont enregistré une consultation de produit, quelle est la proportion qui a finalement enregistré un achat par l’acheteur.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/> -Meilleurs vendeurs<br/>- Produits populaires<br/>- Ce qui peut vous intéresser |
 | Conversion de l’affichage au panier | Recommande les produits présentant le taux de conversion d’affichage en panier le plus élevé. De toutes les sessions d’acheteur qui ont enregistré une consultation de produit, quelle est la proportion qui a finalement enregistré un ajout au panier par l’acheteur ?<br/><br/>**Cas d’utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/> - Meilleurs vendeurs<br/>- Produits populaires<br/>- Ce qui peut vous intéresser |
-| Les plus achetés | Souvent appelé « Meilleurs vendeurs », ce type de recommandation comptabilise le nombre de sessions au cours desquelles une action de commande a eu lieu au cours des sept derniers jours. Ce type de recommandation peut être utilisé sur toutes les pages.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/> - Les plus populaires<br/>- Tendance<br/>- Populaire en ce moment<br/>- Récemment populaire<br/>- Produits populaires inspirés par ce produit (PDP)<br/>- Meilleures ventes |
-| Les plus ajoutés au panier | Recommande les produits les plus fréquemment ajoutés au panier par les acheteurs au cours des sept derniers jours. Ce type de recommandation peut être utilisé sur toutes les pages.<br/><br/>**Utilisation :**<br/>- Page d’accueil<br/>- Catégorie<br/>- Détails du produit<br/>- Panier<br/>- Confirmation <br/><br/>**Étiquettes suggérées :**<br/> - Les plus populaires<br/>- Tendance<br/>- Populaire en ce moment<br/>- Récemment populaire<br/>- Produits populaires inspirés par ce produit (PDP)<br/>- Meilleures ventes |
 
 ## Similarité visuelle {#visualsim}
 
@@ -124,7 +122,7 @@ Le type de recommandation _Similarité visuelle_ offre des recommandations pour 
 - Matériau
 - Style
 
-L’IA d’Adobe utilise l’IA pour traiter et analyser les images de votre catalogue et créer des attributs utilisés pour déterminer les similitudes visuelles.
+Adobe AI utilise l’IA pour traiter et analyser les images de votre catalogue et créer des attributs utilisés pour déterminer les similitudes visuelles.
 
 >[!NOTE]
 >
@@ -152,7 +150,7 @@ Comme ce type de recommandation ne s’applique pas à la plupart des catalogues
 
    La page [Créer une recommandation](create.md) affiche désormais **Similarité visuelle** comme un type de recommandation sélectionnable lorsque le type de page est **Détails du produit**.
 
-Une fois que vous avez activé les recommandations visuelles, l’IA Adobe lance le traitement des images. Sa durée dépend de la taille de votre catalogue.
+Après avoir activé les recommandations visuelles, Adobe AI lance le traitement des images. Sa durée dépend de la taille de votre catalogue.
 
 ### Cas d’utilisation
 
