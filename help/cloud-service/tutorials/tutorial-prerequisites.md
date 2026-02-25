@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Tutoriels préalables
 
-Cette page répertorie les conditions préalables et les étapes de configuration pour les tutoriels [!DNL Adobe Commerce as a Cloud Service], tels que le tutoriel sur l’extension [ratings](./ratings-extension.md) et le tutoriel sur l’extension de méthode d’expédition [](./shipping-method-extension.md).
+Cette page répertorie les conditions préalables et les étapes de configuration pour les tutoriels [!DNL Adobe Commerce as a Cloud Service], tels que le tutoriel sur l’extension [ratings](./ratings-extension.md) et le tutoriel sur l’extension de méthode d’expédition [&#128279;](./shipping-method-extension.md).
 
 ## Conditions préalables d’Adobe Commerce as a Cloud Service
 
