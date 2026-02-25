@@ -4,20 +4,14 @@ description: Découvrez comment créer une extension d’évaluations de produit
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
+source-git-commit: fb3595284761e9478c819150c27d06631de67e18
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
 
-# Tutoriel sur l’extension d’évaluations (Beta)
-
->[!NOTE]
->
->L’outil d’IA utilisé dans ce tutoriel est actuellement dans Beta et peut inclure des bogues ou d’autres problèmes.
+# Tutoriel sur l’extension d’évaluations
 
 Ce tutoriel vous guide tout au long de la création d’une extension d’évaluations de produit pour [!DNL Adobe Commerce as a Cloud Service] à l’aide d’outils de développement [!DNL Adobe App Builder] et assistés par l’IA.
 
@@ -41,7 +35,7 @@ git --version
 bash --version
 ```
 
-Si l’une des commandes précédentes ne renvoie pas les résultats attendus, reportez-vous à la [conditions préalables](tutorial-prerequisites.md) pour obtenir des conseils.
+Si l’une des commandes précédentes ne renvoie pas les résultats attendus, reportez-vous à la [conditions préalables](./tutorial-prerequisites.md) pour obtenir des conseils.
 
 ## Développement d’extension
 
@@ -248,7 +242,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=fr).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

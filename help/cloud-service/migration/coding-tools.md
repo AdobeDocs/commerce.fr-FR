@@ -2,14 +2,12 @@
 title: Outils de développement du codage de l’IA pour Adobe Commerce App Builder
 description: Découvrez comment utiliser les outils d’IA pour créer des applications Commerce App Builder.
 feature: App Builder, Cloud
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 5d4726f7191f74507524667555ab46838bb2407a
+source-git-commit: 4e3f593ead4b0e32bdf474498421b20475dcbe52
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2470'
 ht-degree: 0%
 
 ---
@@ -27,7 +25,7 @@ Les outils de codage de l’IA offrent les avantages suivants :
 
 En installant les outils de codage de l’IA, vous avez accès aux éléments suivants :
 
-* Règles - Un ensemble de règles spécifique à Adobe Commerce et App Builder conçu pour guider et informer votre développement d’applications.
+* Compétences - Un ensemble de compétences spécifiques à Adobe Commerce et App Builder conçu pour guider et informer votre développement d’applications.
 * Serveur MCP pour les développeurs
 * Serveur MCP App Builder
 
@@ -43,11 +41,16 @@ Les outils seront mis à jour vers la dernière version.
 
 ## Conditions préalables
 
-* Un des agents de codage suivants :
+* Tout agent de codage qui prend en charge [les compétences de l’agent](https://agentskills.io/home#adoption), tel que :
+
    * [Curseur](https://cursor.com/download)
-   * [&#x200B; Copilote Github &#x200B;](https://github.com/features/copilot)
-   * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [Code Claude](https://www.claude.com/product/claude-code)
+   * [ Copilote GitHub ](https://github.com/features/copilot)
+   * [Planche à voile](https://windsurf.com)
+   * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
+   * [ Codex OpenAI ](https://openai.com/index/introducing-codex/)
+   * [Cline ](https://cline.bot)
+
 * [Node.js](https://nodejs.org/en/download) : version LTS
 * Gestionnaire de packages : [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) ou [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git) : pour le clonage du référentiel et le contrôle de version
@@ -74,11 +77,19 @@ Les outils seront mis à jour vers la dernière version.
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
-1. Clonez le Commerce [kit de démarrage de l’intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) :
+1. Clonez l’un des éléments suivants :
 
-   ```bash
-   git clone git@github.com:adobe/commerce-integration-starter-kit.git
-   ```
+   * Commerce [kit de démarrage de l’intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) - pour la création d’intégrations back-office.
+
+     ```bash
+     git clone git@github.com:adobe/commerce-integration-starter-kit.git
+     ```
+
+   * Commerce [kit de démarrage de passage en caisse](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/) pour créer ou étendre l’expérience de passage en caisse, y compris les paiements, l’expédition et les taxes.
+
+     ```bash
+     git clone git@github.com:adobe/commerce-checkout-starter-kit.git
+     ```
 
 1. Accédez au répertoire du kit de démarrage :
 
@@ -92,56 +103,52 @@ Les outils seront mis à jour vers la dernière version.
    aio commerce extensibility tools-setup
    ```
 
-Le processus de configuration vous invite à spécifier les options de configuration. Pour l’emplacement de configuration, choisissez « Répertoire actuel » pour installer les outils dans votre espace de travail actuel :
+   Le processus de configuration vous invite à spécifier les options de configuration. Suivez les invites pour terminer l&#39;installation. Les outils seront installés dans le répertoire sélectionné.
 
-```shell-session
-? Where would you like to setup the tools?
-❯ Current directory
-  New directory
-```
+   * Sélectionnez le kit de démarrage que vous souhaitez utiliser pour votre projet.
 
-Sélectionnez l’agent de codage de votre choix :
+     ```shell-session
+     ? Which starter kit would you like to use?
+     ❯ Integration starter kit
+        Checkout starter kit
+     ```
 
-```shell-session
-? Which coding agent would you like to use?
-❯ Cursor
-  Copilot
-  Gemini CLI
-  Claude Code
-```
+   * Sélectionnez l’agent de codage de votre choix. Plus de 40 agents de codage sont pris en charge, mais si vous ne voyez pas votre agent préféré, vous pouvez utiliser l’option `Other` pour installer des compétences pour n’importe quel agent de codage. Reportez-vous à la documentation de votre agent de codage pour obtenir des instructions sur la configuration des compétences.
 
-Lors de la sélection du gestionnaire de packages, Adobe recommande d’utiliser `npm` par souci de cohérence :
+     ```shell-session
+     ? Which coding agent would you like to install skills for?
+     ❯ Cursor
+        Claude Code
+        GithubCopilot
+        Windsurf
+        Gemini CLI
+        OpenAI Codex
+        Cline
+        ...
+     ```
 
-```shell-session
-? Which package manager would you like to use?
-❯ npm
-  yarn
-```
+   * Le programme d’installation détecte si NPM ou Yarn est installé et effectue automatiquement la sélection appropriée. Cependant, si aucun des deux n’est installé, vous êtes invité à sélectionner votre gestionnaire de packages. Adobe recommande d’utiliser `npm` par souci de cohérence :
+
+     ```shell-session
+     ? Which package manager would you like to use?
+     ❯ npm
+        yarn
+     ```
 
 1. Une fois les outils de codage installés, le processus d’installation configure :
 
    * Intégration du serveur MCP pour le développement d’Adobe Commerce
-   * Règles de l’IDE du curseur pour une expérience de développement améliorée
+   * [Compétences des agents](#skills) pour une expérience de développement améliorée
    * Outils et workflows de développement spécifiques à Commerce
 
-   Les fichiers suivants sont ajoutés à votre espace de travail :
-
-   **Curseur**
-
-   * Configuration MCP : `.cursor/mcp.json`
-   * Répertoire des règles : `.cursor/rules/`
-
-   **Copilote**
-
-   * Configuration MCP : `.vscode/mcp.json`
-   * Répertoire des règles : `.github/copilot-instructions.md`
+   Les compétences et les outils MCP sont maintenant installés. Si vous ne voyez pas les compétences et les outils MCP, redémarrez votre agent de codage.
 
 >[!NOTE]
 >
 >Avant de déployer votre projet, vous devez effectuer les tâches de configuration suivantes :
 >
 >* Connectez-vous à [Adobe Developer Console](https://developer.adobe.com/console) à l’aide de l’interface de ligne de commande Adobe I/O.
->* Créez un projet App Builder (voir [&#x200B; Configuration du projet &#x200B;](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Créez un projet App Builder (voir [ Configuration du projet ](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Configurez les variables d’environnement dans un fichier `.env`.
 >
 >Vous pouvez effectuer ces étapes de configuration manuellement ou utiliser les outils de codage de l’IA pour vous guider tout au long du processus. Voir [Création d’une intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) pour obtenir des instructions de configuration détaillées.
@@ -179,7 +186,7 @@ aio auth login
 
 1. Redémarrez l’IDE Cursor pour charger les nouveaux outils et la nouvelle configuration MCP.
 
-1. Vérifiez l’installation en vous assurant que les règles sont bien présentes dans le dossier `.cursor/rules/` .
+1. Vérifiez l’installation en vous assurant que les compétences sont bien présentes dans le dossier `.cursor/skills/` .
 
 1. Activez le serveur MCP :
 
@@ -198,9 +205,9 @@ aio auth login
 
 1. Utilisez l’invite suivante pour voir si l’agent utilise le serveur MCP. Si ce n’est pas le cas, demandez explicitement à l’agent d’utiliser les outils MCP disponibles.
 
-```shell-session
-What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
-```
+   ```shell-session
+   What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
+   ```
 
 ### Copilote
 
@@ -237,7 +244,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 ## Exemple d’invite
 
-L’exemple d’invite suivant crée une application pour envoyer des notifications lorsqu’une commande est passée.
+L’exemple d’invite suivant utilise le kit de démarrage de l’intégration pour créer une application afin d’envoyer des notifications lorsqu’une commande est passée.
 
 ```shell-session
 Implement an Adobe Commerce SaaS application that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
@@ -248,6 +255,19 @@ Customer Email ID -> emailID
 Payment Type -> pType
 ```
 
+L’exemple d’invite suivant utilise le kit de démarrage de passage en caisse pour créer une application qui fournit des méthodes d’expédition personnalisées.
+
+```shell-session
+Implement an Adobe Commerce SaaS application that provides custom shipping methods.
+The extension should:
+1. Return shipping options based on the destination postal code
+2. If postal code is in California, add an "Express California" option for $15
+3. If postal code is outside US, add an "International Standard" option for $25
+4. The carrier code should be "MYSHIP"
+```
+
+
+
 ## Commandes d’invite
 
 Outre l’invite, vous pouvez utiliser la commande `/search-commerce-docs` pour rechercher de la documentation dans les conversations avec votre agent. Par exemple :
@@ -256,9 +276,31 @@ Outre l’invite, vous pouvez utiliser la commande `/search-commerce-docs` pour 
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
+## Compétences
+
+Bien que les compétences soient automatiquement appelées lorsque vous discutez avec votre agent de codage, vous pouvez également les appeler manuellement à l’aide des commandes suivantes :
+
+* `/architect` - Conçoit l’architecture des extensions d’Adobe Commerce à l’aide de [!DNL App Builder] et du kit de démarrage sélectionné. À utiliser lors de la planification des intégrations, de la sélection des événements, de la conception des flux de données ou de la prise de décisions architecturales.
+* `/developer` - Implémente les extensions Adobe Commerce en suivant les modèles de [!DNL App Builder] et la structure de fichiers. À utiliser lors de la génération de code, la mise à jour de fichiers de configuration ou l’implémentation d’actions d’exécution.
+* `/devops-engineer` - Déploie et utilise des extensions [!DNL App Builder]. À utiliser lors du déploiement d’applications, de la configuration d’environnements, de la résolution de problèmes de déploiement, de la configuration de CI/CD ou de la résolution d’erreurs d’intégration.
+* `/product-manager` - Collecte et documente les exigences relatives aux extensions Adobe Commerce. À utiliser lors du démarrage d’un nouveau projet, pour définir des critères d’acceptation, clarifier des objectifs commerciaux ou créer une documentation `REQUIREMENTS.md`.
+* `/technical-writer` : crée une documentation complète pour les applications [!DNL App Builder]. À utiliser lors de la rédaction de `README.md`, de guides d’utilisation, de documentation API, de journaux de modifications ou pour garantir l’exhaustivité de la documentation.
+* `/tester` : crée des tests complets pour les applications [!DNL App Builder]. À utiliser lors de l’écriture de tests unitaires et d’intégration, de la validation de la sécurité ou du contrôle de la qualité et de la couverture du code.
+* `/tutor` (expérimental) - Enseigne [!DNL Adobe Commerce] concepts de développement d’applications avec des explications et des exemples clairs. À utiliser lorsque vous apprenez [!DNL App Builder], comprenez des événements ou avez besoin de conseils sur des modèles de développement.
+
 ## Bonnes pratiques
 
 Adobe recommande de suivre les bonnes pratiques suivantes lors de l’utilisation des outils de codage de l’IA :
+
+### Mode Plan
+
+Lorsque vous discutez avec votre agent de codage, vous devez sélectionner le mode **Plan** pour créer un plan d’implémentation détaillé pour votre projet.
+
+La méthode de sélection du mode **Plan** varie en fonction de l’agent que vous utilisez. Consultez la documentation de votre agent pour obtenir des instructions. Par exemple :
+
+* [Curseur](https://cursor.com/docs/agent/modes)
+* [Code Claude](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
+* [Gemini CLI](https://geminicli.com/docs/cli/plan-mode/)
 
 ### Checklist
 
@@ -296,8 +338,9 @@ Cela vous permet également d’exploiter les modèles Adobe et de tirer parti d
 Consultez les ressources suivantes pour commencer :
 
 * [Kit de démarrage d’intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
+* [Kit de démarrage pour la commande](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Modèles de kit de démarrage Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Exemples d’applications App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Pourquoi utiliser ces ressources ?
@@ -313,7 +356,7 @@ Consultez les ressources suivantes pour commencer :
 
 ### Protocole
 
-Le protocole en quatre phases suivant est automatiquement appliqué par le système de règles. Les outils doivent suivre automatiquement ce protocole lors du développement d’applications :
+Le protocole en quatre phases suivant est automatiquement appliqué par les compétences installées. Les outils doivent suivre automatiquement ce protocole lors du développement d’applications :
 
 * Phase 1 : analyse et clarification des exigences
    * Lorsqu’on vous pose des questions pour clarifier les choses, donnez des réponses complètes.
