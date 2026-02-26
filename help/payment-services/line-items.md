@@ -31,7 +31,7 @@ Les éléments de ligne sont activés par défaut pour [!DNL Payment Services]. 
 
 1. Développez la section _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Dans la section _[!UICONTROL Payment Services]_, développez la section_[!UICONTROL Line Items]_ .
+1. Dans la section _[!UICONTROL Payment Services]_, développez la section&#x200B;_[!UICONTROL Line Items]_ .
 
 1. Par **[!UICONTROL Line Items Enabled]**, sélectionnez `Yes` pour activer (par défaut) ou `No` pour désactiver les éléments de ligne.
 
