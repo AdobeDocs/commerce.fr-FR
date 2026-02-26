@@ -3,9 +3,9 @@ title: Options de paiement
 description: Définissez les options de paiement afin de personnaliser les méthodes disponibles pour les clients de votre boutique.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1728'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Il existe différents comportements pour chaque mode de paiement en fonction de 
 
 [!DNL Payment Services] offre des options de paiement et des flux d’intégration **avancés** (entièrement pris en charge) et **standard** (paiement express), en fonction du pays dans lequel vous opérez.
 
-* **Avancé** - Toutes les [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays actuellement entièrement pris en charge](../payment-services/introduction.md#availability). Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [&#x200B; Intégration avancée &#x200B;](../payment-services/production.md#advanced-onboarding).
+* **Avancé** - Toutes les [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays actuellement entièrement pris en charge](../payment-services/introduction.md#availability). Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [ Intégration avancée ](../payment-services/production.md#advanced-onboarding).
 
-* **Standard** - Un sous-ensemble d’options de paiement (paiement express), à savoir les cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Les champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [&#x200B; Intégration standard &#x200B;](../payment-services/production.md#standard-onboarding).
+* **Standard** - Un sous-ensemble d’options de paiement (paiement express), à savoir les cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Les champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [ Intégration standard ](../payment-services/production.md#standard-onboarding).
 
 Consultez [Activer [!DNL Payment Services] pour la production](../payment-services/production.md#complete-merchant-onboarding) pour plus d’informations sur l’intégration avancée et standard.
 
@@ -166,7 +166,44 @@ Pour **capturer des paiements avec votre fournisseur de carte de crédit existan
 1. Assurez-vous que votre boutique est [en mode production](configure-admin.md#enable-payment-services).
 1. [Configurez les boutons de paiement PayPal souhaités](configure-admin.md#payment-buttons).
 1. Désactivez _off_ l’option **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** dans la section _[!UICONTROL Payment buttons]_.
-1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_&#x200B;et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=fr#payments).
+1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+
+## Modes de paiement locaux
+
+Les modes de paiement locaux (LPM) prennent en charge les modes de paiement spécifiques à la région et locaux, tels que les virements bancaires et les solutions de paiement localisées, parallèlement aux options existantes basées sur les cartes. Les commerçants peuvent activer ou désactiver les LPM disponibles directement dans la configuration Commerce. Les LPM élargissent les capacités de paiement d’Adobe, répondent aux besoins du marché européen, améliorent la localisation des paiements et contribuent à augmenter la conversion, l’adoption par les commerçants et la satisfaction des acheteurs.
+
+Les LPM disponibles sont les suivants :
+
+| Mode de paiement | Pays | Devise monétaire |
+|----------------|-----------|----------|
+| Bancontact | Belgique | EUR |
+| CLIGNOTER | Pologne | PLN |
+| eps | Autriche | EUR |
+| IDEAL | Pays-Bas | EUR |
+| MyBank | Italie | EUR |
+| Przelewy24 | Pologne | EUR, PLN |
+
+Les LPM sont affichés aux clients en fonction de leur adresse de facturation et de la devise de base de leur site web. Un mode de règlement apparaît uniquement lorsque les deux conditions correspondent aux exigences du mode de règlement.
+
+Voir [Configuration des modes de paiement locaux](configure-admin.md#local-payment-methods) pour plus d’informations.
+
+## Boutons de passage en caisse express
+
+Pour accélérer le passage en caisse, des options de paiement express sont disponibles au début du flux de passage en caisse. Les clients peuvent effectuer leur achat à l’aide de PayPal, PayPal Pay Later, Venmo, Apple Pay ou Google Pay.
+
+Une fois activés, les boutons de passage en caisse express s’affichent au début du processus de passage en caisse, offrant ainsi un chemin d’achat plus rapide aux clients qui préfèrent les méthodes de paiement par portefeuille numérique.
+
+Pour activer les boutons de passage en caisse express, configurez chaque mode de paiement individuellement :
+
+* **PayPal et Pay Later** : activez la **[!UICONTROL Show buttons at start of checkout]** dans les paramètres [Boutons de paiement PayPal](configure-admin.md#paypal-payment-buttons).
+
+* **Apple Pay** : activez la **[!UICONTROL Show Apple Pay at start of checkout]** dans les paramètres [Apple Pay](configure-admin.md#apple-pay).
+
+* **Google Pay** : activez la **[!UICONTROL Show Google Pay at start of checkout]** dans les paramètres de [Google Pay](configure-admin.md#google-pay).
+
+>[!NOTE]
+>
+>La disponibilité du mode de paiement dépend de la localisation de l&#39;acheteur. Pour les tests de sandbox, utilisez la configuration [Pays de l’acheteur](sandbox.md#buyers-country) pour simuler différentes régions. Par exemple, Venmo n’est disponible qu’aux États-Unis. Pay Later est disponible aux États-Unis et au Royaume-Uni.
 
 ## Options de passage en caisse
 

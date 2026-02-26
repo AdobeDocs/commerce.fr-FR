@@ -4,9 +4,9 @@ description: Découvrez les lignes pour et comment afficher les lignes  [!DNL Pa
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,29 @@ Les articles de ligne pour [!DNL Payment Services] sont les articles inclus dans
 
 Ces informations sont utiles pour le service client, la gestion des commandes et la facturation correcte.
 
-Cette fonctionnalité est activée par défaut pour les [!DNL Payment Services]. Pour afficher les éléments de ligne :
+## Configurer les éléments de ligne
+
+Les éléments de ligne sont activés par défaut pour [!DNL Payment Services]. Pour configurer :
+
+1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+
+1. Accédez à **[!UICONTROL Sales]** et sélectionnez **[!UICONTROL Payment Methods]**.
+
+1. Développez la section _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
+
+1. Dans la section _[!UICONTROL Payment Services]_, développez la section_[!UICONTROL Line Items]_ .
+
+1. Par **[!UICONTROL Line Items Enabled]**, sélectionnez `Yes` pour activer (par défaut) ou `No` pour désactiver les éléments de ligne.
+
+1. Cliquez sur **[!UICONTROL Save Config]** pour enregistrer vos modifications.
+
+>[!IMPORTANT]
+>
+> Si vous disposez d’extensions tierces qui ajoutent des frais personnalisés (tels que des frais de gestion) à vos commandes, vous devrez peut-être désactiver les éléments de ligne. [!DNL Payment Services] calcule les éléments de ligne en fonction des composants de commande Commerce standard (articles, taxe, expédition et remises). Les frais tiers qui ne sont pas reconnus par [!DNL Payment Services] peuvent entraîner une incohérence entre le total de la ligne et le total de la commande, ce qui peut empêcher l’exécution du passage en caisse.
+
+## Afficher les éléments de ligne
+
+Pour afficher les éléments de ligne :
 
 1. Accédez à votre [tableau de bord de vendeur PayPal](https://www.paypal.com/merchant/){target=_blank}.
 
@@ -127,7 +149,7 @@ Voir [Documentation PayPal pour les développeurs sur les éléments de ligne](h
 
 ## Gérer les éléments de ligne
 
-Adobe Commerce [calcule la taxe en fonction du montant total de chaque ligne](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, ce qui peut entraîner des problèmes d&#39;arrondi si plusieurs quantités du même article sont commandées ou si des prix incluant la taxe sont affichés dans le catalogue. Dans ce cas, la quantité totale peut être fractionnée en deux lignes, mais la quantité sera égale au total des articles commandés.
+Adobe Commerce [calcule la taxe en fonction du montant total de chaque ligne](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, ce qui peut entraîner des problèmes d&#39;arrondi si plusieurs quantités du même article sont commandées ou si des prix incluant la taxe sont affichés dans le catalogue. Dans ce cas, la quantité totale peut être fractionnée en deux lignes, mais la quantité sera égale au total des articles commandés.
 
 > Exemple d&#39;éléments de ligne avec des problèmes d&#39;arrondi dans la vue du tableau de bord du commerçant
 
