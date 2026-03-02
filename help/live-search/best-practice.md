@@ -3,9 +3,9 @@ title: Bonnes pratiques [!DNL Live Search]
 description: Découvrez les bonnes pratiques d’implémentation  [!DNL Live Search]  dans votre boutique.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
+source-git-commit: c3d431a6536c3c5528b9aee45f03b0b94b4ea64e
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2892'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Plusieurs facteurs clés déterminent la pertinence et l’efficacité des résu
 - Des données de produit bien structurées garantissent que les algorithmes de recherche peuvent efficacement faire correspondre les produits aux requêtes. Des données de produit de faible qualité entraînent des résultats de recherche peu pertinents. Pour influencer directement le succès de votre stratégie de marchandisage :
    - Configurez les attributs corrects comme pouvant faire l’objet d’une recherche avec leur poids correspondant.
    - Assurez-vous que les données contenues dans ces attributs sont pertinentes.
-- Une expérience de recherche bien conçue renforce la confiance des clients et les incite à croire qu’ils trouveront ce dont ils ont besoin.
+- Une expérience de recherche bien conçue renforce la confiance des clients et les incite à croire qu’ils peuvent trouver ce dont ils ont besoin.
 - Les règles de recherche sont essentielles, car elles peuvent améliorer la visibilité de certains produits en fonction de leur popularité, des nouveaux arrivants, des critères promotionnels ou de toute autre stratégie de marchandisage pour répondre aux besoins de votre entreprise.
 - La navigation à facettes permet aux acheteurs d’affiner leur recherche et d’obtenir rapidement des résultats pertinents.
 
@@ -69,7 +69,7 @@ Pour configurer un attribut de produit en tant que facette, les [propriétés](f
 
 #### Conseils pour optimiser les facettes
 
-- Déterminez les attributs les plus pertinents et utiles de vos produits, tels que le titre, la catégorie, la marque, la gamme de prix, la couleur et la taille, puis définissez-les comme [&#x200B; facettes dynamiques &#x200B;](facets-type.md). 
+- Déterminez les attributs les plus pertinents et utiles de vos produits, tels que le titre, la catégorie, la marque, la gamme de prix, la couleur et la taille, puis définissez-les comme [ facettes dynamiques ](facets-type.md). 
 - Définissez et triez des attributs de produit cohérents dans l’ensemble de votre catalogue et hautement pertinents pour vos produits afin d’améliorer la pertinence et les fonctionnalités de filtrage de vos acheteurs.
 - Assurez-vous que les libellés des facettes sont faciles à comprendre et nommés de manière cohérente sur l’ensemble du site. Par exemple, utilisez « Plage de prix » au lieu de « Coût ».
 - Évitez d’accabler les acheteurs en limitant le nombre de facettes aux plus importantes. Un nombre trop élevé d’options peut entraîner une fatigue liée aux décisions. Par défaut, la [!DNL Live Search] est limitée à un maximum de 100 attributs configurés en tant que facettes et 30 intervalles renvoyés dans chaque facette. En savoir plus sur les [limites des facettes](boundaries-limits.md#facets). 
@@ -124,21 +124,92 @@ En savoir plus sur les règles de recherche :
    - [Modifier, afficher, supprimer](rules-manage.md)
 - Collecte de données
    - [[!DNL Live Search] événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
-   - [Collecteur D’Événements Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
+   - [Collecteur D’Événements Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
    - [Événements Commerce GitHub](https://github.com/adobe/commerce-events/tree/main/examples) 
 
 ### Utilisation des métadonnées de produit
 
-Assurez-vous que des attributs de produit précis et détaillés sont [configurés comme pouvant faire l’objet de recherches](workspace.md#set-attributes-as-searchable). Notez que les attributs SKU, nom et catégorie peuvent être recherchés par défaut et ne peuvent pas être exclus de la recherche. Pour de meilleurs résultats, n’utilisez pas d’espaces dans vos SKU.
+Assurez-vous que des attributs de produit précis et détaillés sont [configurés comme pouvant faire l’objet de recherches](workspace.md#set-attributes-as-searchable). Notez que les attributs SKU, nom et catégorie peuvent être recherchés par défaut et ne peuvent pas être exclus de la recherche. Pour de meilleurs résultats, n’utilisez pas d’espaces dans vos SKU.
+
+Le choix des attributs pouvant faire l’objet d’une recherche a un impact important sur la qualité de la recherche. La recherche d’un trop grand nombre d’attributs peut réduire la pertinence et provoquer des correspondances inattendues, même si elle augmente le nombre de résultats renvoyés. Cette section explique comment sélectionner délibérément des attributs pouvant faire l’objet d’une recherche pour équilibrer la couverture et la pertinence.
+
+**Attributs pouvant faire l’objet d’une recherche recommandés :**
+
+- **Nom du produit** - Intention élevée, décrit directement le produit.
+- **Description du Principal** - Des détails de produit concis que les acheteurs s’attendent à voir correspondre.
+- **Marque** - Les acheteurs font fréquemment des recherches par marque.
+- **Numéro/style du modèle** - Identifiants spécifiques avec une intention claire.
+- **Fonctionnalités clés** - Caractéristiques distinctives importantes (par exemple, « étanche », « sans fil »).
+- **Matière/Tissu** - Pour les catégories mode et meubles.
+
+**Évitez de rendre ces attributs interrogeables :**
+
+- **Descriptions longues ou spécifications** - Trop de texte crée du bruit et des correspondances inattendues.
+- **Chemins d’accès aux catégories** - Peut entraîner des résultats non pertinents en raison de termes de taxonomie généraux.
+- **Codes SKU internes avec des caractères mixtes** - Crée des faux positifs lors de correspondances partielles.
+- **Champs administratifs** - Notes internes ou codes entrepôt non pertinents pour les acheteurs.
+- **Contenu HTML ou balises de formatage** - Le contenu technique n’améliore pas la pertinence.
+
+#### Problèmes courants causés par des attributs indexables incorrects
+
+La recherche des attributs incorrects peut frustrer les acheteurs et créer des réaffectations d’assistance.
+
+| Exemple | Scénario | Recommandation |
+|---------|----------|----------------|
+| **Effets indésirables de limitation et de saisie semi-automatique** | Un commerçant rend les descriptions de produits longues consultables. Un acheteur recherche « can » (qui cherche des conteneurs). En raison de l&#39;encombrement et de la correspondance partielle, les produits avec « can » dans les mots plus grands dans leurs descriptions apparaissent, tels que « American », « canopy » ou « canvas ». Produits sans rapport avec l’intention de l’acheteur, et ils perdent confiance dans la recherche. | Réduisez les champs pouvant faire l’objet de recherches aux attributs à forte intention tels que le nom du produit et la description principale. Validez vos principaux termes de recherche pour identifier les correspondances problématiques. Utilisez des règles de marchandisage de recherche ou des redirections pour gérer des cas Edge connus spécifiques. |
+| **Le classement par popularité amplifie l&#39;appariement bruité** | Un commerçant définit le classement sur « Les plus achetés » et inclut les chemins de catégorie et les descriptions longues comme attributs pouvant faire l’objet de recherches. Un acheteur recherche « sac pour ordinateur portable ». Le large assortiment renvoie les sacs d&#39;ordinateurs portables, les accessoires d&#39;ordinateurs portables, les sacs à d&#39;autres fins et les ordinateurs portables eux-mêmes. Comme les ordinateurs portables sont plus souvent achetés que les sacoches, ils se classent au premier rang. L’acheteur perçoit le classement comme incorrect, même si le système fonctionne comme configuré. | Supprimez les attributs pouvant faire l’objet de recherches bruyants tels que les chemins de catégorie. Une fois que l’ensemble de correspondances est plus précis, appliquez des stratégies de classement basées sur la popularité. Surveillez les analyses de recherche pour identifier les requêtes où ce modèle se produit. |
+| **Le chemin d’accès à la catégorie crée des faux positifs** | Un commerçant rend le chemin d’accès complet de la catégorie consultable (par exemple, « Accueil > Cuisine > Appareils > Petits appareils »). Un acheteur recherche « bureau à domicile ». Les produits de la catégorie « Accueil » correspondent même s’il s’agit d’articles de cuisine, car le chemin d’accès à la catégorie « Accueil » existe. Les appareils ménagers, le décor et d&#39;autres produits sans rapport apparaissent dans les résultats, diluant la pertinence. | Ne rendez pas les chemins de catégorie utilisables dans les recherches. Utilisez plutôt des facettes pour permettre aux acheteurs de filtrer par catégorie. Si le filtrage de catégories est essentiel à votre stratégie de recherche, implémentez-le au moyen de règles de marchandisage plutôt que d’attributs pouvant faire l’objet de recherches. |
+
+#### Pondération des attributs pouvant faire l’objet d’une recherche appropriée
 
 Pour accroître la pertinence de la recherche, attribuez un poids à chaque attribut consultable. Les attributs ayant un poids plus élevé doivent apparaître plus haut dans les résultats de la recherche. Le tri par pertinence est affecté par plusieurs critères, tels que le poids de la recherche. Cela signifie que parfois les attributs ayant un poids de recherche inférieur peuvent toujours avoir plus de pertinence que les attributs ayant un poids de recherche supérieur. D’autres critères peuvent inclure le nombre de correspondances dans un attribut donné, la position du terme de recherche trouvé et la structure textuelle globale avant et après un terme de recherche.
 
+**Priorités de poids :**
+
+- **Poids le plus élevé (9-10) :** nom du produit, marque
+- **Poids de Medium (6-8) :** Numéro de modèle, description principale, principales fonctionnalités
+- **Poids inférieur (3-5) :** descriptions Secondaires, matériaux, spécifications
+
 Assurez-vous que chaque produit possède du contenu pertinent dans chaque attribut consultable. Il n’est pas recommandé de définir un attribut comme pouvant faire l’objet d’une recherche s’il contient de grandes quantités de contenu, car cela peut réduire la pertinence des résultats de recherche.
+
+#### Dépannage
+
+Si les résultats de la recherche semblent aléatoires ou non pertinents, utilisez cette liste de contrôle avant de passer à un niveau supérieur en tant que défaut du produit :
+
+1. **Vérifier la configuration des attributs pouvant faire l’objet d’une recherche :**
+
+   - Répertorier tous les attributs actuellement définis comme pouvant faire l’objet d’une recherche.
+   - Identifiez les attributs généraux ou bruyants (descriptions longues, chemins de catégorie, champs administratifs).
+   - Supprimez le statut consultable des attributs qui ne représentent pas l’intention de l’acheteur.
+
+1. **Valider les correspondances de requête par rapport aux attributs principaux :**
+
+   - Testez vos requêtes de recherche les plus courantes.
+   - Vérifiez que les résultats correspondent principalement au nom du produit et à la marque plutôt qu’au texte tangentiel.
+   - Vérifiez si les résultats inattendus ne partagent que les correspondances faibles dans le contenu de forme longue.
+
+1. **Test avec et sans champs bruités :**
+
+   - Supprimez temporairement le statut consultable du chemin d’accès à la catégorie et des champs de description longue.
+   - Exécutez à nouveau les requêtes problématiques pour voir si la pertinence s’améliore.
+   - Si les résultats s’améliorent, ajustez définitivement votre configuration.
+
+1. **Utiliser des règles de marchandisage pour les exceptions :**
+
+   - Pour les requêtes connues spécifiques qui nécessitent un traitement spécial, créez des règles de recherche ciblées.
+   - N’essayez pas de résoudre des cas de périphérie en rendant d’autres attributs consultables.
+   - Utilisez des redirections pour les recherches de noms de marque ou les fautes d’orthographe courantes.
+
+1. **Surveiller et itérer :**
+
+   - Utilisez l’espace de travail [Performances](performance.md) pour suivre les taux de résultats nuls et les taux de clics publicitaires.
+   - Consultez les principales requêtes de recherche chaque semaine pour identifier de nouveaux modèles.
+   - Ajustez les attributs et les poids pouvant faire l’objet d’une recherche en fonction des données, et non des hypothèses.
 
 En savoir plus sur les attributs de produit pour la recherche :
 
 - [Définir les attributs comme pouvant faire l’objet d’une recherche](workspace.md#set-attributes-as-searchable)
-- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Surveillance des résultats de recherche
 
