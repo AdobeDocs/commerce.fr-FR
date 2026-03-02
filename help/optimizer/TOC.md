@@ -4,10 +4,10 @@ user-guide-description: Documentation et ressources pour  [!DNL Adobe Commerce O
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 8ec4054a81981866b7837dfc2e89223328ccea89
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 10%
+source-wordcount: '106'
+ht-degree: 11%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 10%
    - [Calques de catalogue](./setup/catalog-layer.md)
    - [Politiques](./setup/policies.md)
    - [Livres de prix](./setup/pricebooks.md)
+   - [Visuels du produit](./setup/product-visuals.md)
    - [Synchronisation des données](./setup/data-sync.md)
    - Événements {#events}
       - [Vue d’ensemble](./setup/events/overview.md)

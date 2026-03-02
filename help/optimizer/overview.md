@@ -2,11 +2,11 @@
 title: Qu’est-ce que Adobe Commerce Optimizer ?
 description: En savoir plus sur  [!DNL Adobe Commerce Optimizer]  et ses principales fonctionnalités.
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Avec [!DNL Adobe Commerce Optimizer], vous pouvez :
 
 Regardez la vidéo suivante pour un aperçu général de [!DNL Adobe Commerce Optimizer] :
 
->[!VIDEO](https://video.tv.adobe.com/v/3450465?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Qui profite le plus de [!DNL Adobe Commerce Optimizer] ?
 
@@ -33,7 +33,7 @@ Regardez la vidéo suivante pour un aperçu général de [!DNL Adobe Commerce Op
 
 - Les commerçants qui souhaitent maintenir leur système commercial principal existant et transformer uniquement les expériences de storefront.
 - Entreprises dans lesquelles un système tiers gère le cycle de vie du panier et du passage en caisse.
-- Les clients AEM qui recherchent un moyen simple de gérer leur catalogue de produits à partir d’un moteur de commerce tiers.
+- [Les clients AEM ](setup/product-visuals.md) recherchent un moyen simple de gérer leur catalogue de produits à partir d’un moteur de commerce tiers.
 
 ## Aperçu rapide
 
@@ -69,6 +69,7 @@ Créez des expériences personnalisées pour vos acheteurs grâce à la découve
 Définissez les vues et politiques de catalogue. Le catalogue contient non seulement vos données de produit, mais il vous aide également à définir la structure de votre entreprise. Vous pouvez également afficher des informations précieuses sur la disponibilité des données de produit pour votre storefront, afin qu’elles puissent être rapidement affichées pour vos clients.
 
 - **Vues catalogue** - Vous aide à définir votre structure de vente au détail en groupes professionnels significatifs. Par exemple, les concessionnaires de l’industrie automobile, les filiales de conglomérats de marques multiples ou les sites de fabrication de fournisseurs.
+- **Calques de catalogue** - Modifiez les données de produit sans modifier les données source. Lors de l’utilisation d’AEM Assets pour les images de produit, le calque AEM-Assets est appliqué au moyen des [Visuels du produit](setup/product-visuals.md). Voir [Calques de catalogue](setup/catalog-layer.md) pour plus d’informations.
 - **Politiques** - Filtres d’accès aux données hébergés dans des vues de catalogue. Les politiques permettent de s’assurer que le contenu approprié est envoyé à la bonne destination. Par exemple, les points de vente, les magasins physiques, les places de marché, les pipelines de publicités (Google, Facebook, Instagram).
 - **Synchronisation des données** - Affiche une vue d’ensemble du statut de synchronisation des données de produit transférées de leur source de données (PIM, ERP, etc.) vers [!DNL Adobe Commerce Optimizer]. Ces données de produit s’affichent dans les onglets **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]** et **[!UICONTROL Recommendations]**.
 - **Événements** - Affiche les données d’événement du storefront qui alimentent la découverte de produit et les recommandations. La page **Events** permet au commerçant de vérifier qu’il a correctement implémenté les événements de storefront et que les événements sont capturés avec succès. Les commerçants peuvent utiliser cette page pour identifier les problèmes potentiels et prendre des mesures pour résoudre les problèmes d&#39;événement.
@@ -93,4 +94,4 @@ Les principales fonctionnalités sont les suivantes :
 
 Le diagramme suivant décrit l’architecture de base de [!DNL Adobe Commerce Optimizer], de l’ingestion des données du catalogue à la relation entre les services de marchandisage, votre storefront, l’intégration à un panier tiers et le processus de passage en caisse.
 
-![[!DNL Adobe Commerce Optimizer] Architecture &#x200B;](./assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] Architecture ](./assets/architecture.png)

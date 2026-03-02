@@ -3,10 +3,10 @@ title: Couche Catalogue
 description: Découvrez comment les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine, afin que vous puissiez les personnaliser en toute sécurité et annuler les modifications à tout moment.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 4a904527af172a5e35b87410135d55484d07ad84
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine. Les calques appliquent des modifications à des attributs de produit spécifiques, tels que le nom, la description, les images, les liens et les métadonnées, en créant un calque au-dessus de votre catalogue de base. Vos données de produit d’origine restent intactes, ce qui vous permet de personnaliser les produits en toute sécurité et d’annuler les modifications à tout moment.
 
-![&#x200B; Calques de catalogue &#x200B;](../assets/catalog-layers.png)
+![ Calques de catalogue ](../assets/catalog-layers.png)
 
 ## Fonctionnement des calques de catalogue
 
@@ -27,8 +27,8 @@ Lorsqu’un client consulte votre storefront, le système combine vos données d
 
 1. **Gestion des champs** : les différents types de champs sont traités différemment :
 
-   - **Remplacer les champs** : les champs de texte tels que le nom, la description et les méta-titres sont remplacés par les valeurs définies dans le calque, le calque de priorité supérieure étant prioritaire.
-   - **Fusionner les champs** : les champs de tableau tels que les images, les liens et les attributs sont combinés à partir de plusieurs calques, fournissant ainsi une réponse unifiée.
+   * **Remplacer les champs** : les champs de texte tels que le nom, la description et les méta-titres sont remplacés par les valeurs définies dans le calque, le calque de priorité supérieure étant prioritaire.
+   * **Fusionner les champs** : les champs de tableau tels que les images, les liens et les attributs sont combinés à partir de plusieurs calques, fournissant ainsi une réponse unifiée.
 
 1. **Résolution de priorité** : le champ Ordre détermine le calque prioritaire. Lorsque plusieurs calques modifient le même champ, le calque portant le numéro d’ordre le plus bas a une priorité plus élevée (par exemple, l’ordre 1 est le plus élevé).
 
@@ -36,11 +36,50 @@ Lorsqu’un client consulte votre storefront, le système combine vos données d
 
 Les calques de catalogue sont généralement utilisés pour :
 
-- **Optimisation de l’optimisation du référencement** : remplacez les titres et descriptions des métadonnées de produit en fonction des recommandations de l’IA de [Sites Optimizer](../manage-results/opportunities.md).
-- **Campagnes saisonnières** : mettez temporairement à jour les noms, descriptions ou images de produits pour les promotions sans modifier les données sources.
-- **Personnalisation régionale** : affichez différentes informations sur les produits en fonction de l&#39;emplacement géographique ou de la langue.
-- **Test A/B** : testez différentes présentations de produits pour optimiser les taux de conversion.
-- **Gestion multimarque** : personnalisez les attributs de produit pour différentes vues de catalogue de marque.
+* **Optimisation de l’optimisation du référencement** : remplacez les titres et descriptions des métadonnées de produit en fonction des recommandations de l’IA de [Sites Optimizer](../manage-results/opportunities.md).
+* **Campagnes saisonnières** : mettez temporairement à jour les noms, descriptions ou images de produits pour les promotions sans modifier les données sources.
+* **Personnalisation régionale** : affichez différentes informations sur les produits en fonction de l&#39;emplacement géographique ou de la langue.
+* **Test A/B** : testez différentes présentations de produits pour optimiser les taux de conversion.
+* **Gestion multimarque** : personnalisez les attributs de produit pour différentes vues de catalogue de marque.
+* **Visuels du produit** : appliquez les images du produit AEM Assets sous forme de calque au-dessus de votre catalogue de base.
+
+## Couche AEM-Assets
+
+Lorsque vous activez [Visuels de produit](product-visuals.md), l’intégration AEM Assets crée et gère automatiquement une couche de catalogue dédiée exclusivement au contenu AEM Assets. Le nom de calque par défaut est `AEM-Assets`, mais vous pouvez spécifier un nom personnalisé lors de l’[intégration dans l’intégration AEM Assets](../../aem-assets-integration/get-started/configure-aco.md).
+
+Ce calque contient les images des produits synchronisées à partir d’AEM Assets. Comme les autres calques de catalogue, il est renseigné via l’[API Product Layers](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. Le service d’intégration Assets transforme les métadonnées des ressources AEM et les URL de diffusion au format API et envoie automatiquement les données lorsque les ressources sont approuvées dans AEM Assets.
+
+L’intégration prend en charge une source par client (un paramètre régional + un calque).
+
+>[!CAUTION]
+>
+> Affectez la couche AEM-Assets à votre vue de catalogue. Si le calque n’est pas affecté, les données d’image du produit peuvent être écrasées de manière inattendue.
+
+### Fonctionnement de la couche AEM-Assets
+
+1. **Création automatique** : la couche est créée lorsque l’intégration AEM Assets est configurée pour votre instance [!DNL Commerce Optimizer].
+
+1. **Synchronisation des images** : lorsque des ressources sont approuvées dans AEM Assets, Assets Integration Service transforme les données des ressources et met à jour la couche de `AEM-Assets` via l’API Product Layers.
+
+1. **Affectation de calque** : affectez le calque `AEM-Assets` aux vues de catalogue dans lesquelles vous souhaitez que les images AEM Assets apparaissent.
+
+### Affectation de la couche AEM-Assets à une vue de catalogue
+
+Pour afficher des images AEM Assets sur votre storefront :
+
+1. Accédez à _Configuration de la boutique_, puis cliquez sur **[!UICONTROL Catalog views]**.
+
+1. Sélectionnez la vue du catalogue à laquelle appliquer le calque.
+
+1. Dans la section Calques de catalogue, recherchez le calque **AEM-Assets**.
+
+1. Activez le calque pour l’activer pour cette vue de catalogue.
+
+1. Cliquez sur **[!UICONTROL Save]** pour appliquer les modifications.
+
+Une fois attribuées, les API storefront (service de catalogue, recherche en direct, recommandations de produits et API Storefront GraphQL) renvoient à la fois des images de catalogue de base et des images AEM Assets pour les produits.
+
+Pour plus d’informations sur la configuration des visuels de produit, voir [Visuels de produit avec AEM Assets](product-visuals.md).
 
 ## Ajout d’une couche de catalogue via l’ingestion de données
 
@@ -52,8 +91,8 @@ Vous pouvez ajouter des couches de catalogue à vos produits pendant le processu
 
 **Conditions préalables :**
 
-- Informations d’identification d’API avec autorisation d’accès au service d’ingestion de données
-- SKU de produit qui existent déjà dans votre catalogue de base
+* Informations d’identification d’API avec autorisation d’accès au service d’ingestion de données
+* SKU de produit qui existent déjà dans votre catalogue de base
 
 **Étapes:**
 
@@ -63,7 +102,7 @@ Vous pouvez ajouter des couches de catalogue à vos produits pendant le processu
 
 1. Vérifiez que la couche a bien été ingérée en vérifiant la configuration de la vue de catalogue .
 
-Pour obtenir des spécifications d’API détaillées et des exemples de payload, voir [Couches de produit](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers) dans la documentation du développeur.
+Pour obtenir des spécifications d’API détaillées et des exemples de payload, voir [Couches de produit](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank} dans la documentation du développeur.
 
 ## Ajout manuel d’un calque de catalogue dans l’interface utilisateur
 
@@ -91,10 +130,10 @@ L’interface utilisateur de la vue Catalogue vous permet de créer et de gérer
 
 1. Configurez les propriétés du calque :
 
-   - **Nom du calque** : entrez un nom descriptif pour identifier l&#39;objectif du calque.
-   - **Produits** : sélectionnez les produits auxquels s&#39;applique ce calque.
-   - **Attributs** : sélectionnez les attributs de produit à modifier (nom, description, images, balises meta, etc.).
-   - **Valeurs** : saisissez les nouvelles valeurs pour chaque attribut sélectionné.
+   * **Nom du calque** : entrez un nom descriptif pour identifier l&#39;objectif du calque.
+   * **Produits** : sélectionnez les produits auxquels s&#39;applique ce calque.
+   * **Attributs** : sélectionnez les attributs de produit à modifier (nom, description, images, balises meta, etc.).
+   * **Valeurs** : saisissez les nouvelles valeurs pour chaque attribut sélectionné.
 
 1. Cliquez sur **Enregistrer** pour créer le calque.
 
@@ -134,14 +173,14 @@ Vous pouvez activer ou désactiver les calques de catalogue sans les supprimer, 
 
 1. Cliquez sur le bouton d’activation pour activer ou désactiver le calque.
 
-   - **Actif** : le calque est appliqué aux données du produit.
-   - **Inactif** : le calque est conservé, mais pas appliqué aux données du produit.
+   * **Actif** : le calque est appliqué aux données du produit.
+   * **Inactif** : le calque est conservé, mais pas appliqué aux données du produit.
 
 1. La modification prend effet immédiatement sur votre storefront.
 
 **Pour supprimer un calque, procédez comme suit**
 
-Utilisez l’API Data Ingestion pour [supprimer une couche de catalogue](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers).
+Utilisez l’API Data Ingestion pour [supprimer une couche de catalogue](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers){target=_blank}.
 
 ## Gérer les priorités de calque
 
@@ -149,11 +188,11 @@ L’ordre dans lequel les calques sont appliqués détermine les valeurs qui app
 
 **Présentation de l’ordre de priorité :**
 
-- Chaque calque se voit attribuer un numéro d’ordre (1, 2, 3, etc.)
-- L’ordre 1 a la priorité la plus élevée et remplace tous les autres calques
-- Lorsque plusieurs calques modifient le même champ, le calque portant le numéro d’ordre le plus bas est prioritaire
-- La priorité s’applique uniquement aux champs de remplacement (nom, description, balises meta)
-- Les champs de fusion (images, liens, attributs) combinent les données de tous les calques
+* Chaque calque se voit attribuer un numéro d’ordre (1, 2, 3, etc.)
+* L’ordre 1 a la priorité la plus élevée et remplace tous les autres calques
+* Lorsque plusieurs calques modifient le même champ, le calque portant le numéro d’ordre le plus bas est prioritaire
+* La priorité s’applique uniquement aux champs de remplacement (nom, description, balises meta)
+* Les champs de fusion (images, liens, attributs) combinent les données de tous les calques
 
 **Pour réorganiser les priorités des calques :**
 
@@ -177,19 +216,20 @@ L’ordre dans lequel les calques sont appliqués détermine les valeurs qui app
 
 Suivez ces recommandations lors de l’utilisation des calques de catalogue :
 
-- **Utilisez des noms descriptifs**—Nommez les calques clairement pour indiquer leur objectif (par exemple, « Campagne des Fêtes 2025 » ou « Optimisation du référencement - Pages de produits »).
+* **Utilisez des noms descriptifs**—Nommez les calques clairement pour indiquer leur objectif (par exemple, « Campagne des Fêtes 2025 » ou « Optimisation du référencement - Pages de produits »).
 
-- **Limiter les calques** : bien que le système prenne en charge plusieurs calques, un nombre trop élevé d’entre eux peut avoir un impact sur les performances. Consolidez les calques si possible.
+* **Limiter les calques** : bien que le système prenne en charge plusieurs calques, un nombre trop élevé d’entre eux peut avoir un impact sur les performances. Consolidez les calques si possible.
 
 <!--- **Test before activating**—Always preview layer effects before activating them on your live storefront. !!!REMOVE IF PREVIEW NOT AVAILABLE FOR GA!!!-->
 
-- **Logique de priorité du document** : suivez les calques qui doivent être prioritaires pour éviter les remplacements involontaires.
+* **Logique de priorité du document** : suivez les calques qui doivent être prioritaires pour éviter les remplacements involontaires.
 
-- **Vérifier les calques Sites Optimizer** : lorsque vous utilisez le correctif automatique de Sites Optimizer, le système crée les calques avec la priorité la plus élevée. Veillez à ajouter des calques manuels susceptibles de remplacer les recommandations de l’IA. En savoir plus sur l&#39;utilisation de [Sites Optimizer](../manage-results/opportunities.md).
+* **Vérifier les calques Sites Optimizer** : lorsque vous utilisez le correctif automatique de Sites Optimizer, le système crée les calques avec la priorité la plus élevée. Veillez à ajouter des calques manuels susceptibles de remplacer les recommandations de l’IA. En savoir plus sur l&#39;utilisation de [Sites Optimizer](../manage-results/opportunities.md).
 
-- **Surveillance des performances** : si vous constatez un chargement lent des pages produit, passez en revue la configuration des calques et envisagez de les consolider.
+* **Surveillance des performances** : si vous constatez un chargement lent des pages produit, passez en revue la configuration des calques et envisagez de les consolider.
 
 ## Plus comme ceci
 
-- [Vues du catalogue](catalog-view.md) - Configurez les vues du catalogue pour différents storefronts.
-- [Opportunités](../manage-results/opportunities.md) - Découvrez l’optimisation optimisée par l’IA à l’aide des calques de catalogue
+* [Vues du catalogue](catalog-view.md) - Configurez les vues du catalogue pour différents storefronts.
+* [Product Visuals](product-visuals.md) - Utilisation d’AEM Assets pour les images de produit
+* [Opportunités](../manage-results/opportunities.md) - Découvrez l’optimisation optimisée par l’IA à l’aide des calques de catalogue
