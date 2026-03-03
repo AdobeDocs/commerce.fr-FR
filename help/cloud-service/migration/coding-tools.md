@@ -2,12 +2,12 @@
 title: Outils de développement du codage de l’IA pour Adobe Commerce App Builder
 description: Découvrez comment utiliser les outils d’IA pour créer des applications Commerce App Builder.
 feature: App Builder, Cloud
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 level: Intermediate
-source-git-commit: 4e3f593ead4b0e32bdf474498421b20475dcbe52
+source-git-commit: 2c851da1dc521f5309031fc091be88f9ca39cd8f
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2438'
 ht-degree: 0%
 
 ---
@@ -45,21 +45,17 @@ Les outils seront mis à jour vers la dernière version.
 
    * [Curseur](https://cursor.com/download)
    * [Code Claude](https://www.claude.com/product/claude-code)
-   * [&#x200B; Copilote GitHub &#x200B;](https://github.com/features/copilot)
+   * [ Copilote GitHub ](https://github.com/features/copilot)
    * [Planche à voile](https://windsurf.com)
    * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
-   * [&#x200B; Codex OpenAI &#x200B;](https://openai.com/index/introducing-codex/)
-   * [Cline &#x200B;](https://cline.bot)
+   * [ Codex OpenAI ](https://openai.com/index/introducing-codex/)
+   * [Cline ](https://cline.bot)
 
 * [Node.js](https://nodejs.org/en/download) : version LTS
 * Gestionnaire de packages : [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) ou [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git) : pour le clonage du référentiel et le contrôle de version
 
 ## Installation
-
->[!NOTE]
->
->Si vous souhaitez uniquement installer le service Documentation RAG et non le package complet des outils de codage d’IA, voir [Service Documentation RAG](./doc-rag.md).
 
 1. Installez globalement la dernière [ligne de commande Adobe I/O](https://github.com/adobe/aio-cli) :
 
@@ -148,7 +144,7 @@ Les outils seront mis à jour vers la dernière version.
 >Avant de déployer votre projet, vous devez effectuer les tâches de configuration suivantes :
 >
 >* Connectez-vous à [Adobe Developer Console](https://developer.adobe.com/console) à l’aide de l’interface de ligne de commande Adobe I/O.
->* Créez un projet App Builder (voir [&#x200B; Configuration du projet &#x200B;](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Créez un projet App Builder (voir [ Configuration du projet ](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Configurez les variables d’environnement dans un fichier `.env`.
 >
 >Vous pouvez effectuer ces étapes de configuration manuellement ou utiliser les outils de codage de l’IA pour vous guider tout au long du processus. Voir [Création d’une intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) pour obtenir des instructions de configuration détaillées.
@@ -179,8 +175,6 @@ aio auth login
 >[!NOTE]
 >
 >Certaines fonctionnalités du serveur MCP fonctionnent sans connexion, mais le service RAG (Retrieval-Augmentated Generation) ne fonctionne pas. Le service RAG fournit à l’agent de codage de l’IA un accès en temps réel à l’ensemble de la documentation d’Adobe Commerce, ce qui lui permet de répondre aux questions et de générer du code en fonction des pratiques de développement, des API et des modèles architecturaux Commerce actuels.
->
->Pour installer le service RAG indépendamment, voir [Documentation du service RAG](./doc-rag.md).
 
 ### Curseur
 
@@ -340,7 +334,7 @@ Consultez les ressources suivantes pour commencer :
 * [Kit de démarrage d’intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Kit de démarrage pour la commande](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Modèles de kit de démarrage Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Exemples d’applications App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Pourquoi utiliser ces ressources ?
