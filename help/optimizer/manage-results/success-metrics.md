@@ -1,11 +1,11 @@
 ---
 title: Mesures de succès
 description: Les mesures de succès fournissent insight dans les mesures de performances clés de votre  [!DNL Adobe Commerce Optimizer] .
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
-source-git-commit: 4e85d70dc1b099a5b40a807a76ca589aa9a28f07
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '2599'
+source-wordcount: '2594'
 ht-degree: 0%
 
 ---
@@ -149,7 +149,7 @@ Total Revenue = Sum of (Product Base Price × Quantity) for all completed orders
 
 - Toutes les commandes terminées pendant la période sélectionnée.
 - Prix des produits de base multipliés par les quantités achetées.
-- Chiffre d’affaires de tous les canaux de vente suivi par Commerce Optimizer.
+- Chiffre d’affaires de tous les canaux de vente suivi par [!DNL Adobe Commerce Optimizer].
 
 **Remarques importantes :**
 
@@ -171,7 +171,7 @@ Total Revenue = Sum of (Product Base Price × Quantity) for all completed orders
 
 Pour améliorer votre taux de conversion, votre objectif est de convertir davantage de visiteurs en clients.
 
-![&#x200B; Taux de conversion des mesures de succès &#x200B;](../assets/conversion-rate.png)
+![ Taux de conversion des mesures de succès ](../assets/conversion-rate.png)
 
 ### Comprendre la mesure du taux de conversion
 

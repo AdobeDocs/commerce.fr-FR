@@ -3,10 +3,10 @@ title: Couche Catalogue
 description: Découvrez comment les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine, afin que vous puissiez les personnaliser en toute sécurité et annuler les modifications à tout moment.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine. Les calques appliquent des modifications à des attributs de produit spécifiques, tels que le nom, la description, les images, les liens et les métadonnées, en créant un calque au-dessus de votre catalogue de base. Vos données de produit d’origine restent intactes, ce qui vous permet de personnaliser les produits en toute sécurité et d’annuler les modifications à tout moment.
 
-![&#x200B; Calques de catalogue &#x200B;](../assets/catalog-layers.png)
+![ Calques de catalogue ](../assets/catalog-layers.png)
 
 ## Fonctionnement des calques de catalogue
 

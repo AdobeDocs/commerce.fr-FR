@@ -1,11 +1,11 @@
 ---
 title: Performances de recherche
 description: La page Performances de la recherche fournit insight dans les termes de recherche utilisés par les acheteurs.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ La page *Performances de recherche* fournit insight dans les termes de recherche
 
 - Recherches uniques
 - Position moyenne des clics
-- Taux de clic publicitaire
+- Taux de clics
 - Taux de conversion
 - Taux de résultats nuls
 
@@ -98,7 +98,7 @@ Pour optimiser votre fonctionnalité de recherche, utilisez [synonymes et orthog
 
 ## Améliorer la pertinence des résultats de recherche
 
-Pour améliorer la pertinence des résultats de recherche, implémentez des [règles de recherche](../merchandising/rules/overview.md) efficaces et utilisez les métadonnées du produit afin de garantir que les attributs [&#x200B; précis et détaillés sont consultables](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata).
+Pour améliorer la pertinence des résultats de recherche, implémentez des [règles de recherche](../merchandising/rules/overview.md) efficaces et utilisez les métadonnées du produit afin de garantir que les attributs [ précis et détaillés sont consultables](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata).
 
 ### Images
 
@@ -121,7 +121,7 @@ Assurez-vous que chaque produit possède du contenu pertinent dans chaque attrib
 | Données de capture instantanée | Description |
 |--- |--- |
 | Recherches uniques | Nombre total de recherches uniques pour la période spécifiée. Les recherches multiples effectuées par le même acheteur, même si pour la même requête, sont considérées comme uniques si elles sont envoyées à plus d’une heure d’intervalle. |
-| Taux de clic publicitaire | Pourcentage de recherches qui se terminent par un clic de l’acheteur sur un produit. Par exemple, le taux de clic publicitaire est de 50 % si l’acheteur recherche « pantalon » et « chemise », puis clique sur un résultat de la recherche « chemise ». |
+| Taux de clics | Pourcentage de recherches qui se terminent par un clic de l’acheteur sur un produit. Par exemple, le taux de clic publicitaire est de 50 % si l’acheteur recherche « pantalon » et « chemise », puis clique sur un résultat de la recherche « chemise ». |
 | Taux de conversion | Pourcentage de produits achetés par l’acheteur par rapport au nombre de produits sur lesquels l’acheteur clique pendant la période spécifiée. Par exemple, le taux de conversion de l’interaction est de 100 % si l’acheteur consulte six produits dans la fenêtre contextuelle, clique sur un produit et effectue un achat. <br /><br />Le taux de conversion n’est pas affecté par le nombre de consultations d’un produit donné. Par exemple, le taux de conversion reste le même si l’acheteur utilise la recherche, mais ne clique sur aucun produit. |
 | Taux de résultats nuls | Pourcentage de recherches uniques qui ne renvoie aucun résultat pour la période spécifiée. Par exemple, le taux de zéro des résultats est de 66,67 % si l&#39;acheteur recherche « fjjajfjf » deux fois (sans résultats) et « pants » une fois (avec résultats). |
 | Moy. position de clic | Position relative du taux de clics publicitaires moyen en fonction des recherches uniques pour la période spécifiée. |

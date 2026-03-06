@@ -1,11 +1,11 @@
 ---
 title: Créer et gérer des règles
 description: Découvrez comment créer et gérer des règles de marchandisage.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2219'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,13 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 ## Créer une règle
 
 1. Dans le rail de gauche, accédez à _Marchandisage_ > **Règles de marchandisage**.
-1. Cliquez sur **Créer une règle** pour lancer l’éditeur de règles.
+1. (Facultatif) Utilisez la liste déroulante **Vue du catalogue** pour sélectionner la vue du catalogue à laquelle la règle doit s’appliquer. La règle que vous créez est étendue à la vue sélectionnée (ou à toutes les vues de catalogue si **Toutes les vues** est sélectionné). Voir [Sélectionner la vue du catalogue](workspace.md#select-catalog-view) pour savoir comment fonctionne la portée de la vue du catalogue.
+
+   >[!IMPORTANT]
+   >
+   >Cette fonctionnalité est actuellement en version bêta.
+
+1. Cliquez sur **[!UICONTROL Create rule]** pour lancer l’éditeur de règles.
 
 ![Créer une règle](../../assets/create-rule.png)
 
@@ -165,7 +171,7 @@ Les événements ou peuvent être définis manuellement :
 
 ## Modifier, afficher et supprimer des règles
 
-Suivez ces instructions pour mettre à jour les propriétés des règles existantes.
+Suivez ces instructions pour mettre à jour les propriétés des règles existantes. Vous ne pouvez pas modifier la vue de catalogue (portée) d’une règle après sa création ; la portée est définie lorsque vous créez la règle. Voir [Sélectionner la vue du catalogue](workspace.md#select-catalog-view).
 
 ### Modifier la règle
 

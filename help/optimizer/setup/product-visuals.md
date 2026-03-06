@@ -3,10 +3,10 @@ title: Visuels de produit avec AEM Assets
 description: Découvrez comment utiliser AEM Assets pour les images de produit dans  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ Cette configuration garantit que les images AEM Assets sont appliquées en tant 
 
 ## Conditions préalables
 
-Avant d’activer les visuels de produit, assurez-vous de respecter les [&#x200B; conditions préalables pour Commerce Optimizer &#x200B;](../../aem-assets-integration/get-started/configure-aco.md#prerequisites).
+Avant d’activer les visuels de produit, assurez-vous de respecter les [ conditions préalables pour Commerce Optimizer ](../../aem-assets-integration/get-started/configure-aco.md#prerequisites).
 
 ## Configuration
 
-Pour activer l’intégration, [créez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) avec les détails de votre [!DNL Commerce Optimizer] et d’AEM Assets. L’assistance Adobe configure l’intégration et enregistre votre client auprès du service d’intégration Assets.
+Pour activer l’intégration, [créez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) avec les détails de votre [!DNL Commerce Optimizer] et d’AEM Assets. L’assistance Adobe configure l’intégration et enregistre votre client auprès du service d’intégration Assets.
 
 Voir [Configuration d’AEM Assets pour Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md) pour obtenir des informations sur l’intégration.
 
@@ -74,7 +74,7 @@ Une fois l’intégration configurée, gérez vos images de produit via AEM Asse
 
 1. Chargez les images dans votre référentiel AEM Assets.
 
-1. Ajoutez des métadonnées Commerce à la ressource. Voir [&#x200B; Application de métadonnées aux ressources](../../aem-assets-integration/get-started/configure-aco.md#step-3-apply-metadata-to-assets).
+1. Ajoutez des métadonnées Commerce à la ressource. Voir [ Application de métadonnées aux ressources](../../aem-assets-integration/get-started/configure-aco.md#step-3-apply-metadata-to-assets).
 
 1. Valider la ressource à diffuser. La ressource doit avoir le statut **approuvé** pour déclencher la synchronisation.
 

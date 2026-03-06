@@ -3,11 +3,11 @@ title: Livres de prix
 description: Découvrez comment gérer les tarifs dans  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 1c720bc3ba755639eff2f17912fb3a3446e367f6
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ Les livres de prix vous permettent de définir les prix de produit pour une sour
 
 Le livre de prix de base définit la devise pour lui-même et tous ses livres de prix enfants. Les livres de prix enfants héritent de cette devise et ne peuvent pas la remplacer.
 
-## Ajouter des catalogues de prix à Commerce Optimizer
+## Ajouter des catalogues de prix aux [!DNL Adobe Commerce Optimizer]
 
-Vous ajoutez des tarifs à Commerce Optimizer à l’aide de l’API Price Book. Consultez la [documentation pour les développeurs](https://developer.adobe.com/commerce/services/reference/rest/) pour savoir comment créer, mettre à jour et supprimer des tarifs pour les [!DNL Adobe Commerce Optimizer].
+Vous ajoutez des tarifs à [!DNL Adobe Commerce Optimizer] à l&#39;aide de l&#39;API Price Book. Consultez la [documentation pour les développeurs](https://developer.adobe.com/commerce/services/reference/rest/) pour savoir comment créer, mettre à jour et supprimer des tarifs pour les [!DNL Adobe Commerce Optimizer].
 
-## Afficher les catalogues de prix dans Commerce Optimizer
+## Afficher les catalogues de prix en [!DNL Adobe Commerce Optimizer]
 
-Une fois que vous avez ingéré des catalogues de prix dans Commerce Optimizer, vous pouvez voir la liste des catalogues de prix et leurs identifiants correspondants sur la page **Vue Catalogue**.
+Une fois que vous avez ingéré des livres de prix dans [!DNL Adobe Commerce Optimizer], vous pouvez voir la liste des livres de prix et leurs identifiants correspondants sur la page **Vue Catalogue**.
 
 1. Accédez à _Configuration du magasin_ , puis cliquez sur **[!UICONTROL Catalog views]**.
 

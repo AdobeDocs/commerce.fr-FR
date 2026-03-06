@@ -1,18 +1,18 @@
 ---
 title: Types de recommandations
 description: Découvrez les recommandations que vous pouvez déployer sur différentes pages de votre site.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
-source-git-commit: 6fed7dd049019918646a9b871147c2d6ae27ed36
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1605'
 ht-degree: 0%
 
 ---
 
 # Types de recommandations
 
-Adobe Commerce Optimizer fournit un large ensemble de recommandations que vous pouvez déployer sur différentes pages de votre site. Tous les types de recommandations sont pilotés par les données. Elles sont optimisées par des données comportementales, des données d’attributs de produit et des mesures. Pour s’y référer facilement, les types de recommandations sont regroupés comme suit :
+[!DNL Adobe Commerce Optimizer] fournit un large ensemble de recommandations que vous pouvez déployer sur différentes pages de votre site. Tous les types de recommandations sont pilotés par les données. Elles sont optimisées par des données comportementales, des données d’attributs de produit et des mesures. Pour s’y référer facilement, les types de recommandations sont regroupés comme suit :
 
 - [Personnalisé](#personalized)
 - [Vente croisée et vente incitative](#crossup)
@@ -86,7 +86,7 @@ Ces types de recommandations recommandent les produits les plus populaires ou le
 
 >[!NOTE]
 >
->Les recommandations basées sur la popularité nécessitent des données d’événement suffisantes de votre storefront. Si votre boutique est nouvelle ou a un faible trafic, ces types de recommandations peuvent renvoyer des résultats limités ou aucun résultat jusqu’à ce que des données comportementales adéquates aient été collectées. Surveillez votre [&#x200B; indicateur de préparation des données &#x200B;](../../manage-results/recommendation-performance.md) pour garantir des performances optimales.
+>Les recommandations basées sur la popularité nécessitent des données d’événement suffisantes de votre storefront. Si votre boutique est nouvelle ou a un faible trafic, ces types de recommandations peuvent renvoyer des résultats limités ou aucun résultat jusqu’à ce que des données comportementales adéquates aient été collectées. Surveillez votre [ indicateur de préparation des données ](../../manage-results/recommendation-performance.md) pour garantir des performances optimales.
 
 | Type | Description |
 |---|---|

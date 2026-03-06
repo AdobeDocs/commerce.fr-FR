@@ -1,12 +1,12 @@
 ---
 title: Performances de Recommendations
 description: La page Performances de Recommendations fournit à insight des informations sur les performances de vos recommandations de produits.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 1%
+source-wordcount: '953'
+ht-degree: 0%
 
 ---
 
@@ -22,13 +22,15 @@ La page Performances des recommandations affiche une liste des recommandations c
 
 ## Affichage d’un rapport
 
-1. Choisissez la **source du catalogue**, par exemple l’`en-US` où vos recommandations s’appliquent.
+1. Sélectionnez la **vue Catalogue**, par exemple *Toutes les vues* où vos recommandations s’appliquent.
+
+   En savoir plus sur les [vues de catalogue](#select-catalog-view) dans Recommendations.
 
 1. Cliquez sur le **[!UICONTROL Date Range]** et sélectionnez l’une des plages suivantes :
 
    ![Période des recommandations](../assets/rec-perf-date-range.png)
 
-   Le tableau de recommandations est mis à jour pour afficher les mesures de cette période.
+   Le tableau de recommandations est mis à jour pour afficher les mesures de cette période et de cette vue de catalogue.
 
 ## Personnaliser le tableau
 
@@ -59,7 +61,8 @@ Découvrez comment [créer ou gérer une recommandation existante](../merchandis
 |---|---|
 | ![Période](../assets/rec-perf-date-range.png) | Détermine la période utilisée pour les calculs des mesures. |
 | ![Sélecteur de colonnes](../assets/icon-show-hide-columns.png) | Détermine les colonnes qui apparaissent dans le tableau Recommendations. |
-| Créer une recommandation | Ouvre la page [&#x200B; Créer une recommandation &#x200B;](../merchandising/recommendations/create.md). |
+| Créer une recommandation | Ouvre la page [ Créer une recommandation ](../merchandising/recommendations/create.md). |
+| [Vue Catalogue](#select-catalog-view) | Sélectionnez la vue de catalogue pour filtrer la table afin d’afficher uniquement les recommandations qui s’appliquent à la vue de catalogue sélectionnée. Cette sélection est également utilisée comme vue du catalogue lorsque vous [créez](../merchandising/recommendations/create.md) une recommandation. Les options sont *Toutes les vues* ou une [vue de catalogue](../setup/catalog-view.md) spécifique. |
 
 ## Descriptions des colonnes
 
@@ -80,3 +83,34 @@ Découvrez comment [créer ou gérer une recommandation existante](../merchandis
 | Visibilité | Pourcentage d&#39;unités de recommandation qui s&#39;enregistrent pour la vue. |
 | CTR | (Taux de clic publicitaire) Pourcentage d’impressions d’unité pour la recommandation qui enregistre un clic. Le CTR comptabilise toutes les impressions même si l’unité n’entre pas dans la vue de l’acheteur. Si l’unité de recommandation n’est pas consultée, il est peu probable qu’elle soit cliquée. Cependant, ces impressions invisibles sont prises en compte dans le score de RCT et réduisent le pourcentage de RCT global. |
 | vCTR | (Taux de clic publicitaire visible) mesure les clics en fonction uniquement des impressions visibles (recommandations qui se sont en fait affichées dans la partie visible de l’écran de l’acheteur), offrant ainsi une mesure plus précise de l’engagement de l’acheteur. |
+
+## Sélectionner la vue du catalogue
+
+>[!IMPORTANT]
+>
+>Cette fonctionnalité est actuellement en version bêta.
+
+Le sélecteur de **[!UICONTROL Catalog view]** de la page **Recommendations** effectue deux opérations :
+
+1. **Filtre le tableau** - Affiche uniquement les recommandations (et leurs mesures) qui s’appliquent à la vue de catalogue sélectionnée.
+1. **Définit la portée des nouvelles recommandations** - Lorsque vous [créez](../merchandising/recommendations/create.md) une recommandation, la vue de catalogue sélectionnée est utilisée comme portée de l’unité. Les options sont *Toutes les vues* ou une [vue de catalogue](../setup/catalog-view.md) spécifique.
+
+   - **Toutes les vues** - La recommandation s’applique à toutes les vues de catalogue (la disponibilité du produit est toujours filtrée par vue).
+   - **Vue Catalogue** - La recommandation s’applique uniquement à la vue de catalogue sélectionnée (par exemple, un storefront, une langue ou une marque).
+
+En spécifiant une vue de catalogue pour chaque recommandation, vous pouvez :
+
+- Configurez des recommandations pour toutes les vues de catalogue (globales) ou pour une vue de catalogue.
+- Prévisualisez et filtrez les produits par vue de catalogue sur la page de recommandation [créer](../merchandising/recommendations/create.md).
+- Afficher uniquement les produits disponibles pour chaque storefront.
+- Affichage des mesures et du comportement du storefront par vue de catalogue.
+
+### Filtrage des produits par la vue Catalogue
+
+La disponibilité du produit est appliquée par vue de catalogue même pour les unités de recommandation sous la sélection **Toutes les vues**. Cette opération s’ajoute aux [filtres d’inclusion ou d’exclusion](../merchandising/recommendations/filters.md) définis sur l’unité de recommandation.
+
+**Exemple : recommandation avec filtres d’inclusion sous la sélection Toutes les vues**
+
+- **Toutes les vues** la recommandation inclut les SKU : SKU_ABC, SKU_CDE, SKU_XYZ.
+- **Vue catalogue : Kingsbluff** ne peut pas vendre SKU_ABC ou SKU_CDE. **Affiché :** SKU_XYZ plus tout autre SKU valide pour Kingsbluff.
+- **Vue catalogue : Arkbridge** ne peut vendre aucun des SKU inclus. **Affiché :** uniquement les SKU autorisés par Arkbridge. Si aucune unité de recommandation n’est disponible, elle n’apparaît pas sur ce storefront.

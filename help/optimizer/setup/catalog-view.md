@@ -3,11 +3,11 @@ title: Vue Catalogue
 description: Découvrez les vues de catalogue et comment les créer pour organiser votre catalogue de produits par structure d’entreprise, politiques et prix.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 769aafeb261d978623e68c466888924c92632883
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Vues de catalogue pour les services de marchandisage
 
-Les vues de catalogue constituent la base des services de marchandisage de Adobe Commerce Optimizer. Elles vous permettent d’organiser votre catalogue de produits par structure d’entreprise, politiques et prix. Ce modèle de données flexible prend en charge des scénarios multimarques, multiservices et multilingues tout en préservant l’efficacité opérationnelle.
+Les vues Catalogue constituent la base des services de marchandisage [!DNL Adobe Commerce Optimizer]. Elles vous permettent d’organiser votre catalogue de produits par structure d’entreprise, politiques et prix. Ce modèle de données flexible prend en charge des scénarios multimarques, multiservices et multilingues tout en préservant l’efficacité opérationnelle.
 
 ## Que sont les vues de catalogue ?
 
@@ -31,6 +31,16 @@ Considérez les vues de catalogue comme différentes « lentilles » à travers 
 - Une vue de catalogue de revendeurs peut afficher uniquement les produits disponibles pour ce revendeur spécifique
 - Une vue de catalogue régionale peut afficher des produits et des prix spécifiques à une zone géographique
 - Une vue de catalogue de marques peut afficher uniquement les produits d’une marque particulière
+
+### Vue catalogue et source du catalogue
+
+Ce qui suit explique la différence entre une vue de catalogue et une source de catalogue :
+
+- **Vue Catalogue** - Une vue configurée de votre catalogue pour un besoin professionnel spécifique. Lorsque vous créez une vue de catalogue, vous sélectionnez la source de catalogue (ou le paramètre régional) à utiliser, puis ajoutez des [politiques](policies.md) pour filtrer les produits visibles et lier des [livres de prix](pricebooks.md) pour contrôler les prix. Une seule source de catalogue peut alimenter de nombreuses vues de catalogue (par exemple, une source de `en-US` avec des vues de catalogue distinctes pour différentes marques ou régions). Considérez une vue de catalogue comme *comment* vous exposez ces données à un storefront, un canal ou une audience.
+
+- **Source du catalogue** - Contexte de données sous-jacent qui fournit des informations sur les produits. Une source de catalogue est généralement un paramètre régional (par exemple, `en-US`, `fr-CA`) ou un système externe tel qu’un PIM ou un ERP. [!DNL Adobe Commerce Optimizer] ingère des données de produit provenant d’une ou de plusieurs sources de catalogue dans un catalogue de base unifié. Considérez une source de catalogue comme *d’où* proviennent les données de catalogue brutes.
+
+En résumé, **source du catalogue** est le contexte de données que vous extrayez ; tandis que **vue du catalogue** est le contexte filtré, tarifié et organisé que vous présentez aux acheteurs ou aux canaux.
 
 ## Création d’une vue de catalogue
 
@@ -66,6 +76,14 @@ Avant de créer une vue de catalogue, vérifiez que vous disposez des éléments
 La page Vues du catalogue se met à jour pour afficher la nouvelle vue du catalogue&#x200B;
 
 Une fois ces étapes terminées, la vue de catalogue est maintenant configurée pour afficher les produits et les prix en fonction des sources et des politiques sélectionnées.
+
+### Spécification des vues de catalogue pour les recommandations et les règles de découverte de produits
+
+>[!IMPORTANT]
+>
+>Cette fonctionnalité est actuellement en version bêta.
+
+Vous pouvez définir une vue de catalogue lorsque vous [créez des unités de recommandation](../merchandising/recommendations/create.md) ou [ des règles de marchandisage](../merchandising/rules/add.md).
 
 ## Calques de catalogue
 
@@ -105,7 +123,7 @@ Cette option permet d’afficher rapidement tous les paramètres de la vue de ca
 
 Dans l’espace de travail *Vues du catalogue*, recherchez la vue du catalogue dans la grille à modifier, puis cliquez sur l’icône ![informations](../assets/info-icon.png).
 
-![Vue Catalogue Détails](../assets/catalog-view-details.png)
+![Vue catalogue - Détails](../assets/catalog-view-details.png)
 
 De là, vous pouvez voir les détails de configuration de la vue de catalogue, tels que :
 
@@ -122,7 +140,7 @@ Certains de ces paramètres de configuration sont nécessaires lorsque vous conf
 
 Les vues de catalogue font partie de la structure des services de marchandisage qui remplace la structure du site web, du magasin et du magasin utilisée dans les bases d’Adobe Commerce par un modèle plus flexible :
 
-![[!DNL Merchandising Services] Architecture &#x200B;](../assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] Architecture ](../assets/merchandising-svcs-architecture.png)
 
 ### Fonctionnement
 

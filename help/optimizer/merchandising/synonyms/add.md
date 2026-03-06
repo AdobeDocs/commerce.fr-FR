@@ -1,25 +1,25 @@
 ---
 title: Créer et gérer des synonymes
 description: Découvrez comment créer et gérer des synonymes pour  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
 # Créer des synonymes
 
-Améliorez l’engagement des clients en ajoutant votre propre liste de synonymes [!DNL Adobe Commerce Optimizer]. Vous pouvez ajouter jusqu’à 200 synonymes par magasin.
+Améliorez l’engagement des clients en ajoutant votre propre liste de synonymes [!DNL Adobe Commerce Optimizer]. Vous pouvez ajouter jusqu’à 200 synonymes par source de catalogue.
 
 ![Synonyme Workspace](../../assets/synonym-workspace.png)
 
 ## Étape 1 : ajouter un synonyme
 
 1. Dans le rail de gauche, accédez à _Marchandisage_ > **Synonymes**.
-1. Cliquez sur le bouton **[!UICONTROL Add synonyms]** .
+1. Cliquez sur le bouton **[!UICONTROL Create synonyms]** .
 
 ## Étape 2 : définir le synonyme par type
 
@@ -27,31 +27,25 @@ Suivez les instructions relatives au [type de synonyme](type.md) que vous souhai
 
 ### Synonyme bidirectionnel
 
-1. Acceptez l’option **Bidirectionnelle** par défaut.
-
-   ![Ajouter un synonyme bidirectionnel](../../assets/synonym-add-two-way.png)
-
 1. Saisissez le terme ou l’expression **Mot-clé** à faire correspondre.
 1. Saisissez le ou les termes **Expansion** que vous souhaitez ajouter comme synonymes du mot-clé. Séparez les différents termes par une virgule.
 Dans cet exemple, le mot-clé à associer est « pantalon » et l’ensemble des termes d’extension est « pantalon, pantalon ».
 
-   ![Exemple de synonyme bidirectionnel](../../assets/synonym-add-two-way-example.png)
+   ![Synonyme bidirectionnel](../../assets/synonym-add-two-way.png)
 
 1. Une fois l’opération terminée, cliquez sur **Enregistrer**.
 
    L’ensemble des synonymes apparaît dans la liste avec une flèche bidirectionnelle entre chaque terme, ce qui signifie que les termes sont interchangeables.
 
-   ![Synonyme bidirectionnel](../../assets/synonym-two-way.png)
+   ![Exemple de synonyme bidirectionnel](../../assets/synonym-add-two-way-example.png)
 
 ### Synonyme unidirectionnel
 
 1. Cliquez sur le type de synonyme **Unidirectionnel**.
 
-   ![Ajouter un synonyme unidirectionnel](../../assets/synonym-add-one-way.png)
-
 1. Saisissez les termes **Mot-clé** et **Expansion**. Séparez les différents termes par une virgule.
 
-   ![Exemple de synonyme unidirectionnel](../../assets/synonym-add-one-way-example.png)
+   ![Synonyme unidirectionnel](../../assets/synonym-add-one-way.png)
 
    Dans cet exemple, le mot-clé est « pantalon » et les termes d’extension unidirectionnels « capris, peddle-pushers » sont chacun un sous-ensemble de « pantalon », mais avec une signification spécifique.
 
@@ -59,7 +53,7 @@ Dans cet exemple, le mot-clé à associer est « pantalon » et l’ensemble des
 
    L’ensemble de synonymes apparaît dans la liste avec une flèche à sens unique pointant des termes d’extension vers le mot-clé pour indiquer que les termes sont des sous-ensembles du mot-clé. Un signe plus sépare chaque terme de développement.
 
-   ![Synonyme unidirectionnel](../../assets/synonym-one-way.png)
+   ![Exemple de synonyme unidirectionnel](../../assets/synonym-add-one-way-example.png)
 
 ## Étape 3 : Publier les modifications
 
@@ -70,7 +64,7 @@ Dans cet exemple, le mot-clé à associer est « pantalon » et l’ensemble des
 
 | Champ | Description |
 |--- |--- |
-| [Type &#x200B;](type.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options : <br />Bidirectionnel (par défaut) - Termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />Unidirectionnel - Termes qui sont un sous-ensemble du mot-clé. Les synonymes à sens unique renvoient une liste plus étroite de produits spécifiques. |
+| [Type ](type.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options : <br />Bidirectionnel (par défaut) - Termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />Unidirectionnel - Termes qui sont un sous-ensemble du mot-clé. Les synonymes à sens unique renvoient une liste plus étroite de produits spécifiques. |
 | Mot-clé | Mot généralement associé à une sélection de produits dans votre catalogue. |
 | Extension | Termes supplémentaires ayant la même signification ou une signification similaire au mot-clé. |
 

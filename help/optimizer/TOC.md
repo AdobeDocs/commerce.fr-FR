@@ -4,16 +4,16 @@ user-guide-description: Documentation et ressources pour  [!DNL Adobe Commerce O
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '103'
 ht-degree: 11%
 
 ---
 
 # [!DNL Adobe Commerce Optimizer] {#optimizer}
 
-- [Qu’est-ce que Adobe Commerce Optimizer ?](overview.md)
+- [Qu&#39;est-ce que  [!DNL Adobe Commerce Optimizer] ?](overview.md)
 - [Prise en main](get-started.md)
 - [Gestion des utilisateurs et des identités](user-management.md)
 - [Responsabilité partagée](shared-responsibility.md)

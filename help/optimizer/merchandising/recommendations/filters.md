@@ -1,11 +1,11 @@
 ---
 title: Filtres de recommandation
 description: Découvrez comment utiliser des filtres pour contrôler quels produits apparaissent dans les recommandations  [!DNL Adobe Commerce Optimizer] .
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
-source-git-commit: 032a19183b79cea1bfe27e8a4e20c60ba5ac6b8b
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Les opérateurs logiques `AND` et `OR` sont utilisés pour joindre plusieurs con
 
 ## Types de filtres
 
-![&#x200B; Filtres &#x200B;](../../assets/rec-conditions.png)
+![ Filtres ](../../assets/rec-conditions.png)
 
 ### Produit
 

@@ -3,11 +3,11 @@ title: Cas d’utilisation complet de Storefront et de Catalog Administrator
 description: Découvrez comment utiliser  [!DNL Adobe Commerce Optimizer]  gérer votre catalogue à l’aide de vues et de politiques de catalogue et comment configurer votre storefront en fonction de la configuration de votre catalogue.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: e5844cad1d666a81042db64e51e124e6444d19ac
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '2179'
+source-wordcount: '2161'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Ce cas pratique est destiné aux administrateurs et aux développeurs qui souhai
 
 Avant de commencer ce tutoriel, assurez-vous que les conditions préalables suivantes sont en place :
 
-- **Instance Adobe Commerce Optimizer**
+- **[!DNL Adobe Commerce Optimizer]Instance**
    - Accès à une instance de test dans Cloud Manager
    - Voir [Prise en main](../get-started.md) pour obtenir des instructions de configuration
 
@@ -55,7 +55,7 @@ Dans ce cas d’utilisation, vous travaillez avec les éléments suivants :
 
 >[!NOTE]
 >
-> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=fr) dans la documentation du storefront Adobe Commerce.
+> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) dans la documentation du storefront Adobe Commerce.
 
 ### ‌Principaux points à retenir
 
@@ -63,7 +63,7 @@ Dans ce cas d’utilisation, vous travaillez avec les éléments suivants :
 
 - Découvrez les principes de base de [!DNL Adobe Commerce Optimizer] avec son modèle de données de catalogue performant et évolutif.
 - Découvrez comment le modèle de données de catalogue s’intègre aux composants storefront indépendants de la plateforme créés par Adobe.
-- Découvrez comment utiliser les vues et politiques de catalogue Adobe Commerce Optimizer pour créer des vues de catalogue personnalisées et des filtres d’accès aux données, et envoyer les données à un storefront Adobe Commerce optimisé par Edge Delivery.
+- Découvrez comment utiliser des vues et des politiques de catalogue [!DNL Adobe Commerce Optimizer] pour créer des vues de catalogue et des filtres d’accès aux données personnalisés, et envoyer les données à un storefront Adobe Commerce optimisé par Edge Delivery.
 
 ## Scénario d&#39;affaires - Carvelo Automobile
 
@@ -126,7 +126,7 @@ Dans le volet de navigation de gauche, développez la section _Configuration du 
 
 >[!NOTE]
 >
->Pour l’instant, vous pouvez ignorer la vue catalogue **globale**.
+>Pour l’instant, vous pouvez ignorer la vue catalogue **Toutes les vues**.
 
 Cliquez sur l’icône d’informations pour consulter les détails de la vue du catalogue.
 
@@ -221,7 +221,7 @@ Créez une nouvelle vue de catalogue pour le concessionnaire *Celport* et liez l
 
 1. Dans le rail de gauche, développez la section _Configuration du magasin_ et cliquez sur **[!UICONTROL Catalog views]**.
 
-   Notez les vues de catalogue existantes : *Arkbridge*, *Kingsbluff* et *Global*.
+   Notez les vues de catalogue existantes : *Arkbridge*, *Kingsbluff* et *toutes les vues*.
 
    ![Page Vues de catalogue existantes](../assets/existing-channels-list.png)
 
@@ -392,7 +392,7 @@ Maintenant que vous avez mis à jour la configuration du storefront pour utilise
 
       Notez les différents types de pièces disponibles et les prix attribués à la vue catalogue Kingsbluff.
 
-   Ces expériences illustrent la flexibilité de Adobe Commerce Optimizer : vous pouvez rapidement basculer entre différentes vues de catalogue et tarifs afin de créer des expériences d’achat personnalisées pour différentes audiences sans dupliquer les données de votre catalogue.
+   Ces expériences démontrent la flexibilité de [!DNL Adobe Commerce Optimizer] : vous pouvez rapidement basculer entre différentes vues de catalogue et différents carnets de prix afin de créer des expériences d’achat personnalisées pour différentes audiences sans dupliquer les données de votre catalogue.
 
 ## Dépannage
 
@@ -408,7 +408,7 @@ Si vous rencontrez des problèmes au cours de ce tutoriel, essayez les solutions
 
 - **Solution :** vérifiez que le nom de l’attribut correspond exactement à l’attribut de SKU dans votre catalogue
 
-### Événements de la vue Catalogue
+### Problèmes de vue catalogue
 
 **Problème :** vue Catalogue n’apparaît pas dans la liste
 
@@ -422,13 +422,13 @@ Si vous rencontrez des problèmes au cours de ce tutoriel, essayez les solutions
 
 **Problème :** Aucun produit ne s’affiche
 
-- **Solution :** vérifiez que l&#39;ID du catalogue des prix correspond à celui disponible dans votre instance Adobe Commerce Optimizer
+- **Solution :** vérifiez que l&#39;ID du catalogue des prix correspond à celui disponible dans votre instance de [!DNL Adobe Commerce Optimizer]
 
 **Problème :** recherche ne renvoyant aucun résultat
 
 - **Solution :** vérifiez que les politiques d’affichage du catalogue autorisent la catégorie de produits recherchée
 
-Pour obtenir de l’aide supplémentaire, consultez la documentation de [Adobe Commerce Optimizer](../overview.md) ou contactez l’assistance technique d’Adobe.
+Pour obtenir de l’aide supplémentaire, consultez la [[!DNL Adobe Commerce Optimizer] documentation](../overview.md) ou contactez l’assistance Adobe.
 
 ## Résumé
 
@@ -441,10 +441,10 @@ Dans ce tutoriel, vous avez réussi à :
 
 ## Étapes suivantes
 
-Pour continuer à en savoir plus sur Adobe Commerce Optimizer :
+Pour continuer à en savoir plus sur [!DNL Adobe Commerce Optimizer] :
 
 - Explorez les [fonctionnalités de marchandisage](../merchandising/overview.md) pour personnaliser l’expérience d’achat
 - En savoir plus sur les [configurations de politique avancées](../setup/policies.md)
 - Configurer [vues de catalogue supplémentaires](../setup/catalog-view.md) pour d&#39;autres concessionnaires
 - Consultez la [documentation de l’API](https://developer.adobe.com/commerce/services/optimizer/) pour la gestion programmatique du catalogue
-- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=fr)
+- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
