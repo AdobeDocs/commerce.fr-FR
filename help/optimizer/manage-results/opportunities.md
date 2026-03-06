@@ -13,7 +13,7 @@ ht-degree: 0%
 
 La page **Opportunités** vous permet d’identifier et d’implémenter des optimisations pour améliorer le trafic sur le site, l’interaction client et les taux de conversion par le biais de l’intégration à Adobe Sites Optimizer.
 
-![ Opportunités ](../assets/opportunities.png)
+![&#x200B; Opportunités &#x200B;](../assets/opportunities.png)
 
 ## Que sont les opportunités ?
 
@@ -62,13 +62,13 @@ Pour que la détection automatique puisse générer des recommandations, les don
 Une fois que la détection automatique a identifié les opportunités d’optimisation, vous pouvez :
 
 - Examinez les optimisations suggérées dans l’onglet **Actif)**.
-- Déployez automatiquement des correctifs à l’aide du [ workflow de correctif automatique ](#auto-fix-workflow) (pour les [types d’opportunité](#supported-opportunity-types) pris en charge).
+- Déployez automatiquement des correctifs à l’aide du [&#x200B; workflow de correctif automatique &#x200B;](#auto-fix-workflow) (pour les [types d’opportunité](#supported-opportunity-types) pris en charge).
 - Mettez en œuvre les modifications manuellement dans votre administrateur Commerce.
 - Ignorez les opportunités qui ne correspondent pas à vos objectifs commerciaux.
 
 ## Workflow de correction automatique
 
-Le workflow de correctif automatique vous permet de déployer rapidement et en un seul clic des optimisations générées par l’IA. Lorsque vous appliquez un correctif automatique, le système crée une couche d’optimisation du catalogue qui remplace des attributs de produit spécifiques sans modifier les données de produit d’origine. Vos données de produit d’origine restent intactes, ce qui vous permet d’appliquer des optimisations en toute sécurité et d’annuler les modifications à tout moment. Pour en savoir plus[ consultez la section ](#how-catalog-layers-work-with-auto-fix) Fonctionnement des calques de catalogue avec le correctif automatique .
+Le workflow de correctif automatique vous permet de déployer rapidement et en un seul clic des optimisations générées par l’IA. Lorsque vous appliquez un correctif automatique, le système crée une couche d’optimisation du catalogue qui remplace des attributs de produit spécifiques sans modifier les données de produit d’origine. Vos données de produit d’origine restent intactes, ce qui vous permet d’appliquer des optimisations en toute sécurité et d’annuler les modifications à tout moment. Pour en savoir plus[&#x200B; consultez la section &#x200B;](#how-catalog-layers-work-with-auto-fix) Fonctionnement des calques de catalogue avec le correctif automatique .
 
 ### Types d’opportunité pris en charge
 
@@ -138,7 +138,7 @@ Pour implémenter une optimisation suggérée par l’IA, procédez comme suit :
    - **Coche verte** : la couche d’optimisation est définie comme première priorité et est appliquée activement à votre storefront.
    - **Icône d&#39;avertissement** : le calque existe mais n&#39;est pas la première priorité, ce qui signifie qu&#39;il peut être remplacé par un autre calque.
 
-   ![ Opportunités terminées ](../assets/done-opportunities.png)
+   ![&#x200B; Opportunités terminées &#x200B;](../assets/done-opportunities.png)
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ Pour implémenter une optimisation suggérée par l’IA, procédez comme suit :
 
 S’il n’existe pas de couche Sites Optimizer Adobe dans votre vue de catalogue, le correctif automatique en crée une et lui affecte automatiquement l’ordre 1 (priorité la plus élevée). Si vous supprimez ce calque, il sera recréé lors de la prochaine exécution du correctif automatique et déplacera les calques existants vers des numéros d’ordre inférieurs. Si le calque Adobe Sites Optimizer existe déjà avec un autre numéro de commande, le correctif automatique ne modifie pas sa priorité. Si vous souhaitez conserver un calque de correction automatique, mais ne pas l’utiliser immédiatement, vous pouvez le désactiver. En savoir plus sur la gestion des calques de [catalogue](../setup/catalog-layer.md#activate-or-deactivate-layers).
 
-![ Calques de catalogue ](../assets/catalog-layers.png)
+![&#x200B; Calques de catalogue &#x200B;](../assets/catalog-layers.png)
 
 Le diagramme présente une seule ligne appelée **Optimisation ASO**. Cette entrée représente toutes les opportunités que vous choisissez de corriger automatiquement. Que vous résolviez automatiquement une ou plusieurs opportunités, elles apparaissent toutes dans cette seule ligne **Optimisation ASO**. Les calques sont spécifiques à chaque vue de catalogue. La vue de catalogue **Los Angeles** affichée ici applique donc son calque **Optimisation ASO** uniquement lorsque cette vue est active.
 
@@ -181,7 +181,7 @@ Pour plus d’informations sur les fonctionnalités de Sites Optimizer, consulte
 Ressources supplémentaires :
 
 - [Types d’opportunités](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/opportunities) - Découvrez les opportunités d’optimisation disponibles.
-- [Fonctionnalités de Sites Optimizer ](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/capabilities) - Découvrez ce que Sites Optimizer peut faire.
+- [Fonctionnalités de Sites Optimizer &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/capabilities) - Découvrez ce que Sites Optimizer peut faire.
 
 ## Plus comme ceci
 

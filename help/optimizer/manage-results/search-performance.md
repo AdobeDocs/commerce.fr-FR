@@ -98,7 +98,7 @@ Pour optimiser votre fonctionnalité de recherche, utilisez [synonymes et orthog
 
 ## Améliorer la pertinence des résultats de recherche
 
-Pour améliorer la pertinence des résultats de recherche, implémentez des [règles de recherche](../merchandising/rules/overview.md) efficaces et utilisez les métadonnées du produit afin de garantir que les attributs [ précis et détaillés sont consultables](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata).
+Pour améliorer la pertinence des résultats de recherche, implémentez des [règles de recherche](../merchandising/rules/overview.md) efficaces et utilisez les métadonnées du produit afin de garantir que les attributs [&#x200B; précis et détaillés sont consultables](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata).
 
 ### Images
 

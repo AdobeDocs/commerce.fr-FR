@@ -28,7 +28,7 @@ Pour une série complète de tutoriels vidéo, consultez [En savoir plus sur le 
    * **Mises à jour à la demande :** déclenchez instantanément des mises à jour au niveau des SKU pour des modifications, des corrections ou des lancements de produits urgents.
 
 * **Conçu pour l’extensibilité**
-   * Utilise des points d’entrée SCAPI (Salesforce B2C API[ ](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html)Commerce personnalisés pour garantir la compatibilité et une adaptation facile à des cas d’utilisation uniques ou avancés.
+   * Utilise des points d’entrée SCAPI (Salesforce B2C API[&#x200B; &#x200B;](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html)Commerce personnalisés pour garantir la compatibilité et une adaptation facile à des cas d’utilisation uniques ou avancés.
    * Évolue en fonction de la phase de démarrage de votre entreprise avec la synchronisation des catalogues et des prix, puis étend les workflows pour prendre en charge des intégrations supplémentaires ou la logique commerciale.
    * Configurez et faites évoluer les workflows sans reconstruire les intégrations principales.
 

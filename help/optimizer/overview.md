@@ -33,7 +33,7 @@ Regardez la vidéo suivante pour un aperçu général de [!DNL Adobe Commerce Op
 
 - Les commerçants qui souhaitent maintenir leur système commercial principal existant et transformer uniquement les expériences de storefront.
 - Entreprises dans lesquelles un système tiers gère le cycle de vie du panier et du passage en caisse.
-- [Les clients AEM ](setup/product-visuals.md) recherchent un moyen simple de gérer leur catalogue de produits à partir d’un moteur de commerce tiers.
+- [Les clients AEM &#x200B;](setup/product-visuals.md) recherchent un moyen simple de gérer leur catalogue de produits à partir d’un moteur de commerce tiers.
 
 ## Aperçu rapide
 
@@ -94,4 +94,4 @@ Les principales fonctionnalités sont les suivantes :
 
 Le diagramme suivant décrit l’architecture de base de [!DNL Adobe Commerce Optimizer], de l’ingestion des données du catalogue à la relation entre les services de marchandisage, votre storefront, l’intégration à un panier tiers et le processus de passage en caisse.
 
-![[!DNL Adobe Commerce Optimizer] Architecture ](./assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] Architecture &#x200B;](./assets/architecture.png)

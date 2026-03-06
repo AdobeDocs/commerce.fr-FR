@@ -83,7 +83,7 @@ Une fois ces étapes terminées, la vue de catalogue est maintenant configurée 
 >
 >Cette fonctionnalité est actuellement en version bêta.
 
-Vous pouvez définir une vue de catalogue lorsque vous [créez des unités de recommandation](../merchandising/recommendations/create.md) ou [ des règles de marchandisage](../merchandising/rules/add.md).
+Vous pouvez définir une vue de catalogue lorsque vous [créez des unités de recommandation](../merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](../merchandising/rules/add.md).
 
 ## Calques de catalogue
 
@@ -140,7 +140,7 @@ Certains de ces paramètres de configuration sont nécessaires lorsque vous conf
 
 Les vues de catalogue font partie de la structure des services de marchandisage qui remplace la structure du site web, du magasin et du magasin utilisée dans les bases d’Adobe Commerce par un modèle plus flexible :
 
-![[!DNL Merchandising Services] Architecture ](../assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] Architecture &#x200B;](../assets/merchandising-svcs-architecture.png)
 
 ### Fonctionnement
 
