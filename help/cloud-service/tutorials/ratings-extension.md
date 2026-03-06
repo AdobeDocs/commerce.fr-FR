@@ -1,12 +1,15 @@
 ---
 title: Tutoriel sur l’extension d’évaluations
 description: Découvrez comment créer une extension d’évaluations de produit pour Adobe Commerce as a Cloud Service à l’aide d’App Builder et d’outils de développement assistés par l’IA.
+solution: Commerce
 feature: App Builder, Cloud
+feature-set: Commerce
 role: Developer
 level: Intermediate
-source-git-commit: fb3595284761e9478c819150c27d06631de67e18
+type: Tutorial
+source-git-commit: 33ba97fd6766c9d11baea74170a7119d72e06379
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '1701'
 ht-degree: 0%
 
 ---
@@ -50,15 +53,15 @@ Cette section vous guide tout au long du développement d’une extension d’é
    >Lorsque vous utilisez des outils de développement assistés par l’IA, attendez-vous à des variations naturelles du code et des réponses générées par l’agent.
    >Si vous rencontrez des problèmes avec votre code, vous pouvez toujours demander à l’agent de vous aider à le déboguer.
 
-1. Si de la documentation est ajoutée au contexte du curseur, désactivez-la :
+1. Désactivez toute documentation dans le contexte du curseur :
 
-   - Accédez à [!UICONTROL **Curseur**] > [!UICONTROL **Paramètres**] > [!UICONTROL **Paramètres du curseur**] > [!UICONTROL **Indexation et documents**] et supprimez toute documentation répertoriée.
+   * Accédez à **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Indexing & Docs]** et supprimez toute documentation répertoriée.
 
    ![Indexation du curseur et paramètres des documents avec la liste de documentation vide](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. Générer le code pour une extension d’évaluation de produit :
-   - Dans la fenêtre de conversation Cursor, sélectionnez le mode [!UICONTROL **Agent**].
-   - Saisissez l’invite suivante :
+   * Dans la fenêtre de conversation Cursor, sélectionnez le mode **[!UICONTROL Agent]**.
+   * Saisissez l’invite suivante :
 
    ```shell-session
    Implement an Adobe Commerce as a Cloud Service extension to handle Product Ratings.
@@ -103,7 +106,9 @@ Cette section vous guide tout au long du développement d’une extension d’é
 1. Consultez le fichier `requirements.md` et vérifiez le plan.
 
    Si tout semble correct, demandez à l&#39;agent de passer à **Phase 2 - Planification de l&#39;architecture**.
+
 1. Examinez le plan d’architecture.
+
 1. Demandez à l’agent de poursuivre la génération du code.
 
    L’agent génère le code nécessaire et fournit un résumé détaillé des étapes suivantes.
@@ -114,7 +119,9 @@ Cette section vous guide tout au long du développement d’une extension d’é
 
    Agent ![AI fournissant les étapes suivantes pour le test et le déploiement](../assets/next-steps.png){width="600" zoomable="yes"}
 
-### Test local
+### Tester l’extension localement
+
+Les étapes suivantes expliquent comment vérifier le fonctionnement de l’extension avant de la déployer.
 
 1. Demandez à l’agent de vous aider à tester le code localement.
 
@@ -129,6 +136,8 @@ Cette section vous guide tout au long du développement d’une extension d’é
    ![Terminal affichant les résultats du test d’API local avec cURL](../assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### Déployer l’extension
+
+Déployez l’extension sur [!DNL Adobe I/O Runtime] à l’aide de l’agent.
 
 1. Après avoir vérifié le code généré, déployez l’extension à l’aide de l’invite suivante :
 
@@ -146,9 +155,9 @@ Cette section vous guide tout au long du développement d’une extension d’é
 
    ![Création et processus de déploiement de la vérification de la boîte à outils MCP](../assets/deployment-process.png){width="600" zoomable="yes"}
 
-### Après le déploiement
+### Vérification du déploiement
 
-Vous pouvez tester l’API avant de l’intégrer au storefront. L’agent doit indiquer l’emplacement de la nouvelle action et une stratégie de test.
+Tester l’API avant de l’intégrer au storefront L’agent doit indiquer l’emplacement de la nouvelle action et une stratégie de test.
 
 Stratégie de test de l’agent ![AI avec URL d’action déployée et commandes de test](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
@@ -171,139 +180,193 @@ Create a service contract for the ratings api that I can pass on to the storefro
 ![Agent AI créant un fichier de contrat de service pour l’intégration de storefront](../assets/create-contract.png){width="600" zoomable="yes"}
 
 ![Fichier Markdown de contrat de l’API Ratings avec le point d’entrée et les détails de réponse](../assets/contract.png){width="600" zoomable="yes"}
-<!-- 
-Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
+
+Revenez au terminal et exécutez la commande suivante dans le dossier `extension` pour copier le fichier de contrat dans le dossier `storefront` :
 
 ```bash
 cp RATINGS_API_CONTRACT.md ../storefront
-``` -->
+```
 
-### Étapes suivantes
+## Connexion au storefront
 
-Maintenant que vous disposez du contrat d’API de notes, vous pouvez commencer à créer la partie storefront (front-end) de l’extension notes.
-
-<!-- 
-## Connect to the storefront
-
-This section teaches you how to implement real storefront features and communicate effectively with AI agents when working with [!DNL Adobe Commerce] dropins and [!DNL Edge Delivery Services].
+Cette section vous guide tout au long de l’implémentation de la partie storefront de l’extension ratings à l’aide d’outils de développement [!DNL Edge Delivery Services] et assistés par l’IA.
 
 >[!NOTE]
 >
->The prompts provided are starting points. Although you can use them without modification, consider having a natural conversation with the agent.
+>Les invites fournies sont des points de départ. Bien que vous puissiez les utiliser sans modification, pensez à avoir une conversation naturelle avec l&#39;agent.
 >
->When working with AI-assisted development tools, there are always natural variations in the code and responses generated by the agent.
+>Lorsque vous utilisez des outils de développement assistés par l’IA, il existe toujours des variations naturelles dans le code et les réponses générés par l’agent.
 >
->If you encounter any issues with your code, ask the agent to help you debug it.
+>Si vous rencontrez des problèmes avec votre code, demandez à l’agent de vous aider à le déboguer.
 
-### Ratings stars and review count implementation
+### Conditions préalables requises pour Storefront
 
-1. Navigate to the `storefront` folder:
+Avant de démarrer l’intégration du storefront, vérifiez que vous disposez des éléments suivants :
+
+* Un projet de storefront connecté à votre instance [!DNL Commerce]
+* Outils d’IA pour storefront Commerce [installés à l’aide de l’interface de ligne de commande](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+
+### Configurer l’espace de travail storefront
+
+Préparez votre environnement de storefront local pour le développement.
+
+1. Accédez au dossier `storefront` :
 
    ```bash
    cd storefront
    ```
 
-1. Open the storefront folder in a new Cursor window.
+1. Ouvrez le dossier storefront dans une nouvelle fenêtre Cursor .
 
-    Alternatively, if you have the [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) installed, open the window by using the following command in your terminal:
+   Si l’interface de ligne de commande [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) est installée, vous pouvez également ouvrir la fenêtre à l’aide de la commande suivante dans votre terminal :
 
    ```bash
    cursor .
    ```
 
-1. Start the local development server:
+1. Démarrez le serveur de développement local :
 
    ```bash
    npm run start
    ```
 
-1. In a browser, navigate to the Apparel page:
+1. Dans un navigateur, accédez à une page de produit :
 
    ```shell-session
-   http://localhost:3000/apparel
+   http://localhost:3000/products/llama-plush-shortie/adb336
    ```
 
-1. Observe the boilerplate storefront UI layout and note the lack of visual product ratings.
+1. Observez la page standard des détails du produit (PDP) du storefront et notez l’absence d’évaluations visuelles du produit.
 
-1. Use the following prompt with your agent:
+### Intégrer l’API de notation
+
+Utilisez l’agent pour intégrer l’API de notes à la page des détails du produit storefront.
+
+1. Utilisez l’invite suivante avec votre agent :
 
    ```shell-session
-   Implement product ratings in the storefront.
-
-   Add a 5-star rating display with a review count underneath each product name on the product list page, product details page, and product recommendations.
-
-   Use the dropin slot system where available.
-
-   Use @RATINGS_API_CONTRACT.md to understand how to use the ratings API.
+   Integrate the ratings API into the PDP to show star ratings and a review count for products. Here's the service contract: @RATINGS_API_CONTRACT.md
    ```
 
-1. Observe the changes in the codebase, and watch the Apparel page for updates.
+1. L’agent évalue la complexité de la tâche et appelle un workflow échelonné. Au cours de la **phase 1 (collecte des exigences)** l&#39;agent crée un document d&#39;exigences et pose des questions de clarification telles que :
 
-   You should see the following changes in your development environment and browser:
+   * Où les notes devraient-elles apparaître sur le PDP ?
+   * S’agit-il d’un nouveau bloc autonome ou d’une personnalisation d’emplacement dans le composant de dépôt PDP existant ?
+   * Quelle doit être la solution de secours si l’API n’est pas disponible ou ne renvoie aucune donnée ?
+   * Les évaluations doivent-elles également apparaître sur le PLP (liste de produits) ou le PDP uniquement ?
+   * Existe-t-il des spécifications de conception ou des maquettes ?
 
-   * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=fr).
-   * Stars display with proper fill proportions based on mock rating values.
+   Répondez à ces questions en fonction des exigences de votre projet. L’agent met à jour le document des exigences et marque la phase comme terminée.
 
-![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
+1. Au cours de **Phase 2 (planification architecturale)** l’agent effectue des recherches dans la documentation et votre base de code avant de proposer une architecture. Attendez-vous à ce que l’agent :
 
-## Tutorial recap
+   * Recherchez dans [!DNL Commerce] documentation les conteneurs de dépôt PDP, les emplacements et les payloads d’événement.
+   * Recherchez du code lié au PDP dans le répertoire `blocks` et le dossier `scripts/initializers/`.
+   * Explorez les définitions TypeScript pour les conteneurs et les formes contextuelles d&#39;emplacement disponibles.
 
-Here is a summary of the topics covered in this tutorial:
+   L’agent présente ensuite des options d’architecture telles que :
 
-* **Feature implementation**: How to describe new functionality to an AI agent.
-* **Iterative changes**: Making quick modifications to existing code.
-* **Complex UI components**: Building interactive features with visual references.
-* **Dropin integration**: Working with [!DNL Adobe Commerce] dropin containers and slots.
-* **Component reusability**: Creating shared components used across multiple blocks.
+   * **Option A :** personnalisez un emplacement de dépôt PDP existant pour injecter des évaluations près du titre du produit, une touche plus légère qui permet une mise à niveau.
+   * **Option B :** créez un bloc de `product-ratings` autonome qui récupère l’API indépendamment : plus flexible et découplé.
+   * **Option C :** créer un bloc qui écoute également les événements déroulants PDP pour le SKU du produit ; il s’agit d’une approche hybride.
 
-## Next steps
+   Le plan comprend également des détails sur l’intégration de l’API, des considérations sur les performances (chargement différé, mise en cache), la sécurité (nettoyage des entrées) et une approche de test.
 
-For further experimentation with this tutorial, use the following suggestions to further customize your ratings extension, or create your own modifications:
+   Passez en revue le plan d’architecture et demandez à l’agent de continuer.
 
-### Change the star colors
+1. Au cours de **Phase 3 (Approche d’implémentation)** l’agent vous demande de choisir entre :
 
-Use the following prompt to your agent:
+   * **Option A :** passez en revue un plan d’implémentation détaillé avant la génération du code (consultez d’abord tous les fichiers, modèles et structures de code).
+   * **Option B :** passer directement à la génération du code.
+
+   Sélectionnez l’approche de votre choix.
+
+1. Au cours de **Phase 4 (implémentation)** l’agent génère le code en fonction de l’architecture choisie. Selon l&#39;approche, l&#39;agent utilise plusieurs compétences spécialisées :
+
+   * **Modélisation de contenu :** si un nouveau bloc est nécessaire, l’agent conçoit une structure de contenu conviviale pour la création, telle qu’une table de configuration avec l’URL du point d’entrée de l’API.
+   * **Développement de blocs :** l’agent crée des fichiers de bloc en respectant les conventions [!DNL Edge Delivery Services], notamment les fonctions de décoration JavaScript, les styles CSS étendus, les libellés ARIA pour l’accessibilité, ainsi que le chargement et la gestion des états d’erreur.
+   * **Personnalisation du Drop-in :** si l’architecture utilise la personnalisation des emplacements, l’agent importe le conteneur approprié, utilise un emplacement vérifié à proximité du titre du produit et s’abonne aux événements de données de produit pour le SKU actuel.
+
+   Regardez le code en cours de génération et posez des questions ou redirigez l’agent si nécessaire. L’agent génère un résumé du niveau de préparation pour la production une fois la génération du code terminée.
+
+1. Au cours de la **phase 4.5 (test)**, l’agent propose de tester l’implémentation. Si vous acceptez, l’agent :
+
+   * Crée une page de test locale avec les scripts et les styles appropriés.
+   * Démarre un serveur de développement.
+   * Exécute une vérification basée sur un navigateur pour le rendu visuel, l’interactivité, le comportement réactif, l’accessibilité et les performances.
+   * Génère un rapport de test structuré avec les résultats.
+
+   Suivez les instructions dans le navigateur pour confirmer le comportement et signaler tout problème.
+
+1. Observez les modifications apportées à la base de code et observez les mises à jour sur la page produit.
+
+   Les modifications suivantes devraient s’afficher dans votre environnement de développement et votre navigateur :
+
+   * Un composant d’évaluation de produit est automatiquement créé.
+   * Le composant est intégré au PDP à l’aide de [emplacements d’accueil](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) ou sous la forme d’un bloc autonome, selon l’architecture choisie.
+   * Les étoiles s’affichent avec des proportions de remplissage appropriées en fonction des valeurs d’évaluation de votre API.
+
+   ![Page des détails du produit présentant les évaluations par étoiles intégrées sous le titre du produit](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
+
+## Résumé du tutoriel
+
+Voici un résumé des sujets abordés dans ce tutoriel :
+
+* **Développement d’extensions :** découvrez comment décrire une nouvelle fonctionnalité à un agent d’IA et générer une API REST fonctionnelle à l’aide de [!DNL App Builder].
+* **Test et déploiement locaux :** test local de l’API et déploiement à l’aide de la boîte à outils MCP.
+* **Contrats de service :** création de contrats d’API qui relient les extensions principales et les implémentations de storefront.
+* **Intégration progressive du storefront :** en fonction des exigences, de l’architecture et de la mise en œuvre à l’aide de compétences assistées par l’IA.
+* **Intégration d’un conteneur de dépôt :** utilisation de conteneurs et d’emplacements de dépôt [!DNL Adobe Commerce].
+* **Réutilisation des composants :** création de composants partagés utilisés sur plusieurs blocs.
+
+## Étapes suivantes
+
+Suivez les suggestions suivantes pour personnaliser votre extension d’évaluations ou créer vos propres modifications :
+
+### Modification des couleurs des étoiles
+
+Utilisez l’invite suivante avec votre agent :
 
 ```shell-session
 Change the star fill color to red.
 ```
 
-**Expected outcome:**
+**Résultat attendu :**
 
-The stars are changed to red.
+Les étoiles changent en rouge.
 
-![Red Star Colors](../assets/red-star-colors.png){width="600" zoomable="yes"}
+![Évaluation des produits affichée avec la couleur de remplissage rouge étoile](../assets/red-star-colors.png){width="600" zoomable="yes"}
 
-### Add rating distribution modal
+### Ajouter une boîte de dialogue modale de distribution d’évaluation
 
-The following steps show how the agent handles complex UI features with visual references.
+Les étapes suivantes montrent comment l’agent gère les fonctionnalités complexes de l’interface utilisateur avec des références visuelles.
 
-1. **Before starting:** Save the following mock image and paste it into the chat with your storefront agent.
+1. **Avant de commencer :** enregistrez l’image simulée suivante et collez-la dans la conversation avec votre agent storefront.
 
-   ![Rating Distribution Mockup](../assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
+   ![Maquette montrant la répartition de la distribution d’évaluation par niveau d’étoile](../assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
 
-1. Follow these steps to create the ratings distribution modal using the reference image as a guide:
+1. Pour créer la boîte de dialogue modale de distribution des évaluations à l’aide de l’image de référence comme guide, procédez comme suit :
 
-   * Update the API to return additional data representing the ratings distribution.
-   * Update the API Contract.
-   * Update the contact in the storefront codebase.
-   * Ask the storefront agent to use the reference image and updated API Contract to add the ratings distribution to the PDP page.
+   * Mettez à jour l’API pour renvoyer des données supplémentaires représentant la distribution des évaluations.
+   * Mettez à jour le contrat d’API.
+   * Mettez à jour le contrat dans la base de code du storefront.
+   * Demandez à l’agent storefront d’utiliser l’image de référence et le contrat d’API mis à jour pour ajouter la distribution des évaluations à la page PDP.
 
-1. Observe the following changes in the codebase, and watch the Apparel page for updates:
+1. Observez les modifications suivantes dans la base de code et observez les mises à jour sur la page produit :
 
-   * How the agent interprets the visual mockup
-   * Whether it uses appropriate HTML structure for accessibility
-   * How it handles the positioning and interaction states
+   * Comment l’agent interprète la maquette visuelle
+   * Utilisation ou non de la structure HTML appropriée pour l’accessibilité
+   * Gestion des états de positionnement et d’interaction
 
-#### Troubleshooting
+#### Résolution des problèmes liés à la distribution modale
 
-* If the modal does not appear, check the browser console for errors.
-* If positioning is off, ask the agent to fix it using the following format:
+Si la boîte de dialogue modale ne se comporte pas comme prévu, essayez les méthodes suivantes :
 
-   ```shell-session
-   adjust the modal position to be...
-   ```
+* Si la boîte de dialogue modale n’apparaît pas, recherchez les erreurs dans la console du navigateur.
+* Si le positionnement est désactivé, demandez à l’agent de le corriger au format suivant :
 
-![Rating Distribution Modal](../assets/rating-distribution-modal.png){width="600" zoomable="yes"}
- -->
+  ```shell-session
+  adjust the modal position to be...
+  ```
+
+![Boîte de dialogue modale affichant la distribution d’évaluation détaillée avec des barres de répartition au niveau des étoiles](../assets/rating-distribution-modal.png){width="600" zoomable="yes"}
