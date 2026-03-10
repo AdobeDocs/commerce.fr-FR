@@ -85,7 +85,7 @@ Le processus d’installation et de configuration d’AEM Assets pour [!DNL Comm
 
 Assurez-vous que votre environnement AEM Assets est prêt :
 
-1. **Configuration d’AEM Assets** : configurez le profil de métadonnées Commerce. Voir [ Configuration d’un profil de métadonnées](configure-aem.md#configure-a-metadata-profile).
+1. **Configuration d’AEM Assets** : configurez le profil de métadonnées Commerce. Voir [&#x200B; Configuration d’un profil de métadonnées](configure-aem.md#configure-a-metadata-profile).
 
 1. **Activation de Dynamic Media** : vérifiez que Dynamic Media avec les fonctionnalités OpenAPI est activé dans votre environnement AEM Assets.
 
