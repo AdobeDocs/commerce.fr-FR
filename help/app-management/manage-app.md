@@ -30,7 +30,7 @@ Avant d’associer une application, vérifiez que vous disposez des éléments s
 
 Regardez cette vidéo pour savoir comment associer une application à une instance Commerce et configurer des paramètres.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478944)
+>[!VIDEO](https://video.tv.adobe.com/v/3478957?captions=fre_fr)
 
 ## Associer une application
 
