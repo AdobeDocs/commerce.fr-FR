@@ -2,9 +2,9 @@
 title: Configuration d’AEM Assets pour Commerce Optimizer
 description: Découvrez comment configurer l’intégration d’AEM Assets pour  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+source-git-commit: 7f0970648663331fea2af19b981c4fd3b3aedcaa
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Avant de configurer l’intégration, vérifiez les points suivants :
 
 ## Intégration
 
-Pour intégrer l’intégration d’AEM Assets à [!DNL Commerce Optimizer], vous devez [créer un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Pour intégrer l’intégration d’AEM Assets à [!DNL Commerce Optimizer], vous devez [créer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 L’assistance Adobe utilise les informations figurant dans votre ticket pour enregistrer votre client auprès du service d’intégration d’Assets et configurer l’intégration.
 
@@ -61,8 +61,6 @@ Une fois que l’assistance Adobe a traité votre ticket, l’intégration est c
 Une fois l’intégration terminée :
 
 1. **Enregistrement auprès du service d’intégration Assets** : votre client [!DNL Commerce Optimizer] est enregistré auprès du service d’intégration Assets à l’aide de l’ID de client [!DNL Adobe Commerce Optimizer], de l’ID de programme AEM, de l’ID d’environnement AEM et du client.
-
-1. **Configuration de l’authentification** : l’authentification du jeton de service IMS est configurée entre [!DNL Commerce Optimizer] et le service d’intégration d’Assets pour une communication sécurisée.
 
 1. **Abonnement aux événements** : le service d’intégration Assets s’abonne aux éléments suivants :
 
@@ -87,7 +85,7 @@ Le processus d’installation et de configuration d’AEM Assets pour [!DNL Comm
 
 Assurez-vous que votre environnement AEM Assets est prêt :
 
-1. **Configuration d’AEM Assets** : configurez le profil de métadonnées Commerce. Voir [&#x200B; Configuration d’un profil de métadonnées](configure-aem.md#configure-a-metadata-profile).
+1. **Configuration d’AEM Assets** : configurez le profil de métadonnées Commerce. Voir [ Configuration d’un profil de métadonnées](configure-aem.md#configure-a-metadata-profile).
 
 1. **Activation de Dynamic Media** : vérifiez que Dynamic Media avec les fonctionnalités OpenAPI est activé dans votre environnement AEM Assets.
 
@@ -115,7 +113,7 @@ La ressource doit avoir un statut **approuvé** pour que la synchronisation des 
 
 >[!CAUTION]
 >
-> Affectez la couche `AEM-Assets` à votre [vue de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-view). Si le calque n’est pas affecté, les données d’image du produit peuvent être écrasées de manière inattendue.
+> Affectez la couche `AEM-Assets` à votre [vue de catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Si le calque n’est pas affecté, les données d’image du produit peuvent être écrasées de manière inattendue.
 
 ## Synchronisation
 
