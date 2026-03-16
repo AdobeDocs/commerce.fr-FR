@@ -2,7 +2,7 @@
 title: Vue d’ensemble des [!DNL App Management]
 description: Gérez les applications App Builder associées à votre instance Adobe Commerce via une interface utilisateur d’administration unifiée.
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 [!DNL App Management] dans Adobe Commerce simplifie la découverte, l’installation, la configuration et l’exploitation des applications dans l’environnement de commerce. Il fournit un cadre unifié qui permet aux entreprises d’adopter l’extensibilité de manière sûre et efficace tout en réduisant le frottement opérationnel.
 
-![Gestion des applications](assets/app-management-ui.png){width="500" zoomable="yes"}
+![Gestion des applications](assets/app-management-view.png){width="500" zoomable="yes"}
 
 Pour **App Manager**, [!DNL App Management] offre une vue centralisée de toutes les applications installées, ce qui facilite la gouvernance, la gestion du cycle de vie et la supervision opérationnelle. Grâce à des flux d’installation simplifiés, des étapes de configuration automatisées et une visibilité claire sur le statut et les autorisations des applications, les opérateurs commerciaux et techniques peuvent gérer les intégrations en toute confiance, sans nécessiter une implication approfondie de l’ingénierie.
 
