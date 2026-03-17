@@ -3,9 +3,9 @@ title: Notes de mise à jour
 description: Dernières informations de mise à jour pour l [!DNL Data Connection] extension d’Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 75d4ed88411e6f81d2c4ff8aa5e8db9dfdc6e954
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1307'
 ht-degree: 2%
 
 ---
@@ -24,9 +24,9 @@ Ces notes de mise à jour contiennent des mises à jour de l’extension [!DNL D
 
 Pour connaître les modifications de fonctionnalités et les correctifs liés aux extensions utilisées par l’extension [!DNL Data Connection], voir **Mises à jour de service prises en charge**.
 
-Voir [Prochaines versions](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule) pour en savoir plus sur les plannings de publication et la prise en charge.
+Voir [Prochaines versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) pour en savoir plus sur les plannings de publication et la prise en charge.
 
-Consultez la documentation destinée aux développeurs pour [découvrir quelles versions de Commerce prennent en charge ce module](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability).
+Consultez la documentation destinée aux développeurs pour [découvrir quelles versions de Commerce prennent en charge ce module](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Mises à jour de service prises en charge
 
@@ -81,6 +81,14 @@ _12 octobre 2022_
 ![Nouveau](../assets/new.svg) - Ajout de la prise en charge d’un [storefront AEM](overview.md#aem-support).
 
 +++
+
+## 3.5.0
+
+_17 mars 2026_
+
+[!BADGE Compatibilité]{type=Informative tooltip="Compatibilité"} Adobe Commerce versions 2.4.4 et ultérieures
+
+![Nouveau](../assets/new.svg) Ajout de la prise en charge de PHP 8.5.
 
 ## 3.4.0
 
