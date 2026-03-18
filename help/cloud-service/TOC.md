@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: e15af3dc45e2acebf8f069d56c7d1a01f8757285
+source-git-commit: 48fa526c2d6529cb482c8fe52bffe27c21693cb1
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 10%
+source-wordcount: '81'
+ht-degree: 8%
 
 ---
 
@@ -27,12 +27,15 @@ ht-degree: 10%
       - [Outils de codage](migration/coding-tools.md)
    - [Service Rag de documentation](migration/doc-rag.md)
 - Tutoriels {#tutorials}
-   - [Tutoriels préalables](tutorials/tutorial-prerequisites.md)
+   - [Tutorial Prerequisites](tutorials/tutorial-prerequisites.md)
+   - [Tutoriel Sur L’Extension Des Estimations De Diffusion](tutorials/delivery-estimates-extension.md)
+   - [Tutoriel Sur L’Extension De Notification En Stock](tutorials/in-stock-notification-extension.md)
+   - [Tutoriel sur l’extension Product Reviews](tutorials/product-reviews-extension.md)
    - [Tutoriel sur l’extension d’évaluations](tutorials/ratings-extension.md)
-   - [Tutoriel sur l’extension des méthodes d’expédition](tutorials/shipping-method-extension.md)
+   - [Tutoriel sur l’extension de la méthode d’expédition](tutorials/shipping-method-extension.md)
 - Schémas {#schemas}
    - [Schéma GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [Schéma de l’API REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [Tutoriels vidéo](https://experienceleague.adobe.com/fr/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Tutoriels vidéo](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Notes de mise à jour](release-notes.md)
-- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)
+- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
