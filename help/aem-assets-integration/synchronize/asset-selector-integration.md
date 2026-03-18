@@ -3,9 +3,9 @@ title: Sélection manuelle des ressources
 description: Découvrez comment le sélecteur de ressources AEM intégré à l’administration Commerce permet aux marketeurs et aux marketeurs d’ajouter facilement des images d’AEM Assets à Adobe Commerce, en rationalisant la gestion des ressources.
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 Le **sélecteur de ressources AEM** permet aux marketeurs et aux marketeurs d’ajouter facilement des images d’AEM Assets à Adobe Commerce, en rationalisant le processus de gestion des ressources. Cette méthode garantit la cohérence et la conformité de la marque en limitant la sélection de ressources aux ressources examinées et approuvées dans le [!DNL DAM (Digital Asset Management system)].
 
-Le **sélecteur de ressources AEM** est disponible lorsque l’identifiant client IMS du projet AEM Assets a été configuré dans l’administrateur Commerce. Voir [&#x200B; Configuration du sélecteur de ressources AEM](#configure-the-aem-asset-selector-in-adobe-commerce).
+Le **sélecteur de ressources AEM** est disponible lorsque l’identifiant client IMS du projet AEM Assets a été configuré dans l’administration Commerce et que les utilisateurs disposent des autorisations [autorisations et de l’authentification IMS requises](../get-started/permissions.md). Voir [ Configuration du sélecteur de ressources AEM](#configure-the-aem-asset-selector-in-adobe-commerce).
 
-Lorsque l’intégration du sélecteur de ressources AEM **&#x200B;**&#x200B;est configurée, les marketeurs et les marketeurs peuvent :
+Lorsque l’intégration du sélecteur de ressources AEM **** est configurée, les marketeurs et les marketeurs peuvent :
 
 * Gérez facilement les images de catégorie, en vous assurant qu’elles sont conformes aux directives de la marque et de la campagne.
 * [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} Attribuez des ressources directement dans Page Builder pour obtenir du contenu visuellement riche.
-* [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} Attribuez Assets directement dans le storefront Commerce optimisé par Edge Delivery Services pour un contenu visuellement enrichi.
+* [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} Attribuez Assets directement dans le storefront Commerce optimisé par Edge Delivery Services pour un contenu visuellement enrichi.
 
 >[!NOTE]
 >
-> Le sélecteur de ressources AEM est un composant front-end d’AEM Assets qui permet d’intégrer AEM Assets aux applications de création. Pour plus d’informations sur ce composant, consultez le [Sélecteur de ressources micro front-end](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} dans le *Guide d’utilisation d’AEM as a Cloud Service*.
+> Le sélecteur de ressources AEM est un composant front-end d’AEM Assets qui permet d’intégrer AEM Assets aux applications de création. Pour plus d’informations sur ce composant, consultez le [Sélecteur de ressources micro front-end](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} dans le *Guide d’utilisation d’AEM as a Cloud Service*.
 
 ## Principaux avantages
 
@@ -38,13 +38,13 @@ L’incorporation du sélecteur de ressources AEM dans le panneau d’administra
 
 * **Qualité de contenu améliorée**-Garantit l’utilisation d’images optimisées et haute résolution sur les pages de produits, les catégories et le générateur de page.
 
-![&#x200B; Sélecteur de ressources &#x200B;](../assets/asset-selector.png){width="600" zoomable="yes"}
+![ Sélecteur de ressources ](../assets/asset-selector.png){width="600" zoomable="yes"}
 
 ## Configuration du sélecteur de ressources AEM dans Adobe Commerce
 
 1. Dans l’Administration Commerce, accédez à **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-1. Renseignez le champ **[!UICONTROL IMS Client ID]** .
+1. Renseignez le champ **[!UICONTROL IMS Client ID]** . Pour connaître les autorisations requises et la manière d’obtenir cet identifiant, voir [Autorisations utilisateur et IMS](../get-started/permissions.md).
 
 1. **Enregistrez** la configuration.
 

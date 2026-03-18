@@ -3,9 +3,9 @@ title: Gestion des ressources
 description: Utilisez l’intégration AEM Assets pour Commerce afin de gérer les ressources multimédias de votre storefront.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -42,13 +42,13 @@ Les images des produits sont automatiquement extraites d’AEM Assets en fonctio
 
 1. Ouvrez la section **Images et vidéos**.
 
-   ![&#x200B; Image du produit &#x200B;](assets/product-image.png){width="600" zoomable="yes"}
+   ![ Image du produit ](assets/product-image.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
    > Un message indique que l’intégration est activée, ce qui en fait une section **lecture seule** car la gestion des images est centralisée dans la gestion des ressources numériques (DAM).
 
-   Pour configurer les ressources de produit (lier des images aux SKU), ouvrez votre instance d’auteur AEM Assets et cliquez sur **Assets** dans la vue principale. Pour connaître les étapes de configuration des métadonnées[&#x200B; voir &#x200B;](synchronize/default-match.md) Correspondance automatique par défaut .
+   Pour configurer les ressources de produit (lier des images aux SKU), ouvrez votre instance d’auteur AEM Assets et cliquez sur **Assets** dans la vue principale. Pour connaître les étapes de configuration des métadonnées[ voir ](synchronize/default-match.md) Correspondance automatique par défaut .
 
 ### Gestion des images de produits dans AEM Assets
 
@@ -61,7 +61,7 @@ Pour savoir comment lier des ressources à des produits dans AEM Assets (y compr
 
 ### Contrats SLA de synchronisation
 
-Pour plus d&#39;informations sur la synchronisation, consultez la rubrique [&#x200B; Synchronization SLA &#x200B;](get-started/setup-synchronization.md#synchronization-sla).
+Pour plus d&#39;informations sur la synchronisation, consultez la rubrique [ Synchronization SLA ](get-started/setup-synchronization.md#synchronization-sla).
 
 ## Images de contenu
 
@@ -69,7 +69,7 @@ Adobe Commerce fournit Page Builder en tant que **système de gestion de contenu
 
 ### Utilisation du sélecteur de ressources AEM dans Page Builder
 
-[!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} Pour utiliser le sélecteur de ressources **AEM** pour incorporer des images :
+[!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} Pour utiliser le **sélecteur de ressources AEM** pour incorporer des images, assurez-vous que les utilisateurs disposent des autorisations [et de l’authentification IMS requises](get-started/permissions.md).
 
 1. Accédez à n’importe quelle section de l’**administration Adobe Commerce** qui prend en charge les `content enrichment` à l’aide de **Page Builder**.
 
@@ -93,7 +93,7 @@ L’association à l’image sélectionnée sera stockée dans Adobe Commerce en
 
 >[!TIP]
 >
-> [DA.live (création de documents)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=fr#dalive-document-authoring){target=_blank} fournit également un sélecteur de ressources pour enrichir les données.
+> [DA.live (création de documents)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} fournit également un sélecteur de ressources pour enrichir les données.
 
 ## Vidéos sur les produits
 
@@ -107,7 +107,7 @@ Adobe Commerce sert de canal d’engagement essentiel pour les ressources numér
 
 1. Ouvrez la section **Images et vidéos**.
 
-   ![&#x200B; Image du produit &#x200B;](assets/product-image.png){width="600" zoomable="yes"}
+   ![ Image du produit ](assets/product-image.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
@@ -133,7 +133,7 @@ Cette intégration permet aux commerçants de gérer facilement les vidéos de p
 
 ### Contrats SLA de synchronisation
 
-Pour plus d&#39;informations sur la synchronisation, consultez la rubrique [&#x200B; Synchronization SLA &#x200B;](get-started/setup-synchronization.md#synchronization-sla).
+Pour plus d&#39;informations sur la synchronisation, consultez la rubrique [ Synchronization SLA ](get-started/setup-synchronization.md#synchronization-sla).
 
 ## Images de catégorie
 
@@ -141,7 +141,7 @@ Adobe Commerce permet aux commerçants d’associer des images à des catégorie
 
 ### Utilisation du sélecteur de ressources AEM pour les images de catégorie
 
-Après avoir configuré le sélecteur de ressources [AEM](synchronize/asset-selector-integration.md), vous pouvez l’utiliser pour ajouter des ressources dans le contenu des catégories de votre catalogue.
+Après avoir configuré le sélecteur de ressources [AEM](synchronize/asset-selector-integration.md) et vérifié que les utilisateurs disposent des autorisations [autorisations et de l’authentification IMS requises](get-started/permissions.md), vous pouvez l’utiliser pour ajouter des ressources au contenu des catégories de votre catalogue.
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 
@@ -163,16 +163,16 @@ Après avoir configuré le sélecteur de ressources [AEM](synchronize/asset-sele
 
 1. Cliquez sur **[!UICONTROL Save]** et continuez.
 
-   Pour plus d’informations sur la création d’une catégorie, voir [Compléter le contenu de la catégorie](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) dans le **Guide de gestion des catalogues Commerce**.
+   Pour plus d’informations sur la création d’une catégorie, voir [Compléter le contenu de la catégorie](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) dans le **Guide de gestion des catalogues Commerce**.
 
 ## Mise à jour d’une ressource
 
 Une fois que vous avez mis à jour et approuvé une ressource dans AEM Assets, les mises à jour sont automatiquement envoyées à Adobe Commerce à l’aide de la fonctionnalité de correspondance automatisée. Ce processus est déclenché lors de l’approbation des ressources. Pour vous assurer que toutes les modifications finales et les mises à jour des métadonnées sont incluses, veillez à retraiter la ressource avant de l’approuver.
 
-Pour que le workflow côté Commerce lie les ressources aux produits via les métadonnées, reportez-vous à la rubrique [&#x200B; Correspondance automatique par défaut &#x200B;](synchronize/default-match.md).
+Pour que le workflow côté Commerce lie les ressources aux produits via les métadonnées, reportez-vous à la rubrique [ Correspondance automatique par défaut ](synchronize/default-match.md).
 
 Pour les procédures AEM Assets, consultez la documentation suivante :
 
-* [&#x200B; Retraitement des ressources numériques &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [ Retraitement des ressources numériques ](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Approuver une ressource](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Approuver une ressource](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
