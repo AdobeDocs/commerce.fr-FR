@@ -3,7 +3,7 @@ title: Connexion en tant que client avec des codes uniques
 description: Découvrez comment utiliser la fonction Connexion en tant que client OTC pour générer des codes à usage unique pour l’authentification du client dans  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin
 level: Intermediate
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 source-git-commit: 160180d9d779514f6faee3c7de46531ebf191c7d
 workflow-type: tm+mt
 source-wordcount: '860'

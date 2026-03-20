@@ -3,7 +3,7 @@ title: Déclenchement d’e-mail via REST
 description: Découvrez comment déclencher des e-mails transactionnels à la demande à l’aide de l’API REST en spécifiant un identifiant de modèle, un e-mail de destinataire et des variables de modèle pour  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin
 level: Experienced
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 source-git-commit: 9661e368f7a0dc85edcd3e52a67ae2a98355d8b5
 workflow-type: tm+mt
 source-wordcount: '523'
