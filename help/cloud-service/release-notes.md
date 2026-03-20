@@ -24,7 +24,7 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 ## Mars 2026 - #2 de publication {#latest}
 
-[!BADGE  Sandbox ]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+[!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
 
 Les éléments suivants sont actuellement disponibles dans les environnements Sandbox d’[!DNL Adobe Commerce as a Cloud Service] et seront publiés dans les environnements de production le 24 mars 2026.
 
