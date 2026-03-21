@@ -46,7 +46,7 @@ _1 mars 2026_
 
 ![Nouveau problème &#x200B;](../assets/new.svg)<!-- Issue PAY-1041 --> Ajout de la prise en charge d’Adobe Commerce 2.4.9-beta1 et de PHP 8.5.
 
-![Nouvel événement](../assets/new.svg)<!-- Issue ACCS-169 --> Les champs **[!UICONTROL Program ID]**, **[!UICONTROL Environment ID]** et [**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank} sont désormais automatiquement renseignés sous forme de listes déroulantes en fonction de la session IMS de l’[utilisateur](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank}.
+![Nouvel événement](../assets/new.svg)<!-- Issue ACCS-169 --> Les champs **[!UICONTROL Program ID]**, **[!UICONTROL Environment ID]** et [**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank} sont désormais automatiquement renseignés sous forme de listes déroulantes en fonction de la session IMS de l’[utilisateur](https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank}.
 
 ## v1.2.14
 
