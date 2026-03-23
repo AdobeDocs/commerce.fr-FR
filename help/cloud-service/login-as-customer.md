@@ -3,7 +3,7 @@ title: Connexion en tant que client avec des codes uniques
 description: Découvrez comment utiliser la fonction Connexion en tant que client OTC pour générer des codes à usage unique pour l’authentification du client dans  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin
 level: Intermediate
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 source-git-commit: 2de1006ad3cee936d114bcf1b9a98b43a54d8c76
 workflow-type: tm+mt
 source-wordcount: '861'
@@ -65,7 +65,7 @@ Vous devez répondre aux exigences suivantes avant d’utiliser la fonction de c
 
 >[!IMPORTANT]
 >
->Le code à usage unique généré en vente libre est valide pendant 30 secondes par défaut et est invalidé après une seule utilisation. La TTL peut être configurée en envoyant un ticket d’assistance [support](https://experienceleague.adobe.com/home?support-tab=home#support).
+>Le code à usage unique généré en vente libre est valide pendant 30 secondes par défaut et est invalidé après une seule utilisation. La TTL peut être configurée en envoyant un ticket d’assistance [support](https://experienceleague.adobe.com/home?lang=fr&support-tab=home#support).
 
 Une fois le code unique généré, vous pouvez l’utiliser en accédant à votre storefront et en vous connectant à l’aide des informations d’identification suivantes :
 
