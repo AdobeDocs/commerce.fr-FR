@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Tutoriels préalables
 
-Cette page répertorie les conditions préalables et les étapes de configuration pour les tutoriels [!DNL Adobe Commerce as a Cloud Service], tels que le tutoriel sur l’extension [ratings](./ratings-extension.md) et le tutoriel sur l’extension de méthode d’expédition [](./shipping-method-extension.md).
+Cette page répertorie les conditions préalables et les étapes de configuration pour les tutoriels [!DNL Adobe Commerce as a Cloud Service], tels que le tutoriel sur l’extension [ratings](./ratings-extension.md) et le tutoriel sur l’extension de méthode d’expédition [&#128279;](./shipping-method-extension.md).
 
 ## Conditions préalables générales
 
@@ -178,14 +178,14 @@ Les sections suivantes décrivent comment configurer manuellement chaque composa
 
 Configurez un projet dans Adobe Developer Console avec les API et les informations d’identification requises.
 
-1. Accédez à [](https://developer.adobe.com/console){target="_blank"}.
+1. Accédez à [&#128279;](https://developer.adobe.com/console){target="_blank"}.
 1. Connectez-vous à l’aide de votre adresse e-mail et de votre mot de passe.
 
 #### Créer un projet
 
 Créez un projet App Builder dans le Adobe Developer Console pour héberger votre extension.
 
-1. Accédez à [](https://developer.adobe.com/).
+1. Accédez à [&#128279;](https://developer.adobe.com/).
 1. Cliquez sur **[!UICONTROL Create project from a template]**.
 1. Sélectionnez le modèle de **[!UICONTROL App Builder]**.
 1. Saisissez un **[!UICONTROL Project Title]** et un **[!UICONTROL App Name]**.
@@ -308,7 +308,7 @@ COMMERCE_GRAPHQL_ENDPOINT=
 
 Pour rechercher ces valeurs :
 
-1. Accédez à [Instances de service ](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances).
+1. Accédez à [Instances de service &#x200B;](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances).
 1. Cliquez sur l’icône d’informations en regard de votre instance.
 1. Copiez le point d’entrée REST en tant que `COMMERCE_BASE_URL`.
 1. Copiez le point d’entrée GraphQL en tant que `COMMERCE_GRAPHQL_ENDPOINT`.
