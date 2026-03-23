@@ -398,7 +398,7 @@ Les éléments suivants sont requis pour terminer la section [storefront](./rati
 
 * [Google Chrome](https://www.google.com/chrome/) - Requis pour tester le storefront
 
-* Un projet de storefront connecté à votre instance [!DNL Commerce]. Si vous ne disposez pas d’un projet de storefront, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, y compris la section [Lier le référentiel aux données commerciales](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
+* Un projet de storefront connecté à votre instance [!DNL Commerce]. Si vous ne disposez pas d’un projet de storefront, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr){target="_blank"}, y compris la section [Lier le référentiel aux données commerciales](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr#link-repo-to-commerce-data){target="_blank"}.
 
 ### Cloner le référentiel storefront
 
