@@ -4,7 +4,7 @@ description: 'Accélérez votre storefront Adobe Commerce avec  [!DNL Catalog Se
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: 4f3f8accd653dbee6fec45c065f55ff04b17bd2d
+source-git-commit: 8bdd41f2ee774f214c4be1fb5ae51c6e2a2fe053
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 0%
@@ -24,7 +24,6 @@ Les données de modèle d’affichage riches fournies par le [!DNL Catalog Servi
 - Pages de comparaison de produits
 - Toute autre page qui effectue le rendu des données de produit, comme les pages de panier, de commande et de liste de souhaits
 
-
 ## Principaux avantages et fonctionnalités
 
 - **Chargement de page plus rapide** : requêtes optimisées pour une récupération des données de catalogue jusqu’à 10 fois plus rapide par rapport au système GraphQL principal
@@ -35,7 +34,6 @@ Les données de modèle d’affichage riches fournies par le [!DNL Catalog Servi
 - **Synchronisation des données en temps réel** : le service de catalogue est synchronisé avec l’application Adobe Commerce par le biais de l’extension d’exportation de données SaaS, ce qui garantit que les requêtes renvoient les données de catalogue les plus récentes
 - **Tableau de bord de gestion des données** : surveillez et gérez les opérations de synchronisation des données à partir de l’interface d’administration d’Adobe Commerce
 - **Intégration du maillage API** : vous pouvez éventuellement intégrer le [maillage API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) pour combiner les systèmes Adobe Commerce GraphQL avec d’autres API internes et tierces afin d’étendre le schéma GraphQL du service de catalogue et d’ajouter des données ou des fonctionnalités personnalisées
-
 
 ## Aperçu de l’architecture
 
@@ -129,9 +127,7 @@ Le service de catalogue garantit la précision des mises à jour et des calculs 
 
 Le processus de mise en œuvre implique :
 
-1. [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **[Installer et configurer le service de catalogue](installation.md)** : installez et configurez l’extension du service de catalogue et configurez la connexion SaaS à l’aide de l’[!DNL Commerce Services Connector].
+1. [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **[Installer et configurer le service de catalogue](installation.md)** : installez et configurez l’extension du service de catalogue et configurez la connexion SaaS à l’aide de l’[!DNL Commerce Services Connector].
 2. **Mettre à jour le code storefront** : intégrez les requêtes GraphQL du service de catalogue à votre serveur frontal.
 3. **Requêtes d’itinéraire** : toutes les requêtes du service de catalogue passent par la passerelle GraphQL (URL fournie lors de l’intégration)
 4. **Surveillance et dépannage de la synchronisation des données** : vérification des performances améliorées et surveillance des résultats
-
-
