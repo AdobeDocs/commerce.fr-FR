@@ -34,7 +34,7 @@ _5 mars 2026_
 
 ![Correctif](../assets/fix.svg) Garantit la compatibilité avec les futures versions de PHP en mettant à jour le processus d’index de flux de produits afin d’éviter l’utilisation obsolète de la valeur null comme décalage de tableau. Cela améliore la stabilité lors de l’indexation.<!--MDEE-1306-->
 
-![Correctif ](../assets/fix.svg) Amélioration de la synchronisation des flux de produits pour les données de catégorie : désormais, lorsque vous mettez à jour une URL de catégorie dans l’interface utilisateur d’administration de Commerce, le flux de produits s’actualise automatiquement pour refléter le nouveau chemin d’accès de catégorie. Aucune action manuelle n’est requise et les résultats de votre recherche de produits sont toujours à jour après le changement de l’URL d’une catégorie.<!--MDEE-1294-->
+![Correctif &#x200B;](../assets/fix.svg) Amélioration de la synchronisation des flux de produits pour les données de catégorie : désormais, lorsque vous mettez à jour une URL de catégorie dans l’interface utilisateur d’administration de Commerce, le flux de produits s’actualise automatiquement pour refléter le nouveau chemin d’accès de catégorie. Aucune action manuelle n’est requise et les résultats de votre recherche de produits sont toujours à jour après le changement de l’URL d’une catégorie.<!--MDEE-1294-->
 
 ### Version 103.4.19
 
@@ -132,7 +132,7 @@ _6 août 2025_
 
 ![Nouveau](../assets/new.svg) Ajout d’informations de prix de niveau au flux de prix. <!--MDEE-1070-->
 
-![Correction ](../assets/fix.svg) l’extension d’exportateur de données exporte désormais correctement les prix de sélection des lots à l’échelle du site web, en veillant à ce que les prix du storefront reflètent des valeurs précises en fonction de la configuration « Étendue du prix du catalogue ».<!--MDEE-1115-->
+![Correction &#x200B;](../assets/fix.svg) l’extension d’exportateur de données exporte désormais correctement les prix de sélection des lots à l’échelle du site web, en veillant à ce que les prix du storefront reflètent des valeurs précises en fonction de la configuration « Étendue du prix du catalogue ».<!--MDEE-1115-->
 
 ![Correctif](../assets/fix.svg) Auparavant, les produits étaient synchronisés avec un statut de `lowStock=true` incorrect lors de l’utilisation d’Inventory management (Inventory management multi-sources) avec une configuration de seuil. Ce problème a été corrigé afin d’assurer la précision des rapports de stock faible.<!--MDEE-1113-->
 
