@@ -18,7 +18,7 @@ Adobe Commerce propose trois modèles de déploiement :
 
 - [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
 - [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} [Adobe Commerce on Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
-- [](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) (On-premise)
+- [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) (On-premise)
 
 Cette comparaison se concentre sur les différences entre les modèles SaaS (logiciel en tant que service) et PaaS (plateforme en tant que service). Ces modèles fournissent différents niveaux de personnalisation, d’extensibilité et de contrôle sur votre mise en œuvre Commerce.
 
@@ -28,7 +28,7 @@ Cette comparaison se concentre sur les différences entre les modèles SaaS (log
 
 ## Fonctionnalités de gestion des magasins
 
-L’interface utilisateur d’administration de [](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) est l’interface principale permettant d’accéder aux fonctionnalités de gestion des opérations de la boutique principale, des stocks, des prix, des promotions et des interactions des clients. Cependant, [!DNL Adobe Commerce as a Cloud Service] propose des solutions uniques qui remplacent certaines des fonctionnalités connues disponibles dans les projets [!DNL Adobe Commerce on Cloud] et sur site.
+L’interface utilisateur d’administration de [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) est l’interface principale permettant d’accéder aux fonctionnalités de gestion des opérations de la boutique principale, des stocks, des prix, des promotions et des interactions des clients. Cependant, [!DNL Adobe Commerce as a Cloud Service] propose des solutions uniques qui remplacent certaines des fonctionnalités connues disponibles dans les projets [!DNL Adobe Commerce on Cloud] et sur site.
 
 Le tableau suivant décrit les fonctionnalités et solutions de remplacement disponibles dans [!DNL Adobe Commerce as a Cloud Service] :
 
@@ -36,8 +36,8 @@ Le tableau suivant décrit les fonctionnalités et solutions de remplacement dis
     <thead>
         <tr>
             <th>Fonctionnalité</th>
-            <th>Modèle PaaS [!BADGE PaaS only]{type=Informative url=« https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions » tooltip=« S’applique aux projets Adobe Commerce sur Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-Premise uniquement. »}</th>
-            <th>Modèle SaaS [!BADGE SaaS only]{type=Positive url=« https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions » tooltip=« S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe). »}</th>
+            <th>Modèle PaaS [!BADGE PaaS only]{type=Informative url=https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions tooltip="S’applique aux projets Adobe Commerce sur Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-Premise uniquement."}</th>
+            <th>Modèle SaaS [!BADGE SaaS only]{type=Positive url=https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}</th>
         </tr>
     </thead>
     <tbody>
@@ -89,8 +89,8 @@ Le tableau suivant compare les fonctionnalités de la plateforme et les fonction
     <thead>
         <tr>
             <th>Fonctionnalité</th>
-            <th>Modèle PaaS [!BADGE PaaS only]{type=Informative url=« https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions » tooltip=« S’applique aux projets Adobe Commerce sur Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-Premise uniquement. »}</th>
-            <th>Modèle SaaS [!BADGE SaaS only]{type=Positive url=« https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions » tooltip=« S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe). »}</th>
+            <th>Modèle PaaS [!BADGE PaaS only]{type=Informative url=https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions tooltip="S’applique aux projets Adobe Commerce sur Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-Premise uniquement."}</th>
+            <th>Modèle SaaS [!BADGE SaaS only]{type=Positive url=https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}</th>
         </tr>
     </thead>
     <tbody>
