@@ -2,9 +2,9 @@
 title: Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce
 description: Découvrez comment utiliser les commandes de l’interface de ligne de commande pour gérer les flux et les processus pour les services SaaS  [!DNL data export extension] ’Adobe Commerce.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: a05f716200fbf2af74b8488ae66053a56e7037a0
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ La commande `saas:resync` du package `magento/saas-export` permet de gérer la s
 Adobe déconseille d&#39;utiliser régulièrement la commande `saas:resync`. Les scénarios classiques d’utilisation de la commande sont les suivants :
 
 - Synchronisation initiale
-- Synchronisez les données avec un nouvel espace de données après avoir modifié l’identifiant de l’espace de données [SaaS](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/services/saas)
+- Synchronisez les données avec un nouvel espace de données après avoir modifié l’identifiant de l’espace de données [SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Dépannage
 
 Surveillez les opérations de synchronisation dans le fichier `var/log/saas-export.log`.
@@ -62,7 +62,7 @@ Consultez les sections suivantes pour obtenir une description des options ainsi 
 
 >[!NOTE]
 >
->Pour obtenir des options avancées de gestion du traitement des exportations, voir [&#x200B; Personnaliser le traitement des exportations &#x200B;](customize-export-processing.md).
+>Pour obtenir des options avancées de gestion du traitement des exportations, voir [ Personnaliser le traitement des exportations ](customize-export-processing.md).
 
 ## `--by-ids`
 
@@ -85,9 +85,9 @@ Nettoyez la table de l’indexeur de flux avant de réindexer et d’envoyer des
 
 Si elle est utilisée avec l’option `--dry-run` , l’opération effectue une opération de resynchronisation d’essai pour tous les éléments.
 
->[!IMPORTANT]
+>[!WARNING]
 >
->À utiliser uniquement après le nettoyage de l’environnement ou avec l’option `--dry-run` . Si elle est utilisée dans d’autres cas, l’opération de nettoyage peut entraîner une perte de données et des problèmes de synchronisation des données.
+>L’utilisation de la commande resync avec l’option `cleanup-feed` efface l’état d’exportation du flux local et peut entraîner une synchronisation incomplète. Par exemple, les suppressions d’entités dans Adobe Commerce peuvent ne pas être reflétées dans les services Commerce connectés, ou les entités obsolètes peuvent rester dans les index des services Commerce distants même si elles ont été supprimées ou mises à jour dans Adobe Commerce. N’utilisez cette option que pour les reconstructions complètes de l’environnement, par exemple après un nettoyage de l’espace de données SaaS.
 
 **Exemple:**
 
