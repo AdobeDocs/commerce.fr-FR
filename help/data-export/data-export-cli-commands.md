@@ -62,7 +62,7 @@ Consultez les sections suivantes pour obtenir une description des options ainsi 
 
 >[!NOTE]
 >
->Pour obtenir des options avancées de gestion du traitement des exportations, voir [ Personnaliser le traitement des exportations ](customize-export-processing.md).
+>Pour obtenir des options avancées de gestion du traitement des exportations, voir [&#x200B; Personnaliser le traitement des exportations &#x200B;](customize-export-processing.md).
 
 ## `--by-ids`
 
