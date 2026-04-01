@@ -33,7 +33,7 @@ Vous pouvez télécharger l&#39;état des transactions au format .csv pour l&#39
 
 La vue Rapport des transactions est disponible dans la vue Transactions des Services de paiement. Il comprend toutes les informations disponibles sur les transactions de votre ou vos boutique(s).
 
-Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**pour afficher la vue du rapport de transactions tabulaire détaillé. Dans **[!UICONTROL Home]**, vous pouvez également choisir des **[!UICONTROL View Report]**sous **[!UICONTROL Transactions]**dans [!DNL Adobe Commerce as a Cloud Service] et [!DNL Adobe Commerce Optimizer].
+Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;pour afficher la vue du rapport de transactions tabulaire détaillé. Dans **[!UICONTROL Home]**, vous pouvez également choisir des **[!UICONTROL View Report]**&#x200B;sous **[!UICONTROL Transactions]**&#x200B;dans [!DNL Adobe Commerce as a Cloud Service] et [!DNL Adobe Commerce Optimizer].
 
 >[!BEGINTABS]
 
@@ -67,7 +67,7 @@ Dans la vue Rapport des transactions , vous pouvez sélectionner la source de do
 
 ![Sélection des sources de données](assets/datasource.png){width="300" zoomable="yes"}
 
-Si _[!UICONTROL Live]_est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour vos magasins qui utilisent [!DNL Payment Services] en mode production. Si_[!UICONTROL Sandbox]_ est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour votre mode sandbox.
+Si _[!UICONTROL Live]_&#x200B;est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour vos magasins qui utilisent [!DNL Payment Services] en mode production. Si&#x200B;_[!UICONTROL Sandbox]_ est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour votre mode sandbox.
 
 Les sélections de sources de données fonctionnent comme suit :
 
@@ -97,14 +97,14 @@ Dans la vue Rapport des transactions , vous pouvez filtrer les statuts et les r�
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Cliquez sur le sélecteur de **[!UICONTROL Filter]**.
-1. Activez/désactivez les options de _[!UICONTROL Transaction Result]_pour afficher les résultats du rapport pour les transactions de commande sélectionnées uniquement.
-1. Activez/désactivez les options de _[!UICONTROL Payment Method]_pour afficher les résultats du rapport pour le type de paiement utilisé pour la transaction.
-1. Activez/désactivez les options de _[!UICONTROL Payment Detail]_pour afficher des informations supplémentaires sur le type de paiement utilisé, le cas échéant.
+1. Activez/désactivez les options de _[!UICONTROL Transaction Result]_&#x200B;pour afficher les résultats du rapport pour les transactions de commande sélectionnées uniquement.
+1. Activez/désactivez les options de _[!UICONTROL Payment Method]_&#x200B;pour afficher les résultats du rapport pour le type de paiement utilisé pour la transaction.
+1. Activez/désactivez les options de _[!UICONTROL Payment Detail]_&#x200B;pour afficher des informations supplémentaires sur le type de paiement utilisé, le cas échéant.
 1. Saisissez un _Montant minimum de commande_ ou _Montant maximum de commande_ pour afficher les résultats de l&#39;état dans cette fourchette de montant de commande.
-1. Saisissez un _[!UICONTROL Order ID]_pour rechercher une transaction spécifique.
-1. Découvrez le _[!UICONTROL Card Last Four]_permettant de rechercher une carte de crédit ou de débit spécifique.
-1. Saisissez un _[!UICONTROL Customer ID]_pour afficher toutes les transactions d&#39;un client spécifique.
-1. Saisissez le _[!UICONTROL Customer Email]_de filtrage des transactions pour cet e-mail.
+1. Saisissez un _[!UICONTROL Order ID]_&#x200B;pour rechercher une transaction spécifique.
+1. Découvrez le _[!UICONTROL Card Last Four]_&#x200B;permettant de rechercher une carte de crédit ou de débit spécifique.
+1. Saisissez un _[!UICONTROL Customer ID]_&#x200B;pour afficher toutes les transactions d&#39;un client spécifique.
+1. Saisissez le _[!UICONTROL Customer Email]_&#x200B;de filtrage des transactions pour cet e-mail.
 1. Cliquez sur **[!UICONTROL Hide filters]** pour masquer le filtre.
 
 ### Afficher et masquer les colonnes
@@ -119,7 +119,7 @@ Par défaut, le rapport Transactions affiche toutes les colonnes d’information
 
 ### Mise à jour des données d’un rapport
 
-La vue Rapport de transactions affiche un horodatage _[!UICONTROL Last updated]_indiquant la dernière fois que les informations du rapport ont été mises à jour. Par défaut, les données du rapport de transactions sont automatiquement actualisées toutes les trois heures.
+La vue Rapport de transactions affiche un horodatage _[!UICONTROL Last updated]_&#x200B;indiquant la dernière fois que les informations du rapport ont été mises à jour. Par défaut, les données du rapport de transactions sont automatiquement actualisées toutes les trois heures.
 
 Vous pouvez également forcer manuellement une actualisation des données du rapport pour afficher les informations de rapport les plus récentes.
 
