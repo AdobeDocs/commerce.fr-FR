@@ -23,7 +23,7 @@ Ces notes de mise à jour décrivent toutes les versions du [!DNL Adobe Commerce
 
 _2 avril 2026_
 
-![Nouveau](../assets/new.svg) **Ajout de la prise en charge du flux Catégories dans `saas:resync` commande **-Vous pouvez désormais facilement actualiser et afficher vos dernières données de catégorie à l’aide de la commande de l’interface de ligne de commande `saas:resync` :
+![Nouveau](../assets/new.svg) **Ajout de la prise en charge du flux Catégories dans `saas:resync` commande &#x200B;**-Vous pouvez désormais facilement actualiser et afficher vos dernières données de catégorie à l’aide de la commande de l’interface de ligne de commande `saas:resync` :
 
 ```terminal
 bin/magento saas:resync --feed=categories
