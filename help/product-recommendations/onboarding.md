@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >**Product Recommendations n’est pas un service conforme à la loi HIPAA.** N’activez ou n’utilisez les recommandations de produits dans aucune implémentation d’Adobe Commerce utilisant l’offre conforme à la loi HIPAA ou traitant d’une autre manière des informations de santé protégées (ISP). Product Recommendations fait partie des services SaaS de Commerce actuellement classés comme non conformes à la loi HIPAA.
 >
->Pour plus d’informations sur les fonctionnalités Adobe Commerce prêtes pour la loi HIPAA et les services qui ne doivent pas être utilisés avec les ISP, voir [ Préparation de la loi HIPAA pour Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) et [ Opérations ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
+>Pour plus d’informations sur les fonctionnalités Adobe Commerce prêtes pour la loi HIPAA et les services qui ne doivent pas être utilisés avec les ISP, voir [&#x200B; Préparation de la loi HIPAA pour Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) et [&#x200B; Opérations &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
 
 Le processus d’intégration pour [!DNL Product Recommendations] nécessite l’accès à la ligne de commande du serveur et comprend les étapes suivantes. Si vous n’êtes pas familier avec le fonctionnement depuis la ligne de commande, demandez de l’aide à un développeur ou à un intégrateur système.
 
