@@ -2,14 +2,20 @@
 title: Intégration
 description: Découvrez les exigences et les plateformes prises en charge dans  [!DNL Product Recommendations].
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
-source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
+source-git-commit: 8f421bd4421b9599ad52aa68c5caaee6592ccb43
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
 
 # Intégration
+
+>[!IMPORTANT]
+>
+>**Product Recommendations n’est pas un service conforme à la loi HIPAA.** N’activez ou n’utilisez les recommandations de produits dans aucune implémentation d’Adobe Commerce utilisant l’offre conforme à la loi HIPAA ou traitant d’une autre manière des informations de santé protégées (ISP). Product Recommendations fait partie des services SaaS de Commerce actuellement classés comme non conformes à la loi HIPAA.
+>
+>Pour plus d’informations sur les fonctionnalités Adobe Commerce prêtes pour la loi HIPAA et les services qui ne doivent pas être utilisés avec les ISP, voir [ Préparation de la loi HIPAA pour Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) et [ Opérations ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
 
 Le processus d’intégration pour [!DNL Product Recommendations] nécessite l’accès à la ligne de commande du serveur et comprend les étapes suivantes. Si vous n’êtes pas familier avec le fonctionnement depuis la ligne de commande, demandez de l’aide à un développeur ou à un intégrateur système.
 
@@ -22,7 +28,7 @@ Le processus d’intégration pour [!DNL Product Recommendations] nécessite l�
 ## Conditions requises
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2
+- PHP 8.1, 8.2, 8.3 ou 8.4
 - Compositeur 2
 
 ### Plateformes prises en charge
@@ -46,7 +52,7 @@ Les clients de Product Recommendations peuvent utiliser l’indexation des prix 
 
 ### Prise en charge B2B {#b2bsupport}
 
-Les vitrines B2B nécessitent souvent une logique complexe qui détermine la visibilité des produits et les prix pour chaque acheteur ou groupe de clients. [!DNL Product Recommendations] désormais [prise en charge](release-notes.md) cette fonctionnalité en respectant les [autorisations de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=fr), [catalogues partagés](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=fr) et [tarification spécifique au groupe client](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=fr). Par exemple, si vous avez masqué certaines catégories de votre segment de clients de détail, un acheteur de ce segment n’aura pas de recommandations pour les produits de ces catégories. En outre, lorsque vous définissez un catalogue partagé pour des groupes de clients et des sociétés spécifiques, ces acheteurs ne voient des recommandations que pour les produits auxquels ils ont accès. Tous les produits recommandés reflètent un prix correct spécifique au groupe de clients en fonction du groupe de clients de chaque acheteur.
+Les vitrines B2B nécessitent souvent une logique complexe qui détermine la visibilité des produits et les prix pour chaque acheteur ou groupe de clients. [!DNL Product Recommendations] désormais [prise en charge](release-notes.md) cette fonctionnalité en respectant les [autorisations de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catalogues partagés](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) et [tarification spécifique au groupe client](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Par exemple, si vous avez masqué certaines catégories de votre segment de clients de détail, un acheteur de ce segment n’aura pas de recommandations pour les produits de ces catégories. En outre, lorsque vous définissez un catalogue partagé pour des groupes de clients et des sociétés spécifiques, ces acheteurs ne voient des recommandations que pour les produits auxquels ils ont accès. Tous les produits recommandés reflètent un prix correct spécifique au groupe de clients en fonction du groupe de clients de chaque acheteur.
 
 >[!NOTE]
 >
