@@ -1,13 +1,13 @@
 ---
 title: Service Rag de documentation
 description: Découvrez comment utiliser le service de recherche de documentation optimisé par l’IA pour le développement d’Adobe Commerce.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 28396828516645abec3b42a2c6874afe9134dfb8
+source-git-commit: 6c7055be007d75ff4cf3673da9938d9d79779aef
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Le service de génération augmentée de récupération de la documentation (RAG
 
 Ce guide fournit une interface IDE pour poser des questions sur Adobe Commerce et peut vous conseiller sur les bonnes pratiques pour le développement d’applications et d’autres tâches de migration.
 
-Le service RAG fait partie du serveur MCP (Model Context Protocol) [Commerce extensibility tools](./coding-tools.md) qui s’intègre à Cursor et à d’autres assistants d’IA compatibles avec MCP.
+Le service RAG fait partie du serveur MCP (Model Context Protocol) [Commerce extensibility tools](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} qui s’intègre à Cursor et à d’autres assistants d’IA compatibles avec MCP.
 
 ## Documentation disponible
 
@@ -30,10 +30,10 @@ Le tableau suivant décrit la documentation actuellement indexée par le service
 
 | Catégorie | Index | Contenu inclus | Mots-clés |
 |-------|---------|---------|------------------------|
-| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr) | commerce-storefront-docs | Edge Delivery Services, listes déroulantes, composants storefront | storefront, drop-in, EDS, liste de produits, passage en caisse |
+| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, listes déroulantes, composants storefront | storefront, drop-in, EDS, liste de produits, passage en caisse |
 | [Extensibilité](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, événements, extensions, intégrations | webhook, événement, extension, maillage API, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce de base (catalogue, clients, commandes) | catalogue, produit, client, commande, inventaire |
-| [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, actions d’exécution, extensions d’interface utilisateur | générateur d’applications, action d’exécution, React Spectrum |
+| [](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce de base (catalogue, clients, commandes) | catalogue, produit, client, commande, inventaire |
+| [](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, actions d’exécution, extensions d’interface utilisateur | générateur d’applications, action d’exécution, React Spectrum |
 
 Pour plus d&#39;informations sur la sélection d&#39;index, consultez les sections [Sélection automatique d&#39;index](#automatic-index-selection-recommended) et [Sélection explicite d&#39;index](#explicit-index-selection).
 
@@ -46,7 +46,7 @@ Pour plus d’informations sur la documentation incluse dans chaque index, repor
 * **Exécution locale** - Tous les outils s’exécutent localement sur votre ordinateur.
 * **Communication sécurisée** - La recherche de documentation utilise HTTPS avec validation de jeton.
 
-Le point d’entrée de production est protégé par la [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview), qui inclut les protections suivantes :
+Le point d’entrée de production est protégé par [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview), qui comprend les protections suivantes :
 
 * Pare-feu d’application web (WAF) avec Microsoft Default RuleSet 2.1 et Bot Manager RuleSet 1.0
 * Blocage géographique pour les régions sous embargo américain (Cuba, Iran, Corée du Nord, Syrie, Crimée, Louhansk, Donetsk)
@@ -68,7 +68,7 @@ Avant l’installation, vérifiez que vous disposez des éléments suivants :
 
 ## Installation
 
-1. Installez l’[interface de ligne de commande Adobe I/O](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) globalement :
+1. Installez l’[interface de ligne de commande ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) globalement :
 
    ```bash
    npm install -g @adobe/aio-cli
@@ -127,7 +127,7 @@ Avant l’installation, vérifiez que vous disposez des éléments suivants :
 
 ## Utilisation
 
-Une fois installés, vous pouvez appeler les index [automatiquement](#automatic-index-selection-recommended) ou [explicitement](#explicit-index-selection). Vous pouvez également utiliser la commande [`/search-commerce-docs`](#command-based-search).
+Une fois installés, vous pouvez appeler les index [automatiquement](#automatic-index-selection-recommended) ou [explicitement](#explicit-index-selection). Vous pouvez également utiliser la commande [`/search-commerce-docs`.](#command-based-search)
 
 >[!NOTE]
 >
@@ -294,6 +294,6 @@ Sous Windows, utilisez des barres obliques `/` ou des barres obliques inverses `
 ## Ressources supplémentaires
 
 * [Documentation Adobe Commerce destinée aux développeurs](https://developer.adobe.com/commerce/docs/){target="_blank"}
-* [Documentation App Builder](https://developer.adobe.com/app-builder/docs/){target="_blank"}
+* [Documentation ](https://developer.adobe.com/app-builder/docs/){target="_blank"}
 * [Modèle de protocole contextuel](https://modelcontextprotocol.io/){target="_blank"}
 * [IDE du curseur](https://cursor.sh/docs){target="_blank"}
