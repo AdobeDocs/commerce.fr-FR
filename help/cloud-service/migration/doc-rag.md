@@ -32,8 +32,8 @@ Le tableau suivant décrit la documentation actuellement indexée par le service
 |-------|---------|---------|------------------------|
 | [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, listes déroulantes, composants storefront | storefront, drop-in, EDS, liste de produits, passage en caisse |
 | [Extensibilité](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, événements, extensions, intégrations | webhook, événement, extension, maillage API, GraphQL |
-| [](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce de base (catalogue, clients, commandes) | catalogue, produit, client, commande, inventaire |
-| [](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, actions d’exécution, extensions d’interface utilisateur | générateur d’applications, action d’exécution, React Spectrum |
+| [&#128279;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce de base (catalogue, clients, commandes) | catalogue, produit, client, commande, inventaire |
+| [&#128279;](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, actions d’exécution, extensions d’interface utilisateur | générateur d’applications, action d’exécution, React Spectrum |
 
 Pour plus d&#39;informations sur la sélection d&#39;index, consultez les sections [Sélection automatique d&#39;index](#automatic-index-selection-recommended) et [Sélection explicite d&#39;index](#explicit-index-selection).
 
@@ -68,7 +68,7 @@ Avant l’installation, vérifiez que vous disposez des éléments suivants :
 
 ## Installation
 
-1. Installez l’[interface de ligne de commande ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) globalement :
+1. Installez l’[interface de ligne de commande &#x200B;](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) globalement :
 
    ```bash
    npm install -g @adobe/aio-cli
@@ -294,6 +294,6 @@ Sous Windows, utilisez des barres obliques `/` ou des barres obliques inverses `
 ## Ressources supplémentaires
 
 * [Documentation Adobe Commerce destinée aux développeurs](https://developer.adobe.com/commerce/docs/){target="_blank"}
-* [Documentation ](https://developer.adobe.com/app-builder/docs/){target="_blank"}
+* [Documentation &#x200B;](https://developer.adobe.com/app-builder/docs/){target="_blank"}
 * [Modèle de protocole contextuel](https://modelcontextprotocol.io/){target="_blank"}
 * [IDE du curseur](https://cursor.sh/docs){target="_blank"}

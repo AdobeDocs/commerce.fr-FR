@@ -37,7 +37,7 @@ ht-degree: 4%
    - [Tutoriel Sur L’Extension De Notification En Stock](tutorials/in-stock-notification-extension.md)
    - [Tutoriel sur l’extension Product Reviews](tutorials/product-reviews-extension.md)
 - Schémas {#schemas}
-   - [Schéma ](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
+   - [Schéma](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [Schéma de l’API REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Agent de développement](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
 - [Tutoriels vidéo](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
