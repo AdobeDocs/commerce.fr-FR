@@ -1,11 +1,11 @@
 ---
 title: Créer et gérer des règles
 description: Découvrez comment créer et gérer des règles de marchandisage.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
+source-git-commit: 0df932ab95666438baf1210b6fe913e4ae8e28b9
 workflow-type: tm+mt
-source-wordcount: '2219'
+source-wordcount: '2239'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 
    >[!IMPORTANT]
    >
-   >Cette fonctionnalité est actuellement en version bêta.
+   >Cette fonctionnalité est actuellement en version [bêta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les règles de marchandisage existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
 
 1. Cliquez sur **[!UICONTROL Create rule]** pour lancer l’éditeur de règles.
 
