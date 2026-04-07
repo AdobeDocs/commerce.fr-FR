@@ -1,7 +1,7 @@
 ---
 title: Création et gestion de Recommendations
 description: Découvrez comment créer et gérer des recommandations.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 source-git-commit: a0863a0d54c5c26b1ae207fd36777e0c515caaf0
 workflow-type: tm+mt
@@ -25,7 +25,7 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
    >[!IMPORTANT]
    >
-   >Cette fonctionnalité est actuellement en version [bêta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les unités de recommandation existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
+   >Cette fonctionnalité est actuellement en version [bêta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les unités de recommandation existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
 
 1. Cliquez sur **Créer une recommandation**.
 
@@ -97,7 +97,7 @@ Après avoir créé une recommandation, vous devez récupérer son identifiant p
 
 1. Dans la section **ID de recommandation**, copiez l’ID.
 
-1. Utilisez cet identifiant pour configurer le [menu déroulant de recommandations](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) sur votre storefront Edge Delivery Services.
+1. Utilisez cet identifiant pour configurer le [menu déroulant de recommandations](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=fr) sur votre storefront Edge Delivery Services.
 
 ## Gestion des recommandations existantes
 
