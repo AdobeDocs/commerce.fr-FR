@@ -2,11 +2,11 @@
 title: Présentation du marchandisage
 description: En savoir plus sur les fonctionnalités de marchandisage dans  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ La détection de produits dote les commerçants d’outils puissants pour organi
 
 Grâce à la découverte de produits, vous pouvez :
 
-* **Configurez les [facettes](./facets/overview.md), [règles de marchandisage](./rules/overview.md) et [synonymes](./synonyms/overview.md)** pour guider les acheteurs vers les produits les plus pertinents avec un minimum de friction.
+* **Configurez les [facettes](./facets/overview.md), [règles de recherche et de catégorie de marchandisage](./rules/overview.md) et [synonymes](./synonyms/overview.md)** pour guider les acheteurs vers les produits les plus pertinents avec un minimum de friction.
 * **Créez des expériences de recherche intuitives et axées sur des objectifs** qui reflètent votre stratégie de marchandisage et vos priorités saisonnières.
 * **Utilisez la facettisation dynamique et le reclassement des résultats pilotés par l’IA** pour adapter les résultats de recherche en temps réel en fonction du comportement de l’acheteur, ce qui stimule l’engagement et les ventes.
 * **Assurez-vous que les éléments promotionnels et hautement prioritaires apparaissent efficacement** pour aligner les résultats de recherche sur les objectifs commerciaux.

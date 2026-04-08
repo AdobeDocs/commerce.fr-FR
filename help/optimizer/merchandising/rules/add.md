@@ -1,49 +1,60 @@
 ---
 title: Créer et gérer des règles
-description: Découvrez comment créer et gérer des règles de marchandisage.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+description: Découvrez comment créer et gérer des règles de marchandisage pour la recherche, les listes de produits par défaut et les pages de catégories.
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: 0df932ab95666438baf1210b6fe913e4ae8e28b9
+source-git-commit: 0d1ebaddada8be82645164368ebfbb6dd0a569cd
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2714'
 ht-degree: 0%
 
 ---
 
 # Créer et gérer des règles
 
-Pour créer une règle, la première étape consiste à utiliser l’éditeur de règles pour définir les conditions dans le texte de requête de l’acheteur qui déclenchent les événements associés. Renseignez ensuite les détails de la règle, testez les résultats et publiez la règle.
+Pour créer une règle, ouvrez l’éditeur de règles, choisissez un **type de règle** (conditions de recherche, liste par défaut ou pages de catégorie), puis définissez les conditions et le classement là où ils s’appliquent, testez les résultats et publiez la règle.
 
-## Créer une règle
+## Créer une règle {#create-a-rule}
 
 1. Dans le rail de gauche, accédez à _Marchandisage_ > **Règles de marchandisage**.
 1. (Facultatif) Utilisez la liste déroulante **Vue du catalogue** pour sélectionner la vue du catalogue à laquelle la règle doit s’appliquer. La règle que vous créez est étendue à la vue sélectionnée (ou à toutes les vues de catalogue si **Toutes les vues** est sélectionné). Voir [Sélectionner la vue du catalogue](workspace.md#select-catalog-view) pour savoir comment fonctionne la portée de la vue du catalogue.
 
    >[!IMPORTANT]
    >
-   >Cette fonctionnalité est actuellement en version [bêta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les règles de marchandisage existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
+   >Les vues catalogue sont actuellement en version [bêta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les règles de marchandisage existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
 
 1. Cliquez sur **[!UICONTROL Create rule]** pour lancer l’éditeur de règles.
 
 ![Créer une règle](../../assets/create-rule.png)
 
-Dans la section **Créer votre règle**, définissez des critères de recherche, des conditions et des types de classement spécifiques.
+### Types de règle
+
+Chaque type de règle comporte une icône d’information dans l’éditeur, accompagnée d’une brève explication. Utilisez le type correspondant à l’endroit où les acheteurs doivent voir la logique de marchandisage :
+
+| Type de règle | Objectif |
+| --- | --- |
+| **Règle Tous les produits** | Classement et marchandisage par défaut dans les listes de produits lorsqu’aucune règle de recherche ou de catégorie plus spécifique ne s’applique. Vous ne pouvez créer qu’une seule règle de ce type. Elle ne peut pas contenir de conditions. |
+| **Règle de catégorie** (Beta) | Applique le marchandisage et le classement à une ou plusieurs catégories sélectionnées, en contrôlant l’ordre des produits sur ces pages de catégorie. |
+| **Règle de recherche** | Applique le marchandisage et le classement lorsque les acheteurs exécutent une recherche correspondant aux conditions de requête de la règle. |
+
+Dans la section **Créer votre règle**, définissez le nom de la règle, le planning, si la règle s&#39;applique à toutes les annonces ou à des conditions de recherche spécifiques, ainsi que les types de classement.
 
 1. Dans le champ **[!UICONTROL Name]** , saisissez le nom de la règle. Tous les noms de règle doivent être uniques.
 1. Dans le champ **[!UICONTROL Description]** , saisissez une description de la règle.
 1. Dans le champ **[!UICONTROL Date range]** , indiquez la date ou la plage de dates à laquelle la règle doit être active.
-1. Dans la section **[!UICONTROL Rule applies to]**, vous disposez de deux options : **[!UICONTROL All product listings]** ou **[!UICONTROL Specific conditions]**.
+1. Dans la section **[!UICONTROL Rule applies to]**, sélectionnez le [type de règle](#rule-types) que vous souhaitez utiliser.
 
-   - **Toutes les listes de produits** - Il s’agit essentiellement de votre règle par défaut qui est appliquée à toutes les requêtes de recherche, sauf si une requête plus spécifique est définie. Vous ne pouvez créer qu’une seule règle par défaut qui ne peut contenir aucune condition. Choisissez le type de classement Intelligent et tout classement manuel que vous souhaitez appliquer à toutes les recherches par défaut.
-   - **Conditions spécifiques** - Consultez la section suivante pour en savoir plus sur les types de conditions que vous pouvez définir pour votre règle.
+>[!BEGINTABS]
 
-### Conditions
+>[!TAB Règle de recherche]
+
+Une règle de recherche applique la logique de marchandisage et de classement lorsque les acheteurs effectuent une recherche correspondant aux conditions définies.
 
 Les conditions sont les conditions requises pour déclencher un événement. Une règle peut contenir jusqu’à dix conditions et 25 événements. Une règle par défaut ne peut pas contenir de conditions.
 
 ![Sélectionner la condition de règle](../../assets/rule-set-condition.png)
 
-#### Condition unique
+**Condition unique**
 
 1. Sous *Créer votre règle*, sélectionnez la **Condition** à remplir et suivez les instructions pour terminer l’instruction.
 
@@ -57,8 +68,9 @@ Les conditions sont les conditions requises pour déclencher un événement. Une
 1. Pour tester d’autres requêtes, modifiez le texte de la requête dans la zone de recherche *Tester votre règle* et appuyez sur **Retour**.
 Au départ, le volet de test effectue le rendu de la requête à partir de la zone de recherche Conditions . Mais maintenant, il effectue le rendu de la requête à partir de la zone de requête test. Le volet de test effectue le rendu d’une seule requête à la fois.
 1. Si le résultat vous convient, mettez à jour le texte dans la zone de recherche *Conditions*. Cliquez ensuite n’importe où sur la page pour mettre à jour les résultats dans le volet de test.
+1. Définissez [Classement intelligent](#intelligent-ranking) et [Classement manuel](#manual-ranking) comme décrit dans les sections suivantes. Les mêmes commandes s’appliquent aux pages de catégorie, avec les différences signalées.
 
-#### Conditions multiples
+**Conditions multiples**
 
 1. Pour créer une règle comportant plusieurs conditions, cliquez sur **Ajouter une condition**.
 Une règle peut contenir jusqu’à dix conditions. L’opérateur logique qui joint deux conditions est basé sur le paramètre *Correspondance* actuel. Par défaut, *Correspondance* est `All` et l’opérateur logique est `AND`.
@@ -75,26 +87,47 @@ Une règle peut contenir jusqu’à dix conditions. L’opérateur logique qui j
    Dans cet exemple, plutôt que de rechercher « pantalon de yoga », il existe deux requêtes distinctes qui recherchent « yoga » ou « pantalon ». Cette règle est moins spécifique et est déclenchée plus souvent dans le storefront que dans l’autre.
 
 1. Pour ajouter une autre condition, cliquez sur **Ajouter une condition** et répétez le processus.
+1. Définissez [Classement intelligent](#intelligent-ranking) et [Classement manuel](#manual-ranking) comme décrit dans les sections suivantes. Les mêmes commandes s’appliquent aux pages de catégorie, avec les différences signalées.
 
-### Classement intelligent
+>[!TAB  Règle de catégorie ]
 
-Le classement intelligent combine les comportements des utilisateurs et les statistiques du site pour déterminer le classement des produits.
-Les propriétaires de magasin peuvent configurer les types de stratégies de classement suivants :
+>[!IMPORTANT]
+>
+>Les règles de catégorie sont en version Beta.
+
+Les règles de catégorie contrôlent la manière dont les produits sont triés sur les **pages de catégorie**. Vous combinez les **règles de catégorie** avec le **classement intelligent** (y compris les signaux pilotés par l’IA) et les **actions manuelles** telles que l’épinglage, l’amplification et l’enterrement, afin d’organiser la découverte, d’exécuter des promotions et d’aligner les pages de catégorie sur votre stratégie sans recourir à des outils externes.
+
+1. Sous **Catégories**, sélectionnez la ou les catégories auxquelles la règle doit s’appliquer. Les catégories sélectionnées s’affichent sous le contrôle afin que vous puissiez confirmer la portée.
+1. Dans la liste des catégories qui s’affichent, vous pouvez cliquer sur les trois points et sélectionner pour :
+
+   - **Supprimer** - Supprime la catégorie de la règle.
+   - **Appliquer aux sous-catégories** - Applique la règle aux sous-catégories pour lesquelles aucune règle de marchandisage active n’est définie.
+   - **Aperçu** - Affiche l’aspect de la page de catégorie sur votre storefront.
+
+1. Définissez [Classement intelligent](#intelligent-ranking) et [Classement manuel](#manual-ranking) comme décrit dans les sections suivantes. Les mêmes contrôles s’appliquent aux règles de recherche, les différences étant signalées.
+
+>[!ENDTABS]
+
+### Classement intelligent {#intelligent-ranking}
+
+Le classement intelligent classe les produits en utilisant des **signaux comportementaux** et, le cas échéant, l’IA. Elle s’applique à **règles de recherche**, **toutes les listes de produits** (règles par défaut) et **règles de catégorie** (pages de catégorie). Pour les achats **recherches**, le classement pèse également **pertinence textuelle** dans la requête ; **pages de catégories** n’utilisent pas le texte de la requête de la même manière ; l’éditeur se concentre sur les stratégies comportementales.
+
+Les propriétaires de magasin peuvent définir des stratégies telles que les suivantes. Les libellés exacts et les fenêtres temporelles correspondent à l’éditeur de règles et peuvent différer légèrement en fonction du type de règle.
 
 ![Classements intelligents](../../assets/rule-intelligent-ranking.png)
 
-- Les plus achetés : cette option classe les produits en fonction du nombre total d’achats par SKU au cours des 7 jours précédents.
-- Les plus ajoutés au panier : classent les activités « Ajouter au panier » par ordre de total au cours des 7 jours précédents.
-- Les plus consultés : classe le nombre total de vues par SKU au cours des 7 jours précédents.
-- Recommandé pour vous - Utilise le point de données `viewed-viewed` - Les acheteurs qui ont consulté ce SKU ont également consulté ces autres SKU.
-- Tendance : examine les événements de pages vues au cours des 72 dernières heures pour les événements en arrière-plan et des 24 dernières heures pour les événements en premier plan.
-- Aucun : les produits sont triés par pertinence.
+- **Les plus achetés** / **Les plus achetés** — Classe par fréquence d’achat par SKU dans une fenêtre récente (par exemple, les 7 jours précédents pour les contextes de recherche).
+- **Les plus ajoutés au panier** — Classe par activité totale d’ajout au panier dans une fenêtre récente (par exemple, les 7 jours précédents pour les contextes de recherche).
+- **Les plus consultés** : classe les vues par SKU dans une fenêtre récente (par exemple, les 7 jours précédents pour les contextes de recherche).
+- **Recommandé pour vous** — Utilise le signal `viewed-viewed` : les acheteurs qui ont consulté ce SKU ont également consulté d’autres SKU ; prend en charge la commande personnalisée sur les pages de catégorie, le cas échéant.
+- **Tendance** — Met en évidence la popularité récente (pour la recherche, les pages vues au cours des dernières 72 heures pour les événements en arrière-plan et 24 heures pour les événements de premier plan).
+- **Aucun** — Pour les listes de recherche et les listes par défaut, les produits sont classés par **pertinence**. Pour **règles de catégorie**, utilise l&#39;ordre de marchandisage par défaut de la catégorie lorsque vous ne choisissez pas une autre stratégie intelligente.
 
-Sélectionnez le type de stratégie de la règle. La fenêtre **Tester votre règle** affiche les résultats attendus.
+Sélectionnez la stratégie de votre règle. Le volet **Tester votre règle** affiche les résultats attendus pour les règles orientées recherche ; **règles de catégorie** utilisez la prévisualisation de catégorie.
 
-#### Fonctionnement de la notation intelligente
+#### Fonctionnement de la notation intelligente (recherche)
 
-Le classement intelligent détermine l’ordre final des produits en combinant deux facteurs clés : **pertinence textuelle** et **signaux comportementaux**. Comprendre l’interaction de ces facteurs vous permet de définir des attentes réalistes pour vos résultats de recherche.
+Pour **résultats de recherche** (et la requête de test dans l’éditeur de règles), le classement intelligent détermine l’ordre final du produit en combinant deux facteurs clés : **pertinence textuelle** et **signaux comportementaux**. Comprendre l’interaction de ces facteurs vous permet de définir des attentes réalistes pour vos résultats de recherche.
 
 **Composants de notation :**
 
@@ -122,18 +155,18 @@ Consultez [règles de recherche](./best-practice.md#tips-to-optimize-search-rule
 #### Avertissements
 
 - Les apostrophes et les guillemets dans les requêtes peuvent entraîner des problèmes mineurs de classement et de pertinence dans certaines langues.
-- Pour garantir le bon fonctionnement du classement intelligent, assurez-vous que la **pondération de recherche** de tous les attributs utilisés pour la recherche ou le filtrage (facettes) est `5` ou inférieure.
+- Pour garantir le bon fonctionnement du classement intelligent pour la **recherche**, assurez-vous que le **Poids de la recherche** de tous les attributs utilisés pour la recherche ou le filtrage (facettes) est `5` ou inférieur. (Ces conseils s’appliquent à l’indexation de la recherche et non aux flux de marchandisage de catégorie uniquement.)
 
 Pour plus d’informations sur la définition des poids de recherche, voir [API de métadonnées](https://developer.adobe.com/commerce/services/reference/rest/).
 
-### Classement manuel
+### Classement manuel {#manual-ranking}
 
-**Classement manuel** sont des actions qui modifient les résultats de la recherche lorsque des conditions définies sont remplies. Une seule règle peut contenir jusqu’à 25 événements.
+**Classement manuel** les événements ajustent l’ordre des produits pour les **résultats de recherche** (lorsque les conditions de votre règle sont remplies), pour les **listes de produits par défaut** et pour les listes **page de catégorie**. Une seule règle peut contenir jusqu’à 25 événements.
 
-- Booster - Fait monter un produit dans les résultats de recherche.
-- Enterrer : déplace un SKU vers le bas dans les résultats de recherche.
-- Épingler un produit : le produit s’affiche dans la « Position » sélectionnée sur la page.
-- Masquer un produit - Exclut un SKU des résultats de recherche.
+- **Booster** : permet de placer un produit plus haut dans la liste.
+- **Bury** — Déplace un SKU plus bas dans la liste.
+- **Épingler un produit** — Fixe un produit à l&#39;emplacement sélectionné dans la liste.
+- **Masquer un produit** — Exclut un SKU des résultats (orienté recherche ; confirmer le comportement pour les règles de catégorie dans l’éditeur).
 
 Le moyen le plus simple d’épingler un produit est de le faire glisser et de le déposer.
 
@@ -143,9 +176,9 @@ Vous pouvez également cliquer sur l’icône d’épingle pour épingler un pro
 
 >[!NOTE]
 >
->Vous pouvez uniquement épingler les produits qui apparaissent dans les résultats de recherche pour les conditions de requête et de règle configurées.
+>**Règles de recherche** — Vous pouvez uniquement épingler les produits qui apparaissent dans les résultats de recherche pour les conditions de requête et de règle configurées. Les produits doivent être indexés, visibles, en stock et respecter tous les filtres de règle pour pouvoir être épinglés. Si un produit n’apparaît pas dans l’aperçu ou dans les résultats de votre règle, l’épinglage n’a aucun effet.
 >
->Les produits doivent être indexés, visibles, en stock et respecter tous les filtres de règle pour pouvoir être épinglés. Si un produit n’apparaît pas dans l’aperçu ou dans les résultats de votre règle, l’épinglage n’a aucun effet.
+>**Tri par défaut** — Les positions manuelles s’appliquent lorsque l’acheteur utilise le tri par défaut : **Trier par : le plus pertinent** pour la recherche, ou **pertinence** / **position** pour les listes de catégories. Si l’acheteur change de tri, par exemple le comportement par nom, épinglé, amplifié, enterré ou masqué peut ne plus correspondre à l’aperçu.
 
 Les événements ou peuvent être définis manuellement :
 
@@ -155,7 +188,7 @@ Les événements ou peuvent être définis manuellement :
 
 1. Pour plusieurs événements, choisissez tous les autres événements que vous souhaitez déclencher lorsque les conditions sont remplies.
 
-### Finalisation de la règle
+### Finalisation de la règle {#finalizing-the-rule}
 
 1. Examinez les résultats de la règle dans le volet de test.
 1. Si la règle comporte plusieurs requêtes, testez chacune d’elles qui peut être affectée par la règle.
@@ -167,9 +200,9 @@ Les événements ou peuvent être définis manuellement :
 
 >[!NOTE]
 >
->Les règles et les produits classés manuellement sont appliqués aux résultats de la recherche lorsque l’ordre de tri par défaut « Trier par : les plus pertinents » est sélectionné. Si un acheteur modifie l’ordre de tri pour qu’il ressemble à un tri par nom ou prix, les règles et les classements manuels ne sont plus en vigueur.
+>Les règles et les produits classés manuellement sont appliqués aux résultats de **recherche** lorsque l’ordre de tri par défaut, « Trier par : les plus pertinents », est sélectionné. Si un acheteur modifie l’ordre de tri comme trier par nom, les règles et les classements manuels ne sont plus en vigueur. Pour les listes **category**, le comportement de tri par défaut est décrit dans la section [Classement manuel](#manual-ranking).
 
-## Modifier, afficher et supprimer des règles
+## Modifier, afficher et supprimer des règles {#edit-view-and-delete-rules}
 
 Suivez ces instructions pour mettre à jour les propriétés des règles existantes. Vous ne pouvez pas modifier la vue de catalogue (portée) d’une règle après sa création ; la portée est définie lorsque vous créez la règle. Voir [Sélectionner la vue du catalogue](workspace.md#select-catalog-view).
 
@@ -196,7 +229,7 @@ Cette option permet d’afficher rapidement tous les paramètres de la règle, t
 1. Dans l’espace de travail *Règles*, recherchez la règle de la grille à modifier, puis cliquez sur les options **Plus** (...).
 1. Cliquez sur **Supprimer**.
 
-## Descriptions des champs
+## Descriptions des champs {#field-descriptions}
 
 ### Conditions (le cas échéant)
 
@@ -221,21 +254,21 @@ Cette option permet d’afficher rapidement tous les paramètres de la règle, t
 | N’importe lequel | Remplace tous les opérateurs logiques de la règle par `OR` et renvoie l’ensemble des produits correspondants. |
 | Tous | Remplace tous les opérateurs logiques de la règle par `AND` et renvoie l’ensemble des produits correspondants. |
 
-### Classement manuel
+### Événements de classement manuels
 
 | Événement | Description |
 |--- |--- |
-| Amplifier | Déplace un SKU ou une plage de SKU vers le haut dans les résultats de recherche. Chaque élément est marqué d’un badge d’aperçu « boosté » dans les résultats de la recherche de test. |
-| Enterrer | Déplace un SKU ou une plage de SKU plus bas dans les résultats de recherche. Chaque dossier est marqué d’un badge d’aperçu « enterré » dans les résultats de la recherche de test. |
-| Épingler un produit | Associe un seul SKU à une position spécifique dans les résultats de recherche. Le produit est marqué d’un badge d’aperçu « épinglé » dans les résultats de la recherche de test. |
-| Masquer un produit | Exclut un SKU, ou une plage de SKU, des résultats de recherche. |
+| Amplifier | Déplace un SKU ou une plage de SKU vers le haut dans la liste (recherche ou catégorie). Chaque est marqué d’un badge d’aperçu « boosté » dans les résultats du test. |
+| Enterrer | Déplace un SKU ou une plage de SKU plus bas dans la liste. Chaque est marqué d’un badge d’aperçu « enterré » dans les résultats du test. |
+| Épingler un produit | Associe un seul SKU à une position spécifique dans la liste. Le produit est marqué d’un badge d’aperçu « épinglé » dans les résultats du test. |
+| Masquer un produit | Exclut un SKU, ou une plage de SKU, des résultats (orienté recherche ; confirmer pour les règles de catégorie dans l’éditeur). |
 
 ### Détails
 
 | Champ | Description |
 |--- |--- |
 | Nom | Nom de la règle. Les noms des règles doivent être uniques. |
-| Type de règle | Par défaut ou Requête. La valeur par défaut est appliquée à toutes les règles, sauf si une règle de requête plus spécifique est définie. |
+| Type de règle | **Par défaut** (toutes les listes de produits), **Requête** (conditions de recherche spécifiques) ou **Catégorie** (pages de catégorie), selon **La règle s’applique à**. |
 | Date de début | Date de début de la règle, le cas échéant. |
 | Date de fin | Date de fin de la règle, le cas échéant. |
 | Description | Brève description de la règle. |
