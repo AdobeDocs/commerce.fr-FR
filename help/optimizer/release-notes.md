@@ -46,7 +46,7 @@ Les filtres de recommandation prennent désormais en charge un [filtre de prix](
 
 >[!BEGINSHADEBOX]
 
-Possibilité de spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [ des règles de marchandisage](./merchandising/rules/add.md).
+Possibilité de spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](./merchandising/rules/add.md).
 
 ### Notes de mise à jour supplémentaires
 
@@ -70,7 +70,7 @@ Les recommandations d’optimisation de site optimisées par l’IA sont désorm
 
 ### Calques de catalogue
 
-Ajout de [ couches de catalogue ](./setup/catalog-layer.md) afin que vous puissiez modifier les données de produit sans modifier les données sources, y compris la gestion de la priorité des couches et l’intégration aux fonctionnalités de correctif automatique d’Adobe Sites Optimizer.
+Ajout de [&#x200B; couches de catalogue &#x200B;](./setup/catalog-layer.md) afin que vous puissiez modifier les données de produit sans modifier les données sources, y compris la gestion de la priorité des couches et l’intégration aux fonctionnalités de correctif automatique d’Adobe Sites Optimizer.
 
 ### Notes de mise à jour supplémentaires
 
