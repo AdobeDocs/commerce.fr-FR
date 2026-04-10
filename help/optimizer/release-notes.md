@@ -3,7 +3,7 @@ title: Notes de mise à jour
 description: Dernières informations de mise à jour pour  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 source-git-commit: d0967674d05018f13dc6c8a562005d65d44e42ab
 workflow-type: tm+mt
@@ -36,7 +36,7 @@ Les filtres de recommandation prennent désormais en charge un [filtre de prix](
 
 | Extensibilité | Storefront |
 | --- | --- |
-| [Connecteur AEM Assets](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer](../aco-connector/release-notes.md) | [Informations de mise à jour de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Journal des modifications de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [Connecteur AEM Assets](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer](../aco-connector/release-notes.md) | [Informations de mise à jour de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=fr)<br>[Journal des modifications de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=fr) |
 
 >[!ENDSHADEBOX]
 
@@ -54,7 +54,7 @@ Possibilité de spécifier une vue de catalogue lorsque vous [créez des unités
 
 | Extensibilité | Storefront |
 | --- | --- |
-| [Connecteur AEM Assets](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer](../aco-connector/release-notes.md) | [Informations de mise à jour de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Journal des modifications de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [Connecteur AEM Assets](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer](../aco-connector/release-notes.md) | [Informations de mise à jour de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=fr)<br>[Journal des modifications de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=fr) |
 
 >[!ENDSHADEBOX]
 
@@ -78,7 +78,7 @@ Ajout de [&#x200B; couches de catalogue &#x200B;](./setup/catalog-layer.md) afin
 
 | Extensibilité | Storefront |
 | --- | --- |
-| [Connecteur AEM Assets](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer](../aco-connector/release-notes.md) | [Informations de mise à jour de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Journal des modifications de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [Connecteur AEM Assets](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer](../aco-connector/release-notes.md) | [Informations de mise à jour de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=fr)<br>[Journal des modifications de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=fr) |
 
 >[!ENDSHADEBOX]
 
@@ -117,7 +117,7 @@ Une nouvelle API REST Catégories est désormais disponible, ce qui permet aux a
 
 | Extensibilité | Storefront |
 | --- | --- |
-| [Connecteur AEM Assets](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer](../aco-connector/release-notes.md) | [Informations de mise à jour de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Journal des modifications de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [Connecteur AEM Assets](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer](../aco-connector/release-notes.md) | [Informations de mise à jour de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=fr)<br>[Journal des modifications de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=fr) |
 
 >[!ENDSHADEBOX]
 
@@ -144,6 +144,6 @@ Les URL de production de base pour la région de l’Union européenne sont les 
 
 | Extensibilité | Storefront |
 | --- | --- |
-| [Connecteur AEM Assets](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer](../aco-connector/release-notes.md) | [Informations de mise à jour de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[Journal des modifications de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [Connecteur AEM Assets](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer](../aco-connector/release-notes.md) | [Informations de mise à jour de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=fr)<br>[Journal des modifications de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=fr) |
 
 >[!ENDSHADEBOX]
