@@ -20,7 +20,7 @@ Ce guide vous guide tout au long de la configuration de [!DNL Adobe Commerce Opt
 
 Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
-- Compte **** avec droits [!DNL Adobe Commerce Optimizer]
+- Compte **&#x200B;**&#x200B;avec droits [!DNL Adobe Commerce Optimizer]
 - **Accès administrateur de l’organisation** pour créer des instances et gérer les utilisateurs
 - **Compte GitHub** pour le chargement de données d’exemple et le développement du storefront
 - **Compréhension de base** des concepts du commerce électronique
@@ -31,8 +31,8 @@ Pour que votre environnement [!DNL Adobe Commerce Optimizer] fonctionne, procéd
 
 ### Étape 1. Création d’une instance
 
-1. Connectez-vous à [](https://experience.adobe.com/).
-1. Accédez à **** > **Commerce Cloud Manager**.
+1. Connectez-vous à [&#128279;](https://experience.adobe.com/).
+1. Accédez à **&#x200B;**&#x200B;> **Commerce Cloud Manager**.
 1. Cliquez sur **Ajouter une instance** > **Commerce Optimizer**.
 
    ![Écran Ajouter une instance d’Adobe Commerce Cloud Manager pour la création d’un environnement Commerce Optimizer](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
@@ -56,7 +56,7 @@ Pour que votre environnement [!DNL Adobe Commerce Optimizer] fonctionne, procéd
 Après avoir créé votre instance :
 
 1. [Gérez votre instance](#manage-instances) à partir de Commerce Cloud Manager.
-1. Configurez l’accès des utilisateurs et utilisatrices à l’aide du [ Guide de gestion des utilisateurs ](./user-management.md).
+1. Configurez l’accès des utilisateurs et utilisatrices à l’aide du [&#x200B; Guide de gestion des utilisateurs &#x200B;](./user-management.md).
 
 ### Étape 3. Ajouter des données d’exemple (facultatif)
 
@@ -85,8 +85,8 @@ Les développeurs gèrent l’implémentation technique et l’intégration des 
 
 | Tâche | Description | Lien |
 |---|---|---|
-| **Accéder à Developer Console** | Créer des projets et générer des informations d’identification | [](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **Ingérer des données de catalogue** | Importer les données de produit des systèmes existants | Pour ingérer des données directement dans Adobe Commerce Optimizer, consultez [API Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>Pour ingérer des données à partir de Commerce dans le cloud ou dans des environnements locaux ou d’autres systèmes tiers, consultez la rubrique [ Intégrations ](./integrations/integrations-overview.md){target="_blank"}. |
+| **Accéder à Developer Console** | Créer des projets et générer des informations d’identification | [&#128279;](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
+| **Ingérer des données de catalogue** | Importer les données de produit des systèmes existants | Pour ingérer des données directement dans Adobe Commerce Optimizer, consultez [API Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>Pour ingérer des données à partir de Commerce dans le cloud ou dans des environnements locaux ou d’autres systèmes tiers, consultez la rubrique [&#x200B; Intégrations &#x200B;](./integrations/integrations-overview.md){target="_blank"}. |
 | **Configuration du storefront** | Configuration du storefront Edge Delivery Services | [Configuration de Storefront](./storefront.md) |
 
 ### Tâches du marchandiseur
@@ -107,7 +107,7 @@ Gérez les instances à partir du gestionnaire Commerce Cloud.
 >
 >Tous les utilisateurs [!DNL Adobe Commerce Optimizer] n’ont pas accès à Cloud Manager. L’accès dépend du rôle et des autorisations attribués au compte d’utilisateur.
 
-1. Connectez-vous à [](https://experience.adobe.com/).
+1. Connectez-vous à [&#128279;](https://experience.adobe.com/).
 
 1. Ouvrez Commerce Cloud Manager :
 
@@ -181,14 +181,14 @@ Les données d’exemple sont basées sur le [scénario commercial Carvelo](./us
    - Configuration de votre environnement
    - Terminer le processus d’ingestion des données
    - Créer des vues de catalogue et des politiques à l’aide des données d’exemple
-   - Vérifiez l’ingestion des données en vérifiant les données du service de catalogue sur la page [ Synchronisation des données ](./setup/data-sync.md)
+   - Vérifiez l’ingestion des données en vérifiant les données du service de catalogue sur la page [&#x200B; Synchronisation des données &#x200B;](./setup/data-sync.md)
 
 ## Étapes suivantes
 
 Une fois la configuration terminée :
 
 1. Configurez votre storefront :
-   - Configurer le storefront [](./storefront.md)
+   - Configurer le storefront [&#128279;](./storefront.md)
    - Connexion aux données de votre catalogue
 
 1. Explorez le cas d’utilisation de Carvelo :

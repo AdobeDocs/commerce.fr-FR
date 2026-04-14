@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Le connecteur Adobe Commerce Optimizer est le pont qui synchronise les données de catalogue et de tarification entre Adobe Commerce (cloud ou sur site) et [!DNL Adobe Commerce Optimizer]. Lorsque vous activez le connecteur, Commerce reste le système d’enregistrement des données de produit, tandis que [!DNL Adobe Commerce Optimizer] alimente la découverte de produits, les recommandations, les règles de marchandisage, les analyses et les expériences de storefront découplé.
 
-- Présentation du connecteur Adobe Commerce Optimizer [](../../aco-connector/overview.md){target="_blank"}
+- Présentation du connecteur Adobe Commerce Optimizer [&#128279;](../../aco-connector/overview.md){target="_blank"}
 - [Prise en main du connecteur](../../aco-connector/get-started.md){target="_blank"}
 
 ## Visuels de produit avec AEM Assets {#product-visuals}
@@ -51,5 +51,5 @@ Le connecteur Commerce Salesforce (basé sur Adobe App Builder) synchronise les 
 
 >[!MORELIKETHIS]
 >
->- [Documentation technique de ](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+>- [Documentation technique de &#x200B;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 >- [Prise en main de Adobe Commerce Optimizer](../get-started.md)
