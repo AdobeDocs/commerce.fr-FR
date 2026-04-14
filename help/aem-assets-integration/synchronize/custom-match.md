@@ -3,16 +3,16 @@ title: Correspondance automatique personnalisée
 description: Découvrez comment la correspondance automatique personnalisée est particulièrement utile pour les commerçants avec une logique de correspondance complexe ou ceux qui dépendent d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: 6e8d266aeaec4d47b82b0779dfc3786ccaa7d83a
+source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 1%
 
 ---
 
 # Correspondance automatique personnalisée
 
-Si la stratégie de correspondance automatique par défaut (**correspondance automatique prête à l’emploi**) n’est pas alignée avec les besoins spécifiques de votre entreprise, sélectionnez l’option Correspondance personnalisée . Cette option prend en charge l’utilisation de [Adobe Developer App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) pour développer une application de correspondance personnalisée qui gère une logique de correspondance complexe, ou des ressources provenant d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
+Si la stratégie de correspondance automatique par défaut (**correspondance automatique prête à l’emploi**) n’est pas alignée avec les besoins spécifiques de votre entreprise, sélectionnez l’option Correspondance personnalisée . Cette option prend en charge l’utilisation de [](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) pour développer une application de correspondance personnalisée qui gère une logique de correspondance complexe, ou des ressources provenant d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
 
 ## Configuration de la correspondance automatique personnalisée
 
@@ -99,7 +99,7 @@ Vous pouvez télécharger le fichier `workspace.json` à partir de [Adobe Develo
 
 1. Effectuez un glisser-déposer de votre fichier `workspace.json` de votre projet App Builder vers le champ **[!UICONTROL Adobe I/O Workspace Configuration]** . Vous pouvez également cliquer sur pour parcourir et sélectionner le fichier.
 
-![Configuration Workspace](../assets/workspace-configuration.png){width="600" zoomable="yes"}
+![Configuration ](../assets/workspace-configuration.png){width="600" zoomable="yes"}
 
 1. Le système effectue automatiquement les opérations suivantes :
 
@@ -114,7 +114,7 @@ Vous pouvez télécharger le fichier `workspace.json` à partir de [Adobe Develo
 
 ## Points d’entrée de l’API de correspondance personnalisés
 
-Lorsque vous créez une application de correspondance personnalisée à l’aide d’[App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l’application doit exposer les points d’entrée suivants :
+Lorsque vous créez une application de correspondance personnalisée à l’aide d’[](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l’application doit exposer les points d’entrée suivants :
 
 * **Ressource App Builder vers l’URL du produit** point d’entrée
 * **Point d’entrée du produit App Builder vers l’URL de la ressource**
@@ -171,7 +171,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 | Paramètre | Type de données | Description |
 | --- | --- | --- |
 | `assetId` | String | Représente l’ID de ressource mis à jour. |
-| `eventData` | String | Renvoie la payload de données associée à l’ID de ressource. |
+| `eventData` | Objet | Payload d’événement associée à la ressource (par exemple, métadonnées de ressource que le mappeur lit dans `eventData.assetMetadata`). |
 
 **Réponse**
 
@@ -246,8 +246,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 | Paramètre | Type de données | Description |
 | --- | --- | --- |
-| `productSKU` | String | Représente le SKU de produit mis à jour. |
-| `eventData` | String | Renvoie la payload de données associée au SKU du produit. |
+| `productSku` | String | Représente le SKU de produit mis à jour. |
+| `eventData` | Objet | Payload de l’événement associée au produit (par exemple, champs que le mappeur utilise à partir de l’événement entrant). |
 
 **Réponse**
 
@@ -283,7 +283,7 @@ Le paramètre `asset_matches` contient les attributs suivants :
 | Attribut | Type de données | Description |
 | --- | --- | --- |
 | `asset_id` | String | Identifiant de la ressource. |
-| `asset_roles` | Tableau | Rôles de ressources. Utilise les [rôles de ressources Commerce pris en charge](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) tels que `thumbnail`, `image`, `small_image` et `swatch_image`. |
+| `asset_roles` | Tableau | Rôles de ressources. Utilise les [rôles de ressources Commerce pris en charge](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) tels que `thumbnail`, `image`, `small_image` et `swatch_image`. |
 | `asset_format` | String | Format de la ressource. Les valeurs possibles sont `image` et `video`. |
 | `asset_position` | Nombre | Position de la ressource dans la galerie de produits. |
 
