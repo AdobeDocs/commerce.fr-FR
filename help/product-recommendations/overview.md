@@ -2,7 +2,7 @@
 title: Présentation de  [!DNL Product Recommendations]
 description: '[!DNL Product Recommendations] sont des outils marketing puissants que vous pouvez utiliser pour augmenter les conversions, augmenter le chiffre d’affaires et stimuler l’engagement des acheteurs.'
 recommendations: noCatalog
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 exl-id: 72850cfd-555c-4e0e-ac3e-097e6dac2030
 source-git-commit: 1ae6b0f6786375ca4e7bb7620e164008a08f8965
 workflow-type: tm+mt
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Présentation de [!DNL Product Recommendations]
 
-Les recommandations de produits sont un puissant outil marketing que vous pouvez utiliser pour augmenter les conversions, augmenter le chiffre d’affaires et stimuler l’engagement des acheteurs. Les recommandations de produits Adobe Commerce sont optimisées par [Adobe AI](https://business.adobe.com/ai.html), qui utilise l’intelligence artificielle et des algorithmes de machine learning pour effectuer une analyse approfondie des données agrégées sur les visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, offrent une expérience très attrayante, pertinente et personnalisée.
+Les recommandations de produits sont un puissant outil marketing que vous pouvez utiliser pour augmenter les conversions, augmenter le chiffre d’affaires et stimuler l’engagement des acheteurs. Les recommandations de produits Adobe Commerce sont optimisées par [Adobe AI](https://business.adobe.com/fr/ai.html), qui utilise l’intelligence artificielle et des algorithmes de machine learning pour effectuer une analyse approfondie des données agrégées sur les visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, offrent une expérience très attrayante, pertinente et personnalisée.
 
 >[!IMPORTANT]
 >
 >**Product Recommendations n’est pas un service conforme à la loi HIPAA.** N’activez ou n’utilisez les recommandations de produits dans aucune implémentation d’Adobe Commerce utilisant l’offre conforme à la loi HIPAA ou traitant d’une autre manière des informations de santé protégées (ISP). Product Recommendations fait partie des services SaaS de Commerce actuellement classés comme non conformes à la loi HIPAA.
 >
->Pour plus d’informations sur les fonctionnalités Adobe Commerce prêtes pour la loi HIPAA et les services qui ne doivent pas être utilisés avec les ISP, voir [&#x200B; Préparation de la loi HIPAA pour Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) et [&#x200B; Opérations &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
+>Pour plus d’informations sur les fonctionnalités Adobe Commerce prêtes pour la loi HIPAA et les services qui ne doivent pas être utilisés avec les ISP, voir [&#x200B; Préparation de la loi HIPAA pour Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) et [&#x200B; Opérations &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
 
 Les recommandations de produits sont affichées sur le storefront sous la forme d’unités avec des étiquettes, telles que « Les clients qui ont consulté ce produit ont également consulté ». Vous pouvez créer, gérer et déployer des recommandations dans les vues de votre boutique directement depuis Adobe Commerce Admin.
 
@@ -33,11 +33,11 @@ Si votre storefront est implémenté à l’aide de PWA Studio, consultez la doc
 
 La collecte de données à des fins de [!DNL Product Recommendations] n’inclut aucune information d’identification personnelle (PII). En outre, tous les identifiants d’utilisateur tels que les ID de cookie et les adresses IP sont strictement anonymisés. Pour en savoir plus, consultez la [Politique de confidentialité d’](https://www.adobe.com/privacy/policy.html).
 
-[!DNL Product Recommendations] utilisateurs peuvent consulter le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) pour plus d’informations sur la synchronisation des données.
+[!DNL Product Recommendations] utilisateurs peuvent consulter le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=fr) pour plus d’informations sur la synchronisation des données.
 
 ## Recommandations de produits par rapport aux relations entre les produits
 
-Étant donné la complexité en constante évolution des achats en ligne, ce qui fonctionne le mieux pour votre vitrine est souvent une combinaison de plusieurs technologies clés. L’utilisation des relations [!DNL Product Recommendations] et [produit](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) vous offre davantage de flexibilité lors de la promotion de produits. Vous pouvez tirer parti des [!DNL Product Recommendations] optimisés par Adobe AI pour automatiser intelligemment vos recommandations à grande échelle. Vous pouvez ensuite tirer parti des [&#x200B; Règles de produits associés &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) lorsque vous devez intervenir manuellement pour vous assurer qu’une recommandation spécifique est envoyée à un segment d’acheteur cible ou lorsque certains objectifs commerciaux doivent être atteints.
+Étant donné la complexité en constante évolution des achats en ligne, ce qui fonctionne le mieux pour votre vitrine est souvent une combinaison de plusieurs technologies clés. L’utilisation des relations [!DNL Product Recommendations] et [produit](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html?lang=fr) vous offre davantage de flexibilité lors de la promotion de produits. Vous pouvez tirer parti des [!DNL Product Recommendations] optimisés par Adobe AI pour automatiser intelligemment vos recommandations à grande échelle. Vous pouvez ensuite tirer parti des [&#x200B; Règles de produits associés &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html?lang=fr) lorsque vous devez intervenir manuellement pour vous assurer qu’une recommandation spécifique est envoyée à un segment d’acheteur cible ou lorsque certains objectifs commerciaux doivent être atteints.
 
 Les recommandations de produits vous permettent d’effectuer les opérations suivantes :
 
@@ -57,10 +57,10 @@ Si vous n’envoyez pas de requête pour les données du catalogue dans votre en
 
 ### Environnement de test inactif
 
-Pour réactiver les données du catalogue dans votre environnement de test, [envoyez une demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Product Recommendations] » et incluez les identifiants d’environnement. Les données du catalogue de votre environnement de test doivent être restaurées dans les heures qui suivent.
+Pour réactiver les données du catalogue dans votre environnement de test, [envoyez une demande d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Product Recommendations] » et incluez les identifiants d’environnement. Les données du catalogue de votre environnement de test doivent être restaurées dans les heures qui suivent.
 
 ### Catalogue vide
 
 Si votre environnement comporte un catalogue vide 45 jours après sa création, les données du catalogue sont définies en mode veille et aucune donnée n’est renvoyée pour une requête. Cela inclut les environnements de production et de test.
 
-Pour réactiver les données du catalogue dans votre environnement, [envoyez une demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Product Recommendations] » et incluez les identifiants d’environnement. Les données de catalogue de votre environnement doivent être restaurées dans les heures qui suivent.
+Pour réactiver les données du catalogue dans votre environnement, [envoyez une demande d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Product Recommendations] » et incluez les identifiants d’environnement. Les données de catalogue de votre environnement doivent être restaurées dans les heures qui suivent.
