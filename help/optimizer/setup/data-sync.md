@@ -58,6 +58,6 @@ Pour les projets qui utilisent Adobe Commerce comme source de données en amont 
 
 ## Rubriques connexes
 
-- [Connecteur ](../../aco-connector/overview.md){target="_blank"}
+- [Connecteur &#x200B;](../../aco-connector/overview.md){target="_blank"}
 
 
