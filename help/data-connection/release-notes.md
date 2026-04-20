@@ -24,9 +24,9 @@ Ces notes de mise à jour contiennent des mises à jour de l’extension [!DNL D
 
 Pour connaître les modifications de fonctionnalités et les correctifs liés aux extensions utilisées par l’extension [!DNL Data Connection], voir **Mises à jour de service prises en charge**.
 
-Voir [Prochaines versions](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) pour en savoir plus sur les plannings de publication et la prise en charge.
+Voir [Prochaines versions](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule) pour en savoir plus sur les plannings de publication et la prise en charge.
 
-Consultez la documentation destinée aux développeurs pour [découvrir quelles versions de Commerce prennent en charge ce module](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Consultez la documentation destinée aux développeurs pour [découvrir quelles versions de Commerce prennent en charge ce module](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability).
 
 ## Mises à jour de service prises en charge
 

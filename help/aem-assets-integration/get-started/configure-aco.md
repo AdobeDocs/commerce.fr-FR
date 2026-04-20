@@ -39,7 +39,7 @@ Avant de configurer l’intégration, vérifiez les points suivants :
 
 ## Intégration
 
-Pour intégrer l’intégration d’AEM Assets à [!DNL Commerce Optimizer], vous devez [créer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Pour intégrer l’intégration d’AEM Assets à [!DNL Commerce Optimizer], vous devez [créer un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 L’assistance Adobe utilise les informations figurant dans votre ticket pour enregistrer votre client auprès du service d’intégration d’Assets et configurer l’intégration.
 
@@ -113,7 +113,7 @@ La ressource doit avoir un statut **approuvé** pour que la synchronisation des 
 
 >[!CAUTION]
 >
-> Affectez la couche `AEM-Assets` à votre [vue de catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Si le calque n’est pas affecté, les données d’image du produit peuvent être écrasées de manière inattendue.
+> Affectez la couche `AEM-Assets` à votre [vue de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-view). Si le calque n’est pas affecté, les données d’image du produit peuvent être écrasées de manière inattendue.
 
 ## Synchronisation
 
