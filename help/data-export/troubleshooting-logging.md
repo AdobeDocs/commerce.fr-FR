@@ -3,9 +3,9 @@ title: Consulter les journaux et résoudre les problèmes
 description: Découvrez comment résoudre les erreurs  [!DNL data export]  l’aide des journaux data-export et saas-export .
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: a1afed7b635a2b05c5c0e0d1c9bf4a07fc5eef31
+source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # Consulter les journaux et résoudre les problèmes
 
 L’extension [!DNL data export] fournit des journaux pour suivre les processus de collecte de données et de synchronisation.
+
+>[!NOTE]
+>
+>Vous pouvez également suivre l’intégrité et les performances des flux d’exportation de données pour les données de produit et de catégorie à partir du tableau de bord [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) dans Admin.
 
 ## Logs
 
@@ -129,7 +133,7 @@ Si des données sont manquantes ou incorrectes dans les services Commerce, reche
 - Le journal des erreurs d’exportation des données (`commerce-data-export-errors.log`) capture les erreurs qui se produisent pendant la phase de collecte.
 - Le journal des erreurs d’exportation SaaS (`saas-export-errors.log`) capture les erreurs qui se produisent pendant la phase de transmission.
 
-Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) avec autant d’informations que possible.
+Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) avec autant d’informations que possible.
 
 ### Résolution des problèmes de synchronisation des catalogues {#resolvesync}
 
@@ -140,15 +144,15 @@ Lorsque vous déclenchez une resynchronisation des données, la mise à jour des
 1. Afficher la vue détaillée du produit en question dans les résultats de la recherche.
 1. Copiez la sortie JSON et vérifiez que le contenu correspond à ce que vous avez dans le catalogue [!DNL Commerce].
 1. Si le contenu ne correspond pas, apportez une modification mineure au produit de votre catalogue, par exemple en ajoutant un espace ou un point.
-1. Attendez une resynchronisation ou [déclenchez une resynchronisation manuelle](#resync).
+1. Attendez une resynchronisation ou déclenchez une resynchronisation manuelle à partir de l’interface de ligne de commande ou du tableau de bord d’administration.
 
 #### Synchronisation non exécutée
 
-Si la synchronisation ne s’exécute pas selon un planning ou si rien n’est synchronisé, consultez cet article [Base de connaissances](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
+Si la synchronisation ne s’exécute pas selon un planning ou si rien n’est synchronisé, consultez cet article [Base de connaissances](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Échec de la synchronisation
 
-Si la synchronisation du catalogue a le statut **Échec**, envoyez un ticket d’assistance [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Si la synchronisation du catalogue a le statut **Échec**, envoyez un ticket d’assistance [](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Journalisation étendue
 
