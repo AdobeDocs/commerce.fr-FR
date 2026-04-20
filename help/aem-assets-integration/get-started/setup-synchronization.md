@@ -67,7 +67,7 @@ Avant de configurer l’intégration AEM Assets, vérifiez que vous avez effectu
    * Sélectionnez **[!UICONTROL Match by SKU]** pour [correspondance automatique par défaut](../synchronize/default-match.md),
    * Sélectionnez **[!UICONTROL Custom match]** pour [correspondance automatique personnalisée](../synchronize/custom-match.md) (nécessite [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder).)
 
-1. Ajoutez le [nom du champ de métadonnées ](configure-aem.md#define-the-metadata-profile) défini pour les SKU de produit Commerce dans le champ **[!UICONTROL Match by product SKU attribute name]**, `commerce:skus` par défaut.
+1. Ajoutez le [nom du champ de métadonnées &#x200B;](configure-aem.md#define-the-metadata-profile) défini pour les SKU de produit Commerce dans le champ **[!UICONTROL Match by product SKU attribute name]**, `commerce:skus` par défaut.
 
 1. Sélectionnez **[!UICONTROL Save Config]** pour appliquer des mises à jour et lancer la synchronisation des ressources.
 
@@ -101,7 +101,7 @@ Voir la rubrique [Définition des détails de l’image](https://experienceleagu
 
 1. Accédez à **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-   ![Fonction du propriétaire de la visualisation d’intégration ](../assets/visualization-owner-detail.png){width="400" zoomable="yes"}
+   ![Fonction du propriétaire de la visualisation d’intégration &#x200B;](../assets/visualization-owner-detail.png){width="400" zoomable="yes"}
 
 1. Sélectionnez la source **Propriétaire de la visualisation** pour afficher les images.
 

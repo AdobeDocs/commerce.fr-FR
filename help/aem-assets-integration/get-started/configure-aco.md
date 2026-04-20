@@ -85,7 +85,7 @@ Le processus d’installation et de configuration d’AEM Assets pour [!DNL Comm
 
 Assurez-vous que votre environnement AEM Assets est prêt :
 
-1. **Configuration d’AEM Assets** : configurez le profil de métadonnées Commerce. Voir [ Configuration d’un profil de métadonnées](configure-aem.md#step-2-optional-configure-a-metadata-profile).
+1. **Configuration d’AEM Assets** : configurez le profil de métadonnées Commerce. Voir [&#x200B; Configuration d’un profil de métadonnées](configure-aem.md#step-2-optional-configure-a-metadata-profile).
 
 1. **Activation de Dynamic Media** : vérifiez que Dynamic Media avec les fonctionnalités OpenAPI est activé dans votre environnement AEM Assets.
 
@@ -107,7 +107,7 @@ Consultez [Configuration d’un profil de métadonnées](configure-aem.md#step-2
 
 Ajoutez des métadonnées Commerce à vos images de produit dans AEM Assets.
 
-Voir le [contenu du package ](configure-aem.md#aem-commerce-assets-commerce-package-contents) pour les définitions de champ et [Configurer un profil de métadonnées](configure-aem.md#step-2-optional-configure-a-metadata-profile) pour les étapes de configuration.
+Voir le [contenu du package &#x200B;](configure-aem.md#aem-commerce-assets-commerce-package-contents) pour les définitions de champ et [Configurer un profil de métadonnées](configure-aem.md#step-2-optional-configure-a-metadata-profile) pour les étapes de configuration.
 
 La ressource doit avoir un statut **approuvé** pour que la synchronisation des données se déclenche. L’enregistrement des métadonnées seul ne déclenche pas l’événement.
 

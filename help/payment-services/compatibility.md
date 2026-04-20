@@ -22,7 +22,7 @@ Pour utiliser [!DNL Payment Services], vous devez d’abord connecter votre inst
 
 1. Si vous ne savez pas si votre instance est connectée, accédez à **Système** > Services > **Connecteur de services Commerce** et affichez les valeurs des clés API publiques et privées dans les sections Clés de sandbox et Clés de production, ainsi que les champs Projet et Espace de données dans la section Identifiant SaaS. Si ces valeurs sont présentes, votre instance est connectée.
 
-1. Si vous devez toujours connecter votre instance, consultez les instructions de la page [Connecteur de services ](../landing/saas.md).
+1. Si vous devez toujours connecter votre instance, consultez les instructions de la page [Connecteur de services &#x200B;](../landing/saas.md).
 
    >[!TIP]
    >
@@ -62,7 +62,7 @@ Voir [Connect](connect.md) pour plus d’informations sur la configuration de vo
 
 ![check](assets/icon-check.png) **Disponible dans XX pays**
 
-[![ en savoir plus ](assets/learn-more-button.svg)](onboard.md)
+[![&#x200B; en savoir plus &#x200B;](assets/learn-more-button.svg)](onboard.md)
 
 >[!TAB Avancé (Entièrement Pris En Charge)]
 
@@ -92,11 +92,11 @@ Voir [Connect](connect.md) pour plus d’informations sur la configuration de vo
 
 ![check](assets/icon-check.png) **Disponible uniquement aux États-Unis (US), au Canada (CA), en Australie (AUS). France (FR), Royaume-Uni (UK)**
 
-[![ en savoir plus ](assets/learn-more-button.svg)](onboard.md)
+[![&#x200B; en savoir plus &#x200B;](assets/learn-more-button.svg)](onboard.md)
 
 >[!ENDTABS]
 
-Pour plus d’informations sur les versions et les notes de mise à jour[ consultez les pages ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)Politique de cycle de vie et [[!DNL Payment Services] Notes de mise à jour](release-notes.md).
+Pour plus d’informations sur les versions et les notes de mise à jour[&#x200B; consultez les pages &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)Politique de cycle de vie et [[!DNL Payment Services] Notes de mise à jour](release-notes.md).
 
 Pour obtenir les instructions complètes et démarrer le processus d’intégration, reportez-vous à la section [Prise en main d’ [!DNL Payment Services]](onboard.md).
 

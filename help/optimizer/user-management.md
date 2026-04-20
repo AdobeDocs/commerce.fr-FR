@@ -97,7 +97,7 @@ Les instructions suivantes expliquent comment ajouter des utilisateurs à [!DNL 
 
 1. Sélectionnez l’onglet [!UICONTROL **Produits**].
 
-1. Sélectionnez le produit [!UICONTROL ****].
+1. Sélectionnez le produit [!UICONTROL **&#x200B;**].
 
 1. Sélectionnez le produit Commerce Cloud Manager si vous souhaitez ajouter l’utilisateur à l’interface de Cloud Manager, où il peut créer et gérer des instances Commerce Optimizer, ou sélectionnez l’instance Commerce Optimizer existante à laquelle ajouter l’utilisateur. Les instances Commerce Optimizer utilisent le format suivant : `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
 

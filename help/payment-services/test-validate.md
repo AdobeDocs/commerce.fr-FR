@@ -68,7 +68,7 @@ Utilisez le générateur de cartes de crédit PayPal pour [générer des informa
 
 Pour tester Apple Pay en mode sandbox :
 
-* Créez un compte de testeur de sandbox [](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) avec une fausse carte de crédit et de fausses informations de facturation.
+* Créez un compte de testeur de sandbox [&#128279;](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) avec une fausse carte de crédit et de fausses informations de facturation.
 * [Enregistrement de vos domaines Sandbox](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
 
 >[!NOTE]
