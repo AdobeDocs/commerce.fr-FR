@@ -23,7 +23,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard"> Clarification de la surveillance de l’exportation et de la synchronisation des données SaaS (tableau de bord de gestion des données</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">état de synchronisation des flux de données</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">synchronisation des données Commerce Optimizer</a>).</p>
+      <td><p><a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard"> Clarification de la surveillance de l’exportation et de la synchronisation des données SaaS (tableau de bord de gestion des données</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">état de synchronisation des flux de données</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/data-sync">synchronisation des données Commerce Optimizer</a>).</p>
 </td>
       <td>
         Commentaires, technique
@@ -45,7 +45,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">notes de mise à jour</a> pour la deuxième version d’avril d’Exploitation d’Adobe Commerce as a Cloud Service.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes#latest">notes de mise à jour</a> pour la deuxième version d’avril d’Exploitation d’Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -67,7 +67,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la rubrique Présentation des intégrations <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/integrations-overview">[!DNL Adobe Commerce Optimizer] qui décrit la place de chaque intégration disponible (connecteur Adobe Commerce Optimizer, AEM Assets, AEM Sites Optimizer et connecteur Salesforce Commerce) dans Adobe Commerce Optimizer, avec des liens vers des guides de configuration et d’installation.</a></p>
+      <td><p>Ajout de la rubrique Présentation des intégrations <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/integrations-overview">[!DNL Adobe Commerce Optimizer] qui décrit la place de chaque intégration disponible (connecteur Adobe Commerce Optimizer, AEM Assets, AEM Sites Optimizer et connecteur Salesforce Commerce) dans Adobe Commerce Optimizer, avec des liens vers des guides de configuration et d’installation.</a></p>
 </td>
       <td>
         Commentaires, nouvelle rubrique
@@ -75,7 +75,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41c8bfe8f15b1988f574fe589ba6e27bb1839ba8">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
+      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -83,7 +83,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8f2cc1e79ede56192a8ab03194b0f69854f89f7b">validation</a></td>
     </tr>
     <tr>
-      <td><p>Documentation de l’<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">intégration d’AEM Assets version 1.3.5</a> et correction <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Correspondance automatique personnalisée</a> champs de requête d’API (<code class="language-plaintext highlighter-rouge">eventData</code>, <code class="language-plaintext highlighter-rouge">productSku</code>).</p>
+      <td><p>Documentation de l’<a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/release-notes">intégration d’AEM Assets version 1.3.5</a> et correction <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/synchronize/custom-match">Correspondance automatique personnalisée</a> champs de requête d’API (<code class="language-plaintext highlighter-rouge">eventData</code>, <code class="language-plaintext highlighter-rouge">productSku</code>).</p>
 </td>
       <td>
         Nouvelle rubrique
@@ -105,7 +105,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist"> Liste de contrôle Launch </a>, une référence pour valider la configuration des [!DNL Adobe Commerce Optimizer] de production, la mise en production du storefront, l’optimisation du moteur de recherche, le réseau CDN, les intégrations, la sécurité, les analyses et les tests avant le lancement.</p>
+      <td><p>Ajout de la <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/launch/launch-checklist"> Liste de contrôle Launch </a>, une référence pour valider la configuration des [!DNL Adobe Commerce Optimizer] de production, la mise en production du storefront, l’optimisation du moteur de recherche, le réseau CDN, les intégrations, la sécurité, les analyses et les tests avant le lancement.</p>
 </td>
       <td>
         Commentaires, nouvelle rubrique
@@ -127,7 +127,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la section <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add">Marchandisage de catégorie</a> pour Adobe Commerce Optimizer : utilisation des règles de catégorie avec un classement intelligent et des actions manuelles sur les pages de catégorie.</p>
+      <td><p>Ajout de la section <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/add">Marchandisage de catégorie</a> pour Adobe Commerce Optimizer : utilisation des règles de catégorie avec un classement intelligent et des actions manuelles sur les pages de catégorie.</p>
 </td>
       <td>
         Nouvelle rubrique
@@ -149,7 +149,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de conseils sur <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/product-files">l’ajout de fichiers aux produits</a> dans Adobe Commerce as a Cloud Service.</p>
+      <td><p>Ajout de conseils sur <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/product-files">l’ajout de fichiers aux produits</a> dans Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -171,7 +171,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters">filtres de recommandations</a> avec les procédures de filtrage des prix et des produits, comportement des prix finaux basé sur un catalogue de prix pour le filtrage et l’affichage des prix, et nouvelles captures d’écran pour l’interface utilisateur du filtre de produits.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/recommendations/filters">filtres de recommandations</a> avec les procédures de filtrage des prix et des produits, comportement des prix finaux basé sur un catalogue de prix pour le filtrage et l’affichage des prix, et nouvelles captures d’écran pour l’interface utilisateur du filtre de produits.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -193,7 +193,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/payments-home">page d’accueil des services de paiement</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/financial-reports/reporting">reporting</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/onboard">présentation de l’intégration</a> avec des captures d’écran SaaS/ACCS et des conseils sur l’interface utilisateur (bannière d’intégration, page d’accueil axée sur les transactions, grille de transactions).</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/configure/payments-home">page d’accueil des services de paiement</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/financial-reports/reporting">reporting</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/get-started/onboard">présentation de l’intégration</a> avec des captures d’écran SaaS/ACCS et des conseils sur l’interface utilisateur (bannière d’intégration, page d’accueil axée sur les transactions, grille de transactions).</p>
 </td>
       <td>
         Mise à jour majeure
@@ -201,7 +201,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/79c71b55e463d7e9570fe67b664b4e77a0d741f7">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout de la production d’avril <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
+      <td><p>Ajout de la production d’avril <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -223,7 +223,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Met à jour les <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> Adobe Commerce as a Cloud Service avec le dernier déploiement sandbox.</p>
+      <td><p>Met à jour les <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> Adobe Commerce as a Cloud Service avec le dernier déploiement sandbox.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -245,7 +245,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> d’Adobe Commerce as a Cloud Service avec les dernières informations de mise à jour de Sandbox.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> d’Adobe Commerce as a Cloud Service avec les dernières informations de mise à jour de Sandbox.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -267,7 +267,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/install">Installer et accéder à App Management</a> avec une section de Webhooks Commerce et une capture d’écran pour les erreurs de validation webhook dans le tableau de bord App Management.</p>
+      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/fr/docs/commerce/app-management/install">Installer et accéder à App Management</a> avec une section de Webhooks Commerce et une capture d’écran pour les erreurs de validation webhook dans le tableau de bord App Management.</p>
 </td>
       <td>
         Technique
@@ -275,7 +275,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/86c0945bbb0a562de1b66d420dec2a05d4d81e5f">validation</a></td>
     </tr>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">notes de mise à jour</a> pour déplacer la version de mars 2 vers la version de production.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes#latest">notes de mise à jour</a> pour déplacer la version de mars 2 vers la version de production.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -297,7 +297,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout d’une nouvelle installation automatisée pour la <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">Conditions préalables au tutoriel</a>.</p>
+      <td><p>Ajout d’une nouvelle installation automatisée pour la <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">Conditions préalables au tutoriel</a>.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -319,7 +319,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de nouvelles rubriques :<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer">Connexion en tant que client</a> pour Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/"> Points d’entrée REST de compte de carte cadeau </a> pour Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/">Déclenchement d’e-mail via REST</a> pour Adobe Commerce as a Cloud Service.<br />Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> avec les informations de version n° 2 de mars 2026.</p>
+      <td><p>Ajout de nouvelles rubriques :<br />- <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer">Connexion en tant que client</a> pour Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/"> Points d’entrée REST de compte de carte cadeau </a> pour Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/">Déclenchement d’e-mail via REST</a> pour Adobe Commerce as a Cloud Service.<br />Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> avec les informations de version n° 2 de mars 2026.</p>
 </td>
       <td>
         Nouvelle rubrique
@@ -341,7 +341,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la section <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions">Configurer les autorisations d’utilisateur IMS pour l’intégration d’AEM Assets</a> pour expliquer comment configurer les autorisations IMS et de niveau de diffusion afin d’activer le sélecteur de ressources et les champs de configuration auto-renseignés (ID de programme, ID d’environnement, mappage de domaine) dans l’administration.</p>
+      <td><p>Ajout de la section <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/permissions">Configurer les autorisations d’utilisateur IMS pour l’intégration d’AEM Assets</a> pour expliquer comment configurer les autorisations IMS et de niveau de diffusion afin d’activer le sélecteur de ressources et les champs de configuration auto-renseignés (ID de programme, ID d’environnement, mappage de domaine) dans l’administration.</p>
 </td>
       <td>
         Nouvelle rubrique
@@ -363,7 +363,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/manage-assets">Gestion des ressources multimédias Commerce</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/default-match">Correspondance automatique par défaut</a> avec des conseils de navigation plus clairs pour les utilisateurs qui configurent des ressources de produit dans AEM Assets.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/manage-assets">Gestion des ressources multimédias Commerce</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/synchronize/default-match">Correspondance automatique par défaut</a> avec des conseils de navigation plus clairs pour les utilisateurs qui configurent des ressources de produit dans AEM Assets.</p>
 </td>
       <td>
         Technique
@@ -385,7 +385,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">notes de mise à jour de l’intégration d’</a> avec la version 1.3.4 : prise en charge d’Adobe Commerce 2.4.9 en version bêta1 et de PHP 8.5, et auto-remplissage du mappage de domaine dans l’interface utilisateur de configuration.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/release-notes">notes de mise à jour de l’intégration d’</a> avec la version 1.3.4 : prise en charge d’Adobe Commerce 2.4.9 en version bêta1 et de PHP 8.5, et auto-remplissage du mappage de domaine dans l’interface utilisateur de configuration.</p>
 </td>
       <td>
         Technique
@@ -407,7 +407,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service avec la dernière version pour les environnements de production.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service avec la dernière version pour les environnements de production.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -415,7 +415,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd9b660729f7c8616347d3222fdfb3b83a774e56">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’un nouveau guide de documentation <a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/overview">App Management</a> pour présenter App Management et expliquer comment associer, configurer et gérer des applications App Builder avec votre instance Commerce.</p>
+      <td><p>Ajout d’un nouveau guide de documentation <a href="https://experienceleague.adobe.com/fr/docs/commerce/app-management/overview">App Management</a> pour présenter App Management et expliquer comment associer, configurer et gérer des applications App Builder avec votre instance Commerce.</p>
 </td>
       <td>
         Nouvelle rubrique
@@ -437,12 +437,12 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de l’intégration de storefront au <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension">tutoriel sur les évaluations</a>.</p>
+      <td><p>Ajout de l’intégration de storefront au <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/tutorials/ratings-extension">tutoriel sur les évaluations</a>.</p>
 </td>
       <td>
         Mise à jour majeure
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/pull/15">demande de tirage</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.fr-FR/pull/15">demande de tirage</a></td>
     </tr>
   </tbody>
 </table>
@@ -459,7 +459,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Publication de la documentation <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">Connecteur Adobe Commerce Optimizer v1.0.9</a> pour la version à disponibilité générale.</p>
+      <td><p>Publication de la documentation <a href="https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/overview">Connecteur Adobe Commerce Optimizer v1.0.9</a> pour la version à disponibilité générale.</p>
 </td>
       <td>
         Mise à jour majeure, nouvelle rubrique, technique
@@ -467,7 +467,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/216958e287993d1a212fb59fdaa8e2ba3e931b97">validation</a></td>
     </tr>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> d’Adobe Commerce as a Cloud Service avec la dernière version de Sandbox.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> d’Adobe Commerce as a Cloud Service avec la dernière version de Sandbox.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -489,7 +489,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice#leverage-product-metadata">Bonnes pratiques de recherche en direct</a> avec des conseils complets sur le choix des attributs pouvant faire l’objet de recherches, y compris trois exemples réels de problèmes de configuration courants et une liste de contrôle de dépannage pour améliorer la pertinence de la recherche.</p>
+      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/fr/docs/commerce/live-search/best-practice#leverage-product-metadata">Bonnes pratiques de recherche en direct</a> avec des conseils complets sur le choix des attributs pouvant faire l’objet de recherches, y compris trois exemples réels de problèmes de configuration courants et une liste de contrôle de dépannage pour améliorer la pertinence de la recherche.</p>
 </td>
       <td>
         Feedback
@@ -497,7 +497,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/f55cbabdc50af4e38b57ece217e5133d1f3fada8">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d'instructions pour la suppression d'une clé API dans la documentation du connecteur de services Commerce <a href="https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#delapikey"></a>.</p>
+      <td><p>Ajout d'instructions pour la suppression d'une clé API dans la documentation du connecteur de services Commerce <a href="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/integration-services/saas#delapikey"></a>.</p>
 </td>
       <td>
         Feedback
@@ -505,7 +505,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a12a0bca1d4a7f3b9350c704275a9e3128fa2b37">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout d’une nouvelle rubrique sur l’<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aco">intégration d’AEM Assets à Adobe Commerce Optimizer</a>.</p>
+      <td><p>Ajout d’une nouvelle rubrique sur l’<a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/configure-aco">intégration d’AEM Assets à Adobe Commerce Optimizer</a>.</p>
 </td>
       <td>
         Nouvelle rubrique
@@ -527,7 +527,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de l’<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion">outil de migration de données en bloc</a> avec une note importante indiquant que la configuration du catalogue n’est pas importée automatiquement.</p>
+      <td><p>Mise à jour de l’<a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/migration/migration-tools/bulk-data#catalog-data-ingestion">outil de migration de données en bloc</a> avec une note importante indiquant que la configuration du catalogue n’est pas importée automatiquement.</p>
 </td>
       <td>
         Feedback
@@ -535,7 +535,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1ac84e8f10f61a6b8f995f348d4872773d2890e8">validation</a></td>
     </tr>
     <tr>
-      <td><p>Mise à jour de la documentation sur les <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">services de paiement</a> avec la version 2.14.0, y compris les méthodes de paiement alternatives (APM) pour les marchés européens, les boutons de passage en caisse express et la configuration du sandbox Pays de l’acheteur.</p>
+      <td><p>Mise à jour de la documentation sur les <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/release-notes">services de paiement</a> avec la version 2.14.0, y compris les méthodes de paiement alternatives (APM) pour les marchés européens, les boutons de passage en caisse express et la configuration du sandbox Pays de l’acheteur.</p>
 </td>
       <td>
         Mise à jour majeure, nouvelle rubrique
@@ -557,7 +557,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Les pages <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/coding-tools">Outils de développement du codage AI pour Adobe Commerce App Builder</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/ratings-extension">Tutoriel sur l’extension d’évaluation</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/shipping-method-extension">Tutoriel sur l’extension de méthode d’expédition</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">Conditions préalables au tutoriel</a> sont désormais disponibles.</p>
+      <td><p>Les pages <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/migration/coding-tools">Outils de développement du codage AI pour Adobe Commerce App Builder</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/tutorials/ratings-extension">Tutoriel sur l’extension d’évaluation</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/tutorials/shipping-method-extension">Tutoriel sur l’extension de méthode d’expédition</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">Conditions préalables au tutoriel</a> sont désormais disponibles.</p>
 </td>
       <td>
         Nouvelle rubrique
@@ -579,7 +579,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service avec la dernière version pour les environnements de production.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service avec la dernière version pour les environnements de production.</p>
 </td>
       <td>
         Mise à jour majeure
