@@ -16,7 +16,7 @@ L’extension [!DNL data export] fournit des journaux pour suivre les processus 
 
 >[!NOTE]
 >
->Vous pouvez également suivre l’intégrité et les performances des flux d’exportation de données pour les données de produit et de catégorie à partir du tableau de bord [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) dans Admin.
+>Vous pouvez également suivre l’intégrité et les performances des flux d’exportation de données pour les données de produit et de catégorie à partir du tableau de bord [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) dans Admin.
 
 ## Logs
 
@@ -133,7 +133,7 @@ Si des données sont manquantes ou incorrectes dans les services Commerce, reche
 - Le journal des erreurs d’exportation des données (`commerce-data-export-errors.log`) capture les erreurs qui se produisent pendant la phase de collecte.
 - Le journal des erreurs d’exportation SaaS (`saas-export-errors.log`) capture les erreurs qui se produisent pendant la phase de transmission.
 
-Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) avec autant d’informations que possible.
+Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) avec autant d’informations que possible.
 
 ### Résolution des problèmes de synchronisation des catalogues {#resolvesync}
 
@@ -148,11 +148,11 @@ Lorsque vous déclenchez une resynchronisation des données, la mise à jour des
 
 #### Synchronisation non exécutée
 
-Si la synchronisation ne s’exécute pas selon un planning ou si rien n’est synchronisé, consultez cet article [Base de connaissances](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
+Si la synchronisation ne s’exécute pas selon un planning ou si rien n’est synchronisé, consultez cet article [Base de connaissances](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Échec de la synchronisation
 
-Si la synchronisation du catalogue a le statut **Échec**, envoyez un ticket d’assistance [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Si la synchronisation du catalogue a le statut **Échec**, envoyez un ticket d’assistance [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Journalisation étendue
 

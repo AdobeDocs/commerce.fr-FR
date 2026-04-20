@@ -66,7 +66,7 @@ Ces tâches s’exécutent toutes les minutes.
 
 Pour que la synchronisation partielle fonctionne, l’application Commerce nécessite la configuration suivante :
 
-- [La planification des tâches est activée via les tâches cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
+- [La planification des tâches est activée via les tâches cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=fr)
 
 - Tous les indexeurs d&#39;export de données SaaS sont configurés en mode `Update by Schedule`.
 
@@ -83,11 +83,11 @@ La synchronisation des éléments en échec de la reprise utilise un processus d
 
 La plupart des activités de synchronisation sont traitées automatiquement en fonction de la configuration de l’application. Cependant, l’exportation des données SaaS fournit également des outils pour surveiller et gérer le processus.
 
-- [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **[Tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** : les utilisateurs administrateurs peuvent afficher et suivre les données synchronisées avec les services Commerce et disponibles pour les services storefront. Ce tableau de bord affiche le produit synchronisé avec les services Commerce.
+- [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **[Tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** : les utilisateurs administrateurs peuvent afficher et suivre les données synchronisées avec les services Commerce et disponibles pour les services storefront. Ce tableau de bord affiche le produit synchronisé avec les services Commerce.
 
   {{aco-data-sync-verification}}
 
-- [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique aux projets Adobe Commerce intégrés à Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} **[page Statut de la synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**—Pour les projets Commerce qui utilisent [!DNL Adobe Commerce Optimizer], vérifiez la disponibilité des données de catalogue pour votre storefront à partir de la page Statut de la synchronisation des flux de données dans Adobe Commerce Optimizer. Ce tableau de bord affiche le statut de synchronisation des flux d’exportation de données.
+- [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique aux projets Adobe Commerce intégrés à Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} **[page Statut de la synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/data-sync)**—Pour les projets Commerce qui utilisent [!DNL Adobe Commerce Optimizer], vérifiez la disponibilité des données de catalogue pour votre storefront à partir de la page Statut de la synchronisation des flux de données dans Adobe Commerce Optimizer. Ce tableau de bord affiche le statut de synchronisation des flux d’exportation de données.
 
 >[!NOTE]
 >
@@ -97,11 +97,11 @@ La plupart des activités de synchronisation sont traitées automatiquement en f
 
 La synchronisation partielle et la synchronisation des éléments ayant échoué une nouvelle tentative ne fonctionnent que si l’instance Commerce a été correctement configurée. En règle générale, la configuration est effectuée lors de la configuration du service Commerce. Si l’exportation des données ne fonctionne pas correctement, vérifiez la configuration suivante.
 
-- [Vérifiez que les tâches cron sont en cours d’exécution](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Vérifiez que les tâches cron sont en cours d’exécution](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 
-- Vérifiez que les indexeurs s’exécutent à partir de l’[Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) ou à l’aide de la `bin/magento indexer:info` de commande de l’interface de ligne de commande Commerce.
+- Vérifiez que les indexeurs s’exécutent à partir de l’[Admin](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management) ou à l’aide de la `bin/magento indexer:info` de commande de l’interface de ligne de commande Commerce.
 
-- Vérifiez que les indexeurs des flux suivants sont définis sur `Update by Schedule` : Attributs de catalogue, Produit, Remplacements de produit et Variante de produit. Vous pouvez vérifier les indexeurs à partir de [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) dans l’interface administrateur ou à l’aide de l’interface de ligne de commande (`bin/magento indexer:show-mode | grep -i feed`).
+- Vérifiez que les indexeurs des flux suivants sont définis sur `Update by Schedule` : Attributs de catalogue, Produit, Remplacements de produit et Variante de produit. Vous pouvez vérifier les indexeurs à partir de [Gestion des index](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management) dans l’interface administrateur ou à l’aide de l’interface de ligne de commande (`bin/magento indexer:show-mode | grep -i feed`).
 
 ### Notifications du gestionnaire d’événements pour la journalisation du transfert de données
 
