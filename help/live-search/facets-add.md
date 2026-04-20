@@ -2,7 +2,7 @@
 title: Ajout de facettes
 description: Découvrez comment ajouter des attributs de produit filtrables sous forme  [!DNL Live Search]  facettes.
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 15afc6fcd1e6783640dc3980ee06290e017abf37
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Tout attribut de produit filtrable peut être utilisé comme facette. Le panneau
    * Dans la liste *Attributs de facettes*, sélectionnez l’attribut de produit à utiliser comme facette et cliquez sur **Ajouter**.
    * Pour rechercher un attribut de produit spécifique, saisissez les premiers caractères du nom de l’attribut dans la zone *Rechercher*. Cliquez ensuite sur **Ajouter**.
 
-     Pour configurer les intervalles et les regroupements de facettes de prix, reportez-vous à [Paramètres](settings.md). Pour en savoir plus, accédez à [&#x200B; Types de facettes &#x200B;](facets-type.md).
+     Pour configurer les intervalles et les regroupements de facettes de prix, reportez-vous à [Paramètres](settings.md). Pour en savoir plus, accédez à [ Types de facettes ](facets-type.md).
 La facette est ajoutée en bas de la liste *Facettes dynamiques* et le bouton *Publier les modifications* devient disponible.
 
 1. Si la facette à ajouter est introuvable, accédez à **Magasins** > Attributs > **Produit** et vérifiez que l’attribut possède les [propriétés requises](facets.md) à utiliser comme facette. Si nécessaire, mettez à jour les propriétés storefront suivantes de l’attribut :
@@ -35,7 +35,7 @@ La facette est ajoutée en bas de la liste *Facettes dynamiques* et le bouton *P
 
 1. Lorsque vous y êtes invité, actualisez le cache.
 
-   La facette sera disponible dans le storefront la prochaine fois que le catalogue sera synchronisé avec [!DNL Live Search]. Si la facette n’est pas disponible au bout de deux heures, reportez-vous à la section [Synchronisation des données de catalogue](install.md#synchronize-catalog-data).
+   La facette sera disponible dans le storefront la prochaine fois que le catalogue sera synchronisé avec [!DNL Live Search]. Si la facette n’est pas disponible au bout de deux heures, reportez-vous à la section [Synchronisation des données de catalogue](install.md#sync).
 
 ## Étape 2 : modification des propriétés de facette (facultatif)
 
@@ -57,7 +57,8 @@ La facette est ajoutée en bas de la liste *Facettes dynamiques* et le bouton *P
 
 1. Une fois la facette terminée, cliquez sur **Publier les modifications**.
 1. Attendez que la facette apparaisse dans le magasin.
-Si la facette n’est pas disponible au bout de deux heures, consultez la section [Vérifier l’exportation](install.md#synchronize-catalog-data) dans les instructions d’installation.
+
+   Si la facette n’est pas disponible au bout de deux heures, consultez la section [Vérifier l’exportation](install.md#sync) dans les instructions d’installation.
 
 ## Descriptions des champs
 
@@ -73,4 +74,4 @@ Si la facette n’est pas disponible au bout de deux heures, consultez la sectio
 |--- |--- |
 | ![Sélecteur d’épingle](assets/btn-pin-blue.png) | Épingle ou détache une facette en haut de la liste *Filtres*. |
 | ![Plus de sélecteur](assets/btn-more.png) | Affiche un menu d&#39;actions supplémentaires pouvant être appliquées à la facette sélectionnée. Options : Modifier, Supprimer |
-| ![&#x200B; Déplacer le sélecteur &#x200B;](assets/btn-move.png) | Utilisez l’icône *Déplacer* pour faire glisser une facette épinglée vers un autre emplacement de la section *Facettes épinglées*. |
+| ![ Déplacer le sélecteur ](assets/btn-move.png) | Utilisez l’icône *Déplacer* pour faire glisser une facette épinglée vers un autre emplacement de la section *Facettes épinglées*. |

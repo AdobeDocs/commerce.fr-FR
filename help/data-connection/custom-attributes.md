@@ -4,7 +4,7 @@ description: Découvrez comment ajouter des attributs de commande personnalisés
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
-source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 2%
@@ -349,7 +349,7 @@ ComponentRegistrar::register(
 
 Pour vous assurer que les nouveaux attributs de commande personnalisés peuvent être ingérés par votre schéma [!DNL Commerce] dans Experience Platform, vous devez étendre le schéma afin d’inclure ces champs personnalisés.
 
-Pour savoir comment étendre un schéma XDM existant afin d’inclure ces champs personnalisés, consultez l’article [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) dans la documentation d’Experience Platform. Le champ ID de client est généré dynamiquement. Cependant, la structure des champs doit ressembler à l’exemple fourni dans la documentation d’Experience Platform.
+Pour savoir comment étendre un schéma XDM existant afin d’inclure ces champs personnalisés, consultez l’article [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) dans la documentation d’Experience Platform. Le champ ID de client est généré dynamiquement. Cependant, la structure des champs doit ressembler à l’exemple fourni dans la documentation d’Experience Platform.
 
 >[!IMPORTANT]
 >
@@ -365,12 +365,12 @@ Pour `productListItems`, ajoutez des champs pour le niveau Article de commande :
 
 ## Étape 12 : confirmer que les données sont capturées
 
-Consultez l’onglet [&#x200B; Personnalisation des données &#x200B;](connect-data.md#data-customization) dans l’interface d’administration pour confirmer que les données d’attribut personnalisé sont capturées et envoyées à Experience Platform.
+Consultez l’onglet [ Personnalisation des données ](connect-data.md#data-customization) dans l’interface d’administration pour confirmer que les données d’attribut personnalisé sont capturées et envoyées à Experience Platform.
 
 ### Dépannage
 
 Si le message s’`No custom order attributes found.` dans l’onglet **[!UICONTROL Data Customization]** , confirmez ce qui suit :
 
 1. Vous avez rempli les conditions préalables pour activer l’extension [Data Connector](overview.md#prerequisites).
-1. Vous avez configuré [attributs de commande personnalisés](#add-custom-order-attributes).
+1. Vous avez configuré [attributs de commande personnalisés](#add-custom-attributes-to-orders).
 1. Au moins un événement de commande a été généré.

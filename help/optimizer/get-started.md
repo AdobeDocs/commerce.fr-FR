@@ -3,9 +3,9 @@ title: Prise en main
 description: Découvrez comment commencer à utiliser  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: aac6efa53d7a8b2907fcbe8d3b97cc38e7178aa5
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Ce guide vous guide tout au long de la configuration de [!DNL Adobe Commerce Opt
 
 Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
-- Compte **&#x200B;**&#x200B;avec droits [!DNL Adobe Commerce Optimizer]
+- Compte **** avec droits [!DNL Adobe Commerce Optimizer]
 - **Accès administrateur de l’organisation** pour créer des instances et gérer les utilisateurs
 - **Compte GitHub** pour le chargement de données d’exemple et le développement du storefront
 - **Compréhension de base** des concepts du commerce électronique
@@ -31,8 +31,8 @@ Pour que votre environnement [!DNL Adobe Commerce Optimizer] fonctionne, procéd
 
 ### Étape 1. Création d’une instance
 
-1. Connectez-vous à [&#128279;](https://experience.adobe.com/).
-1. Accédez à **&#x200B;**&#x200B;> **Commerce Cloud Manager**.
+1. Connectez-vous à [](https://experience.adobe.com/).
+1. Accédez à **** > **Commerce Cloud Manager**.
 1. Cliquez sur **Ajouter une instance** > **Commerce Optimizer**.
 
    ![Écran Ajouter une instance d’Adobe Commerce Cloud Manager pour la création d’un environnement Commerce Optimizer](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
@@ -56,7 +56,7 @@ Pour que votre environnement [!DNL Adobe Commerce Optimizer] fonctionne, procéd
 Après avoir créé votre instance :
 
 1. [Gérez votre instance](#manage-instances) à partir de Commerce Cloud Manager.
-1. Configurez l’accès des utilisateurs et utilisatrices à l’aide du [&#x200B; Guide de gestion des utilisateurs &#x200B;](./user-management.md).
+1. Configurez l’accès des utilisateurs et utilisatrices à l’aide du [ Guide de gestion des utilisateurs ](./user-management.md).
 
 ### Étape 3. Ajouter des données d’exemple (facultatif)
 
@@ -75,7 +75,7 @@ Les administrateurs gèrent les instances, les utilisateurs et les paramètres o
 | Tâche | Description | Lien |
 |---|---|---|
 | **Gérer les utilisateurs** | Ajouter des utilisateurs, des développeurs et des administrateurs | [Gestion des utilisateurs](./user-management.md) |
-| **Créer des instances** | Configurer des environnements de sandbox et de production | [Créer une instance](#create-an-instance) |
+| **Créer des instances** | Configurer des environnements de sandbox et de production | [Créer une instance](#step-1-create-an-instance) |
 | **Gérer les instances** | Vérifiez le statut, mettez à jour le nom et la description de l’instance et obtenez les URL clés pour l’accès aux applications et aux API | [Gérer les instances](#manage-instances) |
 | **Configurer l’accès** | Configurer des vues et des politiques de catalogue | [Vues du catalogue](./setup/catalog-view.md) |
 
@@ -85,8 +85,8 @@ Les développeurs gèrent l’implémentation technique et l’intégration des 
 
 | Tâche | Description | Lien |
 |---|---|---|
-| **Accéder à Developer Console** | Créer des projets et générer des informations d’identification | [&#128279;](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **Ingérer des données de catalogue** | Importer les données de produit des systèmes existants | Pour ingérer des données directement dans Adobe Commerce Optimizer, consultez [API Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>Pour ingérer des données à partir de Commerce dans le cloud ou dans des environnements locaux ou d’autres systèmes tiers, consultez la rubrique [&#x200B; Intégrations &#x200B;](./integrations/integrations-overview.md){target="_blank"}. |
+| **Accéder à Developer Console** | Créer des projets et générer des informations d’identification | [](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
+| **Ingérer des données de catalogue** | Importer les données de produit des systèmes existants | Pour ingérer des données directement dans Adobe Commerce Optimizer, consultez [API Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>Pour ingérer des données à partir de Commerce dans le cloud ou dans des environnements locaux ou d’autres systèmes tiers, consultez la rubrique [ Intégrations ](./integrations/integrations-overview.md){target="_blank"}. |
 | **Configuration du storefront** | Configuration du storefront Edge Delivery Services | [Configuration de Storefront](./storefront.md) |
 
 ### Tâches du marchandiseur
@@ -107,7 +107,7 @@ Gérez les instances à partir du gestionnaire Commerce Cloud.
 >
 >Tous les utilisateurs [!DNL Adobe Commerce Optimizer] n’ont pas accès à Cloud Manager. L’accès dépend du rôle et des autorisations attribués au compte d’utilisateur.
 
-1. Connectez-vous à [&#128279;](https://experience.adobe.com/).
+1. Connectez-vous à [](https://experience.adobe.com/).
 
 1. Ouvrez Commerce Cloud Manager :
 
@@ -181,14 +181,14 @@ Les données d’exemple sont basées sur le [scénario commercial Carvelo](./us
    - Configuration de votre environnement
    - Terminer le processus d’ingestion des données
    - Créer des vues de catalogue et des politiques à l’aide des données d’exemple
-   - Vérifiez l’ingestion des données en vérifiant les données du service de catalogue sur la page [&#x200B; Synchronisation des données &#x200B;](./setup/data-sync.md)
+   - Vérifiez l’ingestion des données en vérifiant les données du service de catalogue sur la page [ Synchronisation des données ](./setup/data-sync.md)
 
 ## Étapes suivantes
 
 Une fois la configuration terminée :
 
 1. Configurez votre storefront :
-   - Configurer le storefront [&#128279;](./storefront.md)
+   - Configurer le storefront [](./storefront.md)
    - Connexion aux données de votre catalogue
 
 1. Explorez le cas d’utilisation de Carvelo :
@@ -217,6 +217,6 @@ Une fois la configuration terminée :
 ### Obtenir de l’aide
 
 - **Ressources pour les développeurs** : [documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/optimizer/)
-- **Ressources Storefront** : [documentation du storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
-- **Tutoriels** : [tutoriels Commerce Optimizer](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview)
+- **Ressources Storefront** : [documentation du storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Tutoriels** : [tutoriels Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Assistance** : [Ressources d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

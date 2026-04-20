@@ -1,9 +1,9 @@
 ---
 title: Règles de marchandisage
 description: '[!DNL Adobe Commerce Optimizer] règles de marchandisage associent une logique à des actions pour façonner les résultats de recherche, les listes de produits par défaut et les pages de catégories.'
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
-source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Vous pouvez définir une règle par défaut (**Toutes les listes de produits**) 
 
 ## Ordre de priorité avec plusieurs règles
 
-Les éléments suivants s’appliquent aux **règles de recherche** et à leur interaction pour une recherche donnée. **Les règles de catégorie** s’appliquent par catégorie ; consultez [Création et gestion des règles](add.md#category-rules) pour savoir comment elles s’intègrent aux règles de recherche et aux règles par défaut.
+Les éléments suivants s’appliquent aux **règles de recherche** et à leur interaction pour une recherche donnée. **Les règles de catégorie** s’appliquent par catégorie ; consultez [Création et gestion des règles](add.md) pour savoir comment elles s’intègrent aux règles de recherche et aux règles par défaut.
 
 Une seule règle de recherche est appliquée à la fois à un terme de recherche.
 Si plusieurs règles s’appliquent à une expression de recherche, toutes ces règles sont appliquées. S’il existe une collision entre deux règles (`rule 1` qui augmente le SKU1 mais `rule 2` masque le même SKU), la dernière règle appliquée (`rule 2`) est prioritaire.

@@ -3,7 +3,8 @@ title: Installer  [!DNL Data Connection]
 description: Découvrez comment installer, mettre à jour et désinstaller l’extension  [!DNL Data Connection]  partir d’Adobe Commerce.
 role: Admin, Developer
 feature: Install
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Installer [!DNL Data Connection]
 
-Avant d’installer l’extension, [consultez les conditions préalables](overview.md#prereqs).
+Avant d’installer l’extension, [consultez les conditions préalables](overview.md#prerequisites).
 
 ## Installation de l’extension
 
@@ -76,7 +77,7 @@ Finalisez l’installation en fonction du type de déploiement : Adobe Commerce 
 
 #### Sur les infrastructures cloud
 
-Dans Adobe Commerce sur les infrastructures cloud, activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=fr#enable_eventing).
+Dans Adobe Commerce sur les infrastructures cloud, activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
 
 ```bash
 stage:
@@ -136,7 +137,7 @@ Ou, pour les commerçants B2B :
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-Pour effectuer une mise à jour vers une version majeure telle que de 2.0.0 à 3.0.0, modifiez le fichier `.json` de [!DNL Composer] racine du projet comme suit :
+Pour effectuer une mise à jour vers une version majeure telle que de 2.0.0 à 3.0.0, modifiez le fichier [!DNL Composer] de `.json` racine du projet comme suit :
 
 1. Ouvrez le fichier de `composer.json` racine et recherchez des `magento/experience-platform-connector`.
 
@@ -164,4 +165,4 @@ Pour effectuer une mise à jour vers une version majeure telle que de 2.0.0 à 3
 
 ## Désinstaller l’extension [!DNL Data Connection] {#uninstall}
 
-Pour désinstaller l’extension [!DNL Data Connection], consultez la section [désinstallation des modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=fr).
+Pour désinstaller l’extension [!DNL Data Connection], consultez la section [désinstallation des modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

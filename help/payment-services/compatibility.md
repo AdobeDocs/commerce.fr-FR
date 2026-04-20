@@ -4,13 +4,13 @@ description: Découvrez si  [!DNL Payment Services]  est disponible dans votre p
 role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+exl-id: 4bef8429-5053-424d-806a-9e8b96295b1b
+source-git-commit: c532d72cb4aa7c920af790d345cce3ae6cbd2281
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%
 
 ---
-
 
 # Compatibilité avec [!DNL Payment Services]
 
@@ -22,11 +22,11 @@ Pour utiliser [!DNL Payment Services], vous devez d’abord connecter votre inst
 
 1. Si vous ne savez pas si votre instance est connectée, accédez à **Système** > Services > **Connecteur de services Commerce** et affichez les valeurs des clés API publiques et privées dans les sections Clés de sandbox et Clés de production, ainsi que les champs Projet et Espace de données dans la section Identifiant SaaS. Si ces valeurs sont présentes, votre instance est connectée.
 
-1. Si vous devez toujours connecter votre instance, consultez les instructions de la page [Connecteur de services Commerce](../landing/saas.md).
+1. Si vous devez toujours connecter votre instance, consultez les instructions de la page [Connecteur de services ](../landing/saas.md).
 
    >[!TIP]
    >
-   > Pour plus d’informations, consultez notre tutoriel vidéo [Adobe Commerce Services Connector](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) .
+   > Pour plus d’informations, consultez notre tutoriel vidéo [Adobe Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) .
 
 1. Si vous avez déjà connecté votre instance, accédez à la page [intégration](onboard.md) pour connaître les étapes suivantes.
 
@@ -44,7 +44,7 @@ Pour utiliser [!DNL Payment Services], vous devez d’abord connecter votre inst
 
 ### Quelle option de [!DNL Payment Services] vous convient le mieux ?
 
->[!VIDEO](https://video.tv.adobe.com/v/3447920?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
 
 Voir [Connect](connect.md) pour plus d’informations sur la configuration de votre extension [!DNL Payment Services].
 
@@ -62,7 +62,7 @@ Voir [Connect](connect.md) pour plus d’informations sur la configuration de vo
 
 ![check](assets/icon-check.png) **Disponible dans XX pays**
 
-[![&#x200B; en savoir plus &#x200B;](assets/learn-more-button.svg)](onboard.md)
+[![ en savoir plus ](assets/learn-more-button.svg)](onboard.md)
 
 >[!TAB Avancé (Entièrement Pris En Charge)]
 
@@ -92,17 +92,17 @@ Voir [Connect](connect.md) pour plus d’informations sur la configuration de vo
 
 ![check](assets/icon-check.png) **Disponible uniquement aux États-Unis (US), au Canada (CA), en Australie (AUS). France (FR), Royaume-Uni (UK)**
 
-[![&#x200B; en savoir plus &#x200B;](assets/learn-more-button.svg)](onboard.md)
+[![ en savoir plus ](assets/learn-more-button.svg)](onboard.md)
 
 >[!ENDTABS]
 
-Pour plus d’informations sur les versions et les notes de mise à jour[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=fr) consultez les pages Politique de cycle de vie et [[!DNL Payment Services] Notes de mise à jour](release-notes.md).
+Pour plus d’informations sur les versions et les notes de mise à jour[ consultez les pages ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)Politique de cycle de vie et [[!DNL Payment Services] Notes de mise à jour](release-notes.md).
 
 Pour obtenir les instructions complètes et démarrer le processus d’intégration, reportez-vous à la section [Prise en main d’ [!DNL Payment Services]](onboard.md).
 
 ### Cartes de crédit et devises acceptées
 
-[!DNL Payment Services] accepte les devises des pays [dans lesquels il est disponible](#availability). Voir [Configuration de la devise](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=fr) pour plus d’informations sur la configuration des taux de change.
+[!DNL Payment Services] accepte les devises des pays dans lesquels il est disponible. Voir [Configuration de la devise](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) pour plus d’informations sur la configuration des taux de change.
 
 Pour plus d&#39;informations sur les devises et les modes de paiement disponibles avec les produits et services PayPal, consultez les pages suivantes :
 

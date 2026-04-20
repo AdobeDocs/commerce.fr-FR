@@ -2,7 +2,7 @@
 title: Configuration d’AEM Assets pour Commerce Optimizer
 description: Découvrez comment configurer l’intégration d’AEM Assets pour  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 7f0970648663331fea2af19b981c4fd3b3aedcaa
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 0%
@@ -39,15 +39,15 @@ Avant de configurer l’intégration, vérifiez les points suivants :
 
 ## Intégration
 
-Pour intégrer l’intégration d’AEM Assets à [!DNL Commerce Optimizer], vous devez [créer un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Pour intégrer l’intégration d’AEM Assets à [!DNL Commerce Optimizer], vous devez [créer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 L’assistance Adobe utilise les informations figurant dans votre ticket pour enregistrer votre client auprès du service d’intégration d’Assets et configurer l’intégration.
 
 Incluez les informations suivantes dans votre ticket de support :
 
 * **[!DNL Adobe Commerce Optimizer]ID de client** (ID d’instance) trouvé dans l’URL [!DNL Commerce Optimizer] ou l’interface utilisateur de Commerce Cloud Manager.
-* **ID de programme AEM**.
-* **Identifiant d’environnement AEM**.
+* **ID de programme**.
+* **Identifiant d’environnement**.
 * **Règle de correspondance** : correspondance par SKU ou [correspondance externe (App Builder)](../synchronize/custom-match.md){target=_blank}.
 * **Couche** : nom de la couche de catalogue avec laquelle enregistrer le client. Spécifiez un nom personnalisé si nécessaire. Dans le cas contraire, le `AEM-Assets` par défaut est utilisé.
 * **Paramètres régionaux** : paramètre régional source du catalogue avec lequel enregistrer le client (par exemple, `en-US`).
@@ -85,7 +85,7 @@ Le processus d’installation et de configuration d’AEM Assets pour [!DNL Comm
 
 Assurez-vous que votre environnement AEM Assets est prêt :
 
-1. **Configuration d’AEM Assets** : configurez le profil de métadonnées Commerce. Voir [&#x200B; Configuration d’un profil de métadonnées](configure-aem.md#configure-a-metadata-profile).
+1. **Configuration d’AEM Assets** : configurez le profil de métadonnées Commerce. Voir [ Configuration d’un profil de métadonnées](configure-aem.md#step-2-optional-configure-a-metadata-profile).
 
 1. **Activation de Dynamic Media** : vérifiez que Dynamic Media avec les fonctionnalités OpenAPI est activé dans votre environnement AEM Assets.
 
@@ -107,13 +107,13 @@ Consultez [Configuration d’un profil de métadonnées](configure-aem.md#step-2
 
 Ajoutez des métadonnées Commerce à vos images de produit dans AEM Assets.
 
-Voir le [contenu du package AEM Commerce](configure-aem.md#aem-commerce-assets-commerce-package-contents) pour les définitions de champ et [Configurer un profil de métadonnées](configure-aem.md#step-2-optional-configure-a-metadata-profile) pour les étapes de configuration.
+Voir le [contenu du package ](configure-aem.md#aem-commerce-assets-commerce-package-contents) pour les définitions de champ et [Configurer un profil de métadonnées](configure-aem.md#step-2-optional-configure-a-metadata-profile) pour les étapes de configuration.
 
 La ressource doit avoir un statut **approuvé** pour que la synchronisation des données se déclenche. L’enregistrement des métadonnées seul ne déclenche pas l’événement.
 
 >[!CAUTION]
 >
-> Affectez la couche `AEM-Assets` à votre [vue de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-view). Si le calque n’est pas affecté, les données d’image du produit peuvent être écrasées de manière inattendue.
+> Affectez la couche `AEM-Assets` à votre [vue de catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Si le calque n’est pas affecté, les données d’image du produit peuvent être écrasées de manière inattendue.
 
 ## Synchronisation
 

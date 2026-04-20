@@ -1,7 +1,8 @@
 ---
 title: Indexation
 description: Découvrez comment indexer  [!DNL Live Search]  propriétés des attributs de produit.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 01cbbf56-2e12-4ad0-a56d-de0fe13df50f
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -20,7 +21,7 @@ Les propriétés d’attribut de produit (métadonnées) déterminent les élém
 
 La portée des métadonnées d’attribut est `website/store/store view`.
 
-L’API [!DNL Live Search] permet à un client de trier en fonction de n’importe quel attribut de produit dont la propriété [storefront](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search` définie sur `Yes` dans l’administration Adobe Commerce. Lorsqu’il est activé, `Search Weight` peut être défini pour l’attribut .
+L’API [!DNL Live Search] permet à un client de trier en fonction de n’importe quel attribut de produit dont la propriété [storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search` définie sur `Yes` dans l’administration Adobe Commerce. Lorsqu’il est activé, `Search Weight` peut être défini pour l’attribut .
 
 [!DNL Live Search] n’indexe pas les produits supprimés ou les produits définis sur `Not Visible Individually`.
 
@@ -32,7 +33,7 @@ L’API [!DNL Live Search] permet à un client de trier en fonction de n’impor
 
 Le client appelle le service de recherche du storefront pour récupérer les métadonnées d’index (filtrables, triables). Seuls les attributs de produit pouvant faire l’objet d’une recherche dont la propriété *Utiliser dans la navigation à plusieurs niveaux* définie sur `Filterable (with results)` et *Utiliser pour le tri dans la liste de produits* définie sur `Yes` peuvent être appelés par le service de recherche.
 
-Pour construire une requête dynamique, le service de recherche doit connaître les attributs pouvant faire l’objet d’une recherche et leur [poids](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] respecte les poids de recherche Adobe Commerce (1 à 10, où 10 est la priorité la plus élevée). La liste des données synchronisées et partagées avec le service de catalogue se trouve dans le schéma , qui est défini dans :
+Pour construire une requête dynamique, le service de recherche doit connaître les attributs pouvant faire l’objet d’une recherche et leur [poids](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] respecte les poids de recherche Adobe Commerce (1 à 10, où 10 est la priorité la plus élevée). La liste des données synchronisées et partagées avec le service de catalogue se trouve dans le schéma , qui est défini dans :
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -49,7 +50,7 @@ Lorsque [!DNL Live Search] est configuré et synchronisé lors de l’intégrati
 
 Les événements suivants déclenchent une synchronisation complète et une version d’index :
 
-* Intégration [synchronisation des données de catalogue](install.md#synchronize-catalog-data)
+* Intégration [synchronisation des données de catalogue](install.md#sync)
 * Modifications apportées aux métadonnées d’attribut
 
 Par exemple, la modification de la propriété `Use in Search` de l’attribut `color` de `No` à `Yes` modifie les métadonnées de l’attribut en `searchable=true` et déclenche une synchronisation complète ainsi qu’une réindexation. Les métadonnées d’attribut suivantes déclenchent une synchronisation complète et une réindexation en cas de modification :
@@ -61,7 +62,7 @@ Par exemple, la modification de la propriété `Use in Search` de l’attribut `
 
 ### Diffusion de mises à jour de produits en continu
 
-Une fois l’index initial créé lors de l’intégration [onboarding](install.md#synchronize-catalog-data), les mises à jour incrémentielles de produits suivantes sont continuellement synchronisées et réindexées :
+Une fois l’index initial créé lors de l’intégration [onboarding](install.md#sync), les mises à jour incrémentielles de produits suivantes sont continuellement synchronisées et réindexées :
 
 * Nouveaux produits ajoutés au catalogue
 * Modifications des valeurs d’attribut de produit
@@ -89,7 +90,7 @@ Le tableau suivant décrit diverses modifications et le temps d’attente approx
 
 ## Recherche de clients
 
-L’API [!DNL Live Search] permet à un client de trier en fonction de n’importe quel attribut de produit triable en définissant la [propriété storefront](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/product-attributes), *utilisée pour le tri dans les listes de produits* sur `Yes`. En fonction du thème, ce paramètre entraîne l’inclusion de l’attribut en tant qu’option dans le contrôle de pagination [Trier par](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/navigation/navigation) sur les pages de catalogue. Jusqu’à 200 attributs de produit peuvent être indexés par [!DNL Live Search], avec des [propriétés storefront](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/product-attributes) qui peuvent faire l’objet de recherches et de filtres.
+L’API [!DNL Live Search] permet à un client de trier en fonction de n’importe quel attribut de produit triable en définissant la [propriété storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes), *utilisée pour le tri dans les listes de produits* sur `Yes`. En fonction du thème, ce paramètre entraîne l’inclusion de l’attribut en tant qu’option dans le contrôle de pagination [Trier par](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) sur les pages de catalogue. Jusqu’à 200 attributs de produit peuvent être indexés par [!DNL Live Search], avec des [propriétés storefront](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) qui peuvent faire l’objet de recherches et de filtres.
 
 Les métadonnées d’index sont stockées dans le pipeline d’indexation et sont accessibles par le service de recherche.
 

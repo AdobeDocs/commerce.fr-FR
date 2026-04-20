@@ -3,7 +3,7 @@ title: Activer pour  [!DNL Payment Services]  production
 description: Terminez le processus d’intégration en activant pour  [!DNL Payment Services]  production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 0%
@@ -15,22 +15,22 @@ ht-degree: 0%
 Vous pouvez mettre le service en production et terminer le [processus d’intégration](onboard.md), conformément aux étapes de cette rubrique, après avoir :
 
 * [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} [Installer](install.md) l’extension Payment Services
-* [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} [&#x200B; Configurer et connecter](connect.md) votre instance
+* [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} [ Configurer et connecter](connect.md) votre instance
 * [Configurer](sandbox.md) et [tester](test-validate.md) votre sandbox
 
 ## Définir [!DNL Payment Services] comme mode de paiement
 
-Après avoir [configuré vos services Commerce](connect.md#configure-commerce-services) et activé [test de sandbox](sandbox.md#enable-sandbox-testing) ou [paiements en direct](#enable-live-payments), vous devez définir [!DNL Payment Services] comme mode de paiement.
+Après avoir [configuré vos services Commerce](connect.md#configure-commerce-services) et activé [test de sandbox](sandbox.md#sandbox-onboarding) ou [paiements en direct](#enable-live-payments), vous devez définir [!DNL Payment Services] comme mode de paiement.
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Cliquez sur **[!UICONTROL Enable Payment Services]**.
 
    Cette option est visible si vous n’avez pas encore configuré [!DNL Payment Services] comme mode de paiement pour un ou plusieurs de vos sites web.
 
-   Vous accédez à la zone des paramètres de la vue d’accueil avec les options appropriées développées (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), où vous pouvez activer les options [!DNL Payment Services] comme [mode de paiement](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
+   Vous accédez à la zone des paramètres de la vue d’accueil avec les options appropriées développées (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), où vous pouvez activer les options [!DNL Payment Services] comme [mode de paiement](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
-1. Dans _[!UICONTROL General Configuration]_, définissez **[!UICONTROL Enable]**&#x200B;sur `Yes`.
-1. Définissez **[!UICONTROL Payment Action]**, pour les _[!UICONTROL Credit Card Fields]_&#x200B;et les&#x200B;_[!UICONTROL PayPal payment buttons]_, sur l’une des options suivantes :
+1. Dans _[!UICONTROL General Configuration]_, définissez **[!UICONTROL Enable]**sur `Yes`.
+1. Définissez **[!UICONTROL Payment Action]**, pour les _[!UICONTROL Credit Card Fields]_et les_[!UICONTROL PayPal payment buttons]_, sur l’une des options suivantes :
 
    | Paramètre | Description |
    |---|---|
@@ -43,7 +43,7 @@ Après avoir [configuré vos services Commerce](connect.md#configure-commerce-se
 
 1. Cliquez sur **[!UICONTROL Save]**.
 1. Cliquez sur **[!UICONTROL Go to Payment Services]** pour être redirigé vers la page d’accueil [!DNL Payment Services].
-1. [Videz votre cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=fr).
+1. [Videz votre cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    L’effacement doit être effectué après chaque modification de la configuration.
 
@@ -62,7 +62,7 @@ Les services de paiement offrent des options de paiement [**avancées** (entièr
 
 1. Dans la boîte de dialogue modale _Sélectionnez votre pays_, sélectionnez le pays à partir duquel vous effectuez vos opérations.
 
-   Payment Services offre actuellement un support complet pour toutes les options de paiement dans [cinq pays](../payment-services/introduction.md#availability). Les services de paiement offrent des fonctionnalités de paiement express (un sous-ensemble d’options de paiement) pour tous les autres pays représentés sur la liste des pays.
+   Payment Services offre actuellement un support complet pour toutes les options de paiement dans [cinq pays](compatibility.md#compatibility.md#standard-vs-advanced-payment-services-experience). Les services de paiement offrent des fonctionnalités de paiement express (un sous-ensemble d’options de paiement) pour tous les autres pays représentés sur la liste des pays.
 
    Le pays que vous choisissez dans la liste détermine les options de paiement et le flux d’intégration, [avancé](#advanced-onboarding) (entièrement pris en charge) ou [standard](#standard-onboarding) (paiement express), qui vous sont disponibles.
 
@@ -72,7 +72,7 @@ Les services de paiement offrent des options de paiement [**avancées** (entièr
 
 ### Intégration avancée
 
-Ce flux d’intégration est disponible pour les commerçants dans [pays entièrement pris en charge](../payment-services/introduction.md#availability).
+Ce flux d’intégration est disponible pour les commerçants dans [pays entièrement pris en charge](compatibility.md#accepted-credit-cards-and-currencies).
 
 Une fois le pays sélectionné :
 
@@ -89,7 +89,7 @@ Une fois le pays sélectionné :
 
 ### Intégration standard
 
-Ce flux d’intégration standard est disponible pour les commerçants dans les pays disponibles pour lesquels [seule la prise en charge du passage en caisse express](../payment-services/introduction.md#availability) est fournie.
+Ce flux d’intégration standard est disponible pour les commerçants dans les pays disponibles pour lesquels [seule la prise en charge du passage en caisse express](compatibility.md#accepted-credit-cards-and-currencies) est fournie.
 
 Une fois le pays sélectionné :
 
@@ -105,7 +105,7 @@ Une fois le pays sélectionné :
 
 1. Dans la barre latérale d’administration, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
-   Le bouton _[!UICONTROL Live onboarding]_&#x200B;n’est plus visible et une zone de texte « [!UICONTROL Live payments pending] » s’affiche.
+   Le bouton _[!UICONTROL Live onboarding]_n’est plus visible et une zone de texte « [!UICONTROL Live payments pending] » s’affiche.
 
    Dans cette zone de texte, vous pouvez également être invité à confirmer votre adresse e-mail auprès de PayPal pour terminer l&#39;intégration.
 
@@ -131,7 +131,7 @@ Pour activer vos magasins, demandez les droits de paiement à Adobe (pour [Inté
 1. Remplissez le formulaire.
 1. Un membre de l&#39;équipe des ventes vous contactera.
 
-Vous pouvez également demander des droits de paiement à Adobe à l’adresse [business.adobe.com](https://business.adobe.com/fr/resources/payment-services.html).
+Vous pouvez également demander des droits de paiement à Adobe à l’adresse [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
@@ -155,9 +155,9 @@ Activer les paiements dynamiques :
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Sur l’Accueil, cliquez sur **[!UICONTROL Settings]** en haut à droite de la page. Voir [Accueil](payments-home.md) pour plus d’informations.
-1. Dans la section _[!UICONTROL General Configuration]_, définissez **[!UICONTROL Payment mode]**&#x200B;sur `Production`.
+1. Dans la section _[!UICONTROL General Configuration]_, définissez **[!UICONTROL Payment mode]**sur `Production`.
 1. Cliquez sur **[!UICONTROL Save]**.
-1. [Videz votre cache](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
+1. [Videz votre cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >
