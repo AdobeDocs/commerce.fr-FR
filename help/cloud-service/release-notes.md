@@ -122,7 +122,7 @@ Un nouveau `numeric` [type d’entrée d’attribut de produit](https://experien
 
 ### Configuration de requête reCAPTCHA pour plusieurs formulaires dans une seule requête GraphQL
 
-La requête [`recaptchaFormConfigs` peut renvoyer ](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) détails de configuration pour plusieurs types de formulaires dans une seule requête. <!-- ACCS-628 -->
+La requête [`recaptchaFormConfigs` peut renvoyer &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) détails de configuration pour plusieurs types de formulaires dans une seule requête. <!-- ACCS-628 -->
 
 ### Afficher toutes les commandes d&#39;entreprise avec une nouvelle autorisation B2B
 
