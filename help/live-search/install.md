@@ -30,7 +30,7 @@ Cet article est destiné au développeur ou à l’intégrateur système de votr
 
 >[!IMPORTANT]
 >
->Avant d’implémenter [!DNL Live Search], consultez la section [ Limites et limites ](boundaries-limits.md) pour vous assurer que [!DNL Live Search] correspond aux besoins de votre entreprise.
+>Avant d’implémenter [!DNL Live Search], consultez la section [&#x200B; Limites et limites &#x200B;](boundaries-limits.md) pour vous assurer que [!DNL Live Search] correspond aux besoins de votre entreprise.
 
 ## Mises à jour importantes
 
@@ -49,7 +49,7 @@ Cet article est destiné au développeur ou à l’intégrateur système de votr
 >
 > Live Search n’est pas un service conforme à la loi HIPAA. Si vous utilisez Adobe Commerce avec l’extension conforme à la loi HIPAA et le module complémentaire Healthcare, n’activez pas la recherche en direct dans les environnements susceptibles de traiter des informations de santé protégées (ISP).
 >
-> Pour plus d’informations, consultez les guides [ Préparation à la loi HIPAA sur Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) et [ Opérations ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations), qui répertorie Live Search parmi les services Commerce non conformes à la loi HIPAA.
+> Pour plus d’informations, consultez les guides [&#x200B; Préparation à la loi HIPAA sur Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) et [&#x200B; Opérations &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations), qui répertorie Live Search parmi les services Commerce non conformes à la loi HIPAA.
 
 ## Présentation des workflows
 
@@ -475,7 +475,7 @@ Les développeurs qui ont accès au code peuvent entièrement personnaliser son 
 
 ### Extension Data Export
 
-Une fois [!DNL Live Search] activé, l’extension d’exportation de données synchronise les données Commerce entre l’application Commerce et [!DNL Live Search]. Ce processus garantit que les données Commerce les plus récentes sont disponibles sur le storefront. Dans l’Administration, vous pouvez vérifier l’état de synchronisation à l’aide du tableau de bord Data Management. Vous pouvez gérer et résoudre les problèmes du processus d’exportation des données à l’aide de l’interface de ligne de commande et des journaux Commerce. Pour plus d’informations, consultez le [ Guide d’exportation de données ](../data-export/overview.md).
+Une fois [!DNL Live Search] activé, l’extension d’exportation de données synchronise les données Commerce entre l’application Commerce et [!DNL Live Search]. Ce processus garantit que les données Commerce les plus récentes sont disponibles sur le storefront. Dans l’Administration, vous pouvez vérifier l’état de synchronisation à l’aide du tableau de bord Data Management. Vous pouvez gérer et résoudre les problèmes du processus d’exportation des données à l’aide de l’interface de ligne de commande et des journaux Commerce. Pour plus d’informations, consultez le [&#x200B; Guide d’exportation de données &#x200B;](../data-export/overview.md).
 
 ### Inventory management
 
