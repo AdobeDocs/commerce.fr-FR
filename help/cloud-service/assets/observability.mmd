@@ -1,0 +1,48 @@
+---
+source-git-commit: 65c2720f8e21089e45948a2a5fe3828ca28f0dbd
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
+
+---
+%%{ init: { « organigramme »: { « courbe »: « linéaire » } } }%
+
+BT du graphique
+sous-graphe commerce [« Adobe Commerce »]
+event_mod[« Module d’événement \n »]
+webhook_mod[« Webhook \n Module »]
+admin_sdk[« Interface utilisateur d’administration \n SDK »]
+fin
+
+    subgraph appbuilder[« App Builder« ]
+    int_sk[« Intégration \n Starter Kit »]
+    checkout_sk[« Passage en caisse \n Starter Kit »]
+    generic_app[« Generic \n Application »]
+    end
+    
+    subgraph apimesh[« API Mesh »]
+    api_mesh_log[« API Mesh \n Logging »]
+    end
+    
+    subgraph storefront[« Storefront »]
+    cdn_rum[« CDN / Real User \n Monitoring »]
+    op_tel[« Opérationnel \n Telemetry »]
+    
+    
+    commerce —> obs_mod[« Observability \n Module »]
+    appbuilder —> aio_tel[« AIO lib \n Telemetry »]
+    
+    obs_mod —> OTel[« OpenTelemetry »]
+    aio_tel —> OTel
+    
+    OTel —> backends[« Third-party Observability \n (Par exemple : Grafana, New Relic, Splunk)« ]
+    api_mesh_log —> backends
+    cdn_rum —> backends
+    op_style —> fill:#cc0000,color:#fff,stroke:#cc0000
+    
+    style appbuilder fill:#cc0000,color:#fff,stroke:#cc0000
+    style apimesh fill:#cc0000,color:#fff,stroke:#cc0000
+    style storefront fill:#cc0000,color:
+    
+     
+     style backends fill:,color:,stroke:style OTel fill:#fff #cc0000 #f0f0f0 #333 #999 #fff #333 #333,color:,stroke:
