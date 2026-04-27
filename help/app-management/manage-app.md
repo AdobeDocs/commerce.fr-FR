@@ -2,10 +2,10 @@
 title: Gestion de l’application
 description: Associez, configurez et dissociez les applications App Builder à votre instance Commerce.
 feature: App Builder, Extensibility, Integration
-source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 2%
+source-wordcount: '618'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,23 @@ ht-degree: 2%
 
 Un App Manager associe une application App Builder à son instance Commerce. Les formulaires de configuration sont rendus dynamiquement en fonction du schéma de l’application. Aucun développement personnalisé de l’interface d’administration n’est donc nécessaire. App Manager configure les paramètres par le biais de formulaires que Commerce génère automatiquement.
 
-![&#x200B; Gestion des applications &#x200B;](assets/app-management-view.png){width="500" zoomable="yes"}
+![ Gestion des applications ](assets/app-management-view.png){width="500" zoomable="yes"}
+
+## Trouver une application dans l’Admin
+
+Sous **[!UICONTROL Apps]** > **[!UICONTROL App Management]**, chaque application s’affiche sous la forme d’une carte. La liste peut inclure chaque application associée à l’instance Adobe Commerce pour l’organisation Adobe IMS sélectionnée. Utilisez les commandes situées au-dessus des cartes pour limiter les résultats :
+
+| Contrôle | Description |
+| --- | --- |
+| **Filtrer par application...** | Effectuez une recherche par nom d’application. |
+| **Statut** | Limiter les cartes par état du cycle de vie. **Tous les statuts** affiche chaque application ; les autres valeurs sont **Associé**, **Installé**, **Partiellement installé** et **Non associé**. Le statut de chaque carte correspond à l’indicateur coloré de la liste. |
+| **Modèles d’extensibilité** | Limitez les cartes en fonction des fonctionnalités utilisées par l’application. **Tous les modèles d’extensibilité** affiche chaque application ; les autres valeurs sont alignées sur les badges de chaque carte, telles que **Configuration commerciale**, **SDK de l’interface utilisateur d’administration**, **Webhooks** et **Events**. |
+
+Le texte de recherche et les deux listes déroulantes s’appliquent ensemble (ET logique). Pour afficher à nouveau la liste complète, définissez **Statut** et **Modèles d’extensibilité** sur leurs options **Tous...**, puis effacez le champ de recherche.
+
+## Acquérir l’application
+
+**[!UICONTROL Acquire App]** ouvre un nouvel onglet du navigateur (ou une vue de navigateur distincte) dans [Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}, où vous pouvez découvrir les listes de la marketplace liées à Commerce et ajouter des applications à votre organisation Adobe IMS. Une fois l’application acquise, approuvée et déployée, elle apparaît en [!DNL App Management] pour [association et installation](#associate-an-app).
 
 ## Conditions préalables
 
@@ -30,7 +46,7 @@ Avant d’associer une application, vérifiez que vous disposez des éléments s
 
 Regardez cette vidéo pour savoir comment associer une application à une instance Commerce et configurer des paramètres.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478957?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## Associer une application
 
@@ -50,7 +66,7 @@ Pour lier votre application App Builder à une instance Commerce :
 
 1. Cliquez sur **[!UICONTROL Associate]**.
 
-   ![&#x200B; Détails de l’application &#x200B;](assets/app-details.png){width="500" zoomable="yes"}
+   ![ Détails de l’application ](assets/app-details.png){width="500" zoomable="yes"}
 
 >[!WARNING]
 >

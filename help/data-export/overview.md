@@ -3,9 +3,9 @@ title: '[!DNL SaaS Data Export Guide]'
 description: Découvrez comment utiliser l [!DNL data export] extension pour les services SaaS Adobe Commerce qui synchronise les données entre Adobe Commerce et les services Commerce connectés.
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
-source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ L&#39;export de données en SaaS est livré sous forme d&#39;extension PHP. Il p
 
 - **Synchronisation manuelle depuis l’Admin ou la ligne de commande**
 
-   - Le [tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) de l’administration Commerce fournit une vue graphique de l’état de synchronisation qui indique les données de produit synchronisées avec succès avec les services Commerce. Vous pouvez utiliser le tableau de bord pour effectuer une resynchronisation complète (_synchronisation complète_) de tous les flux. Cependant, Adobe recommande de n’effectuer une synchronisation complète que la première fois que vous connectez Adobe Commerce à un service Commerce. Voir [Processus de synchronisation](data-synchronization.md).
+   - Le [tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) de l’administration Commerce fournit une vue graphique de l’état de synchronisation qui indique les données de produit synchronisées avec succès avec les services Commerce. Vous pouvez utiliser le tableau de bord pour effectuer une resynchronisation complète (_synchronisation complète_) de tous les flux. Cependant, Adobe recommande de n’effectuer une synchronisation complète que la première fois que vous connectez Adobe Commerce à un service Commerce. Voir [Processus de synchronisation](data-synchronization.md).
 
-     {{aco-data-sync-verification}}
+  {{aco-data-sync-verification}}
 
-   - La page [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fournit des informations en temps réel sur l’intégrité et les performances des flux d’exportation de données qui transfèrent les données de produit et de catégorie de Commerce vers des services externes tels que les recommandations de produits, la recherche en direct et le service de catalogue, ou Adobe Commerce Optimizer.
+   - La page [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fournit des informations en temps réel sur l’intégrité et les performances des flux d’exportation de données qui transfèrent les données de produit et de catégorie de Commerce vers des services externes tels que les recommandations de produits, la recherche en direct et le service de catalogue, ou Adobe Commerce Optimizer.
 
-   - L’outil de ligne de commande [Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fournit des commandes pour synchroniser des flux spécifiques et inclut des options supplémentaires pour personnaliser le traitement des flux.
+   - L’outil de ligne de commande [Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fournit des commandes pour synchroniser des flux spécifiques et inclut des options supplémentaires pour personnaliser le traitement des flux.
 
 - **Synchronisation automatisée avec les tâches cron**
 
@@ -41,7 +41,7 @@ L&#39;export de données en SaaS est livré sous forme d&#39;extension PHP. Il p
 
 - **Exporter la planification et les performances**
 
-   - Les développeurs et les intégrateurs système peuvent estimer le temps nécessaire à l&#39;export des données SaaS pour synchroniser les données entre Adobe Commerce et les services connectés. Cette estimation peut vous aider à planifier le traitement de l’exportation des données afin d’éviter toute perturbation du site. Voir [&#x200B; Estimer le volume de données et la durée de transmission](estimate-data-volume-sync-time.md).
+   - Les développeurs et les intégrateurs système peuvent estimer le temps nécessaire à l&#39;export des données SaaS pour synchroniser les données entre Adobe Commerce et les services connectés. Cette estimation peut vous aider à planifier le traitement de l’exportation des données afin d’éviter toute perturbation du site. Voir [ Estimer le volume de données et la durée de transmission](estimate-data-volume-sync-time.md).
 
    - Dans les cas où la synchronisation doit se produire plus rapidement, l’exportation des données SaaS fournit des options de personnalisation pour améliorer les performances de traitement des exportations. Voir [Amélioration des performances d’exportation des données](customize-export-processing.md).
 
