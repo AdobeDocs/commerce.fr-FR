@@ -3,11 +3,11 @@ title: Cas d’utilisation complet de Storefront et de Catalog Administrator
 description: Découvrez comment utiliser  [!DNL Adobe Commerce Optimizer]  gérer votre catalogue à l’aide de vues et de politiques de catalogue et comment configurer votre storefront en fonction de la configuration de votre catalogue.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2205'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Dans ce cas d’utilisation, vous travaillez avec les éléments suivants :
 
 >[!NOTE]
 >
-> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=fr) dans la documentation du storefront Adobe Commerce.
+> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) dans la documentation du storefront Adobe Commerce.
 
 ### ‌Principaux points à retenir
 
@@ -108,7 +108,7 @@ En fin de compte, Carvelo a deux objectifs principaux :
 
 >[!ENDSHADEBOX]
 
-## &#x200B;1. Accéder à l’instance de [!DNL Adobe Commerce Optimizer]
+## &#x200B;1. Accès à l’instance de [!DNL Adobe Commerce Optimizer]
 
 Accédez à l’URL de l’application Commerce Optimizer préconfigurée avec les données d’exemple. Vous pouvez rechercher l’URL dans le gestionnaire Commerce Cloud à partir des détails de l’instance pour votre projet Commerce Optimizer ou l’obtenir auprès de votre administrateur système. (Voir [Accès à une instance](../get-started.md#access-the-adobe-commerce-optimizer-application).)
 
@@ -146,7 +146,7 @@ Kingsbluff a les politiques suivantes :
 
 Dans la section suivante, vous allez créer une vue de catalogue et des politiques pour le concessionnaire Celport.
 
-## &#x200B;2. Créer une vue de politique et de catalogue
+## &#x200B;2. Création d’une vue de politique et de catalogue
 
 Le directeur du commerce de Carvelo doit mettre en place une nouvelle vitrine pour un concessionnaire appelé *Celport* qui appartient à la société *East Coast Inc*. Celport commercialisera des freins et des suspensions pour les marques Bolt et Cruz.
 
@@ -294,12 +294,14 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
    }
    ```
 
+   +++
+
    Notez que l’en-tête de la vue Catalogue comprend les valeurs suivantes :
 
-   - `commerce-endpoint` : `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
+   - `commerce-endpoint`: `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
    - `ac-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
-   - `ac-price-book-id` : `"west_coast_inc"`
-   - `ac-source-locale` : `"en-US"`
+   - `ac-price-book-id`: `"west_coast_inc"`
+   - `ac-source-locale`: `"en-US"`
 
 1. Dans la valeur `commerce-endpoint` , remplacez l’ID du client dans l’URL par l’URL de votre instance [!DNL Adobe Commerce Optimizer].
 
@@ -447,4 +449,4 @@ Pour continuer à en savoir plus sur [!DNL Adobe Commerce Optimizer] :
 - En savoir plus sur les [configurations de politique avancées](../setup/policies.md)
 - Configurer [vues de catalogue supplémentaires](../setup/catalog-view.md) pour d&#39;autres concessionnaires
 - Consultez la [documentation de l’API](https://developer.adobe.com/commerce/services/optimizer/) pour la gestion programmatique du catalogue
-- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=fr)
+- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

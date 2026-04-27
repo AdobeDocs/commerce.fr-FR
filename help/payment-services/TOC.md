@@ -5,9 +5,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '110'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 - [Notes de mise à jour](release-notes.md)
 - [!DNL Payment Services] intégré {#get-started}
    - [Présentation de l’intégration](onboard.md)
-   - [Installation de l’extension  [!DNL Payment Services] &#x200B;](install.md)
+   - [Installation de l’extension  [!DNL Payment Services] ](install.md)
    - [Connexion de votre instance](connect.md)
    - [Configurer le sandbox de test](sandbox.md)
    - [Activer pour la production](production.md)
@@ -39,14 +39,14 @@ ht-degree: 2%
       - [Remboursements](refunds.md)
       - [Vides](voids.md)
    - [Création d’une commande dans l’Admin](create-order.md)
-   - [Suivi de vos expéditions dans  [!DNL Payment Services]](track-shipment.md)
-- Rapports financiers {#financial-reports}
+   - [Tracking your shipments in [!DNL Payment Services]](track-shipment.md)
+- Financial reporting {#financial-reports}
    - [Création de rapports](reporting.md)
-   - [Etat du statut de paiement de la commande](order-payment-status.md)
-   - [Rapport Paiements](payouts.md)
-   - [Données disponibles](data.md)
-   - [Traitement de niveau 2 et de niveau 3](levels-card-payment-transactions.md)
-- Sécurité et conformité {#security-compliance}
-   - [Sécurité](security.md)
-   - [Protection contre les fraudes signalées](fraud-protection.md)
-- [Retour à la page de départ Services Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=fr)
+   - [Order payment status report](order-payment-status.md)
+   - [Payouts report](payouts.md)
+   - [Available data](data.md)
+   - [Level 2 and level 3 processing](levels-card-payment-transactions.md)
+- Security and compliance {#security-compliance}
+   - [Security](security.md)
+   - [Signifyd fraud protection](fraud-protection.md)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

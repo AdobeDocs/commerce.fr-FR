@@ -9,9 +9,9 @@ level: Intermediate
 type: Tutorial
 hide: true
 hidefromtoc: true
-source-git-commit: 3fc8982613df7b1155cdfb08ac4b56de6d1ce4f6
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3398'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,8 @@ Si l’une des commandes précédentes ne renvoie pas les résultats attendus, r
 
 Vérifiez également les éléments suivants :
 
-- Vous disposez d’une instance [!DNL Adobe Commerce as a Cloud Service] avec des données de produit. Voir [Instances du service Commerce Cloud](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/overview){target="_blank"}.
-- Un projet de storefront est connecté à votre instance [!DNL Commerce]. Si vous n’en avez pas, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr){target="_blank"}.
+- Vous disposez d’une instance [!DNL Adobe Commerce as a Cloud Service] avec des données de produit. Voir [Instances du service Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Un projet de storefront est connecté à votre instance [!DNL Commerce]. Si vous n’en avez pas, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
 - L’interface de ligne de commande `aem` est installée :
 
   ```bash
@@ -443,7 +443,7 @@ Cette commande s’abonne au webhook d’expédition avec les paramètres suivan
 | Méthode Webhook | `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` |
 | Type de Webhook | `after` |
 | Obligatoire | Facultatif (permet de revenir à l’expédition par défaut) |
-| Délai d’expiration | 5 000 ms |
+| Timeout | 5 000 ms |
 
 {style="table-layout:auto"}
 

@@ -2,11 +2,11 @@
 title: Limites et limites
 description: Comprenez  [!DNL Adobe Commerce Optimizer]  limites et les limites pour planifier la capacité et éviter les problèmes de performances.
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 42a877f5bad8bda93ec39b8ad633f6ad0ba6b4a5
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1378'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ Votre utilisation doit respecter ces limites. Leur dépassement peut entraîner 
 
 ## Demander une capacité supplémentaire
 
-Les limites de licence peuvent être augmentées en achetant les packages de licence décrits dans la section [&#x200B; Limites de licence et limites système &#x200B;](#license-limits-and-system-boundaries) ou en négociant des licences personnalisées pour des cas d’utilisation uniques. Contactez votre représentant de compte Adobe pour discuter de vos besoins.
+Les limites de licence peuvent être augmentées en achetant les packages de licence décrits dans la section [ Limites de licence et limites système ](#license-limits-and-system-boundaries) ou en négociant des licences personnalisées pour des cas d’utilisation uniques. Contactez votre représentant de compte Adobe pour discuter de vos besoins.
 
-Pour toute question sur les limites du système, contactez l’[assistance Adobe](https://experienceleague.adobe.com/home?lang=fr#support).
+Pour toute question sur les limites du système, contactez l’[assistance Adobe](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Prévention des problèmes de performances
 
@@ -136,31 +136,32 @@ L’allocation de base pour les fonctionnalités de storefront du catalogue est 
 | Attributs pouvant faire l’objet d’une recherche | Nombre de caractéristiques de produit configurables pour être utilisées avec le service de recherche de catalogue de produits | 200 | Non |
 | Attributs triables | Nombre de caractéristiques de produit pouvant être configurées pour déterminer l’ordre des valeurs des résultats de recherche | 50 | Non |
 | Profondeur de pagination de recherche | Nombre maximal de produits accessibles par pagination (par exemple, page 100 × 100 produits/page) | 10K | Non |
-| Facettes | Nombre d’attributs de produit filtrables (tels que la marque, la couleur, la taille et le prix) qui peuvent être configurés pour aider les acheteurs à affiner les résultats de recherche et à parcourir les catégories | 100<p>Doit être un attribut filtrable</p> | Non |
-| Options par facette | Nombre de valeurs d’attribut de produit filtrables (telles que « Rouge », « Bleu » pour la couleur, « Petit », « Medium » pour la taille) que les acheteurs peuvent sélectionner dans une liste | 100 | Oui<p>Peut augmenter via une demande d’assistance</p> |
+| Facettes | The number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | Non |
+| Options per facet | The number of filterable product attribute values (like &quot;Red,&quot; &quot;Blue&quot; for Color; &quot;Small,&quot; &quot;Medium&quot; for Size) that shoppers can select from a list | 100 | Oui<p>Can increase via support request</p> |
 
 {style="table-layout:auto"}
 
 ### Recommendations
 
-Les fonctionnalités suivantes sont disponibles pour les recommandations de produits. Certaines fonctionnalités disponibles dans d’autres produits Adobe Commerce ne sont pas prises en charge dans [!DNL Adobe Commerce Optimizer].
+The following capabilities are available for product recommendations. Some features available in other Adobe Commerce products are not supported in [!DNL Adobe Commerce Optimizer].
 
 | **Fonction** | **Description** | **Affectation de base** | **Extensible ?** |
 | --- | --- | --- | --- |
-| Unités de recommandation actives | Nombre de composants de recommandations en direct sur votre storefront (par exemple, « Les clients ont également consulté » ou « Vous pourriez également aimer ») | 50 | Non |
-| Inclusions/exclusions de catégories ou d’attributs | Filtrer les produits selon un ensemble spécifique éligible aux recommandations | Non pris en charge | |
+| Active recommendation units | Number of live recommendation components on your storefront (like &quot;Customers also viewed&quot; or &quot;You might also like&quot;) | 50 | Non |
+| Category or attribute inclusions/exclusions | Filter products to a specific set that qualifies for recommendations | Not supported | |
 
 {style="table-layout:auto"}
 
-### Extensibilité
+### Extensibility
 
 | **Fonction** | **Description** | **Affectation de base** | **Extensible ?** | **Notes** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacité à créer des extensions et des intégrations natives au cloud | Basé sur le niveau GMV<p>Allocation minimale : 1 pack/an</p> | Oui<p>Ajouter des packs supplémentaires</p> | Pour les limites définies par pack, voir :<ul><li>[Description du produit App Builder](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-developer-app-builder.html) pour les limites définies par pack.</li><li>[Paramètres système et limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) dans les *Guides d’exécution d’App Builder*.</li><li>[Exigences de stockage App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacité à créer des extensions et des intégrations natives au cloud | Basé sur le niveau GMV<p>Allocation minimale : 1 pack/an</p> | Oui<p>Ajouter des packs supplémentaires</p> | Pour les limites définies par pack, voir :<ul><li>[Description du produit App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) pour les limites définies par pack.</li><li>[Paramètres système et limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) dans les *Guides d’exécution d’App Builder*.</li><li>[Exigences de stockage App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
-<!--## How to size your solution
+<!--
+## How to size your solution
 
 Ask your Adobe representative for a list of available packages to determine which most closely matches your project
 
@@ -192,4 +193,5 @@ This approach ensures your solution is accurately sized for your business needs.
 1. **GenAI or Media Needs**
 
    * Need: +10M dynamic media ops/month
-   * Add-On: 10 × dynamic media packs (1M each) -->
+   * Add-On: 10 × dynamic media packs (1M each) 
+-->

@@ -9,9 +9,9 @@ level: Intermediate
 type: Tutorial
 hide: true
 hidefromtoc: true
-source-git-commit: 9c76bae29c05909406a40ca03a2b3d242db05f3f
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2533'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,8 @@ Si l’une des commandes précédentes ne renvoie pas les résultats attendus, c
 
 Vérifiez également les éléments suivants :
 
-- Vous disposez d’une instance [!DNL Adobe Commerce as a Cloud Service] avec des données de produit. Voir [Instances du service Commerce Cloud](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/overview){target="_blank"}.
-- Un projet de storefront est connecté à votre instance [!DNL Commerce]. Si vous n’en avez pas, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr){target="_blank"}.
+- Vous disposez d’une instance [!DNL Adobe Commerce as a Cloud Service] avec des données de produit. Voir [Instances du service Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Un projet de storefront est connecté à votre instance [!DNL Commerce]. Si vous n’en avez pas, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
 - L’interface de ligne de commande `aem` est installée :
 
   ```bash
@@ -449,7 +449,7 @@ Suivez les conseils suivants si vous rencontrez des problèmes au cours du tutor
 | Symptôme | Cause | Correctif |
 |---------|-------|-----|
 | Le bloc n’est pas rendu sur la page de test. | L’élément de bloc est imbriqué dans un `div` supplémentaire, de sorte qu’après `decorateSections` le sélecteur de bloc (`div.section > div > div`) ne correspond pas. | Faire du bloc un enfant direct de la section. Structure : `section > div.product-review` (ou classe de bloc équivalente). Évitez les `section > div > div.product-review`. |
-| Jetons CSS non valides | Le bloc utilise des jetons de conception qui n’existent pas dans `styles/styles.css` (par exemple, `--color-error-100`, `--type-detail-font-size`). | Demandez à l’agent de valider les jetons par rapport au `styles/styles.css` du projet et de remplacer les jetons non valides par des jetons existants (par exemple, `--color-alert-*`, `--type-details-caption-*`). |
+| Invalid CSS tokens | The block uses design tokens that do not exist in `styles/styles.css` (for example, `--color-error-100`, `--type-detail-font-size`). | Ask the agent to validate tokens against the project&#39;s `styles/styles.css` and replace invalid tokens with existing ones (for example, `--color-alert-*`, `--type-details-caption-*`). |
 
 {style="table-layout:auto"}
 
@@ -457,19 +457,19 @@ Suivez les conseils suivants si vous rencontrez des problèmes au cours du tutor
 
 Voici un résumé des sujets abordés dans ce tutoriel :
 
-- **Développement d’extensions :** description de la fonctionnalité de création et d’affichage de contenu de révision de produit et de questions/réponses sur un storefront avec un serveur principal Adobe Commerce as a Cloud Service à un agent d’IA et de la manière d’implémenter cette fonctionnalité en générant une API REST fonctionnelle avec quatre points d’entrée à l’aide de [!DNL App Builder].
-- **Persistance :** utilisation de `aio-lib-state` avec un format de clé correct et des valeurs sérialisées JSON.
-- **Données simulées et pré-remplissage :** création d’un fichier de données simulées et utilisation de curl pour pré-remplir l’API pour les tests d’interface de ligne de commande et de storefront.
+- **Extension development:** Describing functionality to create and view product review and Q&amp;A content  on a storefront with an Adobe Commerce as a Cloud Service backend to an AI agent and how to implement this functionality by generating a working REST API with four endpoints using [!DNL App Builder].
+- **Persistence:** Using `aio-lib-state` with correct key format and JSON-serialized values.
+- **Mock data and pre-population:** Creating a mock data file and using curl to pre-populate the API for CLI and storefront testing.
 - **Contrats de service :** création de contrats d’API qui relient les extensions principales et les implémentations de storefront.
 - **Intégration progressive du storefront :** en fonction des exigences, de l’architecture et de la mise en œuvre à l’aide de compétences assistées par l’IA.
-- **Bloc PDP :** ajout d’un bloc de révision du produit au PDP qui affiche les révisions et les questions/réponses avec les formulaires d’envoi et la pagination.
+- **PDP block:** Adding a product review block to the PDP that displays reviews and Q&amp;A with submission forms and pagination.
 
 ## Étapes suivantes
 
-Suivez les suggestions suivantes pour étendre votre service d’examen des produits :
+Use the following suggestions to extend your product reviews service:
 
-- **Ajouter une modération :** implémentez un workflow de modération pour la révision et le contenu des questions/réponses avant qu’il ne soit publié.
-- **Ajouter une authentification :** exiger que les acheteurs soient connectés pour envoyer des commentaires ou du contenu de questions/réponses et associer des envois à des comptes clients.
-- **Ajouter une page de gestion des abonnements :** créez une page storefront où les acheteurs peuvent afficher et modifier leurs commentaires.
+- **Add moderation:** Implement a moderation workflow for review and Q&amp;A content before it is published.
+- **Add authentication:** Require shoppers to be logged in to submit reviews or Q&amp;A content, and associate submissions with customer accounts.
+- **Add a subscription management page:** Create a storefront page where shoppers can view and edit their reviews.
 - **Prise en charge des déploiements à plusieurs clients :** permet d’étendre la gestion des états afin de prendre en charge plusieurs clients Commerce dans une seule application App Builder.
-- **Ajouter une limite de débit :** implémentez des limites de débit sur l’API pour empêcher les abus.
+- **Add rate limiting:** Implement rate limits on the API to prevent abuse.

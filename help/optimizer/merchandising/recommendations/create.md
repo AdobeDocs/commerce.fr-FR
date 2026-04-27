@@ -1,11 +1,11 @@
 ---
 title: Création et gestion de Recommendations
 description: Découvrez comment créer et gérer des recommandations.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ _Unité de recommandation_
 
 Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [collecter des données](../../manage-results/recommendation-performance.md) pour mesurer les impressions, les vues, les clics, etc. Le tableau Recommandations affiche les mesures de chaque unité de recommandation afin de vous aider à prendre des décisions commerciales éclairées.
 
-1. Dans la barre latérale _[!DNL Adobe Commerce Optimizer]_, accédez à_ Marchandisage _>**Recommandations**&#x200B;pour afficher l’espace de travail_ Recommandations _.
+1. Dans la barre latérale _[!DNL Adobe Commerce Optimizer]_, accédez à_ Marchandisage _>**Recommandations**pour afficher l’espace de travail_ Recommandations _.
 
 1. Dans le champ **Vue du catalogue**, sélectionnez la vue du catalogue dans laquelle vous souhaitez que la recommandation soit disponible. En savoir plus sur l’[utilisation des vues de catalogue pour les recommandations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
    >[!IMPORTANT]
    >
-   >Cette fonctionnalité est actuellement en version [bêta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les unités de recommandation existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
+   >Cette fonctionnalité est actuellement en version [bêta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les unités de recommandation existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
 
 1. Cliquez sur **Créer une recommandation**.
 
@@ -71,7 +71,7 @@ Pour tester une recommandation lorsque vous travaillez dans un environnement hor
 
 | Champ | Description |
 |---|---|
-| Vue Catalogue |
+| Vue Catalogue |  |
 | Nom | Nom du produit. |
 | SKU | Unité de gestion des stocks affectée au produit |
 | Prix | Prix du produit. |
@@ -97,7 +97,7 @@ Après avoir créé une recommandation, vous devez récupérer son identifiant p
 
 1. Dans la section **ID de recommandation**, copiez l’ID.
 
-1. Utilisez cet identifiant pour configurer le [menu déroulant de recommandations](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=fr) sur votre storefront Edge Delivery Services.
+1. Utilisez cet identifiant pour configurer le [menu déroulant de recommandations](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) sur votre storefront Edge Delivery Services.
 
 ## Gestion des recommandations existantes
 
