@@ -29,13 +29,13 @@ L&#39;export de données en SaaS est livré sous forme d&#39;extension PHP. Il p
 
 - **Synchronisation manuelle depuis l’Admin ou la ligne de commande**
 
-   - Le [tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) de l’administration Commerce fournit une vue graphique de l’état de synchronisation qui indique les données de produit synchronisées avec succès avec les services Commerce. Vous pouvez utiliser le tableau de bord pour effectuer une resynchronisation complète (_synchronisation complète_) de tous les flux. Cependant, Adobe recommande de n’effectuer une synchronisation complète que la première fois que vous connectez Adobe Commerce à un service Commerce. Voir [Processus de synchronisation](data-synchronization.md).
+   - Le [tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) de l’administration Commerce fournit une vue graphique de l’état de synchronisation qui indique les données de produit synchronisées avec succès avec les services Commerce. Vous pouvez utiliser le tableau de bord pour effectuer une resynchronisation complète (_synchronisation complète_) de tous les flux. Cependant, Adobe recommande de n’effectuer une synchronisation complète que la première fois que vous connectez Adobe Commerce à un service Commerce. Voir [Processus de synchronisation](data-synchronization.md).
 
      {{aco-data-sync-verification}}
 
-   - La page [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fournit des informations en temps réel sur l’intégrité et les performances des flux d’exportation de données qui transfèrent les données de produit et de catégorie de Commerce vers des services externes tels que les recommandations de produits, la recherche en direct et le service de catalogue, ou Adobe Commerce Optimizer.
+   - La page [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fournit des informations en temps réel sur l’intégrité et les performances des flux d’exportation de données qui transfèrent les données de produit et de catégorie de Commerce vers des services externes tels que les recommandations de produits, la recherche en direct et le service de catalogue, ou Adobe Commerce Optimizer.
 
-   - L’outil de ligne de commande [Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fournit des commandes pour synchroniser des flux spécifiques et inclut des options supplémentaires pour personnaliser le traitement des flux.
+   - L’outil de ligne de commande [Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fournit des commandes pour synchroniser des flux spécifiques et inclut des options supplémentaires pour personnaliser le traitement des flux.
 
 - **Synchronisation automatisée avec les tâches cron**
 
