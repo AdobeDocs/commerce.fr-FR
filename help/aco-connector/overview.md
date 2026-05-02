@@ -139,7 +139,7 @@ Une fois que les données Commerce sont disponibles dans Commerce Optimizer, uti
 
    >[!NOTE]
    >
-   >Pour obtenir un exemple d’intégration tierce, consultez Connecteur Salesforce Commerce pour Commerce Optimizer [](../optimizer/developer/salesforce-connector.md).
+   >Pour obtenir un exemple d’intégration tierce, consultez Connecteur Salesforce Commerce pour Commerce Optimizer [&#128279;](../optimizer/developer/salesforce-connector.md).
 
 1. **Conserver le passage en caisse** sur votre plateforme existante :
 
