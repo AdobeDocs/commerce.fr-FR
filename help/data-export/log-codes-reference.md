@@ -1,5 +1,5 @@
 ---
-title: Référence Des Codes Du Journal [!Data Export]
+title: Référence Des Codes Du Journal [ !Data Export]
 description: Liste de référence pour les codes de journal d’exportation des données, les messages et les niveaux de gravité afin de résoudre les problèmes de synchronisation et de décider quand une resynchronisation partielle ou complète est requise.
 feature: Services
 exl-id: c1341863-1ec4-4d67-8ff2-821ef0a61f33
