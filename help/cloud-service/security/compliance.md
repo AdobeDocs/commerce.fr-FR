@@ -2,7 +2,7 @@
 title: Conformité et certifications
 description: Découvrez la conformité et les certifications pour Adobe Commerce as a Cloud Service.
 role: Admin, Architect, Leader
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 source-git-commit: 89c4d174d982d55c111b9fa4e6b87e70cb566ca1
 workflow-type: tm+mt
 source-wordcount: '242'
@@ -31,4 +31,4 @@ Pour obtenir la liste complète des certifications Adobe et de la documentation 
 
 ## Certification pour les praticiens
 
-Adobe propose également des certifications basées sur les rôles pour les développeurs, les architectes et les professionnels qui travaillent avec [!DNL Adobe Commerce]. Ces certifications valident l’expertise en implémentation sécurisée et en gouvernance de plateforme. Pour en savoir plus, consultez le [Portail de certification &#x200B;](https://experienceleague.adobe.com/en/docs/certification/program/technical-certifications/ac/ac-overview){target="_blank"}.
+Adobe propose également des certifications basées sur les rôles pour les développeurs, les architectes et les professionnels qui travaillent avec [!DNL Adobe Commerce]. Ces certifications valident l’expertise en implémentation sécurisée et en gouvernance de plateforme. Pour en savoir plus, consultez le [Portail de certification &#x200B;](https://experienceleague.adobe.com/fr/docs/certification/program/technical-certifications/ac/ac-overview){target="_blank"}.
