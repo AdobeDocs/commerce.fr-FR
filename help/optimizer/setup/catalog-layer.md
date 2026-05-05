@@ -3,10 +3,10 @@ title: Couche Catalogue
 description: Découvrez comment les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine, afin que vous puissiez les personnaliser en toute sécurité et annuler les modifications à tout moment.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine. Les calques appliquent des modifications à des attributs de produit spécifiques, tels que le nom, la description, les images, les liens et les métadonnées, en créant un calque au-dessus de votre catalogue de base. Vos données de produit d’origine restent intactes, ce qui vous permet de personnaliser les produits en toute sécurité et d’annuler les modifications à tout moment.
 
-![&#x200B; Calques de catalogue &#x200B;](../assets/catalog-layers.png)
+![ Calques de catalogue ](../assets/catalog-layers.png)
 
 ## Fonctionnement des calques de catalogue
 
@@ -30,7 +30,7 @@ Lorsqu’un client consulte votre storefront, le système combine vos données d
    * **Remplacer les champs** : les champs de texte tels que le nom, la description et les méta-titres sont remplacés par les valeurs définies dans le calque, le calque de priorité supérieure étant prioritaire.
    * **Fusionner les champs** : les champs de tableau tels que les images, les liens et les attributs sont combinés à partir de plusieurs calques, fournissant ainsi une réponse unifiée.
 
-1. **Résolution de priorité** : le champ Ordre détermine le calque prioritaire. Lorsque plusieurs calques modifient le même champ, le calque portant le numéro d’ordre le plus bas a une priorité plus élevée (par exemple, l’ordre 1 est le plus élevé).
+1. **Résolution de priorité** : le champ Ordre détermine le calque prioritaire. Lorsque plusieurs calques modifient le même champ, le calque portant le numéro d’ordre le plus élevé a la priorité la plus élevée (par exemple, l’ordre 10 est le plus élevé).
 
 ## Cas d’utilisation de la couche Catalogue
 
@@ -114,7 +114,7 @@ L’interface utilisateur de la vue Catalogue vous permet de créer et de gérer
 
 >[!NOTE]
 >
->Si aucune couche Sites Optimizer n’existe dans votre vue de catalogue, la fonction de correction automatique de Sites Optimizer en crée automatiquement une et lui affecte l’ordre 1 (priorité la plus élevée). Si vous supprimez ce calque, il sera recréé lors de la prochaine exécution de la fonction de correction automatique dans Sites Optimizer et déplacera les calques existants vers des numéros d’ordre inférieurs. Si la couche Sites Optimizer existe déjà avec un autre numéro de commande, la fonction de correction automatique ne modifie pas sa priorité.
+>S’il n’existe pas de calque Sites Optimizer dans votre vue de catalogue, la fonction de correction automatique de Sites Optimizer en crée automatiquement un et lui affecte la priorité la plus élevée (numéro le plus élevé). Si vous supprimez ce calque, il sera recréé lors de la prochaine exécution de la fonction de correction automatique dans Sites Optimizer et déplacera les calques existants vers des numéros d’ordre inférieurs. Si la couche Sites Optimizer existe déjà avec un autre numéro de commande, la fonction de correction automatique ne modifie pas sa priorité.
 
 >[!TIP]
 >
@@ -189,8 +189,8 @@ L’ordre dans lequel les calques sont appliqués détermine les valeurs qui app
 **Présentation de l’ordre de priorité :**
 
 * Chaque calque se voit attribuer un numéro d’ordre (1, 2, 3, etc.)
-* L’ordre 1 a la priorité la plus élevée et remplace tous les autres calques
-* Lorsque plusieurs calques modifient le même champ, le calque portant le numéro d’ordre le plus bas est prioritaire
+* Des nombres plus élevés indiquent une priorité plus élevée et remplacent tous les autres calques
+* Lorsque plusieurs calques modifient le même champ, le calque portant le numéro d’ordre le plus élevé est prioritaire
 * La priorité s’applique uniquement aux champs de remplacement (nom, description, balises meta)
 * Les champs de fusion (images, liens, attributs) combinent les données de tous les calques
 
@@ -224,7 +224,7 @@ Suivez ces recommandations lors de l’utilisation des calques de catalogue :
 
 * **Logique de priorité du document** : suivez les calques qui doivent être prioritaires pour éviter les remplacements involontaires.
 
-* **Vérifier les calques Sites Optimizer** : lorsque vous utilisez le correctif automatique de Sites Optimizer, le système crée les calques avec la priorité la plus élevée. Veillez à ajouter des calques manuels susceptibles de remplacer les recommandations de l’IA. En savoir plus sur l&#39;utilisation de [Sites Optimizer](../manage-results/opportunities.md).
+* **Vérifier les calques Sites Optimizer** : lorsque vous utilisez le correctif automatique de Sites Optimizer, le système crée les calques avec la priorité la plus élevée. Veillez à ajouter des calques manuels susceptibles de remplacer les recommandations de l’IA. En savoir plus sur l&#39;utilisation de [](../manage-results/opportunities.md).
 
 * **Surveillance des performances** : si vous constatez un chargement lent des pages produit, passez en revue la configuration des calques et envisagez de les consolider.
 
