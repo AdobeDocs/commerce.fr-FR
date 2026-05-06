@@ -3,7 +3,7 @@ title: Limites et limites de l’intégration
 description: Découvrez les limites d’étendue pour les catalogues tiers, la couverture de correctif automatique, les conditions préalables explorées, les considérations à l’échelle de l’entreprise et les contraintes d’accès bêta restreintes pour LLM Optimizer avec Commerce.
 role: Admin, User, Leader
 recommendations: noCatalog
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '258'
