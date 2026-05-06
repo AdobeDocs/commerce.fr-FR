@@ -2,9 +2,9 @@
 title: Notes de mise à jour de [!DNL Adobe Commerce Optimizer Connector]
 description: Dernières informations de mise  [!DNL Adobe Commerce Optimizer Connector]  jour pour Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 205fca38b379f94027a965b58826ffd922577f61
+source-git-commit: e0f7b9b860f8dce18b357d479cbc021f32970c18
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,18 @@ Ces notes de mise à jour décrivent toutes les versions du [!DNL Adobe Commerce
 
 ## Versions De 2026
 
+### Version 1.0.13
+
+_6 mai 2026_
+
+![Correctif](../assets/fix.svg) **Instructions de configuration du connecteur améliorées**-Mise à jour de la page de configuration de Commerce Optimizer dans Commerce Admin pour établir un lien vers le _Guide du connecteur Adobe Commerce_. <!--COMOPT-1922-->
+![Correctif](../assets/fix.svg) **Amélioration des métadonnées du connecteur**-Le connecteur ACO inclut désormais sa version installée dans l’en-tête des métadonnées. Cette amélioration permet aux équipes d’identifier rapidement la version du connecteur utilisée lors des missions de dépannage ou d’assistance.<!--MDEE-1323-->
+
 ### Version 1.0.12
 
 _2 avril 2026_
 
-![Nouveau](../assets/new.svg) **Ajout de la prise en charge du flux Catégories dans `saas:resync` commande &#x200B;**-Vous pouvez désormais facilement actualiser et afficher vos dernières données de catégorie à l’aide de la commande de l’interface de ligne de commande `saas:resync` :
+![Nouveau](../assets/new.svg) **Ajout de la prise en charge du flux Catégories dans `saas:resync` commande **-Vous pouvez désormais facilement actualiser et afficher vos dernières données de catégorie à l’aide de la commande de l’interface de ligne de commande `saas:resync` :
 
 ```terminal
 bin/magento saas:resync --feed=categories
