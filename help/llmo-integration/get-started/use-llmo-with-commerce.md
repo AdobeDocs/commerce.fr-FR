@@ -38,7 +38,7 @@ Utilisez **[!UICONTROL Opportunities]** pour ouvrir la liste des produits ou des
 1. Cliquez sur **[!UICONTROL Commerce Opportunity]** pour afficher les types d’optimisation qui ciblent votre catalogue [!DNL Adobe Commerce].
 1. Sélectionnez **[!UICONTROL Product Catalog Enrichment]** ou **[!UICONTROL Product Detail Page Enrichment]**, selon ce sur quoi vous souhaitez travailler.
 
-![types de filtrage et d’optimisation des opportunités ](../assets/llmo-opportunities.png)
+![types de filtrage et d’optimisation des opportunités &#x200B;](../assets/llmo-opportunities.png)
 
 ### Présentation des mesures d’opportunité {#opportunity-metrics}
 
