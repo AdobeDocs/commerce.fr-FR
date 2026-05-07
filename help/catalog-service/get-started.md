@@ -3,9 +3,9 @@ title: Prise en main de  [!DNL Catalog Service]
 description: Découvrez comment accéder à et  [!DNL Catalog Service]  intégrer aux applications frontales et aux services tiers.
 role: Admin, Developer
 exl-id: ee178e67-519d-4283-8de8-2634ae1f347a
-source-git-commit: bf90caa5039a7d30610b18fb14efe0ba725d2cc5
+source-git-commit: 50d8937c903efb1c56ec86e6bc4b947d2f198d49
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ Une fois le [!DNL Catalog Service] activé, vous pouvez accéder au service et l
 
 Le [!DNL Catalog Service] est disponible sous la forme d’une API GraphQL à laquelle vous pouvez accéder à partir de l’administration Commerce ou de toute application frontale prenant en charge les requêtes GraphQL. Le service est disponible dans les environnements SaaS et PaaS.
 
-[!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
+[!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
 
 | Environnement | Point d’entrée |
 | ------------ | ----------: |
 | **Test** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **Production** | `https://catalog-service.adobe.io/graphql` |
 
-[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}
+[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}
 
 | Environnement | Point d’entrée |
 | ----------- | --------:|
@@ -50,7 +50,7 @@ Pour plus d’informations sur l’utilisation de l’API GraphQL Catalog Servic
 
 Pour une intégration à un storefront découplé, vous devez mettre à jour la configuration du storefront pour permettre la communication entre le storefront et le [!DNL Catalog Service] afin de récupérer les données de produit et de catégorie.
 
-Si vous utilisez le storefront d’Adobe Commerce sur Edge Delivery Services, ajoutez le point d’entrée du service de catalogue à la configuration du storefront. Pour plus d’informations, consultez la documentation de [&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=fr#storefront-configuration).
+Si vous utilisez le storefront d’Adobe Commerce sur Edge Delivery Services, ajoutez le point d’entrée du service de catalogue à la configuration du storefront. Pour plus d’informations, consultez la documentation de [](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration).
 
 Pour les autres intégrations, consultez la documentation de configuration du projet pour plus d’informations sur la configuration des intégrations entre les sources de données de service et d’arrière-plan.
 
@@ -62,8 +62,16 @@ Pour autoriser le [!DNL Catalog Service] à travers un pare-feu, ajoutez des `co
 
 Le [maillage API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces aux produits Adobe à l’aide d’Adobe IO.
 
-Pour plus d’informations sur l’installation et la configuration[[!DNL Catalog Service]  consultez la rubrique &#x200B;](mesh.md) et Maillage API .
+Pour plus d’informations sur l’installation et la configuration](mesh.md) consultez la rubrique [[!DNL Catalog Service]  et Maillage API .
 
-## Utiliser le tableau de bord de gestion des données
+## Surveillance et dépannage de l’exportation des données
 
-Utilisez le [tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) pour surveiller la synchronisation des données entre le [!DNL Catalog Service] et votre instance Adobe Commerce. Le tableau de bord fournit des informations sur le processus de transfert de données, notamment le statut des exportations de données et une liste de produits synchronisés.
+Commerce Admin fournit des outils pour surveiller et résoudre les problèmes d’exportation des données de Commerce vers les services connectés :
+
+- **[Tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** : surveillez la synchronisation des données entre le [!DNL Catalog Service] et votre instance Adobe Commerce. Le tableau de bord affiche le statut de synchronisation global et répertorie tous les produits synchronisés.
+
+- **[Page Statut de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** : suivez le statut d’exportation de tous les flux de données pour garantir la cohérence des données. Cette page vous avertit des problèmes qui se produisent pendant le processus d’exportation afin que vous puissiez les résoudre rapidement. Un statut « Succès » indique que les données ont été exportées et seront disponibles dans les services Commerce connectés une fois le processus de synchronisation des données terminé.
+
+>[!NOTE]
+>
+>Si la page Statut de la synchronisation des flux de données n’est pas disponible dans les déploiements Commerce Admin for Commerce on Cloud ou on-premise, suivez les [ instructions d’installation de l’extension ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) pour l’activer.
