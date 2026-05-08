@@ -8,8 +8,7 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-hidefromtoc: true
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '3398'
 ht-degree: 0%
@@ -53,8 +52,8 @@ Si l’une des commandes précédentes ne renvoie pas les résultats attendus, r
 
 Vérifiez également les éléments suivants :
 
-- Vous disposez d’une instance [!DNL Adobe Commerce as a Cloud Service] avec des données de produit. Voir [Instances du service Commerce Cloud](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/overview){target="_blank"}.
-- Un projet de storefront est connecté à votre instance [!DNL Commerce]. Si vous n’en avez pas, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr){target="_blank"}.
+- Vous disposez d’une instance [!DNL Adobe Commerce as a Cloud Service] avec des données de produit. Voir [Instances du service ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Un projet de storefront est connecté à votre instance [!DNL Commerce]. Si vous n’en avez pas, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
 - L’interface de ligne de commande `aem` est installée :
 
   ```bash
@@ -453,7 +452,7 @@ Cette commande s’abonne au webhook d’expédition avec les paramètres suivan
 
 Configurez ensuite l’interface utilisateur d’administration :
 
-1. Activez le **SDK de l’interface utilisateur d’administration** (**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL Admin UI SDK]** > **[!UICONTROL Enable]** > **[!UICONTROL Yes]**).
+1. Activez le SDK de l’interface utilisateur d’administration **(**[!UICONTROL Stores]**>**[!UICONTROL Settings]**>**[!UICONTROL Configuration]**>**[!UICONTROL Adobe Services]**>**[!UICONTROL Admin UI SDK]**>**[!UICONTROL Enable]**>**[!UICONTROL Yes]**).**
 
 1. Configurez les extensions en sélectionnant votre espace de travail et votre extension [!DNL App Builder].
 

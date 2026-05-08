@@ -1,11 +1,10 @@
 ---
 title: Service Rag de documentation
 description: Découvrez comment utiliser le service de recherche de documentation optimisé par l’IA pour le développement d’Adobe Commerce.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 hide: true
-hidefromtoc: true
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 0%
@@ -30,10 +29,10 @@ Le tableau suivant décrit la documentation actuellement indexée par le service
 
 | Catégorie | Index | Contenu inclus | Mots-clés |
 |-------|---------|---------|------------------------|
-| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr) | commerce-storefront-docs | Edge Delivery Services, listes déroulantes, composants storefront | storefront, drop-in, EDS, liste de produits, passage en caisse |
+| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, listes déroulantes, composants storefront | storefront, drop-in, EDS, liste de produits, passage en caisse |
 | [Extensibilité](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, événements, extensions, intégrations | webhook, événement, extension, maillage API, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce de base (catalogue, clients, commandes) | catalogue, produit, client, commande, inventaire |
-| [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, actions d’exécution, extensions d’interface utilisateur | générateur d’applications, action d’exécution, React Spectrum |
+| [](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce de base (catalogue, clients, commandes) | catalogue, produit, client, commande, inventaire |
+| [](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, actions d’exécution, extensions d’interface utilisateur | générateur d’applications, action d’exécution, React Spectrum |
 
 Pour plus d&#39;informations sur la sélection d&#39;index, consultez les sections [Sélection automatique d&#39;index](#automatic-index-selection-recommended) et [Sélection explicite d&#39;index](#explicit-index-selection).
 
@@ -68,7 +67,7 @@ Avant l’installation, vérifiez que vous disposez des éléments suivants :
 
 ## Installation
 
-1. Installez l’[interface de ligne de commande Adobe I/O](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) globalement :
+1. Installez l’[interface de ligne de commande ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) globalement :
 
    ```bash
    npm install -g @adobe/aio-cli
@@ -127,7 +126,7 @@ Avant l’installation, vérifiez que vous disposez des éléments suivants :
 
 ## Utilisation
 
-Une fois installés, vous pouvez appeler les index [automatiquement](#automatic-index-selection-recommended) ou [explicitement](#explicit-index-selection). Vous pouvez également utiliser la commande [`/search-commerce-docs`](#command-based-search).
+Une fois installés, vous pouvez appeler les index [automatiquement](#automatic-index-selection-recommended) ou [explicitement](#explicit-index-selection). Vous pouvez également utiliser la commande ](#command-based-search).[`/search-commerce-docs`
 
 >[!NOTE]
 >
