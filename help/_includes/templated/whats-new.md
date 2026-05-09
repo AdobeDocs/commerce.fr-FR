@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b38ce9b1585fa7414e323b08bf8d09d6da46a6c
+source-git-commit: feb450ecd425d7e3ce7f8e354aeb294bb7d5d1ce
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1333'
 ht-degree: 1%
 
 ---
@@ -503,58 +503,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Nouvelle rubrique
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 6 mars 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de l’intégration de storefront au <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/tutorials/ratings-extension">tutoriel sur les évaluations</a>.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.fr-FR/pull/15">demande de tirage</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 3 mars 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Publication de la documentation <a href="https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/overview">Connecteur Adobe Commerce Optimizer v1.0.9</a> pour la version à disponibilité générale.</p>
-</td>
-      <td>
-        Mise à jour majeure, nouvelle rubrique, technique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/216958e287993d1a212fb59fdaa8e2ba3e931b97">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> d’Adobe Commerce as a Cloud Service avec la dernière version de Sandbox.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6fc1fbd8b70459e6473b48fdc4bb6fc75f6dc559">validation</a></td>
     </tr>
   </tbody>
 </table>
