@@ -3,10 +3,26 @@ title: Opportunités
 description: Identifiez les opportunités d’augmenter le trafic, l’engagement et les conversions par le biais de l’intégration à Adobe Sites Optimizer pour des améliorations de site intelligentes et basées sur les données.
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S [!DNL Adobe Commerce Optimizer] applique uniquement aux projets (infrastructure SaaS gérée par Adobe)."
 TQID: https://experienceleague.adobe.com/KQb7XtqY-4Qrt4B9fwn9w6u8yBjwsj4owArk53v6VHo
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1445
@@ -18,11 +34,11 @@ ht-degree: 0%
 
 La page **Opportunités** vous permet d’identifier et d’implémenter des optimisations pour améliorer le trafic sur le site, l’interaction client et les taux de conversion par le biais de l’intégration à Adobe Sites Optimizer.
 
-![ Opportunités ](../assets/opportunities.png)
+![&#x200B; Opportunités &#x200B;](../assets/opportunities.png)
 
 ## Que sont les opportunités ?
 
-[Opportunités](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sont des recommandations optimisées par l’IA qui aident les marchandiseurs à identifier et à résoudre les problèmes affectant les performances de leur site commercial. Ces recommandations sont optimisées par [](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), un service cloud qui analyse et améliore les performances des sites web.
+[Opportunités](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) sont des recommandations optimisées par l’IA qui aident les marchandiseurs à identifier et à résoudre les problèmes affectant les performances de leur site commercial. Ces recommandations sont optimisées par [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), un service cloud qui analyse et améliore les performances des sites web.
 
 ## Fonctionnalités clés
 
@@ -67,13 +83,13 @@ Pour que la détection automatique puisse générer des recommandations, les don
 Une fois que la détection automatique a identifié les opportunités d’optimisation, vous pouvez :
 
 - Examinez les optimisations suggérées dans l’onglet **Actif)**.
-- Déployez automatiquement des correctifs à l’aide du [ workflow de correctif automatique ](#auto-fix-workflow) (pour les [types d’opportunité](#supported-opportunity-types) pris en charge).
+- Déployez automatiquement des correctifs à l’aide du [&#x200B; workflow de correctif automatique &#x200B;](#auto-fix-workflow) (pour les [types d’opportunité](#supported-opportunity-types) pris en charge).
 - Mettez en œuvre les modifications manuellement dans votre administrateur Commerce.
 - Ignorez les opportunités qui ne correspondent pas à vos objectifs commerciaux.
 
 ## Workflow de correction automatique
 
-Le workflow de correctif automatique vous permet de déployer rapidement et en un seul clic des optimisations générées par l’IA. Lorsque vous appliquez un correctif automatique, le système crée une couche d’optimisation du catalogue qui remplace des attributs de produit spécifiques sans modifier les données de produit d’origine. Vos données de produit d’origine restent intactes, ce qui vous permet d’appliquer des optimisations en toute sécurité et d’annuler les modifications à tout moment. Pour en savoir plus](#how-catalog-layers-work-with-auto-fix) consultez la section [ Fonctionnement des calques de catalogue avec le correctif automatique .
+Le workflow de correctif automatique vous permet de déployer rapidement et en un seul clic des optimisations générées par l’IA. Lorsque vous appliquez un correctif automatique, le système crée une couche d’optimisation du catalogue qui remplace des attributs de produit spécifiques sans modifier les données de produit d’origine. Vos données de produit d’origine restent intactes, ce qui vous permet d’appliquer des optimisations en toute sécurité et d’annuler les modifications à tout moment. Pour en savoir plus[&#128279;](#how-catalog-layers-work-with-auto-fix) consultez la section  Fonctionnement des calques de catalogue avec le correctif automatique .
 
 ### Types d’opportunité pris en charge
 
@@ -143,7 +159,7 @@ Pour implémenter une optimisation suggérée par l’IA, procédez comme suit :
    - **Coche verte** : la couche d’optimisation est définie comme première priorité et est appliquée activement à votre storefront.
    - **Icône d&#39;avertissement** : le calque existe mais n&#39;est pas la première priorité, ce qui signifie qu&#39;il peut être remplacé par un autre calque.
 
-   ![ Opportunités terminées ](../assets/done-opportunities.png)
+   ![&#x200B; Opportunités terminées &#x200B;](../assets/done-opportunities.png)
 
 >[!NOTE]
 >
@@ -153,7 +169,7 @@ Pour implémenter une optimisation suggérée par l’IA, procédez comme suit :
 
 S’il n’existe pas de calque Adobe Sites Optimizer dans votre vue de catalogue, le correctif automatique en crée automatiquement un et l’affecte comme priorité la plus élevée (numéro le plus élevé). Si vous supprimez ce calque, il sera recréé lors de la prochaine exécution du correctif automatique et déplacera les calques existants vers des numéros d’ordre inférieurs. Si le calque Adobe Sites Optimizer existe déjà avec un autre numéro de commande, le correctif automatique ne modifie pas sa priorité. Si vous souhaitez conserver un calque de correction automatique, mais ne pas l’utiliser immédiatement, vous pouvez le désactiver. En savoir plus sur la gestion des calques de [catalogue](../setup/catalog-layer.md#activate-deactivate-or-delete-layers).
 
-![ Calques de catalogue ](../assets/catalog-layers.png)
+![&#x200B; Calques de catalogue &#x200B;](../assets/catalog-layers.png)
 
 Le diagramme présente une seule ligne appelée **Optimisation ASO**. Cette entrée représente toutes les opportunités que vous choisissez de corriger automatiquement. Que vous résolviez automatiquement une ou plusieurs opportunités, elles apparaissent toutes dans cette seule ligne **Optimisation ASO**. Les calques sont spécifiques à chaque vue de catalogue. La vue de catalogue **Los Angeles** affichée ici applique donc son calque **Optimisation ASO** uniquement lorsque cette vue est active.
 
@@ -186,7 +202,7 @@ Pour plus d’informations sur les fonctionnalités de Sites Optimizer, consulte
 Ressources supplémentaires :
 
 - [Types d’opportunités](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/opportunities) - Découvrez les opportunités d’optimisation disponibles.
-- [Fonctionnalités de Sites Optimizer ](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/capabilities) - Découvrez ce que Sites Optimizer peut faire.
+- [Fonctionnalités de Sites Optimizer &#x200B;](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/capabilities) - Découvrez ce que Sites Optimizer peut faire.
 
 ## Plus comme ceci
 

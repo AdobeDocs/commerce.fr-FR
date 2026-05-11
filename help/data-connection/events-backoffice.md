@@ -5,10 +5,15 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
 TQID: https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 3714
@@ -413,7 +418,7 @@ Les événements de profil capturés côté serveur incluent des informations de
 
 >[!NOTE]
 >
->Chaque événement de profil client inclut également le champ [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , qui inclut l’identifiant client Commerce généré par le système en tant qu’identifiant principal du profil et un identifiant d’e-mail utilisé en tant qu’identifiant secondaire. [Découvrez ](custom-identities.md) comment créer des attributs d’identité personnalisés pour améliorer l’identification du profil client.
+>Chaque événement de profil client inclut également le champ [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , qui inclut l’identifiant client Commerce généré par le système en tant qu’identifiant principal du profil et un identifiant d’e-mail utilisé en tant qu’identifiant secondaire. [Découvrez &#x200B;](custom-identities.md) comment créer des attributs d’identité personnalisés pour améliorer l’identification du profil client.
 
 ### accountCreated
 

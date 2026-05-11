@@ -3,10 +3,17 @@ title: Paramètres
 description: Découvrez comment modifier la source de vos  [!DNL Product Recommendations]  et comment activer les recommandations visuelles.
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
 TQID: https://experienceleague.adobe.com/GJ8h9mX-3vlH1AUxk7FyM0-7rZTt40SGmdwfEMlvLvE
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 477
@@ -16,7 +23,7 @@ ht-degree: 0%
 
 # Paramètres
 
-Lorsque vous [configurez un espace de données SaaS](../landing/saas.md#saas-configuration) pour Recommendations, l’espace de données SaaS collecte des données de catalogue et stocke les données comportementales. [](https://business.adobe.com/ai.html) analyse les données et calcule les associations de produits utilisées pour les recommandations de produits.
+Lorsque vous [configurez un espace de données SaaS](../landing/saas.md#saas-configuration) pour Recommendations, l’espace de données SaaS collecte des données de catalogue et stocke les données comportementales. [&#128279;](https://business.adobe.com/ai.html) analyse les données et calcule les associations de produits utilisées pour les recommandations de produits.
 
 Les environnements hors production à des fins de test ou d&#39;évaluation ne disposent généralement pas de la quantité ou de la qualité des données comportementales du storefront pour fournir des recommandations de produits réalistes. Le comportement réel de l’acheteur à grande échelle ne peut être capturé que dans un environnement de production. Pour résoudre ce problème, Adobe Commerce vous permet d’utiliser les recommandations de produits de votre environnement de production avec d’autres espaces de données SaaS hors production. L’utilisation de données storefront réelles dans un environnement hors production vous permet de prévisualiser les recommandations que vos clients voient et d’expérimenter avec différents types de recommandations et emplacements d’emplacement. Les recommandations d’un autre espace de données SaaS peuvent être prévisualisées par les acheteurs, mais pas cliquées.
 
@@ -24,7 +31,7 @@ Les ordres intermédiaires sont enregistrés à l’aide de l’`environmentId` 
 
 >[!NOTE]
 >
->Lors de l’utilisation de Product Recommendations via REST, le paramètre `alternateEnvironmentId` peut être utilisé pour spécifier d’autres espaces de données. Lors de l’utilisation de Product Recommendations via [](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/), ce paramètre n’est pas disponible.
+>Lors de l’utilisation de Product Recommendations via REST, le paramètre `alternateEnvironmentId` peut être utilisé pour spécifier d’autres espaces de données. Lors de l’utilisation de Product Recommendations via [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/), ce paramètre n’est pas disponible.
 
 ## Choisir la source des recommandations
 

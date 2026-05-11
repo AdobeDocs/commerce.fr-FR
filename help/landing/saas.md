@@ -6,11 +6,21 @@ role: Admin, User
 exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
 badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 TQID: https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1662
@@ -40,7 +50,7 @@ Vous trouverez ci-dessous la liste des fonctionnalités [!DNL Commerce] auxquell
 
 À un niveau élevé, le [!DNL Commerce Services Connector] est constitué des éléments principaux suivants :
 
-![Architecture du connecteur de services ](assets/saas-config-sync-workflow.png)
+![Architecture du connecteur de services &#x200B;](assets/saas-config-sync-workflow.png)
 
 Les sections suivantes examinent plus en détail chacun de ces éléments.
 
@@ -60,7 +70,7 @@ Le propriétaire de la licence est généralement le contact par Principal sur l
 
 1. Connectez-vous à votre compte [!DNL Commerce] sur [https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"}.
 
-1. Sous l’onglet ****, sélectionnez **Portail API** dans la barre latérale.
+1. Sous l’onglet **&#x200B;**, sélectionnez **Portail API** dans la barre latérale.
 
 1. Dans le menu _Environnement_, sélectionnez **Production** ou **Sandbox**.
 
@@ -126,7 +136,7 @@ Pour sélectionner ou créer un projet SaaS, demandez les clés d’API [!DNL Co
 
    Si la section **[!UICONTROL Commerce Services Connector]** ne s’affiche pas, installez les modules [!DNL Commerce] pour le [[!DNL Commerce] service](#availableservices) souhaité et assurez-vous que le package `magento/module-services-id` est installé.
 
-1. Dans les sections _[!UICONTROL Sandbox API Keys]_et_[!UICONTROL Production API Keys]_, collez vos valeurs clés.
+1. Dans les sections _[!UICONTROL Sandbox API Keys]_&#x200B;et&#x200B;_[!UICONTROL Production API Keys]_, collez vos valeurs clés.
 
    - Les clés privées doivent inclure des `-----BEGIN PRIVATE KEY-----` au début de la clé et des `-----END PRIVATE KEY-----` à la fin de la clé.
    - Si vous ne disposez pas d’une copie des clés réelles, demandez-les au propriétaire de la licence, puis connectez les valeurs à la configuration.

@@ -5,10 +5,20 @@ badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague
 role: Developer
 hide: true
 TQID: https://experienceleague.adobe.com/eGNktkTH-i2HV8iEFTfSFtGlsyr4ZUVuRXxj9XcwbZk
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1027
@@ -36,8 +46,8 @@ Le tableau suivant décrit la documentation actuellement indexée par le service
 |-------|---------|---------|------------------------|
 | [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, listes déroulantes, composants storefront | storefront, drop-in, EDS, liste de produits, passage en caisse |
 | [Extensibilité](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, événements, extensions, intégrations | webhook, événement, extension, maillage API, GraphQL |
-| [](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce de base (catalogue, clients, commandes) | catalogue, produit, client, commande, inventaire |
-| [](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, actions d’exécution, extensions d’interface utilisateur | générateur d’applications, action d’exécution, React Spectrum |
+| [&#128279;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce de base (catalogue, clients, commandes) | catalogue, produit, client, commande, inventaire |
+| [&#128279;](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, actions d’exécution, extensions d’interface utilisateur | générateur d’applications, action d’exécution, React Spectrum |
 
 Pour plus d&#39;informations sur la sélection d&#39;index, consultez les sections [Sélection automatique d&#39;index](#automatic-index-selection-recommended) et [Sélection explicite d&#39;index](#explicit-index-selection).
 
@@ -72,7 +82,7 @@ Avant l’installation, vérifiez que vous disposez des éléments suivants :
 
 ## Installation
 
-1. Installez l’[interface de ligne de commande ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) globalement :
+1. Installez l’[interface de ligne de commande &#x200B;](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) globalement :
 
    ```bash
    npm install -g @adobe/aio-cli
@@ -131,7 +141,7 @@ Avant l’installation, vérifiez que vous disposez des éléments suivants :
 
 ## Utilisation
 
-Une fois installés, vous pouvez appeler les index [automatiquement](#automatic-index-selection-recommended) ou [explicitement](#explicit-index-selection). Vous pouvez également utiliser la commande ](#command-based-search).[`/search-commerce-docs`
+Une fois installés, vous pouvez appeler les index [automatiquement](#automatic-index-selection-recommended) ou [explicitement](#explicit-index-selection). Vous pouvez également utiliser la commande [&#128279;](#command-based-search).`/search-commerce-docs`
 
 >[!NOTE]
 >

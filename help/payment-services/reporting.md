@@ -5,11 +5,21 @@ role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
 TQID: https://experienceleague.adobe.com/G4EOSDBdBepDJG0HyuCcQlq3-megOqpOGzSbEEnT1jc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1391
@@ -39,7 +49,7 @@ Vous pouvez télécharger l&#39;état des transactions au format .csv pour l&#39
 
 La vue Rapport des transactions est disponible dans la vue Transactions des Services de paiement. Il comprend toutes les informations disponibles sur les transactions de votre ou vos boutique(s).
 
-Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**pour afficher la vue du rapport de transactions tabulaire détaillé. Dans **[!UICONTROL Home]**, vous pouvez également choisir des **[!UICONTROL View Report]**sous **[!UICONTROL Transactions]**dans [!DNL Adobe Commerce as a Cloud Service] et [!DNL Adobe Commerce Optimizer].
+Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;pour afficher la vue du rapport de transactions tabulaire détaillé. Dans **[!UICONTROL Home]**, vous pouvez également choisir des **[!UICONTROL View Report]**&#x200B;sous **[!UICONTROL Transactions]**&#x200B;dans [!DNL Adobe Commerce as a Cloud Service] et [!DNL Adobe Commerce Optimizer].
 
 >[!BEGINTABS]
 
@@ -73,7 +83,7 @@ Dans la vue Rapport des transactions , vous pouvez sélectionner la source de do
 
 ![Sélection des sources de données](assets/datasource.png){width="300" zoomable="yes"}
 
-Si _[!UICONTROL Live]_est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour vos magasins qui utilisent [!DNL Payment Services] en mode production. Si_[!UICONTROL Sandbox]_ est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour votre mode sandbox.
+Si _[!UICONTROL Live]_&#x200B;est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour vos magasins qui utilisent [!DNL Payment Services] en mode production. Si&#x200B;_[!UICONTROL Sandbox]_ est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour votre mode sandbox.
 
 Les sélections de sources de données fonctionnent comme suit :
 
@@ -103,14 +113,14 @@ Dans la vue Rapport des transactions , vous pouvez filtrer les statuts et les r�
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Cliquez sur le sélecteur de **[!UICONTROL Filter]**.
-1. Activez/désactivez les options de _[!UICONTROL Transaction Result]_pour afficher les résultats du rapport pour les transactions de commande sélectionnées uniquement.
-1. Activez/désactivez les options de _[!UICONTROL Payment Method]_pour afficher les résultats du rapport pour le type de paiement utilisé pour la transaction.
-1. Activez/désactivez les options de _[!UICONTROL Payment Detail]_pour afficher des informations supplémentaires sur le type de paiement utilisé, le cas échéant.
+1. Activez/désactivez les options de _[!UICONTROL Transaction Result]_&#x200B;pour afficher les résultats du rapport pour les transactions de commande sélectionnées uniquement.
+1. Activez/désactivez les options de _[!UICONTROL Payment Method]_&#x200B;pour afficher les résultats du rapport pour le type de paiement utilisé pour la transaction.
+1. Activez/désactivez les options de _[!UICONTROL Payment Detail]_&#x200B;pour afficher des informations supplémentaires sur le type de paiement utilisé, le cas échéant.
 1. Saisissez un _Montant minimum de commande_ ou _Montant maximum de commande_ pour afficher les résultats de l&#39;état dans cette fourchette de montant de commande.
-1. Saisissez un _[!UICONTROL Order ID]_pour rechercher une transaction spécifique.
-1. Découvrez le _[!UICONTROL Card Last Four]_permettant de rechercher une carte de crédit ou de débit spécifique.
-1. Saisissez un _[!UICONTROL Customer ID]_pour afficher toutes les transactions d&#39;un client spécifique.
-1. Saisissez le _[!UICONTROL Customer Email]_de filtrage des transactions pour cet e-mail.
+1. Saisissez un _[!UICONTROL Order ID]_&#x200B;pour rechercher une transaction spécifique.
+1. Découvrez le _[!UICONTROL Card Last Four]_&#x200B;permettant de rechercher une carte de crédit ou de débit spécifique.
+1. Saisissez un _[!UICONTROL Customer ID]_&#x200B;pour afficher toutes les transactions d&#39;un client spécifique.
+1. Saisissez le _[!UICONTROL Customer Email]_&#x200B;de filtrage des transactions pour cet e-mail.
 1. Cliquez sur **[!UICONTROL Hide filters]** pour masquer le filtre.
 
 ### Afficher et masquer les colonnes
@@ -125,7 +135,7 @@ Par défaut, le rapport Transactions affiche toutes les colonnes d’information
 
 ### Mise à jour des données d’un rapport
 
-La vue Rapport de transactions affiche un horodatage _[!UICONTROL Last updated]_indiquant la dernière fois que les informations du rapport ont été mises à jour. Par défaut, les données du rapport de transactions sont automatiquement actualisées toutes les trois heures.
+La vue Rapport de transactions affiche un horodatage _[!UICONTROL Last updated]_&#x200B;indiquant la dernière fois que les informations du rapport ont été mises à jour. Par défaut, les données du rapport de transactions sont automatiquement actualisées toutes les trois heures.
 
 Vous pouvez également forcer manuellement une actualisation des données du rapport pour afficher les informations de rapport les plus récentes.
 

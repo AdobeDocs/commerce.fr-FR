@@ -3,10 +3,19 @@ title: Workflow de mise en œuvre
 description: Découvrez les étapes à suivre pour réussir l [!DNL Product Recommendations] implémentation sur votre storefront.
 exl-id: 4a784d04-8be6-473f-afb3-264af06c850a
 TQID: https://experienceleague.adobe.com/-nvORlxBNwoCcZb6s-OvaX8TtIh28Q-fjeUxsDXpe9E
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 563
@@ -32,7 +41,7 @@ Lors de l’installation du `magento/product-recommendations module`, Adobe AI a
 
 1. **Déployer la collecte de données en production**
 
-   Le déploiement de [!DNL Product Recommendations] nécessite deux [sources de données](type.md) principales : le catalogue et le comportement. La production étant le seul environnement où les actions de vos acheteurs sont capturées et analysées, commencez la collecte de données en production dès que possible. [Découvrez ](events.md) comment Adobe AI entraîne des modèles de machine learning qui génèrent des recommandations de meilleure qualité. Lorsque vous commencez à collecter des données comportementales en production, vous pouvez en outre [récupérer des recommandations](staging-environment.md#fetch-recommendations-from-production-environment-recommended) basées sur ces données de production, tout en opérant dans des environnements hors production. Vous pouvez ensuite tester et tester différentes recommandations qui sont calculées en fonction des données réelles d’acheteurs collectées en production.
+   Le déploiement de [!DNL Product Recommendations] nécessite deux [sources de données](type.md) principales : le catalogue et le comportement. La production étant le seul environnement où les actions de vos acheteurs sont capturées et analysées, commencez la collecte de données en production dès que possible. [Découvrez &#x200B;](events.md) comment Adobe AI entraîne des modèles de machine learning qui génèrent des recommandations de meilleure qualité. Lorsque vous commencez à collecter des données comportementales en production, vous pouvez en outre [récupérer des recommandations](staging-environment.md#fetch-recommendations-from-production-environment-recommended) basées sur ces données de production, tout en opérant dans des environnements hors production. Vous pouvez ensuite tester et tester différentes recommandations qui sont calculées en fonction des données réelles d’acheteurs collectées en production.
 
    Pour déployer la collecte de données en production, vous devez [installer et configurer](install-configure.md) le module [!DNL Product Recommendations] en fournissant une clé [API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html).
 

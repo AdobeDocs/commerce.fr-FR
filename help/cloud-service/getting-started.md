@@ -7,11 +7,22 @@ level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 TQID: https://experienceleague.adobe.com/z4XIMJorh5DwVEnfRZtGC0yMz7HFzXI7049mcNIlt-8
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1343
@@ -30,12 +41,12 @@ ht-degree: 0%
 [!DNL Adobe Commerce as a Cloud Service] comprend les composants suivants :
 
 * **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)** : point d’entrée central pour tous les produits [!DNL Adobe Commerce] sur [experience.adobe.com](https://experience.adobe.com/).
-   * Cliquez sur [!UICONTROL ****] sous [!UICONTROL **Accès rapide**] pour ouvrir Commerce Cloud Manager
+   * Cliquez sur [!UICONTROL **&#x200B;**] sous [!UICONTROL **Accès rapide**] pour ouvrir Commerce Cloud Manager
 * **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)** - Créez et gérez des instances, accédez aux URL d’API et à votre administrateur Commerce
 * **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** - Gestion des utilisateurs et des rôles
 * **Administrateur Commerce** - Gérer les produits, les commandes, les clients et la configuration de la boutique
 * **[Storefront optimisé par [!DNL Edge Delivery Services]](./storefront.md)** - Créez et personnalisez un storefront orienté client à l’aide d’un système composable et haute performance qui offre une vitesse, un référencement et une expérience utilisateur exceptionnels pour les commerçants et les développeurs
-* **[[!DNL Adobe Developer App Builder]](https://developer.adobe.com/app-builder/)** - Créez des intégrations personnalisées à l’aide de [!DNL App Builder], ainsi que d’autres outils d’extensibilité tels que le [ kit de démarrage d’intégration ](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) et [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/)
+* **[[!DNL Adobe Developer App Builder]](https://developer.adobe.com/app-builder/)** - Créez des intégrations personnalisées à l’aide de [!DNL App Builder], ainsi que d’autres outils d’extensibilité tels que le [&#x200B; kit de démarrage d’intégration &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) et [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/)
 
 ## Configuration et gestion
 
@@ -66,7 +77,7 @@ Sélectionnez un onglet ci-dessous pour afficher les graphiques de workflow de h
 
 >[!TAB Workflow de l’administrateur système et du commerçant]
 
-Ce diagramme présente de manière générale la manière dont les administrateurs système et les commerçants accèdent aux instances [!DNL Adobe Commerce as a Cloud Service] et les gèrent. Voir le [Guide ](https://helpx.adobe.com/enterprise/admin-guide.html) pour plus d&#39;informations sur les workflows d&#39;administration.
+Ce diagramme présente de manière générale la manière dont les administrateurs système et les commerçants accèdent aux instances [!DNL Adobe Commerce as a Cloud Service] et les gèrent. Voir le [Guide &#x200B;](https://helpx.adobe.com/enterprise/admin-guide.html) pour plus d&#39;informations sur les workflows d&#39;administration.
 
 ![Diagramme de workflow de l’administrateur système et du commerçant pour Adobe Commerce as a Cloud Service](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -116,7 +127,7 @@ En tant que développeur, vous devez savoir comment créer des intégrations per
 | Créer un storefront | Découvrez comment configurer et personnaliser le storefront Commerce | [Configuration de Storefront](./storefront.md) |
 | Configuration de votre storefront | Découvrez comment configurer votre storefront | [Configuration de Storefront](./storefront.md) |
 | Explorer les options d’intégration | Découvrez App Builder, le maillage API et d’autres outils d’extensibilité auxquels vous avez accès | [Présentation - Plateforme du développeur](overview.md#developer-platform) |
-| Intégrer [!DNL AEM Assets] et [!DNL Product Visuals] (facultatif) | Découvrez comment intégrer [!DNL AEM Assets] et [!DNL Product Visuals] à [!DNL Adobe Commerce] | [Intégration ](../aem-assets-integration/overview.md) |
+| Intégrer [!DNL AEM Assets] et [!DNL Product Visuals] (facultatif) | Découvrez comment intégrer [!DNL AEM Assets] et [!DNL Product Visuals] à [!DNL Adobe Commerce] | [Intégration &#x200B;](../aem-assets-integration/overview.md) |
 
 >[!ENDTABS]
 
@@ -136,7 +147,7 @@ Les sections suivantes décrivent les processus de base à effectuer pour que vo
 
 >[!NOTE]
 >
->Avant de pouvoir créer une instance, l’administrateur produit ou l’administrateur système de votre organisation doit vous ajouter en tant qu’utilisateur du produit [!DNL Adobe Commerce as a Cloud Service]. Voir [ Ajout d’utilisateurs et d’administrateurs ](./user-management.md#add-users) pour plus d’informations.
+>Avant de pouvoir créer une instance, l’administrateur produit ou l’administrateur système de votre organisation doit vous ajouter en tant qu’utilisateur du produit [!DNL Adobe Commerce as a Cloud Service]. Voir [&#x200B; Ajout d’utilisateurs et d’administrateurs &#x200B;](./user-management.md#add-users) pour plus d’informations.
 
 [!DNL Adobe Commerce as a Cloud Service] instances utilisent un système basé sur les crédits. Vous pouvez créer plusieurs instances, mais chaque instance nécessite des crédits disponibles. Le nombre de crédits dont vous disposez au départ dépend de votre abonnement.
 
@@ -188,7 +199,7 @@ Les sections suivantes décrivent les processus de base à effectuer pour que vo
 
 Après avoir créé une instance, vous pouvez y accéder à partir du [!UICONTROL Commerce Cloud Manager] .
 
-1. Connectez-vous à votre compte [](https://experience.adobe.com/).
+1. Connectez-vous à votre compte [&#128279;](https://experience.adobe.com/).
 
 1. Sous [!UICONTROL Quick access], cliquez sur [!UICONTROL **Commerce**] pour ouvrir le [!UICONTROL Commerce Cloud Manager].
 

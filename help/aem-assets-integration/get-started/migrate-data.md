@@ -4,10 +4,15 @@ description: Migrez les fichiers multimédias depuis Adobe Commerce ou une sourc
 feature: CMS, Media, Integration
 exl-id: ccb13e90-8b18-4f1e-94ce-f0dacea2f617
 TQID: https://experienceleague.adobe.com/-fCE7lTivOuhLDzEMNexxGWLTkL52oo9p-sm54HxpQM
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1010
@@ -122,11 +127,11 @@ Voici un aperçu général de l’utilisation de l’outil.
 
 1. Dans la vue Outils Experience Manager, sélectionnez **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**.
 
-   ![Création ](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
+   ![Création &#x200B;](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
 
 1. Dans les configurations d’importation en bloc, sélectionnez **[!UICONTROL Create]** pour ouvrir le formulaire de configuration.
 
-   ![Création ](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
+   ![Création &#x200B;](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
 
 1. Configurez et enregistrez la configuration.
 
@@ -143,6 +148,6 @@ Voici un aperçu général de l’utilisation de l’outil.
 
 >[!MORELIKETHIS]
 >
-> Démonstration vidéo de l’outil d’importation en bloc [](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
+> Démonstration vidéo de l’outil d’importation en bloc [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
 > [Conseils, bonnes pratiques et restrictions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
 > [Chargement ou ingestion de ressources à l’aide d’API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)

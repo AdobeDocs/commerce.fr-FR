@@ -3,8 +3,10 @@ title: Rechercher dans le Workspace de marchandisage
 description: Découvrez l’espace de travail de marchandisage de la recherche.
 exl-id: 8cf581b5-cf83-48aa-86ab-39dea8da2ee5
 TQID: https://experienceleague.adobe.com/FB1DxWHgpPtH5J-TiH4XU8SYmP3x8dEobWQsSrQXG4c
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 586
@@ -26,7 +28,7 @@ L’espace de travail *Marchandisage de recherche* répertorie la sélection act
 
 ## Définir la portée
 
-Si votre installation d’Adobe Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la [ vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où vos règles s’appliquent.
+Si votre installation d’Adobe Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la [&#x200B; vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où vos règles s’appliquent.
 
 ## Afficher/masquer les colonnes
 
