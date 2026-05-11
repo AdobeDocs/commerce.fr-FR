@@ -1,7 +1,7 @@
 ---
-source-git-commit: 156ed7a480de9239843c96b6b6bc252585f498d6
+source-git-commit: aaefe284749df25953c2581f000af2989bcc8fb2
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Si vous avez installé le [connecteur &#x200B;](../aco-connector/overview.md) pour exporter les données du catalogue vers Adobe Commerce Optimizer, utilisez la page [Statut de synchronisation des flux de données](../optimizer/setup/data-sync.md) de Commerce Optimizer Studio pour vérifier que les données ont bien été synchronisées vers Adobe Commerce Optimizer au lieu du tableau de bord de gestion des données.
+
+## Note déroulante ACO pour les mises à jour de l’API {#aco-api-updates-and-dropins}
+
+>[!NOTE]
+>
+>[Composants de dépôt](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=fr) par [!DNL Commerce Storefront on Edge Delivery Services], récupérez automatiquement les dernières modifications apportées à GraphQL (nouveaux champs, limites et comportement des requêtes).
 
 ## Accès anticipé à l’ACCS {#accs-early-access}
 
