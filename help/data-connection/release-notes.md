@@ -3,9 +3,25 @@ title: Notes de mise à jour
 description: Dernières informations de mise à jour pour l [!DNL Data Connection] extension d’Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/kjXCkifzTRTjVJZuy3fb6VPhQkblOaT7-GxwJP4Dv3Y
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: 1350
 ht-degree: 2%
 
 ---
@@ -26,7 +42,7 @@ Pour connaître les modifications de fonctionnalités et les correctifs liés au
 
 Voir [Prochaines versions](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/schedule) pour en savoir plus sur les plannings de publication et la prise en charge.
 
-Consultez la documentation destinée aux développeurs pour [découvrir quelles versions de Commerce prennent en charge ce module](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/product-availability).
+Consultez la documentation destinée aux développeurs pour [découvrir quelles versions de Commerce prennent en charge ce module](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Mises à jour de service prises en charge
 
@@ -106,7 +122,7 @@ _21 mars 2025_
 
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge de PHP 8.4.
 
-## 3,2,1
+## 3.2.1
 
 _17 janvier 2025_
 

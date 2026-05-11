@@ -4,9 +4,18 @@ description: Découvrez comment créer et gérer des politiques dans  [!DNL Adob
 recommendations: noCatalog
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: 917
 ht-degree: 0%
 
 ---
@@ -83,11 +92,11 @@ Dans cette section, vous allez créer une nouvelle politique. La politique peut 
 
 1. Cliquez sur le bouton **[!UICONTROL Save]** dans la boîte de dialogue Détails du filtre. &#x200B;
 
-1. Cliquez sur les points d’action (...) à côté du filtre que vous avez créé et sélectionnez **Activer**. À partir de là, vous pouvez également **Modifier**, **Désactiver** ou **Supprimer** le filtre.
+1. Cliquez sur les points d’action (...). en regard du filtre que vous avez créé, sélectionnez **Activer**. À partir de là, vous pouvez également **Modifier**, **Désactiver** ou **Supprimer** le filtre.
 
    La colonne **Statut** affiche une icône verte et le mot « Activé ».
 
-1. Cliquez sur le bouton **[!UICONTROL Save]** pour enregistrer la nouvelle politique&#x200B; Si le bouton n’est pas actif, vérifiez que le nom de la politique est ajouté en cliquant sur l’icône en forme de crayon en regard de **Nouvelle politique**.
+1. Cliquez sur le bouton **[!UICONTROL Save]** pour enregistrer la nouvelle politique. &#x200B; Si le bouton n’est pas actif, vérifiez que le nom de la politique est ajouté en cliquant sur l’icône en forme de crayon en regard de **Nouvelle politique**.
 
 1. Pour vérifier votre nouvelle politique, revenez à la liste des politiques en cliquant sur la flèche Précédent. &#x200B;Votre nouvelle politique est répertoriée.
 
@@ -124,11 +133,11 @@ Dans cette section, vous allez créer une nouvelle politique. La politique peut 
 
 1. Cliquez sur le bouton **[!UICONTROL Save]** dans la boîte de dialogue Détails du filtre. &#x200B;
 
-1. Cliquez sur les points d’action (...) à côté du filtre que vous avez créé et sélectionnez **Activer**. À partir de là, vous pouvez également **Modifier**, **Désactiver** ou **Supprimer** le filtre.
+1. Cliquez sur les points d’action (...). en regard du filtre que vous avez créé, sélectionnez **Activer**. À partir de là, vous pouvez également **Modifier**, **Désactiver** ou **Supprimer** le filtre.
 
    La colonne **Statut** affiche une icône verte et le mot « Activé ».
 
-1. Cliquez sur le bouton **[!UICONTROL Save]** pour enregistrer la nouvelle politique&#x200B; Si le bouton n’est pas actif, vérifiez que le nom de la politique est ajouté en cliquant sur l’icône en forme de crayon en regard de **Nouvelle politique**.
+1. Cliquez sur le bouton **[!UICONTROL Save]** pour enregistrer la nouvelle politique. &#x200B; Si le bouton n’est pas actif, vérifiez que le nom de la politique est ajouté en cliquant sur l’icône en forme de crayon en regard de **Nouvelle politique**.
 
 1. Pour vérifier votre nouvelle politique, revenez à la liste des politiques en cliquant sur la flèche Précédent. &#x200B;Votre nouvelle politique est répertoriée.
 

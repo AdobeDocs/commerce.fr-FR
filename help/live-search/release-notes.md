@@ -3,10 +3,26 @@ title: Notes de mise à jour de [!DNL Live Search]
 description: Dernières informations de mise à jour pour  [!DNL Live Search]  à partir d’Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/yqNae8Xsc51q4Zn-WXJ3y48cNnzUDTkDncv-RppkIlI
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2708'
-ht-degree: 0%
+source-wordcount: 2996
+ht-degree: 1%
 
 ---
 
@@ -338,8 +354,8 @@ _14 mars 2023_
 #### Nouvelles fonctionnalités
 
 ![Nouveau](../assets/new.svg) fiche article de produit dans l&#39;aperçu des règles
-![Nouveau](../assets/new.svg) [widget de page de liste de produits](https://experienceleague.adobe.com/fr/docs/commerce/live-search/live-search-storefront/plp-styling)
-![Nouvelle](../assets/new.svg) [Options de filtrage par catégorie](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![Nouveau](../assets/new.svg) [Widget de page de liste de produits](https://experienceleague.adobe.com/fr/docs/commerce/live-search/live-search-storefront/plp-styling)
+![Nouvelles](../assets/new.svg) [Options de filtrage par catégorie](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
 ![Nouveau](../assets/new.svg) Possibilité de glisser-déposer pour créer des événements d’épingle
 ![Nouveau](../assets/new.svg) nouvelles actions d’épingle :
 - Épingler à l’emplacement - Bouton Épingler pour créer un événement d’épingle en un seul clic
@@ -418,10 +434,10 @@ Les installations [!DNL Live Search] existantes doivent être mises à niveau ve
 ![Nouveau](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) pris en charge pour [!DNL Live Search].
 ![Nouveau](../assets/new.svg) Le processus d&#39;installation de [!DNL Live Search] est mis à jour avec des modifications de processus avancées.
 ![Correctif](../assets/fix.svg) [Recherche avancée](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search) lien supprimé du pied de page du storefront.
-![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par l’API Commerce GraphQL[&#x200B; lorsqu’ils sont utilisés dans le cadre de la version bêta de PWA : &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/), `description`, `name`
-`short_description`Bogue![&#x200B; la version bêta de PWA for &#x200B;](../assets/bug.svg) ne prend pas en charge [!DNL Live Search]la gestion des événements[.](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)
+![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par l’API Commerce GraphQL[&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) lorsqu’ils sont utilisés dans le cadre de la version bêta de PWA : `description`, `name`, `short_description`
+![Bogue](../assets/bug.svg) la version bêta de PWA for [!DNL Live Search] ne prend pas en charge [la gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
-### [!DNL Live Search] 3.1
+### [!DNL Live Search] 1.3.1
 
 [!BADGE Pris en charge]{type="Informative" tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
@@ -468,6 +484,6 @@ La session ![New](../assets/new.svg) Commerce *Admin* reste ouverte pendant de l
 
 Pour en savoir plus :
 
-- [Documentation destinée aux développeurs &#x200B;](https://developer.adobe.com/commerce/docs)
-- [Guide de l’utilisateur &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce)
+- [Documentation destinée aux développeurs d’Adobe Commerce](https://developer.adobe.com/commerce/docs)
+- [Guide de l’utilisateur d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce)
 - [[!DNL Live Search] sur Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)

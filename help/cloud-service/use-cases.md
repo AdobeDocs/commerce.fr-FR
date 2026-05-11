@@ -5,10 +5,26 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+TQID: https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: 1464
 ht-degree: 0%
 
 ---
@@ -26,7 +42,7 @@ Avant de lancer l’un de ces cas d’utilisation, vous devez remplir les condit
 1. [Créez votre instance Cloud Service](./getting-started.md#create-an-instance) à l’aide des options suivantes :
    1. Sélectionnez [!UICONTROL **Sandbox**] dans le menu déroulant [!UICONTROL **Environnement**].
    1. Sélectionnez [!UICONTROL **Adobe Store**] dans le menu déroulant [!UICONTROL **Tester les données**].
-1. [Connexion à votre  [!DNL Adobe Experience Cloud] compte](https://experience.adobe.com)
+1. [Connectez-vous à votre  [!DNL Adobe Experience Cloud] &#x200B;](https://experience.adobe.com)
 1. [Configurez votre storefront Cloud Service](./storefront.md) à l’aide des options suivantes :
    1. Sélectionnez [!UICONTROL `adobe-commerce/adobe-demo-store`] pour le modèle.
    1. Sélectionnez [!UICONTROL **Choisir une instance disponible (maillage -> SaaS)**] pour la méthode de connexion.
@@ -109,7 +125,7 @@ La fonctionnalité d’expérimentation contextuelle de [!DNL Adobe Commerce] vo
 
 ### Conditions préalables
 
-* Installer l’extension [AEM Sidekick](https://www.aem.live/docs/sidekick)
+* Installer l’extension [&#128279;](https://www.aem.live/docs/sidekick)
 
 1. Dans Storefront Builder, sélectionnez votre page d’index et cliquez sur [!UICONTROL **Copier**].
 
@@ -162,7 +178,7 @@ Supposons que vous souhaitiez modifier rapidement l’arrière-plan d’une imag
 
    ![[!DNL AEM Assets] sélecteur affichant l’interface [!DNL Adobe Experience Cloud] &#x200B;](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
-1. Cliquez sur [!UICONTROL **Assets**].
+1. Cliquez sur [!UICONTROL **&#x200B;**].
 
    ![Option de navigation Assets dans [!DNL AEM Assets] interface](./assets/click-assets.png){width="600" zoomable="yes"}
 
@@ -200,7 +216,7 @@ Supposons que vous souhaitiez modifier rapidement l’arrière-plan d’une imag
 
 #### Ajoutez l’image à [!DNL Commerce AEM Assets]
 
-1. Dans le [Panneau de navigation](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) de [!DNL AEM as a Cloud Service], sélectionnez [!UICONTROL **Assets**] > [!UICONTROL **Fichiers**] > [!UICONTROL **Commerce**] et cliquez sur la ressource que vous avez créée dans la section précédente.
+1. Dans le [Panneau de navigation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) de [!DNL AEM as a Cloud Service], sélectionnez [!UICONTROL **Assets**] > [!UICONTROL **Fichiers**] > [!UICONTROL **Commerce**] et cliquez sur la ressource que vous avez créée dans la section précédente.
 
    ![Dossier Commerce en [!DNL AEM Assets] avec les images du produit](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -208,11 +224,11 @@ Supposons que vous souhaitiez modifier rapidement l’arrière-plan d’une imag
 
    ![Bouton Propriétés dans [!DNL AEM Assets] barre d’outils](./assets/properties.png){width="600" zoomable="yes"}
 
-1. Sélectionnez l’onglet [!UICONTROL **Commerce**].
+1. Sélectionnez l’onglet [!UICONTROL **&#x200B;**].
 
    Onglet ![Commerce dans le panneau des propriétés de la ressource](./assets/commerce-tab.png){width="600" zoomable="yes"}
 
-1. Vérifiez que le [!UICONTROL **existe-t-il dans Adobe Commerce ?**] champ est défini sur [!UICONTROL **Oui**].
+1. Vérifiez que le [!UICONTROL **existe-t-il dans Adobe Commerce ?**] Le champ est défini sur [!UICONTROL **Oui**].
 
 1. Cliquez sur [!UICONTROL **Ajouter**] et saisissez le SKU du produit auquel vous souhaitez ajouter la ressource.
 
@@ -250,7 +266,7 @@ Supposons que vous souhaitiez modifier rapidement l’arrière-plan d’une imag
 
 ### Générer du texte
 
-1. Ouvrez votre site storefront à l’aide de l’[éditeur universel](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Ouvrez votre site storefront à l’aide de l’[éditeur universel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Sélectionnez le bloc de texte à modifier.
 
@@ -264,7 +280,7 @@ Supposons que vous souhaitiez modifier rapidement l’arrière-plan d’une imag
 
 ### Générer du contenu et des images
 
-1. Ouvrir le [[!DNL Generate Variations]](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Ouvrir le [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Sélectionnez le modèle [!UICONTROL **Bannière héroïque**].
 

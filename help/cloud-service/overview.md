@@ -5,14 +5,41 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+TQID: https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+  - id: f236e2a1-90d4-477d-92e1-5996b5e92bff
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: 1444
 ht-degree: 0%
 
 ---
-
 
 # Vue d’ensemble des [!DNL Adobe Commerce as a Cloud Service]
 
@@ -67,7 +94,7 @@ Ce diagramme illustre le flux de données entre [!DNL Adobe Commerce as a Cloud 
 
 ## Commerce Storefront
 
-Utilisez les [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=fr) d’Adobe optimisés par [!DNL Edge Delivery Services] pour créer des expériences riches en quelques minutes avec une création simple basée sur des documents ou une modification visuelle avec [!DNL Storefront Builder].
+Utilisez les [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront) d’Adobe optimisés par [!DNL Edge Delivery Services] pour créer des expériences riches en quelques minutes avec une création simple basée sur des documents ou une modification visuelle avec [!DNL Storefront Builder].
 
 [!DNL Commerce Storefront] est entièrement découplé avec une architecture découplée qui fournit tous les services et données de marchandisage par le biais d’une couche d’API GraphQL. Cette architecture permet aux équipes de développer leurs interfaces indépendamment de Commerce Foundation, offrant ainsi l’agilité nécessaire pour créer et tester de nouveaux points de contact avec les technologies émergentes.
 
@@ -94,7 +121,7 @@ L’intégration garantit que les ressources numériques, telles que les images 
 
 Les fonctionnalités natives d’[!DNL Adobe Commerce as a Cloud Service] offrent également des outils de gestion des ressources de base pour le stockage et la gestion des ressources numériques.
 
-Consultez le guide d’[intégration d’AEM Assets](../aem-assets-integration/overview.md) pour en savoir plus sur la manière d’intégrer [!DNL Product Visuals powered by AEM Assets] à [!DNL Adobe Commerce as a Cloud Service].
+Consultez le guide d’[intégration d’](../aem-assets-integration/overview.md) pour en savoir plus sur la manière d’intégrer [!DNL Product Visuals powered by AEM Assets] à [!DNL Adobe Commerce as a Cloud Service].
 
 ### [!DNL Product Visuals] ou [!DNL AEM Assets]
 
@@ -119,7 +146,7 @@ La comparaison suivante vous aide à sélectionner la meilleure option pour vos 
       <img src="../assets/icon-double-chevron-right.svg" alt="chevron" width="100">
     </td>
     <td align="left">
-      <strong>AEM Assets</strong>
+      <strong></strong>
       <ul>
         <li>Toutes les fonctionnalités des visuels de produit</li>
         <li>Gestionnaire de ressources numériques (DAM) Full Marketing</li>
@@ -155,12 +182,12 @@ Adobe fournit aux développeurs des points d’extension et des outils complets 
 
 >[!TIP]
 >
->Des applications créées par le fournisseur peuvent également être installées sur [Adobe Exchange](https://exchange.adobe.com/).
+>Des applications créées par le fournisseur peuvent également être installées sur [&#128279;](https://exchange.adobe.com/).
 
 Adobe fournit les outils de développement suivants pour créer des intégrations et des personnalisations :
 
 - [**Maillage API pour Adobe Developer App Builder**](https://developer.adobe.com/graphql-mesh-gateway/) : coordonnez et combinez plusieurs API, GraphQL, REST et d’autres sources en un seul point d’entrée GraphQL interrogeable.
-- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/) : créez et déployez des applications web sécurisées et évolutives qui étendent les fonctionnalités de Commerce et s’intègrent à des solutions tierces.
+- [**&#128279;**](https://developer.adobe.com/app-builder/docs/overview/) : créez et déployez des applications web sécurisées et évolutives qui étendent les fonctionnalités de Commerce et s’intègrent à des solutions tierces.
 - [**Événements**](https://developer.adobe.com/commerce/extensibility/events/) : utilisez des déclencheurs d&#39;événement personnalisés pour interagir avec d&#39;autres outils de développement extensibles.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) : utilisez les webhooks pour déclencher automatiquement les interactions entre Commerce et les systèmes tiers.
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) : personnalisez et améliorez l’administration Commerce avec de nouvelles pages et fonctionnalités pour vos commerçants.
@@ -194,12 +221,12 @@ Le processus de mise à niveau classique pour Adobe Commerce sur Cloud consistai
 
 ### Intégrations tierces
 
-Les développeurs peuvent utiliser des API [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) et [REST](https://developer.adobe.com/commerce/webapi/rest/) complètes pour intégrer [!DNL Commerce Foundation] à des systèmes tiers et étendre les fonctionnalités de Commerce.
+Les développeurs peuvent utiliser des API [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/) et [REST](https://developer.adobe.com/commerce/webapi/rest/) complètes pour intégrer [!DNL Commerce Foundation] à des systèmes tiers et étendre les fonctionnalités de Commerce.
 
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->

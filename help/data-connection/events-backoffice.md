@@ -4,9 +4,19 @@ description: Découvrez les données capturées par chaque événement de back-o
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
-source-git-commit: 6ffa18a9f66b6be8cd40bda5aedc911b26fe0e1d
+TQID: https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '3619'
+source-wordcount: 3714
 ht-degree: 0%
 
 ---
@@ -15,7 +25,7 @@ ht-degree: 0%
 
 Vous trouverez ci-dessous la liste des événements de back-office Commerce disponibles lorsque vous installez l’extension [!DNL Data Connection]. Les données collectées par ces événements sont envoyées au Adobe Experience Platform. Vous pouvez également créer des [événements personnalisés](custom-events.md) pour collecter des données supplémentaires non prêtes à l’emploi.
 
-Outre les données collectées par les événements ci-après, vous obtenez également [d’autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=fr) fournies par le SDK Web Adobe Experience Platform.
+Outre les données collectées par les événements ci-après, vous obtenez également [d’autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fournies par le SDK Web Adobe Experience Platform.
 
 Les événements Back Office contiennent des données côté serveur. Ces données comprennent [statut de la commande](#order-status) des informations telles que si une commande a été passée, annulée, remboursée, expédiée ou terminée. Les données côté serveur incluent également des informations [événements de profil client](#customer-profile-events) telles que si un compte a été créé, mis à jour ou supprimé.
 

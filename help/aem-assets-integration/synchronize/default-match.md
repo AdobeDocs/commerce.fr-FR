@@ -3,16 +3,25 @@ title: Correspondance automatique par défaut
 description: Découvrez comment la règle de correspondance automatique par défaut permet une synchronisation transparente entre Adobe Commerce et l’intégration d’AEM Assets, en veillant à ce que les ressources soient automatiquement liées aux entités de marchandisage appropriées.
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
-source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: 317
 ht-degree: 0%
 
 ---
 
 # Correspondance automatique par défaut
 
-L’intégration d’AEM Assets pour Commerce fournit un mécanisme de correspondance automatique par défaut (**[!UICONTROL Match by product SKU]**) en fonction de la configuration des métadonnées **AEM Assets**. Cette règle permet une synchronisation transparente entre **Adobe Commerce** et **AEM Assets**, en veillant à ce que les ressources soient automatiquement liées aux entités de marchandisage correctes.
+L’intégration d’AEM Assets pour Commerce fournit un mécanisme de correspondance automatique par défaut (**[!UICONTROL Match by product SKU]**) en fonction de la configuration des métadonnées **AEM Assets**. Cette règle permet une synchronisation transparente entre **&#x200B;**&#x200B;et **AEM Assets**, en veillant à ce que les ressources soient automatiquement liées aux entités de marchandisage correctes.
 
 ## Configuration du mécanisme de correspondance automatique
 
@@ -34,7 +43,7 @@ Lorsque la règle de correspondance de **[!UICONTROL Match by product SKU]** est
 
 1. Ouvrez votre instance d’auteur AEM Assets (l’URL est fournie pour votre projet dans la même organisation IMS qu’Adobe Commerce).
 
-1. Dans l’écran de navigation principal, cliquez sur **Assets** pour accéder à l’interface de gestion des ressources numériques (DAM).
+1. Dans l’écran de navigation principal, cliquez sur **&#x200B;**&#x200B;pour accéder à l’interface de gestion des ressources numériques (DAM).
 
 1. Dans AEM Assets, mettez à jour les métadonnées de l’image pour ajouter l’association Adobe Commerce en définissant le champ `Eligible for Commerce` sur `Yes`.
 

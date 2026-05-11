@@ -3,9 +3,23 @@ title: Gestion des ressources
 description: Utilisez l’intégration AEM Assets pour Commerce afin de gérer les ressources multimédias de votre storefront.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
+TQID: https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: 1072
 ht-degree: 0%
 
 ---
@@ -48,11 +62,11 @@ Les images des produits sont automatiquement extraites d’AEM Assets en fonctio
    >
    > Un message indique que l’intégration est activée, ce qui en fait une section **lecture seule** car la gestion des images est centralisée dans la gestion des ressources numériques (DAM).
 
-   Pour configurer les ressources de produit (lier des images aux SKU), ouvrez votre instance d’auteur AEM Assets et cliquez sur **Assets** dans la vue principale. Pour connaître les étapes de configuration des métadonnées[&#x200B; voir &#x200B;](synchronize/default-match.md) Correspondance automatique par défaut .
+   Pour configurer les ressources de produit (lier des images aux SKU), ouvrez votre instance d’auteur AEM Assets et cliquez sur **Assets** dans la vue principale. Pour connaître les étapes de configuration des métadonnées[&#128279;](synchronize/default-match.md) voir  Correspondance automatique par défaut .
 
 ### Gestion des images de produits dans AEM Assets
 
-Pour gérer les images liées au produit, toutes les modifications doivent être apportées directement dans **AEM Assets**. Ce processus est entièrement automatisé, ce qui garantit que toutes les modifications sont synchronisées avec Adobe Commerce sans nécessiter d’intervention manuelle.
+Pour gérer les images liées au produit, toutes les modifications doivent être apportées directement dans **&#x200B;**. Ce processus est entièrement automatisé, ce qui garantit que toutes les modifications sont synchronisées avec Adobe Commerce sans nécessiter d’intervention manuelle.
 
 Pour savoir comment lier des ressources à des produits dans AEM Assets (y compris la configuration et l’approbation des métadonnées), consultez les rubriques suivantes :
 
@@ -65,17 +79,17 @@ Pour plus d&#39;informations sur la synchronisation, consultez la rubrique [&#x2
 
 ## Images de contenu
 
-Adobe Commerce fournit Page Builder en tant que **système de gestion de contenu (CMS)** pour les commerçants qui n’utilisent pas l’ensemble d’outils Adobe Experience Manager (AEM). Pour améliorer la création de contenu, notre intégration utilise le [sélecteur de ressources AEM](synchronize/asset-selector-integration.md), ce qui permet aux marketeurs d’accéder et d’incorporer facilement des images directement à partir du **DAM**. Cela permet de s’assurer que seules des images approuvées et de haute qualité sont utilisées dans la création de contenu, éliminant ainsi le besoin de stockage redondant dans Adobe Commerce.
+Adobe Commerce fournit Page Builder en tant que **système de gestion de contenu (CMS)** pour les commerçants qui n’utilisent pas l’ensemble d’outils Adobe Experience Manager (AEM). Pour améliorer la création de contenu, notre intégration utilise le [sélecteur de ressources &#x200B;](synchronize/asset-selector-integration.md), ce qui permet aux marketeurs d’accéder et d’incorporer facilement des images directement à partir du **DAM**. Cela permet de s’assurer que seules des images approuvées et de haute qualité sont utilisées dans la création de contenu, éliminant ainsi le besoin de stockage redondant dans Adobe Commerce.
 
 ### Utilisation du sélecteur de ressources AEM dans Page Builder
 
 [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} Pour utiliser le **sélecteur de ressources AEM** pour incorporer des images, assurez-vous que les utilisateurs disposent des autorisations [et de l’authentification IMS requises](get-started/permissions.md).
 
-1. Accédez à n’importe quelle section de l’**administration Adobe Commerce** qui prend en charge les `content enrichment` à l’aide de **Page Builder**.
+1. Accédez à n’importe quelle section de l’**administration** qui prend en charge les `content enrichment` à l’aide de **Page Builder**.
 
 1. Ouvrez [Page Builder](https://developer.adobe.com/commerce/frontend-core/page-builder/){target=_blank}.
 
-   Un nouveau type de média appelé **Ressource AEM** sera disponible.
+   Un nouveau type de média appelé **Ressource** sera disponible.
 
 1. Effectuez un glisser-déposer du type de média Ressource AEM dans un bloc de contenu.
 
@@ -141,7 +155,7 @@ Adobe Commerce permet aux commerçants d’associer des images à des catégorie
 
 ### Utilisation du sélecteur de ressources AEM pour les images de catégorie
 
-Après avoir configuré le sélecteur de ressources [AEM](synchronize/asset-selector-integration.md) et vérifié que les utilisateurs disposent des autorisations [autorisations et de l’authentification IMS requises](get-started/permissions.md), vous pouvez l’utiliser pour ajouter des ressources au contenu des catégories de votre catalogue.
+Après avoir configuré le sélecteur de ressources [&#128279;](synchronize/asset-selector-integration.md) et vérifié que les utilisateurs disposent des autorisations [autorisations et de l’authentification IMS requises](get-started/permissions.md), vous pouvez l’utiliser pour ajouter des ressources au contenu des catégories de votre catalogue.
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 
@@ -173,6 +187,6 @@ Pour que le workflow côté Commerce lie les ressources aux produits via les mé
 
 Pour les procédures AEM Assets, consultez la documentation suivante :
 
-* [&#x200B; Retraitement des ressources numériques &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Retraitement des ressources numériques](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Approuver une ressource](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Approbation d’une ressource](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

@@ -1,9 +1,15 @@
 ---
 title: Gérer les synonymes
 description: Découvrez comment gérer les synonymes  [!DNL Live Search] .
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 648e5fec-acc5-4244-aa26-8120c62abe6a
+TQID: https://experienceleague.adobe.com/-B-ixlItkljDDCrau969-DPOvxPxhWM6NWRSG-TFcak
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: 222
 ht-degree: 0%
 
 ---
@@ -26,7 +32,7 @@ Pour faciliter la recherche d’un synonyme, vous pouvez filtrer la liste par ty
 
 ## Modifier le synonyme
 
-1. Recherchez le synonyme à modifier, puis cliquez sur les options **Plus** (...).
+1. Recherchez le synonyme à modifier, puis cliquez sur **Plus** (...) options.
 
 1. Cliquez sur **Modifier**.
 Le mot-clé est le premier terme de la liste et chaque terme est séparé par une virgule. Le mot-clé et les termes d’extension peuvent être mis à jour, mais le type du synonyme ne peut pas être modifié.
@@ -36,7 +42,7 @@ Le mot-clé est le premier terme de la liste et chaque terme est séparé par un
 
 ## Supprimer le synonyme
 
-1. Recherchez le synonyme à supprimer dans la liste, puis cliquez sur les options **Plus** (...).
+1. Recherchez le synonyme à supprimer dans la liste, puis cliquez sur **Plus** (...) options.
 1. Cliquez sur **Supprimer**.
 1. Lorsque vous y êtes invité, cliquez sur **Supprimer le synonyme** pour confirmer.
 

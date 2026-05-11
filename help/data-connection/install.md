@@ -4,9 +4,17 @@ description: Découvrez comment installer, mettre à jour et désinstaller l’e
 role: Admin, Developer
 feature: Install
 exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/EbYHB6L9Q7bZNnoz3-yT4aaBcRiLiatvjO-hQyGOwoo
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: 476
 ht-degree: 0%
 
 ---
@@ -19,7 +27,7 @@ Avant d’installer l’extension, [consultez les conditions préalables](overvi
 
 L’extension [!DNL Data Connection] est disponible sur [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Lorsque vous installez cette extension à partir de la ligne de commande du serveur, elle se connecte à votre installation Adobe Commerce en tant que [service](../landing/saas.md). Une fois le processus terminé, **[!DNL Data Connection]** et **Commerce Services Connector** apparaissent dans le menu **Système** sous **Services** dans Commerce _Admin_.
 
-Vue d’administration de l’extension ![[!DNL Data Connection]](assets/epc-adminui.png)
+Vue d’administration de l’extension ![&#128279;](assets/epc-adminui.png) [!DNL Data Connection]
 
 >[!IMPORTANT]
 >
@@ -77,7 +85,7 @@ Finalisez l’installation en fonction du type de déploiement : Adobe Commerce 
 
 #### Sur les infrastructures cloud
 
-Dans Adobe Commerce sur les infrastructures cloud, activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=fr#enable_eventing).
+Dans Adobe Commerce sur les infrastructures cloud, activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
 
 ```bash
 stage:
@@ -137,7 +145,7 @@ Ou, pour les commerçants B2B :
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-Pour effectuer une mise à jour vers une version majeure telle que de 2.0.0 à 3.0.0, modifiez le fichier [!DNL Composer] de `.json` racine du projet comme suit :
+Pour effectuer une mise à jour vers une version majeure telle que de 2.0.0 à 3.0.0, modifiez le fichier `.json` de [!DNL Composer] racine du projet comme suit :
 
 1. Ouvrez le fichier de `composer.json` racine et recherchez des `magento/experience-platform-connector`.
 
@@ -165,4 +173,4 @@ Pour effectuer une mise à jour vers une version majeure telle que de 2.0.0 à 3
 
 ## Désinstaller l’extension [!DNL Data Connection] {#uninstall}
 
-Pour désinstaller l’extension [!DNL Data Connection], consultez la section [désinstallation des modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=fr).
+Pour désinstaller l’extension [!DNL Data Connection], consultez la section [désinstallation des modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

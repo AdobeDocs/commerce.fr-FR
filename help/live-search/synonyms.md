@@ -2,9 +2,14 @@
 title: Synonymes
 description: '[!DNL Live Search] Les synonymes développent les requêtes avec des mots différents de ceux de votre catalogue.'
 exl-id: 4aa731b0-b922-476b-a311-5c400f31f749
-source-git-commit: f96e7d8d2a31d5e0f49bd3ac2da320313908a868
+TQID: https://experienceleague.adobe.com/FjK6ZX-ktMEIBt1txcMIiQZKz8WqM0ZYjdhjlrmjIwQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '115'
+source-wordcount: 126
 ht-degree: 0%
 
 ---

@@ -4,10 +4,24 @@ description: Découvrez comment utiliser l’extension  [!DNL Data Connection]  
 role: Admin, Leader
 feature: Security, Compliance
 exl-id: 8851e6d2-c466-4d8e-bfa4-20d0ad6522b5
-source-git-commit: 290e3310bd7940c4ccd11317d273b75cc974223b
+TQID: https://experienceleague.adobe.com/PxrtL1nHtJsRJuAehDVKRk0ZuJz0ta7i84j1K6An1QU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 0%
+source-wordcount: 601
+ht-degree: 1%
 
 ---
 
@@ -27,11 +41,11 @@ Dans cet article, vous apprendrez :
 
 ## Installation
 
-Si vous avez acheté le module complémentaire de soins de santé pour Adobe [!DNL Commerce], vous avez probablement déjà installé l’extension [&#x200B; conforme à la norme HIPAA](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation). Pour vous assurer que vos données d’événement back-office [!DNL Commerce] sont conformes à la loi HIPAA, vous devez également installer l’extension [!DNL Data Connection] avec l’extension **Data Services HIPAA** supplémentaire. L’extension **Data Services HIPAA** garantit que toutes les données de back-office que vous envoyez à Experience Platform sont conformes à la loi HIPAA. Découvrez [&#x200B; comment installer l’extension &#x200B;](install.md#install-the-data-services-hipaa-extension).
+Si vous avez acheté le module complémentaire de soins de santé pour Adobe [!DNL Commerce], vous avez probablement déjà installé l’extension [&#x200B; conforme à la norme HIPAA](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview#installation). Pour vous assurer que vos données d’événement back-office [!DNL Commerce] sont conformes à la loi HIPAA, vous devez également installer l’extension [!DNL Data Connection] avec l’extension **Data Services HIPAA** supplémentaire. L’extension **Data Services HIPAA** garantit que toutes les données de back-office que vous envoyez à Experience Platform sont conformes à la loi HIPAA. Découvrez [&#x200B; comment installer l’extension &#x200B;](install.md#install-the-data-services-hipaa-extension).
 
 >[!IMPORTANT]
 >
->Lorsque vous installez l’extension **Data Services HIPAA**, les données d’événement de storefront utilisées par Live Search et les recommandations de produits ne sont plus capturées. En effet, les données d’événement de storefront sont générées côté client. Pour continuer à capturer et à envoyer des données d’événement de storefront, réactivez la collecte d’événements pour ces services. Voir [configuration générale](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/general/general#data-services) pour en savoir plus.
+>Lorsque vous installez l’extension **Data Services HIPAA**, les données d’événement de storefront utilisées par Live Search et les recommandations de produits ne sont plus capturées. En effet, les données d’événement de storefront sont générées côté client. Pour continuer à capturer et à envoyer des données d’événement de storefront, réactivez la collecte d’événements pour ces services. Voir [configuration générale](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) pour en savoir plus.
 
 ## Comment s’assurer que les données envoyées à Experience Platform sont conformes à la loi HIPAA
 
@@ -41,7 +55,7 @@ Pour obtenir une présentation des libellés d’utilisation des données et de 
 
 ### Appliquer des libellés d’utilisation des données aux champs de [!DNL Commerce]
 
-Suivez les étapes du tutoriel [gérer les libellés d’utilisation des données pour un schéma](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/tutorials/labels) pour savoir comment appliquer des libellés à votre schéma de [!DNL Commerce].
+Suivez les étapes du tutoriel [gérer les libellés d’utilisation des données pour un schéma](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) pour savoir comment appliquer des libellés à votre schéma de [!DNL Commerce].
 
 Voir le [glossaire des libellés sensibles](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/reference#sensitive) pour en savoir plus sur les libellés disponibles que vous pouvez appliquer aux champs de votre schéma de [!DNL Commerce]. Par exemple, l’étiquette `RHD` identifie des informations protégées sur la santé (IPS) ou des informations sur un patient que vous êtes contractuellement autorisé(e) par Adobe à télécharger.
 
@@ -57,7 +71,7 @@ Adobe [!DNL Commerce] utilise le chiffrement au niveau du bloc. Pour le stockage
 
 ### Chiffrement des données dans Experience Platform
 
-Lorsque les commerçants envoient leurs données à Experience Platform, ces données sont envoyées à l’aide de HTTPS TLS v1.2. En savoir plus sur la façon dont [Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/landing/governance-privacy-security/encryption) chiffre les données.
+Lorsque les commerçants envoient leurs données à Experience Platform, ces données sont envoyées à l’aide de HTTPS TLS v1.2. En savoir plus sur la façon dont [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption) chiffre les données.
 
 ## Gestion [!DNL Commerce] demandes d’accès à des informations personnelles
 

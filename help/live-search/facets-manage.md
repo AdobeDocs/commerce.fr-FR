@@ -1,9 +1,19 @@
 ---
 title: Gestion des facettes
 description: Découvrez comment gérer les facettes  [!DNL Live Search] .
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 5062bb1f-ce6f-4244-a1df-65ae1ce868b9
+TQID: https://experienceleague.adobe.com/KWh5KwVRNJO3XLiG9xbqhBsGkt99BgY0hPnPbxDd8vY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: 481
 ht-degree: 0%
 
 ---
@@ -28,7 +38,7 @@ Reportez-vous à [Paramètres](settings.md) pour configurer les intervalles et l
 
    ![Filtrer les facettes](assets/facets-filter-by-cropped.png)
 
-1. Pour modifier les propriétés de la facette, cliquez sur **Plus** (...).
+1. Pour modifier les propriétés de la facette, cliquez sur **Plus** (...) options.
 1. Cliquez sur **Modifier**
 
    ![Modifier les options](assets/facet-edit-menu.png)
@@ -85,7 +95,7 @@ Vous pouvez modifier l&#39;ordre des facettes épinglées en déplaçant la lign
 
 ## Supprimer la facette
 
-1. Recherchez la facette dans la liste, puis cliquez sur les options **Plus** (...).
+1. Recherchez la facette dans la liste et cliquez sur **Plus** (...) options.
 1. Cliquez sur **Supprimer**.
 1. Lorsque vous êtes invité à confirmer, cliquez sur **Supprimer la facette**.
 La facette est supprimée du storefront une fois les modifications publiées.

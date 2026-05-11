@@ -4,9 +4,20 @@ description: Découvrez comment utiliser  [!DNL Commerce]  données d’événem
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 0e9d286b-c459-44db-bbf8-2cb46e21739d
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+TQID: https://experienceleague.adobe.com/f8XYzoWJCecwuEaNBA17-bf6gtGBLxpDQPJBqDk07-0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: 1132
 ht-degree: 0%
 
 ---
@@ -79,9 +90,9 @@ Utilisez ces données d’événement pour indiquer que l’audience inclut des 
 
    ![Créer une règle](assets/build-rule.png)
 
-   L’espace de travail **Créateur de segments** vous permet de définir les règles et conditions de votre audience. &#x200B; ces règles et conditions sont basées sur les données d’événement et de profil de votre boutique Commerce et définissent les critères qui déterminent si un utilisateur est admissible pour l’audience. Par exemple, vous pouvez créer une règle qui inclut les utilisateurs et utilisatrices qui ont consulté un produit spécifique ou les utilisateurs et utilisatrices qui ont effectué un achat au cours d’une certaine période. En savoir plus sur le [créateur de segments](https://experienceleague.adobe.com/fr/docs/experience-platform/segmentation/ui/segment-builder) ainsi que sur les règles et conditions.
+   L’espace de travail **Créateur de segments** vous permet de définir les règles et conditions de votre audience. &#x200B; ces règles et conditions sont basées sur les données d’événement et de profil de votre boutique Commerce et définissent les critères qui déterminent si un utilisateur est admissible pour l’audience. Par exemple, vous pouvez créer une règle qui inclut les utilisateurs et utilisatrices qui ont consulté un produit spécifique ou les utilisateurs et utilisatrices qui ont effectué un achat au cours d’une certaine période. En savoir plus sur le [créateur de segments](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) ainsi que sur les règles et conditions.
 
-1. Sélectionnez l’onglet [Événements](https://experienceleague.adobe.com/fr/docs/experience-platform/segmentation/ui/segment-builder#events).
+1. Sélectionnez l’onglet [Événements](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events).
 
    ![Onglet Événements](assets/audience-events-tab.png)
 
@@ -109,7 +120,7 @@ Vous rendez une audience disponible dans [!DNL Commerce] en l’activant pour la
 
 >[!IMPORTANT]
 >
->Si vous n’avez pas encore défini [!DNL Commerce] comme destination disponible pour recevoir des données, consultez la rubrique [Adobe [!DNL Commerce] Connection](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/catalog/personalization/adobe-commerce).
+>Si vous n’avez pas encore défini [!DNL Commerce] comme destination disponible pour recevoir des données, consultez la rubrique [Adobe [!DNL Commerce] Connection](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-commerce).
 
 1. Dans l’onglet **Détails** de votre audience, cliquez sur **Activer vers la destination**.
 
@@ -119,22 +130,22 @@ Vous rendez une audience disponible dans [!DNL Commerce] en l’activant pour la
 
 ## &#x200B;3. Affichage de l’audience dans le tableau de bord des audiences
 
-Dans [!DNL Commerce], vous pouvez afficher toutes les audiences [actives](https://experienceleague.adobe.com/fr/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) qui peuvent être personnalisées pour votre instance [!DNL Commerce] à l’aide du tableau de bord **Audiences Real-Time CDP**.
+Dans [!DNL Commerce], vous pouvez afficher toutes les audiences [actives](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) qui peuvent être personnalisées pour votre instance [!DNL Commerce] à l’aide du tableau de bord **Audiences Real-Time CDP**.
 
-Pour accéder au tableau de bord **Audiences Real-Time CDP**, positionnez-vous sur la barre latérale _Admin_, puis sur **[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**.
+Pour accéder au tableau de bord **Audiences**, positionnez-vous sur la barre latérale _Admin_, puis sur **[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**.
 
 Dans le tableau de bord, recherchez l’audience que vous avez créée. Notez qu’elle n’est pas utilisée dans une règle de prix de panier ou un bloc dynamique. Dans la section suivante, vous liez l’audience à une règle de prix de panier.
 
-![Tableau de bord des audiences Real-Time CDP](assets/real-time-cdp-dashboard.png)
+![Tableau de bord des audiences &#x200B;](assets/real-time-cdp-dashboard.png)
 
 ### &#x200B;4. Créez une règle de prix de panier basée sur l’audience
 
 Cette section vous explique comment créer une règle de prix de panier en fonction de votre nouvelle audience.
 
-1. Vérifiez que la nouvelle audience s’affiche dans le tableau de bord **Audiences Real-Time CDP**.
-1. [Créer une règle de prix de panier](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
-1. [Définissez la condition](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) de la règle de prix du panier à l’aide de votre nouvelle audience.
-1. [Définissez l’action](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) qui doit se produire lorsque le produit est ajouté au panier.
+1. Vérifiez que la nouvelle audience s’affiche dans le tableau de bord **Audiences**.
+1. [Créer une règle de prix de panier](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
+1. [Définissez la condition](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) de la règle de prix du panier à l’aide de votre nouvelle audience.
+1. [Définissez l’action](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) qui doit se produire lorsque le produit est ajouté au panier.
 1. Continuez pour configurer votre règle de prix de panier.
 1. Accédez à la vue client de votre instance sandbox.
 1. Ajoutez au panier le produit sur lequel vous avez basé l’audience. Notez que la règle de prix de panier est activée.

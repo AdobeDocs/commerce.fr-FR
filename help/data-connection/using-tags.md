@@ -3,9 +3,23 @@ title: Collecter des données Commerce à l’aide de balises Adobe Experience P
 description: Découvrez comment collecter des données Commerce à l’aide de balises Adobe Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
+TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: 2655
 ht-degree: 0%
 
 ---
@@ -33,7 +47,7 @@ Pour collecter des données d’événement Commerce :
 
 Pour mapper les données du storefront Commerce à Adobe Experience Platform, configurez et installez les éléments suivants à partir des balises Adobe Experience Platform :
 
-1. [Configurer une propriété de balise](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=fr) dans la collecte de données Adobe Experience Platform.
+1. [Configurer une propriété de balise](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) dans la collecte de données Adobe Experience Platform.
 
 1. Sous **Création**, sélectionnez **Extensions** et installez et configurez les extensions suivantes :
 
@@ -57,11 +71,11 @@ La collecte de données à l’aide de balises étant différente de l’utilisa
 
 Lorsque vous mettez à jour les éléments de données et les règles dans les balises Adobe Experience Platform avec des données d’événement spécifiques à Adobe Commerce, vous suivez certaines étapes courantes.
 
-Par exemple, ajoutons l’événement Adobe Commerce `signOut` aux balises Adobe Experience Platform. Les étapes décrites ci-dessous, à l’exception des valeurs spécifiques que vous définissez, décrivent comment ajouter des [éléments de données](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=fr#data-element) et des [règles](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=fr#create-a-rule), qui s’appliquent à tous les événements Adobe Commerce que vous ajoutez aux balises.
+Par exemple, ajoutons l’événement Adobe Commerce `signOut` aux balises Adobe Experience Platform. Les étapes décrites ci-dessous, à l’exception des valeurs spécifiques que vous définissez, décrivent comment ajouter des [éléments de données](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) et des [règles](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule), qui s’appliquent à tous les événements Adobe Commerce que vous ajoutez aux balises.
 
 1. Créer un élément de données :
 
-   ![Créer Un Élément De Données](assets/create-new-data-elements.png)
+   ![Créer un élément de données](assets/create-new-data-elements.png)
    _Créer Un Élément De Données_
 
 1. Définissez **Name** sur `sign out`.
@@ -116,8 +130,8 @@ Répétez les étapes ci-dessus dans les balises pour chacun des événements Ad
 
 Pour chacun des événements suivants, mappez les événements Adobe Commerce à votre XDM en suivant les étapes ci-dessus.
 
-- [`SignOut`](#signout)
-- [`SignIn`](#signin)
+- [`signOut`](#signout)
+- [`signIn`](#signin)
 - [`createAccount`](#createaccount)
 - [`editAccount`](#editaccount)
 - [`pageView`](#pageview)
@@ -125,10 +139,10 @@ Pour chacun des événements suivants, mappez les événements Adobe Commerce à
 - [`searchRequestSent`](#searchrequestsent)
 - [`searchResponseReceived`](#searchresponsereceived)
 - [`addToCart`](#addtocart)
-- [« openCart »](#opencart)
+- [`openCart`](#opencart)
 - [`viewCart`](#viewcart)
 - [`removeFromCart`](#removefromcart)
-- [`initier le passage en caisse`](#initiatecheckout)
+- [`initiateCheckout`](#initiatecheckout)
 - [`placeOrder`](#placeorder)
 
 ### SignOut
@@ -726,7 +740,7 @@ Créez les éléments de données suivants :
    - **Type d’élément de données** : `Data Layer Computed State`
    - **[Facultatif] chemin d’accès** : `productContext.pricing.regularPrice`
 
-1. Produit  prix :
+1. Prix du produit :
 
    - **Nom** : `product price`
    - **Extension** : `Core`
@@ -969,7 +983,7 @@ Créez les éléments de données suivants :
    - **Type d’élément de données** : `Data Layer Computed State`
    - **[Facultatif] chemin d’accès** : `productContext.pricing.regularPrice`
 
-1. Produit  prix :
+1. Prix du produit :
 
    - **Nom** : `product price`
    - **Extension** : `Core`
@@ -1378,7 +1392,7 @@ Contrairement aux événements storefront qui utilisent l’ECID pour identifier
 
 1. Créez un élément de mappage d’identités.
 
-   ![Mappage d’identité back-office](assets/custom-code-backoffice.png)
+   ![Mappage d’identité Back Office](assets/custom-code-backoffice.png)
    _Créer un mappage d’identités back-office_
 
 1. Sélectionnez [!UICONTROL Open Editor] et ajoutez le code personnalisé suivant :
@@ -1411,11 +1425,11 @@ return IdentityMap;
 
 ## Définition du consentement
 
-Lorsque vous installez l’extension [!DNL Data Connection] dans Adobe Commerce, le consentement de la collecte de données est activé par défaut. Le droit d’opposition est géré par le biais du cookie [`mg_dnt`. &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) Vous pouvez suivre les étapes décrites ici si vous choisissez d’utiliser `mg_dnt` pour gérer le consentement. La documentation de Adobe Experience Platform Web SDK [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=fr) propose plusieurs options supplémentaires pour gérer le consentement.
+Lorsque vous installez l’extension [!DNL Data Connection] dans Adobe Commerce, le consentement de la collecte de données est activé par défaut. Le droit d’opposition est géré par le biais du cookie [`mg_dnt`. &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) Vous pouvez suivre les étapes décrites ici si vous choisissez d’utiliser `mg_dnt` pour gérer le consentement. La documentation de Adobe Experience Platform Web SDK [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) propose plusieurs options supplémentaires pour gérer le consentement.
 
 1. Créez un élément de données **Code personnalisé principal** (`%do not track cookie%`) pour le cookie `mg_dnt` :
 
-   ![Créer l’élément de données ne pas suivre](assets/element-dnt-cookie.png)
+   ![Créer un élément de données ne pas suivre](assets/element-dnt-cookie.png)
    _Créer l’élément de données ne pas suivre_
 
 1. Créez un élément de données **Code personnalisé de base** (`%consent%`) qui renvoie des `out` si le cookie est défini et `in` dans le cas contraire :

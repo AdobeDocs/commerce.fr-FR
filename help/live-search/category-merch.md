@@ -4,9 +4,18 @@ description: Utilisez  [!DNL Live Search]  marchandisage de catégorie pour une 
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
 badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: 1131
 ht-degree: 0%
 
 ---
@@ -42,7 +51,7 @@ Vous pouvez rechercher une catégorie ou une sous-catégorie dans le champ « Re
 Le marchandisage de catégorie utilise les mêmes types de classement que pour les [produits individuels](rules-workspace.md).
 Il existe deux types de classement : Intelligent et Manuel.
 
-**Classement intelligent** exploite l’analyse des données comportementales du storefront par l’[IA dédiée à Adobe](https://business.adobe.com/fr/ai.html) pour trier tous les produits au sein des catégories sélectionnées selon un certain algorithme. Une fois un classement intelligent choisi, l’ordre spécifique des produits devrait changer au fil du temps, car les données sous-jacentes sont réanalysées en permanence par l’IA dédiée à Adobe. Par exemple, les produits les plus en vogue changent automatiquement au fil du temps en fonction des préférences des acheteurs.
+**Classement intelligent** exploite l’analyse des données comportementales du storefront par [Adobe AI](https://business.adobe.com/fr/ai.html) pour trier tous les produits dans les catégories sélectionnées selon un certain algorithme. Une fois le classement intelligent choisi, l’ordre spécifique des produits devrait changer au fil du temps, car les données sous-jacentes sont réanalysées régulièrement par Adobe AI. Par exemple, les produits les plus en vogue changent automatiquement au fil du temps en fonction des préférences des acheteurs.
 Les méthodes de classement intelligentes sont les suivantes :
 
 * Les plus achetés : classe les produits en fonction de la fréquence à laquelle ils ont été achetés par les acheteurs au cours des sept jours précédents.

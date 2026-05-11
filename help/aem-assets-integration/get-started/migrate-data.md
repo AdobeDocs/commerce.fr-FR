@@ -3,9 +3,19 @@ title: Migrer des fichiers multimédias vers AEM
 description: Migrez les fichiers multimédias depuis Adobe Commerce ou une source externe dans la gestion des ressources numériques AEM Assets.
 feature: CMS, Media, Integration
 exl-id: ccb13e90-8b18-4f1e-94ce-f0dacea2f617
-source-git-commit: ac880333814d9d9a45e658e2a637cd9634dbfb1f
+TQID: https://experienceleague.adobe.com/-fCE7lTivOuhLDzEMNexxGWLTkL52oo9p-sm54HxpQM
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -21,7 +31,7 @@ Adobe Commerce et Adobe Experience Manager (AEM) fournissent des fonctionnalité
 | **Configuration requise** | <ul><li>Environnement AEM as a Cloud Service configuré avec AEM Assets</li><li>Capacité de stockage suffisante</li><li>Bande passante réseau pour les transferts de fichiers volumineux</li></ul> |
 | **Accès et autorisations requis** | <ul><li>Accès des administrateurs à AEM Assets as a Cloud Service</li><li>Accès au système source où sont stockés les fichiers multimédias (Adobe Commerce ou système externe)</li><li>Autorisations appropriées pour accéder aux services de stockage dans le cloud</li></ul> |
 | **Compte d’espace de stockage** | <ul><li>Compte de stockage Blob AWS S3 ou Azure</li><li>Configuration de conteneur/compartiment privé</li><li>Informations d’identification d’authentification</li></ul> |
-| **Contenu Source** | <ul><li>Fichiers multimédias organisés prêts pour la migration</li><li>Fichiers image et vidéo dans des <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">formats pris en charge par AEM Assets</a>.</li><li>Nettoyer les ressources dupliquées</li></li> |
+| **Contenu** | <ul><li>Fichiers multimédias organisés prêts pour la migration</li><li>Fichiers image et vidéo dans des <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">formats pris en charge par AEM Assets</a>.</li><li>Nettoyer les ressources dupliquées</li></li> |
 | **Préparation des métadonnées** | <ul><li><a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">Profil de métadonnées AEM Assets configuré pour les ressources Commerce</a></li><li>Valeurs de métadonnées mappées pour chaque ressource</li><li>Éditeur de fichier CSV (par exemple, Microsoft Excel)</li></ul> |
 
 ## Bonnes pratiques de migration
@@ -117,11 +127,11 @@ Voici un aperçu général de l’utilisation de l’outil.
 
 1. Dans la vue Outils Experience Manager, sélectionnez **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**.
 
-   ![Création AEM Assets](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
+   ![Création &#x200B;](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
 
 1. Dans les configurations d’importation en bloc, sélectionnez **[!UICONTROL Create]** pour ouvrir le formulaire de configuration.
 
-   ![Création AEM Assets](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
+   ![Création &#x200B;](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
 
 1. Configurez et enregistrez la configuration.
 
@@ -138,6 +148,6 @@ Voici un aperçu général de l’utilisation de l’outil.
 
 >[!MORELIKETHIS]
 >
-> [&#x200B; Démonstration vidéo de l’outil d’importation en bloc &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
+> Démonstration vidéo de l’outil d’importation en bloc [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
 > [Conseils, bonnes pratiques et restrictions](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
 > [Chargement ou ingestion de ressources à l’aide d’API](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
