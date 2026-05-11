@@ -4,9 +4,14 @@ description: Découvrez comment ajouter des attributs de commande personnalisés
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/L0LoTkKV0LCiO3mj8W1cKyK-A0HO0z32zu1ZSNC9GR4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: 616
 ht-degree: 2%
 
 ---
@@ -349,7 +354,7 @@ ComponentRegistrar::register(
 
 Pour vous assurer que les nouveaux attributs de commande personnalisés peuvent être ingérés par votre schéma [!DNL Commerce] dans Experience Platform, vous devez étendre le schéma afin d’inclure ces champs personnalisés.
 
-Pour savoir comment étendre un schéma XDM existant afin d’inclure ces champs personnalisés, consultez l’article [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) dans la documentation d’Experience Platform. Le champ ID de client est généré dynamiquement. Cependant, la structure des champs doit ressembler à l’exemple fourni dans la documentation d’Experience Platform.
+Pour savoir comment étendre un schéma XDM existant afin d’inclure ces champs personnalisés, consultez l’article [Créer et modifier des schémas dans l’interface utilisateur](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) dans la documentation d’Experience Platform. Le champ ID de client est généré dynamiquement. Cependant, la structure des champs doit ressembler à l’exemple fourni dans la documentation d’Experience Platform.
 
 >[!IMPORTANT]
 >
@@ -365,7 +370,7 @@ Pour `productListItems`, ajoutez des champs pour le niveau Article de commande :
 
 ## Étape 12 : confirmer que les données sont capturées
 
-Consultez l’onglet [&#x200B; Personnalisation des données &#x200B;](connect-data.md#data-customization) dans l’interface d’administration pour confirmer que les données d’attribut personnalisé sont capturées et envoyées à Experience Platform.
+Consultez l’onglet [ Personnalisation des données ](connect-data.md#data-customization) dans l’interface d’administration pour confirmer que les données d’attribut personnalisé sont capturées et envoyées à Experience Platform.
 
 ### Dépannage
 

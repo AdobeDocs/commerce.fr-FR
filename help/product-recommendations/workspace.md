@@ -2,9 +2,14 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: Découvrez comment configurer, gérer et surveiller les performances des recommandations de produits.
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/1dnLBQhNwu1rP0FtnvUGMGpdbKveACW9SNMBIHYzmAg
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: 919
 ht-degree: 1%
 
 ---
@@ -18,7 +23,7 @@ L’espace de travail [!DNL Product Recommendations] affiche une liste de recomm
 >Une unité de recommandation est un widget qui contient les _éléments_ de produit recommandés.
 
 ![Espace de travail Recommendations](assets/workspace.png)
-_Workspace Recommendations_
+Workspace Recommendations__
 
 ## Collecte de données
 
@@ -35,7 +40,7 @@ Si vous utilisez un storefront découplé, reportez-vous à la documentation sui
 
 ## Définir la portée
 
-Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr) de tous les paramètres de recommandation est définie sur `Default Store View`. Si votre installation de Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la vue de [magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) où vos recommandations s’appliquent.
+Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) de tous les paramètres de recommandation est définie sur `Default Store View`. Si votre installation de Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la vue de [magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où vos recommandations s’appliquent.
 
 ## Définition de la période des mesures
 
@@ -101,10 +106,10 @@ Sur la page Détails de la recommandation, cliquez sur **Créer**. Pour en savoi
 
 | Contrôle | Description |
 |---|---|
-| ![&#x200B; Sélecteur de calendrier &#x200B;](assets/icon-calendar.png) | Détermine la période utilisée pour les calculs des mesures. Options : 24 heures / 7 jours / 30 jours |
+| ![ Sélecteur de calendrier ](assets/icon-calendar.png) | Détermine la période utilisée pour les calculs des mesures. Options : 24 heures / 7 jours / 30 jours |
 | ![Sélecteur de colonnes](assets/icon-show-hide-columns.png) | Détermine les colonnes qui apparaissent dans le tableau [!DNL Product Recommendations]. |
 | Paramètres | Détermine l’espace de données SaaS où sont récupérées les données comportementales de recommandation et active également le type de recommandation de similarité visuelle. |
-| Créer une recommandation | Ouvre la page [&#x200B; Créer une recommandation &#x200B;](create.md). |
+| Créer une recommandation | Ouvre la page [ Créer une recommandation ](create.md). |
 
 ## Descriptions des colonnes
 

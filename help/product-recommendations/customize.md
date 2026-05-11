@@ -1,9 +1,14 @@
 ---
 title: Personnaliser
 description: Découvrez comment personnaliser vos recommandations de produits.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b59932e1-748a-432d-b65b-13cf1c287fb2
+TQID: https://experienceleague.adobe.com/-49Lqkuhnrn5GCQtHLO-9gr1nHwMjEQeEVDRR4cDk5Y
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -102,7 +107,7 @@ Lorsque vous [créez](create.md) une recommandation, vous spécifiez son [emplac
 
    Cette modification entraîne l’affichage de votre unité de recommandation après l’image du produit sur la page des détails du produit. Si vous souhaitez que l’unité de recommandation apparaisse avant le `product.info.media`, définissez l’attribut `after="-"` sur `before="-"`. L’argument `pagePlacement` est un argument interne qui ne doit pas être modifié.
 
-Pour plus d’informations sur les types de blocs sur la page[&#128279;](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) voir présentation de la disposition.
+Pour plus d’informations sur les types de blocs sur la page](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) voir [présentation de la disposition.
 
 ## Attributs de produit personnalisés
 
@@ -112,7 +117,7 @@ Par exemple, si votre boutique vend certains produits biologiques, vous pouvez a
 
 ![Ajouter un badge](assets/unit-custom.png)
 
-Pour vous assurer qu’un attribut de produit personnalisé est disponible lorsque vous effectuez le rendu de l’unité de recommandation sur la page, définissez la propriété `Used in Product Listing` sur `Yes` dans la page [Attributs du produit](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=fr) dans l’Administration.
+Pour vous assurer qu’un attribut de produit personnalisé est disponible lorsque vous effectuez le rendu de l’unité de recommandation sur la page, définissez la propriété `Used in Product Listing` sur `Yes` dans la page [Attributs du produit](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) dans l’Administration.
 
 Lorsque cette propriété est définie, la payload JSON inclut un objet `attributes` qui contient un tableau de codes et de valeurs d’attribut. Vous pouvez ensuite appliquer un style de storefront personnalisé en fonction de ces valeurs d’attribut, par exemple en ajoutant des traitements visuels spéciaux ou des badges comme mentionné précédemment.
 

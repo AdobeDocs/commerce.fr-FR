@@ -1,11 +1,15 @@
 ---
 title: Filtres de recommandation
 description: Découvrez comment utiliser des filtres pour contrôler quels produits apparaissent dans les recommandations  [!DNL Adobe Commerce Optimizer] .
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: 998
 ht-degree: 0%
 
 ---
@@ -47,7 +51,7 @@ Chaque type de filtre cible un aspect différent du catalogue, tel que le produi
 >
 >La fonctionnalité suivante est en version bêta.
 
-Le filtrage des prix utilise le **prix calculé final** de chaque produit pour le **catalogue de prix actif** du storefront, c’est-à-dire le prix attribué au storefront dans lequel l’unité de recommandation est rendue. Cette valeur reflète les remises, les promotions et les prix spéciaux définis dans ce catalogue des prix, et non le prix catalogue seul. L’évaluation utilise uniquement le catalogue de prix de ce magasin ; les autres magasins ou catalogues de prix ne s’appliquent pas. La façon dont les tarifs sont associés à un storefront est configurée avec votre catalogue et [&#x200B; configuration des tarifs](../../setup/pricebooks.md).
+Le filtrage des prix utilise le **prix calculé final** de chaque produit pour le **catalogue de prix actif** du storefront, c’est-à-dire le prix attribué au storefront dans lequel l’unité de recommandation est rendue. Cette valeur reflète les remises, les promotions et les prix spéciaux définis dans ce catalogue des prix, et non le prix catalogue seul. L’évaluation utilise uniquement le catalogue de prix de ce magasin ; les autres magasins ou catalogues de prix ne s’appliquent pas. La façon dont les tarifs sont associés à un storefront est configurée avec votre catalogue et [ configuration des tarifs](../../setup/pricebooks.md).
 
 #### Comment inclure et exclure des règles utiliser le prix
 

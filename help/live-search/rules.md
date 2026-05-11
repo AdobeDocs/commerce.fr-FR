@@ -2,9 +2,13 @@
 title: Rechercher dans le marchandisage
 description: '[!DNL Live Search] règles de marchandisage combinent la logique aux actions pour façonner l’expérience d’achat.'
 exl-id: 9894bf2b-8556-4057-aa23-ebdcb1599914
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/WP92dt45BJo8-pJDaWY-9ocDd4GdJVWcOqzVLfjnEkI
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: 695
 ht-degree: 0%
 
 ---
@@ -75,4 +79,4 @@ La requête effectuée dans l’administrateur fonctionne légèrement différem
 ## Marchandisage de catégorie et affectations de produits de catégorie
 
 [!DNL Live Search] vous permet de filtrer par catégories. Voir [Marchandisage de catégorie](category-merch.md) pour plus d’informations.
-Cependant, dans Adobe Commerce, vous pouvez créer une catégorie virtuelle avec des [affectations de produits de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html?lang=fr). Ce type de catégorie est créé lors de l’exécution et n’existe pas dans la base de données des catégories. Par conséquent, [!DNL Live Search] ne pouvez pas lire ni utiliser ce type de catégorie.
+Cependant, dans Adobe Commerce, vous pouvez créer une catégorie virtuelle avec des [affectations de produits de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Ce type de catégorie est créé lors de l’exécution et n’existe pas dans la base de données des catégories. Par conséquent, [!DNL Live Search] ne pouvez pas lire ni utiliser ce type de catégorie.

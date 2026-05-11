@@ -2,12 +2,18 @@
 title: Outils de développement du codage de l’IA pour Adobe Commerce App Builder
 description: Découvrez comment utiliser les outils d’IA pour créer des applications Commerce App Builder.
 feature: App Builder, Cloud
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 level: Intermediate
-source-git-commit: 2c851da1dc521f5309031fc091be88f9ca39cd8f
+TQID: https://experienceleague.adobe.com/ZbqP1MO-QrqAtocvmgFStqaluqQdzMm4LXlY3o4o3xY
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2438'
+source-wordcount: 2634
 ht-degree: 0%
 
 ---
@@ -44,12 +50,12 @@ Les outils seront mis à jour vers la dernière version.
 * Tout agent de codage qui prend en charge [les compétences de l’agent](https://agentskills.io/home#adoption), tel que :
 
    * [Curseur](https://cursor.com/download)
-   * [Code Claude](https://www.claude.com/product/claude-code)
-   * [&#x200B; Copilote GitHub &#x200B;](https://github.com/features/copilot)
+   * [Claude Code](https://www.claude.com/product/claude-code)
+   * [Copilote GitHub](https://github.com/features/copilot)
    * [Planche à voile](https://windsurf.com)
-   * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
-   * [&#x200B; Codex OpenAI &#x200B;](https://openai.com/index/introducing-codex/)
-   * [Cline &#x200B;](https://cline.bot)
+   * [Interface de ligne de commande Gemini](https://github.com/google-gemini/gemini-cli)
+   * [Codex OpenAI](https://openai.com/index/introducing-codex/)
+   * [Cline](https://cline.bot)
 
 * [Node.js](https://nodejs.org/en/download) : version LTS
 * Gestionnaire de packages : [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) ou [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
@@ -57,7 +63,7 @@ Les outils seront mis à jour vers la dernière version.
 
 ## Installation
 
-1. Installez globalement la dernière [ligne de commande Adobe I/O](https://github.com/adobe/aio-cli) :
+1. Installez globalement la dernière [ligne de commande ](https://github.com/adobe/aio-cli) :
 
    ```bash
    npm install -g @adobe/aio-cli
@@ -66,8 +72,8 @@ Les outils seront mis à jour vers la dernière version.
 1. Installez les modules externes suivants :
 
    * [Commerce de l’interface de ligne de commande Adobe I/O](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
-   * [Exécution de l’interface de ligne de commande Adobe I/O](https://github.com/adobe/aio-cli-plugin-runtime)
-   * [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev)
+   * [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime)
+   * [APP BUILDER CLI](https://github.com/adobe/aio-cli-plugin-app-dev)
 
    ```bash
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
@@ -143,8 +149,8 @@ Les outils seront mis à jour vers la dernière version.
 >
 >Avant de déployer votre projet, vous devez effectuer les tâches de configuration suivantes :
 >
->* Connectez-vous à [Adobe Developer Console](https://developer.adobe.com/console) à l’aide de l’interface de ligne de commande Adobe I/O.
->* Créez un projet App Builder (voir [&#x200B; Configuration du projet &#x200B;](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Connectez-vous à [](https://developer.adobe.com/console) à l’aide de l’interface de ligne de commande Adobe I/O.
+>* Créez un projet App Builder (voir [ Configuration du projet ](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Configurez les variables d’environnement dans un fichier `.env`.
 >
 >Vous pouvez effectuer ces étapes de configuration manuellement ou utiliser les outils de codage de l’IA pour vous guider tout au long du processus. Voir [Création d’une intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/) pour obtenir des instructions de configuration détaillées.
@@ -293,8 +299,8 @@ Lorsque vous discutez avec votre agent de codage, vous devez sélectionner le mo
 La méthode de sélection du mode **Plan** varie en fonction de l’agent que vous utilisez. Consultez la documentation de votre agent pour obtenir des instructions. Par exemple :
 
 * [Curseur](https://cursor.com/docs/agent/modes)
-* [Code Claude](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
-* [Gemini CLI](https://geminicli.com/docs/cli/plan-mode/)
+* [Claude Code](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
+* [Interface de ligne de commande Gemini](https://geminicli.com/docs/cli/plan-mode/)
 
 ### Checklist
 
@@ -332,9 +338,9 @@ Cela vous permet également d’exploiter les modèles Adobe et de tirer parti d
 Consultez les ressources suivantes pour commencer :
 
 * [Kit de démarrage d’intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
-* [Kit de démarrage pour la commande](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
+* [Kit de démarrage pour passage en caisse](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Modèles de kit de démarrage Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modèles de démarrage Adobe I/O Events](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modèles de démarrage de Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Exemples d’applications App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Pourquoi utiliser ces ressources ?

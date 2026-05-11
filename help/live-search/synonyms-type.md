@@ -2,9 +2,12 @@
 title: Types de synonymes
 description: Les synonymes  [!DNL Live Search]  et bidirectionnels élargissent la définition des mots-clés.
 exl-id: f5522428-c7cc-4627-a09b-d9148918c127
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+TQID: https://experienceleague.adobe.com/n0ON02CVlSTTOdRCPFRGVIVPWbGRltq4B0INC-U3ldo
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: 617
 ht-degree: 0%
 
 ---
@@ -55,4 +58,4 @@ Si aucun synonyme n’est créé et qu’un acheteur recherche **table de cuisin
 
 Après avoir créé un synonyme, le comportement de recherche change pour rechercher l’expression exacte **table de cuisine**. Cela peut réduire le nombre de résultats, car seuls les produits avec l’expression exacte seront affichés.
 
-Si vous souhaitez que les termes soient recherchés séparément comme auparavant, vous pouvez [créer un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Si la demande est suffisante, Commerce envisagera d’ajouter cette fonctionnalité au produit dans une version ultérieure.
+Si vous souhaitez que les termes soient recherchés séparément comme auparavant, vous pouvez [créer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Si la demande est suffisante, Commerce envisagera d’ajouter cette fonctionnalité au produit dans une version ultérieure.

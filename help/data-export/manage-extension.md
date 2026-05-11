@@ -3,9 +3,13 @@ title: '[!DNL Manage the Data Export extension]'
 description: Découvrez comment mettre à niveau l’extension et supprimer ou désactiver  [!DNL Data Export]  services d’exportation de données qui ne sont pas requis.
 role: Admin, Developer
 exl-id: 94702995-d272-47b9-9560-198eee3250a6
-source-git-commit: ea722d5e427e5bf536b9f2d2322f0dabb2981c77
+TQID: https://experienceleague.adobe.com/ghrA-YFR7hurQgEnjS8PdxR7Zcx-ayLTuyBfhbCC-KI
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: 256
 ht-degree: 0%
 
 ---
@@ -39,4 +43,4 @@ Vous pouvez mettre à jour n’importe quel module d’exportation de données C
    composer require magento/module-data-exporter:103.0.4 --with-all-dependencies
    ```
 
-Si l’instance Commerce est déployée sur une infrastructure cloud, mettez à jour l’extension à partir du répertoire de votre projet cloud. Voir [Mettre à niveau une extension](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) dans le _Guide d’Adobe Commerce sur les infrastructures cloud_.
+Si l’instance Commerce est déployée sur une infrastructure cloud, mettez à jour l’extension à partir du répertoire de votre projet cloud. Voir [Mettre à niveau une extension](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) dans le _Guide d’Adobe Commerce sur les infrastructures cloud_.

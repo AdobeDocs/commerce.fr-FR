@@ -1,11 +1,16 @@
 ---
 title: Créer et gérer des règles
 description: Découvrez comment créer et gérer des règles de marchandisage pour la recherche, les listes de produits par défaut et les pages de catégories.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: 0d1ebaddada8be82645164368ebfbb6dd0a569cd
+TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: 2760
 ht-degree: 0%
 
 ---
@@ -21,7 +26,7 @@ Pour créer une règle, ouvrez l’éditeur de règles, choisissez un **type de 
 
    >[!IMPORTANT]
    >
-   >Les vues catalogue sont actuellement en version [bêta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les règles de marchandisage existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
+   >Les vues catalogue sont actuellement en version [bêta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les règles de marchandisage existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
 
 1. Cliquez sur **[!UICONTROL Create rule]** pour lancer l’éditeur de règles.
 
@@ -59,7 +64,7 @@ Les conditions sont les conditions requises pour déclencher un événement. Une
 1. Sous *Créer votre règle*, sélectionnez la **Condition** à remplir et suivez les instructions pour terminer l’instruction.
 
    - La requête de recherche contient : saisissez la chaîne de texte qui doit se trouver dans la requête de l’acheteur. Le paramètre Correspondance détermine le degré auquel la requête de l’acheteur correspond au catalogue. Options : <br /> quelconque - Toute partie du texte de la requête de l’acheteur peut correspondre à la condition.<br />Tous - Toutes les requêtes de l’acheteur doivent correspondre à la condition.
-   - La requête de recherche est : saisissez une chaîne de texte qui correspond exactement à la requête de l’acheteur. Par exemple : « pantalon de yoga ». Les règles comportant des `Search query is` `All` et Correspondance ne peuvent comporter qu’une seule condition.
+   - La requête de recherche est : saisissez une chaîne de texte qui correspond exactement à la requête de l’acheteur. Par exemple : « pantalon de yoga ». Les règles comportant des `All` `Search query is` et Correspondance ne peuvent comporter qu’une seule condition.
    - La requête de recherche commence par : saisissez un caractère ou une chaîne de texte qui doit se trouver au début de la requête de l’acheteur.
    - La requête de recherche se termine par - Saisissez un caractère ou une chaîne de texte qui doit se trouver à la fin de la requête de l’acheteur.
 
@@ -208,7 +213,7 @@ Suivez ces instructions pour mettre à jour les propriétés des règles existan
 
 ### Modifier la règle
 
-1. Dans l’espace de travail *Règles de marchandisage*, recherchez la règle de la grille à modifier, puis cliquez sur les options **Plus** (...).
+1. Dans l’espace de travail *Règles de marchandisage*, recherchez la règle de la grille à modifier, puis cliquez sur **Plus** (...) options.
 1. Cliquez sur **Modifier** pour accéder à l’éditeur de règles.
 1. Mettez à jour les conditions, les opérateurs et les événements selon les besoins.
 1. Mettez à jour le nom, la date de début et de fin, ainsi que les champs de description selon les besoins. Tous les noms de règle doivent être uniques.
@@ -220,13 +225,13 @@ La règle est ajoutée à la liste dans l’espace de travail *Règles*. Bien qu
 
 Cette option permet d’afficher rapidement tous les paramètres de la règle, tout en restant dans le tableau *Règles*.
 
-1. Dans l’espace de travail *Règles de marchandisage*, recherchez la règle de la grille à modifier, puis cliquez sur les options **Plus** (...).
+1. Dans l’espace de travail *Règles de marchandisage*, recherchez la règle de la grille à modifier, puis cliquez sur **Plus** (...) options.
 1. Cliquez sur **Afficher les détails** pour afficher les paramètres de la règle.
 1. Choisissez **Modifier** ou **Supprimer**, ou cliquez sur le X pour fermer le panneau.
 
 ### Supprimer la règle
 
-1. Dans l’espace de travail *Règles*, recherchez la règle de la grille à modifier, puis cliquez sur les options **Plus** (...).
+1. Dans l’espace de travail *Règles*, recherchez la règle de la grille à modifier, puis cliquez sur **Plus** (...) options.
 1. Cliquez sur **Supprimer**.
 
 ## Descriptions des champs {#field-descriptions}

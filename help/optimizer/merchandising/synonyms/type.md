@@ -1,11 +1,15 @@
 ---
 title: Types de synonymes
 description: Découvrez les différents types de synonymes dans  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: a74e48ea-e069-4ccc-a67f-2f85be251fb5
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/23kmFWLruZeFMxIjKZJKbs0y9q10DDtbFG8ioLC5U-o
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: 393
 ht-degree: 0%
 
 ---
@@ -36,4 +40,4 @@ Si aucun synonyme n’est créé et qu’un acheteur recherche **table de cuisin
 
 Après avoir créé un synonyme, le comportement de recherche change pour rechercher l’expression exacte **table de cuisine**. Cela peut réduire le nombre de résultats, car seuls les produits avec l’expression exacte seront affichés.
 
-Si vous souhaitez que les termes soient recherchés séparément comme auparavant, vous pouvez [créer un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Si la demande est suffisante, [!DNL Adobe Commerce Optimizer] envisagerons d’ajouter cette fonctionnalité au produit dans une version ultérieure.
+Si vous souhaitez que les termes soient recherchés séparément comme auparavant, vous pouvez [créer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Si la demande est suffisante, [!DNL Adobe Commerce Optimizer] envisagerons d’ajouter cette fonctionnalité au produit dans une version ultérieure.

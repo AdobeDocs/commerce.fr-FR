@@ -2,9 +2,13 @@
 title: Ajouter des synonymes
 description: Ajoutez  [!DNL Live Search]  synonymes pour améliorer la réponse aux requêtes de recherche.
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/eGBxKnn3lLD5VQel52jyrt7EB8rcrhGOi-DDwhW7wzc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: 410
 ht-degree: 0%
 
 ---
@@ -13,12 +17,12 @@ ht-degree: 0%
 
 Améliorez l’engagement des clients en ajoutant votre propre liste de synonymes [!DNL Live Search]. [!DNL Live Search] pouvez gérer jusqu’à 200 synonymes par affichage de magasin.
 
-![[!DNL Live Search] synonymes &#x200B;](assets/synonym-workspace.png)
+![[!DNL Live Search] synonymes ](assets/synonym-workspace.png)
 
 ## Étape 1 : ajouter un synonyme
 
 1. Dans Admin, accédez à **Marketing** > SEO et recherche > **[!DNL Live Search]**.
-1. Pour plusieurs magasins, définissez **Portée** sur la vue [&#x200B; magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) où les paramètres de synonyme s’appliquent.
+1. Pour plusieurs magasins, définissez **Portée** sur la vue [ magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) où les paramètres de synonyme s’appliquent.
 1. Cliquez sur l’onglet **Synonymes**.
 1. Cliquez sur le bouton **Ajouter des synonymes**.
 
@@ -69,6 +73,6 @@ L’ensemble de synonymes apparaît dans la liste avec une flèche à sens uniqu
 
 | Champ | Description |
 |--- |--- |
-| [Type &#x200B;](synonyms.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options : <br />Bidirectionnel (par défaut) - Termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />Unidirectionnel - Termes qui sont un sous-ensemble du mot-clé. Les synonymes à sens unique renvoient une liste plus étroite de produits spécifiques. |
+| [Type ](synonyms.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options : <br />Bidirectionnel (par défaut) - Termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />Unidirectionnel - Termes qui sont un sous-ensemble du mot-clé. Les synonymes à sens unique renvoient une liste plus étroite de produits spécifiques. |
 | Mot-clé | Mot généralement associé à une sélection de produits dans votre catalogue. |
 | Extension | Termes supplémentaires ayant la même signification ou une signification similaire au mot-clé. |

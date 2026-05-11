@@ -3,9 +3,14 @@ title: Consulter les journaux et résoudre les problèmes
 description: Découvrez comment résoudre les erreurs  [!DNL data export]  l’aide des journaux data-export et saas-export .
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
+TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: 1155
 ht-degree: 0%
 
 ---
@@ -16,7 +21,7 @@ L’extension [!DNL data export] fournit des journaux pour suivre les processus 
 
 >[!NOTE]
 >
->Vous pouvez également suivre l’intégrité et les performances des flux d’exportation de données pour les données de produit et de catégorie à partir du tableau de bord [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) dans Admin.
+>Vous pouvez également suivre l’intégrité et les performances des flux d’exportation de données pour les données de produit et de catégorie à partir du tableau de bord [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) dans Admin.
 
 ## Logs
 
@@ -133,7 +138,7 @@ Si des données sont manquantes ou incorrectes dans les services Commerce, reche
 - Le journal des erreurs d’exportation des données (`commerce-data-export-errors.log`) capture les erreurs qui se produisent pendant la phase de collecte.
 - Le journal des erreurs d’exportation SaaS (`saas-export-errors.log`) capture les erreurs qui se produisent pendant la phase de transmission.
 
-Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) avec autant d’informations que possible.
+Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) avec autant d’informations que possible.
 
 ### Résolution des problèmes de synchronisation des catalogues {#resolvesync}
 
@@ -148,11 +153,11 @@ Lorsque vous déclenchez une resynchronisation des données, la mise à jour des
 
 #### Synchronisation non exécutée
 
-Si la synchronisation ne s’exécute pas selon un planning ou si rien n’est synchronisé, consultez cet article [Base de connaissances](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
+Si la synchronisation ne s’exécute pas selon un planning ou si rien n’est synchronisé, consultez cet article [Base de connaissances](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Échec de la synchronisation
 
-Si la synchronisation du catalogue a le statut **Échec**, envoyez un ticket d’assistance [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Si la synchronisation du catalogue a le statut **Échec**, envoyez un ticket d’assistance [](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Journalisation étendue
 

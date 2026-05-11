@@ -3,10 +3,15 @@ title: Types de données Commerce
 description: Découvrez les types de données que vous pouvez collecter et envoyer à Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 6354963c-f27f-4e69-9ecb-acb4befb7c2a
+TQID: https://experienceleague.adobe.com/LXMqOhHAZpUHaCeeU5ioKKXVrkLftospQEPDd9H-MD8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 0%
+source-wordcount: 339
+ht-degree: 2%
 
 ---
 
@@ -14,7 +19,7 @@ ht-degree: 0%
 
 L’extension [Data Connection](overview.md) connecte vos données Commerce à Experience Platform. Les données destinées à être utilisées dans Experience Platform sont regroupées en deux types de comportement : les données de série temporelle, qui appartiennent à la classe **Événement d’expérience**, et les données d’enregistrement, qui appartiennent à la classe **Profil individuel**.
 
-En savoir plus sur les [comportement des données](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr#data-behaviors) et les [classes](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr#class) dans Experience Platform.
+En savoir plus sur les [comportement des données](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors) et les [classes](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) dans Experience Platform.
 
 ## Données de série temporelle
 

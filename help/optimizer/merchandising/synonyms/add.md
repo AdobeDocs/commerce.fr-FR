@@ -1,11 +1,15 @@
 ---
 title: Créer et gérer des synonymes
 description: Découvrez comment créer et gérer des synonymes pour  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/YtlgC9okQYDboZg-A0bcnLUVFRH4IVEeBLMeshGad4s
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: 606
 ht-degree: 0%
 
 ---
@@ -64,7 +68,7 @@ Dans cet exemple, le mot-clé à associer est « pantalon » et l’ensemble des
 
 | Champ | Description |
 |--- |--- |
-| [Type &#x200B;](type.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options : <br />Bidirectionnel (par défaut) - Termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />Unidirectionnel - Termes qui sont un sous-ensemble du mot-clé. Les synonymes à sens unique renvoient une liste plus étroite de produits spécifiques. |
+| [Type ](type.md) | Détermine si les synonymes ont la même signification que le mot-clé ou s’ils sont un sous-ensemble du mot-clé. Options : <br />Bidirectionnel (par défaut) - Termes ayant la même signification que le mot-clé et renvoyant les mêmes résultats de recherche<br />Unidirectionnel - Termes qui sont un sous-ensemble du mot-clé. Les synonymes à sens unique renvoient une liste plus étroite de produits spécifiques. |
 | Mot-clé | Mot généralement associé à une sélection de produits dans votre catalogue. |
 | Extension | Termes supplémentaires ayant la même signification ou une signification similaire au mot-clé. |
 
@@ -86,7 +90,7 @@ Pour faciliter la recherche d’un synonyme, vous pouvez filtrer la liste par ty
 
 ## Modifier le synonyme
 
-1. Recherchez le synonyme à modifier, puis cliquez sur les options **Plus** (...).
+1. Recherchez le synonyme à modifier, puis cliquez sur **Plus** (...) options.
 
 1. Cliquez sur **Modifier**.
 Le mot-clé est le premier terme de la liste et chaque terme est séparé par une virgule. Le mot-clé et les termes d’extension peuvent être mis à jour, mais le type du synonyme ne peut pas être modifié.
@@ -96,7 +100,7 @@ Le mot-clé est le premier terme de la liste et chaque terme est séparé par un
 
 ## Supprimer le synonyme
 
-1. Recherchez le synonyme à supprimer dans la liste, puis cliquez sur les options **Plus** (...).
+1. Recherchez le synonyme à supprimer dans la liste, puis cliquez sur **Plus** (...) options.
 1. Cliquez sur **Supprimer**.
 1. Lorsque vous y êtes invité, cliquez sur **Supprimer le synonyme** pour confirmer.
 

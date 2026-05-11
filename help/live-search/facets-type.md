@@ -2,9 +2,14 @@
 title: Types de facettes
 description: '[!DNL Live Search] facettes sont dynamiques et apparaissent dans la liste Filtres, le cas échéant.'
 exl-id: cd05c0c5-1028-4d66-951d-0b61c1ecc440
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/8cO5HLAkJLHHqyL-cYb3USCk4E9q1KSRJQ1fOGK0HB4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: 428
 ht-degree: 0%
 
 ---
@@ -14,7 +19,7 @@ ht-degree: 0%
 [!DNL Live Search] utilise différents types de facettes qui n’apparaissent dans la liste *Filtres* que lorsque cela est pertinent. La liste des facettes disponibles change en fonction des produits renvoyés. Les caractéristiques suivantes affectent leur présentation et leur comportement :
 
 * Facettes épinglées - Les facettes les plus couramment utilisées peuvent être épinglées en haut de la liste. Les facettes restantes sont répertoriées dans l’ordre *Type de tri* après les facettes épinglées.
-* Facettes dynamiques - Attributs de produit que [Adobe AI](https://business.adobe.com/fr/ai.html) trouve les plus pertinents pour un ensemble de produits et une requête. Le calcul prend en compte les métadonnées d’attribut de l’ensemble du catalogue et détermine au moment de la requête les facettes les plus pertinentes pour la requête.
+* Facettes dynamiques - Attributs de produit que [](https://business.adobe.com/ai.html) trouve les plus pertinents pour un ensemble de produits et une requête. Le calcul prend en compte les métadonnées d’attribut de l’ensemble du catalogue et détermine au moment de la requête les facettes les plus pertinentes pour la requête.
 
   >[!NOTE]
   >
@@ -35,7 +40,7 @@ En revanche, les implémentations [découplées](https://developer.adobe.com/com
 
 ### Libellés de facettes
 
-Pour les storefronts [!DNL Commerce], le libellé de la facette est déterminé par le [*Propriétés de l’attribut*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=fr). Pour les magasins comportant plusieurs vues, des libellés supplémentaires peuvent être définis sous *Gérer les libellés*. Pour les implémentations découplées, les libellés sont modifiés à partir de l’espace de travail [à facettes](faceting-workspace.md).
+Pour les storefronts [!DNL Commerce], le libellé de la facette est déterminé par le [*Propriétés de l’attribut*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Pour les magasins comportant plusieurs vues, des libellés supplémentaires peuvent être définis sous *Gérer les libellés*. Pour les implémentations découplées, les libellés sont modifiés à partir de l’espace de travail [à facettes](faceting-workspace.md).
 
 ### Type de tri
 

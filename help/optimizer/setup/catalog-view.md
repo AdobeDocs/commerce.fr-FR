@@ -3,15 +3,19 @@ title: Vue Catalogue
 description: Découvrez les vues de catalogue et comment les créer pour organiser votre catalogue de produits par structure d’entreprise, politiques et prix.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: 1384
 ht-degree: 0%
 
 ---
-
 
 # Vues de catalogue pour les services de marchandisage
 
@@ -83,7 +87,7 @@ Une fois ces étapes terminées, la vue de catalogue est maintenant configurée 
 >
 >Cette fonctionnalité est actuellement en version bêta.
 
-Vous pouvez définir une vue de catalogue lorsque vous [créez des unités de recommandation](../merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](../merchandising/rules/add.md).
+Vous pouvez définir une vue de catalogue lorsque vous [créez des unités de recommandation](../merchandising/recommendations/create.md) ou [ des règles de marchandisage](../merchandising/rules/add.md).
 
 ## Calques de catalogue
 
@@ -140,7 +144,7 @@ Certains de ces paramètres de configuration sont nécessaires lorsque vous conf
 
 Les vues de catalogue font partie de la structure des services de marchandisage qui remplace la structure du site web, du magasin et du magasin utilisée dans les bases d’Adobe Commerce par un modèle plus flexible :
 
-![[!DNL Merchandising Services] Architecture &#x200B;](../assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] Architecture ](../assets/merchandising-svcs-architecture.png)
 
 ### Fonctionnement
 
@@ -150,10 +154,10 @@ Les données de catalogue provenant de PIM, ERP et d’autres systèmes sont ing
 **2. Catalogue de base unifié**
 Les données ingérées créent un catalogue de base unifié dans le pipeline de données du service de catalogue. Cette source unique élimine la duplication des données entre les unités opérationnelles.
 
-3 **. Vues du catalogue**
+**3. Vues du catalogue**
 Plusieurs vues de catalogue représentent différentes unités commerciales (par exemple, « Texas Retail », « Texas Retail Seasonal »). Pour plus de flexibilité, les paramètres régionaux, les politiques et les tarifs peuvent être partagés entre les vues de catalogue.
 
-4 **. Diffusion Multicanal**
+**4. Diffusion Multicanal**
 Les données de catalogue filtrées sont diffusées vers diverses destinations, notamment les vitrines Edge Delivery Services, les marchés, les plateformes publicitaires et les micro-vitrines personnalisées. Pour plus d’informations sur la diffusion des données de catalogue, consultez la [documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/optimizer/).
 
 ### Composants clés
