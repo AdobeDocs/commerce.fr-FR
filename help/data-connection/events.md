@@ -58,6 +58,6 @@ Pour en savoir plus sur les événements de recherche, consultez la [documentati
 
 ![B2B pour Adobe Commerce](../assets/b2b.svg) Pour les commerçants B2B, vous devez [installer](install.md#install-the-b2b-extension) l’extension `experience-platform-connector-b2b` pour accéder à ces événements.
 
-Les événements B2B contiennent des informations [liste de demandes d&#39;approvisionnement](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) comme si une liste de demandes d&#39;approvisionnement avait été créée, ajoutée ou supprimée. En suivant les événements spécifiques aux listes de demandes d&#39;approvisionnement, vous pouvez voir quels produits vos clients achètent fréquemment et créer des campagnes basées sur ces données.
+Les événements B2B contiennent des informations [liste de demandes d&#39;approvisionnement](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=fr) comme si une liste de demandes d&#39;approvisionnement avait été créée, ajoutée ou supprimée. En suivant les événements spécifiques aux listes de demandes d&#39;approvisionnement, vous pouvez voir quels produits vos clients achètent fréquemment et créer des campagnes basées sur ces données.
 
 Consultez la [documentation pour les développeurs](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection) pour en savoir plus sur les événements B2B.

@@ -44,7 +44,7 @@ Dans cette section, vous apprendrez à mettre à jour votre schéma existant ou 
 
 1. Si vous ne disposez pas déjà d’un schéma, [créez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) un schéma dont la classe est définie sur **Événement d’expérience**.
 
-1. [Ajoutez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) les groupes de champs spécifiques à Commerce suivants (ou modifiez votre schéma existant et ajoutez ces groupes de champs) :
+1. [Ajoutez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr#add-field-groups) les groupes de champs spécifiques à Commerce suivants (ou modifiez votre schéma existant et ajoutez ces groupes de champs) :
 
    - Recherche de site
    - Page web de la visite
@@ -65,7 +65,7 @@ Dans cette section, vous apprendrez à mettre à jour votre schéma existant ou 
 
    Lorsqu’un schéma est activé pour Profil, tous les jeux de données créés à partir de ce schéma participent à Real-Time CDP, qui fusionne les données de sources disparates pour créer une vue complète de chaque client.
 
-1. [Créez un jeu de données](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) basé sur le schéma que vous avez créé ou mis à jour.
+1. [Créez un jeu de données](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=fr#create-a-dataset) basé sur le schéma que vous avez créé ou mis à jour.
 
    Un jeu de données est une structure de stockage et de gestion pour une collecte de données, généralement sous la forme d’un tableau contenant un schéma (colonnes) et des champs (lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
 
@@ -109,7 +109,7 @@ Si vous souhaitez ajouter des [données d’événement de profil côté serveur
 
 1. [Créez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) un schéma et définissez la classe sur **Événement d’expérience**.
 
-1. [Ajoutez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) les groupes de champs spécifiques au profil suivants :
+1. [Ajoutez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr#add-field-groups) les groupes de champs spécifiques au profil suivants :
 
    - Détails démographiques
    - Coordonnées personnelles
@@ -120,7 +120,7 @@ Si vous souhaitez ajouter des [données d’événement de profil côté serveur
 
    Lorsqu’un schéma est activé pour Profil, tous les jeux de données créés à partir de ce schéma participent à Real-Time CDP, qui fusionne les données de sources disparates pour créer une vue complète de chaque client.
 
-1. [Créez un jeu de données](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) basé sur le schéma que vous avez créé.
+1. [Créez un jeu de données](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=fr#create-a-dataset) basé sur le schéma que vous avez créé.
 
    Un jeu de données est une structure de stockage et de gestion pour une collecte de données, généralement sous la forme d’un tableau contenant un schéma (colonnes) et des champs (lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
 

@@ -41,7 +41,7 @@ Lorsque vos clients créent un profil sur votre site Commerce, un enregistrement
 
    Un jeu de données est une structure de stockage et de gestion pour une collecte de données, généralement sous la forme d’un tableau contenant un schéma (colonnes) et des champs (lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
 
-1. Créez un [espace de noms personnalisé](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces) dans Experience Platform avec les valeurs suivantes :
+1. Créez un [espace de noms personnalisé](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces#create-namespaces) dans Experience Platform avec les valeurs suivantes :
 
    - **Nom d’affichage** : _ID de client Commerce_
    - **Symbole d’identité** : _CustomerId_

@@ -100,7 +100,7 @@ Utilisez les [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/dev
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] ne prend pas en charge les storefronts Luma. Si vous migrez depuis Adobe Commerce on Cloud ou on-premise, consultez [storefronts existants](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) pour obtenir des conseils sur la transition.
+>[!DNL Adobe Commerce as a Cloud Service] ne prend pas en charge les storefronts Luma. Si vous migrez depuis Adobe Commerce on Cloud ou on-premise, consultez [storefronts existants](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=fr#existing-storefronts) pour obtenir des conseils sur la transition.
 
 ## Services de marchandisage et services de paiement
 

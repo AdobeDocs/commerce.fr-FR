@@ -2,7 +2,7 @@
 title: Bonnes pratiques relatives aux synonymes
 description: Découvrez les bonnes pratiques relatives à l’implémentation de synonymes dans votre boutique.
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 026bb17b-14e3-4493-ae10-376837b69de6
 TQID: https://experienceleague.adobe.com/2ktYgzsiM-BvHEJNeu0-XkxhgDThHVuXMnDux3Fb9WA
 product_v2:

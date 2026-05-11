@@ -68,7 +68,7 @@ Pour créer le projet, suivez les étapes décrites dans le tutoriel [Authentifi
 
 Au fur et à mesure que vous parcourez le tutoriel, assurez-vous que votre projet dispose des éléments suivants :
 
-- Accédez aux [profils de produit](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles) suivants : **Tous les accès de production par défaut** et **Tous les accès par défaut d’AEP**.
+- Accédez aux [profils de produit](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=fr#select-product-profiles) suivants : **Tous les accès de production par défaut** et **Tous les accès par défaut d’AEP**.
 - Les [rôles et autorisations appropriés sont configurés](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
 - Si vous avez décidé d’utiliser les jetons web JSON (JWT) comme méthode d’authentification serveur à serveur, vous devez également charger une clé privée.
 

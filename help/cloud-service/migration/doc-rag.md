@@ -1,7 +1,7 @@
 ---
 title: Service Rag de documentation
 description: Découvrez comment utiliser le service de recherche de documentation optimisé par l’IA pour le développement d’Adobe Commerce.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 hide: true
 TQID: https://experienceleague.adobe.com/eGNktkTH-i2HV8iEFTfSFtGlsyr4ZUVuRXxj9XcwbZk

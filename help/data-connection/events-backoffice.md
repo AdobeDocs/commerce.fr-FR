@@ -31,7 +31,7 @@ Les événements Back Office contiennent des données côté serveur. Ces donné
 
 >[!NOTE]
 >
->Tous les événements de back-office incluent le champ [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , qui inclut l’adresse e-mail de l’acheteur, le cas échéant, et l’ECID.
+>Tous les événements de back-office incluent le champ [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=fr) , qui inclut l’adresse e-mail de l’acheteur, le cas échéant, et l’ECID.
 
 ## Statut de la commande
 
@@ -418,7 +418,7 @@ Les événements de profil capturés côté serveur incluent des informations de
 
 >[!NOTE]
 >
->Chaque événement de profil client inclut également le champ [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , qui inclut l’identifiant client Commerce généré par le système en tant qu’identifiant principal du profil et un identifiant d’e-mail utilisé en tant qu’identifiant secondaire. [Découvrez &#x200B;](custom-identities.md) comment créer des attributs d’identité personnalisés pour améliorer l’identification du profil client.
+>Chaque événement de profil client inclut également le champ [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=fr) , qui inclut l’identifiant client Commerce généré par le système en tant qu’identifiant principal du profil et un identifiant d’e-mail utilisé en tant qu’identifiant secondaire. [Découvrez &#x200B;](custom-identities.md) comment créer des attributs d’identité personnalisés pour améliorer l’identification du profil client.
 
 ### accountCreated
 

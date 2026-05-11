@@ -57,9 +57,9 @@ Pour obtenir une présentation des libellés d’utilisation des données et de 
 
 Suivez les étapes du tutoriel [gérer les libellés d’utilisation des données pour un schéma](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/labels) pour savoir comment appliquer des libellés à votre schéma de [!DNL Commerce].
 
-Voir le [glossaire des libellés sensibles](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/reference#sensitive) pour en savoir plus sur les libellés disponibles que vous pouvez appliquer aux champs de votre schéma de [!DNL Commerce]. Par exemple, l’étiquette `RHD` identifie des informations protégées sur la santé (IPS) ou des informations sur un patient que vous êtes contractuellement autorisé(e) par Adobe à télécharger.
+Voir le [glossaire des libellés sensibles](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/labels/reference#sensitive) pour en savoir plus sur les libellés disponibles que vous pouvez appliquer aux champs de votre schéma de [!DNL Commerce]. Par exemple, l’étiquette `RHD` identifie des informations protégées sur la santé (IPS) ou des informations sur un patient que vous êtes contractuellement autorisé(e) par Adobe à télécharger.
 
-Lorsque vos données [!DNL Commerce] sont étiquetées comme sensibles, vous pouvez appliquer des politiques afin d’empêcher les opérations de données qui constituent des violations de politique. En savoir plus sur l’[application des politiques](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/enforcement/overview) dans Experience Platform.
+Lorsque vos données [!DNL Commerce] sont étiquetées comme sensibles, vous pouvez appliquer des politiques afin d’empêcher les opérations de données qui constituent des violations de politique. En savoir plus sur l’[application des politiques](https://experienceleague.adobe.com/fr/docs/experience-platform/data-governance/enforcement/overview) dans Experience Platform.
 
 ## Chiffrement des données dans Commerce
 
