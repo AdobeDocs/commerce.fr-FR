@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c3e995d46b7cfca3186b7599e22b825f0efa80f1
 workflow-type: tm+mt
-source-wordcount: 2996
+source-wordcount: 3052
 ht-degree: 1%
 
 ---
@@ -117,6 +117,15 @@ _31 mai 2024_
 _27 octobre 2023_
 
 ![Nouveau](../assets/new.svg) Le widget [!DNL Live Search] PLP prend désormais en charge les échantillons de couleurs.
+
+
+## [!DNL Live Search] 4.7.1
+
+_12 mai 2026_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
+
+![Correctif](../assets/fix.svg) Correction d’un problème où les scripts popover [!DNL Live Search] storefront provoquaient des erreurs de politique de sécurité du contenu (CSP) lorsque la CSP était configurée en mode restreint et que les scripts intégrés étaient désactivés. L’extension utilise désormais un rendu sécurisé pour ces scripts afin que les pages se chargent sans violations de la norme CSP script-src.
 
 ## [!DNL Live Search] 4.7.0
 
