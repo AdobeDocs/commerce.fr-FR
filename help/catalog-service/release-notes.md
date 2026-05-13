@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 22f44afb7221c735785b6e9a38fb70c733cf0942
 workflow-type: tm+mt
-source-wordcount: 2709
+source-wordcount: 2742
 ht-degree: 0%
 
 ---
@@ -54,6 +54,12 @@ La prise en charge est fournie pour la dernière version. Les notes de mise à j
 ## Service de catalogue Storefront
 
 ### Mai 2026
+
+**Date de publication** : 13 mai 2026
+<!--v1.54-->
+
+![Nouveau](../assets/new.svg) **Ordre de tri des catégories dans GraphQL** : le type de GraphQL `CategoryView` inclut désormais un champ de position, de sorte que les storefronts peuvent afficher les catégories dans l’ordre configuré par les commerçants dans la hiérarchie du catalogue.
+<!--DATA-7166-->
 
 **Date de publication** : 4 mai 2026
 <!-- v1.53 -->
