@@ -5,7 +5,8 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+nudge: true
+source-git-commit: 82cea97c9c0498f91e3c2b4b44e0f21c736a2dc4
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 2%
@@ -39,14 +40,14 @@ ht-degree: 2%
       - [Remboursements](refunds.md)
       - [Vides](voids.md)
    - [Création d’une commande dans l’Admin](create-order.md)
-   - [Tracking your shipments in [!DNL Payment Services]](track-shipment.md)
-- Financial reporting {#financial-reports}
+   - [Suivi de vos expéditions dans  [!DNL Payment Services]](track-shipment.md)
+- Rapports financiers {#financial-reports}
    - [Création de rapports](reporting.md)
-   - [Order payment status report](order-payment-status.md)
-   - [Payouts report](payouts.md)
-   - [Available data](data.md)
-   - [Level 2 and level 3 processing](levels-card-payment-transactions.md)
-- Security and compliance {#security-compliance}
-   - [Security](security.md)
-   - [Signifyd fraud protection](fraud-protection.md)
+   - [Etat du statut de paiement de la commande](order-payment-status.md)
+   - [Rapport Paiements](payouts.md)
+   - [Données disponibles](data.md)
+   - [Traitement de niveau 2 et de niveau 3](levels-card-payment-transactions.md)
+- Sécurité et conformité {#security-compliance}
+   - [Sécurité](security.md)
+   - [Protection contre les fraudes signalées](fraud-protection.md)
 - [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=fr)
