@@ -18,4 +18,4 @@ ht-degree: 5%
 - Gestion de l’application {#manage-app}
    - [Gestion de l’application](manage-app.md)
    - [Dépannage](troubleshooting.md)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)
