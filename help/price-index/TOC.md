@@ -1,12 +1,13 @@
 ---
 user-guide-title: Guide d'indexation des prix SaaS
+breadcrumb-title: Indexation des prix SaaS
 user-guide-description: Ce guide fournit des instructions détaillées sur l'utilisation de l'indexeur de prix SaaS.
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
-source-wordcount: '39'
+source-wordcount: '42'
 ht-degree: 7%
 
 ---
