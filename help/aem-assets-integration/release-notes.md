@@ -3,9 +3,9 @@ title: Notes de mise à jour de l’intégration AEM Assets
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les versions de l’intégration AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
+source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,14 @@ _1 février 2025_
 ![Nouvel événement](../assets/new.svg) Désormais, les commerçants peuvent synchroniser les images des produits et des catégories.
 
 +++
+
+## v1.3.6
+
+_14 mai 2026_
+
+[!BADGE pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce version 2.4.5 et versions ultérieures.
+
+![Nouvel événement &#x200B;](../assets/new.svg)<!-- Issue ACAP-1268 --> lorsque des images ou des ressources sont importées depuis AEM dans une galerie de médias de produit Commerce, le texte secondaire est désormais transféré dans le cadre de la synchronisation. Le texte de remplacement peut être défini par vue de magasin dans AEM Assets. Voir [&#x200B; Texte de remplacement dans les métadonnées AEM Assets](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}.
 
 ## v1.3.5
 

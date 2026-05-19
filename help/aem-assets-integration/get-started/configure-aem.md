@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
 workflow-type: tm+mt
-source-wordcount: 1450
+source-wordcount: 1708
 ht-degree: 1%
 
 ---
@@ -47,6 +47,8 @@ Ce code de package ajoute les ressources suivantes à l’environnement de créa
 
    * Un type de métadonnées personnalisé `commerce:roles` et `commerce:positions` des attributs pour montrer comment la ressource est visualisée dans Commerce.
 
+   * Métadonnées à plusieurs champs de texte secondaire (_[!UICONTROL Alt texts]_) pour permettre aux éditeurs de saisir un texte secondaire indexé par le code d’affichage de la boutique Commerce. Cela ne modifie pas la manière dont les images de produit sont affectées ou la portée dans le catalogue. Voir [&#x200B; Texte de remplacement dans les métadonnées AEM Assets](#localized-alt-text-in-aem-assets-metadata).
+
 * Formulaire de schéma de métadonnées avec un onglet Commerce contenant les champs `Eligible for Commerce` et `Product Data` pour le balisage des ressources Commerce. Le formulaire fournit également des options pour afficher ou masquer les champs `roles` et `position` de l’interface utilisateur d’AEM Assets.
 
   Onglet ![Commerce du formulaire de schéma de métadonnées AEM Assets](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
@@ -56,6 +58,33 @@ Ce code de package ajoute les ressources suivantes à l’environnement de créa
 >[!NOTE]
 >
 > Voir la page [readme](https://github.com/ankumalh/assets-commerce) pour plus d&#39;informations sur le **code du package AEM Commerce**.
+
+## Texte de remplacement dans les métadonnées AEM Assets
+
+Le multichamp _[!UICONTROL Alt texts]_&#x200B;est disponible dans l’éditeur de métadonnées de ressource d’AEM Assets dans l’onglet **[!UICONTROL Commerce]**&#x200B;lorsque vous modifiez une image éligible.
+
+>[!IMPORTANT]
+>
+> Le comportement d’affichage par magasin s’applique uniquement au texte secondaire. L’intégration d’AEM Assets ne synchronise pas les différentes images des produits par vue de magasin Adobe Commerce. Les images de produit d’AEM continuent à se synchroniser dans Commerce avec le même comportement d’affectation de galerie qu’avant cette version.
+
+Le multichamp contient une ligne par vue de magasin Commerce. Chaque ligne comporte deux entrées :
+
+* **[!UICONTROL Store View Code]** — Identifiant de vue de magasin (par exemple `default` ou `en_US`).
+
+* **[!UICONTROL Alt Text]** : texte secondaire pour cette vue de magasin, limité à 255 caractères.
+
+Sélectionnez **[!UICONTROL Add]** pour ajouter d’autres lignes pour les vues de magasin supplémentaires. Pour supprimer une ligne, sélectionnez l’icône **[!UICONTROL Delete]** de cette ligne pour la supprimer.
+
+![Plusieurs champs Texte de remplacement avec des entrées Code d’affichage de magasin et Texte de remplacement](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
+
+Lors de l’enregistrement, la validation côté client bloque l’envoi si une ligne a un _[!UICONTROL Store View Code]_&#x200B;vide ou si deux lignes utilisent le même code d’affichage du magasin (non-respect de la casse).
+
+Les entrées de texte secondaire sont conservées dans les métadonnées de ressource JCR sous la forme de deux propriétés `String[]` alignées sur l’index :
+
+* `commerce:altTextStoreViews` : Stocker le code d’affichage pour chaque ligne.
+* `commerce:altTextValues` : Correspondance du texte secondaire au même index que chaque entrée dans `commerce:altTextStoreViews`.
+
+Lorsque ces ressources se synchronisent avec Adobe Commerce, le texte secondaire d’affichage par magasin est écrit dans la galerie de médias du produit pour les codes d’affichage de magasin correspondants. Le mapping d’images sous-jacent reste inchangé.
 
 ## Conditions préalables
 
