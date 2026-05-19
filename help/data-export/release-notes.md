@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 8f424228d96072636ac24a2d50dd58e5c8d655da
 workflow-type: tm+mt
-source-wordcount: 2840
+source-wordcount: 2868
 ht-degree: 0%
 
 ---
@@ -40,6 +40,12 @@ Les mises à jour incluent :
 >L’extension d’exportation de données SaaS est un ensemble de modules installés automatiquement avec Live Search, Product Recommendations et Catalog Service. Vous pouvez vérifier la version installée sur votre système à l’aide du compositeur. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Versions De 2026
+
+### Version 103.4.25
+
+_19 mai 2026_
+
+![Correctif](../assets/fix.svg) **Nettoyage optimisé des données de flux obsolètes**-Les enregistrements de flux laissés par les entités supprimées sont désormais supprimés plus efficacement, ce qui réduit l’utilisation de l’espace de stockage dans la base de données.<!--MDEE-1355-->
 
 ### Version 103.4.24
 
