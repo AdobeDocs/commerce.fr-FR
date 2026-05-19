@@ -8,28 +8,14 @@ level: Beginner
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 TQID: https://experienceleague.adobe.com/MmwdYWe5Et9m0BvtrVYNK2jiJ3fZBnUe2K6xMdIbMUk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
 workflow-type: tm+mt
-source-wordcount: 3633
+source-wordcount: 4032
 ht-degree: 0%
 
 ---
@@ -42,11 +28,51 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 >
 >Si vous utilisez Adobe Commerce On-Premise ou Adobe Commerce sur une infrastructure cloud, consultez les [notes de mise à jour d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## Mai 2026 - #1 de publication {#latest}
+## Mai 2026 - #2 de publication {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE  Sandbox ]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+
+Les éléments suivants seront publiés dans les environnements de production le 21 mai 2026.
+
+>[!BEGINSHADEBOX]
+
+### Suivi des expéditions à l&#39;aide de transporteurs par défaut et personnalisés
+
+Le suivi des commandes est désormais fiable pour les transporteurs d’expédition par défaut et personnalisés dans le [!DNL Commerce Admin], ce qui aide les commerçants à offrir des expériences de suivi après achat cohérentes. Auparavant, la sélection d&#39;un opérateur, tel qu&#39;UPS ou FedEx, et l&#39;application d&#39;un identifiant de tracking pouvaient empêcher l&#39;affichage du lien de tracking. Aucune action du commerçant n&#39;est requise pour restaurer ce comportement. La prise en charge des liens de suivi est également disponible pour les [opérateurs personnalisés](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/) créés avec le [!DNL App Builder Integration Starter Kit]. <!-- ACCS-891 -->
+
+### Affichage des types d’entrée d’attribut dans la grille Attributs de produit
+
+Une nouvelle colonne [!UICONTROL **Type d’attribut**] est désormais visible dans la grille Attributs du produit dans ([!UICONTROL **Magasins**] > _[!UICONTROL Attributes]_>[!UICONTROL **Produit**]), qui affiche le type d’entrée (champ de texte, liste déroulante ou oui/non) pour chaque attribut de produit, y compris les types fournis par les extensions. Cela facilite l’identification et la gestion des attributs lorsque vous utilisez des jeux d’attributs volumineux. <!-- ACCS-925 -->
+
+### Améliorations et correctifs
+
+Les améliorations, optimisations et correctifs suivants sont inclus dans cette version :
+
+* Correction d’un problème en raison duquel le point d’entrée REST POST `V1/async/custom-email/send` renvoyait une erreur de validation `UnstructuredArray`. Le point d’entrée asynchrone fonctionne désormais de manière cohérente avec le point d’entrée `V1/custom-email/send` POST synchrone. <!-- ACCS-921 -->
+
+* Correction d’un problème où les attributs sérialisables personnalisés sur des entités telles que Société étaient involontairement effacés lors de la mise à jour de l’entité par le biais de REST sans inclure les attributs personnalisés dans la payload. Les attributs personnalisés sont désormais conservés lorsqu’ils ne sont pas fournis. <!-- ACCS-946 -->
+
+* Correction d’une erreur « le client n’est pas autorisé » qui empêchait les connexions GraphQL invitées lorsque l’en-tête `X-Adobe-Company` était présent dans la requête. <!-- ACCS-949 -->
+
+* Correction d’un problème en raison duquel la modification ou la suppression d’une société dans le [!DNL Commerce Admin] pouvait échouer avec une erreur « Aucune entité de ce type » après l’affectation d’un client ou d’une cliente à la société via le point d’entrée REST `V1/customers/companies` PUT. <!-- ACCS-856 -->
+
+* Correction d&#39;un problème lié aux statuts de grille de commande client obsolètes. <!-- CCSAAS-4915 -->
+
+* Correction d’un problème dans le [!DNL Commerce Admin] en raison duquel les fichiers joints en tant qu’exemples et liens sur des produits téléchargeables renvoyaient une erreur `404` lorsqu’ils étaient accessibles à partir de la page de modification du produit. <!-- CCSAAS-4394 -->
+
+* Correction d’une erreur « Clé de tableau non définie « simple_sku » qui pouvait se produire lors de la création d’une expédition pour une commande contenant des produits configurables. <!-- CCSAAS-4877 -->
+
+* La requête `guestOrderByToken` GraphQL renvoie désormais un message d’erreur plus informatif lorsqu’elle est appelée avec un jeton incorrect, au lieu d’une erreur de serveur interne. <!-- CCSAAS-4921 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Mai 2026 - #1 de publication
 
 [!BADGE Production]{type=Neutral tooltip="Les éléments répertoriés sont actuellement disponibles dans les environnements de production."}
-
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
 Les éléments suivants ont été publiés dans les environnements de production le 7 mai 2026.
 
@@ -176,7 +202,7 @@ Un nouveau `numeric` [type d’entrée d’attribut de produit](https://experien
 
 ### Configuration de requête reCAPTCHA pour plusieurs formulaires dans une seule requête GraphQL
 
-La requête [`recaptchaFormConfigs` peut renvoyer &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) détails de configuration pour plusieurs types de formulaires dans une seule requête. <!-- ACCS-628 -->
+La requête [`recaptchaFormConfigs` peut renvoyer ](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) détails de configuration pour plusieurs types de formulaires dans une seule requête. <!-- ACCS-628 -->
 
 ### Afficher toutes les commandes d&#39;entreprise avec une nouvelle autorisation B2B
 
@@ -474,7 +500,7 @@ Les modifications suivantes ont été apportées aux composants de liste déroul
    * **[Sélecteur d’entreprise](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** - Fournit un composant d’interface utilisateur permettant aux utilisateurs de basculer entre plusieurs entreprises auxquelles ils sont associés.
    * **[Commandes fournisseur](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - Gère les workflows de commande fournisseur, les règles d&#39;approbation et l&#39;historique des commandes fournisseur pour les transactions B2B.
    * **[Gestion des devis](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** - Active les devis négociables pour les clients B2B avec des workflows de demande, de négociation et d&#39;approbation de devis.
-   * **[Listes de demandes d&#39;approvisionnement](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=fr)** - Fournit des outils pour la création et la gestion des listes de demandes d&#39;approvisionnement pour les achats répétés et les commandes groupées.
+   * **[Listes de demandes d&#39;approvisionnement](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)** - Fournit des outils pour la création et la gestion des listes de demandes d&#39;approvisionnement pour les achats répétés et les commandes groupées.
 
 * Publication du package de compatibilité B2B Storefront. Ce package améliore le schéma GraphQL B2B [!DNL Adobe Commerce] pour améliorer le développement sur les systèmes B2B.
 
@@ -546,7 +572,7 @@ Les améliorations, optimisations et correctifs suivants inclus dans cette versi
 
 * Ajout des points d’entrée `POST /V1/customers` et `PUT /V1/customers/{customerId}` à l’[API REST](https://developer.adobe.com/commerce/webapi/rest/reference/) pour créer et mettre à jour des clients. Ces points d’entrée nécessitent une autorisation IMS. <!-- CCSAAS-3112 -->
 
-* Ajout de la mutation [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/), qui nécessite l’adresse e-mail et le mot de passe à usage unique (OTP) d’un acheteur et qui reçoit un jeton client en échange. `exchangeOtpForCustomerToken`Cette mutation est généralement utilisée dans les scénarios où un client doit s’authentifier à l’aide d’un mot de passe à usage unique envoyé à son adresse e-mail ou téléphone.
+* Ajout de la mutation ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/), qui nécessite l’adresse e-mail et le mot de passe à usage unique (OTP) d’un acheteur et qui reçoit un jeton client en échange. [`exchangeOtpForCustomerToken`Cette mutation est généralement utilisée dans les scénarios où un client doit s’authentifier à l’aide d’un mot de passe à usage unique envoyé à son adresse e-mail ou téléphone.
 
 * Si une adresse définie dans l’écran de configuration [!UICONTROL **Stocker les adresses e-mail**] de l’administrateur contient une valeur se terminant par `example.com`, Commerce n’envoie pas d’e-mails à cette adresse. Au lieu de cela, le système consigne que l’e-mail n’a pas été envoyé.  <!-- CCSAAS-3533 -->
 
