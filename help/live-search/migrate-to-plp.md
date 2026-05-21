@@ -2,10 +2,20 @@
 title: Migration de l’adaptateur de recherche vers le widget PLP
 description: Découvrez comment migrer de l’adaptateur de recherche obsolète vers le widget  [!DNL Live Search]  page de liste de produits.
 TQID: https://experienceleague.adobe.com/YAwhAbTVeYpGYKh4dTe1umcfgoRUOg8QPZNIiGFjKVo
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
 source-wordcount: 2102
@@ -309,7 +319,7 @@ Dans ce scénario, il existe un problème connu en raison duquel l’activation 
 
 1. **Implémentez une collection d’événements personnalisée** :
 
-   - Utilisez le SDK des événements Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/).[
+   - Utilisez le SDK des événements Storefront[&#128279;](https://developer.adobe.com/commerce/services/shared-services/storefront-events/).
    - Capturez les événements d’interaction de recherche et de produit.
    - Envoyez manuellement les événements à la couche de données GMT.
 
@@ -323,7 +333,7 @@ Dans ce scénario, il existe un problème connu en raison duquel l’activation 
 
 **Option 3 : Remplacer GTM par Adobe Analytics**
 
-- Envisagez d’effectuer une migration vers [](https://business.adobe.com/products/adobe-analytics.html) le cas échéant.
+- Envisagez d’effectuer une migration vers [&#128279;](https://business.adobe.com/products/adobe-analytics.html) le cas échéant.
 - Contactez l’ingénierie client pour obtenir des conseils.
 
 **Qui contacter** : envoyez un ticket d’assistance pour obtenir des mises à jour de compatibilité avec GTM ou une assistance en ingénierie client.
@@ -336,7 +346,7 @@ Dans ce scénario, vous disposez d’un storefront découplé ou PWA qui nécess
 
 1. **Consultez les implémentations de référence** :
    - Étudiez le [code source du widget PLP](https://github.com/adobe/storefront-product-listing-page).
-   - Consultez la documentation des API pour [[!DNL Live Search] ](graphql.md).
+   - Consultez la documentation des API pour [[!DNL Live Search] &#x200B;](graphql.md).
    - Comprenez les [requêtes du service de catalogue](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/).
 
 1. **Implémentez une interface utilisateur personnalisée** :
@@ -432,7 +442,7 @@ Tenez compte de ces limites lors de la migration :
 
 Contactez la ressource appropriée en fonction de vos besoins spécifiques.
 
-L’assistance Adobe **** peut vous aider à :
+L’assistance Adobe **&#x200B;**&#x200B;peut vous aider à :
 
 - Procédures de migration standard de Live Search
 - Problèmes de configuration du widget PLP
