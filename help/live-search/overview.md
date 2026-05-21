@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 1180
+source-wordcount: 1167
 ht-degree: 1%
 
 ---
@@ -104,7 +104,7 @@ Le marchandisage [règles](rules.md) façonne l’expérience d’achat avec des
 
 - [!DNL Live Search] [widget contextuel](storefront-popover.md) est la zone qui s’ouvre sous le champ de recherche qui contient les résultats de la recherche.
 - Le [widget de page de liste de produits](plp-styling.md) (PLP) fournit une page de liste de produits consultable avec prise en charge des facettes et des synonymes. Le widget est installé et activé dans Live Search 4.0.0+ et remplace l’adaptateur Search.
-- (**Obsolète**) L’adaptateur de recherche était le précurseur du widget PLP et a été installé avec une recherche en direct &lt; 4.0.0. Si vous utilisez une version de Live Search antérieure à la version 4.0.0, Commerce vous recommande d’effectuer la mise à niveau pour bénéficier des avantages des fonctionnalités du widget PLP et des améliorations futures. À l’avenir, l’adaptateur de recherche ne sera mis à jour que pour résoudre les problèmes de sécurité. Pour plus d’informations sur la migration vers le widget PLP[&#128279;](migrate-to-plp.md) consultez le  guide de migration .
+- (**Obsolète**) L’adaptateur de recherche était le précurseur du widget PLP et a été installé avec une recherche en direct &lt; 4.0.0. Si vous utilisez une version de Live Search antérieure à la version 4.0.0, Commerce vous recommande d’effectuer la mise à niveau pour bénéficier des avantages des fonctionnalités du widget PLP et des améliorations futures. Pour plus d’informations sur la migration vers le widget PLP[&#128279;](migrate-to-plp.md) consultez le  guide de migration .
 
 ## Espace de travail [!DNL Live Search]
 

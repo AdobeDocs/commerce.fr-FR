@@ -16,16 +16,16 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 2121
+source-wordcount: 2102
 ht-degree: 0%
 
 ---
 
 # Migration de l’adaptateur de recherche vers le widget PLP
 
-L&#39;adaptateur de recherche a été [obsolète](release-notes.md#live-search-400) à partir de la version 4.0.0 de [!DNL Live Search] et ne recevra que les mises à jour de sécurité. Le widget [page de liste de produits (PLP)](plp-styling.md) est la solution prise en charge pour toutes les implémentations [!DNL Live Search] à l’avenir. Ce guide vous aide à comprendre quand la migration est simple et quand un travail supplémentaire est nécessaire.
+L’adaptateur de recherche est [obsolète](release-notes.md#live-search-400) depuis la [!DNL Live Search] 4.0.0. Le widget [page de liste de produits (PLP)](plp-styling.md) est la solution prise en charge pour toutes les implémentations [!DNL Live Search] à l’avenir. Ce guide vous aide à comprendre quand la migration est simple et quand un travail supplémentaire est nécessaire.
 
 ## Conditions préalables
 
@@ -312,7 +312,6 @@ Dans ce scénario, il existe un problème connu en raison duquel l’activation 
 **Option 1 : continuer avec l’adaptateur de recherche (intermédiaire uniquement)**
 
 - Gardez la carte de recherche activée si GTM est critique pour l&#39;entreprise.
-- Sachez que vous ne recevrez que des mises à jour de sécurité.
 - Planifiez la migration lorsque la compatibilité GTM est résolue.
 - Contactez l’assistance Adobe pour obtenir des mises à jour sur la compatibilité avec GTM.
 
@@ -467,7 +466,7 @@ Trouvez des réponses aux questions courantes sur la migration de l’adaptateur
 
 **Q : L’adaptateur de recherche recevra-t-il des correctifs de bugs ou des mises à jour de fonctionnalités ?**
 
-R : Non. L&#39;adaptateur de recherche est obsolète et ne recevra que les mises à jour de sécurité. Les correctifs de bugs, les améliorations de performances et les nouvelles fonctionnalités ne sont disponibles que dans le widget PLP. Si vous rencontrez des problèmes avec l’adaptateur de recherche, la migration vers le widget PLP est la solution recommandée.
+R : Non. L’adaptateur de recherche est obsolète. Les correctifs de bugs, les améliorations de performances et les nouvelles fonctionnalités ne sont disponibles que dans le widget PLP. Si vous rencontrez des problèmes avec l’adaptateur de recherche, la migration vers le widget PLP est la solution recommandée.
 
 **Q : La migration perturbera-t-elle mon storefront ?**
 
