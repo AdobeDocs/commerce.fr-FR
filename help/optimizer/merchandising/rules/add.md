@@ -1,24 +1,16 @@
 ---
 title: Créer et gérer des règles
 description: Découvrez comment créer et gérer des règles de marchandisage pour la recherche, les listes de produits par défaut et les pages de catégories.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
 workflow-type: tm+mt
-source-wordcount: 2760
+source-wordcount: 3222
 ht-degree: 0%
 
 ---
@@ -34,7 +26,7 @@ Pour créer une règle, ouvrez l’éditeur de règles, choisissez un **type de 
 
    >[!IMPORTANT]
    >
-   >Les vues catalogue sont actuellement en version [bêta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les règles de marchandisage existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
+   >Les vues catalogue sont actuellement en version [bêta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les règles de marchandisage existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
 
 1. Cliquez sur **[!UICONTROL Create rule]** pour lancer l’éditeur de règles.
 
@@ -136,7 +128,34 @@ Les propriétaires de magasin peuvent définir des stratégies telles que les su
 - **Tendance** — Met en évidence la popularité récente (pour la recherche, les pages vues au cours des dernières 72 heures pour les événements en arrière-plan et 24 heures pour les événements de premier plan).
 - **Aucun** — Pour les listes de recherche et les listes par défaut, les produits sont classés par **pertinence**. Pour **règles de catégorie**, utilise l&#39;ordre de marchandisage par défaut de la catégorie lorsque vous ne choisissez pas une autre stratégie intelligente.
 
-Sélectionnez la stratégie de votre règle. Le volet **Tester votre règle** affiche les résultats attendus pour les règles orientées recherche ; **règles de catégorie** utilisez la prévisualisation de catégorie.
+Sélectionnez la stratégie de votre règle. Le volet de **[!UICONTROL Test your rule]** affiche les résultats attendus pour les règles orientées recherche ; **règles de catégorie** utilisez l’aperçu de catégorie.
+
+#### Amplification intelligente du classement {#intelligent-ranking-boost}
+
+Dans **Recommandé pour vous**, **Les plus consultés**, **Les plus achetés**, **Les plus ajoutés au panier** et **Tendance**, l’éditeur affiche **[!UICONTROL Intelligent Ranking Boost]** (le facteur d’amplification). Il n’est pas utilisé lorsque vous sélectionnez **Aucun**.
+
+Utilisez ce contrôle pour équilibrer la force avec laquelle **signaux comportementaux** influencent l’ordre par rapport à **pertinence textuelle** sur la recherche, et par rapport aux autres signaux de classement sur **pages de catégorie** et **listes par défaut**. L’amplification est disponible pour les **règles de recherche**, la **règle Tous les produits** et les **règles de catégorie** ; chaque règle stocke sa propre valeur.
+
+| Comportement | Détail |
+| --- | --- |
+| Par défaut | `5` (équivalent au multiplicateur comportemental fixe précédent). |
+| Plage | De `1` (influence comportementale plus douce) à `100` (influence plus forte). La limite supérieure peut changer dans une version ultérieure. |
+| Portée | S&#39;applique uniquement aux requêtes ou aux listes ciblées par la règle. D&#39;autres règles conservent leurs propres valeurs de surenchère. |
+| Prévisualiser | L’aperçu de la règle utilise le même amplification que les résultats en direct pour cette règle. |
+| Indexation | Appliqué au **moment de la requête** ; vous n’avez pas besoin d’une resynchronisation du catalogue ou d’une réindexation complète uniquement parce que vous avez modifié ce paramètre. |
+
+**Quand augmenter ou diminuer l’augmentation**
+
+- **Augmentez** l’amplification lorsque des stratégies telles que **Les plus consultés** doivent afficher les SKU à engagement élevé de manière plus agressive pour les requêtes ambiguës ou larges, sans épingler manuellement chaque emplacement.
+- **Diminuer** l’augmentation lorsque vous souhaitez que la qualité de la correspondance textuelle oriente plus strictement la liste et que les données comportementales ne doivent déplacer que légèrement l’ordre.
+
+**Quand utiliser le classement manuel à la place**
+
+Utilisez **pin**, **boost** ou **bury** lorsque vous avez besoin de produits spécifiques dans des positions exactes ou d&#39;une visibilité garantie indépendamment des signaux à l&#39;échelle du catalogue. **[!UICONTROL Intelligent Ranking Boost]** ajuste un poids comportemental **global** pour cette règle ; il ne remplace pas le contrôle au niveau du SKU.
+
+>[!NOTE]
+>
+> Une **[!UICONTROL Intelligent Ranking Boost]** élevée peut l&#39;emporter sur un **coup de pouce manuel** sur le même produit. Si un SKU boosté se classe en dessous de ce que vous attendiez dans l’aperçu de la règle ou sur le storefront, réduisez la **[!UICONTROL Intelligent Ranking Boost]** ou **épinglez** le produit à une position spécifique. La modification permet de déplacer le produit classé manuellement plus haut dans la liste.
 
 #### Fonctionnement de la notation intelligente (recherche)
 
@@ -149,19 +168,23 @@ Pour **résultats de recherche** (et la requête de test dans l’éditeur de r�
    - Fréquence d&#39;occurrence des mots correspondants.
    - Longueur (en mots) des noms/descriptions des produits.
 
-- **Signaux comportementaux** : un coup de pouce limité est appliqué en plus du score de pertinence du texte. Lorsque vous sélectionnez une stratégie de classement intelligente telle que « Les plus consultés » ou « Les plus achetés », les produits présentant des signaux comportementaux plus élevés bénéficient d’une amélioration fixe de leurs scores. Cependant, ce coup de pouce a une limite définie.
+- **Signaux comportementaux** : un coup de pouce limité est appliqué en plus du score de pertinence du texte. Lorsque vous sélectionnez une stratégie de classement intelligente telle que « Les plus consultés » ou « Les plus achetés », les produits présentant des signaux comportementaux plus élevés reçoivent un poids relatif plus important. La force de ce poids est contrôlée par **[!UICONTROL Intelligent Ranking Boost]** (voir [Amplification de classement intelligente](#intelligent-ranking-boost)) ; l&#39;amplification reste limitée, mais vous pouvez augmenter le degré de déplacement de l&#39;ordre.
 
 **Pourquoi le produit le plus consulté peut ne pas apparaître en premier :**
 
-La pertinence textuelle domine généralement le classement parce que son score est illimité, alors que les encouragements comportementaux sont fixes. Par conséquent, les produits dotés de correspondances textuelles solides l’emportent souvent sur ceux présentant des signaux d’engagement plus élevés. Les stimuli comportementaux seuls peuvent ne pas compenser les larges écarts de pertinence du texte. Le classement intelligent résout ce problème en tenant compte à la fois de la qualité des correspondances et de l’interaction client, ce qui améliore la pertinence globale. Cependant, la qualité de la correspondance de texte reste le principal moteur du classement.
+La pertinence textuelle domine souvent le classement parce que son score est illimité, tandis que l&#39;influence comportementale est limitée par le modèle de boost. Les produits avec des correspondances de texte très fortes peuvent toujours devancer les SKU avec un engagement plus élevé, sauf si vous augmentez la **[!UICONTROL Intelligent Ranking Boost]** pour cette règle. Même avec des valeurs Amplifier plus élevées, un écart de pertinence extrême du texte peut ne pas entièrement inverser la liste ; la qualité de correspondance du texte reste un facteur principal. Confirmez toujours en **[!UICONTROL Test your rule]** pour les requêtes qui vous intéressent.
 
 **Exemple:**
 
-Un commerçant utilise la stratégie de classement intelligente « Les plus consultés » et recherche « bougie ». Ils s’attendent à ce que le SKU de produit YAN-K-E-512 apparaisse en haut des résultats, car il possède le nombre de vues le plus élevé. Cependant, d’autres produits se classent plus haut :
+Un commerçant utilise la stratégie de classement intelligente « Les plus consultés » et recherche **bougie**. Ils s’attendent à ce que le SKU de produit YAN-K-E-512 apparaisse en haut des résultats, car il possède le nombre de vues le plus élevé. Cependant, d’autres produits se classent plus haut :
 
-- **Texas Candle** (1ère position) : a un nom de produit plus court et plus propre qui crée un score de pertinence du texte très élevé. Même s&#39;il a moins de vues que YAN-K-E-512, sa correspondance de texte supérieure l&#39;emporte sur l&#39;amplification comportementale.
+- **Texas Candle** (1ère position) : a un nom de produit plus court et plus propre qui crée un score de pertinence du texte très élevé. Même s&#39;il a moins de vues que **YAN-K-E-512**, sa correspondance de texte supérieure l&#39;emporte sur l&#39;amplification comportementale.
 
-- **YAN-K-E-512** (position inférieure) : bien que disposant du centile de vue le plus élevé dans les données comportementales « Les plus consultés », son nom complexe basé sur un SKU génère un score de pertinence du texte inférieur. L’augmentation fixe des comportements ne suffit pas à combler ce fossé de pertinence du texte.
+- **YAN-K-E-512** (position inférieure) : bien que disposant du centile de vue le plus élevé dans les données comportementales « Les plus consultés », son nom complexe basé sur un SKU génère un score de pertinence du texte inférieur. À l’**[!UICONTROL Intelligent Ranking Boost]** par défaut (`5`), l’influence comportementale peut ne pas suffire à combler ce vide textuel. L’augmentation peut faire passer le **YAN-K-E-512** à un niveau plus élevé parmi les produits qui correspondent déjà à la requête. **YAN-K-E-512** doit également correspondre à la requête : au moins un attribut consultable pour ce SKU doit inclure **candle**, ou il n’apparaîtra pas dans les résultats et l’amplification ne peut pas s’appliquer.
+
+**Exemple (requête large) :**
+
+Pour une requête telle que **wood**, plusieurs produits peuvent partager une pertinence textuelle similaire, tandis que le nombre d’affichages diffère. Avec l’option **Les plus consultés** sélectionnée, l’augmentation du **[!UICONTROL Intelligent Ranking Boost]** rend le SKU pertinent historiquement le plus consulté plus susceptible d’apparaître au-dessus des allumettes plus légères. La réduction de l’amplification permet de se rapprocher de l’ordre textuel pur.
 
 Consultez [règles de recherche](./best-practice.md#tips-to-optimize-search-rules) pour savoir comment améliorer la recherche de produit à l’aide de règles.
 
@@ -191,7 +214,7 @@ Vous pouvez également cliquer sur l’icône d’épingle pour épingler un pro
 >
 >**Règles de recherche** — Vous pouvez uniquement épingler les produits qui apparaissent dans les résultats de recherche pour les conditions de requête et de règle configurées. Les produits doivent être indexés, visibles, en stock et respecter tous les filtres de règle pour pouvoir être épinglés. Si un produit n’apparaît pas dans l’aperçu ou dans les résultats de votre règle, l’épinglage n’a aucun effet.
 >
->**Tri par défaut** — Les positions manuelles s’appliquent lorsque l’acheteur utilise le tri par défaut : **Trier par : le plus pertinent** pour la recherche, ou **pertinence** / **position** pour les listes de catégories. Si l’acheteur change de tri, par exemple le comportement par nom, épinglé, amplifié, enterré ou masqué peut ne plus correspondre à l’aperçu.
+>**Tri par défaut** — Les positions manuelles s’appliquent lorsque l’acheteur utilise le tri par défaut : **Trier par : le plus pertinent** pour la recherche, ou **pertinence** / **position** pour les listes de catégories. Si le tri de l’acheteur change, par exemple par nom, épinglé, amplifié, enterré ou le comportement masqué peut ne plus correspondre à l’aperçu.
 
 Les événements ou peuvent être définis manuellement :
 
@@ -275,6 +298,12 @@ Cette option permet d’afficher rapidement tous les paramètres de la règle, t
 | Enterrer | Déplace un SKU ou une plage de SKU plus bas dans la liste. Chaque est marqué d’un badge d’aperçu « enterré » dans les résultats du test. |
 | Épingler un produit | Associe un seul SKU à une position spécifique dans la liste. Le produit est marqué d’un badge d’aperçu « épinglé » dans les résultats du test. |
 | Masquer un produit | Exclut un SKU, ou une plage de SKU, des résultats (orienté recherche ; confirmer pour les règles de catégorie dans l’éditeur). |
+
+### Contrôles de classement intelligents
+
+| Champ | Description |
+| --- | --- |
+| [!UICONTROL Intelligent Ranking Boost] | Lorsqu&#39;une stratégie intelligente autre que **Aucune** est sélectionnée, ce paramètre contrôle la force avec laquelle les signaux comportementaux influencent le classement pour cette règle. `5` par défaut ; plage autorisée `1`-`100`. Appliqué au moment de la requête ; l’aperçu des règles correspond au comportement en direct de la règle configurée. |
 
 ### Détails
 

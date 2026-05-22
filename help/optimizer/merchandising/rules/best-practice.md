@@ -2,19 +2,15 @@
 title: Bonnes pratiques relatives aux règles de marchandisage
 description: Découvrez les bonnes pratiques d’implémentation des règles de marchandisage pour les pages de recherche, d’annonces par défaut et de catégories.
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 TQID: https://experienceleague.adobe.com/DrdrBBXeMyqQr16h1LrlSoet3F6ihn57LBmPFBUXmTs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
 workflow-type: tm+mt
-source-wordcount: 360
+source-wordcount: 404
 ht-degree: 0%
 
 ---
@@ -34,6 +30,7 @@ Il est essentiel d’établir une règle **par défaut** bien pensée. Votre [r�
 - Mettez en avant les produits en vente ou faisant partie de promotions spéciales.
 - Définissez automatiquement des règles de recherche pendant les périodes de promotion ou de vente en utilisant la période pendant votre période de promotion.
 - Adaptez les résultats de la recherche en fonction du comportement de chaque acheteur à l’aide du [classement intelligent](add.md#intelligent-ranking) tel que « recommandé pour vous », « le plus consulté », etc.
+- Lorsqu’une stratégie intelligente autre que **Aucune** est sélectionnée, réglez **[Amplification du classement intelligent](add.md#intelligent-ranking-boost)** par règle et validez dans **Tester votre règle** avant de la publier.
 - Utilisez toujours le panneau « Tester votre règle » pour prévisualiser l’impact de votre stratégie de classement intelligente sur les résultats de recherche réels pour différentes requêtes.
 
 ## Conseils pour les règles de catégorie
@@ -43,6 +40,6 @@ Il est essentiel d’établir une règle **par défaut** bien pensée. Votre [r�
 >Les règles de catégorie sont en version Beta.
 
 - Utilisez des [règles de catégorie](add.md#rule-types) sur les pages à trafic élevé ou à marge élevée **pages de catégorie** où l’ordre traité importe autant que la recherche (par exemple, les collections saisonnières ou les services présentés).
-- Alignez le **classement intelligent** (par exemple, tendance, les plus consultés) sur la manière dont les acheteurs parcourent cette catégorie ; les pages de catégorie n’utilisent pas le texte de requête de recherche de la même manière que les règles de recherche. Voir [Classement intelligent](add.md#intelligent-ranking).
+- Alignez le **classement intelligent** (par exemple, tendance, les plus consultés) sur la manière dont les acheteurs parcourent cette catégorie ; les pages de catégorie n’utilisent pas le texte de requête de recherche de la même manière que les règles de recherche. Voir [Classement intelligent](add.md#intelligent-ranking). Pour les méthodes intelligentes autres que **Aucune**, utilisez **[Amplification de classement intelligente](add.md#intelligent-ranking-boost)** et l’aperçu des catégories pour ajuster la force comportementale de cette règle de catégorie.
 - Appliquez **épingler**, **booster** et **enterrer** de manière cohérente avec votre plan de campagne. Gardez à l’esprit que les positions manuelles ne s’appliquent généralement que lorsque l’acheteur utilise le **tri par défaut** pour l’annonce. Voir [Classement manuel](add.md#manual-ranking).
 - Prévisualisez dans le flux de règles **category** dans l’éditeur et validez sur le storefront après la publication, la même discipline que celle utilisée pour le panneau « Tester votre règle » lors de la recherche.

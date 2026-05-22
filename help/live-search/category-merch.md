@@ -3,19 +3,15 @@ title: Marchandisage de catégorie
 description: Utilisez  [!DNL Live Search]  marchandisage de catégorie pour une expérience d’achat plus rapide.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 1131
+source-wordcount: 1171
 ht-degree: 0%
 
 ---
@@ -26,7 +22,7 @@ Le marchandisage de catégorie permet aux propriétaires de magasin d’applique
 
 Cette vidéo présente le marchandisage des catégories.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448853?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 Cette fonctionnalité est accessible dans l’administration à l’adresse **Marketing** > SEO et recherche > **[!DNL Live Search]** > **Marchandisage de catégorie**.
 
@@ -34,7 +30,7 @@ Cette fonctionnalité est accessible dans l’administration à l’adresse **Ma
 >
 >Le marchandisage de catégorie est disponible avec [!DNL Live Search] version [3.0.0 ou ultérieure](release-notes.md). Si l’espace de travail Marchandisage des catégories s’affiche, mais qu’il n’est pas rempli de données, mettez à jour le module [!DNL Live Search].
 
-![Marchandisage de catégorie](assets/category_workspace.png)
+![Espace de travail de marchandisage de catégorie](assets/category_workspace.png)
 
 La vue Marchandisage de catégorie affiche les règles de catégorie définies, avec des colonnes pour :
 
@@ -51,7 +47,7 @@ Vous pouvez rechercher une catégorie ou une sous-catégorie dans le champ « Re
 Le marchandisage de catégorie utilise les mêmes types de classement que pour les [produits individuels](rules-workspace.md).
 Il existe deux types de classement : Intelligent et Manuel.
 
-**Classement intelligent** exploite l’analyse des données comportementales du storefront par [Adobe AI](https://business.adobe.com/fr/ai.html) pour trier tous les produits dans les catégories sélectionnées selon un certain algorithme. Une fois le classement intelligent choisi, l’ordre spécifique des produits devrait changer au fil du temps, car les données sous-jacentes sont réanalysées régulièrement par Adobe AI. Par exemple, les produits les plus en vogue changent automatiquement au fil du temps en fonction des préférences des acheteurs.
+**Classement intelligent** exploite l’analyse des données comportementales du storefront par [Adobe AI](https://business.adobe.com/ai.html) pour trier tous les produits dans les catégories sélectionnées selon un certain algorithme. Une fois le classement intelligent choisi, l’ordre spécifique des produits devrait changer au fil du temps, car les données sous-jacentes sont réanalysées régulièrement par Adobe AI. Par exemple, les produits les plus en vogue changent automatiquement au fil du temps en fonction des préférences des acheteurs.
 Les méthodes de classement intelligentes sont les suivantes :
 
 * Les plus achetés : classe les produits en fonction de la fréquence à laquelle ils ont été achetés par les acheteurs au cours des sept jours précédents.
@@ -60,6 +56,9 @@ Les méthodes de classement intelligentes sont les suivantes :
 * Recommandé pour vous : en fonction du comportement précédent et actuel de chaque acheteur sur site, classe les produits en fonction de leur probabilité d’interaction avec chacun d’eux.
 * Tendance : classe les produits selon les hausses récentes de popularité en fonction des vues.
 * Aucune : classe les produits par ordre par défaut.
+
+
+Pour toute méthode de classement intelligente, à l’exception de **Aucune**, vous pouvez définir des **[!UICONTROL Intelligent Ranking Boost]** dans l’éditeur de règles afin d’ajuster la manière dont les signaux comportementaux affectent l’ordre du produit. Pour plus d’informations sur les valeurs par défaut, les limites, le comportement de prévisualisation et la comparaison de l’amplification au **classement manuel** voir [amplification intelligente du classement](rules-add.md#intelligent-ranking-boost).
 
 Le **classement manuel** permet aux utilisateurs de remplacer l’ordre de tri automatique des produits en définissant des règles manuelles d’épinglage, d’amplification, d’enfouissement et de masquage.
 
@@ -104,10 +103,10 @@ Pour créer une règle de catégorie, procédez comme suit :
    ![Sélectionner une catégorie](assets/category_select.png)
 
 1. Dans la vue _Ajouter une règle de catégorie_, sélectionnez la méthode de classement Intelligent que vous souhaitez appliquer à la catégorie.
-La page Aperçu de la catégorie affiche les résultats réels du classement sélectionné, à l’aide de vos données Live Search.
+La page Aperçu de la catégorie affiche les résultats réels du classement sélectionné, à l’aide de vos données [!DNL Live Search].
 1. Cliquez sur **Enregistrer et publier** pour enregistrer la règle.
 
-![Sélectionnez la méthode de classement Intelligent &#x200B;](assets/category_ranking.png)
+![Sélectionnez la méthode de classement Intelligent ](assets/category_ranking.png)
 
 Le service [!DNL Live Search] traite la règle et l’active sur le magasin une fois l’opération terminée.
 
