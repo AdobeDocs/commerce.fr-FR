@@ -1,19 +1,19 @@
 ---
-title: Limites et limites
-description: Comprenez  [!DNL Adobe Commerce Optimizer]  limites et les limites pour planifier la capacité et éviter les problèmes de performances.
+title: Limites et limites de Adobe Commerce Optimizer
+description: Découvrez les limites de licence et les limites système de Adobe Commerce Optimizer. Planifiez la capacité, suivez l’utilisation et évitez la latence et le ralentissement lorsque les limites sont dépassées.
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
 
 # Limites et limites
 
-[!DNL Adobe Commerce Optimizer] comporte deux types de limites :
+[!DNL Adobe Commerce Optimizer] applique **les limites de licence** et **les limites du système** qui définissent la capacité que votre projet peut utiliser :
 
 - **Limites de licence** : en fonction de la capacité achetée ; peut être augmentée en achetant des packages supplémentaires.
 - **Limites du système** : limites fixes qui protègent les ressources du système et garantissent des performances fiables pour tous les utilisateurs.
@@ -22,9 +22,9 @@ Votre utilisation doit respecter ces limites. Leur dépassement peut entraîner 
 
 ## Demander une capacité supplémentaire
 
-Les limites de licence peuvent être augmentées en achetant les packages de licence décrits dans la section [&#x200B; Limites de licence et limites système &#x200B;](#license-limits-and-system-boundaries) ou en négociant des licences personnalisées pour des cas d’utilisation uniques. Contactez votre représentant de compte Adobe pour discuter de vos besoins.
+Les limites de licence peuvent être augmentées en achetant les packages de licence décrits dans la section [ Limites de licence et limites système ](#license-limits-and-system-boundaries) ou en négociant des licences personnalisées pour des cas d’utilisation uniques. Contactez votre représentant de compte Adobe pour discuter de vos besoins.
 
-Pour toute question sur les limites du système, contactez l’[assistance Adobe](https://experienceleague.adobe.com/home?lang=fr#support).
+Pour toute question sur les limites du système, contactez l’[assistance ](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Prévention des problèmes de performances
 
@@ -42,7 +42,7 @@ Les tableaux suivants résument les limites des licences et les limites du syst�
 | **Environnement** | **Description** | **Affectation de base** | **Extensible ?** |
 | --- | --- | --- | --- |
 | **Environnement Sandbox** | Nombre d’environnements sandbox inclus | 2 par instance | Oui<p>Ajouter une licence d’environnement supplémentaire par instance</p> |
-| **Environnement de production** | Nombre d’environnements de production inclus | 1 par instance | Licence<p>Ajouter une licence d’environnement supplémentaire par instance</p> |
+| **Environnement de production** | Nombre d’environnements de production inclus | 1 par instance | Oui<p>Ajouter une licence d’environnement supplémentaire par instance</p> |
 
 {style="table-layout:auto"}
 
@@ -68,23 +68,23 @@ Les tableaux suivants résument les limites des licences et les limites du syst�
 
 {style="table-layout:auto"}
 
-### Visuels de produit optimisés par AEM Assets
+### [!DNL Product Visuals] limites
 
 | **Fonction** | **Description** | **Affectation de base** | **Extensible ?** |
 | --- | --- | --- | --- |
-| Visuels du produit Utilisateurs expérimentés | Utilisateur sous licence disposant de fonctionnalités complètes de gestion des ressources numériques, notamment des outils d’IA, des intégrations Adobe Express/Firefly et du partage Content Hub, qui gère les tâches principales de gestion des ressources numériques et des fonctionnalités avancées natives dans le cloud pour une efficacité optimale. | 2 | Oui<p>Mettre à niveau vers la licence AEM Assets</p> |
-| Visuels de produit Utilisateurs collaborateurs | Accédez aux ressources et travaillez avec elles via l’intégration d’AEM Commerce, créez et modifiez du contenu à l’aide d’Adobe Express et de Firefly, et, si cette option est activée, exploitez les ressources approuvées via le portail Content Hub. | 2 | Oui<p>Mettre à niveau vers la licence AEM Assets</p> |
+| Visuels du produit Utilisateurs expérimentés | Utilisateur sous licence disposant de fonctionnalités complètes de gestion des ressources numériques, notamment des outils d’IA, des intégrations [!DNL Adobe Express]/[!DNL Firefly] et du partage Content Hub, qui gère les tâches principales de gestion des ressources numériques et des fonctionnalités avancées natives dans le cloud pour une efficacité optimale. | 2 | Oui<p>Mettre à niveau vers la licence [!DNL AEM Assets]</p> |
+| Visuels de produit Utilisateurs collaborateurs | Accédez aux ressources et travaillez avec elles via l’intégration d’AEM Commerce, créez et modifiez du contenu à l’aide de [!DNL Adobe Express] et [!DNL Firefly], et, si cette option est activée, exploitez les ressources approuvées via le portail Content Hub. | 2 | Oui<p>Mettre à niveau vers la licence [!DNL AEM Assets]</p> |
 | Stockage des visualisations de produit | Espace de stockage alloué aux ressources | Stockage de 1 To | Non |
-| Utilisation de Dynamic Media | La tolérance pour les opérations de traitement Dynamic Media comprend :<ul><li>Diffusion d’images</li><li>Imagerie dynamique</li><li>Diffusion vidéo</li></ul><p>Pour plus d’informations, consultez *Calcul de l’utilisation de Dynamic Media* ci-dessous. | Basé sur GMV<p>Allocation minimale : 5 millions d’opérations/mois</p> | Oui<ul><li>Achat d’une licence pour des opérations supplémentaires</li><li>Mettre à niveau vers la licence AEM Assets</li></ul> |
-| Diffusion vidéo | Possibilité de diffusion ou de téléchargement de vidéos | 300 vidéos, 1 minute par vidéo | Oui<p>Mettre à niveau vers la licence AEM Assets</p> |
-| Génération de ressources | Accès à l’IA générative d’Adobe Express et d’Adobe Firefly pour créer des images | Aucune | Achetez les crédits IA génératifs séparément |
+| Utilisation de Dynamic Media | La tolérance pour les opérations de traitement Dynamic Media comprend :<ul><li>Diffusion d’images</li><li>Imagerie dynamique</li><li>Diffusion vidéo</li></ul><p>Pour plus d’informations, consultez *Calcul de l’utilisation de Dynamic Media* ci-dessous. | Basé sur la valeur brute (VMG)<p>Allocation minimale : 5 millions d’opérations/mois</p> | Oui<ul><li>Achat d’une licence pour des opérations supplémentaires</li><li>Mettre à niveau vers la licence [!DNL AEM Assets]</li></ul> |
+| Diffusion vidéo | Possibilité de diffusion ou de téléchargement de vidéos | 300 vidéos, 1 minute par vidéo | Oui<p>Mettre à niveau vers la licence [!DNL AEM Assets]</p> |
+| Génération de ressources | Accès à l’IA [!DNL Adobe Express] et [!DNL Adobe Firefly] générative pour créer des images | Aucune | Achetez les crédits IA génératifs séparément |
 
 {style="table-layout:auto"}
 
 
 >[!NOTE]
 >
->**Utilisateurs expérimentés** peuvent accéder à Adobe Express directement ou dans [!DNL Adobe Commerce Optimizer]. Les **utilisateurs collaborateurs** peuvent accéder directement à l’application Adobe Express. L’utilisation est régie par les [conditions de licence spécifiques à Adobe Express avec Firefly](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
+>**Utilisateurs expérimentés** peuvent accéder aux [!DNL Adobe Express] directement ou dans [!DNL Adobe Commerce Optimizer]. Les **utilisateurs collaborateurs** peuvent accéder directement à l’application [!DNL Adobe Express]. L’utilisation est régie par les [conditions de licence spécifiques à Adobe Express avec Firefly](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
 
 
 >[!BEGINSHADEBOX « Calculer l’utilisation de Dynamic Media »]
@@ -112,51 +112,53 @@ L’utilisation de Dynamic Media effectue le suivi des requêtes d’API entrant
 
 ### Storefront de catalogue
 
-L’allocation de base pour les fonctionnalités de storefront du catalogue est déterminée en fonction du niveau GMV. Le tableau indique l’allocation minimale pour chaque fonctionnalité.
+L’allocation de base pour les fonctionnalités de storefront du catalogue est déterminée en fonction du niveau de la valeur brute (VGM). Le tableau indique l’allocation minimale pour chaque fonctionnalité.
 
 | **Fonction** | **Description** | **Affectation de base** | **Extensible ?** |
 | --- | --- | --- | --- |
 | Taux de récupération des catalogues | Nombre d’appels mensuels d’une API de catalogue par un système (storefront, système de transactions, ERP ou autre) pour récupérer des données du catalogue | Basé sur le niveau GMV<p>Allocation minimale : 10M/mois</p> | Oui<p>Ajout de 1 million de requêtes par mois de packs de licences</p> |
-| Requêtes de contenu | Demandes au storefront Commerce pour les pages vues HTML ou les appels API JSON. Comptabilisé comme 1 page vue ou 5 appels API. | Basé sur le niveau GMV<p>Allocation minimale : 2M/mois</p> | Oui<p>Ajout d’un pack de licences de 1 million par mois</p> |
+| Requêtes de contenu | Demandes au storefront de pages vues HTML ou d’appels API JSON. Comptabilisé comme 1 page vue ou 5 appels API. | Basé sur le niveau GMV<p>Allocation minimale : 2M/mois</p> | Oui<p>Ajout d’un pack de licences de 1 million par mois</p> |
 | Variantes de Storefront GenAI | Autorisation pour la génération de contenu textuel | Basé sur le niveau GMV<p>Allocation minimale : 1 K variations/mois</p> | Oui<p>Achetez les crédits IA génératifs séparément</p> |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->La génération d’images nécessite une licence Adobe Firefly configurée pour la même organisation IMS que [!DNL Adobe Commerce Optimizer].
+>La génération d’images nécessite une licence [!DNL Adobe Firefly] configurée pour la même organisation IMS que [!DNL Adobe Commerce Optimizer].
 
 
 ### Découverte de produits
 
+Les limites suivantes s’appliquent à la recherche de produits, aux listes et à la configuration de marchandisage du storefront.
+
 | **Fonction** | **Description** | **Affectation de base** | **Extensible ?** |
 | --- | --- | --- | --- |
-| Produits par requête de recherche | Nombre maximal de produits renvoyés par page dans les résultats de recherche | 100 | Non |
+| Récupération du produit | SKU maximum par requête [!DNL Catalog Service] GraphQL lors de la récupération de données de produit avec `products`, `productSearch`, `refineProduct` et `variants`. Répartissez les requêtes les plus volumineuses sur plusieurs appels. | 100 | Non |
 | Attributs filtrables | Nombre de caractéristiques de produit (telles que la couleur, la taille, la marque ou le matériau) qui peuvent être activées pour la navigation superposée et les facettes | 200 | Non |
-| Attributs pouvant faire l’objet d’une recherche | Nombre de caractéristiques de produit configurables pour être utilisées avec le service de recherche de catalogue de produits | 200 | Non |
-| Attributs triables | Nombre de caractéristiques de produit pouvant être configurées pour déterminer l’ordre des valeurs des résultats de recherche | 50 | Non |
-| Profondeur de pagination de recherche | Nombre maximal de produits accessibles par pagination (par exemple, page 100 × 100 produits/page) | 10K | Non |
-| Facettes | The number of filterable product attributes (like Brand, Color, Size, Price) that can be configured to help shoppers refine search results and browse categories | 100<p>Must be filterable attributes</p> | Non |
-| Options per facet | The number of filterable product attribute values (like &quot;Red,&quot; &quot;Blue&quot; for Color; &quot;Small,&quot; &quot;Medium&quot; for Size) that shoppers can select from a list | 100 | Oui<p>Can increase via support request</p> |
+| Attributs pouvant faire l’objet d’une recherche | Nombre de caractéristiques de produit qui peuvent être indexées pour la recherche catalogue | 200 | Non |
+| Attributs triables | Nombre de caractéristiques de produit disponibles en tant qu’options de tri sur les pages de recherche et de catégorie. | 50 | Non |
+| Profondeur de pagination de recherche | Nombre maximal de produits accessibles par la pagination de la recherche (par exemple, page 100 × 100 produits/page). | 10K | Non |
+| Facettes | Nombre d’attributs de produit filtrables (tels que la marque, la couleur, la taille et le prix) qui peuvent être configurés pour aider les acheteurs à affiner les résultats de recherche et à parcourir les catégories | 100<p>Doit être un attribut filtrable</p> | Non |
+| Options par facette | Nombre de valeurs d’attribut de produit filtrables que les acheteurs peuvent sélectionner dans une facette (par exemple, « Rouge », « Bleu » pour la couleur, « Petit », « Medium » pour la taille). | 100 | Oui<p>Peut augmenter via une demande d’assistance</p> |
 
 {style="table-layout:auto"}
 
 ### Recommendations
 
-The following capabilities are available for product recommendations. Some features available in other Adobe Commerce products are not supported in [!DNL Adobe Commerce Optimizer].
+Les fonctionnalités suivantes sont disponibles pour les recommandations de produits. Certaines fonctionnalités disponibles dans d’autres produits Adobe Commerce ne sont pas prises en charge dans [!DNL Adobe Commerce Optimizer].
 
 | **Fonction** | **Description** | **Affectation de base** | **Extensible ?** |
 | --- | --- | --- | --- |
-| Active recommendation units | Number of live recommendation components on your storefront (like &quot;Customers also viewed&quot; or &quot;You might also like&quot;) | 50 | Non |
-| Category or attribute inclusions/exclusions | Filter products to a specific set that qualifies for recommendations | Not supported | |
+| Unités de recommandation actives | Nombre de composants de recommandations en direct sur votre storefront (par exemple, « Les clients ont également consulté » ou « Vous pourriez également aimer ») | 50 | Non |
+| Inclusions/exclusions de catégories ou d’attributs | Filtrer les produits selon un ensemble spécifique éligible aux recommandations | Non pris en charge | — |
 
 {style="table-layout:auto"}
 
-### Extensibility
+### Extensibilité
 
 | **Fonction** | **Description** | **Affectation de base** | **Extensible ?** | **Notes** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacité à créer des extensions et des intégrations natives au cloud | Basé sur le niveau GMV<p>Allocation minimale : 1 pack/an</p> | Oui<p>Ajouter des packs supplémentaires</p> | Pour les limites définies par pack, voir :<ul><li>[Description du produit App Builder](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-developer-app-builder.html) pour les limites définies par pack.</li><li>[Paramètres système et limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) dans les *Guides d’exécution d’App Builder*.</li><li>[Exigences de stockage App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacité à créer des extensions et des intégrations natives au cloud | Basé sur le niveau GMV<p>Allocation minimale : 1 pack/an</p> | Oui<p>Ajouter des packs supplémentaires</p> | Pour les limites définies par pack, voir :<ul><li>[Description du produit ](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) pour les limites définies par pack.</li><li>[Paramètres système et limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) dans les *Guides d’exécution d’App Builder*.</li><li>[Exigences de stockage ](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -193,5 +195,5 @@ This approach ensures your solution is accurately sized for your business needs.
 1. **GenAI or Media Needs**
 
    * Need: +10M dynamic media ops/month
-   * Add-On: 10 × dynamic media packs (1M each) 
+   * Add-On: 10 × dynamic media packs (1M each)
 -->
