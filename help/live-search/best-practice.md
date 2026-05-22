@@ -4,17 +4,9 @@ description: Découvrez les bonnes pratiques d’implémentation  [!DNL Live Sea
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
 TQID: https://experienceleague.adobe.com/X9zgHooEzDJe-zzmLLXHdVVVFUHVX4be47dOUaJyUXU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 2966
@@ -81,7 +73,7 @@ Pour configurer un attribut de produit en tant que facette, les [propriétés](f
 
 #### Conseils pour optimiser les facettes
 
-- Déterminez les attributs les plus pertinents et utiles de vos produits, tels que le titre, la catégorie, la marque, la gamme de prix, la couleur et la taille, puis définissez-les comme [&#x200B; facettes dynamiques &#x200B;](facets-type.md). 
+- Déterminez les attributs les plus pertinents et utiles de vos produits, tels que le titre, la catégorie, la marque, la gamme de prix, la couleur et la taille, puis définissez-les comme [ facettes dynamiques ](facets-type.md). 
 - Définissez et triez des attributs de produit cohérents dans l’ensemble de votre catalogue et hautement pertinents pour vos produits afin d’améliorer la pertinence et les fonctionnalités de filtrage de vos acheteurs.
 - Assurez-vous que les libellés des facettes sont faciles à comprendre et nommés de manière cohérente sur l’ensemble du site. Par exemple, utilisez « Plage de prix » au lieu de « Coût ».
 - Évitez d’accabler les acheteurs en limitant le nombre de facettes aux plus importantes. Un nombre trop élevé d’options peut entraîner une fatigue liée aux décisions. Par défaut, la [!DNL Live Search] est limitée à un maximum de 100 attributs configurés en tant que facettes et 30 intervalles renvoyés dans chaque facette. En savoir plus sur les [limites des facettes](boundaries-limits.md#facets). 
@@ -221,7 +213,7 @@ Si les résultats de la recherche semblent aléatoires ou non pertinents, utilis
 En savoir plus sur les attributs de produit pour la recherche :
 
 - [Définir les attributs comme pouvant faire l’objet d’une recherche](workspace.md#set-attributes-as-searchable)
-- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Surveillance des résultats de recherche
 
