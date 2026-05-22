@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 2966
+source-wordcount: 3008
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Il est essentiel d’établir une règle de recherche par défaut bien pensée. 
 - Mettez en avant les produits en vente ou faisant partie de promotions spéciales.
 - Définissez automatiquement des règles de recherche pendant les périodes de promotion ou de vente en utilisant la période pendant votre période de promotion.
 - Utilisez toujours le panneau « Tester votre règle » pour prévisualiser l’impact de votre stratégie de classement intelligente sur les résultats de recherche réels pour différentes requêtes.
+- Lorsque vous activez le classement intelligent, réglez **[Classement intelligent booster](rules-add.md#intelligent-ranking-boost)** dans l’éditeur de règles pour équilibrer les signaux de style popularité avec la pertinence textuelle, et vérifiez les résultats des requêtes cibles dans **Tester votre règle**. L&#39;augmentation intelligente du classement n&#39;est pas disponible pour la stratégie **Aucune**.
 - Adaptez les résultats de la recherche en fonction du comportement de chaque acheteur à l’aide du [classement intelligent](rules-add.md#intelligent-ranking) tel que « recommandé pour vous », « le plus consulté », etc. Pour personnaliser le comportement de l’acheteur, vous devez vous assurer que l’événement est correctement implémenté. Pour les commerçants Luma, les événements sont disponibles clé en main. Pour les implémentations découplées ou personnalisées, vous devez [implémenter les événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) en fonction de vos besoins spécifiques.
 
 En savoir plus sur les règles de recherche :

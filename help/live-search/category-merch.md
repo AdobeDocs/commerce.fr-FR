@@ -13,9 +13,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 1131
+source-wordcount: 1171
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Cette fonctionnalité est accessible dans l’administration à l’adresse **Ma
 >
 >Le marchandisage de catégorie est disponible avec [!DNL Live Search] version [3.0.0 ou ultérieure](release-notes.md). Si l’espace de travail Marchandisage des catégories s’affiche, mais qu’il n’est pas rempli de données, mettez à jour le module [!DNL Live Search].
 
-![Marchandisage de catégorie](assets/category_workspace.png)
+![Espace de travail de marchandisage de catégorie](assets/category_workspace.png)
 
 La vue Marchandisage de catégorie affiche les règles de catégorie définies, avec des colonnes pour :
 
@@ -60,6 +60,9 @@ Les méthodes de classement intelligentes sont les suivantes :
 * Recommandé pour vous : en fonction du comportement précédent et actuel de chaque acheteur sur site, classe les produits en fonction de leur probabilité d’interaction avec chacun d’eux.
 * Tendance : classe les produits selon les hausses récentes de popularité en fonction des vues.
 * Aucune : classe les produits par ordre par défaut.
+
+
+Pour toute méthode de classement intelligente, à l’exception de **Aucune**, vous pouvez définir des **[!UICONTROL Intelligent Ranking Boost]** dans l’éditeur de règles afin d’ajuster la manière dont les signaux comportementaux affectent l’ordre du produit. Pour plus d’informations sur les valeurs par défaut, les limites, le comportement de prévisualisation et la comparaison de l’amplification au **classement manuel** voir [amplification intelligente du classement](rules-add.md#intelligent-ranking-boost).
 
 Le **classement manuel** permet aux utilisateurs de remplacer l’ordre de tri automatique des produits en définissant des règles manuelles d’épinglage, d’amplification, d’enfouissement et de masquage.
 
@@ -104,7 +107,7 @@ Pour créer une règle de catégorie, procédez comme suit :
    ![Sélectionner une catégorie](assets/category_select.png)
 
 1. Dans la vue _Ajouter une règle de catégorie_, sélectionnez la méthode de classement Intelligent que vous souhaitez appliquer à la catégorie.
-La page Aperçu de la catégorie affiche les résultats réels du classement sélectionné, à l’aide de vos données Live Search.
+La page Aperçu de la catégorie affiche les résultats réels du classement sélectionné, à l’aide de vos données [!DNL Live Search].
 1. Cliquez sur **Enregistrer et publier** pour enregistrer la règle.
 
 ![Sélectionnez la méthode de classement Intelligent &#x200B;](assets/category_ranking.png)
