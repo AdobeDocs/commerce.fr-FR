@@ -34,7 +34,7 @@ Créez un panier abandonné, parcourez les e-mails ou les notifications à l’a
 | Types de données | Données Storefront (Événements Comportementaux) | Données de back-office (événements côté serveur) |
 |---|---|---|
 | **Définition** | Clics ou actions des clients sur votre site. | Informations sur le cycle de vie et détails de chaque commande (passée et actuelle). |
-| **Événements capturés par Adobe Commerce** | [pageView](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Order history](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| **Événements capturés par Adobe Commerce** | [pageView](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Order history](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### Qu’ont accompli les autres clients ?
 
@@ -198,7 +198,7 @@ Créez un e-mail de panier abandonné envoyé lorsqu’un panier abandonné est 
 
 1. Dans le parcours que vous avez créé ci-dessus, double-cliquez sur l’icône **[!UICONTROL Email]** dans la zone de travail.
 
-1. Suivez les [étapes](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) du guide Journey Optimizer pour créer l’e-mail de panier abandonné.
+1. Suivez les [étapes](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=fr#configure-email) du guide Journey Optimizer pour créer l’e-mail de panier abandonné.
 
 Vous disposez désormais d’un parcours dans Journey Optimizer qui écoute l’événement `commerce.checkouts` de votre boutique [!DNL Commerce] et d’un e-mail de panier abandonné qui est envoyé après un certain temps. La section suivante vous explique comment tester le parcours.
 

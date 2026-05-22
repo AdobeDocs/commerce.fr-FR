@@ -4,7 +4,7 @@ description: Découvrez comment l’identité IMS et les profils Admin Console a
 feature: CMS, Media, Configuration
 source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ Adobe IMS fournit l’identité de l’utilisateur et le contexte de l’organis
 
 L&#39;intégration ne peut charger que des domaines mappés à un profil. Par conséquent, les utilisateurs peuvent avoir les profils de produit suivants :
 
-* **Profil de produit de diffusion AEM**. Obligatoire pour le sélecteur de ressources et l’interface utilisateur de configuration lorsque l’utilisateur dispose à la fois de profils de création et de diffusion. L’intégration utilise le profil de produit de diffusion AEM lorsqu’il est disponible.
+* **Profil de produit de diffusion**. Obligatoire pour le sélecteur de ressources et l’interface utilisateur de configuration lorsque l’utilisateur dispose à la fois de profils de création et de diffusion. L’intégration utilise le profil de produit de diffusion AEM lorsqu’il est disponible.
 
 * **Créer un profil de produit**. Obligatoire pour accéder à l’interface utilisateur d’AEM Assets. Il sert également de solution de secours pour le sélecteur de ressources et l’interface utilisateur de configuration lorsque l’utilisateur ne dispose pas du profil de produit de diffusion AEM dans son Admin Console.
 
-Les domaines (y compris l’ID de programme, l’ID d’environnement et le mappage de domaine) sont affectés au profil de produit de diffusion AEM. L’intégration charge les domaines à partir du profil de produit de diffusion **AEM** lorsqu’il est disponible, ou revient au profil de produit **auteur** lorsque le profil de produit de diffusion AEM ne figure pas dans l’Admin Console de l’utilisateur. Les utilisateurs ont besoin de l’un de ces profils pour :
+Les domaines (y compris l’ID de programme, l’ID d’environnement et le mappage de domaine) sont affectés au profil de produit de diffusion AEM. L’intégration charge les domaines à partir du profil de produit de diffusion **&#x200B;**&#x200B;lorsqu’il est disponible, ou revient au profil de produit **auteur** lorsque le profil de produit de diffusion AEM ne figure pas dans l’Admin Console de l’utilisateur. Les utilisateurs ont besoin de l’un de ces profils pour :
 
 * Renseignez les listes déroulantes **ID de programme**, **ID d’environnement** et **Mappage de domaine** dans la configuration Commerce Admin.
 * Utilisez le sélecteur de ressources pour parcourir et sélectionner des ressources à partir d’AEM Assets.
@@ -70,7 +70,7 @@ Pour utiliser le sélecteur de ressources et les champs de configuration automat
 
 1. [Ouvrez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) pour demander un identifiant client IMS personnalisé pour le sélecteur de ressources.
 
-1. À partir du [Adobe Admin Console](https://adminconsole.adobe.com/), ajoutez l’utilisateur au profil de produit **Utilisateurs OpenAPI AEM Assets DM - diffusion** ou au profil de produit **auteur** (par exemple, `<environment-name> - author - <program-id> - <environment-id>`) comme solution de secours lorsque l’utilisateur n’a pas le profil de produit de diffusion AEM dans son Admin Console.
+1. À partir du [&#128279;](https://adminconsole.adobe.com/), ajoutez l’utilisateur au profil de produit **Utilisateurs OpenAPI AEM Assets DM - diffusion** ou au profil de produit **auteur** (par exemple, `<environment-name> - author - <program-id> - <environment-id>`) comme solution de secours lorsque l’utilisateur n’a pas le profil de produit de diffusion AEM dans son Admin Console.
 
 Sans IMS, vous pouvez toujours configurer l’intégration en saisissant manuellement l’ID de programme et l’ID d’environnement dans l’Administration de Commerce.
 
