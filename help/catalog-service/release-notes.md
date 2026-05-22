@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 22f44afb7221c735785b6e9a38fb70c733cf0942
+source-git-commit: 4bd744e26afca4519fb1c04edcb7d2a118369ff9
 workflow-type: tm+mt
-source-wordcount: 2742
+source-wordcount: 2782
 ht-degree: 0%
 
 ---
@@ -54,6 +54,12 @@ La prise en charge est fournie pour la dernière version. Les notes de mise à j
 ## Service de catalogue Storefront
 
 ### Mai 2026
+
+**Date de publication** : 20 mai 2026
+<!-- v1.55 -->
+
+![Nouveau](../assets/new.svg) Limite imposée de 100 SKU maximum par demande pour les clients Adobe Commerce et Adobe Commerce as a Cloud Service conformément [limites et limites documentées](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits).
+<!--DATA-7163-->
 
 **Date de publication** : 13 mai 2026
 <!--v1.54-->
