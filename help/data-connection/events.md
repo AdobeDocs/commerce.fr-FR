@@ -26,13 +26,13 @@ ht-degree: 0%
 
 Vous trouverez ci-dessous la liste des événements comportementaux Commerce disponibles lorsque vous installez l’extension [!DNL Data Connection]. Les données collectées par ces événements sont envoyées au Adobe Experience Platform. Vous pouvez également créer des [événements personnalisés](custom-events.md) pour collecter des données supplémentaires non prêtes à l’emploi.
 
-Outre les données collectées par les événements ci-après, vous obtenez également [d’autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fournies par le SDK Web Adobe Experience Platform.
+Outre les données collectées par les événements ci-après, vous obtenez également [d’autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=fr) fournies par le SDK Web Adobe Experience Platform.
 
 Les événements comportementaux collectent des données comportementales anonymes auprès de vos clients lorsqu’ils parcourent votre site. Vous pouvez utiliser les données collectées par ces événements pour créer des promotions et des campagnes ciblées sur un ensemble spécifique d’acheteurs.
 
 >[!NOTE]
 >
->Tous les événements comportementaux incluent le champ [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) , qui inclut l’adresse e-mail de l’acheteur, le cas échéant, et l’ECID.
+>Tous les événements comportementaux incluent le champ [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=fr) , qui inclut l’adresse e-mail de l’acheteur, le cas échéant, et l’ECID.
 
 ## Événements Storefront
 
