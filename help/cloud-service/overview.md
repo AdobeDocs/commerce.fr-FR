@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 TQID: https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -94,7 +94,7 @@ Ce diagramme illustre le flux de données entre [!DNL Adobe Commerce as a Cloud 
 
 ## Commerce Storefront
 
-Utilisez les [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront) d’Adobe optimisés par [!DNL Edge Delivery Services] pour créer des expériences riches en quelques minutes avec une création simple basée sur des documents ou une modification visuelle avec [!DNL Storefront Builder].
+Utilisez les [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=fr) d’Adobe optimisés par [!DNL Edge Delivery Services] pour créer des expériences riches en quelques minutes avec une création simple basée sur des documents ou une modification visuelle avec [!DNL Storefront Builder].
 
 [!DNL Commerce Storefront] est entièrement découplé avec une architecture découplée qui fournit tous les services et données de marchandisage par le biais d’une couche d’API GraphQL. Cette architecture permet aux équipes de développer leurs interfaces indépendamment de Commerce Foundation, offrant ainsi l’agilité nécessaire pour créer et tester de nouveaux points de contact avec les technologies émergentes.
 
@@ -226,7 +226,7 @@ Les développeurs peuvent utiliser des API [&#128279;](https://developer.adobe.c
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->

@@ -25,7 +25,7 @@ ht-degree: 0%
 
 Vous trouverez ci-dessous la liste des événements de back-office Commerce disponibles lorsque vous installez l’extension [!DNL Data Connection]. Les données collectées par ces événements sont envoyées au Adobe Experience Platform. Vous pouvez également créer des [événements personnalisés](custom-events.md) pour collecter des données supplémentaires non prêtes à l’emploi.
 
-Outre les données collectées par les événements ci-après, vous obtenez également [d’autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fournies par le SDK Web Adobe Experience Platform.
+Outre les données collectées par les événements ci-après, vous obtenez également [d’autres données](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=fr) fournies par le SDK Web Adobe Experience Platform.
 
 Les événements Back Office contiennent des données côté serveur. Ces données comprennent [statut de la commande](#order-status) des informations telles que si une commande a été passée, annulée, remboursée, expédiée ou terminée. Les données côté serveur incluent également des informations [événements de profil client](#customer-profile-events) telles que si un compte a été créé, mis à jour ou supprimé.
 

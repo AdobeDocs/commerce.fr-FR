@@ -98,7 +98,7 @@ La synchronisation des éléments en échec de la reprise utilise un processus d
 
 La plupart des activités de synchronisation sont traitées automatiquement en fonction de la configuration de l’application. Cependant, l’exportation des données SaaS fournit également des outils pour surveiller et gérer le processus.
 
-- [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **[Tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** : les utilisateurs administrateurs peuvent afficher et suivre les données synchronisées avec les services Commerce et disponibles pour les services storefront. Ce tableau de bord affiche le produit synchronisé avec les services Commerce.
+- [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **[Tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** : les utilisateurs administrateurs peuvent afficher et suivre les données synchronisées avec les services Commerce et disponibles pour les services storefront. Ce tableau de bord affiche le produit synchronisé avec les services Commerce.
 
   {{aco-data-sync-verification}}
 
