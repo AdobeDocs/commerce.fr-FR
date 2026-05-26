@@ -1,7 +1,7 @@
 ---
-source-git-commit: c435c7751fca8c46077cbab3534bd9f47cd03b2b
+source-git-commit: bfbfd43620580b8db464b823be6f0f64c97c261d
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1218'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 1%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 22 Mai 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout de notes de mise à jour pour les mises à jour d’API vers <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/release-notes"></a> et Commerce <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/release-notes">Catalog Service</a> pour la version du 20 mai 2026. Ces notes appliquent désormais la limite de 100 SKU par requête lors de la récupération des données de produit documentée. Voir <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits">Limites et limites</a>.</p>
+</td>
+      <td>
+        Technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/342a3015f743e12b7089e4d430a517804a7cd40c">validation</a></td>
+    </tr>
+    <tr>
+      <td><p>Amplification du classement intelligent documentée (poids comportemental configurable par règle, 5,0 par défaut) pour les [!DNL Live Search] dans <a href="https://experienceleague.adobe.com/fr/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost">Ajouter des règles</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/live-search/best-practice">Bonnes pratiques</a>, avec une référence croisée de <a href="https://experienceleague.adobe.com/fr/docs/commerce/live-search/live-search-admin/category-merch">Marchandisage de catégorie</a>. Ajout des mêmes conseils pour les [!DNL Adobe Commerce Optimizer] dans <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Création et gestion</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/best-practice">Bonnes pratiques relatives aux règles de marchandisage</a>.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/40b4528d417a4df09ac9ae9fb0d97b0f678b55ac">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 19 Mai 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Le guide d’intégration d’AEM Assets décrit comment les éditeurs définissent <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">texte secondaire</a> dans la </a> <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/release-notes">Intégration d’AEM Assets v1.3.6.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d3dfbc59e72c00c3552af5805b57c69e60b38b4">validation</a></td>
+    </tr>
+    <tr>
+      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 30 Avril 2026
 
@@ -363,72 +423,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Mise à jour majeure
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/522240cfd305bb00026ba477dc94e0bd2de30f06">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 23 mars 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d’une nouvelle installation automatisée pour la <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">Conditions préalables au tutoriel</a>.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a383e95e23291959f039390dfd3943bf98aa83ef">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 19 mars 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de nouvelles rubriques :<br />- <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer">Connexion en tant que client</a> pour Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/">Points d’entrée REST de compte de carte cadeau</a> pour Adobe Commerce as a Cloud Service.<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/">Déclenchement d’e-mail via REST</a> pour Adobe Commerce as a Cloud Service.<br />Mise à jour des notes de mise à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes"> </a> avec mars 2026 - informations de mise à jour n° 2.</p>
-</td>
-      <td>
-        Nouvelle rubrique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/58b94a9a587b3947d4b340ce77c8b3f7b28c27f4">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 17 mars 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la section <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/permissions">Configurer les autorisations d’utilisateur IMS pour l’intégration d’AEM Assets</a> pour expliquer comment configurer les autorisations IMS et de niveau de diffusion afin d’activer le sélecteur de ressources et les champs de configuration auto-renseignés (ID de programme, ID d’environnement, mappage de domaine) dans l’administration.</p>
-</td>
-      <td>
-        Nouvelle rubrique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0fd98bf86555c914f7a5b1e177c31c37764dbf84">validation</a></td>
     </tr>
   </tbody>
 </table>
