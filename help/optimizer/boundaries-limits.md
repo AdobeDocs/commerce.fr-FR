@@ -4,7 +4,8 @@ description: Découvrez les limites de licence et les limites système de Adobe 
 role: Admin, Developer
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
+nudge: true
+source-git-commit: 6ae571dd77206859e69e57100e80bb01416a36cd
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 0%
