@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Un App Manager associe une application App Builder à son instance Commerce. Les formulaires de configuration sont rendus dynamiquement en fonction du schéma de l’application. Aucun développement personnalisé de l’interface d’administration n’est donc nécessaire. App Manager configure les paramètres par le biais de formulaires que Commerce génère automatiquement.
 
-![&#x200B; Gestion des applications &#x200B;](assets/app-management-view.png){width="500" zoomable="yes"}
+![ Gestion des applications ](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## Trouver une application dans l’Admin
 
@@ -46,7 +46,7 @@ Avant d’associer une application, vérifiez que vous disposez des éléments s
 
 Regardez cette vidéo pour savoir comment associer une application à une instance Commerce et configurer des paramètres.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478957?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## Associer une application
 
@@ -66,7 +66,7 @@ Pour lier votre application App Builder à une instance Commerce :
 
 1. Cliquez sur **[!UICONTROL Associate]**.
 
-   ![&#x200B; Détails de l’application &#x200B;](assets/app-details.png){width="500" zoomable="yes"}
+   ![ Détails de l’application ](assets/app-details.png){width="500" zoomable="yes"}
 
 >[!WARNING]
 >
