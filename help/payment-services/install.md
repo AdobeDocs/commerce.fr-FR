@@ -7,7 +7,7 @@ feature: Payments, Checkout, Install, Upgrade, Paas
 badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Le téléchargement et l’installation de l’extension [!DNL Payment Services]
 
 ## Télécharger l’extension
 
-Vous devez d’abord télécharger l’extension à partir de [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html?lang=fr) avant de l’installer.
+Vous devez d’abord télécharger l’extension à partir de [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html?lang=fr) avant de l’installer.
 
 1. Accédez à l’extension [&#x200B; Services de paiement dans Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. Pour choisir l’édition et la version, faites basculer le **[!UICONTROL Edition]** et le **[!UICONTROL Your store version]** vers vos sélections préférées.

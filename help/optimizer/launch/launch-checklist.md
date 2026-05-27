@@ -11,7 +11,7 @@ recommendations: noCatalog
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 source-git-commit: 37b8b8a334ca11daacfd3da03b0441e77329e2e1
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '2194'
 ht-degree: 0%
 
 ---

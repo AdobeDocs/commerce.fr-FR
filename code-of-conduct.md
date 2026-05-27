@@ -1,7 +1,7 @@
 ---
 source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ qui ne sont pas conformes au présent Code de conduite, ou à interdire temporai
 en permanence tout contributeur à d&#39;autres comportements qu&#39;il juge inappropriés,
 menaçant, offensant ou nuisible.
 
-## Champ d’application
+## Portée
 
 Ce code de conduite s’applique à la fois aux espaces de projet et aux espaces publics
 lorsqu’une personne représente le projet ou sa communauté. Exemples de
@@ -73,4 +73,4 @@ membres de la direction du projet.
 ## Attribution
 
 Le présent Code de conduite est adapté du [Pacte du contributeur](https://www.contributor-covenant.org/), version 1.4,
-disponible sur [https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).
+disponible à l’adresse [&#128279;](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).

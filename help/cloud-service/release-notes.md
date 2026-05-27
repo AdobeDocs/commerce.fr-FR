@@ -70,7 +70,7 @@ Les améliorations, optimisations et correctifs suivants sont inclus dans cette 
 
 * Correction d’une erreur « le client n’est pas autorisé » qui empêchait les connexions GraphQL invitées lorsque l’en-tête `X-Adobe-Company` était présent dans la requête. <!-- ACCS-949 -->
 
-* Correction d’un problème en raison duquel la modification ou la suppression d’une société dans le [!DNL Commerce Admin] pouvait échouer avec une erreur « Aucune entité de ce type » après l’affectation d’un client ou d’une cliente à la société via le point d’entrée REST `V1/customers/companies` PUT. <!-- ACCS-856 -->
+* Correction d’un problème en raison duquel la modification ou la suppression d’une entreprise dans le [!DNL Commerce Admin] pouvait échouer avec une erreur « Aucune entité de ce type » après l’affectation d’un client ou d’une cliente à l’entreprise via le point d’entrée REST PUT `V1/customers/companies`. <!-- ACCS-856 -->
 
 * Correction d&#39;un problème lié aux statuts de grille de commande client obsolètes. <!-- CCSAAS-4915 -->
 
