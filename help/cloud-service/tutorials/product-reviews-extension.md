@@ -21,7 +21,7 @@ Ce tutoriel vous guide tout au long de la création d’une extension qui permet
 
 Vous créez deux parties :
 
-- **Extension App Builder** — Une API REST avec des opérations GET et POST pour créer et afficher du contenu de révision de produit et de questions/réponses avec validation, pagination et persistance dans `aio-lib-state`.
+- **Extension App Builder** — Une API REST avec des opérations GET et POST pour créer et afficher la révision du produit et le contenu des questions/réponses avec validation, pagination et persistance dans `aio-lib-state`.
 - **Intégration de Storefront** — Un bloc de révision de produit sur le PDP qui affiche les révisions et les questions/réponses, avec des formulaires permettant aux acheteurs de soumettre des révisions, des questions et des réponses.
 
 >[!NOTE]
@@ -52,8 +52,8 @@ Si l’une des commandes précédentes ne renvoie pas les résultats attendus, c
 
 Vérifiez également les éléments suivants :
 
-- Vous disposez d’une instance [!DNL Adobe Commerce as a Cloud Service] avec des données de produit. Voir [Instances du service &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/overview){target="_blank"}.
-- Un projet de storefront est connecté à votre instance [!DNL Commerce]. Si vous n’en avez pas, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr){target="_blank"}.
+- Vous disposez d’une instance [!DNL Adobe Commerce as a Cloud Service] avec des données de produit. Voir [Instances du service ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Un projet de storefront est connecté à votre instance [!DNL Commerce]. Si vous n’en avez pas, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
 - L’interface de ligne de commande `aem` est installée :
 
   ```bash
@@ -135,7 +135,7 @@ L’agent revient avec une série de questions auxquelles il doit répondre avan
 1. **API REST — hôte et consommateurs** — L’API REST CRUD doit-elle faire partie de cette application App Builder (actions web sur Adobe I/O Runtime) que storefronts appelle ? Qui l’appellera (storefront EDS, storefront personnalisé/découplé, ou les deux) ? Avez-vous besoin d’un accès CORS ou public (non authentifié), ou les appelants utiliseront-ils des clés API ou OAuth ?
 1. **Modèle de données** — Que doit représenter un « examen » ou une « question » ? Identifiant client (e-mail uniquement ou également identifiant client) ? Identifiant du produit (SKU uniquement ou SKU + vue magasin) ? Un même client peut-il soumettre plusieurs avis pour le même SKU ?
 1. **Persistance** — Est-`aio-lib-state` l’endroit approprié pour conserver les révisions et les questions/réponses, ou disposez-vous d’un magasin externe ? La conception doit-elle prendre en compte plusieurs clients ou un seul client ?
-1. **Sémantique de pagination** — Pour le GET des questions-réponses, s’applique-t-`limit` uniquement aux questions (avec des réponses imbriquées) ou au nombre total de questions plus réponses ?
+1. **Sémantique de pagination** — Pour les questions-réponses GET, s’applique-t-`limit` uniquement aux questions (avec des réponses imbriquées) ou au nombre total de questions plus réponses ?
 
 **Exemples de réponses :**
 
@@ -437,7 +437,7 @@ Suivez les conseils suivants si vous rencontrez des problèmes au cours du tutor
 
 | Symptôme | Cause | Correctif |
 |---------|-------|-----|
-| GET ou POST renvoie 500 « Impossible de trouver le module » | Les actions de révisions de produits utilisent `require("../../utils")` ou `require("../../constants")`, ce qui permet d’échapper le lot du package. Ces fichiers ne sont pas inclus lorsque le package est déployé. | Rendre le package d’avis de produits autonome. Ajoutez des `actions/product-reviews/lib/constants.js` et des `actions/product-reviews/lib/utils.js`, et mettez à jour les quatre actions à exiger de `../lib/...` au lieu de `../../`. |
+| GET ou POST renvoie 500 « Impossible de trouver le module ». | Les actions de révisions de produits utilisent `require("../../utils")` ou `require("../../constants")`, ce qui permet d’échapper le lot du package. Ces fichiers ne sont pas inclus lorsque le package est déployé. | Rendre le package d’avis de produits autonome. Ajoutez des `actions/product-reviews/lib/constants.js` et des `actions/product-reviews/lib/utils.js`, et mettez à jour les quatre actions à exiger de `../lib/...` au lieu de `../../`. |
 | GET renvoie 500 avec « la clé doit correspondre au modèle » | Les clés d’état utilisent les deux-points (par exemple, `reviews:ADB153`). `aio-lib-state` autorise uniquement les `[a-zA-Z0-9-_.]`. | Remplacez les préfixes `reviews:` et `qa:` par `reviews.` et `qa.`. Ajoutez un assistant `stateKey(prefix, sku)` qui assainit le SKU (remplacez les caractères non valides par des `_`). |
 | POST renvoie 500 avec « la valeur doit être une chaîne » | `aio-lib-state` accepte uniquement les valeurs de chaîne. Le code transmet des tableaux ou des objets à `state.put()`. | Sérialisez avec `JSON.stringify()` lors de l’écriture et `JSON.parse()` lors de la lecture. Mettez à jour les quatre actions. |
 

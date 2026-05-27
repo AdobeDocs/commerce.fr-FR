@@ -5,18 +5,10 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
 TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 2655
@@ -26,7 +18,7 @@ ht-degree: 0%
 
 # Collecter des données Commerce à l’aide de balises Adobe Experience Platform
 
-Bien que vous puissiez utiliser l’extension [!DNL Data Connection] pour publier des événements de storefront et vous y abonner, certains commerçants peuvent déjà utiliser une solution de collecte de données, telle que les balises [Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=fr). Pour ces commerçants, Adobe Commerce fournit une option de publication uniquement dans l’extension [!DNL Data Connection] qui utilise le SDK d’événement Adobe Commerce.
+Bien que vous puissiez utiliser l’extension [!DNL Data Connection] pour publier des événements de storefront et vous y abonner, certains commerçants peuvent déjà utiliser une solution de collecte de données, telle que les balises [Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Pour ces commerçants, Adobe Commerce fournit une option de publication uniquement dans l’extension [!DNL Data Connection] qui utilise le SDK d’événement Adobe Commerce.
 
 Flux de données d’extension ![[!DNL Data Connection]](assets/tags-data-flow.png)
 _[!DNL Data Connection]le flux de données d’extension avec des balises_
@@ -47,15 +39,15 @@ Pour collecter des données d’événement Commerce :
 
 Pour mapper les données du storefront Commerce à Adobe Experience Platform, configurez et installez les éléments suivants à partir des balises Adobe Experience Platform :
 
-1. [Configurer une propriété de balise](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=fr) dans la collecte de données Adobe Experience Platform.
+1. [Configurer une propriété de balise](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) dans la collecte de données Adobe Experience Platform.
 
 1. Sous **Création**, sélectionnez **Extensions** et installez et configurez les extensions suivantes :
 
-   - [Couche de données client Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html?lang=fr)
+   - [Couche de données client Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html)
 
-   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=fr)
+   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
 
-1. [Publier la balise](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=fr) dans votre environnement de développement.
+1. [Publier la balise](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) dans votre environnement de développement.
 
 1. Suivez les étapes **Mappage d’événements** ci-dessous pour configurer des éléments de données et des règles pour des événements spécifiques.
 
@@ -1425,7 +1417,7 @@ return IdentityMap;
 
 ## Définition du consentement
 
-Lorsque vous installez l’extension [!DNL Data Connection] dans Adobe Commerce, le consentement de la collecte de données est activé par défaut. Le droit d’opposition est géré par le biais du cookie [`mg_dnt`. &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=fr) Vous pouvez suivre les étapes décrites ici si vous choisissez d’utiliser `mg_dnt` pour gérer le consentement. La documentation de Adobe Experience Platform Web SDK [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=fr) propose plusieurs options supplémentaires pour gérer le consentement.
+Lorsque vous installez l’extension [!DNL Data Connection] dans Adobe Commerce, le consentement de la collecte de données est activé par défaut. Le droit d’opposition est géré par le biais du cookie [`mg_dnt`. ](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) Vous pouvez suivre les étapes décrites ici si vous choisissez d’utiliser `mg_dnt` pour gérer le consentement. La documentation de Adobe Experience Platform Web SDK [](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) propose plusieurs options supplémentaires pour gérer le consentement.
 
 1. Créez un élément de données **Code personnalisé principal** (`%do not track cookie%`) pour le cookie `mg_dnt` :
 
