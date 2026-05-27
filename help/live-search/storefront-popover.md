@@ -3,15 +3,10 @@ title: '[!DNL Storefront Popover]'
 description: Le renvoie  [!DNL Live Search storefront popover]  manière dynamique les suggestions de produits et de miniatures.
 exl-id: 240a5333-15e9-4178-ba3c-ae6c62c2238c
 TQID: https://experienceleague.adobe.com/nGvwmtPuwoiFgCxrK9shUPS-FSKr-ZxWNUf-qDWjOdQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 479
@@ -21,7 +16,7 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-Lorsque [!DNL Live Search] est [installé](install.md), un [!DNL popover] s’affiche dans le storefront lorsque les acheteurs saisissent dans la zone [Rechercher](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=fr#quick-search). Avec chaque caractère saisi, le [!DNL popover] est mis à jour avec les produits suggérés et les images miniatures des principaux résultats de recherche.
+Lorsque [!DNL Live Search] est [installé](install.md), un [!DNL popover] s’affiche dans le storefront lorsque les acheteurs saisissent dans la zone [Rechercher](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search). Avec chaque caractère saisi, le [!DNL popover] est mis à jour avec les produits suggérés et les images miniatures des principaux résultats de recherche.
 
 [!DNL Live Search] renvoie des résultats pour une requête de deux caractères ou plus. Pour une correspondance partielle, le nombre maximal de caractères par mot est de 20. Le nombre de caractères dans une requête « recherche en cours de frappe » n’est pas configurable.
 
@@ -33,7 +28,7 @@ Lorsque [!DNL Live Search] est [installé](install.md), un [!DNL popover] s’af
 
 ## [!DNL Popover] de la page
 
-La taille de la page du [!DNL popover] détermine le nombre de lignes de produits remplis automatiquement qui peuvent être renvoyées. Lors de l’installation de la recherche en direct, la valeur `page_size` est remplacée par la valeur actuelle du paramètre [Recherche catalogue](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html?lang=fr) - `Autocomplete Limit`.
+La taille de la page du [!DNL popover] détermine le nombre de lignes de produits remplis automatiquement qui peuvent être renvoyées. Lors de l’installation de la recherche en direct, la valeur `page_size` est remplacée par la valeur actuelle du paramètre [Recherche catalogue](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit`.
 
 Par défaut, la valeur Recherche catalogue - Limite de saisie semi-automatique est définie sur huit lignes (ou lignes). Pour modifier la taille de page du [!DNL popover], procédez comme suit :
 
@@ -103,7 +98,7 @@ Vous pouvez utiliser les sélecteurs de classe suivants pour appliquer un style 
 
 #### .livesearch.product-name
 
-![&#x200B; Nom du produit &#x200B;](assets/livesearch-product-name.png)
+![ Nom du produit ](assets/livesearch-product-name.png)
 
 #### .livesearch.product-price
 
@@ -129,7 +124,7 @@ Vous pouvez utiliser le [!DNL storefront popover] avec un [theme](https://develo
 
 ## Désactivation de l’[!DNL popover]
 
-Pour désactiver le [!DNL popover] et restaurer la fonctionnalité standard [Quick Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=fr#quick-search), saisissez la commande suivante :
+Pour désactiver le [!DNL popover] et restaurer la fonctionnalité standard [Quick Search](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search), saisissez la commande suivante :
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover
