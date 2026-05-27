@@ -4,10 +4,20 @@ description: Découvrez les limites et les limites de pour  [!DNL Live Search]  
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
 TQID: https://experienceleague.adobe.com/QIKvaTUGLWd6yw6cEAyDkP9tCgEcJHLdiwpZDtx1-p4
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1415
@@ -21,7 +31,7 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 
 ## Général
 
-- L’adaptateur de recherche est [obsolète](release-notes.md#live-search-400) depuis la [!DNL Live Search] 4.0.0. Le widget de page de liste de produits (PLP) est la solution prise en charge pour toutes les implémentations [!DNL Live Search] à l’avenir. La carte de recherche ne reçoit que les mises à jour liées à la sécurité. Pour plus d’informations sur la migration vers le widget PLP](migrate-to-plp.md) consultez le [ guide de migration .
+- L’adaptateur de recherche est [obsolète](release-notes.md#live-search-400) depuis la [!DNL Live Search] 4.0.0. Le widget de page de liste de produits (PLP) est la solution prise en charge pour toutes les implémentations [!DNL Live Search] à l’avenir. La carte de recherche ne reçoit que les mises à jour liées à la sécurité. Pour plus d’informations sur la migration vers le widget PLP[&#128279;](migrate-to-plp.md) consultez le  guide de migration .
 - Le module [Recherche avancée](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) est désactivé lors de l’installation de [!DNL Live Search] et le lien Recherche avancée dans le pied de page du storefront est supprimé.
 - [Tarification de niveau](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) n’est pas pris en charge dans le champ [!DNL Live Search] et le widget de page de liste de produits.
 - Les prix des produits incluent la taxe sur la valeur ajoutée (TVA), mais [!DNL Live Search] ne pouvez pas afficher la TVA comme une valeur distincte.
@@ -58,7 +68,7 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 
 ## Requête
 
-- [!DNL Live Search] utilise un point d’entrée [GraphQL unique](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) pour que les requêtes prennent en charge des fonctionnalités telles que la facettisation dynamique et la recherche en cours de saisie. Bien que similaire à l’API [](https://developer.adobe.com/commerce/webapi/graphql/), il existe quelques différences et certains champs peuvent ne pas être entièrement compatibles.
+- [!DNL Live Search] utilise un point d’entrée [GraphQL unique](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) pour que les requêtes prennent en charge des fonctionnalités telles que la facettisation dynamique et la recherche en cours de saisie. Bien que similaire à l’API [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/), il existe quelques différences et certains champs peuvent ne pas être entièrement compatibles.
 - Le nombre maximal de résultats pouvant être renvoyés dans une requête de recherche est de 10 000.
 - Le nombre maximal de résultats par page est de 100.
 - Il n’est pas possible de filtrer les résultats à l’aide d’un attribut de type date.
@@ -113,4 +123,4 @@ Pour obtenir de l’aide sur la résolution des problèmes courants dans [!DNL L
 - [[!DNL Live Search] tableau de bord et classement des résultats de recherche incorrects](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) - Résout les problèmes où les résultats de recherche ou les mesures de performances affichés dans le tableau de bord de la recherche en direct ne s’affichent pas comme prévu. Cet article explique comment résoudre les incohérences de classement et les incohérences des données du tableau de bord.
 - [[!DNL Live Search] les facettes ne sont pas triées par ordre alphabétique](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) - résout le problème où les valeurs de facette apparaissent dans un ordre inattendu plutôt que par ordre alphabétique. Cet article décrit les étapes à suivre pour configurer et corriger le comportement de tri à facettes sur votre storefront.
 
-Si vous avez besoin d’aide supplémentaire, contactez l’[assistance ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si vous avez besoin d’aide supplémentaire, contactez l’[assistance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
