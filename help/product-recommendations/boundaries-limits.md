@@ -4,7 +4,7 @@ description: Découvrez les limites et les limites de pour  [!DNL Product Recomm
 role: Admin, Developer
 source-git-commit: 66830c9d950a27269aca1bda0dcc7d0d86f05647
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -63,4 +63,4 @@ Examinez les limites suivantes pour vous assurer qu’[!DNL Product Recommendati
 
 ## Dépannage
 
-Pour obtenir de l’aide sur la synchronisation des catalogues, les recommandations qui ne s’affichent pas ou d’autres problèmes courants, recherchez dans la [Base de connaissances de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview) ou contactez l’[assistance technique](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Pour obtenir de l’aide sur la synchronisation des catalogues, les recommandations qui ne s’affichent pas ou d’autres problèmes courants, recherchez dans la [Base de connaissances de &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview) ou contactez l’[assistance technique](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

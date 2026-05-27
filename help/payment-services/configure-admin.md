@@ -7,7 +7,7 @@ exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
 source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
-source-wordcount: '3209'
+source-wordcount: '3360'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Voir [Options de paiement](payments-options.md#google-pay-button) pour plus d’
 | [!UICONTROL Button Color] | Affichage de la boutique | Définissez la couleur du bouton [!DNL Google Pay]. Options : `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
 | [!UICONTROL Button Type] | Affichage de la boutique | Définissez le type du bouton [!DNL Google Pay]. Options : `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |
 
-Pour plus d’informations[&#x200B; consultez la documentation Options d’objet de requête de l’API Google Pay &#x200B;](https://developers.google.com/pay/api/web/reference/request-objects).
+Pour plus d’informations[&#128279;](https://developers.google.com/pay/api/web/reference/request-objects) consultez la documentation Options d’objet de requête de l’API Google Pay .
 
 ## [!DNL PayPal Payment Buttons]
 
