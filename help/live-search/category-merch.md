@@ -5,10 +5,14 @@ gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
 badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
 source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
 source-wordcount: 1171
@@ -106,7 +110,7 @@ Pour créer une règle de catégorie, procédez comme suit :
 La page Aperçu de la catégorie affiche les résultats réels du classement sélectionné, à l’aide de vos données [!DNL Live Search].
 1. Cliquez sur **Enregistrer et publier** pour enregistrer la règle.
 
-![Sélectionnez la méthode de classement Intelligent ](assets/category_ranking.png)
+![Sélectionnez la méthode de classement Intelligent &#x200B;](assets/category_ranking.png)
 
 Le service [!DNL Live Search] traite la règle et l’active sur le magasin une fois l’opération terminée.
 
