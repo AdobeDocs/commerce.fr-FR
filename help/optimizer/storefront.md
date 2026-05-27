@@ -2,24 +2,14 @@
 title: Configurer votre storefront
 description: 'Découvrez comment configurer votre storefront [!DNL Adobe Commerce Optimizer] '
 role: Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 TQID: https://experienceleague.adobe.com/Jcj-3qVJPXr-t0X8-Y9GVziGj57ksUdWDhCO6pt-94A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1562
@@ -73,7 +63,7 @@ L’outil Créateur de site crée un projet de storefront complet avec les compo
 * **Site** : page de destination de storefront avec du contenu standard
 * **Code** : référentiel contenant des fichiers sources standard.
 * **Contenu** : environnement de création de documents avec des fichiers de contenu de site.
-* **Configuration Commerce** : [configuration du storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=fr){target="_blank"} pour une configuration spécifique à l’instance
+* **Configuration Commerce** : [configuration du storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} pour une configuration spécifique à l’instance
 
 ### Étape 1 : générer votre projet
 
@@ -225,7 +215,7 @@ Avant de passer aux étapes suivantes, vérifiez que votre storefront fonctionne
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Les valeurs de configuration correspondent aux paramètres de votre instance<br>
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) la page d’accueil de Storefront se charge sans erreur<br>
-![&#x200B; Liste de contrôle &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) au moins une page de détails du produit affiche des informations complètes<br>
+![ Liste de contrôle ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) au moins une page de détails du produit affiche des informations complètes<br>
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) la fonctionnalité de recherche renvoie des résultats pertinents<br>
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Les images du produit se chargent correctement<br>
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Les valeurs de configuration correspondent aux paramètres de votre instance<br>
@@ -234,25 +224,25 @@ Avant de passer aux étapes suivantes, vérifiez que votre storefront fonctionne
 
 Si les problèmes persistent :
 
-* Consultez la [documentation du storefront &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr){target="_blank"}
-* Consultez le guide du développeur de Adobe Commerce Optimizer [&#128279;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
-* Consultez les [ressources d’assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview){target="_blank"}
+* Consultez la [documentation du storefront ](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}
+* Consultez le guide du développeur de Adobe Commerce Optimizer [](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+* Consultez les [ressources d’assistance ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## Étapes suivantes
 
-* **[Configurer un environnement de développement local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr#set-up-local-environment){target="_blank"}**—Créez un environnement local pour personnaliser le code et le contenu de votre storefront.
-* **[Activer l’éditeur universel](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/?lang=fr){target="_blank"}**-L’éditeur universel vous permet de modifier le contenu du storefront dans le contexte de la page rendue. Le contenu est ensuite enregistré dans votre projet de création de documents (DA.live) où vous pouvez utiliser la plupart des applications d’orchestration de contenu, telles que la localisation, la publication en masse, les instantanés, etc.
+* **[Configurer un environnement de développement local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}**—Créez un environnement local pour personnaliser le code et le contenu de votre storefront.
+* **[Activer l’éditeur universel](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/){target="_blank"}**-L’éditeur universel vous permet de modifier le contenu du storefront dans le contexte de la page rendue. Le contenu est ensuite enregistré dans votre projet de création de documents (DA.live) où vous pouvez utiliser la plupart des applications d’orchestration de contenu, telles que la localisation, la publication en masse, les instantanés, etc.
 
 ### Apprendre et explorer
 
 * **[Complétez le cas d&#39;utilisation complet](./use-case/admin-use-case.md)**—En savoir plus sur la configuration de storefront et la gestion des catalogues à l&#39;aide de [!DNL Adobe Commerce Optimizer].
 
-* **[Explorer la personnalisation du storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=fr){target="_blank"}**—Découvrez les options de configuration et de configuration avancées.
+* **[Explorer la personnalisation du storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}**—Découvrez les options de configuration et de configuration avancées.
 
-* **[Utilisez les listes déroulantes Commerce pour personnaliser l’expérience storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=fr){target="_blank"}**-ajoutez des composants préconfigurés pour améliorer votre expérience storefront.
+* **[Utilisez les listes déroulantes Commerce pour personnaliser l’expérience storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/){target="_blank"}**-ajoutez des composants préconfigurés pour améliorer votre expérience storefront.
 
 * **Migrer vers le service de configuration de storefront** : après avoir créé votre storefront initial, vous pouvez migrer la configuration pour utiliser le service de configuration qui prend en charge les cas d’utilisation avancés tels que la configuration et les recouvrements sans réponse. Pour plus d’informations, consultez la documentation du [Service de configuration](https://www.aem.live/docs/config-service-setup){target="_blank"} dans le Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Consultez la [documentation du storefront &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr){target="_blank"} pour en savoir plus sur la mise à jour du contenu du site et l’intégration aux composants frontend Commerce et aux données principales.
+> Consultez la [documentation du storefront ](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"} pour en savoir plus sur la mise à jour du contenu du site et l’intégration aux composants frontend Commerce et aux données principales.
