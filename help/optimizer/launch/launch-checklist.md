@@ -31,7 +31,7 @@ Votre solution comprend généralement les composants suivants :
 - **Optimizer** : [!DNL Adobe Commerce Optimizer] offre des expériences de marchandisage.
 - **Storefront** : le storefront Adobe Commerce sur Edge Delivery Services fournit l’interface utilisateur.
 - **Services tiers**—Prestataires de services de paiement, d&#39;expédition et de taxe.
-- ****—Extensibilité.
+- **&#x200B;**—Extensibilité.
 - **Maillage API**—Routage des requêtes.
 
 ## Vérification d’Adobe Commerce sur le cloud {#verify-cloud}
@@ -207,7 +207,7 @@ Confirmez les lignes de base de performances et le câblage d’analyse.
 Confirmez les autorisations et les secrets.
 
 ▢ Les autorisations appropriées sont configurées pour le contenu DA et les sites EDS. Voir [Autorisations DA.live](https://da.live/docs/administration/permissions) et [Configuration de l’authentification pour la création](https://www.aem.live/docs/authentication-setup-authoring).
-▢ L’intégration des visuels de produit est configurée. Voir [ Présentation de l’accès à AEM Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
+▢ L’intégration des visuels de produit est configurée. Voir [&#x200B; Présentation de l’accès à AEM Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
 ▢ Les liens de réinitialisation du mot de passe dans les modèles d’e-mail correspondent à votre configuration Edge Delivery Services. Voir la FAQ sur storefront : [Que dois-je faire si mes liens de modèle d’e-mail sont rompus après la migration vers Edge Delivery Services ou Helix ?](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 ▢ Les clés de production pour les intégrations et les fournisseurs de paiement sont en place.
 Les domaines ▢ sont placés sur la liste autorisée et les webhooks d’arrière-plan fonctionnent.

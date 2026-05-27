@@ -3,10 +3,16 @@ title: Types de recommandations
 description: Découvrez les recommandations que vous pouvez déployer sur différentes pages de votre site.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
 TQID: https://experienceleague.adobe.com/d2V9aHGQO8jnPXAIlae-GklfACARMrVEttryLOY3Zr8
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: beb7a3c1-66ab-4786-b879-7621375b3c40id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1901
@@ -90,7 +96,7 @@ Ces types de recommandations recommandent les produits les plus populaires ou le
 
 >[!NOTE]
 >
->Les recommandations basées sur la popularité nécessitent des données d’événement suffisantes de votre storefront. Si votre boutique est nouvelle ou a un faible trafic, ces types de recommandations peuvent renvoyer des résultats limités ou aucun résultat jusqu’à ce que des données comportementales adéquates aient été collectées. Surveillez votre [ indicateur de préparation des données ](workspace.md) pour garantir des performances optimales.
+>Les recommandations basées sur la popularité nécessitent des données d’événement suffisantes de votre storefront. Si votre boutique est nouvelle ou a un faible trafic, ces types de recommandations peuvent renvoyer des résultats limités ou aucun résultat jusqu’à ce que des données comportementales adéquates aient été collectées. Surveillez votre [&#x200B; indicateur de préparation des données &#x200B;](workspace.md) pour garantir des performances optimales.
 
 | Type | Description |
 |---|---|

@@ -73,4 +73,4 @@ membres de la direction du projet.
 ## Attribution
 
 Le présent Code de conduite est adapté du [Pacte du contributeur](https://www.contributor-covenant.org/), version 1.4,
-disponible à l’adresse [](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).
+disponible à l’adresse [&#128279;](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).
