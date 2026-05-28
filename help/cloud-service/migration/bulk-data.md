@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 6a3bacace012153f6b8f7c87192d19bf349a2446
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 729
 ht-degree: 0%
 
 ---
@@ -52,8 +52,7 @@ Les sections suivantes décrivent ces étapes en détail.
 
 La disponibilité de l’outil de migration de données en bloc est la suivante :
 
-- **T1 2026** (pas encore disponible) - Après la version initiale de l’outil de migration de données en masse, vous pourrez y accéder en envoyant un ticket d’assistance.
-- **T1 2026** (pas encore disponible) - Après la publication publique de l’outil de migration de données en masse, il sera accessible à partir de cette page.
+Cet outil est actuellement disponible dans le cadre de missions d’ingénierie déployées. Si vous souhaitez utiliser cet outil, contactez votre représentant ou représentante Adobe.
 
 ## Créer un environnement cible
 
