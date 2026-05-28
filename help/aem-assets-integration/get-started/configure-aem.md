@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
+source-git-commit: de02e13e169ab336bac09ebff90c44b3b707efce
 workflow-type: tm+mt
-source-wordcount: 1717
+source-wordcount: 1775
 ht-degree: 1%
 
 ---
@@ -135,21 +135,29 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
 
 1. Accédez à AEM Cloud Manager, sélectionnez un programme, puis [créez des environnements de production et d’évaluation](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) à intégrer à Adobe Commerce.
 
-1. Configurez un [pipeline de déploiement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) ou vérifiez que votre pipeline peut déployer les modifications dans l’environnement sélectionné.
-
 1. [Clonez le référentiel Git géré par Adobe](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) pour le programme sélectionné.
+
+   ![Informations d’identification du référentiel Cloud Manager et commande de clonage](../assets/cloud-manager-repository-info.png){width="600" zoomable="yes"}
+
+   Dans Cloud Manager **Pipelines**, sélectionnez **[!UICONTROL Access Repo Info]** pour ouvrir la **[!UICONTROL Repository Info]**. Copiez la valeur **[!UICONTROL URL]** ou **[!UICONTROL Git command line]**, générez un mot de passe d’accès si nécessaire, puis clonez localement avec votre client Git.
 
 1. À partir de GitHub, téléchargez le code du package à partir du [référentiel AEM Assets Commerce](https://github.com/ankumalh/assets-commerce).
 
 1. À partir de votre [environnement de développement AEM local](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), copiez manuellement le code téléchargé dans le référentiel géré par Adobe existant.
 
-1. Dans tous les fichiers `filter.xml` et `pom.xml` de votre projet, remplacez toutes les occurrences de `<my-app>` par le nom de votre application.
+1. Dans tous les fichiers `filter.xml` et `pom.xml` de votre projet, remplacez toutes les occurrences de &lt;my-app> par le nom de votre application.
 
    >[!NOTE]
    >
    > Vous pouvez également installer le code personnalisé dans la configuration de votre projet AEM Assets sous la forme d’un package **Maven**.
 
 1. Validez les modifications et envoyez votre branche de développement local au référentiel Git de Cloud Manager.
+
+1. Configurez un [pipeline de déploiement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) ou vérifiez que votre pipeline peut déployer les modifications dans l’environnement sélectionné.
+
+   ![Pipelines &#x200B;](../assets/cloud-manager-pipelines.png){width="600" zoomable="yes"}
+
+   Lorsque le pipeline existe, ouvrez le menu d’actions (**...**) pour **[!UICONTROL Run]**, **[!UICONTROL Edit]**, **[!UICONTROL View/Edit variables]** ou d’autres actions, consultez la documentation sur le pipeline Cloud Manager liée ci-dessus.
 
 1. Depuis AEM Cloud Manager, [mettez à jour l’environnement AEM à l’aide du pipeline pour déployer votre code](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
@@ -161,7 +169,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
 
 ### L’onglet Commerce n’est pas visible dans les propriétés
 
-Si l’onglet **&#x200B;**&#x200B;n’apparaît pas dans les propriétés, vous devez en créer un manuellement dans l’éditeur de schéma de métadonnées.
+Si l’onglet **&#x200B;**&#x200B;n’apparaît pas dans les propriétés, vous devez effectuer manuellement les étapes suivantes dans l’éditeur de schéma de métadonnées :
 
 1. Accédez à l’éditeur de schéma de métadonnées.
 
