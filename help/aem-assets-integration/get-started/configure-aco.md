@@ -71,7 +71,7 @@ La ressource doit avoir un statut **approuvé** pour que la synchronisation des 
 
 Si vous choisissez d’utiliser des profils de métadonnées AEM pour rationaliser la création, configurez-les **après** le déploiement du package et la compréhension par votre équipe des champs de Commerce requis (modèle facultatif identique à **Configurer le projet AEM Assets**).
 
-Voir [ Configuration d’un profil de métadonnées](configure-aem.md#step-2-optional-configure-a-metadata-profile).
+Voir [&#x200B; Configuration d’un profil de métadonnées](configure-aem.md#step-2-optional-configure-a-metadata-profile).
 
 ## Restrictions
 
