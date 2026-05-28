@@ -2,24 +2,19 @@
 title: Outil de migration de données en bloc
 description: Découvrez comment utiliser l’outil de migration de données en bloc pour migrer les données de votre instance Adobe Commerce on Cloud existante vers  [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
 TQID: https://experienceleague.adobe.com/4Zx1cFtsyfuy21Af6Ov9pU7ndMW35NyCwlcdlKNTk6Q
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 6a3bacace012153f6b8f7c87192d19bf349a2446
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 729
 ht-degree: 0%
 
 ---
@@ -52,8 +47,7 @@ Les sections suivantes décrivent ces étapes en détail.
 
 La disponibilité de l’outil de migration de données en bloc est la suivante :
 
-- **T1 2026** (pas encore disponible) - Après la version initiale de l’outil de migration de données en masse, vous pourrez y accéder en envoyant un ticket d’assistance.
-- **T1 2026** (pas encore disponible) - Après la publication publique de l’outil de migration de données en masse, il sera accessible à partir de cette page.
+Cet outil est actuellement disponible dans le cadre de missions d’ingénierie déployées. Si vous souhaitez utiliser cet outil, contactez votre représentant ou représentante Adobe.
 
 ## Créer un environnement cible
 
