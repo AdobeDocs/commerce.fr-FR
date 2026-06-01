@@ -1,11 +1,18 @@
 ---
-source-git-commit: aaefe284749df25953c2581f000af2989bcc8fb2
+source-git-commit: edc47115830f5ca7ec1e485de1ddf9939de2586d
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 # Fragments de code Commerce
+
+
+## Alignement de l’environnement d’intégration ACO {#aco-integration-environment-alignment}
+
+>[!IMPORTANT]
+>
+>Connectez toujours les instances Sandbox Optimizer aux environnements hors production et les instances de production aux environnements de production. Les environnements incohérents entraînent des incohérences au niveau des données de catalogue, des résultats de recherche et des recommandations.
 
 
 ## Services de marchandisage pour Optimizer {#aco-merchandising-services}

@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
 workflow-type: tm+mt
-source-wordcount: 1233
+source-wordcount: 1177
 ht-degree: 0%
 
 ---
@@ -60,12 +60,6 @@ Dans cette architecture :
 - Le connecteur exporte les flux de catalogue, de prix et de catégories
 - Commerce Optimizer ingère et normalise les données de flux dans les sources de catalogue, les catalogue de prix et les vues de catalogue
 - Les storefronts (storefront Commerce sur Edge Delivery ou builds découplés personnalisés) appellent les API Commerce Optimizer GraphQL pour la découverte et les recommandations et appellent Commerce ou une autre plateforme tierce connectée pour les opérations de panier et de passage en caisse
-
-## Fonctionnement du connecteur avec Adobe Commerce {#how-it-works}
-
-- Commerce Optimizer ingère et normalise les données de flux dans les sources de catalogue, les livres de prix et les vues de catalogue.
-
-- Les storefronts (storefront Commerce sur Edge Delivery ou builds découplés personnalisés) appellent les API Commerce Optimizer GraphQL pour la découverte et les recommandations et appellent Commerce ou une autre plateforme tierce connectée pour les opérations de panier et de passage en caisse.
 
 ## Fonctionnement du connecteur avec Adobe Commerce
 

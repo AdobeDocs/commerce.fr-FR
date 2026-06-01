@@ -3,9 +3,9 @@ title: Prise en main du connecteur Adobe Commerce Optimizer
 description: Découvrez comment installer et configurer le connecteur, personnaliser la configuration de l’exportation, vous connecter à Adobe Commerce Optimizer et surveiller le statut de synchronisation des données.
 feature: Personalization, Integration, Configuration
 badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
-source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
+source-git-commit: f041c315da8bf20af7ecc2c869eaf578a767f66d
 workflow-type: tm+mt
-source-wordcount: '1201'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Prise en main
 
 Installez et configurez le connecteur Commerce Optimizer pour synchroniser les données de votre catalogue Adobe Commerce avec [!DNL Adobe Commerce Optimizer], puis surveillez le statut de synchronisation des données pour vous assurer que votre storefront est à jour.
+
+{{aco-integration-environment-alignment}}
 
 ## Conditions requises pour utiliser l’intégration
 
@@ -34,7 +36,7 @@ L’utilisateur d’Adobe Commerce configurant l’intégration doit disposer de
 
 * [Accès en ligne de commande au serveur applicatif Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Accès des développeurs à l’organisation [IMS](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/organizations?) où le projet [!DNL Adobe Commerce Optimizer] est configuré.
+* Accès des développeurs à l’organisation [IMS](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/organizations ?) où le projet [!DNL Adobe Commerce Optimizer] est configuré.
 
 >[!BEGINSHADEBOX]
 
@@ -148,7 +150,7 @@ Après avoir installé le package Connecteur, la grille de magasin dans l’Admi
 
 1. Sélectionnez le site web ou la vue de magasin que vous souhaitez configurer.
 
-1. Dans les paramètres de l’exportateur de **[!DNL Adobe Commerce Optimizer], cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**
+1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**&#x200B;[!DNL Adobe Commerce Optimizer]
 
    ![Mettre à jour la configuration de la synchronisation des données](./assets/aco-connector-store-website-export-settings.png){width="500" zoomable="yes"}
 
