@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
+source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
 workflow-type: tm+mt
-source-wordcount: 4032
+source-wordcount: 4189
 ht-degree: 0%
 
 ---
@@ -42,15 +42,19 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 >
 >Si vous utilisez Adobe Commerce On-Premise ou Adobe Commerce sur une infrastructure cloud, consultez les [notes de mise à jour d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview).
 
-## Mai 2026 - #2 de publication {#latest}
+## Juin 2026 - version #1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
 [!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
 
-Les éléments suivants seront publiés dans les environnements de production le 21 mai 2026.
+Les éléments suivants seront publiés dans les environnements de production le 4 juin 2026.
 
 >[!BEGINSHADEBOX]
+
+### Ajout et modification de codes de coupon personnalisés dans Admin
+
+Les commerçants peuvent désormais créer et modifier des codes de coupon personnalisés directement à partir du [!DNL Commerce Admin] sur les règles de prix de panier manuelles. Un nouveau bouton [!UICONTROL **Ajouter un coupon personnalisé**] est disponible dans la section [!UICONTROL **Gérer les codes coupon**] lors de la modification d’une règle de prix de panier. <!-- CCSAAS-4508 -->
 
 ### Suivi des expéditions à l&#39;aide de transporteurs par défaut et personnalisés
 
@@ -59,6 +63,14 @@ Le suivi des commandes est désormais fiable pour les transporteurs d’expédit
 ### Affichage des types d’entrée d’attribut dans la grille Attributs de produit
 
 Une nouvelle colonne [!UICONTROL **Type d’attribut**] est désormais visible dans la grille Attributs du produit dans ([!UICONTROL **Magasins**] > _[!UICONTROL Attributes]_>[!UICONTROL **Produit**]), qui affiche le type d’entrée (champ de texte, liste déroulante ou oui/non) pour chaque attribut de produit, y compris les types fournis par les extensions. Cela facilite l’identification et la gestion des attributs lorsque vous utilisez des jeux d’attributs volumineux. <!-- ACCS-925 -->
+
+### Personnaliser l’en-tête de réponse pour les e-mails personnalisés
+
+Les commerçants peuvent désormais configurer l’en-tête [!UICONTROL **Répondre-à**] utilisé par le point d’entrée [POST /rest/V1/custom-email/send](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), de sorte que les réponses des clients peuvent être acheminées vers une adresse différente de celle de l’expéditeur. <!-- ACCS-1037 -->
+
+### Affichez les prix de niveau sur la page de modification de produit dans les environnements de catalogue partagé volumineux
+
+Les commerçants ayant un grand nombre de catalogues partagés peuvent maintenant accéder à l&#39;onglet en lecture seule [!UICONTROL **Prix de niveau**] sur la page de modification du produit dans le [!DNL Commerce Admin]. <!-- CCSAAS-4922 -->
 
 ### Améliorations et correctifs
 
@@ -79,6 +91,10 @@ Les améliorations, optimisations et correctifs suivants sont inclus dans cette 
 * Correction d’une erreur « Clé de tableau non définie « simple_sku » qui pouvait se produire lors de la création d’une expédition pour une commande contenant des produits configurables. <!-- CCSAAS-4877 -->
 
 * La requête `guestOrderByToken` GraphQL renvoie désormais un message d’erreur plus informatif lorsqu’elle est appelée avec un jeton incorrect, au lieu d’une erreur de serveur interne. <!-- CCSAAS-4921 -->
+
+* La requête `customer` GraphQL renvoie désormais un message d’erreur plus informatif lorsque les commandes client ne peuvent pas être chargées. <!-- ACCS-867 -->
+
+* Le point d’entrée REST GET `V1/customers/{customerId}` renvoie désormais le champ de configuration `assistance_allowed` . <!-- USF-4132 -->
 
 {{accs-release}}
 
@@ -355,7 +371,7 @@ Les améliorations, optimisations et correctifs suivants sont inclus dans cette 
 
 * Correction d’un délai d’expiration de la page de modification de produit qui pouvait se produire avec des catalogues partagés volumineux. <!-- CCSAAS-4657 -->
 
-* Réactivation des points d’entrée de l’API REST GET `/V1/directory/countries` et GET `/V1/directory/countries/:countryId` pour les intégrations d’administration, ce qui permet aux clients de rechercher des données de pays et de région valides. <!-- ACCS-518 -->
+* Réactivation des points d’entrée GET `/V1/directory/countries` et GET `/V1/directory/countries/:countryId` de l’API REST pour les intégrations d’administration, ce qui permet aux clients de rechercher des données de pays et de région valides. <!-- ACCS-518 -->
 
 * Correction d’un problème de délai d’expiration qui pouvait se produire dans l’API REST lorsqu’un utilisateur disposait d’un catalogue partagé volumineux. <!-- ACCS-4657 -->
 
