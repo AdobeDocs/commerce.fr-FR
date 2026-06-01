@@ -5,11 +5,11 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S [!DNL Adobe Commerce Optimizer] applique uniquement aux projets (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S [!DNL Adobe Commerce Optimizer] applique uniquement aux projets (infrastructure SaaS gérée par Adobe)."
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
-source-git-commit: d8cd6f543353e1b11f3aa14b3b97b02155d23809
+source-git-commit: a404c2ff7cec5e72ce65d3670330b1f3f3c4702d
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,13 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer] comprend des intégrations qui vous permettent de synchroniser les données d’Adobe Commerce sur le cloud ou sur site, de gérer les ressources, d’améliorer les expériences storefront et de connecter des systèmes externes. Les sections ci-dessous décrivent le fonctionnement de chaque intégration avec [!DNL Adobe Commerce Optimizer]. Suivez les liens pour l’installation, la configuration et l’utilisation quotidienne.
 
+{{aco-integration-environment-alignment}}
+
 ## Connecteur Adobe Commerce Optimizer {#aco-connector}
 
 Le connecteur Adobe Commerce Optimizer est le pont qui synchronise les données de catalogue et de tarification entre Adobe Commerce (cloud ou sur site) et [!DNL Adobe Commerce Optimizer]. Lorsque vous activez le connecteur, Commerce reste le système d’enregistrement des données de produit, tandis que [!DNL Adobe Commerce Optimizer] alimente la découverte de produits, les recommandations, les règles de marchandisage, les analyses et les expériences de storefront découplé.
 
-- Présentation du connecteur Adobe Commerce Optimizer [&#128279;](../../aco-connector/overview.md){target="_blank"}
+- [Présentation du connecteur Adobe Commerce Optimizer](../../aco-connector/overview.md){target="_blank"}
 - [Prise en main du connecteur](../../aco-connector/get-started.md){target="_blank"}
 
 ## Visuels de produit avec AEM Assets {#product-visuals}
@@ -51,5 +53,5 @@ Le connecteur Commerce Salesforce (basé sur Adobe App Builder) synchronise les 
 
 >[!MORELIKETHIS]
 >
->- [Documentation technique de &#x200B;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+>- [Documentation technique de ](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 >- [Prise en main de Adobe Commerce Optimizer](../get-started.md)

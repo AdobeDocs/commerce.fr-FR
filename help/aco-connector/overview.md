@@ -2,28 +2,16 @@
 title: Connecteur Adobe Commerce Optimizer
 description: Découvrez comment connecter vos données de votre projet cloud ou local Commerce à Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 TQID: https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
 workflow-type: tm+mt
-source-wordcount: 1233
+source-wordcount: 1177
 ht-degree: 0%
 
 ---
@@ -60,12 +48,6 @@ Dans cette architecture :
 - Le connecteur exporte les flux de catalogue, de prix et de catégories
 - Commerce Optimizer ingère et normalise les données de flux dans les sources de catalogue, les catalogue de prix et les vues de catalogue
 - Les storefronts (storefront Commerce sur Edge Delivery ou builds découplés personnalisés) appellent les API Commerce Optimizer GraphQL pour la découverte et les recommandations et appellent Commerce ou une autre plateforme tierce connectée pour les opérations de panier et de passage en caisse
-
-## Fonctionnement du connecteur avec Adobe Commerce {#how-it-works}
-
-- Commerce Optimizer ingère et normalise les données de flux dans les sources de catalogue, les livres de prix et les vues de catalogue.
-
-- Les storefronts (storefront Commerce sur Edge Delivery ou builds découplés personnalisés) appellent les API Commerce Optimizer GraphQL pour la découverte et les recommandations et appellent Commerce ou une autre plateforme tierce connectée pour les opérations de panier et de passage en caisse.
 
 ## Fonctionnement du connecteur avec Adobe Commerce
 
@@ -156,7 +138,7 @@ Une fois que les données Commerce sont disponibles dans Commerce Optimizer, uti
 
    >[!NOTE]
    >
-   >Pour obtenir un exemple d’intégration tierce, consultez Connecteur Salesforce Commerce pour Commerce Optimizer [&#128279;](../optimizer/developer/salesforce-connector.md).
+   >Pour obtenir un exemple d’intégration tierce, consultez Connecteur Salesforce Commerce pour Commerce Optimizer [](../optimizer/developer/salesforce-connector.md).
 
 1. **Conserver le passage en caisse** sur votre plateforme existante :
 

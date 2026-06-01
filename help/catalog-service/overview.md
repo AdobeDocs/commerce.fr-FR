@@ -5,21 +5,13 @@ role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
 TQID: https://experienceleague.adobe.com/CEbJ8-hkc0AGQ4RnRNMDXA6mMijvhPGAfsxyC4eT39Y
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 70990a7bb7e8926a171ea6d2148542b7b73f4dba
 workflow-type: tm+mt
-source-wordcount: 1398
+source-wordcount: 1405
 ht-degree: 0%
 
 ---
@@ -52,7 +44,7 @@ Les données de modèle d’affichage riches fournies par le [!DNL Catalog Servi
 
 >[!NOTE]
 >
->Si vous mettez en œuvre votre catalogue à l’aide du catalogue composable avec Adobe Commerce Optimizer ou le connecteur Adobe Commerce Optimizer, consultez le [guide de Adobe Commerce Optimizer](../optimizer/overview.md#architecture) et le guide de développement des services de marchandisage.
+>Si vous mettez en œuvre votre catalogue à l’aide du catalogue composable avec Adobe Commerce Optimizer ou le connecteur Adobe Commerce Optimizer, consultez le [Guide de Adobe Commerce Optimizer](../optimizer/overview.md#architecture) et le [Guide du développeur des services de marchandisage](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/).
 
 L’[!DNL Catalog Service] utilise [GraphQL](https://graphql.org/) pour demander et recevoir des données de catalogue, y compris les produits, les attributs de produit, l’inventaire et les prix. GraphQL est un langage de requête qu’un client front-end utilise pour communiquer avec l’interface de programmation d’applications (API) définie sur un serveur principal tel qu’Adobe Commerce. GraphQL est une méthode de communication populaire, car elle est légère et permet à un intégrateur système de spécifier le contenu et l’ordre de chaque réponse.
 
@@ -140,7 +132,7 @@ Le service de catalogue garantit la précision des mises à jour et des calculs 
 
 Le processus de mise en œuvre implique :
 
-1. [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **[Installer et configurer le service de catalogue](installation.md)** : installez et configurez l’extension du service de catalogue et configurez la connexion SaaS à l’aide de l’[!DNL Commerce Services Connector].
+1. [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **[Installer et configurer le service de catalogue](installation.md)** : installez et configurez l’extension du service de catalogue et configurez la connexion SaaS à l’aide de l’[!DNL Commerce Services Connector].
 2. **Mettre à jour le code storefront** : intégrez les requêtes GraphQL du service de catalogue à votre serveur frontal.
 3. **Requêtes d’itinéraire** : toutes les requêtes du service de catalogue passent par la passerelle GraphQL (URL fournie lors de l’intégration)
 4. **Surveillance et dépannage de la synchronisation des données** : vérification des performances améliorées et surveillance des résultats
