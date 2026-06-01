@@ -28,7 +28,7 @@ Installez et configurez le connecteur Commerce Optimizer pour synchroniser les d
 
 * [Clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) pour télécharger le métapaquet Connecteur Commerce à l’aide du compositeur.
 
-* Accès administrateur à une instance sandbox Adobe Commerce Optimizer [](../optimizer/get-started.md).
+* Accès administrateur à une instance sandbox Adobe Commerce Optimizer [&#128279;](../optimizer/get-started.md).
 
 L’utilisateur d’Adobe Commerce configurant l’intégration doit disposer des éléments suivants :
 
@@ -150,7 +150,7 @@ Après avoir installé le package Connecteur, la grille de magasin dans l’Admi
 
 1. Sélectionnez le site web ou la vue de magasin que vous souhaitez configurer.
 
-1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**[!DNL Adobe Commerce Optimizer]
+1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**&#x200B;[!DNL Adobe Commerce Optimizer]
 
    ![Mettre à jour la configuration de la synchronisation des données](./assets/aco-connector-store-website-export-settings.png){width="500" zoomable="yes"}
 
