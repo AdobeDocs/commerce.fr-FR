@@ -52,7 +52,7 @@ _14 mai 2026_
 
 [!BADGE pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce version 2.4.5 et versions ultérieures.
 
-![Nouvel événement ](../assets/new.svg)<!-- Issue ACAP-1268 --> lorsque des images ou des ressources sont importées depuis AEM dans une galerie de médias de produit Commerce, le texte secondaire est désormais transféré dans le cadre de la synchronisation. Le texte de remplacement peut être défini par vue de magasin dans AEM Assets. Voir [ Texte de remplacement dans les métadonnées AEM Assets](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}.
+![Nouvel événement &#x200B;](../assets/new.svg)<!-- Issue ACAP-1268 --> lorsque des images ou des ressources sont importées depuis AEM dans une galerie de médias de produit Commerce, le texte secondaire est désormais transféré dans le cadre de la synchronisation. Le texte de remplacement peut être défini par vue de magasin dans AEM Assets. Voir [&#x200B; Texte de remplacement dans les métadonnées AEM Assets](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}.
 
 ## v1.3.5
 
@@ -70,7 +70,7 @@ _1 mars 2026_
 
 [!BADGE pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce version 2.4.5 et versions ultérieures.
 
-![Nouveau problème ](../assets/new.svg)<!-- Issue PAY-1041 --> Ajout de la prise en charge d’Adobe Commerce 2.4.9-beta1 et de PHP 8.5.
+![Nouveau problème &#x200B;](../assets/new.svg)<!-- Issue PAY-1041 --> Ajout de la prise en charge d’Adobe Commerce 2.4.9-beta1 et de PHP 8.5.
 
 ![Nouvel événement](../assets/new.svg)<!-- Issue ACCS-169 --> Les champs **[!UICONTROL Program ID]**, **[!UICONTROL Environment ID]** et [**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank} sont désormais automatiquement renseignés sous forme de listes déroulantes en fonction de la session IMS de l’[utilisateur](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank}.
 
@@ -192,7 +192,7 @@ _23 avril 2025_
 
 [!BADGE pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce version 2.4.5 et versions ultérieures.
 
-![Nouveau problème ](../assets/new.svg)<!-- Issue ACAP-955 --> désormais, il est possible d’utiliser une [URL de domaine personnalisée](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) au lieu de l’URL de diffusion AEM. Si un commerçant définit un **Nom de domaine personnalisé** dans son tableau de bord AEM, il est nécessaire d’ajouter cette **URL de domaine personnalisé** dans Commerce.
+![Nouveau problème &#x200B;](../assets/new.svg)<!-- Issue ACAP-955 --> désormais, il est possible d’utiliser une [URL de domaine personnalisée](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url) au lieu de l’URL de diffusion AEM. Si un commerçant définit un **Nom de domaine personnalisé** dans son tableau de bord AEM, il est nécessaire d’ajouter cette **URL de domaine personnalisé** dans Commerce.
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue ACAP-987 --> Amélioration des journaux globaux pour les processus de synchronisation AEM Assets.
 
