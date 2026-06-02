@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
+source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
 workflow-type: tm+mt
-source-wordcount: 1104
+source-wordcount: 1191
 ht-degree: 0%
 
 ---
@@ -42,11 +42,24 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 ### Mises à jour des API
 
+_28 mai 2026_
+
+<!-- v1.2 -->
+
+![Correction](../assets/fix.svg) **Arborescences de navigation complètes** : les catégories descendantes balisées sont désormais correctement incluses dans les arborescences de `navigation` filtrées par famille lorsqu’un nœud intermédiaire non balisé existe dans le chemin d’accès. Ce correctif garantit que les acheteurs voient toutes les catégories pertinentes dans la navigation, ce qui facilite la navigation et la découverte d’articles.
+<!--DATA-7183-->
+
+![Correction](../assets/fix.svg) **Gestion des slugs vides dans les requêtes `categoryTree`**—Correction d’un problème où la requête [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) renvoyait une erreur de serveur interne lorsque l’argument `slugs` incluait une chaîne vide. Les valeurs slug vides sont désormais ignorées, de sorte que les storefronts et les intégrations continuent de résoudre les données de catégorie sans requêtes ayant échoué.
+<!--DATA-7184-->
+
+![Correction](../assets/fix.svg) les requêtes **`searchCategory`renvoient des résultats insensibles à la casse et classés par ordre alphabétique** : la requête `searchCategory` trie désormais les résultats de recherche par ordre alphabétique sans respect de la casse, ce qui garantit un ordre cohérent et prévisible. Les catégories comportant des préfixes plus courts apparaissent en premier lorsque les noms sont par ailleurs identiques.
+<!--COMOPT-2142-->
+
 _4 mai 2026_
 
 <!--v1.53-->
 
-Les prix des produits Storefront affichent désormais le code de devise correct (par exemple, USD) pour tous les types de produits. Auparavant, certains produits affichaient des `NONE` au lieu de la devise attendue, ce qui entraînait des prix manquants.
+**Affichage correct de la devise** : les prix des produits Storefront affichent désormais le code de devise correct (par exemple, USD) pour tous les types de produits. Auparavant, certains produits affichaient des `NONE` au lieu de la devise attendue, ce qui entraînait des prix manquants.
 
 <!--DATA-7115-->
 
