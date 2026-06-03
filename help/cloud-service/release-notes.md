@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
+source-git-commit: 9e4bf260a145815f97a69251005309edb480ae11
 workflow-type: tm+mt
-source-wordcount: 4189
+source-wordcount: 4182
 ht-degree: 0%
 
 ---
@@ -44,17 +44,17 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 ## Juin 2026 - version #1 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="Les éléments répertoriés sont actuellement disponibles dans les environnements de production."}
 
-[!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-Les éléments suivants seront publiés dans les environnements de production le 4 juin 2026.
+Les éléments suivants ont été publiés dans les environnements de production le 4 juin 2026.
 
 >[!BEGINSHADEBOX]
 
 ### Ajout et modification de codes de coupon personnalisés dans Admin
 
-Les commerçants peuvent désormais créer et modifier des codes de coupon personnalisés directement à partir du [!DNL Commerce Admin] sur les règles de prix de panier manuelles. Un nouveau bouton [!UICONTROL **Ajouter un coupon personnalisé**] est disponible dans la section [!UICONTROL **Gérer les codes coupon**] lors de la modification d’une règle de prix de panier. <!-- CCSAAS-4508 -->
+Les commerçants peuvent désormais [créer et modifier des codes de coupon personnalisés](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon#method-3-custom-coupon-codes) directement à partir de la [!DNL Commerce Admin] sur les règles de prix de panier manuelles. Un nouveau bouton [!UICONTROL **Ajouter un coupon personnalisé**] est disponible dans la section [!UICONTROL **Gérer les codes coupon**] lors de la modification d’une règle de prix de panier. <!-- CCSAAS-4508 -->
 
 ### Suivi des expéditions à l&#39;aide de transporteurs par défaut et personnalisés
 
