@@ -26,7 +26,7 @@ Chaque opération de synchronisation de flux, qu’elle soit déclenchée par un
 1. Si le verrou est **acquis**, le processus enregistre son nom et son PID à des fins de diagnostic, puis exécute la synchronisation.
 1. Une fois la synchronisation terminée ou ayant échoué, le verrouillage est désactivé sans condition afin que la tâche cron suivante planifiée puisse se poursuivre normalement.
 
-Une seule opération de synchronisation peut contenir le verrouillage du flux à la fois, qu’il ait été démarré par cron ou l’interface de ligne de commande. Le verrouillage d’alimentation est implémenté via le `LockManagerInterface` de [!DNL Adobe Commerce]. Le serveur principal par défaut est MySQL, qui utilise les fonctions `GET_LOCK` et `RELEASE_LOCK`. Pour configurer un autre fournisseur de verrous, voir [Configurer le fournisseur de verrous](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}.
+Une seule opération de synchronisation peut contenir le verrouillage du flux à la fois, qu’il ait été démarré par cron ou l’interface de ligne de commande. Le verrouillage d’alimentation est implémenté via le `LockManagerInterface` de [!DNL Adobe Commerce]. Le serveur principal par défaut est MySQL, qui utilise les fonctions `GET_LOCK` et `RELEASE_LOCK`. Pour configurer un autre fournisseur de verrous, voir [Configurer le fournisseur de verrous](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}.
 
 ## Messages du journal attendus
 
@@ -46,4 +46,4 @@ Ce message s’affiche lorsqu’une synchronisation partielle déclenchée par c
 
 - [Synchroniser les données avec l&#39;export de données SaaS](data-synchronization.md)
 - [Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce](data-export-cli-commands.md)
-- [Configuration du fournisseur de verrous](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
+- [Configuration du fournisseur de verrous](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
