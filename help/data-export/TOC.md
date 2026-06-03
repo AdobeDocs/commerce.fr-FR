@@ -4,10 +4,10 @@ breadcrumb-title: '[!DNL Data Export]'
 user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de l [!DNL Data Export] extension pour les services SaaS Adobe Commerce.
 role: Admin
 feature: Services
-source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
+source-git-commit: 0a6f579740176399f66686472ed28db10c390615
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 4%
+source-wordcount: '96'
+ht-degree: 2%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 4%
 
 - [Présentation du guide](overview.md)
 - [Synchronisation des données](data-synchronization.md)
+- [Mécanisme de verrouillage d&#39;alimentation](feed-lock-mechanism.md)
 - Exporter la planification et les performances {#performance}
    - [Estimation du volume de données et de la durée de transmission](estimate-data-volume-sync-time.md)
    - [Amélioration des performances d’exportation](customize-export-processing.md)
@@ -28,4 +29,4 @@ ht-degree: 4%
    - [Ajout dynamique d’un attribut de produit](add-attribute-dynamically.md)
    - [Ajouter une classe de taxe, un jeu d’attributs et des métadonnées d’inventaire](add-tax-attribute-set-inventory-attributes.md)
 - [Notes de mise à jour](release-notes.md)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
