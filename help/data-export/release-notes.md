@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8f424228d96072636ac24a2d50dd58e5c8d655da
+source-git-commit: d35a3ad39c504c5c6eb1073737babae252a3127d
 workflow-type: tm+mt
-source-wordcount: 2868
+source-wordcount: 2818
 ht-degree: 0%
 
 ---
@@ -40,6 +40,14 @@ Les mises à jour incluent :
 >L’extension d’exportation de données SaaS est un ensemble de modules installés automatiquement avec Live Search, Product Recommendations et Catalog Service. Vous pouvez vérifier la version installée sur votre système à l’aide du compositeur. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Versions De 2026
+
+### Version 103.4.26
+
+_2 juin 2026_
+
+![Correctif](../assets/fix.svg) **Mises à jour du flux de produits après les modifications de devise**-Lorsque vous modifiez les paramètres de devise du magasin, les produits concernés sont désormais mis en file d’attente pour être exportés à nouveau, de sorte que Live Search, le service de catalogue, les recommandations de produits et d’autres services Commerce connectés affichent des prix mis à jour. <!--MDEE-1376-->
+
+![Corriger](../assets/fix.svg) **Les catégories enfants reflètent le statut parent désactivé**-Lorsque vous désactivez une catégorie de niveau supérieur, les catégories enfants sont désormais exportées comme inactives, de sorte que les services Commerce connectés ne traitent pas les produits de ces catégories comme détectables. <!--MDEE-1369-->
 
 ### Version 103.4.25
 
@@ -73,7 +81,7 @@ _5 mai 2026_
 _20 avril 2026_
 
 ![Correction](../assets/fix.svg) **Résolution des erreurs SQL lors de la suppression d’attributs EAV statiques**-Le plug-in ProductAttributeDelete ne génère plus d’erreurs SQL lors de la suppression d’attributs EAV statiques, ce qui garantit une gestion plus fluide des attributs et une meilleure fiabilité du système. <!--MDEE-1336-->
-![Corriger](../assets/fix.svg) **Exportation d’un chemin d’accès de catégorie fixe après le déplacement d’une catégorie**- Garantit que le flux des catégories met correctement à jour la `url_path` lorsqu’une catégorie est déplacée vers un autre parent, empêchant les chemins d’accès de catégorie manquants ou obsolètes dans les services Commerce connectés.<!--MDEE-1331-->
+![Corriger](../assets/fix.svg) **Exportation d’un chemin d’accès de catégorie fixe après le déplacement d’une catégorie**- Garantit que le flux des catégories met correctement à jour le `url_path` lorsqu’une catégorie est déplacée vers un autre parent, empêchant les chemins d’accès de catégorie manquants ou obsolètes dans les services Commerce connectés.<!--MDEE-1331-->
 ![Correctif](../assets/fix.svg) **Amélioration des mises à jour planifiées des catégories de produits associés** Les mises à jour planifiées des URL des catégories n’affectent désormais que les catégories prévues, ce qui permet de préserver l’intégrité des données et d’empêcher les modifications involontaires des produits associés. Désormais, les modifications d’URL de catégorie planifiées sont correctement répercutées dans les données exportées, ce qui permet d’aligner la navigation du storefront et les services liés sur votre catalogue actuel.
 <!--MDEE-1321-->
 
