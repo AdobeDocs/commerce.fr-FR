@@ -3,10 +3,16 @@ title: Configuration de Live Search
 description: L’espace  [!DNL Live Search]  travail permet de configurer, de gérer et de surveiller les performances des recherches.
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
 TQID: https://experienceleague.adobe.com/RQ6BKo7AknERkwrXylYHNAuD-FDxLvG74nU1YvuVgwE
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
 source-wordcount: 2318
@@ -47,10 +53,10 @@ Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/
 |--- |--- |
 | [Performances](performance.md) | Le tableau de bord fournit à insight des informations sur les performances de recherche de produits. |
 | [Facettage](facets.md) | Filtrage haute performance qui utilise plusieurs dimensions de valeurs d’attribut pour affiner les critères de recherche. |
-| [ Synonymes ](synonyms.md) | Étendez la portée de la recherche afin d’inclure les mots que les acheteurs peuvent utiliser pour trouver des produits différents de ceux de votre catalogue. |
+| [&#x200B; Synonymes &#x200B;](synonyms.md) | Étendez la portée de la recherche afin d’inclure les mots que les acheteurs peuvent utiliser pour trouver des produits différents de ceux de votre catalogue. |
 | [Recherche de marchandisage](rules.md) | Donnez forme à l’expérience de recherche avec des règles logiques qui déclenchent des actions planifiées. Boostez, enfouissez, épinglez ou masquez des produits pour étalonner les résultats de recherche afin de soutenir les objectifs de votre entreprise. |
 | [Marchandisage de catégorie](category-merch.md) | Appliquez des règles et un marchandisage intelligent au niveau de la catégorie. |
-| [](graphql.md) | Les développeurs connectés à l’administrateur de votre boutique peuvent composer et tester des requêtes avec des données de catalogue réelles. Pour en savoir plus, accédez à la section [Présentation de ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) dans la documentation destinée aux développeurs [!DNL Live Search]. |
+| [&#128279;](graphql.md) | Les développeurs connectés à l’administrateur de votre boutique peuvent composer et tester des requêtes avec des données de catalogue réelles. Pour en savoir plus, accédez à la section [Présentation de &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) dans la documentation destinée aux développeurs [!DNL Live Search]. |
 | [Paramètres](settings.md) | Gérez la recherche sémantique (activée par défaut pour [!DNL Adobe Commerce as a Cloud Service]), configurez le regroupement des facettes de prix pour le storefront et définissez la langue d’indexation. |
 
 ## Définir les attributs comme pouvant faire l’objet d’une recherche
@@ -193,7 +199,7 @@ Les prix dans la page de liste de produits du widget et la fenêtre contextuelle
 | Magasins > Configuration > Catalogue > Storefront > Mode Liste | Détermine le format de la liste des résultats de recherche. | Effectue correctement le rendu, mais les événements ne sont pas envoyés pour certaines interactions de page |
 | Magasins > Configuration > Catalogue > Catalogue > Recherche catalogue > Longueur maximale de la requête | Nombre maximal de caractères autorisés dans une recherche catalogue. | Non implémenté ; les services de recherche acceptent jusqu’à 255 caractères |
 | Configuration > Ventes > Taxe > Paramètres D’Affichage Des Prix > Afficher Les Prix Des Produits Dans Le Catalogue | Détermine si les prix des produits publiés dans le catalogue incluent ou excluent la taxe, ou affichent deux versions du prix ; l&#39;une avec et l&#39;autre sans taxe |  |
-| Magasins > Configuration > Catalogue > Storefront > Liste des produits Trier par | Détermine l’ordre de tri de la liste des résultats de recherche. | Ne s’applique pas au [!DNL Live Search] [ Widget de page de liste de produits ](plp-styling.md) |
+| Magasins > Configuration > Catalogue > Storefront > Liste des produits Trier par | Détermine l’ordre de tri de la liste des résultats de recherche. | Ne s’applique pas au [!DNL Live Search] [&#x200B; Widget de page de liste de produits &#x200B;](plp-styling.md) |
 
 ## Valeurs d’attribut par défaut
 
