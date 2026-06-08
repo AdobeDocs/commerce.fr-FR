@@ -18,9 +18,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 264
+source-wordcount: 237
 ht-degree: 0%
 
 ---
@@ -35,10 +35,8 @@ La détection de produits dote les commerçants d’outils puissants pour organi
 
 Grâce à la découverte de produits, vous pouvez :
 
+* **Utiliser [recherche sémantique](../setup/semantic-search.md)** — Activé par défaut dans [Paramètres](../settings.md#advanced-search) pour améliorer la pertinence des requêtes en langage naturel et basées sur l’intention. Aucune configuration d’attribut ou modification du storefront n’est requise.
 * **Configurez les [facettes](./facets/overview.md), [règles de recherche et de catégorie de marchandisage](./rules/overview.md) et [synonymes](./synonyms/overview.md)** pour guider les acheteurs vers les produits les plus pertinents avec un minimum de friction.
-* **Créez des expériences de recherche intuitives et axées sur des objectifs** qui reflètent votre stratégie de marchandisage et vos priorités saisonnières.
-* **Utilisez la facettisation dynamique et le reclassement des résultats pilotés par l’IA** pour adapter les résultats de recherche en temps réel en fonction du comportement de l’acheteur, ce qui stimule l’engagement et les ventes.
-* **Assurez-vous que les éléments promotionnels et hautement prioritaires apparaissent efficacement** pour aligner les résultats de recherche sur les objectifs commerciaux.
 
 ## Recommendations
 

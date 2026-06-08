@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 2317
+source-wordcount: 2318
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/
 | [Recherche de marchandisage](rules.md) | Donnez forme à l’expérience de recherche avec des règles logiques qui déclenchent des actions planifiées. Boostez, enfouissez, épinglez ou masquez des produits pour étalonner les résultats de recherche afin de soutenir les objectifs de votre entreprise. |
 | [Marchandisage de catégorie](category-merch.md) | Appliquez des règles et un marchandisage intelligent au niveau de la catégorie. |
 | [&#128279;](graphql.md) | Les développeurs connectés à l’administrateur de votre boutique peuvent composer et tester des requêtes avec des données de catalogue réelles. Pour en savoir plus, accédez à la section [Présentation de &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) dans la documentation destinée aux développeurs [!DNL Live Search]. |
-| [Paramètres](settings.md) | Déterminez comment les valeurs de facette de prix sont regroupées par plage de prix dans le storefront et définissez la langue d’indexation. |
+| [Paramètres](settings.md) | Gérez la recherche sémantique (activée par défaut pour [!DNL Adobe Commerce as a Cloud Service]), configurez le regroupement des facettes de prix pour le storefront et définissez la langue d’indexation. |
 
 ## Définir les attributs comme pouvant faire l’objet d’une recherche
 
