@@ -5,9 +5,9 @@ user-guide-description: Documentation et ressources pour  [!DNL Adobe Commerce O
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 12783fe12fad940b95dfed05c1b86657e63c725c
+source-git-commit: 8b93be7e618c7a93803e62eabb1cd38ebe8b45ba
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '116'
 ht-degree: 12%
 
 ---
@@ -56,6 +56,7 @@ ht-degree: 12%
    - [Catalogues de prix](./setup/pricebooks.md)
    - [Visuels du produit](./setup/product-visuals.md)
    - [Synchronisation des données](./setup/data-sync.md)
+   - [Recherche sémantique](./setup/semantic-search.md)
    - Événements {#events}
       - [Vue d’ensemble](./setup/events/overview.md)
 - [Storefront](storefront.md)
