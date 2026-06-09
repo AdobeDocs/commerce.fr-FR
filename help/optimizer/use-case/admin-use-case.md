@@ -3,26 +3,15 @@ title: Cas d’utilisation complet de Storefront et de Catalog Administrator
 description: Découvrez comment utiliser  [!DNL Adobe Commerce Optimizer]  gérer votre catalogue à l’aide de vues et de politiques de catalogue et comment configurer votre storefront en fonction de la configuration de votre catalogue.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 TQID: https://experienceleague.adobe.com/sqz0syCSh3ls8F-WIbuzPyqeRguyXdsPw-7OerOnDes
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 2205
 ht-degree: 0%
@@ -72,7 +61,7 @@ Dans ce cas d’utilisation, vous travaillez avec les éléments suivants :
 
 >[!NOTE]
 >
-> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=fr) dans la documentation du storefront Adobe Commerce.
+> Découvrez les fichiers de configuration de storefront en consultant la rubrique [Explorer le standard](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) dans la documentation du storefront Adobe Commerce.
 
 ### ‌Principaux points à retenir
 
@@ -299,7 +288,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
             "base-currency-code": "USD",
             "environment": "Production",
             "store-id": 1,
-            "store-name": "ACO Demo",
+            "store-name": "Commerce Optimizer Demo",
             "store-url": "https://www.aemshop.net",
             "store-view-id": 1,
             "store-view-name": "Default Store View",
@@ -332,14 +321,14 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
 
 1. Remplacez la valeur `ac-price-book-id` par `"east_coast_inc"`.
 
-   Après avoir apporté ces modifications, votre fichier `config.json` doit ressembler à ce qui suit, les espaces réservés `ACO-tenant-id` et `celport-catalog-view-id` devant être remplacés par vos valeurs :
+   Après avoir apporté ces modifications, votre fichier `config.json` doit ressembler à ce qui suit, les espaces réservés `commerce-optimizer-tenant-id` et `celport-catalog-view-id` devant être remplacés par vos valeurs :
 
    ```json
    {
      "public": {
         "default": {
         "commerce-core-endpoint": "https://www.aemshop.net/graphql",
-        "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
+        "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{commerce-optimizer-tenant-id}}/graphql",
         "headers": {
             "cs": {
                 "ac-view-id": "{{celport-catalog-view-id}}",
@@ -351,7 +340,7 @@ La dernière partie de ce tutoriel implique la mise à jour du storefront que [v
                 "base-currency-code": "USD",
                 "environment": "Production",
                 "store-id": 1,
-                "store-name": "ACO Demo",
+                "store-name": "Commerce Optimizer Demo",
                 "store-url": "https://www.aemshop.net",
                 "store-view-id": 1,
                 "store-view-name": "Default Store View",
@@ -466,4 +455,4 @@ Pour continuer à en savoir plus sur [!DNL Adobe Commerce Optimizer] :
 - En savoir plus sur les [configurations de politique avancées](../setup/policies.md)
 - Configurer [vues de catalogue supplémentaires](../setup/catalog-view.md) pour d&#39;autres concessionnaires
 - Consultez la [documentation de l’API](https://developer.adobe.com/commerce/services/optimizer/) pour la gestion programmatique du catalogue
-- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=fr)
+- Découvrez comment configurer des composants de dépôt pour votre storefront Edge Delivery Services afin de créer des expériences storefront personnalisées pour la découverte de produits, les recommandations et d’autres fonctionnalités storefront. Voir la [Documentation de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

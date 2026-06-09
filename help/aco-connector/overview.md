@@ -2,28 +2,16 @@
 title: Connecteur Adobe Commerce Optimizer
 description: Découvrez comment connecter vos données de votre projet cloud ou local Commerce à Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 TQID: https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: b954ce1acf338978acad4fbb2ec5e01db174bbf9
 workflow-type: tm+mt
-source-wordcount: 1177
+source-wordcount: 1167
 ht-degree: 0%
 
 ---
@@ -52,7 +40,7 @@ Commerce reste votre système d’enregistrement pour les produits, les prix et 
 
 Le diagramme suivant illustre l’architecture de bout en bout du connecteur, d’Adobe Commerce à Commerce Optimizer, en passant par les storefronts et les systèmes de passage en caisse.
 
-![Diagramme d&#39;architecture de bout en bout du connecteur Commerce Optimizer Commerce](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
+![Diagramme d&#39;architecture de bout en bout du connecteur ](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
 
 Dans cette architecture :
 
@@ -89,31 +77,18 @@ Ces workflows décrivent comment les équipes configurent et utilisent le connec
 
 ### Installation et configuration initiales {#initial-setup}
 
-1. **Installez le package de connecteur dans Adobe Commerce** à l’aide du compositeur :
 
-   `composer require adobe-commerce/commerce-data-export-aco-adapter`
+Étapes de haut niveau pour l’installation et la configuration :
 
-1. **Configurez les détails d’authentification et d’environnement** dans Commerce Admin ou via l’interface de ligne de commande :
+1. Installez le package de connecteur pour Adobe Commerce.
 
-   ```terminal
-   bin/magento aco:config:init \
-     --org_id=<your-org> \
-     --tenant_id=<your-tenant> \
-     --client_id=<your-client-id> \
-     --client_secret=<your-secret> \
-     --region=na1 \
-     --type=production
-   ```
+1. Configurez les détails d’authentification et d’environnement.
 
-1. **Mappage des étendues de Commerce à Commerce Optimizer:**
+1. Mappez les étendues de Commerce à Commerce Optimizer.
 
-   - Confirmer les sites web et les affichages de boutique qui doivent être inclus dans la portée
-   - Assurez-vous que les groupes de clients et les règles de prix sont modélisés comme prévu
+1. Vérifiez la connectivité.
 
-1. **Vérifier la connectivité :**
-
-   - Exécutez une synchronisation de test et vérifiez que les sources de catalogue, les tarifs et les produits initiaux apparaissent dans Commerce Optimizer
-   - Utiliser la page Statut de la synchronisation des flux de données dans Commerce et les tableaux de bord de synchronisation des données dans Commerce Optimizer pour la validation
+Pour obtenir des instructions détaillées, voir [Étapes de configuration](./get-started.md#configuration-steps) dans le guide _Prise en main_.
 
 ### Synchronisation des données en cours {#ongoing-sync}
 
@@ -121,11 +96,16 @@ Après la configuration initiale, le connecteur prend en charge les éléments s
 
 - **Synchronisation complète du catalogue** pour la migration initiale ou des modifications structurelles importantes
 - **Synchronisations delta** pour les mises à jour continues lorsque les produits ou les prix changent
-- **Commandes de resynchronisation** pour les flux ciblés (y compris les catégories à partir de la version 1.0.12) :
+- **Commandes de resynchronisation** pour les flux ciblés
 
-   - `bin/magento saas:resync --feed=products`
-   - `bin/magento saas:resync --feed=prices`
-   - `bin/magento saas:resync --feed=categories`
+Les flux suivants sont disponibles pour le connecteur Adobe Commerce Optimizer :
+
+- `products` - données des produits
+- `productAttributes` - métadonnées pour les attributs de produit
+- `priceBooks` - catalogue des prix
+- `prices` - prix des produits
+- `categories` - données des catégories
+Pour plus d’informations sur l’utilisation de l’interface de ligne de commande (CLI) Commerce pour les opérations de resynchronisation, consultez la [commande de resynchronisation de l’interface de ligne de commande](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}.
 
 ### Configurer le marchandisage et les storefronts {#merchandising-storefronts}
 
@@ -150,7 +130,7 @@ Une fois que les données Commerce sont disponibles dans Commerce Optimizer, uti
 
    >[!NOTE]
    >
-   >Pour obtenir un exemple d’intégration tierce, consultez Connecteur Salesforce Commerce pour Commerce Optimizer [&#128279;](../optimizer/developer/salesforce-connector.md).
+   >Pour obtenir un exemple d’intégration tierce, consultez Connecteur Salesforce Commerce pour Commerce Optimizer [](../optimizer/developer/salesforce-connector.md).
 
 1. **Conserver le passage en caisse** sur votre plateforme existante :
 
