@@ -28,7 +28,7 @@ Installez et configurez le connecteur Adobe Commerce Optimizer pour synchroniser
 
 * [Clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) pour télécharger le métapaquet Connecteur Commerce à l’aide du compositeur.
 
-* Accès administrateur à une instance sandbox Adobe Commerce Optimizer [](../optimizer/get-started.md).
+* Accès administrateur à une instance sandbox Adobe Commerce Optimizer [&#128279;](../optimizer/get-started.md).
 
 L’utilisateur d’Adobe Commerce configurant l’intégration doit disposer des éléments suivants :
 
@@ -118,7 +118,7 @@ Le tableau suivant décrit les données exportées à chaque niveau de l’éten
 
 1. Sélectionnez le site web ou la vue de magasin que vous souhaitez configurer.
 
-1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**[!DNL Adobe Commerce Optimizer]
+1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**&#x200B;[!DNL Adobe Commerce Optimizer]
 
    ![Mettre à jour la configuration de la synchronisation des données](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
 
@@ -139,7 +139,7 @@ Le tableau suivant décrit les données exportées à chaque niveau de l’éten
 
 ### Obtenir les détails de connexion requis
 
-À partir de [](https://developer.adobe.com/console), créez un projet activé pour le service d’ingestion [!DNL Adobe Commerce Optimizer] et générez des informations d’identification de serveur à serveur OAuth. Pour obtenir des instructions détaillées, voir [Obtention des informations d’identification IMS](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials) dans le *Guide du développeur du marchandisage*.
+À partir de [&#128279;](https://developer.adobe.com/console), créez un projet activé pour le service d’ingestion [!DNL Adobe Commerce Optimizer] et générez des informations d’identification de serveur à serveur OAuth. Pour obtenir des instructions détaillées, voir [Obtention des informations d’identification IMS](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials) dans le *Guide du développeur du marchandisage*.
 
 Enregistrez les valeurs suivantes à partir de la page des informations d’identification :
 
@@ -151,7 +151,7 @@ Enregistrez les valeurs suivantes à partir de la page des informations d’iden
 
 ### Obtention des détails de l’instance [!DNL Adobe Commerce Optimizer]
 
-Récupérez l’_identifiant du client_ à partir du champ _[!DNL Instance Id]_de l’instance [!DNL Adobe Commerce Optimizer] [[!DNL Instance details] page](../optimizer/get-started.md#manage-instances) ou à partir de l’URL utilisée pour accéder à l’instance. Par exemple, dans `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
+Récupérez l’_identifiant du client_ à partir du champ _[!DNL Instance Id]_&#x200B;de l’instance [!DNL Adobe Commerce Optimizer] [[!DNL Instance details] page](../optimizer/get-started.md#manage-instances) ou à partir de l’URL utilisée pour accéder à l’instance. Par exemple, dans `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
 
 1. Dans l’Administration de Commerce, sélectionnez **[!UICONTROL Adobe Commerce Optimizer]** pour afficher la page de configuration avec les instructions.
 

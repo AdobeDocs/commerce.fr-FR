@@ -3,11 +3,25 @@ title: Connecteur Salesforce Commerce
 description: Découvrez le  [!DNL Commerce Optimizer SFCC Connector]  qui fournit un point de départ pour l’intégration de Salesforce Commerce B2C à afin de synchroniser les données de catalogue et d [!DNL Adobe Commerce Optimizer] implémenter et de personnaliser le connecteur pour prendre en charge les opérations commerciales.
 role: Admin, Developer
 TQID: https://experienceleague.adobe.com/pbzScjaJ7FybdPP06QIhKlowmMbkDHTxUSJUw6eG6JY
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 1183
@@ -25,7 +39,7 @@ Pour une série complète de tutoriels vidéo, consultez [En savoir plus sur le 
 
 >[!NOTE]
 >
->Pour obtenir un aperçu des autres intégrations disponibles pour Adobe Commerce Optimizer, consultez [ Intégrations ](../integrations/integrations-overview.md).
+>Pour obtenir un aperçu des autres intégrations disponibles pour Adobe Commerce Optimizer, consultez [&#x200B; Intégrations &#x200B;](../integrations/integrations-overview.md).
 
 ## Fonctionnalités clés
 
@@ -38,7 +52,7 @@ Pour une série complète de tutoriels vidéo, consultez [En savoir plus sur le 
    * **Mises à jour à la demande :** déclenchez instantanément des mises à jour au niveau des SKU pour des modifications, des corrections ou des lancements de produits urgents.
 
 * **Conçu pour l’extensibilité**
-   * Utilise des points d’entrée SCAPI (Salesforce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) [Commerce personnalisés pour garantir la compatibilité et une adaptation facile à des cas d’utilisation uniques ou avancés.
+   * Utilise des points d’entrée SCAPI (Salesforce B2C API[&#128279;](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) Commerce personnalisés pour garantir la compatibilité et une adaptation facile à des cas d’utilisation uniques ou avancés.
    * Évolue en fonction de la phase de démarrage de votre entreprise avec la synchronisation des catalogues et des prix, puis étend les workflows pour prendre en charge des intégrations supplémentaires ou la logique commerciale.
    * Configurez et faites évoluer les workflows sans reconstruire les intégrations principales.
 
@@ -147,7 +161,7 @@ Les principales fonctionnalités sont les suivantes :
 Le [!DNL Commerce Optimizer SFCC Connector] est en open source et disponible pour personnalisation. Les référentiels principaux sont les suivants :
 
 * **[Kit de démarrage Commerce Optimizer SFCC](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** - Application et documentation du connecteur principal.
-* **[Cartouches SFCC Commerce Optimizer ](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - Cartouche SFCC requise pour l&#39;intégration de l&#39;API.
+* **[Cartouches SFCC Commerce Optimizer &#x200B;](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - Cartouche SFCC requise pour l&#39;intégration de l&#39;API.
 * **[Commerce Optimizer TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** - Intégration de SDK for [!DNL Adobe Commerce Optimizer].
 
 Ces référentiels fournissent un code source complet, une documentation détaillée ainsi que des exemples d’implémentation et de personnalisation du connecteur.

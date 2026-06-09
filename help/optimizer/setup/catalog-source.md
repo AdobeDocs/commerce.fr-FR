@@ -38,7 +38,7 @@ Suivez les conseils suivants pour décider de la structure de vos sources de cat
 
 * Créez une source de catalogue distincte pour chaque langue de catalogue.
 * Utilisez des sources de catalogue distinctes lorsque les différences de produit et d’attribut doivent affecter le comportement de la recherche, du filtrage ou du tri (par exemple, une recherchabilité, une filtrabilité ou une configuration de facettes différentes pour le même attribut).
-* Utilisez les [ calques de catalogue ](catalog-layer.md) lorsque les différences entre les produits et les attributs doivent affecter uniquement l’affichage du storefront, et non la découverte de produits.
+* Utilisez les [&#x200B; calques de catalogue &#x200B;](catalog-layer.md) lorsque les différences entre les produits et les attributs doivent affecter uniquement l’affichage du storefront, et non la découverte de produits.
 
 >[!MORELIKETHIS]
 >
