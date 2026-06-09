@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4bd744e26afca4519fb1c04edcb7d2a118369ff9
+source-git-commit: acc520f67bdd1bdafd34b356b59bb32145192497
 workflow-type: tm+mt
-source-wordcount: 2782
+source-wordcount: 2682
 ht-degree: 0%
 
 ---
@@ -607,6 +607,16 @@ Mises à jour du métapaquet PHP du service de catalogue (`magento/catalog-servi
 - Pour les clients Adobe Commerce as a Cloud Service, la dernière version est installée dans votre environnement.
 
 - Pour Adobe Commerce on cloud ou on-premise, Adobe recommande d’utiliser le compositeur pour mettre à niveau le métapaquet du service de catalogue dans vos environnements cloud vers la dernière version.
+
+### version v3.4.0
+
+**Date de publication** : 8 juin 2026
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
+
+![Nouveau](../assets/new.svg) **Prise en charge de la surveillance de l’état de synchronisation des flux de données**—Mise à jour des dépendances des métapaquets du service de catalogue pour inclure l’extension d’état de l’exportateur de données (`magento/module-data-exporter-status`). Cela permet la [surveillance de l’état de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) à partir de l’administrateur Commerce sans nécessiter d’étapes d’installation ou de configuration supplémentaires
+
+![Nouveau](../assets/new.svg) Mise à jour des dépendances pour maintenir la compatibilité entre le service de catalogue et votre pile Commerce.
 
 ### version v3.3.0
 
