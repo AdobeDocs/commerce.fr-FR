@@ -4,9 +4,14 @@ description: Découvrez comment utiliser des filtres pour contrôler quels produ
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 116d8bd804df364ddc9cb1175525f08fd32c01bf
 workflow-type: tm+mt
 source-wordcount: 1919
@@ -68,7 +73,7 @@ Configurez la façon dont les livres de prix sont associés à un storefront dan
 
 Les règles de prix **filtrer** le candidat de recommandation défini ; elles ne **pas** reclassent les produits. Le moteur génère une liste avec classement, les règles d’inclusion et d’exclusion de prix suppriment les produits de cette liste et l’ordre relatif des produits restants reste le même. Si le nombre de produits admissibles est inférieur au nombre de demandes d&#39;unité, seuls les articles valides sont affichés. Si aucun n’est qualifié, l’unité n’est pas rendue (aucun espace réservé vide).
 
-Le prix affiché sur les produits à l’intérieur de l’unité de recommandation est le même **prix final** du catalogue des prix de ce magasin, de sorte que ce que les acheteurs voient correspond à la valeur utilisée pour le filtrage. Dans la prévisualisation Admin, les produits configurables peuvent afficher une plage de prix lorsque les prix des variantes diffèrent ; voir [ Produits configurables dans la prévisualisation ](#configurable-products-in-preview).
+Le prix affiché sur les produits à l’intérieur de l’unité de recommandation est le même **prix final** du catalogue des prix de ce magasin, de sorte que ce que les acheteurs voient correspond à la valeur utilisée pour le filtrage. Dans la prévisualisation Admin, les produits configurables peuvent afficher une plage de prix lorsque les prix des variantes diffèrent ; voir [&#x200B; Produits configurables dans la prévisualisation &#x200B;](#configurable-products-in-preview).
 
 #### Gamme de prix statique
 
