@@ -12,9 +12,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 116d8bd804df364ddc9cb1175525f08fd32c01bf
 workflow-type: tm+mt
-source-wordcount: 998
+source-wordcount: 1919
 ht-degree: 0%
 
 ---
@@ -33,11 +33,11 @@ Les conditions peuvent être statiques ou dynamiques.
 
 - Une condition statique utilise des attributs de produit existants pour déterminer quels produits peuvent apparaître dans l’unité. Par exemple, vous pouvez spécifier que seuls les produits en stock dont le prix est supérieur à 25 $ apparaissent dans l’unité.
 
-- Condition dynamique clé du contexte actuel d’un acheteur, tel que la catégorie ou le produit actuellement consulté. Par exemple, lors de la création d’une recommandation de produit à déployer sur les pages de détails du produit, vous pouvez créer une condition pour recommander uniquement des produits qui se trouvent dans une plage de prix relative du produit actuellement consulté.
+- Condition dynamique clé du contexte actuel d’un acheteur, tel que la catégorie ou le produit actuellement consulté. Par exemple, lors de la création d’une recommandation de produit à déployer sur les pages de détails du produit, vous pouvez utiliser un [filtre de prix dynamique](#dynamic-price-filters-relative-to-current-product) pour inclure ou exclure des produits d’une plage de prix relative du produit actuellement consulté.
 
 ### Opérateurs logiques
 
-Les opérateurs logiques `AND` et `OR` sont utilisés pour joindre plusieurs conditions. Si vous utilisez à la fois des filtres d’inclusion et d’exclusion, les inclusions sont d’abord évaluées afin de déterminer tous les produits possibles qui peuvent être recommandés, puis les produits qui correspondent à n’importe quel filtre d’exclusion sont supprimés de la liste.
+Les opérateurs logiques `AND` et `OR` sont utilisés pour joindre plusieurs conditions. Si vous utilisez des filtres d’inclusion et d’exclusion sur plusieurs types de filtre, les inclusions sont d’abord évaluées afin de déterminer tous les produits possibles qui peuvent être recommandés, puis les produits qui correspondent à n’importe quel filtre d’exclusion sont supprimés de la liste. Les filtres **Prix** utilisent un ordre différent parmi les règles de prix : les exclusions en premier, puis les inclusions. Voir [Comment inclure et exclure des règles pour utiliser le prix](#how-include-and-exclude-rules-use-price).
 
 - `AND` - Rejoint deux conditions de filtrage des inclusions
 - `OR` - Rejoint deux conditions de filtrage des exclusions
@@ -50,22 +50,36 @@ Chaque type de filtre cible un aspect différent du catalogue, tel que le produi
 >
 >Seuls les produits correspondant à vos filtres **inclusion** peuvent être recommandés et tout produit correspondant à un filtre **exclusion** est supprimé.
 
-### Prix
+### Prix {#price}
 
 >[!IMPORTANT]
 >
->La fonctionnalité suivante est en version bêta.
+>Le filtrage des prix est en version bêta.
 
-Le filtrage des prix utilise le **prix calculé final** de chaque produit pour le **catalogue de prix actif** du storefront, c’est-à-dire le prix attribué au storefront dans lequel l’unité de recommandation est rendue. Cette valeur reflète les remises, les promotions et les prix spéciaux définis dans ce catalogue des prix, et non le prix catalogue seul. L’évaluation utilise uniquement le catalogue de prix de ce magasin ; les autres magasins ou catalogues de prix ne s’appliquent pas. La façon dont les tarifs sont associés à un storefront est configurée avec votre catalogue et [&#x200B; configuration des tarifs](../../setup/pricebooks.md).
+Le filtrage des prix utilise le **prix calculé final** de chaque produit du **catalogue des prix actif** du storefront, qui est le catalogue des prix attribué au storefront dans lequel l’unité de recommandation est rendue.
 
-#### Comment inclure et exclure des règles utiliser le prix
+Cette valeur :
 
-- **Règles d’inclusion** - Seuls les produits dont le prix final **correspond à toutes les conditions d’inclusion définies** restent éligibles. Cela inclut chaque filtre d’inclusion activé (par exemple, votre plage de prix ainsi que toute autre règle d’inclusion).
-- **Règles d’exclusion** - Les produits dont le prix final **correspond à n’importe quelle condition d’exclusion définie** sont supprimés des recommandations.
+- **Inclut** les remises, les promotions et les prix spéciaux définis dans ce catalogue de prix (et non le prix catalogue uniquement).
+- **Exclut** l’expédition et les ajustements au niveau du panier.
+- **S&#39;applique uniquement** au catalogue de prix actif pour ce storefront ; les autres storefronts ou catalogues de prix ne sont pas utilisés.
 
-**Prix affiché** - Le prix affiché sur les produits à l’intérieur de l’unité de recommandation est le même **prix final** du catalogue des prix de ce magasin. Par conséquent, ce que les acheteurs voient correspond à la valeur utilisée pour le filtrage.
+Configurez la façon dont les livres de prix sont associés à un storefront dans votre catalogue et [configuration des livres de prix](../../setup/pricebooks.md).
 
-#### Configurer un filtre de prix
+#### Comment inclure et exclure des règles utiliser le prix {#how-include-and-exclude-rules-use-price}
+
+- **Règles d’exclusion** - Les produits dont le prix final **correspond à une exclusion de prix définie** sont supprimés en premier.
+- **Règles d’inclusion** - Parmi les autres candidats, seuls les produits dont le prix final **correspond à toutes** les conditions d’inclusion de prix définies restent éligibles. Cela inclut chaque filtre d’inclusion activé (par exemple, votre règle de prix ainsi que toutes les autres règles d’inclusion).
+
+Les règles de prix **filtrer** le candidat de recommandation défini ; elles ne **pas** reclassent les produits. Le moteur génère une liste avec classement, les règles d’inclusion et d’exclusion de prix suppriment les produits de cette liste et l’ordre relatif des produits restants reste le même. Si le nombre de produits admissibles est inférieur au nombre de demandes d&#39;unité, seuls les articles valides sont affichés. Si aucun n’est qualifié, l’unité n’est pas rendue (aucun espace réservé vide).
+
+Le prix affiché sur les produits à l’intérieur de l’unité de recommandation est le même **prix final** du catalogue des prix de ce magasin, de sorte que ce que les acheteurs voient correspond à la valeur utilisée pour le filtrage. Dans la prévisualisation Admin, les produits configurables peuvent afficher une plage de prix lorsque les prix des variantes diffèrent ; voir [&#x200B; Produits configurables dans la prévisualisation &#x200B;](#configurable-products-in-preview).
+
+#### Gamme de prix statique
+
+Utilisez un filtre de prix **statique** lorsque vous souhaitez un minimum ou un maximum fixe dans la devise de base de votre magasin, quel que soit le produit consulté par l’acheteur.
+
+##### Configurer un filtre de prix statique
 
 1. Lors de la [création ou modification](create.md) d’une unité de recommandation, ouvrez **[!UICONTROL Filter products]** (ou accédez à l’étape _Filtres_ à partir du workflow d’unité).
 1. Sélectionnez l&#39;onglet **[!UICONTROL Inclusions]** ou **[!UICONTROL Exclusions]**, selon que vous souhaitez autoriser uniquement les produits d&#39;une plage de prix ou bloquer les produits d&#39;une plage. Le badge de chaque onglet indique le nombre de filtres activés de ce type.
@@ -79,6 +93,83 @@ Le filtrage des prix utilise le **prix calculé final** de chaque produit pour l
 1. Terminez la configuration de l’unité de recommandation et enregistrez ou publiez-la comme vous le feriez normalement pour que le filtre prenne effet.
 
 ![Filtre de prix](../../assets/filter-price.png)
+
+#### Filtres de prix dynamiques (par rapport au produit actuel) {#dynamic-price-filters-relative-to-current-product}
+
+Utilisez un filtre de prix **dynamique** lorsque les recommandations doivent être limitées par rapport au **produit actuellement consulté** sur une page de détails du produit (PDP). Le filtre utilise le prix final de ce produit comme **ancre** et compare les produits recommandés aux limites que vous définissez.
+
+Les opérateurs dynamiques sont disponibles uniquement pour les types de recommandation [liés au SKU](types.md) qui s’exécutent dans un contexte de produit, par exemple :
+
+- A consulté ceci, a consulté cela
+- A vu ceci, a acheté cela
+- J&#39;ai acheté ça, acheté ça
+- Plus comme ceci
+- Similarité visuelle
+
+Ils ne sont **pas** disponibles pour les types basés sur la popularité (par exemple, **Les plus consultés** ou **Les plus achetés**), car ces unités n’ont pas un seul produit actuel pour ancrer le filtre.
+
+Sur le storefront, la liste déroulante de recommandation lit le prix du produit actuel à partir du contexte PDP et l’envoie avec la demande de recommandation. [!DNL Adobe Commerce Optimizer] utilise cette valeur comme point d’ancrage lors de l’évaluation des règles de prix dynamiques. Pour les produits configurables, l’ancre est le **variante la plus basse** prix final (`priceRange.minimum`).
+
+##### Opérateurs
+
+Dans **[!UICONTROL Include products based on]** (ou l’équivalent exclusions), vous pouvez choisir :
+
+| Opérateur | Objectif |
+| --- | --- |
+| **Inférieur ou égal au prix actuel du produit** | Inclure ou exclure les produits au niveau ou au-dessous d&#39;une limite dérivée du prix d&#39;ancrage plus un décalage. |
+| **Supérieur ou égal au prix actuel du produit** | Inclure ou exclure les produits au niveau ou au-dessus d&#39;une limite dérivée du prix d&#39;ancrage plus un décalage. |
+| **Dans une plage de valeurs du produit actuel** | Inclure ou exclure les produits dont le prix final se situe dans une fourchette de devises fixes autour du prix d&#39;ancrage (les décalages par rapport au prix actuel). |
+| **Dans une plage de pourcentage du produit actuel** | Inclure ou exclure les produits dont le prix final se situe dans une fourchette de pourcentage autour du point d’ancrage. |
+
+##### Sémantique de décalage
+
+Pour **Inférieur ou égal au prix actuel du produit** et **Supérieur ou égal au prix actuel du produit**, la valeur que vous saisissez est un **décalage numérique ajouté au prix d’ancrage** pour former la limite :
+
+- Un décalage **négatif** déplace la limite **en dessous** du prix actuel du produit.
+- Un décalage **positif** déplace la limite **au-dessus** du prix actuel du produit.
+- **Vide** ou **0** signifie **aucune limite** de ce côté ; le serveur principal les traite de la même manière.
+- Vous ne pouvez pas utiliser **0** pour signifier « exactement le prix actuel du produit » comme limite.
+
+Ceci correspond à [!DNL Product Recommendations] sur PaaS. Les libellés dans l’Administration reflètent directement cette sémantique.
+
+##### Configurer un filtre de prix dynamique
+
+1. [Créer ou modifier](create.md) une unité de recommandation **liée au SKU** déployée sur la page **détails du produit** (ou un autre emplacement où un produit actuel est toujours en contexte).
+1. Ouvrez **[!UICONTROL Filter products]** et sélectionnez l’onglet **[!UICONTROL Inclusions]** ou **[!UICONTROL Exclusions]** .
+1. Sélectionnez **[!UICONTROL Price]** et activez **[!UICONTROL Enable filter]**.
+1. Ouvrez **[!UICONTROL Include products based on]** (ou l’équivalent des exclusions) et choisissez un opérateur dynamique (par exemple, **Dans une plage de valeurs du produit actuel**).
+1. Saisissez les décalages ou les valeurs de plage lorsque vous y êtes invité. Utilisez l’aperçu pour confirmer les résultats d’un exemple de produit.
+1. Enregistrez ou publiez l’unité.
+
+Les valeurs non valides (valeurs non numériques, combinaisons non prises en charge ou plages où le minimum est supérieur au maximum) bloquent l’enregistrement et affichent les erreurs de validation ; **[!UICONTROL Save]** reste désactivé jusqu’à ce que le filtre soit valide.
+
+##### Lorsqu’aucun prix d’ancrage n’est disponible
+
+Si un filtre de prix dynamique est activé mais que le storefront ne peut pas fournir un prix de produit actuel (par exemple, l’unité est rendue en dehors d’un contexte PDP), [!DNL Adobe Commerce Optimizer] ne renvoie pas de recommandations non filtrées. L’unité affiche **aucune recommandation**, car l’affichage de résultats non filtrés ne correspond pas à la règle que vous avez configurée.
+
+##### Produits configurables dans l’aperçu {#configurable-products-in-preview}
+
+Dans le panneau Admin **aperçu**, les prix recommandés des produits s’affichent comme suit :
+
+- **Produits simples** - Prix final unique issu de la réponse de GraphQL.
+- **Produits configurables** - Si les prix de variante minimum et maximum diffèrent, l’aperçu affiche une plage (par exemple, `$min – $max`). S’ils sont égaux, un seul prix s’affiche.
+
+Le prix d’ancrage utilisé pour les calculs de filtre dynamique sur un produit configurable est toujours le prix final de la variante **minimum**, cohérent avec le storefront.
+
+#### Exemples de filtres de prix
+
+Les exemples suivants utilisent un prix de produit actuel de **$500**. Ajustez l’inclusion par rapport à l’exclusion pour correspondre à votre objectif de marchandisage.
+
+| Opérateur | Tabulation | Objectif | Exemple de limite |
+| --- | --- | --- | --- |
+| Inférieur ou égal au prix actuel du produit | Exclusions | Promouvoir la montée en gamme en masquant les alternatives à bas prix | Exclure les produits ≤ 500 $ |
+| Inférieur ou égal au prix actuel du produit | Inclusions | Proposer des alternatives abordables | Inclure les produits ≤ 500 $ |
+| Supérieur ou égal au prix actuel du produit | Exclusions | Éviter les ventes incitatives dans un flux axé sur le budget | Exclure les produits ≥ 500 $ |
+| Supérieur ou égal au prix actuel du produit | Inclusions | Options de prime de surface | Inclure les produits ≥ 500 $ |
+| Dans une plage de valeurs du produit actuel | Exclusions | Diversifier à partir de points de prix similaires | Exclure 400 $-600 $ |
+| Dans une plage de valeurs du produit actuel | Inclusions | Afficher des alternatives comparables dans une bande étroite | Inclure 400 $ À 600 $ |
+| Dans une plage de pourcentage du produit actuel | Exclusions | Réduire les articles à prix similaires (par exemple ±20 %) | Exclure environ 400 à 600 $ |
+| Dans une plage de pourcentage du produit actuel | Inclusions | Comparaison équitable au sein d&#39;une fourchette comparable | Inclure environ 400 à 600 $ |
 
 ### Produit
 
