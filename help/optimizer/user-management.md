@@ -19,7 +19,7 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 816
 ht-degree: 0%
@@ -69,7 +69,7 @@ Il existe deux manières différentes d’ajouter des utilisateurs administrateu
 
 1. Cliquez sur **+** pour ajouter des produits.
 
-1. Sélectionnez l’instance Commerce Optimizer existante à laquelle ajouter l’administrateur. Les instances Commerce Optimizer utilisent le format suivant : `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Sélectionnez l’instance Commerce Optimizer existante à laquelle ajouter l’administrateur. Les instances Commerce Optimizer utilisent le format suivant : `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`.
 
 1. Sélectionnez le profil de produit.
 
@@ -115,7 +115,7 @@ Les instructions suivantes expliquent comment ajouter des utilisateurs à [!DNL 
 
 1. Sélectionnez le produit [!UICONTROL **&#x200B;**].
 
-1. Sélectionnez le produit Commerce Cloud Manager si vous souhaitez ajouter l’utilisateur à l’interface de Cloud Manager, où il peut créer et gérer des instances Commerce Optimizer, ou sélectionnez l’instance Commerce Optimizer existante à laquelle ajouter l’utilisateur. Les instances Commerce Optimizer utilisent le format suivant : `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Sélectionnez le produit Commerce Cloud Manager si vous souhaitez ajouter l’utilisateur à l’interface de Cloud Manager, où il peut créer et gérer des instances Commerce Optimizer, ou sélectionnez l’instance Commerce Optimizer existante à laquelle ajouter l’utilisateur. Les instances Commerce Optimizer utilisent le format suivant : `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`.
 
 1. Sélectionnez l’onglet [!UICONTROL **Utilisateurs**] et cliquez sur [!UICONTROL **Ajouter des utilisateurs**].
 

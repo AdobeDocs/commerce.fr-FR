@@ -22,9 +22,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 1177
+source-wordcount: 1183
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Le [!DNL SFCC Connector] fournit une couche d’intégration robuste entre une i
 
 1. **Extraction de données** : authentifiez-vous avec votre instance Salesforce Commerce B2C et extrayez les données de catalogue à l’aide d’API SCAPI personnalisées.
 1. **Transformation des données** : transformez les données de produit pour répondre aux exigences du schéma et du modèle de données [!DNL Commerce Optimizer].
-1. **Ingestion de données** : transmettez en toute sécurité les données transformées aux [!DNL Commerce Optimizer] à l’aide du SDK TypeScript ACO.
+1. **Ingestion de données** : transmettez en toute sécurité les données transformées aux [!DNL Commerce Optimizer] à l’aide du SDK TypeScript de Commerce Optimizer.
 1. **Intégration Storefront** : les données synchronisées sont disponibles via les API [!DNL Commerce Optimizer] pour les expériences de storefront.
 
 Le diagramme suivant illustre le flux de données de haut niveau pour l’intégration :
@@ -110,7 +110,7 @@ Le diagramme suivant illustre le flux de données de haut niveau pour l’intég
 
 Le [!DNL Commerce Optimizer SFCC Connector] se compose de plusieurs composants clés :
 
-* **Application App Builder ACO SFCC Starter Kit**-fournit des fonctions sans serveur qui gèrent la synchronisation des données entre SFCC et [!DNL Adobe Commerce Optimizer].
+* **Application App Builder du kit de démarrage Commerce Optimizer SFCC**-Fournit des fonctions sans serveur qui gèrent la synchronisation des données entre SFCC et [!DNL Adobe Commerce Optimizer].
 * **Cartouche SFCC personnalisée** - Cartouche requise qui étend votre instance Salesforce Commerce Cloud avec les API nécessaires à l’extraction des données.
 * **Interface utilisateur de gestion** : interface web permettant de surveiller le statut de synchronisation et de gérer les opérations du connecteur.
 
@@ -142,7 +142,7 @@ Lors de la planification de votre implémentation, tenez compte des facteurs cl�
 
 ## Surveillance et gestion
 
-Une fois installé et configuré, le [!DNL Commerce Optimizer SFCC Connector] fournit des fonctionnalités complètes de surveillance et de gestion à partir du [!DNL SFCC to ACO Sync Panel] :
+Une fois installé et configuré, le [!DNL Commerce Optimizer SFCC Connector] fournit des fonctionnalités complètes de surveillance et de gestion à partir du [!DNL SFCC to Commerce Optimizer Sync Panel] :
 
 ![Interface utilisateur de gestion du connecteur Commerce de Salesforce](../assets/sfcc_management_ui.png){width="700" zoomable="yes"}
 
@@ -160,12 +160,12 @@ Les principales fonctionnalités sont les suivantes :
 
 Le [!DNL Commerce Optimizer SFCC Connector] est en open source et disponible pour personnalisation. Les référentiels principaux sont les suivants :
 
-* **[Kit de démarrage ACO SFCC](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** - Application et documentation du connecteur principal.
-* **[Cartouches ACO SFCC](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - Cartouche SFCC requise pour l’intégration de l’API.
-* **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** - SDK pour une intégration [!DNL Adobe Commerce Optimizer].
+* **[Kit de démarrage Commerce Optimizer SFCC](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** - Application et documentation du connecteur principal.
+* **[Cartouches SFCC Commerce Optimizer &#x200B;](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - Cartouche SFCC requise pour l&#39;intégration de l&#39;API.
+* **[Commerce Optimizer TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** - Intégration de SDK for [!DNL Adobe Commerce Optimizer].
 
 Ces référentiels fournissent un code source complet, une documentation détaillée ainsi que des exemples d’implémentation et de personnalisation du connecteur.
 
 ## Étapes suivantes
 
-Prêt à intégrer vos données Salesforce Commerce Cloud à [!DNL Adobe Commerce Optimizer] ? Commencez par consulter le guide de mise en œuvre détaillé dans le référentiel [ACO SFCC Starter Kit](https://github.com/adobe-commerce/aco-sfcc-starter-kit) et assurez-vous que les conditions préalables nécessaires sont en place.
+Prêt à intégrer vos données Salesforce Commerce Cloud à [!DNL Adobe Commerce Optimizer] ? Commencez par consulter le guide de mise en œuvre détaillé dans le référentiel [Commerce Optimizer SFCC Starter Kit](https://github.com/adobe-commerce/aco-sfcc-starter-kit) et assurez-vous que les conditions préalables nécessaires sont en place.

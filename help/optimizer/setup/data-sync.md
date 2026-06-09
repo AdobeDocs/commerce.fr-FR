@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 483
+source-wordcount: 484
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Si vous ne voyez pas de produits spécifiques sur la page **Synchronisation des 
 
 ## Surveillance du statut de synchronisation des données
 
-Pour les projets qui utilisent Adobe Commerce comme source de données en amont via le connecteur Commerce Optimizer, vous pouvez surveiller le processus d’exportation des données et lancer des opérations de resynchronisation à partir de la page [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) de Commerce Admin.
+Pour les projets qui utilisent Adobe Commerce comme source de données en amont via le connecteur Adobe Commerce Optimizer, vous pouvez surveiller le processus d’exportation des données et lancer des opérations de resynchronisation à partir de la page [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) de Commerce Admin.
 
 ## Rubriques connexes
 

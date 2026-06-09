@@ -4,9 +4,9 @@ description: Découvrez comment utiliser AEM Assets pour les images de produit d
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ L’intégration comporte deux flux principaux :
 
 * **Depuis AEM Assets** : lorsqu’une ressource est approuvée, rejetée ou supprimée, l’événement se propage par le pipeline Adobe vers le service d’intégration d’Assets. Le service associe les ressources aux produits à l’aide d’une `match-by-SKU` ou d’une stratégie de correspondance personnalisée, puis envoie les mappages de `product-asset` au [!DNL Commerce Optimizer], où ils sont stockés en tant que couches de produits.
 
-* **De l’ACO** : lorsqu’un produit est mis à jour dans le [!DNL Commerce Optimizer], l’événement se propage par le pipeline Adobe vers le service d’intégration Assets. Le service resynchronise tous les mappages de ressources correspondants avec l’ACO.
+* **De[!DNL Commerce Optimizer]** : lorsqu’un produit est mis à jour dans le [!DNL Commerce Optimizer], l’événement se propage par le biais du pipeline Adobe vers le service d’intégration d’Assets. Le service resynchronise tous les mappages de ressources correspondants avec [!DNL Commerce Optimizer].
 
 Les images mises à jour sont disponibles via les API de storefront (service de catalogue, recherche en direct, recommandations de produits).
 

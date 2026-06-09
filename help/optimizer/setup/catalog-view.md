@@ -19,9 +19,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4d08de7974c79dc6fe20366e0164f6078e83be5f
 workflow-type: tm+mt
-source-wordcount: 1384
+source-wordcount: 1216
 ht-degree: 0%
 
 ---
@@ -37,23 +37,13 @@ Les vues Catalogue définissent l’organisation et l’affichage de votre catal
 - **Quels produits sont visibles** en fonction de la structure de l’entreprise (marques, régions, revendeurs) ?
 - **Quel prix est affiché** via les livres de prix liés
 - **Comment les produits sont filtrés** à l’aide de politiques (attributs tels que la marque, le modèle, la catégorie)
-- **Quelle source de catalogue est utilisée** en fonction d’attributs tels que les paramètres régionaux ?
+- **Qu’est-ce que [source du catalogue](catalog-source.md) est utilisé** en fonction d’attributs tels que les paramètres régionaux
 
 Considérez les vues de catalogue comme différentes « lentilles » à travers lesquelles les clients voient votre catalogue. Par exemple :
 
 - Une vue de catalogue de revendeurs peut afficher uniquement les produits disponibles pour ce revendeur spécifique
 - Une vue de catalogue régionale peut afficher des produits et des prix spécifiques à une zone géographique
 - Une vue de catalogue de marques peut afficher uniquement les produits d’une marque particulière
-
-### Vue catalogue et source du catalogue
-
-Ce qui suit explique la différence entre une vue de catalogue et une source de catalogue :
-
-- **Vue Catalogue** - Une vue configurée de votre catalogue pour un besoin professionnel spécifique. Lorsque vous créez une vue de catalogue, vous sélectionnez la source de catalogue (ou le paramètre régional) à utiliser, puis ajoutez des [politiques](policies.md) pour filtrer les produits visibles et lier des [livres de prix](pricebooks.md) pour contrôler les prix. Une seule source de catalogue peut alimenter de nombreuses vues de catalogue (par exemple, une source de `en-US` avec des vues de catalogue distinctes pour différentes marques ou régions). Considérez une vue de catalogue comme *comment* vous exposez ces données à un storefront, un canal ou une audience.
-
-- **Source du catalogue** - Contexte de données sous-jacent qui fournit des informations sur les produits. Une source de catalogue est généralement un paramètre régional (par exemple, `en-US`, `fr-CA`) ou un système externe tel qu’un PIM ou un ERP. [!DNL Adobe Commerce Optimizer] ingère des données de produit provenant d’une ou de plusieurs sources de catalogue dans un catalogue de base unifié. Considérez une source de catalogue comme *d’où* proviennent les données de catalogue brutes.
-
-En résumé, **source du catalogue** est le contexte de données que vous extrayez ; tandis que **vue du catalogue** est le contexte filtré, tarifié et organisé que vous présentez aux acheteurs ou aux canaux.
 
 ## Création d’une vue de catalogue
 
@@ -74,7 +64,7 @@ Avant de créer une vue de catalogue, vérifiez que vous disposez des éléments
 1. Configurez les détails de la vue Catalogue :
 
    - **Nom** : saisissez le nom de la vue du catalogue, par exemple `Celport`. &#x200B;
-   - **Sources de catalogue** : sélectionnez la source du catalogue (paramètres régionaux), par exemple `en-US`.
+   - **Sources de catalogue** : sélectionnez la [source de catalogue](catalog-source.md) par exemple `en-US`.
    - **Calques du catalogue**-Examinez les calques ingérés et la priorité.
    - **Politiques** : utilisez la liste déroulante pour sélectionner les politiques appropriées. Par exemple, « Marque », « Modèle ». &#x200B;Vérifiez que vous avez déjà [créé une politique](policies.md).
 
@@ -217,6 +207,7 @@ Les données de catalogue filtrées sont diffusées vers diverses destinations, 
 
 ## Plus comme ceci
 
+- [Sources de catalogue](catalog-source.md) - Définissez la portée faisant autorité des produits, attributs et catégories pour le comportement de recherche, de filtrage et de tri
 - [Calques de catalogue](catalog-layer.md) - Découvrez comment modifier les données de produit sans modifier la source d’origine.
 - [Politiques](policies.md) - Créez des politiques pour filtrer les produits dans les vues du catalogue
 - [Classeurs de prix](pricebooks.md) - Gérez les structures de prix pour différents segments de clientèle
