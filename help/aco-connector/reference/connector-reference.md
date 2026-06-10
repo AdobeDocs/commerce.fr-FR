@@ -2,7 +2,7 @@
 title: Modules [!DNL Adobe Commerce Optimizer Connector] et points d’entrée de flux
 description: Découvrez les modules, les points  [!DNL Adobe Commerce Optimizer Connector] ’entrée de l’API de flux du catalogue, les limites de lots et les chemins de configuration core_config_data pour  [!DNL Adobe Commerce].
 feature: Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'
 product_v2:

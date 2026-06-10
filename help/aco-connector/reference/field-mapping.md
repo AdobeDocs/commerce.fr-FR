@@ -3,7 +3,7 @@ title: Mappage des champs pour  [!DNL Adobe Commerce Optimizer Connector]  flux
 description: Découvrez le mappage  [!DNL Adobe Commerce Optimizer Connector]  champs des données  [!DNL Adobe Commerce]  catalogue aux formats d’API  [!DNL Adobe Commerce Optimizer] ’ingestion pour tous les flux.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:

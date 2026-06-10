@@ -2,7 +2,7 @@
 title: Intégration du storefront [!DNL Adobe Commerce Optimizer Connector] Headless
 description: Découvrez comment intégrer des vitrines découplées à l’API  [!DNL Adobe Commerce Optimizer Connector] GraphQL, aux identifiants de catalogue de prix et au codage d’ajout au panier de lots.
 feature: Storefront, Integration, GraphQL
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T16:27:30.102Z'
 TQID: 'https://experienceleague.adobe.com/Orif1rROglTQ-3ZkRj5LMF90Y-AdpfTnOgPmJXQjYgc'
 product_v2:

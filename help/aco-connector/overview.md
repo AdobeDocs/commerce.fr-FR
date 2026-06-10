@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]'
 description: 'Découvrez l [!DNL Adobe Commerce]  intégration entre et  [!DNL Adobe Commerce Optimizer]  pour la synchronisation des catalogues, la recherche et la diffusion storefront. [!DNL Adobe Commerce Optimizer Connector] '
 feature: Integration, Storefront, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
 product_v2:
@@ -118,7 +118,7 @@ Pour plus d’informations, consultez les rubriques suivantes :
 
 ### Configurer le marchandisage et les storefronts {#merchandising-storefronts}
 
-Une fois que [!DNL Adobe Commerce] données sont disponibles dans [!DNL Adobe Commerce Optimizer], utilisez [[!DNL Commerce Optimizer] Studio](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour) pour connecter les expériences de marchandisage et de storefront à votre catalogue synchronisé.
+Une fois que [!DNL Adobe Commerce] données sont disponibles dans [!DNL Adobe Commerce Optimizer], utilisez [[!DNL Commerce Optimizer] Studio](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/overview#quick-tour) pour connecter les expériences de marchandisage et de storefront à votre catalogue synchronisé.
 
 **Pour configurer le marchandisage et les storefronts dans [!DNL Commerce Optimizer] Studio :**
 
