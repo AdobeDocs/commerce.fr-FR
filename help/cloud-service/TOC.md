@@ -4,9 +4,9 @@ breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
+source-git-commit: 80c6dce4dfe95623fd22434e5bec765d1b95aba7
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '188'
 ht-degree: 4%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 4%
    - [Vue d’ensemble](migration/overview.md)
    - Outils de migration {#migration-tools}
       - [Outil de migration de données en bloc](migration/bulk-data.md)
+      - [Évaluation de la migration](migration/assessment.md)
       - [Outils de codage](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
    - {hide-from-toc}[Service Documentation RAG](migration/doc-rag.md)
 - [Connexion en tant que client](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
