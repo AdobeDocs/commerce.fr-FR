@@ -8,10 +8,16 @@ role: Developer
 level: Intermediate
 type: Tutorial
 TQID: 'https://experienceleague.adobe.com/aF6iiuFf5sCDyT0gmYmh8h94ZhMWr0DbIKrG1pI0G6I'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
 source-wordcount: 1291
@@ -21,7 +27,7 @@ ht-degree: 0%
 
 # Tutoriels préalables
 
-Cette page répertorie les conditions préalables et les étapes de configuration pour les tutoriels [!DNL Adobe Commerce as a Cloud Service], tels que le tutoriel sur l’extension [ratings](./ratings-extension.md) et le tutoriel sur l’extension de méthode d’expédition [](./shipping-method-extension.md).
+Cette page répertorie les conditions préalables et les étapes de configuration pour les tutoriels [!DNL Adobe Commerce as a Cloud Service], tels que le tutoriel sur l’extension [ratings](./ratings-extension.md) et le tutoriel sur l’extension de méthode d’expédition [&#128279;](./shipping-method-extension.md).
 
 ## Conditions préalables générales
 
@@ -183,14 +189,14 @@ Les sections suivantes décrivent comment configurer manuellement chaque composa
 
 Configurez un projet dans Adobe Developer Console avec les API et les informations d’identification requises.
 
-1. Accédez à [](https://developer.adobe.com/console){target="_blank"}.
+1. Accédez à [&#128279;](https://developer.adobe.com/console){target="_blank"}.
 1. Connectez-vous à l’aide de votre adresse e-mail et de votre mot de passe.
 
 #### Créer un projet
 
 Créez un projet App Builder dans le Adobe Developer Console pour héberger votre extension.
 
-1. Accédez à [](https://developer.adobe.com/).
+1. Accédez à [&#128279;](https://developer.adobe.com/).
 1. Cliquez sur **[!UICONTROL Create project from a template]**.
 1. Sélectionnez le modèle de **[!UICONTROL App Builder]**.
 1. Saisissez un **[!UICONTROL Project Title]** et un **[!UICONTROL App Name]**.
@@ -313,7 +319,7 @@ COMMERCE_GRAPHQL_ENDPOINT=
 
 Pour rechercher ces valeurs :
 
-1. Accédez à [Instances de service ](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances).
+1. Accédez à [Instances de service &#x200B;](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances).
 1. Cliquez sur l’icône d’informations en regard de votre instance.
 1. Copiez le point d’entrée REST en tant que `COMMERCE_BASE_URL`.
 1. Copiez le point d’entrée GraphQL en tant que `COMMERCE_GRAPHQL_ENDPOINT`.
