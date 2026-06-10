@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
+source-git-commit: 4377f9dc2b7e4c8f358d00b50187c8cbf091e19e
 workflow-type: tm+mt
-source-wordcount: 3098
+source-wordcount: 2168
 ht-degree: 1%
 
 ---
@@ -40,6 +40,17 @@ Les mises à jour incluent :
 ## Mises à jour des services hébergés
 
 Ces notes décrivent les mises à jour qui ont été publiées en dehors d’une version versionnée ou les améliorations apportées au service hébergé.
+
+_8 juin 2026_
+
+![Nouveau](../assets/new.svg) [!DNL Live Search] prend désormais en charge la recherche sémantique, configurable à partir de l’espace de travail [**Paramètres**](./settings.md#semantic-search). Contrairement à la recherche par mots-clés, la recherche sémantique utilise l’IA pour faire correspondre les produits par leur sens et leur contexte, ce qui contribue à réduire les recherches sans résultat pour les requêtes en langage naturel telles que « quelque chose de chaud pour une randonnée en hiver ». [En savoir plus](./semantic-search.md).
+
+**Configuration** : activez avec un seul bouton (bascule). Aucune configuration d’attribut ou modification du storefront n’est requise.
+
+**Disponibilité** (catalogues anglais uniquement) :
+
+- [!DNL Adobe Commerce as a Cloud Service] — Activé par défaut.
+- Adobe Commerce sur le cloud et On-premise — Doit être activé manuellement.
 
 _2 mai 2026_
 
@@ -454,8 +465,8 @@ Les installations [!DNL Live Search] existantes doivent être mises à niveau ve
 ![Nouveau](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) pris en charge pour [!DNL Live Search].
 ![Nouveau](../assets/new.svg) Le processus d&#39;installation de [!DNL Live Search] est mis à jour avec des modifications de processus avancées.
 ![Correctif](../assets/fix.svg) [Recherche avancée](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search) lien supprimé du pied de page du storefront.
-![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par l’API Commerce GraphQL[&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) lorsqu’ils sont utilisés dans le cadre de la version bêta de PWA : `description`, `name`, `short_description`
-![Bogue](../assets/bug.svg) la version bêta de PWA for [!DNL Live Search] ne prend pas en charge [la gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+![Bogue](../assets/bug.svg) Les attributs de produit suivants ne sont pas pris en charge par l’API Commerce GraphQL lorsqu’ils sont utilisés dans le cadre de la version bêta de PWA : `description`, `name`, `short_description`
+![Bogue](../assets/bug.svg) la version bêta de PWA for [!DNL Live Search] ne prend pas en charge [la gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).[&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)
 
 ### [!DNL Live Search] 1.3.1
 

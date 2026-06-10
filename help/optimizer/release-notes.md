@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
+source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1319
 ht-degree: 0%
 
 ---
@@ -31,6 +31,22 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 * Mises à jour de l’[API REST d’ingestion de données](https://developer.adobe.com/commerce/services/reference/rest/) et de l’API [GraphQL pour la récupération des données du catalogue de storefront](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## Juin 2026
+
+>[!BEGINSHADEBOX]
+
+### Recherche sémantique
+
+[!DNL Adobe Commerce Optimizer] prend désormais en charge la **[recherche sémantique]** dans l’onglet [**Recherche avancée**](./settings.md#advanced-search) de **[!UICONTROL Settings]**. La recherche sémantique utilise l’IA pour faire correspondre les produits par signification et par contexte, ainsi que la recherche par mot-clé, ce qui réduit les pages de recherche vides pour les requêtes en langage naturel. Elle est activée par défaut pour les catalogues anglais éligibles. Vous pouvez éventuellement régler **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]** et **[!UICONTROL Fuzzy search]** sur le même onglet. Aucune configuration d’attribut ou modification du storefront n’est requise. [En savoir plus](./setup/semantic-search.md).
+
+### Filtres de prix recommandés (version bêta)
+
+Les unités de recommandation de produit prennent désormais en charge [**filtres de prix**](./merchandising/recommendations/filters.md#price) à l’étape **[!UICONTROL Filter products]**. Incluez ou excluez des candidats à l’aide de règles **statiques** minimales et maximales ou **dynamiques** sur la page des détails du produit qui comparent les produits recommandés au **prix calculé final** du produit actuellement consulté à partir du catalogue des prix actifs du storefront. Les règles de prix filtrent le jeu de candidats. Ils ne reclassent pas les produits. [En savoir plus](./merchandising/recommendations/filters.md#price).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Mai 2026
 
