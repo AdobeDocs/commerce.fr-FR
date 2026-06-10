@@ -8,9 +8,13 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+TQID: 'https://experienceleague.adobe.com/KlGHs-HwVOAA1Q8knRSzZxUBd-mP6-qK7fkSLcNJcus'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '3398'
+source-wordcount: 3398
 ht-degree: 0%
 
 ---
@@ -52,8 +56,8 @@ Si l’une des commandes précédentes ne renvoie pas les résultats attendus, r
 
 Vérifiez également les éléments suivants :
 
-- Vous disposez d’une instance [!DNL Adobe Commerce as a Cloud Service] avec des données de produit. Voir [Instances du service &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/overview){target="_blank"}.
-- Un projet de storefront est connecté à votre instance [!DNL Commerce]. Si vous n’en avez pas, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr){target="_blank"}.
+- Vous disposez d’une instance [!DNL Adobe Commerce as a Cloud Service] avec des données de produit. Voir [Instances du service ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Un projet de storefront est connecté à votre instance [!DNL Commerce]. Si vous n’en avez pas, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
 - L’interface de ligne de commande `aem` est installée :
 
   ```bash
@@ -452,7 +456,7 @@ Cette commande s’abonne au webhook d’expédition avec les paramètres suivan
 
 Configurez ensuite l’interface utilisateur d’administration :
 
-1. Activez le SDK de l’interface utilisateur d’administration **(**&#x200B;[!UICONTROL Stores]&#x200B;**>**&#x200B;[!UICONTROL Settings]&#x200B;**>**&#x200B;[!UICONTROL Configuration]&#x200B;**>**&#x200B;[!UICONTROL Adobe Services]&#x200B;**>**&#x200B;[!UICONTROL Admin UI SDK]&#x200B;**>**&#x200B;[!UICONTROL Enable]&#x200B;**>**&#x200B;[!UICONTROL Yes]&#x200B;**).**
+1. Activez le SDK de l’interface utilisateur d’administration **(**[!UICONTROL Stores]**>**[!UICONTROL Settings]**>**[!UICONTROL Configuration]**>**[!UICONTROL Adobe Services]**>**[!UICONTROL Admin UI SDK]**>**[!UICONTROL Enable]**>**[!UICONTROL Yes]**).**
 
 1. Configurez les extensions en sélectionnant votre espace de travail et votre extension [!DNL App Builder].
 

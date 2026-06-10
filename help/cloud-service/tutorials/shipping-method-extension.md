@@ -4,9 +4,13 @@ description: Découvrez comment créer une extension de méthode d’expédition
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-source-git-commit: e55bc4db196d3d973b981bb2484be950dcd6b7c3
+TQID: 'https://experienceleague.adobe.com/vU71zRP-KEPdrmTW-M1mwkv-FFa0oHOcUJcG4afFo2s'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: 1893
 ht-degree: 0%
 
 ---
@@ -257,7 +261,7 @@ Après le déploiement, effectuez les étapes suivantes pour enregistrer l’op�
    - Cliquez sur **Configurer les extensions**, choisissez l’espace de travail sur lequel votre application est déployée, puis cliquez sur **Appliquer**. Vous pouvez également sélectionner l’option **Personnalisé** et saisir le nom de l’espace de travail.
    - Sélectionnez l’application [!DNL App Builder] dans la liste et enregistrez-la. Si l’application n’apparaît pas, cliquez sur **Actualiser les enregistrements** et réessayez.
 
-   SDK de l’interface utilisateur d’administration configure la fenêtre modale des extensions avec l’espace de travail et la sélection des extensions![&#128279;](../assets/admin-ui-configure-extensions.png){width="600" zoomable="yes"}
+   SDK de l’interface utilisateur d’administration configure la fenêtre modale des extensions avec l’espace de travail et la sélection des extensions](../assets/admin-ui-configure-extensions.png){width="600" zoomable="yes"}![
 
 1. **Configurez la méthode d’expédition simulée dans l’interface utilisateur d’administration d’Adobe Commerce :**
    - Ouvrez **Applications** et sélectionnez votre application.

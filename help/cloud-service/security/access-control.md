@@ -2,10 +2,14 @@
 title: Gestion des identités et accès
 description: Découvrez les fonctionnalités de gestion des identités et des accès d’Adobe Commerce as a Cloud Service.
 role: Admin, Developer, Leader
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
-source-git-commit: feb48068137c6a63e6594167fe969c3aa4b044c4
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+TQID: 'https://experienceleague.adobe.com/lbI3nsLtafel6GtquXnkZmXD2Z3b-rRGPOyr8EqzrjE'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: 419
 ht-degree: 0%
 
 ---
@@ -15,7 +19,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service] exploite l’infrastructure d’identité de niveau entreprise d’Adobe pour garantir un contrôle d’accès sécurisé, évolutif et centralisé dans tous les environnements. La gestion des identités et des accès (IAM) dans [!DNL Adobe Commerce as a Cloud Service] est conçue pour simplifier l’approvisionnement des utilisateurs, appliquer l’accès avec les privilèges d’accès les plus faibles et assurer la conformité aux normes de sécurité internationales.
 
-- **[!DNL Adobe Identity Management Services (IMS)]** : [!DNL Adobe Commerce as a Cloud Service] utilise [Adobe Identity Management Services (IMS)](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview) pour authentifier les utilisateurs et gérer les droits. Cela inclut la prise en charge des fournisseurs d’identité fédérée et du [contrôle d’accès en fonction du rôle](../user-management.md).
+- **[!DNL Adobe Identity Management Services (IMS)]** : [!DNL Adobe Commerce as a Cloud Service] utilise [Adobe Identity Management Services (IMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview) pour authentifier les utilisateurs et gérer les droits. Cela inclut la prise en charge des fournisseurs d’identité fédérée et du [contrôle d’accès en fonction du rôle](../user-management.md).
 
 - **Gouvernance d’Admin Console** : les administrateurs gèrent l’accès au storefront et au serveur principal via [!DNL Adobe Admin Console]. Les autorisations peuvent être limitées à des fonctionnalités et rôles spécifiques, garantissant ainsi un accès avec les privilèges les plus faibles.
 
@@ -36,7 +40,7 @@ Le [!DNL Adobe Admin Console] est le hub central pour gérer l’accès des util
 - **Profils de produit** : définissez des portées d’accès pour différents environnements, tels que l’évaluation et la production.
 - **Administration déléguée** : les administrateurs système et les administrateurs de produit peuvent gérer l’accès des utilisateurs sans intervention du service informatique.
 
-Pour plus d’informations, voir [gestion des utilisateurs](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/user-management).
+Pour plus d’informations, voir [gestion des utilisateurs](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management).
 
 ## Sécurité de l’authentification et de l’intégration des API
 
