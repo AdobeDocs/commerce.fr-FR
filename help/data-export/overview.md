@@ -4,10 +4,17 @@ description: Découvrez comment utiliser l [!DNL data export] extension pour les
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
 TQID: https://experienceleague.adobe.com/OHE1GBUEd8hHFPwFlO9fJa3Y0wK2xZ0HOYnwUn0-DSk
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
 source-wordcount: 571
@@ -40,7 +47,7 @@ L&#39;export de données en SaaS est livré sous forme d&#39;extension PHP. Il p
 
    - La page [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fournit des informations en temps réel sur l’intégrité et les performances des flux d’exportation de données qui transfèrent les données de produit et de catégorie de Commerce vers des services externes tels que les recommandations de produits, la recherche en direct et le service de catalogue, ou Adobe Commerce Optimizer.
 
-   - L’outil de ligne de commande [Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fournit des commandes pour synchroniser des flux spécifiques et inclut des options supplémentaires pour personnaliser le traitement des flux.
+   - L’outil de ligne de commande [Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fournit des commandes pour synchroniser des flux spécifiques et inclut des options supplémentaires pour personnaliser le traitement des flux.
 
 - **Synchronisation automatisée avec les tâches cron**
 
@@ -50,7 +57,7 @@ L&#39;export de données en SaaS est livré sous forme d&#39;extension PHP. Il p
 
 - **Exporter la planification et les performances**
 
-   - Les développeurs et les intégrateurs système peuvent estimer le temps nécessaire à l&#39;export des données SaaS pour synchroniser les données entre Adobe Commerce et les services connectés. Cette estimation peut vous aider à planifier le traitement de l’exportation des données afin d’éviter toute perturbation du site. Voir [ Estimer le volume de données et la durée de transmission](estimate-data-volume-sync-time.md).
+   - Les développeurs et les intégrateurs système peuvent estimer le temps nécessaire à l&#39;export des données SaaS pour synchroniser les données entre Adobe Commerce et les services connectés. Cette estimation peut vous aider à planifier le traitement de l’exportation des données afin d’éviter toute perturbation du site. Voir [&#x200B; Estimer le volume de données et la durée de transmission](estimate-data-volume-sync-time.md).
 
    - Dans les cas où la synchronisation doit se produire plus rapidement, l’exportation des données SaaS fournit des options de personnalisation pour améliorer les performances de traitement des exportations. Voir [Amélioration des performances d’exportation des données](customize-export-processing.md).
 

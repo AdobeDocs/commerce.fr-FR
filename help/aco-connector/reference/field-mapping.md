@@ -6,11 +6,22 @@ feature: Integration, Configuration
 badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e7dae43f-215c-4cdf-90d3-c5a461a6e669id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: e0eb8757-182f-49f3-94a4-1587d16f5094id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
 source-git-commit: 1f901b4a72c10dc4e710742b98c03e88cbc8739f
 workflow-type: tm+mt
 source-wordcount: 465
@@ -45,8 +56,8 @@ Cette page décrit comment l’[!DNL Adobe Commerce Optimizer Connector] transfo
 | `categoryData[].categoryPath` | `routes[].path` | |
 | `categoryData[].productPosition` | `routes[].position` | |
 | `links[].type` + `links[].sku` | `links[]` | `type` mis en majuscules ; entrées sans `sku` supprimées |
-| `parents[].productType` + `parents[].sku` | `links[]` | Type mappé : →`VARIANT_OF`, `bundle`/`bundle_fixed`→`IN_BUNDLE``configurable` |
-| `configurable options` | `configurations[]` | →`attributeCode`, `label` ; type d’option `SWATCH` lorsque `swatchType` est défini, sinon `CONFIGURABLE` ; variante par défaut de `isDefault` ; les valeurs comprennent `variantReferenceId`, `label`, `colorHex`, `imageUrl``id` |
+| `parents[].productType` + `parents[].sku` | `links[]` | Type mappé : →`VARIANT_OF`, `bundle`/`bundle_fixed`→`IN_BUNDLE`&#x200B;`configurable` |
+| `configurable options` | `configurations[]` | →`attributeCode`, `label` ; type d’option `SWATCH` lorsque `swatchType` est défini, sinon `CONFIGURABLE` ; variante par défaut de `isDefault` ; les valeurs comprennent `variantReferenceId`, `label`, `colorHex`, `imageUrl`&#x200B;`id` |
 | `bundle options` | `bundles[]` | →`group`; `required`; `renderType` `checkbox`/`multi`→`multiSelect: true`; SKU par défaut de `isDefault`; les éléments comprennent `sku`, `qty`, `userDefinedQty` (`qtyMutability`)`label` |
 
 ## Métadonnées des attributs de produit
