@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 583
+source-wordcount: 605
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 # Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce
 
 La commande `saas:resync` du package `magento/saas-export` permet de gérer la synchronisation des données pour les services SaaS Adobe Commerce.
+
+>[!NOTE]
+>
+>La commande `saas:resync` s’applique également aux flux [!DNL Adobe Commerce Optimizer Connector] tels que `products`, `categories` et `priceBooks`. Consultez [Flux pris en charge](../aco-connector/reference/connector-reference.md#supported-feeds) pour obtenir la liste complète des flux de connecteur et des noms d’indexeur.
 
 Adobe déconseille d&#39;utiliser régulièrement la commande `saas:resync`. Les scénarios classiques d’utilisation de la commande sont les suivants :
 

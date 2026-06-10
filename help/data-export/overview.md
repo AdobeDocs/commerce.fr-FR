@@ -15,20 +15,20 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 569
+source-wordcount: 571
 ht-degree: 0%
 
 ---
 
 # Guide [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] synchronise les données entre une instance Adobe Commerce et les services Commerce connectés. Lorsque vous ajoutez Live Search, Product Recommendations ou le service de catalogue à une installation d’Adobe Commerce, l’extension [!DNL Data export] est installée automatiquement.
+[!DNL SaaS data export] synchronise les données entre une instance Adobe Commerce et les services Commerce connectés. Lorsque vous ajoutez Live Search, Product Recommendations, Catalog Service ou l’[!DNL Adobe Commerce Optimizer Connector] à une installation Adobe Commerce, l’extension [!DNL Data export] est installée automatiquement.
 
 >[!NOTE]
 >
->Si vous installez le connecteur Adobe Commerce Optimizer, la même extension d’exportation de données est utilisée pour envoyer des flux de catalogue et de tarification à Adobe Commerce Optimizer à l’aide du modèle de données de catalogue composable (CCDM). Voir le guide du connecteur Adobe Commerce Optimizer [&#128279;](../aco-connector/overview.md) pour les détails d&#39;architecture et de configuration.
+>Si vous installez le [!DNL Adobe Commerce Optimizer Connector], la même extension [!DNL Data Export] collecte les flux de catalogue et de prix de [!DNL Adobe Commerce]. Le connecteur mappe ensuite et envoie ces flux aux [!DNL Adobe Commerce Optimizer] à l’aide du modèle de données de catalogue composable (CCDM). Consultez les sections [[!DNL Adobe Commerce Optimizer Connector] présentation](../aco-connector/overview.md) pour la configuration et l’architecture, et [Pipeline de synchronisation du connecteur](../aco-connector/connector-sync-pipeline.md) pour connaître le comportement de synchronisation après l’exportation.
 
 L’exportation de données SaaS collecte et exporte divers types de données, appelés _flux_, qui agrègent des types spécifiques d’informations. Selon les services Commerce installés, les flux d’exportation de données SaaS incluent :
 

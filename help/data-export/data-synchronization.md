@@ -18,9 +18,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 1037
+source-wordcount: 1104
 ht-degree: 0%
 
 ---
@@ -41,6 +41,10 @@ Les principaux composants du flux d&#39;exportation de données SaaS sont les su
 - Modules d’exportation de données SaaS qui collectent les données pour les flux d’Adobe Commerce, assemblent les éléments des flux, écoutent les mises à jour et conservent le statut des flux.
 - Les modules SaaS exportent les données, configurent le routage et publient les flux vers les services connectés.
 - Le service Adobe Commerce gère le processus d’ingestion des données pour valider les flux entrants et conserver les mises à jour des services connectés.
+
+>[!NOTE]
+>
+>Pour les déploiements [!DNL Adobe Commerce Optimizer Connector], [!DNL SaaS Data Export] gère la détection des modifications d’entité et l’assemblage d’alimentation. Le connecteur mappe ensuite les flux au format [!DNL Catalog Data Ingestion API] et les envoie vers [!DNL Adobe Commerce Optimizer]. Voir [Pipeline de synchronisation du connecteur](../aco-connector/connector-sync-pipeline.md) pour le contrôle de l’étendue, l’envoi et la gestion des erreurs.
 
 >[!NOTE]
 >
@@ -79,6 +83,8 @@ Le processus d’exportation des données utilise les tâches cron suivantes pou
 
 Ces tâches s’exécutent toutes les minutes.
 
+Les mêmes tâches cron de synchronisation partielle s’exécutent pour les flux [!DNL Adobe Commerce Optimizer Connector]. Pour l’envoi et la gestion des erreurs spécifiques au connecteur, voir [Pipeline de synchronisation du connecteur](../aco-connector/connector-sync-pipeline.md).
+
 Pour que la synchronisation partielle fonctionne, l’application Commerce nécessite la configuration suivante :
 
 - [La planification des tâches est activée via les tâches cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=fr)
@@ -106,7 +112,7 @@ La plupart des activités de synchronisation sont traitées automatiquement en f
 
 >[!NOTE]
 >
->Le tableau de bord de gestion des données est disponible uniquement si Live Search, les recommandations de produits ou le service de catalogue sont installés. Le tableau de bord Statut de la synchronisation des flux de données est disponible si ces services ou le connecteur [&#128279;](../aco-connector/overview.md) sont installés.
+>Le tableau de bord de gestion des données est disponible uniquement si Live Search, les recommandations de produits ou le service de catalogue sont installés. Le tableau de bord Statut de la synchronisation des flux de données est disponible si ces services ou le connecteur [&#128279;](../aco-connector/overview.md) sont installés. Pour connaître le comportement du pipeline du connecteur Optimizer, y compris les erreurs de contrôle de la portée et d’envoi, voir [Pipeline de synchronisation du connecteur](../aco-connector/connector-sync-pipeline.md).
 
 ### Vérification de la configuration de l’application Commerce
 
