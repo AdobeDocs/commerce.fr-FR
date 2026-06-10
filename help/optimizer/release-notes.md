@@ -4,21 +4,15 @@ description: Informations de mise à jour mensuelles pour  [!DNL Adobe Commerce 
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1319
 ht-degree: 0%
 
 ---
@@ -31,6 +25,22 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 * Mises à jour de l’[API REST d’ingestion de données](https://developer.adobe.com/commerce/services/reference/rest/) et de l’API [GraphQL pour la récupération des données du catalogue de storefront](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## Juin 2026
+
+>[!BEGINSHADEBOX]
+
+### Recherche sémantique
+
+[!DNL Adobe Commerce Optimizer] prend désormais en charge la **[recherche sémantique]** dans l’onglet [**Recherche avancée**](./settings.md#advanced-search) de **[!UICONTROL Settings]**. La recherche sémantique utilise l’IA pour faire correspondre les produits par signification et par contexte, ainsi que la recherche par mot-clé, ce qui réduit les pages de recherche vides pour les requêtes en langage naturel. Elle est activée par défaut pour les catalogues anglais éligibles. Vous pouvez éventuellement régler **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]** et **[!UICONTROL Fuzzy search]** sur le même onglet. Aucune configuration d’attribut ou modification du storefront n’est requise. [En savoir plus](./setup/semantic-search.md).
+
+### Filtres de prix recommandés (version bêta)
+
+Les unités de recommandation de produit prennent désormais en charge [**filtres de prix**](./merchandising/recommendations/filters.md#price) à l’étape **[!UICONTROL Filter products]**. Incluez ou excluez des candidats à l’aide de règles **statiques** minimales et maximales ou **dynamiques** sur la page des détails du produit qui comparent les produits recommandés au **prix calculé final** du produit actuellement consulté à partir du catalogue des prix actifs du storefront. Les règles de prix filtrent le jeu de candidats. Ils ne reclassent pas les produits. [En savoir plus](./merchandising/recommendations/filters.md#price).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Mai 2026
 
@@ -79,7 +89,7 @@ _4 mai 2026_
 
 ### Filtre de prix (version bêta)
 
-Les filtres de recommandation incluent désormais un [&#x200B; filtre de plage de prix &#x200B;](./merchandising/recommendations/filters.md#price) (minimum et maximum).
+Les filtres de recommandation incluent désormais un [ filtre de plage de prix ](./merchandising/recommendations/filters.md#price) (minimum et maximum).
 
 ### Mises à jour des API
 
@@ -87,7 +97,7 @@ _29 avril 2026_
 
 <!--v1.52 release-->
 
-**Traitement par lots des requêtes requis** — L’API GraphQL applique désormais un maximum de 100 SKU par requête lorsque vous récupérez des données de catalogue. Voir [limites et limites documentées](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Traitement par lots des requêtes requis** — L’API GraphQL applique désormais un maximum de 100 SKU par requête lorsque vous récupérez des données de catalogue. Voir [limites et limites documentées](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
@@ -131,7 +141,7 @@ Les bundles dynamiques renvoient désormais une plage de prix calculée. <!--DAT
 
 ### Vue Catalogue pour les règles et recommandations de marchandisage (version bêta)
 
-Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](./merchandising/rules/add.md).
+Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [ des règles de marchandisage](./merchandising/rules/add.md).
 
 ### Mises à jour des API
 
