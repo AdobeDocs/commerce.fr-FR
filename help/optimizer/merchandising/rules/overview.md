@@ -14,16 +14,16 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 838
+source-wordcount: 760
 ht-degree: 0%
 
 ---
 
 # Règles de marchandisage
 
-Les règles de marchandisage associent une logique à des actions pour définir la façon dont les produits apparaissent dans **résultats de recherche**, sur **listes de produits par défaut** (**Toutes les listes de produits**) et sur **pages de catégorie** ([règles de catégorie](#category-rules) sont en version bêta). Vous pouvez booster, enterrer, épingler ou masquer des produits et appliquer le **classement intelligent** afin que les annonces reflètent les objectifs de votre entreprise.
+Les règles de marchandisage associent une logique à des actions pour définir la façon dont les produits apparaissent dans **résultats de recherche**, sur **listes de produits par défaut** (**Toutes les listes de produits**) et sur **pages de catégorie**. Vous pouvez booster, enterrer, épingler ou masquer des produits et appliquer le **classement intelligent** afin que les annonces reflètent les objectifs de votre entreprise.
 
 Chaque **règle de recherche** comporte trois composants principaux :
 
@@ -36,10 +36,6 @@ Chaque **règle de recherche** comporte trois composants principaux :
 Vous pouvez combiner plusieurs conditions et actions pour les règles de recherche et planifier l’activation de n’importe quelle règle pour une période donnée. Vous pouvez également définir une **règle par défaut** (**Toutes les listes de produits**) qui s’applique lorsqu’aucune règle de recherche ou de catégorie plus spécifique ne s’applique.
 
 ## Règles de catégorie {#category-rules}
-
->[!IMPORTANT]
->
->Les règles de catégorie sont en version Beta.
 
 **Règles de catégorie** contrôlez l’ordre des produits sur les **pages de catégorie**. Vous sélectionnez une ou plusieurs catégories, puis appliquez un classement intelligent (par exemple, les plus consultés, en tendance) et des actions manuelles telles que épingler, booster et enterrer. Ils n’utilisent pas les conditions de requête de recherche. Pour connaître les étapes de configuration, les types de règle et la manière dont le classement s’applique à la catégorie par rapport à la recherche, consultez [Création et gestion des règles](add.md).
 

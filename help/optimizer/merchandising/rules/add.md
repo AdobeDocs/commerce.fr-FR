@@ -16,9 +16,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 3222
+source-wordcount: 3074
 ht-degree: 0%
 
 ---
@@ -32,10 +32,6 @@ Pour créer une règle, ouvrez l’éditeur de règles, choisissez un **type de 
 1. Dans le rail de gauche, accédez à _Marchandisage_ > **Règles de marchandisage**.
 1. (Facultatif) Utilisez la liste déroulante **Vue du catalogue** pour sélectionner la vue du catalogue à laquelle la règle doit s’appliquer. La règle que vous créez est étendue à la vue sélectionnée (ou à toutes les vues de catalogue si **Toutes les vues** est sélectionné). Voir [Sélectionner la vue du catalogue](workspace.md#select-catalog-view) pour savoir comment fonctionne la portée de la vue du catalogue.
 
-   >[!IMPORTANT]
-   >
-   >Les vues catalogue sont actuellement en version [bêta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les règles de marchandisage existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
-
 1. Cliquez sur **[!UICONTROL Create rule]** pour lancer l’éditeur de règles.
 
 ![Créer une règle](../../assets/create-rule.png)
@@ -47,7 +43,7 @@ Chaque type de règle comporte une icône d’information dans l’éditeur, acc
 | Type de règle | Objectif |
 | --- | --- |
 | **Règle Tous les produits** | Classement et marchandisage par défaut dans les listes de produits lorsqu’aucune règle de recherche ou de catégorie plus spécifique ne s’applique. Vous ne pouvez créer qu’une seule règle de ce type. Elle ne peut pas contenir de conditions. |
-| **Règle de catégorie** (Beta) | Applique le marchandisage et le classement à une ou plusieurs catégories sélectionnées, en contrôlant l’ordre des produits sur ces pages de catégorie. |
+| **Règle de catégorie** | Applique le marchandisage et le classement à une ou plusieurs catégories sélectionnées, en contrôlant l’ordre des produits sur ces pages de catégorie. |
 | **Règle de recherche** | Applique le marchandisage et le classement lorsque les acheteurs exécutent une recherche correspondant aux conditions de requête de la règle. |
 
 Dans la section **Créer votre règle**, définissez le nom de la règle, le planning, si la règle s&#39;applique à toutes les annonces ou à des conditions de recherche spécifiques, ainsi que les types de classement.
@@ -103,10 +99,6 @@ Une règle peut contenir jusqu’à dix conditions. L’opérateur logique qui j
 1. Définissez [Classement intelligent](#intelligent-ranking) et [Classement manuel](#manual-ranking) comme décrit dans les sections suivantes. Les mêmes commandes s’appliquent aux pages de catégorie, avec les différences signalées.
 
 >[!TAB  Règle de catégorie ]
-
->[!IMPORTANT]
->
->Les règles de catégorie sont en version Beta.
 
 Les règles de catégorie contrôlent la manière dont les produits sont triés sur les **pages de catégorie**. Vous combinez les **règles de catégorie** avec le **classement intelligent** (y compris les signaux pilotés par l’IA) et les **actions manuelles** telles que l’épinglage, l’amplification et l’enterrement, afin d’organiser la découverte, d’exécuter des promotions et d’aligner les pages de catégorie sur votre stratégie sans recourir à des outils externes.
 

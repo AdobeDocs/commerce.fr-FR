@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1319
+source-wordcount: 1316
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Les unités de recommandation de produit prennent désormais en charge [**filtre
 
 ### Amplification intelligente du classement
 
-[Les règles de marchandisage](./merchandising/rules/add.md#intelligent-ranking-boost) pour la recherche, les listes de produits par défaut et les [pages de catégories](./merchandising/rules/add.md#rule-types) (version bêta) incluent désormais **[!UICONTROL Intelligent Ranking Boost]**. Vous pouvez ajuster la mesure dans laquelle des stratégies telles que **Les plus consultés** ou **Tendance** influencent l’ordre des produits par rapport à la pertinence textuelle sur la recherche et les signaux comportementaux sur les listes de catégories. L’aperçu des règles reflète vos paramètres. L’amplification est appliquée au moment de la requête. Vous n’avez donc pas besoin d’une resynchronisation du catalogue lorsque vous la modifiez.
+[Les règles de marchandisage](./merchandising/rules/add.md#intelligent-ranking-boost) pour la recherche, les listes de produits par défaut et les [pages de catégories](./merchandising/rules/add.md#rule-types) incluent désormais **[!UICONTROL Intelligent Ranking Boost]**. Vous pouvez ajuster la mesure dans laquelle des stratégies telles que **Les plus consultés** ou **Tendance** influencent l’ordre des produits par rapport à la pertinence textuelle sur la recherche et les signaux comportementaux sur les listes de catégories. L’aperçu des règles reflète vos paramètres. L’amplification est appliquée au moment de la requête. Vous n’avez donc pas besoin d’une resynchronisation du catalogue lorsque vous la modifiez.
 
 ### Mises à jour des API
 
@@ -89,7 +89,7 @@ _4 mai 2026_
 
 >[!BEGINSHADEBOX]
 
-### Règles de catalogue (version bêta)
+### Règles de catalogue
 
 [Règles de catégorie](./merchandising/rules/add.md) étendez les règles de marchandisage afin de cibler les catégories et de contrôler l’ordre des produits sur les pages de catégorie avec le même classement et les mêmes actions (épingler, booster, enterrer) que la recherche.
 
@@ -145,7 +145,7 @@ Les bundles dynamiques renvoient désormais une plage de prix calculée. <!--DAT
 
 >[!BEGINSHADEBOX]
 
-### Vue Catalogue pour les règles et recommandations de marchandisage (version bêta)
+### Vue Catalogue pour les règles et recommandations de marchandisage
 
 Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](./merchandising/rules/add.md).
 

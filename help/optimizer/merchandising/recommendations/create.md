@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1615
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -35,10 +35,6 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 1. Dans la barre latérale _[!DNL Adobe Commerce Optimizer]_, accédez à_ Marchandisage _>**Recommandations**&#x200B;pour afficher l’espace de travail_ Recommandations _.
 
 1. Dans le champ **Vue du catalogue**, sélectionnez la vue du catalogue dans laquelle vous souhaitez que la recommandation soit disponible. En savoir plus sur l’[utilisation des vues de catalogue pour les recommandations](../../manage-results/recommendation-performance.md#select-catalog-view).
-
-   >[!IMPORTANT]
-   >
-   >Cette fonctionnalité est actuellement en version [bêta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Les participants de Beta devront recréer toutes les unités de recommandation existantes pour tirer parti de la nouvelle portée d’affichage du catalogue.
 
 1. Cliquez sur **Créer une recommandation**.
 

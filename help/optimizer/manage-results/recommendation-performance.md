@@ -14,9 +14,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 964
+source-wordcount: 958
 ht-degree: 0%
 
 ---
@@ -96,10 +96,6 @@ Découvrez comment [créer ou gérer une recommandation existante](../merchandis
 | vCTR | (Taux de clic publicitaire visible) mesure les clics en fonction uniquement des impressions visibles (recommandations qui se sont en fait affichées dans la partie visible de l’écran de l’acheteur), offrant ainsi une mesure plus précise de l’engagement de l’acheteur. |
 
 ## Sélectionner la vue du catalogue
-
->[!IMPORTANT]
->
->Cette fonctionnalité est actuellement en version bêta.
 
 Le sélecteur de **[!UICONTROL Catalog view]** de la page **Recommendations** effectue deux opérations :
 

@@ -12,9 +12,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 969
+source-wordcount: 963
 ht-degree: 1%
 
 ---
@@ -100,10 +100,6 @@ Le panneau des détails affiche le nom de la règle, le statut, les conditions e
 | Activé | Contrôle qui modifie le statut de la règle. Options : Activé / Désactivé |
 
 ## Sélectionner la vue du catalogue
-
->[!IMPORTANT]
->
->Cette fonctionnalité est actuellement en version bêta.
 
 Le sélecteur **[!UICONTROL Catalog view]** de la page Règles de marchandisage effectue deux opérations :
 
