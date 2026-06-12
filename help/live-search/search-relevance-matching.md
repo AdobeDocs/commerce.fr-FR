@@ -71,7 +71,7 @@ La pertinence n’est pas déterminée uniquement par la correspondance d’expr
 
 Du fait de l’interaction de ces signaux, un produit qui correspond uniquement au niveau le plus large peut parfois se classer au-dessus d’une correspondance d’expressions plus stricte, par exemple lorsque les **poids de recherche** ou la fréquence des termes dans un champ à poids élevé l’emportent sur une correspondance d’expressions plus faible ailleurs.
 
-**Exemple :** si **pantalon rouge** apparaît comme une expression dans **description** avec **poids de recherche = 1**, mais **rouge** et **pants** apparaissent séparément dans **name** et **color** avec **poids de recherche = 10**, l’expression match dans **** peut ne pas l’emporter sur la correspondance de division, en fonction du score global.
+**Exemple :** si **pantalon rouge** apparaît comme une expression dans **description** avec **poids de recherche = 1**, mais **rouge** et **pants** apparaissent séparément dans **name** et **color** avec **poids de recherche = 10**, l’expression match dans **&#x200B;**&#x200B;peut ne pas l’emporter sur la correspondance de division, en fonction du score global.
 
 Les règles manuelles **pin** et **bury** restent fortes ; les règles **boost** peuvent nécessiter un réglage pour surmonter les nouveaux boosts de phrase et de même champ. Validez les requêtes importantes après avoir modifié les poids ou les règles.
 
