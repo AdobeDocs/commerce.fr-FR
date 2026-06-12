@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 3008
+source-wordcount: 3006
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ Plusieurs facteurs clés déterminent la pertinence et l’efficacité des résu
 - Une expérience de recherche bien conçue renforce la confiance des clients et les incite à croire qu’ils peuvent trouver ce dont ils ont besoin.
 - Les règles de recherche sont essentielles, car elles peuvent améliorer la visibilité de certains produits en fonction de leur popularité, des nouveaux arrivants, des critères promotionnels ou de toute autre stratégie de marchandisage pour répondre aux besoins de votre entreprise.
 - La navigation à facettes permet aux acheteurs d’affiner leur recherche et d’obtenir rapidement des résultats pertinents.
+
+Pour comprendre comment [!DNL Live Search] les priorités **correspondances exactes et proches, correspondances de même champ et correspondances entre champs** et comment ces facteurs interagissent avec les poids et les règles de recherche, consultez [Correspondance et classement des recherches](search-relevance-matching.md).
 
 Pour gérer les [!DNL Live Search], accédez à **Marketing** > *SEO et recherche* > **[!DNL Live Search]** dans Adobe [!DNL Commerce] Admin. 
 

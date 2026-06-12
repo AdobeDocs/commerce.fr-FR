@@ -12,9 +12,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 787
+source-wordcount: 812
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ Le client appelle le service de recherche du storefront pour récupérer les mé
 Pour construire une requête dynamique, le service de recherche doit connaître les attributs pouvant faire l’objet d’une recherche et leur [poids](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] respecte les poids de recherche Adobe Commerce (1 à 10, où 10 est la priorité la plus élevée). La liste des données synchronisées et partagées avec le service de catalogue se trouve dans le schéma , qui est défini dans :
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+Pour comprendre comment les attributs et les poids pouvant faire l’objet d’une recherche interagissent avec **correspondance exacte**, **proche**, entre mêmes champs et entre champs au moment de la requête, consultez [Correspondance et classement des recherches](search-relevance-matching.md).
 
 ![[!DNL Live Search] le diagramme de recherche du client d’indexation](assets/indexing-pipeline.svg)
 
