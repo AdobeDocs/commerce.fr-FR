@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->La fonctionnalité suivante est disponible dans [Private Beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>La fonctionnalité suivante est disponible dans [Private Beta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta).
 
 [!DNL Live Search] classe les résultats afin que les acheteurs voient d’abord les produits les plus pertinents. Le service donne un coup de pouce puissant aux produits dont le texte de catalogue **correspond étroitement** à ce que l’acheteur tape, puis favorise les correspondances où les termes de requête apparaissent ensemble de manière significative et inclut enfin des correspondances plus larges (y compris un comportement qui prend en charge la correspondance de style de saisie automatique).
 
@@ -66,7 +66,7 @@ La pertinence n’est pas déterminée uniquement par la correspondance d’expr
 - Booster à partir de la correspondance **exacte / proche** des expressions
 - Amplifier lorsque **tous les termes de la requête** apparaissent dans le champ **même**
 - **Classement intelligent** (lorsqu’il est activé), qui associe la pertinence textuelle aux signaux comportementaux, consultez la section [Fonctionnement du classement intelligent](rules-add.md#how-intelligent-ranking-scoring-works)
-- **[Poids de la recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** sur chaque attribut et autres facteurs de pertinence textuelle (par exemple, la fréquence d’apparition des termes et la longueur du nom ou de la description). Dans [!DNL Adobe Commerce] Admin, configurez **Utiliser dans la recherche** et **Poids de la recherche** pour les attributs de produit.
+- **[Poids de la recherche](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results)** sur chaque attribut et autres facteurs de pertinence textuelle (par exemple, la fréquence d’apparition des termes et la longueur du nom ou de la description). Dans [!DNL Adobe Commerce] Admin, configurez **Utiliser dans la recherche** et **Poids de la recherche** pour les attributs de produit.
 - **[Rechercher des règles de marchandisage](rules.md)** telles que épingler, amplifier et enterrer
 
 Du fait de l’interaction de ces signaux, un produit qui correspond uniquement au niveau le plus large peut parfois se classer au-dessus d’une correspondance d’expressions plus stricte, par exemple lorsque les **poids de recherche** ou la fréquence des termes dans un champ à poids élevé l’emportent sur une correspondance d’expressions plus faible ailleurs.
