@@ -1,29 +1,23 @@
 ---
 title: Règles de marchandisage
 description: '[!DNL Adobe Commerce Optimizer] règles de marchandisage associent une logique à des actions pour façonner les résultats de recherche, les listes de produits par défaut et les pages de catégories.'
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 838
+source-wordcount: 760
 ht-degree: 0%
 
 ---
 
 # Règles de marchandisage
 
-Les règles de marchandisage associent une logique à des actions pour définir la façon dont les produits apparaissent dans **résultats de recherche**, sur **listes de produits par défaut** (**Toutes les listes de produits**) et sur **pages de catégorie** ([règles de catégorie](#category-rules) sont en version bêta). Vous pouvez booster, enterrer, épingler ou masquer des produits et appliquer le **classement intelligent** afin que les annonces reflètent les objectifs de votre entreprise.
+Les règles de marchandisage associent une logique à des actions pour définir la façon dont les produits apparaissent dans **résultats de recherche**, sur **listes de produits par défaut** (**Toutes les listes de produits**) et sur **pages de catégorie**. Vous pouvez booster, enterrer, épingler ou masquer des produits et appliquer le **classement intelligent** afin que les annonces reflètent les objectifs de votre entreprise.
 
 Chaque **règle de recherche** comporte trois composants principaux :
 
@@ -36,10 +30,6 @@ Chaque **règle de recherche** comporte trois composants principaux :
 Vous pouvez combiner plusieurs conditions et actions pour les règles de recherche et planifier l’activation de n’importe quelle règle pour une période donnée. Vous pouvez également définir une **règle par défaut** (**Toutes les listes de produits**) qui s’applique lorsqu’aucune règle de recherche ou de catégorie plus spécifique ne s’applique.
 
 ## Règles de catégorie {#category-rules}
-
->[!IMPORTANT]
->
->Les règles de catégorie sont en version Beta.
 
 **Règles de catégorie** contrôlez l’ordre des produits sur les **pages de catégorie**. Vous sélectionnez une ou plusieurs catégories, puis appliquez un classement intelligent (par exemple, les plus consultés, en tendance) et des actions manuelles telles que épingler, booster et enterrer. Ils n’utilisent pas les conditions de requête de recherche. Pour connaître les étapes de configuration, les types de règle et la manière dont le classement s’applique à la catégorie par rapport à la recherche, consultez [Création et gestion des règles](add.md).
 

@@ -1,20 +1,15 @@
 ---
 title: Workspace des règles de marchandisage
 description: Découvrez l’espace de travail Règles de marchandisage .
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 3deac529-731d-44b9-87f3-3c9cb36e28e7
 TQID: https://experienceleague.adobe.com/YTwJtajv57YUgirNdUi174VyCkZozV79V3AW1bRktJY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 969
+source-wordcount: 963
 ht-degree: 1%
 
 ---
@@ -29,7 +24,7 @@ L’espace de travail *Règles de marchandisage* répertorie la sélection actue
 - Supprimer les règles
 - Accès à l’éditeur de règles
 
-Workspace des règles de marchandisage![&#128279;](../../assets/rules-workspace.png)
+Workspace des règles de marchandisage](../../assets/rules-workspace.png)![
 
 ## Afficher/masquer les colonnes
 
@@ -100,10 +95,6 @@ Le panneau des détails affiche le nom de la règle, le statut, les conditions e
 | Activé | Contrôle qui modifie le statut de la règle. Options : Activé / Désactivé |
 
 ## Sélectionner la vue du catalogue
-
->[!IMPORTANT]
->
->Cette fonctionnalité est actuellement en version bêta.
 
 Le sélecteur **[!UICONTROL Catalog view]** de la page Règles de marchandisage effectue deux opérations :
 

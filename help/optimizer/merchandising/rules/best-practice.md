@@ -2,26 +2,22 @@
 title: Bonnes pratiques relatives aux règles de marchandisage
 description: Découvrez les bonnes pratiques d’implémentation des règles de marchandisage pour les pages de recherche, d’annonces par défaut et de catégories.
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 TQID: https://experienceleague.adobe.com/DrdrBBXeMyqQr16h1LrlSoet3F6ihn57LBmPFBUXmTs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 404
+source-wordcount: 398
 ht-degree: 0%
 
 ---
 
 # Bonnes pratiques relatives aux règles de marchandisage
 
-Pour optimiser la conversion et le chiffre d’affaires, implémentez des **règles de recherche** efficaces, une règle **liste par défaut** et **[règles de catégorie](add.md#rule-types)** (version bêta). Ajustez les classements à l’aide des données de vente, des stocks, des promotions et du [classement intelligent](add.md#intelligent-ranking).
+Pour optimiser la conversion et le chiffre d’affaires, implémentez des **règles de recherche** efficaces, une **liste par défaut** une règle et des **[règles de catégorie](add.md#rule-types)**. Ajustez les classements à l’aide des données de vente, des stocks, des promotions et du [classement intelligent](add.md#intelligent-ranking).
 
 Il est essentiel d’établir une règle **par défaut** bien pensée. Votre [règle par défaut](overview.md#default-rule) détermine la manière dont les résultats de recherche sont initialement triés lorsqu’aucune règle de recherche plus spécifique ne s’applique, ce qui améliore la probabilité de découverte et d’achat. Consultez-le régulièrement afin qu’il suive le rythme des besoins et des campagnes des acheteurs.
 
@@ -38,10 +34,6 @@ Il est essentiel d’établir une règle **par défaut** bien pensée. Votre [r�
 - Utilisez toujours le panneau « Tester votre règle » pour prévisualiser l’impact de votre stratégie de classement intelligente sur les résultats de recherche réels pour différentes requêtes.
 
 ## Conseils pour les règles de catégorie
-
->[!IMPORTANT]
->
->Les règles de catégorie sont en version Beta.
 
 - Utilisez des [règles de catégorie](add.md#rule-types) sur les pages à trafic élevé ou à marge élevée **pages de catégorie** où l’ordre traité importe autant que la recherche (par exemple, les collections saisonnières ou les services présentés).
 - Alignez le **classement intelligent** (par exemple, tendance, les plus consultés) sur la manière dont les acheteurs parcourent cette catégorie ; les pages de catégorie n’utilisent pas le texte de requête de recherche de la même manière que les règles de recherche. Voir [Classement intelligent](add.md#intelligent-ranking). Pour les méthodes intelligentes autres que **Aucune**, utilisez **[Amplification de classement intelligente](add.md#intelligent-ranking-boost)** et l’aperçu des catégories pour ajuster la force comportementale de cette règle de catégorie.
