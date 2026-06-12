@@ -1,23 +1,15 @@
 ---
 title: Performances de recherche
 description: La page Performances de la recherche fournit insight dans les termes de recherche utilisés par les acheteurs.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
 TQID: https://experienceleague.adobe.com/dbCSRGA-jOSM37O-6THv0ArNZBD0Jsy4ml-1hSiY7YQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: b9b57bb7279354c9d5c2a7efc6e1ba14c1c36598
 workflow-type: tm+mt
-source-wordcount: 1905
+source-wordcount: 1936
 ht-degree: 0%
 
 ---
@@ -37,6 +29,10 @@ La page *Performances de recherche* fournit insight dans les termes de recherche
 >[!IMPORTANT]
 >
 >Si vous ne voyez aucune mesure de performances de recherche, assurez-vous que les données d’événement de recherche sont [collectées](../setup/events/overview.md).
+
+>[!NOTE]
+>
+>Pour comprendre le classement de la découverte de produits **correspondances exactes et proches**, correspondances de même champ et correspondances plus larges (et comment cela interagit avec le poids des mots-clés et les règles de marchandisage), consultez [Correspondance et classement des recherches](../search-relevance-matching.md).
 
 ## Choisissez la vue **Catalogue**
 
@@ -112,7 +108,7 @@ Pour optimiser votre fonctionnalité de recherche, utilisez [synonymes et orthog
 
 ## Améliorer la pertinence des résultats de recherche
 
-Pour améliorer la pertinence des résultats de recherche, implémentez des [règles de recherche](../merchandising/rules/overview.md) efficaces et utilisez les métadonnées du produit afin de garantir que les attributs [&#x200B; précis et détaillés sont consultables](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata).
+Pour améliorer la pertinence des résultats de recherche, implémentez des [règles de recherche](../merchandising/rules/overview.md) efficaces et utilisez les métadonnées du produit afin de garantir que les attributs [ précis et détaillés sont consultables](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata).
 
 ### Images
 
