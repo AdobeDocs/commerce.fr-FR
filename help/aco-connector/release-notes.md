@@ -17,9 +17,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: af45543a52d1c88149574dc22cdef37af01404c8
 workflow-type: tm+mt
-source-wordcount: 267
+source-wordcount: 353
 ht-degree: 0%
 
 ---
@@ -33,6 +33,18 @@ Ces notes de mise à jour décrivent toutes les versions du [!DNL Adobe Commerce
 ![Problème connu](../assets/bug.svg) Problèmes connus
 
 ## Versions De 2026
+
+### Version 1.0.14
+
+_1 juin 2026_
+
+![Correctif](../assets/fix.svg) **Compatibilité PHP 8.5** - Le [!DNL Adobe Commerce Optimizer Connector] prend désormais en charge PHP 8.5, ce qui vous permet de mettre à niveau votre environnement [!DNL Adobe Commerce] sans interrompre les fonctionnalités du connecteur ou la synchronisation des catalogues. <!--MDEE-1388-->
+
+![Correctif](../assets/fix.svg) **Mise à jour des tarifs après les modifications de devise** - Les tarifs mis à jour sont automatiquement répercutés dans Adobe Commerce Optimizer après les modifications de devise. <!--MDEE-1384-->
+
+![Correctif](../assets/fix.svg) **La navigation respecte les catégories parentes désactivées ou masquées** - Les produits provenant des hiérarchies de catégories désactivées ou masquées n’apparaissent plus de manière inattendue dans les expériences de navigation.<!--MDEE-1385-->
+
+![Correctif](../assets/fix.svg) **URL de catégorie cohérentes après les mises à jour d’évaluation** - Les liens de catégorie et la navigation restent précis après l’application des mises à jour d’évaluation. <!--MDEE-1395-->
 
 ### Version 1.0.13
 
