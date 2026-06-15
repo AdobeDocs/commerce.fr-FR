@@ -7,12 +7,19 @@ badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague
 hide: true
 autotag-review: '2026-06-12T19:49:25.241Z'
 TQID: 'https://experienceleague.adobe.com/GBfssL1pTVx4FKjsi45mDsTx2XyCr0aViexH3OpPjVo'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-subfeature_v2: id: faf75e43-5608-48b8-8169-3f8a9b8a5caf
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+subfeature_v2:
+  - id: faf75e43-5608-48b8-8169-3f8a9b8a5caf
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
 workflow-type: tm+mt
 source-wordcount: 946
@@ -80,7 +87,7 @@ La pertinence n’est pas déterminée uniquement par la correspondance d’expr
 
 Du fait de l’interaction de ces signaux, un produit qui correspond uniquement au niveau le plus large peut parfois se classer au-dessus d’une correspondance d’expressions plus stricte, par exemple lorsque les **poids de recherche** ou la fréquence des termes dans un champ à poids élevé l’emportent sur une correspondance d’expressions plus faible ailleurs.
 
-**Exemple :** si **pantalon rouge** apparaît comme une expression dans **description** avec **poids de recherche = 1**, mais **rouge** et **pants** apparaissent séparément dans **name** et **color** avec **poids de recherche = 10**, l’expression match dans **** peut ne pas l’emporter sur la correspondance de division, en fonction du score global.
+**Exemple :** si **pantalon rouge** apparaît comme une expression dans **description** avec **poids de recherche = 1**, mais **rouge** et **pants** apparaissent séparément dans **name** et **color** avec **poids de recherche = 10**, l’expression match dans **&#x200B;**&#x200B;peut ne pas l’emporter sur la correspondance de division, en fonction du score global.
 
 Les règles manuelles **pin** et **bury** restent fortes ; les règles **boost** peuvent nécessiter un réglage pour surmonter les nouveaux boosts de phrase et de même champ. Validez les requêtes importantes après avoir modifié les poids ou les règles.
 
