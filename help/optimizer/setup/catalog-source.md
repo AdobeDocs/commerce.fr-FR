@@ -3,27 +3,16 @@ title: Source du catalogue
 description: Découvrez les sources de catalogue et comment elles définissent la portée faisant autorité des produits, attributs et catégories pour le comportement de recherche, de filtrage et de tri.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 autotag-review: '2026-06-09T19:36:23.516Z'
 TQID: 'https://experienceleague.adobe.com/MiLbuYx6Pf95n3jvrgvou05Ery9XHXskx8p6KrN6CYg'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ecff841c8e88c3897358eaf91e54c732d1edcfe4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c18ed297-2187-4aec-affb-9d9654eca6fc
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
 workflow-type: tm+mt
 source-wordcount: 450
 ht-degree: 0%
@@ -56,7 +45,7 @@ Suivez les conseils suivants pour décider de la structure de vos sources de cat
 
 * Créez une source de catalogue distincte pour chaque langue de catalogue.
 * Utilisez des sources de catalogue distinctes lorsque les différences de produit et d’attribut doivent affecter le comportement de la recherche, du filtrage ou du tri (par exemple, une recherchabilité, une filtrabilité ou une configuration de facettes différentes pour le même attribut).
-* Utilisez les [&#x200B; calques de catalogue &#x200B;](catalog-layer.md) lorsque les différences entre les produits et les attributs doivent affecter uniquement l’affichage du storefront, et non la découverte de produits.
+* Utilisez les [ calques de catalogue ](catalog-layer.md) lorsque les différences entre les produits et les attributs doivent affecter uniquement l’affichage du storefront, et non la découverte de produits.
 
 >[!MORELIKETHIS]
 >
@@ -64,3 +53,4 @@ Suivez les conseils suivants pour décider de la structure de vos sources de cat
 > * [Calques de catalogue](catalog-layer.md) - Modifiez la présentation du produit sans modifier les données sources
 > * [Politiques](policies.md) - Créez des filtres basés sur les attributs pour les vues de catalogue
 > * [Classeurs de prix](pricebooks.md) - Gérez les structures de prix pour différents segments de clientèle
+
