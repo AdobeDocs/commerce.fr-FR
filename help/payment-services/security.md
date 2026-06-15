@@ -4,9 +4,9 @@ description: Examinez les exigences de sécurité et de conformité de votre sit
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=fr
-source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
+source-git-commit: f8c44e088fa66ec506934a0155f1ff819a9db7d4
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,8 @@ PCI 3-D Secure (3DS) permet l&#39;authentification de l&#39;acheteur auprès de 
 [!UICONTROL Payment Services] fournit des fonctionnalités 3DS pour permettre aux commerçants de se conformer aux réglementations de l&#39;UE et de protéger les clients et les commerçants contre les activités frauduleuses dans leurs magasins.
 
 Si vous êtes un commerçant de l’UE ou de Grande-Bretagne où la conformité 3DS est requise, vous devez activer manuellement la 3DS (elle est `Off` par défaut) dans l’[Administrateur de configuration](configure-admin.md#credit-card-fields).
+
+3DS est pris en charge pour les champs de carte de crédit **[Credit Card Fields](configure-admin.md#credit-card-fields)** et **[[!DNL Google Pay]](configure-admin.md#google-pay)**. Chaque mode de paiement possède son propre paramètre d’authentification 3D Secure dans l’administrateur, qui peut être défini sur `Always`, `When required` ou `Off`.
 
 >[!IMPORTANT]
 >

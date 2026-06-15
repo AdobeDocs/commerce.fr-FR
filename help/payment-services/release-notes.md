@@ -1,11 +1,13 @@
 ---
 title: Notes de mise à jour de [!DNL Payment Services]
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes  [!DNL Payment Services]  versions.
+role: Admin, User
+level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: e0f8437d1d4592e8bff2f718352977832d64a100
+source-git-commit: 29747e38a2800997c251f24f70b6356aada9fab9
 workflow-type: tm+mt
-source-wordcount: '5019'
+source-wordcount: '5401'
 ht-degree: 0%
 
 ---
@@ -32,6 +34,10 @@ Pour en savoir plus sur les prochaines versions, la prise en charge des produits
 Ces notes de mise à jour décrivent les modifications et correctifs de fonctionnalités qui se sont produits et ont été publiés en dehors des versions standard des fonctionnalités pour le service hébergé.
 
 +++Mises à jour des services hébergés
+
+_8 juin 2026_
+
+![Nouvel événement](../assets/new.svg)<!-- Issue PAY-6510 --> Par [!DNL Adobe Commerce as a Cloud Service], l’interface utilisateur du tableau de bord [!DNL Payment Services] dans le [!DNL Commerce Admin] permet aux commerçants d’ouvrir le [rapport Transactions](reporting.md#transactions-report-view) directement depuis le tableau de bord. Ce tableau de bord SaaS expose uniquement les rapports **sélectionnés** (pas tous les rapports ou points d’entrée d’accueil disponibles sur Adobe Commerce dans le cloud et sur site) ; voir [[!DNL Payment Services] Accueil](payments-home.md). Pour les notes de mise à jour et la planification ACCS, voir [Afficher le rapport des transactions Payment Services](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
 
 _21 janvier 2026_
 
@@ -110,6 +116,28 @@ _28 juin 2021_
 >[!NOTE]
 >
 > Les versions se produisent fréquemment pour fournir de nouvelles fonctionnalités et de nouveaux correctifs si nécessaire. Le planning de publication n’est pas fixe.
+
+## v2.15.0
+
+_15 juin 2026_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
+
+![Nouveau](../assets/new.svg)<!-- PAY-6564 --> Désormais, [!DNL Google Pay] commande express peut afficher les modes d’expédition sur la feuille de paiement Google à l’aide de rappels d’expédition côté client. Ainsi, les acheteurs sélectionnent l’expédition avant de confirmer le paiement. Les commerçants peuvent afficher ou masquer une étape de révision de Google Pay distincte en utilisant **[!UICONTROL Skip Review]** dans la configuration de [Google Pay](configure-admin.md#google-pay). Lorsque l’étape de révision est ignorée, les options d’expédition restent dans la feuille lorsque l’adresse du portefeuille ou le mode d’expédition change.
+
+![Nouveau](../assets/new.svg)<!-- PAY-6565 --> Désormais, les acheteurs peuvent appliquer un code promotionnel dans la feuille de paie [!DNL Google Pay] express, que l’étape de vérification de Google Pay apparaisse ou non. Un seul code peut être appliqué par feuille de paie, même dans les magasins qui autorisent plusieurs coupons par commande. Voir [Options de paiement](payments-options.md#google-pay-button) pour plus d’informations.
+
+![Nouveau](../assets/new.svg)<!-- PAY-6567 --> Désormais, [!DNL Apple Pay] passage en caisse express est disponible dans Chrome, Firefox et Microsoft Edge, en plus de Safari. Sur l’ordinateur de bureau, les acheteurs peuvent numériser un code QR avec un iPhone exécutant iOS 18 ou une version ultérieure pour effectuer le paiement dans la feuille de paie Apple. Les placements express (par exemple, sur la page des détails du produit) doivent être activés dans la configuration [Apple Pay](configure-admin.md#apple-pay).
+
+![Nouveau](../assets/new.svg)<!-- PAY-6566 --> Désormais, les acheteurs peuvent appliquer ou supprimer un seul code de remise dans la feuille de paie [!DNL Apple Pay] express et les totaux sont mis à jour dans la feuille. Créez et activez les règles de prix de panier dans Admin comme d’habitude.
+
+![Nouveau](../assets/new.svg)<!-- PAY-6151 --> Désormais, les [!DNL Apple Pay] sur les pages Détails du produit et Passage en caisse de Luma sont rendues via le SDK Payments afin que l’expérience corresponde à la dernière intégration PayPal utilisée pour le passage en caisse express.
+
+![Nouveau](../assets/new.svg)<!-- PAY-6611 --> Désormais, la page Détails de la commande [!DNL Adobe Commerce] affiche des détails de paiement supplémentaires pour les transactions traitées par [!DNL Payment Services], y compris [!DNL PayPal] ID de transaction, l’ID de débogage PayPal, l’adresse e-mail du payeur, l’éligibilité de la protection du commerçant et les codes de vérification AVS/CVV. Voir [3DS](security.md#3ds) pour plus d’informations.
+
+![Correction d’un problème](../assets/fix.svg)<!-- PAY-6513 --> Correction d’un problème en raison duquel un message d’erreur [!DNL Apple Pay] pouvait toujours s’afficher sur la page de succès de la commande après une tentative de paiement ayant échoué et un passage en caisse réussi ultérieurement.
+
+![Correction d’un problème](../assets/fix.svg)<!-- PAY-6585 --> Correction d’un problème en raison duquel la feuille de paie [!DNL Apple Pay] express affichait une erreur **[!UICONTROL Please select a state/region]** pour les adresses au Royaume-Uni et en Europe où l’État/la région n’était pas un champ obligatoire.
 
 ## v2.14.0
 

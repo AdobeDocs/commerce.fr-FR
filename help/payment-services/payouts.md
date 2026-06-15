@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: a0f9ddbf3d0f291855cb51fd70a782c48b8efc6c
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Rapport des paiements
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] vous offre des rapports complets afin que vous puissiez obtenir une vue claire des transactions, des commandes et des paiements de votre magasin.
+
+>[!NOTE]
+>
+>Les vues Paiements ci-dessous sont disponibles à partir de [!DNL Payment Services] **[!UICONTROL Home]** sur Adobe Commerce on cloud et on-premise. Ils ne s’affichent pas dans le tableau de bord [!DNL Payment Services] pour [!DNL Adobe Commerce as a Cloud Service] ou [!DNL Adobe Commerce Optimizer] ; voir [[!DNL Payment Services] Accueil](payments-home.md).
 
 Il existe deux vues de rapports Paiements disponibles pour vous permettre d’afficher des informations détaillées sur tous vos paiements :
 
@@ -185,19 +189,19 @@ Ces types de transactions peuvent être notés dans les transactions de paiement
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Argent transféré entre un acheteur et un vendeur pour une commande |
 | [!UICONTROL AUTH] | Transactions d&#39;autorisation et d&#39;annulation d&#39;autorisation |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | Transactions de contrepassation des frais de refacturation et des frais de refacturation |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | Frais de partenaire, frais de paiement et transactions de contrepassation des frais |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | Récupérations sur comptes bancaires ou pertes |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |

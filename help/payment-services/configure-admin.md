@@ -4,10 +4,10 @@ description: Après l’installation, vous pouvez effectuer la configuration  [!
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-feature: Payments, Checkout, Configuration
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+feature: Payments, Checkout, Configuration, Paas, Saas
+source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3710'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,26 @@ Vous pouvez activer les [!DNL Payment Services] pour votre boutique et votre _[!
 | [!UICONTROL PayPal Merchant ID] | vue magasin | Identifiant unique de votre compte PayPal Merchant, généré lors de la création de votre compte PayPal. |
 | [!UICONTROL PayPal Merchant Status] | vue magasin | Statut de votre ID de vendeur PayPal. |
 | [!UICONTROL Soft Descriptor] | affichage du site web ou de la boutique | Ajoutez un descripteur à vos sites web et vue(s) de boutique pour ajouter des informations aux transactions client qui délimitent les marques, les boutiques ou les lignes de produits. |
+
+## Connecter un compte PayPal différent pour un site Web
+
+Si vous exécutez une seule instance Commerce avec **plusieurs sites web** (et vues de magasin), vous aurez peut-être besoin d’un **compte marchand PayPal différent** pour certains sites web. [!DNL Payment Services] vous permet de terminer l’intégration de PayPal **à l’échelle du site web** dans l’administrateur une fois l’instance configurée et intégrée à l’étendue **globale** (par défaut).
+
+Dans les versions antérieures, le mappage de compte PayPal au niveau du site web nécessitait généralement que vous [contactez l’assistance technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#Solution) ou votre représentant Adobe. Utilisez l’action **[!UICONTROL Connect different account for website]** lorsque vous remplissez les conditions préalables ci-dessous.
+
+### Conditions préalables (portée globale)
+
+Le contrôle de **[!UICONTROL Connect different account for website]** n’est disponible et activé que sur une étendue **site web** lorsque **toutes** les conditions suivantes sont déjà remplies pour l’instance à la configuration **par défaut/global** :
+
+1. [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas) la configuration est terminée.
+
+1. [Sandbox et production](connect.md#configure-commerce-services) les clés API (publiques et privées) sont enregistrées dans l’Admin.
+
+1. **[!UICONTROL Payment Services Sandbox ID]** et **[!UICONTROL Payment Services Production ID]** sont renseignés dans [Configuration générale](#general-configuration).
+
+1. Un compte marchand PayPal **global** est **connecté** et vous avez **terminé l’intégration PayPal** pour cette portée par défaut (les champs **[!UICONTROL PayPal Merchant ID]** et associés sont renseignés pour la portée globale comme décrit dans [Configuration générale](#general-configuration)).
+
+   Si l’intégration globale n’est pas terminée, basculez l’étendue de la configuration sur une **[!UICONTROL Website]**, ouvrez **[!UICONTROL Payment Services]** dans **[!UICONTROL Payment Methods]** et le bouton **[!UICONTROL Connect different account for website]** est **désactivé** ; terminez d’abord l’installation du connecteur et l’intégration **globale** PayPal.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -168,7 +188,7 @@ Ces paramètres facultatifs s’appliquent aux champs de saisie client de votre 
 
 ## [!UICONTROL Apple Pay]
 
-Grâce à [!DNL Apple Pay], les commerçants peuvent offrir une expérience de passage en caisse sécurisée, rapide et transparente dans Safari, prenant en charge jusqu’à 99 domaines par compte de commerçant. Le bouton [!DNL Apple Pay] renseigne automatiquement les informations de paiement, de contact et d’expédition à partir de l’appareil iOS ou macOS du client, ce qui permet des achats rapides et en une pression qui peuvent améliorer les taux de conversion.
+Grâce à [!DNL Apple Pay], les commerçants peuvent offrir une expérience de passage en caisse sécurisée, rapide et transparente, prenant en charge jusqu’à 99 domaines par compte de commerçant. Dans **Safari** (macOS et iOS), le bouton [!DNL Apple Pay] renseigne automatiquement les informations de paiement, de contact et d’expédition à partir de l’appareil du client, à la fois au début du passage en caisse (express) et sur la page de passage en caisse finale. Dans **Chrome, Firefox ou Microsoft Edge**, [!DNL Apple Pay] est disponible à la fois pendant le **passage en caisse express** et à l’étape **passage en caisse final** ; sur le bureau, un code QR et un **iPhone** (iOS 18 ou version ultérieure) permettent à l’acheteur de terminer le paiement dans la feuille de paie Apple. Assurez-vous que **[!UICONTROL Show Apple Pay on product detail page]** ou d’autres emplacements sont activés là où vous souhaitez effectuer un passage en caisse express.
 
 >[!IMPORTANT]
 >
@@ -179,7 +199,7 @@ Voir [Options de paiement](payments-options.md#apple-pay-button) pour plus d’i
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Dans le panneau de gauche, développez **[!UICONTROL Sales]** et choisissez **[!UICONTROL Payment Methods]**.
 1. Développez la section _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. Dans la section _[!UICONTROL Payment Services]_, développez la section&#x200B;_[!UICONTROL Apple Pay]_ .
+1. Dans la section _[!UICONTROL [!DNL Payment Services]]_, développez la section&#x200B;_[!UICONTROL Apple Pay]_ .
 1. Par **[!UICONTROL Title]**, saisissez du texte (si nécessaire) pour modifier le nom du mode de paiement, comme indiqué lors du passage en caisse.
 1. Pour [définir l&#39;action de paiement](production.md#set-payment-services-as-payment-method), sélectionnez **[!UICONTROL Authorize]** ou **[!UICONTROL Authorize and Capture]**.
 1. Indiquez où l’option [!DNL Apple Pay] est activée dans Adobe Commerce en la sélectionnant `Yes` dans les options suivantes selon vos besoins :
@@ -215,7 +235,7 @@ Voir [Options de paiement](payments-options.md#google-pay-button) pour plus d’
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Dans le panneau de gauche, développez **[!UICONTROL Sales]** et choisissez **[!UICONTROL Payment Methods]**.
 1. Développez la section _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. Dans la section _[!UICONTROL Payment Services]_, développez la section&#x200B;_[!UICONTROL Google Pay]_ .
+1. Dans la section _[!UICONTROL [!DNL Payment Services]]_, développez la section&#x200B;_[!UICONTROL Google Pay]_ .
 1. (Facultatif) Modifiez le nom du mode de paiement affiché lors du passage en caisse en saisissant le nouveau nom dans le champ **[!UICONTROL Title]**.
 1. [Définissez l&#39;action de paiement](production.md#set-payment-services-as-payment-method) en sélectionnant **[!UICONTROL Authorize]** ou **[!UICONTROL Authorize and Capture]**.
 1. Indiquez où l’option [!DNL Google Pay] est activée dans Adobe Commerce en la sélectionnant `Yes` dans les options suivantes selon vos besoins :
@@ -224,10 +244,11 @@ Voir [Options de paiement](payments-options.md#google-pay-button) pour plus d’
    * **[!UICONTROL Show Google Pay on product detail page]**
    * **[!UICONTROL Show Google Pay in mini cart preview]**
    * **[!UICONTROL Show Google Pay on cart page]**
+1. Pour choisir si les acheteurs verront une page distincte de **Google Pay review** après la feuille de paie Google Pay, définissez **[!UICONTROL Skip Review]** sur `Yes` ou `No`. Lorsqu’ils sont définis sur `Yes`, les flux express pris en charge affichent **méthodes d’expédition dans la feuille de paie Google** (rappels d’expédition côté client) et peuvent s’exécuter sans l’étape de révision supplémentaire. Lorsqu’ils sont définis sur `No`, les acheteurs peuvent confirmer l’expédition et les totaux sur la page de révision avant de payer.
 1. Pour activer **[!UICONTROL 3D Secure authentication]** (`Off` par défaut), choisissez `Always` ou `When required`.
 1. Pour activer le mode de débogage, sélectionnez `Yes` pour le **[!UICONTROL Debug Mode]** (`No` le désactive).
 1. Configurez l’aspect du bouton _[!UICONTROL Google Pay]_&#x200B;en sélectionnant les **[!UICONTROL Button Color]**, les **[!UICONTROL Button Type]**&#x200B;et les **[!UICONTROL Button Style]**&#x200B;selon vos besoins.
-1. Pour définir la hauteur, utilise la valeur par défaut de la hauteur définie dans **[!UICONTROL Button Style]**.
+1. Pour définir la hauteur, utilisez la valeur par défaut de la hauteur définie dans **[!UICONTROL Button Style]**.
 1. Pour enregistrer vos modifications, cliquez sur **[!UICONTROL Save Config]** .
 1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, puis cliquez sur **[!UICONTROL Flush Cache]** pour actualiser tous les caches non valides.
 
@@ -243,6 +264,7 @@ Voir [Options de paiement](payments-options.md#google-pay-button) pour plus d’
 | [!UICONTROL Show Google Pay on product detail page] | vue magasin | Activez ou désactivez [!DNL Google Pay] dans la page des détails du produit. Options : `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay in mini cart preview] | vue magasin | Activez ou désactivez l’[!DNL Google Pay] dans l’aperçu du mini panier. Options : `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay on cart page] | vue magasin | Activez ou désactivez l’[!DNL Google Pay] sur la page du panier. Options : `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Skip Review] | vue magasin | Lorsque ce paramètre est défini sur `[!UICONTROL Yes]`, les flux [!DNL Google Pay] express éligibles peuvent omettre la page de révision distincte après la feuille de paie ; les modes d&#39;expédition apparaissent dans la feuille de paie Google. Lorsqu’ils sont définis sur `[!UICONTROL No]`, les acheteurs accèdent à la page de révision pour confirmer l’expédition et les totaux. Options : `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL 3D Secure authentication] | vue magasin | Activez ou désactivez l’authentification sécurisée [3D](security.md#3ds). Options : [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | site internet | Activez ou désactivez le mode de débogage. Options : `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | Affichage de la boutique | Définissez la couleur du bouton [!DNL Google Pay]. Options : `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
@@ -422,7 +444,6 @@ En [!UICONTROL Payment Services], vous pouvez utiliser plusieurs comptes PayPal 
 
 Consultez [Site, magasin et portée d’affichage](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr) pour plus d’informations sur la hiérarchie des sites web, des magasins et des vues de magasin.
 
-Consultez [Configuration de ligne de commande](configure-cli.md#configure-scope-via-cli) pour plus d’informations sur la configuration des portées de plusieurs comptes PayPal via l’interface de ligne de commande.
+Pour connecter un **compte PayPal différent à un site web individuel** à partir de l’administrateur une fois l’intégration des services **globaux** Commerce et PayPal terminée, utilisez **[!UICONTROL Connect different account for website]** à **[!UICONTROL Website]** portée. Voir [Connecter un compte PayPal différent pour un site web](#connect-a-different-paypal-account-for-a-website).
 
-Votre représentant commercial peut créer une nouvelle [portée](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) pour votre compte marchand et intégrer le site supplémentaire avec PayPal afin que tous les boutons PayPal que vous configurez pour apparaître s&#39;affichent sur votre site. Contactez votre équipe commerciale
-représentant pour obtenir de l’aide sur l’utilisation de plusieurs comptes PayPal pour vos sites web.
+Consultez [Configuration de ligne de commande](configure-cli.md#configure-scope-via-cli) pour plus d’informations sur la configuration des portées de plusieurs comptes PayPal via l’interface de ligne de commande.

@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d0d0634283493f61faae94bebb9da1c8bd177e55
 workflow-type: tm+mt
-source-wordcount: 1391
+source-wordcount: 1439
 ht-degree: 0%
 
 ---
@@ -59,9 +59,13 @@ Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONT
 
 >[!TAB Adobe Commerce as a Cloud Service et Commerce Optimizer]
 
-Les mêmes fonctionnalités de rapport s’appliquent aux déploiements SaaS. Les chemins de navigation affichent **[!UICONTROL Home]** > **[!UICONTROL Transactions]** et la grille comprend des colonnes telles que **[!UICONTROL Order ID]**, **[!UICONTROL PayPal Transaction ID]**, **[!UICONTROL Customer ID]**, **[!UICONTROL Transaction Date]**, **[!UICONTROL Payment Method]**, **[!UICONTROL Payment Detail]**, **[!UICONTROL Card Last Four]**, **[!UICONTROL Result]** et **[!UICONTROL Response Code]**.
+Pour ces déploiements SaaS, le rapport tabulaire des transactions du tableau de bord correspond aux fonctionnalités décrites dans cette rubrique (filtres, colonnes, source de données, téléchargements, etc.). Les chemins de navigation affichent **[!UICONTROL Home]** > **[!UICONTROL Transactions]** et la grille comprend des colonnes telles que **[!UICONTROL Order ID]**, **[!UICONTROL PayPal Transaction ID]**, **[!UICONTROL Customer ID]**, **[!UICONTROL Transaction Date]**, **[!UICONTROL Payment Method]**, **[!UICONTROL Payment Detail]**, **[!UICONTROL Card Last Four]**, **[!UICONTROL Result]** et **[!UICONTROL Response Code]**.
 
 ![Vue du rapport des transactions sur SaaS](assets/transactions-report-view-saas.png){width="800" zoomable="yes"}
+
+>[!NOTE]
+>
+>Le tableau de bord SaaS [!DNL Payment Services] n’inclut pas tous les rapports ou points d’entrée d’accueil qui s’affichent pour Adobe Commerce sur le cloud et sur site. Voir [[!DNL Payment Services] Accueil](payments-home.md) pour connaître les fonctionnalités disponibles par déploiement.
 
 >[!ENDTABS]
 

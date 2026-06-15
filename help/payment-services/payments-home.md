@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,10 @@ Une fois l’intégration terminée (ou sur une instance déjà configurée), **
 >[!ENDTABS]
 
 Dans cette vue d’accueil, vous pouvez accéder à _Accueil_, _En savoir_ sur les [!DNL Payment Services], configurer l’extension _Paramètres_ ou obtenir _Aide_. Utilisez **[!UICONTROL View Report]** (SaaS) ou les points d’entrée **[!UICONTROL Orders]** et **[!UICONTROL Payouts]** (Adobe Commerce sur le cloud et sur site) pour ouvrir le compte rendu des performances. Voir [Compte rendu des performances](reporting.md).
+
+>[!NOTE]
+>
+>Dans [!DNL Adobe Commerce as a Cloud Service] et [!DNL Adobe Commerce Optimizer], le [!DNL Payment Services] **tableau de bord** expose uniquement les rapports **sélectionnés** : vous obtenez le rapport [Transactions](reporting.md) depuis **[!UICONTROL Home]** (voir le tableau SaaS ci-dessous). Les zones **[!UICONTROL Orders]** et **[!UICONTROL Payouts]** sur l’Accueil, ainsi que leurs graphiques et rapports associés, s’appliquent uniquement à Adobe Commerce sur le cloud et sur site ([PaaS](#home)). Pour obtenir un aperçu des rapports sur les flux de trésorerie pour les déploiements, voir [Rapports financiers](financial-reporting.md).
 
 ## Accueil
 

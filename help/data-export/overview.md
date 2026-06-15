@@ -15,7 +15,7 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
+source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
 workflow-type: tm+mt
 source-wordcount: 571
 ht-degree: 0%
@@ -62,3 +62,4 @@ L&#39;export de données en SaaS est livré sous forme d&#39;extension PHP. Il p
    - Dans les cas où la synchronisation doit se produire plus rapidement, l’exportation des données SaaS fournit des options de personnalisation pour améliorer les performances de traitement des exportations. Voir [Amélioration des performances d’exportation des données](customize-export-processing.md).
 
 - **Suivre et résoudre les problèmes liés aux activités d’exportation de données** : utilisez les journaux data-export et saas-export pour consulter l’état de synchronisation et les payloads des flux pendant le processus de synchronisation et d’indexation. Voir [Journalisation et dépannage](troubleshooting-logging.md).
+

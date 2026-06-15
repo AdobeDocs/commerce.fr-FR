@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2188'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Etat Statut du paiement de la commande
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] vous offre des rapports complets afin que vous puissiez obtenir une vue claire des [transactions](reporting.md), commandes et paiements de votre magasin.
+
+>[!NOTE]
+>
+>Les vues Statut du paiement de la commande ci-dessous sont disponibles à partir de [!DNL Payment Services] **[!UICONTROL Home]** sur Adobe Commerce on cloud et on-premise. Ils ne s’affichent pas dans le tableau de bord [!DNL Payment Services] pour [!DNL Adobe Commerce as a Cloud Service] ou [!DNL Adobe Commerce Optimizer] ; voir [[!DNL Payment Services] Accueil](payments-home.md).
 
 Il existe deux vues d&#39;état du statut de paiement des commandes pour vous permettre de consulter rapidement le statut de paiement de vos commandes :
 
@@ -256,7 +260,7 @@ Les états de statut du paiement de la commande contiennent les informations sui
 | [!UICONTROL Pay Status] | Statut du paiement d’une commande spécifique |
 | [!UICONTROL Paid Amt] | Montant payé sur une commande |
 | [!UICONTROL Cur] | Type de devise du montant payé sur une commande |
-| [!UICONTROL Refund Status] | État d&#39;un remboursement sur une commande (par exemple, renseignements provenant de retours, de RAM et d&#39;avoirs)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* ou *[!UICONTROL Voided]* |
+| [!UICONTROL Refund Status] | Statut d&#39;un remboursement sur une commande (par exemple, informations provenant de retours, de retours et d&#39;avoirs) : *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* ou *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Montant total du remboursement pour une commande |
 | [!UICONTROL Cur] | Type de devise du montant remboursé pour une commande |
 | [!UICONTROL Disputes] | Statut de tout litige relatif à une commande (informations issues de litiges et d’imputations) : *[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]* ou *[!UICONTROL Other]* |
