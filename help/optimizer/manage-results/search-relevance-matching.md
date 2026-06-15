@@ -20,7 +20,7 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: da5950c0f2071f48f163dd02f6c38953804ae152
+source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
 workflow-type: tm+mt
 source-wordcount: 946
 ht-degree: 0%
@@ -71,7 +71,7 @@ Pour une expression de recherche telle que `Brauseschlauch chrom` :
 - **Tous les mots dans le même champ** — Recherche **brauseschlauch** et **chrom** dans le **même** attribut consultable, toujours sans décomposition (par exemple, les deux dans **name**).
 - **Mots dans différents domaines** — Décompose **Brauseschlauch** en **brause** et **schlauch**. Ces jetons doivent apparaître dans le champ **same** (pas nécessairement sous la forme d’une expression adjacente). **chrom** peut correspondre dans un champ **différent** (par exemple, **brause** et **schlauch** dans **name**, **chrom** dans **color**).
 
-Définissez **Langue** sur **Allemand** dans l’onglet [Langue](./settings.md#language) de [Paramètres](./settings.md) afin d’appliquer les règles de décomposition. Validez les requêtes allemandes à forte valeur ajoutée sur un storefront d’évaluation avant d’activer les modifications en production.
+Définissez **Langue** sur **Allemand** dans l’onglet [Langue](../settings.md#language) de [Paramètres](../settings.md) afin d’appliquer les règles de décomposition. Validez les requêtes allemandes à forte valeur ajoutée sur un storefront d’évaluation avant d’activer les modifications en production.
 
 La décomposition est basée sur des règles et peut ajouter des cas de périphérie à ce calque. Si un sous-mot est manquant dans le dictionnaire, la segmentation en unités lexicales peut être incomplète et renvoyer des correspondances plus larges que prévu ; par exemple, **gas** manquant dans **gaszähler** peut émettre uniquement **zahl** ou **stat** manquant dans **thermostat**. Le bourgeon peut également produire des racines inattendues (par exemple, **schrauber** bourgeonnant en **schraub** ou **schelle** en **schell**). Adobe met à jour le dictionnaire et les remplacements de flux pour les cas connus à mesure que des problèmes sont identifiés.
 
@@ -81,9 +81,9 @@ La pertinence n’est pas déterminée uniquement par la correspondance d’expr
 
 - Booster à partir de la correspondance **exacte / proche** des expressions
 - Amplifier lorsque **tous les termes de la requête** apparaissent dans le champ **même**
-- **Classement intelligent** (lorsqu’il est activé), qui associe la pertinence textuelle aux signaux comportementaux, consultez la section [Fonctionnement du classement intelligent](./merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Poids de la recherche](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results)** sur chaque attribut et autres facteurs de pertinence textuelle (par exemple, la fréquence d’apparition des termes et la longueur du nom ou de la description). Dans *Paramètres*, configurez les attributs qui participent à la recherche par mot-clé et leurs poids relatifs **[recherche par mot-clé](./settings.md)**.
-- **[Règles de marchandisage](./merchandising/rules/overview.md)** telles que l’épinglage, l’amplification et l’enfouissement
+- **Classement intelligent** (lorsqu’il est activé), qui associe la pertinence textuelle aux signaux comportementaux, consultez la section [Fonctionnement du classement intelligent](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
+- **[Poids de la recherche](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results)** sur chaque attribut et autres facteurs de pertinence textuelle (par exemple, la fréquence d’apparition des termes et la longueur du nom ou de la description). Dans *Paramètres*, configurez les attributs qui participent à la recherche par mot-clé et leurs poids relatifs **[recherche par mot-clé](../settings.md)**.
+- **[Règles de marchandisage](../merchandising/rules/overview.md)** telles que l’épinglage, l’amplification et l’enfouissement
 
 Du fait de l’interaction de ces signaux, un produit qui correspond uniquement au niveau le plus large peut parfois se classer au-dessus d’une correspondance d’expressions plus stricte, par exemple lorsque les **poids de recherche** ou la fréquence des termes dans un champ à poids élevé l’emportent sur une correspondance d’expressions plus faible ailleurs.
 
@@ -97,8 +97,8 @@ Les attributs configurés avec le **poids minimal de la recherche** (poids **1**
 
 ## Rubriques connexes
 
-- [Paramètres](./settings.md)
-- [Performances de recherche](./manage-results/search-performance.md)
-- [Règles de marchandisage - Aperçu](./merchandising/rules/overview.md)
-- [Ajouter des règles de recherche](./merchandising/rules/add.md)
-- [Présentation des synonymes](./merchandising/synonyms/overview.md)
+- [Paramètres](../settings.md)
+- [Performances de recherche](search-performance.md)
+- [Règles de marchandisage - Aperçu](../merchandising/rules/overview.md)
+- [Ajouter des règles de recherche](../merchandising/rules/add.md)
+- [Présentation des synonymes](../merchandising/synonyms/overview.md)

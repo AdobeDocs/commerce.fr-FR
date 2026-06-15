@@ -15,7 +15,7 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b9b57bb7279354c9d5c2a7efc6e1ba14c1c36598
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
 source-wordcount: 1936
 ht-degree: 0%
@@ -40,7 +40,7 @@ La page *Performances de recherche* fournit insight dans les termes de recherche
 
 >[!NOTE]
 >
->Pour comprendre le classement de la découverte de produits **correspondances exactes et proches**, correspondances de même champ et correspondances plus larges (et comment cela interagit avec le poids des mots-clés et les règles de marchandisage), consultez [Correspondance et classement des recherches](../search-relevance-matching.md).
+>Pour comprendre le classement de la découverte de produits **correspondances exactes et proches**, correspondances de même champ et correspondances plus larges (et comment cela interagit avec le poids des mots-clés et les règles de marchandisage), consultez [Correspondance et classement des recherches](search-relevance-matching.md).
 
 ## Choisissez la vue **Catalogue**
 

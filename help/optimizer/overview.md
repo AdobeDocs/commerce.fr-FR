@@ -4,7 +4,7 @@ description: En savoir plus sur  [!DNL Adobe Commerce Optimizer]  et ses princip
 recommendations: noCatalog
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: e68d731bbcc168439c9a56a7cb778648a7c473e9
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Avec [!DNL Adobe Commerce Optimizer], vous pouvez :
 - Ingérez des données de catalogue à partir de n’importe quelle source.
 - Définissez des vues et des politiques de catalogue d’entreprise.
 - Créez des recherches et des recommandations personnalisées à l’aide de l’IA et du ML.
-- Améliorez la pertinence de la découverte de produits avec un classement qui donne la priorité **correspondances exactes et proches** et aux correspondances de même champ ; consultez [Correspondance et classement des recherches](search-relevance-matching.md).
+- Améliorez la pertinence de la découverte de produits avec un classement qui donne la priorité **correspondances exactes et proches** et aux correspondances de même champ ; consultez [Correspondance et classement des recherches](./manage-results/search-relevance-matching.md).
 - Affichez la disponibilité des données essentielles du produit, y compris l’état de synchronisation et les données d’événement du storefront pour une implémentation et un dépannage précis.
 
 Regardez la vidéo suivante pour un aperçu général de [!DNL Adobe Commerce Optimizer] :
