@@ -97,7 +97,7 @@ Lisez cette section **avant** vous choisissez un nom de couche de catalogue dans
 
 ## Intégration
 
-Pour intégrer l’intégration d’AEM Assets à [!DNL Commerce Optimizer], vous devez [créer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Pour intégrer l’intégration d’AEM Assets à [!DNL Commerce Optimizer], vous devez [créer un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 L’assistance Adobe utilise les informations figurant dans votre ticket pour enregistrer votre client auprès du service d’intégration d’Assets et configurer l’intégration.
 
@@ -123,7 +123,7 @@ Une fois l’intégration terminée :
    * Événements AEM Assets (ressource approuvée, mise à jour, supprimée)
    * Événements de catalogue [!DNL Commerce Optimizer] (produit créé, mis à jour)
 
-Configurez votre [vue de catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) afin que les données d’image pilotées par AEM du storefront et des API soient visibles :
+Configurez votre [vue de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-view) afin que les données d’image pilotées par AEM du storefront et des API soient visibles :
 
 * **Source du catalogue (paramètres régionaux)** — Sélectionnez les paramètres régionaux que vous avez spécifiés dans votre ticket d&#39;assistance (par exemple **`en-US`**). L’intégration enregistre un paramètre régional par client ; une incohérence empêche les images synchronisées d’apparaître dans la vue de catalogue prévue.
 * **Couche Catalogue** — Attribuez la couche **`AEM-Assets`** (ou votre nom de couche personnalisé à partir du ticket) à cette vue Catalogue.
