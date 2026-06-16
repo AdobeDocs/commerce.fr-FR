@@ -75,7 +75,7 @@ La vue de visualisation des données relatives au statut de paiement de la comma
 
 La vue du rapport Statut du paiement de la commande est disponible dans la vue d&#39;accueil des services de paiement. Il comprend des statuts détaillés (paiement, facturation, expédition, remboursement, litige, etc.) pour toutes les transactions.
 
-Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**pour afficher la vue du rapport tabulaire détaillé sur le statut du paiement des commandes.
+Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;pour afficher la vue du rapport tabulaire détaillé sur le statut du paiement des commandes.
 
 ![Transactions relatives au statut de paiement des commandes dans l’administrateur](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -120,7 +120,7 @@ Activer la surveillance asynchrone : [!BADGE PaaS uniquement]{type=Informative t
    bin/magento config:set payment/payment_services/async_status_updates 1
    ```
 
-1. Activez et planifiez la tâche cron `sync_order_payment_status` afin que les mises à jour de statut soient récupérées automatiquement. Voir [ Configuration des tâches cron ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+1. Activez et planifiez la tâche cron `sync_order_payment_status` afin que les mises à jour de statut soient récupérées automatiquement. Voir [&#x200B; Configuration des tâches cron &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
 
 Une fois le paramètre et la tâche cron activés, la tâche cron s’exécute toutes les 10 minutes pour récupérer les mises à jour des commandes dont le statut est défini sur `Payment Review`. Après la configuration, aucune action supplémentaire du commerçant n’est requise dans des conditions de fonctionnement normales.
 
@@ -161,7 +161,7 @@ Dans la vue de rapport Statut du règlement des commandes, vous pouvez sélectio
 
 ![Sélection des sources de données](assets/datasource.png){width="300" zoomable="yes"}
 
-Si _[!UICONTROL Live]_est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour vos magasins qui utilisent [!DNL Payment Services] en mode production. Si_[!UICONTROL Sandbox]_ est la source de données sélectionnée, vous pouvez afficher des informations de rapport pour le mode sandbox.
+Si _[!UICONTROL Live]_&#x200B;est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour vos magasins qui utilisent [!DNL Payment Services] en mode production. Si&#x200B;_[!UICONTROL Sandbox]_ est la source de données sélectionnée, vous pouvez afficher des informations de rapport pour le mode sandbox.
 
 Les sélections de sources de données fonctionnent comme suit :
 
@@ -172,7 +172,7 @@ Les sélections de sources de données fonctionnent comme suit :
 Pour sélectionner la source de données de votre rapport [!UICONTROL Order Payment Status] :
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
-1. Cliquez sur le filtre du sélecteur de _[!UICONTROL Data source]_et sélectionnez **[!UICONTROL Live]**ou **[!UICONTROL Sandbox]**.
+1. Cliquez sur le filtre du sélecteur de _[!UICONTROL Data source]_&#x200B;et sélectionnez **[!UICONTROL Live]**&#x200B;ou **[!UICONTROL Sandbox]**.
 
    Les résultats du rapport sont régénérés en fonction de la source de données sélectionnée.
 
@@ -192,7 +192,7 @@ Dans la vue d&#39;état Statut du paiement de la commande, vous pouvez filtrer l
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Cliquez sur le sélecteur de **[!UICONTROL Filter]**.
 1. Activez/désactivez les options _Statut de règlement_ pour afficher les résultats du rapport pour les statuts de règlement de commande sélectionnés uniquement.
-1. Affichez les résultats du rapport dans une fourchette de montants de commande en saisissant un _[!UICONTROL Min Order Amount]_ou un _[!UICONTROL Max Order Amount_].
+1. Affichez les résultats du rapport dans une fourchette de montants de commande en saisissant un _[!UICONTROL Min Order Amount]_&#x200B;ou un _[!UICONTROL Max Order Amount_].
 1. Cliquez sur **[!UICONTROL Hide filters]** pour masquer le filtre.
 
 ### Afficher et masquer les colonnes
@@ -225,7 +225,7 @@ La colonne Statut du remboursement indique le statut actuel de tout remboursemen
 
 ### Mise à jour des données d’un rapport
 
-La vue d&#39;état du statut de paiement de la commande affiche un horodatage _[!UICONTROL Last updated]_indiquant la dernière mise à jour des informations de l&#39;état. Par défaut, les données du rapport Statut du paiement des commandes sont automatiquement actualisées toutes les trois heures.
+La vue d&#39;état du statut de paiement de la commande affiche un horodatage _[!UICONTROL Last updated]_&#x200B;indiquant la dernière mise à jour des informations de l&#39;état. Par défaut, les données du rapport Statut du paiement des commandes sont automatiquement actualisées toutes les trois heures.
 
 Vous pouvez également forcer manuellement une actualisation des données de l&#39;état du statut de paiement des commandes pour afficher les informations les plus récentes.
 
