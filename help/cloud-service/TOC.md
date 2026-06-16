@@ -43,7 +43,7 @@ ht-degree: 4%
    - [Tutorial Prerequisites](tutorials/tutorial-prerequisites.md)
    - [Tutoriel sur l’extension d’évaluations](tutorials/ratings-extension.md)
    - [Tutoriel sur l’extension de la méthode d’expédition](tutorials/shipping-method-extension.md)
-   - {hide-from-toc}[ Tutoriel Sur L’Extension Des Estimations De Diffusion ](tutorials/delivery-estimates-extension.md)
+   - {hide-from-toc}[&#x200B; Tutoriel Sur L’Extension Des Estimations De Diffusion &#x200B;](tutorials/delivery-estimates-extension.md)
    - {hide-from-toc}[Tutoriel Sur L’Extension De Notification En Stock](tutorials/in-stock-notification-extension.md)
    - {hide-from-toc}[Tutoriel sur l’extension Product Reviews](tutorials/product-reviews-extension.md)
 - Schémas {#schemas}
