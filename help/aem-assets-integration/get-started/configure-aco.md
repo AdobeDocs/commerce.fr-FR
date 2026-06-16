@@ -2,9 +2,9 @@
 title: Configuration d’AEM Assets pour Commerce Optimizer
 description: Découvrez comment configurer l’intégration d’AEM Assets pour  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 42f0e0cb72c6429eb6f08f1922c4171195a78d2b
+source-git-commit: 2cc7b70a6923687c74fe3f4b88448eaada6d16af
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1453'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 L’intégration AEM Assets pour [!DNL Adobe Commerce Optimizer] permet aux commerçants d’utiliser AEM Assets comme solution centralisée de gestion des ressources numériques pour les images de produits. Ce guide couvre la configuration spécifique à [!DNL Commerce Optimizer].
 
-Contrairement à Adobe Commerce (PaaS) ou Adobe Commerce as a Cloud Service (ACCS), [!DNL Commerce Optimizer] ne dispose pas d’une interface utilisateur de configuration d’administration. Pour activer l’intégration, créez un ticket d’assistance avec vos informations [!DNL Adobe Commerce Optimizer] et AEM Assets. L’assistance Adobe configure l’intégration et enregistre votre client auprès du service d’intégration Assets.
+Contrairement à Adobe Commerce (PaaS) ou [!DNL Adobe Commerce as a Cloud Service], [!DNL Commerce Optimizer] ne dispose pas d’une interface utilisateur de configuration d’administration. Pour activer l’intégration, créez un ticket d’assistance avec vos informations [!DNL Adobe Commerce Optimizer] et AEM Assets. L’assistance Adobe configure l’intégration et enregistre votre client auprès du service d’intégration Assets.
 
 **Préparez AEM Assets avant d’envoyer le ticket.** L’enregistrement du client suppose que le côté AEM est utilisable pour Commerce. Par exemple, après avoir déployé le package AEM Commerce `assets-commerce` afin que les métadonnées et les événements fonctionnent comme expliqué. **L’ouverture d’un ticket avant la configuration d’AEM peut retarder l’intégration.**
 
@@ -71,7 +71,7 @@ La ressource doit avoir un statut **approuvé** pour que la synchronisation des 
 
 Si vous choisissez d’utiliser des profils de métadonnées AEM pour rationaliser la création, configurez-les **après** le déploiement du package et la compréhension par votre équipe des champs de Commerce requis (modèle facultatif identique à **Configurer le projet AEM Assets**).
 
-Voir [&#x200B; Configuration d’un profil de métadonnées](configure-aem.md#step-2-optional-configure-a-metadata-profile).
+Voir [ Configuration d’un profil de métadonnées](configure-aem.md#step-2-optional-configure-a-metadata-profile).
 
 ## Restrictions
 
@@ -97,7 +97,7 @@ Lisez cette section **avant** vous choisissez un nom de couche de catalogue dans
 
 ## Intégration
 
-Pour intégrer l’intégration d’AEM Assets à [!DNL Commerce Optimizer], vous devez [créer un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Pour intégrer l’intégration d’AEM Assets à [!DNL Commerce Optimizer], vous devez [créer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 L’assistance Adobe utilise les informations figurant dans votre ticket pour enregistrer votre client auprès du service d’intégration d’Assets et configurer l’intégration.
 
@@ -123,7 +123,7 @@ Une fois l’intégration terminée :
    * Événements AEM Assets (ressource approuvée, mise à jour, supprimée)
    * Événements de catalogue [!DNL Commerce Optimizer] (produit créé, mis à jour)
 
-Configurez votre [vue de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-view) afin que les données d’image pilotées par AEM du storefront et des API soient visibles :
+Configurez votre [vue de catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) afin que les données d’image pilotées par AEM du storefront et des API soient visibles :
 
 * **Source du catalogue (paramètres régionaux)** — Sélectionnez les paramètres régionaux que vous avez spécifiés dans votre ticket d&#39;assistance (par exemple **`en-US`**). L’intégration enregistre un paramètre régional par client ; une incohérence empêche les images synchronisées d’apparaître dans la vue de catalogue prévue.
 * **Couche Catalogue** — Attribuez la couche **`AEM-Assets`** (ou votre nom de couche personnalisé à partir du ticket) à cette vue Catalogue.
