@@ -8,11 +8,30 @@ level: Beginner
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 TQID: 'https://experienceleague.adobe.com/NSIeUn0B5i19ldOZSVu4PJy9vqY4NGrXY1Y485sV09U'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
 workflow-type: tm+mt
 source-wordcount: 4439
@@ -32,7 +51,7 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-[!BADGE  Sandbox ]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+[!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
 
 Les éléments suivants ne sont actuellement disponibles que dans les environnements Sandbox et devraient être déplacés vers les environnements de production en juillet.
 
@@ -256,7 +275,7 @@ Un nouveau `numeric` [type d’entrée d’attribut de produit](https://experien
 
 ### Configuration de requête reCAPTCHA pour plusieurs formulaires dans une seule requête GraphQL
 
-La requête [`recaptchaFormConfigs` peut renvoyer ](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) détails de configuration pour plusieurs types de formulaires dans une seule requête. <!-- ACCS-628 -->
+La requête [`recaptchaFormConfigs` peut renvoyer &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) détails de configuration pour plusieurs types de formulaires dans une seule requête. <!-- ACCS-628 -->
 
 ### Afficher toutes les commandes d&#39;entreprise avec une nouvelle autorisation B2B
 
@@ -626,7 +645,7 @@ Les améliorations, optimisations et correctifs suivants inclus dans cette versi
 
 * Ajout des points d’entrée `POST /V1/customers` et `PUT /V1/customers/{customerId}` à l’[API REST](https://developer.adobe.com/commerce/webapi/rest/reference/) pour créer et mettre à jour des clients. Ces points d’entrée nécessitent une autorisation IMS. <!-- CCSAAS-3112 -->
 
-* Ajout de la mutation ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/), qui nécessite l’adresse e-mail et le mot de passe à usage unique (OTP) d’un acheteur et qui reçoit un jeton client en échange. [`exchangeOtpForCustomerToken`Cette mutation est généralement utilisée dans les scénarios où un client doit s’authentifier à l’aide d’un mot de passe à usage unique envoyé à son adresse e-mail ou téléphone.
+* Ajout de la mutation [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/), qui nécessite l’adresse e-mail et le mot de passe à usage unique (OTP) d’un acheteur et qui reçoit un jeton client en échange. `exchangeOtpForCustomerToken`Cette mutation est généralement utilisée dans les scénarios où un client doit s’authentifier à l’aide d’un mot de passe à usage unique envoyé à son adresse e-mail ou téléphone.
 
 * Si une adresse définie dans l’écran de configuration [!UICONTROL **Stocker les adresses e-mail**] de l’administrateur contient une valeur se terminant par `example.com`, Commerce n’envoie pas d’e-mails à cette adresse. Au lieu de cela, le système consigne que l’e-mail n’a pas été envoyé.  <!-- CCSAAS-3533 -->
 
