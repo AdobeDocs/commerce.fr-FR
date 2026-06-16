@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2254'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ La vue de visualisation des données relatives au statut de paiement de la comma
 
 La vue du rapport Statut du paiement de la commande est disponible dans la vue d&#39;accueil des services de paiement. Il comprend des statuts détaillés (paiement, facturation, expédition, remboursement, litige, etc.) pour toutes les transactions.
 
-Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;pour afficher la vue du rapport tabulaire détaillé sur le statut du paiement des commandes.
+Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**pour afficher la vue du rapport tabulaire détaillé sur le statut du paiement des commandes.
 
 ![Transactions relatives au statut de paiement des commandes dans l’administrateur](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -108,9 +108,22 @@ Lors du passage en caisse du client ou lorsqu’un administrateur crée une fact
 
 Détecter quand une transaction de capture en attente passe en statut `Completed` afin que les commerçants puissent reprendre le traitement de la commande concernée.
 
-Pour que ce processus fonctionne comme prévu, les commerçants doivent configurer une nouvelle tâche cron. Une fois le traitement configuré pour s&#39;exécuter automatiquement, aucune autre intervention n&#39;est attendue du commerçant.
+>[!NOTE]
+>
+>La surveillance asynchrone est désactivée par défaut. Lorsque cette option est désactivée, les commandes avec une transaction de capture de `Pending` ne sont pas automatiquement transférées vers `Payment Review`. Pour activer ce comportement, activez la surveillance asynchrone en suivant les étapes ci-dessous.
 
-Voir [&#x200B; Configuration des tâches cron &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=fr). Une fois configuré, le nouveau traitement s’exécute toutes les 30 minutes pour récupérer les mises à jour des commandes dont le statut est défini sur `Payment Review`.
+Activer la surveillance asynchrone : [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
+
+1. Activez le paramètre `async_status_updates` . Comme ce paramètre n’est pas disponible dans l’Administration, activez-le à partir de la ligne de commande :
+
+   ```bash
+   bin/magento config:set payment/payment_services/async_status_updates 1
+   ```
+
+1. Activez et planifiez la tâche cron `sync_order_payment_status` afin que les mises à jour de statut soient récupérées automatiquement. Voir [ Configuration des tâches cron ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html).
+
+Une fois le paramètre et la tâche cron activés, la tâche cron s’exécute toutes les 10 minutes pour récupérer les mises à jour des commandes dont le statut est défini sur `Payment Review`. Après la configuration, aucune action supplémentaire du commerçant n’est requise dans des conditions de fonctionnement normales.
+
 
 Les commerçants peuvent vérifier le statut de paiement mis à jour à partir de la vue du rapport Statut du paiement de la commande.
 
@@ -118,11 +131,11 @@ Les commerçants peuvent vérifier le statut de paiement mis à jour à partir d
 
 [!DNL Payment Services] utilise les données de commande et les combine avec les données de paiement agrégées provenant d&#39;autres sources (y compris PayPal), pour fournir des rapports significatifs et très utiles.
 
-Les données de commande sont exportées et conservées dans le service de paiement. Lorsque vous [modifiez ou ajoutez des statuts de commande](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) ou [modifiez une vue de magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), un [magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/store-details#store-information) ou un nom de site web, ces données sont combinées aux données de paiement et l&#39;état Statut du paiement des commandes est renseigné avec les informations combinées.
+Les données de commande sont exportées et conservées dans le service de paiement. Lorsque vous [modifiez ou ajoutez des statuts de commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) ou [modifiez une vue de magasin](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), un [magasin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information) ou un nom de site web, ces données sont combinées aux données de paiement et l&#39;état Statut du paiement des commandes est renseigné avec les informations combinées.
 
 Ce processus comporte deux étapes :
 
-1. L’index est modifié en données `ON SAVE` (à chaque modification des informations de commande ou de magasin) ou `BY SCHEDULE` (selon un planning cron préconfiguré), selon la manière dont il est configuré dans [Gestion des index](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management) dans l’administrateur.
+1. L’index est modifié en données `ON SAVE` (à chaque modification des informations de commande ou de magasin) ou `BY SCHEDULE` (selon un planning cron préconfiguré), selon la manière dont il est configuré dans [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) dans l’administrateur.
 
    Par défaut, l’indexation des données se produit `ON SAVE`, ce qui signifie que chaque fois qu’un élément change dans la commande, le statut de la commande, l’affichage du magasin, le magasin ou le site web, le processus de réindexation se produit immédiatement.
 
@@ -138,7 +151,7 @@ Les seules données exportées et collectées à des fins de reporting sont les 
 
 Bien que, par défaut, la réindexation se produise en mode `ON SAVE`, il est recommandé de procéder à l’indexation en mode `BY SCHEDULE`. L’index `BY SCHEDULE` s’exécute selon un planning cron d’une minute et toutes les données modifiées apparaissent dans le rapport État de la commande dans les deux minutes suivant la modification des données. Cette réindexation planifiée vous permet de réduire la pression sur votre magasin, en particulier si vous avez un grand volume de commandes entrantes, car elle se produit selon un planning (et non pas lorsque chaque commande est passée).
 
-Vous pouvez modifier le mode d’index (`ON SAVE` ou `BY SCHEDULE`) [dans l’Administration](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+Vous pouvez modifier le mode d’index (`ON SAVE` ou `BY SCHEDULE`) [dans l’Administration](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Pour savoir comment configurer l’exportation des données, voir [Configuration de ligne de commande](configure-cli.md#configure-data-export).
 
@@ -148,7 +161,7 @@ Dans la vue de rapport Statut du règlement des commandes, vous pouvez sélectio
 
 ![Sélection des sources de données](assets/datasource.png){width="300" zoomable="yes"}
 
-Si _[!UICONTROL Live]_&#x200B;est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour vos magasins qui utilisent [!DNL Payment Services] en mode production. Si&#x200B;_[!UICONTROL Sandbox]_ est la source de données sélectionnée, vous pouvez afficher des informations de rapport pour le mode sandbox.
+Si _[!UICONTROL Live]_est la source de données sélectionnée, vous pouvez afficher les informations de rapport pour vos magasins qui utilisent [!DNL Payment Services] en mode production. Si_[!UICONTROL Sandbox]_ est la source de données sélectionnée, vous pouvez afficher des informations de rapport pour le mode sandbox.
 
 Les sélections de sources de données fonctionnent comme suit :
 
@@ -159,7 +172,7 @@ Les sélections de sources de données fonctionnent comme suit :
 Pour sélectionner la source de données de votre rapport [!UICONTROL Order Payment Status] :
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
-1. Cliquez sur le filtre du sélecteur de _[!UICONTROL Data source]_&#x200B;et sélectionnez **[!UICONTROL Live]**&#x200B;ou **[!UICONTROL Sandbox]**.
+1. Cliquez sur le filtre du sélecteur de _[!UICONTROL Data source]_et sélectionnez **[!UICONTROL Live]**ou **[!UICONTROL Sandbox]**.
 
    Les résultats du rapport sont régénérés en fonction de la source de données sélectionnée.
 
@@ -179,7 +192,7 @@ Dans la vue d&#39;état Statut du paiement de la commande, vous pouvez filtrer l
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Cliquez sur le sélecteur de **[!UICONTROL Filter]**.
 1. Activez/désactivez les options _Statut de règlement_ pour afficher les résultats du rapport pour les statuts de règlement de commande sélectionnés uniquement.
-1. Affichez les résultats du rapport dans une fourchette de montants de commande en saisissant un _[!UICONTROL Min Order Amount]_&#x200B;ou un _[!UICONTROL Max Order Amount_].
+1. Affichez les résultats du rapport dans une fourchette de montants de commande en saisissant un _[!UICONTROL Min Order Amount]_ou un _[!UICONTROL Max Order Amount_].
 1. Cliquez sur **[!UICONTROL Hide filters]** pour masquer le filtre.
 
 ### Afficher et masquer les colonnes
@@ -212,7 +225,7 @@ La colonne Statut du remboursement indique le statut actuel de tout remboursemen
 
 ### Mise à jour des données d’un rapport
 
-La vue d&#39;état du statut de paiement de la commande affiche un horodatage _[!UICONTROL Last updated]_&#x200B;indiquant la dernière mise à jour des informations de l&#39;état. Par défaut, les données du rapport Statut du paiement des commandes sont automatiquement actualisées toutes les trois heures.
+La vue d&#39;état du statut de paiement de la commande affiche un horodatage _[!UICONTROL Last updated]_indiquant la dernière mise à jour des informations de l&#39;état. Par défaut, les données du rapport Statut du paiement des commandes sont automatiquement actualisées toutes les trois heures.
 
 Vous pouvez également forcer manuellement une actualisation des données de l&#39;état du statut de paiement des commandes pour afficher les informations les plus récentes.
 
@@ -249,10 +262,10 @@ Les états de statut du paiement de la commande contiennent les informations sui
 
 | Colonne | Description |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID de commande Commerce <br> <br>Pour afficher les [informations de commande](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} associées, cliquez sur l’ID. |
+| [!UICONTROL Order ID] | ID de commande Commerce <br> <br>Pour afficher les [informations de commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} associées, cliquez sur l’ID. |
 | [!UICONTROL Order Date] | Date et heure de commande |
 | [!UICONTROL Authorized Date] | Date et heure de l’autorisation de paiement |
-| [!UICONTROL Order Status] | Commerce actuel [statut de la commande](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | Commerce actuel [statut de la commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | Statut de la facture de la commande : *[!UICONTROL No]*, *[!UICONTROL Partial]* ou *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Statut d’expédition de la commande : *[!UICONTROL No]*, *[!UICONTROL Partial]* ou *[!UICONTROL Yes]*. |
 | [!UICONTROL Order Amt] | Montant total général de la commande |
