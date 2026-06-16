@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 29747e38a2800997c251f24f70b6356aada9fab9
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '5401'
+source-wordcount: '5400'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Ces notes de mise à jour décrivent les modifications et correctifs de fonction
 
 _8 juin 2026_
 
-![Nouvel événement](../assets/new.svg)<!-- Issue PAY-6510 --> Par [!DNL Adobe Commerce as a Cloud Service], l’interface utilisateur du tableau de bord [!DNL Payment Services] dans le [!DNL Commerce Admin] permet aux commerçants d’ouvrir le [rapport Transactions](reporting.md#transactions-report-view) directement depuis le tableau de bord. Ce tableau de bord SaaS expose uniquement les rapports **sélectionnés** (pas tous les rapports ou points d’entrée d’accueil disponibles sur Adobe Commerce dans le cloud et sur site) ; voir [[!DNL Payment Services] Accueil](payments-home.md). Pour les notes de mise à jour et la planification ACCS, voir [Afficher le rapport des transactions Payment Services](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
+![Nouvel événement](../assets/new.svg)<!-- Issue PAY-6510 --> Par [!DNL Adobe Commerce as a Cloud Service], l’interface utilisateur du tableau de bord [!DNL Payment Services] dans le [!DNL Commerce Admin] permet aux commerçants d’ouvrir le [rapport Transactions](reporting.md#transactions-report-view) directement depuis le tableau de bord. Ce tableau de bord SaaS expose uniquement les rapports **sélectionnés** (pas tous les rapports ou points d’entrée d’accueil disponibles sur Adobe Commerce dans le cloud et sur site) ; voir [[!DNL Payment Services] Accueil](payments-home.md). Pour [!DNL Adobe Commerce as a Cloud Service] les notes de mise à jour et le calendrier, voir [Afficher le rapport des transactions Payment Services](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
 
 _21 janvier 2026_
 

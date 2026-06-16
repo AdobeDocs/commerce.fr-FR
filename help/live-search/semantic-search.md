@@ -3,9 +3,9 @@ title: Recherche Sémantique
 description: Activez la recherche sémantique d’IA à partir  [!DNL Live Search]  paramètres . Aucune configuration d’attribut ou modification du storefront n’est requise.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Les commerçants Adobe Commerce on Cloud et on-premise doivent activer manuellem
 
    Les résultats de recherche sont mis à jour une fois l’indexation terminée. Pour un catalogue de taille moyenne, l’indexation peut prendre jusqu’à une demi-heure. Pour les catalogues volumineux contenant des millions de produits, cela peut prendre quelques heures.
 
-### Pour les clients ACCS
+### Pour les clients [!DNL Adobe Commerce as a Cloud Service]
 
 [!DNL Adobe Commerce as a Cloud Service] clients utilisent le même espace de travail **Paramètres** dans l’administration [!DNL Live Search]. La recherche sémantique est **activée par défaut** pour les catalogues anglais éligibles. Vérifiez **[!UICONTROL Semantic search]** est activé ou désactivez-le si vous ne souhaitez pas que la correspondance sémantique soit activée sur le storefront.
 

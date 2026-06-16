@@ -2,9 +2,9 @@
 title: Configurer les autorisations utilisateur IMS pour l’intégration d’AEM Assets
 description: Découvrez comment l’identité IMS et les profils Admin Console activent l’accès à la diffusion AEM Assets, le sélecteur de ressources et les champs de configuration Commerce automatiquement renseignés.
 feature: CMS, Media, Configuration
-source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -80,5 +80,5 @@ Sans IMS, vous pouvez toujours configurer l’intégration en saisissant manuell
 
 * [Configurer les autorisations utilisateur IMS pour l’intégration d’AEM Assets](setup-synchronization.md) : connectez Commerce à AEM Assets et configurez les règles correspondantes.
 * [Sélection manuelle des ressources](../synchronize/asset-selector-integration.md) : utilisez le sélecteur de ressources pour les images de catégorie et le générateur de page.
-* [Ajout d’un utilisateur à AEM Assets ou à Product Visuals](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} : pour ACCS, ajoutez d’abord des utilisateurs à Commerce et AEM Cloud Manager (propriétaire de l’entreprise, responsable de déploiement). Le profil **Utilisateurs de l’OpenAPI AEM Assets DM - diffusion** (ou profil **auteur** comme profil de secours) est une exigence supplémentaire pour le sélecteur de ressources et le remplissage automatique des fonctionnalités.
+* [Ajout d’un utilisateur à AEM Assets ou à Product Visuals](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} par [!DNL Adobe Commerce as a Cloud Service], ajoutez d’abord des utilisateurs à Commerce et AEM Cloud Manager (Propriétaire de l’entreprise, Responsable de déploiement). Le profil **Utilisateurs de l’OpenAPI AEM Assets DM - diffusion** (ou profil **auteur** comme profil de secours) est une exigence supplémentaire pour le sélecteur de ressources et le remplissage automatique des fonctionnalités.
 * [Affectez des membres de l’équipe à la couche de diffusion AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. Documentation AEM pour l’accès aux diffusions.
