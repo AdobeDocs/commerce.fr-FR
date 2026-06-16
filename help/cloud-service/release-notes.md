@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
+source-git-commit: 469111676c7ac8bdf66f8f42bd26745ce7f88928
 workflow-type: tm+mt
-source-wordcount: 4439
+source-wordcount: 4489
 ht-degree: 0%
 
 ---
@@ -60,6 +60,10 @@ Les éléments suivants ne sont actuellement disponibles que dans les environnem
 ### Filtrer les commandes et les factures par société
 
 Les points d’entrée `GET /V1/orders` et `GET /V1/invoices` de l’API REST prennent désormais en charge le filtrage par `company_id` et `company_name`, ce qui permet aux intégrations B2B de récupérer les commandes ou les factures d’une entreprise spécifique dans une seule requête. <!-- ACCS-1111, CCSAAS-5076 -->
+
+### Répertorier les modèles d’e-mail personnalisés via l’API
+
+Le nouveau point d’entrée de l’API REST `GET /V1/custom-email/templates` renvoie vos [modèles d’e-mail personnalisés](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), y compris l’identifiant, le code et l’objet de chaque modèle. Les intégrations peuvent utiliser un ID de modèle renvoyé avec le point d’entrée `POST /V1/custom-email/send` au lieu de rechercher l’ID manuellement. <!-- CCSAAS-5089 -->
 
 ### Afficher l’historique des modifications de commande dans Admin
 
@@ -571,7 +575,7 @@ Les modifications suivantes ont été apportées aux composants de liste déroul
 
    * **[Gestion de l’entreprise](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=fr)** - Active la gestion des profils d’entreprise et les autorisations basées sur les rôles pour les storefronts Adobe Commerce.
    * **[Sélecteur d’entreprise](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=fr)** - Fournit un composant d’interface utilisateur permettant aux utilisateurs de basculer entre plusieurs entreprises auxquelles ils sont associés.
-   * **[Commandes fournisseur](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - Gère les workflows de commande fournisseur, les règles d&#39;approbation et l&#39;historique des commandes fournisseur pour les transactions B2B.
+   * **[Commandes fournisseur](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=fr)** - Gère les workflows de commande fournisseur, les règles d&#39;approbation et l&#39;historique des commandes fournisseur pour les transactions B2B.
    * **[Gestion des devis](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=fr)** - Active les devis négociables pour les clients B2B avec des workflows de demande, de négociation et d&#39;approbation de devis.
    * **[Listes de demandes d&#39;approvisionnement](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=fr)** - Fournit des outils pour la création et la gestion des listes de demandes d&#39;approvisionnement pour les achats répétés et les commandes groupées.
 
@@ -580,7 +584,7 @@ Les modifications suivantes ont été apportées aux composants de liste déroul
 <!-- 
 * [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=fr). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/?lang=fr). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
 -->
 
 ### Liens cliquables vers des dispositifs de suivi d’expédition externes
