@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2254'
 ht-degree: 0%
 
 ---
@@ -108,9 +108,22 @@ Lors du passage en caisse du client ou lorsqu’un administrateur crée une fact
 
 Détecter quand une transaction de capture en attente passe en statut `Completed` afin que les commerçants puissent reprendre le traitement de la commande concernée.
 
-Pour que ce processus fonctionne comme prévu, les commerçants doivent configurer une nouvelle tâche cron. Une fois le traitement configuré pour s&#39;exécuter automatiquement, aucune autre intervention n&#39;est attendue du commerçant.
+>[!NOTE]
+>
+>La surveillance asynchrone est désactivée par défaut. Lorsque cette option est désactivée, les commandes avec une transaction de capture de `Pending` ne sont pas automatiquement transférées vers `Payment Review`. Pour activer ce comportement, activez la surveillance asynchrone en suivant les étapes ci-dessous.
 
-Voir [&#x200B; Configuration des tâches cron &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=fr). Une fois configuré, le nouveau traitement s’exécute toutes les 30 minutes pour récupérer les mises à jour des commandes dont le statut est défini sur `Payment Review`.
+Activer la surveillance asynchrone : [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
+
+1. Activez le paramètre `async_status_updates` . Comme ce paramètre n’est pas disponible dans l’Administration, activez-le à partir de la ligne de commande :
+
+   ```bash
+   bin/magento config:set payment/payment_services/async_status_updates 1
+   ```
+
+1. Activez et planifiez la tâche cron `sync_order_payment_status` afin que les mises à jour de statut soient récupérées automatiquement. Voir [&#x200B; Configuration des tâches cron &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=fr).
+
+Une fois le paramètre et la tâche cron activés, la tâche cron s’exécute toutes les 10 minutes pour récupérer les mises à jour des commandes dont le statut est défini sur `Payment Review`. Après la configuration, aucune action supplémentaire du commerçant n’est requise dans des conditions de fonctionnement normales.
+
 
 Les commerçants peuvent vérifier le statut de paiement mis à jour à partir de la vue du rapport Statut du paiement de la commande.
 
