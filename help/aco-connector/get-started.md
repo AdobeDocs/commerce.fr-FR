@@ -5,12 +5,26 @@ feature: Integration, Configuration
 badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T16:55:50.934Z'
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-subfeature_v2: id: e126554b-28f9-4290-b58c-10b888b88174id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+subfeature_v2:
+  - id: e126554b-28f9-4290-b58c-10b888b88174
+  - id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 1079
@@ -124,7 +138,7 @@ Le tableau suivant décrit les données exportées à chaque niveau de l’éten
 
 1. Sélectionnez le site web ou la vue de magasin que vous souhaitez configurer.
 
-1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**[!DNL Commerce Optimizer]
+1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**&#x200B;[!DNL Commerce Optimizer]
 
    ![Mettre à jour la configuration de la synchronisation des données](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
 
@@ -152,7 +166,7 @@ Activez l’intégration et lancez la synchronisation des données en exécutant
 
 ### Obtenir les détails de connexion requis
 
-À partir de [](https://developer.adobe.com/console), créez un projet activé pour le service d’ingestion [!DNL Commerce Optimizer] et générez des informations d’identification de serveur à serveur OAuth. Pour obtenir des instructions détaillées, voir [Obtention des informations d’identification IMS](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials) dans le *Guide du développeur du marchandisage*.
+À partir de [&#128279;](https://developer.adobe.com/console), créez un projet activé pour le service d’ingestion [!DNL Commerce Optimizer] et générez des informations d’identification de serveur à serveur OAuth. Pour obtenir des instructions détaillées, voir [Obtention des informations d’identification IMS](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials) dans le *Guide du développeur du marchandisage*.
 
 Enregistrez les valeurs suivantes à partir de la page des informations d’identification :
 
@@ -164,7 +178,7 @@ Enregistrez les valeurs suivantes à partir de la page des informations d’iden
 
 ### Obtention des détails de l’instance [!DNL Commerce Optimizer]
 
-Récupérez l’_identifiant du client_ à partir du champ _[!DNL Instance Id]_de l’instance [!DNL Commerce Optimizer] [[!DNL Instance details] page](../optimizer/get-started.md#manage-instances) ou à partir de l’URL utilisée pour accéder à l’instance. Par exemple, dans `https://experience.adobe.com/#/@&lt;your organization&gt;/in:&lt;tenant ID&gt;/commerce-optimizer-studio/home`.
+Récupérez l’_identifiant du client_ à partir du champ _[!DNL Instance Id]_&#x200B;de l’instance [!DNL Commerce Optimizer] [[!DNL Instance details] page](../optimizer/get-started.md#manage-instances) ou à partir de l’URL utilisée pour accéder à l’instance. Par exemple, dans `https://experience.adobe.com/#/@&lt;your organization&gt;/in:&lt;tenant ID&gt;/commerce-optimizer-studio/home`.
 
 1. Dans l’Administration de Commerce, sélectionnez **[!UICONTROL Adobe Commerce Optimizer]** pour afficher la page de configuration avec les instructions.
 

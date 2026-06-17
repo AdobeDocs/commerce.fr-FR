@@ -6,10 +6,15 @@ seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: d1bf3879-3e86-4665-a55c-494963c87f90
 TQID: https://experienceleague.adobe.com/dfZjgp5wR6H4c7WkNNhjLYUgKNTPIqPWxKiShlTU1yA
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 398
@@ -23,9 +28,9 @@ L&#39;indexation des prix SaaS optimise les performances du site en déchargeant
 
 Le diagramme suivant montre le flux de données d’indexation sur les services SaaS lorsque Commerce utilise le processus [indexation des prix](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) inclus dans l’application Commerce :
 
-![ Flux de données par défaut ](assets/old_way.png)
+![&#x200B; Flux de données par défaut &#x200B;](assets/old_way.png)
 
-Lorsque l&#39;indexation des prix SaaS est activée, le flux de données change. L&#39;indexation des prix est effectuée à l&#39;aide de l&#39;exportation des données SaaS de [](../data-export/sync-overview.md).
+Lorsque l&#39;indexation des prix SaaS est activée, le flux de données change. L&#39;indexation des prix est effectuée à l&#39;aide de l&#39;exportation des données SaaS de [&#128279;](../data-export/sync-overview.md).
 
 ![Flux de données d&#39;indexation des prix SaaS](assets/new_way.png)
 

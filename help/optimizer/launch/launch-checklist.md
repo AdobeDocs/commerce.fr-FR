@@ -10,12 +10,22 @@ level: Intermediate
 topic: Administration
 recommendations: noCatalog
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c18ed297-2187-4aec-affb-9d9654eca6fc
-subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 880
@@ -38,7 +48,7 @@ Votre solution comprend généralement les composants suivants :
 - **Optimizer** : [!DNL Adobe Commerce Optimizer] offre des expériences de marchandisage.
 - **Storefront** : le storefront Adobe Commerce sur Edge Delivery Services fournit l’interface utilisateur.
 - **Services tiers**—Prestataires de services de paiement, d&#39;expédition et de taxe.
-- ****—Extensibilité.
+- **&#x200B;**—Extensibilité.
 - **Maillage API**—Routage des requêtes.
 
 ## Vérification d’Adobe Commerce sur le cloud {#verify-cloud}
@@ -214,7 +224,7 @@ Confirmez les lignes de base de performances et le câblage d’analyse.
 Confirmez les autorisations et les secrets.
 
 ▢ Les autorisations appropriées sont configurées pour le contenu DA et les sites EDS. Voir [Autorisations DA.live](https://da.live/docs/administration/permissions) et [Configuration de l’authentification pour la création](https://www.aem.live/docs/authentication-setup-authoring).
-▢ L’intégration des visuels de produit est configurée. Voir [ Présentation de l’accès à AEM Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
+▢ L’intégration des visuels de produit est configurée. Voir [&#x200B; Présentation de l’accès à AEM Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
 ▢ Les liens de réinitialisation du mot de passe dans les modèles d’e-mail correspondent à votre configuration Edge Delivery Services. Voir la FAQ sur storefront : [Que dois-je faire si mes liens de modèle d’e-mail sont rompus après la migration vers Edge Delivery Services ou Helix ?](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 ▢ Les clés de production pour les intégrations et les fournisseurs de paiement sont en place.
 Les domaines ▢ sont placés sur la liste autorisée et les webhooks d’arrière-plan fonctionnent.
