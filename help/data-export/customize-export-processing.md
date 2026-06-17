@@ -1,17 +1,23 @@
 ---
 title: Amélioration des performances d’exportation des données SaaS
 description: Découvrez comment améliorer les performances d’exportation des données SaaS pour les services Commerce à l’aide d’un mode d’exportation de données multithread.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
 TQID: https://experienceleague.adobe.com/k-gizR-v-zQjQiN5IZm1Mv87J6j9eMsxH8vl-K1Co2M
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 669
 ht-degree: 0%
@@ -47,10 +53,14 @@ N’oubliez pas qu’une planification minutieuse, y compris l’estimation du v
 
 ## Configuration du multithread
 
-Le mode multithread est pris en charge pour toutes les [méthodes de synchronisation](data-synchronization.md#view-and-manage-the-synchronization-process) : synchronisation complète, synchronisation partielle et synchronisation des éléments en échec. Pour configurer le multithread, vous spécifiez le nombre de threads et la taille du lot à utiliser pendant la synchronisation.
+Le mode multithread est pris en charge pour toutes les [méthodes de synchronisation](sync-overview.md#synchronization-types) : synchronisation complète, synchronisation partielle et synchronisation des éléments en échec. Pour configurer le multithread, vous spécifiez le nombre de threads et la taille du lot à utiliser pendant la synchronisation.
 
 - `thread-count` correspond au nombre de threads activés pour traiter les entités. La `thread-count` par défaut est `1`.
 - `batch-size` est le nombre d&#39;entités qui sont traitées dans une seule itération. La `batch-size` par défaut est `100` enregistrements pour tous les flux, à l’exception du flux de prix. Pour le flux de prix, la valeur par défaut est `500` enregistrements.
+
+>[!NOTE]
+>
+>Pour les déploiements [!DNL Adobe Commerce Optimizer Connector], passez en revue les flux pris en charge spécifiques au connecteur et les limites de lots dans [Modules du connecteur et points d’entrée des flux](../aco-connector/reference/connector-reference.md#supported-feeds).
 
 Vous pouvez configurer le multithread en tant qu’option temporaire lors de l’exécution d’une commande de resynchronisation ou en ajoutant la configuration multithread à la configuration de l’application Adobe Commerce.
 
@@ -62,7 +72,7 @@ Vous pouvez configurer le multithread en tant qu’option temporaire lors de l�
 
 Lorsque vous exécutez une commande de synchronisation complète à partir de la ligne de commande, spécifiez le traitement multithread en ajoutant les options `thread-count` et `batch-size` à la commande de l’interface de ligne de commande.
 
-```
+```shell
 bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
@@ -95,3 +105,9 @@ return [
             ],
 //   ...
 ```
+
+>[!MORELIKETHIS]
+>
+> - [Estimer le volume des données et la durée de transmission](estimate-data-volume-sync-time.md)
+> - [Fonctionnement de la synchronisation](sync-overview.md)
+> - [Schéma de la table des flux](reference/feed-table-reference.md)

@@ -7,6 +7,8 @@ autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
   - id: c32adafa-ed01-4b31-997e-2413013911b0
@@ -18,9 +20,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: 296
 ht-degree: 1%
 
 ---
@@ -45,7 +47,7 @@ Le connecteur comprend plusieurs modules Magento qui collectent des données de 
 
 ## Flux pris en charge
 
-Le connecteur envoie plusieurs types de flux au [!DNL Catalog Data Ingestion API] [!DNL Commerce Optimizer]. Le tableau ci-dessous répertorie chaque flux avec son point d’entrée, sa limite de lots, le nom de l’indexeur et sa table de flux en [!DNL Adobe Commerce].
+Le connecteur envoie plusieurs types de flux au [[!DNL Catalog Data Ingestion API]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"} [!DNL Commerce Optimizer]. Le tableau ci-dessous répertorie chaque flux avec son point d’entrée, sa limite de lots, le nom de l’indexeur et sa table de flux en [!DNL Adobe Commerce].
 
 | Flux | Point d’entrée de l’API [!DNL Commerce Optimizer] | Limite de lot | Nom de l’index AC | Tableau de flux |
 | ---- | ----------------------------------- | ----------- | ------------- | ---------- |
@@ -58,6 +60,7 @@ Le connecteur envoie plusieurs types de flux au [!DNL Catalog Data Ingestion API
 Les flux `products`, `productAttributes`, `categories` et `prices` réutilisent les données collectées par les indexeurs [!DNL SaaS Data Export]. Le connecteur génère le flux de `priceBooks` à partir de la configuration du site web et du groupe client et ne repose pas sur un indexeur de [!DNL SaaS Data Export].
 
 Pour plus d’informations sur le mappage au niveau du champ de chaque flux, voir [Mappage des champs pour  [!DNL Commerce Optimizer Connector]  flux](field-mapping.md).
+Pour estimer la durée d’une synchronisation en fonction de la taille de votre catalogue, consultez [Estimation du volume de données et de la durée de synchronisation](estimate-data-volume-sync-time.md).
 
 ## Chemins de configuration
 

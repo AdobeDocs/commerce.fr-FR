@@ -1,6 +1,7 @@
 ---
 title: Prise en main de  [!DNL Live Search]
 description: Découvrez la configuration requise et les étapes d’installation pour  [!DNL Live Search]  à partir d’Adobe Commerce.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
 badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
@@ -24,9 +25,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 2934
+source-wordcount: 2883
 ht-degree: 0%
 
 ---
@@ -238,7 +239,7 @@ Utilisez le [tableau de bord de gestion des données](https://experienceleague.a
 
 ![Tableau de bord de gestion des données](assets/data-management-dashboard.png)
 
-Vous pouvez également exécuter des commandes de synchronisation et résoudre les problèmes de synchronisation à l’aide de l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md#troubleshooting) et des journaux d’extension d’exportation de données.
+Vous pouvez également exécuter des commandes de synchronisation et résoudre les problèmes de synchronisation à l’aide de l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md) et des journaux d’extension d’exportation de données [&#128279;](../data-export/troubleshooting/logging.md).
 
 #### Futures mises à jour des produits
 

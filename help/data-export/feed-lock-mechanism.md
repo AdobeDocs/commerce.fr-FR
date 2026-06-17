@@ -1,11 +1,26 @@
 ---
 title: Mécanisme de verrouillage de flux pour l'exportation de données SaaS
 description: Découvrez comment utilise  [!DNL SaaS Data Export]  verrous de flux pour éviter les opérations de synchronisation en conflit et protéger l’intégrité des données lors de mises à jour simultanées des flux.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Services
-source-git-commit: cfa1002653bf66afd3f6b8484b33076adcd1b7d4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: 355
 ht-degree: 0%
 
 ---
@@ -20,7 +35,7 @@ L’extension [!DNL SaaS Data Export] utilise un mécanisme de verrouillage des 
 Chaque opération de synchronisation de flux, qu’elle soit déclenchée par une tâche cron ou un appel d’interface de ligne de commande `saas:resync` manuel, suit la même séquence :
 
 1. Le processus tente d&#39;acquérir le verrou d&#39;alimentation. La tentative de verrouillage est non bloquante et renvoie immédiatement si le verrouillage est déjà conservé par un autre processus.
-1. Si le verrou n’est **pas disponible**, l’opération [ est ignorée et consignée].
+1. Si le verrou n’est **pas disponible**, l’opération est ignorée et consignée.
 
    Aucune donnée n’est perdue. La prochaine exécution cron détecte les modifications en attente une fois le processus en cours terminé.
 1. Si le verrou est **acquis**, le processus enregistre son nom et son PID à des fins de diagnostic, puis exécute la synchronisation.
@@ -40,10 +55,11 @@ Ce message s’affiche lorsqu’une synchronisation partielle déclenchée par c
 
 >[!NOTE]
 >
->Pour obtenir des informations générales sur le format des journaux et les types d’opérations enregistrés dans `commerce-data-export.log`, voir [Vérification des journaux et dépannage](troubleshooting-logging.md).
+>Pour obtenir des informations générales sur le format des journaux et les types d’opérations enregistrés dans `commerce-data-export.log`, voir [Vérification des journaux et dépannage](troubleshooting/logging.md).
 
-## Plus d’aide sur cette rubrique
-
-- [Synchroniser les données avec l&#39;export de données SaaS](data-synchronization.md)
-- [Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce](data-export-cli-commands.md)
-- [Configuration du fournisseur de verrous](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
+>[!MORELIKETHIS]
+>
+> - [Synchroniser les données avec l’exportation de données SaaS](sync-overview.md)
+> - [Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce](data-export-cli-commands.md)
+> - [Pipeline de synchronisation du connecteur](../aco-connector/connector-sync-pipeline.md)
+> - [Configurer le fournisseur de verrouillage](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}

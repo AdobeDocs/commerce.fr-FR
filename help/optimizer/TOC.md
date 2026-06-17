@@ -5,7 +5,7 @@ user-guide-description: Documentation et ressources pour  [!DNL Adobe Commerce O
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
+source-git-commit: 94ba07437d532d0d101c166f58114c2aa0bd4be4
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 11%
@@ -51,7 +51,7 @@ ht-degree: 11%
       - [Types](./merchandising/synonyms/type.md)
       - [Bonnes pratiques](./merchandising/synonyms/best-practice.md)
 - Configuration de la boutique {#setup}
-   - [Sources de catalogue](./setup/catalog-source.md)
+   - [Sources de catalogue](./setup/catalog-sources.md)
    - [Vues du catalogue](./setup/catalog-view.md)
    - [Calques de catalogue](./setup/catalog-layer.md)
    - [Politiques](./setup/policies.md)

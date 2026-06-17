@@ -6,9 +6,9 @@ role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
-source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
+source-git-commit: 3624bb934c25e04ae2f08b0d78ed4602df89d3eb
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '163'
 ht-degree: 12%
 
 ---
@@ -21,15 +21,16 @@ ht-degree: 12%
 - {hide-from-toc}[Solutions de produit](product-solutions.md)
 - Services Commerce {#commerce-services}
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/overview)
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=fr)
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=fr)
-   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=fr)
+   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html)
    - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=fr)
 - Services d’intégration {#integration-services}
+   - [[!DNL Adobe Commerce Optimizer Connector]](https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/overview)
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=fr)
    - [[!DNL App Management]](https://experienceleague.adobe.com/fr/docs/commerce/app-management/overview)
    - [Connecteur de services](/help/landing/saas.md)
-   - [Intégration [!DNL Adobe Commerce] avec  [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html?lang=fr)
+   - [Intégration [!DNL Adobe Commerce] avec  [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html)
 - Outils de données {#data-services}
    - [Exportation de données SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=fr)
    - [Indexation des prix SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=fr)

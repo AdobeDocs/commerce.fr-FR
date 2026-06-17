@@ -7,6 +7,8 @@ autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
   - id: c32adafa-ed01-4b31-997e-2413013911b0
@@ -22,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 625
+source-wordcount: 662
 ht-degree: 1%
 
 ---
@@ -47,26 +49,29 @@ Le diagramme suivant montre la synchronisation des données de [!DNL Adobe Comme
 
 Lorsque les données du catalogue changent dans [!DNL Adobe Commerce], la synchronisation passe par ces étapes.
 
-1. **Détection des modifications d’entité** — (toutes les 1 min) Une tâche cron (`indexer_reindex_all_invalid`) détecte [!DNL Adobe Commerce] modifications d’entité et déclenche la [!DNL SaaS Data Export], qui assemble les éléments de flux et suit leur statut.
+1. **Détection des modifications d’entité** — (toutes les 1 min) Une tâche cron (`indexer_reindex_all_invalid`) détecte [!DNL Adobe Commerce] modifications d’entité et déclenche la [!DNL SaaS Data Export], qui assemble les éléments de flux.
 1. **Transformation** — Le [!DNL Commerce Optimizer Connector] récupère les flux assemblés, mappe [!DNL Adobe Commerce] entités et les portées aux formats requis par l&#39;API [!DNL Commerce Optimizer] et prépare la payload pour la transmission.
 1. **Transmission** — Les données transformées sont envoyées via HTTP POST (`/v1/catalog/<feed name>`) via le [!DNL Adobe I/O Gateway] à [!DNL Commerce Optimizer], qui valide et conserve les flux entrants.
+1. **Conserver les résultats** — Conserver le statut de réponse de l’API dans les [tableaux de flux](reference/connector-reference.md#supported-feeds).
 1. **Reprise en cas d’échec** (toutes les 5 minutes) — Une tâche cron distincte (`*_resend_failed_items`) détecte tous les éléments de flux ayant échoué et les soumet à nouveau par le biais du même pipeline.
 
 ### Traitements cron planifiés
 
-Deux groupes cron automatisent le pipeline selon un planning fixe.
+Les tâches cron suivantes automatisent le pipeline selon un planning fixe.
 
-| Groupe cron | Objectif | Planning |
-| ---------- | ------- | -------- |
-| `indexer_reindex_all_invalid` | Écoute les mises à jour des entités, assemble les éléments de flux et conserve le statut du flux | Toutes les 1 minute |
-| `*_resend_failed_items` | Recherche les éléments de flux ayant échoué et les soumet à nouveau à [!DNL Commerce Optimizer] | Toutes les 5 minutes |
+| Groupe cron | Tâche cron | Objectif | Planning |
+|-------------------------------------|-------------------------------|------------------------------------------------------------------------------|----------------|
+| `index` | `indexer_update_all_views` | Écoute les mises à jour des entités, assemble les éléments de flux et conserve le statut du flux | Toutes les 1 minute |
+| `index` | `indexer_reindex_all_invalid` | Effectuer une resynchronisation complète pour les index de flux marqués comme « Réindexation requise » | Toutes les 1 minute |
+| `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | Recherche les éléments de flux ayant échoué et les soumet à nouveau à [!DNL Commerce Optimizer] | Toutes les 5 minutes |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | Nettoie les éléments de flux supprimés synchronisés après la période de conservation (7 jours) | Tous les jours à 2:00 h |
 
 L’extension **[!DNL SaaS Data Export]** gère la collecte de flux et le suivi des statuts. Le calque de connecteur mappe les entités et les étendues au format requis par l’API [!DNL Commerce Optimizer] et les envoie via `POST /v1/catalog/<feed name>`.
 
 #### Conditions requises
 
 - [Commerce cron doit être en cours d&#39;exécution](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
-- Les indexeurs de flux doivent utiliser le mode **[!UICONTROL Update by Schedule]**. Voir [Vérification de la configuration de l’application Commerce](../data-export/data-synchronization.md#verify-commerce-application-configuration){target="_blank"}.
+- Les indexeurs de flux doivent utiliser le mode **[!UICONTROL Update by Schedule]**. Voir [&#x200B; Synchronisation partielle &#x200B;](../data-export/sync-overview.md#partial-sync){target="_blank"}.
 
 ## Contrôle de synchronisation basé sur la portée
 
@@ -88,7 +93,7 @@ Pour plus d’informations sur la personnalisation de la portée de synchronisat
 | Échecs transitoires | Reprise toutes les 5 minutes |
 | Synchronisation complète pour les catalogues volumineux | De quelques minutes à quelques heures |
 
-Surveillez le statut par flux à partir de la page [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) de l’administration Commerce. Voir [Vérifier que la synchronisation des données fonctionne](./get-started.md#verify-that-the-data-sync-is-working).
+Surveillez le statut par flux à partir de la page [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) de l’administration Commerce. Voir [Vérifier que la synchronisation des données fonctionne](./data-sync-manage.md#verify-that-the-data-sync-is-working).
 
 ## Envoi du flux et gestion des erreurs
 

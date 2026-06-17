@@ -1,7 +1,7 @@
 ---
-source-git-commit: 61e34c6fb4a004789bffa43c5b9356ad4edc685e
+source-git-commit: 2cae607e49298fa07c35e59bfc1e8388fe3b58cf
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1184'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">validation</a></td>
     </tr>
     <tr>
-      <td><p>Ajout du <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/feed-lock-mechanism">mécanisme de verrouillage de flux pour l’exportation de données SaaS</a> afin d’expliquer comment les verrous de flux empêchent les conflits de synchronisation simultanés et comment interpréter les messages à ignorer normaux inclus dans le journal d’exportation de données Commerce (<code>commerce-data-export.log</code>).</p>
+      <td><p>Ajout du <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/feed-lock-mechanism">mécanisme de verrouillage de flux pour l’exportation de données SaaS</a> afin d’expliquer comment les verrous de flux empêchent les conflits de synchronisation simultanés et comment interpréter les messages à ignorer normaux inclus dans le journal d’exportation de données Commerce (<code>commerce-data-export.log</code>).</p>
 </td>
       <td>
         Nouvelle rubrique

@@ -1,25 +1,31 @@
 ---
 user-guide-title: Guide d’intégration d’[!DNL Adobe Commerce Optimizer Connector]
 breadcrumb-title: '[!DNL Optimizer Connector]'
-user-guide-description: Utilisez le guide  [!DNL Adobe Commerce Optimizer Connector]  exporter les données du catalogue, synchroniser les prix et diffuser les vitrines  [!DNL Edge Delivery Services]  utilisant  [!DNL Adobe Commerce Optimizer].
+user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation du  [!DNL Adobe Commerce Optimizer Connector]  pour exporter des données de catalogue, synchroniser les prix et diffuser  [!DNL Edge Delivery Services]  vitrines à l’aide du  [!DNL Adobe Commerce Optimizer].
 role: Developer, Admin
-feature: Integration, Configuration
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+feature: Integration, Storefront, Configuration
+nudge: true
+source-git-commit: 3624bb934c25e04ae2f08b0d78ed4602df89d3eb
 workflow-type: tm+mt
-source-wordcount: '39'
-ht-degree: 7%
+source-wordcount: '65'
+ht-degree: 6%
 
 ---
 
 
-# Connecteur Adobe Commerce Optimizer {#aco-optimizer-connector}
+# Guide d’intégration d’[!DNL Adobe Commerce Optimizer Connector] {#aco-optimizer-connector}
 
 - [[!DNL Adobe Commerce Optimizer Connector]](overview.md)
 - [Prise en main](get-started.md)
 - [Pipeline de synchronisation du connecteur](connector-sync-pipeline.md)
+- [Gestion de la synchronisation](data-sync-manage.md)
 - [Intégration de storefront découplé](headless-storefront.md)
-- [Dépannage](troubleshooting.md)
+- Dépannage {#troubleshooting}
+   - [Vue d’ensemble](troubleshooting.md)
+   - [Scénarios de dépannage](troubleshooting/troubleshooting-scenarios.md)
 - Référence {#reference}
-   - [Modules de connecteur et points d’entrée de flux](./reference/connector-reference.md)
-   - [Mappage des champs pour les flux du connecteur](./reference/field-mapping.md)
+   - [Modules de connecteur et points d’entrée de flux](reference/connector-reference.md)
+   - [Mappage des champs pour les flux du connecteur](reference/field-mapping.md)
+   - [Estimation du volume de données et de la durée de synchronisation](reference/estimate-data-volume-sync-time.md)
 - [Notes de mise à jour](release-notes.md)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr)

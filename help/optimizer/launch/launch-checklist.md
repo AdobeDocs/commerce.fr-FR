@@ -1,6 +1,7 @@
 ---
 title: Lancer la liste de contrôle
 description: 'Découvrez comment valider la configuration, le storefront, l’optimisation du moteur de recherche (SEO), le réseau CDN, les intégrations, la sécurité, les analyses et les tests pour la production [!DNL Adobe Commerce Optimizer] '
+autotag-review: '2026-06-17T15:08:59.000Z'
 solution: Commerce
 feature: Integration, Storefront, Search, Catalog Management, Personalization
 feature-set: Commerce
@@ -9,9 +10,25 @@ level: Intermediate
 topic: Administration
 recommendations: noCatalog
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 37b8b8a334ca11daacfd3da03b0441e77329e2e1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: 880
 ht-degree: 0%
 
 ---
@@ -59,7 +76,7 @@ Vérifiez que votre instance de production [!DNL Adobe Commerce Optimizer] est c
 
 Vérifiez que votre site de storefront Edge Delivery Services existe et que l’accès est restreint.
 
-▢ Le site storefront existe. Voir [Création d’un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr).
+▢ Le site storefront existe. Voir [Création d’un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/).
 ▢ Vous connaissez le nom du site.
 ▢ Seules les personnes autorisées ont [l’autorisation de publier](https://tools.aem.live/tools/user-admin/index.html).
 ▢ Seules les personnes autorisées ont [l’autorisation de créer](https://docs.da.live/administrators/guides/permissions).
@@ -75,7 +92,7 @@ Effectuez ces vérifications dans votre projet cloud.
 ▢ Le connecteur Commerce Optimizer est [installé et configuré](../../aco-connector/get-started.md).
 ▢ La commande de l’interface de ligne de commande `aco:conf:show` confirme la connexion à l’instance Commerce Optimizer de production. L’ID d’organisation, l’ID client, l’URL d’ingestion et l’URL Commerce Optimizer correspondent en production.
 ▢ Portées de la synchronisation dans [Configuration de l’exportation](../../aco-connector/get-started.md) correspondent à vos besoins.
-▢ [Statut de synchronisation des flux de données](../../aco-connector/get-started.md) confirme l’exportation des données à partir de l’instance cloud.
+▢ [Statut de synchronisation des flux de données](../../aco-connector/data-sync-manage.md) confirme l’exportation des données à partir de l’instance cloud.
 
 ### Dans Commerce Optimizer
 
@@ -199,7 +216,7 @@ Confirmez les lignes de base de performances et le câblage d’analyse.
 ▢ Votre storefront suit les [bonnes pratiques de performances](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/?lang=fr){target="_blank"} dans la documentation _Adobe Commerce Storefront_.
 ▢ (facultatif) Google Analytics et Google Tag Manager sont configurés.
 ▢ [Événements Storefront](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger) l’implémentation est valide et les données apparaissent dans vos tableaux de bord [!DNL Live Search] et [!DNL Product Recommendations] dans Adobe Commerce *Admin*.
-▢ Le paramètre `environment` analytics dans la configuration [Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=fr){target="_blank"} est `"Testing"` pendant le développement et `"Production"` lors de la mise en production. Voir [instrumentation Analytics](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=fr){target="_blank"}.
+▢ Le paramètre `environment` analytics dans la configuration [Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=fr){target="_blank"} est `"Testing"` pendant le développement et `"Production"` lors de la mise en production. Voir [instrumentation Analytics](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/){target="_blank"}.
 ▢ scores Lighthouse atteignent vos cibles (par exemple, `100` sur les pages clés) grâce aux conseils de cette rubrique.
 
 ### Sécurité et accès
@@ -219,7 +236,7 @@ Confirmez le comportement du réseau CDN, du DNS et du cache.
 ▢ La configuration du réseau CDN utilise le point d’entrée de production GraphQL (`yourproject.com/graphql`) pour les extensions et scripts Sidekick (par exemple, la génération du plan de site et l’importateur d’images).
 ▢ Lorsque vous utilisez Adobe Commerce Fastly, un jeton de purge du réseau CDN est disponible et [configuration du site](https://tools.aem.live/tools/cdn-setup/index.html) comprend `authToken` et `serviceId`.
 ▢ [configuration du réseau CDN](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=fr){target="_blank"} valide la mise en cache et l’invalidation.
-▢ Pour les [configurations multi-magasin](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/?lang=fr#multi-store-setups){target="_blank"}, les requêtes du service de catalogue et du [!DNL Live Search] incluent un buster de cache spécifique au magasin (par exemple, un paramètre de requête ou une règle de réseau CDN).
+▢ Pour les [configurations multi-magasin](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/#multi-store-setups){target="_blank"}, les requêtes du service de catalogue et du [!DNL Live Search] incluent un buster de cache spécifique au magasin (par exemple, un paramètre de requête ou une règle de réseau CDN).
 ▢ L’invalidation des notifications push fonctionne de bout en bout (publication d’une modification, puis vérification sur le domaine de production).
 ▢ TTL DNS est suffisamment bas avant le basculement.
 ▢ enregistrements DNS A et CNAME sont corrects pour tous les domaines et noms d’hôtes.

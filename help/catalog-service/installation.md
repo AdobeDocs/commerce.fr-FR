@@ -1,6 +1,7 @@
 ---
 title: Installation
 description: Découvrez comment installer  [!DNL Catalog Service]
+autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
 badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 TQID: https://experienceleague.adobe.com/qVI-zFFljrUZzjSMmBxs5jRCsKbxfivQV1xzzpBS2uw
@@ -13,7 +14,7 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 972
 ht-degree: 0%
@@ -57,7 +58,7 @@ Installez Catalog Service pour demander et recevoir des données de produit d’
 
 Toutes les instances de test Commerce utilisent le point d’entrée Sandbox.
 
-Effectuez tous les tests de chargement sur le point d’entrée Sandbox. Avant de commencer les tests de chargement, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) afin que l’équipe des services puisse anticiper le trafic supplémentaire du serveur.
+Effectuez tous les tests de chargement sur le point d’entrée Sandbox. Avant de commencer les tests de chargement, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) afin que l’équipe des services puisse anticiper le trafic supplémentaire du serveur.
 
 ## Installation et configuration
 
@@ -179,4 +180,4 @@ Pour vous assurer que l’exportation du catalogue s’exécute correctement :
 
 ### Surveillance et dépannage de la synchronisation des données
 
-Dans l’administration Commerce, vous pouvez surveiller le processus de synchronisation à l’aide du tableau de bord [Data Management Dashboard](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Utilisez l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md#troubleshooting) et les journaux pour gérer et résoudre les problèmes liés au processus.
+Dans l’administration Commerce, vous pouvez surveiller le processus de synchronisation à l’aide du tableau de bord [Data Management Dashboard](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Utilisez l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md) et les [journaux](../data-export/troubleshooting/logging.md) pour gérer et résoudre les problèmes du processus.
