@@ -1,25 +1,17 @@
 ---
 title: Vue Catalogue
 description: Découvrez les vues de catalogue et comment les créer pour organiser votre catalogue de produits par structure d’entreprise, politiques et prix.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 1210
 ht-degree: 0%
@@ -37,7 +29,7 @@ Les vues Catalogue définissent l’organisation et l’affichage de votre catal
 - **Quels produits sont visibles** en fonction de la structure de l’entreprise (marques, régions, revendeurs) ?
 - **Quel prix est affiché** via les livres de prix liés
 - **Comment les produits sont filtrés** à l’aide de politiques (attributs tels que la marque, le modèle, la catégorie)
-- **Qu’est-ce que [source du catalogue](catalog-source.md) est utilisé** en fonction d’attributs tels que les paramètres régionaux
+- **Qu’est-ce que [source du catalogue](catalog-sources.md) est utilisé** en fonction d’attributs tels que les paramètres régionaux
 
 Considérez les vues de catalogue comme différentes « lentilles » à travers lesquelles les clients voient votre catalogue. Par exemple :
 
@@ -64,7 +56,7 @@ Avant de créer une vue de catalogue, vérifiez que vous disposez des éléments
 1. Configurez les détails de la vue Catalogue :
 
    - **Nom** : saisissez le nom de la vue du catalogue, par exemple `Celport`. &#x200B;
-   - **Sources de catalogue** : sélectionnez la [source de catalogue](catalog-source.md) par exemple `en-US`.
+   - **Sources de catalogue** : sélectionnez la [source de catalogue](catalog-sources.md) par exemple `en-US`.
    - **Calques du catalogue**-Examinez les calques ingérés et la priorité.
    - **Politiques** : utilisez la liste déroulante pour sélectionner les politiques appropriées. Par exemple, « Marque », « Modèle ». &#x200B;Vérifiez que vous avez déjà [créé une politique](policies.md).
 
@@ -82,7 +74,7 @@ Une fois ces étapes terminées, la vue de catalogue est maintenant configurée 
 
 ### Spécification des vues de catalogue pour les recommandations et les règles de découverte de produits
 
-Vous pouvez définir une vue de catalogue lorsque vous [créez des unités de recommandation](../merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](../merchandising/rules/add.md).
+Vous pouvez définir une vue de catalogue lorsque vous [créez des unités de recommandation](../merchandising/recommendations/create.md) ou [ des règles de marchandisage](../merchandising/rules/add.md).
 
 ## Calques de catalogue
 
@@ -139,7 +131,7 @@ Certains de ces paramètres de configuration sont nécessaires lorsque vous conf
 
 Les vues de catalogue font partie de la structure des services de marchandisage qui remplace la structure du site web, du magasin et du magasin utilisée dans les bases d’Adobe Commerce par un modèle plus flexible :
 
-![[!DNL Merchandising Services] Architecture &#x200B;](../assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] Architecture ](../assets/merchandising-svcs-architecture.png)
 
 ### Fonctionnement
 
@@ -203,7 +195,7 @@ Les données de catalogue filtrées sont diffusées vers diverses destinations, 
 
 ## Plus comme ceci
 
-- [Sources de catalogue](catalog-source.md) - Définissez la portée faisant autorité des produits, attributs et catégories pour le comportement de recherche, de filtrage et de tri
+- [Sources de catalogue](catalog-sources.md) - Définissez la portée faisant autorité des produits, attributs et catégories pour le comportement de recherche, de filtrage et de tri
 - [Calques de catalogue](catalog-layer.md) - Découvrez comment modifier les données de produit sans modifier la source d’origine.
 - [Politiques](policies.md) - Créez des politiques pour filtrer les produits dans les vues du catalogue
 - [Classeurs de prix](pricebooks.md) - Gérez les structures de prix pour différents segments de clientèle

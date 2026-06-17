@@ -3,28 +3,17 @@ title: Mappage des champs pour  [!DNL Adobe Commerce Optimizer Connector]  flux
 description: Découvrez le mappage  [!DNL Adobe Commerce Optimizer Connector]  champs des données  [!DNL Adobe Commerce]  catalogue aux formats d’API  [!DNL Adobe Commerce Optimizer] ’ingestion pour tous les flux.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-source-git-commit: 1f901b4a72c10dc4e710742b98c03e88cbc8739f
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e7dae43f-215c-4cdf-90d3-c5a461a6e669id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: e0eb8757-182f-49f3-94a4-1587d16f5094id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 465
+source-wordcount: 665
 ht-degree: 0%
 
 ---
@@ -35,6 +24,8 @@ ht-degree: 0%
 Cette page décrit comment l’[!DNL Adobe Commerce Optimizer Connector] transforme [!DNL Adobe Commerce] champs du catalogue au format requis par le [!DNL Catalog Data Ingestion API] [!DNL Commerce Optimizer]. Consultez la [référence du connecteur](connector-reference.md#supported-feeds) pour obtenir la liste des flux pris en charge et leurs points d’entrée d’API.
 
 ## Produits
+
+Le flux de `products` envoie des données au point d’entrée [Products](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}.
 
 | champ [!DNL Adobe Commerce] | Champ API [!DNL Commerce Optimizer] | Remarques |
 | ----------------------------------------------- | -------------- | ------- |
@@ -56,11 +47,14 @@ Cette page décrit comment l’[!DNL Adobe Commerce Optimizer Connector] transfo
 | `categoryData[].categoryPath` | `routes[].path` | |
 | `categoryData[].productPosition` | `routes[].position` | |
 | `links[].type` + `links[].sku` | `links[]` | `type` mis en majuscules ; entrées sans `sku` supprimées |
-| `parents[].productType` + `parents[].sku` | `links[]` | Type mappé : →`VARIANT_OF`, `bundle`/`bundle_fixed`→`IN_BUNDLE`&#x200B;`configurable` |
-| `configurable options` | `configurations[]` | →`attributeCode`, `label` ; type d’option `SWATCH` lorsque `swatchType` est défini, sinon `CONFIGURABLE` ; variante par défaut de `isDefault` ; les valeurs comprennent `variantReferenceId`, `label`, `colorHex`, `imageUrl`&#x200B;`id` |
+| `parents[].productType` + `parents[].sku` | `links[]` | Type mappé : →`VARIANT_OF`, `bundle`/`bundle_fixed`→`IN_BUNDLE``configurable` |
+| `configurable options` | `configurations[]` | →`attributeCode`, `label` ; type d’option `SWATCH` lorsque `swatchType` est défini, sinon `CONFIGURABLE` ; variante par défaut de `isDefault` ; les valeurs comprennent `variantReferenceId`, `label`, `colorHex`, `imageUrl``id` |
 | `bundle options` | `bundles[]` | →`group`; `required`; `renderType` `checkbox`/`multi`→`multiSelect: true`; SKU par défaut de `isDefault`; les éléments comprennent `sku`, `qty`, `userDefinedQty` (`qtyMutability`)`label` |
 
 ## Métadonnées des attributs de produit
+
+Le flux de `productAttributes` envoie des données au point d’entrée [Métadonnées](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}.
+
 
 | champ [!DNL Adobe Commerce] | Champ API [!DNL Commerce Optimizer] | Remarques |
 | --------------- | -------------- | ------- |
@@ -78,7 +72,9 @@ Cette page décrit comment l’[!DNL Adobe Commerce Optimizer Connector] transfo
 | `searchWeight` | `searchWeight` | |
 | `searchTypes` | `searchTypes` | |
 
-**Conversion du type de données :**
+### Conversion du type de données
+
+Le connecteur dérive le `dataType` d’API des champs `dataType` et `frontendInput` Commerce dans le tableau de mappage ci-dessus. Le tableau suivant indique les règles de conversion appliquées par le connecteur.
 
 | [!DNL Adobe Commerce] `dataType` | [!DNL Adobe Commerce] `frontendInput` | `dataType` de l’API [!DNL Commerce Optimizer] |
 | -------------------- | -------------------------- | ------------------- |
@@ -90,7 +86,13 @@ Cette page décrit comment l’[!DNL Adobe Commerce Optimizer Connector] transfo
 | `OBJECT` | - | `OBJECT` |
 | tout autre | - | `TEXT` |
 
+>[!NOTE]
+>
+>Lorsque la `dataType` d’un attribut est définie sur `OBJECT`, l’API [products](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"} traite la valeur de l’attribut comme un objet structuré plutôt que comme une chaîne simple. Au moment de la requête, l’API tente d’analyser la valeur stockée au format JSON. Si l’analyse réussit, le résultat est renvoyé en tant qu’objet imbriqué dans la réponse. **Ce comportement est particulièrement utile** lorsque vous fournissez dynamiquement des attributs personnalisés, par exemple pour transporter des données structurées ou à champs multiples qui ne peuvent pas être représentées sous la forme d’une valeur scalaire. Pour obtenir des instructions, voir [Ajouter dynamiquement des attributs de produit](../../data-export/add-attribute-dynamically.md).
+
 ## Catalogues de prix
+
+Le flux de `priceBooks` envoie des données au point d’entrée [Prix des livres](https://developer.adobe.com/commerce/services/reference/rest/#tag/Price-Books){target="_blank"}.
 
 Contrairement aux autres flux du connecteur, le flux de `priceBooks` n’est pas collecté par un indexeur de [!DNL SaaS Data Export] dans [!DNL Adobe Commerce]. Le connecteur génère ce flux à partir de la configuration du site web et du groupe de clients dans l’Admin.
 
@@ -112,6 +114,8 @@ Le flux de prix utilise la même formule lors de la résolution du portefeuille 
 
 ## Prix
 
+Le flux de `prices` envoie des données au point d’entrée [Prix](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}.
+
 | champ [!DNL Adobe Commerce] | Champ API [!DNL Commerce Optimizer] | Remarques |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
 | `sku` | `sku` | |
@@ -121,6 +125,8 @@ Le flux de prix utilise la même formule lors de la résolution du portefeuille 
 | `tierPrices[]` | `tierPrices[]` | |
 
 ## Catégories
+
+Le flux de `categories` envoie des données au point d’entrée [Catégories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 Les éléments avec un `urlPath` vide (catégories racine logique) sont ignorés et ne sont jamais envoyés.
 

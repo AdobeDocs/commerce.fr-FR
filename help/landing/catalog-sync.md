@@ -1,24 +1,17 @@
 ---
 title: Synchronisation des catalogues
 description: Découvrez comment exporter des données de produit du serveur  [!DNL Commerce]  vers  [!DNL Commerce Services].
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Catalog Management, Data Import/Export, Catalog Service
 exl-id: 99f96b93-b036-490c-8c57-40463a0de365
 TQID: https://experienceleague.adobe.com/-X5W4TJNW6pduPsWH-SLuAXrfP7iReCpaVg5qeu2odA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 567
+source-wordcount: 565
 ht-degree: 0%
 
 ---
@@ -27,9 +20,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Le tableau de bord de synchronisation des catalogues est désormais le tableau de bord de gestion des données. Ce tableau de bord remanié prend désormais en charge les versions [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+ et [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Les clients peuvent obtenir le tableau de bord de gestion des données en effectuant une mise à jour vers la dernière version de l’un de ces services. Pour en savoir plus, consultez la documentation du [Tableau de bord de gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=fr). Cette rubrique reste ouverte aux utilisateurs qui n’ont pas encore effectué la mise à niveau et qui disposent toujours du tableau de bord de synchronisation des catalogues.
+> Le tableau de bord de synchronisation des catalogues est désormais le tableau de bord de gestion des données. Ce tableau de bord remanié prend désormais en charge les versions [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+ et [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Les clients peuvent obtenir le tableau de bord de gestion des données en effectuant une mise à jour vers la dernière version de l’un de ces services. Pour en savoir plus, consultez la documentation du [Tableau de bord de gestion des données](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html). Cette rubrique reste ouverte aux utilisateurs qui n’ont pas encore effectué la mise à niveau et qui disposent toujours du tableau de bord de synchronisation des catalogues.
 
-Adobe Commerce utilise des indexeurs pour compiler les données du catalogue dans des tables. Le processus est automatiquement déclenché par des [événements](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=fr#events-that-trigger-full-reindexing) tels qu’une modification du prix d’un produit ou du niveau de stock.
+Adobe Commerce utilise des indexeurs pour compiler les données du catalogue dans des tables. Le processus est automatiquement déclenché par des [événements](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) tels qu’une modification du prix d’un produit ou du niveau de stock.
 
 Le service de synchronisation des catalogues déplace régulièrement les données de produit d’une instance [!DNL Adobe Commerce] vers la plateforme [!DNL Commerce Services] afin de maintenir les données à jour. Par exemple, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) nécessite des informations de catalogue actuelles pour renvoyer avec précision des recommandations avec des noms, des prix et une disponibilité corrects. Utilisez le tableau de bord _Synchronisation des catalogues_ pour observer et gérer le processus de synchronisation ou l’interface de ligne de commande afin de déclencher une synchronisation des catalogues et de réindexer les données de produit pour leur consommation par [!DNL Commerce Services]. Voir [Référence de l’interface de ligne de commande](../data-export/data-export-cli-commands.md) dans le guide _Exportation de données SaaS_.
 
@@ -93,4 +86,4 @@ Le tableau **Produits de catalogue synchronisés** affiche les informations suiv
 
 ## Résolution des problèmes de synchronisation des catalogues {#resolvesync}
 
-Voir [Journaux et dépannage](../data-export/troubleshooting-logging.md#troubleshooting) dans le _Guide d’exportation des données SaaS_.
+Voir [Dépannage](../data-export/troubleshooting/logging.md#troubleshooting) dans le _Guide d’exportation des données SaaS_.

@@ -1,6 +1,7 @@
 ---
 title: Lancer la liste de contrôle
 description: 'Découvrez comment valider la configuration, le storefront, l’optimisation du moteur de recherche (SEO), le réseau CDN, les intégrations, la sécurité, les analyses et les tests pour la production [!DNL Adobe Commerce Optimizer] '
+autotag-review: '2026-06-17T15:08:59.000Z'
 solution: Commerce
 feature: Integration, Storefront, Search, Catalog Management, Personalization
 feature-set: Commerce
@@ -8,10 +9,16 @@ role: Admin, Developer
 level: Intermediate
 topic: Administration
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 37b8b8a334ca11daacfd3da03b0441e77329e2e1
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c18ed297-2187-4aec-affb-9d9654eca6fc
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: 880
 ht-degree: 0%
 
 ---
@@ -31,18 +38,18 @@ Votre solution comprend généralement les composants suivants :
 - **Optimizer** : [!DNL Adobe Commerce Optimizer] offre des expériences de marchandisage.
 - **Storefront** : le storefront Adobe Commerce sur Edge Delivery Services fournit l’interface utilisateur.
 - **Services tiers**—Prestataires de services de paiement, d&#39;expédition et de taxe.
-- **&#x200B;**—Extensibilité.
+- ****—Extensibilité.
 - **Maillage API**—Routage des requêtes.
 
 ## Vérification d’Adobe Commerce sur le cloud {#verify-cloud}
 
 Vérifiez que votre environnement Adobe Commerce on Cloud est prêt pour la production.
 
-▢ L’instance cloud est [configurée](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/start/new-project).
+▢ L’instance cloud est [configurée](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/new-project).
 Les données de test ▢ et factices sont supprimées de l’instance.
 ▢ Les données de production sont chargées sur l’instance.
 ▢ Vous connaissez le point d’entrée [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/).
-▢ L’instance répond aux exigences [prêt pour le lancement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/launch/checklist).
+▢ L’instance répond aux exigences [prêt pour le lancement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist).
 
 ## Vérification de l’instance Commerce Optimizer {#verify-optimizer}
 
@@ -59,7 +66,7 @@ Vérifiez que votre instance de production [!DNL Adobe Commerce Optimizer] est c
 
 Vérifiez que votre site de storefront Edge Delivery Services existe et que l’accès est restreint.
 
-▢ Le site storefront existe. Voir [Création d’un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr).
+▢ Le site storefront existe. Voir [Création d’un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/).
 ▢ Vous connaissez le nom du site.
 ▢ Seules les personnes autorisées ont [l’autorisation de publier](https://tools.aem.live/tools/user-admin/index.html).
 ▢ Seules les personnes autorisées ont [l’autorisation de créer](https://docs.da.live/administrators/guides/permissions).
@@ -75,7 +82,7 @@ Effectuez ces vérifications dans votre projet cloud.
 ▢ Le connecteur Commerce Optimizer est [installé et configuré](../../aco-connector/get-started.md).
 ▢ La commande de l’interface de ligne de commande `aco:conf:show` confirme la connexion à l’instance Commerce Optimizer de production. L’ID d’organisation, l’ID client, l’URL d’ingestion et l’URL Commerce Optimizer correspondent en production.
 ▢ Portées de la synchronisation dans [Configuration de l’exportation](../../aco-connector/get-started.md) correspondent à vos besoins.
-▢ [Statut de synchronisation des flux de données](../../aco-connector/get-started.md) confirme l’exportation des données à partir de l’instance cloud.
+▢ [Statut de synchronisation des flux de données](../../aco-connector/data-sync-manage.md) confirme l’exportation des données à partir de l’instance cloud.
 
 ### Dans Commerce Optimizer
 
@@ -99,18 +106,18 @@ Vérifiez que le storefront lit à partir du point d’entrée Adobe Commerce Gr
 
 ### Sous Adobe Commerce
 
-▢ packages de compatibilité Storefront sont [installés](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/?lang=fr).
+▢ packages de compatibilité Storefront sont [installés](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/).
 
 ### Sur le storefront
 
-▢ Le paramètre de `commerce-core-endpoint` storefront pointe vers votre point d’entrée [Cloud GraphQL](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=fr).
+▢ Le paramètre de `commerce-core-endpoint` storefront pointe vers votre point d’entrée [Cloud GraphQL](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/).
 ▢ Si vous utilisez le maillage API comme proxy pour Cloud GraphQL, `commerce-core-endpoint` pointe vers le point d’entrée du maillage API plutôt que vers le point d’entrée Cloud GraphQL.
 
 ## Vérifier l’intégration de storefront et d’Optimizer {#storefront-optimizer-integration}
 
 Confirmez les paramètres Commerce Optimizer dans la configuration du storefront.
 
-▢ Votre storefront utilise les paramètres [Commerce Optimizer corrects](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=fr).
+▢ Votre storefront utilise les paramètres [Commerce Optimizer corrects](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/).
 ▢ `adobe-commerce-optimizer` est `true`.
 ▢ `commerce-endpoint` pointe vers le point d’entrée GraphQL de Commerce Optimizer de production ou vers le point d’entrée du maillage API lorsque vous utilisez ce dernier.
 ▢ `headers.cs.AC-view-ID` contient l’ID de vue de catalogue de votre instance Commerce Optimizer de production.
@@ -138,7 +145,7 @@ Confirmez la configuration de l’extensibilité pour la production.
 
 ▢ L’espace de travail de production comprend toutes les configurations et tous les services requis.
 ▢ L’application de production passe le test dans tous les scénarios de création.
-▢ limites et limites du produit ont été examinées et confirmées en fonction de la [description du produit Adobe Developer App Builder](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} et des [paramètres et limites du système App Builder](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
+▢ limites et limites du produit ont été examinées et confirmées en fonction de la [description du produit Adobe Developer App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} et des [paramètres et limites du système App Builder](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
 ▢ L’application de production utilise des points d’entrée de production App Builder.
 ▢ extensions de panneau *Admin* personnalisées sont déployées dans l’espace de travail de production.
 
@@ -171,8 +178,8 @@ Confirmez la création du workflow et des composants storefront.
 
 Confirmez les métadonnées, les URL et le comportement de l’explore.
 
-▢ métadonnées de titre du document sont présentes pour les pages clés (en particulier les PDP et les PLP). Voir [Métadonnées d’optimisation du moteur de recherche](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/?lang=fr){target="_blank"} dans la documentation de _Adobe Commerce Storefront_.
-Les PDP ▢ incluent [métadonnées et données structurées](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/?lang=fr){target="_blank"} (par exemple, JSON-LD).
+▢ métadonnées de titre du document sont présentes pour les pages clés (en particulier les PDP et les PLP). Voir [Métadonnées d’optimisation du moteur de recherche](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"} dans la documentation de _Adobe Commerce Storefront_.
+Les PDP ▢ incluent [métadonnées et données structurées](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"} (par exemple, JSON-LD).
 ▢ formats d’URL de produit sont cohérents (par exemple, `domain/product-name`).
 ▢ les URL de redirection vers les URL canoniques.
 ▢ Le projet comprend des `robots.txt` qui permettent l’indexation le cas échéant, qui font référence aux plans de site et qui bloquent les chemins que vous ne souhaitez pas indexer (par exemple, `/drafts`).
@@ -186,7 +193,7 @@ Les fichiers ▢ [Redirection](https://www.aem.live/docs/redirects) couvrent les
 
 Confirmez le rendu côté serveur lorsque vous l’activez.
 
-Le pré-rendu ▢ est activé pour les pages clés. Voir [Pré-rendu pour AEM](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-prerender/?lang=fr){target="_blank"} dans la documentation du _storefront Adobe Commerce_.
+Le pré-rendu ▢ est activé pour les pages clés. Voir [Pré-rendu pour AEM](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-prerender/){target="_blank"} dans la documentation du _storefront Adobe Commerce_.
 ▢ URL utilisent des minuscules afin que le pré-rendu ne rompe pas les liens.
 ▢ source HTML comprend des métadonnées et du corps de contenu qui confirment les travaux de pré-rendu.
 ▢ Paramètres régionaux affichent les pages traduites correctes, le cas échéant.
@@ -196,10 +203,10 @@ Le pré-rendu ▢ est activé pour les pages clés. Voir [Pré-rendu pour AEM](h
 
 Confirmez les lignes de base de performances et le câblage d’analyse.
 
-▢ Votre storefront suit les [bonnes pratiques de performances](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/?lang=fr){target="_blank"} dans la documentation _Adobe Commerce Storefront_.
+▢ Votre storefront suit les [bonnes pratiques de performances](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/){target="_blank"} dans la documentation _Adobe Commerce Storefront_.
 ▢ (facultatif) Google Analytics et Google Tag Manager sont configurés.
 ▢ [Événements Storefront](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger) l’implémentation est valide et les données apparaissent dans vos tableaux de bord [!DNL Live Search] et [!DNL Product Recommendations] dans Adobe Commerce *Admin*.
-▢ Le paramètre `environment` analytics dans la configuration [Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=fr){target="_blank"} est `"Testing"` pendant le développement et `"Production"` lors de la mise en production. Voir [instrumentation Analytics](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=fr){target="_blank"}.
+▢ Le paramètre `environment` analytics dans la configuration [Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} est `"Testing"` pendant le développement et `"Production"` lors de la mise en production. Voir [instrumentation Analytics](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/){target="_blank"}.
 ▢ scores Lighthouse atteignent vos cibles (par exemple, `100` sur les pages clés) grâce aux conseils de cette rubrique.
 
 ### Sécurité et accès
@@ -207,8 +214,8 @@ Confirmez les lignes de base de performances et le câblage d’analyse.
 Confirmez les autorisations et les secrets.
 
 ▢ Les autorisations appropriées sont configurées pour le contenu DA et les sites EDS. Voir [Autorisations DA.live](https://da.live/docs/administration/permissions) et [Configuration de l’authentification pour la création](https://www.aem.live/docs/authentication-setup-authoring).
-▢ L’intégration des visuels de produit est configurée. Voir [&#x200B; Présentation de l’accès à AEM Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/accessing/overview#).
-▢ Les liens de réinitialisation du mot de passe dans les modèles d’e-mail correspondent à votre configuration Edge Delivery Services. Voir la FAQ sur storefront : [Que dois-je faire si mes liens de modèle d’e-mail sont rompus après la migration vers Edge Delivery Services ou Helix ?](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/?lang=fr#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
+▢ L’intégration des visuels de produit est configurée. Voir [ Présentation de l’accès à AEM Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
+▢ Les liens de réinitialisation du mot de passe dans les modèles d’e-mail correspondent à votre configuration Edge Delivery Services. Voir la FAQ sur storefront : [Que dois-je faire si mes liens de modèle d’e-mail sont rompus après la migration vers Edge Delivery Services ou Helix ?](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 ▢ Les clés de production pour les intégrations et les fournisseurs de paiement sont en place.
 Les domaines ▢ sont placés sur la liste autorisée et les webhooks d’arrière-plan fonctionnent.
 
@@ -218,8 +225,8 @@ Confirmez le comportement du réseau CDN, du DNS et du cache.
 
 ▢ La configuration du réseau CDN utilise le point d’entrée de production GraphQL (`yourproject.com/graphql`) pour les extensions et scripts Sidekick (par exemple, la génération du plan de site et l’importateur d’images).
 ▢ Lorsque vous utilisez Adobe Commerce Fastly, un jeton de purge du réseau CDN est disponible et [configuration du site](https://tools.aem.live/tools/cdn-setup/index.html) comprend `authToken` et `serviceId`.
-▢ [configuration du réseau CDN](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=fr){target="_blank"} valide la mise en cache et l’invalidation.
-▢ Pour les [configurations multi-magasin](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/?lang=fr#multi-store-setups){target="_blank"}, les requêtes du service de catalogue et du [!DNL Live Search] incluent un buster de cache spécifique au magasin (par exemple, un paramètre de requête ou une règle de réseau CDN).
+▢ [configuration du réseau CDN](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/){target="_blank"} valide la mise en cache et l’invalidation.
+▢ Pour les [configurations multi-magasin](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/#multi-store-setups){target="_blank"}, les requêtes du service de catalogue et du [!DNL Live Search] incluent un buster de cache spécifique au magasin (par exemple, un paramètre de requête ou une règle de réseau CDN).
 ▢ L’invalidation des notifications push fonctionne de bout en bout (publication d’une modification, puis vérification sur le domaine de production).
 ▢ TTL DNS est suffisamment bas avant le basculement.
 ▢ enregistrements DNS A et CNAME sont corrects pour tous les domaines et noms d’hôtes.
