@@ -28,4 +28,4 @@ ht-degree: 6%
    - [Mappage des champs pour les flux du connecteur](reference/field-mapping.md)
    - [Estimation du volume de données et de la durée de synchronisation](reference/estimate-data-volume-sync-time.md)
 - [Notes de mise à jour](release-notes.md)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr)
