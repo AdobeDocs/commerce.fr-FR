@@ -5,9 +5,16 @@ feature: Cloud, Migration
 role: Developer, Admin
 level: Intermediate
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 nudge: true1
 source-git-commit: 99ad11aa255d35dcee4ffa80b4a38916d0c21766
 workflow-type: tm+mt
@@ -86,7 +93,7 @@ Liste du nombre de fichiers dans votre base de code, organisés par type.
 
 **Modules à impact maximal**
 
-![ Liste des modules à impact le plus élevé affichant les noms, descriptions, évaluations d’impact et nombres de points d’extension des modules](../assets/assessment-highest-impact-modules.png){width="600" zoomable="yes"}
+![&#x200B; Liste des modules à impact le plus élevé affichant les noms, descriptions, évaluations d’impact et nombres de points d’extension des modules](../assets/assessment-highest-impact-modules.png){width="600" zoomable="yes"}
 
 Liste sélectionnée des modules spécifiques de votre magasin qui nécessitent le plus d’attention pour la migration. Ces modules sont souvent des modules qui interagissent avec le passage en caisse, les paiements ou la gestion des commandes. Chaque module à fort impact nécessite son propre plan de migration. Cette liste est le meilleur point de départ pour des conversations avec votre équipe technique.
 
@@ -239,7 +246,7 @@ Pour chaque module, le rapport affiche :
 | **Entity-Attribute-Value (EAV)** | Champ personnalisé flexible ajouté aux produits ou aux clients, par exemple un champ personnalisé « période de garantie ». Un nombre élevé de VAE augmente la complexité de la migration des données. |
 | **Densité de crochet** | Nombre moyen de plug-ins et d’observateurs par module. Une densité plus élevée signifie que la personnalisation est plus étroitement tissée dans la plate-forme principale. |
 | **Drop-in** | [!DNL Adobe Commerce's] approche modulaire des composants storefront (y compris les pages de passage en caisse, de panier et de détails du produit). Le comportement de passage en caisse personnalisé sur [!DNL Adobe Commerce on Cloud Infrastructure] ou [!DNL Adobe Commerce on Premises] nécessite généralement une reconstruction par dépôt sur [!DNL Adobe Commerce as a Cloud Service]. |
-| **** | La plateforme d’extensibilité hors processus d’Adobe et la méthode recommandée pour créer une fonctionnalité personnalisée, en remplaçant les extensions PHP en cours de processus. |
+| **&#x200B;**&#x200B;| La plateforme d’extensibilité hors processus d’Adobe et la méthode recommandée pour créer une fonctionnalité personnalisée, en remplaçant les extensions PHP en cours de processus. |
 | **XML de disposition** | Fichiers de configuration qui définissent les blocs qui apparaissent sur les pages. La mise en page XML personnalisée doit être repensée pour [!DNL Adobe Commerce as a Cloud Service's] structure de page. |
 | **Remplacement de poignée principale** | Personnalisation XML de la disposition qui modifie globalement la structure d’une page Commerce principale. Ils présentent le modèle de disposition le plus risqué pour la migration. |
 
