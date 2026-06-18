@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 autotag-review: '2026-06-18T16:01:44.084Z'
 TQID: 'https://experienceleague.adobe.com/fGnz7X-DD5KzHhVtS0VR2NpVVEpwMQjzD2l0KO97-r4'
 product_v2:
@@ -83,7 +83,7 @@ Sélectionnez un onglet ci-dessous pour afficher les graphiques de workflow de h
 
 >[!TAB Workflow de l’administrateur système et du commerçant]
 
-Ce diagramme présente de manière générale la manière dont les administrateurs système et les commerçants accèdent aux instances [!DNL Adobe Commerce as a Cloud Service] et les gèrent. Voir le [Guide &#x200B;](https://helpx.adobe.com/enterprise/admin-guide.html) pour plus d&#39;informations sur les workflows d&#39;administration.
+Ce diagramme présente de manière générale la manière dont les administrateurs système et les commerçants accèdent aux instances [!DNL Adobe Commerce as a Cloud Service] et les gèrent. Voir le [Guide &#x200B;](https://helpx.adobe.com/fr/enterprise/admin-guide.html) pour plus d&#39;informations sur les workflows d&#39;administration.
 
 ![Diagramme de workflow de l’administrateur système et du commerçant pour Adobe Commerce as a Cloud Service](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -234,7 +234,7 @@ Par défaut, les instances de [!DNL Adobe Commerce as a Cloud Service] n’inclu
 
 Pour importer votre catalogue dans [!DNL Adobe Commerce as a Cloud Service], deux méthodes sont possibles :
 
-* [**Commerce Admin**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Une interface conviviale qui vous permet d&#39;importer vos données de catalogue en quelques clics.
+* [**Commerce Admin**](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/import/data-import) - Une interface conviviale qui vous permet d&#39;importer vos données de catalogue en quelques clics.
 * [**Importer l’API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Une API REST qui vous permet d’importer les données de votre catalogue par programmation.
 
 ### Configurer le storefront
@@ -245,4 +245,4 @@ Maintenant que vous avez créé une instance , vous êtes prêt à [configurer v
 
 * [Notes de mise à jour](release-notes.md)
 * [Guide de migration](migration/overview.md)
-* [Documentation de Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* [Documentation de Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
