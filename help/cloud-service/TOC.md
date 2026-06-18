@@ -4,7 +4,9 @@ breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 source-git-commit: f25630f9c6f118e6dd714757ed068f2d2e6e9e15
 workflow-type: tm+mt
 source-wordcount: 188
@@ -43,7 +45,7 @@ ht-degree: 4%
    - [Tutorial Prerequisites](tutorials/tutorial-prerequisites.md)
    - [Tutoriel sur l’extension d’évaluations](tutorials/ratings-extension.md)
    - [Tutoriel sur l’extension de la méthode d’expédition](tutorials/shipping-method-extension.md)
-   - {hide-from-toc}[ Tutoriel Sur L’Extension Des Estimations De Diffusion ](tutorials/delivery-estimates-extension.md)
+   - {hide-from-toc}[&#x200B; Tutoriel Sur L’Extension Des Estimations De Diffusion &#x200B;](tutorials/delivery-estimates-extension.md)
    - {hide-from-toc}[Tutoriel Sur L’Extension De Notification En Stock](tutorials/in-stock-notification-extension.md)
    - {hide-from-toc}[Tutoriel sur l’extension Product Reviews](tutorials/product-reviews-extension.md)
 - Schémas {#schemas}
