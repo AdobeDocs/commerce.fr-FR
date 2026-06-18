@@ -4,10 +4,10 @@ breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-nudge: true
-source-git-commit: 99ad11aa255d35dcee4ffa80b4a38916d0c21766
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+source-git-commit: f25630f9c6f118e6dd714757ed068f2d2e6e9e15
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: 188
 ht-degree: 4%
 
 ---
@@ -36,20 +36,20 @@ ht-degree: 4%
       - [Évaluation de la migration](migration/assessment.md)
       - [Outils de codage](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
    - {hide-from-toc}[Service Documentation RAG](migration/doc-rag.md)
-- [Connexion en tant que client](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Connexion en tant que client](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Points d’entrée REST du compte de carte cadeau](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [Déclenchement d’e-mail via REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutoriels {#tutorials}
    - [Tutorial Prerequisites](tutorials/tutorial-prerequisites.md)
    - [Tutoriel sur l’extension d’évaluations](tutorials/ratings-extension.md)
    - [Tutoriel sur l’extension de la méthode d’expédition](tutorials/shipping-method-extension.md)
-   - {hide-from-toc}[&#x200B; Tutoriel Sur L’Extension Des Estimations De Diffusion &#x200B;](tutorials/delivery-estimates-extension.md)
+   - {hide-from-toc}[ Tutoriel Sur L’Extension Des Estimations De Diffusion ](tutorials/delivery-estimates-extension.md)
    - {hide-from-toc}[Tutoriel Sur L’Extension De Notification En Stock](tutorials/in-stock-notification-extension.md)
    - {hide-from-toc}[Tutoriel sur l’extension Product Reviews](tutorials/product-reviews-extension.md)
 - Schémas {#schemas}
    - [Schéma GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [Schéma de l’API REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Agent de développement](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [Tutoriels vidéo](https://experienceleague.adobe.com/fr/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Tutoriels vidéo](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Notes de mise à jour](release-notes.md)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

@@ -4,16 +4,16 @@ description: Découvrez comment joindre des fichiers tels que des PDF, des manue
 feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+autotag-review: '2026-06-18T16:03:48.301Z'
 TQID: 'https://experienceleague.adobe.com/fFbsXGO54L1lSuQULqfP7A-BJKSYggdt7cy-GDvaSzU'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 753
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Ajouter des fichiers aux produits
 
-[!DNL Adobe Commerce as a Cloud Service] prend en charge un « fichier » [type d’entrée d’attribut de produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"} qui permet aux commerçants de joindre des fichiers, tels que des PDF, des manuels, des certificats et des feuilles de données, directement aux produits. Les fichiers sont stockés dans le stockage multimédia Amazon S3 et sont accessibles via le storefront à l’aide de GraphQL ou par le biais d’intégrations à l’aide de l’API REST.
+[!DNL Adobe Commerce as a Cloud Service] prend en charge un « fichier » [type d’entrée d’attribut de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"} qui permet aux commerçants de joindre des fichiers, tels que des PDF, des manuels, des certificats et des feuilles de données, directement aux produits. Les fichiers sont stockés dans le stockage multimédia Amazon S3 et sont accessibles via le storefront à l’aide de GraphQL ou par le biais d’intégrations à l’aide de l’API REST.
 
 Il existe trois façons de charger des fichiers dans les attributs de fichier de produit :
 
@@ -34,15 +34,15 @@ Il existe trois façons de charger des fichiers dans les attributs de fichier de
 
 Avant de charger des fichiers, vous devez créer un attribut de fichier et l’affecter à un jeu d’attributs.
 
-* [Créer un attribut de fichier](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - Définissez **[!UICONTROL Catalog Input Type for Store Owner]** sur **[!UICONTROL File]**.
+* [Créer un attribut de fichier](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} - Définissez **[!UICONTROL Catalog Input Type for Store Owner]** sur **[!UICONTROL File]**.
 
-* [Attribuer l’attribut à un jeu d’attributs](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} - Faites glisser le nouvel attribut de fichier dans le groupe de votre choix.
+* [Attribuer l’attribut à un jeu d’attributs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} - Faites glisser le nouvel attribut de fichier dans le groupe de votre choix.
 
-* Configurez les types et tailles de fichiers autorisés dans la configuration [Attributs de fichier de produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/catalog/product-file-attributes).
+* Configurez les types et tailles de fichiers autorisés dans la configuration [Attributs de fichier de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes).
 
 ## Télécharger des fichiers via l’administrateur
 
-Après avoir [créé un attribut de fichier](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} et l’avoir affecté à un jeu d’attributs, vous pouvez charger des fichiers directement à partir de la page de modification du produit.
+Après avoir [créé un attribut de fichier](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} et l’avoir affecté à un jeu d’attributs, vous pouvez charger des fichiers directement à partir de la page de modification du produit.
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Catalog]** > **[!UICONTROL Products]**.
 
@@ -69,7 +69,7 @@ Le processus comporte quatre étapes :
 
 ## Chargement via l’importation du produit
 
-Vous pouvez joindre des fichiers aux produits en bloc à l’aide de l’API [import](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"} ou de l’interface utilisateur d’importation Admin. Les attributs de fichier de produit prennent uniquement en charge l’importation à partir d’URL externes, ce qui suit la même approche que la [méthode 2 pour l’importation d’images de produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}. Commerce télécharge le fichier à partir de l’URL fournie et l’enregistre dans le stockage multimédia S3.
+Vous pouvez joindre des fichiers aux produits en bloc à l’aide de l’API [import](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"} ou de l’interface utilisateur d’importation Admin. Les attributs de fichier de produit prennent uniquement en charge l’importation à partir d’URL externes, ce qui suit la même approche que la [méthode 2 pour l’importation d’images de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}. Commerce télécharge le fichier à partir de l’URL fournie et l’enregistre dans le stockage multimédia S3.
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ sku,name,additional_attributes
 ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 ```
 
-Dans les deux cas, l’URL doit être accessible publiquement et l’extension et la taille du fichier doivent respecter les [limitations configurées](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}.
+Dans les deux cas, l’URL doit être accessible publiquement et l’extension et la taille du fichier doivent respecter les [limitations configurées](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}.
 
 ## Récupération de fichiers via GraphQL
 
