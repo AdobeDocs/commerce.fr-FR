@@ -76,7 +76,7 @@ Vérifiez que votre instance de production [!DNL Adobe Commerce Optimizer] est c
 
 Vérifiez que votre site de storefront Edge Delivery Services existe et que l’accès est restreint.
 
-▢ Le site storefront existe. Voir [Création d’un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/).
+▢ Le site storefront existe. Voir [Création d’un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr).
 ▢ Vous connaissez le nom du site.
 ▢ Seules les personnes autorisées ont [l’autorisation de publier](https://tools.aem.live/tools/user-admin/index.html).
 ▢ Seules les personnes autorisées ont [l’autorisation de créer](https://docs.da.live/administrators/guides/permissions).
@@ -216,7 +216,7 @@ Confirmez les lignes de base de performances et le câblage d’analyse.
 ▢ Votre storefront suit les [bonnes pratiques de performances](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/?lang=fr){target="_blank"} dans la documentation _Adobe Commerce Storefront_.
 ▢ (facultatif) Google Analytics et Google Tag Manager sont configurés.
 ▢ [Événements Storefront](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger) l’implémentation est valide et les données apparaissent dans vos tableaux de bord [!DNL Live Search] et [!DNL Product Recommendations] dans Adobe Commerce *Admin*.
-▢ Le paramètre `environment` analytics dans la configuration [Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=fr){target="_blank"} est `"Testing"` pendant le développement et `"Production"` lors de la mise en production. Voir [instrumentation Analytics](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/){target="_blank"}.
+▢ Le paramètre `environment` analytics dans la configuration [Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=fr){target="_blank"} est `"Testing"` pendant le développement et `"Production"` lors de la mise en production. Voir [instrumentation Analytics](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=fr){target="_blank"}.
 ▢ scores Lighthouse atteignent vos cibles (par exemple, `100` sur les pages clés) grâce aux conseils de cette rubrique.
 
 ### Sécurité et accès

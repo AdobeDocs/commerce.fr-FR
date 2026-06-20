@@ -35,4 +35,4 @@ ht-degree: 2%
    - [Gérer l&#39;extension d&#39;export de données SaaS](manage-extension.md)
    - [Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce](data-export-cli-commands.md)
    - [Schéma de la table de flux](reference/feed-table-reference.md)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr)
