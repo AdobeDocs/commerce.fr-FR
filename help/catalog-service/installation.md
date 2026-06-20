@@ -58,7 +58,7 @@ Installez Catalog Service pour demander et recevoir des données de produit d’
 
 Toutes les instances de test Commerce utilisent le point d’entrée Sandbox.
 
-Effectuez tous les tests de chargement sur le point d’entrée Sandbox. Avant de commencer les tests de chargement, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) afin que l’équipe des services puisse anticiper le trafic supplémentaire du serveur.
+Effectuez tous les tests de chargement sur le point d’entrée Sandbox. Avant de commencer les tests de chargement, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) afin que l’équipe des services puisse anticiper le trafic supplémentaire du serveur.
 
 ## Installation et configuration
 

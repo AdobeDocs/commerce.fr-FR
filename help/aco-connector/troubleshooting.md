@@ -68,4 +68,4 @@ Pour obtenir un catalogue de comportements spécifiques causés par une mauvaise
 
 ## Diagnostics [!DNL SaaS Data Export]
 
-Pour les diagnostics de [!DNL SaaS Data Export] de niveau inférieur, y compris les emplacements des journaux et les commandes de resynchronisation des flux, consultez le guide de dépannage [[!DNL SaaS Data Export] &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.
+Pour les diagnostics de [!DNL SaaS Data Export] de niveau inférieur, y compris les emplacements des journaux et les commandes de resynchronisation des flux, consultez le guide de dépannage [[!DNL SaaS Data Export] &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.
