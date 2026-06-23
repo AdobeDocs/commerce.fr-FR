@@ -5,10 +5,10 @@ user-guide-description: Ce guide fournit des instructions détaillées sur l’u
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
 nudge: false
-source-git-commit: 83218416c513412f2ff6328aa8a23e915cbb8750
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 6%
+source-wordcount: '69'
+ht-degree: 5%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 6%
    - [Scénarios de dépannage](troubleshooting/troubleshooting-scenarios.md)
 - Référence {#reference}
    - [Modules de connecteur et points d’entrée de flux](reference/connector-reference.md)
+   - [Référence du schéma de la table de flux](reference/feed-table-reference.md)
    - [Mappage des champs pour les flux du connecteur](reference/field-mapping.md)
    - [Estimation du volume de données et de la durée de synchronisation](reference/estimate-data-volume-sync-time.md)
 - [Notes de mise à jour](release-notes.md)

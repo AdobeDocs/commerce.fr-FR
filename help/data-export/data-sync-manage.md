@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: e7d9c056ef8d565b4a143b05ff4e06d607fbfa8e
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: 557
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Utilisez les options suivantes pour resynchroniser manuellement les données de 
 | Tâche | Option | Remarques |
 | --- | --- | --- |
 | Resynchroniser les éléments de flux sélectionnés ayant échoué ou posant problème | **[!UICONTROL Data Feed Sync Status]page** | Surveillez et resynchronisez les éléments de flux sélectionnés depuis l’administration Commerce. Voir [Vérifier que la synchronisation des données fonctionne](#verify-that-the-data-sync-is-working). |
-| Resynchronisation complète de tous les flux | **[!UICONTROL Data Management Dashboard]** | Effectuer une resynchronisation complète de tous les flux à partir de l’administrateur Commerce ; Adobe recommande cette opération principalement lorsque vous vous connectez pour la première fois à un service Commerce. Voir [Vérifier que la synchronisation des données fonctionne](#verify-that-the-data-sync-is-working). |
+| Resynchronisation complète de tous les flux | **[!UICONTROL Data Management Dashboard]** | Effectuer une resynchronisation complète de tous les flux à partir de l’administrateur Commerce ; Adobe recommande cette opération principalement lorsque vous vous connectez pour la première fois à un service Commerce. Les éléments dont le hachage du contenu n’a pas changé depuis la dernière exportation sont ignorés. Voir [Vérifier que la synchronisation des données fonctionne](#verify-that-the-data-sync-is-working). |
 | Resynchronisation ciblée de flux avec contrôle opérationnel | **Commerce CLI** | Utilisez la commande `saas:resync` pour les resynchronisations de flux ciblées. Voir [Synchronisation des flux à l’aide de l’interface de ligne de commande Commerce](data-export-cli-commands.md). |
 
 >[!MORELIKETHIS]

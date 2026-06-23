@@ -16,9 +16,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
 workflow-type: tm+mt
-source-wordcount: 670
+source-wordcount: 728
 ht-degree: 0%
 
 ---
@@ -96,6 +96,10 @@ Options de commande et indicateurs des documents `bin/magento saas:resync --help
 >
 >Les modules installés déterminent les flux que vous pouvez resynchroniser. Par exemple, `productOverrides` nécessite une [!DNL Adobe Commerce] sur le cloud, sur site ou Commerce as a Cloud Service, et `orders` nécessite le module Commandes client.
 
+>[!NOTE]
+>
+>La commande `saas:resync` transmet uniquement les nouveaux éléments, les éléments mis à jour et les éléments dont l’exportation a échoué précédemment. Les éléments dont le hachage du contenu n’a pas changé depuis la dernière exportation sont ignorés.
+
 **Exemple:**
 
 ```shell
@@ -107,6 +111,10 @@ bin/magento saas:resync --feed products
 Resynchronisez partiellement des entités spécifiques en fonction de leurs identifiants. Prend en charge les flux `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` et `categoryPermissions`.
 
 Par défaut, lorsque vous utilisez l’option `--by-ids` , vous spécifiez des valeurs à l’aide des valeurs de SKU du produit. Pour utiliser des ID de produit à la place, ajoutez l’option `--id-type=productId` .
+
+>[!NOTE]
+>
+>Contrairement à une resynchronisation standard, `--by-ids` contourne la vérification de hachage et force les entités spécifiées à être envoyées aux services Commerce connectés, que leur contenu ait ou non changé depuis la dernière exportation.
 
 **Exemples :**
 
