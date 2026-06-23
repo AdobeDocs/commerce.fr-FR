@@ -5,26 +5,13 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
 TQID: https://experienceleague.adobe.com/wM71qxvduDr77EW6Y8mSNfBXlqkloC-PGOOBOl-mZQM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
 workflow-type: tm+mt
-source-wordcount: 879
+source-wordcount: 907
 ht-degree: 0%
 
 ---
@@ -55,7 +42,7 @@ Lorsque les données du catalogue changent dans [!DNL Adobe Commerce], la synchr
 
 >[!NOTE]
 >
->Pour garantir une planification fluide et éviter toute perturbation du fonctionnement du site, Adobe recommande d’estimer le volume de données et l’heure de synchronisation avant de démarrer la synchronisation des flux de données. Cette estimation est importante lors de la planification de synchronisations initiales ou de mises à jour de catalogue à grande échelle, telles que des modifications de prix en masse. Pour plus d’informations, voir [&#x200B; Estimation du volume de données et de la durée de transmission pour la synchronisation des données](estimate-data-volume-sync-time.md)
+>Pour garantir une planification fluide et éviter toute perturbation du fonctionnement du site, Adobe recommande d’estimer le volume de données et l’heure de synchronisation avant de démarrer la synchronisation des flux de données. Cette estimation est importante lors de la planification de synchronisations initiales ou de mises à jour de catalogue à grande échelle, telles que des modifications de prix en masse. Pour plus d’informations, voir [ Estimation du volume de données et de la durée de transmission pour la synchronisation des données](estimate-data-volume-sync-time.md)
 
 ## Modes de synchronisation
 
@@ -77,12 +64,16 @@ Après la connexion d’une instance Adobe Commerce au service Commerce, effectu
 >
 >La synchronisation complète est principalement destinée à la phase d’intégration. Évitez de l’utiliser régulièrement pour éviter la surcharge de la base de données. Après la synchronisation initiale, les modifications en cours sont automatiquement synchronisées à l’aide d’une synchronisation partielle.
 
+>[!NOTE]
+>
+>La commande `saas:resync` transmet uniquement les nouveaux éléments, les éléments mis à jour et les éléments dont l’exportation a échoué précédemment. Les éléments dont le hachage du contenu n’a pas changé depuis la dernière exportation sont ignorés.
+
 ### Synchronisation partielle {#partial-sync}
 
 Avec une synchronisation partielle, l’exportation de données SaaS envoie automatiquement des mises à jour depuis l’application Commerce, telles que des modifications de nom de produit ou de prix, aux services commerciaux connectés.
 Pour que la synchronisation partielle fonctionne, l’application Commerce nécessite la configuration suivante :
 
-- [La planification des tâches est activée via les tâches cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=fr)
+- [La planification des tâches est activée via les tâches cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 - Tous les indexeurs d&#39;export de données SaaS sont configurés en mode `Update by Schedule`.
 
 ### Réessayer la synchronisation des éléments ayant échoué {#retry-failed-items-sync}
@@ -115,7 +106,7 @@ Les éléments de flux sont envoyés en tant que lots JSON compressés GZIP auth
 
 Outre les échecs au niveau du HTTP, les erreurs au niveau de l’application, telles que les échecs de traitement local ou les perturbations du réseau, sont également planifiées pour une reprise automatique par les tâches cron `*_resend_failed_items`.
 
-Surveillez le statut par flux à partir de la page [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) de l’administration Commerce.
+Surveillez le statut par flux à partir de la page [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) de l’administration Commerce.
 
 >[!MORELIKETHIS]
 >
