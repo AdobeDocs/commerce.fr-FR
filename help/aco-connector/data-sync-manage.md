@@ -4,7 +4,7 @@ description: Découvrez comment vérifier la synchronisation des données de cat
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -54,5 +54,5 @@ Lorsque la synchronisation partielle et la reprise automatique ne résolvent pas
 > - [Estimer le volume des données et la durée de synchronisation](reference/estimate-data-volume-sync-time.md) — Calculer la durée de synchronisation attendue
 > - [Dépannage](troubleshooting.md) — Diagnostiquer les problèmes d’exportation des informations d’identification, de synchronisation et de la portée
 > - [Modules de connecteur et points d’entrée de flux](reference/connector-reference.md) — Modules de révision, points d’entrée d’API et flux pris en charge
-> - [Page Statut de synchronisation des flux de données dans l’administration Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — En savoir plus sur les champs et les fonctionnalités disponibles pour surveiller le statut des flux
+> - [Page Statut de synchronisation des flux de données dans l’administration Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — En savoir plus sur les champs et les fonctionnalités disponibles pour surveiller le statut des flux
 > - [Tableau de bord de synchronisation des données dans [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"} — Documentation de référence pour les champs et actions disponibles pour surveiller la synchronisation des données du catalogue
