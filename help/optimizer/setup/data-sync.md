@@ -3,18 +3,13 @@ title: Synchronisation des données
 description: Passez en revue les données de catalogue synchronisées à partir de la source de données Commerce dans  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 TQID: https://experienceleague.adobe.com/ZTMFkch-YNS-CUgCdadmg1kemA8ORXQ7KGCEkI7d-Yw
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: c7633056caec2fcec318f8ebcc9664cfc7b3b9b4
 workflow-type: tm+mt
 source-wordcount: 484
 ht-degree: 0%
@@ -34,7 +29,7 @@ La page **Synchronisation des données** se trouve à l’emplacement *Configura
 La page **Synchronisation des données** contient les champs suivants :
 
 | Champ | Description |
-|--- |--- |
+| --- | --- |
 | Source du catalogue | Paramètre régional spécifique pour les données synchronisées. |
 | [!DNL Catalog Service] | Affiche la dernière mise à jour de synchronisation, le nombre total de produits reçus, un champ de recherche et un tableau des produits synchronisés pour [!DNL Catalog Service]. |
 | Découverte de produits | Affiche la dernière mise à jour de synchronisation, le nombre total de produits reçus, un champ de recherche et un tableau des produits synchronisés pour la recherche. |
@@ -61,12 +56,11 @@ Si vous ne voyez pas de produits spécifiques sur la page **Synchronisation des 
 >
 >Le temps nécessaire à la synchronisation varie en fonction de la taille de votre catalogue et du volume de données mises à jour.
 
-## Surveillance du statut de synchronisation des données
+## Vérifier que la synchronisation des données fonctionne
 
-Pour les projets qui utilisent Adobe Commerce comme source de données en amont via le connecteur Adobe Commerce Optimizer, vous pouvez surveiller le processus d’exportation des données et lancer des opérations de resynchronisation à partir de la page [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) de Commerce Admin.
+Pour les projets qui utilisent Adobe Commerce comme source de données en amont via le connecteur Adobe Commerce Optimizer, vous pouvez surveiller le processus d’exportation des données et lancer des opérations de resynchronisation à partir de la page Statut de la synchronisation des flux de données . Pour plus d’informations, consultez la section [Vérifier que la synchronisation des données fonctionne](../../aco-connector/data-sync-manage.md#verify-that-the-data-sync-is-working) de la documentation du connecteur Adobe Commerce Optimizer __.
 
 ## Rubriques connexes
 
 - [Connecteur Adobe Commerce Optimizer](../../aco-connector/overview.md){target="_blank"}
-
 
