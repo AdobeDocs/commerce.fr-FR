@@ -34,9 +34,9 @@ La plupart des activités de synchronisation sont traitées automatiquement à l
 
 Pour les déploiements d’Adobe Commerce on cloud, on-premise ou Adobe Commerce as a Cloud Service, affichez et gérez le processus de synchronisation à partir de ces ressources d’administration Commerce :
 
-- **[Page Statut de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** : vérifiez le statut d’exportation des flux pour les déploiements connectés à [!DNL Live Search], [!DNL Product Recommendations] ou [!DNL Catalog Service]. Ce tableau de bord affiche le statut d’exportation de chaque flux, y compris les erreurs rencontrées. Une vue détaillée affiche le statut d’exportation des flux pour chaque élément de flux.
+- **[Page Statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** : vérifiez le statut d’exportation des flux pour les déploiements connectés à [!DNL Live Search], [!DNL Product Recommendations] ou [!DNL Catalog Service]. Ce tableau de bord affiche le statut d’exportation de chaque flux, y compris les erreurs rencontrées. Une vue détaillée affiche le statut d’exportation des flux pour chaque élément de flux.
 
-- **[Tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** : les utilisateurs administrateurs peuvent afficher et suivre les données exportées et synchronisées avec succès vers les services Commerce connectés. Ce tableau de bord affiche les données de produit synchronisées avec les services Commerce.
+- **[Tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** : les utilisateurs administrateurs peuvent afficher et suivre les données exportées et synchronisées avec succès vers les services Commerce connectés. Ce tableau de bord affiche les données de produit synchronisées avec les services Commerce.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Pour les déploiements d’Adobe Commerce on cloud, on-premise ou Adobe Commerce
 
 Pour les déploiements sur le cloud ou on-premise de Commerce intégrés avec [!DNL Commerce Optimizer], visualisez et gérez le processus de synchronisation à l’aide des ressources suivantes :
 
-- **[Page Statut de la synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** : surveiller le statut d’exportation des flux du connecteur depuis Commerce Admin. Cette page indique si les données de catalogue ont bien été exportées à partir de [!DNL Adobe Commerce], y compris les détails d’erreur par flux et par élément.
+- **[Page Statut de la synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** : surveiller le statut d’exportation des flux du connecteur depuis Commerce Admin. Cette page indique si les données de catalogue ont bien été exportées à partir de [!DNL Adobe Commerce], y compris les détails d’erreur par flux et par élément.
 
 - **[Page de synchronisation des données](../optimizer/setup/data-sync.md)** : la page de synchronisation des données donne un aperçu de l&#39;état de synchronisation des données de produit provenant de votre source de catalogue en amont dans [!DNL Commerce Optimizer].
 
