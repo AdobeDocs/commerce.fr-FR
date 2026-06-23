@@ -5,10 +5,15 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
 badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 TQID: https://experienceleague.adobe.com/qVI-zFFljrUZzjSMmBxs5jRCsKbxfivQV1xzzpBS2uw
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
 source-wordcount: 958
@@ -69,7 +74,7 @@ Pour commencer à utiliser [!DNL Catalog Service] pour Adobe Commerce, les étap
 
 **Prérequis**
 
-- Accédez à [repo.magento.com](https://repo.magento.com) pour installer l’extension. Pour la génération des clés et l’obtention des droits nécessaires, voir [ Obtenir vos clés d’authentification ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Pour les installations cloud, consultez le guide [Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+- Accédez à [repo.magento.com](https://repo.magento.com) pour installer l’extension. Pour la génération des clés et l’obtention des droits nécessaires, voir [&#x200B; Obtenir vos clés d’authentification &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Pour les installations cloud, consultez le guide [Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
 - Accès à la ligne de commande du serveur applicatif Adobe Commerce.
 
@@ -115,7 +120,7 @@ Utilisez cette méthode pour installer le [!DNL Catalog Service] pour une instan
    git push origin <branch-name>
    ```
 
-   L’envoi des mises à jour à l’environnement cloud lance le processus de déploiement cloud de [](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) pour appliquer les modifications. Vérifiez le statut du déploiement dans le [journal de déploiement](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   L’envoi des mises à jour à l’environnement cloud lance le processus de déploiement cloud de [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) pour appliquer les modifications. Vérifiez le statut du déploiement dans le [journal de déploiement](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB Sur site]
 
@@ -177,6 +182,6 @@ Pour vous assurer que l’exportation du catalogue s’exécute correctement :
 
 {{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-Utilisez l’[interface de ligne de commande ](../data-export/data-export-cli-commands.md) pour resynchroniser manuellement les flux si nécessaire. Pour connaître les options de resynchronisation et les étapes de dépannage supplémentaires, consultez [Gérer la synchronisation](../data-export/data-sync-manage.md) dans le _Guide d’exportation des données SaaS_.
+Utilisez l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md) pour resynchroniser manuellement les flux si nécessaire. Pour connaître les options de resynchronisation et les étapes de dépannage supplémentaires, consultez [Gérer la synchronisation](../data-export/data-sync-manage.md) dans le _Guide d’exportation des données SaaS_.
 
 {{install-data-sync-feed-status}}
