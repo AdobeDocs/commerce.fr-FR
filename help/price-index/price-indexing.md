@@ -15,9 +15,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 475
 ht-degree: 0%
 
 ---
@@ -71,7 +71,17 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-### Prix des types de produits personnalisés
+## Surveillance de la progression de la synchronisation
+
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+Utilisez l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md) pour resynchroniser manuellement les flux si nécessaire. Pour connaître les options de resynchronisation et les étapes de dépannage supplémentaires, consultez [Gérer la synchronisation](../data-export/data-sync-manage.md) dans le _Guide d’exportation des données SaaS_.
+
+>[!NOTE]
+>
+>Si la page Statut de la synchronisation des flux de données n’est pas disponible dans les déploiements Commerce Admin for Commerce on Cloud ou on-premise, suivez les [&#x200B; instructions d’installation de l’extension &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) pour l’activer.
+
+## Prix des types de produits personnalisés
 
 Les calculs de prix sont pris en charge pour les types de produits personnalisés tels que le prix de base, le prix spécial, le prix de groupe, le prix de règle de catalogue, etc.
 
@@ -102,7 +112,7 @@ Si vous disposez d’un type de produit personnalisé qui utilise une formule sp
        */
        public function afterGet(ProductPrice $subject, array $result, array $values) : array
        {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
+           // Override the output $result with your data for the corresponding products (see original method for details)
            return $result;
        }
    }

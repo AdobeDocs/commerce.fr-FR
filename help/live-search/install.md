@@ -25,9 +25,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 2883
+source-wordcount: 2842
 ht-degree: 0%
 
 ---
@@ -235,21 +235,19 @@ Lorsque vous exécutez ces commandes, la synchronisation initiale des données d
 
 ### Surveillance de la progression de la synchronisation
 
-Utilisez le [tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) pour surveiller la progression de la synchronisation. Ce tableau de bord fournit des informations précieuses sur la disponibilité des données de produit sur votre storefront, afin qu’elles puissent être rapidement affichées pour les clients.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-![Tableau de bord de gestion des données](assets/data-management-dashboard.png)
+{{install-data-sync-feed-status}}
 
-Vous pouvez également exécuter des commandes de synchronisation et résoudre les problèmes de synchronisation à l’aide de l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md) et des journaux d’extension d’exportation de données [&#128279;](../data-export/troubleshooting/logging.md).
-
-#### Futures mises à jour des produits
+### Futures mises à jour des produits
 
 Après la synchronisation initiale, il peut s’écouler jusqu’à 15 minutes avant que les mises à jour incrémentielles des produits ne soient disponibles pour la recherche storefront. Pour en savoir plus, consultez [Diffusion de mises à jour de produit](indexing.md) dans la documentation sur l’indexation.
 
 ## &#x200B;4. Vérifier que les données ont été exportées {#verify}
 
-Pour vérifier si vos données de catalogue ont été exportées à partir d’Adobe Commerce et synchronisées avec [!DNL Live Search], vous disposez de quelques options :
+Outre l’utilisation de la page Statut de la synchronisation des flux de données et du tableau de bord de gestion des données, vous pouvez vérifier les données du catalogue exportées depuis Adobe Commerce directement dans la base de données et confirmer que la synchronisation des données avec [!DNL Live Search] a réussi en utilisant l’espace de travail GraphQL [!DNL Live Search].
 
-- Recherchez des entrées dans les tableaux suivants :
+- Dans la base de données, utilisez des requêtes SQL pour rechercher des entrées dans les tables suivantes :
 
    - `cde_products_feed`
    - `cde_product_attributes_feed`

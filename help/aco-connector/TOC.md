@@ -4,8 +4,8 @@ breadcrumb-title: '[!DNL Optimizer Connector]'
 user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation du  [!DNL Adobe Commerce Optimizer Connector]  pour exporter des données de catalogue, synchroniser les prix et diffuser  [!DNL Edge Delivery Services]  vitrines à l’aide du  [!DNL Adobe Commerce Optimizer].
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
-nudge: true
-source-git-commit: 3624bb934c25e04ae2f08b0d78ed4602df89d3eb
+nudge: false
+source-git-commit: 83218416c513412f2ff6328aa8a23e915cbb8750
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 6%

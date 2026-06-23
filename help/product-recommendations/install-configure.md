@@ -18,9 +18,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 641
+source-wordcount: 578
 ht-degree: 0%
 
 ---
@@ -80,9 +80,9 @@ Une fois que vous avez réussi à lier l’application Commerce aux services Com
 
 ## Surveillance et dépannage de la synchronisation des données
 
-Dans l’administration Commerce, vous pouvez surveiller le processus de synchronisation à l’aide du tableau de bord [Data Management Dashboard](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Utilisez l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md) et les [journaux](../data-export/troubleshooting/logging.md) pour gérer et résoudre les problèmes du processus.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-Vous pouvez ensuite [vérifier](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) que les données comportementales sont envoyées à votre storefront.
+{{install-data-sync-feed-status}}
 
 ## Mise à jour de l’installation [!DNL Product Recommendations] {#update}
 

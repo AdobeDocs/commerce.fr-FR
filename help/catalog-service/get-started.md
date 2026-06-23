@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 437
 ht-degree: 0%
 
 ---
@@ -81,12 +81,8 @@ Pour plus d’informations sur l’installation et la configuration[&#128279;](m
 
 ## Surveillance et dépannage de l’exportation des données
 
-Commerce Admin fournit des outils pour surveiller et résoudre les problèmes d’exportation des données de Commerce vers les services connectés :
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-- **[Tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** : surveillez la synchronisation des données entre le [!DNL Catalog Service] et votre instance Adobe Commerce. Le tableau de bord affiche le statut de synchronisation global et répertorie tous les produits synchronisés.
+Utilisez l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md) pour resynchroniser manuellement les flux si nécessaire. Pour connaître les options de resynchronisation et les étapes de dépannage supplémentaires, consultez [Gérer la synchronisation](../data-export/data-sync-manage.md) dans le _Guide d’exportation des données SaaS_.
 
-- **[Page Statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** : suivez le statut d’exportation de tous les flux de données pour garantir la cohérence des données. Cette page vous avertit des problèmes qui se produisent pendant le processus d’exportation afin que vous puissiez les résoudre rapidement. Un statut « Succès » indique que les données ont été exportées et seront disponibles dans les services Commerce connectés une fois le processus de synchronisation des données terminé.
-
->[!NOTE]
->
->Si la page Statut de la synchronisation des flux de données n’est pas disponible dans les déploiements Commerce Admin for Commerce on Cloud ou on-premise, suivez les [&#x200B; instructions d’installation de l’extension &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) pour l’activer.
+{{install-data-sync-feed-status}}

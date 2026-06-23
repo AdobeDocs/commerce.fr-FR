@@ -1,11 +1,17 @@
 ---
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
 # Fragments de code Commerce
+
+## Remarque d’installation concernant l’extension du statut de synchronisation des flux de données {#install-data-sync-feed-status}
+
+>[!NOTE]
+>
+>Si la page Statut de la synchronisation des flux de données n’est pas disponible dans les déploiements Commerce Admin for Commerce on Cloud ou on-premise, suivez les [&#x200B; instructions d’installation de l’extension &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"} pour l’activer.
 
 
 ## Alignement de l’environnement d’intégration de Adobe Commerce Optimizer {#aco-integration-environment-alignment}
@@ -25,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Si vous avez installé le [connecteur &#x200B;](../aco-connector/overview.md) pour exporter les données du catalogue vers Adobe Commerce Optimizer, utilisez la page [Statut de synchronisation des flux de données](../optimizer/setup/data-sync.md) de Commerce Optimizer Studio pour vérifier que les données ont bien été synchronisées vers Adobe Commerce Optimizer au lieu du tableau de bord de gestion des données.
+>Pour les déploiements qui utilisent l’[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md) pour exporter des données de catalogue vers [!DNL Adobe Commerce Optimizer], vérifiez la synchronisation des données de catalogue à l’aide de la page [Statut de la synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) dans l’administration Commerce et de la page [Synchronisation des données](../optimizer/setup/data-sync.md) dans [!DNL Adobe Commerce Optimizer Studio], et non du tableau de bord [Data Management](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 ## Note déroulante Adobe Commerce Optimizer pour les mises à jour de l’API {#aco-api-updates-and-dropins}
 

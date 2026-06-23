@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 972
+source-wordcount: 958
 ht-degree: 0%
 
 ---
@@ -180,4 +180,8 @@ Pour vous assurer que l’exportation du catalogue s’exécute correctement :
 
 ### Surveillance et dépannage de la synchronisation des données
 
-Dans l’administration Commerce, vous pouvez surveiller le processus de synchronisation à l’aide du tableau de bord [Data Management Dashboard](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Utilisez l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md) et les [journaux](../data-export/troubleshooting/logging.md) pour gérer et résoudre les problèmes du processus.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+Utilisez l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md) pour resynchroniser manuellement les flux si nécessaire. Pour connaître les options de resynchronisation et les étapes de dépannage supplémentaires, consultez [Gérer la synchronisation](../data-export/data-sync-manage.md) dans le _Guide d’exportation des données SaaS_.
+
+{{install-data-sync-feed-status}}
