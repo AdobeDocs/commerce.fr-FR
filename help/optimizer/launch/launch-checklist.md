@@ -236,7 +236,7 @@ Confirmez le comportement du réseau CDN, du DNS et du cache.
 ▢ La configuration du réseau CDN utilise le point d’entrée de production GraphQL (`yourproject.com/graphql`) pour les extensions et scripts Sidekick (par exemple, la génération du plan de site et l’importateur d’images).
 ▢ Lorsque vous utilisez Adobe Commerce Fastly, un jeton de purge du réseau CDN est disponible et [configuration du site](https://tools.aem.live/tools/cdn-setup/index.html) comprend `authToken` et `serviceId`.
 ▢ [configuration du réseau CDN](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=fr){target="_blank"} valide la mise en cache et l’invalidation.
-▢ Pour les [configurations multi-magasin](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/#multi-store-setups){target="_blank"}, les requêtes du service de catalogue et du [!DNL Live Search] incluent un buster de cache spécifique au magasin (par exemple, un paramètre de requête ou une règle de réseau CDN).
+▢ Pour les [configurations multi-magasin](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/?lang=fr#multi-store-setups){target="_blank"}, les requêtes du service de catalogue et du [!DNL Live Search] incluent un buster de cache spécifique au magasin (par exemple, un paramètre de requête ou une règle de réseau CDN).
 ▢ L’invalidation des notifications push fonctionne de bout en bout (publication d’une modification, puis vérification sur le domaine de production).
 ▢ TTL DNS est suffisamment bas avant le basculement.
 ▢ enregistrements DNS A et CNAME sont corrects pour tous les domaines et noms d’hôtes.
