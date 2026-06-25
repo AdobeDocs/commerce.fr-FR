@@ -4,21 +4,15 @@ description: Informations de mise à jour mensuelles pour  [!DNL Adobe Commerce 
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: f1c7779558406641972e9c690d0f508d46da3e0c
 workflow-type: tm+mt
-source-wordcount: 1316
+source-wordcount: 1328
 ht-degree: 0%
 
 ---
@@ -35,6 +29,13 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 ## Juin 2026
 
 >[!BEGINSHADEBOX]
+
+_24 juin 2026_
+
+<!-- v1.3 -->
+
+![Nouveau](../assets/new.svg) **Nouveau champ de `canEditQuantity`**—Ajout de `canEditQuantity` aux `ProductViewOptionValueProduct` dans le GraphQL du service de catalogue. Il expose le paramètre de quantité facultatif **défini par l’utilisateur** pour les sélections de bundle effectuées par l’administrateur Commerce, afin que les consommateurs du storefront puissent déterminer si la quantité d’une sélection de bundle est modifiable.
+<!--COMOPT-2050-->
 
 ### Recherche sémantique
 
@@ -95,7 +96,7 @@ _4 mai 2026_
 
 ### Filtre de prix (version bêta)
 
-Les filtres de recommandation incluent désormais un [&#x200B; filtre de plage de prix &#x200B;](./merchandising/recommendations/filters.md#price) (minimum et maximum).
+Les filtres de recommandation incluent désormais un [ filtre de plage de prix ](./merchandising/recommendations/filters.md#price) (minimum et maximum).
 
 ### Mises à jour des API
 
@@ -103,7 +104,7 @@ _29 avril 2026_
 
 <!--v1.52 release-->
 
-**Traitement par lots des requêtes requis** — L’API GraphQL applique désormais un maximum de 100 SKU par requête lorsque vous récupérez des données de catalogue. Voir [limites et limites documentées](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Traitement par lots des requêtes requis** — L’API GraphQL applique désormais un maximum de 100 SKU par requête lorsque vous récupérez des données de catalogue. Voir [limites et limites documentées](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
@@ -147,7 +148,7 @@ Les bundles dynamiques renvoient désormais une plage de prix calculée. <!--DAT
 
 ### Vue Catalogue pour les règles et recommandations de marchandisage
 
-Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](./merchandising/rules/add.md).
+Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [ des règles de marchandisage](./merchandising/rules/add.md).
 
 ### Mises à jour des API
 
