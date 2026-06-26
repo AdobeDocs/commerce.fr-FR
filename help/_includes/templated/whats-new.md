@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7a4031966113a9131b85a7d0bfc4a3add606d2f7
+source-git-commit: b5e8f023260bd5bfffb76084c175a01cd6a61ff3
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 1%
+source-wordcount: '1783'
+ht-degree: 0%
 
 ---
 # Nouveautés du modèle
@@ -10,6 +10,36 @@ ht-degree: 1%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 23 Juin 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour des conseils de vérification de la synchronisation des données de catalogue dans la documentation du service Commerce. Les rubriques relatives à l’installation et à la configuration des services utilisent désormais un workflow cohérent en deux étapes : confirmer l’exportation sur la page <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">Statut de la synchronisation des flux de données</a>, puis confirmer la diffusion sur le <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">Tableau de bord de la gestion des données</a>, avec des instructions mises à jour dans les sections <a href="https://experienceleague.adobe.com/fr/docs/commerce/catalog-service/get-started#monitor-and-troubleshoot-data-export">Prise en main du service de catalogue</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/live-search/install#monitor-sync-progress">Installation de Live Search</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/product-recommendations/getting-started/install-configure#monitor-and-troubleshoot-data-synchronization">Installation de Product Recommendations</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/data-synchronization/data-sync-manage#verify-that-the-data-sync-is-working">Gérer la synchronisation</a> du <em>Guide d’exportation des données SaaS</em>.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/82bdfd342d2d745721ed2b35f2dbfd8fa394ab5a">validation</a></td>
+    </tr>
+    <tr>
+      <td><p>Ajout d’une nouvelle référence de schéma de la table de flux du connecteur Adobe Commerce Optimizer <a href="https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/reference/feed-table-reference"></a> et mise à jour des conseils <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/data-synchronization/sync-overview">Synchronisation de l’exportation des données SaaS</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">gestion manuelle de la synchronisation</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/reference/data-export-cli-commands">Commandes de resynchronisation de l’interface de ligne de commande Commerce</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/reference/feed-table-reference">schéma de la table de flux</a>.</p>
+</td>
+      <td>
+        Mise à jour majeure, nouvelle rubrique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/601d02435f388096d59ce7f8e2a9e3e7c8bec65b">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 17 Juin 2026
 
@@ -385,66 +415,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Commentaires, mise à jour majeure
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 27 Avril 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d’une page <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/overview"> observabilité </a> pour Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Commentaires, nouvelle rubrique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf83f213d1774845c4c99f3b154e9fb3220c3cd1">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Mise à jour de la section <a href="https://experienceleague.adobe.com/fr/docs/commerce/app-management/manage-app/manage-app">Gérer votre application</a> avec la recherche d’applications dans l’administration (filtres de modèles de recherche, de statut et d’extensibilité) et le chemin d’accès de l’application acquise vers Adobe Exchange, avec des liens provenant des sections <a href="https://experienceleague.adobe.com/fr/docs/commerce/app-management/overview">Aperçu de la gestion des applications</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/app-management/install">Installer et accéder à la gestion des applications</a>.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/780cef7af3574cd846fd7ee82d7814f2ebe9d6cc">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Ajout de la production <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41035e75111d370e5dc40c17607337ae75f11fa0">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 24 Avril 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/eb10bd0ff636f70360e1ca35e51b6643ad1f70d4">validation</a></td>
     </tr>
   </tbody>
 </table>
