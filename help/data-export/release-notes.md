@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
 workflow-type: tm+mt
-source-wordcount: 2903
+source-wordcount: 3115
 ht-degree: 0%
 
 ---
@@ -45,6 +45,13 @@ Les mises à jour incluent :
 
 ## Versions De 2026
 
+### Version 103.4.29
+
+_6 juillet 2026_
+
+![Corriger](../assets/fix.svg) Trier les liens de produit pour éviter une synchronisation aléatoire. <!--MDEE-1391-->
+![Fixe](../assets/fix.svg) Le flux Prix envoie le prix de base au lieu du prix de la règle de catalogue pour les sites web UTC négatifs après minuit UTC. <!--MDEE-1401-->
+
 ### Version 103.4.28
 
 _1 juin 2026_
@@ -56,7 +63,6 @@ _1 juin 2026_
 _4 juin 2026_
 
 ![Correctif](../assets/fix.svg) **L’offre groupée reste visible après les mises à jour simultanées du catalogue**-Correction d’un problème en raison duquel les produits groupés n’apparaissaient pas sur le storefront lorsque les produits configurables et groupés étaient mis à jour en même temps. Après la mise à niveau de `magento/module-data-exporter` vers la version 103.4.27, le flux de produits est automatiquement planifié pour resynchronisation afin de corriger les incohérences de données de bundle existantes dans [!DNL Catalog Service], [!DNL Live Search] et d’autres services Commerce connectés.
-<!--MDEE-1379-->
 
 ### Version 103.4.26
 
@@ -77,10 +83,8 @@ _19 mai 2026_
 _5 mai 2026_
 
 ![Correctif](../assets/fix.svg) **Dépannage plus facile à partir des journaux d’exportation**-de nombreuses erreurs et avertissements liés à l’exportation incluent désormais des codes journaux cohérents. Ces codes vous permettent de suivre plus rapidement les problèmes liés à l’assistance ou à la documentation. Pour plus d’informations, consultez la [Référence des codes journal](troubleshooting/log-codes-reference.md).
-<!--MDEE-1276-->
 
 ![Correction](../assets/fix.svg) **resynchronisation automatique lors du changement des libellés d’option d’attribut**-La modification des libellés d’option d’attribut de produit pour une vue de magasin (y compris les attributs à sélection multiple) met désormais en file d’attente les produits concernés pour l’exportation à nouveau, de sorte que Live Search, Product Recommendations, Catalog Service et d’autres services Commerce connectés affichent les libellés de facette et de filtre mis à jour dans les vues acheteur. Auparavant, les modifications apportées uniquement aux libellés pouvaient laisser les catalogues SaaS affichant un libellé obsolète jusqu’à ce qu’une modification plus large du produit déclenche une synchronisation.
-<!--MDEE-1337-->
 
 ![Correctif](../assets/fix.svg) **Statut fiable et visibilité lorsque les données de l’étendue par défaut sont manquantes**-L’exportation du produit gère les écarts sur l’étendue d’administration par défaut afin que les services connectés obtiennent un comportement correct en matière d’activation, de désactivation et de visibilité. Les valeurs spécifiques à la boutique que vous définissez sont toujours prioritaires.
 
@@ -98,9 +102,7 @@ _5 mai 2026_
 _20 avril 2026_
 
 ![Correction](../assets/fix.svg) **Résolution des erreurs SQL lors de la suppression d’attributs EAV statiques**-Le plug-in ProductAttributeDelete ne génère plus d’erreurs SQL lors de la suppression d’attributs EAV statiques, ce qui garantit une gestion plus fluide des attributs et une meilleure fiabilité du système. <!--MDEE-1336-->
-![Corriger](../assets/fix.svg) **Exportation d’un chemin d’accès de catégorie fixe après le déplacement d’une catégorie**- Garantit que le flux des catégories met correctement à jour le `url_path` lorsqu’une catégorie est déplacée vers un autre parent, empêchant les chemins d’accès de catégorie manquants ou obsolètes dans les services Commerce connectés.<!--MDEE-1331-->
-![Correctif](../assets/fix.svg) **Amélioration des mises à jour planifiées des catégories de produits associés** Les mises à jour planifiées des URL des catégories n’affectent désormais que les catégories prévues, ce qui permet de préserver l’intégrité des données et d’empêcher les modifications involontaires des produits associés. Désormais, les modifications d’URL de catégorie planifiées sont correctement répercutées dans les données exportées, ce qui permet d’aligner la navigation du storefront et les services liés sur votre catalogue actuel.
-<!--MDEE-1321-->
+![Corriger](../assets/fix.svg) **Exportation d’un chemin d’accès de catégorie fixe après le déplacement d’une catégorie**- Garantit que le flux des catégories met correctement à jour la `url_path` lorsqu’une catégorie est déplacée vers un autre parent, empêchant les chemins d’accès de catégorie manquants ou obsolètes dans les services Commerce connectés.![Correctif](../assets/fix.svg) **Amélioration des mises à jour planifiées des catégories de produits associés** Les mises à jour planifiées des URL des catégories n’affectent désormais que les catégories prévues, ce qui permet de préserver l’intégrité des données et d’empêcher les modifications involontaires des produits associés. Désormais, les modifications d’URL de catégorie planifiées sont correctement répercutées dans les données exportées, ce qui permet d’aligner la navigation du storefront et les services liés sur votre catalogue actuel.
 
 ### Version 103.4.22
 
