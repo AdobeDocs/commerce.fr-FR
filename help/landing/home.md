@@ -6,33 +6,14 @@ seo-description: Access the product documentation for hosted services that help 
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 TQID: https://experienceleague.adobe.com/zKL5fNTECsNOKZfEl7OUSYHTo-wrh81z3-C7wB1SoWM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: da3860b0-d637-47df-bef0-273751180266
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: da3860b0-d637-47df-bef0-273751180266id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: ee8113dcf4e6d4d91fdf6cc69078d6104315a33f
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1314
 ht-degree: 0%
 
 ---
@@ -77,7 +58,7 @@ Les services Storefront sont un groupe de fonctionnalités optimisées par l’I
       <div>
          <a href="../catalog-service/overview.md">
          <strong>Service de catalogue</strong>
-         </a>
+         
       </div>
       <p>
          <em>Offrez à vos clients une expérience de produit optimisée tout en améliorant les performances, l’évolutivité et les conversions.</em>
@@ -103,7 +84,7 @@ Les services Storefront sont un groupe de fonctionnalités optimisées par l’I
       <div>
          <a href="../product-recommendations/overview.md">
          <strong>Recommandations de produits</strong>
-         </a>
+         
       </div>
       <p>
          <em>Ajoutez des recommandations optimisées par l’IA basées sur le comportement des acheteurs, les tendances populaires, la similarité des produits, etc.</em>
@@ -116,7 +97,7 @@ Les services Storefront sont un groupe de fonctionnalités optimisées par l’I
       <div>
          <a href="../payment-services/guide-overview.md">
          <strong> Services de paiement </strong>
-         </a>
+         
       </div>
       <p>
          <em>Augmentez la satisfaction des clients grâce à diverses méthodes de paiement, y compris des versements sans intérêts et des vues simplifiées du traitement des paiements, des commandes et des factures.</em>
@@ -151,22 +132,10 @@ Les services d’intégration font référence aux fonctionnalités qui connecte
       <div>
           <a href="../aem-assets-integration/overview.md">
          <strong>Intégration </strong>
-         </a>
+         
       </div>
       <p>
          <em>Simplifiez la gestion des ressources numériques à l’aide d’un système qui s’intègre à Adobe Experience Manager pour gérer le contenu multimédia enrichi.</em>
-      </p>
-      <br/>
-      <a href="../llmo-integration/overview.md">
-      <img alt="Optimisation du LLM" src="../assets/icons/gauge4.svg" width="40">
-      </a>
-      <div>
-          <a href="../llmo-integration/overview.md">
-         <strong>[!DNL Adobe LLM Optimizer] intégration</strong>
-         </a>
-      </div>
-      <p>
-         <em>Connectez votre catalogue à [!DNL Adobe LLM Optimizer] pour surveiller l’apparence des produits dans les réponses pilotées par l’IA et déployez les mises à jour de nom et de description de produit approuvées des opportunités vers [!DNL Adobe Commerce].</em>
       </p>
    </td>
    <td valign="top">
@@ -176,7 +145,7 @@ Les services d’intégration font référence aux fonctionnalités qui connecte
       <div>
          <a href="../app-management/overview.md">
          <strong>Gestion des applications</strong>
-         </a>
+         
       </div>
       <p>
          <em>Associez, configurez et gérez des applications App Builder avec votre instance Commerce via l’interface utilisateur d’administration.</em>
@@ -201,8 +170,7 @@ Les outils de données vous aident à gérer et à optimiser le flux d’informa
          </a>
       </div>
       <p>
-         <em>Synchroniser automatiquement les données de catalogue, de commande et d’inventaire d’Adobe Commerce avec les services connectés. Utilisez les commandes de l’interface de ligne de commande Commerce ou le tableau de bord <strong>Data Management Dashboard</strong> pour gérer le traitement de la synchronisation.</em>
-      </p>
+         <em>Synchroniser automatiquement les données de catalogue, de commande et d’inventaire d’Adobe Commerce avec les services connectés. Utilisez les commandes de l’interface de ligne de commande Commerce ou le tableau de bord <strong>Data Management Dashboard</strong> pour gérer le traitement de la synchronisation.</em></p>
    </td>
    <td valign="top">
       <a href="../price-index/price-indexing.md">
@@ -211,24 +179,23 @@ Les outils de données vous aident à gérer et à optimiser le flux d’informa
       <div>
           <a href="../price-index/price-indexing.md">
          <strong>Indexeur de prix SaaS</strong>
-         </a>
+         
       </div>
       <p>
          <em>Optimisez les performances du site en déchargeant les tâches gourmandes en ressources (telles que l’indexation et le calcul des prix) de l’application Commerce vers l’infrastructure cloud d’Adobe.</em>
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Surveiller la synchronisation des données" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Tableau de bord de gestion des données</strong>
-         </a>
+         
       </div>
       <p>
-         <em>Effectuez facilement le suivi de la synchronisation des données Commerce et déclenchez une resynchronisation à partir d’un tableau de bord unifié dans l’administration Commerce. Obtenez des informations précieuses sur la disponibilité des données pour une présentation rapide à vos clients.</em>
-      </p>
+         <em>Effectuez facilement le suivi de la synchronisation des données Commerce et déclenchez une resynchronisation à partir d’un tableau de bord unifié dans l’administration Commerce. Obtenez des informations précieuses sur la disponibilité des données pour une présentation rapide à vos clients.</em></p>
    </td>
 </table>
 
@@ -248,7 +215,7 @@ Que vous souhaitiez développer votre entreprise, améliorer l’expérience cli
 | Création d’expériences personnalisées omnicanal | Vos données commerciales sont compartimentées, ce qui vous empêche de diffuser des expériences personnalisées sur plusieurs canaux. | Utilisez [Connexion de données](../data-connection/overview.md) pour envoyer des données comportementales, transactionnelles et de profil à Adobe Experience Platform. Créez des segments de clients sophistiqués, créez des campagnes de panier abandonnées, ciblez des audiences semblables et analysez les tendances saisonnières sur l’ensemble de votre parcours de clients. |
 | Rationalisation de la gestion des ressources numériques | La gestion des images de produit et des médias riches sur plusieurs systèmes est longue et source d’erreurs. | L’[intégration d’](../aem-assets-integration/overview.md) fournit une gestion des ressources centralisée en connectant Adobe Commerce à un projet Adobe Experience Manager Assets, en simplifiant les workflows et en assurant des expériences de marque cohérentes entre tous les points de contact. |
 | Optimiser le traitement des paiements | Les options de paiement limitées et les mauvaises expériences de paiement nuisent à la satisfaction et à la conversion des clients. | [Payment Services](../payment-services/guide-overview.md) offre plusieurs modes de paiement, y compris des versements sans intérêt, avec un tableau de bord unifié pour la gestion des paiements, des commandes et des factures. |
-| Gestion de la synchronisation des données à grande échelle | L’indexation qui nécessite de nombreuses ressources ralentit votre site et vous ne pouvez pas facilement suivre les problèmes de synchronisation des données. | [Exportation de données SaaS](../data-export/overview.md), [Indexeur de prix SaaS](../price-index/price-indexing.md) et le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synchronisent automatiquement les données de catalogue, de commande et d’inventaire, déchargent les calculs de prix sur l’infrastructure cloud d’Adobe et offrent une visibilité en temps réel sur l’état de synchronisation. |
+| Gestion de la synchronisation des données à grande échelle | L’indexation qui nécessite de nombreuses ressources ralentit votre site et vous ne pouvez pas facilement suivre les problèmes de synchronisation des données. | [Exportation de données SaaS](../data-export/overview.md), [Indexeur de prix SaaS](../price-index/price-indexing.md) et le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synchronisent automatiquement les données de catalogue, de commande et d’inventaire, déchargent les calculs de prix sur l’infrastructure cloud d’Adobe et offrent une visibilité en temps réel sur l’état de synchronisation. |
 | Reconquérir les clients perdus et réduire les retours | Les taux élevés de perte de clientèle et de retour de produits ont une incidence sur la rentabilité. | Combinez [Connexion de données](../data-connection/overview.md) avec Adobe Journey Optimizer et Real-Time CDP pour identifier les modèles de retour, créer des campagnes de reconquête, segmenter les clients par comportement et envoyer des campagnes de réengagement personnalisées par e-mail et SMS. |
 | Prendre des décisions de marchandisage axées sur les données | Vous ne savez pas quels produits promouvoir ou quand lancer des promotions. | [Live Search](../live-search/overview.md) fournit des informations sur les performances de recherche et des outils de marchandisage pour accéder aux mesures clés, analyser les termes de recherche et utiliser des règles de marchandisage intelligentes pour booster ou noyer les produits en fonction du comportement réel des clients et des objectifs commerciaux. |
 | Maintenir la conformité avec les données sensibles | Vous devez gérer les données client sensibles tout en respectant la loi HIPAA. | La norme [Data Connection](../data-connection/overview.md) est conforme à la loi HIPAA, ce qui vous permet de partager des données back-office avec Experience Platform tout en préservant la conformité et en gérant systématiquement les demandes d’accès à des informations personnelles. |
