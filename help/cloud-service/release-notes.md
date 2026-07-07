@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
 workflow-type: tm+mt
-source-wordcount: 4489
+source-wordcount: 4655
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 >
 >Si vous utilisez Adobe Commerce On-Premise ou Adobe Commerce sur une infrastructure cloud, consultez les [notes de mise à jour d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview).
 
-## Juin 2026 - version #2 {#latest}
+## Juillet 2026 - #1 de mise à jour {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
@@ -64,6 +64,27 @@ Les points d’entrée `GET /V1/orders` et `GET /V1/invoices` de l’API REST pr
 ### Répertorier les modèles d’e-mail personnalisés via l’API
 
 Le nouveau point d’entrée de l’API REST `GET /V1/custom-email/templates` renvoie vos [modèles d’e-mail personnalisés](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), y compris l’identifiant, le code et l’objet de chaque modèle. Les intégrations peuvent utiliser un ID de modèle renvoyé avec le point d’entrée `POST /V1/custom-email/send` au lieu de rechercher l’ID manuellement. <!-- CCSAAS-5089 -->
+
+### Gérer la chaîne de commande complète via l’API REST
+
+>[!IMPORTANT]
+>
+>Cette fonctionnalité est expérimentale et doit être activée en contactant votre responsable du succès client Adobe Commerce ou en créant un ticket d’assistance.
+
+Les nouveaux points d’entrée de l’API REST `orderChain` permettent aux intégrations de modifier un ordre à l’aide de son identifiant et de résoudre automatiquement la chaîne complète des ordres modifiés :
+
+| Méthode | Point d’entrée | Description |
+| --- | --- | --- |
+| `POST` | `/V1/orderChain/{orderId}/invoice` | Créez une facture pour la commande, en résolvant les articles sur la facture dans la chaîne de commande. |
+| `POST` | `/V1/orderChain/{id}/cancel` | Annule la commande courante dans la chaîne. |
+| `POST` | `/V1/orderChain/{id}/hold` | Mettre la commande en attente. |
+| `POST` | `/V1/orderChain/{id}/unhold` | Supprimez le blocage de la commande. |
+| `POST` | `/V1/orderChain/{id}/emails` | Envoyez une notification électronique de commande. |
+| `POST` | `/V1/orderChain/{id}/comments` | Ajoutez un commentaire à la commande. |
+| `GET` | `/V1/orderChain/{id}/comments` | Récupérez les commentaires de commande. |
+| `GET` | `/V1/orderChain/{id}/statuses` | Récupérez le statut actuel de la commande. |
+
+`GET` points d’entrée qui prennent en charge le filtrage des factures, des expéditions, des avoirs et des retours prennent désormais en charge le filtrage par `order_original_id`. Le filtrage par `order_original_id` renvoie des détails sur l’ensemble de la chaîne de commande, et pas seulement sur une seule commande. Un exemple de point d’entrée qui prend en charge cette fonctionnalité est `GET /V1/invoices`. <!-- ACCS-1004, ACCS-1005 -->
 
 ### Afficher l’historique des modifications de commande dans Admin
 
@@ -84,6 +105,10 @@ Les améliorations, optimisations et correctifs suivants sont inclus dans cette 
 * Les catalogues partagés volumineux sont désormais plus faciles à gérer dans l’administration, avec des temps de chargement améliorés et une probabilité réduite de dépassements de délai. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
 
 * Correction d&#39;un échec de création d&#39;expédition qui se produisait lors de la création d&#39;expéditions pour des commandes contenant des produits configurables. <!-- ACCS-1095 -->
+
+* Correction d’un problème dans le [!DNL Commerce Admin] en raison duquel le menu de navigation de gauche pouvait disparaître. <!-- ACCS-1035 -->
+
+* Amélioration des performances d’affectation et d’annulation d’affectation dans les catalogues partagés. <!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
 
 {{accs-release}}
 
