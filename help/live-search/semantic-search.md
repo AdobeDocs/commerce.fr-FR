@@ -3,7 +3,7 @@ title: Recherche Sémantique
 description: Activez la recherche sémantique d’IA à partir  [!DNL Live Search]  paramètres . Aucune configuration d’attribut ou modification du storefront n’est requise.
 role: Admin
 recommendations: noCatalog
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -106,3 +106,4 @@ Une fois la recherche sémantique active et l’indexation terminée, Adobe reco
 - [Paramètres](settings.md#semantic-search)
 - [Synonymes](synonyms.md)
 - [Performances](performance.md)
+
