@@ -4,18 +4,13 @@ description: Dernières informations de mise  [!DNL Catalog Service]  jour pour 
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
 TQID: https://experienceleague.adobe.com/-yxW4sTuk7LPjGy5YsQ65phtkBLiByg8SmBaQPHMevM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff5d3ee7f421c8fee9a40a71ea1de366fd5e6d47
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
 workflow-type: tm+mt
-source-wordcount: 2946
+source-wordcount: 3024
 ht-degree: 0%
 
 ---
@@ -64,7 +59,7 @@ La prise en charge est fournie pour la dernière version. Les notes de mise à j
 **Date de publication** : 20 mai 2026
 <!-- v1.55 -->
 
-![Nouveau](../assets/new.svg) Limite imposée de 100 SKU maximum par demande pour les clients Adobe Commerce et Adobe Commerce as a Cloud Service conformément [limites et limites documentées](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits).
+![Nouveau](../assets/new.svg) Limite imposée de 100 SKU maximum par demande pour les clients Adobe Commerce et Adobe Commerce as a Cloud Service conformément [limites et limites documentées](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
 
 
 **Date de publication** : 13 mai 2026
@@ -83,8 +78,8 @@ La prise en charge est fournie pour la dernière version. Les notes de mise à j
 **Date de publication** : 29 avril 2026
 
 
-![Nouveau &#x200B;](../assets/new.svg) limite forcée de 100 SKU maximum par demande pour Adobe Commerce Optimizer et Adobe Commerce as a Cloud Service
-clients conformément [limites et limites documentées](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
+![Nouveau ](../assets/new.svg) limite forcée de 100 SKU maximum par demande pour Adobe Commerce Optimizer et Adobe Commerce as a Cloud Service
+clients conformément [limites et limites documentées](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
 
 **Date de publication** : 17 avril 2026
 
@@ -268,14 +263,14 @@ Application :
 **Date de publication** : 20 juin 2025
 <!-- v1.37 -->
 
-![Nouveau](../assets/new.svg) **Configuration hiérarchique du catalogue des prix** : plages de prix précises pour les catalogues des prix parent-enfant. Les calculs respectent la hiérarchie et les règles héritées ; réduit les erreurs de tarification lorsque plusieurs tarifs sont liés. Adobe Commerce Optimizer uniquement. Voir [Livres de prix](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/pricebooks).
+![Nouveau](../assets/new.svg) **Configuration hiérarchique du catalogue des prix** : plages de prix précises pour les catalogues des prix parent-enfant. Les calculs respectent la hiérarchie et les règles héritées ; réduit les erreurs de tarification lorsque plusieurs tarifs sont liés. Adobe Commerce Optimizer uniquement. Voir [Livres de prix](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
 ![Nouvelles](../assets/new.svg) **clés non sensibles à la casse** : les recherches de clés dans les requêtes ne sont désormais plus sensibles à la casse, ce qui réduit les erreurs de casse des clés. <!--DATA-6494, DCAT-2495-->
 
 **Date de publication** : 20 juin 2025
 <!-- v1.36 -->
 
-![Nouvel &#x200B;](../assets/new.svg) **Événements d’E/S publics pour Catalog Storefront** : ajout d’événements d’E/S publics pour une intégration et une observabilité en temps réel (CSS et EDS).<!--DATA-6329-->
+![Nouvel ](../assets/new.svg) **Événements d’E/S publics pour Catalog Storefront** : ajout d’événements d’E/S publics pour une intégration et une observabilité en temps réel (CSS et EDS).<!--DATA-6329-->
 
 ![Nouveau](../assets/new.svg) **Rendu côté serveur (SSR)** : améliorations architecturales pour prendre en charge le rendu côté serveur afin d’améliorer les performances, l’optimisation du moteur de recherche et l’expérience utilisateur sur les catalogues volumineux.<!--DATA-6278, DATA-6280-->
 
@@ -403,7 +398,7 @@ Version majeure : [modèle de données de catalogue composable](https://develope
 
 <!--DATA-5033-->
 
-![Correctif](../assets/fix.svg) Ajout de la prise en charge des prix des produits avec jusqu’à 16 chiffres et 4 décimales. Resynchronisez à partir du [tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou de l’[interface de ligne de commande](../data-export/data-export-cli-commands.md) pour appliquer les mises à jour.
+![Correctif](../assets/fix.svg) Ajout de la prise en charge des prix des produits avec jusqu’à 16 chiffres et 4 décimales. Resynchronisez à partir du [tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou de l’[interface de ligne de commande](../data-export/data-export-cli-commands.md) pour appliquer les mises à jour.
 
 #### Limites connues
 
@@ -430,7 +425,7 @@ Pour plus d’informations et des exemples, voir [Service de catalogue et mailla
 
 ![Nouveau](../assets/new.svg) Ajout de la prise en charge de PHP 8.3.
 
-![Nouveau &#x200B;](../assets/new.svg) les requêtes [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) et [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) renvoient désormais des données d’options personnalisables pour les produits simples et complexes.<!--DATA-5538-->
+![Nouveau ](../assets/new.svg) les requêtes [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) et [`refineProduct`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) renvoient désormais des données d’options personnalisables pour les produits simples et complexes.<!--DATA-5538-->
 
 ### Février 2024
 
@@ -439,14 +434,14 @@ Pour plus d’informations et des exemples, voir [Service de catalogue et mailla
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Nouveau &#x200B;](../assets/new.svg) l’[[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=fr) est désormais disponible pour les flux de données (recommandations de produits, recherche en direct, service de catalogue). Nécessite `catalog-service` métapaquet v3.1.0+.
+![Nouveau ](../assets/new.svg) l’[[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) est désormais disponible pour les flux de données (recommandations de produits, recherche en direct, service de catalogue). Nécessite `catalog-service` métapaquet v3.1.0+.
 
 **Date de publication** : 13 février 2024
 <!-- v1.16 -->
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Les nouvelles vidéos produit &#x200B;](../assets/new.svg) sont désormais prises en charge par l’API Catalog Service.![Correctif](../assets/fix.svg) Les options en rupture de stock s’affichent désormais dans le widget PDP.
+![Les nouvelles vidéos produit ](../assets/new.svg) sont désormais prises en charge par l’API Catalog Service.![Correctif](../assets/fix.svg) Les options en rupture de stock s’affichent désormais dans le widget PDP.
 
 #### Limites connues
 
@@ -538,7 +533,7 @@ Utilisez le maillage API et l’API Core GraphQL pour :
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
-![Nouveau](../assets/new.svg) Expérience d’intégration simplifiée et améliorée.![Nouveau &#x200B;](../assets/new.svg) de nouveaux points d’entrée de sandbox client sont disponibles pour les tests de pré-production.![Nouveau](../assets/new.svg) Ajout de la prise en charge des produits virtuels.![Correctif](../assets/fix.svg) Amélioration de l’évolutivité et des performances de l’API.
+![Nouveau](../assets/new.svg) Expérience d’intégration simplifiée et améliorée.![Nouveau ](../assets/new.svg) de nouveaux points d’entrée de sandbox client sont disponibles pour les tests de pré-production.![Nouveau](../assets/new.svg) Ajout de la prise en charge des produits virtuels.![Correctif](../assets/fix.svg) Amélioration de l’évolutivité et des performances de l’API.
 
 ### Novembre 2022
 
@@ -594,13 +589,23 @@ Mises à jour du métapaquet PHP du service de catalogue (`magento/catalog-servi
 
 - Pour Adobe Commerce on cloud ou on-premise, Adobe recommande d’utiliser le compositeur pour mettre à niveau le métapaquet du service de catalogue dans vos environnements cloud vers la dernière version.
 
+### version v3.5.0
+
+**Date de publication** : 10 juillet 2026
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
+
+![Nouveau](../assets/new.svg) **Synchronisation des clés d’URL de catégorie intermédiaire**—Mise à jour des dépendances de métapaquet du service de catalogue pour inclure le module d’exportateur de données d’évaluation de catalogue (`magento/module-catalog-staging-data-exporter`). Ce module réexporte les flux de produit lorsqu’une modification de `url_key` de catégorie intermédiaire s’applique, de sorte que les modifications de catalogue intermédiaires se propagent correctement au catalogue SaaS (service de catalogue, recherche en direct et recommandations de produits).
+
+![Nouveau](../assets/new.svg) Mise à jour des dépendances pour maintenir la compatibilité entre le service de catalogue et votre pile Commerce.
+
 ### version v3.4.0
 
 **Date de publication** : 8 juin 2026
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Nouveau](../assets/new.svg) **Prise en charge de la surveillance de l’état de synchronisation des flux de données**—Mise à jour des dépendances des métapaquets du service de catalogue pour inclure l’extension d’état de l’exportateur de données (`magento/module-data-exporter-status`). Cela permet la [surveillance de l’état de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) à partir de l’administrateur Commerce sans nécessiter d’étapes d’installation ou de configuration supplémentaires
+![Nouveau](../assets/new.svg) **Prise en charge de la surveillance de l’état de synchronisation des flux de données**—Mise à jour des dépendances des métapaquets du service de catalogue pour inclure l’extension d’état de l’exportateur de données (`magento/module-data-exporter-status`). Cela permet la [surveillance de l’état de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) à partir de l’administrateur Commerce sans nécessiter d’étapes d’installation ou de configuration supplémentaires
 
 ![Nouveau](../assets/new.svg) Mise à jour des dépendances pour maintenir la compatibilité entre le service de catalogue et votre pile Commerce.
 
@@ -661,7 +666,7 @@ Chaque fois que vous utilisez le compositeur pour mettre à niveau le `magento/c
    - [Guide d’Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
    - [Guide d’Adobe Commerce sur Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
 
-- Pour les projets utilisant **&#x200B;**&#x200B;ou **Adobe Commerce Optimizer Connector**, consultez la documentation suivante :
+- Pour les projets utilisant **** ou **Adobe Commerce Optimizer Connector**, consultez la documentation suivante :
 
    - [Guide du développeur des services de marchandisage](https://developer.adobe.com/commerce/services/optimizer/)
    - [Référence de l’API Merchandising GraphQL](https://developer.adobe.com/commerce/services/reference/graphql/)
