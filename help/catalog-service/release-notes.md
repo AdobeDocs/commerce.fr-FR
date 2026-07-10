@@ -64,7 +64,7 @@ La prise en charge est fournie pour la dernière version. Les notes de mise à j
 **Date de publication** : 20 mai 2026
 <!-- v1.55 -->
 
-![Nouveau](../assets/new.svg) Limite imposée de 100 SKU maximum par demande pour les clients Adobe Commerce et Adobe Commerce as a Cloud Service conformément [limites et limites documentées](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+![Nouveau](../assets/new.svg) Limite imposée de 100 SKU maximum par demande pour les clients Adobe Commerce et Adobe Commerce as a Cloud Service conformément [limites et limites documentées](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits).
 
 
 **Date de publication** : 13 mai 2026
@@ -84,7 +84,7 @@ La prise en charge est fournie pour la dernière version. Les notes de mise à j
 
 
 ![Nouveau &#x200B;](../assets/new.svg) limite forcée de 100 SKU maximum par demande pour Adobe Commerce Optimizer et Adobe Commerce as a Cloud Service
-clients conformément [limites et limites documentées](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
+clients conformément [limites et limites documentées](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
 
 **Date de publication** : 17 avril 2026
 
@@ -268,7 +268,7 @@ Application :
 **Date de publication** : 20 juin 2025
 <!-- v1.37 -->
 
-![Nouveau](../assets/new.svg) **Configuration hiérarchique du catalogue des prix** : plages de prix précises pour les catalogues des prix parent-enfant. Les calculs respectent la hiérarchie et les règles héritées ; réduit les erreurs de tarification lorsque plusieurs tarifs sont liés. Adobe Commerce Optimizer uniquement. Voir [Livres de prix](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
+![Nouveau](../assets/new.svg) **Configuration hiérarchique du catalogue des prix** : plages de prix précises pour les catalogues des prix parent-enfant. Les calculs respectent la hiérarchie et les règles héritées ; réduit les erreurs de tarification lorsque plusieurs tarifs sont liés. Adobe Commerce Optimizer uniquement. Voir [Livres de prix](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/pricebooks).
 
 ![Nouvelles](../assets/new.svg) **clés non sensibles à la casse** : les recherches de clés dans les requêtes ne sont désormais plus sensibles à la casse, ce qui réduit les erreurs de casse des clés. <!--DATA-6494, DCAT-2495-->
 
@@ -403,7 +403,7 @@ Version majeure : [modèle de données de catalogue composable](https://develope
 
 <!--DATA-5033-->
 
-![Correctif](../assets/fix.svg) Ajout de la prise en charge des prix des produits avec jusqu’à 16 chiffres et 4 décimales. Resynchronisez à partir du [tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou de l’[interface de ligne de commande](../data-export/data-export-cli-commands.md) pour appliquer les mises à jour.
+![Correctif](../assets/fix.svg) Ajout de la prise en charge des prix des produits avec jusqu’à 16 chiffres et 4 décimales. Resynchronisez à partir du [tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou de l’[interface de ligne de commande](../data-export/data-export-cli-commands.md) pour appliquer les mises à jour.
 
 #### Limites connues
 
@@ -439,7 +439,7 @@ Pour plus d’informations et des exemples, voir [Service de catalogue et mailla
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Nouveau &#x200B;](../assets/new.svg) l’[[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) est désormais disponible pour les flux de données (recommandations de produits, recherche en direct, service de catalogue). Nécessite `catalog-service` métapaquet v3.1.0+.
+![Nouveau &#x200B;](../assets/new.svg) l’[[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=fr) est désormais disponible pour les flux de données (recommandations de produits, recherche en direct, service de catalogue). Nécessite `catalog-service` métapaquet v3.1.0+.
 
 **Date de publication** : 13 février 2024
 <!-- v1.16 -->
@@ -610,7 +610,7 @@ Mises à jour du métapaquet PHP du service de catalogue (`magento/catalog-servi
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Nouveau](../assets/new.svg) **Prise en charge de la surveillance de l’état de synchronisation des flux de données**—Mise à jour des dépendances des métapaquets du service de catalogue pour inclure l’extension d’état de l’exportateur de données (`magento/module-data-exporter-status`). Cela permet la [surveillance de l’état de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) à partir de l’administrateur Commerce sans nécessiter d’étapes d’installation ou de configuration supplémentaires
+![Nouveau](../assets/new.svg) **Prise en charge de la surveillance de l’état de synchronisation des flux de données**—Mise à jour des dépendances des métapaquets du service de catalogue pour inclure l’extension d’état de l’exportateur de données (`magento/module-data-exporter-status`). Cela permet la [surveillance de l’état de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) à partir de l’administrateur Commerce sans nécessiter d’étapes d’installation ou de configuration supplémentaires
 
 ![Nouveau](../assets/new.svg) Mise à jour des dépendances pour maintenir la compatibilité entre le service de catalogue et votre pile Commerce.
 
