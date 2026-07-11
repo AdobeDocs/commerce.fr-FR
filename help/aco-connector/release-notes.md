@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 4eb33526927e1c5a81612aab0de0ce4bc7746368
 workflow-type: tm+mt
-source-wordcount: 353
+source-wordcount: 366
 ht-degree: 0%
 
 ---
@@ -39,6 +39,12 @@ Ces notes de mise à jour décrivent toutes les versions du [!DNL Adobe Commerce
 ![Problème connu](../assets/bug.svg) Problèmes connus
 
 ## Versions De 2026
+
+### Version 1.0.15
+
+_10 juillet 2026_
+
+![Correctif](../assets/fix.svg) Ajout de la prise en charge du tri au flux Catégories . <!--MDEE-1409-->
 
 ### Version 1.0.14
 
@@ -57,7 +63,7 @@ _1 juin 2026_
 _6 mai 2026_
 
 ![Correctif](../assets/fix.svg) **Amélioration des instructions de configuration du [!DNL Adobe Commerce Optimizer Connector]** - Mise à jour de la page de configuration du [!DNL Adobe Commerce Optimizer] dans Commerce Admin afin de renvoyer vers le guide d’intégration du _[!DNL Adobe Commerce Optimizer Connector]_.
-<!--COMOPT-1922-->
+
 
 ![Correctif](../assets/fix.svg) amélioration **[!DNL Adobe Commerce Optimizer Connector]métadonnées** - La [!DNL Adobe Commerce Optimizer Connector] inclut désormais sa version installée dans l’en-tête des métadonnées. Cette amélioration permet aux équipes d’identifier rapidement la version du connecteur utilisée lors des missions de dépannage ou d’assistance.<!--MDEE-1323-->
 

@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff5d3ee7f421c8fee9a40a71ea1de366fd5e6d47
+source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
 workflow-type: tm+mt
-source-wordcount: 2946
+source-wordcount: 3024
 ht-degree: 0%
 
 ---
@@ -593,6 +593,16 @@ Mises à jour du métapaquet PHP du service de catalogue (`magento/catalog-servi
 - Pour les clients Adobe Commerce as a Cloud Service, la dernière version est installée dans votre environnement.
 
 - Pour Adobe Commerce on cloud ou on-premise, Adobe recommande d’utiliser le compositeur pour mettre à niveau le métapaquet du service de catalogue dans vos environnements cloud vers la dernière version.
+
+### version v3.5.0
+
+**Date de publication** : 10 juillet 2026
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
+
+![Nouveau](../assets/new.svg) **Synchronisation des clés d’URL de catégorie intermédiaire**—Mise à jour des dépendances de métapaquet du service de catalogue pour inclure le module d’exportateur de données d’évaluation de catalogue (`magento/module-catalog-staging-data-exporter`). Ce module réexporte les flux de produit lorsqu’une modification de `url_key` de catégorie intermédiaire s’applique, de sorte que les modifications de catalogue intermédiaires se propagent correctement au catalogue SaaS (service de catalogue, recherche en direct et recommandations de produits).
+
+![Nouveau](../assets/new.svg) Mise à jour des dépendances pour maintenir la compatibilité entre le service de catalogue et votre pile Commerce.
 
 ### version v3.4.0
 
