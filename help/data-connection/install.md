@@ -12,9 +12,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 476
+source-wordcount: 491
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Avant d’installer l’extension, [consultez les conditions préalables](overvi
 L’extension [!DNL Data Connection] est disponible sur [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Lorsque vous installez cette extension à partir de la ligne de commande du serveur, elle se connecte à votre installation Adobe Commerce en tant que [service](../landing/saas.md). Une fois le processus terminé, **[!DNL Data Connection]** et **Commerce Services Connector** apparaissent dans le menu **Système** sous **Services** dans Commerce _Admin_.
 
 Vue d’administration de l’extension ![&#128279;](assets/epc-adminui.png) [!DNL Data Connection]
+
+>[!NOTE]
+>
+>Après l’installation, configurez [!DNL Data Connection] dans l’Administration. Voir [Portée de la configuration](connect-data.md#configuration-scope) pour les paramètres globaux ou à l’échelle du site web.
 
 >[!IMPORTANT]
 >
@@ -162,7 +166,7 @@ Pour effectuer une mise à jour vers une version majeure telle que de 2.0.0 à 3
 1. **Enregistrer** `composer.json`. Exécutez ensuite la commande suivante à partir de la ligne de commande :
 
    ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
+   composer update magento/experience-platform-connector --with-dependencies
    ```
 
    Ou, pour les commerçants B2B :

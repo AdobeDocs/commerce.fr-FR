@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 1132
+source-wordcount: 1107
 ht-degree: 0%
 
 ---
@@ -37,16 +37,7 @@ Créez des audiences dans Real-Time CDP à l’aide des données issues des év�
 
 ## Qu’ont accompli les autres clients ?
 
-Les clients Adobe [!DNL Commerce] ont obtenu des impacts commerciaux significatifs suite à l’activation des audiences créées dans Real-Time CDP et à leur déploiement sur leur instance [!DNL Commerce].
-
-Un retailer mondial et multi-marques de vêtements a obtenu :
-
-- Une source de vérité avec 10 millions de profils clients unifiés
-- Création de plus de 40 audiences uniques de « clients à forte intention » pour interagir avec tous les canaux
-
-Une entreprise mondiale de boissons a collecté :
-
-- 98 millions de profils clients provenant de plus de 100 pays
+Les clients Adobe [!DNL Commerce] ont obtenu des impacts commerciaux significatifs suite à l’activation des audiences créées dans Real-Time CDP et à leur déploiement sur leur instance [!DNL Commerce]. Pour obtenir les résultats clients associés à partir des données d’événement Commerce, voir [Utiliser Adobe Journey Optimizer pour envoyer un e-mail de panier abandonné](using-ajo.md#what-have-other-customers-achieved).
 
 ## Commençons
 

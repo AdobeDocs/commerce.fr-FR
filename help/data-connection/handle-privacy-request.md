@@ -21,16 +21,16 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 595
+source-wordcount: 598
 ht-degree: 1%
 
 ---
 
-# Demandes d’accès à des informations personnelles
+# Gestion des demandes d’accès à des informations personnelles par [!DNL Commerce] Services
 
-Adobe Experience Platform Privacy Service fournit une API RESTful et une interface utilisateur pour vous aider à gérer les demandes de données des clients. Avec Privacy Service, vous pouvez envoyer des demandes d’accès et de suppression de données clients personnelles des applications Adobe Experience Cloud, ce qui facilite l’automatisation de la conformité aux réglementations de confidentialité légales et au sein de l’organisation.
+Adobe Experience Platform Privacy Service fournit une API RESTful et une interface utilisateur pour vous aider à gérer les demandes de données des clients. Avec Privacy Service, vous pouvez envoyer des demandes d’accès et de suppression de données clients personnelles depuis les applications Adobe Experience Cloud. Cela facilite l’automatisation de la mise en conformité avec les réglementations légales et organisationnelles liées à la confidentialité.
 
 Pour plus d’informations sur Privacy Service et sur la création et la gestion des demandes d’accès à des informations personnelles, consultez la documentation de Adobe Experience Platform :
 

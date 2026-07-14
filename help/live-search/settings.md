@@ -7,9 +7,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: 1f5246b6f5853f8b53a356ae2d6d58077b07a9a5
 workflow-type: tm+mt
-source-wordcount: 650
+source-wordcount: 679
 ht-degree: 1%
 
 ---
@@ -21,6 +21,10 @@ Utilisez l’espace de travail **Paramètres** pour configurer la recherche sém
 ![Paramètres](assets/settings.png)
 
 ## Recherche sémantique {#semantic-search}
+
+>[!AVAILABILITY]
+>
+>La recherche sémantique est disponible pour les commerçants utilisant les versions 2.4.4 et plus récentes d’Adobe Commerce.
 
 La recherche sémantique utilise l’IA pour faire correspondre des produits en fonction du sens et du contexte, et pas seulement des mots-clés exacts. Lorsque **[!UICONTROL Semantic search]** est activé, les acheteurs qui utilisent un langage naturel ou un libellé qui ne correspond pas mot pour mot à votre catalogue peuvent toujours trouver des produits appropriés. [!DNL Live Search] offre une correspondance sémantique et de mots-clés dans une expérience de recherche unifiée sur le storefront. La recherche sémantique fonctionne avec votre configuration existante ; les [règles de recherche](rules.md), [synonymes](synonyms.md), [facettes](facets.md), boots et [marchandisage de catégorie](category-merch.md) continuent de s’appliquer.
 
@@ -72,8 +76,7 @@ Vous pouvez spécifier le nombre de groupes de fourchettes de prix et la manièr
 
 Le paramètre Langue [!DNL Live Search] indique la langue attendue lors de la lecture du catalogue et de l’écriture de l’index.
 
-Les langues ont différents ensembles de règles grammaticales : la façon dont les mots sont séparés, les verbes et les formes de mots, par exemple.
-Le paramètre Langue garantit que l’ensemble correct de règles est appliqué au mécanisme d’indexation.
+Les langues ont différents ensembles de règles grammaticales : la façon dont les mots sont séparés, les verbes et les formes de mots, par exemple.Le paramètre Langue garantit que l’ensemble correct de règles est appliqué au mécanisme d’indexation.
 
 Définissez le paramètre Langue sur la langue principale du catalogue. Lors du changement de la langue de l’index, il peut s’écouler de 5 à 60 minutes pour refléter le changement sur le storefront, en fonction de la taille et de la complexité du catalogue.
 

@@ -14,21 +14,23 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1028
 ht-degree: 0%
 
 ---
 
 # Mettre à jour les schémas d’événement de série temporelle pour l’ingestion de données Commerce
 
-L’une des [&#x200B; étapes d’intégration &#x200B;](overview.md#onboarding-steps) pour utiliser l’extension [!DNL Data Connection] consiste à accéder à l’espace de travail du flux de données et [créer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) qui est spécifique à Adobe Commerce. Lorsque vous créez ce flux de données, vous devez également sélectionner un schéma qui décrit les données que vous prévoyez d’ingérer. Ce schéma doit inclure des groupes de champs spécifiques à Commerce.
+Lorsque vous [activez l’extension [!DNL Data Connection]](overview.md#enable-extension), vous pouvez entre autres accéder à l’espace de travail du flux de données et [créer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) spécifique à Adobe Commerce. Lorsque vous créez ce flux de données, vous devez également sélectionner un schéma qui décrit les données que vous prévoyez d’ingérer. Ce schéma doit inclure des groupes de champs spécifiques à Commerce.
 
 Cet article vous fournit les groupes de champs que votre schéma doit inclure pour collecter avec succès les données de série temporelle suivantes fournies par les événements Adobe Commerce :
 
-- [Comportemental](events.md) - Inclut les événements de storefront, de profil, de recherche et B2B.
-- [Back office](events-backoffice.md) - Inclut le statut de la commande et les événements de profil.
+- [Comportemental](events.md) - Inclut les événements storefront, search et B2B.
+- [Back office](events-backoffice.md) - Inclut le statut de la commande et la série temporelle [événements de profil](events-backoffice.md#customer-profile-events).
+
+Pour le profil *enregistrements*, voir [Mettre à jour le schéma d’enregistrement de profil](profile-data.md).
 
 En savoir plus sur les [données de série temporelle](data-ingestion.md).
 
