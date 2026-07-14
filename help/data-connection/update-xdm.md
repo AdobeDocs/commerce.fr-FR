@@ -5,34 +5,30 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: c933a1bc-3d6f-4f80-944f-8c3e212aaeb6
 TQID: https://experienceleague.adobe.com/8u3lSBPoreIZuu107QbR7FNvVx6Lw3TJsKUU6LCQ1Gs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1028
 ht-degree: 0%
 
 ---
 
 # Mettre à jour les schémas d’événement de série temporelle pour l’ingestion de données Commerce
 
-L’une des [&#x200B; étapes d’intégration &#x200B;](overview.md#onboarding-steps) pour utiliser l’extension [!DNL Data Connection] consiste à accéder à l’espace de travail du flux de données et [créer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) qui est spécifique à Adobe Commerce. Lorsque vous créez ce flux de données, vous devez également sélectionner un schéma qui décrit les données que vous prévoyez d’ingérer. Ce schéma doit inclure des groupes de champs spécifiques à Commerce.
+Lorsque vous [activez l’extension [!DNL Data Connection]](overview.md#enable-extension), vous pouvez entre autres accéder à l’espace de travail du flux de données et [créer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) spécifique à Adobe Commerce. Lorsque vous créez ce flux de données, vous devez également sélectionner un schéma qui décrit les données que vous prévoyez d’ingérer. Ce schéma doit inclure des groupes de champs spécifiques à Commerce.
 
 Cet article vous fournit les groupes de champs que votre schéma doit inclure pour collecter avec succès les données de série temporelle suivantes fournies par les événements Adobe Commerce :
 
-- [Comportemental](events.md) - Inclut les événements de storefront, de profil, de recherche et B2B.
-- [Back office](events-backoffice.md) - Inclut le statut de la commande et les événements de profil.
+- [Comportemental](events.md) - Inclut les événements storefront, search et B2B.
+- [Back office](events-backoffice.md) - Inclut le statut de la commande et la série temporelle [événements de profil](events-backoffice.md#customer-profile-events).
+
+Pour le profil *enregistrements*, voir [Mettre à jour le schéma d’enregistrement de profil](profile-data.md).
 
 En savoir plus sur les [données de série temporelle](data-ingestion.md).
 
-En savoir plus sur les [principes de base de la composition des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr).
+En savoir plus sur les [principes de base de la composition des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html).
 
 ## Mettre à jour le schéma avec les données comportementales et d’événement back-office de la série temporelle
 
@@ -42,9 +38,9 @@ Dans cette section, vous apprendrez à mettre à jour votre schéma existant ou 
 >
 >Voir [Données d’événement de profil de série temporelle](#time-series-profile-event-data) pour savoir comment ajouter des champs spécifiques au profil.
 
-1. Si vous ne disposez pas déjà d’un schéma, [créez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr#create) un schéma dont la classe est définie sur **Événement d’expérience**.
+1. Si vous ne disposez pas déjà d’un schéma, [créez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) un schéma dont la classe est définie sur **Événement d’expérience**.
 
-1. [Ajoutez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr#add-field-groups) les groupes de champs spécifiques à Commerce suivants (ou modifiez votre schéma existant et ajoutez ces groupes de champs) :
+1. [Ajoutez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) les groupes de champs spécifiques à Commerce suivants (ou modifiez votre schéma existant et ajoutez ces groupes de champs) :
 
    - Recherche de site
    - Page web de la visite
@@ -59,17 +55,17 @@ Dans cette section, vous apprendrez à mettre à jour votre schéma existant ou 
    >
    > Ne définissez aucun groupe de champs spécifique à Commerce comme `Primary identity`. Ce faisant, identifie le champ comme requis et Experience Platform s’attend à ce que ce champ soit présent dans chaque événement. Si ce champ est absent, l’ingestion des données échoue.
 
-   Votre schéma contient désormais des groupes de champs spécifiques à Commerce, de sorte que les données de série temporelle collectées à partir des événements Commerce [comportementaux](events.md) et [&#x200B; back-office](events-backoffice.md) soient représentées dans le schéma.
+   Votre schéma contient désormais des groupes de champs spécifiques à Commerce, de sorte que les données de série temporelle collectées à partir des événements Commerce [comportementaux](events.md) et [ back-office](events-backoffice.md) soient représentées dans le schéma.
 
-1. [Activer](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr#profile) le schéma pour Profil.
+1. [Activer](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) le schéma pour Profil.
 
    Lorsqu’un schéma est activé pour Profil, tous les jeux de données créés à partir de ce schéma participent à Real-Time CDP, qui fusionne les données de sources disparates pour créer une vue complète de chaque client.
 
-1. [Créez un jeu de données](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=fr#create-a-dataset) basé sur le schéma que vous avez créé ou mis à jour.
+1. [Créez un jeu de données](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) basé sur le schéma que vous avez créé ou mis à jour.
 
    Un jeu de données est une structure de stockage et de gestion pour une collecte de données, généralement sous la forme d’un tableau contenant un schéma (colonnes) et des champs (lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
 
-1. [Créez un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) puis sélectionnez le schéma contenant les groupes de champs spécifiques à Commerce et le jeu de données correspondant.
+1. [Créez un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) puis sélectionnez le schéma contenant les groupes de champs spécifiques à Commerce et le jeu de données correspondant.
 
    Le flux de données transfère les données collectées vers le jeu de données. Les données sont représentées dans le jeu de données en fonction du schéma sélectionné.
 
@@ -107,24 +103,24 @@ Avec l’ajout du groupe de champs `Demographic Details` dans votre schéma Comm
 
 Si vous souhaitez ajouter des [données d’événement de profil côté serveur](events-backoffice.md#customer-profile-events) à un nouveau flux de données et à un nouveau schéma spécifiques au profil, procédez comme suit.
 
-1. [Créez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr#create) un schéma et définissez la classe sur **Événement d’expérience**.
+1. [Créez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) un schéma et définissez la classe sur **Événement d’expérience**.
 
-1. [Ajoutez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr#add-field-groups) les groupes de champs spécifiques au profil suivants :
+1. [Ajoutez](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) les groupes de champs spécifiques au profil suivants :
 
    - Détails démographiques
    - Coordonnées personnelles
    - Détails du canal
    - Détails Commerce
 
-1. [Activer](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr#profile) le schéma pour Profil.
+1. [Activer](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) le schéma pour Profil.
 
    Lorsqu’un schéma est activé pour Profil, tous les jeux de données créés à partir de ce schéma participent à Real-Time CDP, qui fusionne les données de sources disparates pour créer une vue complète de chaque client.
 
-1. [Créez un jeu de données](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=fr#create-a-dataset) basé sur le schéma que vous avez créé.
+1. [Créez un jeu de données](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) basé sur le schéma que vous avez créé.
 
    Un jeu de données est une structure de stockage et de gestion pour une collecte de données, généralement sous la forme d’un tableau contenant un schéma (colonnes) et des champs (lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées.
 
-1. [Créez un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=fr) puis sélectionnez le schéma XDM contenant les groupes de champs spécifiques à Commerce et le jeu de données correspondant.
+1. [Créez un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) puis sélectionnez le schéma XDM contenant les groupes de champs spécifiques à Commerce et le jeu de données correspondant.
 
    Le flux de données transfère les données collectées vers le jeu de données. Les données sont représentées dans le jeu de données en fonction du schéma sélectionné.
 

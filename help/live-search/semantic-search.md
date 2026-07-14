@@ -3,14 +3,18 @@ title: Recherche Sémantique
 description: Activez la recherche sémantique d’IA à partir  [!DNL Live Search]  paramètres . Aucune configuration d’attribut ou modification du storefront n’est requise.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 33d9172b2d0455a061c00781128a9f2fe804af7b
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
 
 # Recherche sémantique
+
+>[!AVAILABILITY]
+>
+>La recherche sémantique est disponible pour les commerçants utilisant les versions 2.4.4 et plus récentes d’Adobe Commerce.
 
 La recherche sémantique utilise l’IA pour comprendre ce que les acheteurs signifient, et pas seulement les mots exacts qu’ils tapent. Les requêtes telles que « robe pour un mariage sur la plage » ou « chaussures confortables pour rester debout toute la journée » peuvent renvoyer des produits pertinents même si votre catalogue n’utilise pas ces expressions exactes.
 
