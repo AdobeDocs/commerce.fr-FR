@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
+source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
 workflow-type: tm+mt
-source-wordcount: 3115
+source-wordcount: 3256
 ht-degree: 0%
 
 ---
@@ -45,12 +45,19 @@ Les mises à jour incluent :
 
 ## Versions De 2026
 
+### Version 103.4.30
+
+_10 juillet 2026_
+
+![Correction](../assets/fix.svg) Correction de la fonctionnalité de filtrage par ID de la grille de statut du flux de la page Statut de la synchronisation des flux de données dans l’administration Commerce afin que les enregistrements de flux correspondants s’affichent correctement lorsque vous filtrez par ID de flux. <!--MDEE-1396-->
+![Nouveau](../assets/new.svg) Ajout d’une option `--force` à la commande `bin/magento saas:resync` pour resynchroniser tous les flux de données sélectionnés même s’ils sont déjà affichés comme synchronisés, ce qui facilite la resynchronisation complète et les scénarios de récupération. <!--MDEE-1334-->
+
 ### Version 103.4.29
 
 _6 juillet 2026_
 
-![Corriger](../assets/fix.svg) Trier les liens de produit pour éviter une synchronisation aléatoire. <!--MDEE-1391-->
-![Fixe](../assets/fix.svg) Le flux Prix envoie le prix de base au lieu du prix de la règle de catalogue pour les sites web UTC négatifs après minuit UTC. <!--MDEE-1401-->
+![Correction &#x200B;](../assets/fix.svg) correction d’un problème en raison duquel l’ordre des liens de produits liés, de vente incitative et de vente croisée dans le flux de produits pouvait varier d’une exécution à l’autre, ce qui entraînait la renvoi de produits inchangés à chaque exécution `bin/magento saas:resync --feed products`. Ces liens sont désormais exportés dans un ordre cohérent, de sorte que les produits ne sont resynchronisés que lorsqu’ils sont réellement modifiés. <!--MDEE-1391-->
+![Correction](../assets/fix.svg) Correction d’un problème en raison duquel les prix des flux envoyaient des prix de base complets au lieu des prix des règles de catalogue pour les sites web situés dans des fuseaux horaires derrière UTC (par exemple, États-Unis et Canada) au cours des heures matinales en UTC. La tarification des règles de catalogue est désormais correctement diffusée, quel que soit le fuseau horaire d’un site web. <!--MDEE-1401-->
 
 ### Version 103.4.28
 
