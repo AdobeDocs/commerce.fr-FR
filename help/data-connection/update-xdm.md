@@ -5,9 +5,15 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: c933a1bc-3d6f-4f80-944f-8c3e212aaeb6
 TQID: https://experienceleague.adobe.com/8u3lSBPoreIZuu107QbR7FNvVx6Lw3TJsKUU6LCQ1Gs
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
 source-wordcount: 1028
@@ -55,7 +61,7 @@ Dans cette section, vous apprendrez à mettre à jour votre schéma existant ou 
    >
    > Ne définissez aucun groupe de champs spécifique à Commerce comme `Primary identity`. Ce faisant, identifie le champ comme requis et Experience Platform s’attend à ce que ce champ soit présent dans chaque événement. Si ce champ est absent, l’ingestion des données échoue.
 
-   Votre schéma contient désormais des groupes de champs spécifiques à Commerce, de sorte que les données de série temporelle collectées à partir des événements Commerce [comportementaux](events.md) et [ back-office](events-backoffice.md) soient représentées dans le schéma.
+   Votre schéma contient désormais des groupes de champs spécifiques à Commerce, de sorte que les données de série temporelle collectées à partir des événements Commerce [comportementaux](events.md) et [&#x200B; back-office](events-backoffice.md) soient représentées dans le schéma.
 
 1. [Activer](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) le schéma pour Profil.
 

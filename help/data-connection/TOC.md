@@ -18,7 +18,7 @@ ht-degree: 1%
 
 - [[!DNL Data Connection] Introduction](overview.md)
 - Principes fondamentaux {#fundamentals}
-   - [Installation de l’extension  [!DNL Data Connection] ](install.md)
+   - [Installation de l’extension  [!DNL Data Connection] &#x200B;](install.md)
    - [Types de données Commerce](data-ingestion.md)
    - [Mettre à jour le schéma d’événement de série temporelle](update-xdm.md)
    - [Mettre à jour le schéma d’enregistrement de profil](profile-data.md)
