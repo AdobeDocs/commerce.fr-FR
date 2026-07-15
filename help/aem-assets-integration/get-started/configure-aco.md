@@ -20,7 +20,7 @@ Le diagramme suivant présente une vue d’ensemble de la synchronisation de pro
 
 ![AEM Assets vers [!DNL Commerce Optimizer] flux](../assets/aco-asset-sync-architecture.png){width="700"}
 
-Cette intégration comporte deux flux d’événements indépendants. Les deux utilisent [](https://developer.adobe.com/events/docs/) pour transférer des événements vers Assets Integration Service, mais chaque direction utilise son propre fournisseur d&#39;événements :
+Cette intégration comporte deux flux d’événements indépendants. Les deux utilisent [&#128279;](https://developer.adobe.com/events/docs/) pour transférer des événements vers Assets Integration Service, mais chaque direction utilise son propre fournisseur d&#39;événements :
 
 * **D’AEM Assets au service d’intégration d’Assets** : lorsqu’une ressource est approuvée, rejetée ou supprimée, l’événement est diffusé au service d’intégration d’Assets. Le service fait correspondre les ressources aux produits à l’aide de `match-by-SKU` (piloté par les métadonnées) ou d’un [mappeur personnalisé (App Builder)](../synchronize/custom-match.md){target=_blank}, puis envoie les mappages de `product-asset` à [!DNL Commerce Optimizer], où ils sont stockés en tant que couches de produit.
 

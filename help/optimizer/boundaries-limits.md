@@ -23,9 +23,9 @@ Votre utilisation doit respecter ces limites. Leur dépassement peut entraîner 
 
 ## Demander une capacité supplémentaire
 
-Les limites de licence peuvent être augmentées en achetant les packages de licence décrits dans la section [ Limites de licence et limites système ](#license-limits-and-system-boundaries) ou en négociant des licences personnalisées pour des cas d’utilisation uniques. Contactez votre représentant de compte Adobe pour discuter de vos besoins.
+Les limites de licence peuvent être augmentées en achetant les packages de licence décrits dans la section [&#x200B; Limites de licence et limites système &#x200B;](#license-limits-and-system-boundaries) ou en négociant des licences personnalisées pour des cas d’utilisation uniques. Contactez votre représentant de compte Adobe pour discuter de vos besoins.
 
-Pour toute question sur les limites du système, contactez l’[assistance ](https://experienceleague.adobe.com/home?lang=en#support).
+Pour toute question sur les limites du système, contactez l’[assistance &#x200B;](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Prévention des problèmes de performances
 
@@ -162,7 +162,7 @@ Les fonctionnalités suivantes sont disponibles pour les recommandations de prod
 
 | **Fonction** | **Description** | **Affectation de base** | **Extensible ?** | **Notes** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacité à créer des extensions et des intégrations natives au cloud | Basé sur le niveau GMV<p>Allocation minimale : 1 pack/an</p> | Oui<p>Ajouter des packs supplémentaires</p> | Pour les limites définies par pack, voir :<ul><li>[Description du produit ](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) pour les limites définies par pack.</li><li>[Paramètres système et limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) dans les *Guides d’exécution d’App Builder*.</li><li>[Exigences de stockage ](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacité à créer des extensions et des intégrations natives au cloud | Basé sur le niveau GMV<p>Allocation minimale : 1 pack/an</p> | Oui<p>Ajouter des packs supplémentaires</p> | Pour les limites définies par pack, voir :<ul><li>[Description du produit &#x200B;](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) pour les limites définies par pack.</li><li>[Paramètres système et limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) dans les *Guides d’exécution d’App Builder*.</li><li>[Exigences de stockage &#x200B;](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 

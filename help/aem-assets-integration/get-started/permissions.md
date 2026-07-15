@@ -41,7 +41,7 @@ L&#39;intégration ne peut charger que des domaines mappés à un profil. Par co
 
 * **Créer un profil de produit**. Obligatoire pour accéder à l’interface utilisateur d’AEM Assets. Il sert également de solution de secours pour le sélecteur de ressources et l’interface utilisateur de configuration lorsque l’utilisateur ne dispose pas du profil de produit de diffusion AEM dans son Admin Console.
 
-Les domaines (y compris l’ID de programme, l’ID d’environnement et le mappage de domaine) sont affectés au profil de produit de diffusion AEM. L’intégration charge les domaines à partir du profil de produit de diffusion **** lorsqu’il est disponible, ou revient au profil de produit **auteur** lorsque le profil de produit de diffusion AEM ne figure pas dans l’Admin Console de l’utilisateur. Les utilisateurs ont besoin de l’un de ces profils pour :
+Les domaines (y compris l’ID de programme, l’ID d’environnement et le mappage de domaine) sont affectés au profil de produit de diffusion AEM. L’intégration charge les domaines à partir du profil de produit de diffusion **&#x200B;**&#x200B;lorsqu’il est disponible, ou revient au profil de produit **auteur** lorsque le profil de produit de diffusion AEM ne figure pas dans l’Admin Console de l’utilisateur. Les utilisateurs ont besoin de l’un de ces profils pour :
 
 * Renseignez les listes déroulantes **ID de programme**, **ID d’environnement** et **Mappage de domaine** dans la configuration Commerce Admin.
 * Utilisez le sélecteur de ressources pour parcourir et sélectionner des ressources à partir d’AEM Assets.
@@ -78,7 +78,7 @@ Pour utiliser le sélecteur de ressources et les champs de configuration automat
 
 1. Pour demander un identifiant client IMS personnalisé pour le sélecteur de ressources, [ouvrez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
-1. À partir de [](https://adminconsole.adobe.com/), ajoutez l’utilisateur au profil de produit **Utilisateurs OpenAPI AEM Assets DM - diffusion** ou au profil de produit **auteur** comme solution de secours.
+1. À partir de [&#128279;](https://adminconsole.adobe.com/), ajoutez l’utilisateur au profil de produit **Utilisateurs OpenAPI AEM Assets DM - diffusion** ou au profil de produit **auteur** comme solution de secours.
 
 Sans IMS, vous pouvez toujours configurer l’intégration en saisissant manuellement l’ID de programme et l’ID d’environnement dans l’Administration de Commerce.
 

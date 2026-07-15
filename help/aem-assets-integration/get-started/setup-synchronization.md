@@ -4,11 +4,18 @@ description: Découvrez comment connecter votre projet Adobe Commerce et vos pro
 feature: CMS, Media
 exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
 TQID: https://experienceleague.adobe.com/MM-neGrH-N8xBcCwLgnsaIrIjhbX6uYL5kS41QdV79I
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
 source-wordcount: 965
@@ -75,7 +82,7 @@ Avant de configurer l’intégration AEM Assets, vérifiez que vous avez effectu
    * Sélectionnez **[!UICONTROL Match by SKU]** pour [correspondance automatique par défaut](../synchronize/default-match.md),
    * Sélectionnez **[!UICONTROL Custom match]** pour [correspondance automatique personnalisée](../synchronize/custom-match.md) (nécessite [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder).)
 
-1. Ajoutez le [nom du champ de métadonnées ](configure-aem.md#define-the-metadata-profile) défini pour les SKU de produit Commerce dans le champ **[!UICONTROL Match by product SKU attribute name]**, `commerce:skus` par défaut.
+1. Ajoutez le [nom du champ de métadonnées &#x200B;](configure-aem.md#define-the-metadata-profile) défini pour les SKU de produit Commerce dans le champ **[!UICONTROL Match by product SKU attribute name]**, `commerce:skus` par défaut.
 
 1. Sélectionnez **[!UICONTROL Save Config]** pour appliquer des mises à jour et lancer la synchronisation des ressources.
 
@@ -109,7 +116,7 @@ Voir la rubrique [Définition des détails de l’image](https://experienceleagu
 
 1. Accédez à **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-   ![Fonction du propriétaire de la visualisation d’intégration ](../assets/visualization-owner-detail.png){width="400" zoomable="yes"}
+   ![Fonction du propriétaire de la visualisation d’intégration &#x200B;](../assets/visualization-owner-detail.png){width="400" zoomable="yes"}
 
 1. Sélectionnez la source **Propriétaire de la visualisation** pour afficher les images.
 

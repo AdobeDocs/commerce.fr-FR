@@ -4,11 +4,22 @@ description: Découvrez comment intégrer Adobe Experience Manager Assets à vot
 feature: CMS, Media, Configuration, Integration
 exl-id: f450752a-bef1-419e-ad14-ff8879ab204b
 TQID: https://experienceleague.adobe.com/CTDmM7Ox2rQ-55F1BVTg-C8DPBEuEpzFxXGtWpnjXKs
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cb
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11id: da3860b0-d637-47df-bef0-273751180266id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: da3860b0-d637-47df-bef0-273751180266
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
 source-wordcount: 1081
@@ -42,7 +53,7 @@ Pour tirer parti de cette intégration avec [Product Visuals ou AEM Assets](http
 
 [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} licences actives pour Adobe Commerce, Product Visuals optimisé par AEM Assets et [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media) (ces licences sont disponibles clé en main avec [!DNL Adobe Commerce as a Cloud Service] et [!DNL Adobe Commerce Optimizer]).
 
->[!TAB ]
+>[!TAB Tab]
 
 [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} licences actives pour Adobe Commerce, Adobe Experience Manager Assets et [AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media).
 
@@ -128,7 +139,7 @@ Sélectionnez votre déploiement pour suivre les étapes requises dans l’ordre
 
 1. Facultatif. [Activer l’affichage image du produit](get-started/configure-storefront.md#enable-product-images) de sorte qu’un storefront optimisé par Edge Delivery Services effectue le rendu des images de produit gérées par AEM.
 
->[!TAB ]
+>[!TAB Tab]
 
 [!BADGE SaaS uniquement]{type=Positive tooltip="S’applique uniquement aux projets Adobe Commerce Optimizer."}
 
@@ -148,4 +159,4 @@ Sélectionnez votre déploiement pour suivre les étapes requises dans l’ordre
 
 ## Support technique
 
-Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, contactez votre représentant commercial chargé de l’intégration AEM Assets ou créez un [ ticket d’assistance ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) pour recevoir de l’aide supplémentaire.
+Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, contactez votre représentant commercial chargé de l’intégration AEM Assets ou créez un [&#x200B; ticket d’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) pour recevoir de l’aide supplémentaire.

@@ -2,10 +2,15 @@
 title: Métadonnées Commerce dans AEM Assets
 description: Découvrez l’espace de noms Commerce, le schéma de métadonnées et le texte secondaire que l’intégration d’AEM Assets ajoute à votre environnement de création AEM Assets.
 feature: CMS, Media, Integration
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
 source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
 source-wordcount: 749
@@ -27,7 +32,7 @@ Les métadonnées Commerce offrent les fonctionnalités suivantes :
 
 >[!IMPORTANT]
 >
->La fonctionnalité de texte secondaire spécifique à **** n’est pas encore disponible via l’intégration en libre-service [](get-started/configure-aem.md#enable-aem-commerce-self-service). Il n’est actuellement fourni que lorsque vous déployez le package de code personnalisé `assets-commerce` (voir [Installation manuelle du package assets-commerce](get-started/configure-aem.md#install-the-assets-commerce-package-manually)). Une prise en charge native est prévue pour une prochaine version d’AEM.
+>La fonctionnalité de texte secondaire spécifique à **&#x200B;**&#x200B;n’est pas encore disponible via l’intégration en libre-service [&#128279;](get-started/configure-aem.md#enable-aem-commerce-self-service). Il n’est actuellement fourni que lorsque vous déployez le package de code personnalisé `assets-commerce` (voir [Installation manuelle du package assets-commerce](get-started/configure-aem.md#install-the-assets-commerce-package-manually)). Une prise en charge native est prévue pour une prochaine version d’AEM.
 
 Pour configurer ces ressources dans votre projet AEM, voir [Configurer le projet AEM Assets](get-started/configure-aem.md). Le reste de cette rubrique décrit comment les métadonnées sont fournies.
 
@@ -52,7 +57,7 @@ Ce code de package ajoute les ressources suivantes à l’environnement de créa
       * `commerce:altTextStoreViews` — stocker le code d&#39;affichage pour chaque ligne.
       * `commerce:altTextValues` : texte de remplacement correspondant au même index que chaque entrée dans `commerce:altTextStoreViews`.
 
-     Les implémentations d’App Builder utilisant un [mappeur externe](synchronize/custom-match.md){target=_blank} peuvent intercepter ces propriétés lors de la transformation des payloads des ressources. Cela ne modifie pas la manière dont les images de produit sont affectées ou la portée dans le catalogue. Voir [ Texte secondaire localisé dans les métadonnées AEM Assets](#localized-alt-text-in-aem-assets-metadata).
+     Les implémentations d’App Builder utilisant un [mappeur externe](synchronize/custom-match.md){target=_blank} peuvent intercepter ces propriétés lors de la transformation des payloads des ressources. Cela ne modifie pas la manière dont les images de produit sont affectées ou la portée dans le catalogue. Voir [&#x200B; Texte secondaire localisé dans les métadonnées AEM Assets](#localized-alt-text-in-aem-assets-metadata).
 
 * Formulaire de schéma de métadonnées avec un onglet Commerce contenant les champs `Eligible for Commerce` et `Product Data` pour le balisage des ressources Commerce. Le formulaire fournit également des options pour afficher ou masquer les champs `roles` et `position` de l’interface utilisateur d’AEM Assets.
 
@@ -66,7 +71,7 @@ Ce code de package ajoute les ressources suivantes à l’environnement de créa
 
 ## Texte secondaire localisé dans les métadonnées AEM Assets
 
-Le multichamp _[!UICONTROL Alt texts]_est disponible dans l’éditeur de métadonnées de ressource d’AEM Assets dans l’onglet **[!UICONTROL Commerce]**lorsque vous modifiez une image éligible.
+Le multichamp _[!UICONTROL Alt texts]_&#x200B;est disponible dans l’éditeur de métadonnées de ressource d’AEM Assets dans l’onglet **[!UICONTROL Commerce]**&#x200B;lorsque vous modifiez une image éligible.
 
 >[!IMPORTANT]
 >
@@ -82,7 +87,7 @@ Sélectionnez **[!UICONTROL Add]** pour ajouter d’autres lignes pour les vues 
 
 ![Plusieurs champs Texte de remplacement avec des entrées Code d’affichage de magasin et Texte de remplacement](assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
 
-Lors de l’enregistrement, la validation côté client bloque l’envoi si une ligne a un _[!UICONTROL Store View Code]_vide ou si deux lignes utilisent le même code d’affichage du magasin (non-respect de la casse).
+Lors de l’enregistrement, la validation côté client bloque l’envoi si une ligne a un _[!UICONTROL Store View Code]_&#x200B;vide ou si deux lignes utilisent le même code d’affichage du magasin (non-respect de la casse).
 
 Les entrées de texte secondaire sont conservées dans les métadonnées de ressource JCR sous la forme de deux propriétés `String[]` alignées sur l’index :
 

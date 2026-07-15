@@ -31,7 +31,7 @@ La fonctionnalité Visuels du produit permet aux commerçants [!DNL Adobe Commer
 
 ## Fonctionnement
 
-L’intégration comporte deux flux d’événements indépendants. Les deux utilisent [](https://developer.adobe.com/events/docs/) pour transférer des événements au service d&#39;intégration d&#39;Assets, mais chaque direction utilise son propre fournisseur d&#39;événements :
+L’intégration comporte deux flux d’événements indépendants. Les deux utilisent [&#128279;](https://developer.adobe.com/events/docs/) pour transférer des événements au service d&#39;intégration d&#39;Assets, mais chaque direction utilise son propre fournisseur d&#39;événements :
 
 * **D’AEM Assets au service d’intégration d’Assets** : lorsqu’une ressource est approuvée, rejetée ou supprimée, l’événement est diffusé au service d’intégration d’Assets. Le service associe les ressources aux produits à l’aide d’une `match-by-SKU` ou d’une stratégie de correspondance personnalisée, puis envoie les mappages de `product-asset` à [!DNL Commerce Optimizer], où elles sont stockées en tant que couches de produit.
 
@@ -58,7 +58,7 @@ Cette configuration garantit que les images AEM Assets sont appliquées en tant 
 
 ## Conditions préalables
 
-Avant d’activer les visuels de produit, assurez-vous de respecter les [ conditions préalables pour Commerce Optimizer ](../../aem-assets-integration/get-started/configure-aco.md#prerequisites).
+Avant d’activer les visuels de produit, assurez-vous de respecter les [&#x200B; conditions préalables pour Commerce Optimizer &#x200B;](../../aem-assets-integration/get-started/configure-aco.md#prerequisites).
 
 ## Configuration
 
