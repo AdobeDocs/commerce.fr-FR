@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: a6a91fbd6cc6907d070998f67eb0b9c8171dda23
+source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
-source-wordcount: 948
+source-wordcount: 965
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Avant de configurer l’intégration AEM Assets, vérifiez que vous avez effectu
 
 * [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} [Installez les packages Adobe Commerce](configure-commerce.md) pour ajouter l’extension et générer les informations d’identification et les connexions requises pour utiliser l’extension.
 
-* [Autorisations utilisateur et IMS](permissions.md) : requis pour le sélecteur de ressources et les champs de configuration automatiquement renseignés (ID de programme, ID d’environnement, mappage de domaine).
+* [Autorisations utilisateur et IMS](permissions.md) : configurez les autorisations requises pour le sélecteur de ressources et les champs de configuration automatiquement renseignés (ID de programme, ID d’environnement, mappage de domaine).
 
 ## Configurer la connexion
 
@@ -63,11 +63,11 @@ Avant de configurer l’intégration AEM Assets, vérifiez que vous avez effectu
 
 1. Sélectionnez l’environnement AEM Assets **[!UICONTROL Program ID]** et **[!UICONTROL Environment ID]** dans les menus déroulants.
 
-   Les sélecteurs s’affichent lorsque l’utilisateur administrateur Commerce satisfait [autorisations d’utilisateur et IMS](permissions.md#user-permissions-and-ims) pour l’expérience : **Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer** et **Adobe Commerce sur l’infrastructure cloud** les intégrations peuvent remplir ces champs automatiquement à partir de votre session liée à IMS plutôt que de s’appuyer sur des identifiants collés.
+   Les sélecteurs s’affichent lorsque l’utilisateur administrateur Commerce dispose des [autorisations utilisateur](permissions.md#user-permissions-and-ims) requises pour l’expérience : **Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer** et **Adobe Commerce sur l’infrastructure cloud** les intégrations peuvent remplir ces champs automatiquement à partir de votre session liée à IMS plutôt que de s’appuyer sur des identifiants collés.
 
-   Si les sélecteurs ne sont pas disponibles, copiez les **[!UICONTROL Program ID]** et les **[!UICONTROL Environment ID]** d’AEM Cloud Manager, ou dérivez-les de votre URL de création : `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (remplacez les espaces réservés par vos identifiants).
+   Si les sélecteurs ne sont pas disponibles, copiez les **[!UICONTROL Program ID]** et les **[!UICONTROL Environment ID]** d’AEM Cloud Manager, ou dérivez-les de l’URL de création : `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (remplacez les espaces réservés par vos identifiants).
 
-   Effacez les **[!UICONTROL Use system value]** de l’un des champs avant de coller ou de sélectionner manuellement les nouvelles valeurs.
+   Vous devez effacer les **[!UICONTROL Use system value]** des deux champs avant de pouvoir coller ou sélectionner de nouvelles valeurs manuellement.
 
    ![Formulaire d’intégration AEM Assets avec sélecteurs d’ID de programme et d’ID d’environnement](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
@@ -90,13 +90,13 @@ Avant de configurer l’intégration AEM Assets, vérifiez que vous avez effectu
 
 ### SLA de synchronisation
 
-L’intégration garantit les niveaux de performances de synchronisation suivants :
+Le service level agreement (SLA) de l’intégration garantit les niveaux de performances de synchronisation suivants :
 
 * `< 5 minutes for 99% of updates`
 
 * `< 30 minutes for 99.9% of updates`
 
-Cela permet de s’assurer que les pages produit affichent toujours les images les plus récentes, en préservant la précision et l’attrait visuel du contenu du storefront.
+Ce niveau de service garantit que les pages produit affichent toujours les images les plus récentes, tout en préservant la précision et l’attrait visuel du contenu du storefront.
 
 ### Configuration du propriétaire de la visualisation
 

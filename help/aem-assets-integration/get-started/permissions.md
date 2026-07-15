@@ -2,28 +2,34 @@
 title: Configurer les autorisations utilisateur IMS pour l’intégration d’AEM Assets
 description: Découvrez comment l’identité IMS et les profils Admin Console activent l’accès à la diffusion AEM Assets, le sélecteur de ressources et les champs de configuration Commerce automatiquement renseignés.
 feature: CMS, Media, Configuration
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
 
 # Autorisations utilisateur et IMS
 
-**IMS** (système Adobe Identity Management) est la couche d’authentification. Pour Adobe Commerce as a Cloud Service, l’authentification IMS est activée par défaut dans l’Administration. Pour Adobe Commerce sur le cloud ou sur site, l’IMS est facultatif ; l’[activation d’IMS pour Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=fr){target=_blank} fournit une interface utilisateur de configuration améliorée (sélecteur de ressources, listes déroulantes auto-renseignées), mais vous pouvez configurer l’intégration sans IMS en saisissant manuellement **ID de programme** et **ID d’environnement**.
+**IMS** (système Adobe Identity Management) est la couche d’authentification.
 
-L’intégration AEM Assets nécessite également des profils de produit **Adobe Admin Console spécifiques** lors de l’utilisation d’IMS. Les utilisateurs qui configurent l’intégration dans Commerce Admin ont besoin du profil de produit **Utilisateurs de l’OpenAPI AEM Assets DM - diffusion** ou **auteur** comme solution de secours. Elle est contrôlée par les profils de produit Admin Console dans l’organisation IMS de l’utilisateur et permet :
+* Pour Adobe Commerce as a Cloud Service, l’administrateur active l’authentification IMS par défaut.
+* Pour Adobe Commerce sur le cloud ou sur site, IMS est facultatif.
 
-* Le **sélecteur de ressources** permet de sélectionner des images à partir d’AEM Assets lors de la gestion des images de catégorie ou du contenu Page Builder.
-* **Champs de configuration automatiquement renseignés** tels que les listes déroulantes **ID de programme**, **ID d’environnement** et **Mappage de domaine** qui extraient des valeurs de la session IMS de l’utilisateur en fonction de ses profils de produit Admin Console (diffusion ou auteur).
+  [Activation d’IMS pour Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} fournit une interface utilisateur de configuration améliorée (sélecteur de ressources, listes déroulantes auto-renseignées), mais vous pouvez configurer l’intégration sans IMS en saisissant manuellement **ID de programme** et **ID d’environnement**.
+
+Lors de l&#39;utilisation d&#39;IMS, l&#39;intégration d&#39;AEM Assets nécessite également des profils de produit **Adobe Admin Console spécifiques**. Les utilisateurs qui configurent l’intégration dans Commerce Admin ont besoin du profil de produit **Utilisateurs de l’OpenAPI AEM Assets DM - diffusion** ou **auteur** comme solution de secours. Cet accès est contrôlé par le biais des profils de produit Admin Console dans l’organisation IMS de l’utilisateur et permet :
+
+* Le **sélecteur de ressources** vous permet de sélectionner des images à partir d’AEM Assets lors de la gestion des images de catégorie ou du contenu Page Builder.
+* **Champs de configuration automatiquement renseignés** tels que les listes déroulantes **ID de programme**, **ID d’environnement** et **Mappage de domaine** qui extraient des valeurs de la session IMS de l’utilisateur.
 
 Sans les autorisations appropriées, le sélecteur de ressources n’est pas disponible et ces champs semblent vides ou nécessitent une saisie manuelle.
+
 >[!BEGINSHADEBOX]
 
-**Comment IMS et les autorisations fonctionnent ensemble**
+**Interaction entre l’IMS et les autorisations**
 
-Adobe IMS fournit l’identité de l’utilisateur et le contexte de l’organisation, tandis que le Adobe Admin Console définit les **profils de produit**(autorisations) dont il dispose. L’intégration d’AEM Assets utilise les détails IMS ainsi que le profil attribué pour déterminer si elle peut renseigner automatiquement les champs de configuration et activer le sélecteur de ressources.
+Adobe IMS fournit l’identité de l’utilisateur et le contexte de l’organisation, tandis que le Adobe Admin Console définit les **profils de produit** (autorisations) dont ils disposent. L’intégration d’AEM Assets utilise les détails IMS ainsi que le profil attribué pour déterminer si elle peut renseigner automatiquement les champs de configuration et activer le sélecteur de ressources.
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +46,7 @@ Les domaines (y compris l’ID de programme, l’ID d’environnement et le mapp
 * Renseignez les listes déroulantes **ID de programme**, **ID d’environnement** et **Mappage de domaine** dans la configuration Commerce Admin.
 * Utilisez le sélecteur de ressources pour parcourir et sélectionner des ressources à partir d’AEM Assets.
 
-Si aucun des profils n’est configuré, les utilisateurs peuvent saisir manuellement les **ID de programme** et **ID d’environnement**, mais le sélecteur de ressources ne sera pas disponible.
+Si aucun des profils n’est configuré, les utilisateurs peuvent saisir manuellement les **ID de programme** et **ID d’environnement**, mais le sélecteur de ressources n’est pas disponible.
 
 ## Octroi des autorisations par type de déploiement
 
@@ -50,7 +56,9 @@ Si aucun des profils n’est configuré, les utilisateurs peuvent saisir manuell
 
 [!BADGE SaaS uniquement]{type=Positive tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}
 
-L’authentification IMS est activée par défaut. Ajoutez l’utilisateur au profil de produit **Utilisateurs OpenAPI AEM Assets DM - diffusion** dans le [Adobe Admin Console](https://adminconsole.adobe.com/) ou au profil de produit **auteur** (par exemple, `<environment-name> - author - <program-id> - <environment-id>`) comme solution de secours lorsque l’utilisateur n’a pas le profil de produit de diffusion AEM dans son Admin Console.
+Le système active l’authentification IMS par défaut.
+
+Ajoutez l’utilisateur au profil de produit **Utilisateurs OpenAPI AEM Assets DM - diffusion** dans le [Adobe Admin Console](https://adminconsole.adobe.com/) ou au profil de produit **auteur** comme solution de secours.
 
 >[!NOTE]
 >
@@ -66,11 +74,11 @@ L’**ID client IMS** est requis pour que PaaS active le sélecteur de ressource
 
 Pour utiliser le sélecteur de ressources et les champs de configuration automatiquement renseignés (ID de programme, ID d’environnement, mappage de domaine) :
 
-1. [Activez l’IMS d’Adobe pour Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=fr){target=_blank} de sorte que l’administrateur Commerce utilise l’authentification IMS et puisse lire les profils de produits Admin Console de l’utilisateur.
+1. [Activez l’IMS d’Adobe pour Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} de sorte que l’administrateur Commerce utilise l’authentification IMS et puisse lire les profils de produits Admin Console de l’utilisateur.
 
-1. [Ouvrez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) pour demander un identifiant client IMS personnalisé pour le sélecteur de ressources.
+1. Pour demander un identifiant client IMS personnalisé pour le sélecteur de ressources, [ouvrez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
-1. À partir du [&#128279;](https://adminconsole.adobe.com/), ajoutez l’utilisateur au profil de produit **Utilisateurs OpenAPI AEM Assets DM - diffusion** ou au profil de produit **auteur** (par exemple, `<environment-name> - author - <program-id> - <environment-id>`) comme solution de secours lorsque l’utilisateur n’a pas le profil de produit de diffusion AEM dans son Admin Console.
+1. À partir de [&#128279;](https://adminconsole.adobe.com/), ajoutez l’utilisateur au profil de produit **Utilisateurs OpenAPI AEM Assets DM - diffusion** ou au profil de produit **auteur** comme solution de secours.
 
 Sans IMS, vous pouvez toujours configurer l’intégration en saisissant manuellement l’ID de programme et l’ID d’environnement dans l’Administration de Commerce.
 

@@ -3,9 +3,9 @@ title: Notes de mise à jour de l’intégration AEM Assets
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les versions de l’intégration AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e055a3d44eda7e7f082a884c316ad437ea9ac15e
+source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ _14 mai 2026_
 
 [!BADGE pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce version 2.4.5 et versions ultérieures.
 
-![Nouvel événement &#x200B;](../assets/new.svg)<!-- Issue ACAP-1268 --> lorsque des images ou des ressources sont importées depuis AEM dans une galerie de médias de produit Commerce, le texte secondaire est désormais transféré dans le cadre de la synchronisation. Le texte de remplacement peut être défini par vue de magasin dans AEM Assets. Voir [&#x200B; Texte de remplacement dans les métadonnées AEM Assets](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}.
+![Nouvel événement &#x200B;](../assets/new.svg)<!-- Issue ACAP-1268 --> lorsque des images ou des ressources sont importées depuis AEM dans une galerie de médias de produit Commerce, le texte secondaire est désormais transféré dans le cadre de la synchronisation. Le texte de remplacement peut être défini par vue de magasin dans AEM Assets. Voir [&#x200B; Texte secondaire localisé dans les métadonnées AEM Assets](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}.
 
 ## v1.3.5
 
