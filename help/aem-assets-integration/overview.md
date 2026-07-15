@@ -93,7 +93,7 @@ Pour découvrir comment configurer et utiliser l’intégration d’AEM Assets �
 
 Pour découvrir comment Adobe Commerce et AEM Assets fonctionnent ensemble pour rationaliser les workflows de contenu, regardez cette vidéo :
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447885?captions=fre_fr)
 
 >[!TAB Tutoriel Adobe Commerce as a Cloud Service]
 
