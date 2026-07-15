@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
+source-git-commit: eb561a73951ba42542a8b08340a7df9cc30477d3
 workflow-type: tm+mt
-source-wordcount: 4655
+source-wordcount: 4657
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 [!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
 
-Les éléments suivants ne sont actuellement disponibles que dans les environnements Sandbox et devraient être déplacés vers les environnements de production en juillet.
+Les éléments suivants ne sont actuellement disponibles que dans les environnements Sandbox et devraient passer aux environnements de production le 28 juillet 2026.
 
 >[!BEGINSHADEBOX]
 
