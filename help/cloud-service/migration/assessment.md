@@ -7,28 +7,15 @@ level: Intermediate
 nudge: true1
 autotag-review: '2026-06-18T16:09:41.112Z'
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
-product_v2:
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 4cd054b64c3b95fd50ab9bb682469ace7cc871a3
 workflow-type: tm+mt
-source-wordcount: 2505
+source-wordcount: 2497
 ht-degree: 0%
 
 ---
@@ -42,7 +29,7 @@ ht-degree: 0%
 
 Une évaluation de la migration Commerce est une analyse automatisée de votre mise en œuvre Adobe Commerce existante. Les outils d’Adobe analysent votre base de code Commerce et génèrent un rapport structuré qui répertorie tout ce qui a été créé, personnalisé ou modifié. Le rapport indique ensuite comment les personnalisations apportées à votre codebase affectent votre migration vers [!DNL Adobe Commerce as a Cloud Service].
 
-Le rapport est diffusé sous la forme d’un fichier HTML que vous pouvez ouvrir dans n’importe quel navigateur. Aucun accès à votre environnement de production n’est requis, à l’exception du partage initial de la base de code du projet.
+Les rapports d’évaluation de la migration traités sont accessibles à l’adresse `https://experience.adobe.com/@<ims-org-name>/commerce-migration-assessment/shared-assessments`. Aucun accès à votre environnement de production n’est requis, à l’exception du partage initial de la base de code du projet.
 
 **L’évaluation fournit les éléments suivants**
 
@@ -103,7 +90,7 @@ Liste du nombre de fichiers dans votre base de code, organisés par type.
 
 **Modules à impact maximal**
 
-![&#x200B; Liste des modules à impact le plus élevé affichant les noms, descriptions, évaluations d’impact et nombres de points d’extension des modules](../assets/assessment-highest-impact-modules.png){width="600" zoomable="yes"}
+![ Liste des modules à impact le plus élevé affichant les noms, descriptions, évaluations d’impact et nombres de points d’extension des modules](../assets/assessment-highest-impact-modules.png){width="600" zoomable="yes"}
 
 Liste sélectionnée des modules spécifiques de votre magasin qui nécessitent le plus d’attention pour la migration. Ces modules sont souvent des modules qui interagissent avec le passage en caisse, les paiements ou la gestion des commandes. Chaque module à fort impact nécessite son propre plan de migration. Cette liste est le meilleur point de départ pour des conversations avec votre équipe technique.
 
@@ -256,7 +243,7 @@ Pour chaque module, le rapport affiche :
 | **Entity-Attribute-Value (EAV)** | Champ personnalisé flexible ajouté aux produits ou aux clients, par exemple un champ personnalisé « période de garantie ». Un nombre élevé de VAE augmente la complexité de la migration des données. |
 | **Densité de crochet** | Nombre moyen de plug-ins et d’observateurs par module. Une densité plus élevée signifie que la personnalisation est plus étroitement tissée dans la plate-forme principale. |
 | **Drop-in** | [!DNL Adobe Commerce's] approche modulaire des composants storefront (y compris les pages de passage en caisse, de panier et de détails du produit). Le comportement de passage en caisse personnalisé sur [!DNL Adobe Commerce on Cloud Infrastructure] ou [!DNL Adobe Commerce on Premises] nécessite généralement une reconstruction par dépôt sur [!DNL Adobe Commerce as a Cloud Service]. |
-| **&#x200B;**&#x200B;| La plateforme d’extensibilité hors processus d’Adobe et la méthode recommandée pour créer une fonctionnalité personnalisée, en remplaçant les extensions PHP en cours de processus. |
+| **** | La plateforme d’extensibilité hors processus d’Adobe et la méthode recommandée pour créer une fonctionnalité personnalisée, en remplaçant les extensions PHP en cours de processus. |
 | **XML de disposition** | Fichiers de configuration qui définissent les blocs qui apparaissent sur les pages. La mise en page XML personnalisée doit être repensée pour [!DNL Adobe Commerce as a Cloud Service's] structure de page. |
 | **Remplacement de poignée principale** | Personnalisation XML de la disposition qui modifie globalement la structure d’une page Commerce principale. Ils présentent le modèle de disposition le plus risqué pour la migration. |
 
@@ -320,13 +307,13 @@ Manages custom shipping rate calculations based on customer account tier and ord
       - [Compétences et invites](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
       - [Cas d’utilisation](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
    - [Présentation d’App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-   - [App Builder pour Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
+   - [App Builder pour Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
    - Kits de démarrage
       - [Kit de démarrage de l’intégration du serveur principal](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
       - [Kit de démarrage pour passage en caisse](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - Développement de storefront
-   - [Vue d’ensemble](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
-   - [Compétences en IA pour Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=fr)
+   - [Vue d’ensemble](https://experienceleague.adobe.com/developer/commerce/storefront/)
+   - [Compétences en IA pour Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
 
 >[!TIP]
 >
