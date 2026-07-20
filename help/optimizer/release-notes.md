@@ -7,9 +7,15 @@ recommendations: noCatalog
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
 workflow-type: tm+mt
 source-wordcount: 1365
@@ -109,7 +115,7 @@ _4 mai 2026_
 
 ### Filtre de prix (version bêta)
 
-Les filtres de recommandation incluent désormais un [ filtre de plage de prix ](./merchandising/recommendations/filters.md#price) (minimum et maximum).
+Les filtres de recommandation incluent désormais un [&#x200B; filtre de plage de prix &#x200B;](./merchandising/recommendations/filters.md#price) (minimum et maximum).
 
 ### Mises à jour des API
 
@@ -161,7 +167,7 @@ Les bundles dynamiques renvoient désormais une plage de prix calculée. <!--DAT
 
 ### Vue Catalogue pour les règles et recommandations de marchandisage
 
-Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [ des règles de marchandisage](./merchandising/rules/add.md).
+Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](./merchandising/rules/add.md).
 
 ### Mises à jour des API
 
