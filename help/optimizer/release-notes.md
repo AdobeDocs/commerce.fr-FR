@@ -4,21 +4,15 @@ description: Informations de mise à jour mensuelles pour  [!DNL Adobe Commerce 
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
 workflow-type: tm+mt
-source-wordcount: 1404
+source-wordcount: 1365
 ht-degree: 0%
 
 ---
@@ -32,6 +26,19 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
   {{aco-api-updates-and-dropins}}
 
+## Juillet 2026
+
+>[!BEGINSHADEBOX]
+
+_20 juillet 2026_
+
+![Correctif](../assets/fix.svg) **Performances de navigation par catégorie** : optimisation des performances appliquée au service de catégorie, ce qui se traduit par un débit plus élevé et une latence P99 plus faible pour la requête `CategoryNavigation`, ce qui améliore la réactivité du service et l’expérience utilisateur globale sous une charge élevée.
+<!--DATA-7131 DATA-7250-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## Juin 2026
 
 >[!BEGINSHADEBOX]
@@ -41,6 +48,7 @@ _24 juin 2026_
 <!-- v1.3 -->
 
 ![Nouveau](../assets/new.svg) **Nouveau champ de `canEditQuantity`**—Ajout de `canEditQuantity` aux `ProductViewOptionValueProduct` dans le GraphQL du service de catalogue. Il expose le paramètre de quantité facultatif **défini par l’utilisateur** pour les sélections de bundle effectuées par l’administrateur Commerce, afin que les consommateurs du storefront puissent déterminer si la quantité d’une sélection de bundle est modifiable.
+<!--COMOPT-2050-->
 
 ### Recherche sémantique
 
@@ -69,10 +77,13 @@ _28 mai 2026_
 <!-- v1.2 -->
 
 ![Correction](../assets/fix.svg) **Arborescences de navigation complètes** : les catégories descendantes balisées sont désormais correctement incluses dans les arborescences de `navigation` filtrées par famille lorsqu’un nœud intermédiaire non balisé existe dans le chemin d’accès. Ce correctif garantit que les acheteurs voient toutes les catégories pertinentes dans la navigation, ce qui facilite la navigation et la découverte d’articles.
+<!--DATA-7183-->
 
 ![Correction](../assets/fix.svg) **Gestion des slugs vides dans les requêtes `categoryTree`**—Correction d’un problème où la requête [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) renvoyait une erreur de serveur interne lorsque l’argument `slugs` incluait une chaîne vide. Les valeurs slug vides sont désormais ignorées, de sorte que les storefronts et les intégrations continuent de résoudre les données de catégorie sans requêtes ayant échoué.
+<!--DATA-7184-->
 
 ![Correction](../assets/fix.svg) les requêtes **`searchCategory`renvoient des résultats insensibles à la casse et classés par ordre alphabétique** : la requête `searchCategory` trie désormais les résultats de recherche par ordre alphabétique sans respect de la casse, ce qui garantit un ordre cohérent et prévisible. Les catégories comportant des préfixes plus courts apparaissent en premier lorsque les noms sont par ailleurs identiques.
+<!--COMOPT-2142-->
 
 _4 mai 2026_
 
@@ -98,7 +109,7 @@ _4 mai 2026_
 
 ### Filtre de prix (version bêta)
 
-Les filtres de recommandation incluent désormais un [&#x200B; filtre de plage de prix &#x200B;](./merchandising/recommendations/filters.md#price) (minimum et maximum).
+Les filtres de recommandation incluent désormais un [ filtre de plage de prix ](./merchandising/recommendations/filters.md#price) (minimum et maximum).
 
 ### Mises à jour des API
 
@@ -106,7 +117,7 @@ _29 avril 2026_
 
 <!--v1.52 release-->
 
-**Traitement par lots des requêtes requis** — L’API GraphQL applique désormais un maximum de 100 SKU par requête lorsque vous récupérez des données de catalogue. Voir [limites et limites documentées](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Traitement par lots des requêtes requis** — L’API GraphQL applique désormais un maximum de 100 SKU par requête lorsque vous récupérez des données de catalogue. Voir [limites et limites documentées](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
@@ -150,7 +161,7 @@ Les bundles dynamiques renvoient désormais une plage de prix calculée. <!--DAT
 
 ### Vue Catalogue pour les règles et recommandations de marchandisage
 
-Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](./merchandising/rules/add.md).
+Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [ des règles de marchandisage](./merchandising/rules/add.md).
 
 ### Mises à jour des API
 
