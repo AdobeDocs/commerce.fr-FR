@@ -1,7 +1,7 @@
 ---
-source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
+source-git-commit: bdde436394667a2d5477fbc44eac5b90bd865c68
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ Ce projet a adopté le [Code de conduite d’Adobe Open Source](code-of-conduct.
 
 ## À propos de vos contributions au contenu d’Adobe
 
-Consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
+Consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 La façon dont vous contribuez dépend de qui vous êtes et du type de changements que vous souhaitez apporter :
 
 ### Modifications mineures
 
-Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur la zone de commentaires qui s’affiche au bas de l’article, cliquez sur **Options de commentaires détaillées**, puis cliquez sur **Suggérer une modification** pour accéder au fichier source Markdown sur GitHub. Utilisez l’interface utilisateur GitHub pour effectuer vos mises à jour. Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr) consultez le guide du contributeur aux documents Adobe .
+Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur la zone de commentaires qui s’affiche au bas de l’article, cliquez sur **Options de commentaires détaillées**, puis cliquez sur **Suggérer une modification** pour accéder au fichier source Markdown sur GitHub. Utilisez l’interface utilisateur GitHub pour effectuer vos mises à jour. Pour plus d’informations](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) consultez le guide du contributeur aux [documents Adobe .
 
 Les modifications ou précisions mineures que vous apportez aux documents et aux exemples de code dans ce référentiel sont soumises aux conditions d’utilisation d’Adobe.
 
@@ -37,7 +37,7 @@ Si vous êtes rédacteur technique, responsable de programme ou développeur au 
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur de GitHub pour apporter des modifications mineures, ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
+Pour plus d’informations, consultez le Guide du contributeur aux documents Adobe [](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Comment utiliser Markdown pour formater votre rubrique
 
@@ -60,10 +60,11 @@ Après avoir cloné le référentiel, exécutez :
 
 ### Ce que font les crochets
 
-- Détecter automatiquement les fichiers image intermédiaires (PNG, JPG, JPEG, GIF, SVG)
-- Exécutez `image_optim` pour compresser et optimiser les images.
+- Détecter automatiquement les fichiers image intermédiaires (PNG, JPEG, GIF, SVG)
+- Exécutez `image_optim` pour compresser et optimiser les images pixellisées (PNG, JPEG, GIF).
 - Réévaluation automatique des images optimisées
-- Vérifiez que toutes les images validées sont correctement optimisées.
+- Assurez-vous que toutes les images pixellisées validées sont correctement optimisées
+- Vérifiez les SVG intermédiaires par rapport à une limite de taille et abandonnez la validation si un SVG la dépasse.
 
 ### Avantages
 
@@ -76,7 +77,9 @@ Pour obtenir des instructions détaillées sur la configuration, le dépannage e
 
 ## Tâches de classement disponibles
 
-Ce référentiel utilise les tâches rake fournies par `adobe-comdox-exl-rake-tasks` gem. Pour afficher toutes les tâches disponibles, exécutez :
+Ce référentiel utilise les tâches principales fournies par le
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. Pour afficher toutes les tâches disponibles, exécutez :
 
 ```bash
 cd _jekyll
