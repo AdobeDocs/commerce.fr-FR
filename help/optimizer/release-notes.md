@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
 workflow-type: tm+mt
-source-wordcount: 1404
+source-wordcount: 1365
 ht-degree: 0%
 
 ---
@@ -32,6 +32,19 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
   {{aco-api-updates-and-dropins}}
 
+## Juillet 2026
+
+>[!BEGINSHADEBOX]
+
+_20 juillet 2026_
+
+![Correctif](../assets/fix.svg) **Performances de navigation par catégorie** : optimisation des performances appliquée au service de catégorie, ce qui se traduit par un débit plus élevé et une latence P99 plus faible pour la requête `CategoryNavigation`, ce qui améliore la réactivité du service et l’expérience utilisateur globale sous une charge élevée.
+<!--DATA-7131 DATA-7250-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## Juin 2026
 
 >[!BEGINSHADEBOX]
@@ -41,6 +54,7 @@ _24 juin 2026_
 <!-- v1.3 -->
 
 ![Nouveau](../assets/new.svg) **Nouveau champ de `canEditQuantity`**—Ajout de `canEditQuantity` aux `ProductViewOptionValueProduct` dans le GraphQL du service de catalogue. Il expose le paramètre de quantité facultatif **défini par l’utilisateur** pour les sélections de bundle effectuées par l’administrateur Commerce, afin que les consommateurs du storefront puissent déterminer si la quantité d’une sélection de bundle est modifiable.
+<!--COMOPT-2050-->
 
 ### Recherche sémantique
 
@@ -69,10 +83,13 @@ _28 mai 2026_
 <!-- v1.2 -->
 
 ![Correction](../assets/fix.svg) **Arborescences de navigation complètes** : les catégories descendantes balisées sont désormais correctement incluses dans les arborescences de `navigation` filtrées par famille lorsqu’un nœud intermédiaire non balisé existe dans le chemin d’accès. Ce correctif garantit que les acheteurs voient toutes les catégories pertinentes dans la navigation, ce qui facilite la navigation et la découverte d’articles.
+<!--DATA-7183-->
 
 ![Correction](../assets/fix.svg) **Gestion des slugs vides dans les requêtes `categoryTree`**—Correction d’un problème où la requête [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) renvoyait une erreur de serveur interne lorsque l’argument `slugs` incluait une chaîne vide. Les valeurs slug vides sont désormais ignorées, de sorte que les storefronts et les intégrations continuent de résoudre les données de catégorie sans requêtes ayant échoué.
+<!--DATA-7184-->
 
 ![Correction](../assets/fix.svg) les requêtes **`searchCategory`renvoient des résultats insensibles à la casse et classés par ordre alphabétique** : la requête `searchCategory` trie désormais les résultats de recherche par ordre alphabétique sans respect de la casse, ce qui garantit un ordre cohérent et prévisible. Les catégories comportant des préfixes plus courts apparaissent en premier lorsque les noms sont par ailleurs identiques.
+<!--COMOPT-2142-->
 
 _4 mai 2026_
 
