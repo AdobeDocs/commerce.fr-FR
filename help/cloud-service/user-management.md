@@ -8,12 +8,20 @@ exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 autotag-review: '2026-06-18T16:07:29.468Z'
 TQID: 'https://experienceleague.adobe.com/kaQ6N23X6S9zNjDpcq5BsDJnUpke3mjPpzxElMGwqL0'
-product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: d9ced453-36f4-4eb5-b2f3-1d593e32476b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: d9ced453-36f4-4eb5-b2f3-1d593e32476b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 09692e5e2630568a48d14f727930d324c6932ca6
 workflow-type: tm+mt
 source-wordcount: 1816
@@ -133,7 +141,7 @@ Il existe deux manières différentes d’ajouter des utilisateurs administrateu
 
 1. Sélectionnez l’onglet [!UICONTROL **Produits**].
 
-1. Sélectionnez le produit [!UICONTROL ****].
+1. Sélectionnez le produit [!UICONTROL **&#x200B;**].
 
 1. Sélectionnez le produit Commerce Cloud Manager si vous souhaitez ajouter l’utilisateur à l’interface de Cloud Manager, où il peut créer et gérer des instances Commerce, ou sélectionnez l’instance Commerce existante à laquelle ajouter l’utilisateur. Les instances Commerce utilisent le format suivant : `Adobe Commerce - <instance-name> - ACCS - <environment-type> - <tenant-id>`.
 
@@ -248,7 +256,7 @@ Si votre compte a accès à [[!DNL Adobe Experience Manager as a Cloud Service]]
 >
 >Pour ajouter plusieurs utilisateurs simultanément, vous pouvez effectuer un [chargement CSV en bloc](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
 >
->Vous pouvez également ajouter plusieurs utilisateurs et utilisatrices à un rôle en créant un [groupe d’utilisateurs](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Vous pouvez ensuite ajouter le produit [!DNL ****] au groupe d’utilisateurs.
+>Vous pouvez également ajouter plusieurs utilisateurs et utilisatrices à un rôle en créant un [groupe d’utilisateurs](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Vous pouvez ensuite ajouter le produit [!DNL **&#x200B;**] au groupe d’utilisateurs.
 
 1. Accédez à <https://adminconsole.adobe.com> et connectez-vous avec votre Adobe ID.
 
@@ -291,15 +299,15 @@ Pour confirmer que l’utilisateur a accès, cliquez sur son nom pour ouvrir sa 
 
 Après avoir ajouté un utilisateur à [!DNL AEM Assets], il peut accéder à l’interface [!DNL Experience Manager] en accédant à [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}.
 
-1. Dans la section [!UICONTROL **Accès rapide**], cliquez sur [!UICONTROL **Experience Manager**] ou sur [!UICONTROL **Afficher tout**] si vous ne voyez pas [!UICONTROL **Experience Manager**]. Cliquez ensuite sur [!UICONTROL ****] ou accédez directement à [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}.
+1. Dans la section [!UICONTROL **Accès rapide**], cliquez sur [!UICONTROL **Experience Manager**] ou sur [!UICONTROL **Afficher tout**] si vous ne voyez pas [!UICONTROL **Experience Manager**]. Cliquez ensuite sur [!UICONTROL **&#x200B;**] ou accédez directement à [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}.
 
-1. Dans la page [!UICONTROL ****], cliquez sur [!UICONTROL **Ajouter un programme**] pour commencer.
+1. Dans la page [!UICONTROL **&#x200B;**], cliquez sur [!UICONTROL **Ajouter un programme**] pour commencer.
 
 1. [Créer un nouveau programme](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}.
 
 1. [Créer un environnement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}.
 
-1. Après avoir créé l’environnement, revenez à [](https://adminconsole.adobe.com){target="_blank"} puis sélectionnez [!UICONTROL **Adobe Experience Manager as a Cloud Service**].
+1. Après avoir créé l’environnement, revenez à [&#128279;](https://adminconsole.adobe.com){target="_blank"} puis sélectionnez [!UICONTROL **Adobe Experience Manager as a Cloud Service**].
 
 1. Vous devriez maintenant voir les nouveaux profils de produit. Sélectionnez qui contient des `- author -`. Par exemple, `<environment-name> - author - <program-id> - <environment-id>`.
 
