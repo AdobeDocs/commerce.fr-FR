@@ -54,7 +54,7 @@ Avant de commencer, confirmez que vous avez terminé chaque élément de la [lis
 
 Configurez l’environnement pour la migration de données en bloc :
 
->[!VIDEO](https://video.tv.adobe.com/v/3496121)
+>[!VIDEO](https://video.tv.adobe.com/v/3496124?captions=fre_fr)
 
 1. Extrayez le contenu du `ccsaas-migration-tools.tar.gz`.
 
@@ -97,7 +97,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### Configuration des informations d’identification OAuth source
 
->[!VIDEO](https://video.tv.adobe.com/v/3496142)
+>[!VIDEO](https://video.tv.adobe.com/v/3496144?captions=fre_fr)
 
 Ces quatre valeurs signent les requêtes de l’outil de migration vers les API du magasin source. Pour les obtenir, ouvrez le [!UICONTROL Admin] source et accédez à [!UICONTROL **Système**] > [!UICONTROL **Extensions**] > [!UICONTROL **Intégrations**]. Créez ou ouvrez une intégration, puis copiez les valeurs dans `.env` :
 
@@ -142,7 +142,7 @@ Avant la migration, assurez-vous que les paramètres suivants sont cohérents en
 
 ### Configuration des identifiants SaaS et IMS cibles
 
->[!VIDEO](https://video.tv.adobe.com/v/3496167)
+>[!VIDEO](https://video.tv.adobe.com/v/3496169?captions=fre_fr)
 
 Il s’agit des paramètres IMS et API [!DNL Adobe Commerce as a Cloud Service] pour la cible. Vous avez besoin de l’identifiant du client, de l’identifiant de l’organisation, des informations d’identification de serveur à serveur OAuth IMS et de l’hôte IMS approprié pour votre environnement. Assurez la coordination avec votre équipe Adobe pour l’accès à l’organisation, au client et au profil. N’essayez pas de déduire ou d’estimer des valeurs sensibles.
 
@@ -247,7 +247,7 @@ CDMS_PORT=443
 
 ## Configurer le fichier de connexion à la base de données
 
->[!VIDEO](https://video.tv.adobe.com/v/3496152)
+>[!VIDEO](https://video.tv.adobe.com/v/3496159?captions=fre_fr)
 
 Le fichier `.my.cnf` fournit [!DNL MySQL] paramètres de connexion pour le côté extraction de l’outil de migration. Créez-le en copiant les `.my.cnf.example` dans les `.my.cnf` de la racine du projet. Le nom de la section doit correspondre à `SOURCE_CONNECTION_NAME` dans `.env`.
 
