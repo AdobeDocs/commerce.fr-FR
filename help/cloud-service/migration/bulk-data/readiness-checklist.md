@@ -7,12 +7,23 @@ role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:18.443Z'
 TQID: 'https://experienceleague.adobe.com/728hkK-dzIPzyuBhuNyOqEE9FxlVGdVc9R2wIRcXobk'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 670b6214b28be93a16130552a226a8cadb487324
 workflow-type: tm+mt
 source-wordcount: 1171
@@ -68,7 +79,7 @@ L’outil de migration s’exécute sur une machine que vous contrôlez, telle q
 ### Instance cible
 
 - **ID de client et ID d’organisation confirmés** — Obtenez vos `TARGET_TENANT_ID` et `TARGET_ORG_ID` auprès de votre équipe Adobe avant la configuration.
-- **Informations d’identification de serveur à serveur OAuth IMS** — Requises pour que l’outil de migration s’authentifie auprès de la cible. Généré via [](https://developer.adobe.com/console/). Vous devez disposer d’un accès [!UICONTROL Developer] ou [!UICONTROL Admin] à votre organisation Adobe, car l’accès utilisateur de base n’est pas suffisant pour créer des informations d’identification. Contactez votre équipe Adobe pour sélectionner le profil de produit approprié et préparez l’identifiant client (`ADOBE_IMS_CLIENT_ID`) et le secret client (`ADOBE_IMS_CLIENT_SECRET`).
+- **Informations d’identification de serveur à serveur OAuth IMS** — Requises pour que l’outil de migration s’authentifie auprès de la cible. Généré via [&#128279;](https://developer.adobe.com/console/). Vous devez disposer d’un accès [!UICONTROL Developer] ou [!UICONTROL Admin] à votre organisation Adobe, car l’accès utilisateur de base n’est pas suffisant pour créer des informations d’identification. Contactez votre équipe Adobe pour sélectionner le profil de produit approprié et préparez l’identifiant client (`ADOBE_IMS_CLIENT_ID`) et le secret client (`ADOBE_IMS_CLIENT_SECRET`).
 - **URL du point d’entrée CDMS** — Fournie par votre équipe Adobe. N’essayez pas d’en déduire cette valeur. Vous avez besoin du point d’entrée de pré-production pour les migrations de sandbox et de test, ainsi que du point d’entrée de production pour les migrations de basculement en direct.
 - **Configuration de base alignée entre la source et la cible** — Les données de configuration de base, telles que les paramètres de stockage et la configuration système, ne sont pas migrées par l’outil. Configurez-le manuellement sur la cible pour qu’il corresponde à la source avant la migration.
 - Stockages **B2B : les fonctionnalités B2B sont configurées de manière cohérente** — Si la source est un magasin compatible B2B, assurez-vous que les paramètres de [!UICONTROL Admin] B2B appropriés sont configurés de manière cohérente à la fois sur la source et la cible avant la migration. Reportez-vous au [guide de migration](migration-guide.md) pour connaître les paramètres spécifiques requis.

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Si la page Statut de la synchronisation des flux de données n’est pas disponible dans les déploiements Commerce Admin for Commerce on Cloud ou on-premise, suivez les [ instructions d’installation de l’extension ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"} pour l’activer.
+>Si la page Statut de la synchronisation des flux de données n’est pas disponible dans les déploiements Commerce Admin for Commerce on Cloud ou on-premise, suivez les [&#x200B; instructions d’installation de l’extension &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"} pour l’activer.
 
 
 ## Alignement de l’environnement d’intégration de Adobe Commerce Optimizer {#aco-integration-environment-alignment}
@@ -71,7 +71,7 @@ ht-degree: 0%
 >
 >Cette fonctionnalité peut être modifiée sans préavis.
 
-[!BADGE  Sandbox ]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+[!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
 
 ## Mapping d’instances AEM Assets {#aem-assets-instance-mapping}
 
@@ -93,7 +93,7 @@ Pour plus d’informations sur les options de configuration de l’identité, no
 
 | Services tertiaires | Extensibilité | Storefront |
 | --- | --- | --- |
-| <ul><li>[Service de catalogue](../catalog-service/release-notes.md)</li><li>[Recherche en direct](../live-search/release-notes.md)</li><li>[ Services de paiement ](../payment-services/release-notes.md)</li><li>[Recommandations de produits](../product-recommendations/release-notes.md)</li><li>[Exportation de données SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Maillage API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Événements](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[ Webhooks ](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Informations de mise à jour](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[Journal des modifications](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
+| <ul><li>[Service de catalogue](../catalog-service/release-notes.md)</li><li>[Recherche en direct](../live-search/release-notes.md)</li><li>[&#x200B; Services de paiement &#x200B;](../payment-services/release-notes.md)</li><li>[Recommandations de produits](../product-recommendations/release-notes.md)</li><li>[Exportation de données SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Maillage API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Événements](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[&#x200B; Webhooks &#x200B;](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Informations de mise à jour](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[Journal des modifications](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
 
 ## Notes de mise à jour des services Adobe Commerce Optimizer {#aco-release}
 

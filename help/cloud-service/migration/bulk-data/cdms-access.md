@@ -7,12 +7,20 @@ role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:18:53.554Z'
 TQID: 'https://experienceleague.adobe.com/csDq2Bbha2IieqxsDDG0iS1IHhAJ02fD-cwd8KFIsSk'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 670b6214b28be93a16130552a226a8cadb487324
 workflow-type: tm+mt
 source-wordcount: 452
@@ -30,7 +38,7 @@ Remplissez ce guide après avoir terminé tous les éléments de la [liste de co
 
 ## Conditions préalables
 
-- Informations d’identification de serveur à serveur OAuth 2.0 (identifiant client et secret client) créées dans [](https://developer.adobe.com/console/).
+- Informations d’identification de serveur à serveur OAuth 2.0 (identifiant client et secret client) créées dans [&#128279;](https://developer.adobe.com/console/).
 - Votre identifiant de l’organisation IMS, au format `<org>@AdobeOrg`. L’organisation doit être propriétaire du client cible.
 - Le `tenantId` cible, un identifiant client IMS alphanumérique de 22 caractères.
 - Adresses IP sortantes envoyées à et traitées par Adobe pour la passerelle CDMS. Contactez l’équipe d’Adobe si vous avez des doutes sur les adresses IP ou leur statut.
@@ -85,4 +93,4 @@ curl -i "https://<host>/<tenantId>/v1/migrations" \
 
 ## Étapes suivantes
 
-Une fois l’accès confirmé, passez au [ guide de migration ](migration-guide.md) pour commencer la configuration de l’environnement et l’exécution de la migration.
+Une fois l’accès confirmé, passez au [&#x200B; guide de migration &#x200B;](migration-guide.md) pour commencer la configuration de l’environnement et l’exécution de la migration.
