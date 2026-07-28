@@ -2,7 +2,7 @@
 title: Liste de contrôle de préparation du client
 description: Découvrez comment préparer une migration de données en bloc vers Adobe Commerce as a Cloud Service avec une liste de contrôle de préparation couvrant l’engagement, la machine, la source et la cible.
 feature: Cloud
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:18.443Z'
@@ -64,7 +64,7 @@ L’outil de migration s’exécute sur une machine que vous contrôlez, telle q
 - **Répertoire de travail accessible en écriture** — Le répertoire dans lequel l&#39;outil de migration est extrait doit être entièrement accessible en écriture par l&#39;utilisateur de la migration. L’outil écrit des journaux, du cache, des dépendances [!DNL Composer] et des fichiers générés lors de l’exécution.
 - **Espace disque suffisant** — Assurez-vous que l&#39;espace disque disponible est suffisant pour les données extraites, les images [!DNL Docker] et la sortie du journal. Les exigences d’espace varient en fonction de la taille de la base de données source.
 - **Sources locales : connectivité directe de la base de données à partir de la machine de migration** — Pour les instances sources locales, la machine de migration doit avoir un accès direct au réseau à la base de données source. L’outil n’établit pas automatiquement la connectivité de la base de données locale. Vérifiez que l’hôte, le port et les informations d’identification sont accessibles à partir de la machine de migration avant d’exécuter toute commande de migration.
-- **Cloud CLI installé et clé SSH enregistrée** — Pour les instances [!DNL Adobe Commerce on Cloud] source, [Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) doit être installé sur la machine de migration. Votre clé publique SSH doit également être enregistrée dans votre compte. Pour obtenir des instructions, consultez le [Guide de connexions sécurisées](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections).
+- **Cloud CLI installé et clé SSH enregistrée** — Pour les instances [!DNL Adobe Commerce on Cloud] source, [Cloud CLI](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) doit être installé sur la machine de migration. Votre clé publique SSH doit également être enregistrée dans votre compte. Pour obtenir des instructions, consultez le [Guide de connexions sécurisées](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/secure-connections).
 
 ### Instance Source
 

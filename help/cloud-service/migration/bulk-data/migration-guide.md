@@ -2,7 +2,7 @@
 title: Exécution d’une migration de données en bloc
 description: Découvrez comment configurer et exécuter une migration de données en bloc d’une instance Adobe Commerce PaaS ou locale vers Adobe Commerce as a Cloud Service avec l’interface de ligne de commande.
 feature: Cloud
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
@@ -130,7 +130,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->Si c’est la première fois que vous utilisez l’interface de ligne de commande Cloud, vous devez également ajouter votre clé publique SSH à votre compte . Pour obtenir des instructions, consultez le [Guide de connexions sécurisées](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections).
+>Si c’est la première fois que vous utilisez l’interface de ligne de commande Cloud, vous devez également ajouter votre clé publique SSH à votre compte . Pour obtenir des instructions, consultez le [Guide de connexions sécurisées](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/secure-connections).
 
 ### Aligner les paramètres d’administration Commerce
 
