@@ -1,7 +1,7 @@
 ---
-source-git-commit: bdde436394667a2d5477fbc44eac5b90bd865c68
+source-git-commit: 9de8e747353a9042d5b6d7c150688e705c21d2c6
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,11 @@ Après avoir cloné le référentiel, exécutez :
 
 ### Ce que font les crochets
 
-- Détecter automatiquement les fichiers image intermédiaires (PNG, JPEG, GIF, SVG)
-- Exécutez `image_optim` pour compresser et optimiser les images pixellisées (PNG, JPEG, GIF).
+- Détecter automatiquement les fichiers image intermédiaires (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`)
+- Exécutez `image_optim` pour compresser et optimiser les images pixellisées (`.png`, `.jpeg`, `.jpg`, `.gif`).
 - Réévaluation automatique des images optimisées
 - Assurez-vous que toutes les images pixellisées validées sont correctement optimisées
-- Vérifiez les SVG intermédiaires par rapport à une limite de taille et abandonnez la validation si un SVG la dépasse.
+- Vérifiez les SVG intermédiaires par rapport à une limite de taille et abandonnez la validation si un SVG surdimensionné est référencé à partir de `help/` (sinon, avertissez simplement).
 
 ### Avantages
 
