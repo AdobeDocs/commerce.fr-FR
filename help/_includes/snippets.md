@@ -1,7 +1,7 @@
 ---
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -104,3 +104,9 @@ Pour plus d’informations sur les options de configuration de l’identité, no
 | Services tertiaires | Storefront |
 | --- | --- |
 | [Connecteur AEM Assets](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer](../aco-connector/release-notes.md) | [Informations de mise à jour de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=fr)<br>[Journal des modifications de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=fr) |
+
+## Outil de migration de données en bloc Accès anticipé {#bulk-data-early-access}
+
+>[!IMPORTANT]
+>
+>L’outil de migration de données en masse est actuellement en accès anticipé. L’accès est fourni exclusivement par le biais du processus d’engagement de l’ingénierie déployée (CDE) Commerce. Pour une présentation de l’outil et de ses conditions d’éligibilité, voir [Outil de migration de données en bloc](../cloud-service/migration/bulk-data/migration-tool.md).

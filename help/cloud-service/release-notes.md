@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: b05e2183cc0e4b8352a150df9dabfc9dfdb31750
+source-git-commit: 155703001fc049470266874e0f519ab060248b31
 workflow-type: tm+mt
-source-wordcount: 5265
+source-wordcount: 5259
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 ## Juillet 2026 - #1 de mise à jour {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="Les éléments répertoriés sont actuellement disponibles dans les environnements de production."}
 
-[!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-Les éléments suivants ne sont actuellement disponibles que dans les environnements Sandbox et devraient passer aux environnements de production le 28 juillet 2026.
+Les éléments suivants sont disponibles sur les environnements de production à compter du 28 juillet 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -63,7 +63,7 @@ Les éléments suivants ne sont actuellement disponibles que dans les environnem
 >
 >Cette fonctionnalité est désactivée par défaut. Pour l’activer, contactez votre responsable du succès client Adobe Commerce ou créez un ticket d’assistance.
 
-Les nouveaux points d’entrée de l’API REST répliquent la fonctionnalité [!DNL Commerce Admin] [!UICONTROL **Modifier l’ordre**] qui permet aux intégrations de modifier un ordre par programmation :
+Les nouveaux points d’entrée de l’API [REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management) répliquent la fonction [!DNL Commerce Admin] [!UICONTROL **Modifier l’ordre**] qui permet aux intégrations de modifier un ordre par programmation :
 
 | Méthode | Point d’entrée | Description |
 | --- | --- | --- |
@@ -100,7 +100,7 @@ Tous les points d’entrée `custom-email` nécessitent l’accès à la `Market
 >
 >Cette fonctionnalité est expérimentale et doit être activée en contactant votre responsable du succès client Adobe Commerce ou en créant un ticket d’assistance.
 
-Les nouveaux points d’entrée de l’API REST `orderChain` permettent aux intégrations de modifier un ordre à l’aide de son identifiant et de résoudre automatiquement la chaîne complète des ordres modifiés :
+Nouveaux points d’entrée de l’API REST [&#128279;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management) laissez les intégrations modifier un ordre à l’aide de son identifiant et résoudre automatiquement la chaîne complète des ordres modifiés :`orderChain`
 
 | Méthode | Point d’entrée | Description |
 | --- | --- | --- |
@@ -133,7 +133,7 @@ Un nouvel événement `observer.reminder_matched_carts` est émis une fois que l
 
 ### Supprimer les e-mails transactionnels par zone ou modèle
 
-Une nouvelle configuration [!UICONTROL **Suppression des e-mails**] ([!UICONTROL **Magasins**] > [!UICONTROL **Configuration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **Suppression des e-mails**]) permet aux administrateurs d’arrêter de manière sélective [!DNL Commerce] d’envoyer des e-mails transactionnels. Vous pouvez supprimer des e-mails par domaine fonctionnel (par exemple, compte client, Order Management, retours, passage en caisse, marketing ou B2B) ou par une liste exacte d’identifiants de modèle.<!-- ACCS-1025 -->
+Une nouvelle configuration [Suppression des e-mails](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression) ([!UICONTROL **Magasins**] > [!UICONTROL **Configuration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **Suppression des e-mails**]) permet aux administrateurs d’arrêter de manière sélective [!DNL Commerce] d’envoyer des e-mails transactionnels. Vous pouvez supprimer des e-mails par domaine fonctionnel (par exemple, compte client, Order Management, retours, passage en caisse, marketing ou B2B) ou par une liste exacte d’identifiants de modèle.<!-- ACCS-1025 -->
 
 ### Afficher l’historique des modifications de commande dans Admin
 
