@@ -5,16 +5,12 @@ seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
 exl-id: e42101fa-9c30-482c-a649-44dc35376abb
 TQID: https://experienceleague.adobe.com/WnL4dJbZV0acHT5kpEAOyTVjhzW23RjHbQFVdDl4HDk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
 workflow-type: tm+mt
-source-wordcount: 758
+source-wordcount: 775
 ht-degree: 0%
 
 ---
@@ -37,20 +33,20 @@ Vous pouvez réactiver l&#39;indexation des prix dans l&#39;application Commerce
 
 ## Conditions requises
 
-- Adobe Commerce 2.4.4+
+- [](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Pour plus d’informations, voir [Configuration requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 - L’un des services Commerce suivants doit être activé et configuré pour votre environnement Adobe Commerce :
 
-   - [Recherche en direct](../live-search/install.md)
-   - [Recommandations de produit](../product-recommendations/install-configure.md)
-   - [Service de catalogue](../catalog-service/installation.md)
+  - [Recherche en direct](../live-search/install.md)
+  - [Recommandations de produit](../product-recommendations/install-configure.md)
+  - [Service de catalogue](../catalog-service/installation.md)
 
 ## Installation
 
 L’extension Catalog Adapter est un métapaquet Composer qui installe les modules suivants :
 
-- **Désactivation de l’indexeur de prix**-ce module désactive l’index de prix dans l’application Commerce afin que les prix soient diffusés via l’indexation des prix SaaS. L&#39;indexeur de prix de produit dans l&#39;application Commerce ne peut pas être activé lorsque l&#39;extension d&#39;indexation de prix SaaS est installée.
-- **Fournisseur de prix**-Ce module fournit les prix des produits du service Adobe Commerce. Il forme la requête de recherche et obtient les prix des produits sur le serveur frontal.
-- **Catalog Service Search Adapter** : ce module transfère les prix de l’application Adobe Commerce vers un service Adobe Commerce en réponse à une demande de recherche de produit.
+- **Désactivation de l’indexeur de prix** - Ce module désactive l’index de prix dans l’application Commerce afin que les prix soient diffusés via l’indexation des prix SaaS. L&#39;indexeur de prix de produit dans l&#39;application Commerce ne peut pas être activé lorsque l&#39;extension d&#39;indexation de prix SaaS est installée.
+- **Fournisseur de prix** - Ce module fournit les prix des produits du service Adobe Commerce. Il génère la requête de recherche et obtient les prix des produits sur le serveur frontal.
+- **Catalog Service Search Adapter** - Ce module transfère les prix de l’application Adobe Commerce vers Adobe Commerce Service en réponse à une demande de recherche de produit.
 
 ## Etapes d&#39;installation
 
@@ -64,7 +60,7 @@ Utilisez cette méthode pour installer le [!DNL Catalog Adapter] pour une instan
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur la gestion locale des environnements de projet Commerce, voir [Gestion des branches avec l’interface de ligne de commande](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/cli-branches) dans le _Guide d’utilisation d’Adobe Commerce sur les infrastructures cloud_.
+   >Pour plus d’informations sur la gestion locale des environnements de projet Commerce, voir [Gestion des branches avec l’interface de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) dans le _Guide d’utilisation d’Adobe Commerce sur les infrastructures cloud_.
 
 1. Consultez la branche d’environnement pour effectuer la mise à jour à l’aide de l’interface de ligne de commande Adobe Commerce Cloud.
 
@@ -94,7 +90,7 @@ Utilisez cette méthode pour installer le [!DNL Catalog Adapter] pour une instan
    git push origin <branch-name>
    ```
 
-   L’envoi des mises à jour à l’environnement cloud lance le processus de déploiement cloud de [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/deploy/process) pour appliquer les modifications. Vérifiez le statut du déploiement dans le [journal de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   L’envoi des mises à jour à l’environnement cloud lance le processus de déploiement cloud de [](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process) pour appliquer les modifications. Vérifiez le statut du déploiement dans le [journal de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB Sur site]
 
@@ -144,7 +140,7 @@ bin/magento index:reindex catalog_product_price
 
 ## Désactiver l’indexeur des prix des produits pour le scénario Headless Storefront
 
-Si vous disposez d’une instance Commerce découplée, vous devrez peut-être désactiver l’indexeur des prix des produits Adobe Commerce pour réduire la charge sur votre instance Adobe Commerce. Vous pouvez effectuer cette tâche en installant le module `magento/module-price-indexer-disabler` :
+Si vous disposez d’une instance Commerce découplée, désactivez l’indexeur de prix de produit Adobe Commerce afin de réduire la charge sur votre instance Adobe Commerce. Vous pouvez effectuer cette tâche en installant le module `magento/module-price-indexer-disabler` :
 
 ```bash
 composer require magento/module-price-indexer-disabler
@@ -171,7 +167,7 @@ Voici quelques scénarios de `[!DNL Catalog Adapter]` courants.
 
 ### Instances de Commerce découplées
 
-- Un commerçant disposant d’une instance Commerce découplée avec les services requis installés (recherche en direct, recommandations de produits, service de catalogue)
+- Un commerçant qui utilise une instance Commerce découplée avec les services requis installés (recherche en direct, recommandations de produits, service de catalogue)
 - Pas de dépendance à l’indexeur de prix de produit par défaut d’Adobe Commerce
 
 1. Installez le module `magento/module-price-indexer-disabler` à partir du package [!DNL Catalog Adapter].
