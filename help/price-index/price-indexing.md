@@ -26,7 +26,7 @@ ht-degree: 0%
 
 L&#39;indexation des prix SaaS optimise les performances du site en déchargeant les tâches gourmandes en ressources (comme l&#39;indexation et le calcul des prix) de l&#39;application Commerce vers l&#39;infrastructure cloud Adobe. Cette approche permet aux commerçants d&#39;adapter rapidement leurs ressources afin d&#39;accélérer les délais d&#39;indexation des prix et de fournir plus rapidement des mises à jour de prix au storefront et aux services Commerce connectés.
 
-Le diagramme suivant montre le flux de données d’indexation sur les services SaaS lorsque Commerce utilise le processus [indexation des prix](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) inclus dans l’application Commerce :
+Le diagramme suivant montre le flux de données d’indexation sur les services SaaS lorsque Commerce utilise le processus [indexation des prix](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers) inclus dans l’application Commerce :
 
 ![&#x200B; Flux de données par défaut &#x200B;](assets/old_way.png)
 
@@ -46,7 +46,7 @@ L&#39;indexation des prix SaaS est activée automatiquement lorsque vous install
 
 ### Conditions requises
 
-* [&#128279;](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Pour plus d’informations, voir [Configuration requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
+* [&#128279;](https://business.adobe.com/fr/products/magento/magento-commerce.html) 2.4.4+. Pour plus d’informations, voir [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
 ### Conditions préalables
 
@@ -78,7 +78,7 @@ Utilisez l’[interface de ligne de commande &#x200B;](../data-export/data-expor
 
 >[!NOTE]
 >
->Pour activer la page Statut de la synchronisation des flux de données si elle n’est pas disponible dans Commerce Admin for Commerce on Cloud ou dans les déploiements sur site, suivez les instructions d’installation de l’extension [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
+>Pour activer la page Statut de la synchronisation des flux de données si elle n’est pas disponible dans Commerce Admin for Commerce on Cloud ou dans les déploiements sur site, suivez les instructions d’installation de l’extension [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
 
 ## Prix des types de produits personnalisés
 

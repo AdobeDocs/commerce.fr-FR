@@ -36,9 +36,9 @@ ht-degree: 0%
 
 Le module Attributs de produit supplémentaires d’Adobe Commerce étend les flux de données de produit. Elle comprend des attributs de produit supplémentaires issus des configurations de produit Adobe Commerce :
 
-* [Classification de taxe](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
-* [Jeu d’attributs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
-* [Inventaire](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
+* [Classification de taxe](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
+* [Jeu d’attributs](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
+* [Inventaire](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
 Une fois installé, le module fonctionne automatiquement. Il capture et exporte les attributs supplémentaires lors de la synchronisation du produit. Aucune configuration supplémentaire n’est requise.
 
@@ -175,11 +175,11 @@ Le module Attributs de produit supplémentaires améliore les flux de produits e
 
 **Conditions requises**
 
-* [&#128279;](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Pour plus d’informations, voir [Configuration requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+* [&#128279;](https://business.adobe.com/fr/products/magento/magento-commerce.html) 2.4.4+. Pour plus d’informations, voir [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements).
 * [Extension Adobe Commerce Data Export](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 ou ultérieure
 * Accès à [repo.magento.com](https://repo.magento.com)
 
-  Pour générer des clés et obtenir les droits nécessaires, voir [&#x200B; Obtenir vos clés d’authentification &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Pour les installations cloud, consultez le guide [Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+  Pour générer des clés et obtenir les droits nécessaires, voir [&#x200B; Obtenir vos clés d’authentification &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Pour les installations cloud, consultez le guide [Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Accès à la ligne de commande du serveur applicatif Adobe Commerce.
 
 ### Etapes d&#39;installation
@@ -192,8 +192,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 Pour obtenir des instructions d’installation détaillées, consultez les guides suivants :
 
-* [Installation de l’extension pour Adobe Commerce sur une infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [Installation de l’extension sur Adobe Commerce On-premise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
+* [Installation de l’extension pour Adobe Commerce sur une infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [Installation de l’extension sur Adobe Commerce On-premise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## Synchronisation des données de produit
 
@@ -221,9 +221,9 @@ bin/magento saas:resync --feed=productAttributes
 
 * Vérifiez que les paramètres d’inventaire sont correctement configurés dans l’administration.
 * Rechercher des remplacements d’inventaire spécifiques au site web
-* Vérifiez que le module [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) fonctionne correctement
+* Vérifiez que le module [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/guide-overview) fonctionne correctement
 
-Pour plus d’informations, consultez le [Guide &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) dans la *Documentation pour les commerçants Adobe Commerce*.
+Pour plus d’informations, consultez le [Guide &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/guide-overview) dans la *Documentation pour les commerçants Adobe Commerce*.
 
 **Problèmes de performances :**
 
