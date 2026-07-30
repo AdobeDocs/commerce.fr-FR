@@ -6,7 +6,7 @@ feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
 source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Les commerçants [!DNL Payment Services] sur Interchange Plus Plus (IC++) peuven
 * Prévenir les fraudes et réduire les risques associés aux processeurs
 * Amélioration de la sécurité des transactions
 
-Voir [&#x200B; Qu’est-ce qu’IC ++?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} dans la documentation PayPal destinée aux développeurs pour plus d&#39;informations.
+Voir [Qu&#39;est-ce que IC++ ?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} dans la documentation PayPal destinée aux développeurs pour plus d&#39;informations.
 
 ## Opérations de paiement par carte de niveau 2 et de niveau 3 en [!DNL Payment Services]
 
