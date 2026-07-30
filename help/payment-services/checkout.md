@@ -23,7 +23,7 @@ Un message d’erreur s’affiche sur la page de passage en caisse de l’achete
 
 ![Erreur lors de la vérification](assets/user-checkout-error.png "Erreur lors de la récupération"){width="600" zoomable="yes"}
 
-Un commentaire concernant la commande annulée s’affiche également dans l’Administration pour une [commande](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en) spécifique.
+Un commentaire concernant la commande annulée s’affiche également dans l’Administration pour une [commande](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=fr) spécifique.
 
 ![Commentaire de commande annulé dans Admin pour la commande](assets/admin-checkout-error.png "Commentaire de commande annulé dans Admin pour la commande"){width="600" zoomable="yes"}
 
