@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: f35d602bd25d2b5192a289c444c1bc0a93a91945
 workflow-type: tm+mt
-source-wordcount: 418
+source-wordcount: 447
 ht-degree: 0%
 
 ---
@@ -31,19 +31,19 @@ Le processus d’intégration pour [!DNL Product Recommendations] nécessite l�
 - [Workflow de mise en œuvre](implementation-workflow.md)
 - [Installation et configuration](install-configure.md)
 - [Paramètres](settings.md)
-- [Vérifier](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)
+- [Vérifier](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify)
 - [Environnement d’évaluation](staging-environment.md)
 
 ## Conditions requises
 
-- Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2, 8.3 ou 8.4
-- Compositeur 2
+[&#128279;](https://business.adobe.com/fr/products/magento/magento-commerce.html) 2.4.4+. Pour plus d’informations, voir [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
 ### Plateformes prises en charge
 
 - Adobe Commerce on premise (EE) : 2.4.4+
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
+
+Pour connaître la configuration requise, voir [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements).
 
 ## Point d’entrée
 
@@ -57,11 +57,11 @@ Voir [[!DNL Page Builder] Intégration](page-builder.md) pour obtenir des instru
 
 ### Indexation des prix SaaS
 
-Les clients de Product Recommendations peuvent utiliser l’indexation des prix [SaaS](../price-index/price-indexing.md), qui accélère les mises à jour des prix et la synchronisation.
+Les clients de Product Recommendations peuvent utiliser l’indexation de prix [SaaS](../price-index/price-indexing.md), qui accélère les mises à jour de prix et la synchronisation.
 
 ### Prise en charge B2B {#b2bsupport}
 
-Les vitrines B2B nécessitent souvent une logique complexe qui détermine la visibilité des produits et les prix pour chaque acheteur ou groupe de clients. [!DNL Product Recommendations] désormais [prise en charge](release-notes.md) cette fonctionnalité en respectant les [autorisations de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=fr), [catalogues partagés](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=fr) et [tarification spécifique au groupe client](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=fr). Par exemple, si vous avez masqué certaines catégories de votre segment de clients de détail, un acheteur de ce segment n’aura pas de recommandations pour les produits de ces catégories. En outre, lorsque vous définissez un catalogue partagé pour des groupes de clients et des sociétés spécifiques, ces acheteurs ne voient des recommandations que pour les produits auxquels ils ont accès. Tous les produits recommandés reflètent un prix correct spécifique au groupe de clients en fonction du groupe de clients de chaque acheteur.
+Les vitrines B2B nécessitent souvent une logique complexe qui détermine la visibilité des produits et les prix pour chaque acheteur ou groupe de clients. [!DNL Product Recommendations] désormais [prise en charge](release-notes.md) cette fonctionnalité en respectant les [autorisations de catégorie](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/categories/category-permissions), [catalogues partagés](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=fr) et [tarification spécifique au groupe client](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=fr). Par exemple, si vous avez masqué certaines catégories de votre segment de clients de détail, aucun acheteur de ce segment n’affiche de recommandations pour les produits de ces catégories. En outre, lorsque vous définissez un catalogue partagé pour des groupes de clients et des sociétés spécifiques, ces acheteurs ne voient des recommandations que pour les produits auxquels ils ont accès. Tous les produits recommandés reflètent le prix correct spécifique au groupe de clients en fonction du groupe de clients de chaque acheteur.
 
 >[!NOTE]
 >

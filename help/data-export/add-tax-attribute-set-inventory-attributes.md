@@ -25,9 +25,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 7c592b78454fdfafb377b101e366c8213ce43a0a
 workflow-type: tm+mt
-source-wordcount: 822
+source-wordcount: 835
 ht-degree: 0%
 
 ---
@@ -46,18 +46,18 @@ Une fois installé, le module fonctionne automatiquement. Il capture et exporte 
 
 * **Amélioration automatique** : enrichit les flux de produits avec la classe de taxe, le jeu d’attributs et les attributs de stock.
 * **Intégration transparente** : fournit un contexte essentiel pour les systèmes et services externes
-* **Configuration zéro** : fonctionne immédiatement après l&#39;installation
+* **Zéro configuration** : Fonctionne immédiatement après l&#39;installation
 * **Mises à jour en temps réel** : synchronise automatiquement les modifications du produit
 
 ## Fonctionnalités et attributs exportés
 
 Le module ajoute trois attributs supplémentaires à vos flux de données de produit existants :
 
-* `ac_tax_class`
-* `ac_attribute_set`
-* `ac_inventory`
+* `[ac_tax_class](#tax-class-information-ac_tax_class)`
+* `[ac_attribute_set](attribute-set-information-ac_attribute_set)`
+* `[ac_inventory](advanced-inventory-data-ac_inventory)`
 
-### &#x200B;1. Informations sur la classe de taxe (`ac_tax_class`)
+### Informations sur la classe de taxe (`ac_tax_class`) {#tax-class-information-ac_tax_class}
 
 **Objectif** : fournit des informations de classification fiscale pour chaque produit
 
@@ -84,7 +84,7 @@ Lorsque vous exportez des données de classe de taxe vers les services de catalo
 * Intégration avec les services externes de calcul des taxes
 * Catégorisation des produits pour les systèmes comptables
 
-### &#x200B;2. Informations sur le jeu d’attributs (`ac_attribute_set`)
+### Informations sur le jeu d’attributs (`ac_attribute_set`) {#attribute-set-information-ac_attribute_set}
 
 **Objectif** : identifie le jeu d’attributs affecté à chaque produit
 
@@ -113,7 +113,7 @@ Lorsque vous exportez des données de jeu d’attributs vers les services de cat
 * Gestion et organisation des catalogues
 * Intégration de systèmes tiers nécessitant un contexte de jeu d’attributs
 
-### &#x200B;3. Données d’inventaire avancées (`ac_inventory`)
+### Données d’inventaire avancées (`ac_inventory`) {#advanced-inventory-data-ac_inventory}
 
 **Objectif** : fournit des paramètres de gestion des stocks pour chaque produit
 
@@ -125,9 +125,9 @@ Lorsque vous exportez des données de jeu d’attributs vers les services de cat
 * `cartMinQty` (flottant) : quantité minimale autorisée dans le panier
 * `cartMaxQty` (flottant) : quantité maximale autorisée dans le panier
 * `backorders` (chaîne) : politique de backorder. La valeur est l’une des suivantes :
-   * `"no"` : aucun reliquat autorisé
-   * `"allow"` : Autoriser une quantité inférieure à 0
-   * `"allow_notify"` : Autoriser une quantité inférieure à 0 et informer le client
+  * `"no"` : aucun reliquat autorisé
+  * `"allow"` : Autoriser une quantité inférieure à 0
+  * `"allow_notify"` : Autoriser une quantité inférieure à 0 et informer le client
 * `enableQtyIncrements` (booléen) : indique si les incréments de quantité sont activés
 * `qtyIncrements` (flottant) : valeur d’incrément de quantité requise
 
@@ -161,22 +161,21 @@ Le module Attributs de produit supplémentaires améliore les flux de produits e
 
 * **Flux de produits** (`products`) : amélioré avec les trois attributs supplémentaires
 
-   * Ajoute les attributs `ac_tax_class`, `ac_attribute_set` et `ac_inventory` à chaque enregistrement de produit
-   * Ne modifie pas les données de produit d’origine
-   * Maintient la rétrocompatibilité avec les consommateurs d’aliments existants.
+  * Ajoute les attributs `ac_tax_class`, `ac_attribute_set` et `ac_inventory` à chaque enregistrement de produit
+  * Ne modifie pas les données de produit d’origine
+  * Maintient la rétrocompatibilité avec les consommateurs d’aliments existants.
 
 * **Flux d’attributs de produit** (`productAttributes`) : amélioré avec des métadonnées d’attribut pour les nouveaux attributs
 
-   * Enregistre automatiquement les métadonnées des trois nouveaux attributs dans le flux de `productAttributes`
-   * Fournit des détails de configuration des attributs (types de données, paramètres de visibilité, etc.)
-   * Aide les systèmes externes à comprendre le nouveau schéma d’attribut.
+  * Enregistre automatiquement les métadonnées des trois nouveaux attributs dans le flux de `productAttributes`
+  * Fournit des détails de configuration des attributs (types de données, paramètres de visibilité, etc.)
+  * Aide les systèmes externes à comprendre le nouveau schéma d’attribut.
 
 ## Installation de l’extension
 
 **Conditions requises**
 
-* PHP 8.1, 8.2, 8.3 ou 8.4
-* Adobe Commerce 2.4.4+
+* [&#128279;](https://business.adobe.com/fr/products/magento/magento-commerce.html) 2.4.4+. Pour plus d’informations, voir [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements).
 * [Extension Adobe Commerce Data Export](manage-extension.md#update-a-module-to-a-specific-version), version 103.4.11 ou ultérieure
 * Accès à [repo.magento.com](https://repo.magento.com)
 
@@ -193,8 +192,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 Pour obtenir des instructions d’installation détaillées, consultez les guides suivants :
 
-* [Installation de l’extension sur Adobe Commerce sur une infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [Installation de l’extension Adobe Commerce sur site](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/extensions)
+* [Installation de l’extension pour Adobe Commerce sur une infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [Installation de l’extension sur Adobe Commerce On-premise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## Synchronisation des données de produit
 
@@ -215,7 +214,7 @@ bin/magento saas:resync --feed=productAttributes
 **Attributs supplémentaires manquants dans les produits :**
 
 * Vérifiez que le module est correctement installé et activé
-* Exécutez les commandes de resynchronisation pour actualiser les données du produit.
+* Pour actualiser les données du produit, exécutez les commandes de resynchronisation
 * Vérifiez que les produits ont des affectations de classe de taxe et de jeu d&#39;attributs valides
 
 **Les données d’inventaire semblent incorrectes :**

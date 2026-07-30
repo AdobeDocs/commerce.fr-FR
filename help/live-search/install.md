@@ -25,16 +25,16 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: df9b8455e52b2721ba92971b1d0fddb92da8159a
 workflow-type: tm+mt
-source-wordcount: 2842
+source-wordcount: 2803
 ht-degree: 0%
 
 ---
 
 # Configuration pour la réussite avec [!DNL Live Search]
 
-Adobe Commerce [!DNL Live Search] et [[!DNL Catalog Service]](../catalog-service/guide-overview.md) fonctionnent ensemble pour fournir une solution de recherche performante, pertinente et intuitive permettant à vos clients de trouver exactement ce dont ils ont besoin, rapidement. Plus précisément, [!DNL Catalog Service] affiche vos données de catalogue pour les services SaaS, comme les [!DNL Live Search] à utiliser.
+Adobe Commerce [!DNL Live Search] et [[!DNL Catalog Service]](../catalog-service/guide-overview.md) fonctionnent ensemble pour fournir une solution de recherche performante, pertinente et intuitive. Cette solution permet à vos clients de trouver exactement ce dont ils ont besoin, rapidement. Plus précisément, [!DNL Catalog Service] affiche vos données de catalogue pour les services SaaS, comme les [!DNL Live Search] à utiliser.
 
 Cet article fournit des instructions détaillées sur l’implémentation de [!DNL Live Search] avec le [!DNL Catalog Service].
 
@@ -44,9 +44,7 @@ Cet article est destiné au développeur ou à l’intégrateur système de votr
 
 ## Conditions requises
 
-- [&#128279;](https://business.adobe.com/fr/products/magento/magento-commerce.html) 2.4.4+
-- PHP 8.1, 8.2, 8.3 ou 8.4
-- [!DNL Composer]
+- [&#128279;](https://business.adobe.com/fr/products/magento/magento-commerce.html) 2.4.4+. Pour plus d’informations, voir [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 - Exécution des tâches cron et des indexeurs
 
 >[!IMPORTANT]
@@ -68,13 +66,13 @@ Cet article est destiné au développeur ou à l’intégrateur système de votr
 >
 > **Préparation du HIPAA**
 >
->Si vous utilisez Adobe Commerce avec l’extension conforme à la loi HIPAA et le module complémentaire Healthcare, ne traitez aucune information de santé protégée (ISP) via LiveSearch> Live Search n’est pas un service conforme à la loi HIPAA.
+>Si vous utilisez Adobe Commerce avec l’extension conforme à la loi HIPAA et le module complémentaire Healthcare, ne traitez aucune information de santé protégée (ISP) via Live Search> Live Search n’est pas un service conforme à la loi HIPAA.
 >
 >Pour plus d’informations, consultez les guides [&#x200B; Préparation à la loi HIPAA sur Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) et [&#x200B; Opérations &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/compliance/hipaa-ready-service/operations), qui répertorie Live Search parmi les services Commerce non conformes à la loi HIPAA.
 
 ## Présentation des workflows
 
-À un niveau élevé, la [!DNL Live Search] d’intégration nécessite que vous :
+Le [!DNL Live Search] d’intégration nécessite que vous :
 
 1. [Installer](#install) l’extension [!DNL Live Search]
 1. [Configurer](#configure) les clés API
@@ -211,7 +209,7 @@ Découvrez comment configurer vos clés API dans l’article [Connecteur de serv
 
 ## &#x200B;3. Synchroniser les données du catalogue {#sync}
 
-[!DNL Live Search] déplace les données de catalogue vers l’infrastructure SaaS d’Adobe. Les données sont indexées et les résultats de la recherche sont directement transmis au storefront à partir de cet index. En fonction de la taille et de la complexité, l’indexation peut prendre de 30 minutes à quelques heures.
+[!DNL Live Search] déplace les données de catalogue vers l’infrastructure SaaS d’Adobe. Les données sont indexées et les résultats de la recherche sont directement transmis au storefront à partir de cet index. En fonction de la taille et de la complexité, l’indexation peut prendre de 30 minutes à plusieurs heures.
 
 Pour commencer la synchronisation initiale des données de catalogue avec les services SaaS, exécutez les commandes suivantes dans l’ordre suivant :
 
@@ -245,12 +243,12 @@ Après la synchronisation initiale, il peut s’écouler jusqu’à 15 minutes a
 
 ## &#x200B;4. Vérifier que les données ont été exportées {#verify}
 
-Outre l’utilisation de la page Statut de la synchronisation des flux de données et du tableau de bord de gestion des données, vous pouvez vérifier les données du catalogue exportées depuis Adobe Commerce directement dans la base de données et confirmer que la synchronisation des données avec [!DNL Live Search] a réussi en utilisant l’espace de travail GraphQL [!DNL Live Search].
+Vous pouvez vérifier les données de catalogue exportées depuis Adobe Commerce dans la base de données et confirmer que la synchronisation des données avec [!DNL Live Search] a réussi à l’aide de l’espace de travail [!DNL Live Search] GraphQL.
 
 - Dans la base de données, utilisez des requêtes SQL pour rechercher des entrées dans les tables suivantes :
 
-   - `cde_products_feed`
-   - `cde_product_attributes_feed`
+  - `cde_products_feed`
+  - `cde_product_attributes_feed`
 
   >[!NOTE]
   >
@@ -258,8 +256,8 @@ Outre l’utilisation de la page Statut de la synchronisation des flux de donné
 
 - Utilisez le [terrain de jeu &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce/live-search/live-search-admin/graphql) avec la requête par défaut (voir [Référence de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) pour plus de détails) pour vérifier les éléments suivants :
 
-   - Le nombre de produits renvoyés est proche de ce que vous attendiez pour la vue du magasin.
-   - Les facettes sont renvoyées.
+  - Le nombre de produits renvoyés est proche de ce que vous attendiez pour la vue du magasin.
+  - Les facettes sont renvoyées.
 
 Pour obtenir de l’aide supplémentaire, consultez [[!DNL Live Search] catalogue non synchronisé](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) dans la base de connaissances du support.
 
@@ -269,7 +267,7 @@ La configuration correcte des données de produit garantit de bons résultats de
 
 ### Activer les widgets de liste de produits
 
-Lorsque vous installez [!DNL Live Search] version 4.0.0 ou ultérieure, les widgets de liste de produits sont activés par défaut. Lorsque les widgets sont activés, un autre composant d’interface utilisateur est utilisé pour les résultats de la recherche et pour parcourir les catégories dans les pages de liste de produits. Ce composant de l’interface utilisateur effectue des appels directs à l’[API Catalog Service](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/), ce qui accélère les temps de réponse.
+Lorsque vous installez [!DNL Live Search] version 4.0.0 ou ultérieure, le système active par défaut les widgets de liste de produits. Lorsque les widgets sont activés, un autre composant d’interface utilisateur est utilisé pour les résultats de la recherche et pour parcourir les catégories dans les pages de liste de produits. Ce composant de l’interface utilisateur effectue des appels directs à l’[API Catalog Service](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search), ce qui accélère les temps de réponse.
 
 Si vous disposez d’une version de [!DNL Live Search] antérieure à 4.0.0 ou ultérieure, vous devez activer manuellement le widget Liste des produits.
 
@@ -314,7 +312,7 @@ Assurez-vous que les événements storefront déployés sur votre site fonctionn
 
 - Passez en revue les [événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) requis pour la [!DNL Live Search].
 - Assurez-vous que le [tableau de bord de la recherche en direct](performance.md) affiche les données de vos environnements hors production.
-- [Vérifier la collecte des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/).
+- [Vérifier la collecte des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify).
 
 ## &#x200B;8. Personnalisation pour votre storefront {#customize}
 
@@ -425,7 +423,7 @@ Adobe recommande d’appeler directement les API SaaS, en particulier le point d
 - Amélioration des performances et réduction de la charge du processeur en contournant le processus Commerce database/Graphql.
 - Tirez parti de la fédération [!DNL Catalog Service] pour appeler [!DNL Live Search], [!DNL Catalog Service] et [!DNL Product Recommendations] à partir d’un seul point d’entrée.
 
-Pour certains cas d’utilisation, il peut être préférable d’appeler [!DNL Catalog Service] pour obtenir des détails sur le produit et des cas similaires. Voir [refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) pour plus d’informations.
+Pour certains cas d’utilisation, il peut être préférable d’appeler [!DNL Catalog Service] pour obtenir des détails sur le produit et des cas similaires. Voir [refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product) pour plus d’informations.
 
 Si vous disposez d’une implémentation découplée personnalisée, consultez les implémentations de référence [!DNL Live Search] :
 
@@ -498,7 +496,7 @@ Une fois [!DNL Live Search] activé, l’extension d’exportation de données s
 
 ### Inventory management
 
-[!DNL Live Search] prend en charge les fonctionnalités [Inventory management](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/introduction) dans Commerce (anciennement appelé Multi-Source Inventory, ou MSI). Pour activer la prise en charge complète, vous devez [mettre à jour](install.md#updating-live-search) le module de dépendance `commerce-data-export` à la version 102.2.0+.
+[!DNL Live Search] prend en charge les fonctionnalités [Inventory management](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/introduction) dans Commerce. Pour activer la prise en charge complète, vous devez [mettre à jour](install.md#updating-live-search) le module de dépendance `commerce-data-export` à la version 102.2.0+.
 
 [!DNL Live Search] renvoie une valeur de type boolean qui indique si un produit est disponible dans Inventory management, mais ne contient aucune information sur la source qui possède le stock.
 
@@ -521,7 +519,7 @@ Le format des prix prend en charge le paramètre de configuration des paramètre
 
 ### Prise en charge du storefront découplé
 
-Vous devrez peut-être installer le module `module-data-services-graphql` qui étend la couverture GraphQL existante de l’application pour inclure les champs requis pour la collecte de données comportementales en storefront.
+Vous pouvez éventuellement installer le module `module-data-services-graphql` qui étend la couverture GraphQL existante de l’application pour inclure les champs requis pour la collecte de données comportementales en storefront.
 
 ```bash
 composer require magento/module-data-services-graphql
@@ -539,7 +537,7 @@ Ce module ajoute des contextes supplémentaires aux requêtes GraphQL :
 
 ### Prise en charge de PWA
 
-[!DNL Live Search] fonctionne avec PWA Studio, mais les utilisateurs peuvent voir de légères différences par rapport aux autres implémentations de Commerce. Les fonctionnalités de base telles que la recherche et la page de liste de produits fonctionnent dans Venia, mais certaines permutations de Graphql peuvent ne pas fonctionner correctement. Il peut également y avoir des différences de performances.
+[!DNL Live Search] fonctionne avec PWA Studio, mais les développeurs storefront peuvent voir de légères différences par rapport à d’autres implémentations de Commerce, en particulier dans certains scénarios pilotés par GraphQL et dans les caractéristiques de réponse globale.
 
 - L’implémentation PWA actuelle de [!DNL Live Search] nécessite davantage de temps de traitement pour renvoyer les résultats de la recherche qu’une [!DNL Live Search] avec le storefront Commerce natif.
 - [!DNL Live Search] dans PWA ne prend pas en charge [la gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Par conséquent, les rapports de recherche et le marchandisage intelligent ne fonctionnent pas sur les vitrines PWA.
@@ -567,4 +565,4 @@ Pour utiliser [!DNL Live Search] avec PWA Studio, les intégrateurs doivent éga
 
 ### Cookies
 
-[!DNL Live Search] collecte les données d’interaction utilisateur pour améliorer les fonctionnalités de recherche et stocke ces informations dans des cookies de navigateur. Cette collecte de données nécessite le consentement de l’utilisateur lorsque les restrictions de cookie sont activées. [!DNL Live Search] et [!DNL Product Recommendations] partagent le même mécanisme de collecte de données et de gestion des cookies. Pour plus d’informations sur les restrictions relatives aux cookies et la conformité en matière de confidentialité, consultez [Gestion des restrictions sur les cookies](../product-recommendations/setting-cookie.md).
+Pour améliorer la fonctionnalité de recherche, [!DNL Live Search] collecte les données d’interaction utilisateur et stocke ces informations dans des cookies de navigateur. Cette collecte de données nécessite le consentement de l’utilisateur lorsque les restrictions de cookie sont activées. [!DNL Live Search] et [!DNL Product Recommendations] partagent le même mécanisme de collecte de données et de gestion des cookies. Pour plus d’informations sur les restrictions relatives aux cookies et la conformité en matière de confidentialité, consultez [Gestion des restrictions sur les cookies](../product-recommendations/setting-cookie.md).
