@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
 workflow-type: tm+mt
-source-wordcount: 454
+source-wordcount: 506
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Voir [Connect](connect.md) pour plus d’informations sur la configuration de vo
 
 ![check](assets/icon-check.png) Tarification standard
 
-![check](assets/icon-check.png) **Disponible dans XX pays**
+![check](assets/icon-check.png) **Disponible dans plus de 200 pays**
 
 [![&#x200B; en savoir plus &#x200B;](assets/learn-more-button.svg)](onboard.md)
 
@@ -99,7 +99,7 @@ Voir [Connect](connect.md) pour plus d’informations sur la configuration de vo
 
 ![check](assets/icon-check.png) (fonctionnalités de tarification L2/L3 - États-Unis uniquement)
 
-![check](assets/icon-check.png) **Disponible uniquement aux États-Unis (US), au Canada (CA), en Australie (AUS). France (FR), Royaume-Uni (UK)**
+![check](assets/icon-check.png) Disponible dans 37 pays. Allemagne, Australie, Autriche, Belgique, Bulgarie, Canada, Chine, Chypre, Danemark, Espagne, Estonie, États-Unis, Finlande, France, Grèce, Hong Kong, Hongrie, Irlande, Italie, Japon, Lettonie, Liechtenstein, Lituanie, Luxembourg, Malte, Mexique, Norvège, Pays-Bas, Pologne, Portugal, République tchèque, Roumanie, Royaume-Uni, Singapour, Slovaquie, Slovénie, Suède. **Tarifs négociés disponibles aux États-Unis (US), au Canada (CA), en Australie (AU), en France (FR), au Royaume-Uni (GB), en Italie (IT), aux Pays-Bas (NL), en Allemagne (DE)**
 
 [![&#x200B; en savoir plus &#x200B;](assets/learn-more-button.svg)](onboard.md)
 
