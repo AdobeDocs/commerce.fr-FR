@@ -6,16 +6,12 @@ seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: d1bf3879-3e86-4665-a55c-494963c87f90
 TQID: https://experienceleague.adobe.com/dfZjgp5wR6H4c7WkNNhjLYUgKNTPIqPWxKiShlTU1yA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+last-update: 2026-07-29
+source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
 workflow-type: tm+mt
 source-wordcount: 491
 ht-degree: 0%
@@ -26,11 +22,11 @@ ht-degree: 0%
 
 L&#39;indexation des prix SaaS optimise les performances du site en déchargeant les tâches gourmandes en ressources (comme l&#39;indexation et le calcul des prix) de l&#39;application Commerce vers l&#39;infrastructure cloud Adobe. Cette approche permet aux commerçants d&#39;adapter rapidement leurs ressources afin d&#39;accélérer les délais d&#39;indexation des prix et de fournir plus rapidement des mises à jour de prix au storefront et aux services Commerce connectés.
 
-Le diagramme suivant montre le flux de données d’indexation sur les services SaaS lorsque Commerce utilise le processus [indexation des prix](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers) inclus dans l’application Commerce :
+Le diagramme suivant montre le flux de données d’indexation sur les services SaaS lorsque Commerce utilise le processus [indexation des prix](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) inclus dans l’application Commerce :
 
-![&#x200B; Flux de données par défaut &#x200B;](assets/old_way.png)
+![ Flux de données par défaut ](assets/old_way.png)
 
-Lorsque l&#39;indexation des prix SaaS est activée, le flux de données change. L&#39;indexation des prix est effectuée à l&#39;aide de l&#39;exportation des données SaaS de [&#128279;](../data-export/sync-overview.md).
+Lorsque l&#39;indexation des prix SaaS est activée, le flux de données change. L&#39;indexation des prix est effectuée à l&#39;aide de l&#39;exportation des données SaaS de [](../data-export/sync-overview.md).
 
 ![Flux de données d&#39;indexation des prix SaaS](assets/new_way.png)
 
@@ -46,7 +42,7 @@ L&#39;indexation des prix SaaS est activée automatiquement lorsque vous install
 
 ### Conditions requises
 
-* [&#128279;](https://business.adobe.com/fr/products/magento/magento-commerce.html) 2.4.4+. Pour plus d’informations, voir [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
+* [](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Pour plus d’informations, voir [Configuration requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
 ### Conditions préalables
 
@@ -74,11 +70,11 @@ bin/magento saas:resync --feed=prices
 
 {{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-Utilisez l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md) pour resynchroniser manuellement les flux si nécessaire. Pour connaître les options de resynchronisation et les étapes de dépannage supplémentaires, consultez [Gérer la synchronisation](../data-export/data-sync-manage.md) dans le _Guide d’exportation des données SaaS_.
+Utilisez l’[interface de ligne de commande ](../data-export/data-export-cli-commands.md) pour resynchroniser manuellement les flux si nécessaire. Pour connaître les options de resynchronisation et les étapes de dépannage supplémentaires, consultez [Gérer la synchronisation](../data-export/data-sync-manage.md) dans le _Guide d’exportation des données SaaS_.
 
 >[!NOTE]
 >
->Pour activer la page Statut de la synchronisation des flux de données si elle n’est pas disponible dans Commerce Admin for Commerce on Cloud ou dans les déploiements sur site, suivez les instructions d’installation de l’extension [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
+>Pour activer la page Statut de la synchronisation des flux de données si elle n’est pas disponible dans Commerce Admin for Commerce on Cloud ou dans les déploiements sur site, suivez les instructions d’installation de l’extension [](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension).
 
 ## Prix des types de produits personnalisés
 
