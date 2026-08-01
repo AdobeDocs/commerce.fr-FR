@@ -133,7 +133,7 @@ Un nouvel événement `observer.reminder_matched_carts` est émis une fois que l
 
 ### Supprimer les e-mails transactionnels par zone ou modèle
 
-Une nouvelle configuration [Suppression des e-mails](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression) ([!UICONTROL **Magasins**] > [!UICONTROL **Configuration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **Suppression des e-mails**]) permet aux administrateurs d’arrêter de manière sélective [!DNL Commerce] d’envoyer des e-mails transactionnels. Vous pouvez supprimer des e-mails par domaine fonctionnel (par exemple, compte client, Order Management, retours, passage en caisse, marketing ou B2B) ou par une liste exacte d’identifiants de modèle.<!-- ACCS-1025 -->
+Une nouvelle configuration [Suppression des e-mails](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/services/email-suppression) ([!UICONTROL **Magasins**] > [!UICONTROL **Configuration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **Suppression des e-mails**]) permet aux administrateurs d’arrêter de manière sélective [!DNL Commerce] d’envoyer des e-mails transactionnels. Vous pouvez supprimer des e-mails par domaine fonctionnel (par exemple, compte client, Order Management, retours, passage en caisse, marketing ou B2B) ou par une liste exacte d’identifiants de modèle.<!-- ACCS-1025 -->
 
 ### Afficher l’historique des modifications de commande dans Admin
 
