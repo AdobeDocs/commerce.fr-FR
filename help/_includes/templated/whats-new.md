@@ -1,7 +1,7 @@
 ---
-source-git-commit: 64d5e1d1ee41241bce36faa31db7c436e018037c
+source-git-commit: 16a200892f2d116a38ebde370a79d333f65e4c8a
 workflow-type: tm+mt
-source-wordcount: '1665'
+source-wordcount: '1515'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 30 Juillet 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour du <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience">tableau de compatibilité des services de paiement pour les services standard</a> afin de refléter une disponibilité géographique plus large et d’étendre les détails des pays pris en charge pour l’offre avancée.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b667dfd60809e55bc82cecc8c4f7df60483eecba">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 29 Juillet 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> d’Adobe Commerce as a Cloud Service en production.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1f91b5535d30ac894531508278b19d961f5a9d2c">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 28 juillet 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour de la documentation <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool">Outil de migration de données en bloc</a> avec plus d’informations sur le processus de migration.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c8cab2404d47a6cb4a0418a59b533bf11e082b0b">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 23 juillet 2026
 
@@ -323,104 +389,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Mise à jour majeure, nouvelle rubrique
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/475c99e18380c961e400a75de1c06cd8cdb929d1">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 3 Juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la production <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Ajout du <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/data-synchronization/feed-lock-mechanism">mécanisme de verrouillage de flux pour l’exportation de données SaaS</a> afin d’expliquer comment les verrous de flux empêchent les conflits de synchronisation simultanés et comment interpréter les messages à ignorer normaux inclus dans le journal d’exportation de données Commerce (<code>commerce-data-export.log</code>).</p>
-</td>
-      <td>
-        Nouvelle rubrique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/cb045b490482649a65bac9d763062700a90e9ecd">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2 Juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>L’administrateur Commerce ajoute une liste <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/sync-status">État de synchronisation</a> centrée sur les ressources pour rechercher, filtrer et résoudre les problèmes liés à AEM Assets synchronisé par attributs de ressource.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1cb3a063d9c4595220ca431356d34e6cbe8ea33">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 1er juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/3e5f1a5366cb57cbdd1ed3f5721a82cd0c5c5271">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 28 Mai 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><ul>
-  <li>Amélioration <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/configure-aco">Configuration d’AEM Assets pour Commerce Optimizer</a> intégration afin que la configuration d’AEM Assets précède l’enregistrement du client, avec des conseils plus clairs sur les couches de catalogue dédiées et les limitations liées aux couches.<br />- Mise à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/configure-aem">Configuration du projet AEM Assets</a> avec des étapes d’installation réorganisées et des captures d’écran de Cloud Manager pour l’accès au référentiel et le déploiement du pipeline.<br />- Clarification de la sélection de l’ID de programme et d’environnement basé sur IMS dans <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/setup-synchronization">Configuration de l’intégration</a>.</li>
-</ul>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">validation</a></td>
     </tr>
   </tbody>
 </table>

@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 55eeb27812ce67a1b26705864ec969b826580452
+source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
 workflow-type: tm+mt
-source-wordcount: 1444
+source-wordcount: 1461
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Ce diagramme illustre le flux de données entre [!DNL Adobe Commerce as a Cloud 
 
 ## Commerce Storefront
 
-Utilisez les [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=fr) d’Adobe optimisés par [!DNL Edge Delivery Services] pour créer des expériences riches en quelques minutes avec une création simple basée sur des documents ou une modification visuelle avec [!DNL Storefront Builder].
+Pour créer des expériences riches en quelques minutes avec une création simple basée sur des documents ou une modification visuelle avec [!DNL Storefront Builder], utilisez les [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr) d’Adobe optimisées par [!DNL Edge Delivery Services].
 
 [!DNL Commerce Storefront] est entièrement découplé avec une architecture découplée qui fournit tous les services et données de marchandisage par le biais d’une couche d’API GraphQL. Cette architecture permet aux équipes de développer leurs interfaces indépendamment de Commerce Foundation, offrant ainsi l’agilité nécessaire pour créer et tester de nouveaux points de contact avec les technologies émergentes.
 
@@ -108,10 +108,15 @@ Utilisez les [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/dev
 
 Adobe fournit un ensemble riche de services de marchandisage intelligents et composables pour vous aider à atteindre vos principaux objectifs commerciaux. Ces services fournissent également des API qui sont essentielles pour optimiser les performances à grande échelle.
 
-- [Recherche en direct](../live-search/overview.md) : obtenez des résultats plus intelligents, plus rapides et pertinents pour les acheteurs grâce à cet outil de recherche optimisé par l’IA.
-- [Recommandations de produits](../optimizer/merchandising/recommendations/overview.md) : ajoutez des recommandations optimisées par l’IA en fonction du comportement des acheteurs, des tendances populaires, de la similarité des produits, etc.
+- [[!DNL Live Search]](../live-search/overview.md) : obtenez des résultats plus intelligents, plus rapides et pertinents pour les acheteurs grâce à cet outil de recherche optimisé par l&#39;IA. Pour obtenir des instructions de configuration, voir [&#x200B; Configuration  [!DNL Live Search]](../live-search/workspace.md).
+- [[!DNL Product Recommendations]](../product-recommendations/overview.md) : ajoutez des recommandations optimisées par l’IA en fonction du comportement des acheteurs, des tendances populaires, de la similarité des produits, etc. Pour obtenir des instructions de configuration, voir [[!DNL Product Recommendations] &#x200B;](../product-recommendations/workspace.md).
 - [Service de catalogue](../catalog-service/guide-overview.md) : offrez à vos clients une expérience de produit optimisée tout en améliorant les performances, l’évolutivité et les conversions.
-- [Services de paiement](../payment-services/guide-overview.md)—Augmentez la satisfaction des clients en offrant diverses méthodes de paiement, y compris des acomptes provisionnels sans intérêt, et une vue unique du traitement des paiements, des commandes et des factures.
+
+  >[!NOTE]
+  >
+  >Le service de catalogue est automatiquement inclus avec [!DNL Live Search] et [!DNL Product Recommendations].
+
+- [Services de paiement](../payment-services/guide-overview.md)—Augmentez la satisfaction des clients en offrant diverses méthodes de paiement, y compris des acomptes provisionnels sans intérêt, et une vue unique du traitement des paiements, des commandes et des factures. Pour obtenir des instructions de configuration, voir [Page de départ Services de paiement](../payment-services/payments-home.md).
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -119,7 +124,7 @@ Les visuels de produit permettent de simplifier la gestion des ressources à l�
 
 L’intégration garantit que les ressources numériques, telles que les images de produit ou le contenu marketing, sont liées dynamiquement aux entités de marchandisage appropriées, y compris les produits et les catégories dans Adobe Commerce, en fonction du SKU ou d’autres attributs clés.
 
-[!DNL Product Visuals] est disponible et prêt à l’emploi avec [!DNL Adobe Commerce as a Cloud Service], offrant certaines des fonctionnalités de [!DNL AEM Assets].
+[!DNL Product Visuals] est disponible en mode natif avec [!DNL Adobe Commerce as a Cloud Service], offrant ainsi certaines des fonctionnalités de [!DNL AEM Assets].
 
 Les fonctionnalités natives d’[!DNL Adobe Commerce as a Cloud Service] offrent également des outils de gestion des ressources de base pour le stockage et la gestion des ressources numériques.
 
@@ -189,7 +194,7 @@ Adobe fournit aux développeurs des points d’extension et des outils complets 
 Adobe fournit les outils de développement suivants pour créer des intégrations et des personnalisations :
 
 - [**Maillage API pour Adobe Developer App Builder**](https://developer.adobe.com/graphql-mesh-gateway/) : coordonnez et combinez plusieurs API, GraphQL, REST et d’autres sources en un seul point d’entrée GraphQL interrogeable.
-- [**&#128279;**](https://developer.adobe.com/app-builder/docs/overview/) : créez et déployez des applications web sécurisées et évolutives qui étendent les fonctionnalités de Commerce et s’intègrent à des solutions tierces.
+- [**&#128279;**](https://developer.adobe.com/app-builder/docs/intro_and_overview/) : créez et déployez des applications web sécurisées et évolutives qui étendent les fonctionnalités de Commerce et s’intègrent à des solutions tierces.
 - [**Événements**](https://developer.adobe.com/commerce/extensibility/events/) : utilisez des déclencheurs d&#39;événement personnalisés pour interagir avec d&#39;autres outils de développement extensibles.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) : utilisez les webhooks pour déclencher automatiquement les interactions entre Commerce et les systèmes tiers.
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) : personnalisez et améliorez l’administration Commerce avec de nouvelles pages et fonctionnalités pour vos commerçants.
