@@ -1,20 +1,15 @@
 ---
 title: Filtres de recommandation
 description: Découvrez comment utiliser des filtres pour contrôler quels produits apparaissent dans les recommandations  [!DNL Adobe Commerce Optimizer] .
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 116d8bd804df364ddc9cb1175525f08fd32c01bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
 workflow-type: tm+mt
-source-wordcount: 1919
+source-wordcount: 1932
 ht-degree: 0%
 
 ---
@@ -73,7 +68,7 @@ Configurez la façon dont les livres de prix sont associés à un storefront dan
 
 Les règles de prix **filtrer** le candidat de recommandation défini ; elles ne **pas** reclassent les produits. Le moteur génère une liste avec classement, les règles d’inclusion et d’exclusion de prix suppriment les produits de cette liste et l’ordre relatif des produits restants reste le même. Si le nombre de produits admissibles est inférieur au nombre de demandes d&#39;unité, seuls les articles valides sont affichés. Si aucun n’est qualifié, l’unité n’est pas rendue (aucun espace réservé vide).
 
-Le prix affiché sur les produits à l’intérieur de l’unité de recommandation est le même **prix final** du catalogue des prix de ce magasin, de sorte que ce que les acheteurs voient correspond à la valeur utilisée pour le filtrage. Dans la prévisualisation Admin, les produits configurables peuvent afficher une plage de prix lorsque les prix des variantes diffèrent ; voir [&#x200B; Produits configurables dans la prévisualisation &#x200B;](#configurable-products-in-preview).
+Le prix affiché sur les produits à l’intérieur de l’unité de recommandation est le même **prix final** du catalogue des prix de ce magasin, de sorte que ce que les acheteurs voient correspond à la valeur utilisée pour le filtrage. Dans la prévisualisation Admin, les produits configurables peuvent afficher une plage de prix lorsque les prix des variantes diffèrent ; voir [ Produits configurables dans la prévisualisation ](#configurable-products-in-preview).
 
 #### Gamme de prix statique
 
@@ -98,7 +93,7 @@ Utilisez un filtre de prix **statique** lorsque vous souhaitez un minimum ou un 
 
 Utilisez un filtre de prix **dynamique** lorsque les recommandations doivent être limitées par rapport au **produit actuellement consulté** sur une page de détails du produit (PDP). Le filtre utilise le prix final de ce produit comme **ancre** et compare les produits recommandés aux limites que vous définissez.
 
-Les opérateurs dynamiques sont disponibles uniquement pour les types de recommandation [liés au SKU](types.md) qui s’exécutent dans un contexte de produit, par exemple :
+Les opérateurs dynamiques sont disponibles uniquement pour les [types de recommandation liés aux SKU](types.md) qui s’exécutent dans un contexte de produit :
 
 - A consulté ceci, a consulté cela
 - A vu ceci, a acheté cela
@@ -106,7 +101,16 @@ Les opérateurs dynamiques sont disponibles uniquement pour les types de recomma
 - Plus comme ceci
 - Similarité visuelle
 
-Ils ne sont **pas** disponibles pour les types basés sur la popularité (par exemple, **Les plus consultés** ou **Les plus achetés**), car ces unités n’ont pas un seul produit actuel pour ancrer le filtre.
+Elles ne sont **pas** disponibles pour les types basés sur la popularité, car ces unités ne disposent pas d’un seul produit actif pour ancrer le filtre :
+
+- Les plus consultés
+- Les plus achetés
+- Les plus ajoutés au panier
+- En Tendance
+- Recommandé pour vous
+- Récemment consultés
+- Conversion de l’affichage au panier
+- Conversion de la vue à l’achat
 
 Sur le storefront, la liste déroulante de recommandation lit le prix du produit actuel à partir du contexte PDP et l’envoie avec la demande de recommandation. [!DNL Adobe Commerce Optimizer] utilise cette valeur comme point d’ancrage lors de l’évaluation des règles de prix dynamiques. Pour les produits configurables, l’ancre est le **variante la plus basse** prix final (`priceRange.minimum`).
 
