@@ -12,9 +12,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 116d8bd804df364ddc9cb1175525f08fd32c01bf
+source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
 workflow-type: tm+mt
-source-wordcount: 1919
+source-wordcount: 1932
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Utilisez un filtre de prix **statique** lorsque vous souhaitez un minimum ou un 
 
 Utilisez un filtre de prix **dynamique** lorsque les recommandations doivent être limitées par rapport au **produit actuellement consulté** sur une page de détails du produit (PDP). Le filtre utilise le prix final de ce produit comme **ancre** et compare les produits recommandés aux limites que vous définissez.
 
-Les opérateurs dynamiques sont disponibles uniquement pour les types de recommandation [liés au SKU](types.md) qui s’exécutent dans un contexte de produit, par exemple :
+Les opérateurs dynamiques sont disponibles uniquement pour les [types de recommandation liés aux SKU](types.md) qui s’exécutent dans un contexte de produit :
 
 - A consulté ceci, a consulté cela
 - A vu ceci, a acheté cela
@@ -106,7 +106,16 @@ Les opérateurs dynamiques sont disponibles uniquement pour les types de recomma
 - Plus comme ceci
 - Similarité visuelle
 
-Ils ne sont **pas** disponibles pour les types basés sur la popularité (par exemple, **Les plus consultés** ou **Les plus achetés**), car ces unités n’ont pas un seul produit actuel pour ancrer le filtre.
+Elles ne sont **pas** disponibles pour les types basés sur la popularité, car ces unités ne disposent pas d’un seul produit actif pour ancrer le filtre :
+
+- Les plus consultés
+- Les plus achetés
+- Les plus ajoutés au panier
+- En Tendance
+- Recommandé pour vous
+- Récemment consultés
+- Conversion de l’affichage au panier
+- Conversion de la vue à l’achat
 
 Sur le storefront, la liste déroulante de recommandation lit le prix du produit actuel à partir du contexte PDP et l’envoie avec la demande de recommandation. [!DNL Adobe Commerce Optimizer] utilise cette valeur comme point d’ancrage lors de l’évaluation des règles de prix dynamiques. Pour les produits configurables, l’ancre est le **variante la plus basse** prix final (`priceRange.minimum`).
 
