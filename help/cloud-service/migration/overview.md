@@ -35,266 +35,284 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2e43a6abbca117cef5dc559a9f6881980d2d934c
+source-git-commit: e03840ea9e0e43a005f385914e8599804383e79d
 workflow-type: tm+mt
-source-wordcount: 3153
+source-wordcount: 3305
 ht-degree: 0%
 
 ---
 
 # Migrer vers [!DNL Adobe Commerce as a Cloud Service]
 
-[!DNL Adobe Commerce as a Cloud Service] fournit un guide complet pour les développeurs et développeuses qui passent d’une implémentation Adobe Commerce PaaS existante à la nouvelle offre Adobe Commerce as a Cloud Service (SaaS). Adobe Commerce as a Cloud Service représente une transition importante vers un modèle SaaS entièrement géré et sans version, offrant des performances améliorées, une évolutivité, des opérations simplifiées et une intégration plus étroite avec le [!DNL Adobe Experience Cloud] au sens large.
+Ce guide aide les développeurs à passer de la [!DNL Adobe Commerce on Cloud] ou sur site à la [!DNL Adobe Commerce as a Cloud Service] (SaaS). Ce modèle SaaS offre des performances, une évolutivité et une intégration améliorées au [!DNL Adobe Experience Cloud].
 
 >[!NOTE]
 >
 >Pour plus d’informations sur les outils de migration, consultez la section [outil de migration de données en bloc](./bulk-data/migration-tool.md).
 
-## Comprendre le changement - comparer PaaS et SaaS
+## Vue d’ensemble
+
+La migration d’un magasin de [!DNL Adobe Commerce] établi vers [!DNL Adobe Commerce as a Cloud Service] va au-delà du déplacement des données. Une véritable migration couvre les domaines suivants :
+
+- Application : personnalisations et extensions conçues pour des installations [!DNL Adobe Commerce on Cloud] ou sur site.
+- Données - catalogues, commandes, clients et configuration
+- Storefront
+- Intégrations avec des systèmes externes
+
+[!DNL Adobe Commerce as a Cloud Service] est une plateforme SaaS sans version, ce qui signifie qu&#39;aucune de ces zones ne peut être migrée sans les adapter. Les personnalisations sont modernisées dans les applications [!DNL App Builder], les vitrines sont reconstruites sur Edge Delivery Services (EDS), les données sont migrées dans le nouveau client [!DNL Adobe Commerce as a Cloud Service] et les intégrations sont rétablies à l’aide de modèles SaaS.
+
+Au lieu de considérer la migration comme un projet monolithique unique, Adobe fournit un workflow de migration intégré construit autour de [trois outils de migration](#migration-tools-workflow).
+
+Ce workflow partagé consolide la découverte, aligne les équipes d’ingénierie et de diffusion et fournit un plan de migration cohérent.
+
+![diagramme de flux de migration](../assets/migration-flow.png)
+
+### Comparaison entre PaaS et SaaS
+
+[!DNL Adobe Commerce on Cloud] ou sur site (PaaS) et [!DNL Adobe Commerce as a Cloud Service] (SaaS) diffèrent dans la façon dont ils sont gérés et dont les commerçants interagissent avec la plateforme.
 
 **Principales différences**
 
-* [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} **PaaS (actuel)** : le commerçant gère le code de l’application, les mises à niveau, les correctifs et la configuration de l’infrastructure dans l’environnement hébergé d’Adobe. [&#x200B; Modèle de responsabilité partagée &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/shared-responsibility) pour les services (MySQL, Elasticsearch et autres).
-* [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} **SaaS (nouveau - [!DNL Adobe Commerce as a Cloud Service])** : Adobe gère entièrement l’application principale, l’infrastructure et les mises à jour. Les commerçants se concentrent sur la personnalisation via des points d’extensibilité (API, App Builder, SDK d’interface utilisateur). Le code de l’application principale est verrouillé.
+- [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
+- **[!DNL Adobe Commerce on Cloud Infrastructure]** : le commerçant gère le code de l’application, les mises à niveau, les correctifs et la configuration de l’infrastructure.
+- **[!DNL Adobe Commerce]sur site** : le commerçant gère le code de l’application, les mises à niveau, les correctifs et la configuration de l’infrastructure dans l’environnement hébergé d’Adobe.
+
+  >[!NOTE]
+  >
+  >[&#x200B; Modèle de responsabilité partagée &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/shared-responsibility) pour les services (MySQL, Elasticsearch et autres).
+
+- [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} **SaaS (nouveau - [!DNL Adobe Commerce as a Cloud Service])** : Adobe gère entièrement l’application principale, l’infrastructure et les mises à jour. Les commerçants se concentrent sur la personnalisation via des points d’extensibilité (API, App Builder, SDK d’interface utilisateur). Le code de l’application principale est verrouillé.
 
 **Implications architecturales**
 
-* **Plateforme sans version** : les mises à jour continues n’impliquent plus de mises à niveau de versions majeures pour le cœur de l’application.
-* **Microservices et API-first** : confiance accrue dans les API pour l’extensibilité et l’intégration.
-* **Headless par défaut (facultatif)** : Prise en charge renforcée des storefronts découplés (par exemple, le storefront Commerce optimisé par Edge Delivery Services).
-* **&#x200B;**&#x200B;: impact sur les performances front-end et le déploiement.
+- **Plateforme sans version** : les mises à jour continues n’impliquent plus de mises à niveau de versions majeures pour le cœur de l’application.
+- **Microservices et API-first** : confiance accrue dans les API pour l’extensibilité et l’intégration.
+- **Headless par défaut (facultatif)** : Prise en charge renforcée des storefronts découplés (par exemple, le storefront Commerce optimisé par Edge Delivery Services).
+- **&#x200B;**&#x200B;: impact sur les performances front-end et le déploiement.
 
 **Nouveaux outils et concepts**
 
-* [Maillage &#x200B;](https://developer.adobe.com/app-builder/) et [API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
-* [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
-* Approvisionnement en libre-service avec [Commerce Cloud Manager](../getting-started.md#create-an-instance)
+- [Maillage &#x200B;](https://developer.adobe.com/app-builder/) et [API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)
+- [Commerce Optimizer](../../optimizer/overview.md)
+- [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
+- Approvisionnement en libre-service avec [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
-## Chemins de migration
+### Le parcours de migration
 
-[!DNL Adobe Commerce as a Cloud Service] prend en charge plusieurs chemins de migration, selon votre chronologie, votre storefront et vos personnalisations.
+La migration se déroule en plusieurs phases :
 
-Au lieu d’une migration complète, [!DNL Adobe Commerce as a Cloud Service] prend en charge une migration par phases, à l’aide de Commerce Optimizer ou d’une approche incrémentielle.
+- **Évaluer** - Analysez l’implémentation existante et tenez compte des points suivants : personnalisations d’inventaire, intégrations, caractéristiques du storefront et structures de données. Après analyse, créez une feuille de route avec des recommandations de migration, un score de complexité et des estimations d’effort.
+- **Moderniser l’application et migrer les données** - Recréez les personnalisations sous forme d’applications [!DNL App Builder] lors de la migration des données d’entreprise dans [!DNL Adobe Commerce as a Cloud Service].
+- **Moderniser le storefront** - Reconstruisez le storefront sur Edge Delivery Services (EDS) pour Commerce.
+- **Découper et utiliser** - Basculer le trafic vers les [!DNL Adobe Commerce as a Cloud Service], mettre hors service les systèmes existants et passer en fonctionnement continu.
 
-* **Migration incrémentielle** : cette approche implique la migration de vos données, de vos personnalisations et de vos intégrations par étapes. Cette approche est idéale pour les grands commerçants avec de nombreuses personnalisations qui souhaitent effectuer une transition progressive de leurs personnalisations et données complexes vers [!DNL Adobe Commerce as a Cloud Service] à leur propre rythme.
+La migration est généralement itérative, et non linéaire. Les entreprises peuvent évaluer plusieurs environnements, valider des recommandations, se moderniser de manière incrémentielle et affiner les plans d’implémentation avant le basculement final en production.
 
-![migration incrémentielle](../assets/incremental.png){width="600" zoomable="yes"}
+### Workflow des outils de migration
 
-* **Commerce Optimizer**—Cette approche vous permet de migrer de manière itérative, en utilisant Commerce Optimizer comme phase de transition pour déplacer des personnalisations et des données complexes vers [!DNL Adobe Commerce as a Cloud Service] à votre propre rythme. Commerce Optimizer permet d’accéder aux services de marchandisage optimisés par les vues et politiques de catalogue, au storefront Commerce optimisé par Edge Delivery et à [!DNL Product Visuals powered by AEM Assets].
+Chacun des workflows suivants possède son propre outil. Utilisez-les ensemble pour terminer votre migration, l’évaluation de migration servant de plan directeur commun tout au long de la migration.
 
-![&#x200B; migration itérative &#x200B;](../assets/optimizer.png){width="600" zoomable="yes"}
+| Workflow | Outil | Description |
+| --- | --- | --- |
+| [Évaluation](#migration-assessment-tool) | **Outil d’évaluation de la migration** | Évaluation basée sur l’IA de la mise en œuvre existante qui répertorie les modules personnalisés, les extensions tierces, les intégrations, les observations de storefront, le schéma de base de données, les tables personnalisées, les recommandations de migration, la notation de la complexité et les estimations d’effort de modernisation. |
+| [Modernisation des applications et du storefront](#code-and-storefront-migration-commerce-developer-mcp) | **MCP du développeur de** | Modernisation de l’application Commerce assistée par l’IA, accélération de la migration des personnalisations vers [!DNL App Builder], prise en charge de la transformation du storefront vers Edge Delivery Services (EDS) et guidage des développeurs à travers un parcours de modernisation de l’application plus large avec une mise en œuvre examinée et validée par les équipes d’ingénieurs. |
+| [Migration des données](#data-migration-commerce-data-migration-service) | **Service De Migration Des Données** | Extraction, chargement et vérification de l’intégrité des données de catalogue, de client et de commande dans [!DNL Adobe Commerce as a Cloud Service]. |
 
-* **Migration complète** : cette approche implique la migration de toutes les données, personnalisations et intégrations en une seule fois. Cette approche est idéale pour les petits commerçants ayant peu de personnalisations et qui souhaitent passer rapidement au [!DNL Adobe Commerce as a Cloud Service].
+Ces pistes ne sont pas autonomes. Les utiliser ensemble dans le bon ordre réduit la reprise.
 
-Le tableau suivant présente un aperçu du processus de migration pour différents storefronts et configurations :
+- **Exécuter d’abord l’évaluation** - L’exécution d’abord identifie les personnalisations non prises en charge, estime l’effort de migration, expose les considérations relatives à la migration des données et met en évidence les dépendances d’intégration avant le début de la mise en œuvre. L’évaluation devient le plan directeur de la migration utilisé par les workflows de modernisation de l’application et de migration des données.
+- **Modernisation de l’application** - Le MCP du développeur de Commerce utilise l’évaluation de la migration pour déterminer les personnalisations à moderniser et la manière de procéder. Ensuite, le MCP génère les applications [!DNL App Builder] et les composants storefront correspondants.
+- **Migration des données** - Le questionnaire de définition de la migration des données capture la portée, les volumes et les tables personnalisées qui ont été affichées par l’évaluation.
+- **Données personnalisées et tierces** - Les données contenues dans les tables personnalisées par des extensions tierces sont identifiées lors de l’évaluation. Cependant, elles ne sont pas gérées par le processus de migration standard des données, qui requiert une personnalisation [!DNL App Builder].
 
-|                    | STOREFRONT LUMA | PWA Storefront | Commerce Storefront optimisé par Edge Delivery | Découplé |
-|--------------------|----------------------------------------|----------------------------------------|------------------------------------------------------|----------------------------------------|
-| Migration des données | Obligatoire | Obligatoire | Obligatoire | Obligatoire |
-| Storefront | Migration vers Commerce Storefront optimisé par Edge Delivery | Migrer vers le storefront Commerce optimisé par Edge Delivery ou maintenir | Pas d&#39;impact | Pas d&#39;impact |
-| Maillage API | Créer un nouveau maillage | Créer un nouveau maillage ou reconfigurer un maillage existant | Créer un nouveau maillage ou reconfigurer un maillage existant | Créer un nouveau maillage ou reconfigurer un maillage existant |
-| Intégrations | Utilisation du kit de démarrage de l’intégration | Utilisation du kit de démarrage de l’intégration | Utilisation du kit de démarrage de l’intégration | Utilisation du kit de démarrage de l’intégration |
-| Personnalisations | Déplacer vers App Builder et le maillage API | Déplacer vers App Builder et le maillage API | Déplacer vers App Builder et le maillage API | Déplacer vers App Builder et le maillage API |
-| Gestion d’Assets | Migration requise en cas d’utilisation d’OOTB | Migration requise en cas d’utilisation d’OOTB | Migration requise en cas d’utilisation d’OOTB | Migration requise en cas d’utilisation d’OOTB |
-| Extensions | Migrer vers App Builder | Migrer vers App Builder | Migrer vers App Builder | Migrer vers App Builder |
+La modernisation du storefront n&#39;est pas seulement une migration de l&#39;interface utilisateur. Outre la migration des fonctionnalités d’entreprise, vous devez tenir compte de l’architecture de l’expérience, de la modernisation des composants réutilisables, de l’optimisation des performances et de l’adoption des modèles Edge Delivery Services.
 
-Comme l’indique le tableau, les mesures d’atténuation pour chaque migration seront les suivantes :
+Les intégrations sont évaluées dans le cadre de l’évaluation de la migration, mais leur mise en œuvre varie en fonction du scénario. Les intégrations peuvent utiliser les API [!DNL App Builder], [!DNL API Mesh], Adobe I/O Events et [!DNL Adobe Commerce as a Cloud Service].
 
-* **Migration des données** : à l’aide de l’[outil de migration](./bulk-data/migration-tool.md) fourni pour migrer les données de votre instance existante vers [!DNL Adobe Commerce as a Cloud Service].
-* **Storefront** : les storefronts Commerce existants optimisés par Edge Delivery et les storefronts découplés ne nécessitent pas d’atténuation, mais les storefronts Luma nécessitent une migration vers le storefront Commerce optimisé par Edge Delivery. Les storefronts PWA Studio peuvent être migrés vers les storefronts Commerce optimisés par Edge Delivery ou maintenus dans leur état actuel. Adobe fournira des accélérateurs pour faciliter la migration des storefront.
-* **[Maillage API](https://developer.adobe.com/graphql-mesh-gateway)** : créez un nouveau maillage ou modifiez le maillage existant. Adobe fournira des maillages préconfigurés pour faciliter ce processus.
-* **Intégrations** : toutes les intégrations doivent utiliser le [kit de démarrage de l’intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) ou l’API [[!DNL Adobe Commerce as a Cloud Service] REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
-* **Personnalisations** : toutes les personnalisations doivent être déplacées vers App Builder et le maillage API.
-* **Gestion Assets**—La gestion de toutes les ressources nécessite une migration. Si vous utilisez déjà [!DNL AEM Assets], il n’est pas nécessaire d’effectuer une migration.
-* **Extensions** : toutes les extensions en cours de traitement doivent être recréées en tant qu’extensions hors processus. D’ici la fin de l’année 2025, Adobe donnera accès à nos extensions les plus populaires afin de réduire les temps de création.
+Ces outils de migration continuent à se développer et à gérer un workflow de migration unifié centré sur l’évaluation de la migration.
 
-## Phases de migration
+### Étapes suivantes
 
-Les phases suivantes décrivent les étapes et considérations nécessaires pour migrer vers [!DNL Adobe Commerce as a Cloud Service].
+Lorsque vous êtes prêt à migrer, commencez par créer une évaluation. L’évaluation de la migration établit le plan que le reste de la migration suit.
 
-### Évaluation et planification préalables à la migration
+L’outil d’évaluation de la migration et le MCP du développeur de Commerce utilisent l’IA pour vous aider à découvrir, planifier et mettre en œuvre. Comme pour tout workflow d’ingénierie, les recommandations et mises en œuvre générées par l’IA doivent être soigneusement examinées et validées par votre équipe dans le cadre des processus standard d’architecture, de test et d’assurance qualité.
 
-Cette phase est essentielle pour minimiser les risques, établir un chemin de migration clair et identifier les problèmes avant qu’ils ne se produisent.
+## Outil d’évaluation de la migration
 
-**Découverte et audit de l’environnement actuel**
+Avant de commencer le développement ou la migration, vous devez tenir compte de la taille de la migration et déterminer les éléments qui nécessitent un développement. Un magasin de [!DNL Adobe Commerce] [!DNL Adobe Commerce on Cloud] sur site ou sur site comporte probablement des modules personnalisés, des intégrations, des personnalisations de storefront et des structures de données, qui peuvent ne pas être évidentes tant que quelqu’un n’a pas analysé la mise en œuvre. L’outil d’évaluation de la migration analyse automatiquement votre base de code pour identifier ces éléments à développer.
 
-**Analyse Codebase :**
+### Aperçu de l’évaluation
 
-* Identifiez tous les modules, thèmes et remplacements personnalisés.
-* Analysez les modifications du code principal et déterminez celles qui nécessiteront une refactorisation dans le cadre de la migration.
-* Évaluez les extensions tierces et déterminez leur compatibilité avec [!DNL Adobe Commerce as a Cloud Service]. Existe-t-il des alternatives compatibles avec SaaS ou devez-vous créer des intégrations d’API personnalisées ou des applications App Builder ?
-* Identifiez tout code ou toute fonctionnalité obsolète qui ne sera pas migré.
+L’outil d’évaluation de la migration effectue une évaluation IA de la mise en œuvre existante et produit une évaluation structurée de la modernisation ainsi qu’une feuille de route de migration [!DNL Adobe Commerce as a Cloud Service]. Il offre également une vue d’ensemble complète de la migration en évaluant les personnalisations des applications, les intégrations, les structures de données, les caractéristiques du storefront et d’autres détails d’implémentation qui influencent la modernisation. Il transforme la découverte en un processus rapide et répétable qui vous permet d’évaluer l’effort, le risque et le séquencement avant de prendre des engagements.
 
-**Audit des données :**
+L&#39;évaluation produite par l&#39;outil d&#39;évaluation de la migration n&#39;est pas seulement un rapport. L’évaluation devient un artefact de migration partagé qui informe la planification, la mise en œuvre et la validation tout au long du cycle de vie de la migration. Dans la première phase du parcours de migration, ses résultats couvrent à la fois les efforts de modernisation des applications et de migration des données qui s’ensuivent.
 
-* Évaluez la taille et la complexité de votre base de données.
-* Identifiez les données ou les tables inutilisées pour le nettoyage.
-* Passez en revue les processus d’import/export de données existants.
+Pour plus d’informations sur les éléments inclus dans un rapport d’évaluation de la migration et sur la manière de l’utiliser, consultez la section [&#x200B; Évaluation de la migration &#x200B;](./assessment.md).
 
-**Révision des intégrations :**
+### Étapes d’évaluation
 
-* Répertoriez tous les systèmes externes intégrés à Adobe Commerce (ERP, CRM, PIM, passerelles de paiement, fournisseurs d’expédition, OMS et tous les autres systèmes).
-* Évaluez les méthodes d’intégration (API, scripts personnalisés et autres méthodes).
-* Évaluez la compatibilité avec l’approche API-first de [!DNL Adobe Commerce as a Cloud Service] et App Builder.
+Une évaluation s’exécute par rapport à la mise en œuvre existante et procède à une série d’étapes automatisées :
 
-**Références de performances :**
+- **Inventaire** : répertorie l’implémentation. Inclut : modules personnalisés, dépendances du compositeur, extensions tierces, configuration, composants storefront (le cas échéant), fichiers, points d’extensibilité, événements, modules externes, API, tâches cron, files d’attente, schéma de base de données et tables de base de données personnalisées.
+- **Analyser** — Effectue une analyse statique pour identifier les personnalisations du magasin, les différences par rapport à une installation [!DNL Adobe Commerce] standard et la manière dont ces personnalisations interagissent dans l&#39;application.
+- **Classifier** — Utilise l’IA pour interpréter chaque personnalisation, résumer l’action de la personnalisation, regrouper les fonctionnalités associées, identifier les modèles d’implémentation et fournir des recommandations de migration contextuelles.
+- **Mapper et recommander** — Mappe chaque fonctionnalité à son équivalent [!DNL Adobe Commerce as a Cloud Service], y compris : les fonctionnalités par défaut, les applications [!DNL App Builder] ou les services Adobe. L’évaluation recommande ensuite un chemin de modernisation et évalue la complexité, les dépendances et les efforts de mise en œuvre.
+- **Rapport** — Produit une feuille de route exportable pour la planification de l&#39;exécution de la migration, qui vous permet de communiquer les risques aux parties prenantes. Il identifie également les priorités, les dépendances, la dette technique et les risques de mise en œuvre.
 
-* Documentez les scores Lighthouse actuels, les temps de chargement des pages et les indicateurs clés de performance (KPI), qui fournissent une base de référence pour mesurer les améliorations post-migration.
+### Valeur d’évaluation
 
-**Révision de la configuration de sécurité :**
+La valeur d’une évaluation est le degré de confiance que vous pouvez avoir avant de vous engager dans des détails de développement. Au lieu d’estimer une migration avec des pratiques de définition de la portée régulières, l’évaluation fournit une compréhension de la mise en œuvre fondée sur des données probantes. Cela inclut les personnalisations qui sont simples à migrer, qui nécessitent une reconception et qui peuvent être supprimées complètement. Les évaluations font régulièrement apparaître les fonctionnalités obsolètes ou inutilisées, ce qui vous permet de réduire la dette technique.
 
-* Évaluez les règles WAF personnalisées, les places sur la liste autorisée IP et toute autre configuration de sécurité.
+Chaque recommandation comprend des preuves à l’appui ainsi que des citations renvoyant à l’implémentation sous-jacente, ce qui permet aux architectes et aux ingénieurs de valider pendant la planification. Comme chaque évaluation suit la même méthodologie, vous pouvez comparer plusieurs besoins de développement à l’aide d’un framework de notation et de planification cohérent.
 
-**Définir la portée et la stratégie de migration :**
+L&#39;évaluation n&#39;est pas seulement un point de départ. L’outil de migration en aval utilise les résultats de l’évaluation pour accélérer la mise en œuvre et maintenir la cohérence avec le plan de migration approuvé. L’analyse de personnalisation devient le plan directeur de la modernisation de l’application, tandis que l’évaluation des données répertorie l’effort de migration des données en analysant la taille de la base de données, l’inventaire des entités et les tables personnalisées.
 
-* **Migration par phases ou migration tout-en-un :** évaluez les avantages et les inconvénients de chaque approche.
-* **Identifier les processus métier principaux :** les fonctionnalités qui doivent être migrées en premier, telles que :
-  * Règles de tarification complexes
-  * Règles métier personnalisées appliquées avant qu&#39;une commande ne soit officiellement passée ou traitée
-  * Calculs d&#39;impôts complexes
-  * Validations d’adresses
-  * Logique personnalisée déclenchée après le passage d’une commande
-* **Storefront découplé ou monolithique :** point de décision pour le développement d’un nouveau storefront ou l’adaptation de storefronts existants.
-* **Stratégie d’intégration :** déterminer comment les intégrations existantes seront reformées (maillage API, App Builder, API directe).
-* **Stratégie de migration des données :** déterminez si vous avez l’intention de migrer à l’aide de données historiques complètes, de données partielles ou sans données migrées.
+### Portée de l’évaluation
 
-**Préparation et formation de l’équipe :**
+L’outil d’évaluation de la migration se concentre sur la compréhension du paysage migratoire complet. Il analyse les modules personnalisés, les plug-ins, les événements, les API, les tâches cron, les files d’attente, les intégrations à des systèmes externes, les caractéristiques du storefront et le schéma de base de données dont dépendent ces personnalisations. L&#39;évaluation cartographie ce qu&#39;elle découvre par rapport aux capacités [!DNL Adobe Commerce as a Cloud Service] disponibles et identifie où les fonctionnalités devraient être modernisées en utilisant l&#39;architecture [!DNL App Builder] ou repensée pour l&#39;architecture SaaS.
 
-* Familiarisez-vous avec les concepts [!DNL Adobe Commerce as a Cloud Service], les processus de développement et les nouveaux outils.
-* Participez à une formation pratique sur les pipelines de déploiement Adobe App Builder, Edge Delivery Services et [!DNL Adobe Commerce as a Cloud Service].
+L’évaluation est davantage un outil de planification qu’un outil d’exécution. Il détermine les éléments à moderniser, évalue la complexité de la mise en œuvre et fournit des recommandations. Les décisions d’implémentation et la validation de l’architecture restent des activités collaboratives entre Adobe, les partenaires et les équipes d’ingénierie client.
 
-**Configuration et approvisionnement de l’environnement :**
+Les données stockées dans des tables personnalisées par des extensions tierces sont affichées à titre de considération de migration. La migration des données standard ne migre pas automatiquement ces données. Des applications de [!DNL App Builder] personnalisées peuvent être nécessaires pour prendre en charge ces scénarios. Pour plus d’informations, consultez le [guide de migration des données](#data-migration-commerce-data-migration-service).
 
-* Configurez votre sandbox [!DNL Adobe Commerce as a Cloud Service] et vos environnements de développement à l’aide de Commerce Cloud Manager.
+L’évaluation fournit une analyse des workflows de personnalisation et de migration des données du storefront :
 
-### Phases de migration incrémentielle
+- Migration du code et des storefronts : l’analyse de l’application de l’évaluation devient le plan directeur de Commerce Developer MCP
+- Migration des données : l’inventaire des entités, l’analyse des caractéristiques de la base de données et l’analyse de tables personnalisées de l’évaluation définissent la portée du service de migration des données de Commerce.
 
-**Refactorisation stratégique et externalisation**
+Vous pouvez également réexécuter des évaluations à mesure que vos applications évoluent. Cela permet à vos équipes de valider les travaux de correction, de mesurer les progrès de modernisation et d’affiner en permanence les plans de migration tout au long de l’engagement.
 
-Cette phase se compose du cœur de la migration et se concentre sur l’adaptation de votre base de code au paradigme natif du cloud [!DNL Adobe Commerce as a Cloud Service]. Cela implique l’adoption stratégique de nouveaux services Adobe et le déplacement de la logique personnalisée en dehors de la plateforme Commerce principale.
+### Étapes suivantes
 
-#### &#x200B;1. Migration des personnalisations et des extensions « en cours » vers App Builder
+Chaque migration [!DNL Adobe Commerce as a Cloud Service] doit commencer par une évaluation. Il s’agit d’un moyen économique d’établir la portée, de réduire l’incertitude et de créer un plan directeur de migration partagé avant le début de la mise en œuvre.
 
-Il s’agit d’une phase cruciale pour réaliser un « noyau verrouillé » et pérenniser votre solution, au cœur de la philosophie architecturale [!DNL Adobe Commerce as a Cloud Service].
+Pour plus d’informations sur les outils d’évaluation et le workflow de développement en aval, consultez [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/).
 
-* **Externaliser une logique complexe vers App Builder** : analysez les modules personnalisés et les extensions tierces existants dans votre base de code PaaS. Pour une logique commerciale complexe, des intégrations sur mesure ou des microservices qui ne nécessitent pas de manipulation directe et en cours de processus du modèle de données Commerce principal, refactorisez-les et reformez-les en tant qu’applications sans serveur dans Adobe Developer App Builder.
-* **Tirer parti du maillage API** : pour les scénarios nécessitant des données provenant de plusieurs systèmes principaux (par exemple, votre serveur principal Commerce PaaS, ERP, CRM et microservices App Builder personnalisés), implémentez une couche de maillage API dans App Builder. Cela consolide des API disparates en un point d’entrée GraphQL unique et performant utilisé par votre nouveau storefront ou d’autres services, simplifiant la récupération de données complexes.
-* **Architecture pilotée par les événements** : utilisez Adobe I/O Events pour déclencher des actions App Builder en fonction des événements se produisant dans votre instance PaaS (par exemple, mises à jour de produit, enregistrements de clients, changements de statut de commande) ou d’autres systèmes connectés. Cela favorise la communication asynchrone, réduit le couplage étroit et améliore la résilience du système.
+## Migration du code et du storefront (MCP pour les développeurs et développeuses Commerce)
 
-**Avantage** : cette étape réduit considérablement la dette technique associée aux personnalisations profondément intégrées, accélère considérablement la transition de votre instance Commerce vers [!DNL Adobe Commerce as a Cloud Service], améliore l’évolutivité et le déploiement indépendant de la logique personnalisée et favorise des cycles de développement plus rapides pour les extensions.
+Dans [!DNL Adobe Commerce on Cloud] ou sur site, les personnalisations peuvent utiliser PHP en cours de traitement : modules, plug-ins et observateurs d&#39;événements qui s&#39;exécutent dans l&#39;application. [!DNL Adobe Commerce as a Cloud Service] est une plateforme SaaS sans version et ce modèle ne s’applique plus. Les personnalisations s’exécutent en tant qu’applications [!DNL Adobe Developer App Builder] hors processus qui s’intègrent à Commerce par le biais d’événements et d’API. La modernisation des personnalisations d’un magasin pour cette architecture est généralement l’effort d’ingénierie le plus important dans une migration [!DNL Adobe Commerce as a Cloud Service].
 
-#### &#x200B;2. Adoptez des services de marchandisage Adobe Commerce basés sur SaaS et intégrez des données de catalogue
+### Présentation de la migration du code
 
-Il s’agit d’un point d’intégration initial essentiel avec deux options concernant la gestion des données de catalogue :
+À partir de l’évaluation de la migration, le MCP Commerce Developer offre une expérience de conversation IDE pour moderniser les personnalisations PHP héritées en applications [!DNL App Builder]. Il fournit également une assistance pour la reconstruction des vitrines sur Edge Delivery Services (EDS). En utilisant directement les résultats de l’outil d’évaluation de la migration, le MCP Commerce Developer maintient l’alignement de l’implémentation sur la feuille de route de migration approuvée en réduisant l’interprétation manuelle, en maintenant la traçabilité et en assurant la cohérence tout au long du processus.
 
->[!BEGINTABS]
+Bien que la migration soit le principal cas d’utilisation, le MCP pour les développeurs Commerce est conçu comme un agent de développement d’IA complet pour [!DNL Adobe Commerce]. Le MCP prend en charge la modernisation, le nouveau développement, les workflows opérationnels et toutes les mises à jour de [!DNL Adobe Commerce as a Cloud Service]. Ce niveau de flexibilité permet aux équipes de continuer à créer et à étendre des applications Commerce bien après la migration.
 
->[!TAB Option 1 - Service SaaS de catalogue existant]
+### MCP du développeur de Commerce
 
-**Utilisation du service SaaS de catalogue existant intégré au serveur principal PaaS**
+À l’aide des résultats de l’[évaluation de la migration](#migration-assessment-tool), le MCP de développement Commerce transforme les personnalisations identifiées en applications [!DNL App Builder] par le biais d’un workflow de développement itératif. Tenez compte des recommandations suivantes lors du développement à l’aide de ces outils :
 
-Cette option sert d’étape transitoire, s’appuyant sur une intégration existante où votre serveur principal PaaS renseigne une instance existante du service SaaS Adobe Commerce avec des données provenant des [service de catalogue](../../catalog-service/guide-overview.md), [recherche en direct](../../live-search/overview.md) et [recommandations de produits](../../product-recommendations/overview.md).
+- **Commencez par le plan directeur** - Le MCP Commerce Developer utilise l’évaluation de la migration, en utilisant les personnalisations, recommandations et priorités de migration identifiées comme base de la planification de l’implémentation.
 
-* **Synchronisation des données de catalogue** : assurez-vous que votre instance Adobe Commerce PaaS continue à synchroniser les données de produit et de catalogue avec votre service Adobe Commerce Catalog SaaS existant. Cela repose généralement sur des connecteurs ou des modules établis au sein de votre instance PaaS. Le service SaaS de catalogue reste la source faisant autorité pour les fonctions de recherche et de marchandisage, et ses données proviennent de votre serveur principal PaaS.
-* **Maillage API pour l’optimisation** : bien que le storefront découplé (sur Edge Delivery Services) et d’autres services puissent directement consommer des données du service SaaS de catalogue, Adobe recommande vivement d’utiliser le maillage API (dans App Builder). Le maillage API permet d’unifier les API du service SaaS de catalogue avec d’autres API nécessaires de votre serveur principal PaaS (par exemple, les vérifications d’inventaire en temps réel de la base de données transactionnelle ou les attributs de produit personnalisés qui ne sont pas entièrement répliqués vers le service SaaS de catalogue) en un seul point d’entrée GraphQL performant. Cela permet également la mise en cache, l’authentification et la transformation de réponse centralisées.
-* **Intégrer la recherche en direct et les recommandations de produits** : configurez les services SaaS de recherche en direct et de recommandations de produits pour [ingérer des données de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/live-search/install#configure-the-data) directement à partir de votre service SaaS de catalogue Adobe Commerce existant, qui est à son tour renseigné par votre serveur principal PaaS.
+- **Planifier chaque personnalisation** - Pour chaque personnalisation, le MCP de développement Commerce développe une spécification qui décrit l’architecture [!DNL Adobe Commerce as a Cloud Service] recommandée, les modèles d’intégration requis et toute reconception nécessaire pour passer à une application hors processus.
 
-**Avantage** : permet d’accéder plus rapidement à un storefront découplé et à des fonctionnalités de marchandisage SaaS avancées en exploitant un service SaaS de catalogue existant et opérationnel et son pipeline d’intégration à votre serveur principal PaaS. Cependant, il conserve la dépendance sur le serveur principal PaaS pour la source de données de catalogue principale et ne fournit pas les fonctionnalités d’agrégation multi-source inhérentes au nouveau modèle de données de catalogue composable. Cette option est une étape valide vers une architecture composable plus complète.
+- **Créer en collaboration** - Au lieu de générer initialement du code, le MCP de développement Commerce vous aide tout au long du cycle de vie du développement en planifiant les implémentations, en discutant de l’architecture, en générant et en affinant le code, en validant les modèles recommandés et en fournissant des conseils de déploiement. Les développeurs peuvent affiner de manière itérative les implémentations générées par le langage naturel, ce qui permet aux détails du projet d’évoluer en collaboration tout au long de l’effort de modernisation.
 
->[!TAB Option 2 - Modèle de données de catalogue composable]
+  - Les implémentations générées sont conçues pour accélérer la diffusion tout en restant entièrement révisables, testables et extensibles par les équipes d’ingénieurs.
 
-**Adoption du nouveau modèle de données de catalogue composable (CCDM)**
+- **Intégrer et déployer** - Le MCP Commerce Developer connecte les applications à Commerce par le biais de modèles d’intégration appropriés, facilite les workflows de déploiement et valide les mises en œuvre par rapport aux modèles architecturaux recommandés avant le déploiement, ce qui améliore la cohérence et réduit les efforts en double.
 
-Il s’agit de l’approche stratégique à l’épreuve du temps pour tirer parti de Adobe Commerce Optimizer. Le CCDM fournit un service de catalogue flexible, évolutif et unifié conçu pour l’agrégation de données multi-sources et le marchandisage dynamique.
+  - Le MCP Commerce Developer contient le MCP [!DNL Adobe Commerce App Builder], qui fournit des connaissances de domaine, des modèles d’implémentation, des conseils architecturaux, une expertise contextuelle des produits et des pratiques de codage validées directement dans votre workflow de développement. Cela permet de s’assurer que les recommandations de MCP restent alignées sur les bonnes pratiques d’Adobe, que les développeurs travaillent directement avec le MCP Développeur de Commerce ou en combinaison avec d’autres agents, tels que Claude, Cursor ou Copilot.
 
-* **Ingestion et unification des données**
-  * Commencez par ingérer des données de produit et de catalogue à partir de votre instance Adobe Commerce PaaS existante (et/ou d’autres systèmes PIM/ERP) dans le nouveau modèle de données de catalogue composable (CCDM).
-  * Mappez les attributs de produit existants au schéma flexible du CCDM. Hiérarchisez les données de produit critiques pour l’ingestion initiale.
-  * Établir des pipelines de données robustes pour une synchronisation continue. Cela peut impliquer :
-    * **Piloté par les événements** (via App Builder) : utilisez Adobe I/O Events à partir de votre instance PaaS pour déclencher des applications Adobe App Builder personnalisées ou accessibles au public. Ces applications transforment et transmettent les modifications de données (création, mise à jour et suppression) au CCDM via ses API.
-    * **Ingestion par lots** : pour les chargements initiaux volumineux ou les mises à jour en bloc périodiques, utilisez des transferts de fichiers sécurisés (par exemple, CSV ou JSON) vers une zone de transit, traités par les services d’ingestion Adobe Experience Platform (AEP) dans CCDM.
-    * **Intégration directe de l’API** (avec orchestration App Builder) : pour les scénarios plus complexes, App Builder peut agir comme une couche d’orchestration, effectuer des appels directs d’API vers votre serveur principal PaaS, transformer les données et les transmettre au CCDM.
-* **Vue Catalogue et définition de politique** : configurez des vues de catalogue (regroupements logiques pour une présentation de catalogue unique, telle que des vues de magasin, des régions et des segments B2B/B2C) et définissez des politiques (ensembles de règles pour la présentation, le filtrage et le marchandisage des produits) dans le CCDM. Cela permet un contrôle dynamique sur les assortiments de produits et la logique d’affichage par vue de catalogue.
-* **Intégrer la recherche en direct et les recommandations de produits** : une fois que les données de catalogue sont présentes dans le CCDM, intégrez les services de recherche en direct et de recommandations de produits basés sur SaaS Adobe. Ils exploitent des modèles d’IA d’Adobe AI et de machine learning pour une pertinence de recherche supérieure et des recommandations personnalisées, et consomment des données directement à partir du CCDM.
+### Modernisation du storefront
 
-**Avantage** : en abstrayant la gestion et la découverte de catalogues dans le CCDM et les services SaaS associés, vous améliorez les performances, obtenez des fonctionnalités de marchandisage basées sur l’IA, déchargez considérablement les opérations de lecture de votre serveur principal hérité et activez une solide expérience d’extraction de la partie supérieure de l’expérience funnel.
+Sur le front-end, le MCP Commerce Developer modernise [storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr) on Edge Delivery Services (EDS) pour Commerce à l’aide des blocs Modèle Adobe Commerce, Composants de dépôt et EDS.
 
->[!ENDTABS]
+Le MCP Développeur Commerce charge les projets storefront existants en fonction du standard Commerce. Il modernise votre vitrine en :
 
-#### &#x200B;3. Créer votre storefront sur Edge Delivery Services
+- Génération de blocs EDS réactifs
+- Génération de données de page compatibles avec Commerce (accueil, PLP, PDP, panier, passage en caisse, compte)
+- Composition et extension de composants de liste déroulante
+- Traduire les conceptions en implémentations EDS
+- Conversion de vitrines monolithiques héritées en une architecture de blocs EDS composables
 
-Avec la mise en place de pipelines de données de marchandisage et l’externalisation des personnalisations, l’accent se déplace vers la création de votre front-end haute performance.
+Le MCP apporte également son aide pour :
 
-* **Configuration initiale** : configurez votre projet à l’aide de la norme standard d’Adobe Commerce Storefront pour Edge Delivery Services. Il s’agit d’un front-end découplé fondamental basé sur les technologies web modernes.
-* **Connexion aux services de catalogue et au maillage API** : votre storefront Commerce consommera des données principalement par le biais des API GraphQL :
-  * **Option 1** : à partir du service SaaS de catalogue existant (via le maillage API) pour obtenir des informations sur les produits et les règles de marchandisage.
-  * **Option 2** : du CCDM pour les informations sur les produits et les règles de marchandisage.
-  * À partir du maillage API pour toutes les données orchestrées de votre serveur principal hérité (instance PaaS) ou des services App Builder personnalisés (par exemple, l’inventaire en temps réel, les attributs de produit personnalisés et les points de fidélité s’affichent).
-* **Migration de contenu (AEM Services)** : migrez votre contenu statique existant (par exemple, les pages « À propos de nous », les publications de blog et les bannières marketing) vers AEM Services, qui alimente Commerce Storefront. Tirez parti des fonctionnalités de création de contenu d’AEM et assurez-vous que les ressources sont optimisées pour Edge Delivery Services.
-* **Développement des composants principaux de l’interface utilisateur** : créez des composants d’interface utilisateur essentiels pour les pages de détails du produit (PDP), les pages de liste de produits (PLP) et les pages de contenu général à l’aide des composants déroulants Edge Delivery Services et des composants React/Vue personnalisés. Hiérarchisez les principaux flux commerciaux.
-* **Intégration au panier/passage en caisse existant** : au départ, le storefront Edge Delivery Services orchestre un transfert vers votre PaaS Adobe Commerce existant (ou une autre plateforme tierce) pour la gestion du panier et le passage en caisse. Cela implique généralement :
-  * **Redirection** : redirection de l’utilisateur vers les URL de panier et de passage en caisse natives de la plateforme héritée, en transmettant les identifiants de session et de panier nécessaires.
-  * **Interaction directe avec l’API** (avec l’orchestration App Builder) : création de composants personnalisés de l’interface utilisateur de panier et de passage en caisse dans Edge Delivery Services qui interagissent directement avec les API de panier et de passage en caisse du serveur principal PaaS. Cela implique souvent App Builder en tant que serveur principal pour front-end (BFF) pour orchestrer des appels vers plusieurs services principaux (par exemple, le panier PaaS, les passerelles de paiement et les calculatrices d’expédition).
+- Modernisation des composants
+- Composition de blocs réutilisable
+- Optimisation de l’expérience
+- Alignement sur les bonnes pratiques actuelles de Edge Delivery Services
 
-**Avantage** : offre une expérience de storefront ultra-rapide, optimisée pour l’optimisation du référencement et très flexible. Cette phase contribue directement à une expérience client supérieure et jette les bases de l’innovation frontale future.
+### Valeur du MCP du développeur
 
-#### &#x200B;4. Migration des données (processus échelonné)
+Passer des personnalisations PHP en cours de traitement aux applications composables en [!DNL App Builder] représente un changement architectural significatif. Le MCP pour les développeurs de Commerce comble cette lacune en incorporant les connaissances [!DNL Adobe Commerce], les modèles d’implémentation [!DNL App Builder] et les bonnes pratiques des produits directement dans le workflow de développement.
 
-La migration des données est un processus critique à plusieurs facettes qui s’exécute simultanément à la refactorisation et au développement du storefront, afin d’assurer la cohérence et l’intégrité des données.
+L’inclusion de ce contexte offre une cohérence améliorée à la fois en termes de vitesse de diffusion et de qualité d’ingénierie. Les équipes peuvent moderniser les applications plus rapidement tout en produisant des implémentations qui suivent des conseils architecturaux cohérents.
 
-* **Nettoyer et optimiser les données existantes** : avant toute migration à grande échelle, effectuez un nettoyage, une déduplication et une validation complets des données sur votre base de données PaaS existante. Cette étape proactive est essentielle pour minimiser le transfert des problèmes de données hérités et assurer la qualité des données dans le nouvel environnement.
+En intégrant des modèles d’implémentation recommandés, le MCP Commerce Developer réduit la dépendance à l’expertise individuelle et aide les entreprises à adapter les efforts de modernisation de manière cohérente sur l’ensemble des projets.
 
-**Migration des données en bloc**
+Le processus de migration est également l’occasion d’améliorer la mise en œuvre existante. Les équipes peuvent simplifier les personnalisations héritées, supprimer les fonctionnalités obsolètes, adopter les fonctionnalités SaaS et moderniser l’architecture de l’application plutôt que de remonter la dette technique historique.
 
-La migration de données en bloc implique de prendre une image mémoire complète des données de votre instance Adobe Commerce PaaS, de transformer l’ensemble de ce jeu de données et de l’importer dans Adobe Commerce as a Cloud Service en même temps. Cette méthode est généralement utilisée pour la population initiale de données.
+Dans la mesure où le MCP Commerce Developer consulte directement l’évaluation de la migration, chaque effort de modernisation maintient la traçabilité jusqu’à l’évaluation d’origine, en veillant à ce que la mise en œuvre reste alignée sur la feuille de route de migration approuvée.
 
-* **Disponibilité des outils** : un [outil de migration de données en bloc](./bulk-data/migration-tool.md) dédié à l’utilisation par le client pour les migrations de données en bloc Commerce propriétaires est en accès anticipé. La date de disponibilité générale prévue est le 1er trimestre 2027. Si les clients ont besoin d’aide à la migration de données en bloc au préalable, Adobe peut faciliter le transfert de données en leur nom sur demande.
+Le MCP Commerce Developer encourage également la conception d’applications composables en encourageant les applications [!DNL App Builder] modulaires qui peuvent évoluer indépendamment à mesure que les besoins de l’entreprise changent.
 
-* **Processus** :
-  * **Exportation complète des données** : extrayez un jeu de données complet de votre instance Adobe Commerce PaaS (par exemple, les produits, les catégories, les comptes clients, les données de commande historiques, les blocs statiques et le contenu de page).
-  * **Transformation des données** : effectuez les transformations nécessaires pour aligner les données extraites sur les exigences de schéma des nouveaux composants Adobe Commerce as a Cloud Service, y compris le modèle de données de catalogue composable (CCDM), le cas échéant, et tous les autres services ou bases de données Adobe pertinents. Cela peut impliquer des scripts personnalisés ou des outils de mappage de données spécialisés.
-  * **Import initial** : importez le jeu de données complet transformé dans les composants respectifs d’Adobe Commerce as a Cloud Service. Pour les données de produit et de catégorie, cela renseigne le service de catalogue choisi (CCDM ou SaaS de catalogue existants). Pour les données de commande et de client, cela renseigne le serveur principal transactionnel ou les services associés.
-  * **Validation** : validez rigoureusement les données importées afin de garantir l’exhaustivité, la précision et la cohérence sur tous les nouveaux systèmes.
+### Portée du MCP du développeur
 
-**Migrations de données itératives**
+Sur le serveur principal, le MCP Commerce Developer modernise la couche de personnalisation et d’intégration en transformant les modules PHP, les modules externes et les observateurs d’événements en applications [!DNL App Builder] et établit des modèles d’intégration pour les connecter à Adobe Commerce. Il accélère également le développement au niveau du passage en caisse, des paiements et de l’interface utilisateur d’administration.
 
-Les migrations de données itératives se concentrent sur la synchronisation des modifications incrémentielles et des deltas de l&#39;instance PaaS source vers les nouveaux composants Cloud Service, en assurant la fraîcheur des données jusqu&#39;au basculement et après.
+Sur le front-end, le MCP Commerce Developer [modernise les storefronts Commerce](#storefront-modernization) sur Edge Delivery Services.
 
-* **Disponibilité des outils** : des outils spécifiquement conçus pour les migrations de données itératives seront disponibles en 2026.
+Le MCP ne gère pas la migration des données. Les données commerciales sont migrées par le biais du service de migration de données [&#128279;](#data-migration-commerce-data-migration-service). Le MCP prend en charge les applications [!DNL App Builder] nécessaires lorsque la logique métier ou les tables personnalisées nécessitent la modernisation de l&#39;application.
 
-* **Processus** :
-  * **Identification Delta** : définissez des mécanismes pour identifier les modifications (créations, mises à jour et suppressions) dans les jeux de données critiques de votre environnement PaaS depuis la dernière synchronisation. Cela peut impliquer la capture de données de modification (CDC), des comparaisons d’horodatage ou des déclencheurs basés sur un événement.
-  * **Synchronisation continue** : mettez en œuvre des mécanismes robustes pour une synchronisation incrémentielle continue des données de votre environnement PaaS vers les nouveaux composants Cloud Service (par exemple, CCDM et serveur principal transactionnel). Cela est essentiel pour maintenir la fraîcheur des données et minimiser le temps d’arrêt pendant la transition.
-  * **Utilisation d’événements** : utilisez Adobe I/O Events dans la mesure du possible pour déclencher des actions App Builder pour les mises à jour en temps réel ou en quasi temps réel de votre instance PaaS vers les nouveaux services. Par exemple, une mise à jour de produit dans PaaS peut déclencher un événement qui met à jour l’entrée correspondante dans CCDM.
-  * **Mises à jour pilotées par les API** : pour les données qui ne sont pas pilotées par les événements, utilisez des appels API planifiés (via App Builder ou d’autres plateformes d’intégration) pour extraire les modifications de PaaS et les pousser vers les nouveaux systèmes.
-  * **Gestion et surveillance des erreurs** : implémentez une gestion, une journalisation et une surveillance des erreurs robustes pour tous les pipelines de données itératives afin de garantir l’intégrité des données tout au long du processus.
+### Étapes suivantes
 
-### Post-migration et opérations en cours
+La modernisation du code et du storefront commence une fois que la feuille de route de l’outil d’évaluation de la migration a établi la portée et les priorités de la migration.
 
-**Basculement et activation DNS :**
+Pour plus d’informations sur l’installation et l’utilisation de MCP, consultez la documentation de [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/) .
 
-* Planifiez avec soin le basculement DNS avec un temps d’arrêt minimal.
-* Surveillez l’intégrité et les performances du site immédiatement après le lancement.
+## Migration des données (service de migration des données de Commerce)
 
-**Opérations après le lancement :**
+La migration vers [!DNL Adobe Commerce as a Cloud Service] peut nécessiter la migration d’années de données, notamment : les catalogues, les commandes, les clients et la configuration.
 
-**Déclassement de l’environnement PaaS :**
+Le service de migration des données de Commerce remplace une migration manuelle par un processus unique, répétable et automatisé. Cela rend les migrations de bases de données complexes plus prévisibles et plus efficaces.
 
-* Archivez ou supprimez en toute sécurité les anciennes instances et données PaaS après la période de validation.
+### Service de migration des données de Commerce
 
-**Workflow de développement en cours :**
+Une migration utilise un workflow guidé, piloté par un outil de ligne de commande Docker (`./bin/console migration`). Un intégrateur ou un opérateur système exécute ce workflow sur le magasin source.
 
-* Adoptez la nature sans version d’[!DNL Adobe Commerce as a Cloud Service], qui comporte de petits déploiements continus plutôt que de grandes mises à niveau.
-* Utilisez Cloud Manager pour gérer les environnements et les déploiements.
-* Tirez parti d’App Builder pour étendre les fonctionnalités sans affecter le cœur de la solution.
+La migration des données de base est automatisée, mais la plupart des migrations impliquent des schémas, des extensions et des cas de périphérie non standard. C’est pourquoi toutes les migrations commencent par une [&#x200B; évaluation &#x200B;](#migration-assessment-tool) du magasin source. Après avoir validé les informations d’identification et la connectivité, enregistré la migration et établi une ligne de base de vérification, vous pouvez poursuivre la migration des données.
 
-**Surveillance, performance et sécurité :**
+L’outil du service de migration effectue les étapes de gestion des données suivantes :
 
-* Surveillez en permanence les performances, les erreurs et les journaux de sécurité du site.
-* Utilisez les fonctionnalités de sécurité intégrées d’Adobe et suivez les bonnes pratiques.
+1. **Extraire et transformer** : extrait toutes les données pertinentes de la source en parallèle et les remodèle pour les [!DNL Adobe Commerce as a Cloud Service]. Les données incompatibles sont exclues du filtre et les attributs personnalisés et d’autres structures sont remappés.
+1. **Charger** — Transfère les données extraites vers le service de migration des données de Commerce. Le service charge les données dans le [!DNL Adobe Commerce as a Cloud Service], puis reconstruit les index et ingère le catalogue.
+1. **Vérifier** — Compare les données source et cible au niveau de la base de données. Ensuite, le service valide un exemple d’enregistrements actifs par le biais des API REST storefront GraphQL et admin pour vérifier les données.
+1. **Rapport** : consolide les résultats de chaque étape dans un rapport de migration final.
 
-**Formation et documentation :**
+Ces étapes de déplacement des données nécessitent une fenêtre de maintenance, mais pendant la phase de préparation, le magasin reste opérationnel, en réduisant au minimum les temps d’arrêt.
 
-* Formez les nouveaux développeurs et utilisateurs professionnels à la plateforme et aux workflows [!DNL Adobe Commerce as a Cloud Service].
-* Mettez à jour la documentation interne pour les intégrations et les processus personnalisés.
+### Valeur du service de migration
+
+Le service de migration des données de Commerce préserve l’intégrité des données à l’aide de preuves. Chaque migration est vérifiée en comparant les données source et cible et en validant un exemple d’enregistrements actifs par le biais des API. Les données qui ne sont pas correctement mappées aux [!DNL Adobe Commerce as a Cloud Service], comme les attributs personnalisés, sont filtrées et remappées automatiquement lors de l’extraction.
+
+Le service de migration est conçu pour les bases de données à l’échelle de l’entreprise. La migration des données est partitionnée et traitée de manière asynchrone, ce qui permet à des catalogues volumineux et à de vastes historiques de commandes de migrer de manière fiable. Plusieurs migrations peuvent s’exécuter en parallèle à mesure que le pipeline se développe. Si une migration est interrompue, elle reprend à partir de la dernière étape terminée et les tâches bloquées sont détectées et font automatiquement l’objet d’une nouvelle tentative.
+
+Les temps d’arrêt sont réduits de différentes manières :
+
+- La majeure partie du travail est effectuée alors que le magasin reste en ligne, ce qui signifie que seul le basculement final nécessite une fenêtre de maintenance.
+- La migration des données utilise des lectures et écritures SQL directes très efficaces et ignore les tables et enregistrements qui n&#39;ont pas besoin d&#39;être migrés.
+
+Les migrations impliquant des données de production qui transitent par l’infrastructure d’Adobe, l’ensemble du chemin est sécurisé :
+
+- Tous les chargements sont analysés à la recherche de logiciels malveillants avant d&#39;atteindre la cible
+- La couche d’entrée valide les types de fichiers et bloque les opérations de base de données non sécurisées
+- Chaque requête est authentifiée à l’aide de la vérification des signatures Adobe IMS et passerelle
+
+Le service de migration des données de Commerce est en production dans le monde entier et a déjà fourni plusieurs migrations au niveau de l’entreprise.
+
+### Données personnalisées et tierces
+
+Le service de migration prend uniquement en charge les données commerciales de base propriétaires. Le service de migration ne gère pas les entités tierces personnalisées.
+
+Les données tierces peuvent être migrées au cas par cas, ce qui nécessite une personnalisation correspondante de l’outil d’extraction Docker. Après avoir créé un outil personnalisé, les données peuvent être extraites de la source et écrites dans la base de données [!DNL App Builder] ou tierce.
+
+Chaque extension modélisant ses données différemment, un chemin de migration pour les données tierces ne peut être conçu qu’après avoir déterminé le schéma et les emplacements du stockage source et cible. Les migrations de données tierces doivent être identifiées précocement pour permettre la définition de la portée.
+
+### Étapes suivantes
+
+Lorsque vous êtes prêt à migrer, renseignez le [questionnaire de définition de la portée de la migration des données](../assets/data-migration-scoping-questionnaire.xlsx), qui nécessite la topologie source, la portée de l&#39;entité, les volumes, les contraintes de conformité, la mécanique de basculement et toutes les [tables personnalisées](#custom-and-third-party-data) requises pour planifier la migration. Le fait de remplir ce questionnaire permet à Adobe d’évaluer votre environnement et de planifier une fenêtre de migration.
+
+Consultez la documentation du [&#x200B; Guide de l’outil de migration de données en bloc &#x200B;](bulk-data/migration-tool.md) pour en savoir plus sur le workflow, les données prises en charge et la vérification.
+
+Les intégrateurs système préparant un environnement source peuvent également utiliser l’interface de ligne de commande [Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) standard et le [Adobe Developer Console](https://developer.adobe.com) pour les informations d’identification IMS.
