@@ -1,7 +1,7 @@
 ---
-source-git-commit: 16a200892f2d116a38ebde370a79d333f65e4c8a
+source-git-commit: 06d8280f848fa6fc390194ebdd05a5dba1bfac94
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1539'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 7 Août 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c88ec8730e24220b6dfd32da406d1ba3fd3a2ef2">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 5 Août 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/migration/overview">présentation de la migration</a> avec le flux de migration mis à jour à l’aide de l’outil d’évaluation de la migration, de Commerce Developer MCP et du service de migration des données de Commerce.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2a0d741c141a4d122b0a068f3a1e7c435d86fd75">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 4 Août 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Le nouveau <a href="https://experienceleague.adobe.com/fr/docs/commerce/catalog-service/integration/catalog-events-guide">guide d’intégration des événements de catalogue et d’Adobe I/O</a> explique comment activer les événements de catalogue, vérifier l’exportation et la synchronisation des flux d’exportation de données SaaS et l’intégration à Adobe I/O Events.</p>
+</td>
+      <td>
+        Mise à jour majeure, nouvelle rubrique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/719b6661370f1e639fafb2a89bc1a906a20df37b">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 30 Juillet 2026
 
@@ -357,38 +423,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Commentaires, mise à jour majeure
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bccb739bbbfcc7e3bfa645c2a0245933014b934f">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 8 Juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout d’une nouvelle page de référence permettant de fournir des informations plus détaillées sur les sources de catalogue Adobe Commerce Optimizer</a> et leur création.<a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-sources"></p>
-</td>
-      <td>
-        Commentaires, nouvelle rubrique, technique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8b4d08af43cbff9aaf9fc8f417ddab12185f5565">validation</a></td>
-    </tr>
-    <tr>
-      <td><ul>
-  <li>Ajout de la section <a href="https://experienceleague.adobe.com/fr/docs/commerce/live-search/live-search-admin/semantic-search">Recherche sémantique</a> pour les [!DNL Live Search] avec les étapes d’activation, les bonnes pratiques et les limites du catalogue en anglais.<br />- Ajout de la section <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/semantic-search">Recherche sémantique</a> pour les [!DNL Adobe Commerce Optimizer] et les paramètres mis à jour <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/settings">Paramètres — Recherche avancée</a> avec une activation simplifiée et des commandes de réglage facultatives.</li>
-</ul>
-</td>
-      <td>
-        Mise à jour majeure, nouvelle rubrique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/475c99e18380c961e400a75de1c06cd8cdb929d1">validation</a></td>
     </tr>
   </tbody>
 </table>

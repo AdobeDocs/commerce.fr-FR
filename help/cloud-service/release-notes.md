@@ -32,10 +32,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-last-update: 2026-08-06
-source-git-commit: 1dd79f88f97d2f6a2f6314434f11049871dcdb6e
+last-update: 2026-08-07
+source-git-commit: 477802467d8f60f05137d60e0d703c0302de5144
 workflow-type: tm+mt
-source-wordcount: 5259
+source-wordcount: 5371
 ht-degree: 0%
 
 ---
@@ -48,7 +48,31 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 >
 >Si vous utilisez Adobe Commerce On-Premise ou Adobe Commerce sur une infrastructure cloud, consultez les [notes de mise à jour d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview).
 
-## Juillet 2026 - #1 de mise à jour {#latest}
+## Août 2026 - #1 de mise à jour {#latest}
+
+[!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Les éléments suivants seront publiés en production le 11 août 2026.
+
+>[!BEGINSHADEBOX]
+
+### Abonnement à un événement pour les paiements de factures
+
+Un nouvel événement `observer.sales_order_invoice_pay` est émis lorsqu&#39;un paiement de facture est enregistré, de sorte que les intégrations peuvent s&#39;abonner à l&#39;événement au lieu d&#39;interroger les modifications de statut de facture. <!-- CEXT-5983 -->
+
+### Améliorations et correctifs
+
+Les améliorations, optimisations et correctifs suivants sont inclus dans cette version :
+
+* Correction d’un problème en raison duquel la récupération des sociétés affectées d’un client via GraphQL pouvait être lente. <!-- ACCS-1425 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Juillet 2026
 
 [!BADGE Production]{type=Neutral tooltip="Les éléments répertoriés sont actuellement disponibles dans les environnements de production."}
 
