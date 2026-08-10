@@ -266,10 +266,10 @@ Après le déploiement, effectuez les étapes suivantes pour enregistrer l’op�
 
    - Accédez à **Magasins** > Paramètres > **Configuration** > **Services Adobe** > **Webhooks Commerce**.
    - Ajoutez un webhook :
-      - **Méthode Webhook :** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
-      - **Type de Webhook :** **after**
-      - **URL :** URL d’action web **shipping-methods** déployée (à partir de la sortie de déploiement ou de la [!DNL Adobe Developer Console]).
-      - **Obligatoire :** **Facultatif** - Cela permet à l’extraction de continuer à fonctionner si l’API externe ne renvoie aucun taux.
+     - **Méthode Webhook :** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
+     - **Type de Webhook :** **after**
+     - **URL :** URL d’action web **shipping-methods** déployée (à partir de la sortie de déploiement ou de la [!DNL Adobe Developer Console]).
+     - **Obligatoire :** **Facultatif** - Cela permet à l’extraction de continuer à fonctionner si l’API externe ne renvoie aucun taux.
 
    ![Configuration du webhook d’administration de Commerce pour les taux d’expédition simulés](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
 
@@ -287,9 +287,9 @@ Après le déploiement, effectuez les étapes suivantes pour enregistrer l’op�
    - Ouvrez **Applications** et sélectionnez votre application.
    - Ouvrez l’onglet **Expédition simulée** (ou l’équivalent).
    - Saisissez les informations suivantes :
-      - **URL du service :** l’URL du workflow Pipedream que vous avez copiée (par exemple, `https://123456.m.pipedream.net`).
-      - **Clé API :** toute valeur non vide pour la simulation, par exemple `tutorial-key`.
-      - **Adresse de l’entrepôt de données (d’expédition) : nom** téléphone, rue, ville, État, code postal, pays.
+     - **URL du service :** l’URL du workflow Pipedream que vous avez copiée (par exemple, `https://123456.m.pipedream.net`).
+     - **Clé API :** toute valeur non vide pour la simulation, par exemple `tutorial-key`.
+     - **Adresse de l’entrepôt de données (d’expédition) : nom** téléphone, rue, ville, État, code postal, pays.
    - Cliquez sur **Enregistrer**. La configuration est stockée dans l’état d’exécution et est utilisée par l’action shipping-methods.
 
    ![Formulaire de configuration d’expédition simulé avec URL de service, clé API et adresse d’entrepôt](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}
