@@ -5,9 +5,10 @@ user-guide-description: Ce guide fournit des instructions détaillées sur l’u
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 9ddf8f7eab84df90972f2d540e8607f52d3adf4e
+nudge: true
+source-git-commit: 29133334b0491ed2d3f72253834546287a57dcf1
 workflow-type: tm+mt
-source-wordcount: '61'
+source-wordcount: '60'
 ht-degree: 8%
 
 ---
@@ -20,9 +21,9 @@ ht-degree: 8%
 - [Prise en main du  [!DNL Catalog Service]](get-started.md)
 - [Récupération des données du catalogue](graphql-queries.md)
 - Intégration à d’autres applications {#integration}
-  - [Intégration des catalogues et de Adobe I/O Events](catalog-events-guide.md)
+  - [Guide de configuration et d’intégration des événements de catalogue](catalog-events-guide.md)
   - [Service de catalogue et maillage API](mesh.md)
   - [Cas D’Utilisation : Affichage Des Prix Taxés](taxes.md)
 - [Notes de mise à jour](release-notes.md)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
