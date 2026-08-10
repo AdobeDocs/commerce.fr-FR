@@ -4,28 +4,16 @@ description: Diagnostiquez et résolvez les comportements inattendus dans  [!DNL
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-subfeature_v2:
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0id: e7dae43f-215c-4cdf-90d3-c5a461a6e669id: c18ed297-2187-4aec-affb-9d9654eca6fc
+subfeature_v2: id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -70,6 +58,17 @@ Cette page décrit les comportements que vous pouvez observer lors de l’utilis
 - Vérifiez que le site web est configuré pour la synchronisation dans la configuration d’exportation du connecteur. Voir [Personnalisation de la configuration de l’exportation des données](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Vérifiez que l&#39;ID du catalogue de prix utilisé dans [!DNL Commerce Optimizer] est présent dans la configuration [vue catalogue](../../optimizer/setup/catalog-view.md){target="_blank"} utilisée pour exécuter la requête de produits.
 
+## Les requêtes de storefront renvoient une erreur de refus d’accès ou les données du catalogue disparaissent entièrement
+
+**Problème :** les requêtes envoyées à l’API de marchandisage pour une vue de catalogue qui précédemment renvoyait des données échouent désormais avec une erreur de `access-key-invalid` ou un storefront qui fonctionnait cesse d’afficher les données de catalogue.
+
+**Cause :** la vue Catalogue a la fonction [protection du catalogue](../../optimizer/setup/private-catalog-view.md) activée et soit il manque l’en-tête `AC-Catalog-View-Access-Token` requis dans la requête, soit toutes les clés d’accès restreint affectées à la vue ont expiré. Le [!DNL Adobe Commerce Optimizer Connector] ne crée, n’attribue ni ne fait pivoter automatiquement les clés d’accès restreint. La gestion des clés est entièrement gérée par votre application cliente.
+
+**Solution :**
+
+- Vérifiez que la vue du catalogue dispose toujours d’au moins une [clé d’accès restreint](../../optimizer/setup/restricted-access-keys.md) non expirée, et faites pivoter ou ajoutez une clé si nécessaire.
+- Vérifiez que le storefront ou le client envoie un en-tête de `AC-Catalog-View-Access-Token` signé valide avec chaque requête. Voir [Vues de catalogue privé](../../optimizer/setup/private-catalog-view.md).
+
 ## Les données dans [!DNL Adobe Commerce Optimizer] sont écrasées ou modifiées de manière inattendue après la synchronisation
 
 **Problème :** les modifications de données appliquées directement dans [!DNL Adobe Commerce Optimizer] par un système externe (tel qu’un PIM ou un ERP) sont perdues ou rétablies après l’exécution d’une synchronisation par le connecteur.
@@ -79,7 +78,7 @@ Cette page décrit les comportements que vous pouvez observer lors de l’utilis
 
 **Solution :**
 
-Au lieu d’écrire des modifications de catalogue directement dans [!DNL Adobe Commerce Optimizer], utilisez [&#x200B; calques de catalogue &#x200B;](../../optimizer/setup/catalog-layer.md){target="_blank"} pour appliquer des modifications en dehors de [!DNL Adobe Commerce]. Les couches Catalogue permettent aux systèmes externes d’enrichir ou de remplacer les données de catalogue dans [!DNL Adobe Commerce Optimizer] sans entrer en conflit avec la synchronisation du connecteur.
+Au lieu d’écrire des modifications de catalogue directement dans [!DNL Adobe Commerce Optimizer], utilisez [ calques de catalogue ](../../optimizer/setup/catalog-layer.md){target="_blank"} pour appliquer des modifications en dehors de [!DNL Adobe Commerce]. Les couches Catalogue permettent aux systèmes externes d’enrichir ou de remplacer les données de catalogue dans [!DNL Adobe Commerce Optimizer] sans entrer en conflit avec la synchronisation du connecteur.
 
 ## Scénarios de dépannage pour les problèmes de [!DNL SaaS Data Export] courants
 

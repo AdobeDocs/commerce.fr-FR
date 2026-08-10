@@ -2,27 +2,17 @@
 title: Intégration du storefront [!DNL Adobe Commerce Optimizer Connector] Headless
 description: Découvrez comment intégrer des vitrines découplées à l’API  [!DNL Adobe Commerce Optimizer Connector] GraphQL, aux identifiants de catalogue de prix et au codage d’ajout au panier de lots.
 feature: Storefront, Integration, GraphQL
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T16:27:30.102Z'
 TQID: 'https://experienceleague.adobe.com/Orif1rROglTQ-3ZkRj5LMF90Y-AdpfTnOgPmJXQjYgc'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: 263
 ht-degree: 0%
 
 ---
@@ -35,7 +25,7 @@ Pour obtenir des instructions générales sur la configuration des storefronts, 
 
 ## GraphQL : requête `commerceOptimizer` {#graphql-commerceoptimizer-query}
 
-Les storefronts découplés appellent la requête `commerceOptimizer` GraphQL pour récupérer les `priceBookId` de la session client actuelle. Transmettez cette valeur à l’API [[!DNL Adobe Commerce Optimizer] &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api){target="_blank"} lors de la récupération des prix.
+Les storefronts découplés appellent la requête `commerceOptimizer` GraphQL pour récupérer les `priceBookId` de la session client actuelle. Transmettez cette valeur à l’API [[!DNL Adobe Commerce Optimizer] ](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api){target="_blank"} lors de la récupération des prix.
 
 ```graphql
 {
@@ -65,6 +55,10 @@ Comment résoudre `priceBookId` problème :
 | Client connecté | `websiteCode::sha1(customerGroupId)` |
 
 L’en-tête de requête `Store` détermine la portée du site web et, par conséquent, le composant `websiteCode`. Le composant `sha1(customerGroupId)` correspond à la formule d’identifiant de catalogue des prix utilisée lors de la synchronisation des données. Voir [Prix des livres](reference/field-mapping.md#price-books).
+
+>[!NOTE]
+>
+>Si la vue de catalogue cible a [!UICONTROL Catalog Protection] activée, incluez un en-tête de `AC-Catalog-View-Access-Token` signé avec `AC-View-ID` et `AC-Price-Book-ID` dans les requêtes d’API de marchandisage, ou la requête est refusée. Voir [Vues de catalogue privé](../optimizer/setup/private-catalog-view.md).
 
 ## Produits groupés : format d’ajout au panier {#bundle-products-add-to-cart-format}
 

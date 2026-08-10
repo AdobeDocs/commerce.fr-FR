@@ -1,28 +1,18 @@
 ---
-title: Configurer votre storefront
+title: Configurer Votre Storefront
 description: 'Découvrez comment configurer votre storefront [!DNL Adobe Commerce Optimizer] '
 role: Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 TQID: https://experienceleague.adobe.com/Jcj-3qVJPXr-t0X8-Y9GVziGj57ksUdWDhCO6pt-94A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 1562
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -37,20 +27,20 @@ Ce guide vous guide tout au long de la configuration d’un storefront pour votr
 
 * **Compte GitHub** qui peut créer des référentiels et qui est configuré pour le développement local (github.com).
 * **[!DNL Adobe Commerce Optimizer]instance** avec des exemples de données et des vues de catalogue et des politiques configurées
-   * Voir [Ajouter des données d’exemple](get-started.md#add-sample-data) pour obtenir des instructions de configuration.
+  * Voir [Ajouter des données d’exemple](get-started.md#add-sample-data) pour obtenir des instructions de configuration.
 
 ### Données d’instance requises
 
 Avant de commencer, collectez les informations suivantes à partir de votre instance [!DNL Adobe Commerce Optimizer] :
 
 * **Identifiant client** (également appelé identifiant d’instance)
-   * Disponible à partir de la page [Détails de l’instance](get-started.md#manage-instances)
+  * Disponible à partir de la page [Détails de l’instance](get-started.md#manage-instances)
 * **point d’entrée** pour votre instance
-   * Disponible à partir de la page [Détails de l’instance](get-started.md#manage-instances)
+  * Disponible à partir de la page [Détails de l’instance](get-started.md#manage-instances)
 * **Identifiant de la vue Catalogue** pour la vue Catalogue globale
-   * Disponible à partir de la page [Détails du catalogue](./setup/catalog-view.md#manage-catalog-view)
+  * Disponible à partir de la page [Détails du catalogue](./setup/catalog-view.md#manage-catalog-views)
 * **Paramètres régionaux** pour la vue de votre catalogue
-   * La valeur par défaut pour les données d’exemple est `en-US`
+  * La valeur par défaut pour les données d’exemple est `en-US`
 
 >[!NOTE]
 >
@@ -73,7 +63,7 @@ L’outil Créateur de site crée un projet de storefront complet avec les compo
 * **Site** : page de destination de storefront avec du contenu standard
 * **Code** : référentiel contenant des fichiers sources standard.
 * **Contenu** : environnement de création de documents avec des fichiers de contenu de site.
-* **Configuration Commerce** : [configuration du storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=fr){target="_blank"} pour une configuration spécifique à l’instance
+* **Configuration Commerce** : [configuration du storefront Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} pour une configuration spécifique à l’instance
 
 ### Étape 1 : générer votre projet
 
@@ -81,7 +71,7 @@ L’outil Créateur de site crée un projet de storefront complet avec les compo
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-1. Sélectionnez **Créer un site (code et contenu)**.
+1. Sélectionnez **[!UICONTROL Create New Site (Code & Content)]**.
 
 1. Effectuez la configuration du site :
 
@@ -89,7 +79,7 @@ L’outil Créateur de site crée un projet de storefront complet avec les compo
    * **Nom du site** : choisissez un nom explicite pour votre storefront
    * **Point d’entrée Commerce GraphQL (facultatif)** : saisissez le point d’entrée GraphQL de votre instance [!DNL Adobe Commerce Optimizer]
 
-1. Cliquez sur **Créer un site** pour créer le référentiel GitHub avec le code standard du storefront.
+1. Cliquez sur **[!UICONTROL Create Site]** pour créer le référentiel GitHub avec le code standard du storefront.
 
    Lorsque le référentiel est créé, le créateur du site se met à jour et vous invite à installer l’application de synchronisation du code.
 
@@ -103,7 +93,7 @@ L’outil Créateur de site crée un projet de storefront complet avec les compo
    * Cliquez sur le menu **[!UICONTROL Select repositories]**, puis choisissez le référentiel de code storefront que vous avez créé.
    * Cliquez sur **[!UICONTROL Save]** pour enregistrer votre référentiel.
 
-1. Revenez à la fenêtre du navigateur dans laquelle le créateur du site est ouvert, puis cliquez sur **Créer un site**.
+1. Revenez à la fenêtre du navigateur dans laquelle le créateur du site est ouvert, puis cliquez sur **[!UICONTROL Create Site]**.
 
    Le créateur du site copie le contenu standard du storefront dans l’environnement de création de documents. Ce processus prend entre 1 et 2 minutes.
 
@@ -115,7 +105,7 @@ L’outil Créateur de site crée un projet de storefront complet avec les compo
 
    Utilisez ces liens pour gérer le code, le contenu et la configuration de votre storefront.
 
-1. Copiez et enregistrez ces liens pour référence ultérieure : cliquez sur **[!UICONTROL Copy].
+1. Copiez et enregistrez ces liens pour vous y référer ultérieurement : cliquez sur **[!UICONTROL Copy]**.
 
 ## Configuration de votre storefront
 
@@ -140,6 +130,10 @@ Mettez à jour la configuration de storefront pour vous connecter à votre insta
    >[!NOTE]
    >
    >Pour trouver l&#39;ID du catalogue de prix, vérifiez les [détails de configuration de la vue de catalogue](./setup/catalog-view.md) dans [!DNL Adobe Commerce Optimizer] pour voir les catalogues de prix affectés. Si aucun catalogue des prix n’est affecté, vous pouvez supprimer cet en-tête du fichier de configuration. Ajoutez-le à nouveau lorsqu&#39;un catalogue a été affecté à la vue Catalogue.
+
+   >[!NOTE]
+   >
+   >Si la vue de catalogue a [!UICONTROL Catalog Protection] activée, ajoutez un en-tête de `AC-Catalog-View-Access-Token` portant un jeton signé valide, ou les requêtes de storefront à cette vue de catalogue sont refusées. Voir [Vues de catalogue privé](./setup/private-catalog-view.md).
 
 1. Enregistrez le fichier de configuration.
 
@@ -225,34 +219,34 @@ Avant de passer aux étapes suivantes, vérifiez que votre storefront fonctionne
 
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Les valeurs de configuration correspondent aux paramètres de votre instance<br>
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) la page d’accueil de Storefront se charge sans erreur<br>
-![&#x200B; Liste de contrôle &#x200B;](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) au moins une page de détails du produit affiche des informations complètes<br>
+![ Liste de contrôle ](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) au moins une page de détails du produit affiche des informations complètes<br>
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) la fonctionnalité de recherche renvoie des résultats pertinents<br>
 ![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Les images du produit se chargent correctement<br>
-![Liste de contrôle](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Les valeurs de configuration correspondent aux paramètres de votre instance<br>
+<br>
 
 ### Obtenir de l’aide
 
 Si les problèmes persistent :
 
-* Consultez la [documentation du storefront &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr){target="_blank"}
-* Consultez le guide du développeur de Adobe Commerce Optimizer [&#128279;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
-* Consultez les [ressources d’assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview){target="_blank"}
+* Consultez la [documentation du storefront ](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}
+* Consultez le guide du développeur de Adobe Commerce Optimizer [](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+* Consultez les [ressources d’assistance ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## Étapes suivantes
 
-* **[Configurer un environnement de développement local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr#set-up-local-environment){target="_blank"}**—Créez un environnement local pour personnaliser le code et le contenu de votre storefront.
-* **[Activer l’éditeur universel](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/?lang=fr){target="_blank"}**-L’éditeur universel vous permet de modifier le contenu du storefront dans le contexte de la page rendue. Le contenu est ensuite enregistré dans votre projet de création de documents (DA.live) où vous pouvez utiliser la plupart des applications d’orchestration de contenu, telles que la localisation, la publication en masse, les instantanés, etc.
+* **[Configurer un environnement de développement local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}**—Créez un environnement local pour personnaliser le code et le contenu de votre storefront.
+* **[Activer l’éditeur universel](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/){target="_blank"}**-L’éditeur universel vous permet de modifier le contenu du storefront dans le contexte de la page rendue. Le contenu est ensuite enregistré dans votre projet de création de documents (DA.live) où vous pouvez utiliser la plupart des applications d’orchestration de contenu, telles que la localisation, la publication en masse, les instantanés, etc.
 
 ### Apprendre et explorer
 
 * **[Complétez le cas d&#39;utilisation complet](./use-case/admin-use-case.md)**—En savoir plus sur la configuration de storefront et la gestion des catalogues à l&#39;aide de [!DNL Adobe Commerce Optimizer].
 
-* **[Explorer la personnalisation du storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=fr){target="_blank"}**—Découvrez les options de configuration et de configuration avancées.
+* **[Explorer la personnalisation du storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}**—Découvrez les options de configuration et de configuration avancées.
 
-* **[Utilisez les listes déroulantes Commerce pour personnaliser l’expérience storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=fr){target="_blank"}**-ajoutez des composants préconfigurés pour améliorer votre expérience storefront.
+* **[Utilisez les listes déroulantes Commerce pour personnaliser l’expérience storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/){target="_blank"}**-ajoutez des composants préconfigurés pour améliorer votre expérience storefront.
 
 * **Migrer vers le service de configuration de storefront** : après avoir créé votre storefront initial, vous pouvez migrer la configuration pour utiliser le service de configuration qui prend en charge les cas d’utilisation avancés tels que la configuration et les recouvrements sans réponse. Pour plus d’informations, consultez la documentation du [Service de configuration](https://www.aem.live/docs/config-service-setup){target="_blank"} dans le Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Consultez la [documentation du storefront &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr){target="_blank"} pour en savoir plus sur la mise à jour du contenu du site et l’intégration aux composants frontend Commerce et aux données principales.
+> Consultez la [documentation du storefront ](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"} pour en savoir plus sur la mise à jour du contenu du site et l’intégration aux composants frontend Commerce et aux données principales.
