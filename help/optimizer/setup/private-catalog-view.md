@@ -4,10 +4,19 @@ description: Découvrez comment créer une vue de catalogue privée en activant 
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
 source-wordcount: 467
@@ -49,7 +58,7 @@ Avant de commencer, [créez une clé d’accès restreint](restricted-access-key
 
 ## Vérifier que l’accès est appliqué
 
-Pour confirmer qu’une vue de catalogue privé rejette les requêtes non autorisées, appelez son point d’entrée [](../get-started.md#get-instance-details) avec ou sans jeton signé, à l’aide des en-têtes suivants :
+Pour confirmer qu’une vue de catalogue privé rejette les requêtes non autorisées, appelez son point d’entrée [&#128279;](../get-started.md#get-instance-details) avec ou sans jeton signé, à l’aide des en-têtes suivants :
 
 | En-tête | Objectif |
 | --- | --- |

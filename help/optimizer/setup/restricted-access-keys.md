@@ -6,10 +6,19 @@ role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
 source-git-commit: 688bc6e28a4c5a94b1fe55c84f7c05401dd651bc
 workflow-type: tm+mt
@@ -68,7 +77,7 @@ La taille de la clé doit être comprise entre 2 048 et 8 192 bits. `public-key.
 
 1. Saisissez les détails clés :
 
-   ![Ajoutez le formulaire de clé d’accès restreint, avec les champs Titre, Date d’expiration et Clé publique ](../assets/restricted-access-keys-add.png){width="70%" zoomable="yes"}
+   ![Ajoutez le formulaire de clé d’accès restreint, avec les champs Titre, Date d’expiration et Clé publique &#x200B;](../assets/restricted-access-keys-add.png){width="70%" zoomable="yes"}
 
    - **[!UICONTROL Title]** : libellé permettant d&#39;identifier la clé, affiché dans la liste des clés et dans le sélecteur de clé de la vue du catalogue, par exemple `ACME Corp wholesale portal — Tier 1 pricing`.
    - **[!UICONTROL Expiration date]** : date et heure (UTC) au-delà desquelles la clé cesse d’être honorée, même pour un jeton qui n’a pas encore expiré.
@@ -76,7 +85,7 @@ La taille de la clé doit être comprise entre 2 048 et 8 192 bits. `public-key.
 
 1. Cliquez sur **[!UICONTROL Save]**.
 
-Les clés sont immuables après leur création. Pour modifier n’importe quelle valeur, supprimez la clé et créez-en une. Voir [ Rotation d’une clé ](#rotate-a-key) pour ce faire sans interruption de l’accès.
+Les clés sont immuables après leur création. Pour modifier n’importe quelle valeur, supprimez la clé et créez-en une. Voir [&#x200B; Rotation d’une clé &#x200B;](#rotate-a-key) pour ce faire sans interruption de l’accès.
 
 ## Attribution d’une clé à une vue de catalogue
 

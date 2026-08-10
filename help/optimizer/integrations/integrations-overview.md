@@ -53,5 +53,5 @@ Le connecteur Commerce Salesforce (basé sur Adobe App Builder) synchronise les 
 
 >[!MORELIKETHIS]
 >
->- [Documentation technique de ](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+>- [Documentation technique de &#x200B;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 >- [Prise en main de Adobe Commerce Optimizer](../get-started.md)
