@@ -4,28 +4,15 @@ description: Découvrez les notes  [!DNL Adobe Commerce Optimizer Connector]  mi
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/6NeLAfThvIWIyV4Y6OWtL8V9mC7lPy7UH-Zli8E-WEk'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-subfeature_v2:
-  - id: dad884f1-e840-49a1-970e-2f965bdbc410
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4eb33526927e1c5a81612aab0de0ce4bc7746368
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: f08fa0de-a550-4acd-b570-f81cf1d03aafid: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+subfeature_v2: id: dad884f1-e840-49a1-970e-2f965bdbc410id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 1d14f7827de3274564941765fd2943ecefac5fad
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: 460
 ht-degree: 0%
 
 ---
@@ -39,6 +26,14 @@ Ces notes de mise à jour décrivent toutes les versions du [!DNL Adobe Commerce
 ![Problème connu](../assets/bug.svg) Problèmes connus
 
 ## Versions De 2026
+
+### Version 1.0.16
+
+_7 août 2026_
+
+![Correctif](../assets/fix.svg) **La synchronisation des catalogues ne se bloque plus sur une configuration non valide**-Correction d’un problème où la synchronisation des catalogues pouvait s’exécuter indéfiniment si la configuration [!DNL Adobe Commerce Optimizer Connector] était manquante ou non valide. La synchronisation se termine maintenant et consigne un avertissement au lieu de continuer à s’exécuter. <!--MDEE-1413-->
+![Correctif](../assets/fix.svg) **Requêtes d’administration de [!DNL Adobe Commerce Optimizer] plus fiables**-Correction d’un problème en raison duquel le [!DNL Adobe Commerce Optimizer Connector] pouvait utiliser une URL incorrecte pour les requêtes d’administration de [!DNL Adobe Commerce Optimizer], ce qui pouvait entraîner l’échec de ces requêtes. <!--COMOPT-2288-->
+![Correctif](../assets/fix.svg) **Opérations d’actualisation et de correction plus fiables**-Correctif d’un problème où les opérations d’actualisation et de correction pouvaient cibler un environnement incorrect, ce qui pouvait entraîner l’échec des requêtes. <!--COMOPT-2288-->
 
 ### Version 1.0.15
 
@@ -63,7 +58,7 @@ _1 juin 2026_
 _6 mai 2026_
 
 ![Correctif](../assets/fix.svg) **Amélioration des instructions de configuration du [!DNL Adobe Commerce Optimizer Connector]** - Mise à jour de la page de configuration du [!DNL Adobe Commerce Optimizer] dans Commerce Admin afin de renvoyer vers le guide d’intégration du _[!DNL Adobe Commerce Optimizer Connector]_.
-
+<!--COMOPT-1922-->
 
 ![Correctif](../assets/fix.svg) amélioration **[!DNL Adobe Commerce Optimizer Connector]métadonnées** - La [!DNL Adobe Commerce Optimizer Connector] inclut désormais sa version installée dans l’en-tête des métadonnées. Cette amélioration permet aux équipes d’identifier rapidement la version du connecteur utilisée lors des missions de dépannage ou d’assistance.<!--MDEE-1323-->
 
