@@ -25,5 +25,5 @@ ht-degree: 8%
   - [Service de catalogue et maillage API](mesh.md)
   - [Cas D’Utilisation : Affichage Des Prix Taxés](taxes.md)
 - [Notes de mise à jour](release-notes.md)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)
 

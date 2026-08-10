@@ -157,7 +157,7 @@ Pour activer les événements de catalogue de bout en bout, procédez comme suit
 >* [La connexion  [!DNL Adobe I/O]  est configurée pour Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/configure-commerce).
 >* Accès à [!DNL Adobe Developer Console] dans la même organisation IMS que celle dans laquelle l’environnement Commerce est configuré.
 >* Pour vérifier que la synchronisation avec les services SaaS Commerce est effectuée, utilisez le **[!UICONTROL Data Management Dashboard]** dans l’interface d’administration.
->* Les versions v6.0, [!DNL Live Search] v4.1.0+ ou [!DNL Catalog Service] v1.17+ de Recommandations de produits sont requises pour la vérification des tableaux de bord. Adobe recommande de mettre à jour votre projet Commerce vers les dernières versions prises en charge de ces services. Pour les versions de service antérieures, utilisez [Synchronisation des catalogues](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) pour vérifier la synchronisation.
+>* Les versions v6.0, [!DNL Live Search] v4.1.0+ ou [!DNL Catalog Service] v1.17+ de Recommandations de produits sont requises pour la vérification des tableaux de bord. Adobe recommande de mettre à jour votre projet Commerce vers les dernières versions prises en charge de ces services. Pour les versions de service antérieures, utilisez [Synchronisation des catalogues](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/data-services/catalog-sync) pour vérifier la synchronisation.
 
 
 >[!NOTE]
@@ -172,11 +172,11 @@ Vérifiez que [!DNL Catalog Service] dispose des données de catalogue actuelles
 
 1. Confirmez la réussite de l’exportation du **flux depuis Commerce**.
 
-   À partir de l’administration [!DNL Adobe Commerce], ouvrez la page [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**) et vérifiez que le dernier statut d’exportation a réussi pour chaque flux de [!DNL Catalog Service].
+   À partir de l’administration [!DNL Adobe Commerce], ouvrez la page [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**) et vérifiez que le dernier statut d’exportation a réussi pour chaque flux de [!DNL Catalog Service].
 
 1. Confirmez la réussite de la **synchronisation avec les services Commerce connectés** à partir de l’administrateur [!DNL Adobe Commerce].
 
-   À partir de l’administration [!DNL Adobe Commerce], ouvrez le [tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**) et vérifiez que les données des produits synchronisés incluent les produits attendus.
+   À partir de l’administration [!DNL Adobe Commerce], ouvrez le [tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**) et vérifiez que les données des produits synchronisés incluent les produits attendus.
 
 ### S’inscrire et s’abonner à [!DNL Adobe I/O Events] {#register-events}
 
@@ -295,9 +295,9 @@ Si des événements de catalogue sont manquants ou retardés, procédez comme su
 
    Les événements de catalogue nécessitent des données actives en [!DNL Catalog Service]. Confirmez les deux étapes du chemin d’exportation :
 
-   * **Exportation des flux depuis Commerce** — Sur la page [État de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ou dans `var/log/saas-export.log`, vérifiez que [!DNL Catalog Service] flux ont bien été exportés depuis [!DNL Commerce].
+   * **Exportation des flux depuis Commerce** — Sur la page [État de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) ou dans `var/log/saas-export.log`, vérifiez que [!DNL Catalog Service] flux ont bien été exportés depuis [!DNL Commerce].
 
-   * **Synchroniser avec les services SaaS Commerce connectés** — Vérifiez que les données ont bien été synchronisées avec le [!DNL Catalog Service] dans le tableau de bord [Data Management](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), [Synchronisation de catalogue](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) ou dans les journaux d’exportation.
+   * **Synchroniser avec les services SaaS Commerce connectés** — Vérifiez que les données ont bien été synchronisées avec le [!DNL Catalog Service] dans le tableau de bord [Data Management](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard), [Synchronisation de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/data-services/catalog-sync) ou dans les journaux d’exportation.
 
    Pour résoudre les problèmes liés aux tâches d’exportation et de synchronisation, voir [Synchronisation des données avec l’exportation de données SaaS](../data-export/data-sync-manage.md) et [Journalisation et dépannage](../data-export/troubleshooting/logging.md).
 
@@ -319,7 +319,7 @@ Si des événements de catalogue sont manquants ou retardés, procédez comme su
    * [!DNL Adobe I/O Events] les détails de l’abonnement.
    * Heure approximative et description des événements manquants.
 
-   Pour obtenir de l’aide supplémentaire, voir [tickets d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
+   Pour obtenir de l’aide supplémentaire, voir [tickets d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 >[!MORELIKETHIS]
 >
