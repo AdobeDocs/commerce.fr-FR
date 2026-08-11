@@ -26,10 +26,10 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: fb025e5232902ba9fea7e858085ea85abeb11720
 workflow-type: tm+mt
-source-wordcount: 1059
-ht-degree: 0%
+source-wordcount: 1106
+ht-degree: 3%
 
 ---
 
@@ -202,7 +202,7 @@ Récupérez l’_identifiant du client_ à partir du champ _[!DNL Instance Id]_&
 
 1. **Configurer [!DNL Commerce Optimizer] vues de catalogue et des politiques**
 
-   Créez des vues et des politiques de catalogue dans l’interface utilisateur de [!DNL Commerce Optimizer]. Notez que les tarifs sont créés automatiquement à partir de groupes de clients [!DNL Adobe Commerce]. Pour obtenir des instructions détaillées, reportez-vous à la documentation [Vues de catalogue](../optimizer/setup/catalog-view.md) et [Politiques](../optimizer/setup/policies.md) du Guide de l’utilisateur *[!DNL Commerce Optimizer].*.
+   Créez des vues et des politiques de catalogue dans l’interface utilisateur de [!DNL Commerce Optimizer]. Notez que les tarifs sont créés automatiquement à partir de groupes de clients [!DNL Adobe Commerce]. Pour obtenir des instructions détaillées, reportez-vous à la documentation [Vues de catalogue](../optimizer/setup/catalog-view.md) et [Politiques](../optimizer/setup/policies.md) du Guide de l’utilisateur *[!DNL Commerce Optimizer].*. Pour restreindre l’accès à une vue de catalogue, voir [Vues de catalogue privé](../optimizer/setup/private-catalog-view.md).
 
 1. **Configuration d’un storefront Commerce sur[!DNL Edge Delivery Services]**
 

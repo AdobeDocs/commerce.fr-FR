@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: 263
 ht-degree: 0%
 
 ---
@@ -65,6 +65,10 @@ Comment résoudre `priceBookId` problème :
 | Client connecté | `websiteCode::sha1(customerGroupId)` |
 
 L’en-tête de requête `Store` détermine la portée du site web et, par conséquent, le composant `websiteCode`. Le composant `sha1(customerGroupId)` correspond à la formule d’identifiant de catalogue des prix utilisée lors de la synchronisation des données. Voir [Prix des livres](reference/field-mapping.md#price-books).
+
+>[!NOTE]
+>
+>Si la vue de catalogue cible a [!UICONTROL Catalog Protection] activée, incluez un en-tête de `AC-Catalog-View-Access-Token` signé avec `AC-View-ID` et `AC-Price-Book-ID` dans les requêtes d’API de marchandisage, ou la requête est refusée. Voir [Vues de catalogue privé](../optimizer/setup/private-catalog-view.md).
 
 ## Produits groupés : format d’ajout au panier {#bundle-products-add-to-cart-format}
 

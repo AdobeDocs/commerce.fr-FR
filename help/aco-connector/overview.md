@@ -26,9 +26,10 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+nudge: true
+source-git-commit: 83120d472ea7838a255c7767cd0bbe9085dff013
 workflow-type: tm+mt
-source-wordcount: 1075
+source-wordcount: 1087
 ht-degree: 0%
 
 ---
@@ -127,7 +128,7 @@ Pour plus d’informations, consultez les rubriques suivantes :
 
 Une fois que [!DNL Adobe Commerce] données sont disponibles dans [!DNL Adobe Commerce Optimizer], utilisez [[!DNL Adobe Commerce Optimizer] Studio](/help/optimizer/overview.md#quick-tour) pour connecter les expériences de marchandisage et de storefront à votre catalogue synchronisé. Les étapes suivantes standard sont les suivantes :
 
-- **Vues et politiques de catalogue** — Définissez des sous-ensembles et des règles d&#39;accès spécifiques à la région, à la marque ou au client à partir du menu [!UICONTROL Store setup]
+- **Vues et politiques de catalogue** — Définissez des sous-ensembles et des règles d&#39;accès spécifiques à la région, à la marque ou au client à partir du menu [!UICONTROL Store setup]. Pour savoir qui peut interroger une vue de catalogue, consultez [Vues de catalogue privé](/help/optimizer/setup/private-catalog-view.md)
 - **Découverte de produits et recommandations** — Configurez la recherche, les facettes, les règles de marchandisage, les synonymes et les unités de recommandation dans le menu [!UICONTROL Merchandising]. Le comportement de recherche et de recommandation est géré dans [!DNL Adobe Commerce Optimizer] ; les paramètres [!DNL Live Search] et [!DNL Product Recommendations] de l’administrateur [!DNL Adobe Commerce] ne s’appliquent plus à ces flux
 - **Connexions Storefront** — Pointez les storefronts Commerce sur des versions [!DNL Edge Delivery Services] ou tierces découplées vers les points d’entrée appropriés du client [!DNL Adobe Commerce Optimizer], de la vue de catalogue et de l’API de marchandisage. Pour les intégrations découplées personnalisées, voir [Intégration storefront découplée](/help/aco-connector/headless-storefront.md). Pour obtenir un exemple d’intégration tierce, consultez la section Connecteur Salesforce Commerce [&#x200B; [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)
 - **Passage en caisse** — Conservez le panier, le passage en caisse, la gestion des commandes et les comptes clients sur [!DNL Adobe Commerce] ou une plateforme tierce connectée. Utilisez des [!DNL App Builder] et des [!DNL API Mesh] pour la remise du panier si nécessaire.

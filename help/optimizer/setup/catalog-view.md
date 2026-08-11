@@ -1,5 +1,5 @@
 ---
-title: Vue Catalogue
+title: Vues du catalogue
 description: Découvrez les vues de catalogue et comment les créer pour organiser votre catalogue de produits par structure d’entreprise, politiques et prix.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
@@ -20,16 +20,17 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+nudge: true
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 1210
+source-wordcount: 1276
 ht-degree: 0%
 
 ---
 
 # Vues de catalogue pour les services de marchandisage
 
-Les vues Catalogue constituent la base des services de marchandisage [!DNL Adobe Commerce Optimizer]. Elles vous permettent d’organiser votre catalogue de produits par structure d’entreprise, politiques et prix. Ce modèle de données flexible prend en charge des scénarios multimarques, multiservices et multilingues tout en préservant l’efficacité opérationnelle.
+Une vue de catalogue définit les produits et les prix qu’un client peut récupérer. Il combine des sources de catalogue, des calques de catalogue, des politiques et des livres de prix pour prendre en charge différentes marques, régions, unités commerciales ou canaux.
 
 ## Que sont les vues de catalogue ?
 
@@ -39,26 +40,30 @@ Les vues Catalogue définissent l’organisation et l’affichage de votre catal
 - **Quel prix est affiché** via les livres de prix liés
 - **Comment les produits sont filtrés** à l’aide de politiques (attributs tels que la marque, le modèle, la catégorie)
 - **Qu’est-ce que [source du catalogue](catalog-sources.md) est utilisé** en fonction d’attributs tels que les paramètres régionaux
+- **Qui peut accéder aux données de la vue** via [Protection du catalogue](private-catalog-view.md) et [clés d’accès restreintes](restricted-access-keys.md)
 
-Considérez les vues de catalogue comme différentes « lentilles » à travers lesquelles les clients voient votre catalogue. Par exemple :
+Par exemple, vous pouvez créer des vues de catalogue distinctes pour :
 
-- Une vue de catalogue de revendeurs peut afficher uniquement les produits disponibles pour ce revendeur spécifique
-- Une vue de catalogue régionale peut afficher des produits et des prix spécifiques à une zone géographique
-- Une vue de catalogue de marques peut afficher uniquement les produits d’une marque particulière
+- Une marque ou une unité opérationnelle
+- Une région géographique
+- Un revendeur ou un canal partenaire
+- Un segment client avec une tarification spécifique
 
 ## Création d’une vue de catalogue
 
+Avant de créer une vue de catalogue, préparez les éléments suivants selon les besoins :
+
+- Une [source de catalogue](catalog-sources.md)
+- [Politiques](policies.md) qui définissent des filtres de produit
+- [Calques de catalogue](catalog-layer.md) si vous devez remplacer les attributs de produit
+- [Classeurs de prix](pricebooks.md) pour le prix affiché dans la vue
+- [Clés d’accès limitées](restricted-access-keys.md) si vous souhaitez créer une vue de catalogue privée
+
+### Configuration
+
 Dans cette section, créez une vue de catalogue, sélectionnez une [politique](policies.md) et un [catalogue](pricebooks.md).
 
-Avant de créer une vue de catalogue, vérifiez que vous disposez des éléments suivants :
-
-- [Politiques créées](policies.md) pour définir des filtres de produit.
-
-- [Calques de catalogue définis](catalog-layer.md) pour définir des variantes de vos produits.
-
-- [Catalogues de prix ingérés](pricebooks.md) pour la tarification.
-
-1. Dans le menu de gauche, accédez à _Configuration du magasin_ , puis cliquez sur **[!UICONTROL Catalog views]**.
+1. Dans le menu de gauche, accédez à **[!UICONTROL Store setup]**, puis cliquez sur **[!UICONTROL Catalog views]**.
 
 1. Cliquez sur **[!UICONTROL Create catalog view]**. &#x200B;
 
@@ -66,14 +71,20 @@ Avant de créer une vue de catalogue, vérifiez que vous disposez des éléments
 
    - **Nom** : saisissez le nom de la vue du catalogue, par exemple `Celport`. &#x200B;
    - **Sources de catalogue** : sélectionnez la [source de catalogue](catalog-sources.md) par exemple `en-US`.
-   - **Calques du catalogue**-Examinez les calques ingérés et la priorité.
+   - **Calques de catalogue** : passez en revue les calques ingérés et leur priorité.
    - **Politiques** : utilisez la liste déroulante pour sélectionner les politiques appropriées. Par exemple, « Marque », « Modèle ». &#x200B;Vérifiez que vous avez déjà [créé une politique](policies.md).
 
 1. Sélectionnez le catalogue à lier à la vue du catalogue.
 
-   - **Utiliser tous les tarifs disponibles**-Cette option extrait les données de tarification de tous les tarifs disponibles.
-   - **Autoriser uniquement les catalogues de prix sélectionnés**-Cette option affiche la boîte de dialogue **Ajouter des catalogues de prix autorisés** dans laquelle vous pouvez sélectionner le catalogue spécifique à utiliser pour la vue catalogue.
-   - **Désactiver le prix**-Cette option n’est pas disponible pour le moment.
+   - **Utiliser tous les tarifs disponibles** : cette option extrait les données de tarification de tous les tarifs disponibles.
+   - **Autoriser les tarifs catalogue sélectionnés uniquement** : cette option affiche la boîte de dialogue **Ajouter des tarifs catalogue autorisés**. Utilisez cette boîte de dialogue pour sélectionner le catalogue de prix spécifique à utiliser pour la vue Catalogue.
+   - **Désactiver la tarification**—Cette option n&#39;est pas disponible pour le moment.
+
+   >[!NOTE]
+   >
+   >Un ID de catalogue des prix contrôle la tarification demandée. Cela ne limite pas l’accès à la vue Catalogue. Pour restreindre l’accès, activez la protection du catalogue pour créer une [vue de catalogue privée](private-catalog-view.md).
+
+1. (Facultatif) Activez/désactivez le **[!UICONTROL Catalog Protection]** pour **[!UICONTROL Enabled]** de restreindre les données de cette vue de catalogue aux clients disposant d’un jeton signé valide. Voir [Protection d’une vue de catalogue](private-catalog-view.md#protect-a-catalog-view) pour connaître les étapes de configuration.
 
 1. Cliquez sur **[!UICONTROL Add]** pour créer la vue du catalogue avec les tarifs et les politiques associés.
 
@@ -87,41 +98,42 @@ Vous pouvez définir une vue de catalogue lorsque vous [créez des unités de re
 
 ## Calques de catalogue
 
-Les calques de catalogue vous permettent de modifier les données de produit dans une vue de catalogue sans modifier les données source d’origine. Les calques appliquent des modifications à des attributs de produit spécifiques, tels que le nom, la description, les images, les liens et les métadonnées, en créant un calque au-dessus de votre catalogue de base. Vos données de produit d’origine restent intactes, ce qui vous permet de personnaliser les produits en toute sécurité et d’annuler les modifications à tout moment.
+Les calques de catalogue vous permettent de remplacer les attributs de produit sélectionnés sans modifier les données du catalogue source. Utilisez des calques pour personnaliser les noms, les descriptions, les images, les liens ou les métadonnées d’une vue de catalogue.
 
-Les cas d’utilisation courants des calques de catalogue sont les suivants :
+Voir [&#x200B; Calques de catalogue &#x200B;](catalog-layer.md).
 
-- **Optimisation de l’optimisation du référencement** : remplacez les titres et descriptions des métadonnées de produit en fonction des recommandations de l’IA de [Sites Optimizer](../manage-results/opportunities.md)
-- **Campagnes saisonnières**—Mettez temporairement à jour les noms, descriptions ou images de produits pour les promotions
-- **Personnalisation régionale**—Affichez différentes informations sur les produits en fonction de l&#39;emplacement géographique ou de la langue
-- **A/B testing** : testez différentes présentations de produits pour optimiser les taux de conversion.
-- **Gestion multimarque** : personnalisez les attributs de produit pour différentes vues de catalogue de marque.
+## Rendre une vue de catalogue privée
 
-Pour en savoir plus sur la création, la gestion et la hiérarchisation des calques de catalogue, voir [Calques de catalogue](catalog-layer.md).
+Par défaut, une vue de catalogue est publique pour les applications clientes qui peuvent accéder à l’API de marchandisage GraphQL. Pour restreindre l’accès, configurez une vue de catalogue privé en activant **[!UICONTROL Catalog Protection]**.
 
-## Gérer la vue du catalogue
+Pour savoir comment protéger une vue de catalogue et vérifier que l’accès est appliqué, consultez [Vues de catalogue privé](private-catalog-view.md).
 
-Suivez ces instructions pour mettre à jour ou afficher les propriétés des vues de catalogue existantes.
+## Gestion des vues de catalogue
 
-### Modifier la vue du catalogue
+Pour mettre à jour ou afficher les propriétés des vues de catalogue existantes, suivez ces instructions.
 
-1. Dans l’espace de travail *Vues du catalogue*, recherchez la vue du catalogue dans la grille à modifier, puis cliquez sur **...** pour ouvrir le menu d’actions.
-1. Cliquez sur **Modifier** pour accéder à l’éditeur de vue de catalogue.
-1. Mettez à jour le nom, les sources de catalogue, les politiques et les informations du catalogue selon les besoins.
-1. Enregistrez les modifications.
+### Modifier une vue de catalogue
 
-### Supprimer la vue Catalogue
+1. Dans l’espace de travail **[!UICONTROL Catalog views]**, recherchez la vue du catalogue.
+1. Pour ouvrir le menu d’actions, sélectionnez (**[!UICONTROL ...]**).
+1. Sélectionnez **[!UICONTROL Edit]** pour accéder à l’éditeur de vue de catalogue.
+1. Mettez à jour le nom, les sources de catalogue, les politiques, les informations sur le catalogue et les paramètres de **[!UICONTROL Catalog Protection]** (y compris les clés d’accès restreint affectées) si nécessaire.
+1. Cliquez sur **[!UICONTROL Save]**.
 
-1. Dans l’espace de travail *Vues du catalogue*, recherchez la vue du catalogue dans la grille à modifier, puis cliquez sur **...** pour ouvrir le menu d’actions.
-1. Cliquez sur **Supprimer**.
+### Suppression d’une vue de catalogue
+
+1. Dans l’espace de travail **[!UICONTROL Catalog views]**, recherchez la vue du catalogue.
+1. Pour ouvrir le menu d’actions, sélectionnez (**[!UICONTROL ...]**).
+1. Sélectionnez **[!UICONTROL Delete]**.
+1. Confirmez la suppression.
 
    Lorsque la boîte de dialogue de confirmation s’affiche, cliquez sur **[!UICONTROL Delete]**.
 
-### Afficher les détails
+### Afficher les détails de la vue Catalogue
 
-Cette option permet d’afficher rapidement tous les paramètres de la vue de catalogue, tout en restant dans le tableau *Vues du catalogue*.
+Cette option permet d’afficher rapidement tous les paramètres de la vue de catalogue, tout en restant sur la table **[!UICONTROL Catalog views]**.
 
-Dans l’espace de travail *Vues du catalogue*, recherchez la vue du catalogue dans la grille à modifier, puis cliquez sur l’icône ![informations](../assets/info-icon.png).
+Dans l’espace de travail **[!UICONTROL Catalog views]**, sélectionnez l’icône ![informations](../assets/info-icon.png) d’une vue de catalogue pour afficher ses détails de configuration.
 
 ![Vue catalogue - Détails](../assets/catalog-view-details.png)
 
@@ -154,7 +166,9 @@ Les données ingérées créent un catalogue de base unifié dans le pipeline de
 Plusieurs vues de catalogue représentent différentes unités commerciales (par exemple, « Texas Retail », « Texas Retail Seasonal »). Pour plus de flexibilité, les paramètres régionaux, les politiques et les tarifs peuvent être partagés entre les vues de catalogue.
 
 **4. Diffusion Multicanal**
-Les données de catalogue filtrées sont diffusées vers diverses destinations, notamment les vitrines Edge Delivery Services, les marchés, les plateformes publicitaires et les micro-vitrines personnalisées. Pour plus d’informations sur la diffusion des données de catalogue, consultez la [documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/optimizer/).
+Les données de catalogue filtrées sont diffusées vers des destinations telles que Edge Delivery Services, des marchés, des plateformes publicitaires et des micro-vitrines personnalisées. Pour plus d’informations sur la diffusion des données de catalogue, consultez la [documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/optimizer/).
+
+Lorsqu’une vue de catalogue a **[!UICONTROL Catalog Protection]** activée, la diffusion vers cette destination nécessite un jeton signé valide d’une [clé d’accès restreint](restricted-access-keys.md) attribuée ; les requêtes non autorisées sont refusées au lieu de recevoir les données de catalogue.
 
 ### Composants clés
 
@@ -164,6 +178,7 @@ Les données de catalogue filtrées sont diffusées vers diverses destinations, 
 | **Politique** | Filtre de produit basé sur les attributs | Marque, modèle, catégorie |
 | **Paramètres régionaux** | Paramètre de langue/région | en-US, fr-CA, es-MX |
 | **Prix catalogue** | Structure de tarification | Vente au détail, vente en gros, employé |
+| **Clé d’accès restreinte** | Informations d’identification de jeton signé qui permettent d’accéder à une vue de catalogue protégée | Clé du portail partenaire, clé de tarification B2B |
 
 ### Flux de données
 
@@ -180,6 +195,7 @@ Les données de catalogue filtrées sont diffusées vers diverses destinations, 
 | **Évolutive** | Gestion efficace de plus de 200 millions de SKU |
 | **Multicanal** | Fournir des catalogues aux vitrines, aux marchés et aux plateformes publicitaires |
 | **Mises à jour en temps réel** | Mise à jour rapide des données de catalogue pour les promotions et les campagnes |
+| **Vues de catalogue privé** | Restreindre une vue de catalogue aux clients autorisés à l’aide de la validation de jeton signé |
 
 ## Cas d’utilisation
 
@@ -198,13 +214,15 @@ Les données de catalogue filtrées sont diffusées vers diverses destinations, 
 **Défi** : Différents prix et stocks par emplacement<br>
 **Solution** : vues de catalogue basées sur l’emplacement avec des politiques spécifiques à la région
 
->[!INFO]
+>[!NOTE]
 >
 >Pour plus d’informations sur l’ingestion et la diffusion des données de catalogue, consultez la [documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/optimizer/).
 
 ## Plus comme ceci
 
-- [Sources de catalogue](catalog-sources.md) - Définissez la portée faisant autorité des produits, attributs et catégories pour le comportement de recherche, de filtrage et de tri
-- [Calques de catalogue](catalog-layer.md) - Découvrez comment modifier les données de produit sans modifier la source d’origine.
-- [Politiques](policies.md) - Créez des politiques pour filtrer les produits dans les vues du catalogue
-- [Classeurs de prix](pricebooks.md) - Gérez les structures de prix pour différents segments de clientèle
+- [Sources de catalogue](catalog-sources.md) : définissez la portée faisant autorité des produits, attributs et catégories pour le comportement de recherche, de filtrage et de tri
+- [Calques de catalogue](catalog-layer.md) : découvrez comment modifier les données d’un produit sans modifier la source d’origine.
+- [Vues de catalogue privées](private-catalog-view.md) : créez une vue de catalogue privée pour restreindre l&#39;accès aux clients autorisés
+- [Clés d&#39;accès restreint](restricted-access-keys.md) : créez, attribuez et faites pivoter les clés utilisées pour signer les jetons pour la protection du catalogue
+- [Politiques](policies.md) : créez des politiques pour filtrer les produits dans les vues de catalogue
+- [Classeurs de prix](pricebooks.md) : gérez les structures de prix pour différents segments de clientèle

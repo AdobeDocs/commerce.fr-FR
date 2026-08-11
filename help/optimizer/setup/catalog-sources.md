@@ -23,9 +23,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 94ba07437d532d0d101c166f58114c2aa0bd4be4
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 446
+source-wordcount: 457
 ht-degree: 0%
 
 ---
@@ -64,4 +64,5 @@ Suivez les conseils suivants pour décider de la structure de vos sources de cat
 > * [Calques de catalogue](catalog-layer.md) - Modifiez la présentation du produit sans modifier les données sources
 > * [Politiques](policies.md) - Créez des filtres basés sur les attributs pour les vues de catalogue
 > * [Classeurs de prix](pricebooks.md) - Gérez les structures de prix pour différents segments de clientèle
+> * [Clés d’accès limitées](restricted-access-keys.md) - Protégez une vue de catalogue avec l’authentification par jeton signé.
 

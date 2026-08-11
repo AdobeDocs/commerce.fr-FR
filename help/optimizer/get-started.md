@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 1349
+source-wordcount: 1368
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Le mélange des environnements Sandbox avec les environnements de production ent
 
 Avant de commencer, vérifiez que vous disposez des éléments suivants :
 
-- Compte **&#x200B;**&#x200B;avec droits [!DNL Adobe Commerce Optimizer]
+- **Compte Adobe Experience Cloud** avec droits [!DNL Adobe Commerce Optimizer]
 - **Accès administrateur de l’organisation** pour créer des instances et gérer les utilisateurs
 - **Compte GitHub** pour le chargement de données d’exemple et le développement du storefront
 - **Compréhension de base** des concepts du commerce électronique
@@ -59,9 +59,9 @@ Pour que votre environnement [!DNL Adobe Commerce Optimizer] fonctionne, procéd
 
 ### Étape 1. Création d’une instance
 
-1. Connectez-vous à [&#128279;](https://experience.adobe.com/).
-1. Accédez à **&#x200B;**&#x200B;> **Commerce Cloud Manager**.
-1. Cliquez sur **Ajouter une instance** > **Commerce Optimizer**.
+1. Connectez-vous à [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com/).
+1. Accédez à **[!UICONTROL Commerce]** > **[!UICONTROL Commerce Cloud Manager]**.
+1. Cliquez sur **[!UICONTROL Add Instance]** > **[!UICONTROL Commerce Optimizer]**.
 
    ![Écran Ajouter une instance d’Adobe Commerce Cloud Manager pour la création d’un environnement Commerce Optimizer](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
@@ -71,7 +71,7 @@ Pour que votre environnement [!DNL Adobe Commerce Optimizer] fonctionne, procéd
    - **Type d’environnement** : commencez par un environnement **Sandbox** pour les tests
    - **Région** : sélectionnez la région de votre choix
 
-1. Cliquez sur **Ajouter une instance**.
+1. Cliquez sur **[!UICONTROL Add Instance]**.
 
    Le Cloud Manager se met à jour pour inclure votre nouvelle instance. Pour plus d’informations sur son accès et sa gestion, voir [Gestion d’une instance](#manage-instances).
 
@@ -105,7 +105,7 @@ Les administrateurs gèrent les instances, les utilisateurs et les paramètres o
 | **Gérer les utilisateurs** | Ajouter des utilisateurs, des développeurs et des administrateurs | [Gestion des utilisateurs](./user-management.md) |
 | **Créer des instances** | Configurer des environnements de sandbox et de production | [Créer une instance](#step-1-create-an-instance) |
 | **Gérer les instances** | Vérifiez le statut, mettez à jour le nom et la description de l’instance et obtenez les URL clés pour l’accès aux applications et aux API | [Gérer les instances](#manage-instances) |
-| **Configurer l’accès** | Configurer des vues et des politiques de catalogue | [Vues du catalogue](./setup/catalog-view.md) |
+| **Configurer l’accès** | Configurez des vues et des politiques de catalogue et, éventuellement, créez une [vue de catalogue privée](./setup/private-catalog-view.md) pour restreindre l’accès | [Vues du catalogue](./setup/catalog-view.md) |
 
 ### Tâches du développeur
 
@@ -136,11 +136,11 @@ Gérez les instances à partir du gestionnaire Commerce Cloud.
 >
 >Tous les utilisateurs [!DNL Adobe Commerce Optimizer] n’ont pas accès à Cloud Manager. L’accès dépend du rôle et des autorisations attribués au compte d’utilisateur.
 
-1. Connectez-vous à [&#128279;](https://experience.adobe.com/).
+1. Connectez-vous à [&#x200B; Adobe Experience Cloud &#x200B;](https://experience.adobe.com/).
 
 1. Ouvrez Commerce Cloud Manager :
 
-   - Sous **Accès rapide**, cliquez sur **Commerce**.
+   - Sous **[!UICONTROL Quick access]**, cliquez sur **[!UICONTROL Commerce]**.
    - Affichez les instances disponibles.
 
 ### Rechercher et filtrer des instances
@@ -168,7 +168,7 @@ Une fois l’application ouverte, basculez facilement entre des environnements t
 
 >[!NOTE]
 >
->Pour revenir au Gestionnaire Commerce Cloud afin d’afficher les détails de l’instance ou de gérer les instances, cliquez sur l’icône ![Icône d’ouverture des applications Experience Cloud](./assets/apps-icon.png) (Applications) dans le coin supérieur gauche du volet de navigation supérieur de Commerce Optimizer.
+>Pour revenir au Gestionnaire Commerce Cloud afin d’afficher les détails de l’instance ou de gérer les instances, cliquez sur l’icône ![Icône d’ouverture des applications Experience Cloud](./assets/apps-icon.png) (applications) dans le coin supérieur gauche du panneau de navigation supérieur de Commerce Optimizer.
 
 ### Obtenir les détails de l’instance
 
@@ -178,7 +178,7 @@ Affichez les détails de l’instance en cliquant sur l’icône d’information
 
 Notez les informations clés suivantes :
 
-- **Point d’entrée GraphQL** point d’entrée GraphQL utilisé par votre storefront pour interroger les données de catalogue et de marchandisage de cette instance à l’aide de l’API [Merchandising Service](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=« _blank}
+- **Point d’entrée GraphQL** point d’entrée GraphQL utilisé par votre storefront pour interroger les données de catalogue et de marchandisage de cette instance à l’aide de l’API [Merchandising Service](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target="_blank"}
 - Point d’entrée **catalogue** point d’entrée de l’API REST que vous utilisez pour ingérer des produits et des prix dans Adobe Commerce Optimizer à partir de votre système Commerce ou PIM. Voir [API Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
 - **URL** ouvre l’interface utilisateur d’administration de [Adobe Commerce Optimizer Studio](overview.md) pour configurer et gérer les vues de catalogue, les politiques et le marchandisage.
 - **ID d’instance** : identifiant unique (ID de client) de cette instance Adobe Commerce Optimizer, utilisé par les storefronts, les API et les outils pour se connecter à l’environnement approprié.
@@ -193,9 +193,9 @@ Si vous êtes développeur, vous avez besoin de ces informations pour configurer
 
 Mettez à jour le nom et la description de l’instance si nécessaire.
 
-1. Cliquez sur l’icône **Modifier** en regard d’un nom d’instance.
-1. Mettez à jour le **nom de l’instance** et le **description** selon les besoins.
-1. Cliquez sur **Enregistrer**.
+1. Cliquez sur l’icône **[!UICONTROL Edit]** en regard d’un nom d’instance.
+1. Mettez à jour les **[!UICONTROL Instance name]** et les **[!UICONTROL Description]** selon les besoins.
+1. Cliquez sur **[!UICONTROL Save]**.
 
 ## Ajout de données d’exemple
 

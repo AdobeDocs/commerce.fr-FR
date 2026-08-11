@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: ee42a1e02e4057ff324808133a533a198d390980
 workflow-type: tm+mt
-source-wordcount: 880
+source-wordcount: 2296
 ht-degree: 0%
 
 ---
@@ -102,6 +102,7 @@ Effectuez ces vérifications dans l’interface utilisateur de [!DNL Adobe Comme
 ▢ [Les tarifs](../setup/pricebooks.md) sont créés automatiquement à partir des groupes de clients sur Cloud.
 ▢ [Vues de catalogue](../setup/catalog-view.md) existent et vous connaissez leurs identifiants.
 ▢ [Politiques](../setup/policies.md) existent et vous connaissez leurs identifiants.
+▢ Toute [vue de catalogue privée](../setup/private-catalog-view.md#protect-a-catalog-view) est associée à une clé d’accès [restreinte](../setup/restricted-access-keys.md) non expirée et un propriétaire est identifié pour la rotation de la clé.
 ▢ [Facettes](../merchandising/facets/overview.md) sont configurées.
 ▢ [Synonymes](../merchandising/synonyms/overview.md) sont configurés.
 ▢ [règles de marchandisage](../merchandising/rules/overview.md) sont configurées.

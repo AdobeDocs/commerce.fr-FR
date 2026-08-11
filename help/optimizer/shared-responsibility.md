@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 278
+source-wordcount: 290
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Les tableaux récapitulatifs ci-après utilisent le modèle RACI pour montrer le
 | Exécution d’analyses PCI ASV | RA | I |
 | Correction des analyses PCI de l’infrastructure [!DNL Adobe Commerce Optimizer] | R | |
 | Gestion des secrets de système d’exploitation et de plateforme | RA | |
+| Génération, rotation et révocation de [clés d’accès restreintes](setup/restricted-access-keys.md) et jetons de signature pour les [!UICONTROL Catalog Protection] | | RA |
 | Surveillance des journaux de sécurité du serveur principal | RA | |
 | Contrôle de l’assistance clientèle et de l’accès | A | R |
 | Tests annuels et documentation du plan de reprise après sinistre, de sauvegarde et de restauration d’Adobe | RA | |

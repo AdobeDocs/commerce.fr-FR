@@ -23,9 +23,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -69,6 +69,17 @@ Cette page décrit les comportements que vous pouvez observer lors de l’utilis
 
 - Vérifiez que le site web est configuré pour la synchronisation dans la configuration d’exportation du connecteur. Voir [Personnalisation de la configuration de l’exportation des données](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Vérifiez que l&#39;ID du catalogue de prix utilisé dans [!DNL Commerce Optimizer] est présent dans la configuration [vue catalogue](../../optimizer/setup/catalog-view.md){target="_blank"} utilisée pour exécuter la requête de produits.
+
+## Les requêtes de storefront renvoient une erreur de refus d’accès ou les données du catalogue disparaissent entièrement
+
+**Problème :** les requêtes envoyées à l’API de marchandisage pour une vue de catalogue qui précédemment renvoyait des données échouent désormais avec une erreur de `access-key-invalid` ou un storefront qui fonctionnait cesse d’afficher les données de catalogue.
+
+**Cause :** la vue Catalogue a la fonction [protection du catalogue](../../optimizer/setup/private-catalog-view.md) activée et soit il manque l’en-tête `AC-Catalog-View-Access-Token` requis dans la requête, soit toutes les clés d’accès restreint affectées à la vue ont expiré. Le [!DNL Adobe Commerce Optimizer Connector] ne crée, n’attribue ni ne fait pivoter automatiquement les clés d’accès restreint. La gestion des clés est entièrement gérée par votre application cliente.
+
+**Solution :**
+
+- Vérifiez que la vue du catalogue dispose toujours d’au moins une [clé d’accès restreint](../../optimizer/setup/restricted-access-keys.md) non expirée, et faites pivoter ou ajoutez une clé si nécessaire.
+- Vérifiez que le storefront ou le client envoie un en-tête de `AC-Catalog-View-Access-Token` signé valide avec chaque requête. Voir [Vues de catalogue privé](../../optimizer/setup/private-catalog-view.md).
 
 ## Les données dans [!DNL Adobe Commerce Optimizer] sont écrasées ou modifiées de manière inattendue après la synchronisation
 
