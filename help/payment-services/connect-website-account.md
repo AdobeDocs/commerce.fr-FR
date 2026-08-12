@@ -30,7 +30,7 @@ Pour les instances Commerce avec **plusieurs sites web**, vous aurez peut-être 
 
 L’intégration au niveau du site web n’est disponible que lorsque votre boutique répond à ces exigences :
 
-- [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) la configuration est terminée.
+- [Commerce Services Connector](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/integration-services/saas) la configuration est terminée.
 - Un compte PayPal est connecté à la portée globale (configuration par défaut).
 
 Vous pouvez le confirmer en vérifiant que les champs suivants sont renseignés à l’étendue par défaut :
