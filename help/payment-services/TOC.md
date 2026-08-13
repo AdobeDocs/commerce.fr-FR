@@ -7,9 +7,9 @@ role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
 nudge: true
-source-git-commit: 22c2fa72c3603e28b5ab55a34a908c10c02457fe
+source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '118'
 ht-degree: 2%
 
 ---
@@ -22,33 +22,34 @@ ht-degree: 2%
 - [Compatibilité avec  [!DNL Payment Services]](compatibility.md)
 - [Notes de mise à jour](release-notes.md)
 - [!DNL Payment Services] intégré {#get-started}
-   - [Présentation de l’intégration](onboard.md)
-   - [Installation de l’extension  [!DNL Payment Services] &#x200B;](install.md)
-   - [Connexion de votre instance](connect.md)
-   - [Configurer le sandbox de test](sandbox.md)
-   - [Activer pour la production](production.md)
+  - [Présentation de l’intégration](onboard.md)
+  - [Installation de l’extension  [!DNL Payment Services] &#x200B;](install.md)
+  - [Connexion de votre instance](connect.md)
+  - [Configurer le sandbox de test](sandbox.md)
+  - [Activer pour la production](production.md)
 - Configurer [!DNL Payment Services] {#configure}
-   - [Page de départ [!DNL Payment Services]](payments-home.md)
-   - [configuration [!DNL Payment Services]](configure-admin.md)
-   - [Configuration de la ligne de commande](configure-cli.md)
-   - [Tester et valider](test-validate.md)
+  - [Page de départ [!DNL Payment Services]](payments-home.md)
+  - [configuration [!DNL Payment Services]](configure-admin.md)
+  - [Connecter un compte PayPal différent pour un site Web](connect-website-account.md)
+  - [Configuration de la ligne de commande](configure-cli.md)
+  - [Tester et valider](test-validate.md)
 - Paiements et passage en caisse {#payments-checkout}
-   - [Options de paiement](payments-options.md)
-   - [Chambre forte de carte de crédit](vaulting.md)
-   - [Extraire [!DNL Payment Services]](checkout.md)
-   - Gestion des paiements {#manage}
-      - [Éléments de ligne pour  [!DNL Payment Services]](line-items.md)
-      - [Remboursements](refunds.md)
-      - [Vides](voids.md)
-   - [Création d’une commande dans l’Admin](create-order.md)
-   - [Suivi de vos expéditions dans  [!DNL Payment Services]](track-shipment.md)
+  - [Options de paiement](payments-options.md)
+  - [Chambre forte de carte de crédit](vaulting.md)
+  - [Extraire [!DNL Payment Services]](checkout.md)
+  - Gestion des paiements {#manage}
+    - [Éléments de ligne pour  [!DNL Payment Services]](line-items.md)
+    - [Remboursements](refunds.md)
+    - [Vides](voids.md)
+  - [Création d’une commande dans l’Admin](create-order.md)
+  - [Suivi de vos expéditions dans  [!DNL Payment Services]](track-shipment.md)
 - Rapports financiers {#financial-reports}
-   - [Création de rapports](reporting.md)
-   - [Etat du statut de paiement de la commande](order-payment-status.md)
-   - [Rapport Paiements](payouts.md)
-   - [Données disponibles](data.md)
-   - [Traitement de niveau 2 et de niveau 3](levels-card-payment-transactions.md)
+  - [Création de rapports](reporting.md)
+  - [Etat du statut de paiement de la commande](order-payment-status.md)
+  - [Rapport Paiements](payouts.md)
+  - [Données disponibles](data.md)
+  - [Traitement de niveau 2 et de niveau 3](levels-card-payment-transactions.md)
 - Sécurité et conformité {#security-compliance}
-   - [Sécurité](security.md)
-   - [Protection contre les fraudes signalées](fraud-protection.md)
+  - [Sécurité](security.md)
+  - [Protection contre les fraudes signalées](fraud-protection.md)
 - [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=fr)
