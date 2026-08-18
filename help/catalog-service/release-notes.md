@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
+source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
 workflow-type: tm+mt
-source-wordcount: 3024
+source-wordcount: 3063
 ht-degree: 0%
 
 ---
@@ -53,7 +53,13 @@ La prise en charge est fournie pour la dernière version. Les notes de mise à j
 
 ## Service de catalogue Storefront
 
-## Juin 2026
+### Août 2026
+
+**Date de publication** : 7 août 2026
+
+![Correction](../assets/fix.svg) correction d’un problème lié à la requête `products` GraphQL en raison duquel le champ `title` pour les options personnalisables (`inputOptions` et `options`) renvoyait incorrectement `null` au lieu du titre de l’option lorsque le champ `sku` de l’option était vide ou n’était pas indexé. <!--DATA-7304-->
+
+### Juillet 2026
 
 **Date de publication** : 1er juillet 2026
 
@@ -77,7 +83,7 @@ La prise en charge est fournie pour la dernière version. Les notes de mise à j
 **Date de publication** : 4 mai 2026
 <!-- v1.53 -->
 
-![Corriger](../assets/fix.svg) les prix des produits Storefront affichent désormais le code de devise correct (par exemple, USD) pour tous les types de produits. Auparavant, certains produits affichaient des `NONE` au lieu de la devise attendue, ce qui entraînait des prix manquants. Cette mise à jour garantit un rendu des prix cohérent et précis sur l’ensemble du storefront.<!--DATA-7115-->
+![Correctif](../assets/fix.svg) les prix des produits Storefront affichent désormais le code de devise correct (par exemple, USD) pour tous les types de produits. Auparavant, certains produits affichaient des `NONE` au lieu de la devise attendue, ce qui entraînait des prix manquants. Cette mise à jour garantit un rendu des prix cohérent et précis sur l’ensemble du storefront.<!--DATA-7115-->
 
 ### Avril 2026
 
