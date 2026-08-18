@@ -4,26 +4,17 @@ description: Découvrez les vues de catalogue et comment les créer pour organis
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 1276
+source-wordcount: 1317
 ht-degree: 0%
 
 ---
@@ -78,6 +69,7 @@ Dans cette section, créez une vue de catalogue, sélectionnez une [politique](p
 
    - **Utiliser tous les tarifs disponibles** : cette option extrait les données de tarification de tous les tarifs disponibles.
    - **Autoriser les tarifs catalogue sélectionnés uniquement** : cette option affiche la boîte de dialogue **Ajouter des tarifs catalogue autorisés**. Utilisez cette boîte de dialogue pour sélectionner le catalogue de prix spécifique à utiliser pour la vue Catalogue.
+   - **Livre de prix unique uniquement** : sélectionnez cette option si un seul livre de prix s&#39;applique. Cette option est obligatoire si vous souhaitez configurer une vue de catalogue privée, qui ne peut référencer qu&#39;un seul catalogue. Voir [Restriction du catalogue des prix sur les vues de catalogue privé](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
    - **Désactiver la tarification**—Cette option n&#39;est pas disponible pour le moment.
 
    >[!NOTE]
@@ -94,13 +86,13 @@ Une fois ces étapes terminées, la vue de catalogue est maintenant configurée 
 
 ### Spécification des vues de catalogue pour les recommandations et les règles de découverte de produits
 
-Vous pouvez définir une vue de catalogue lorsque vous [créez des unités de recommandation](../merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](../merchandising/rules/add.md).
+Vous pouvez définir une vue de catalogue lorsque vous [créez des unités de recommandation](../merchandising/recommendations/create.md) ou [ des règles de marchandisage](../merchandising/rules/add.md).
 
 ## Calques de catalogue
 
 Les calques de catalogue vous permettent de remplacer les attributs de produit sélectionnés sans modifier les données du catalogue source. Utilisez des calques pour personnaliser les noms, les descriptions, les images, les liens ou les métadonnées d’une vue de catalogue.
 
-Voir [&#x200B; Calques de catalogue &#x200B;](catalog-layer.md).
+Voir [ Calques de catalogue ](catalog-layer.md).
 
 ## Rendre une vue de catalogue privée
 
@@ -152,7 +144,7 @@ Certains de ces paramètres de configuration sont nécessaires lorsque vous conf
 
 Les vues de catalogue font partie de la structure des services de marchandisage qui remplace la structure du site web, du magasin et du magasin utilisée dans les bases d’Adobe Commerce par un modèle plus flexible :
 
-![[!DNL Merchandising Services] Architecture &#x200B;](../assets/merchandising-svcs-architecture.png)
+![[!DNL Merchandising Services] Architecture ](../assets/merchandising-svcs-architecture.png)
 
 ### Fonctionnement
 

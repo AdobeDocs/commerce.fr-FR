@@ -3,19 +3,15 @@ title: Livres de prix
 description: Découvrez comment gérer les tarifs dans  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
 TQID: https://experienceleague.adobe.com/-vL79MMePcUdhE-gPwjFJZStZUtNLKAUxpePm4Fvmfk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 384
+source-wordcount: 405
 ht-degree: 0%
 
 ---
@@ -35,6 +31,10 @@ Vous ajoutez des tarifs à [!DNL Adobe Commerce Optimizer] à l&#39;aide de l&#3
 ## Afficher les catalogues de prix en [!DNL Adobe Commerce Optimizer]
 
 Une fois que vous avez ingéré des livres de prix dans [!DNL Adobe Commerce Optimizer], vous pouvez voir la liste des livres de prix et leurs identifiants correspondants sur la page **Vue Catalogue**.
+
+>[!NOTE]
+>
+>Une vue de catalogue privée (une avec [!UICONTROL Catalog Protection] activé) ne peut référencer qu’un seul catalogue. Voir [Restriction du catalogue des prix sur les vues de catalogue privé](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
 
 1. Accédez à _Configuration du magasin_ , puis cliquez sur **[!UICONTROL Catalog views]**.
 
