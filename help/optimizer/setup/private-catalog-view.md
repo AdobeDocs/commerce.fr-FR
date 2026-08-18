@@ -3,7 +3,7 @@ title: Vues de catalogue privé
 description: Découvrez comment créer une vue de catalogue privée en activant la protection du catalogue afin que seules les requêtes disposant d’un jeton signé valide puissent récupérer ses données de produit et de prix.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
