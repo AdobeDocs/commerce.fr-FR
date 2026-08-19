@@ -17,9 +17,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 16e3405e1500dfd39603b1e300f4625e5a57cf02
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: 642
 ht-degree: 0%
 
 ---
@@ -28,15 +28,30 @@ ht-degree: 0%
 
 Par défaut, une [vue de catalogue](catalog-view.md) est publique. Activez la protection du catalogue sur une vue de catalogue pour restreindre l’accès aux requêtes qui incluent un jeton signé valide.
 
-La protection du catalogue s’applique uniquement à la vue de catalogue sélectionnée. Cela ne modifie pas les politiques, les calques ou les livres de prix de la vue.
+La protection du catalogue s’applique uniquement à la vue de catalogue sélectionnée. Cela ne modifie pas les politiques ou les calques de la vue. Elle limite l&#39;affichage à un seul catalogue des prix. Voir [Restriction du catalogue des prix sur les affichages de catalogue privé](#price-book-restriction-on-private-catalog-views).
 
 Consultez les [Cas d’utilisation de clés d’accès limité](restricted-access-keys.md#restricted-access-key-use-cases) pour obtenir des exemples de protection d’une vue de catalogue.
 
 ## Comprendre le périmètre de protection
 
-La protection du catalogue s’applique uniquement à la vue du catalogue dans laquelle elle est activée. Il protège les demandes de catalogue et de recherche, mais ne modifie pas les politiques ou les répertoires de prix de la vue, protège d’autres vues de catalogue ou sécurise les opérations de panier, de passage en caisse ou de commande.
+La protection du catalogue s’applique uniquement à la vue du catalogue dans laquelle elle est activée. Il protège les demandes de catalogue et de recherche, mais ne modifie pas les politiques ou les calques de la vue, protège d’autres vues de catalogue ou sécurise les opérations de panier, de passage en caisse ou de commande.
 
 Le serveur principal de commerce connecté doit appliquer indépendamment l’éligibilité d’achat.
+
+## Restriction du catalogue des prix pour les vues de catalogue privé
+
+Une vue de catalogue privée ne peut référencer qu’un seul catalogue des prix. Cela diffère d’une vue de catalogue public, qui peut utiliser plusieurs tarifs.
+
+Lorsque [!UICONTROL Catalog Protection] est activé, le sélecteur de catalogue dans le formulaire de vue du catalogue passe d’une commande à sélection multiple à une commande à sélection unique (bouton radio).
+
+![Restriction du catalogue privé](../assets/catalog-view-private-pricebook-restrictions.png)
+
+- Si vous activez [!UICONTROL Catalog Protection] dans une vue de catalogue à laquelle plusieurs tarifs sont affectés, vous ne pouvez pas enregistrer la vue tant que vous n&#39;avez pas supprimé tous les tarifs sauf un.
+- Si vous avez précédemment enregistré une vue de catalogue privée avec plusieurs affectations de catalogue de prix avant l&#39;existence de cette restriction, la configuration de la vue de catalogue n&#39;est pas automatiquement modifiée. Cependant, la prochaine fois que vous modifierez la vue, vous devrez supprimer tous les tarifs sauf un avant de pouvoir enregistrer les mises à jour.
+
+Dans chaque cas, [!DNL Adobe Commerce Optimizer] affiche le message de validation suivant : `A protected catalog view can use only one price book. Select 'Single price book only' to continue.`
+
+Les vues de catalogue public ne sont pas affectées par cette restriction et peuvent continuer à faire référence à plusieurs catalogues de prix.
 
 ## Protection d’une vue de catalogue
 

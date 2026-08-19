@@ -21,9 +21,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 1276
+source-wordcount: 1317
 ht-degree: 0%
 
 ---
@@ -78,6 +78,7 @@ Dans cette section, créez une vue de catalogue, sélectionnez une [politique](p
 
    - **Utiliser tous les tarifs disponibles** : cette option extrait les données de tarification de tous les tarifs disponibles.
    - **Autoriser les tarifs catalogue sélectionnés uniquement** : cette option affiche la boîte de dialogue **Ajouter des tarifs catalogue autorisés**. Utilisez cette boîte de dialogue pour sélectionner le catalogue de prix spécifique à utiliser pour la vue Catalogue.
+   - **Livre de prix unique uniquement** : sélectionnez cette option si un seul livre de prix s&#39;applique. Cette option est obligatoire si vous souhaitez configurer une vue de catalogue privée, qui ne peut référencer qu&#39;un seul catalogue. Voir [Restriction du catalogue des prix sur les vues de catalogue privé](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
    - **Désactiver la tarification**—Cette option n&#39;est pas disponible pour le moment.
 
    >[!NOTE]
