@@ -5,11 +5,22 @@ role: Admin, Leader
 feature: Security, Compliance
 exl-id: 1408ca77-6956-4519-93a6-bc9be9bffeff
 TQID: https://experienceleague.adobe.com/KhsveSMPR0tKmNzViEaWWHDu8fWve0GZjwsl2oyvx1k
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157
-subfeature_v2: id: bcbf87e7-9b75-4596-bffe-0f376b4c73a7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+subfeature_v2:
+  - id: bcbf87e7-9b75-4596-bffe-0f376b4c73a7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
 source-wordcount: 595
@@ -30,8 +41,8 @@ Pour plus d’informations sur Privacy Service et sur la création et la gestion
 
 Vous pouvez soumettre des requêtes individuelles pour accéder aux données des clients et les supprimer de [!DNL Commerce] de deux manières :
 
-* Via l’interface utilisateur de ****. Voir la documentation [ici](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide){target="_blank"}.
-* Via l’API ****. Consultez la documentation [ici](https://developer.adobe.com/experience-platform-apis/references/privacy-service){target="_blank"} et les informations d’API [ici](https://developer.adobe.com/experience-platform-apis/){target="_blank"}.
+* Via l’interface utilisateur de **&#x200B;**. Voir la documentation [ici](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide){target="_blank"}.
+* Via l’API **&#x200B;**. Consultez la documentation [ici](https://developer.adobe.com/experience-platform-apis/references/privacy-service){target="_blank"} et les informations d’API [ici](https://developer.adobe.com/experience-platform-apis/){target="_blank"}.
 
 Privacy Service prend en charge deux types de demandes : **accès aux données** et **suppression des données**.
 
@@ -56,7 +67,7 @@ Pour les demandes de suppression, Privacy Service supprime [!DNL Commerce] donn�
 Pour envoyer des demandes d’accès et de suppression de données pour Adobe [!DNL Commerce], vous devez disposer des éléments suivants :
 
 * un identifiant de l’organisation IMS ;
-* un identifiant d’identité de la personne sur laquelle vous souhaitez agir et le ou les espaces de noms correspondants. Pour plus d’informations sur les espaces de noms d’identité dans Adobe [!DNL Commerce] et Experience Platform, consultez la [ présentation des espaces de noms d’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces).
+* un identifiant d’identité de la personne sur laquelle vous souhaitez agir et le ou les espaces de noms correspondants. Pour plus d’informations sur les espaces de noms d’identité dans Adobe [!DNL Commerce] et Experience Platform, consultez la [&#x200B; présentation des espaces de noms d’identité](https://experienceleague.adobe.com/fr/docs/experience-platform/identity/features/namespaces).
 
 ### Exemple de demande/suppression d’accès RGPD :
 
