@@ -3,18 +3,13 @@ title: Ajouter des règles
 description: Découvrez comment créer des règles de marchandisage de recherche.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
 TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 657c4b3123407580dfeb2c021a5a1ba515e82115
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 2547
+source-wordcount: 2561
 ht-degree: 0%
 
 ---
@@ -26,7 +21,7 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 ## Ajouter une règle
 
 1. Dans Admin, accédez à **Marketing** > SEO et recherche > **[!DNL Live Search]**.
-1. Définissez la **Portée** pour identifier la [vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) où la règle s’applique.
+1. Définissez la **Portée** pour identifier la [vue de magasin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) où la règle s’applique.
 1. Cliquez sur l’espace de travail **Recherche de marchandisage**.
 1. Cliquez sur **Ajouter une règle** pour lancer l’éditeur de règles.
 
@@ -136,8 +131,8 @@ Pour les **règles de recherche** (et la requête de test dans l’éditeur de r
 
 * **Pertinence textuelle** : le facteur dominant dans la notation. Cela permet de mesurer la correspondance entre le nom, la description et les attributs d’un produit et la requête de recherche. Le score de pertinence du texte est illimité (il n’a pas de limite supérieure spécifique) et est influencé par des facteurs tels que :
 
-   * Fréquence d&#39;occurrence des mots correspondants.
-   * Longueur (en mots) des noms/descriptions des produits.
+  * Fréquence d&#39;occurrence des mots correspondants.
+  * Longueur (en mots) des noms/descriptions des produits.
 
 * **Signaux comportementaux** : un coup de pouce limité est appliqué en plus du score de pertinence du texte. Lorsque vous sélectionnez une stratégie de classement intelligente telle que « Les plus consultés » ou « Les plus achetés », les produits présentant des signaux comportementaux plus élevés reçoivent un poids relatif plus important. La force de ce poids est contrôlée par **[!UICONTROL Intelligent Ranking Boost]** (voir [Amplification de classement intelligente](#intelligent-ranking-boost)) ; l&#39;amplification reste limitée, mais vous pouvez augmenter le degré de déplacement de l&#39;ordre.
 
@@ -164,11 +159,11 @@ Consultez [règles de recherche](./best-practice.md#search-rules) pour savoir co
 * Les apostrophes et les guillemets dans les requêtes peuvent entraîner des problèmes mineurs de classement et de pertinence dans certaines langues.
 * Pour garantir le bon fonctionnement du classement intelligent, assurez-vous que la **pondération de recherche** de tous les attributs de produit utilisés pour la recherche ou le filtrage (facettes) est `5` ou inférieure. Pour trouver ce paramètre dans l’administration [!DNL Commerce] :
 
-   1. Sélectionnez **Magasins** > _Attributs_ > **Produit**.
-   1. Recherchez l’attribut, tel que « name ».
-   1. Sur la page **Informations d’attribut** > **Propriétés du storefront**, définissez un poids de recherche inférieur ou égal à `5`.
+  1. Sélectionnez **Magasins** > _Attributs_ > **Produit**.
+  1. Recherchez l’attribut, tel que « name ».
+  1. Sur la page **Informations d’attribut** > **Propriétés du storefront**, définissez un poids de recherche inférieur ou égal à `5`.
 
-      ![Produit - Poids de la recherche](assets/set-search-weight.png)
+     ![Produit - Poids de la recherche](assets/set-search-weight.png)
 
 >[!NOTE]
 >

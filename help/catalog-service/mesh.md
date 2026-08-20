@@ -5,24 +5,19 @@ role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
 TQID: https://experienceleague.adobe.com/FPo8tOFgizn4m-6DFo0ayRf6ct-Oepl6kczu3kZSaVg
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 324
+source-wordcount: 329
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-Le [maillage API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces aux produits Adobe à l’aide de Adobe I/O Runtime.
+Le [maillage API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces aux produits Adobe à l’aide de Adobe I/O Runtime.
 
 ![Diagramme d’architecture de catalogue](assets/catalog-service-architecture-mesh.png)
 
@@ -30,7 +25,7 @@ Pour utiliser le maillage API avec le service de catalogue, vous devez connecter
 
 ## Connectez-vous et configurez le maillage API.
 
-1. Connectez le maillage API à votre instance Adobe Commerce en suivant les instructions de la section [Création d’un maillage](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) du guide de développement du _maillage API_.
+1. Connectez le maillage API à votre instance Adobe Commerce en suivant les instructions de la section [Création d’un maillage](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) du guide de développement du _maillage API_.
 
    Si c’est la première fois que vous utilisez le maillage API, suivez le processus [Prise en main](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) avant de créer le maillage.
 

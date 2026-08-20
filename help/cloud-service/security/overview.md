@@ -2,31 +2,18 @@
 title: Présentation de la sécurité
 description: Découvrez les fonctionnalités de sécurité d’Adobe Commerce as a Cloud Service.
 role: Admin, Developer, Leader
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 autotag-review: '2026-06-18T16:18:52.695Z'
 TQID: 'https://experienceleague.adobe.com/AmkzZgLeOa9zJkPE8kWM6lFcFNtBAAOmJeULI-y4gOw'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 581
+source-wordcount: 577
 ht-degree: 0%
 
 ---
@@ -58,7 +45,7 @@ Les commerçants peuvent choisir de déployer un réseau CDN géré par Adobe ou
 
 La couche de réseau CDN de [!DNL API Mesh] met fin à TLS, exécute la passerelle GraphQL en tant que Workers, fournit une mise en cache de périphérie globale et des DDoS/WAF automatiques, et expose `edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io` en tant que points d’entrée de maillage public ; les clients peuvent ajouter leur propre réseau CDN en amont, mais le réseau CDN de [!DNL API Mesh] est fixe et géré par Adobe et les clients ne peuvent pas configurer leurs propres règles WAF.
 
-Pour plus d’informations sur les fonctionnalités de sécurité de [!DNL API Mesh], consultez la documentation sur le [&#x200B; maillage API &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/security/){target="_blank"}.
+Pour plus d’informations sur les fonctionnalités de sécurité de [!DNL API Mesh], consultez la documentation sur le [ maillage API ](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}.
 
 ### Réseau CDN principal
 
@@ -74,7 +61,7 @@ En raison de l’architecture [!DNL Adobe Commerce as a Cloud Service], lorsqu�
 
 [!DNL Adobe Commerce as a Cloud Service] utilise un WAF et un réseau CDN combinés :
 
-- **&#x200B;**&#x200B;- Protection par pare-feu d&#39;application web pour toutes les surfaces publiques [!DNL Adobe Commerce as a Cloud Service].
+- **** - Protection par pare-feu d&#39;application web pour toutes les surfaces publiques [!DNL Adobe Commerce as a Cloud Service].
 - **CDN** - Mise en cache Edge pour les ressources statiques et les réponses GraphQL pouvant être mises en cache.
 
 WAF et le réseau CDN sont gérés par la plateforme [!DNL Adobe Commerce as a Cloud Service] et ne sont pas configurables par les clients.
@@ -87,6 +74,6 @@ Le réseau CDN et le WAF intégrés fournissent une protection DDoS à la fois �
 
 Si les données sont stockées dans [!DNL App Builder], un commerçant peut se référer aux [!DNL App Builder] [options de stockage](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/). [!DNL App Builder] applique l’isolement du client et l’accès aux données stockées dans ces services est limité à l’espace de noms d’exécution dans lequel l’action est exécutée. Les données stockées ne sont pas chiffrées.
 
-Lors de l’utilisation de [!DNL API Mesh], les secrets doivent être stockés dans le fichier `secrets.yaml` de votre configuration de maillage. [!DNL API Mesh] chiffre ces secrets en utilisant le chiffrement AES-256 ([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/)).
+Lors de l’utilisation de [!DNL API Mesh], les secrets doivent être stockés dans le fichier `secrets.yaml` de votre configuration de maillage. [!DNL API Mesh] chiffre ces secrets à l’aide du chiffrement AES-256 (voir la [documentation sur le maillage API](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}).
 
 Toutes les données stockées dans [!DNL Adobe Commerce as a Cloud Service] sont chiffrées au repos à l’aide du chiffrement AES 256 bits et toutes les données sont chiffrées sur HTTPS à l’aide de TLS 1.2 ou version ultérieure en transit.

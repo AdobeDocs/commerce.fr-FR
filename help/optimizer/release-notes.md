@@ -4,21 +4,15 @@ description: Informations de mise à jour mensuelles pour  [!DNL Adobe Commerce 
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1522
+source-wordcount: 1506
 ht-degree: 0%
 
 ---
@@ -38,7 +32,7 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 _7 août 2026_
 
-![Nouveau](../assets/new.svg) **Nouveau champ de `externalIds`**—Ajout de `externalIds` au service de catalogue GraphQL, exposant la source de données externe associée à un produit afin que les clients du storefront et de l’intégration puissent identifier la source de données d’origine. Voir [&#x200B; Renvoi d’externalIds pour un produit](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+![Nouveau](../assets/new.svg) **Nouveau champ de `externalIds`**—Ajout de `externalIds` au service de catalogue GraphQL, exposant la source de données externe associée à un produit afin que les clients du storefront et de l’intégration puissent identifier la source de données d’origine. Voir [ Renvoi d’externalIds pour un produit](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
 <!--DATA-7307-->
 
 ![Correction](../assets/fix.svg) **Correction de la réponse `refineProduct` pour les produits configurables**—Correction d’un problème en raison duquel la requête `refineProduct` renvoyait des `priceRange: null` et des `roles: ["hidden"]` pour des produits configurables spécifiques, garantissant ainsi des informations précises sur le prix et la visibilité pour les consommateurs storefront.
@@ -101,7 +95,7 @@ _28 mai 2026_
 ![Correction](../assets/fix.svg) **Arborescences de navigation complètes** : les catégories descendantes balisées sont désormais correctement incluses dans les arborescences de `navigation` filtrées par famille lorsqu’un nœud intermédiaire non balisé existe dans le chemin d’accès. Ce correctif garantit que les acheteurs voient toutes les catégories pertinentes dans la navigation, ce qui facilite la navigation et la découverte d’articles.
 <!--DATA-7183-->
 
-![Correction](../assets/fix.svg) **Gestion des slugs vides dans les requêtes `categoryTree`**—Correction d’un problème où la requête [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) renvoyait une erreur de serveur interne lorsque l’argument `slugs` incluait une chaîne vide. Les valeurs slug vides sont désormais ignorées, de sorte que les storefronts et les intégrations continuent de résoudre les données de catégorie sans requêtes ayant échoué.
+![Correction](../assets/fix.svg) **Gestion des slugs vides dans les requêtes `categoryTree`**—Correction d’un problème où la requête [`categoryTree`](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) renvoyait une erreur de serveur interne lorsque l’argument `slugs` incluait une chaîne vide. Les valeurs slug vides sont désormais ignorées, de sorte que les storefronts et les intégrations continuent de résoudre les données de catégorie sans requêtes ayant échoué.
 <!--DATA-7184-->
 
 ![Correction](../assets/fix.svg) les requêtes **`searchCategory`renvoient des résultats insensibles à la casse et classés par ordre alphabétique** : la requête `searchCategory` trie désormais les résultats de recherche par ordre alphabétique sans respect de la casse, ce qui garantit un ordre cohérent et prévisible. Les catégories comportant des préfixes plus courts apparaissent en premier lorsque les noms sont par ailleurs identiques.
@@ -131,7 +125,7 @@ _4 mai 2026_
 
 ### Filtre de prix (version bêta)
 
-Les filtres de recommandation incluent désormais un [&#x200B; filtre de plage de prix &#x200B;](./merchandising/recommendations/filters.md#price) (minimum et maximum).
+Les filtres de recommandation incluent désormais un [ filtre de plage de prix ](./merchandising/recommendations/filters.md#price) (minimum et maximum).
 
 ### Mises à jour des API
 
@@ -139,7 +133,7 @@ _29 avril 2026_
 
 <!--v1.52 release-->
 
-**Traitement par lots des requêtes requis** — L’API GraphQL applique désormais un maximum de 100 SKU par requête lorsque vous récupérez des données de catalogue. Voir [limites et limites documentées](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Traitement par lots des requêtes requis** — L’API GraphQL applique désormais un maximum de 100 SKU par requête lorsque vous récupérez des données de catalogue. Voir [limites et limites documentées](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
@@ -153,7 +147,7 @@ _7 avril 2026_
 
 <!--v1.50 release-->
 
-**Recherches de catégorie simplifiées** — La requête [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) traite les `family` comme facultatives, de sorte que vous pouvez résoudre les catégories par slug sans fournir de famille.
+**Recherches de catégorie simplifiées** — La requête [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) traite les `family` comme facultatives, de sorte que vous pouvez résoudre les catégories par slug sans fournir de famille.
 
 {{aco-release}}
 
@@ -183,7 +177,7 @@ Les bundles dynamiques renvoient désormais une plage de prix calculée. <!--DAT
 
 ### Vue Catalogue pour les règles et recommandations de marchandisage
 
-Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](./merchandising/rules/add.md).
+Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [ des règles de marchandisage](./merchandising/rules/add.md).
 
 ### Mises à jour des API
 
@@ -191,13 +185,13 @@ _19 février 2026_
 
 <!--v1.48-->
 
-**Contenu de catégorie plus riche pour les storefronts** — La requête [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) renvoie désormais des descriptions, des images et des balises META d’optimisation pour les moteurs de recherche afin que les storefronts puissent rendre des pages de catégorie plus riches.<!--DATA-6933-->
+**Contenu de catégorie plus riche pour les storefronts** — La requête [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) renvoie désormais des descriptions, des images et des balises META d’optimisation pour les moteurs de recherche afin que les storefronts puissent rendre des pages de catégorie plus riches.<!--DATA-6933-->
 
 _12 février 2026_
 
 <!--v1.49-->
 
-**Amélioration des données de produit par catégorie** — L’API GraphQL ajoute le type de [`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} afin que vous puissiez interroger et filtrer les produits par catégorie avec moins d’allers-retours.
+**Amélioration des données de produit par catégorie** — L’API GraphQL ajoute le type de [`CategoryProductView`](https://developer.adobe.com/commerce/services/reference/graphql/#categoryproductview){target="blank"} afin que vous puissiez interroger et filtrer les produits par catégorie avec moins d’allers-retours.
 
 {{aco-release}}
 

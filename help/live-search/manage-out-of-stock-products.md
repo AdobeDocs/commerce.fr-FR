@@ -4,9 +4,9 @@ description: Découvrez comment gérer les produits en rupture de stock dans  [!
 feature: Services, Search
 role: Admin, Developer
 level: Intermediate
-source-git-commit: bc8f35434c9f01f1a920745fe42617df2003ca60
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Utilisez cette approche lorsque vous n’acheminez pas la requête via le [widge
 Pour conserver les produits en rupture de stock dans le jeu de résultats, mais toujours après les produits en stock lors du tri par pertinence, Adobe peut activer un indicateur de fonctionnalité interne pour votre environnement.
 
 - Cet indicateur de fonctionnalité n’est pas exposé dans l’interface utilisateur d’administration [!DNL Live Search].
-- Pour en faire la demande, [contactez l’assistance Adobe](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} et référencez la fonctionnalité afin de déplacer les produits en rupture de stock vers la fin des résultats de recherche.
+- Pour en faire la demande, [contactez l’assistance Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"} et référencez la fonctionnalité afin de déplacer les produits en rupture de stock vers la fin des résultats de recherche.
 
 >[!NOTE]
 >
@@ -87,4 +87,4 @@ Pour masquer ou modifier la priorité des produits en rupture de stock dans le c
 >[!MORELIKETHIS]
 >
 > - [Rechercher des règles de marchandisage](rules.md)
-> - [Configurer les options globales d’Inventory management](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/configuration/configuration)
+> - [Configurer les options globales d’Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)

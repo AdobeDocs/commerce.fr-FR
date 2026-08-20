@@ -1,10 +1,10 @@
 ---
 title: Installation et accès [!DNL App Management]
-description: Conditions préalables et exigences d’accès pour utiliser Adobe Commerce [!DNL App Management].
+description: Conditions préalables et exigences d’accès pour utiliser  [!DNL App Management].
 feature: App Builder, Extensibility, Integration
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ La vue [!DNL App Management] s’affiche. Vous pouvez y associer, configurer et 
 
 ## Installation des applications App Builder
 
-Si vous devez installer une application App Builder à partir d’Adobe Exchange (par exemple, une intégration préconfigurée ou une application de marketplace), consultez [Installation d’applications App Builder à partir d’Adobe Exchange](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} pour obtenir des instructions détaillées.
+Si vous devez installer une application App Builder à partir d’Adobe Exchange (par exemple, une intégration préconfigurée ou une application de marketplace), consultez [Installation d’applications App Builder à partir d’Adobe Exchange](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"} pour obtenir des instructions détaillées.
 
 Une fois l’application installée et déployée, utilisez [!DNL App Management] pour l’[associer à votre instance Commerce](manage-app.md#associate-an-app) et configurer ses paramètres.
 
@@ -74,7 +74,7 @@ Une fois l’application installée et déployée, utilisez [!DNL App Management
 
 Certaines applications App Builder utilisent des [Webhooks Adobe Commerce](https://developer.adobe.com/commerce/extensibility/webhooks/) afin que Commerce puisse appeler votre application via HTTP lorsque certains événements se produisent (par exemple, après l’enregistrement d’un produit). Les points d’entrée Webhook et la logique d’abonnement sont définis par le **développeur d’applications** lorsque l’application est créée et déployée. Les administrateurs des magasins ne configurent pas les webhooks séparément dans App Management.
 
-Une fois que vous avez [associé l’application](https://experienceleague.adobe.com/fr/docs/commerce/app-management/manage-app/manage-app) à votre instance Commerce et suivi les instructions de configuration de l’application, le comportement de webhook suit la mise en œuvre de l’application.
+Une fois que vous avez [associé l’application](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app) à votre instance Commerce et suivi les instructions de configuration de l’application, le comportement de webhook suit la mise en œuvre de l’application.
 
 Si [!DNL App Management] ne parvenez pas à déclencher le point d’entrée de validation de l’application (par exemple, l’URL est inatteignable ou la réponse ne répond pas aux exigences), une erreur similaire à celle-ci peut s’afficher dans le tableau de bord [!DNL App Management] :
 

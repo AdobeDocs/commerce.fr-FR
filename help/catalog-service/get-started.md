@@ -4,24 +4,15 @@ description: Découvrez comment accéder à et  [!DNL Catalog Service]  intégre
 role: Admin, Developer
 exl-id: ee178e67-519d-4283-8de8-2634ae1f347a
 TQID: https://experienceleague.adobe.com/KBdWesEoKJu-qWsY-Ny1Om-msUkyUPfUTQWftEqSg1g
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 437
+source-wordcount: 436
 ht-degree: 0%
 
 ---
@@ -36,14 +27,14 @@ Une fois le [!DNL Catalog Service] activé, vous pouvez accéder au service et l
 
 Le [!DNL Catalog Service] est disponible sous la forme d’une API GraphQL à laquelle vous pouvez accéder à partir de l’administration Commerce ou de toute application frontale prenant en charge les requêtes GraphQL. Le service est disponible dans les environnements SaaS et PaaS.
 
-[!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
+[!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
 
 | Environnement | Point d’entrée |
 | ------------ | ----------: |
 | **Test** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **Production** | `https://catalog-service.adobe.io/graphql` |
 
-[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}
+[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."}
 
 | Environnement | Point d’entrée |
 | ----------- | --------:|
@@ -66,7 +57,7 @@ Pour plus d’informations sur l’utilisation de l’API GraphQL Catalog Servic
 
 Pour une intégration à un storefront découplé, vous devez mettre à jour la configuration du storefront pour permettre la communication entre le storefront et le [!DNL Catalog Service] afin de récupérer les données de produit et de catégorie.
 
-Si vous utilisez le storefront d’Adobe Commerce sur Edge Delivery Services, ajoutez le point d’entrée du service de catalogue à la configuration du storefront. Pour plus d’informations, consultez la documentation de [&#128279;](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=fr#storefront-configuration).
+Si vous utilisez le storefront d’Adobe Commerce sur Edge Delivery Services, ajoutez le point d’entrée du service de catalogue à la configuration du storefront. Pour plus d’informations, consultez la documentation de [](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration).
 
 Pour les autres intégrations, consultez la documentation de configuration du projet pour plus d’informations sur la configuration des intégrations entre les sources de données de service et d’arrière-plan.
 
@@ -76,14 +67,14 @@ Pour autoriser le [!DNL Catalog Service] à travers un pare-feu, ajoutez des `co
 
 ## Service de catalogue et maillage API
 
-Le [maillage API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces aux produits Adobe à l’aide d’Adobe IO.
+Le [maillage API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces aux produits Adobe à l’aide d’Adobe IO.
 
-Pour plus d’informations sur l’installation et la configuration[&#128279;](mesh.md) consultez la rubrique [!DNL Catalog Service]  et Maillage API .
+Pour plus d’informations sur l’installation et la configuration](mesh.md) consultez la rubrique [[!DNL Catalog Service]  et Maillage API .
 
 ## Surveillance et dépannage de l’exportation des données
 
 {{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-Utilisez l’[interface de ligne de commande &#x200B;](../data-export/data-export-cli-commands.md) pour resynchroniser manuellement les flux si nécessaire. Pour connaître les options de resynchronisation et les étapes de dépannage supplémentaires, consultez [Gérer la synchronisation](../data-export/data-sync-manage.md) dans le _Guide d’exportation des données SaaS_.
+Utilisez l’[interface de ligne de commande ](../data-export/data-export-cli-commands.md) pour resynchroniser manuellement les flux si nécessaire. Pour connaître les options de resynchronisation et les étapes de dépannage supplémentaires, consultez [Gérer la synchronisation](../data-export/data-sync-manage.md) dans le _Guide d’exportation des données SaaS_.
 
 {{install-data-sync-feed-status}}

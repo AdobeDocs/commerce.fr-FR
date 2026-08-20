@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '2326'
+source-wordcount: '2328'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ Il existe différents comportements pour chaque mode de paiement en fonction de 
 
 [!DNL Payment Services] offre des options de paiement et des flux d’intégration **avancés** (entièrement pris en charge) et **standard** (paiement express), en fonction du pays dans lequel vous opérez.
 
-* **Avancé** - Toutes les [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays actuellement entièrement pris en charge](compatibility.md#standard-vs-advanced-payment-services-experience). Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [&#x200B; Intégration avancée &#x200B;](../payment-services/production.md#advanced-onboarding).
+* **Avancé** - Toutes les [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays actuellement entièrement pris en charge](compatibility.md#standard-vs-advanced-payment-services-experience). Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [ Intégration avancée ](../payment-services/production.md#advanced-onboarding).
 
-* **Standard** - Un sous-ensemble d’options de paiement (paiement express), à savoir les cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Les champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [&#x200B; Intégration standard &#x200B;](../payment-services/production.md#standard-onboarding).
+* **Standard** - Un sous-ensemble d’options de paiement (paiement express), à savoir les cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Les champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [ Intégration standard ](../payment-services/production.md#standard-onboarding).
 
 Consultez [Activer [!DNL Payment Services] pour la production](../payment-services/production.md#complete-merchant-onboarding) pour plus d’informations sur l’intégration avancée et standard.
 
@@ -129,7 +129,7 @@ Lorsqu’il est activé, le bouton [!DNL Google Pay] est visible à partir de la
 * Les codes ajoutés dans la feuille de paie [!DNL Google Pay] peuvent uniquement être supprimés de la feuille de paie, et non de la page du panier Commerce.
 * Sur Adobe Commerce 2.4.4-2.4.6, la ligne de remise de la feuille de paie [!DNL Google Pay] peut ne présenter aucune valeur en raison d’une limitation de la plateforme.
 * Sur Adobe Commerce 2.4.7, la valeur de remise peut ne pas apparaître dans la feuille de paie [!DNL Google Pay] pour certains produits (principalement les produits téléchargeables) en raison d’une limitation de la plateforme dans la réponse de GraphQL.
-* Si une [règle de prix de panier](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=fr) automatique s’applique (par exemple, « 50 $ de réduction lorsque vous dépensez plus de 200 $ »), elle est combinée avec tout code que l’acheteur applique dans la feuille de paie. Par conséquent, les totaux indiqués sur la feuille de paie [!DNL Google Pay] peuvent différer de la synthèse de la commande.
+* Si une [règle de prix de panier](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart) automatique s’applique (par exemple, « 50 $ de réduction lorsque vous dépensez plus de 200 $ »), elle est combinée avec tout code que l’acheteur applique dans la feuille de paie. Par conséquent, les totaux indiqués sur la feuille de paie [!DNL Google Pay] peuvent différer de la synthèse de la commande.
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -208,7 +208,7 @@ Pour **capturer des paiements avec votre fournisseur de carte de crédit existan
 1. Assurez-vous que votre boutique est [en mode production](configure-admin.md#general-configuration).
 1. [Configurez les boutons de paiement PayPal souhaités](configure-admin.md#paypal-payment-buttons).
 1. Désactivez _off_ l’option **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)** dans la section _[!UICONTROL Payment buttons]_.
-1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_&#x200B;et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=fr#payments).
+1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments#payments).
 
 ## Modes de paiement locaux
 

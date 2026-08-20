@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Ce diagramme de flux présente le processus d’intégration des sandbox avec un
 1. [Configurer le service Sandbox](sandbox.md#sandbox-onboarding)
 1. Testez les paiements dans un environnement [sandbox](sandbox.md#test-in-sandbox-environment).
 
-[![&#x200B; en savoir plus &#x200B;](assets/learn-more-button.svg)](https://helpx.adobe.com/fr/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![ en savoir plus ](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Production]
 
@@ -59,7 +59,7 @@ Ce diagramme de flux présente les étapes de production nécessaires à l’act
 1. [Activer [!DNL Payment Services] en mode réel](production.md#enable-live-payments) pour commencer à traiter les paiements dynamiques.
 1. Testez les paiements dans les environnements [sandbox](sandbox.md#test-in-sandbox-environment) et [production](production.md#test-in-production).
 
-[![&#x200B; en savoir plus &#x200B;](assets/learn-more-button.svg)](production.md)
+[![ en savoir plus ](assets/learn-more-button.svg)](production.md)
 
 >[!ENDTABS]
 
@@ -83,7 +83,7 @@ Ce diagramme de flux présente les étapes requises pour les [!DNL Payment Servi
 1. [Configurer le service Sandbox](sandbox.md#sandbox-onboarding)
 1. Testez les paiements dans un environnement [sandbox](sandbox.md#test-in-sandbox-environment).
 
-[![&#x200B; en savoir plus &#x200B;](assets/learn-more-button.svg)](https://helpx.adobe.com/fr/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![ en savoir plus ](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB Production]
 
@@ -100,7 +100,7 @@ Ce diagramme de flux présente le processus général d’activation de [!DNL Pa
 1. [Activer [!DNL Payment Services] en mode réel](production.md#enable-live-payments) pour commencer à traiter les paiements dynamiques.
 1. Testez les paiements dans les environnements [sandbox](sandbox.md#test-in-sandbox-environment) et [production](production.md#test-in-production).
 
-[![&#x200B; en savoir plus &#x200B;](assets/learn-more-button.svg)](onboard.md)
+[![ en savoir plus ](assets/learn-more-button.svg)](onboard.md)
 
 >[!ENDTABS]
 
@@ -110,8 +110,8 @@ Ce diagramme de flux présente le processus général d’activation de [!DNL Pa
 
 >[!MORELIKETHIS]
 >
-> * [Dépannage [!DNL Payment Services] installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=fr)
-> * [Compte sandbox PayPal non vérifié](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=fr)
-> * [Données  [!DNL Payment Services]  rapport différées](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=fr)
-> * [Le test de la carte de crédit échoue avec PayPal lors du traitement des paiements dans un environnement Sandbox](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=fr)
-> * [Désactiver l’extension  [!DNL Payment Services] &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
+> * [Dépannage [!DNL Payment Services] installation](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26826)
+> * [Compte sandbox PayPal non vérifié](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26836)
+> * [Données  [!DNL Payment Services]  rapport différées](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26837)
+> * [Le test de la carte de crédit échoue avec PayPal lors du traitement des paiements dans un environnement Sandbox](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26825)
+> * [Désactiver l’extension  [!DNL Payment Services] ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
