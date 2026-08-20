@@ -89,7 +89,7 @@ Finalisez l’installation en fonction du type de déploiement : Adobe Commerce 
 
 #### Sur les infrastructures cloud
 
-Dans Adobe Commerce sur les infrastructures cloud, activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-global#enable_eventing).
+Dans Adobe Commerce sur les infrastructures cloud, activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-global#enable_eventing).
 
 ```bash
 stage:
@@ -177,4 +177,4 @@ Pour effectuer une mise à jour vers une version majeure telle que de 2.0.0 à 3
 
 ## Désinstaller l’extension [!DNL Data Connection] {#uninstall}
 
-Pour désinstaller l’extension [!DNL Data Connection], consultez la section [désinstallation des modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
+Pour désinstaller l’extension [!DNL Data Connection], consultez la section [désinstallation des modules](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).

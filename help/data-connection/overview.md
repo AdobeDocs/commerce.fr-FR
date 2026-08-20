@@ -46,11 +46,11 @@ L’image suivante montre le flux de vos données Commerce de votre magasin vers
 
 ![Flux de données vers Experience Platform Edge](assets/commerce-edge.png)
 
-Dans l’image ci-dessus, vos données comportementales, de back-office et de profil client sont envoyées à Experience Platform Edge à l’aide d’un SDK, d’une API et d’un connecteur source. Vous n’avez pas besoin de comprendre entièrement comment ces éléments fonctionnent, car l’extension gère la complexité du partage de données pour vous. Lorsque les données d’événement sont à la périphérie, vous pouvez les utiliser dans les produits Adobe DX en aval tels que [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview), [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview), [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/analyze/admin-overview/analytics-overview) et [Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/essentials/get-started). Pour obtenir des exemples guidés, consultez [Utilisation de Adobe Journey Optimizer pour envoyer un e-mail de panier abandonné](using-ajo.md) et [Création d’une audience dans Real-Time CDP à l’aide des données d’événement Commerce](create-audience.md).
+Dans l’image ci-dessus, vos données comportementales, de back-office et de profil client sont envoyées à Experience Platform Edge à l’aide d’un SDK, d’une API et d’un connecteur source. Vous n’avez pas besoin de comprendre entièrement comment ces éléments fonctionnent, car l’extension gère la complexité du partage de données pour vous. Lorsque les données d’événement sont à la périphérie, vous pouvez les utiliser dans les produits Adobe DX en aval tels que [Real-Time CDP](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview), [Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview), [Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/analyze/admin-overview/analytics-overview) et [Journey Optimizer](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/get-started/essentials/get-started). Pour obtenir des exemples guidés, consultez [Utilisation de Adobe Journey Optimizer pour envoyer un e-mail de panier abandonné](using-ajo.md) et [Création d’une audience dans Real-Time CDP à l’aide des données d’événement Commerce](create-audience.md).
 
 ## Extraction des données Experience Platform dans Commerce
 
-L’envoi de vos données Commerce à Experience Platform à l’aide de l’extension [!DNL Data Connection] est un aspect des fonctionnalités de partage de données de Commerce. L’autre côté, qui est une extension facultative, est appelé [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation). Cette extension vous permet de créer des audiences dans Real-Time CDP et de les déployer dans votre boutique Commerce pour informer les règles de prix de panier, les règles de produit associées et les blocs dynamiques.
+L’envoi de vos données Commerce à Experience Platform à l’aide de l’extension [!DNL Data Connection] est un aspect des fonctionnalités de partage de données de Commerce. L’autre côté, qui est une extension facultative, est appelé [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/audience-activation). Cette extension vous permet de créer des audiences dans Real-Time CDP et de les déployer dans votre boutique Commerce pour informer les règles de prix de panier, les règles de produit associées et les blocs dynamiques.
 
 À un niveau élevé, le flux de données de votre boutique Commerce vers Experience Platform et retour via l’extension Audience Activation ressemble à ce qui suit :
 
@@ -72,13 +72,13 @@ Le partage de données entre ces deux systèmes nécessite la compréhension de 
 
 - **Événements de profil** — Événements de série temporelle pour les modifications du cycle de vie des profils sur le serveur. Voir [&#x200B; Événements de profil client &#x200B;](events-backoffice.md#customer-profile-events).
 
-- **Experience Platform et Edge Network** - Entrepôt de données pour la plupart des produits Adobe DX. Les données envoyées à Experience Platform sont propagées aux produits Adobe DX via Experience Platform Edge Network. Par exemple, vous pouvez lancer Journey Optimizer, récupérer vos données d’événement Commerce spécifiques à partir du serveur Edge et créer un e-mail de panier abandonné dans Journey Optimizer. Journey Optimizer peut ensuite envoyer cet e-mail s’il existe des paniers abandonnés dans votre boutique Commerce. En savoir plus sur [Experience Platform et Edge Network](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview).
+- **Experience Platform et Edge Network** - Entrepôt de données pour la plupart des produits Adobe DX. Les données envoyées à Experience Platform sont propagées aux produits Adobe DX via Experience Platform Edge Network. Par exemple, vous pouvez lancer Journey Optimizer, récupérer vos données d’événement Commerce spécifiques à partir du serveur Edge et créer un e-mail de panier abandonné dans Journey Optimizer. Journey Optimizer peut ensuite envoyer cet e-mail s’il existe des paniers abandonnés dans votre boutique Commerce. En savoir plus sur [Experience Platform et Edge Network](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/web-sdk/overview).
 
-- **Schéma** - Le schéma décrit la structure des données envoyées. Avant qu’Experience Platform puisse ingérer vos données Commerce, vous devez composer un schéma pour décrire la structure des données et fournir des contraintes pour le type de données pouvant être contenu dans chaque champ. Les schémas se composent d’une classe de base et de zéro ou plusieurs groupes de champs. Le schéma utilise la structure XDM, que tous les produits Adobe DX peuvent lire. Le schéma garantit que les données envoyées à Experience Platform sont comprises dans tous les produits DX. En savoir plus sur les [schémas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
+- **Schéma** - Le schéma décrit la structure des données envoyées. Avant qu’Experience Platform puisse ingérer vos données Commerce, vous devez composer un schéma pour décrire la structure des données et fournir des contraintes pour le type de données pouvant être contenu dans chaque champ. Les schémas se composent d’une classe de base et de zéro ou plusieurs groupes de champs. Le schéma utilise la structure XDM, que tous les produits Adobe DX peuvent lire. Le schéma garantit que les données envoyées à Experience Platform sont comprises dans tous les produits DX. En savoir plus sur les [schémas](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/home).
 
-- **Jeu de données** - Structure de stockage et de gestion pour une collection de données, généralement un tableau contenant un schéma (colonnes) et des champs (lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées. Toutes les données correctement ingérées par Adobe Experience Platform sont contenues dans des jeux de données. En savoir plus sur les [&#x200B; jeux de données &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview).
+- **Jeu de données** - Structure de stockage et de gestion pour une collection de données, généralement un tableau contenant un schéma (colonnes) et des champs (lignes). Les jeux de données contiennent également des métadonnées qui décrivent divers aspects des données stockées. Toutes les données correctement ingérées par Adobe Experience Platform sont contenues dans des jeux de données. En savoir plus sur les [&#x200B; jeux de données &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/catalog/datasets/overview).
 
-- **Flux de données** - Identifiant qui permet aux données de circuler de Adobe Experience Platform vers d’autres produits Adobe DX. Cet identifiant doit être associé à un site web spécifique dans votre instance Adobe Commerce spécifique. Lorsque vous créez ce flux de données, spécifiez le schéma XDM que vous avez créé ci-dessus. En savoir plus sur les [flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview).
+- **Flux de données** - Identifiant qui permet aux données de circuler de Adobe Experience Platform vers d’autres produits Adobe DX. Cet identifiant doit être associé à un site web spécifique dans votre instance Adobe Commerce spécifique. Lorsque vous créez ce flux de données, spécifiez le schéma XDM que vous avez créé ci-dessus. En savoir plus sur les [flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview).
 
 ## Architecture prise en charge
 
@@ -86,7 +86,7 @@ L’extension [!DNL Data Connection] est disponible sur les architectures suivan
 
 - PHP/Luma
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
-- [AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/content-and-commerce/cif-storefront/integrations/aep)
+- [AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/content-and-commerce/cif-storefront/integrations/aep)
 
 >[!BEGINSHADEBOX]
 
@@ -96,7 +96,7 @@ Pour utiliser l’extension [!DNL Data Connection], vous devez disposer des él�
 
 - Adobe Commerce 2.4.4 ou version ultérieure
 - Adobe ID et ID d’organisation
-- [ACDL (Adobe Client Data Layer)](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/client-data-layer/overview), nécessaire pour collecter les données d’événement de storefront
+- [ACDL (Adobe Client Data Layer)](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/client-data-layer/overview), nécessaire pour collecter les données d’événement de storefront
 - Droits sur d’autres produits Adobe DX.
 
 >[!ENDSHADEBOX]
@@ -106,12 +106,12 @@ Pour utiliser l’extension [!DNL Data Connection], vous devez disposer des él�
 À un niveau élevé, l’activation de l’extension [!DNL Data Connection] implique les étapes suivantes :
 
 1. [Installez](install.md) l’extension [!DNL Data Connection].
-1. [Connectez-vous](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) à votre compte Adobe et [affichez pour confirmer](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) votre ID d’organisation. L’ID d’organisation est l’identifiant associé à votre société Experience Cloud provisionnée. Cet identifiant est une chaîne alphanumérique de 24 caractères, suivie de (et qui doit inclure) `@AdobeOrg`.
-1. Vérifiez que vous disposez des autorisations [autorisation pour la collecte de données dans Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions).
+1. [Connectez-vous](https://helpx.adobe.com/fr/manage-account/using/access-adobe-id-account.html) à votre compte Adobe et [affichez pour confirmer](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255) votre ID d’organisation. L’ID d’organisation est l’identifiant associé à votre société Experience Cloud provisionnée. Cet identifiant est une chaîne alphanumérique de 24 caractères, suivie de (et qui doit inclure) `@AdobeOrg`.
+1. Vérifiez que vous disposez des autorisations [autorisation pour la collecte de données dans Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/permissions).
 1. Examinez les [types de données](data-ingestion.md) que vous pouvez collecter et envoyer.
 1. Créez ou mettez à jour votre [schéma d’événement de série temporelle](update-xdm.md) ou [schéma de données d’enregistrement de profil](profile-data.md) avec des groupes de champs spécifiques à Commerce.
-1. [Créez un jeu de données](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform#create-a-dataset) basé sur le schéma que vous avez créé ou mis à jour. Ce jeu de données contient les données Commerce envoyées à Experience Platform Edge.
-1. [Créez un flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) puis sélectionnez le schéma XDM contenant les groupes de champs spécifiques à Commerce.
+1. [Créez un jeu de données](https://experienceleague.adobe.com/fr/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform#create-a-dataset) basé sur le schéma que vous avez créé ou mis à jour. Ce jeu de données contient les données Commerce envoyées à Experience Platform Edge.
+1. [Créez un flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview) puis sélectionnez le schéma XDM contenant les groupes de champs spécifiques à Commerce.
 1. [Connexion aux services Commerce](../landing/saas.md).
 1. [Connexion à Adobe Experience Platform](connect-data.md).
 
@@ -133,5 +133,5 @@ Ce guide est conçu pour les commerçants Adobe Commerce qui souhaitent enrichir
 
 Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, utilisez les ressources suivantes :
 
-- [Centre d’aide](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
-- [Tickets d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"} — Envoyez un ticket pour recevoir de l’aide supplémentaire.
+- [Centre d’aide](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview){target="_blank"}
+- [Tickets d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"} — Envoyez un ticket pour recevoir de l’aide supplémentaire.

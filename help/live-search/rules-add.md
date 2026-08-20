@@ -26,7 +26,7 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 ## Ajouter une règle
 
 1. Dans Admin, accédez à **Marketing** > SEO et recherche > **[!DNL Live Search]**.
-1. Définissez la **Portée** pour identifier la [vue de magasin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) où la règle s’applique.
+1. Définissez la **Portée** pour identifier la [vue de magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) où la règle s’applique.
 1. Cliquez sur l’espace de travail **Recherche de marchandisage**.
 1. Cliquez sur **Ajouter une règle** pour lancer l’éditeur de règles.
 

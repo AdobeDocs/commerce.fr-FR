@@ -48,7 +48,7 @@ Si vous utilisez un storefront découplé, reportez-vous à la documentation sui
 
 ## Définir la portée
 
-Au départ, la [portée](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) de tous les paramètres de recommandation est définie sur `Default Store View`. Si votre installation de Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la vue de [magasin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) où vos recommandations s’appliquent.
+Au départ, la [portée](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views) de tous les paramètres de recommandation est définie sur `Default Store View`. Si votre installation de Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la vue de [magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) où vos recommandations s’appliquent.
 
 ## Définition de la période des mesures
 

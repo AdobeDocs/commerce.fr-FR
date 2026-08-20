@@ -3,7 +3,7 @@ title: Connexion De Votre Instance
 description: Connectez votre instance Commerce à l’aide d’une clé API et d’une clé privée, puis spécifiez l’espace de données dans la configuration.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
 source-wordcount: '698'
@@ -20,7 +20,7 @@ Connectez votre instance Commerce à l’aide d’une clé API et d’une clé p
 
 >[!INFO]
 >
-> Consultez notre vidéo [[!DNL Adobe Commerce]  Connecteur de services &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) pour plus d’informations.
+> Consultez notre vidéo [[!DNL Adobe Commerce]  Connecteur de services &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) pour plus d’informations.
 
 * Si vous avez *déjà connecté votre instance*, en obtenant et en utilisant vos informations d’identification d’API et en configurant les services Commerce, vous pouvez passer à [configuration de votre sandbox de test](sandbox.md).
 * Si vous *devez toujours connecter votre instance*, consultez les informations de cette rubrique sur [l’obtention des informations d’identification d’API](#obtain-api-credentials) et [la configuration des services Commerce](#configure-commerce-services).
@@ -32,11 +32,11 @@ Connectez votre instance Commerce à l’aide d’une clé API et d’une clé p
 
 ## Obtention des informations d’identification API
 
-Pour utiliser un service SaaS Commerce, vous devez utiliser les clés API de votre instance (clé API publique Commerce et clé privée) pour le sandbox et la production, qui sont créées et gérées dans votre [tableau de bord de mon compte](https://account.magento.com/customer/account/login). [La paire de clés](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) peut être créée pour un compte Commerce (un pour le sandbox et un pour la production), bien qu’une seule paire puisse être utilisée activement à la fois.
+Pour utiliser un service SaaS Commerce, vous devez utiliser les clés API de votre instance (clé API publique Commerce et clé privée) pour le sandbox et la production, qui sont créées et gérées dans votre [tableau de bord de mon compte](https://account.magento.com/customer/account/login). [La paire de clés](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/services/saas) peut être créée pour un compte Commerce (un pour le sandbox et un pour la production), bien qu’une seule paire puisse être utilisée activement à la fois.
 
 >[!NOTE]
 >
->Vous avez besoin d’aide pour accéder à votre tableau de bord [!UICONTROL My Account] ? Voir [Création d’un compte Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create).
+>Vous avez besoin d’aide pour accéder à votre tableau de bord [!UICONTROL My Account] ? Voir [Création d’un compte Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/commerce-account/commerce-account-create).
 
 Une fois créée, une clé API publique est toujours disponible dans le tableau de bord de Mon compte. Il peut être copié ou supprimé selon les besoins. La clé API privée devient visible lorsque vous créez une clé API publique pour le sandbox ou l’environnement de production ; elle n’est disponible que pour copie ou enregistrement dans la boîte de dialogue qui s’ensuit et n’est pas accessible plus tard.
 
@@ -73,7 +73,7 @@ Maintenant que vous avez obtenu vos informations d’identification, vous pouvez
 
    >[!INFO]
    >
-   > Consultez notre vidéo [[!DNL Adobe Commerce]  Connecteur de services &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs) pour plus d’informations.
+   > Consultez notre vidéo [[!DNL Adobe Commerce]  Connecteur de services &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs) pour plus d’informations.
 
 ## Point d’entrée
 

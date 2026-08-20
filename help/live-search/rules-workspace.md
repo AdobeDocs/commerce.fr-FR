@@ -28,7 +28,7 @@ L’espace de travail *Marchandisage de recherche* répertorie la sélection act
 
 ## Définir la portée
 
-Si votre installation d’Adobe Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la [&#x200B; vue de magasin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) où vos règles s’appliquent.
+Si votre installation d’Adobe Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la [&#x200B; vue de magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) où vos règles s’appliquent.
 
 ## Afficher/masquer les colonnes
 

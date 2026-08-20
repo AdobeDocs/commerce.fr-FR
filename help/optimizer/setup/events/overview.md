@@ -191,4 +191,4 @@ Ce tableau décrit les événements utilisés par chaque type de recommandation.
 
 ## Support technique
 
-Si vous constatez des incohérences dans les données ou si les recommandations et les résultats de recherche ne fonctionnent pas comme prévu, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Si vous constatez des incohérences dans les données ou si les recommandations et les résultats de recherche ne fonctionnent pas comme prévu, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

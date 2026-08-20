@@ -43,12 +43,12 @@ Ce guide ne couvre pas les principales fonctionnalités d’Adobe Commerce et de
 
 | Guide | Description |
 |------ | ----------- |
-| [Guide de l’utilisateur d’Adobe Commerce 2.4](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Documentation axée sur les commerçants pour Adobe Commerce et Magento Open Source |
+| [Guide de l’utilisateur d’Adobe Commerce 2.4](https://experienceleague.adobe.com/fr/docs/commerce-admin/user-guides/home) | Documentation axée sur les commerçants pour Adobe Commerce et Magento Open Source |
 | [Guide du développeur d’Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source. |
 
 ## Support technique
 
 Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, utilisez les ressources suivantes :
 
-* [Centre d&#39;aide](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-cases){target="_blank"} : consultez les articles de dépannage liés à [!DNL Product Recommendations].
-* [Tickets d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"} : envoyez un ticket pour recevoir de l’aide supplémentaire.
+* [Centre d&#39;aide](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-cases){target="_blank"} : consultez les articles de dépannage liés à [!DNL Product Recommendations].
+* [Tickets d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"} : envoyez un ticket pour recevoir de l’aide supplémentaire.

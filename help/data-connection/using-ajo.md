@@ -34,7 +34,7 @@ Créez un panier abandonné, parcourez les e-mails ou les notifications à l’a
 | Types de données | Données Storefront (Événements Comportementaux) | Données de back-office (événements côté serveur) |
 |---|---|---|
 | **Définition** | Clics ou actions des clients sur votre site. | Informations sur le cycle de vie et détails de chaque commande (passée et actuelle). |
-| **Événements capturés par Adobe Commerce** | [pageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Order history](https://experienceleague.adobe.com/en/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| **Événements capturés par Adobe Commerce** | [pageView](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Order history](https://experienceleague.adobe.com/fr/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### Qu’ont accompli les autres clients ? {#what-have-other-customers-achieved}
 
@@ -60,7 +60,7 @@ Ce cas d’utilisation particulier se concentre sur la création d’un e-mail d
 
 ### Qu’est-ce que Adobe Journey Optimizer ?
 
-[&#128279;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/essentials/get-started) vous aide à personnaliser l’expérience commerciale pour vos acheteurs. Par exemple, vous pouvez utiliser Journey Optimizer pour créer et diffuser des campagnes marketing planifiées, telles que des promotions hebdomadaires pour un magasin de vente au détail, ou pour générer un e-mail de panier abandonné si un client a ajouté un produit à un panier, mais n’a pas terminé le processus de passage en caisse.
+[&#128279;](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/get-started/essentials/get-started) vous aide à personnaliser l’expérience commerciale pour vos acheteurs. Par exemple, vous pouvez utiliser Journey Optimizer pour créer et diffuser des campagnes marketing planifiées, telles que des promotions hebdomadaires pour un magasin de vente au détail, ou pour générer un e-mail de panier abandonné si un client a ajouté un produit à un panier, mais n’a pas terminé le processus de passage en caisse.
 
 Dans cette rubrique, vous apprendrez à créer un e-mail de panier abandonné en écoutant un événement `checkout` généré à partir de votre instance [!DNL Commerce] et en répondant à cet événement dans Journey Optimizer.
 
@@ -96,7 +96,7 @@ Créez un utilisateur dans votre environnement sandbox et vérifiez que les info
 
 Dans votre environnement de sandbox [!DNL Commerce], déclenchez des événements sur votre storefront en affichant les pages de produits, en ajoutant des articles à un panier et en effectuant diverses autres activités qu’un acheteur effectuerait. Vérifiez ensuite que ces événements sont transmis à Journey Optimizer.
 
-1. Lancer [&#128279;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
+1. Lancer [&#128279;](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 1. Sélectionnez **[!UICONTROL Profiles]**.
 1. Définissez **[!UICONTROL Identity namespace]** sur `Email`.
 1. Définissez la **[!UICONTROL Identity value]** sur votre adresse e-mail.
@@ -125,7 +125,7 @@ Configurez deux événements dans Journey Optimizer : un événement écoute l�
 
 ### Créer un événement de listener
 
-1. Lancer [&#128279;](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
+1. Lancer [&#128279;](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 
 1. Cliquez sur **[!UICONTROL Configurations]** dans la section **[!UICONTROL Administration]** du volet de gauche.
 
@@ -198,7 +198,7 @@ Créez un e-mail de panier abandonné envoyé lorsqu’un panier abandonné est 
 
 1. Dans le parcours que vous avez créé ci-dessus, double-cliquez sur l’icône **[!UICONTROL Email]** dans la zone de travail.
 
-1. Suivez les [étapes](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions#configure-email) du guide Journey Optimizer pour créer l’e-mail de panier abandonné.
+1. Suivez les [étapes](https://experienceleague.adobe.com/fr/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions#configure-email) du guide Journey Optimizer pour créer l’e-mail de panier abandonné.
 
 Vous disposez désormais d’un parcours dans Journey Optimizer qui écoute l’événement `commerce.checkouts` de votre boutique [!DNL Commerce] et d’un e-mail de panier abandonné qui est envoyé après un certain temps. La section suivante vous explique comment tester le parcours.
 

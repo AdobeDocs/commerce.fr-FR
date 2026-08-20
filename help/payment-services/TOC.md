@@ -52,4 +52,4 @@ ht-degree: 2%
 - Sécurité et conformité {#security-compliance}
   - [Sécurité](security.md)
   - [Protection contre les fraudes signalées](fraud-protection.md)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)
