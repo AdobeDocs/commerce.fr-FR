@@ -9,33 +9,22 @@ level: Intermediate
 type: Tutorial
 autotag-review: '2026-06-18T16:21:35.357Z'
 TQID: 'https://experienceleague.adobe.com/aF6iiuFf5sCDyT0gmYmh8h94ZhMWr0DbIKrG1pI0G6I'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: e7840a7b-a94f-4256-aed0-4e94b08e157b
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1289
 ht-degree: 0%
 
 ---
 
 # Tutoriels préalables
 
-Cette page répertorie les conditions préalables et les étapes de configuration pour les tutoriels [!DNL Adobe Commerce as a Cloud Service], tels que le tutoriel sur l’extension [ratings](./ratings-extension.md) et le tutoriel sur l’extension de méthode d’expédition [&#128279;](./shipping-method-extension.md).
+Cette page répertorie les conditions préalables et les étapes de configuration pour les tutoriels [!DNL Adobe Commerce as a Cloud Service], tels que le tutoriel sur l’extension [ratings](./ratings-extension.md) et le tutoriel sur l’extension de méthode d’expédition [](./shipping-method-extension.md).
 
 ## Conditions préalables générales
 
@@ -55,10 +44,10 @@ Les outils suivants sont nécessaires pour le développement de l’extension et
   ```
 
 * Coquille de Bash
-   * macOS/Linux : aucune installation requise
-   * Windows : utilisez [Git Bash](https://git-scm.com/install) ou [sous-système Windows pour Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
+  * macOS/Linux : aucune installation requise
+  * Windows : utilisez [Git Bash](https://git-scm.com/install) ou [sous-système Windows pour Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-* Téléchargez un IDE assisté par l’IA, tel que [Cursor](https://cursor.com/download) (recommandé). D’autres IDE, tels que Claude Code, Gemini CLI ou Copilot, sont également pris en charge, mais peuvent nécessiter d’apporter des modifications aux invites et à d’autres étapes du tutoriel.
+* Téléchargez un IDE assisté par l’IA, tel que [Cursor](https://cursor.com/download) (recommandé). D’autres IDE, tels que Claude Code, Gemini CLI ou Copilot, sont également pris en charge, mais peuvent nécessiter des modifications des invites et d’autres étapes du tutoriel.
 
 ## Conditions préalables [!DNL Adobe Commerce as a Cloud Service]
 
@@ -74,7 +63,7 @@ Les outils suivants sont nécessaires pour le développement de l’extension et
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-Après avoir installé le [!DNL Adobe I/O CLI] et les modules externes requis, configurez votre espace de travail d’extensibilité. Adobe recommande d’utiliser la configuration automatisée pour une expérience plus rapide.
+Après avoir installé le [!DNL Adobe I/O CLI] et les modules externes requis, configurez votre espace de travail d’extensibilité. Adobe recommande d’utiliser la configuration automatisée pour une expérience optimale.
 
 * **[Configuration automatisée](#automated-setup) (recommandée)** — Exécutez une seule commande pour configurer automatiquement votre espace de travail.
 * **[Configuration manuelle](#manual-setup)** — Suivez les instructions étape par étape pour configurer chaque composant individuellement.
@@ -197,14 +186,14 @@ Les sections suivantes décrivent comment configurer manuellement chaque composa
 
 Configurez un projet dans Adobe Developer Console avec les API et les informations d’identification requises.
 
-1. Accédez à [&#128279;](https://developer.adobe.com/console){target="_blank"}.
+1. Accédez à [](https://developer.adobe.com/console){target="_blank"}.
 1. Connectez-vous à l’aide de votre adresse e-mail et de votre mot de passe.
 
 #### Créer un projet
 
-Créez un projet App Builder dans le Adobe Developer Console pour héberger votre extension.
+Pour héberger votre extension, créez un projet [!DNL App Builder] dans le Adobe Developer Console.
 
-1. Accédez à [&#128279;](https://developer.adobe.com/).
+1. Accédez à [](https://developer.adobe.com/).
 1. Cliquez sur **[!UICONTROL Create project from a template]**.
 1. Sélectionnez le modèle de **[!UICONTROL App Builder]**.
 1. Saisissez un **[!UICONTROL Project Title]** et un **[!UICONTROL App Name]**.
@@ -227,10 +216,10 @@ Ajoutez les API requises à votre espace de travail d’évaluation pour la gest
 1. Sélectionnez l’une des API suivantes. Répétez ce processus pour chaque API répertoriée ci-dessous :
 
    * **[!UICONTROL Adobe Services]** le filtre :
-      * **[!UICONTROL I/O Management API]**
-      * API **[!UICONTROL I/O Events]**
+     * **[!UICONTROL I/O Management API]**
+     * API **[!UICONTROL I/O Events]**
    * **[!UICONTROL Experience Cloud]** le filtre :
-      * API **[!UICONTROL Adobe I/O Events for Adobe Commerce]**
+     * API **[!UICONTROL Adobe I/O Events for Adobe Commerce]**
 
 1. Cliquez sur **[!UICONTROL Next]**.
 
@@ -327,7 +316,7 @@ COMMERCE_GRAPHQL_ENDPOINT=
 
 Pour rechercher ces valeurs :
 
-1. Accédez à [Instances de service &#x200B;](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances).
+1. Accédez à [Instances de service ](https://experience.adobe.com/#/@commerce/commerce/cloud-service/instances).
 1. Cliquez sur l’icône d’informations en regard de votre instance.
 1. Copiez le point d’entrée REST en tant que `COMMERCE_BASE_URL`.
 1. Copiez le point d’entrée GraphQL en tant que `COMMERCE_GRAPHQL_ENDPOINT`.
@@ -342,7 +331,7 @@ EVENT_PREFIX=test
 
 ### Télécharger la configuration de l’espace de travail
 
-Exécutez la commande suivante pour télécharger le fichier de configuration de l’espace de travail :
+Pour télécharger le fichier de configuration de l’espace de travail, exécutez la commande suivante :
 
 ```bash
 aio console workspace download workspace.json
@@ -382,7 +371,7 @@ Lorsque vous y êtes invité, choisissez l’option qui utilise l’organisation
 
 ### Installation des outils d’IA dédiés à l’extensibilité
 
-Ce processus crée la configuration du MCP (`.<agent>/mcp.json`), le répertoire des compétences (`.<agent>/skills/`) et `AGENTS.md` ajoute à la racine du projet. Vous serez invité à choisir un kit de démarrage, un agent de codage et un gestionnaire de packages.
+Ce processus crée la configuration du MCP (`.<agent>/mcp.json`), le répertoire des compétences (`.<agent>/skills/`) et `AGENTS.md` ajoute à la racine du projet. Vous êtes invité à choisir un kit de démarrage, un agent de codage et un gestionnaire de packages.
 
 
 1. Configurez les outils de développement assisté par l’IA dans le dossier `extension` à l’aide des commandes suivantes :
@@ -417,7 +406,7 @@ Les éléments suivants sont requis pour terminer la section [storefront](./rati
 
 * [Google Chrome](https://www.google.com/chrome/) - Requis pour tester le storefront
 
-* Un projet de storefront connecté à votre instance [!DNL Commerce]. Si vous ne disposez pas d’un projet de storefront, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr){target="_blank"}, y compris la section [Lier le référentiel aux données commerciales](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=fr#link-repo-to-commerce-data){target="_blank"}.
+* Un projet de storefront connecté à votre instance [!DNL Commerce]. Si vous ne disposez pas d’un projet de storefront, suivez les étapes de la section [Créer un storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, y compris la section [Lier le référentiel aux données commerciales](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
 
 ### Cloner le référentiel storefront
 
