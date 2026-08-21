@@ -24,9 +24,9 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 349
+source-wordcount: 348
 ht-degree: 0%
 
 ---
@@ -56,4 +56,4 @@ Lorsque la synchronisation partielle et la reprise automatique ne résolvent pas
 > - [Dépannage](troubleshooting.md) — Diagnostiquer les problèmes d’exportation des informations d’identification, de synchronisation et de la portée
 > - [Modules de connecteur et points d’entrée de flux](reference/connector-reference.md) — Modules de révision, points d’entrée d’API et flux pris en charge
 > - [Page Statut de synchronisation des flux de données dans l’administration Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — En savoir plus sur les champs et les fonctionnalités disponibles pour surveiller le statut des flux
-> - [Tableau de bord de synchronisation des données dans [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"} — Documentation de référence pour les champs et actions disponibles pour surveiller la synchronisation des données du catalogue
+> - [Tableau de bord de synchronisation des données dans [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/data-sync){target="_blank"} — Documentation de référence pour les champs et actions disponibles pour surveiller la synchronisation des données du catalogue

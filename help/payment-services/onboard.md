@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -110,8 +110,8 @@ Ce diagramme de flux présente le processus général d’activation de [!DNL Pa
 
 >[!MORELIKETHIS]
 >
-> * [Dépannage [!DNL Payment Services] installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=fr)
-> * [Compte sandbox PayPal non vérifié](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=fr)
-> * [Données  [!DNL Payment Services]  rapport différées](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=fr)
-> * [Le test de la carte de crédit échoue avec PayPal lors du traitement des paiements dans un environnement Sandbox](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=fr)
+> * [Dépannage [!DNL Payment Services] installation](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26826)
+> * [Compte sandbox PayPal non vérifié](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26836)
+> * [Données  [!DNL Payment Services]  rapport différées](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26837)
+> * [Le test de la carte de crédit échoue avec PayPal lors du traitement des paiements dans un environnement Sandbox](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26825)
 > * [Désactiver l’extension  [!DNL Payment Services] &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)

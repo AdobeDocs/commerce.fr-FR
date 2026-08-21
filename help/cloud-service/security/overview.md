@@ -24,9 +24,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 581
+source-wordcount: 577
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Les commerçants peuvent choisir de déployer un réseau CDN géré par Adobe ou
 
 La couche de réseau CDN de [!DNL API Mesh] met fin à TLS, exécute la passerelle GraphQL en tant que Workers, fournit une mise en cache de périphérie globale et des DDoS/WAF automatiques, et expose `edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io` en tant que points d’entrée de maillage public ; les clients peuvent ajouter leur propre réseau CDN en amont, mais le réseau CDN de [!DNL API Mesh] est fixe et géré par Adobe et les clients ne peuvent pas configurer leurs propres règles WAF.
 
-Pour plus d’informations sur les fonctionnalités de sécurité de [!DNL API Mesh], consultez la documentation sur le [&#x200B; maillage API &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/security/){target="_blank"}.
+Pour plus d’informations sur les fonctionnalités de sécurité de [!DNL API Mesh], consultez la documentation sur le [&#x200B; maillage API &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}.
 
 ### Réseau CDN principal
 
@@ -87,6 +87,6 @@ Le réseau CDN et le WAF intégrés fournissent une protection DDoS à la fois �
 
 Si les données sont stockées dans [!DNL App Builder], un commerçant peut se référer aux [!DNL App Builder] [options de stockage](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/). [!DNL App Builder] applique l’isolement du client et l’accès aux données stockées dans ces services est limité à l’espace de noms d’exécution dans lequel l’action est exécutée. Les données stockées ne sont pas chiffrées.
 
-Lors de l’utilisation de [!DNL API Mesh], les secrets doivent être stockés dans le fichier `secrets.yaml` de votre configuration de maillage. [!DNL API Mesh] chiffre ces secrets en utilisant le chiffrement AES-256 ([https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/secrets/)).
+Lors de l’utilisation de [!DNL API Mesh], les secrets doivent être stockés dans le fichier `secrets.yaml` de votre configuration de maillage. [!DNL API Mesh] chiffre ces secrets à l’aide du chiffrement AES-256 (voir la [documentation sur le maillage API](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}).
 
 Toutes les données stockées dans [!DNL Adobe Commerce as a Cloud Service] sont chiffrées au repos à l’aide du chiffrement AES 256 bits et toutes les données sont chiffrées sur HTTPS à l’aide de TLS 1.2 ou version ultérieure en transit.

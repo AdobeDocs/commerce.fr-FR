@@ -33,7 +33,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: ecaeba0d36376bf7f9ac864135cbf225c7fd8634
+source-git-commit: 8f993feaea79eaca19f6ebd3dc5195e287fc4a36
 workflow-type: tm+mt
 source-wordcount: 5345
 ht-degree: 0%
@@ -88,7 +88,7 @@ Les éléments suivants sont disponibles sur les environnements de production à
 >
 >Cette fonctionnalité est désactivée par défaut. Pour l’activer, contactez votre responsable du succès client Adobe Commerce ou créez un ticket d’assistance.
 
-Les nouveaux points d’entrée de l’API [REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management) répliquent la fonction [!DNL Commerce Admin] [!UICONTROL **Modifier l’ordre**] qui permet aux intégrations de modifier un ordre par programmation :
+Les nouveaux points d’entrée de l’API [REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/) répliquent la fonction [!DNL Commerce Admin] [!UICONTROL **Modifier l’ordre**] qui permet aux intégrations de modifier un ordre par programmation :
 
 | Méthode | Point d’entrée | Description |
 | --- | --- | --- |
@@ -119,13 +119,13 @@ Utilisez un ID de modèle renvoyé avec le point d’entrée `POST /V1/custom-em
 
 Tous les points d’entrée `custom-email` nécessitent l’accès à la `Marketing > Communications > Email template` [ressource de rôle](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources). <!-- CCSAAS-5089, CCSAAS-5090 -->
 
-### Gérer la chaîne de commande complète via l’API REST
+### Gérer la séquence de commandes complète via l’API REST
 
 >[!IMPORTANT]
 >
 >Cette fonctionnalité est expérimentale et doit être activée en contactant votre responsable du succès client Adobe Commerce ou en créant un ticket d’assistance.
 
-Nouveaux points d’entrée de l’API REST [&#128279;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management) laissez les intégrations modifier un ordre à l’aide de son identifiant et résoudre automatiquement la chaîne complète des ordres modifiés :`orderChain`
+Nouveaux points d’entrée de l’API REST [&#128279;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/) laissez les intégrations modifier un ordre à l’aide de son identifiant et résoudre automatiquement la chaîne complète des ordres modifiés :`orderChain`
 
 | Méthode | Point d’entrée | Description |
 | --- | --- | --- |
@@ -158,11 +158,11 @@ Un nouvel événement `observer.reminder_matched_carts` est émis une fois que l
 
 ### Supprimer les e-mails transactionnels par zone ou modèle
 
-Une nouvelle configuration [Suppression des e-mails](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/services/email-suppression) ([!UICONTROL **Magasins**] > [!UICONTROL **Configuration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **Suppression des e-mails**]) permet aux administrateurs d’arrêter de manière sélective [!DNL Commerce] d’envoyer des e-mails transactionnels. Vous pouvez supprimer des e-mails par domaine fonctionnel (par exemple, compte client, Order Management, retours, passage en caisse, marketing ou B2B) ou par une liste exacte d’identifiants de modèle.<!-- ACCS-1025 -->
+Une nouvelle configuration [Suppression des e-mails](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/services/email-suppression) ([!UICONTROL **Magasins**] > [!UICONTROL **Configuration**] > [!UICONTROL **Adobe Services**] > [!UICONTROL **Suppression des e-mails**]) permet aux administrateurs d’arrêter de manière sélective [!DNL Commerce] d’envoyer des e-mails transactionnels. Vous pouvez supprimer des e-mails par domaine fonctionnel (compte client, Order Management, retours, passage en caisse, marketing ou B2B) ou par une liste exacte d’identifiants de modèle.<!-- ACCS-1025 -->
 
 ### Afficher l’historique des modifications de commande dans Admin
 
-La page Détails de la commande [!DNL Commerce Admin] affiche désormais la chaîne de modification complète d’une commande qui inclut la commande d’origine et toutes les commandes enfants créées par le biais de modifications ultérieures. Les commerçants peuvent naviguer entre les commandes, activer/désactiver la visibilité des commandes annulées et accéder à toutes les factures, expéditions, avoirs et commentaires de commande associés à partir de la vue de chaîne<!-- ACCS-968 -->.
+La page Détails de la commande [!DNL Commerce Admin] affiche désormais la séquence de modification complète d’une commande qui inclut la commande d’origine et toutes les commandes enfants créées lors des modifications ultérieures. Les commerçants peuvent naviguer entre les commandes, activer/désactiver la visibilité des commandes annulées et accéder à toutes les factures, expéditions, avoirs et commentaires de commande associés depuis la vue de séquence.<!-- ACCS-968 -->
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Les commerçants peuvent désormais [créer et modifier des codes de coupon pers
 
 ### Suivi des expéditions à l&#39;aide de transporteurs par défaut et personnalisés
 
-Le suivi des commandes est désormais fiable pour les transporteurs d’expédition par défaut et personnalisés dans le [!DNL Commerce Admin], ce qui aide les commerçants à offrir des expériences de suivi après achat cohérentes. Auparavant, la sélection d&#39;un opérateur, tel qu&#39;UPS ou FedEx, et l&#39;application d&#39;un identifiant de tracking pouvaient empêcher l&#39;affichage du lien de tracking. Aucune action du commerçant n&#39;est requise pour restaurer ce comportement. La prise en charge des liens de suivi est également disponible pour les [opérateurs personnalisés](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/) créés avec le [!DNL App Builder Integration Starter Kit]. <!-- ACCS-891 -->
+Le suivi des commandes est désormais fiable pour les transporteurs d’expédition par défaut et personnalisés dans le [!DNL Commerce Admin], ce qui aide les commerçants à offrir des expériences de suivi après achat cohérentes. Auparavant, la sélection d&#39;un opérateur, tel qu&#39;UPS ou FedEx, et l&#39;application d&#39;un identifiant de tracking pouvaient empêcher l&#39;affichage du lien de tracking. Aucune action du commerçant n&#39;est requise pour restaurer ce comportement. La prise en charge des liens de suivi est également disponible pour les [opérateurs personnalisés](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference) créés avec le [!DNL App Builder Integration Starter Kit]. <!-- ACCS-891 -->
 
 ### Affichage des types d’entrée d’attribut dans la grille Attributs de produit
 
@@ -268,7 +268,7 @@ Les améliorations, optimisations et correctifs suivants sont inclus dans cette 
 
 >[!ENDSHADEBOX]
 
-## Mai 2026 - #1 de publication
+## #1 de mise à jour de mai 2026
 
 [!BADGE Production]{type=Neutral tooltip="Les éléments répertoriés sont actuellement disponibles dans les environnements de production."}
 
@@ -278,7 +278,7 @@ Les éléments suivants ont été publiés dans les environnements de production
 
 ### Ignorer reCAPTCHA pour l’authentification OTP par programmation
 
-Une nouvelle option de configuration vous permet d’ignorer la validation reCAPTCHA pour la mutation [`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) de GraphQL. Cela active les workflows de pointage B2B où l’échange de mot de passe à usage unique (OTP) est lancé par programmation sans entrée de formulaire, ce qui rend la validation reCAPTCHA inutile. Cette fonctionnalité s’appuie sur la fonctionnalité [connexion par code unique](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"} introduite dans la version de mars 2026. La mutation `exchangeOtpForCustomerToken` continue de nécessiter reCAPTCHA par défaut lorsque reCAPTCHA est activé pour la connexion client. Contactez votre responsable du succès client Adobe Commerce pour activer cette option. <!-- ACCS-850 -->
+Une nouvelle option de configuration vous permet d’ignorer la validation reCAPTCHA pour la mutation [`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token) de GraphQL. Cela active des workflows de poinçonnage B2B. L’échange de mot de passe à usage unique (OTP) est lancé par programmation sans entrée de formulaire, ce qui rend la validation reCAPTCHA inutile. Cette fonctionnalité s’appuie sur la fonctionnalité [connexion par code unique](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"} introduite dans la version de mars 2026. La mutation `exchangeOtpForCustomerToken` continue de nécessiter reCAPTCHA par défaut lorsque reCAPTCHA est activé pour la connexion client. Contactez votre responsable du succès client Adobe Commerce pour activer cette option. <!-- ACCS-850 -->
 
 ### Modifier les commandes partiellement facturées
 
@@ -392,7 +392,7 @@ Les éléments suivants ont été publiés dans les environnements de production
 
 ### Vérification du statut d’abonnement aux alertes de prix et de stock via GraphQL
 
-Grâce aux nouvelles requêtes GraphQL, [`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock/){target="_blank"} et [`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price/){target="_blank"}, les storefronts peuvent déterminer si un acheteur est déjà abonné aux alertes de stock ou de prix pour un produit. <!-- ACCS-334 -->
+Grâce aux nouvelles requêtes GraphQL, [`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock){target="_blank"} et [`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price){target="_blank"}, les storefronts peuvent déterminer si un acheteur est déjà abonné aux alertes de stock ou de prix pour un produit. <!-- ACCS-334 -->
 
 ### Créer des attributs de produit numériques qui prennent en charge les valeurs négatives
 
@@ -400,11 +400,11 @@ Un nouveau `numeric` [type d’entrée d’attribut de produit](https://experien
 
 ### Configuration de requête reCAPTCHA pour plusieurs formulaires dans une seule requête GraphQL
 
-La requête [`recaptchaFormConfigs` peut renvoyer &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) détails de configuration pour plusieurs types de formulaires dans une seule requête. <!-- ACCS-628 -->
+La requête [`recaptchaFormConfigs` peut renvoyer &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs) détails de configuration pour plusieurs types de formulaires dans une seule requête. <!-- ACCS-628 -->
 
 ### Afficher toutes les commandes d&#39;entreprise avec une nouvelle autorisation B2B
 
-Un nouveau `view_all_company_orders` [rôle de société](https://developer.adobe.com/commerce/webapi/rest/b2b/roles/) permet aux clients de la société B2B d’afficher toutes les commandes au sein de leur société, y compris les commandes historiques créées par les utilisateurs administrateurs. <!-- ACCS-675 -->
+Un nouveau `view_all_company_orders` [rôle de société](https://developer.adobe.com/commerce/webapi/rest/b2b/roles) permet aux clients de la société B2B d’afficher toutes les commandes au sein de leur société, y compris les commandes historiques créées par les utilisateurs administrateurs. <!-- ACCS-675 -->
 
 ### Améliorations et correctifs
 
@@ -432,7 +432,7 @@ Les éléments suivants ont été publiés dans les environnements de production
 
 Les administrateurs peuvent désormais générer des [codes à usage unique](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer) pour l’emprunt d’identité du client via l’API [!DNL Commerce Admin] et REST. Le code unique peut être échangé contre un jeton d’accès client par le biais des mutations GraphQL `generateCustomerToken` ou `exchangeOtpForCustomerToken`, ce qui permet d’activer les flux « Connexion en tant que client » sans mot de passe pour les scénarios d’achat assistés par le vendeur. <!-- ACCS-404 -->
 
-Pour obtenir des conseils sur l’implémentation de cette fonctionnalité à l’aide d’API, consultez la documentation [API REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/) et [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/).
+Pour obtenir des conseils sur l’implémentation de cette fonctionnalité à l’aide d’API, consultez la documentation [API REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/) et [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token).
 
 ### Gérer les comptes de carte cadeau via l’API REST
 
@@ -444,7 +444,7 @@ Un nouveau point d’entrée de l’API REST (`POST /V1/custom-email/send`) vous
 
 ### Abonnez-vous au webhook des taux d’obtention des frais d’expédition hors processus .
 
-Le webhook `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` est désormais disponible dans la liste Admin Webhooks de [!DNL Adobe Commerce as a Cloud Service]. Utilisez-le pour implémenter [méthodes d’expédition personnalisées](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#shipping-methods). <!-- ACCS-478 -->
+Le webhook `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` est désormais disponible dans la liste Admin Webhooks de [!DNL Adobe Commerce as a Cloud Service]. Utilisez-le pour implémenter [méthodes d’expédition personnalisées](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#shipping-methods). <!-- ACCS-478 -->
 
 ### Chargement de PDF et d’autres fichiers via les attributs de produit
 
@@ -580,11 +580,11 @@ Auparavant, la limite du nombre de sites web, de boutiques et d’affichages de 
 
 ### Personnaliser les messages d’authentification du storefront avec des codes d’erreur structurés
 
-La mutation [`generateCustomerToken` GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} renvoie désormais des codes d’erreur saisis avec les messages d’erreur, ce qui permet aux storefronts d’afficher des messages d’interface utilisateur spécifiques par raison d’échec. Les codes d’erreur disponibles sont les suivants : `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` et `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
+La mutation [`generateCustomerToken` GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token){target="_blank"} renvoie désormais des codes d’erreur saisis avec les messages d’erreur, ce qui permet aux storefronts d’afficher des messages d’interface utilisateur spécifiques par raison d’échec. Les codes d’erreur disponibles sont les suivants : `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` et `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
 
 ### Envoyer des rappels automatisés par e-mail pour l’inactivité du panier et de la liste de souhaits
 
-Le module [Rappel par e-mail](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`) est désormais actif dans [!DNL Adobe Commerce as a Cloud Service]. Il permet aux commerçants de créer des règles de rappel automatisées qui déclenchent des e-mails aux clients en fonction de l’inactivité du panier et de la liste de souhaits. <!-- CCSAAS-4597 -->
+Le module [E-mail de rappel](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`) est désormais actif dans [!DNL Adobe Commerce as a Cloud Service]. Il permet aux commerçants de créer des règles de rappel automatisées qui déclenchent des e-mails aux clients en fonction de l’inactivité du panier et de la liste de souhaits. <!-- CCSAAS-4597 -->
 
 ### S’abonner au webhook des événements de suppression de catégorie
 
@@ -592,7 +592,7 @@ Le webhook `observer.catalog_category_delete_before` est désormais disponible d
 
 ### Suivre les commandes passées par des invités avec un e-mail enregistré
 
-Une nouvelle configuration facultative au niveau du magasin permet aux clients de [suivre les commandes des invités](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) qu’ils ont passées, si la commande a été passée à l’aide d’une adresse e-mail correspondant à un compte client enregistré. <!-- ACCS-289 -->
+Une nouvelle configuration facultative au niveau du magasin permet aux clients de [suivre les commandes des invités](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) qu’ils ont passées. Cela s’applique si la commande a été passée à l’aide d’une adresse e-mail correspondant à un compte client enregistré. <!-- ACCS-289 -->
 
 ### Améliorations et correctifs
 
@@ -616,7 +616,7 @@ Les éléments suivants ont été publiés dans les environnements de production
 
 ### Envoi de champs de contexte avec des événements commerciaux
 
-[!DNL Adobe Commerce as a Cloud Service] prend désormais en charge les [champs de contexte](https://developer.adobe.com/commerce/extensibility/events/context-fields/) dans les payloads d’événement, ce qui vous permet d’inclure par défaut des données qui ne font pas partie de l’événement. <!-- CEXT-5713 -->
+[!DNL Adobe Commerce as a Cloud Service] prend désormais en charge les [champs de contexte](https://developer.adobe.com/commerce/extensibility/events/context-fields) dans les payloads d’événement, ce qui vous permet d’inclure par défaut des données qui ne font pas partie de l’événement. <!-- CEXT-5713 -->
 
 ### Abonnez-vous aux événements d’enregistrement d’élément de devis à l’aide d’un nouveau webhook
 
@@ -644,7 +644,7 @@ Les éléments suivants ont été publiés dans les environnements de production
 
 Les améliorations suivantes ont été apportées au [!DNL Commerce Admin] :
 
-* Amélioration de la fonctionnalité hors processus [payloads webhook d’expédition](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload) pour inclure les attributs personnalisés d’adresse d’expédition. Cette modification permet aux commerçants de mettre en œuvre des méthodes d’expédition personnalisées. <!-- ACCS-235 -->
+* Amélioration de la fonctionnalité hors processus [payloads webhook d’expédition](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#payload) pour inclure les attributs personnalisés d’adresse d’expédition. Cette modification permet aux commerçants de mettre en œuvre des méthodes d’expédition personnalisées. <!-- ACCS-235 -->
 
 * Ajout d’un accès aux rapports d’administration, y compris les rapports pour [Clients](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/customer-reports), [Marketing](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/marketing-reports), [Produits](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/product-reports) et [Ventes](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/sales-reports). <!-- CCSAAS-3085 -->
 
@@ -735,7 +735,7 @@ Vous pouvez désormais combiner des remises de tarification échelonnée avec de
 
 ### Améliorations et correctifs
 
-Les améliorations, optimisations et correctifs suivants inclus dans cette version sont sélectionnés :
+Les améliorations, optimisations et correctifs suivants sont inclus dans cette version :
 
 * Correction d&#39;une erreur qui pouvait se produire lors du chargement d&#39;un fichier dans S3. <!-- CCSAAS-4189 -->
 
@@ -745,7 +745,7 @@ Les améliorations, optimisations et correctifs suivants inclus dans cette versi
 
 * Correction d’une erreur `404` qui se produisait lorsque les utilisateurs cliquaient sur le bouton [!UICONTROL **Recharger les données**] du tableau de bord d’administration. <!-- CCSAAS-4468 -->
 
-* Correction d’un problème où les attributs personnalisés du produit ne pouvaient pas être mis à jour via l’API REST lorsqu’[!DNL AEM Assets integration] était activé et que le produit contenait des images. <!-- ACAP-1178 -->
+* Correction d’un problème où les attributs personnalisés du produit n’étaient pas mis à jour via l’API REST lorsqu’[!DNL AEM Assets integration] était activé et que le produit contenait des images. <!-- ACAP-1178 -->
 
 * Diverses améliorations des performances et de l’optimisation.
 <!-- CCSAAS-4255 -->
@@ -764,13 +764,13 @@ Les améliorations, optimisations et correctifs suivants inclus dans cette versi
 
 ### Améliorations
 
-* [Gestion des utilisateurs](./user-management.md) - Modification du rôle **Administrateur de produit** dans Admin Console afin de mettre automatiquement à jour l’accès des utilisateurs et utilisatrices à l’administrateur Commerce. <!-- CCSAAS-3012 -->
+* [Gestion des utilisateurs](./user-management.md) — Modification du rôle **Administrateur de produit** dans Admin Console afin de mettre automatiquement à jour l’accès des utilisateurs et utilisatrices au rôle d’administrateur Commerce. <!-- CCSAAS-3012 -->
 
-* Ajout de la possibilité de charger et de récupérer des pièces jointes de devis négociables, ainsi que des fichiers et des images associés aux clients et aux adresses des clients dans Amazon S3 à l’aide d’URL présignées dans [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads) et [REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads). Avec REST, vous pouvez également charger des images de catégorie. <!-- CCSAAS-3250 -->
+* Ajout de la possibilité de charger et de récupérer des pièces jointes de devis négociables, ainsi que des fichiers et des images associés aux clients et aux adresses des clients dans Amazon S3 à l’aide d’URL présignées dans [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/) et [REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads/). Avec REST, vous pouvez également charger des images de catégorie. <!-- CCSAAS-3250 -->
 
 * Ajout des points d’entrée `POST /V1/customers` et `PUT /V1/customers/{customerId}` à l’[API REST](https://developer.adobe.com/commerce/webapi/rest/reference/) pour créer et mettre à jour des clients. Ces points d’entrée nécessitent une autorisation IMS. <!-- CCSAAS-3112 -->
 
-* Ajout de la mutation [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/), qui nécessite l’adresse e-mail et le mot de passe à usage unique (OTP) d’un acheteur et qui reçoit un jeton client en échange. `exchangeOtpForCustomerToken`Cette mutation est généralement utilisée dans les scénarios où un client doit s’authentifier à l’aide d’un mot de passe à usage unique envoyé à son adresse e-mail ou téléphone.
+* Ajout de la mutation [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token), qui nécessite l’adresse e-mail et le mot de passe à usage unique (OTP) d’un acheteur et qui reçoit un jeton client en échange. `exchangeOtpForCustomerToken`Cette mutation est généralement utilisée dans les scénarios où un client doit s’authentifier à l’aide d’un mot de passe à usage unique envoyé à son adresse e-mail ou téléphone.
 
 * Si une adresse définie dans l’écran de configuration [!UICONTROL **Stocker les adresses e-mail**] de l’administrateur contient une valeur se terminant par `example.com`, Commerce n’envoie pas d’e-mails à cette adresse. Au lieu de cela, le système consigne que l’e-mail n’a pas été envoyé.  <!-- CCSAAS-3533 -->
 

@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -98,8 +98,8 @@ Dans cet exemple, les valeurs `status` fournissent des informations sur l’opé
 - **`"Progress 2/5"`** indique que 2 itérations sur 5 ont été terminées. Le nombre d’itérations dépend du nombre d’entités exportées.
 - **`"processed: 200"`** indique que 200 éléments ont été traités.
 - **`"synced: 100"`** indique que 100 articles ont été envoyés à SaaS. On s’attend à ce que `"synced"` ne soit pas égal à `"processed"`. Voici un exemple :
-   - **`"synced" < "processed"`** signifie que la table de flux n’a détecté aucune modification dans l’élément, par rapport à la version synchronisée précédemment. Ces éléments sont ignorés pendant l’opération de synchronisation.
-   - **`"synced" > "processed"`** même id d’entité (par exemple, `Product ID`) peut avoir plusieurs valeurs dans différentes portées. Par exemple, un produit peut être attribué à cinq sites web. Dans ce cas, il se peut que vous ayez « 1 élément traité » et « 5 éléments synchronisés ».
+  - **`"synced" < "processed"`** signifie que la table de flux n’a détecté aucune modification dans l’élément, par rapport à la version synchronisée précédemment. Ces éléments sont ignorés pendant l’opération de synchronisation.
+  - **`"synced" > "processed"`** même id d’entité (par exemple, `Product ID`) peut avoir plusieurs valeurs dans différentes portées. Par exemple, un produit peut être attribué à cinq sites web. Dans ce cas, il se peut que vous ayez « 1 élément traité » et « 5 éléments synchronisés ».
 
 +++ **Exemple : journal de resynchronisation complet pour le flux de prix**
 
@@ -148,7 +148,7 @@ Si des données sont manquantes ou incorrectes dans les services Commerce, reche
 - Le journal des erreurs d’exportation des données (`commerce-data-export-errors.log`) capture les erreurs qui se produisent pendant la phase de collecte.
 - Le journal des erreurs d’exportation SaaS (`saas-export-errors.log`) capture les erreurs qui se produisent pendant la phase de transmission.
 
-Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) avec autant d’informations que possible.
+Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) avec autant d’informations que possible.
 
 ### Résolution des problèmes de synchronisation des catalogues {#resolvesync}
 

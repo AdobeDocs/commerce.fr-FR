@@ -5,10 +5,10 @@ user-guide-description: Ce guide fournit des instructions détaillées sur l'uti
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 7%
+source-wordcount: '43'
+ht-degree: 6%
 
 ---
 
@@ -16,6 +16,6 @@ ht-degree: 7%
 
 - [Indexation des prix SaaS - Aperçu](price-indexing.md)
 - Catalog Adapter {#catalog-adapter}
-   - [Vue d’ensemble](catalog-adapter.md)
-   - [Notes de mise à jour](release-notes.md)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr)
+  - [Vue d’ensemble](catalog-adapter.md)
+  - [Notes de mise à jour](release-notes.md)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)

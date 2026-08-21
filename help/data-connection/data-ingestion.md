@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 339
-ht-degree: 2%
+source-wordcount: 342
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 L’extension [Data Connection](overview.md) connecte vos données Commerce à Experience Platform. Les données destinées à être utilisées dans Experience Platform sont regroupées en deux types de comportement : les données de série temporelle, qui appartiennent à la classe **Événement d’expérience**, et les données d’enregistrement, qui appartiennent à la classe **Profil individuel**.
 
-En savoir plus sur les [comportement des données](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr#data-behaviors) et les [classes](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr#class) dans Experience Platform.
+En savoir plus sur les [comportement des données](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#data-behaviors) et les [classes](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/composition#class) dans Experience Platform.
 
 ## Données de série temporelle
 
@@ -39,7 +39,7 @@ Découvrez comment [créer un schéma](update-xdm.md) qui peut ingérer des donn
 
 ## Données d’enregistrement
 
-Les données d’enregistrement fournissent des informations sur les attributs d’un sujet. Un sujet peut être une organisation ou un individu. Par exemple, un acheteur sur votre site crée un compte qui génère des données d’enregistrement. Ces données sont ingérées dans Experience Platform à l’aide d’un schéma dont la classe est définie sur **Profil individuel**. Vous pouvez envoyer ces données d’enregistrement au service de gestion des profils et de segmentation d’Adobe : [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=fr).
+Les données d’enregistrement fournissent des informations sur les attributs d’un sujet. Un sujet peut être une organisation ou un individu. Par exemple, un acheteur sur votre site crée un compte qui génère des données d’enregistrement. Ces données sont ingérées dans Experience Platform à l’aide d’un schéma dont la classe est définie sur **Profil individuel**. Vous pouvez envoyer ces données d’enregistrement au service de gestion des profils et de segmentation d’Adobe : [Real-Time CDP](https://experienceleague.adobe.com/fr/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 ### Données d’enregistrement de profil capturées
 

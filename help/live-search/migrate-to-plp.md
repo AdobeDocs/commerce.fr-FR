@@ -16,9 +16,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 2102
+source-wordcount: 2105
 ht-degree: 0%
 
 ---
@@ -358,11 +358,11 @@ Dans ce scénario, vous disposez d’un storefront découplé ou PWA qui nécess
 1. **Implémentez la collecte d’événements** :
    - Consultez la [documentation sur les événements Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search).
    - Mettez en œuvre les événements requis :
-      - `search-request-sent`
-      - `search-response-received`
-      - `search-results-view`
-      - `product-page-view`
-      - `add-to-cart`
+     - `search-request-sent`
+     - `search-response-received`
+     - `search-results-view`
+     - `product-page-view`
+     - `add-to-cart`
    - Tester les flux de données d’événement vers Adobe Commerce.
 
 1. **Configurer le tri à facettes** :
@@ -458,7 +458,7 @@ L’assistance Adobe **&#x200B;**&#x200B;peut vous aider à :
 - Implémentations découplées ou PWA
 - Suivi des événements personnalisés
 
-Pour contacter l’assistance Adobe, consultez le [Guide d’utilisation du centre d’aide](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Pour contacter l’assistance Adobe, consultez le [Guide d’utilisation du centre d’aide](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## FAQ
 

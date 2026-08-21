@@ -3,9 +3,9 @@ title: Chambre forte de carte de crédit
 description: Les acheteurs peuvent mettre en chambre forte (enregistrer) leurs informations de carte de crédit pour leurs achats futurs.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Les clients connectés peuvent archiver un mode de paiement dans le tableau de b
    ![Ajouter une nouvelle carte](assets/add-new-card.png){width="400" zoomable="yes"}
 
    Le client doit fournir tous les détails requis, tels que les informations de carte et de facturation, pour sauvegarder le mode de paiement.
-Tous les modes de paiement voûtés utilisent l&#39;adresse de facturation définie lors de la voûte de la carte, qui se trouve dans le compte PayPal de l&#39;acheteur. Le client peut voir une adresse de facturation différente de celle affichée dans Commerce.
+   Tous les modes de paiement voûtés utilisent l&#39;adresse de facturation définie lors de la voûte de la carte, qui se trouve dans le compte PayPal de l&#39;acheteur. Le client peut voir une adresse de facturation différente de celle affichée dans Commerce.
 
 1. Clic **[!UICONTROL Save New Card]**
 
@@ -73,10 +73,10 @@ Vous ne pouvez utiliser des cartes voûtées dans l&#39;Admin que si le client d
 
 Pour créer une commande dans l’Administration pour un client à l’aide de sa carte de crédit voûtée :
 
-1. [Créer une commande et ajouter des produits](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=fr).
+1. [Créer une commande et ajouter des produits](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
 1. Dans _[!UICONTROL Payment & Shipping Information]_, sélectionnez **[!UICONTROL Stored Cards]**&#x200B;comme mode de paiement.
 1. Sélectionnez le mode de paiement par carte de crédit en chambre forte souhaité.
-1. Après avoir effectué toutes les autres étapes nécessaires pour la commande, [envoyez-la](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=fr#step-3%3A-submit-the-order).
+1. Après avoir effectué toutes les autres étapes nécessaires pour la commande, [envoyez-la](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
 
    ![Utilisez une carte de crédit voûtée dans Admin pour le client](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

@@ -24,9 +24,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 991
+source-wordcount: 983
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ La solution immédiate à ce problème est une solution : configurez les deux gr
 1. Si le contenu ne correspond pas, apportez une modification mineure au produit de votre catalogue, par exemple en ajoutant un espace ou un point, pour forcer la détection de la modification.
 1. Attendez une resynchronisation ou déclenchez une resynchronisation manuelle à partir de l’interface de ligne de commande ou de la page [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) dans l’interface d’administration.
 
-Pour résoudre d’autres problèmes liés aux données de catalogue dans [!DNL Product Recommendations], voir [Résolution des problèmes du module de recommandations de produits](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) dans la base de connaissances de Commerce.
+Pour résoudre d’autres problèmes liés aux données de catalogue dans [!DNL Product Recommendations], voir [Résolution des problèmes du module de recommandations de produits](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-40095) dans la base de connaissances de Commerce.
 
 ## La synchronisation des données ne s’exécute pas selon le calendrier {#sync-not-on-schedule}
 
@@ -96,7 +96,7 @@ Pour résoudre d’autres problèmes liés aux données de catalogue dans [!DNL 
 
 **Solution :**
 
-- [Vérifiez que les tâches cron sont en cours d’exécution](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Vérifiez que les tâches cron sont en cours d’exécution](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-39832).
 - Vérifiez que les indexeurs des flux suivants sont définis sur **[!UICONTROL Update by Schedule]** : Attributs de catalogue, Produit, Remplacements de produit et Variante de produit. Vérifiez à partir de [[!UICONTROL Index Management]](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management) dans l’administration Commerce ou à l’aide de l’interface de ligne de commande : `bin/magento indexer:show-mode | grep -i feed`.
 
 ## La synchronisation du catalogue a le statut En échec . {#catalog-sync-failed}
@@ -110,7 +110,7 @@ Pour résoudre d’autres problèmes liés aux données de catalogue dans [!DNL 
 1. Consultez les journaux d’erreurs d’exportation des données pour plus d’informations sur l’échec. Consultez la section [Vérification et dépannage des journaux](logging.md) pour connaître le format de journal et les options de journalisation étendues :
    - `var/log/commerce-data-export-errors.log` les erreurs lors de la collecte de données.
    - `var/log/saas-export-errors.log` les erreurs lors de l’envoi des données.
-1. Si l’erreur n’est pas liée à la configuration ou à une extension tierce, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) avec les entrées de journal appropriées.
+1. Si l’erreur n’est pas liée à la configuration ou à une extension tierce, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) avec les entrées de journal appropriées.
 
 ## Le journal affiche les messages « opération ignorée - processus verrouillé » {#process-locked}
 

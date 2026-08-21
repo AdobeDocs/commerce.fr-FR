@@ -18,9 +18,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1415
+source-wordcount: 1421
 ht-degree: 0%
 
 ---
@@ -49,9 +49,9 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 ## Indexation
 
 - [!DNL Live Search] [index](indexing.md) jusqu’à un total de 450 attributs de produit par vue de magasin. Ils sont répartis comme suit :
-   - 50 attributs triables
-   - 200 attributs filtrables
-   - 200 attributs interrogeables
+  - 50 attributs triables
+  - 200 attributs filtrables
+  - 200 attributs interrogeables
 - [!DNL Live Search] indexe uniquement les produits de la base de données Adobe Commerce.
 - Les pages CMS ne sont pas indexées.
 - Les attributs SKU, name et category peuvent être recherchés par défaut et ne peuvent pas être exclus de la recherche. Veillez à annuler l’affectation des produits des catégories s’ils ne sont pas censés s’y trouver.
@@ -59,7 +59,7 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 ## Facettes
 
 - À partir du jeu d’attributs filtrables définis, vous pouvez configurer jusqu’à 100 attributs sous forme de facettes.
-- Dans une facette, 100 intervalles au maximum peuvent être renvoyés. Si vous devez renvoyer plus de 100 compartiments, [créez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) afin qu’Adobe puisse analyser l’impact sur les performances et déterminer s’il est possible d’augmenter cette limite pour votre environnement.
+- Dans une facette, 100 intervalles au maximum peuvent être renvoyés. Si vous devez renvoyer plus de 100 compartiments, [créez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) afin qu’Adobe puisse analyser l’impact sur les performances et déterminer s’il est possible d’augmenter cette limite pour votre environnement.
 - Les facettes dynamiques peuvent entraîner des problèmes de performances dans les index volumineux et les index de haute ordinalité. Si vous avez créé des facettes dynamiques et que vous constatez une dégradation des performances ou que la page ne se charge pas avec des erreurs de délai d’expiration, essayez de remplacer vos facettes par épinglées afin de déterminer si cela résout votre problème de performances.
 - L’état des stocks (`quantity_and_stock_status`) n’est pas pris en charge en tant que facette. Dans Admin, vous pouvez définir [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] pour filtrer les produits en rupture de stock. Cette fonctionnalité est prise en charge prête à l’emploi dans le module `[PLP Widget](plp-styling.md)`. Pour plus d’informations, voir [Gestion des produits en rupture de stock](manage-out-of-stock-products.md).
 - Les attributs de type date ne sont pas pris en charge sous la forme d’une facette.
@@ -100,9 +100,9 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 
 - Les produits ne s’affichent pas s’ils ne sont pas ajoutés à un catalogue partagé par défaut.
 - Pour restreindre les groupes de clients à l’aide des [autorisations de catégorie](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/categories/category-permissions) :
-   - Les produits doivent être affectés à la catégorie racine. (**Remarque :** vous pouvez supprimer cette limitation en mettant à jour l’extension d’exportation de données SaaS vers la version 103.4.0+. Voir [Gérer l’extension d’exportation des données](../data-export/manage-extension.md).
-   - Le groupe de clients « Non connecté » doit se voir attribuer des autorisations de navigation « Autoriser ».
-   - Pour limiter les produits au groupe de clients « Non connecté », accédez à chaque catégorie et définissez des autorisations pour chaque [groupe de clients](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
+  - Les produits doivent être affectés à la catégorie racine. (**Remarque :** vous pouvez supprimer cette limitation en mettant à jour l’extension d’exportation de données SaaS vers la version 103.4.0+. Voir [Gérer l’extension d’exportation des données](../data-export/manage-extension.md).
+  - Le groupe de clients « Non connecté » doit se voir attribuer des autorisations de navigation « Autoriser ».
+  - Pour limiter les produits au groupe de clients « Non connecté », accédez à chaque catégorie et définissez des autorisations pour chaque [groupe de clients](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - La prise en charge prête à l’emploi du B2B avec le widget PLP sur PWA Studio n’est pas prise en charge à ce stade. Cependant, vous pouvez [utiliser l’API](install.md#pwa-support) pour implémenter cette fonctionnalité.
 - Les facettes de catégories dans [!DNL Live Search] peuvent afficher des catégories qui ne sont pas affichables pour un [groupe de clients](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) spécifique.
 - [!DNL Live Search] peut prendre en charge jusqu’à 1 000 groupes de clients.
@@ -123,4 +123,4 @@ Pour obtenir de l’aide sur la résolution des problèmes courants dans [!DNL L
 - [[!DNL Live Search] tableau de bord et classement des résultats de recherche incorrects](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) - Résout les problèmes où les résultats de recherche ou les mesures de performances affichés dans le tableau de bord de la recherche en direct ne s’affichent pas comme prévu. Cet article explique comment résoudre les incohérences de classement et les incohérences des données du tableau de bord.
 - [[!DNL Live Search] les facettes ne sont pas triées par ordre alphabétique](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) - résout le problème où les valeurs de facette apparaissent dans un ordre inattendu plutôt que par ordre alphabétique. Cet article décrit les étapes à suivre pour configurer et corriger le comportement de tri à facettes sur votre storefront.
 
-Si vous avez besoin d’aide supplémentaire, contactez l’[assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si vous avez besoin d’aide supplémentaire, contactez l’[assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

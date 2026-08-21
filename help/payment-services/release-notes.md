@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '5483'
+source-wordcount: '5478'
 ht-degree: 0%
 
 ---
@@ -447,7 +447,7 @@ _20 mars 2024_
 
 ![Nouveau](../assets/new.svg)<!-- PAY-4868 --> les commerçants peuvent [configurer Google Pay tout au long de l’expérience d’achat](payments-options.md) comme les autres boutons de paiement dans [!DNL Payment Services] via l’administrateur.
 
-![Nouveau](../assets/new.svg)<!-- PAY-4381 --> [Payment Services prend en charge Google Pay via GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) ce qui permet aux commerçants de bénéficier d’une expérience Commerce découplée grâce au mode de paiement Google Pay.
+![Nouveau](../assets/new.svg)<!-- PAY-4381 --> [Payment Services prend en charge Google Pay via GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/) ce qui permet aux commerçants de bénéficier d’une expérience Commerce découplée grâce au mode de paiement Google Pay.
 
 ![Nouveau](../assets/new.svg)<!-- PAY-4878 --> Désormais, la fonctionnalité de passage en caisse de base [!DNL Payment Services] est proposée aux commerçants Adobe Commerce et Magento Open Source.[!DNL Payment Services] peut désormais soutenir les commerçants ayant des entreprises dans 200 zones géographiques à travers le monde.[!DNL Payment Services] Le paiement de base fournit des options de débit/crédit, PayPal, Venmo (le cas échéant) et PayLater (le cas échéant) dans une intégration en libre-service.
 
@@ -491,7 +491,7 @@ _7 décembre 2023_
 
 - la page des commandes client sur le storefront
 - e-mail de confirmation de commande envoyé à l’acheteur
-- dans la vue [Détails de la commande](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html?lang=fr#view-an-order) dans l’Administration Commerce.
+- dans la vue [Détails de la commande](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/order-processing#view-an-order) dans l’Administration Commerce.
 
 ## v2.3.0
 
@@ -499,7 +499,7 @@ _1er décembre 2023_
 
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
 
-![Nouveau](../assets/new.svg)<!-- PAY-4381 --> [Les services de paiement prennent désormais en charge l’intégration de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). Avec la prise en charge par GraphQL des boutons de paiement PayPal, des champs hébergés et d’Apple Pay[!DNL Payment Services] prend désormais en charge une configuration Commerce découplée.
+![Nouveau](../assets/new.svg)<!-- PAY-4381 --> [Les services de paiement prennent désormais en charge l’intégration de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/). Avec la prise en charge par GraphQL des boutons de paiement PayPal, des champs hébergés et d’Apple Pay[!DNL Payment Services] prend désormais en charge une configuration Commerce découplée.
 
 ## v2.2.1
 
@@ -615,7 +615,7 @@ _18 novembre 2022_
 
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-3880 --> Un acheteur peut désormais [enregistrer) ses informations de carte de crédit lors du passage en caisse](vaulting.md) pour les utiliser lors d’un achat ultérieur pour le même magasin ou un autre magasin dans le même compte marchand.
 
-![Nouveau](../assets/new.svg)<!-- Issue PAY-3950 --> les commerçants peuvent désormais activer la fonctionnalité [Commerce d’achat instantané](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html?lang=fr) pour leurs magasins afin que les acheteurs puissent (utiliser [les informations de carte de crédit voûtées](vaulting.md)) accélérer le passage en caisse.
+![Nouveau](../assets/new.svg)<!-- Issue PAY-3950 --> les commerçants peuvent désormais activer la fonctionnalité [Commerce d’achat instantané](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase) pour leurs magasins afin que les acheteurs puissent (utiliser [les informations de carte de crédit voûtées](vaulting.md)) accélérer le passage en caisse.
 
 ## v1.4.1
 
@@ -673,7 +673,7 @@ _29 juin 2022_
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> lorsque les informations d’identification des services Commerce ne sont pas valides[!DNL Payment Services] vous avertit désormais en affichant une erreur d’informations d’identification dans l’Accueil [!DNL Payment Services] de l’administrateur.
 
-![Problème connu](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] est incompatible avec `commerce-data-export` v101.20 et les versions ultérieures, ce qui le rend incompatible avec l’extension [[!DNL Channel manager] &#x200B;](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html?lang=fr).
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] est incompatible avec `commerce-data-export` v101.20 et versions ultérieures, ce qui le rend incompatible avec l’extension [[!DNL Channel manager] &#x200B;](https://experienceleague.adobe.com/fr/docs/discontinued/using/commerce-channels) (arrêtée).
 
 ## v1.1.0
 
@@ -701,7 +701,7 @@ _31 mars 2022_
 
 ![Problème résolu](../assets/fix.svg)<!-- Issue PAY-2561 --> les produits précédemment supprimés n’apparaissent pas dans le panier sur la page _Vérifier la commande_.
 
-![Problème connu](../assets/bug.svg)<!-- Issue PAY-2842 --> Testez les transactions de carte de crédit [peuvent échouer avec PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=fr) lors du traitement des paiements dans un environnement Sandbox.
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-2842 --> Testez les transactions de carte de crédit [peuvent échouer avec PayPal](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26825) lors du traitement des paiements dans un environnement Sandbox.
 
 ## v1.0.0
 
@@ -725,9 +725,9 @@ _29 novembre 2021_
 
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-1443 --> Vous pouvez facilement [personnaliser l&#39;apparence](payments-options.md) des boutons de paiement PayPal et des champs de carte de crédit pour l&#39;extension [!DNL Payment Services].
 
-![Problème connu](../assets/bug.svg)<!-- Issue PAY-2473 --> l’utilisation de [clés de compositeur incorrectes](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=fr) lors de l’installation de l’extension empêche l’utilisateur de [s’authentifier](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) avec les `MAGEID` correctes.
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-2473 --> l’utilisation de [clés de compositeur incorrectes](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26826) lors de l’installation de l’extension empêche l’utilisateur de [s’authentifier](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) avec les `MAGEID` correctes.
 
-![Problème connu](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] rapports [peuvent ne pas se synchroniser immédiatement](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=fr).
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] rapports [peuvent ne pas se synchroniser immédiatement](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26837).
 
-![Problème connu](../assets/bug.svg)<!-- Issue PAY-2475 --> Votre [compte sandbox PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=fr) pour [!DNL Payment Services] ne peut pas être vérifié si vous créez ce compte lors de l’intégration.
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-2475 --> Votre [compte sandbox PayPal](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26836) pour [!DNL Payment Services] ne peut pas être vérifié si vous créez ce compte lors de l’intégration.
 

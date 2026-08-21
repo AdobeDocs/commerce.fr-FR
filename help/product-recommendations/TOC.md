@@ -5,9 +5,9 @@ user-guide-description: Ce guide fournit des instructions détaillées sur l’u
 role: Admin
 feature: Services, Recommendations
 nudge: true
-source-git-commit: 22c2fa72c3603e28b5ab55a34a908c10c02457fe
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '64'
+source-wordcount: '65'
 ht-degree: 10%
 
 ---
@@ -19,23 +19,23 @@ ht-degree: 10%
 - [Notes de mise à jour](release-notes.md)
 - [Limites et limites](boundaries-limits.md)
 - Prise en main {#getting-started}
-   - [Intégration](onboarding.md)
-   - [Workflow de mise en œuvre](implementation-workflow.md)
-   - [Découplé](headless.md)
-   - [Installer](install-configure.md)
-   - [Paramètres](settings.md)
-   - [Environnement d’évaluation](staging-environment.md)
-   - [Intégration de Page Builder](page-builder.md)
+  - [Intégration](onboarding.md)
+  - [Workflow de mise en œuvre](implementation-workflow.md)
+  - [Découplé](headless.md)
+  - [Installer](install-configure.md)
+  - [Paramètres](settings.md)
+  - [Environnement d’évaluation](staging-environment.md)
+  - [Intégration de Page Builder](page-builder.md)
 - Administrateur [!DNL Product Recommendations] {#admin}
-   - [Workspace](workspace.md)
-   - [Créer](create.md)
-   - [Modifier](edit.md)
-   - [Types de recommandations](type.md)
-   - [Filtres](filters.md)
-   - [Emplacement et libellés](placement.md)
+  - [Workspace](workspace.md)
+  - [Créer](create.md)
+  - [Modifier](edit.md)
+  - [Types de recommandations](type.md)
+  - [Filtres](filters.md)
+  - [Emplacement et libellés](placement.md)
 - Développeur [!DNL Product Recommendations] {#developer}
-   - [Vue d’ensemble](development-overview.md)
-   - [Collecter des données](events.md)
-   - [Personnaliser](customize.md)
-   - [Gestion des restrictions relatives aux cookies](setting-cookie.md)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr)
+  - [Vue d’ensemble](development-overview.md)
+  - [Collecter des données](events.md)
+  - [Personnaliser](customize.md)
+  - [Gestion des restrictions relatives aux cookies](setting-cookie.md)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)

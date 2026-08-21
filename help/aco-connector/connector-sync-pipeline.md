@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 662
+source-wordcount: 673
 ht-degree: 1%
 
 ---
@@ -64,13 +64,13 @@ Les tâches cron suivantes automatisent le pipeline selon un planning fixe.
 | `index` | `indexer_update_all_views` | Écoute les mises à jour des entités, assemble les éléments de flux et conserve le statut du flux | Toutes les 1 minute |
 | `index` | `indexer_reindex_all_invalid` | Effectuer une resynchronisation complète pour les index de flux marqués comme « Réindexation requise » | Toutes les 1 minute |
 | `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | Recherche les éléments de flux ayant échoué et les soumet à nouveau à [!DNL Commerce Optimizer] | Toutes les 5 minutes |
-| `commerce_data_export` | `cleanup_deleted_feed_items` | Nettoie les éléments de flux supprimés synchronisés après la période de conservation (7 jours) | Tous les jours à 2:00 h |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | Nettoie les éléments de flux supprimés synchronisés après la période de conservation (7 jours) | Tous les jours à 02h00 |
 
 L’extension **[!DNL SaaS Data Export]** gère la collecte de flux et le suivi des statuts. Le calque de connecteur mappe les entités et les étendues au format requis par l’API [!DNL Commerce Optimizer] et les envoie via `POST /v1/catalog/<feed name>`.
 
 #### Conditions requises
 
-- [Commerce cron doit être en cours d&#39;exécution](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}.
+- [Commerce cron doit être en cours d&#39;exécution](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}.
 - Les indexeurs de flux doivent utiliser le mode **[!UICONTROL Update by Schedule]**. Voir [&#x200B; Synchronisation partielle &#x200B;](../data-export/sync-overview.md#partial-sync){target="_blank"}.
 
 ## Contrôle de synchronisation basé sur la portée

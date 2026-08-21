@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1522
+source-wordcount: 1506
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ _28 mai 2026_
 ![Correction](../assets/fix.svg) **Arborescences de navigation complètes** : les catégories descendantes balisées sont désormais correctement incluses dans les arborescences de `navigation` filtrées par famille lorsqu’un nœud intermédiaire non balisé existe dans le chemin d’accès. Ce correctif garantit que les acheteurs voient toutes les catégories pertinentes dans la navigation, ce qui facilite la navigation et la découverte d’articles.
 <!--DATA-7183-->
 
-![Correction](../assets/fix.svg) **Gestion des slugs vides dans les requêtes `categoryTree`**—Correction d’un problème où la requête [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) renvoyait une erreur de serveur interne lorsque l’argument `slugs` incluait une chaîne vide. Les valeurs slug vides sont désormais ignorées, de sorte que les storefronts et les intégrations continuent de résoudre les données de catégorie sans requêtes ayant échoué.
+![Correction](../assets/fix.svg) **Gestion des slugs vides dans les requêtes `categoryTree`**—Correction d’un problème où la requête [`categoryTree`](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) renvoyait une erreur de serveur interne lorsque l’argument `slugs` incluait une chaîne vide. Les valeurs slug vides sont désormais ignorées, de sorte que les storefronts et les intégrations continuent de résoudre les données de catégorie sans requêtes ayant échoué.
 <!--DATA-7184-->
 
 ![Correction](../assets/fix.svg) les requêtes **`searchCategory`renvoient des résultats insensibles à la casse et classés par ordre alphabétique** : la requête `searchCategory` trie désormais les résultats de recherche par ordre alphabétique sans respect de la casse, ce qui garantit un ordre cohérent et prévisible. Les catégories comportant des préfixes plus courts apparaissent en premier lorsque les noms sont par ailleurs identiques.
@@ -153,7 +153,7 @@ _7 avril 2026_
 
 <!--v1.50 release-->
 
-**Recherches de catégorie simplifiées** — La requête [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) traite les `family` comme facultatives, de sorte que vous pouvez résoudre les catégories par slug sans fournir de famille.
+**Recherches de catégorie simplifiées** — La requête [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) traite les `family` comme facultatives, de sorte que vous pouvez résoudre les catégories par slug sans fournir de famille.
 
 {{aco-release}}
 
@@ -191,13 +191,13 @@ _19 février 2026_
 
 <!--v1.48-->
 
-**Contenu de catégorie plus riche pour les storefronts** — La requête [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) renvoie désormais des descriptions, des images et des balises META d’optimisation pour les moteurs de recherche afin que les storefronts puissent rendre des pages de catégorie plus riches.<!--DATA-6933-->
+**Contenu de catégorie plus riche pour les storefronts** — La requête [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) renvoie désormais des descriptions, des images et des balises META d’optimisation pour les moteurs de recherche afin que les storefronts puissent rendre des pages de catégorie plus riches.<!--DATA-6933-->
 
 _12 février 2026_
 
 <!--v1.49-->
 
-**Amélioration des données de produit par catégorie** — L’API GraphQL ajoute le type de [`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} afin que vous puissiez interroger et filtrer les produits par catégorie avec moins d’allers-retours.
+**Amélioration des données de produit par catégorie** — L’API GraphQL ajoute le type de [`CategoryProductView`](https://developer.adobe.com/commerce/services/reference/graphql/#categoryproductview){target="blank"} afin que vous puissiez interroger et filtrer les produits par catégorie avec moins d’allers-retours.
 
 {{aco-release}}
 

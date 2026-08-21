@@ -16,9 +16,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 3ee9822b069504343f69f5b1dd36713e7dcbf3d8
 workflow-type: tm+mt
-source-wordcount: 3074
+source-wordcount: 3378
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Chaque type de règle comporte une icône d’information dans l’éditeur, acc
 
 | Type de règle | Objectif |
 | --- | --- |
-| **Règle Tous les produits** | Classement et marchandisage par défaut dans les listes de produits lorsqu’aucune règle de recherche ou de catégorie plus spécifique ne s’applique. Vous ne pouvez créer qu’une seule règle de ce type. Elle ne peut pas contenir de conditions. |
+| **Toutes les listes de produits** | Classement et marchandisage par défaut dans les listes de produits lorsqu’aucune règle de recherche ou de catégorie plus spécifique ne s’applique. Vous ne pouvez créer qu’une seule règle de ce type. Elle ne peut pas contenir de conditions. |
 | **Règle de catégorie** | Applique le marchandisage et le classement à une ou plusieurs catégories sélectionnées, en contrôlant l’ordre des produits sur ces pages de catégorie. |
 | **Règle de recherche** | Applique le marchandisage et le classement lorsque les acheteurs exécutent une recherche correspondant aux conditions de requête de la règle. |
 
@@ -102,13 +102,32 @@ Une règle peut contenir jusqu’à dix conditions. L’opérateur logique qui j
 
 Les règles de catégorie contrôlent la manière dont les produits sont triés sur les **pages de catégorie**. Vous combinez les **règles de catégorie** avec le **classement intelligent** (y compris les signaux pilotés par l’IA) et les **actions manuelles** telles que l’épinglage, l’amplification et l’enterrement, afin d’organiser la découverte, d’exécuter des promotions et d’aligner les pages de catégorie sur votre stratégie sans recourir à des outils externes.
 
-1. Sous **Catégories**, sélectionnez la ou les catégories auxquelles la règle doit s’appliquer. Les catégories sélectionnées s’affichent sous le contrôle afin que vous puissiez confirmer la portée.
-1. Dans la liste des catégories qui s’affichent, vous pouvez cliquer sur les trois points et sélectionner pour :
+**Sélectionner des catégories**
+
+Sous **Catégories**, sélectionnez une ou plusieurs catégories auxquelles la règle doit s’appliquer. Les catégories sélectionnées s’affichent sous le contrôle afin que vous puissiez confirmer la portée. Sélectionnez des catégories de l’une des manières suivantes :
+
+- **Parcourir l’arborescence des catégories** - Développez une catégorie pour charger ses catégories enfants immédiates. Pour accéder à un niveau plus profond, développez la catégorie enfant . L’arborescence charge un niveau à la fois.
+- **Rechercher par nom de catégorie** - Saisissez un nom de catégorie dans le champ **Rechercher et sélectionner des catégories**. Les résultats de recherche incluent les noms de catégorie correspondants de l’ensemble du catalogue, y compris les catégories en dehors de la branche actuellement développée. La recherche ne correspond pas au texte du chemin d’accès à la catégorie.
+
+Si plusieurs catégories portent des noms similaires, utilisez le chemin d’accès à la catégorie affiché avec chaque résultat (par exemple, `brakes/aurora`) pour sélectionner la catégorie appropriée.
+
+>[!NOTE]
+>
+>Le développement d’une catégorie ne charge que ses catégories enfants pour la navigation. Elle ne sélectionne pas la catégorie et n’applique pas la règle à ses sous-catégories. Sélectionnez une catégorie pour l’ajouter à la règle. Pour appliquer la règle aux sous-catégories d&#39;une catégorie, utilisez **Appliquer aux sous-catégories** dans le menu d&#39;action de la catégorie, comme décrit ci-dessous.
+
+>[!TIP]
+>
+>Si une catégorie enfant n’est pas visible, développez sa catégorie parent pour charger le niveau suivant. Si vous connaissez le nom de la catégorie, utilisez le champ de recherche au lieu de parcourir l’arborescence. Cela s’avère utile pour les catalogues volumineux, car les niveaux de catégorie se chargent à la demande.
+
+1. Dans la liste des catégories sélectionnées, cliquez sur les trois points en regard d’une catégorie et sélectionnez pour :
 
    - **Supprimer** - Supprime la catégorie de la règle.
    - **Appliquer aux sous-catégories** - Applique la règle aux sous-catégories pour lesquelles aucune règle de marchandisage active n’est définie.
    - **Aperçu** - Affiche l’aspect de la page de catégorie sur votre storefront.
 
+   ![Menu Action de catégorie](../../assets/category-action-menu.png)
+
+1. Vérifiez le chemin d’accès à la catégorie affiché pour chaque catégorie sélectionnée afin de confirmer que vous avez sélectionné la catégorie appropriée.
 1. Définissez [Classement intelligent](#intelligent-ranking) et [Classement manuel](#manual-ranking) comme décrit dans les sections suivantes. Les mêmes contrôles s’appliquent aux règles de recherche, les différences étant signalées.
 
 >[!ENDTABS]
@@ -165,8 +184,8 @@ Pour **résultats de recherche** (et la requête de test dans l’éditeur de r�
 
 - **Pertinence textuelle** : le facteur dominant dans la notation. Cela permet de mesurer la correspondance entre le nom, la description et les attributs d’un produit et la requête de recherche. Le score de pertinence du texte est illimité (il n’a pas de limite supérieure spécifique) et est influencé par des facteurs tels que :
 
-   - Fréquence d&#39;occurrence des mots correspondants.
-   - Longueur (en mots) des noms/descriptions des produits.
+  - Fréquence d&#39;occurrence des mots correspondants.
+  - Longueur (en mots) des noms/descriptions des produits.
 
 - **Signaux comportementaux** : un coup de pouce limité est appliqué en plus du score de pertinence du texte. Lorsque vous sélectionnez une stratégie de classement intelligente telle que « Les plus consultés » ou « Les plus achetés », les produits présentant des signaux comportementaux plus élevés reçoivent un poids relatif plus important. La force de ce poids est contrôlée par **[!UICONTROL Intelligent Ranking Boost]** (voir [Amplification de classement intelligente](#intelligent-ranking-boost)) ; l&#39;amplification reste limitée, mais vous pouvez augmenter le degré de déplacement de l&#39;ordre.
 

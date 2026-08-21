@@ -4,9 +4,9 @@ breadcrumb-title: '[!DNL Live Search]'
 user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation  [!DNL Live Search]  à partir d’Adobe Commerce.
 role: Admin
 feature: Services, Search
-source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '105'
 ht-degree: 7%
 
 ---
@@ -20,34 +20,34 @@ ht-degree: 7%
 - [Bonnes pratiques](best-practice.md)
 - [Notes de mise à jour](release-notes.md)
 - Storefront {#live-search-storefront}
-   - [Widgets de storefront](storefront-widgets.md)
-   - [Page de liste de produits](plp-styling.md)
-   - [Storefront  [!DNL Popover]](storefront-popover.md)
-   - [Migration vers le widget PLP](migrate-to-plp.md)
+  - [Widgets de storefront](storefront-widgets.md)
+  - [Page de liste de produits](plp-styling.md)
+  - [Storefront  [!DNL Popover]](storefront-popover.md)
+  - [Migration vers le widget PLP](migrate-to-plp.md)
 - Admin {#live-search-admin}
-   - [Performances](performance.md)
-   - Facettes {#facets}
-      - [Vue d’ensemble](facets.md)
-      - [Workspace](faceting-workspace.md)
-      - [Types de facettes](facets-type.md)
-      - [Ajout de facettes](facets-add.md)
-      - [Gestion des facettes](facets-manage.md)
-   - Synonymes {#synonyms}
-      - [Vue d’ensemble](synonyms.md)
-      - [Types de synonymes](synonyms-type.md)
-      - [Ajouter des synonymes](synonyms-add.md)
-      - [Gérer les synonymes](synonyms-manage.md)
-   - Rechercher dans le marchandisage {#rules}
-      - [Vue d’ensemble](rules.md)
-      - [Workspace](rules-workspace.md)
-      - [Ajouter des règles](rules-add.md)
-      - [Gestion des règles](rules-manage.md)
-   - [Marchandisage de catégorie](category-merch.md)
-   - [Gestion des produits en rupture de stock](manage-out-of-stock-products.md)
-   - [Indexation](indexing.md)
-   - {hide-from-toc}[Correspondance de recherche et classement](search-relevance-matching.md)
-   - [GraphQL](graphql.md)
-   - [Paramètres](settings.md)
-   - [Recherche sémantique](semantic-search.md)
+  - [Performances](performance.md)
+  - Facettes {#facets}
+    - [Vue d’ensemble](facets.md)
+    - [Workspace](faceting-workspace.md)
+    - [Types de facettes](facets-type.md)
+    - [Ajout de facettes](facets-add.md)
+    - [Gestion des facettes](facets-manage.md)
+  - Synonymes {#synonyms}
+    - [Vue d’ensemble](synonyms.md)
+    - [Types de synonymes](synonyms-type.md)
+    - [Ajouter des synonymes](synonyms-add.md)
+    - [Gérer les synonymes](synonyms-manage.md)
+  - Rechercher dans le marchandisage {#rules}
+    - [Vue d’ensemble](rules.md)
+    - [Workspace](rules-workspace.md)
+    - [Ajouter des règles](rules-add.md)
+    - [Gestion des règles](rules-manage.md)
+  - [Marchandisage de catégorie](category-merch.md)
+  - [Gestion des produits en rupture de stock](manage-out-of-stock-products.md)
+  - [Indexation](indexing.md)
+  - {hide-from-toc}[Correspondance de recherche et classement](search-relevance-matching.md)
+  - [GraphQL](graphql.md)
+  - [Paramètres](settings.md)
+  - [Recherche sémantique](semantic-search.md)
 - [Guide du développeur](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=fr)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)

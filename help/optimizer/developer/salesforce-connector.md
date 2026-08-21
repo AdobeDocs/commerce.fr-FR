@@ -22,7 +22,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 1183
 ht-degree: 0%
@@ -35,7 +35,7 @@ Basée sur la technologie Adobe App Builder, la [!DNL Commerce Optimizer Salesfo
 
 Le connecteur prêt à l’emploi offre des fonctionnalités de synchronisation des données fiables et la possibilité de personnaliser les workflows en fonction des besoins de votre entreprise.
 
-Pour une série complète de tutoriels vidéo, consultez [En savoir plus sur le kit de démarrage cloud de Salesforce Commerce](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Pour une série complète de tutoriels vidéo, consultez [En savoir plus sur le kit de démarrage cloud de Salesforce Commerce](https://experienceleague.adobe.com/fr/docs/commerce-learn/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 >[!NOTE]
 >
@@ -48,13 +48,13 @@ Pour une série complète de tutoriels vidéo, consultez [En savoir plus sur le 
 * **Prend en charge plusieurs types de données** Synchronisez les produits, les structures de prix et de catalogue pour refléter des configurations de marchandisage complexes.
 
 * **Workflows de synchronisation flexibles**
-   * **Synchronisations planifiées :** automatisez les mises à jour à l’aide de la planification des tâches cron, sans effort manuel.
-   * **Mises à jour à la demande :** déclenchez instantanément des mises à jour au niveau des SKU pour des modifications, des corrections ou des lancements de produits urgents.
+  * **Synchronisations planifiées :** automatisez les mises à jour à l’aide de la planification des tâches cron, sans effort manuel.
+  * **Mises à jour à la demande :** déclenchez instantanément des mises à jour au niveau des SKU pour des modifications, des corrections ou des lancements de produits urgents.
 
 * **Conçu pour l’extensibilité**
-   * Utilise des points d’entrée SCAPI (Salesforce B2C API[&#128279;](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) Commerce personnalisés pour garantir la compatibilité et une adaptation facile à des cas d’utilisation uniques ou avancés.
-   * Évolue en fonction de la phase de démarrage de votre entreprise avec la synchronisation des catalogues et des prix, puis étend les workflows pour prendre en charge des intégrations supplémentaires ou la logique commerciale.
-   * Configurez et faites évoluer les workflows sans reconstruire les intégrations principales.
+  * Utilise des points d’entrée SCAPI (Salesforce B2C API[&#128279;](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) Commerce personnalisés pour garantir la compatibilité et une adaptation facile à des cas d’utilisation uniques ou avancés.
+  * Évolue en fonction de la phase de démarrage de votre entreprise avec la synchronisation des catalogues et des prix, puis étend les workflows pour prendre en charge des intégrations supplémentaires ou la logique commerciale.
+  * Configurez et faites évoluer les workflows sans reconstruire les intégrations principales.
 
 >[!NOTE]
 >

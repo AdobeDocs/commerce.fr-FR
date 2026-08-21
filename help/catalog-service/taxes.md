@@ -12,16 +12,16 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 292
+source-wordcount: 289
 ht-degree: 0%
 
 ---
 
 # Afficher les prix taxés avec le maillage API pour Adobe Developer App Builder
 
-Le [maillage API](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces aux produits Adobe à l’aide de Adobe I/O Runtime.
+Le [maillage API](https://developer.adobe.com/graphql-mesh-gateway/mesh/) permet aux développeurs d’intégrer des API privées ou tierces et d’autres interfaces aux produits Adobe à l’aide de Adobe I/O Runtime.
 
 Dans cette rubrique, le maillage API est utilisé pour afficher les prix des produits sur une page Détails du produit avec les taxes figurant dans .
 
@@ -29,8 +29,8 @@ Dans cette rubrique, le maillage API est utilisé pour afficher les prix des pro
 
 Les taxes doivent être configurées pour qu’elles s’affichent sur la page Détails du produit.
 
-1. [Configurer des taux de taxe](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=fr).
-1. Activez l’affichage des taxes [dans le catalogue](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=fr#step-1%3A-configure-catalog-prices-display-settings) et définissez-les sur `Including and Excluding Tax` ou `Including Tax`.
+1. [Configurer des taux de taxe](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules).
+1. Activez l’affichage des taxes [dans le catalogue](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings) et définissez-les sur `Including and Excluding Tax` ou `Including Tax`.
 
 Vérifiez que le service de catalogue fonctionne en consultant une page de détails du produit.
 
@@ -38,7 +38,7 @@ Vérifiez que le service de catalogue fonctionne en consultant une page de déta
 
 ## Configurer le maillage API
 
-Si ce n’est pas déjà fait, connectez le maillage API avec le service de catalogue à votre instance. Consultez les instructions détaillées dans la rubrique [Prise en main](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) du guide de développement du maillage API.
+Si ce n’est pas déjà fait, connectez le maillage API avec le service de catalogue à votre instance. Consultez les instructions détaillées dans la rubrique [Prise en main](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) du guide de développement du maillage API.
 
 Dans le fichier `mesh.json`, remplacez les valeurs `name`, `endpoint` et `x-api-key`.
 
@@ -119,7 +119,7 @@ Ce fichier de configuration `mesh.json` :
 * Étend les types `ComplexProductView` et `SimpleProductView` avec un nouveau champ appelé `priceWithTaxes`.
 * Ajoute un programme de résolution personnalisé pour le nouveau champ.
 
-Créez le maillage à l’aide de la commande [create](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) avec le fichier `mesh.json`.
+Créez le maillage à l’aide de la commande [create](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) avec le fichier `mesh.json`.
 
 ### Requête GraphQL
 

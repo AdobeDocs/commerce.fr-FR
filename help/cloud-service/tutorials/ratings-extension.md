@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
 workflow-type: tm+mt
-source-wordcount: 1738
+source-wordcount: 1737
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ Cette section vous guide tout au long du développement d’une extension d’é
 
 1. Consultez le fichier `requirements.md` et vérifiez le plan.
 
-   Si tout semble correct, demandez à l&#39;agent de passer à **Phase 2 - Planification de l&#39;architecture**.
+   Si tout semble correct, demandez à l&#39;agent de passer à **Phase 2 — Planification de l&#39;architecture**.
 
 1. Examinez le plan d’architecture.
 
@@ -233,7 +233,7 @@ Préparez votre environnement de storefront local pour le développement.
 
 1. Ouvrez le dossier storefront dans une nouvelle fenêtre Cursor .
 
-   Si l’interface de ligne de commande [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) est installée, vous pouvez également ouvrir la fenêtre à l’aide de la commande suivante dans votre terminal :
+   Si l’interface de ligne de commande [Cursor CLI](https://cursor.com/help/customization/keyboard-shortcuts#installing-cli-commands) est installée, vous pouvez également ouvrir la fenêtre à l’aide de la commande suivante dans votre terminal :
 
    ```bash
    cursor .
@@ -266,8 +266,8 @@ Utilisez l’agent pour intégrer l’API de notes à la page des détails du pr
 1. L’agent évalue la complexité de la tâche et appelle un workflow échelonné. Au cours de la **phase 1 (collecte des exigences)** l&#39;agent crée un document d&#39;exigences et pose des questions de clarification telles que :
 
    * Où les notes devraient-elles apparaître sur le PDP ?
-   * S’agit-il d’un nouveau bloc autonome ou d’une personnalisation d’emplacement dans le composant de dépôt PDP existant ?
-   * Quelle doit être la solution de secours si l’API n’est pas disponible ou ne renvoie aucune donnée ?
+   * S’agit-il d’un nouveau bloc autonome ou d’une personnalisation d’emplacement dans le composant déroulant PDP existant ?
+   * Quelle est la solution de secours si l’API n’est pas disponible ou ne renvoie aucune donnée ?
    * Les évaluations doivent-elles également apparaître sur le PLP (liste de produits) ou le PDP uniquement ?
    * Existe-t-il des spécifications de conception ou des maquettes ?
 
@@ -318,7 +318,7 @@ Utilisez l’agent pour intégrer l’API de notes à la page des détails du pr
    Les modifications suivantes devraient s’afficher dans votre environnement de développement et votre navigateur :
 
    * Un composant d’évaluation de produit est automatiquement créé.
-   * Le composant est intégré au PDP à l’aide de [emplacements d’accueil](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=fr) ou sous la forme d’un bloc autonome, selon l’architecture choisie.
+   * Le composant est intégré au PDP à l’aide de [emplacements d’accueil](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=fr) ou sous la forme d’un bloc autonome, selon l’architecture choisie.
    * Les étoiles s’affichent avec des proportions de remplissage appropriées en fonction des valeurs d’évaluation de votre API.
 
    ![Page des détails du produit présentant les évaluations par étoiles intégrées sous le titre du produit](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

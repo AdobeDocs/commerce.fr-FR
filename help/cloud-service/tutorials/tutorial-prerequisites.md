@@ -26,9 +26,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1289
 ht-degree: 0%
 
 ---
@@ -55,10 +55,10 @@ Les outils suivants sont nécessaires pour le développement de l’extension et
   ```
 
 * Coquille de Bash
-   * macOS/Linux : aucune installation requise
-   * Windows : utilisez [Git Bash](https://git-scm.com/install) ou [sous-système Windows pour Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
+  * macOS/Linux : aucune installation requise
+  * Windows : utilisez [Git Bash](https://git-scm.com/install) ou [sous-système Windows pour Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-* Téléchargez un IDE assisté par l’IA, tel que [Cursor](https://cursor.com/download) (recommandé). D’autres IDE, tels que Claude Code, Gemini CLI ou Copilot, sont également pris en charge, mais peuvent nécessiter d’apporter des modifications aux invites et à d’autres étapes du tutoriel.
+* Téléchargez un IDE assisté par l’IA, tel que [Cursor](https://cursor.com/download) (recommandé). D’autres IDE, tels que Claude Code, Gemini CLI ou Copilot, sont également pris en charge, mais peuvent nécessiter des modifications des invites et d’autres étapes du tutoriel.
 
 ## Conditions préalables [!DNL Adobe Commerce as a Cloud Service]
 
@@ -74,7 +74,7 @@ Les outils suivants sont nécessaires pour le développement de l’extension et
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-Après avoir installé le [!DNL Adobe I/O CLI] et les modules externes requis, configurez votre espace de travail d’extensibilité. Adobe recommande d’utiliser la configuration automatisée pour une expérience plus rapide.
+Après avoir installé le [!DNL Adobe I/O CLI] et les modules externes requis, configurez votre espace de travail d’extensibilité. Adobe recommande d’utiliser la configuration automatisée pour une expérience optimale.
 
 * **[Configuration automatisée](#automated-setup) (recommandée)** — Exécutez une seule commande pour configurer automatiquement votre espace de travail.
 * **[Configuration manuelle](#manual-setup)** — Suivez les instructions étape par étape pour configurer chaque composant individuellement.
@@ -202,7 +202,7 @@ Configurez un projet dans Adobe Developer Console avec les API et les informatio
 
 #### Créer un projet
 
-Créez un projet App Builder dans le Adobe Developer Console pour héberger votre extension.
+Pour héberger votre extension, créez un projet [!DNL App Builder] dans le Adobe Developer Console.
 
 1. Accédez à [&#128279;](https://developer.adobe.com/).
 1. Cliquez sur **[!UICONTROL Create project from a template]**.
@@ -227,10 +227,10 @@ Ajoutez les API requises à votre espace de travail d’évaluation pour la gest
 1. Sélectionnez l’une des API suivantes. Répétez ce processus pour chaque API répertoriée ci-dessous :
 
    * **[!UICONTROL Adobe Services]** le filtre :
-      * **[!UICONTROL I/O Management API]**
-      * API **[!UICONTROL I/O Events]**
+     * **[!UICONTROL I/O Management API]**
+     * API **[!UICONTROL I/O Events]**
    * **[!UICONTROL Experience Cloud]** le filtre :
-      * API **[!UICONTROL Adobe I/O Events for Adobe Commerce]**
+     * API **[!UICONTROL Adobe I/O Events for Adobe Commerce]**
 
 1. Cliquez sur **[!UICONTROL Next]**.
 
@@ -342,7 +342,7 @@ EVENT_PREFIX=test
 
 ### Télécharger la configuration de l’espace de travail
 
-Exécutez la commande suivante pour télécharger le fichier de configuration de l’espace de travail :
+Pour télécharger le fichier de configuration de l’espace de travail, exécutez la commande suivante :
 
 ```bash
 aio console workspace download workspace.json
@@ -382,7 +382,7 @@ Lorsque vous y êtes invité, choisissez l’option qui utilise l’organisation
 
 ### Installation des outils d’IA dédiés à l’extensibilité
 
-Ce processus crée la configuration du MCP (`.<agent>/mcp.json`), le répertoire des compétences (`.<agent>/skills/`) et `AGENTS.md` ajoute à la racine du projet. Vous serez invité à choisir un kit de démarrage, un agent de codage et un gestionnaire de packages.
+Ce processus crée la configuration du MCP (`.<agent>/mcp.json`), le répertoire des compétences (`.<agent>/skills/`) et `AGENTS.md` ajoute à la racine du projet. Vous êtes invité à choisir un kit de démarrage, un agent de codage et un gestionnaire de packages.
 
 
 1. Configurez les outils de développement assisté par l’IA dans le dossier `extension` à l’aide des commandes suivantes :

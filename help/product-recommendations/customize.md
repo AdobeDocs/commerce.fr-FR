@@ -10,9 +10,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 645
+source-wordcount: 646
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Lors de l’installation du module de recommandations de produits, Adobe Commerc
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-Pour plus d’informations sur la modification des fichiers de modèle, consultez la section [Personnalisation des modèles](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) dans le guide de développement de Frontend.
+Pour plus d’informations sur la modification des fichiers de modèle, consultez la section [Personnalisation des modèles](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough) dans le guide de développement de Frontend.
 
 Si vous modifiez le fichier `recommendations.html`, vous devez conserver les balises suivantes dans le fichier pour vous assurer qu’Adobe Commerce peut collecter des mesures de recommandation auprès de votre storefront :
 
@@ -121,7 +121,7 @@ Par exemple, si votre boutique vend certains produits biologiques, vous pouvez a
 
 ![Ajouter un badge](assets/unit-custom.png)
 
-Pour vous assurer qu’un attribut de produit personnalisé est disponible lorsque vous effectuez le rendu de l’unité de recommandation sur la page, définissez la propriété `Used in Product Listing` sur `Yes` dans la page [Attributs du produit](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=fr) dans l’Administration.
+Pour vous assurer qu’un attribut de produit personnalisé est disponible lorsque vous effectuez le rendu de l’unité de recommandation sur la page, définissez la propriété `Used in Product Listing` sur `Yes` dans la page [Attributs du produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) dans l’Administration.
 
 Lorsque cette propriété est définie, la payload JSON inclut un objet `attributes` qui contient un tableau de codes et de valeurs d’attribut. Vous pouvez ensuite appliquer un style de storefront personnalisé en fonction de ces valeurs d’attribut, par exemple en ajoutant des traitements visuels spéciaux ou des badges comme mentionné précédemment.
 

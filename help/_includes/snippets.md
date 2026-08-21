@@ -1,5 +1,5 @@
 ---
-source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Pour plus d’informations sur les options de configuration de l’identité, no
 
 | Services tertiaires | Extensibilité | Storefront |
 | --- | --- | --- |
-| <ul><li>[Service de catalogue](../catalog-service/release-notes.md)</li><li>[Recherche en direct](../live-search/release-notes.md)</li><li>[&#x200B; Services de paiement &#x200B;](../payment-services/release-notes.md)</li><li>[Recommandations de produits](../product-recommendations/release-notes.md)</li><li>[Exportation de données SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Maillage API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[Événements](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[&#x200B; Webhooks &#x200B;](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Informations de mise à jour](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=fr)</li><li>[Journal des modifications](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=fr)</li></ul> |
+| <ul><li>[Service de catalogue](../catalog-service/release-notes.md)</li><li>[Recherche en direct](../live-search/release-notes.md)</li><li>[&#x200B; Services de paiement &#x200B;](../payment-services/release-notes.md)</li><li>[Recommandations de produits](../product-recommendations/release-notes.md)</li><li>[Exportation de données SaaS](../data-export/release-notes.md)</li></ul> | <ul><li>[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[Maillage API](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[Événements](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[&#x200B; Webhooks &#x200B;](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[Informations de mise à jour](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=fr)</li><li>[Journal des modifications](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=fr)</li></ul> |
 
 ## Notes de mise à jour des services Adobe Commerce Optimizer {#aco-release}
 

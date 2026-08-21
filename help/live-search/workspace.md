@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 2318
+source-wordcount: 2323
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Si vous êtes un client du secteur de la santé et que vous avez installé l’e
 
 ## Définir la portée
 
-Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) de tous les paramètres [!DNL Live Search] est définie sur `Default Store View`. Si votre installation [!DNL Commerce] comprend plusieurs vues de magasin, définissez **Portée** sur la vue [magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr) où s’appliquent les paramètres de facettes.
+Au départ, la [portée](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) de tous les paramètres [!DNL Live Search] est définie sur `Default Store View`. Si votre installation [!DNL Commerce] comprend plusieurs vues de magasin, définissez **Portée** sur la vue [magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views) où s’appliquent les paramètres de facettes.
 
 ## Options de menu
 
@@ -61,7 +61,7 @@ Au départ, la [portée](https://experienceleague.adobe.com/docs/commerce-admin/
 
 ## Définir les attributs comme pouvant faire l’objet d’une recherche
 
-Pour obtenir des résultats hautement ciblés, passez en revue l’ensemble des attributs de produit [consultables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=fr) (`searchable=true`). Pour garantir la pertinence, assurez-vous que les attributs ne peuvent être recherchés que s’ils contiennent du contenu ayant une signification claire et concise. Évitez d’utiliser des attributs contenant du texte moins précis et plus long, comme `description`, qui bien que la recherche soit activée par défaut, peut réduire la précision des résultats de recherche. Par exemple, si une personne recherche un « short » et qu’il existe des chemises dont la description inclut le terme « manches courtes », les chemises sont incluses dans les résultats de la recherche.
+Pour obtenir des résultats hautement ciblés, passez en revue l’ensemble des attributs de produit [consultables](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`). Pour garantir la pertinence, assurez-vous que les attributs ne peuvent être recherchés que s’ils contiennent du contenu ayant une signification claire et concise. Évitez d’utiliser des attributs contenant du texte moins précis et plus long, comme `description`, qui bien que la recherche soit activée par défaut, peut réduire la précision des résultats de recherche. Par exemple, si une personne recherche un « short » et qu’il existe des chemises dont la description inclut le terme « manches courtes », les chemises sont incluses dans les résultats de la recherche.
 
 Pour que les attributs puissent faire l’objet de recherches, procédez comme suit :
 
@@ -69,7 +69,7 @@ Pour que les attributs puissent faire l’objet de recherches, procédez comme s
 1. Sélectionnez l’attribut pour lequel vous souhaitez pouvoir effectuer des recherches, par exemple `color`.
 1. Sélectionnez **Propriétés du storefront** et définissez **Utiliser dans la recherche** sur `yes`.
 
-[!DNL Live Search] respecte également le [poids](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=fr#weighted-search) d’un attribut de produit, tel que défini dans Adobe Commerce. Les attributs ayant un poids plus élevé apparaissent plus haut dans les résultats de la recherche.
+[!DNL Live Search] respecte également le [poids](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search) d’un attribut de produit, tel que défini dans Adobe Commerce. Les attributs ayant un poids plus élevé apparaissent plus haut dans les résultats de la recherche.
 
 Les attributs suivants peuvent toujours faire l’objet de recherches :
 
@@ -104,21 +104,21 @@ Les fonctionnalités de recherche avancée sont implémentées via le paramètre
 
 - **Recherche superposée** - Effectuez une recherche dans un autre contexte de recherche - Grâce à cette fonctionnalité, vous pouvez effectuer jusqu’à deux couches de recherche pour vos requêtes de recherche. Par exemple :
 
-   - **Recherche de la couche 1** - Recherchez « moteur » sur `product_attribute_1`.
-   - **Recherche de la couche 2** - Recherchez « numéro de pièce 123 » sur `product_attribute_2`. Dans cet exemple, le « moteur » est recherché dans les résultats par « numéro de pièce 123 ».
+  - **Recherche de la couche 1** - Recherchez « moteur » sur `product_attribute_1`.
+  - **Recherche de la couche 2** - Recherchez « numéro de pièce 123 » sur `product_attribute_2`. Dans cet exemple, le « moteur » est recherché dans les résultats par « numéro de pièce 123 ».
 
   La recherche en couches est disponible pour l’indexation de la recherche `startsWith` et l’indexation de la recherche `contains` dans le deuxième calque de la recherche en couches, comme décrit ci-dessous :
 
 - **startsWith search indexation** - Effectuez une recherche à l’aide de l’indexation `startsWith`. Cette nouvelle fonctionnalité permet :
 
-   - Recherche de produits dont la valeur d’attribut commence par une chaîne spécifiée.
-   - La configuration d’une recherche « se termine par » afin que les acheteurs puissent rechercher des produits pour lesquels la valeur d’attribut se termine par une chaîne particulière. Pour activer une recherche « se termine par », l’attribut de produit doit être ingéré en inverse et l’appel API doit également être une chaîne inversée. Par exemple, si vous souhaitez rechercher un nom de produit qui se termine par « pantalon », vous devez l’envoyer sous la forme « stnap ».
+  - Recherche de produits dont la valeur d’attribut commence par une chaîne spécifiée.
+  - La configuration d’une recherche « se termine par » afin que les acheteurs puissent rechercher des produits pour lesquels la valeur d’attribut se termine par une chaîne particulière. Pour activer une recherche « se termine par », l’attribut de produit doit être ingéré en inverse et l’appel API doit également être une chaîne inversée. Par exemple, si vous souhaitez rechercher un nom de produit qui se termine par « pantalon », vous devez l’envoyer sous la forme « stnap ».
 
 - **contient l’indexation de la recherche** - Recherchez un attribut à l’aide de l’indexation contient. Cette nouvelle fonctionnalité permet :
 
-   - Recherche d’une requête dans une chaîne plus grande. Par exemple, si un acheteur recherche le numéro de produit « PE-123 » dans la chaîne « HAPE-123 ».
+  - Recherche d’une requête dans une chaîne plus grande. Par exemple, si un acheteur recherche le numéro de produit « PE-123 » dans la chaîne « HAPE-123 ».
 
-      - Remarque : ce type de recherche est différent de la recherche existante [expression](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), qui effectue une recherche de saisie automatique. Par exemple, si la valeur de l’attribut de votre produit est « pantalon extérieur », une expression de recherche renvoie une réponse pour « out pan », mais ne renvoie pas de réponse pour « oor ants ». Une recherche Contient , cependant, renvoie une réponse pour « fourmis ».
+    - Remarque : ce type de recherche est différent de la recherche existante [expression](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase), qui effectue une recherche de saisie automatique. Par exemple, si la valeur de l’attribut de votre produit est « pantalon extérieur », une expression de recherche renvoie une réponse pour « out pan », mais ne renvoie pas de réponse pour « oor ants ». Une recherche Contient , cependant, renvoie une réponse pour « fourmis ».
 
 Ces nouvelles conditions améliorent le mécanisme de filtrage des requêtes de recherche pour affiner les résultats de recherche. Ces nouvelles conditions n’affectent pas la requête de recherche principale.
 
@@ -203,7 +203,7 @@ Les prix dans la page de liste de produits du widget et la fenêtre contextuelle
 
 ## Valeurs d’attribut par défaut
 
-Les attributs de produit suivants possèdent des [propriétés storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=fr) qui sont utilisées par [!DNL Live Search] et activées par défaut.
+Les attributs de produit suivants possèdent des [propriétés storefront](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/product-attributes) qui sont utilisées par [!DNL Live Search] et activées par défaut.
 
 | Propriété | Storefront, propriété | Attribut |
 |---|---|---|

@@ -7,9 +7,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 583
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ L’espace de travail *Marchandisage de recherche* répertorie la sélection act
 
 ## Définir la portée
 
-Si votre installation d’Adobe Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la [&#x200B; vue de magasin](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr#scope-settings) où vos règles s’appliquent.
+Si votre installation d’Adobe Commerce comprend plusieurs vues de magasin, définissez **Portée** sur la [&#x200B; vue de magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) où vos règles s’appliquent.
 
 ## Afficher/masquer les colonnes
 

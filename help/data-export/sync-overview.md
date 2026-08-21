@@ -22,9 +22,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 907
+source-wordcount: 921
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Après la connexion d’une instance Adobe Commerce au service Commerce, effectu
 Avec une synchronisation partielle, l’exportation de données SaaS envoie automatiquement des mises à jour depuis l’application Commerce, telles que des modifications de nom de produit ou de prix, aux services commerciaux connectés.
 Pour que la synchronisation partielle fonctionne, l’application Commerce nécessite la configuration suivante :
 
-- [La planification des tâches est activée via les tâches cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=fr)
+- [La planification des tâches est activée via les tâches cron](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/next-steps/configuration)
 - Tous les indexeurs d&#39;export de données SaaS sont configurés en mode `Update by Schedule`.
 
 ### Réessayer la synchronisation des éléments ayant échoué {#retry-failed-items-sync}
@@ -103,7 +103,7 @@ Les groupes cron suivants automatisent le pipeline selon un planning fixe.
 | `index` | `indexer_reindex_all_invalid` | Effectue une resynchronisation complète pour les index de flux marqués comme « Réindexation requise » | Toutes les 1 minute |
 | `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | Détecte les éléments de flux ayant échoué et les soumet à nouveau. | Toutes les 5 minutes |
 | `commerce_data_export` | `saas_data_exporter` | Envoie des données pour les flux en mode hérité (commandes, portées) | Toutes les 5 minutes |
-| `commerce_data_export` | `cleanup_deleted_feed_items` | Nettoie les éléments de flux supprimés synchronisés après la période de conservation (7 jours) | Tous les jours à 2:00 h |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | Nettoie les éléments de flux supprimés synchronisés après la période de conservation (7 jours) | Tous les jours à 02h00 |
 
 ## Envoi de flux et gestion des erreurs HTTP {#feed-submission-and-http-error-handling}
 

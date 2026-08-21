@@ -18,7 +18,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 815
 ht-degree: 0%
@@ -39,7 +39,7 @@ Après avoir ajouté des données d’attribut, elles sont accessibles à partir
 
 Le flux de produits comprend des attributs système par défaut qui sont requis pour le traitement des produits ou généralement utilisés par les consommateurs. Vous pouvez inclure des attributs système supplémentaires dans le flux de produits en les ajoutant au flux.
 
-Pour terminer cette tâche, mettez à jour le module `magento/catalog-data-exporter` pour ajouter les attributs système supplémentaires au [fichier de configuration de l’injection de dépendance](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`).
+Pour terminer cette tâche, mettez à jour le module `magento/catalog-data-exporter` pour ajouter les attributs système supplémentaires au [fichier de configuration de l’injection de dépendance](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`).
 
 Ajoutez les attributs à la ou aux requête(`Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery`) d’attributs de produit.
 
@@ -85,7 +85,7 @@ Lorsque vous définissez les options d’attribut, tous les paramètres d’attr
 - **`user_defined`=`1`** : exportation de l’attribut vers les services storefront lors de la synchronisation des données.
 - **`used_in_product_listing`=`1`** : rend l’attribut accessible dans la requête de base de données de liste de produits.
 
-Pour plus d&#39;informations sur la création de patchs de données, voir [Developer data and schema patchs](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) dans le *PHP Developer Guide*.
+Pour plus d&#39;informations sur la création de patchs de données, voir [Developer data and schema patchs](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches) dans le *PHP Developer Guide*.
 
 ### Ajout dynamique de l’attribut de produit
 
@@ -163,7 +163,7 @@ Enregistrez l’observateur dans `etc/events.xml` :
 </event>
 ```
 
-Pour obtenir des informations générales sur les événements et les observateurs, voir [Événements et observateurs](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"} dans la documentation destinée aux développeurs Adobe Commerce.
+Pour obtenir des informations générales sur les événements et les observateurs, voir [Événements et observateurs](https://developer.adobe.com/commerce/php/development/components/events-and-observers/){target="_blank"} dans la documentation destinée aux développeurs Adobe Commerce.
 
 ## Filtrer les données avant envoi
 

@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 481
+source-wordcount: 482
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Reportez-vous à [Paramètres](settings.md) pour configurer les intervalles et l
 
 1. Pour modifier le libellé de la facette, effectuez l’une des opérations suivantes :
 
-   * Pour un storefront [!DNL Commerce], modifiez le libellé [attribut](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=fr).
+   * Pour un storefront [!DNL Commerce], modifiez le libellé [attribut](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/product-attributes).
    * Pour une implémentation découplée, cliquez sur la valeur dans la première colonne et modifiez le texte selon vos besoins.
 
    ![Modifier le libellé](assets/facet-edit-label.png)

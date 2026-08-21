@@ -3,9 +3,9 @@ title: Activer pour  [!DNL Payment Services]  production
 description: Terminez le processus d’intégration en activant pour  [!DNL Payment Services]  production.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1081'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Après avoir [configuré vos services Commerce](connect.md#configure-commerce-se
 
 1. Cliquez sur **[!UICONTROL Save]**.
 1. Cliquez sur **[!UICONTROL Go to Payment Services]** pour être redirigé vers la page d’accueil [!DNL Payment Services].
-1. [Videz votre cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=fr).
+1. [Videz votre cache](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management).
 
    L’effacement doit être effectué après chaque modification de la configuration.
 

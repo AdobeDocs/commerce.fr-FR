@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Vous pouvez [télécharger les transactions de paiement](#download-transactions)
 
 >[!NOTE]
 >
->Les rapports de paiements affichent uniquement les commandes capturées (l’action de paiement est définie sur [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=fr#set-payment-services-as-payment-method)) ou [marquées comme `Invoiced`](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>Les rapports de paiements affichent uniquement les commandes capturées (l’action de paiement est définie sur [`Authorize and Capture`](production.md#set-payment-services-as-payment-method)) ou [marquées comme `Invoiced`](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Vue de visualisation des données des paiements
 

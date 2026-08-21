@@ -18,7 +18,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -37,7 +37,7 @@ Vous pouvez étendre les attributs de produit sans les enregistrer dans [!DNL Ad
 
 Créez un module externe qui ajoute un `customer_attribute` à la classe `Magento\CatalogDataExporter\Model\Provider\Product\Attributes`.
 
-1. Mettez à jour le [fichier de configuration d’injection de dépendance](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`) pour définir le module externe.
+1. Mettez à jour le [fichier de configuration d’injection de dépendance](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`) pour définir le module externe.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
@@ -110,7 +110,7 @@ Créez un module externe qui ajoute un `customer_attribute` à la classe `Magent
 
 Si vous créez de manière dynamique un attribut de produit personnalisé et souhaitez l’utiliser pour l’affichage, la recherche ou le filtrage dans les services storefront, ajoutez les métadonnées de l’attribut de produit pour configurer le comportement du storefront.
 
-1. Mettez à jour le [fichier de configuration d’injection de dépendance](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`) pour définir le module externe pour les métadonnées d’attribut de produit.
+1. Mettez à jour le [fichier de configuration d’injection de dépendance](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`) pour définir le module externe pour les métadonnées d’attribut de produit.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\ProductMetadata">

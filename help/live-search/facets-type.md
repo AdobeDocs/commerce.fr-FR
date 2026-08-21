@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: 429
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ Au moment de la requête, [!DNL Live Search] génère les résultats de la reche
 
 Les facettes rendues pour le storefront [!DNL Commerce] sont traitées par l’adaptateur de recherche, qui achemine les requêtes et effectue le rendu des résultats dans le storefront. Toutes les facettes de storefront [!DNL Commerce] sont triées par ordre alphabétique avec des options à sélection unique, quel que soit le type d’entrée affecté à l’attribut correspondant. Les facettes disponibles dans le storefront sont rendues en fonction du thème actuel et reflètent toutes les personnalisations apportées à la présentation de la navigation superposée.
 
-En revanche, les implémentations [découplées](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) sont traitées par l’API et prennent en charge des options supplémentaires. Les facettes découplées peuvent être triées par ordre alphabétique ou par nombre et peuvent comporter des options à sélection unique ou multiple.
+En revanche, les implémentations [découplées](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api) sont traitées par l’API et prennent en charge des options supplémentaires. Les facettes découplées peuvent être triées par ordre alphabétique ou par nombre et peuvent comporter des options à sélection unique ou multiple.
 
 ### Libellés de facettes
 
-Pour les storefronts [!DNL Commerce], le libellé de la facette est déterminé par le [*Propriétés de l’attribut*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=fr). Pour les magasins comportant plusieurs vues, des libellés supplémentaires peuvent être définis sous *Gérer les libellés*. Pour les implémentations découplées, les libellés sont modifiés à partir de l’espace de travail [à facettes](faceting-workspace.md).
+Pour les storefronts [!DNL Commerce], le libellé de la facette est déterminé par le [*Propriétés de l’attribut*](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create). Pour les magasins comportant plusieurs vues, des libellés supplémentaires peuvent être définis sous *Gérer les libellés*. Pour les implémentations découplées, les libellés sont modifiés à partir de l’espace de travail [à facettes](faceting-workspace.md).
 
 ### Type de tri
 

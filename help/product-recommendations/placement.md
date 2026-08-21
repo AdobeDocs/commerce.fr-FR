@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 500
+source-wordcount: 501
 ht-degree: 0%
 
 ---
@@ -68,4 +68,4 @@ Le tableau suivant répertorie les pages de storefront où vous pouvez placer de
 | Détails du produit | Au bas du contenu principal (par défaut) | Les plus consultés<br>Les plus achetés<br>Les plus ajoutés au panier<br>Consulté ceci, consulté cela<br>Consulté cela, acheté cela<br>Acheté cela<br>Plus de similarité visuelle <br> tendance <br> |
 | Panier | Au bas du contenu principal (par défaut) | Les plus consultés<br>Les plus achetés<br>Les plus ajoutés au panier<br>Consulté ceci, consulté cela<br>Consulté cela, acheté cela<br>Acheté cela<br>Plus comme ceci<br>Tendance |
 | Confirmation | Au bas du contenu principal (par défaut) | Les plus consultés<br>Les plus achetés<br>Les plus ajoutés au panier<br>Consulté ceci, consulté cela<br>Consulté cela, acheté cela<br>Acheté cela<br>Plus comme ceci<br>Tendance |
-| Page Builder | [&#x200B; Glisser-déposer &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=fr) pour positionner le type de contenu | Les plus consultés<br>Les plus achetés<br>Les plus ajoutés au panier<br>Recommandé pour vous<br>Trending |
+| Page Builder | [&#x200B; Glisser-déposer &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/add-content/recommendations) pour positionner le type de contenu | Les plus consultés<br>Les plus achetés<br>Les plus ajoutés au panier<br>Recommandé pour vous<br>Trending |

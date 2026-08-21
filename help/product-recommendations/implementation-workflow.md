@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 563
+source-wordcount: 546
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Lors de l’installation du `magento/product-recommendations module`, Adobe AI a
 
    Le déploiement de [!DNL Product Recommendations] nécessite deux [sources de données](type.md) principales : le catalogue et le comportement. La production étant le seul environnement où les actions de vos acheteurs sont capturées et analysées, commencez la collecte de données en production dès que possible. [Découvrez &#x200B;](events.md) comment Adobe AI entraîne des modèles de machine learning qui génèrent des recommandations de meilleure qualité. Lorsque vous commencez à collecter des données comportementales en production, vous pouvez en outre [récupérer des recommandations](staging-environment.md#fetch-recommendations-from-production-environment-recommended) basées sur ces données de production, tout en opérant dans des environnements hors production. Vous pouvez ensuite tester et tester différentes recommandations qui sont calculées en fonction des données réelles d’acheteurs collectées en production.
 
-   Pour déployer la collecte de données en production, vous devez [installer et configurer](install-configure.md) le module [!DNL Product Recommendations] en fournissant une clé [API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=fr).
+   Pour déployer la collecte de données en production, vous devez [installer et configurer](install-configure.md) le module [!DNL Product Recommendations] en fournissant une clé [API](../landing/saas.md).
 
    >[!TIP]
    >
@@ -57,7 +57,7 @@ Lors de l’installation du `magento/product-recommendations module`, Adobe AI a
    >
    > En personnalisant le modèle, vous pouvez spécifier votre feuille de style, remplacer l’emplacement où une unité de recommandation apparaît sur une page, etc.
 
-   Voir [Personnaliser](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=fr) dans la documentation destinée aux développeurs pour savoir comment effectuer cette étape.
+   Voir [Personnaliser](customize.md) dans la documentation destinée aux développeurs pour savoir comment effectuer cette étape.
 
 1. **Test de recommandations sur votre environnement hors production**
 

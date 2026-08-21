@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 882a39a5b0eeb616c7ca1d9e64c3fae76760afad
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: '3778'
+source-wordcount: '3766'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Vous pouvez activer les [!DNL Payment Services] pour votre boutique et votre _[!
 1. Dans la section _[!UICONTROL [!DNL Payment Services]]_, développez la section&#x200B;_[!UICONTROL General Configuration]_ .
 1. Pour **Activer**, définissez-le sur `Yes` afin d’activer le [!DNL Payment Services] pour votre boutique.
 1. Pour **Méthode**, définissez-la sur `Sandbox` si vous testez toujours [!DNL Payment Services] pour votre magasin ou sur `Production` si vous êtes prêt à activer les paiements dynamiques.
-1. Vos valeurs **[!UICONTROL Payment Services Sandbox ID]** et **[!UICONTROL Payment Services Production ID]** sont automatiquement renseignées une fois que vous avez configuré le [connecteur de services Commerce](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} et que vous avez consulté le tableau de bord [!DNL Payment Services] pour la première fois. Effectuez cette opération pour terminer l’intégration de votre sandbox et/ou de vos environnements de production. Ces valeurs associent votre identifiant SaaS à [!DNL Payment Services].
+1. Vos valeurs **[!UICONTROL Payment Services Sandbox ID]** et **[!UICONTROL Payment Services Production ID]** sont automatiquement renseignées une fois que vous avez configuré le [connecteur de services Commerce](../landing/saas.md){target=_blank} et que vous avez consulté le tableau de bord [!DNL Payment Services] pour la première fois. Effectuez cette opération pour terminer l’intégration de votre sandbox et/ou de vos environnements de production. Ces valeurs associent votre identifiant SaaS à [!DNL Payment Services].
 
    >[!WARNING]
    >
@@ -58,13 +58,13 @@ Vous pouvez activer les [!DNL Payment Services] pour votre boutique et votre _[!
 
 Si vous exécutez une seule instance Commerce avec **plusieurs sites web** (et vues de magasin), vous aurez peut-être besoin d’un **compte marchand PayPal différent** pour certains sites web. [!DNL Payment Services] vous permet de terminer l’intégration de PayPal **à l’échelle du site web** dans l’administrateur une fois l’instance configurée et intégrée à l’étendue **globale** (par défaut).
 
-Dans les versions antérieures, le mappage de compte PayPal au niveau du site web nécessitait généralement que vous [contactez l’assistance technique](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#Solution) ou votre représentant Adobe. Utilisez l’action **[!UICONTROL Connect different account]** lorsque vous remplissez les conditions préalables ci-dessous.
+Dans les versions antérieures, le mappage de compte PayPal au niveau du site web nécessitait généralement que vous [contactez l’assistance technique](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) ou votre représentant Adobe. Utilisez l’action **[!UICONTROL Connect different account]** lorsque vous remplissez les conditions préalables ci-dessous.
 
 ### Conditions préalables (portée globale)
 
 Le contrôle de **[!UICONTROL Connect different account]** n’est disponible et activé que sur une étendue **site web** lorsque **toutes** les conditions suivantes sont déjà remplies pour l’instance à la configuration **par défaut/global** :
 
-1. [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas) la configuration est terminée.
+1. [Commerce Services Connector](../landing/saas.md) la configuration est terminée.
 
 1. [Sandbox et production](connect.md#configure-commerce-services) les clés API (publiques et privées) sont enregistrées dans l’Admin.
 
@@ -100,7 +100,7 @@ Voir [Options de paiement](payments-options.md#paypal-payment-buttons) pour plus
 | Champ | Portée | Description |
 |---|---|---|
 | [!UICONTROL Title] | vue magasin | Ajoutez le texte à afficher en tant que titre pour cette option de paiement dans la vue Mode de paiement lors du passage en caisse. Options : [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | site internet | [action de paiement](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=fr) pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site internet | [action de paiement](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/sales/payment-methods/payment-methods) pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | vue magasin | Ordre de tri du mode de paiement spécifié dans la page de passage en caisse. valeur `Numeric Only` |
 | [!UICONTROL Show on checkout page] | site internet | Activez ou désactivez les champs de carte de crédit sur la page de passage en caisse. Options : [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | vue magasin | Activez ou désactivez [chambre forte de carte de crédit](vaulting.md). Options : [!UICONTROL Yes] / [!UICONTROL No] |
@@ -141,7 +141,7 @@ Voir [Options de paiement](payments-options.md#fastlane-button) pour plus d’in
 |---|---|---|
 | [!UICONTROL Enable Fastlane] | vue magasin | Activez ou désactivez [!DNL Fastlane] sur la page de passage en caisse. Options : `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Title] | vue magasin | Ajoutez le texte à afficher en tant que titre pour cette option de paiement dans la vue Mode de paiement lors du passage en caisse. La valeur par défaut est `Credit Card (via Fastlane)`. Options : [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | site internet | [action de paiement](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=fr) pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site internet | [action de paiement](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/sales/payment-methods/payment-methods) pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3D Secure authentication] | vue magasin | Activez ou désactivez l’authentification sécurisée [3D pour Fastlane](security.md#3ds). Options : [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Sort order] | vue magasin | Ordre de tri du mode de paiement spécifié dans la page de passage en caisse. valeur `Numeric Only` |
 | [!UICONTROL Enable messaging] | vue magasin | Indiquez si le branding [!UICONTROL Fastlane] est activé lors de l’extraction dans Adobe Commerce. Options : `[!UICONTROL Yes]` / `[!UICONTROL No]` |
@@ -219,7 +219,7 @@ Voir [Options de paiement](payments-options.md#apple-pay-button) pour plus d’i
 | Champ | Portée | Description |
 |---|---|---|
 | [!UICONTROL Title] | vue magasin | Ajoutez le texte à afficher en tant que titre pour cette option de paiement dans la vue Mode de paiement lors du passage en caisse. Options : [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | site internet | [action de paiement](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=fr) pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site internet | [action de paiement](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/sales/payment-methods/payment-methods) pour le mode de paiement spécifié. Options : [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show Apple Pay on checkout page] | site internet | Activez ou désactivez [!DNL Apple Pay] sur la page de passage en caisse. Options : `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Apple Pay at start of checkout] | vue magasin | Activez ou désactivez [!DNL Apple Pay] au début du flux de passage en caisse. Options : `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | vue magasin | Ordre de tri du mode de paiement spécifié dans la page de passage en caisse. valeur `Numeric Only` |
@@ -259,7 +259,7 @@ Voir [Options de paiement](payments-options.md#google-pay-button) pour plus d’
 | Champ | Portée | Description |
 |---|---|---|
 | [!UICONTROL Title] | vue magasin | Spécifie le libellé de texte qui s&#39;affiche pour cette option de paiement dans la vue Mode de paiement lors du passage en caisse. Options : `[!UICONTROL text field]` |
-| [!UICONTROL Payment Action] | site internet | [action de paiement](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html?lang=fr) pour le mode de paiement spécifié. Options : `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
+| [!UICONTROL Payment Action] | site internet | [action de paiement](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/sales/payment-methods/payment-methods) pour le mode de paiement spécifié. Options : `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
 | [!UICONTROL Show Google Pay on checkout page] | site internet | Activez ou désactivez [!DNL Google Pay] sur la page de passage en caisse. Options : `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay at start of checkout] | vue magasin | Activez ou désactivez [!DNL Google Pay] au début du flux de passage en caisse. Options : `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Sort order] | vue magasin | Ordre de tri du mode de paiement spécifié dans la page de passage en caisse. valeur `Numeric Only` |
@@ -411,7 +411,7 @@ Pour vous assurer que votre magasin affiche la configuration correcte, videz ré
 
 Pour que les utilisateurs administrateurs puissent créer et gérer des commandes dans Commerce Admin, activez les ressources spécifiques aux [!DNL Payment Services] pour les rôles utilisateur.
 
-Voir [Rôles utilisateur](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-user-roles.html?lang=fr) pour savoir comment gérer les rôles.
+Voir [Rôles utilisateur](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/user-accounts/permissions-user-roles) pour savoir comment gérer les rôles.
 
 Lors de l’affectation de ressources au rôle, vous devez sélectionner les éléments suivants :
 
@@ -444,7 +444,7 @@ Voir [3DS dans Sécurité](security.md#3ds) pour plus d’informations.
 
 En [!UICONTROL Payment Services], vous pouvez utiliser plusieurs comptes PayPal dans **un** compte marchand au niveau du site web. Par exemple, si vous exploitez vos magasins dans plusieurs pays (qui utilisent différentes [devises](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/currency/currency)) ou si vous souhaitez utiliser Adobe Commerce pour certaines parties de votre entreprise, mais pas _toutes_, vous pouvez configurer votre compte commercial pour utiliser plusieurs comptes PayPal.
 
-Consultez [Site, magasin et portée d’affichage](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=fr) pour plus d’informations sur la hiérarchie des sites web, des magasins et des vues de magasin.
+Consultez [Site, magasin et portée d’affichage](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views) pour plus d’informations sur la hiérarchie des sites web, des magasins et des vues de magasin.
 
 Pour connecter un **compte PayPal différent à un site web individuel** à partir de l’administrateur une fois l’intégration des services **globaux** Commerce et PayPal terminée, utilisez **[!UICONTROL Connect different account]** à **[!UICONTROL Website]** portée. Voir [Connecter un compte PayPal différent pour un site web](#connect-a-different-paypal-account-for-a-website).
 
