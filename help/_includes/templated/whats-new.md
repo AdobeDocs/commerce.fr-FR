@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4ecab54255029c3e9e84ba9f6de96888157d8fea
+source-git-commit: a2126f6cc24cc3a17c31e0d8dd095f7d7df26354
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '916'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,36 @@ ht-degree: 1%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 18 Août 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">référence des codes de journal d’exportation de données</a> à partir de la dernière <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>.</p>
+</td>
+      <td>
+        Technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1291cadbeca63d454eabab31c415b2d037d280ba">validation</a></td>
+    </tr>
+    <tr>
+      <td><p>Adobe Commerce Optimizer limite désormais une vue de catalogue privé à un seul catalogue. En savoir plus sur <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">Vues de catalogue privé</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view">Vues de catalogue</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks">Livres à prix fixe</a>.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 12 Août 2026
 
@@ -23,7 +53,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la production <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
+      <td><p>Ajout de la production <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -31,7 +61,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">validation</a></td>
     </tr>
     <tr>
-      <td><p>Les commerçants peuvent désormais intégrer en libre-service un autre compte PayPal à la portée du site web directement à partir de l’administrateur Commerce. Voir <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/configure/connect-website-account">Connecter un autre compte PayPal à un site web</a> pour plus d’informations.</p>
+      <td><p>Les commerçants peuvent désormais intégrer en libre-service un autre compte PayPal à la portée du site web directement à partir de l’administrateur Commerce. Voir <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/connect-website-account">Connecter un autre compte PayPal à un site web</a> pour plus d’informations.</p>
 </td>
       <td>
         Nouvelle rubrique
@@ -53,7 +83,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour du Guide de configuration de Adobe Commerce Optimizer avec des instructions pour activer et configurer des vues de catalogue privé pour restreindre l’accès aux données du catalogue avec des jetons signés, et mise à jour des rubriques connexes pour faire référence à la nouvelle fonctionnalité : <br />- Ajout de <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/private-catalog-view">vues de catalogue privé</a>, qui explique comment activer la protection du catalogue afin que seules les requêtes avec un jeton signé valide puissent récupérer les données d’une vue du catalogue.<br />- Ajout de <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/restricted-access-keys">clés d’accès restreint</a>, qui explique comment créer, affecter et faire pivoter les clés utilisées pour signer les jetons pour la protection du catalogue.<br />- Mise à jour de <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-view">vues du catalogue</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/overview">Qu’est-ce que Adobe Commerce Optimizer?</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/get-started">, </a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits"> </a>Liste de contrôle Launch<a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/launch/launch-checklist"> et le <a href="https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/overview">Guide du connecteur Adobe Commerce Optimizer</a> </a> pour faire référence aux nouvelles rubriques Vues du catalogue privé et Clés d’accès restreint .</p>
+      <td><p>Mise à jour du Guide de configuration de Adobe Commerce Optimizer avec des instructions pour activer et configurer des vues de catalogue privé pour restreindre l’accès aux données du catalogue avec des jetons signés, et mise à jour des rubriques connexes pour faire référence à la nouvelle fonctionnalité : <br />- Ajout de <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view">vues de catalogue privé</a>, qui explique comment activer la protection du catalogue afin que seules les requêtes avec un jeton signé valide puissent récupérer les données d’une vue du catalogue.<br />- Ajout de <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/restricted-access-keys">clés d’accès restreint</a>, qui explique comment créer, affecter et faire pivoter les clés utilisées pour signer les jetons pour la protection du catalogue.<br />- Mise à jour de <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view">vues du catalogue</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview">Qu’est-ce que Adobe Commerce Optimizer?</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started">, </a>, <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits"> </a>Liste de contrôle Launch<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist"> et le <a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">Guide du connecteur Adobe Commerce Optimizer</a> </a> pour faire référence aux nouvelles rubriques Vues du catalogue privé et Clés d’accès restreint .</p>
 </td>
       <td>
         Mise à jour majeure, nouvelle rubrique
@@ -75,7 +105,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
+      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -97,7 +127,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/migration/overview">présentation de la migration</a> avec le flux de migration mis à jour à l’aide de l’outil d’évaluation de la migration, de Commerce Developer MCP et du service de migration des données de Commerce.</p>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview">présentation de la migration</a> avec le flux de migration mis à jour à l’aide de l’outil d’évaluation de la migration, de Commerce Developer MCP et du service de migration des données de Commerce.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -119,7 +149,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Le nouveau <a href="https://experienceleague.adobe.com/fr/docs/commerce/catalog-service/integration/catalog-events-guide">guide d’intégration des événements de catalogue et d’Adobe I/O</a> explique comment activer les événements de catalogue, vérifier l’exportation et la synchronisation des flux d’exportation de données SaaS et l’intégration à Adobe I/O Events.</p>
+      <td><p>Le nouveau <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/integration/catalog-events-guide">guide d’intégration des événements de catalogue et d’Adobe I/O</a> explique comment activer les événements de catalogue, vérifier l’exportation et la synchronisation des flux d’exportation de données SaaS et l’intégration à Adobe I/O Events.</p>
 </td>
       <td>
         Mise à jour majeure, nouvelle rubrique
@@ -141,7 +171,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour du <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience">tableau de compatibilité des services de paiement pour les services standard</a> afin de refléter une disponibilité géographique plus large et d’étendre les détails des pays pris en charge pour l’offre avancée.</p>
+      <td><p>Mise à jour du <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience">tableau de compatibilité des services de paiement pour les services standard</a> afin de refléter une disponibilité géographique plus large et d’étendre les détails des pays pris en charge pour l’offre avancée.</p>
 </td>
       <td>
         Feedback
@@ -163,7 +193,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> d’Adobe Commerce as a Cloud Service en production.</p>
+      <td><p>Mise à jour des <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> d’Adobe Commerce as a Cloud Service en production.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -185,7 +215,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de la documentation <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool">Outil de migration de données en bloc</a> avec plus d’informations sur le processus de migration.</p>
+      <td><p>Mise à jour de la documentation <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool">Outil de migration de données en bloc</a> avec plus d’informations sur le processus de migration.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -207,7 +237,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Mise à jour de Sandbox <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
+      <td><p>Mise à jour de Sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -229,7 +259,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Documentation <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/configure-aem#enable-aem-commerce-self-service">intégration en libre-service</a> pour l’intégration d’AEM Assets dans les versions <code>2026.5.26309</code> et ultérieures d’AEM, ajout d’une nouvelle rubrique <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/metadata">Métadonnées Commerce dans AEM Assets</a> et ajout d’un guide pour <a href="https://experienceleague.adobe.com/fr/docs/commerce/aem-assets-integration/get-started/configure-storefront#connect-aem-assets-authoring">connecter AEM Assets à votre storefront</a> via Da.live.</p>
+      <td><p>Documentation <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#enable-aem-commerce-self-service">intégration en libre-service</a> pour l’intégration d’AEM Assets dans les versions <code>2026.5.26309</code> et ultérieures d’AEM, ajout d’une nouvelle rubrique <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/metadata">Métadonnées Commerce dans AEM Assets</a> et ajout d’un guide pour <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-storefront#connect-aem-assets-authoring">connecter AEM Assets à votre storefront</a> via Da.live.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -251,7 +281,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
+      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Mise à jour majeure
@@ -273,94 +303,12 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Suppression de la documentation sur l’intégration de LLM Optimizer et de Commerce. La fonctionnalité a été redéfinie et déplacée vers le guide d’administration de <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/catalog-enrichment"></a>.</p>
+      <td><p>Suppression de la documentation sur l’intégration de LLM Optimizer et de Commerce. La fonctionnalité a été redéfinie et déplacée vers le guide d’administration de <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment"></a>.</p>
 </td>
       <td>
         Mise à jour majeure
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 23 Juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mise à jour des conseils de vérification de la synchronisation des données de catalogue dans la documentation du service Commerce. Les rubriques relatives à l’installation et à la configuration des services utilisent désormais un workflow cohérent en deux étapes : confirmer l’exportation sur la page <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">Statut de la synchronisation des flux de données</a>, puis confirmer la diffusion sur le <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">Tableau de bord de la gestion des données</a>, avec des instructions mises à jour dans les sections <a href="https://experienceleague.adobe.com/fr/docs/commerce/catalog-service/get-started#monitor-and-troubleshoot-data-export">Prise en main du service de catalogue</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/live-search/install#monitor-sync-progress">Installation de Live Search</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/product-recommendations/getting-started/install-configure#monitor-and-troubleshoot-data-synchronization">Installation de Product Recommendations</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/data-synchronization/data-sync-manage#verify-that-the-data-sync-is-working">Gérer la synchronisation</a> du <em>Guide d’exportation des données SaaS</em>.</p>
-</td>
-      <td>
-        Feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/82bdfd342d2d745721ed2b35f2dbfd8fa394ab5a">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Ajout d’une nouvelle référence de schéma de la table de flux du connecteur Adobe Commerce Optimizer <a href="https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/reference/feed-table-reference"></a> et mise à jour des conseils <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/data-synchronization/sync-overview">Synchronisation de l’exportation des données SaaS</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">gestion manuelle de la synchronisation</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/reference/data-export-cli-commands">Commandes de resynchronisation de l’interface de ligne de commande Commerce</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/reference/feed-table-reference">schéma de la table de flux</a>.</p>
-</td>
-      <td>
-        Mise à jour majeure, nouvelle rubrique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/601d02435f388096d59ce7f8e2a9e3e7c8bec65b">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 17 Juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mise à jour de la documentation pour la gestion de la synchronisation des données de catalogue entre Adobe Commerce et les services Commerce connectés.<br />- Ajout de la rubrique <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">Afficher et gérer le processus de synchronisation</a> au <em>Guide d’exportation des données SaaS</em> pour surveiller le statut d’exportation, confirmer la diffusion des données et resynchroniser manuellement les flux pour les intégrations des services Commerce et de Adobe Commerce Optimizer.<br />- Ajout de <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/troubleshooting/troubleshooting-scenarios">scénarios de dépannage</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/reference/manage-extension">référence du schéma de la table des flux</a> et d’autres informations de dépannage et de référence au <em>Guide d’exportation des données SaaS.</em>- Mise à jour de <br />Prise en main du connecteur Adobe Commerce Optimizer<a href="https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/get-started">, </a> <a href="https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/data-sync-manage">Modules du connecteur et points d’entrée de flux</a>, et instructions pour estimer le volume de données et le temps de synchronisation avec le <em>Guide du connecteur Adobe Commerce Optimizer<a href="https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting"> </a> <a href="https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/reference/connector-reference"> </a> </em>.</p>
-</td>
-      <td>
-        Mise à jour majeure, nouvelle rubrique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/66d9db3ab63102a0fd639f274a4131bf69ac868a">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 16 Juin 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0321b64a787b37a95af0568473bfcfc5e5d4189e">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Mise à jour du rapport <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/financial-reports/order-payment-status#asynchronous-monitoring-of-pending-capture-transactions">Statut du paiement des commandes</a> afin de clarifier que la surveillance asynchrone des transactions de capture en attente est désactivée par défaut, et de documenter les étapes permettant de l’activer.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7be26764bc3f3878c3c78a881ad8912038c7f07f">validation</a></td>
     </tr>
   </tbody>
 </table>
