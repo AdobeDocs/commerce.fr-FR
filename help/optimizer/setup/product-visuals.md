@@ -3,10 +3,10 @@ title: Visuels de produit avec AEM Assets
 description: Découvrez comment utiliser AEM Assets pour les images de produit dans  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 264658bee09a22cfd55828c6960153cc1239d3fb
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+source-git-commit: bf87cbdc38a17ea3f5ad339cb7b4f4f030317450
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ La fonctionnalité Visuels du produit permet aux commerçants [!DNL Adobe Commer
 
 >[!NOTE]
 >
->**Visuels du produit** est le nom du lot fourni avec [!DNL Adobe Commerce as a Cloud Service] et [!DNL Adobe Commerce Optimizer]. Il associe [Dynamic Media aux fonctionnalités OpenAPI](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) et [AEM Assets Prime](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-prime).
+>**Visuels du produit** est le nom du lot fourni avec [!DNL Adobe Commerce as a Cloud Service] et [!DNL Adobe Commerce Optimizer]. Il associe [Dynamic Media aux fonctionnalités OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) et [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime).
 >
 >Les clients disposant d’une licence AEM Assets différente (par exemple, **AEM Assets Ultimate**) peuvent utiliser la même intégration ; seule la version d’AEM affecte les étapes d’intégration, et non le type de licence.
 
@@ -31,7 +31,7 @@ La fonctionnalité Visuels du produit permet aux commerçants [!DNL Adobe Commer
 
 ## Fonctionnement
 
-L’intégration comporte deux flux d’événements indépendants. Les deux utilisent [&#128279;](https://developer.adobe.com/events/docs/) pour transférer des événements au service d&#39;intégration d&#39;Assets, mais chaque direction utilise son propre fournisseur d&#39;événements :
+L’intégration comporte deux flux d’événements indépendants. Les deux utilisent [](https://developer.adobe.com/events/docs/) pour transférer des événements au service d&#39;intégration d&#39;Assets, mais chaque direction utilise son propre fournisseur d&#39;événements :
 
 * **D’AEM Assets au service d’intégration d’Assets** : lorsqu’une ressource est approuvée, rejetée ou supprimée, l’événement est diffusé au service d’intégration d’Assets. Le service associe les ressources aux produits à l’aide d’une `match-by-SKU` ou d’une stratégie de correspondance personnalisée, puis envoie les mappages de `product-asset` à [!DNL Commerce Optimizer], où elles sont stockées en tant que couches de produit.
 
@@ -58,11 +58,11 @@ Cette configuration garantit que les images AEM Assets sont appliquées en tant 
 
 ## Conditions préalables
 
-Avant d’activer les visuels de produit, assurez-vous de respecter les [&#x200B; conditions préalables pour Commerce Optimizer &#x200B;](../../aem-assets-integration/get-started/configure-aco.md#prerequisites).
+Avant d’activer les visuels de produit, assurez-vous de respecter les [ conditions préalables pour Commerce Optimizer ](../../aem-assets-integration/get-started/configure-aco.md#prerequisites).
 
 ## Configuration
 
-Pour activer l’intégration, [créez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) avec les détails de votre [!DNL Commerce Optimizer] et d’AEM Assets. L’assistance Adobe configure l’intégration et enregistre votre client auprès du service d’intégration Assets.
+Pour activer l’intégration, [créez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket) avec les détails de votre [!DNL Commerce Optimizer] et d’AEM Assets. L’assistance Adobe configure l’intégration et enregistre votre client auprès du service d’intégration Assets.
 
 Voir [Configuration d’AEM Assets pour Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md) pour obtenir des informations sur l’intégration.
 
@@ -103,3 +103,4 @@ Pour afficher des images AEM Assets sur votre storefront, [affectez le calque `A
 * [Calques de catalogue](catalog-layer.md)
 * [Vues du catalogue](catalog-view.md)
 * [Guide d’intégration d’AEM Assets](../../aem-assets-integration/overview.md)
+* [Limites et limites des visualisations de produit](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
