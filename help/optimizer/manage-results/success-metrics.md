@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2cb4bac8e36ce8b945eabf31e562a5e7fd097c2a
 workflow-type: tm+mt
-source-wordcount: 2627
+source-wordcount: 2835
 ht-degree: 0%
 
 ---
@@ -70,6 +70,26 @@ Les principaux indicateurs de performance sont les suivants :
    Les **Principales caractéristiques**, **Chiffre d’affaires**, **Conversion**, **Engagement**, **Acquisition** et **Taux de rebond** sont toutes mises à jour en fonction de la configuration de votre rapport.
 
 1. Cliquez sur **[!UICONTROL Export]** pour enregistrer le rapport en tant que PDF.
+
+## Métadonnées C2PA sur les rapports exportés {#c2pa-metadata-on-exported-reports}
+
+Le rapport Mesures de succès comprend des points forts et des résumés à l’aide de l’IA générative. Lorsque vous exportez un rapport vers PDF, Adobe joint automatiquement les métadonnées C2PA au fichier exporté.
+
+Les métadonnées C2PA sont des métadonnées lisibles par machine et inviolables basées sur la norme ouverte [C2PA](https://c2pa.org/). Les enregistrements de métadonnées que l’IA générative a utilisés pour produire du contenu dans le rapport, ainsi que des informations telles que le système d’IA utilisé, si le contenu a été généré ou modifié avec l’IA générative, et un horodatage.
+
+>[!NOTE]
+>
+>Les métadonnées C2PA sont automatiquement jointes. Aucune action supplémentaire n’est requise et ce comportement ne peut pas être désactivé. Les métadonnées C2PA ne modifient pas l’aspect de votre rapport. Il s’agit de métadonnées invisibles transmises dans le PDF.
+
+**Signification de cette modification pour les rapports exportés**
+
+- Lorsque vous exportez un rapport de mesures de succès vers PDF, le fichier exporté transporte des métadonnées C2PA.
+- Les métadonnées C2PA voyagent avec le PDF lorsque vous le partagez ou le téléchargez. Les plateformes tierces qui prennent en charge les métadonnées C2PA peuvent lire ces métadonnées et afficher des informations de transparence aux visiteurs.
+- Vous pouvez vérifier les métadonnées C2PA jointes à n’importe quel fichier en les chargeant dans [Inspect](https://contentauthenticity.adobe.com/inspect).
+
+![Inspecter l’exemple](../assets/inspect-sample.png)
+
+En savoir plus sur [la transparence du contenu Generative AI](https://experienceleague.adobe.com/fr/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
 
 ## Utilisation conjointe des mesures de succès et de Sites Optimizer
 

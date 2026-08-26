@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 9fce350099392041ec9f648ae2d67a459ff53d91
 workflow-type: tm+mt
-source-wordcount: 1744
+source-wordcount: 1784
 ht-degree: 1%
 
 ---
@@ -34,6 +34,10 @@ Vous disposez de deux options pour configurer le projet AEM Assets :
 >[!TIP]
 >
 >Vous pouvez vérifier la version actuelle d’AEM dans le menu supérieur droit : **[!UICONTROL Help]** > **[!UICONTROL About AEM]**.
+
+>[!IMPORTANT]
+>
+>Quelle que soit l’option utilisée, [configurez le schéma de métadonnées pour l’approbation des ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration) dans l’éditeur de schéma de métadonnées d’AEM afin de pouvoir approuver les ressources Commerce.
 
 ## Activer l’intégration de Commerce (libre-service) {#enable-aem-commerce-self-service}
 
@@ -53,7 +57,7 @@ Dans les versions d’AEM prises en charge, vous activez l’intégration de Com
 
 ### Étape 1 : créer le programme et les environnements
 
-La création d’un programme dans Cloud Manager est un processus à assistant unique : le programme et ses environnements sont configurés en plusieurs étapes et enregistrés ensemble à la fin.
+La création d’un programme dans Cloud Manager est un processus à plusieurs étapes : le programme et ses environnements sont configurés en plusieurs étapes et enregistrés ensemble.
 
 1. Dans Cloud Manager, sélectionnez **[!UICONTROL Add Program]**.
 
@@ -267,17 +271,17 @@ Le composant d’interface utilisateur des données de produit est ajouté autom
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Facultatif. Pour synchroniser automatiquement les ressources Commerce approuvées lors de leur chargement dans l’environnement AEM Assets, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_&#x200B;de l’onglet `Basic` sur `approved`.
+1. Facultatif. Pour synchroniser automatiquement les Assets Commerce approuvées lors de leur chargement dans l’environnement AEM Assets, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_&#x200B;de l’onglet `Basic` sur `approved`.
 
 1. Enregistrez la mise à jour.
 
-### Application du profil de métadonnées au dossier source des ressources Commerce
+### Application du profil de métadonnées au dossier source Commerce Assets
 
 1. Sur la page **[!UICONTROL Metadata Profiles]** , sélectionnez le profil d’intégration de Commerce.
 
 1. Dans le menu d’actions, sélectionnez **[!UICONTROL Apply Metadata Profiles to Folders]**.
 
-1. Sélectionnez le dossier contenant les ressources Commerce.
+1. Sélectionnez le dossier contenant Commerce Assets.
 
    Créez un dossier Commerce s’il n’existe pas.
 
