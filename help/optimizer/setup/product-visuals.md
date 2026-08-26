@@ -4,9 +4,9 @@ description: Découvrez comment utiliser AEM Assets pour les images de produit d
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
-source-git-commit: 264658bee09a22cfd55828c6960153cc1239d3fb
+source-git-commit: bf87cbdc38a17ea3f5ad339cb7b4f4f030317450
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -103,3 +103,4 @@ Pour afficher des images AEM Assets sur votre storefront, [affectez le calque `A
 * [Calques de catalogue](catalog-layer.md)
 * [Vues du catalogue](catalog-view.md)
 * [Guide d’intégration d’AEM Assets](../../aem-assets-integration/overview.md)
+* [Limites et limites des visualisations de produit](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)

@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 5964358bb4370fa4fb0c2f4c447bacb3603d0f5e
 workflow-type: tm+mt
-source-wordcount: 3271
+source-wordcount: 3356
 ht-degree: 0%
 
 ---
@@ -44,6 +44,14 @@ Les mises à jour incluent :
 >L’extension [!DNL SaaS data export] est un ensemble de modules installés automatiquement avec [!DNL Live Search], [!DNL Product Recommendations] et [!DNL Catalog Service]. Vous pouvez vérifier la version installée sur votre système à l’aide de [!DNL Composer]. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Versions de 2026 {#release-notes-2026}
+
+### Version 103.4.32
+
+_25 août 2026_
+
+![Nouvelles](../assets/new.svg) **Options personnalisables incluses dans le flux de produits**-Les options personnalisables de produit, telles que les échantillons de couleurs, les sélections de taille ou les champs de personnalisation, sont désormais exportées en tant qu’attribut de produit `customizable_options`. L’attribut inclut le titre de chaque option, si elle est requise, et ses valeurs disponibles, de sorte que les services Commerce connectés puissent afficher des données d’option personnalisables précises sur le storefront. <!--MDEE-1029-->
+
+![Correctif](../assets/fix.svg) **Synchronisation fiable des autorisations de catégorie**-Correction d’un problème où le flux des autorisations de catégorie ne se resynchronisait pas entièrement pour les configurations sans identifiant de site web, ce qui entraînait des erreurs de synchronisation. <!--MDEE-1411-->
 
 ### Version 103.4.31
 
