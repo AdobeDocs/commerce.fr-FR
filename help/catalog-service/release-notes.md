@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
 workflow-type: tm+mt
-source-wordcount: 3064
+source-wordcount: 3099
 ht-degree: 0%
 
 ---
@@ -54,6 +54,10 @@ La prise en charge est fournie pour la dernière version. Les notes de mise à j
 ## Service de catalogue Storefront
 
 ### Août 2026
+
+**Données de mise à jour** : 24 août 2026
+
+![Nouveau](../assets/new.svg) **Prise en charge de la requête `categoryTree` sur Adobe Commerce as a Cloud Service**—La requête `categoryTree` GraphQL est désormais disponible pour [!DNL Adobe Commerce as a Cloud Service], de sorte que les storefronts peuvent résoudre les catégories par slug et effectuer le rendu des arborescences de catégories. <!-- DATA-7299 -->
 
 **Date de publication** : 7 août 2026
 
