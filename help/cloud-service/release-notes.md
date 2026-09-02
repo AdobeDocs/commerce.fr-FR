@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 9d128fd11c1b83276f8a2158f1f2fb98a49bf6c5
+source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
 workflow-type: tm+mt
-source-wordcount: 6100
+source-wordcount: 6271
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-Les éléments suivants seront publiés en production le 1er septembre 2026.
+Les éléments suivants seront publiés en production le 8 septembre 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -122,7 +122,7 @@ Les carnets d’adresses d’entreprise s’intègrent désormais à d’autres 
 * Devis négociables
 * Modèles de devis
 
-Pour plus d’informations, notamment sur les mutations de GraphQL et les points d’entrée REST, consultez le [&#x200B; Journal des modifications du package B2B de compatibilité Storefront &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=fr) et consultez la section **Package B2B de compatibilité Storefront v1.0.24** .
+Pour plus d’informations, notamment sur les mutations de GraphQL et les points d’entrée REST, consultez le [Journal des modifications du package B2B de compatibilité Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=fr#storefront-compatibility-b2b-package-v1-0-24-2026-07-20).
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -141,6 +141,24 @@ La règle de prix du panier **Cadeau gratuit** est désormais disponible dans le
 Cette règle vous permet d’ajouter un produit cadeau gratuit au panier lorsque les conditions de la règle sont remplies.
 
 <!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+
+### Planifier des règles de prix de panier par date et heure
+
+Vous pouvez maintenant définir l’heure à laquelle vous souhaitez qu’une [règle de prix de panier](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create) commence ou se termine dans le [!DNL Commerce Admin]. La grille Règles de prix du panier affiche les heures planifiées et l’API REST honore une heure envoyée le `from_date` et le `to_date` au lieu de définir la règle sur minuit. <!-- ACCS-970 -->
+
+<!-- commenting this out until the B2B compatibility package version is live. -->
+
+<!-- ### Use a temporary shipping address at B2B checkout -->
+
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=fr) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+
+### Enregistrer les modifications de commande dans l’historique des commandes
+
+>[!IMPORTANT]
+>
+>Cette fonctionnalité est désactivée par défaut. Pour l’activer, contactez votre responsable du succès client Adobe Commerce ou créez un ticket d’assistance.
+
+Lorsqu’une commande est modifiée, Commerce peut désormais ajouter un commentaire lisible par l’utilisateur à l’historique de la nouvelle commande qui résume ce qui a changé par rapport à la commande qu’elle a remplacée. <!-- ACCS-1157 -->
 
 ### Améliorations et correctifs
 
@@ -163,6 +181,12 @@ Les améliorations, optimisations et correctifs suivants sont inclus dans cette 
 * Correction d’un problème en raison duquel les URL des images de catégorie étaient rompues dans le flux d’exportation des données de catégorie. <!-- ACCS-1571 -->
 
 * Correction d’un problème en raison duquel l’affectation ou l’annulation de l’affectation simultanée de produits dans différents catalogues partagés pouvait échouer par intermittence. <!-- CCSAAS-5287 -->
+
+* Si vous définissez **Utiliser dans les options de recherche** sur Non, l’attribut reste visible sous la forme d’une colonne de grille, mais il n’est pas comptabilisé dans la limite de 16 colonnes. <!-- CCSAAS-5370 -->
+
+* Correction d’un problème qui pouvait avoir un impact sur la navigation de l’administrateur. <!-- CCSAAS-5232 -->
+
+* Correction d’un problème en raison duquel les paniers vides pouvaient signaler des totaux non nuls. <!-- ACCS-1730 -->
 
 {{accs-release}}
 
@@ -676,7 +700,7 @@ Les éléments suivants ont été publiés dans les environnements de production
 
 ### Outils et tutoriels de codage d’App Builder AI
 
-Vous pouvez désormais utiliser l’outil de développement de codage [AI](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} pour créer des applications [!DNL App Builder] et convertir des extensions PHP [!DNL Adobe Commerce] existantes en applications [!DNL App Builder]. Les tutoriels suivants sont disponibles pour montrer comment utiliser les outils :
+Vous pouvez désormais utiliser l’outil de développement de codage [AI](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"} pour créer des applications [!DNL App Builder] et convertir des extensions PHP [!DNL Adobe Commerce] existantes en applications [!DNL App Builder]. Les tutoriels suivants sont disponibles pour montrer comment utiliser les outils :
 
 * [Tutoriels préalables](./tutorials/tutorial-prerequisites.md)
 * [Tutoriel sur l’extension d’évaluations](./tutorials/ratings-extension.md)

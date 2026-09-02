@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
+source-git-commit: 695f349ce38a3127beccab83f63f4157cc05e549
 workflow-type: tm+mt
-source-wordcount: 3099
+source-wordcount: 3190
 ht-degree: 0%
 
 ---
@@ -624,6 +624,16 @@ Mises à jour du métapaquet PHP du service de catalogue (`magento/catalog-servi
 - Pour les clients Adobe Commerce as a Cloud Service, la dernière version est installée dans votre environnement.
 
 - Pour Adobe Commerce on cloud ou on-premise, Adobe recommande d’utiliser le compositeur pour mettre à niveau le métapaquet du service de catalogue dans vos environnements cloud vers la dernière version.
+
+### version v3.6.0
+
+**Date de publication** : 31 août 2026
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
+
+![Nouveau](../assets/new.svg) **Exportation d’options personnalisables** : mise à jour des dépendances de métapaquet du service de catalogue pour inclure le module d’exportation de données d’options personnalisables (`magento/module-customizable-options-data-exporter`). Ce module exporte les options personnalisables Adobe Commerce d’un produit, à la fois les options sélectionnables (liste déroulante, bouton radio, case à cocher, sélection multiple) et les options de saisie de l’acheteur (champ de texte, zone de texte, fichier, date et heure, heure), afin qu’elles se propagent au catalogue SaaS utilisé par Catalog Service. <!--DATA-7366-->
+
+![Nouveau](../assets/new.svg) Mise à jour des dépendances pour maintenir la compatibilité entre le service de catalogue et votre pile Commerce.
 
 ### version v3.5.0
 

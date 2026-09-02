@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 1d14f7827de3274564941765fd2943ecefac5fad
+source-git-commit: 355b319def41c3763bc0dddbe6b32707891bb811
 workflow-type: tm+mt
-source-wordcount: 460
+source-wordcount: 514
 ht-degree: 0%
 
 ---
@@ -40,12 +40,20 @@ Ces notes de mise à jour décrivent toutes les versions du [!DNL Adobe Commerce
 
 ## Versions De 2026
 
+### Version 1.0.17
+
+_1er septembre 2026_
+
+![Correctif](../assets/fix.svg) **Synchronisation plus rapide des catalogues pour les magasins avec plusieurs vues de magasin**-Le [!DNL Adobe Commerce Optimizer Connector] filtre désormais les produits et les catégories par vue de magasin avant d’extraire les données de flux, au lieu d’extraire chaque vue de magasin et d’ignorer les résultats non pertinents par la suite. Cette mise à jour réduit considérablement le temps de synchronisation et de resynchronisation des catalogues avec de nombreuses vues de magasin. <!--MDEE-1441-->
+
 ### Version 1.0.16
 
 _7 août 2026_
 
 ![Correctif](../assets/fix.svg) **La synchronisation des catalogues ne se bloque plus sur une configuration non valide**-Correction d’un problème où la synchronisation des catalogues pouvait s’exécuter indéfiniment si la configuration [!DNL Adobe Commerce Optimizer Connector] était manquante ou non valide. La synchronisation se termine maintenant et consigne un avertissement au lieu de continuer à s’exécuter. <!--MDEE-1413-->
+
 ![Correctif](../assets/fix.svg) **Requêtes d’administration de [!DNL Adobe Commerce Optimizer] plus fiables**-Correction d’un problème en raison duquel le [!DNL Adobe Commerce Optimizer Connector] pouvait utiliser une URL incorrecte pour les requêtes d’administration de [!DNL Adobe Commerce Optimizer], ce qui pouvait entraîner l’échec de ces requêtes. <!--COMOPT-2288-->
+
 ![Correctif](../assets/fix.svg) **Opérations d’actualisation et de correction plus fiables**-Correctif d’un problème où les opérations d’actualisation et de correction pouvaient cibler un environnement incorrect, ce qui pouvait entraîner l’échec des requêtes. <!--COMOPT-2288-->
 
 ### Version 1.0.15
