@@ -16,9 +16,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2105
+source-wordcount: 2114
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ Avant de commencer la migration :
 
 1. Sauvegardez votre base de données et votre code.
 1. Documentez les personnalisations actuelles.
-1. Examinez [Limites et limites](boundaries-limits.md) pour vous assurer que le widget PLP répond à vos besoins.
+1. Pour vous assurer que le widget PLP répond à vos besoins, passez en revue [Limites et limites](boundaries-limits.md).
 1. Planifiez la migration pendant une période de faible trafic.
-1. Informez les parties prenantes des modifications potentielles du comportement du storefront.
+1. Pour préparer les parties prenantes, les informer des modifications potentielles du comportement du storefront.
 
 **Examinez la mise en œuvre actuelle** :
 
@@ -95,7 +95,7 @@ Un travail supplémentaire est nécessaire si votre implémentation présente l�
 - Dispositions d’API personnalisées qui remplacent les modèles Luma.
 - CSS ou JavaScript personnalisé qui cible les éléments spécifiques à l’adaptateur de recherche.
 - Modifications du modèle personnalisé apportées à des fichiers PLP ou connexes.
-- Le thème n’hérite pas de Luma (par exemple, le thème personnalisé à partir de zéro).
+- Le thème n’hérite pas de Luma (par exemple, le thème personnalisé est créé indépendamment).
 
 **Attributs de produit personnalisés** :
 
@@ -131,7 +131,7 @@ Pour les implémentations sans personnalisation spéciale, procédez comme suit 
 
 ### Étape 1 : mettre à niveau le [!DNL Live Search]
 
-Mettez à niveau votre extension [!DNL Live Search] vers la version 4.0 ou ultérieure pour accéder au widget PLP.
+Pour accéder au widget PLP, mettez à niveau votre extension [!DNL Live Search] vers la version 4.0 ou ultérieure.
 
 **Rôle** : commerçant ou partenaire
 
@@ -147,7 +147,7 @@ Mettez à niveau votre extension [!DNL Live Search] vers la version 4.0 ou ulté
    bin/magento module:enable Magento_AdvancedSearch
    ```
 
-1. Mettez à jour `composer.json` pour exiger [!DNL Live Search] version 4.0 ou ultérieure :
+1. Pour obtenir [!DNL Live Search] version 4.0 ou ultérieure, mettez à jour `composer.json` :
 
    ```json
    "require": {
@@ -180,7 +180,7 @@ Configurez le widget PLP dans l’administration Commerce.
 
 **Rôle** : Marchand
 
-Le widget PLP est activé par défaut pour les nouvelles installations d’[!DNL Live Search] version 4.0.0 ou ultérieure. Si vous effectuez une mise à niveau à partir d’une version antérieure :
+[!DNL Live Search] 4.0.0+ active le widget PLP par défaut pour les nouvelles installations. Si vous effectuez une mise à niveau à partir d’une version antérieure :
 
 1. Accédez à **[!UICONTROL Stores]** > Paramètres > **[!UICONTROL Configuration]**.
 1. Accédez à **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**.
@@ -280,7 +280,7 @@ Dans ce scénario, vous disposez de modèles ou de mises en page personnalisés 
 
 ### Attributs de produit avec des modèles source personnalisés
 
-Dans ce scénario, vous disposez de facettes qui utilisent des attributs de produit avec des modèles sources personnalisés qui ne sont pas pris en charge par l’adaptateur de recherche, mais qui SONT pris en charge par le widget PLP.
+Dans ce scénario, les facettes sont basées sur des attributs de produit avec des modèles source personnalisés. Bien que l’adaptateur de recherche ne prenne pas en charge ces modèles sources, le widget PLP le fait.
 
 **Rôle** : Marchand (configuration d’administration)
 
@@ -366,7 +366,7 @@ Dans ce scénario, vous disposez d’un storefront découplé ou PWA qui nécess
    - Tester les flux de données d’événement vers Adobe Commerce.
 
 1. **Configurer le tri à facettes** :
-   - Pour les implémentations découplées, les facettes peuvent être triées par nombre.
+   - Pour les implémentations découplées, vous pouvez trier les facettes par nombre.
    - Configurez dans **[!UICONTROL Live Search]** > Espace de travail **[!UICONTROL Facets]**.
    - Définissez **[!UICONTROL Sort Type]** sur **Count** pour une meilleure expérience utilisateur.
 
@@ -423,20 +423,20 @@ Tenez compte de ces limites lors de la migration :
 **Différences de caractéristiques de l’adaptateur de recherche** :
 
 - **Échantillons de couleurs** : l’attribut `color` doit être orthographié exactement comme `color` (et non sous la forme de « couleurs » ou de noms personnalisés) pour que les échantillons fonctionnent correctement.
-- **Style du thème** : les classes de thème personnalisées ne sont pas héritées par le widget. Elles doivent cibler les classes CSS spécifiques au widget.
+- **Style du thème** : le widget n’hérite pas des classes de thème personnalisées. Vous devez cibler des classes CSS spécifiques à un widget.
 - **Types de produits personnalisés** : non pris en charge dans le widget.
 
 **Considérations relatives aux performances** :
 
-- Les catalogues volumineux (plus de 50 000 produits) peuvent présenter un chargement initial de page plus long.
+- Les catalogues volumineux (plus de 50 000 produits) connaissent un chargement initial de page plus long.
 - Plusieurs facettes avec de nombreuses valeurs peuvent avoir un impact sur les performances.
-- Les performances des appareils mobiles peuvent varier en fonction de la taille du catalogue.
+- Les performances des appareils mobiles varient en fonction de la taille du catalogue.
 
 **Problèmes de compatibilité** :
 
 - Problème de compatibilité du gestionnaire de balises Google (voir [scénario GTM](#google-tag-manager-gtm-integration)).
-- Certaines extensions tierces peuvent entrer en conflit avec le widget PLP.
-- Les extensions de passage en caisse personnalisées peuvent nécessiter des mises à jour.
+- Certaines extensions tierces entrent en conflit avec le widget PLP.
+- Les extensions de passage en caisse personnalisées nécessitent des mises à jour.
 
 ## Obtention d’aide
 
@@ -458,7 +458,7 @@ L’assistance Adobe **&#x200B;**&#x200B;peut vous aider à :
 - Implémentations découplées ou PWA
 - Suivi des événements personnalisés
 
-Pour contacter l’assistance Adobe, consultez le [Guide d’utilisation du centre d’aide](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Pour contacter le support technique d’Adobe, reportez-vous au [Guide de l’utilisateur du centre d’aide Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## FAQ
 
@@ -482,7 +482,7 @@ R : Oui, toutes les règles de marchandisage de recherche, les synonymes et les 
 
 **Q : Ai-je besoin de reconfigurer mes facettes ?**
 
-R : En règle générale, non, mais si vous étiez limité par des attributs de modèle source personnalisés avec l’adaptateur de recherche, vous pouvez désormais les utiliser avec le widget PLP.
+R : Non. Vous pouvez continuer à utiliser votre configuration de facettes existante. Cependant, si l’adaptateur de recherche limitait auparavant votre utilisation des attributs de produit aux modèles sources personnalisés, vous pouvez désormais utiliser ces attributs avec le widget PLP.
 
 **Q : Qu’en est-il de mon CSS personnalisé ?**
 

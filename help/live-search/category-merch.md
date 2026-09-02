@@ -13,9 +13,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1171
+source-wordcount: 1143
 ht-degree: 0%
 
 ---
@@ -51,32 +51,32 @@ Vous pouvez rechercher une catégorie ou une sous-catégorie dans le champ « Re
 Le marchandisage de catégorie utilise les mêmes types de classement que pour les [produits individuels](rules-workspace.md).
 Il existe deux types de classement : Intelligent et Manuel.
 
-**Classement intelligent** exploite l’analyse des données comportementales du storefront par [Adobe AI](https://business.adobe.com/fr/ai.html) pour trier tous les produits dans les catégories sélectionnées selon un certain algorithme. Une fois le classement intelligent choisi, l’ordre spécifique des produits devrait changer au fil du temps, car les données sous-jacentes sont réanalysées régulièrement par Adobe AI. Par exemple, les produits les plus en vogue changent automatiquement au fil du temps en fonction des préférences des acheteurs.
+**Classement intelligent** exploite l’analyse des données comportementales du storefront par [Adobe AI](https://business.adobe.com/fr/ai.html) pour trier tous les produits dans les catégories sélectionnées selon un certain algorithme. Une fois que vous avez choisi un classement intelligent, l’ordre spécifique des produits change au fil du temps, car [!DNL Adobe AI] réanalyse régulièrement les données sous-jacentes. Par exemple, les produits les plus en vogue changent automatiquement au fil du temps en fonction des préférences des acheteurs.
 Les méthodes de classement intelligentes sont les suivantes :
 
-* Les plus achetés : classe les produits en fonction de la fréquence à laquelle ils ont été achetés par les acheteurs au cours des sept jours précédents.
-* Les plus ajoutés au panier : classe les produits en fonction de la fréquence à laquelle ils ont été ajoutés au panier par les acheteurs au cours des sept jours précédents.
-* Les plus consultés : classe les produits en fonction de la fréquence à laquelle ils ont été consultés par les acheteurs au cours des sept jours précédents.
+* Les plus achetés : classe les produits en fonction de la fréquence à laquelle les acheteurs les ont achetés au cours des sept jours précédents.
+* Les plus ajoutés au panier : classe les produits en fonction de la fréquence à laquelle les acheteurs les ont ajoutés au panier au cours des sept jours précédents.
+* Les plus consultés : classe les produits en fonction de la fréquence à laquelle les acheteurs les ont consultés au cours des sept jours précédents.
 * Recommandé pour vous : en fonction du comportement précédent et actuel de chaque acheteur sur site, classe les produits en fonction de leur probabilité d’interaction avec chacun d’eux.
 * Tendance : classe les produits selon les hausses récentes de popularité en fonction des vues.
 * Aucune : classe les produits par ordre par défaut.
 
 
-Pour toute méthode de classement intelligente, à l’exception de **Aucune**, vous pouvez définir des **[!UICONTROL Intelligent Ranking Boost]** dans l’éditeur de règles afin d’ajuster la manière dont les signaux comportementaux affectent l’ordre du produit. Pour plus d’informations sur les valeurs par défaut, les limites, le comportement de prévisualisation et la comparaison de l’amplification au **classement manuel** voir [amplification intelligente du classement](rules-add.md#intelligent-ranking-boost).
+Pour ajuster l’impact des signaux comportementaux sur l’ordre des produits pour toute méthode de classement intelligente, à l’exception de **Aucun**, définissez **[!UICONTROL Intelligent Ranking Boost]** dans l’éditeur de règles. Pour plus d’informations sur les valeurs par défaut, les limites, le comportement de prévisualisation et la comparaison de l’amplification au **classement manuel** voir [amplification intelligente du classement](rules-add.md#intelligent-ranking-boost).
 
 Le **classement manuel** permet aux utilisateurs de remplacer l’ordre de tri automatique des produits en définissant des règles manuelles d’épinglage, d’amplification, d’enfouissement et de masquage.
 
 ## Classement hérité
 
-En tant que marchandiseur, vous souhaiterez peut-être pouvoir sélectionner toutes les catégories de vêtements pour femmes à trier par « tendance ». Il s&#39;agit notamment des sous-catégories « pantalons pour femmes », « chemises pour femmes » et « accessoires pour femmes ». Les catégories masculines ne doivent pas être affectées. Pour ce faire, vous pouvez utiliser les classements hérités.
+En tant que marchandiseur, sélectionnez toutes les catégories de vêtements pour femmes pour les trier par « tendance ». Cela inclut les sous-catégories « Pantalons pour femmes », « Chemises pour femmes » et « Accessoires pour femmes ». Les catégories masculines ne doivent pas être affectées. Pour ce faire, vous pouvez utiliser les classements hérités.
 
 Lors de la sélection d&#39;une méthode de classement intelligente pour une catégorie ou une sous-catégorie comportant des sous-catégories, vous pouvez activer l&#39;option **Appliquer un classement intelligent aux sous-catégories**. Cela applique la méthode de classement à toutes les sous-catégories.
 
 Ces sous-catégories héritent désormais de cette règle de la catégorie parent (« Oui » dans la colonne Classement hérité). Dans la colonne Action , les seules options disponibles sont **Modifier la règle** et **Afficher les détails**. L’option **Supprimer** est désactivée pour les règles héritées sur les sous-catégories. La suppression de l’héritage de sous-catégorie nécessite l’annulation de l’héritage de la catégorie parente.
 
-Une catégorie ou sous-catégorie ne peut avoir qu’un seul classement intelligent appliqué à la fois. Des classements manuels supplémentaires peuvent également être appliqués.
+Chaque catégorie ou sous-catégorie peut être associée à un classement intelligent au maximum. Il peut également avoir un ou plusieurs classements manuels appliqués simultanément.
 
-Si vous appliquez un classement intelligent à une catégorie et activez l&#39;option **Appliquer le classement intelligent aux sous-catégories**, tout classement intelligent déjà appliqué aux sous-catégories est remplacé.
+Si vous appliquez un classement intelligent à une catégorie et activez [!UICONTROL Apply intelligent ranking to subcategories], le classement intelligent de la catégorie remplace tout classement intelligent déjà appliqué à ses sous-catégories.
 
 ![Liste des sous-catégories écrasées](assets/category_overwite_subs.png){width="700"}
 
@@ -89,7 +89,7 @@ Lors de l’ajout direct d’un classement intelligent à une catégorie qui pos
 Lors de la suppression du classement intelligent de la catégorie , l’héritage est rétabli.
 Dans les deux scénarios, les classements manuels sont conservés.
 
-Si vous supprimez un classement intelligent d&#39;une catégorie et que l&#39;héritage des sous-catégories est sélectionné, seuls les classements intelligents hérités sont supprimés des sous-catégories. Les classements manuels ne sont pas soumis à l’héritage et le resteront.
+Si vous supprimez un classement intelligent d’une catégorie alors que [!UICONTROL Apply intelligent ranking to subcategories] est activé, seuls les classements intelligents hérités par ses sous-catégories sont supprimés. Les classements manuels sont conservés, car ils ne sont pas hérités.
 
 Une boîte de dialogue s’affiche pour expliquer quelles sous-catégories héritées sont affectées par les modifications que vous apportez à une catégorie de niveau supérieur.
 
@@ -143,11 +143,13 @@ Les événements sont des actions qui modifient les résultats de la recherche l
 
 Créer un classement manuel :
 
-1. Configurez une règle de classement intelligent pour une catégorie comme décrit ci-dessus. Les résultats de la requête s’affichent dans l’aperçu de la page des catégories. Cette action utilise vos données de recherche en direct pour prévisualiser les résultats.
+1. Configurez une règle de classement intelligent pour une catégorie comme décrit ci-dessus.
+
+   Les résultats de la requête s’affichent dans la vue de page Prévisualiser la catégorie . Cette action utilise vos données de recherche en direct pour prévisualiser les résultats.
 
 1. Cliquez sur un produit et faites-le glisser dans l’aperçu de la page des catégories. Faites-la glisser et déposez-la à l’emplacement souhaité. Les champs Produit et Position sont automatiquement renseignés dans le volet Événements.
 
-Vous pouvez également cliquer sur l’icône d’épingle pour épingler un produit à son emplacement actuel. Utilisez le menu contextuel représentant des points de suspension pour effectuer l’opération « Épingler en haut » ou « Épingler en bas ».
+Vous pouvez également cliquer sur l’icône d’épingle pour verrouiller un produit à son emplacement actuel. Utilisez le menu contextuel représentant des points de suspension pour effectuer l’opération Épingler en haut ou Épingler en bas.
 
 Pour ajouter manuellement un événement :
 
@@ -157,4 +159,4 @@ Pour ajouter manuellement un événement :
 
 >[!NOTE]
 >
->Les règles sont appliquées lorsqu’une catégorie spécifique est ouverte sur le storefront et qu’il existe une règle pour cette catégorie. Pour les règles de marchandisage de catégorie, l’ordre de tri par défaut est « Trier par : Position ». Si un acheteur modifie l’ordre de tri, tous les produits masqués, épinglés et enfouis ne sont plus triés.
+>Les règles sont appliquées lorsqu’une catégorie spécifique est ouverte sur le storefront et qu’il existe une règle pour cette catégorie. Pour les règles de marchandisage de catégorie, l’ordre de tri par défaut est « Trier par : position ». Si un acheteur modifie l’ordre de tri, tous les produits masqués, épinglés et enfouis ne sont plus triés.

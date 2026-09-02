@@ -15,7 +15,7 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
 source-wordcount: 921
 ht-degree: 1%
@@ -40,10 +40,10 @@ Pour vous assurer que chaque domaine fonctionnel de l’espace de travail contie
 1. Luma - La collecte de données est disponible par défaut.
 1. Découplé - La collecte de données doit être configurée manuellement, en fonction de l’implémentation du storefront.
 
-Si vous utilisez un storefront découplé, reportez-vous à la documentation suivante pour obtenir plus d’informations sur les événements requis à ajouter :
+Pour plus d’informations sur les événements requis à ajouter si vous utilisez un storefront découplé, reportez-vous à la documentation suivante :
 
 - [Événements requis](events.md) pour le tableau de bord des recommandations de produits.
-- [collecteur d’événements Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) qui doit être ajouté comme condition préalable.
+- [collecteur d’événements Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework) qui doit être ajouté comme condition préalable.
 - [Exemples](https://github.com/adobe/commerce-events/tree/main/examples) de la structure des événements.
 
 ## Définir la portée

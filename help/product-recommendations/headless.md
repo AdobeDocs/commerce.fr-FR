@@ -15,9 +15,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 363
+source-wordcount: 365
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ Les intégrateurs personnalisés et découplés doivent se reporter à ces instr
 
 >[!NOTE]
 >
->Les instances découplées doivent implémenter des événements pour alimenter le tableau de bord des recommandations de produits.
+>Les instances découplées doivent implémenter des événements pour prendre en charge le tableau de bord des recommandations de produits.
 
 Pour intégrer [!DNL Product Recommendations] dans un storefront découplé, vous devez :
 
-1. Envoyez des données comportementales à Adobe AI pour analyser et calculer les résultats des recommandations de produits. Vous pouvez également envoyer des données supplémentaires pour activer la recommandation de produit [rapport de mesures](workspace.md).
+1. Envoyez des données comportementales à Adobe AI pour analyser et calculer les résultats des recommandations de produits. Pour activer la recommandation de produit [rapport de mesures](workspace.md), vous pouvez également envoyer des données supplémentaires.
 
 1. Récupérez les résultats des recommandations de produits et effectuez leur rendu sur la page.
 
@@ -44,7 +44,7 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
 
 1. [Installez](install-configure.md) le module [!DNL Product Recommendations].
 
-1. Installez et utilisez le [SDK d’événement de storefront d’Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) pour déclencher les [événements comportementaux](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations).
+1. Pour déclencher le [événement comportemental](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations), installez et utilisez le [SDK d’événement de storefront Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
    Événements minimaux requis pour renvoyer [!DNL Product Recommendations] résultats :
 
@@ -63,10 +63,10 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
    | `rec-click` | recommendation-unit |
    | `rec-add-to-cart-click` | recommendation-unit (si un bouton « Ajouter au panier » est présent dans le modèle de recommandations) |
 
-1. Lorsque les événements sont déclenchés, utilisez le [collecteur d’événements du storefront d’](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) pour gérer les événements et les envoyer à Adobe AI.
+1. Lorsque les événements sont déclenchés, utilisez le [collecteur d’événements du storefront d’](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/) pour gérer les événements et les envoyer à Adobe AI.
 
 1. Une fois les données comportementales collectées, vous pouvez [créer](create.md) [!DNL Product Recommendations] dans l’Administration.
 
 1. Utilisez le SDK Recommendations[&#128279;](https://developer.adobe.com/commerce/services/product-recommendations/) pour récupérer les unités de recommandation sur le storefront. Le SDK renvoie les données de produit nécessaires pour effectuer le rendu des unités de recommandation sur une page.
 
-1. Découvrez comment utiliser la requête [`recommendations` GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) pour renvoyer des informations sur les blocs de recommandation de produit pour un SKU donné, etc.
+1. Découvrez comment utiliser la requête [`recommendations` GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations) pour renvoyer des informations sur les blocs de recommandation de produit pour un SKU donné, etc.

@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1491
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
    ![Ordre des recommandations](assets/create-recommendation-select-placement.png)
    _Ordre des recommandations sur la page_
 
-1. (Facultatif) Dans la section _Filtres_, [appliquez des filtres](filters.md) pour contrôler quels produits apparaissent dans l’unité de recommandation.
+1. (Facultatif) Pour contrôler quels produits apparaissent dans l’unité de recommandation, [appliquez des filtres](filters.md) dans la section _Filtres_.
 
    ![Filtres recommandés](assets/create-recommendation-filter-products.png)
    _Filtres de produit recommandés_
@@ -100,23 +100,23 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
 ## Indicateurs de préparation
 
-Les indicateurs de préparation indiquent les types de recommandations les plus performants en fonction du catalogue et des données comportementales disponibles. Vous pouvez également utiliser des indicateurs de préparation pour déterminer si vous rencontrez des problèmes avec votre [événement](events.md) ou si vous n’avez pas suffisamment de trafic pour renseigner le type de recommandation.
+Les indicateurs de préparation indiquent les types de recommandations les plus performants avec vos données de catalogue et comportementales disponibles. Utilisez-les pour identifier les problèmes d’événement ou le trafic insuffisant pour renseigner un type de recommandation.
 
-Les indicateurs de préparation sont classés en [sur base statique](#static-based) ou [sur base dynamique](#dynamic-based). Les données de catalogue d’utilisation basées sur statique uniquement, tandis que les données de comportement d’utilisation basées sur dynamique proviennent de vos acheteurs. Ces données comportementales sont utilisées pour [entraîner des modèles de machine learning](events.md) afin de créer des recommandations personnalisées et de calculer leur score de préparation.
+Les indicateurs de préparation se répartissent en deux catégories : [basé sur statique](#static-based) et [basé sur dynamique](#dynamic-based). Les recommandations statiques utilisent uniquement des données de catalogue. Les recommandations dynamiques utilisent les données comportementales des acheteurs pour entraîner des modèles de machine learning, générer des recommandations personnalisées et calculer le score de préparation de chaque recommandation.
 
 ### Comment les indicateurs de préparation sont calculés
 
 Les indicateurs de préparation sont une indication de la formation du modèle. Les indicateurs dépendent des types d’événements collectés, de l’ampleur des produits avec lesquels il y a eu interaction et de la taille du catalogue.
 
-Le pourcentage d’indicateur de préparation est dérivé d’un calcul qui indique le nombre de produits qui peuvent être recommandés en fonction du type de recommandation. Les statistiques sont appliquées aux produits en fonction de la taille globale du catalogue, du volume d’interactions (telles que les vues, les clics, les ajouts au panier) et du pourcentage de SKU qui enregistrent ces événements dans une certaine période. Par exemple, pendant le trafic pendant la haute saison des fêtes, les indicateurs de préparation peuvent afficher des valeurs plus élevées qu’en période de volume normal.
+Le pourcentage d’indicateur de préparation estime la proportion de produits qui peuvent être recommandés pour un type de recommandation donné. Il est calculé à l’aide de la taille du catalogue, du volume d’interaction et du pourcentage de SKU qui enregistrent les événements pertinents dans une fenêtre temporelle définie. Par exemple, les indicateurs de préparation peuvent être plus élevés pendant le trafic de pointe des vacances que pendant les périodes de trafic normal.
 
-En raison de ces variables, le pourcentage de l’indicateur de préparation peut fluctuer. Cela explique pourquoi les types de recommandations peuvent apparaître et disparaître lorsqu’ils sont « Prêts à être déployés ».
+En raison de ces variables, le pourcentage de l’indicateur de préparation peut fluctuer. Cela explique pourquoi les types de recommandations fluctuent entre « Prêt à être déployé ».
 
 Les indicateurs de préparation sont calculés en fonction de deux facteurs :
 
 * Taille suffisante du jeu de résultats : y a-t-il suffisamment de résultats renvoyés dans la plupart des scénarios pour éviter d’utiliser les [recommandations de sauvegarde](events.md#backuprecs) ?
 
-* Variété suffisante du jeu de résultats : les produits renvoyés représentent-ils une variété de produits de votre catalogue ? L’objectif avec ce facteur est d’éviter qu’une minorité de produits soit les seuls articles recommandés sur le site.
+* Les produits retournés représentent-ils une variété de produits de votre catalogue ? Ce facteur permet de s’assurer que les recommandations sur l’ensemble de votre site ne se limitent pas à un petit sous-ensemble de produits.
 
 En fonction des facteurs ci-dessus, une valeur de préparation est calculée et affichée comme suit :
 
@@ -168,7 +168,7 @@ _Type de recommandation_
 >
 >Les indicateurs peuvent ne jamais atteindre 100 %.
 
-Le pourcentage d’indicateur de préparation pour les types de recommandations qui dépendent des données du catalogue ne change pas beaucoup, car le catalogue du commerçant ne change pas souvent. Cependant, le pourcentage d’indicateur de préparation pour les types de recommandations basés sur les données comportementales de l’acheteur peut changer souvent en fonction de l’activité quotidienne de l’acheteur.
+Le pourcentage de préparation pour les types de recommandations basées sur des catalogues change généralement peu, car les catalogues sont relativement stables. En revanche, le pourcentage de préparation pour les types de recommandations basé sur les données comportementales de l’acheteur peut changer fréquemment avec l’activité quotidienne de l’acheteur.
 
 #### Que faire si le pourcentage d’indicateur de préparation est faible
 
@@ -180,16 +180,16 @@ Un faible pourcentage de préparation indique que peu de produits de votre catal
 
 Vous trouverez ci-dessous la liste des raisons possibles et des solutions aux faibles scores de préparation courants :
 
-* **Basé sur les statistiques statiques** - Des pourcentages faibles pour ces indicateurs peuvent être dus à des données de catalogue manquantes pour les produits affichables. S’ils sont inférieurs aux prévisions, une synchronisation complète peut résoudre ce problème.
-* **Basé sur la dynamique** - Les faibles pourcentages des indicateurs basés sur la dynamique peuvent être dus aux éléments suivants :
+* **Basé sur une statique** - L’absence de données de catalogue pour les produits affichables entraîne de faibles pourcentages pour ces indicateurs. S’ils sont inférieurs aux prévisions, une synchronisation complète peut résoudre ce problème.
+* **Basé sur la dynamique** - Les facteurs suivants entraînent de faibles pourcentages pour les indicateurs basés sur la dynamique :
 
-   * Champs manquants dans les [événements storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) requis pour les types de recommandation respectifs (requestId, contexte du produit, etc.)
-   * Faible trafic sur le magasin : le volume d’événements comportementaux que nous recevons est donc faible.
-   * La variété d’événements comportementaux de storefront sur différents produits de votre magasin est faible. Par exemple, si seulement 10 % de vos produits sont consultés ou achetés la plupart du temps, les indicateurs de préparation respectifs seront faibles.
+  * Champs manquants dans les [événements storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) requis pour les types de recommandation respectifs (requestId, contexte du produit, etc.)
+  * Faible trafic sur le magasin : le volume d’événements comportementaux que nous recevons est donc faible.
+  * La variété d’événements comportementaux de storefront sur différents produits de votre magasin est faible. Par exemple, si seulement 10 % de vos produits sont consultés ou achetés la plupart du temps, les indicateurs de préparation respectifs seront faibles.
 
 ## Aperçu de Recommendations {#preview}
 
-Le panneau _Aperçu des produits recommandés_ est toujours disponible avec un exemple de sélection de produits qui peuvent apparaître dans l’unité de recommandation lors de son déploiement sur le storefront.
+Le panneau _Aperçu des produits recommandés_ est toujours disponible avec un exemple de sélection de produits qui apparaissent dans l’unité de recommandation lorsqu’elle est déployée sur le storefront.
 
 Pour tester une recommandation lorsque vous travaillez dans un environnement hors production, vous pouvez récupérer les données de recommandation d’une [autre source](settings.md). Cela permet aux commerçants de tester les règles et de prévisualiser les recommandations avant le déploiement en production.
 
@@ -200,9 +200,9 @@ Pour tester une recommandation lorsque vous travaillez dans un environnement hor
 | Prix | Prix du produit. |
 | Type de résultat | Principal : indique que les données d’identification collectées sont suffisantes pour afficher une recommandation.<br />Sauvegarde : indique qu’il n’y a pas suffisamment de données d’identification collectées ; une recommandation de sauvegarde est donc utilisée pour remplir le slot. Accédez à [Données comportementales](events.md) pour en savoir plus sur les modèles de machine learning et les recommandations de sauvegarde. |
 
-Lorsque vous créez votre unité de recommandation, testez le type de page, le type de recommandation et les filtres pour obtenir des commentaires en temps réel immédiats sur les produits qui seront inclus. Lorsque vous commencez à comprendre quels produits apparaissent, vous pouvez configurer l’unité de recommandation pour répondre aux besoins de votre entreprise.
+Pour voir quels produits une unité de recommandation inclut en temps réel, testez le type de page, le type de recommandation et les filtres au fur et à mesure que vous le créez. Ensuite, configurez l&#39;unité pour répondre aux besoins de votre entreprise en fonction des produits qu&#39;elle renvoie.
 
-Adobe Commerce [filtre](filters.md) recommandations pour éviter d’afficher des produits en double lorsque plusieurs unités de recommandation sont déployées sur une seule page. Par conséquent, les produits qui s’affichent dans le panneau d’aperçu peuvent différer de ceux qui s’affichent dans le storefront.
+Lorsque plusieurs unités de recommandation sont déployées sur la même page, Adobe Commerce a utilisé [filtres](#filters.md) pour supprimer les produits en double des recommandations qu’il affiche. Par conséquent, le panneau de prévisualisation peut afficher un ensemble de produits différent de celui du storefront.
 
 >[!NOTE]
 >

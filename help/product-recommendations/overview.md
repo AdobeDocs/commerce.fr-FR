@@ -17,16 +17,16 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 744
+source-wordcount: 732
 ht-degree: 0%
 
 ---
 
 # Que sont les [!DNL Product Recommendations] ?
 
-[!DNL Product Recommendations] vous aider à afficher des recommandations de produits personnalisées sur les storefronts Adobe Commerce à l’aide d’[Adobe AI](https://business.adobe.com/fr/ai.html) et du machine learning sur le comportement agrégé des acheteurs et votre catalogue. Cette présentation couvre les contraintes de service (y compris la loi HIPAA), les données et la confidentialité, l’emplacement des unités de recommandation, les chemins d’implémentation de storefront, la manière dont les recommandations complètent les relations produit et la conservation des données de catalogue.
+[!DNL Product Recommendations] utiliser [Adobe AI](https://business.adobe.com/fr/ai.html) et le machine learning formés sur le comportement d’acheteur agrégé et les données de catalogue pour fournir des recommandations personnalisées sur les storefronts Adobe Commerce. Cette présentation couvre les contraintes de service (y compris la loi HIPAA), la confidentialité des données, l’emplacement des unités de recommandation, les options d’implémentation de storefront, l’intégration des relations produit et la conservation des données de catalogue.
 
 >[!IMPORTANT]
 >
@@ -42,7 +42,7 @@ Pour plus d’informations sur la synchronisation des données, consultez le [Ta
 
 ## Où les recommandations apparaissent
 
-Les recommandations apparaissent sur le storefront sous la forme d’unités avec des étiquettes, telles que « Les clients qui ont consulté ce produit ont également consulté ». Vous pouvez créer, gérer et déployer des recommandations dans les vues de votre boutique à partir de l’administrateur Adobe Commerce. Si votre projet Commerce utilise le connecteur [Adobe Commerce Optimizer](https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/overview), vous créez, gérez et déployez des recommandations via [Adobe Commerce Optimizer](../optimizer/overview.md).
+Les recommandations s’affichent sur le storefront sous la forme d’unités avec des étiquettes, telles que « Les clients qui ont consulté ce produit ont également consulté ». Vous pouvez créer, gérer et déployer des recommandations dans les vues de votre boutique à partir de l’administrateur Adobe Commerce. Si votre projet Commerce utilise le connecteur [Adobe Commerce Optimizer](https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/overview), vous créez, gérez et déployez des recommandations via [Adobe Commerce Optimizer](../optimizer/overview.md).
 
 ## Implémentations de Storefront
 
@@ -58,7 +58,7 @@ Sélectionnez la documentation correspondant à votre storefront :
 
 ## Recommandations de produits par rapport aux relations entre les produits
 
-Étant donné la complexité en constante évolution des achats en ligne, ce qui fonctionne le mieux pour votre vitrine est souvent une combinaison de plusieurs technologies clés. L’utilisation des relations [!DNL Product Recommendations] et [produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) vous offre davantage de flexibilité lors de la promotion de produits. Vous pouvez tirer parti des [!DNL Product Recommendations] optimisés par Adobe AI pour automatiser intelligemment vos recommandations à grande échelle. Vous pouvez ensuite tirer parti des [&#x200B; Règles de produits associés &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) lorsque vous devez intervenir manuellement pour vous assurer qu’une recommandation spécifique est envoyée à un segment d’acheteur cible ou lorsque certains objectifs commerciaux doivent être atteints.
+Étant donné la complexité en constante évolution des achats en ligne, ce qui fonctionne le mieux pour votre vitrine est souvent une combinaison de plusieurs technologies clés. L’utilisation des relations [!DNL Product Recommendations] et [produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) vous offre davantage de flexibilité lors de la promotion de produits. Pour automatiser vos recommandations à grande échelle, vous pouvez tirer parti des [!DNL Product Recommendations] optimisés par Adobe AI. Vous pouvez ensuite tirer parti des [&#x200B; Règles de produits associés &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) lorsque vous devez intervenir manuellement pour vous assurer qu’une recommandation spécifique est envoyée à un segment d’acheteur cible ou lorsque certains objectifs commerciaux doivent être atteints.
 
 Les recommandations de produits vous permettent d’effectuer les opérations suivantes :
 
@@ -68,18 +68,18 @@ Les recommandations de produits vous permettent d’effectuer les opérations su
 
 ## Démonstration des recommandations de produits
 
-Regardez cette vidéo pour en savoir plus sur [!DNL Product Recommendations] :
+Pour en savoir plus sur [!DNL Product Recommendations], regardez cette vidéo :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3449946?captions=fre_fr&quality=12)
 
 ## Politique de conservation des données de catalogue
 
-Le service [!DNL Product Recommendations] dépend des données de catalogue qui restent synchronisées avec votre environnement Adobe Commerce. Les catalogues ou environnements inactifs qui arrêtent d’interroger ces données peuvent entrer en veille, ce qui affecte les retours du service jusqu’à ce que vous réactiviez.
+Le service [!DNL Product Recommendations] dépend des données de catalogue qui restent synchronisées avec votre environnement Adobe Commerce. Les catalogues ou environnements inactifs qui arrêtent d’interroger ces données peuvent devenir inactifs, ce qui affecte les retours du service jusqu’à ce que vous réactiviez.
 
-Si vous n’envoyez pas de requête pour les données du catalogue dans votre environnement **test** pendant 90 jours consécutifs, les données du catalogue sont définies en mode veille et aucune donnée n’est renvoyée pour une requête. Les données de catalogue de votre environnement **de production** ne sont pas affectées par la règle des 90 jours.
+Si vous n’envoyez pas de requête pour les données du catalogue dans votre environnement **test** pendant 90 jours consécutifs, les données du catalogue sont définies sur le mode inactif et aucune donnée n’est renvoyée pour une requête. La règle des 90 jours n’affecte pas les données de catalogue de votre environnement **de production**.
 
-Si votre environnement comporte un **catalogue vide** 45 jours après sa création, les données du catalogue sont définies en mode veille et aucune donnée n’est renvoyée pour une requête. Cela s’applique aux environnements de production et de test.
+Si votre environnement comporte un **catalogue vide** 45 jours après sa création, les données du catalogue sont définies en mode inactif et aucune donnée n’est renvoyée pour une requête. Cela s’applique aux environnements de production et de test.
 
 ### Réactiver les données du catalogue
 
-Pour restaurer les données du catalogue après la mise en veille, [envoyez une demande d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) avec le titre « Réactiver le [!DNL Product Recommendations] » et incluez les identifiants d’environnement. Les données du catalogue doivent être restaurées dans un délai de quelques heures.
+Pour restaurer les données du catalogue après qu’elles sont devenues inactives, [envoyez une demande d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) avec le titre « Réactiver les [!DNL Product Recommendations] » et incluez les identifiants d’environnement. Les données du catalogue doivent être restaurées dans les deux heures.

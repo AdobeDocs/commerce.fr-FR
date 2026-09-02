@@ -12,24 +12,26 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 539
+source-wordcount: 524
 ht-degree: 0%
 
 ---
 
 # Widget de page de liste de produits
 
-Le [!DNL Live Search Product Listing Page Widget] (PLP) utilise la plateforme des services Commerce pour fournir une page de liste de produits performante, consultable et à facettes. Cette rubrique décrit comment activer et mettre en forme le widget PLP.
+Le [!DNL Live Search Product Listing Page Widget] (PLP) utilise la plateforme de services Commerce pour fournir une page de liste de produits performante, consultable et facettable. Cette rubrique décrit comment activer et mettre en forme le widget PLP.
 
 ## Activation du widget PLP
 
 Lors de l’installation du service [!DNL Live Search], la fonctionnalité de recherche par défaut est automatiquement convertie en [!DNL Live Search].
 
-Le widget PLP [!DNL Live Search] est activé par défaut pour les nouvelles installations.
+Les nouvelles installations activent par défaut le widget PLP [!DNL Live Search].
 
-Si vous effectuez une mise à niveau [!DNL Live Search] et que le widget PLP a déjà été désactivé, il le restera.
+Si vous mettez à niveau [!DNL Live Search] alors que le widget PLP est désactivé, il reste désactivé après la mise à niveau.
+
+
 
 >[!NOTE]
 >
@@ -42,7 +44,7 @@ Pour activer le widget PLP, procédez comme suit :
 1. Cliquez sur la section [!UICONTROL Storefront Features] .
 1. Définir [!UICONTROL Enable Product Listing Widget] = Oui
 1. Enregistrer la configuration
-1. Si vous y êtes invité, videz le cache ( accédez à Système > Outils > Gestion du cache > [!UICONTROL Flush Magento Cache]).
+1. Si vous y êtes invité, videz le cache (accédez à Système > Outils > Gestion du cache > [!UICONTROL Flush Magento Cache]).
 
 >[!IMPORTANT]
 >
@@ -50,15 +52,15 @@ Pour activer le widget PLP, procédez comme suit :
 
 ## Fonctionnalités du widget
 
-Le widget PLP fournit les fonctionnalités prêtes à l’emploi suivantes :
+Le widget PLP fournit les fonctionnalités standard suivantes :
 
 - Boutons Ajouter au panier - Disponible uniquement pour les produits simples.
 - Plusieurs images par produit : l’image peut changer lorsqu’une couleur différente est choisie pour un produit configurable.
-- Prise en charge des échantillons de couleurs : notez que l’attribut de couleur doit être orthographié `color` pour que le code puisse le valider correctement.
+- Prise en charge des échantillons de couleurs : notez que l’attribut de couleur doit être orthographié `color` pour que le code soit correctement validé.
 
 ### Personnalisation du widget
 
-Outre les fonctionnalités prêtes à l’emploi du widget PLP, vous pouvez personnaliser davantage le widget pour inclure les fonctionnalités suivantes :
+Outre les fonctionnalités standard du widget PLP, vous pouvez personnaliser davantage le widget pour inclure les fonctionnalités suivantes :
 
 - Filtrage par attributs
 - Prise en charge de plusieurs langues
@@ -76,13 +78,13 @@ Vous pouvez personnaliser l’aspect du widget PLP pour qu’il corresponde à v
 
 >[!NOTE]
 >
->Les éléments avec des classes personnalisées dans un thème Adobe Commerce ne sont pas hérités. Ces éléments doivent être ciblés par leur classe spécifique pour correspondre aux classes personnalisées. Les classes d’action principales ne fonctionneront pas sur un bouton de widget. Les éléments ciblés génériques dans le CSS sont hérités ; `button` s’applique aux boutons de widget.
+>Les éléments avec des classes personnalisées dans un thème Adobe Commerce ne sont pas hérités. Ciblez ces éléments par leur classe spécifique pour qu’ils correspondent aux classes personnalisées. Les classes d’action principales ne sont pas efficaces sur un bouton de widget. Les éléments ciblés génériques dans le CSS sont hérités ; `button` s’applique aux boutons de widget.
 
 Les balises div mises en surbrillance contiennent la classe cible `ds-sdk-product-item__product-name`.
 
 ![&#x200B; Pagination &#x200B;](assets/plp-css-example.png)
 
-Personnalisez le nom du produit en ajoutant une règle pour les mettre en majuscules.
+Personnalisez le nom du produit en ajoutant une règle pour le mettre en majuscules.
 
 ```css
 .ds-sdk-product-item__product-name {
@@ -196,10 +198,10 @@ Personnalisez le nom du produit en ajoutant une règle pour les mettre en majusc
 - `.ds-sdk-product-item__product-name`
 - `.ds-sdk-product-item__product-options`
 - `.ds-sdk-product-price`
-   - `.ds-sdk-product-price--no-discount`
-   - `.ds-sdk-product-price--grouped`
-   - `.ds-sdk-product-price--bundle`
-   - `.ds-sdk-product-price--discount`
+  - `.ds-sdk-product-price--no-discount`
+  - `.ds-sdk-product-price--grouped`
+  - `.ds-sdk-product-price--bundle`
+  - `.ds-sdk-product-price--discount`
 
 ![Produit](assets/plp-css-product.png)
 

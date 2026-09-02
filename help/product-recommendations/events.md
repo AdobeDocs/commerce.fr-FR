@@ -18,9 +18,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1028
+source-wordcount: 937
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Lorsque vous installez et configurez [[!DNL Product Recommendations]](install-configure.md), le module déploie la collecte de données comportementales sur votre storefront. Ce mécanisme collecte des données comportementales anonymisées de vos clients et alimente [!DNL Product Recommendations]. Par exemple, l’événement `view` est utilisé pour calculer le type de recommandation `Viewed this, viewed that` et l’événement `place-order` est utilisé pour calculer le type de recommandation `Bought this, bought that`.
 
-Consultez la [documentation pour les développeurs](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) pour en savoir plus sur les données comportementales collectées par les événements [!DNL Product Recommendations].
+Pour en savoir plus sur les données comportementales collectées par les événements [!DNL Product Recommendations], consultez la [documentation destinée aux développeurs](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations).
 
 >[!NOTE]
 >
@@ -37,7 +37,9 @@ Consultez la [documentation pour les développeurs](https://developer.adobe.com/
 
 ## Clients du secteur de la santé
 
-Si vous êtes un client du secteur de la santé et que vous avez installé l’extension [Data Services HIPAA](../data-connection/hipaa-readiness.md#installation), qui fait partie de l’extension [Data Connection](../data-connection/overview.md), les données d’événement de storefront utilisées par [!DNL Product Recommendations] ne sont plus capturées. En effet, les données d’événement de storefront sont générées côté client. Pour continuer à capturer et à envoyer des données d’événement de storefront, réactivez la collecte d’événements pour [!DNL Product Recommendations]. Voir [configuration générale](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/general/general#data-services) pour en savoir plus.
+Si vous êtes un client du secteur de la santé et que vous avez installé l’extension [Data Services HIPAA](../data-connection/hipaa-readiness.md#installation), incluse avec l’extension [Data Connection](../data-connection/overview.md), [!DNL Product Recommendations] cesse de collecter les données d’événement de storefront, car elles sont générées côté client.
+
+Pour reprendre la collecte et l’envoi des données d’événement de storefront, réactivez la collecte d’événements pour [!DNL Product Recommendations]. Pour plus d’informations, voir [Configuration générale](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/general/general#data-services).
 
 ## Types de données et événements
 
@@ -48,16 +50,16 @@ Il existe deux types de données utilisées dans les recommandations de produits
 
 Lorsque vous installez le module `magento/product-recommendations`, Adobe AI agrège les données comportementales et de catalogue, créant des recommandations de produits pour chaque type de recommandation. Le service de recommandations de produits déploie ensuite ces recommandations sur votre storefront sous la forme d’un widget qui contient les _éléments_ de produit recommandés.
 
-Certains types de recommandations utilisent les données comportementales de vos clients pour entraîner des modèles de machine learning afin de créer des recommandations personnalisées. D’autres types de recommandations utilisent uniquement les données de catalogue et n’utilisent aucune donnée comportementale. Si vous souhaitez commencer rapidement à utiliser les recommandations de produits sur votre site, vous pouvez utiliser les types de recommandations de catalogue uniquement suivants :
+Certains types de recommandations utilisent les données comportementales des acheteurs pour entraîner des modèles de machine learning et générer des recommandations personnalisées. D’autres ne dépendent que des données de catalogue. Pour commencer à utiliser rapidement les recommandations de produits, choisissez l’un des types de recommandations de catalogue uniquement suivants :
 
 - `More like this`
 - `Visual similarity`
 
 ### Démarrage à froid
 
-Quand pouvez-vous commencer à utiliser des types de recommandations qui utilisent des données comportementales ? Ça dépend. C’est ce qu’on appelle le problème _Cold Start_.
+Quand pouvez-vous commencer à utiliser des types de recommandations qui utilisent des données comportementales ? Ça dépend. On appelle cette situation le problème _Cold Start_.
 
-Le problème du _démarrage à froid_ fait référence au temps nécessaire pour qu’un modèle s’entraîne et devienne efficace. Pour les recommandations de produits, cela signifie attendre qu’Adobe AI collecte suffisamment de données pour entraîner ses modèles de machine learning avant de déployer des unités de recommandation sur votre site. Plus les modèles contiennent de données, plus les recommandations sont précises et utiles. Comme la collecte de données se produit sur un site en ligne, il est préférable de démarrer ce processus rapidement en installant et en configurant le module `magento/production-recommendations`.
+Le problème du _démarrage à froid_ est le temps nécessaire pour qu’un modèle de machine learning s’entraîne avant de pouvoir produire des recommandations efficaces. Pour les recommandations de produits, Adobe AI doit collecter suffisamment de données pour entraîner ses modèles avant de déployer les unités de recommandation. Plus de données améliorent généralement la précision et l’utilité des recommandations. Comme la collecte de données se produit sur votre site en ligne, démarrez ce processus rapidement en installant et en configurant le module `magento/product-recommendations`.
 
 Le tableau suivant fournit des instructions générales sur le temps nécessaire à la collecte de suffisamment de données pour chaque type de recommandation :
 
@@ -76,15 +78,15 @@ Autres variables pouvant avoir une incidence sur le temps nécessaire à l’ent
 
 Pour visualiser plus facilement la progression de l’entraînement pour chaque type de recommandation, la page [Créer une recommandation](create.md#readiness-indicators) affiche des indicateurs de préparation.
 
-Pendant que les données sont collectées sur votre site en ligne et que les modèles de machine learning sont en cours d’entraînement, vous pouvez terminer d’autres tâches de test et de configuration nécessaires à la configuration des recommandations. Lorsque vous aurez terminé ce travail, les modèles disposeront de suffisamment de données pour créer des recommandations utiles, ce qui vous permettra de les déployer sur votre storefront.
+Pendant que votre site en ligne collecte des données et que les modèles de machine learning s’entraînent, effectuez les tâches de test et de configuration restantes. Une fois que les modèles disposent de suffisamment de données pour générer des recommandations utiles, déployez les unités de recommandation sur votre storefront.
 
-Si votre site n’obtient pas suffisamment de trafic (vues, achats, tendances) pour la plupart des SKU de produit, il se peut qu’il n’y ait pas suffisamment de données pour terminer le processus d’apprentissage. L’indicateur de préparation dans l’administrateur peut alors sembler bloqué. Les indicateurs de préparation sont destinés à fournir aux commerçants un autre point de données pour choisir le type de recommandations le mieux adapté à leur magasin. Les chiffres sont indicatifs et peuvent ne jamais atteindre 100 %. [En savoir plus](create.md#readiness-indicators) sur les indicateurs de préparation.
+Si votre site ne reçoit pas suffisamment de trafic (vues, achats ou tendances) pour la plupart des SKU de produit, le processus d’apprentissage peut ne pas se terminer, ce qui bloque les indicateurs de préparation dans l’administration. Les indicateurs de préparation aident les commerçants à choisir le meilleur type de recommandation pour leur magasin, mais ils ne sont qu&#39;un guide et peuvent ne jamais atteindre 100 %. En savoir plus sur les indicateurs de préparation. [En savoir plus](create.md#readiness-indicators) sur les indicateurs de préparation.
 
 ### Recommandations de sauvegarde {#backuprecs}
 
-Si les données d’entrée sont insuffisantes pour fournir tous les éléments de recommandation demandés dans une unité, Adobe Commerce fournit des recommandations de sauvegarde pour renseigner les unités de recommandation. Par exemple, si vous déployez le type de recommandation `Recommended for you` sur votre page d’accueil, un nouvel acheteur sur votre site n’a pas généré suffisamment de données comportementales pour recommander des produits personnalisés avec précision. Dans ce cas, Adobe Commerce propose à cet acheteur des articles basés sur le type de recommandation `Most viewed`.
+Lorsque des données d’entrée insuffisantes empêchent une unité de recommandation de renvoyer tous les éléments demandés, Adobe Commerce l’alimente avec des recommandations de sauvegarde. Par exemple, après le déploiement du type de recommandation `Recommended for you` sur la page d’accueil, un nouvel acheteur peut ne pas avoir généré suffisamment de données comportementales pour les recommandations personnalisées. Dans ce cas, Adobe Commerce affiche les éléments en fonction du type `Most viewed ` recommandation .
 
-Si la collecte des données d’entrée est insuffisante, les types de recommandation suivants reviennent à `Most viewed` type de recommandation :
+Si la collecte des données d’entrée est insuffisante, les types de recommandation suivants reviennent `Most viewed` type de recommandation :
 
 - `Recommended for you`
 - `Viewed this, viewed that`
@@ -96,9 +98,9 @@ Si la collecte des données d’entrée est insuffisante, les types de recommand
 
 #### Avertissements
 
-- Les bloqueurs de publicités et les paramètres de confidentialité peuvent empêcher la capture d’événements et peuvent entraîner la sous-déclaration des mesures d’engagement et de chiffre d’affaires [mesures](workspace.md#column-descriptions). En outre, certains événements peuvent ne pas être envoyés en raison de problèmes de page ou de réseau liés aux clients qui quittent la page.
+- Les bloqueurs de publicités et les paramètres de confidentialité peuvent empêcher la capture d’événements et peuvent entraîner la sous-déclaration des mesures d’engagement et de chiffre d’affaires [mesures](workspace.md#column-descriptions). En outre, certains événements ne sont pas envoyés car les acheteurs quittent la page ou rencontrent des problèmes réseau.
 - Les [implémentations découplées](headless.md) doivent implémenter des événements pour alimenter le tableau de bord des recommandations de produits.
-- Pour les produits configurables, les recommandations de produits utilisent l’image du produit parent dans l’unité de recommandation. Si aucune image n’est spécifiée pour le produit configurable, l’unité de recommandation est vide pour ce produit spécifique.
+- Pour les produits configurables, les recommandations de produits utilisent l’image du produit parent. Si le produit parent ne comporte aucune image, ce produit n’apparaît pas dans l’unité de recommandation.
 
 >[!NOTE]
 >

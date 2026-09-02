@@ -13,16 +13,16 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2045
+source-wordcount: 2001
 ht-degree: 0%
 
 ---
 
 # Types de recommandations
 
-Adobe Commerce fournit un large ensemble de recommandations que vous pouvez déployer sur différentes pages de votre site. Tous les types de recommandations sont pilotés par les données. Elles sont optimisées par des données comportementales, des données d’attributs de produit et des mesures. Pour s’y référer facilement, les types de recommandations sont regroupés comme suit :
+Adobe Commerce fournit un large ensemble de recommandations que vous pouvez déployer sur différentes pages de votre site. Tous les types de recommandations sont pilotés par les données. Les données comportementales, les données d’attributs de produit et les mesures les optimisent. Pour s’y référer facilement, les types de recommandations sont regroupés comme suit :
 
 - [Personnalisé](#personalized)
 - [Vente croisée et vente incitative](#crossup)
@@ -35,7 +35,7 @@ Adobe recommande d’appliquer les recommandations suivantes lors de l’utilisa
 
 - Ne déployez pas les mêmes recommandations sur la page de votre panier et sur la page de confirmation de commande. Pensez à utiliser `Most Added to Cart` pour la page Panier et `Bought This, Bought That` pour la page de confirmation de commande.
 
-- Gardez votre site propre. Ne déployez pas plus de trois unités de recommandation sur la même page.
+- Conservez la configuration de votre site. Ne déployez pas plus de trois unités de recommandation sur la même page.
 
 - Si votre boutique vend des vêtements, la recommandation `More like this` peut suggérer des produits spécifiques au genre qui ne correspondent pas au genre du produit affiché. Envisagez d’utiliser ce type de recommandation uniquement pour les catégories non vestimentaires.
 
@@ -49,7 +49,7 @@ Product Recommendations est un système piloté par les données qui repose sur 
 
 >[!IMPORTANT]
 >
->La plupart des types de recommandations nécessitent des données comportementales suffisantes (telles que les consultations de produits, les actions d’ajout au panier et les achats) pour générer des résultats significatifs. Le système nécessite généralement plusieurs jours d’activité d’acheteur active pour créer des recommandations précises. Consultez [Indicateurs de préparation](create.md#readiness-indicators) pour découvrir comment le trafic du site permet de renseigner les différents types de recommandations.
+>La plupart des types de recommandations nécessitent des données comportementales suffisantes (telles que les consultations de produits, les actions d’ajout au panier et les achats) pour générer des résultats significatifs. Le système nécessite généralement plusieurs jours d’activité d’acheteur active pour créer des recommandations précises. Pour savoir comment le trafic du site permet de renseigner les différents types de recommandations, consultez [Indicateurs de préparation](create.md#readiness-indicators).
 
 ### Que se passe-t-il si les données sont insuffisantes ?
 
@@ -61,11 +61,11 @@ Lorsqu’il n’y a pas suffisamment de données d’événement pour générer 
 
 ## Personnalisé {#personalized}
 
-Ces types de recommandations recommandent des produits en fonction de l’historique comportemental de l’acheteur spécifique sur votre site. Par exemple, si un acheteur a déjà recherché une veste ou acheté une veste sur votre site, ces recommandations reprennent essentiellement là où il s’était arrêté et recommandent d’autres vestes ou produits similaires.
+Ces types de recommandations recommandent des produits en fonction de l’historique comportemental de l’acheteur spécifique sur votre site. Par exemple, si un acheteur a déjà parcouru ou acheté une veste sur votre site, ces recommandations reprennent son activité précédente et recommandent d’autres vestes ou produits similaires.
 
 >[!NOTE]
 >
->Les recommandations personnalisées exigent que les acheteurs aient un historique comportemental établi. Les nouveaux visiteurs ou acheteurs sans historique d’interaction suffisant verront [recommandations de sauvegarde](events.md#backup-recommendations) telles que Produits les plus consultés jusqu’à ce qu’ils génèrent suffisamment de signaux comportementaux sur votre site.
+>Les recommandations personnalisées exigent que les acheteurs aient un historique comportemental établi. Les nouveaux visiteurs ou acheteurs sans historique d’interaction suffisant voient [recommandations de sauvegarde](events.md#backup-recommendations) comme Produits les plus consultés jusqu’à ce qu’ils génèrent suffisamment de signaux comportementaux sur votre site.
 
 | Type | Description |
 |---|---|
@@ -74,7 +74,7 @@ Ces types de recommandations recommandent des produits en fonction de l’histor
 
 ## Vente croisée et vente incitative {#crossup}
 
-Ces types de recommandations sont pilotés par les réseaux sociaux pour aider les acheteurs à trouver ce que les autres ont aimé ou pilotés par les produits pour les aider à trouver d’autres produits similaires. Les produits recommandés complètent souvent le produit sélectionné.
+Ces types de recommandations sont pilotés par les réseaux sociaux pour aider les acheteurs à trouver ce que les autres ont aimé. Ils sont également axés sur les produits pour les aider à trouver d&#39;autres produits similaires. Les produits recommandés complètent souvent le produit sélectionné.
 
 ### Contexte de page pour les recommandations
 
@@ -82,15 +82,15 @@ Les types de recommandation de vente croisée et de vente incitative utilisent l
 
 - **Page des détails du produit** — Utilise le SKU du produit que l’acheteur consulte.
 - **Page du panier** — Utilise les SKU des produits du panier de l’acheteur.
-- **Page de confirmation de commande** — Utilise les SKU de l&#39;achat que l&#39;acheteur vient de terminer.
+- **Page de confirmation de commande** — Utilise les SKU de l&#39;achat effectué par l&#39;acheteur.
 
 Un même type de recommandation peut produire des résultats différents selon l’emplacement de déploiement. Par exemple, *Consulté ceci, consulté cela* sur une page des détails du produit utilise le produit consulté comme contexte. Sur la page du panier, le contenu du panier est utilisé. Sur la page de confirmation de commande, il utilise la commande terminée.
 
 >[!NOTE]
 >
->Les types de recommandation « vu ceci, vu cela », « vu ceci, acheté cela » et « acheté ceci, acheté cela » n’utilisent pas de mesure d’occurrence simple, mais plutôt un algorithme de filtrage collaboratif plus sophistiqué qui recherche des *similitudes intéressantes* qui ne sont pas biaisées vers des produits populaires. Les données utilisées pour informer ces types de recommandations sont basées sur le comportement agrégé de l’acheteur dérivé de plusieurs sessions sur votre site. Les données ne sont pas basées sur le comportement de l’acheteur dérivé d’une seule occurrence en session sur votre site. Ces types de recommandations aident les acheteurs à trouver les produits adjacents qui ne sont pas nécessairement évidents à associer au produit actuellement consulté.
+>Les types de recommandation « vu ceci, vu cela », « vu ceci, acheté cela » et « acheté ceci, acheté cela » utilisent un algorithme de filtrage collaboratif sophistiqué pour identifier _similitudes intéressantes_ sans trop insister sur les produits populaires. L’algorithme utilise le comportement agrégé des acheteurs pour plusieurs sessions sur votre site plutôt que le comportement d’une seule interaction en session. Ces types de recommandations aident les acheteurs à découvrir des produits associés qui ne correspondent pas forcément au produit qu’ils consultent.
 >
->Ces types de recommandations nécessitent d’importantes données d’interaction entre produits pour identifier des corrélations significatives. Les magasins avec une diversité de catalogue de produits limitée ou un faible trafic peuvent afficher moins de recommandations jusqu’à ce que des modèles de comportement suffisants émergent.
+>Ces types de recommandations nécessitent d’importantes données d’interaction entre produits pour identifier des corrélations significatives. Les magasins dont la diversité de catalogue de produits est limitée ou le trafic faible reçoivent moins de recommandations jusqu’à ce que des modèles de comportement suffisants émergent.
 
 | Type | Description |
 |---|---|
@@ -106,7 +106,7 @@ Ces types de recommandations recommandent les produits les plus populaires ou le
 
 >[!NOTE]
 >
->Les recommandations basées sur la popularité nécessitent des données d’événement suffisantes de votre storefront. Si votre boutique est nouvelle ou a un faible trafic, ces types de recommandations peuvent renvoyer des résultats limités ou aucun résultat jusqu’à ce que des données comportementales adéquates aient été collectées. Surveillez votre [&#x200B; indicateur de préparation des données &#x200B;](workspace.md) pour garantir des performances optimales.
+>Les recommandations basées sur la popularité nécessitent des données d’événement suffisantes de votre storefront. Si votre boutique est nouvelle ou a un faible trafic, ces types de recommandations renvoient des résultats limités ou aucun résultat jusqu’à ce que des données comportementales adéquates aient été collectées. Pour garantir des performances optimales, surveillez votre [&#x200B; indicateur de préparation des données &#x200B;](workspace.md).
 
 | Type | Description |
 |---|---|
@@ -121,7 +121,7 @@ Ces types de recommandations recommandent des produits les plus performants en f
 
 >[!NOTE]
 >
->Les types de recommandations les plus performants reposent sur des données de conversion (achats et actions d’ajout au panier). Les nouveaux magasins ou ceux qui enregistrent de faibles volumes de conversion peuvent avoir besoin de collecter des données pendant 7 à 14 jours avant que ces recommandations ne prennent effet.
+>Les types de recommandations les plus performants reposent sur des données de conversion (achats et actions d’ajout au panier). Les nouveaux magasins ou ceux qui enregistrent de faibles volumes de conversion doivent collecter des données pendant 7 à 14 jours avant que ces recommandations ne prennent effet.
 
 | Type | Description |
 |---|---|
@@ -153,7 +153,7 @@ Adobe AI utilise l’IA pour traiter et analyser les images de votre catalogue e
 >
 > Actuellement, la taille des images du produit doit être inférieure ou égale à 10 Mo.
 
-Comme ce type de recommandation ne s’applique pas à la plupart des catalogues, il n’est pas activé par défaut. Vous devez activer explicitement ce type de recommandation.
+Comme ce type de recommandation ne s’applique pas à la plupart des catalogues, le système ne l’active pas par défaut. Activer explicitement ce type de recommandation.
 
 ### Activer le type de recommandation de similarité visuelle
 

@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 3006
+source-wordcount: 2965
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ Cet article aide les marchandiseurs à améliorer leurs fonctionnalités de rech
 
 Plusieurs facteurs clés déterminent la pertinence et l’efficacité des résultats de recherche :
 
-- Des données de produit bien structurées garantissent que les algorithmes de recherche peuvent efficacement faire correspondre les produits aux requêtes. Des données de produit de faible qualité entraînent des résultats de recherche peu pertinents. Pour influencer directement le succès de votre stratégie de marchandisage :
-   - Configurez les attributs corrects comme pouvant faire l’objet d’une recherche avec leur poids correspondant.
-   - Assurez-vous que les données contenues dans ces attributs sont pertinentes.
+- Des données de produit bien structurées garantissent que les algorithmes de recherche peuvent efficacement faire correspondre les produits aux requêtes. Des données de produit de faible qualité entraînent des résultats de recherche moins pertinents. Pour influencer directement le succès de votre stratégie de marchandisage :
+  - Configurez les attributs corrects comme pouvant faire l’objet d’une recherche avec leur poids correspondant.
+  - Assurez-vous que les données contenues dans ces attributs sont pertinentes.
 - Une expérience de recherche bien conçue renforce la confiance des clients et les incite à croire qu’ils peuvent trouver ce dont ils ont besoin.
 - Les règles de recherche sont essentielles, car elles peuvent améliorer la visibilité de certains produits en fonction de leur popularité, des nouveaux arrivants, des critères promotionnels ou de toute autre stratégie de marchandisage pour répondre aux besoins de votre entreprise.
 - La navigation à facettes permet aux acheteurs d’affiner leur recherche et d’obtenir rapidement des résultats pertinents.
@@ -41,7 +41,7 @@ Pour gérer les [!DNL Live Search], accédez à **Marketing** > *SEO et recherch
 
 ## Optimisation de votre fonctionnalité de recherche
 
-Dans cette section, vous apprendrez à optimiser votre fonctionnalité de recherche en utilisant des fonctionnalités telles que la saisie semi-automatique pour fournir des suggestions en temps réel au fur et à mesure que les acheteurs saisissent des caractères, des synonymes et des orthographes afin de vous assurer que les acheteurs trouvent des produits même s’ils utilisent des mots différents, ainsi que des facettes pour permettre aux acheteurs de réduire les résultats de recherche.
+Dans cette section, vous apprendrez à optimiser votre fonctionnalité de recherche à l’aide de fonctionnalités telles que la saisie semi-automatique, les synonymes et les facettes.
 
 ### Saisie automatique
 
@@ -55,14 +55,14 @@ En savoir plus sur le widget [popover](storefront-popover.md).
 
 ### Synonymes et fautes d&#39;orthographe
 
-Live Search gère les fautes d’orthographe par défaut. Vous pouvez configurer des synonymes afin d’inclure des mots que les acheteurs peuvent utiliser et qui diffèrent des mots spécifiés dans votre catalogue. Vous ne voulez pas perdre une vente parce que quelqu&#39;un cherche un « canapé », alors que votre produit est listé comme un « canapé ». Vous pouvez saisir un large éventail de termes de recherche en saisissant tous les mots que les clients peuvent utiliser pour trouver vos produits. Vous pouvez [définir des synonymes dans un sens ou deux](synonyms-add.md#step-2-define-the-synonym-by-type) pour améliorer les résultats.
+Live Search gère les fautes d’orthographe par défaut. Pour inclure des mots que les acheteurs utilisent et qui diffèrent des mots spécifiés dans votre catalogue, configurez des synonymes. Vous ne voulez pas perdre une vente parce que quelqu&#39;un cherche un « canapé », alors que votre produit est répertorié comme un « canapé ». Vous capturez un large éventail de termes de recherche en saisissant tous les mots possibles que les clients utilisent pour trouver vos produits. Pour améliorer les résultats, [définissez les synonymes dans un sens ou dans deux](synonyms-add.md#step-2-define-the-synonym-by-type).
 
 #### Conseils pour optimiser les synonymes
 
 - Mappez les noms de marque et les abréviations à leurs noms complets, par exemple « HP » vers « Hewlett-Packard » et les surnoms de produit courants, par exemple « iPhone » vers « Apple iPhone ».
-- Ajoutez du jargon et des termes spécifiques au secteur que les acheteurs peuvent utiliser de manière interchangeable, par exemple « baskets » et « chaussures de course ».
+- Ajoutez le jargon et les termes spécifiques au secteur que les acheteurs utilisent de manière interchangeable, par exemple « baskets » et « chaussures de course ».
 - Mettez régulièrement à jour la liste de synonymes en fonction des nouvelles tendances de recherche, des ajouts de produits et du comportement de l’acheteur.
-- Testez l’efficacité des mappages de synonymes en analysant les résultats de recherche et les commentaires des acheteurs. Affinez les mappages pour améliorer la précision et la pertinence.
+- Testez l’efficacité des mappages de synonymes en analysant les résultats de recherche et les commentaires des acheteurs. Pour améliorer la précision et la pertinence, affinez les mappages.
 
 En savoir plus sur les synonymes :
 
@@ -83,13 +83,13 @@ Pour configurer un attribut de produit en tant que facette, les [propriétés](f
 
 #### Conseils pour optimiser les facettes
 
-- Déterminez les attributs les plus pertinents et utiles de vos produits, tels que le titre, la catégorie, la marque, la gamme de prix, la couleur et la taille, puis définissez-les comme [&#x200B; facettes dynamiques &#x200B;](facets-type.md). 
+- Déterminez les attributs les plus pertinents pour vos produits et définissez-les comme [facettes dynamiques](facets-type.md). 
 - Définissez et triez des attributs de produit cohérents dans l’ensemble de votre catalogue et hautement pertinents pour vos produits afin d’améliorer la pertinence et les fonctionnalités de filtrage de vos acheteurs.
-- Assurez-vous que les libellés des facettes sont faciles à comprendre et nommés de manière cohérente sur l’ensemble du site. Par exemple, utilisez « Plage de prix » au lieu de « Coût ».
+- Assurez-vous que les libellés des facettes sont faciles à comprendre et nommés de manière cohérente sur l’ensemble du site. Par exemple, utilisez « Price Range » au lieu de « Cost ».
 - Évitez d’accabler les acheteurs en limitant le nombre de facettes aux plus importantes. Un nombre trop élevé d’options peut entraîner une fatigue liée aux décisions. Par défaut, la [!DNL Live Search] est limitée à un maximum de 100 attributs configurés en tant que facettes et 30 intervalles renvoyés dans chaque facette. En savoir plus sur les [limites des facettes](boundaries-limits.md#facets). 
 - Autoriser les acheteurs à sélectionner plusieurs critères de filtre simultanément pour affiner les résultats. Par exemple, laisser les acheteurs sélectionner les couleurs « Rouge » et « Bleu ».
 - Affichez le nombre de produits disponibles à côté de chaque facette pour donner aux acheteurs une idée des résultats de recherche auxquels ils peuvent s’attendre.
-- Implémentez des sections de facettes réductibles pour que l’interface reste propre et gérable, en particulier sur les appareils mobiles.
+- Pour que l’interface reste propre et gérable, en particulier sur les appareils mobiles, implémentez des sections de facettes réductibles.
 - Permet aux utilisateurs de réinitialiser facilement les facettes individuelles ou tous les filtres sélectionnés pour lancer une nouvelle recherche.
 
 En savoir plus sur les facettes :
@@ -105,11 +105,11 @@ Cette section explique comment améliorer la pertinence des résultats de recher
 
 ### Images
 
-Assurez-vous que les produits enfants des produits configurables possèdent des images avec les rôles appropriés. Si vous disposez de produits parents ou enfants, les résultats de la recherche peuvent ne pas contenir d’images.
+Assurez-vous que les produits enfants des produits configurables possèdent des images avec les rôles appropriés. Si des produits parents ou enfants sont manquants, les images n’apparaissent pas dans les résultats de recherche.
 
 >[!NOTE]
 >
->Les images des résultats de recherche peuvent être différentes en fonction du terme recherché. Si le terme de recherche détermine qu’un produit enfant est plus pertinent, les images du produit enfant seront utilisées au lieu des images du produit parent.
+>Les images des résultats de recherche varient en fonction du terme recherché. Si le terme de recherche détermine qu’un produit enfant est plus pertinent, les images du produit enfant remplacent les images du produit parent.
 
 ### Règles de recherche
 
@@ -127,7 +127,7 @@ Il est essentiel d’établir une règle de recherche par défaut bien pensée. 
 - Définissez automatiquement des règles de recherche pendant les périodes de promotion ou de vente en utilisant la période pendant votre période de promotion.
 - Utilisez toujours le panneau « Tester votre règle » pour prévisualiser l’impact de votre stratégie de classement intelligente sur les résultats de recherche réels pour différentes requêtes.
 - Lorsque vous activez le classement intelligent, réglez **[Classement intelligent booster](rules-add.md#intelligent-ranking-boost)** dans l’éditeur de règles pour équilibrer les signaux de style popularité avec la pertinence textuelle, et vérifiez les résultats des requêtes cibles dans **Tester votre règle**. L&#39;augmentation intelligente du classement n&#39;est pas disponible pour la stratégie **Aucune**.
-- Adaptez les résultats de la recherche en fonction du comportement de chaque acheteur à l’aide du [classement intelligent](rules-add.md#intelligent-ranking) tel que « recommandé pour vous », « le plus consulté », etc. Pour personnaliser le comportement de l’acheteur, vous devez vous assurer que l’événement est correctement implémenté. Pour les commerçants Luma, les événements sont disponibles clé en main. Pour les implémentations découplées ou personnalisées, vous devez [implémenter les événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) en fonction de vos besoins spécifiques.
+- Adaptez les résultats de la recherche en fonction du comportement de chaque acheteur à l’aide du [classement intelligent](rules-add.md#intelligent-ranking) tel que « recommandé pour vous », « le plus consulté », etc. Pour personnaliser le comportement de l’acheteur, vous devez vous assurer que l’événement est correctement implémenté. Pour les commerçants Luma, les événements sont disponibles par défaut. Pour les implémentations découplées ou personnalisées, vous devez [implémenter les événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) en fonction de vos besoins spécifiques.
 
 En savoir plus sur les règles de recherche :
 
@@ -135,12 +135,12 @@ En savoir plus sur les règles de recherche :
 - [Conditions requises](rules.md#requirements)
 - [Règle de recherche par défaut](rules.md#default-rule)
 - Gestion des règles de recherche
-   - [Créer](rules-add.md)
-   - [Modifier, afficher, supprimer](rules-manage.md)
+  - [Créer](rules-add.md)
+  - [Modifier, afficher, supprimer](rules-manage.md)
 - Collecte de données
-   - [[!DNL Live Search] des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
-   - [Collecteur d’événements Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
-   - [Événements Commerce GitHub](https://github.com/adobe/commerce-events/tree/main/examples) 
+  - [[!DNL Live Search] des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
+  - [Collecteur d’événements Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework)
+  - [Événements Commerce GitHub](https://github.com/adobe/commerce-events/tree/main/examples) 
 
 ### Utilisation des métadonnées de produit
 
@@ -177,7 +177,7 @@ La recherche des attributs incorrects peut frustrer les acheteurs et créer des 
 
 #### Pondération des attributs pouvant faire l’objet d’une recherche appropriée
 
-Pour accroître la pertinence de la recherche, attribuez un poids à chaque attribut consultable. Les attributs ayant un poids plus élevé doivent apparaître plus haut dans les résultats de la recherche. Le tri par pertinence est affecté par plusieurs critères, tels que le poids de la recherche. Cela signifie que parfois les attributs ayant un poids de recherche inférieur peuvent toujours avoir plus de pertinence que les attributs ayant un poids de recherche supérieur. D’autres critères peuvent inclure le nombre de correspondances dans un attribut donné, la position du terme de recherche trouvé et la structure textuelle globale avant et après un terme de recherche.
+Pour accroître la pertinence de la recherche, attribuez un poids à chaque attribut consultable. Les attributs ayant un poids plus élevé apparaissent plus haut dans les résultats de la recherche. Plusieurs critères, tels que le poids de la recherche, affectent le tri par pertinence. Cela signifie que parfois les attributs ayant un poids de recherche inférieur peuvent toujours avoir plus de pertinence que les attributs ayant un poids de recherche supérieur. D’autres critères peuvent inclure le nombre de correspondances dans un attribut donné, la position du terme de recherche trouvé et la structure textuelle globale avant et après un terme de recherche.
 
 **Priorités de poids :**
 
@@ -228,40 +228,40 @@ En savoir plus sur les attributs de produit pour la recherche :
 
 ## Surveillance des résultats de recherche
 
-Pour optimiser les résultats de recherche avec [!DNL Live Search], surveillez les indicateurs clés de performance (KPI) pertinents, tels que les requêtes uniques, la position moyenne des clics, les taux de clics publicitaires, le taux de conversion et le taux de résultats nul pour comprendre comment les acheteurs interagissent avec vos fonctionnalités de recherche. Ces données vous aident à mettre à jour et à affiner régulièrement vos règles de recherche.
+Pour optimiser les résultats de recherche avec [!DNL Live Search], surveillez les KPI pour comprendre comment les acheteurs interagissent avec vos fonctionnalités de recherche. Ces données vous aident à mettre à jour et à affiner régulièrement vos règles de recherche.
 
 Vous pouvez surveiller ces KPI dans l’espace de travail [!DNL Live Search] [Performances](performance.md) où vous trouverez les mesures suivantes : 
 
-- **Recherches uniques** - Nombre de requêtes de recherche distinctes effectuées sur votre site [!DNL Commerce]. Chaque recherche unique n’est comptabilisée qu’une seule fois, même si elle est répétée plusieurs fois par le même acheteur ou par différents acheteurs. Cette mesure vous aide à comprendre la diversité des termes de recherche utilisés par les clients et fournit des informations sur les produits ou les informations recherchés par les acheteurs. Le suivi des recherches uniques vous permet :
+- **Recherches uniques** - Nombre de requêtes de recherche distinctes effectuées sur votre site [!DNL Commerce]. Le système comptabilise chaque recherche unique une seule fois, même si les mêmes acheteurs ou des acheteurs différents la répètent plusieurs fois. Cette mesure vous aide à comprendre la diversité des termes de recherche utilisés par les clients et fournit des informations sur les produits ou les informations recherchés par les acheteurs. Le suivi des recherches uniques vous permet :
 
-   - Identifiez les tendances de recherche populaires et les éléments fréquemment recherchés.
-   - Détection des lacunes potentielles dans votre catalogue de produits ou votre contenu
-   - Optimisez vos fonctionnalités de recherche en ajoutant des [synonymes](synonyms.md), en créant ou en mettant à jour des règles de recherche.
+  - Identifiez les tendances de recherche populaires et les éléments fréquemment recherchés.
+  - Détection des lacunes potentielles dans votre catalogue de produits ou votre contenu
+  - Optimisez vos fonctionnalités de recherche en ajoutant des [synonymes](synonyms.md), en créant ou en mettant à jour des règles de recherche.
 
-- **Position moyenne des clics** - Indique que la position moyenne des résultats de recherche sur lesquels les acheteurs ont cliqué après avoir effectué une requête sur votre site. Cette mesure fournit des informations sur la pertinence et l’efficacité de vos résultats de recherche.
+- **Position moyenne des clics** - Indique la position moyenne des résultats de recherche sur lesquels les acheteurs ont cliqué après avoir effectué une requête sur votre site. Cette mesure fournit des informations sur la pertinence et l’efficacité de vos résultats de recherche.
 
   Une position de clic moyenne inférieure (plus proche de 1) suggère que les acheteurs trouvent rapidement des résultats pertinents, ce qui indique que votre stratégie de recherche est efficace. Cela vous aide à comprendre le comportement des acheteurs et jusqu’où ils sont prêts à faire défiler l’écran pour trouver le produit souhaité. Si la position moyenne des clics est élevée, cela peut indiquer que les résultats les plus pertinents n’apparaissent pas en haut de l’écran, ce qui nécessite une révision et une optimisation de votre stratégie de recherche.
 
-- **Taux de clic publicitaire (CTR)** - Mesure le pourcentage d’acheteurs qui cliquent sur un résultat de recherche après avoir exécuté une requête. Un CTR élevé indique que les résultats de la recherche sont pertinents et attrayants pour les acheteurs, car ils cliquent sur les résultats qu’ils trouvent. La surveillance de la RCT peut aider à identifier les domaines à améliorer. Un CTR faible peut suggérer que les résultats de recherche ne correspondent pas à l’intention de l’acheteur, ce qui entraîne un besoin d’affiner les règles de recherche, d’améliorer les données de produit ou la présentation des résultats.
+- **Taux de clic publicitaire (CTR)** - Mesure le pourcentage d’acheteurs qui cliquent sur un résultat de recherche après avoir exécuté une requête. Un CTR élevé indique que les résultats de la recherche sont pertinents et attrayants pour les acheteurs, car ils cliquent sur les résultats qu’ils trouvent. La surveillance de la RCT peut aider à identifier les domaines à améliorer. Un CTR faible suggère que les résultats de recherche ne correspondent pas à l’intention de l’acheteur, ce qui nécessite d’affiner les règles de recherche, d’améliorer les données de produit ou la présentation des résultats.
 
-- **Taux de conversion** - Indique l’efficacité de votre fonctionnalité de recherche pour stimuler les ventes et atteindre les objectifs commerciaux. Il reflète l’efficacité globale de votre fonctionnalité de recherche pour répondre aux besoins des acheteurs et faciliter une expérience d’achat fluide. Un taux de conversion élevé indique que vos résultats de recherche sont très pertinents et convaincants, ce qui pousse les acheteurs à effectuer des achats. Si le taux de conversion est faible, il peut suggérer des problèmes de pertinence de la recherche, de disponibilité du produit ou du parcours global d’acheteurs, de la recherche à l’achat.
+- **Taux de conversion** - Indique l’efficacité de votre fonctionnalité de recherche pour stimuler les ventes et atteindre les objectifs commerciaux. Il reflète l’efficacité globale de votre fonctionnalité de recherche pour répondre aux besoins des acheteurs et faciliter une expérience d’achat fluide. Un taux de conversion élevé indique que vos résultats de recherche sont très pertinents et convaincants, ce qui pousse les acheteurs à effectuer des achats. Si le taux de conversion est faible, il suggère des problèmes liés à la pertinence de la recherche, à la disponibilité du produit ou au parcours global d’achat, de la recherche à l’achat.
 
 - **Zéro résultat** - Mesure le pourcentage de requêtes de recherche sur votre site [!DNL Commerce] qui ne renvoient aucun résultat. Cette mesure est essentielle pour comprendre la fréquence à laquelle les recherches d’acheteurs échouent et peut fournir des informations sur les lacunes potentielles de votre catalogue de produits ou de la configuration de la recherche. Un taux de résultats nul élevé peut frustrer les acheteurs, ce qui entraîne une mauvaise expérience d’achat et une perte potentielle de clients. Il peut indiquer les produits ou catégories manquants dans votre catalogue que les acheteurs recherchent, guidant les décisions d’inventaire et d’inscription des produits.
 
   Pour réduire le taux de résultats nul, vous pouvez :
 
-   - Proposez des termes de recherche alternatifs ou apparentés, tels que des [synonymes](synonyms.md) si aucune correspondance exacte n’est trouvée.
-   - Passez régulièrement en revue les requêtes sans résultat pour identifier les modèles et apporter les ajustements nécessaires à votre catalogue de produits et à vos paramètres de recherche.
+  - Proposez des termes de recherche alternatifs ou apparentés, tels que des [synonymes](synonyms.md) si aucune correspondance exacte n’est trouvée.
+  - Passez régulièrement en revue les requêtes sans résultat pour identifier les modèles et apporter les ajustements nécessaires à votre catalogue de produits et à vos paramètres de recherche.
 
-- **Résultats populaires** - Peut améliorer considérablement vos résultats de recherche en les alignant avec les préférences et les comportements des acheteurs.
+- **Résultats populaires** - Améliorez vos résultats de recherche en les alignant sur les préférences et les comportements des acheteurs.
 
 Vous pouvez utiliser ces données de mesure pour optimiser votre fonctionnalité de recherche des manières suivantes :
 
-- Implémentez des règles pour classer automatiquement les produits populaires dans les résultats de recherche. Les produits fréquemment cliqués ou achetés peuvent être prioritaires pour apparaître en haut. Conservez manuellement les listes de produits populaires pour des requêtes de recherche spécifiques et assurez-vous que ces éléments sont affichés de manière bien visible.
-- Mettez en avant les produits qui sont actuellement en tendance ou qui ont connu récemment un pic de popularité. Cela peut être particulièrement efficace lors d’événements saisonniers, de vacances ou de périodes promotionnelles. Pour ce faire, utilisez le classement intelligent qui convient le mieux à votre cas d’utilisation et à vos besoins professionnels lors de la configuration d’une règle de recherche.
-- Mettez en surbrillance les filtres ou facettes populaires, si les acheteurs filtrent fréquemment par certaines marques ou plages de prix, donnez plus d’importance à ces options en épinglant ces facettes et en les triant en conséquence.
+- Pour classer les produits populaires plus haut dans les résultats de recherche, implémentez des règles. Les produits fréquemment cliqués ou achetés peuvent être prioritaires pour apparaître en haut. Conservez manuellement les listes de produits populaires pour des requêtes de recherche spécifiques et assurez-vous que ces éléments sont affichés de manière bien visible.
+- Mettez en avant les produits qui sont actuellement en tendance ou qui ont connu récemment un pic de popularité. Cette stratégie est efficace pendant les événements saisonniers, les vacances ou les périodes promotionnelles. Pour ce faire, utilisez le classement intelligent qui convient le mieux à votre cas d’utilisation et à vos besoins professionnels lors de la configuration d’une règle de recherche.
+- Mettez en surbrillance les filtres ou les facettes populaires. Si les acheteurs filtrent fréquemment par certaines marques ou plages de prix, donnez plus d’importance à ces options en épinglant ces facettes et en les triant en conséquence.
 - Lorsqu’une recherche ne produit aucun résultat, utilisez les données de résultats populaires pour suggérer d’autres produits ou catégories associées qui ont un fort engagement des acheteurs.
-- Analysez les termes de recherche populaires et les données de produit pour identifier les mots-clés importants. Optimisez les attributs pouvant faire l’objet de recherches dans votre produit avec ces mots-clés pour améliorer la pertinence de la recherche.
-- Analysez régulièrement vos données de résultats pour comprendre les tendances changeantes, les préférences et le comportement des acheteurs, identifier les principaux termes de recherche et détecter les problèmes. Utilisez cette boucle de commentaires pour affiner et améliorer en permanence vos règles de recherche et vos offres de produits
+- Pour identifier les mots-clés importants, analysez les termes de recherche populaires et les données de produit. Pour améliorer la pertinence de la recherche, optimisez les attributs pouvant faire l’objet d’une recherche de produit avec ces mots-clés.
+- Analysez régulièrement vos données de résultats pour comprendre les tendances changeantes, les préférences et le comportement des acheteurs, identifier les principaux termes de recherche et détecter les problèmes. Utilisez cette boucle de commentaires pour affiner et améliorer en permanence vos règles de recherche et vos offres de produits.
 
-Pour obtenir des données correctes dans votre rapport [!DNL Live Search], vous devez vous assurer que les événements sont correctement implémentés. Pour les commerçants Luma, les événements sont disponibles clé en main. Pour les implémentations découplées ou personnalisées, vous devez [implémenter les événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) en fonction de vos besoins spécifiques.
+Pour obtenir des données correctes dans votre rapport [!DNL Live Search], vous devez vous assurer que les événements sont correctement implémentés. Pour les commerçants Luma, les événements sont disponibles par défaut. Pour les implémentations découplées ou personnalisées, vous devez [implémenter les événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) en fonction de vos besoins spécifiques.
