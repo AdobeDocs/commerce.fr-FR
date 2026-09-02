@@ -48,7 +48,7 @@ Du côté Adobe Commerce de l’architecture, vous pouvez héberger la recherche
 
 En mettant l’accent sur la vitesse, la pertinence et la facilité d’utilisation, [!DNL Live Search] représente une amélioration significative pour les acheteurs comme pour les commerçants. Regardez la vidéo suivante, puis faites un tour rapide de [!DNL Live Search] depuis le storefront.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452571?captions=fre_fr&learn=on)
 
 Pour visionner une vidéo plus détaillée sur l’utilisation et la configuration de la recherche en direct, reportez-vous à la rubrique [Démonstration complète sur [!DNL Live Search]](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
