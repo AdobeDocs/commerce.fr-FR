@@ -3,9 +3,9 @@ title: Recherche Sémantique
 description: Activez la recherche sémantique d’IA à partir  [!DNL Live Search]  paramètres . Aucune configuration d’attribut ou modification du storefront n’est requise.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 33d9172b2d0455a061c00781128a9f2fe804af7b
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >La recherche sémantique est disponible pour les commerçants utilisant les versions 2.4.4 et plus récentes d’Adobe Commerce.
 
-La recherche sémantique utilise l’IA pour comprendre ce que les acheteurs signifient, et pas seulement les mots exacts qu’ils tapent. Les requêtes telles que « robe pour un mariage sur la plage » ou « chaussures confortables pour rester debout toute la journée » peuvent renvoyer des produits pertinents même si votre catalogue n’utilise pas ces expressions exactes.
+La recherche sémantique utilise l’IA pour comprendre ce que les acheteurs signifient, pas seulement les mots qu’ils tapent. Les requêtes telles que « robe pour un mariage sur la plage » ou « chaussures confortables pour rester debout toute la journée » peuvent renvoyer des produits pertinents même si votre catalogue n’utilise pas ces expressions exactes.
 
 [!DNL Live Search] combine la correspondance de mots-clés et la correspondance sémantique dans une seule expérience de recherche. Vous ne gérez pas de modes mot-clé et sémantique distincts sur le storefront. [!DNL Live Search] ne propose pas de commandes sémantiques avancées (par exemple, des curseurs d’amplification ou de similarité) dans l’Administration. Vous pouvez activer ou désactiver la recherche sémantique.
 
@@ -33,7 +33,7 @@ La recherche sémantique est gérée à partir de l’espace de travail **Param�
 
 ## Fonctionnement
 
-Lorsque la recherche sémantique est activée, [!DNL Live Search] utilise des attributs de catalogue prédéfinis choisis par le système (tels que le nom et la description du produit) pour interpréter la signification de la requête avec la recherche traditionnelle par mot-clé. Vous ne sélectionnez ni ne donnez la priorité aux attributs dans l’Administration.
+Pour interpréter la signification de la requête aux côtés de la recherche par mot-clé traditionnelle lorsque la recherche sémantique est activée, [!DNL Live Search] utilise des attributs de catalogue prédéfinis choisis par le système (tels que le nom et la description du produit). Vous ne sélectionnez ni ne donnez la priorité aux attributs dans l’Administration.
 
 Par exemple :
 
@@ -74,13 +74,13 @@ Les commerçants Adobe Commerce on Cloud et on-premise doivent activer manuellem
 
 ### Pour les clients [!DNL Adobe Commerce as a Cloud Service]
 
-[!DNL Adobe Commerce as a Cloud Service] clients utilisent le même espace de travail **Paramètres** dans l’administration [!DNL Live Search]. La recherche sémantique est **activée par défaut** pour les catalogues anglais éligibles. Vérifiez **[!UICONTROL Semantic search]** est activé ou désactivez-le si vous ne souhaitez pas que la correspondance sémantique soit activée sur le storefront.
+[!DNL Adobe Commerce as a Cloud Service] clients utilisent le même espace de travail **Paramètres** dans l’administration [!DNL Live Search]. Adobe Commerce active par défaut la recherche sémantique pour les catalogues anglais éligibles. Vérifiez **[!UICONTROL Semantic search]** est activé ou désactivez-le si vous ne souhaitez pas que la correspondance sémantique soit activée sur le storefront.
 
 Vous n’avez pas besoin d’une étape de publication ou d’une configuration de storefront distincte après avoir enregistré une modification.
 
 ## Valider après activation
 
-Une fois la recherche sémantique active et l’indexation terminée, Adobe recommande de valider les performances de la recherche. Utilisez l’espace de travail [Performances](performance.md) pour passer en revue les mesures et tester les requêtes importantes pour votre entreprise. Ceci s’applique que la recherche sémantique ait été activée par défaut ou que vous l’ayez activée manuellement.
+Une fois la recherche sémantique active et l’indexation terminée, Adobe recommande de valider les performances de la recherche. Utilisez l’espace de travail [Performances](performance.md) pour passer en revue les mesures et tester les requêtes importantes pour votre entreprise. Cela s’applique si le système a activé la recherche sémantique par défaut ou si vous l’avez activée manuellement.
 
 1. Consultez les termes les plus recherchés dans le rapport **Recherches uniques**.
 1. Testez les requêtes historiques à résultat nul à partir du rapport **Résultats nuls** sur le storefront.
@@ -90,7 +90,7 @@ Une fois la recherche sémantique active et l’indexation terminée, Adobe reco
 ## Bonnes pratiques
 
 - Utilisez des noms et des descriptions de produits clairs et descriptifs (idéalement de 50 à 100 mots) afin que la correspondance sémantique et les mots-clés disposent d’un texte de catalogue puissant.
-- Conservez des synonymes [synonymes](synonyms.md) spécifiques à la marque ou hautement techniques, lorsque la recherche sémantique peut ne pas couvrir des termes spécialisés.
+- Conservez des synonymes [synonymes](synonyms.md) spécifiques à la marque ou hautement techniques lorsque la recherche sémantique ne couvre pas les termes spécialisés.
 
 ## Dépannage
 

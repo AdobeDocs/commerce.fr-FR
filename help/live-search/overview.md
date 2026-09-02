@@ -4,20 +4,13 @@ description: '[!DNL Live Search] d’Adobe Commerce offre une expérience de re
 recommendations: noCatalog
 exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
 TQID: https://experienceleague.adobe.com/360T44Ynj6BelCeuhHPH4OZ-1-35ocW1s1eY3Ag49Cc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 08c4badb4cae27a2cefb9fcb8eb5589bc8264467
 workflow-type: tm+mt
-source-wordcount: 1201
+source-wordcount: 1170
 ht-degree: 1%
 
 ---
@@ -36,7 +29,7 @@ Avec [!DNL Live Search], vous pouvez :
 
 >[!IMPORTANT]
 >
->En ce qui concerne la recherche de site, Adobe Commerce vous propose des options. Avant la mise en œuvre, passez en revue les informations [Limites et limites](boundaries-limits.md) pour vous assurer qu’[!DNL Live Search] correspond aux besoins de votre entreprise.
+>Pour vous assurer que [!DNL Live Search] correspond aux besoins de votre entreprise, consultez les informations [Limites et limites](boundaries-limits.md) avant de procéder à la mise en œuvre.
 
 ## Architecture
 
@@ -46,15 +39,15 @@ Du côté Adobe Commerce de l’architecture, vous pouvez héberger la recherche
 
 ## Aperçu rapide
 
-En mettant l&#39;accent sur la vitesse, la pertinence et la facilité d&#39;utilisation, [!DNL Live Search] change la donne pour les acheteurs et les commerçants. Regardez la vidéo suivante, puis faites un tour rapide de [!DNL Live Search] depuis le storefront.
+En mettant l’accent sur la vitesse, la pertinence et la facilité d’utilisation, [!DNL Live Search] représente une amélioration significative pour les acheteurs comme pour les commerçants. Regardez la vidéo suivante, puis faites un tour rapide de [!DNL Live Search] depuis le storefront.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452571?captions=fre_fr&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-Pour visionner une vidéo plus détaillée sur l’utilisation et la configuration de la recherche en direct, reportez-vous à la rubrique [Démonstration complète sur [!DNL Live Search]](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
+Pour visionner une vidéo plus détaillée sur l’utilisation et la configuration de la recherche en direct, reportez-vous à la rubrique [Démonstration complète sur [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
 ### Rechercher en cours de frappe
 
-[!DNL Live Search] répond avec des suggestions de produits et une image miniature des principaux résultats de recherche dans une [fenêtre contextuelle](storefront-popover.md) lorsque les acheteurs saisissent des requêtes dans la zone [Rechercher](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search). La page [détails du produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/storefront/storefront) s’affiche lorsque les acheteurs cliquent sur un produit suggéré ou en vedette. Un lien _Afficher tout_ dans le pied de page de la fenêtre contextuelle affiche la page des résultats de la recherche.
+[!DNL Live Search] répond avec des suggestions de produits et une image miniature des principaux résultats de recherche dans une [fenêtre contextuelle](storefront-popover.md) lorsque les acheteurs saisissent des requêtes dans la zone [Rechercher](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search). La page [détails du produit](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) s’affiche lorsque les acheteurs cliquent sur un produit suggéré ou en vedette. Un lien _Afficher tout_ dans le pied de page de la fenêtre contextuelle affiche la page des résultats de la recherche.
 
 [!DNL Live Search] renvoie des résultats de type « recherche en cours de frappe » pour une requête comportant au moins deux caractères. Pour une correspondance partielle, le nombre maximal de caractères par mot est de 20. Le nombre de caractères de la requête n’est pas configurable. La fenêtre contextuelle inclut les champs `name`, `sku` et `category_ids`.
 
@@ -76,11 +69,11 @@ Lorsqu’une recherche est effectuée, [!DNL Live Search] exécute une recherche
 | Suppression | Suppression d’un caractère. | « cart » -> « cat » |
 | Substitution | Remplacer un caractère par un autre. | « cart » -> « cast » |
 
-En plus de la logique de recherche floue, les transpositions sont également prises en compte, c’est-à-dire que deux caractères adjacents d’un mot sont intervertis, par exemple « the » au lieu de « the ». Notez que ces limites de modification sont définies par mot et non par expression dans son ensemble.
+Outre la logique de recherche floue, les transpositions sont également prises en compte, c’est-à-dire que deux caractères adjacents d’un mot sont intervertis, par exemple « the » au lieu de « the ». Notez que ces limites de modification sont définies par mot et non par expression dans son ensemble.
 
 ### Filtres ou facettes
 
-[!DNL Live Search] pouvez filtrer les résultats en fonction de n’importe quel attribut indexé comme filtrable. Une facette est simplement un attribut filtrable qui a été configuré pour s’afficher en tant que filtre destiné à l’acheteur dans le storefront (par exemple, marque, couleur, prix).
+[!DNL Live Search] pouvez filtrer les résultats en fonction de n’importe quel attribut indexé comme filtrable. Une facette est un attribut filtrable qui a été configuré pour s’afficher en tant que filtre destiné à l’acheteur dans le storefront (par exemple, marque, couleur, prix).
 
 Certains champs internes, tels que `inStock`, peuvent être filtrés, mais pas facettisés :
 
@@ -89,13 +82,13 @@ Certains champs internes, tels que `inStock`, peuvent être filtrés, mais pas f
 
 ### Recherche filtrée avec facettes
 
-La recherche filtrée utilise plusieurs dimensions de valeurs d’attribut, ou [facettes](facets.md), comme critères de recherche. La sélection des filtres est définie par le commerçant et change en fonction des produits renvoyés, les facettes les plus couramment utilisées étant épinglées en haut de la liste.
+La recherche filtrée utilise plusieurs dimensions de valeurs d’attribut, ou [facettes](facets.md), comme critères de recherche. Le marchand définit la sélection des filtres, qui change en fonction des produits renvoyés, les facettes les plus couramment utilisées étant épinglées en haut de la liste.
 
-Utilisez les facettes comme paramètres d’URL `http://yourwebsite.com?color=red` et les résultats des filtres Live Search en fonction de ces valeurs d’attribut.
+Utilisez des facettes comme paramètres d’URL : `https://www.mywebsite.com/?color=red` et Live Search filtre les résultats en fonction de ces valeurs d’attribut.
 
 ### Synonymes
 
-[Synonymes](synonyms.md) élargissent la portée et affinent le focus des requêtes en incluant des mots que les acheteurs peuvent utiliser et qui diffèrent de ceux du catalogue. Vous pouvez affiner le dictionnaire de synonymes pour que les acheteurs restent engagés et sur le chemin de l’achat.
+[Synonymes](synonyms.md) élargissent la portée et affinent le focus des requêtes en incluant des mots que les acheteurs utilisent et qui diffèrent de ceux du catalogue. Pour que les acheteurs restent engagés et sur la voie de l’achat, affinez le dictionnaire de synonymes.
 
 ### Règles de marchandisage
 
@@ -103,9 +96,9 @@ Le marchandisage [règles](rules.md) façonne l’expérience d’achat avec des
 
 ## Composants Live Search
 
-- [!DNL Live Search] [widget contextuel](storefront-popover.md) est la zone qui s’ouvre sous le champ de recherche qui contient les résultats de la recherche.
+- [!DNL Live Search] Le [widget contextuel](storefront-popover.md) est la zone qui s’ouvre sous le champ de recherche qui contient les résultats de la recherche.
 - Le [widget de page de liste de produits](plp-styling.md) (PLP) fournit une page de liste de produits consultable avec prise en charge des facettes et des synonymes. Le widget est installé et activé dans Live Search 4.0.0+ et remplace l’adaptateur Search.
-- (**Obsolète**) L’adaptateur de recherche était le précurseur du widget PLP et a été installé avec une recherche en direct &lt; 4.0.0. Si vous utilisez une version de Live Search antérieure à la version 4.0.0, Commerce vous recommande d’effectuer la mise à niveau pour bénéficier des avantages des fonctionnalités du widget PLP et des améliorations futures. Pour plus d’informations sur la migration vers le widget PLP[&#128279;](migrate-to-plp.md) consultez le  guide de migration .
+- (**Obsolète**) L’adaptateur de recherche était le précurseur du widget PLP et a été installé avec une recherche en direct &lt; 4.0.0. Si vous utilisez une version de Live Search antérieure à la version 4.0.0, Commerce vous recommande d’effectuer la mise à niveau pour bénéficier des avantages des fonctionnalités du widget PLP et des améliorations futures. Pour plus d’informations sur la migration vers le widget PLP](migrate-to-plp.md) consultez le [ guide de migration .
 
 ## Espace de travail [!DNL Live Search]
 
@@ -117,14 +110,14 @@ L’[!DNL Live Search] [espace de travail](workspace.md) est la zone de l’Admi
 
 ## Politique de conservation des données de catalogue
 
-Si vous n’envoyez pas de requête de recherche pour les données du catalogue dans votre environnement de test pendant 90 jours consécutifs, les données du catalogue sont définies en mode veille et aucune donnée n’est renvoyée pour une requête de recherche. Les données de catalogue de votre environnement de production ne sont pas affectées par cette politique.
+Si vous n’envoyez pas de requête de recherche pour votre environnement de test pendant 90 jours, les données du catalogue passent en mode veille et ne renvoient aucun résultat. Cette politique n’affecte pas les données de catalogue de votre environnement de production.
 
 ### Environnement de test inactif
 
-Pour réactiver les données du catalogue dans votre environnement de test, [envoyez une demande d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Live Search] » et incluez les identifiants d’environnement. Les données du catalogue de votre environnement de test doivent être restaurées dans les heures qui suivent.
+Pour réactiver les données du catalogue dans votre environnement de test, [envoyez une demande d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Live Search] » et incluez les identifiants d’environnement. Les données du catalogue de votre environnement de test doivent être restaurées dans les deux heures.
 
 ### Catalogue vide
 
 Si votre environnement comporte un catalogue vide 45 jours après sa création, les données du catalogue sont définies en mode veille et aucune donnée n’est renvoyée pour une requête de recherche. Cela inclut les environnements de production et de test.
 
-Pour réactiver les données du catalogue dans votre environnement, [envoyez une demande d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Live Search] » et incluez les identifiants d’environnement. Les données de catalogue de votre environnement doivent être restaurées dans les heures qui suivent.
+Pour réactiver les données du catalogue dans votre environnement, [envoyez une demande d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) avec le titre : « Réactiver le [!DNL Live Search] » et incluez les identifiants d’environnement. Les données de catalogue de votre environnement doivent être restaurées dans les deux heures.
