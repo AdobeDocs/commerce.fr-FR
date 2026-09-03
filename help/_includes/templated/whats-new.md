@@ -1,7 +1,7 @@
 ---
-source-git-commit: a2126f6cc24cc3a17c31e0d8dd095f7d7df26354
+source-git-commit: 73cfc898b25e731238b049419fe0e964e29e92b6
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 28 Août 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour de l’<a href="https://experienceleague.adobe.com/fr/docs/commerce/live-search/release-notes">extension Live Search</a> vers la version 4.7.3 pour résoudre un problème où la fonctionnalité Ajouter au panier sur la page de liste des produits ne fonctionnait pas avec le widget PLP dans certains cas isolés.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/01028c8645f0d8ef868aacbaf14e34595bc5ccc1">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 26 Août 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">référence des codes de journal d’exportation de données</a> à partir de la dernière <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>.</p>
+</td>
+      <td>
+        Technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e91727732882ce6a990068bf2bd3c4dc9fc69370">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 25 Août 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/452a47d6769d90449ece9fe171a01a36df45324d">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 18 Août 2026
 

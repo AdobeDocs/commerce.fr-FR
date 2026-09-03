@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
+source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
 workflow-type: tm+mt
-source-wordcount: 3302
+source-wordcount: 3372
 ht-degree: 0%
 
 ---
@@ -67,21 +67,17 @@ Ce workflow partagé consolide la découverte, aligne les équipes d’ingénier
 
 ![diagramme de flux de migration](../assets/migration-flow.png)
 
-### Comparaison entre PaaS et SaaS
+### Comparaison entre SaaS et PaaS
 
-[!DNL Adobe Commerce on Cloud] ou sur site (PaaS) et [!DNL Adobe Commerce as a Cloud Service] (SaaS) diffèrent dans la façon dont ils sont gérés et dont les commerçants interagissent avec la plateforme.
+Adobe Commerce est disponible dans différents modèles de déploiement. Les principales différences résident dans le niveau de gestion de l’infrastructure, le contrôle des applications, la personnalisation et la responsabilité de la mise à niveau.
 
-**Principales différences**
+[!DNL Adobe Commerce as a Cloud Service], [!DNL Adobe Commerce on Cloud] et [!DNL Adobe Commerce on-premises] diffèrent dans la façon dont ils sont gérés et dont les commerçants interagissent avec la plateforme.
 
-- [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
-- **[!DNL Adobe Commerce on Cloud Infrastructure]** : le commerçant gère le code de l’application, les mises à niveau, les correctifs et la configuration de l’infrastructure.
-- **[!DNL Adobe Commerce]sur site** : le commerçant gère le code de l’application, les mises à niveau, les correctifs et la configuration de l’infrastructure dans l’environnement hébergé d’Adobe.
-
-  >[!NOTE]
-  >
-  >[&#x200B; Modèle de responsabilité partagée &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/shared-responsibility) pour les services (MySQL, Elasticsearch et autres).
-
-- [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} **SaaS (nouveau — [!DNL Adobe Commerce as a Cloud Service])** : Adobe gère entièrement l’application principale, l’infrastructure et les mises à jour. Les commerçants se concentrent sur la personnalisation via des points d’extensibilité (API, App Builder, SDK d’interface utilisateur). Le code de l’application principale est verrouillé.
+| Offre Adobe Commerce | Modèle d’hébergement | Responsabilité des services et des mises à jour |
+|---|---|---|
+| **[!DNL Adobe Commerce as a Cloud Service]** | SaaS : hébergés par Adobe | Adobe gère l’application Commerce principale, l’infrastructure et les mises à jour. Les commerçants étendent la plateforme par le biais d’API prises en charge et de services d’extensibilité (API, [!DNL Adobe Developer App Builder], SDK d’interface utilisateur). Les commerçants ne peuvent pas modifier le code de l’application principale. |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS : géré par Adobe | [Responsabilité partagée](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/shared-responsibility) : Adobe gère la plateforme hébergée. Le commerçant gère les correctifs au niveau de l&#39;application, le code personnalisé, la configuration et les mises à jour des extensions et des services de plateforme vers les versions prises en charge, notamment : la base de données, le cache, la recherche, l&#39;exécution PHP, le serveur web et la file d&#39;attente de messages. |
+| **[!DNL Adobe Commerce on-premises]** | Hébergé par le commerçant ou le fournisseur d&#39;hébergement | [Responsabilité du commerçant](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/overview#merchant-responsibilities) : le commerçant ou son hébergeur gère l&#39;infrastructure et l&#39;ensemble des services de la plateforme. |
 
 **Implications architecturales**
 
@@ -186,7 +182,9 @@ Vous pouvez également réexécuter des évaluations à mesure que vos applicati
 
 Chaque migration [!DNL Adobe Commerce as a Cloud Service] commence par une évaluation. Il s’agit d’un moyen rentable d’établir la portée, de réduire l’incertitude et de créer un plan directeur de migration partagé avant le début de la mise en œuvre.
 
-Pour plus d’informations sur les outils d’évaluation et le workflow de développement en aval, consultez [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/).
+Pour plus d’informations sur les outils d’évaluation et le workflow de développement en aval, consultez [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/).
+
+Pour plus d’informations sur l’agent de développement Commerce, qui est intégré à l’outil d’évaluation de la migration, voir [Agent de développement Commerce](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
 ## Migration du code et du storefront (MCP pour les développeurs et développeuses Commerce)
 
@@ -259,7 +257,9 @@ Le MCP ne gère pas la migration des données. Les données commerciales sont mi
 
 La modernisation du code et du storefront commence une fois que la feuille de route de l’outil d’évaluation de la migration a établi la portée et les priorités de la migration.
 
-Pour plus d’informations sur l’installation et l’utilisation de MCP, consultez la documentation de [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/) .
+Pour plus d’informations sur l’installation et l’utilisation de MCP, consultez la documentation de [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/) .
+
+Pour plus d’informations sur l’agent de développement Commerce, qui est intégré à l’outil d’évaluation de la migration, voir [Agent de développement Commerce](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
 ## Migration des données (service de migration des données de Commerce)
 

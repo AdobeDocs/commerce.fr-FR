@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: f37892b9a2de995dbc4b631ae1008e09cda68207
 workflow-type: tm+mt
-source-wordcount: 1027
+source-wordcount: 1029
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Le service de génération augmentée de récupération de la documentation (RAG
 
 Ce guide fournit une interface IDE pour poser des questions sur Adobe Commerce et peut vous conseiller sur les bonnes pratiques pour le développement d’applications et d’autres tâches de migration.
 
-Le service RAG fait partie du serveur MCP (Model Context Protocol) [Commerce extensibility tools](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} qui s’intègre à Cursor et à d’autres assistants d’IA compatibles avec MCP.
+Le service RAG fait partie du serveur MCP (Model Context Protocol) [Commerce extensibility tools](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"} qui s’intègre à Cursor et à d’autres assistants d’IA compatibles avec MCP.
 
 ## Documentation disponible
 

@@ -7,10 +7,10 @@ recommendations: noDisplay, noCatalog
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-source-git-commit: 43d5571c6a1a3c5152d3b389b73887fd4739fa7f
+source-git-commit: f37892b9a2de995dbc4b631ae1008e09cda68207
 workflow-type: tm+mt
-source-wordcount: 224
-ht-degree: 4%
+source-wordcount: 226
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 4%
       - [Exécuter une migration de données en bloc](migration/bulk-data/migration-guide.md)
       - [Présentation vidéo](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
     - [Outil d’évaluation de la migration](migration/assessment.md)
-    - [Outils de codage](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
+    - [Outils de codage](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"}
   - {hide-from-toc}[Service Documentation RAG](migration/doc-rag.md)
 - [Connexion en tant que client](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Points d’entrée REST du compte de carte cadeau](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}

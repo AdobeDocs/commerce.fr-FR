@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
 workflow-type: tm+mt
-source-wordcount: 2260
+source-wordcount: 2322
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ Les notes de mise à jour décrivent les mises à jour apportées aux modules [!
 * [!DNL Product Recommendations] métapaquet : `magento/product-recommendations`
 * Prise en charge de Page Builder dans le module [!DNL Product Recommendations] (facultatif) : `magento/module-page-builder-product-recommendations`
 * Prise en charge du type de recommandation de similarité visuelle pour le module [!DNL Product Recommendations] (facultatif) : `magento/module-visual-product-recommendations`
+* Prise en charge de l’optimisation rapide des images pour le module [!DNL Product Recommendations] (facultatif) : `magento/module-fastly-recommendations`
 
 Adobe prend en charge la dernière version de Product Recommendations. Les notes de mise à jour des anciennes versions sont fournies à titre de référence.
 
@@ -80,6 +81,14 @@ _25 avril 2023_
 ![Nouveau](../assets/new.svg) [!DNL Product Recommendations] clients peuvent désormais utiliser [l&#39;indexation des prix SaaS](../price-index/price-indexing.md).
 
 ## Version majeure actuelle
+
+### 6.8.0 de magento/module-fastly-recommendations
+
+_3 septembre 2026_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
+
+![Nouveau](../assets/new.svg) Ajout de la prise en charge facultative de l’optimisation rapide des images pour [!DNL Product Recommendations]. Ce module applique les paramètres [Fastly Image Optimization](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/fastly) aux URL d’images [!DNL Product Recommendations]. Pour obtenir des instructions d’installation, voir [Ajout de la prise en charge de l’optimisation d’image rapide](install-configure.md#fastlysupport) .
 
 ### 6.7.0 magento/product-recommendations
 
