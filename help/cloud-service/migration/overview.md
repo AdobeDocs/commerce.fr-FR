@@ -8,12 +8,33 @@ role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f56d26ed-050b-4fb7-b29b-8e6e994e80a2id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: eb30f47f-d87a-400f-8f78-63ce7979ff56id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
 workflow-type: tm+mt
 source-wordcount: 3372
@@ -63,11 +84,11 @@ Adobe Commerce est disponible dans différents modèles de déploiement. Les pri
 - **Plateforme sans version** : les mises à jour continues n’impliquent plus de mises à niveau de versions majeures pour le cœur de l’application.
 - **Microservices et API-first** : confiance accrue dans les API pour l’extensibilité et l’intégration.
 - **Headless par défaut (facultatif)** : Prise en charge renforcée des storefronts découplés (par exemple, le storefront Commerce optimisé par Edge Delivery Services).
-- **** : impact sur les performances front-end et le déploiement.
+- **&#x200B;**&#x200B;: impact sur les performances front-end et le déploiement.
 
 **Nouveaux outils et concepts**
 
-- [Maillage ](https://developer.adobe.com/app-builder/) et [API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)
+- [Maillage &#x200B;](https://developer.adobe.com/app-builder/) et [API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
 - [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
 - Approvisionnement en libre-service avec [Commerce Cloud Manager](../getting-started.md#create-an-instance)
@@ -122,7 +143,7 @@ L’outil d’évaluation de la migration effectue une évaluation IA de la mise
 
 L&#39;évaluation produite par l&#39;outil d&#39;évaluation de la migration n&#39;est pas seulement un rapport. L’évaluation devient un artefact de migration partagé qui informe la planification, la mise en œuvre et la validation tout au long du cycle de vie de la migration. Dans la première phase du parcours de migration, ses résultats couvrent à la fois les efforts de modernisation des applications et de migration des données qui s’ensuivent.
 
-Pour plus d’informations sur les éléments inclus dans un rapport d’évaluation de la migration et sur la manière de l’utiliser, consultez la section [ Évaluation de la migration ](./assessment.md).
+Pour plus d’informations sur les éléments inclus dans un rapport d’évaluation de la migration et sur la manière de l’utiliser, consultez la section [&#x200B; Évaluation de la migration &#x200B;](./assessment.md).
 
 ### Étapes d’évaluation
 
@@ -230,7 +251,7 @@ Sur le serveur principal, le MCP Commerce Developer modernise la couche de perso
 
 Sur le front-end, le MCP Commerce Developer [modernise les storefronts Commerce](#storefront-modernization) sur Edge Delivery Services.
 
-Le MCP ne gère pas la migration des données. Les données commerciales sont migrées par le biais du service de migration de données [](#data-migration-commerce-data-migration-service). Le MCP prend en charge les applications [!DNL App Builder] nécessaires lorsque la logique métier ou les tables personnalisées nécessitent la modernisation de l&#39;application.
+Le MCP ne gère pas la migration des données. Les données commerciales sont migrées par le biais du service de migration de données [&#128279;](#data-migration-commerce-data-migration-service). Le MCP prend en charge les applications [!DNL App Builder] nécessaires lorsque la logique métier ou les tables personnalisées nécessitent la modernisation de l&#39;application.
 
 ### Étapes suivantes
 
@@ -250,7 +271,7 @@ Le service de migration des données de Commerce remplace une migration manuelle
 
 Une migration utilise un workflow guidé, piloté par un outil de ligne de commande Docker (`./bin/console migration`). Un intégrateur ou un opérateur système exécute ce workflow sur le magasin source.
 
-La migration des données de base est automatisée, mais la plupart des migrations impliquent des schémas, des extensions et des cas de périphérie non standard. C’est pourquoi toutes les migrations commencent par une [ évaluation ](#migration-assessment-tool) du magasin source. Après avoir validé les informations d’identification et la connectivité, enregistré la migration et établi une ligne de base de vérification, vous pouvez poursuivre la migration des données.
+La migration des données de base est automatisée, mais la plupart des migrations impliquent des schémas, des extensions et des cas de périphérie non standard. C’est pourquoi toutes les migrations commencent par une [&#x200B; évaluation &#x200B;](#migration-assessment-tool) du magasin source. Après avoir validé les informations d’identification et la connectivité, enregistré la migration et établi une ligne de base de vérification, vous pouvez poursuivre la migration des données.
 
 L’outil du service de migration effectue les étapes de gestion des données suivantes :
 
@@ -292,6 +313,6 @@ Chaque extension modélisant ses données différemment, un chemin de migration 
 
 Lorsque vous êtes prêt à migrer, renseignez le [questionnaire de définition de la portée de la migration des données](../assets/data-migration-scoping-questionnaire.xlsx), qui nécessite la topologie source, la portée de l&#39;entité, les volumes, les contraintes de conformité, la mécanique de basculement et toutes les [tables personnalisées](#custom-and-third-party-data) requises pour planifier la migration. Le fait de remplir ce questionnaire permet à Adobe d’évaluer votre environnement et de planifier une fenêtre de migration.
 
-Consultez la documentation du [ Guide de l’outil de migration de données en bloc ](bulk-data/migration-tool.md) pour en savoir plus sur le workflow, les données prises en charge et la vérification.
+Consultez la documentation du [&#x200B; Guide de l’outil de migration de données en bloc &#x200B;](bulk-data/migration-tool.md) pour en savoir plus sur le workflow, les données prises en charge et la vérification.
 
 Les intégrateurs système préparant un environnement source peuvent également utiliser l’interface de ligne de commande [Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) standard et le [Adobe Developer Console](https://developer.adobe.com) pour les informations d’identification IMS.
