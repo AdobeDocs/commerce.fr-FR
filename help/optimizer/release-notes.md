@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
 workflow-type: tm+mt
-source-wordcount: 1506
+source-wordcount: 1561
 ht-degree: 0%
 
 ---
@@ -31,6 +31,20 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 * Mises à jour de l’[API REST d’ingestion de données](https://developer.adobe.com/commerce/services/reference/rest/) et de l’API [GraphQL pour la récupération des données du catalogue de storefront](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## Septembre 2026
+
+>[!BEGINSHADEBOX]
+
+_3 septembre 2026_
+
+### Classement des attributs (version bêta)
+
+[!DNL Adobe Commerce Optimizer] règles de marchandisage prennent désormais en charge [**classement des attributs**](./merchandising/rules/add.md#attribute-ranking) pour les **listes de produits**, **règle de catégorie** et **règle de recherche**. Appliquez automatiquement une action **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** à chaque produit qui correspond à une ou plusieurs conditions d’attribut, telles que la marque ou la catégorie, sans sélectionner de SKU individuels. Le classement des attributs est en version Beta. [En savoir plus](./merchandising/rules/add.md#attribute-ranking).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Août 2026
 
