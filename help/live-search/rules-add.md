@@ -3,18 +3,13 @@ title: Ajouter des règles
 description: Découvrez comment créer des règles de marchandisage de recherche.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
 TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 0a8adc9dc2c13e0f74fa21b0fbdeb3b904a9bcc6
 workflow-type: tm+mt
-source-wordcount: 2561
+source-wordcount: 2878
 ht-degree: 0%
 
 ---
@@ -26,7 +21,7 @@ Pour créer une règle, la première étape consiste à utiliser l’éditeur de
 ## Ajouter une règle
 
 1. Dans Admin, accédez à **Marketing** > SEO et recherche > **[!DNL Live Search]**.
-1. Définissez la **Portée** pour identifier la [vue de magasin](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) où la règle s’applique.
+1. Définissez la **Portée** pour identifier la [vue de magasin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) où la règle s’applique.
 1. Cliquez sur l’espace de travail **Recherche de marchandisage**.
 1. Cliquez sur **Ajouter une règle** pour lancer l’éditeur de règles.
 
@@ -101,6 +96,20 @@ Les propriétaires de magasin peuvent configurer les types de stratégies de cla
 
 Sélectionnez le type de stratégie de la règle. La fenêtre **[!UICONTROL Test your rule]** affiche les résultats attendus.
 
+### Signaux comportementaux pour les produits configurables et leurs variantes {#behavioral-signals-variants}
+
+**[!DNL Live Search]** collecte des signaux comportementaux, tels que les affichages, les événements de type « ajouter au panier » et les achats, concernant le produit spécifique avec lequel un acheteur interagit. Pour un produit configurable, cela signifie que les signaux sont enregistrés au niveau de la **variante** (produit simple), et non par rapport au parent configurable.
+
+Lors du classement d’un produit configurable, **[!DNL Live Search]** agrège les signaux comportementaux collectés de toutes ses variantes et les inclut dans le parent configurable. Le score de classement d’un produit configurable reflète les signaux combinés de chaque variante, et pas seulement d’une seule.
+
+Cette agrégation se produit dans la portée de la catégorie parcourue. Une variante ne transmet ses signaux comportementaux qu’au score de classement du parent configurable pour les catégories auxquelles cette **variante** est attribuée. Si une variante est manquante dans une catégorie, ses signaux ne sont pas pris en compte dans le classement du parent dans cette catégorie, même lorsque le parent configurable lui-même y est affecté.
+
+**Bonne pratique :** passez en revue les affectations de catégorie pour toutes les variantes de produits, en particulier dans les catalogues qui utilisent des structures de catégorie spécifiques à la taille, à la couleur ou à toute autre variante, afin de confirmer que chaque variante est affectée à chaque catégorie dans laquelle elle doit apparaître et influencer le classement.
+
+**Exemple:**
+
+Un marchandiseur organise un catalogue en sous-catégories spécifiques à la taille, telles que **200 g** et **500 g**. Un produit configurable comporte deux variantes, une pour chaque taille. Si seule la variante 200g est affectée à la catégorie 200g, les achats et les vues de la variante 500g ne contribuent pas au score de classement du produit configurable sur la page de catégorie 200g, même si la variante 500g se vend bien ailleurs. Le produit configurable peut alors être classé plus bas que prévu ou en décalage par rapport aux performances réelles des ventes, sur la page de catégorie 200g. L’affectation des deux variantes à leurs catégories respectives résout l’incohérence.
+
 ### Amplification intelligente du classement {#intelligent-ranking-boost}
 
 Dans **Recommandé pour vous**, **Les plus consultés**, **Les plus achetés**, **Les plus ajoutés au panier** et **Tendance**, l’éditeur affiche **[!UICONTROL Intelligent Ranking Boost]** (le facteur d’amplification). Il n’est pas utilisé lorsque vous sélectionnez **Aucun**.
@@ -162,6 +171,7 @@ Consultez [règles de recherche](./best-practice.md#search-rules) pour savoir co
 ### Avertissements
 
 * Les apostrophes et les guillemets dans les requêtes peuvent entraîner des problèmes mineurs de classement et de pertinence dans certaines langues.
+* Si les résultats de classement intelligent ne sont pas corrélés avec les ventes réelles ou ne visualisent pas les performances, vérifiez que toutes les variantes de produit pertinentes sont affectées à la catégorie en cours de révision. Les affectations de catégorie de variante manquantes sont une cause courante et facilement ignorée du comportement de classement inattendu. Voir [Signaux comportementaux pour les produits configurables et les variantes](#behavioral-signals-variants).
 * Pour garantir le bon fonctionnement du classement intelligent, assurez-vous que la **pondération de recherche** de tous les attributs de produit utilisés pour la recherche ou le filtrage (facettes) est `5` ou inférieure. Pour trouver ce paramètre dans l’administration [!DNL Commerce] :
 
   1. Sélectionnez **Magasins** > _Attributs_ > **Produit**.
@@ -178,10 +188,10 @@ Consultez [règles de recherche](./best-practice.md#search-rules) pour savoir co
 
 Le classement manuel (anciennement appelé Événements) est une action qui modifie les résultats de la recherche lorsque des conditions définies sont remplies. Une seule règle peut contenir jusqu’à 25 événements.
 
-* Booster - Fait monter un produit dans les résultats de recherche.
-* Enterrer : déplace un SKU vers le bas dans les résultats de recherche.
-* Épingler un produit : le produit s’affiche dans la « Position » sélectionnée sur la page.
-* Masquer un produit - Exclut un SKU des résultats de recherche.
+* **[!UICONTROL Boost]** : déplace un SKU vers le haut dans les résultats de recherche.
+* **[!UICONTROL Bury]** - Déplace un SKU vers le bas dans les résultats de recherche.
+* **[!UICONTROL Pin a product]** - Le SKU est affiché dans la « Position » sélectionnée sur la page.
+* **[!UICONTROL Hide a product]** - Exclut un SKU des résultats de recherche.
 
 Le moyen le plus simple d’épingler un produit est de le faire glisser et de le déposer.
 
@@ -199,7 +209,7 @@ Les événements ou peuvent être définis manuellement :
 
 1. Sous *Événements*, sélectionnez l’événement **Événement** qui doit avoir lieu une fois les conditions associées remplies.
 
-   Par exemple, choisissez `Hide a product`. Saisissez ensuite le nom du produit à masquer. Des produits sont suggérés lors de la saisie.
+   Par exemple, choisissez **[!UICONTROL Hide a product]**. Saisissez ensuite le nom du produit à masquer. Des produits sont suggérés lors de la saisie.
 
 1. Pour plusieurs événements, choisissez tous les autres événements que vous souhaitez déclencher lorsque les conditions sont remplies.
 
@@ -262,10 +272,10 @@ Les informations saisies ici apparaissent dans le panneau [Détails de la règle
 
 | Événement | Description |
 |--- |--- |
-| Amplifier | Déplace un SKU ou une plage de SKU vers le haut dans les résultats de recherche. Chaque élément est marqué d’un badge d’aperçu « boosté » dans les résultats de la recherche de test. |
-| Enterrer | Déplace un SKU ou une plage de SKU plus bas dans les résultats de recherche. Chaque dossier est marqué d’un badge d’aperçu « enterré » dans les résultats de la recherche de test. |
-| Épingler un produit | Associe un seul SKU à une position spécifique dans les résultats de recherche. Le produit est marqué d’un badge d’aperçu « épinglé » dans les résultats de la recherche de test. |
-| Masquer un produit | Exclut un SKU, ou une plage de SKU, des résultats de recherche. |
+| [!UICONTROL Boost] | Déplace un SKU ou une plage de SKU vers le haut dans les résultats de recherche. Chaque élément est marqué d’un badge d’aperçu « boosté » dans les résultats de la recherche de test. |
+| [!UICONTROL Bury] | Déplace un SKU ou une plage de SKU plus bas dans les résultats de recherche. Chaque dossier est marqué d’un badge d’aperçu « enterré » dans les résultats de la recherche de test. |
+| [!UICONTROL Pin a product] | Associe un seul SKU à une position spécifique dans les résultats de recherche. Le produit est marqué d’un badge d’aperçu « épinglé » dans les résultats de la recherche de test. |
+| [!UICONTROL Hide a product] | Exclut un SKU, ou une plage de SKU, des résultats de recherche. |
 
 ### Détails
 
