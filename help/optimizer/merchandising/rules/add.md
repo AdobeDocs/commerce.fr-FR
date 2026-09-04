@@ -1,7 +1,7 @@
 ---
 title: Créer et gérer des règles
 description: Découvrez comment créer et gérer des règles de marchandisage pour la recherche, les listes de produits par défaut et les pages de catégories.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
@@ -265,7 +265,7 @@ Les événements ou peuvent être définis manuellement :
 
 >[!AVAILABILITY]
 >
->Cette fonctionnalité est disponible en version [bêta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Cette fonctionnalité est disponible en version [bêta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **Classement des attributs** applique automatiquement une action **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** à chaque produit qui correspond à une ou plusieurs conditions d’attribut, sans que vous ayez à sélectionner des SKU individuels. Le classement des attributs apparaît dans l’éditeur de règles aux côtés de [Classement intelligent](#intelligent-ranking) et [Classement manuel](#manual-ranking), et est disponible pour les règles **Tous les produits**, **Règles de recherche** et **Règles de catégorie**. Utilisez-le pour adapter le merchandising à de grands catalogues, par exemple pour booster chaque produit d’une marque donnée ou pour enterrer chaque produit dans une couleur inhabituelle.
 
