@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: c08c9248b26b6e3a0271032e869753bece96a8bd
+source-git-commit: 1c8d6d2d0460df4aa18de4d7d9750b9dda4f6bc5
 workflow-type: tm+mt
-source-wordcount: 3412
+source-wordcount: 3429
 ht-degree: 0%
 
 ---
@@ -44,6 +44,12 @@ Les mises à jour incluent :
 >L’extension [!DNL SaaS data export] est un ensemble de modules installés automatiquement avec [!DNL Live Search], [!DNL Product Recommendations] et [!DNL Catalog Service]. Vous pouvez vérifier la version installée sur votre système à l’aide de [!DNL Composer]. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Versions de 2026 {#release-notes-2026}
+
+### Version 103.4.34
+
+_2 septembre 2026_
+
+![Correctif](../assets/fix.svg) Mises à jour pour prendre en charge l’intégration de Adobe Commerce Optimizer à Adobe Commerce.<!--MDEE-1417-->
 
 ### Version 103.4.33
 

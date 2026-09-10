@@ -13,9 +13,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4a9bb6c6473680ee7059d1844be5fee718a9ed68
 workflow-type: tm+mt
-source-wordcount: 917
+source-wordcount: 1054
 ht-degree: 0%
 
 ---
@@ -61,6 +61,28 @@ Les politiques avec une **Source de valeur** de **DÉCLENCHEUR** sont appelées 
 - `AC-Policy-Model`
 
 Si l’acheteur clique sur la liste déroulante **Marque**, l’en-tête de l’appel API contient `AC-Policy-Brand`, qui est configuré pour afficher uniquement les produits spécifiques à la politique de `AC-Policy-Brand`.
+
+### Déclencheurs d’en-tête HTTP à plusieurs valeurs {#multi-value-http-header-triggers}
+
+Une politique de déclenchement utilisant le type de transport `HTTP_HEADER` peut recevoir plusieurs valeurs dans un seul en-tête. Les valeurs doivent être séparées par des virgules et l’opérateur de filtre doit être `IN`. Chaque valeur est traitée comme une correspondance acceptable. Les valeurs sont évaluées avec une sémantique `OR`.
+
+Par exemple, un filtre de politique utilisant `IN` avec l’en-tête suivant :
+
+```
+AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
+```
+
+correspond aux produits dont l’attribut `vehicle` est `UNIVERSAL` ou `veh-bolt-mammoth-limited-2025`.
+
+En revanche, un opérateur de filtre de `EQUALS`, `GREATER_THAN_EQUAL` ou `LESS_THAN_EQUAL` est rejeté avec une erreur de validation.
+
+#### Notes de syntaxe
+
+- Le nom de l’en-tête correspond au nom du déclencheur que vous configurez, par exemple `AC-Policy-Vehicle`.
+- Des virgules séparent les valeurs individuelles dans l’en-tête. Lorsque le même en-tête `AC-Policy-_Name_` apparaît plusieurs fois, ses valeurs sont combinées en une seule valeur d’en-tête séparée par des virgules
+- L’opérateur de filtre est `IN`.
+- Filtre de politique avec **Source de valeur** défini sur `TRIGGER`.
+- Déclencheur dont le **type de transport** est `HTTP_HEADER`.
 
 ## Créer une politique
 

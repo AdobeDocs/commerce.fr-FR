@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+source-git-commit: 631126cc8d9b69c41aed19e30bf1503dd950d7e9
 workflow-type: tm+mt
-source-wordcount: 1561
+source-wordcount: 1626
 ht-degree: 0%
 
 ---
@@ -49,6 +49,11 @@ _3 septembre 2026_
 ## Août 2026
 
 >[!BEGINSHADEBOX]
+
+_9 septembre 2026_
+
+![Nouvelle](../assets/new.svg) **Politiques de déclenchement d’en-tête HTTP à plusieurs valeurs** : les politiques de déclenchement utilisant le type de transport `HTTP_HEADER` peuvent désormais recevoir plusieurs valeurs séparées par des virgules dans un seul en-tête (par exemple, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Les filtres de politique utilisent `IN` évaluent les valeurs avec la sémantique `OR`. Les filtres utilisant `EQUALS`, `GREATER_THAN_EQUAL` ou `LESS_THAN_EQUAL` rejettent la requête avec une erreur de validation si l’en-tête contient plusieurs valeurs. Ce comportement s’applique uniquement aux politiques de déclenchement utilisant le transport `HTTP_HEADER`. [En savoir plus](./setup/policies.md#multi-value-http-header-triggers).
+<!--COMOPT-2439-->
 
 _7 août 2026_
 
