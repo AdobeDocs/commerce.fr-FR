@@ -3,20 +3,14 @@ title: Configuration de votre storefront
 description: Découvrez comment connecter votre storefront Edge Delivery Services à votre intégration AEM Assets.
 feature: CMS, Media, Integration
 TQID: https://experienceleague.adobe.com/gl0Y2UNs3sYkXE9QYwLtAltyX1dxE699y23ey-y0KUU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7f901cec90291e264376e3f93e6ebaaccf7c15f0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: 612
 ht-degree: 0%
 
 ---
@@ -41,7 +35,7 @@ Pour activer l’intégration dans les storefronts Commerce optimisés par Edge 
 
 Les listes déroulantes Commerce détectent automatiquement la configuration `commerce-assets-enabled` et ajustent la gestion des images en conséquence.
 
-Pour plus d’informations sur l’utilisation d’AEM Assets avec le storefront Commerce optimisé par Edge Delivery Services, consultez la rubrique sur l’[intégration d’AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=fr) dans la documentation du *storefront Adobe Commerce*.
+Pour plus d’informations sur l’utilisation d’AEM Assets avec le storefront Commerce optimisé par Edge Delivery Services, consultez la rubrique sur l’[intégration d’AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) dans la documentation du *storefront Adobe Commerce*.
 
 >[!TIP]
 >
@@ -57,7 +51,7 @@ Suivez les étapes ci-après pour connecter AEM Assets à un storefront de créa
 
 >[!NOTE]
 >
->Pour obtenir des instructions de configuration détaillées, consultez [Configuration d’AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} dans la documentation Da.live et [Intégration d’AEM Assets lors de la création de contenu pour Edge Delivery Services](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} dans la documentation d’AEM Assets.
+>Pour obtenir des instructions de configuration détaillées, consultez [Configuration d’AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} dans la documentation Da.live et [Intégration d’AEM Assets lors de la création de contenu pour Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} dans la documentation d’AEM Assets.
 
 ### Étape 1 : Ouvrez la configuration de votre site dans Da.live
 
@@ -104,8 +98,8 @@ Votre storefront est maintenant connecté à AEM Assets. Vous pouvez parcourir e
 
 ## Documentation connexe
 
-* [Intégration d’](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=fr){target=_blank} dans la documentation *Adobe Commerce Storefront* : configuration du storefront et comportement de la gestion des images.
+* [Intégration d’](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} dans la documentation *Adobe Commerce Storefront* : configuration du storefront et comportement de la gestion des images.
 
-* [Intégrez AEM Assets lors de la création de contenu pour Edge Delivery Services](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} dans la documentation *AEM Assets*.
+* [Intégrez AEM Assets lors de la création de contenu pour Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} dans la documentation *AEM Assets*.
 
 * [Configuration d’AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} et [Utilisation des médias](https://docs.da.live/authors/guides/adding-media){target=_blank} dans la documentation Da.live.
