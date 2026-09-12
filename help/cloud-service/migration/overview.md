@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 3372
+source-wordcount: 3374
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Adobe Commerce est disponible dans différents modèles de déploiement. Les pri
 
 - [Maillage &#x200B;](https://developer.adobe.com/app-builder/) et [API pour Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr)
+- [Edge Delivery Services](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
 - Approvisionnement en libre-service avec [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
 ### Le parcours de migration
@@ -214,7 +214,7 @@ Bien que la migration soit le principal cas d’utilisation, le MCP pour les dé
 
 ### Modernisation du storefront
 
-Sur le front-end, le MCP Commerce Developer modernise [storefronts](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr) on Edge Delivery Services (EDS) pour Commerce à l’aide des blocs Modèle Adobe Commerce, Composants de dépôt et EDS.
+Sur le front-end, le MCP Commerce Developer modernise [storefronts](https://experienceleague.adobe.com/en/tools/commerce-storefront/) on Edge Delivery Services (EDS) pour Commerce à l’aide des blocs Modèle Adobe Commerce, Composants de dépôt et EDS.
 
 Le MCP Développeur Commerce charge les projets storefront existants en fonction du standard Commerce. Il modernise votre vitrine en :
 

@@ -26,9 +26,9 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 last-update: 2026-08-10
-source-git-commit: bffd9077e8745de887b0d97c40ec9aa0e520ce8b
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1106
+source-wordcount: 1107
 ht-degree: 3%
 
 ---
@@ -206,4 +206,4 @@ Récupérez l’_identifiant du client_ à partir du champ _[!DNL Instance Id]_&
 
 1. **Configuration d’un storefront Commerce sur[!DNL Edge Delivery Services]**
 
-   Pour connecter votre storefront à l’instance [!DNL Commerce Optimizer] et commencer à diffuser des expériences commerciales personnalisées, suivez la [documentation sur la configuration de Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=fr){target="_blank"}.
+   Pour connecter votre storefront à l’instance [!DNL Commerce Optimizer] et commencer à diffuser des expériences commerciales personnalisées, suivez la [documentation sur la configuration de Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/){target="_blank"}.

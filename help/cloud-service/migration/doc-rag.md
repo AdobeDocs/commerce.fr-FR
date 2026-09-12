@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: f37892b9a2de995dbc4b631ae1008e09cda68207
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1029
+source-wordcount: 1030
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Le tableau suivant décrit la documentation actuellement indexée par le service
 
 | Catégorie | Index | Contenu inclus | Mots-clés |
 |-------|---------|---------|------------------------|
-| [Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=fr) | commerce-storefront-docs | Edge Delivery Services, listes déroulantes, composants storefront | storefront, drop-in, EDS, liste de produits, passage en caisse |
+| [Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/) | commerce-storefront-docs | Edge Delivery Services, listes déroulantes, composants storefront | storefront, drop-in, EDS, liste de produits, passage en caisse |
 | [Extensibilité](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, événements, extensions, intégrations | webhook, événement, extension, maillage API, GraphQL |
 | [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce de base (catalogue, clients, commandes) | catalogue, produit, client, commande, inventaire |
 | [&#128279;](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, actions d’exécution, extensions d’interface utilisateur | générateur d’applications, action d’exécution, React Spectrum |

@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1737
+source-wordcount: 1738
 ht-degree: 0%
 
 ---
@@ -318,7 +318,7 @@ Utilisez l’agent pour intégrer l’API de notes à la page des détails du pr
    Les modifications suivantes devraient s’afficher dans votre environnement de développement et votre navigateur :
 
    * Un composant d’évaluation de produit est automatiquement créé.
-   * Le composant est intégré au PDP à l’aide de [emplacements d’accueil](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=fr) ou sous la forme d’un bloc autonome, selon l’architecture choisie.
+   * Le composant est intégré au PDP à l’aide de [emplacements d’accueil](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/customize/slots/) ou sous la forme d’un bloc autonome, selon l’architecture choisie.
    * Les étoiles s’affichent avec des proportions de remplissage appropriées en fonction des valeurs d’évaluation de votre API.
 
    ![Page des détails du produit présentant les évaluations par étoiles intégrées sous le titre du produit](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

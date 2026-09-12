@@ -20,9 +20,9 @@ topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1090
+source-wordcount: 1091
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ L’utilisateur d’Adobe Commerce qui configure l’intégration doit avoir acc
 
 ![check](assets/icon-check.png) **Modèle de prise en charge gérée par Adobe** - Adobe gère directement l’assistance et le dépannage, en fournissant une prise en charge fiable et une résolution rationalisée des problèmes.
 
-![vérifier](assets/icon-check.png) **Fonctionnalités du créateur Storefront d’Adobe** - La solution de gestion des ressources numériques (DAM) permet d’utiliser des ressources telles que des images, des vidéos et d’autres médias sur le [créateur Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=fr#userlabs-commerce-genai-product-visuals).
+![vérifier](assets/icon-check.png) **Fonctionnalités du créateur Storefront d’Adobe** - La solution de gestion des ressources numériques (DAM) permet d’utiliser des ressources telles que des images, des vidéos et d’autres médias sur le [créateur Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/storefront-builder/#userlabs-commerce-genai-product-visuals).
 
 >[!ENDSHADEBOX]
 

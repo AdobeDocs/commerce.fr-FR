@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 732
+source-wordcount: 738
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Sélectionnez la documentation correspondant à votre storefront :
 
 - **PWA Studio** — [Documentation PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
 - **Fronts personnalisés (par exemple, React ou Vue.js)** — [Intégrer [!DNL Product Recommendations]](headless.md) dans un storefront découplé
-- **Commerce Edge Delivery Services (EDS)** — [Documentation d’Adobe Commerce Storefront pour EDS](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=fr)
+- **Commerce Edge Delivery Services (EDS)** — [Documentation d’Adobe Commerce Storefront pour EDS](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/)
 
 >[!NOTE]
 >

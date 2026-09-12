@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1574
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Après avoir créé une recommandation, vous devez récupérer son identifiant p
 
 1. Dans la section **ID de recommandation**, copiez l’ID.
 
-1. Utilisez cet identifiant pour configurer le [menu déroulant de recommandations](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=fr) sur votre storefront Edge Delivery Services.
+1. Utilisez cet identifiant pour configurer le [menu déroulant de recommandations](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) sur votre storefront Edge Delivery Services.
 
 ## Gestion des recommandations existantes
 
@@ -212,6 +212,6 @@ Vous trouverez ci-dessous la liste des raisons possibles et des solutions aux fa
 - **Basé sur les statistiques statiques** - Des pourcentages faibles pour ces indicateurs peuvent être dus à des données de catalogue manquantes pour les produits affichables. S’ils sont inférieurs aux prévisions, une synchronisation complète peut résoudre ce problème.
 - **Basé sur la dynamique** - Les faibles pourcentages des indicateurs basés sur la dynamique peuvent être dus aux éléments suivants :
 
-   - Champs manquants dans les [événements storefront](../../setup/events/overview.md) requis pour les types de recommandation respectifs (requestId, contexte du produit, etc.)
-   - Faible trafic vers le magasin : le volume d’événements comportementaux reçus est donc faible.
-   - La variété d’événements comportementaux de storefront sur différents produits de votre magasin est faible. Par exemple, si seulement 10 % de vos produits sont consultés ou achetés la plupart du temps, les indicateurs de préparation respectifs sont faibles.
+  - Champs manquants dans les [événements storefront](../../setup/events/overview.md) requis pour les types de recommandation respectifs (requestId, contexte du produit, etc.)
+  - Faible trafic vers le magasin : le volume d’événements comportementaux reçus est donc faible.
+  - La variété d’événements comportementaux de storefront sur différents produits de votre magasin est faible. Par exemple, si seulement 10 % de vos produits sont consultés ou achetés la plupart du temps, les indicateurs de préparation respectifs sont faibles.
