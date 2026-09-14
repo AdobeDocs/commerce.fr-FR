@@ -8,36 +8,53 @@ exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 TQID: https://experienceleague.adobe.com/zKL5fNTECsNOKZfEl7OUSYHTo-wrh81z3-C7wB1SoWM
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-last-update: 2026-09-04
-source-git-commit: 5422dcaa515c4c451a038918af3e968d1cf8ae35
+    internal-label: Privacy
+last-update: 2026-09-11
+source-git-commit: 6b784df469162bd536cfa764268a7180f94cc1c7
 workflow-type: tm+mt
-source-wordcount: 1314
+source-wordcount: '1314'
 ht-degree: 0%
-
 ---
-
 # Guides des services Adobe Commerce
 
 Les services Adobe Commerce offrent de puissantes fonctionnalités qui étendent votre storefront, rationalisent les intégrations et optimisent la gestion des données.
@@ -207,11 +224,11 @@ Les outils de données vous aident à gérer et à optimiser le flux d’informa
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Surveiller la synchronisation des données" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Tableau de bord de gestion des données</strong>
          </a>
       </div>
@@ -237,7 +254,7 @@ Que vous souhaitiez développer votre entreprise, améliorer l’expérience cli
 | Création d’expériences personnalisées omnicanal | Vos données commerciales sont compartimentées, ce qui vous empêche de diffuser des expériences personnalisées sur plusieurs canaux. | Utilisez [Connexion de données](../data-connection/overview.md) pour envoyer des données comportementales, transactionnelles et de profil à Adobe Experience Platform. Créez des segments de clients sophistiqués, créez des campagnes de panier abandonnées, ciblez des audiences semblables et analysez les tendances saisonnières sur l’ensemble de votre parcours de clients. |
 | Rationalisation de la gestion des ressources numériques | La gestion des images de produit et des médias riches sur plusieurs systèmes est longue et source d’erreurs. | L’[intégration d’](../aem-assets-integration/overview.md) fournit une gestion des ressources centralisée en connectant Adobe Commerce à un projet Adobe Experience Manager Assets, en simplifiant les workflows et en assurant des expériences de marque cohérentes entre tous les points de contact. |
 | Optimiser le traitement des paiements | Les options de paiement limitées et les mauvaises expériences de paiement nuisent à la satisfaction et à la conversion des clients. | [Payment Services](../payment-services/guide-overview.md) offre plusieurs modes de paiement, y compris des versements sans intérêt, avec un tableau de bord unifié pour la gestion des paiements, des commandes et des factures. |
-| Gestion de la synchronisation des données à grande échelle | L’indexation qui nécessite de nombreuses ressources ralentit votre site et vous ne pouvez pas facilement suivre les problèmes de synchronisation des données. | [Exportation de données SaaS](../data-export/overview.md), [Indexeur de prix SaaS](../price-index/price-indexing.md) et le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synchronisent automatiquement les données de catalogue, de commande et d’inventaire, déchargent les calculs de prix sur l’infrastructure cloud d’Adobe et offrent une visibilité en temps réel sur l’état de synchronisation. |
+| Gestion de la synchronisation des données à grande échelle | L’indexation qui nécessite de nombreuses ressources ralentit votre site et vous ne pouvez pas facilement suivre les problèmes de synchronisation des données. | [Exportation de données SaaS](../data-export/overview.md), [Indexeur de prix SaaS](../price-index/price-indexing.md) et le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synchronisent automatiquement les données de catalogue, de commande et d’inventaire, déchargent les calculs de prix sur l’infrastructure cloud d’Adobe et offrent une visibilité en temps réel sur l’état de synchronisation. |
 | Reconquérir les clients perdus et réduire les retours | Les taux élevés de perte de clientèle et de retour de produits ont une incidence sur la rentabilité. | Combinez [Connexion de données](../data-connection/overview.md) avec Adobe Journey Optimizer et Real-Time CDP pour identifier les modèles de retour, créer des campagnes de reconquête, segmenter les clients par comportement et envoyer des campagnes de réengagement personnalisées par e-mail et SMS. |
 | Prendre des décisions de marchandisage axées sur les données | Vous ne savez pas quels produits promouvoir ou quand lancer des promotions. | [Live Search](../live-search/overview.md) fournit des informations sur les performances de recherche et des outils de marchandisage pour accéder aux mesures clés, analyser les termes de recherche et utiliser des règles de marchandisage intelligentes pour booster ou noyer les produits en fonction du comportement réel des clients et des objectifs commerciaux. |
 | Maintenir la conformité avec les données sensibles | Vous devez gérer les données client sensibles tout en respectant la loi HIPAA. | La norme [Data Connection](../data-connection/overview.md) est conforme à la loi HIPAA, ce qui vous permet de partager des données back-office avec Experience Platform tout en préservant la conformité et en gérant systématiquement les demandes d’accès à des informations personnelles. |
