@@ -56,7 +56,7 @@ Avant de lancer l’un de ces cas d’utilisation, vous devez remplir les condit
 1. [Créez votre instance Cloud Service](./getting-started.md#create-an-instance) à l’aide des options suivantes :
    1. Sélectionnez [!UICONTROL **Sandbox**] dans le menu déroulant [!UICONTROL **Environnement**].
    1. Sélectionnez [!UICONTROL **Adobe Store**] dans le menu déroulant [!UICONTROL **Tester les données**].
-1. [Connectez-vous à votre  [!DNL Adobe Experience Cloud] ](https://experience.adobe.com)
+1. [Connectez-vous à votre  [!DNL Adobe Experience Cloud] &#x200B;](https://experience.adobe.com)
 1. [Configurez votre storefront Cloud Service](./storefront.md) à l’aide des options suivantes :
    1. Sélectionnez [!UICONTROL `adobe-commerce/adobe-demo-store`] pour le modèle.
    1. Sélectionnez [!UICONTROL **Choisir une instance disponible (maillage -> SaaS)**] pour la méthode de connexion.
@@ -139,7 +139,7 @@ La fonctionnalité d’expérimentation contextuelle d’Adobe vous permet de cr
 
 ### Conditions préalables
 
-* Installer l’extension [](https://www.aem.live/docs/sidekick)
+* Installer l’extension [&#128279;](https://www.aem.live/docs/sidekick)
 
 1. Dans Storefront Builder, sélectionnez votre page d’index et cliquez sur [!UICONTROL **Copier**].
 
@@ -190,9 +190,9 @@ Supposons que vous souhaitiez modifier rapidement l’arrière-plan d’une imag
 
 1. Ouvrez [!DNL AEM Assets] en la sélectionnant dans l’[Adobe Experience Cloud](https://experience.adobe.com/#/home).
 
-   ![[!DNL AEM Assets] sélecteur affichant l’interface [!DNL Adobe Experience Cloud] ](./assets/select-aem-assets.png){width="600" zoomable="yes"}
+   ![[!DNL AEM Assets] sélecteur affichant l’interface [!DNL Adobe Experience Cloud] &#x200B;](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
-1. Cliquez sur [!UICONTROL ****].
+1. Cliquez sur [!UICONTROL **&#x200B;**].
 
    ![Option de navigation Assets dans [!DNL AEM Assets] interface](./assets/click-assets.png){width="600" zoomable="yes"}
 
@@ -238,7 +238,7 @@ Supposons que vous souhaitiez modifier rapidement l’arrière-plan d’une imag
 
    ![Bouton Propriétés dans [!DNL AEM Assets] barre d’outils](./assets/properties.png){width="600" zoomable="yes"}
 
-1. Sélectionnez l’onglet [!UICONTROL ****].
+1. Sélectionnez l’onglet [!UICONTROL **&#x200B;**].
 
    Onglet ![Commerce dans le panneau des propriétés de la ressource](./assets/commerce-tab.png){width="600" zoomable="yes"}
 
