@@ -23,7 +23,7 @@ L’espace de travail ** permet aux administrateurs de créer et de tester des r
 
 Cet espace de travail prend en charge les requêtes [`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) et [`attributeMetadata`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/).
 
-![Espace de travail ](assets/graphql.png)
+![Espace de travail &#x200B;](assets/graphql.png)
 
 ```graphql
 query productSearch {
