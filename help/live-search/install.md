@@ -1,6 +1,6 @@
 ---
-title: Prise en main de  [!DNL Live Search]
-description: Découvrez la configuration requise et les étapes d’installation pour  [!DNL Live Search]  à partir d’Adobe Commerce.
+title: Prise en main de [!DNL Live Search]
+description: Découvrez la configuration requise et les étapes d’installation pour [!DNL Live Search] sur Adobe Commerce.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
@@ -8,31 +8,44 @@ badgePaas: label="PaaS uniquement" type="Informative" url="https://experiencelea
 TQID: https://experienceleague.adobe.com/63Lia0NKyJV2ngoXLlcGkciK3xZWYsmtwzfkyOg5Bfw
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 last-update: 2026-09-02
-source-git-commit: 299da83bd0a9b776ad6b13482b65af61bffe15fa
+source-git-commit: c40236ec3dfbbb0f393e5d1fc4743ffc7626b11e
 workflow-type: tm+mt
-source-wordcount: 2856
+source-wordcount: '2978'
 ht-degree: 0%
-
 ---
-
 # Configuration pour la réussite avec [!DNL Live Search]
 
 Adobe Commerce [!DNL Live Search] et [[!DNL Catalog Service]](../catalog-service/guide-overview.md) fonctionnent ensemble pour fournir une solution de recherche performante, pertinente et intuitive. Cette solution permet à vos clients de trouver exactement ce dont ils ont besoin, rapidement. Plus précisément, [!DNL Catalog Service] affiche vos données de catalogue pour les services SaaS, comme les [!DNL Live Search] à utiliser.
@@ -133,11 +146,15 @@ Suivez ces instructions si vous installez [!DNL Live Search] sur une nouvelle in
    - Flux de catégories
    - Flux d’autorisations des catégories
 
-Après avoir vérifié les indexeurs, l’étape suivante consiste à [configurer les clés API](#2-configure-api-keys).
+Après avoir vérifié les indexeurs, l’étape suivante consiste à [configurer les clés API](#configure).
 
 >[!TAB Instance Commerce existante]
 
 Suivez ces instructions si vous installez [!DNL Live Search] sur une instance Commerce existante.
+
+>[!NOTE]
+>
+>Le paramètre *Admin* > _[!UICONTROL Stores]_> [!UICONTROL Settings] >_[!UICONTROL Configuration]_ > **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]** > **[!UICONTROL Enable Product Listing Widgets]** contrôle uniquement les widgets de liste de produits. Il n’existe aucun paramètre *Admin* pour désactiver l’expérience de storefront [!DNL Live Search] complète (comme la fenêtre contextuelle de recherche). Utilisez les commandes du module d’interface de ligne de commande de cette procédure pour maintenir votre recherche storefront existante active pendant que vous configurez [!DNL Live Search].
 
 1. Vérifiez que les [tâches cron](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) et [indexeurs](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management) sont en cours d’exécution.
 
@@ -153,13 +170,17 @@ Suivez ces instructions si vous installez [!DNL Live Search] sur une instance Co
    composer update magento/live-search --with-dependencies
    ```
 
-1. Désactivez les modules [!DNL Live Search] qui servent aux résultats de recherche storefront.
+1. Désactivez les modules storefront [!DNL Live Search] tout en gardant les `Magento_LiveSearchAdapter` activés.
 
    ```bash
-   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
+   bin/magento module:disable Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
    ```
 
-   [!DNL Elasticsearch] continue de gérer les requêtes de recherche du storefront pendant que le service [!DNL Live Search] synchronise les données de catalogue et indexe les produits en arrière-plan.
+   [!DNL Elasticsearch] continue de gérer les requêtes de recherche du storefront pendant que le service [!DNL Live Search] synchronise les données de catalogue et indexe les produits en arrière-plan. Garder `Magento_LiveSearchAdapter` activé ne fait pas basculer la recherche storefront vers [!DNL Live Search] ; le module doit uniquement rester activé pour que les dépendances du moteur de recherche Commerce continuent à se résoudre correctement.
+
+   >[!IMPORTANT]
+   >
+   >Gardez `Magento_LiveSearchAdapter` activé pendant cette phase, même s’il était [obsolète](release-notes.md#live-search-400) à partir de la version 4.0.0 d’[!DNL Live Search]. `Magento\Search\Model\EngineResolver` dépend de l’activation de ce module. Par conséquent, sa désactivation interrompt la recherche storefront existante avec une erreur `500`. `Magento_LiveSearchAdapter` ne peut pas non plus être désactivé lorsque `Magento_LiveSearchMetrics` est activé, car le `composer.json` du module `Magento_LiveSearchMetrics` déclare une dépendance sur `Magento_LiveSearchAdapter`. Il n’est pas nécessaire de désactiver `Magento_LiveSearchMetrics` pour ce workflow.
 
 1. Installez les mises à jour.
 
@@ -181,10 +202,10 @@ Suivez ces instructions si vous installez [!DNL Live Search] sur une instance Co
 1. Activez l’extension [!DNL Live Search] et désactivez [!DNL OpenSearch] (modules Magento Elasticsearch et OpenSearch).
 
    ```bash
-   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
    ```
 
-   ```
+   ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_Elasticsearch8 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
@@ -198,7 +219,7 @@ Suivez ces instructions si vous installez [!DNL Live Search] sur une instance Co
    bin/magento setup:upgrade
    ```
 
-Après avoir vérifié les indexeurs, l’étape suivante consiste à [configurer les clés API](#2-configure-api-keys).
+Après avoir vérifié les indexeurs, l’étape suivante consiste à [configurer les clés API](#configure).
 
 >[!ENDTABS]
 
