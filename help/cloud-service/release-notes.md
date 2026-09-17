@@ -64,7 +64,7 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 ## Septembre 2026 - #2 de mise à jour {#latest}
 
-[!BADGE  Sandbox ]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+[!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
@@ -146,7 +146,7 @@ Les éléments suivants ont été publiés en production le 8 septembre 2026.
 
 [!DNL Adobe Commerce as a Cloud Service] contient désormais toutes les modifications de [!DNL Adobe Commerce] version 2.4.9.
 
-Pour plus d’informations](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9) consultez les notes de mise à jour d’[Adobe Commerce 2.4.9 .
+Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9) consultez les notes de mise à jour d’Adobe Commerce 2.4.9 .
 
 ### Synchroniser les configurations de sandbox et de production via l’API REST
 
@@ -350,7 +350,7 @@ Tous les points d’entrée `custom-email` nécessitent l’accès à la `Market
 >
 >Cette fonctionnalité est expérimentale et doit être activée en contactant votre responsable du succès client Adobe Commerce ou en créant un ticket d’assistance.
 
-Nouveaux points d’entrée de l’API REST ](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/) laissez les intégrations modifier un ordre à l’aide de son identifiant et résoudre automatiquement la chaîne complète des ordres modifiés :[`orderChain`
+Nouveaux points d’entrée de l’API REST [&#128279;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/) laissez les intégrations modifier un ordre à l’aide de son identifiant et résoudre automatiquement la chaîne complète des ordres modifiés :`orderChain`
 
 | Méthode | Point d’entrée | Description |
 | --- | --- | --- |
@@ -619,7 +619,7 @@ Un nouveau `numeric` [type d’entrée d’attribut de produit](https://experien
 
 ### Configuration de requête reCAPTCHA pour plusieurs formulaires dans une seule requête GraphQL
 
-La requête [`recaptchaFormConfigs` peut renvoyer ](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs) détails de configuration pour plusieurs types de formulaires dans une seule requête. <!-- ACCS-628 -->
+La requête [`recaptchaFormConfigs` peut renvoyer &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs) détails de configuration pour plusieurs types de formulaires dans une seule requête. <!-- ACCS-628 -->
 
 ### Afficher toutes les commandes d&#39;entreprise avec une nouvelle autorisation B2B
 
@@ -989,7 +989,7 @@ Les améliorations, optimisations et correctifs suivants sont inclus dans cette 
 
 * Ajout des points d’entrée `POST /V1/customers` et `PUT /V1/customers/{customerId}` à l’[API REST](https://developer.adobe.com/commerce/webapi/rest/reference/) pour créer et mettre à jour des clients. Ces points d’entrée nécessitent une autorisation IMS. <!-- CCSAAS-3112 -->
 
-* Ajout de la mutation ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token), qui nécessite l’adresse e-mail et le mot de passe à usage unique (OTP) d’un acheteur et qui reçoit un jeton client en échange. [`exchangeOtpForCustomerToken`Cette mutation est généralement utilisée dans les scénarios où un client doit s’authentifier à l’aide d’un mot de passe à usage unique envoyé à son adresse e-mail ou téléphone.
+* Ajout de la mutation [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token), qui nécessite l’adresse e-mail et le mot de passe à usage unique (OTP) d’un acheteur et qui reçoit un jeton client en échange. `exchangeOtpForCustomerToken`Cette mutation est généralement utilisée dans les scénarios où un client doit s’authentifier à l’aide d’un mot de passe à usage unique envoyé à son adresse e-mail ou téléphone.
 
 * Si une adresse définie dans l’écran de configuration [!UICONTROL **Stocker les adresses e-mail**] de l’administrateur contient une valeur se terminant par `example.com`, Commerce n’envoie pas d’e-mails à cette adresse. Au lieu de cela, le système consigne que l’e-mail n’a pas été envoyé.  <!-- CCSAAS-3533 -->
 
