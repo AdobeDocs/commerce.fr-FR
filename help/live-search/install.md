@@ -58,12 +58,12 @@ Cet article est destiné au développeur ou à l’intégrateur système de votr
 
 ## Conditions requises
 
-- [](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Pour plus d’informations, voir [Configuration requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
+- [&#128279;](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Pour plus d’informations, voir [Configuration requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 - Exécution des tâches cron et des indexeurs
 
 >[!IMPORTANT]
 >
->Avant d’implémenter [!DNL Live Search], consultez la section [ Limites et limites ](boundaries-limits.md) pour vous assurer que [!DNL Live Search] correspond aux besoins de votre entreprise.
+>Avant d’implémenter [!DNL Live Search], consultez la section [&#x200B; Limites et limites &#x200B;](boundaries-limits.md) pour vous assurer que [!DNL Live Search] correspond aux besoins de votre entreprise.
 
 ## Mises à jour importantes
 
@@ -82,7 +82,7 @@ Cet article est destiné au développeur ou à l’intégrateur système de votr
 >
 >Si vous utilisez Adobe Commerce avec l’extension conforme à la loi HIPAA et le module complémentaire Healthcare, ne traitez aucune information de santé protégée (ISP) par le biais de Live Search. Live Search n’est pas un service conforme à la loi HIPAA.
 >
->Pour plus d’informations, consultez les guides [ Préparation à la loi HIPAA sur Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) et [ Opérations ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations), qui répertorie Live Search parmi les services Commerce non conformes à la loi HIPAA.
+>Pour plus d’informations, consultez les guides [&#x200B; Préparation à la loi HIPAA sur Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) et [&#x200B; Opérations &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations), qui répertorie Live Search parmi les services Commerce non conformes à la loi HIPAA.
 
 ## Présentation des workflows
 
@@ -227,7 +227,7 @@ Après avoir vérifié les indexeurs, l’étape suivante consiste à [configure
 
 La clé API Adobe Commerce et sa clé privée associée sont nécessaires pour [!DNL Live Search] connecter à une installation d’Adobe Commerce. La clé API est générée et conservée dans le compte du titulaire de la licence [!DNL Commerce], qui peut la partager avec le développeur ou l’intégrateur système. Le développeur peut ensuite créer et gérer les espaces de données SaaS pour le compte du titulaire de la licence. Si vous disposez déjà d’un ensemble de clés API, vous n’avez pas besoin de les régénérer.
 
-Découvrez comment configurer vos clés API dans l’article [Connecteur de services ](../landing/saas.md).
+Découvrez comment configurer vos clés API dans l’article [Connecteur de services &#x200B;](../landing/saas.md).
 
 ## &#x200B;3. Synchroniser les données du catalogue {#sync}
 
@@ -276,7 +276,7 @@ Vous pouvez vérifier les données de catalogue exportées depuis Adobe Commerce
   >
   >Si vous obtenez une erreur `table does not exist`, recherchez les entrées dans les tableaux `catalog_data_exporter_products` et `catalog_data_exporter_product_attributes`. Ces noms de table sont utilisés dans les versions [!DNL Live Search] antérieures à la version 4.2.1.
 
-- Utilisez le [terrain de jeu ](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/graphql) avec la requête par défaut (voir [Référence de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) pour plus de détails) pour vérifier les éléments suivants :
+- Utilisez le [terrain de jeu &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/graphql) avec la requête par défaut (voir [Référence de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) pour plus de détails) pour vérifier les éléments suivants :
 
   - Le nombre de produits renvoyés est proche de ce que vous attendiez pour la vue du magasin.
   - Les facettes sont renvoyées.
@@ -514,7 +514,7 @@ Les développeurs et développeuses qui ont accès au code peuvent personnaliser
 
 ### Extension Data Export
 
-Une fois [!DNL Live Search] activé, l’extension d’exportation de données synchronise les données Commerce entre l’application Commerce et [!DNL Live Search]. Ce processus garantit que les données Commerce les plus récentes sont disponibles sur le storefront. Dans l’Administration, vous pouvez vérifier l’état de synchronisation à l’aide du tableau de bord Data Management. Vous pouvez gérer et résoudre les problèmes du processus d’exportation des données à l’aide de l’interface de ligne de commande et des journaux Commerce. Pour plus d’informations, consultez le [ Guide d’exportation de données ](../data-export/overview.md).
+Une fois [!DNL Live Search] activé, l’extension d’exportation de données synchronise les données Commerce entre l’application Commerce et [!DNL Live Search]. Ce processus garantit que les données Commerce les plus récentes sont disponibles sur le storefront. Dans l’Administration, vous pouvez vérifier l’état de synchronisation à l’aide du tableau de bord Data Management. Vous pouvez gérer et résoudre les problèmes du processus d’exportation des données à l’aide de l’interface de ligne de commande et des journaux Commerce. Pour plus d’informations, consultez le [&#x200B; Guide d’exportation de données &#x200B;](../data-export/overview.md).
 
 ### Inventory management
 
@@ -563,7 +563,7 @@ Ce module ajoute des contextes supplémentaires aux requêtes GraphQL :
 
 - L’implémentation PWA actuelle de [!DNL Live Search] nécessite davantage de temps de traitement pour renvoyer les résultats de la recherche qu’une [!DNL Live Search] avec le storefront Commerce natif.
 - [!DNL Live Search] dans PWA ne prend pas en charge [la gestion des événements](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Par conséquent, les rapports de recherche et le marchandisage intelligent ne fonctionnent pas sur les vitrines PWA.
-- Lors de l&#39;utilisation de [](https://developer.adobe.com/commerce/pwa-studio/), GraphQL ne prend pas en charge le filtrage directement sur `description`, `name`, `short_description`, mais ces champs peuvent être renvoyés avec un filtre plus général.
+- Lors de l&#39;utilisation de [&#128279;](https://developer.adobe.com/commerce/pwa-studio/), GraphQL ne prend pas en charge le filtrage directement sur `description`, `name`, `short_description`, mais ces champs peuvent être renvoyés avec un filtre plus général.
 
 Pour utiliser [!DNL Live Search] avec PWA Studio, les intégrateurs doivent également :
 
