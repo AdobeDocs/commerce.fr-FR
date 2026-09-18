@@ -99,7 +99,7 @@ _10 juillet 2026_
 
 _6 juillet 2026_
 
-![Correction ](../assets/fix.svg) correction d’un problème en raison duquel l’ordre des liens de produits liés, de vente incitative et de vente croisée dans le flux de produits pouvait varier d’une exécution à l’autre, ce qui entraînait la renvoi de produits inchangés à chaque exécution `bin/magento saas:resync --feed products`. Ces liens sont désormais exportés dans un ordre cohérent, de sorte que les produits ne sont resynchronisés que lorsqu’ils sont réellement modifiés. <!--MDEE-1391-->
+![Correction &#x200B;](../assets/fix.svg) correction d’un problème en raison duquel l’ordre des liens de produits liés, de vente incitative et de vente croisée dans le flux de produits pouvait varier d’une exécution à l’autre, ce qui entraînait la renvoi de produits inchangés à chaque exécution `bin/magento saas:resync --feed products`. Ces liens sont désormais exportés dans un ordre cohérent, de sorte que les produits ne sont resynchronisés que lorsqu’ils sont réellement modifiés. <!--MDEE-1391-->
 ![Correction](../assets/fix.svg) Correction d’un problème en raison duquel les prix des flux envoyaient des prix de base complets au lieu des prix des règles de catalogue pour les sites web situés dans des fuseaux horaires derrière UTC (par exemple, États-Unis et Canada) au cours des heures matinales en UTC. La tarification des règles de catalogue est désormais correctement diffusée, quel que soit le fuseau horaire d’un site web. <!--MDEE-1401-->
 
 ### Version 103.4.28
@@ -182,7 +182,7 @@ _5 mars 2026_
 
 ![Correctif](../assets/fix.svg) Garantit la compatibilité avec les futures versions de PHP en mettant à jour le processus d’index de flux de produits afin d’éviter l’utilisation obsolète de la valeur null comme décalage de tableau. Cela améliore la stabilité lors de l’indexation.<!--MDEE-1306-->
 
-![Correctif ](../assets/fix.svg) Amélioration de la synchronisation des flux de produits pour les données de catégorie : désormais, lorsque vous mettez à jour une URL de catégorie dans l’interface utilisateur d’administration de Commerce, le flux de produits s’actualise automatiquement pour refléter le nouveau chemin d’accès de catégorie. Aucune action manuelle n’est requise et les résultats de votre recherche de produits sont toujours à jour après le changement de l’URL d’une catégorie.<!--MDEE-1294-->
+![Correctif &#x200B;](../assets/fix.svg) Amélioration de la synchronisation des flux de produits pour les données de catégorie : désormais, lorsque vous mettez à jour une URL de catégorie dans l’interface utilisateur d’administration de Commerce, le flux de produits s’actualise automatiquement pour refléter le nouveau chemin d’accès de catégorie. Aucune action manuelle n’est requise et les résultats de votre recherche de produits sont toujours à jour après le changement de l’URL d’une catégorie.<!--MDEE-1294-->
 
 ### Version 103.4.19
 
@@ -277,7 +277,7 @@ _6 août 2025_
 
 ![Nouveau](../assets/new.svg) Ajout d’informations de prix de niveau au flux de prix. <!--MDEE-1070-->
 
-![Correction ](../assets/fix.svg) l’extension d’exportateur de données exporte désormais correctement les prix de sélection des lots à l’échelle du site web, en veillant à ce que les prix du storefront reflètent des valeurs précises en fonction de la configuration « Étendue du prix du catalogue ».<!--MDEE-1115-->
+![Correction &#x200B;](../assets/fix.svg) l’extension d’exportateur de données exporte désormais correctement les prix de sélection des lots à l’échelle du site web, en veillant à ce que les prix du storefront reflètent des valeurs précises en fonction de la configuration « Étendue du prix du catalogue ».<!--MDEE-1115-->
 
 ![Correctif](../assets/fix.svg) Auparavant, les produits étaient synchronisés avec un statut de `lowStock=true` incorrect lors de l’utilisation d’Inventory management (Inventory management multi-sources) avec une configuration de seuil. Ce problème a été corrigé afin d’assurer la précision des rapports de stock faible.<!--MDEE-1113-->
 
@@ -345,7 +345,7 @@ _31 mars 2025_
 
 _1 mars 2025_
 
-![Nouveau ](../assets/new.svg) fonctionnalité ajoutée pour synchroniser partiellement les flux de `products`, de `productOverrides` et de `productAttributes` en fonction d’une liste spécifiée de SKU de produit. Utilisez la nouvelle fonctionnalité en ajoutant l’option `--by-ids` à la commande resynchroniser l’interface de ligne de commande : <!--MDEE-606-->
+![Nouveau &#x200B;](../assets/new.svg) fonctionnalité ajoutée pour synchroniser partiellement les flux de `products`, de `productOverrides` et de `productAttributes` en fonction d’une liste spécifiée de SKU de produit. Utilisez la nouvelle fonctionnalité en ajoutant l’option `--by-ids` à la commande resynchroniser l’interface de ligne de commande : <!--MDEE-606-->
 
 ```shell
 bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>'
