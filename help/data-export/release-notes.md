@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: c878b0f46e20fbdcd9771dae36430a814371e0c2
+source-git-commit: 42e7ecca6c058ebc4e80b601c6d46b84f601e454
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3447'
 ht-degree: 0%
 ---
 # Notes de mise à jour de [!DNL SaaS Data Export Extension]
@@ -59,7 +59,7 @@ Les mises à jour incluent :
 
 _17 septembre 2026_
 
-![Correction](../assets/fix.svg) **Erreur de synchronisation des libellés d’option d’attribut**—Correction d’un problème où une table principale d’attributs non valide provoquait des échecs d’exportation de flux lors de la resynchronisation des libellés, garantissant ainsi une synchronisation fiable des mises à jour des libellés d’attribut.<!--MDEE-1464-->
+![Correctif](../assets/fix.svg) Mises à jour pour prendre en charge l’intégration de Adobe Commerce Optimizer à Adobe Commerce.<!--MDEE-1464-->
 
 ### Version 103.4.34
 
