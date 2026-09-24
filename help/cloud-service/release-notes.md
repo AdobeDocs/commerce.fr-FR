@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 04f2eddef8abc6843ced0d00368ea19f3626adce
+source-git-commit: 9cc9b3270d808102f293609a606ff32a781d084c
 workflow-type: tm+mt
-source-wordcount: '6842'
+source-wordcount: '6869'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -64,21 +64,21 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 ## Septembre 2026 - #2 de mise à jour {#latest}
 
-[!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="Les éléments répertoriés sont actuellement disponibles dans les environnements de production."}
 
-Les éléments suivants seront disponibles dans les environnements de production le 22 septembre 2026.
+Les éléments suivants ont été ajoutés aux environnements de production le 22 septembre 2026.
 
 >[!BEGINSHADEBOX]
 
 ### Joindre des fichiers et des images aux demandes de retour
 
-Les clients peuvent désormais charger des fichiers et des images lors de l’envoi d’une demande de retour via la mutation storefront `requestReturn` GraphQL. <!-- CCSAAS-5410 -->
+Les clients peuvent désormais charger des fichiers et des images lors de l’envoi d’une demande de retour via la mutation storefront [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL. Utilisez les mutations [`initiateUpload` et `finishUpload` pour charger le fichier](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/) puis affectez la clé renvoyée à un attribut personnalisé d’élément renvoyé. <!-- CCSAAS-5410 -->
 
 ### Contrôle de l&#39;apparence de la source d&#39;inventaire
 
-Chaque source d’inventaire comprend désormais un bouton [!UICONTROL **Visible sur Storefront**] dans la page de modification de la source dans le [!DNL Commerce Admin] ([!UICONTROL **Magasins**] > [!UICONTROL **Inventaire**] > [!UICONTROL **Sources**]). La requête [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL renvoie des informations sur les stocks uniquement pour les sources que vous marquez comme visibles. Les sources sont masquées par défaut. <!-- ACCS-1645 -->
+Chaque source d’inventaire comprend désormais un bouton [!UICONTROL **Visible sur Storefront**] sur la [page de modification de la source](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/sources/sources-add) dans le [!DNL Commerce Admin] ([!UICONTROL **Magasins**] > [!UICONTROL **Inventaire**] > [!UICONTROL **Sources**]). La requête [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL renvoie des informations sur les stocks uniquement pour les sources que vous marquez comme visibles. Les sources sont masquées par défaut. <!-- ACCS-1645 -->
 
 ### Guider les expéditions multi-sources
 
