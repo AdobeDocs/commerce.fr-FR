@@ -5,17 +5,18 @@ exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
 TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Admin
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 778
+source-wordcount: '759'
 ht-degree: 0%
-
 ---
-
 # Filtrer les produits
 
 Adobe Commerce applique automatiquement des filtres par défaut non configurables aux unités de recommandation. Si plusieurs unités de recommandation sont déployées sur une page, Adobe Commerce filtre tous les produits qui se répètent dans les unités. Seule la première référence à un produit répété est utilisée, afin de laisser de la place à d’autres produits à recommander. Adobe Commerce filtre également les produits achetés précédemment et ceux qui se trouvent dans le panier.
@@ -45,7 +46,7 @@ Les opérateurs logiques `AND` et `OR` sont utilisés pour joindre plusieurs con
 
 ## Types de filtres {#filtertypes}
 
-![&#x200B; Filtres &#x200B;](assets/rec-conditions.png)
+![ Filtres ](assets/rec-conditions.png)
 
 ### Catégorie
 
@@ -55,7 +56,7 @@ Le champ Catégorie affiche les catégories qui appartiennent à la boutique act
 
 >[!NOTE]
 >
->Pour les commerçants B2B, le filtre Catégorie adhère à toutes les [catégories de produits spécifiques aux clients](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/categories/category-permissions) que vous avez configurées.
+>Pour les commerçants B2B, le filtre Catégorie adhère à toutes les [catégories de produits spécifiques aux clients](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions) que vous avez configurées.
 
 Adobe Commerce vous recommande d’utiliser la configuration de filtre de catégorie suivante lorsque vous déployez des recommandations sur vos types de page :
 
@@ -77,7 +78,7 @@ Les filtres de produit indiquent les produits spécifiques éligibles ou non él
 
 ### Type
 
-Un filtre basé sur le type de produit inclut ou exclut tous les produits d’un type spécifique. Les types pris en charge sont les suivants : _simple_, _configurable_, _virtuel_, _téléchargeable_ ou _carte cadeau_. Les types de produits _Bundle_, _grouped_ et personnalisés ne sont pas pris en charge.
+Un filtre basé sur le type de produit inclut ou exclut tous les produits d’un type spécifique.
 
 ### Visibilité
 
@@ -85,11 +86,11 @@ Filtre les produits en fonction de leur visibilité, par exemple : _Catalogue_, 
 
 ### Prix
 
-Un filtre basé sur le prix du produit utilise le prix final pour effectuer la comparaison. Le prix final inclut toutes les remises disponibles pour les acheteurs anonymes. Pour les commerçants B2B, le prix affiché reflète le [prix de groupe spécifique au client](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/pricing/pricing-advanced) que vous avez configuré.
+Un filtre basé sur le prix du produit utilise le prix final pour effectuer la comparaison. Le prix final inclut toutes les remises disponibles pour les acheteurs anonymes. Pour les commerçants B2B, le prix affiché reflète le [prix de groupe spécifique au client](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced) que vous avez configuré.
 
 ### Statut des stocks
 
 Les filtres d’exclusion suivants peuvent être utilisés pour filtrer les produits en fonction du statut du stock :
 
 - En rupture de stock - (Exclusion uniquement) Exclut les produits en rupture de stock.
-- Faible en stock - (Exclusion uniquement) Exclut les produits peu en stock. Le statut de stock faible est basé sur la valeur _Seuil gauche X uniquement_ dans [Configuration du stock](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/catalog/inventory).
+- Faible en stock - (Exclusion uniquement) Exclut les produits peu en stock. Le statut de stock faible est basé sur la valeur _Seuil gauche X uniquement_ dans [Configuration du stock](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory).

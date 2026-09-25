@@ -1,26 +1,23 @@
 ---
 title: Limites et limites
-description: Découvrez les limites et les limites de pour  [!DNL Product Recommendations]  assurer qu’il répond aux besoins de votre entreprise.
+description: Découvrez les limites et les limites de [!DNL Product Recommendations] pour vous assurer qu’elle répond aux besoins de votre entreprise.
 role: Admin, Developer
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '893'
 ht-degree: 0%
-
 ---
-
 # Limites et limites
 
 Examinez les limites suivantes pour vous assurer qu’[!DNL Product Recommendations] répond aux besoins de votre entreprise. La connaissance de ces contraintes vous permet de planifier l’implémentation, de configurer des filtres et d’éviter les problèmes courants.
 
 ## Général
 
-- **Types de produits** - Les types de produits pris en charge sont les suivants _simple_, _configurable_, _virtuel_, _téléchargeable_ et _chèque-cadeau_. Les types de produits _Bundle_, _grouped_ et personnalisés ne sont pas pris en charge. Si votre catalogue contient un grand nombre de types de produits non pris en charge, vous pouvez vous attendre à un faible [score de préparation](create.md#readiness-indicators). Voir [Filtrer par type de produit](filters.md#type).
 - **SKU avec espaces** : les SKU qui contiennent des espaces peuvent réduire la pertinence des recommandations et doivent être évitées dans la mesure du possible.
-- **Page du panier** - Les recommandations de produits ne sont pas prises en charge sur la page du panier lorsque votre boutique est configurée pour [afficher la page du panier immédiatement après l’ajout d’un produit au panier](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Voir [Création de recommandations](create.md).
+- **Page du panier** - Les recommandations de produits ne sont pas prises en charge sur la page du panier lorsque votre boutique est configurée pour [afficher la page du panier immédiatement après l’ajout d’un produit au panier](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Voir [Création de recommandations](create.md).
 - **Produits enfants** - Les produits enfants d’un produit configurable (visibilité _Non visible individuellement_) ne s’affichent pas dans une unité de recommandation. Seul le produit configurable (parent) peut apparaître. Voir [Filtrer les produits](filters.md#product).
 - **Produits désactivés ou non visibles** - Les produits désactivés ou non visibles individuellement ne peuvent jamais apparaître dans les recommandations et ne peuvent pas être sélectionnés dans les filtres de produit.
-- **Prix spéciaux** - [Prix spéciaux](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/pricing/product-price-special) avec dates de début et de fin ne sont pas pris en charge dans les unités de recommandation. Un produit avec un prix spécial peut apparaître dans les recommandations, mais l&#39;unité n&#39;affiche pas le prix spécial, la date de début ou la date de fin. Les acheteurs voient le prix normal (ou d’autres données de prix fournies par votre catalogue/flux de prix) jusqu’à ce qu’ils ouvrent la page du produit.
+- **Prix spéciaux** - [Prix spéciaux](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) avec dates de début et de fin ne sont pas pris en charge dans les unités de recommandation. Un produit avec un prix spécial peut apparaître dans les recommandations, mais l&#39;unité n&#39;affiche pas le prix spécial, la date de début ou la date de fin. Les acheteurs voient le prix normal (ou d’autres données de prix fournies par votre catalogue/flux de prix) jusqu’à ce qu’ils ouvrent la page du produit.
 
 ## Unités de recommandation
 
@@ -40,7 +37,7 @@ Examinez les limites suivantes pour vous assurer qu’[!DNL Product Recommendati
 
 ## API et configuration
 
-- **Clés API (4.x et ultérieures)** - Vous devez fournir des clés API publiques et privées pour les environnements de sandbox et de production. Si vous ne fournissez pas les deux paires de clés API, vous ne pouvez pas accéder à la fonctionnalité de recommandations de produits dans l’Administration. La collecte de données sur votre storefront et les recommandations existantes continuent de fonctionner. Voir [&#x200B; Installation et configuration &#x200B;](install-configure.md).
+- **Clés API (4.x et ultérieures)** - Vous devez fournir des clés API publiques et privées pour les environnements de sandbox et de production. Si vous ne fournissez pas les deux paires de clés API, vous ne pouvez pas accéder à la fonctionnalité de recommandations de produits dans l’Administration. La collecte de données sur votre storefront et les recommandations existantes continuent de fonctionner. Voir [ Installation et configuration ](install-configure.md).
 
 ## Restrictions des cookies
 
@@ -50,11 +47,11 @@ Examinez les limites suivantes pour vous assurer qu’[!DNL Product Recommendati
 
 ## Page Builder
 
-- **Mesures et vues de magasin** - Les mesures des unités de recommandation de Page Builder s’affichent uniquement sur la vue de magasin par défaut dans l’espace de travail des recommandations de produits. Pour afficher les mesures de recommandation de Page Builder sur une vue de magasin autre que la vue par défaut, vous devez ouvrir et [modifier](edit.md) l’unité de recommandation Page Builder dans cette vue de magasin et l’enregistrer ; les mesures s’affichent alors pour cette vue de magasin. Voir [&#x200B; Intégration de Page Builder &#x200B;](page-builder.md).
+- **Mesures et vues de magasin** - Les mesures des unités de recommandation de Page Builder s’affichent uniquement sur la vue de magasin par défaut dans l’espace de travail des recommandations de produits. Pour afficher les mesures de recommandation de Page Builder sur une vue de magasin autre que la vue par défaut, vous devez ouvrir et [modifier](edit.md) l’unité de recommandation Page Builder dans cette vue de magasin et l’enregistrer ; les mesures s’affichent alors pour cette vue de magasin. Voir [ Intégration de Page Builder ](page-builder.md).
 
 ## B2B
 
-- Les recommandations de produits respectent les [autorisations de catégorie](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/categories/category-permissions), [catalogues partagés](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) et la tarification spécifique au groupe de clients. Les acheteurs ne voient que les recommandations des produits auxquels ils peuvent accéder en fonction de leur affectation de segment et de catalogue. Voir [&#x200B; Intégration &#x200B;](onboarding.md).
+- Les recommandations de produits respectent les [autorisations de catégorie](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions), [catalogues partagés](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) et la tarification spécifique au groupe de clients. Les acheteurs ne voient que les recommandations des produits auxquels ils peuvent accéder en fonction de leur affectation de segment et de catalogue. Voir [ Intégration ](onboarding.md).
 
 ## Données et préparation
 
@@ -63,4 +60,4 @@ Examinez les limites suivantes pour vous assurer qu’[!DNL Product Recommendati
 
 ## Dépannage
 
-Pour obtenir de l’aide sur la synchronisation des catalogues, les recommandations qui ne s’affichent pas ou d’autres problèmes courants, recherchez dans la [Base de connaissances de &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/overview) ou contactez l’[assistance technique](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Pour obtenir de l’aide sur la synchronisation des catalogues, les recommandations qui ne s’affichent pas ou d’autres problèmes courants, recherchez dans la [Base de connaissances de ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) ou contactez l’[assistance technique](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
