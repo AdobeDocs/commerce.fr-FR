@@ -1,21 +1,18 @@
 ---
 title: Limites et limites
-description: Découvrez les limites et les limites de pour  [!DNL Product Recommendations]  assurer qu’il répond aux besoins de votre entreprise.
+description: Découvrez les limites et les limites de [!DNL Product Recommendations] pour vous assurer qu’elle répond aux besoins de votre entreprise.
 role: Admin, Developer
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '893'
 ht-degree: 0%
-
 ---
-
 # Limites et limites
 
 Examinez les limites suivantes pour vous assurer qu’[!DNL Product Recommendations] répond aux besoins de votre entreprise. La connaissance de ces contraintes vous permet de planifier l’implémentation, de configurer des filtres et d’éviter les problèmes courants.
 
 ## Général
 
-- **Types de produits** - Les types de produits pris en charge sont les suivants _simple_, _configurable_, _virtuel_, _téléchargeable_ et _chèque-cadeau_. Les types de produits _Bundle_, _grouped_ et personnalisés ne sont pas pris en charge. Si votre catalogue contient un grand nombre de types de produits non pris en charge, vous pouvez vous attendre à un faible [score de préparation](create.md#readiness-indicators). Voir [Filtrer par type de produit](filters.md#type).
 - **SKU avec espaces** : les SKU qui contiennent des espaces peuvent réduire la pertinence des recommandations et doivent être évitées dans la mesure du possible.
 - **Page du panier** - Les recommandations de produits ne sont pas prises en charge sur la page du panier lorsque votre boutique est configurée pour [afficher la page du panier immédiatement après l’ajout d’un produit au panier](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Voir [Création de recommandations](create.md).
 - **Produits enfants** - Les produits enfants d’un produit configurable (visibilité _Non visible individuellement_) ne s’affichent pas dans une unité de recommandation. Seul le produit configurable (parent) peut apparaître. Voir [Filtrer les produits](filters.md#product).
