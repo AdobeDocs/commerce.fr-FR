@@ -23,7 +23,7 @@ ht-degree: 0%
 ---
 # Correspondance automatique par défaut
 
-L’intégration d’AEM Assets pour Commerce fournit un mécanisme de correspondance automatique par défaut (**[!UICONTROL Match by product SKU]**) en fonction de la configuration des métadonnées **AEM Assets**. Cette règle permet une synchronisation transparente entre **** et **AEM Assets**, en veillant à ce que les ressources soient automatiquement liées aux entités de marchandisage correctes.
+L’intégration d’AEM Assets pour Commerce fournit un mécanisme de correspondance automatique par défaut (**[!UICONTROL Match by product SKU]**) en fonction de la configuration des métadonnées **AEM Assets**. Cette règle permet une synchronisation transparente entre **&#x200B;**&#x200B;et **AEM Assets**, en veillant à ce que les ressources soient automatiquement liées aux entités de marchandisage correctes.
 
 ## Configuration du mécanisme de correspondance automatique
 
@@ -45,11 +45,11 @@ Lorsque la règle de correspondance de **[!UICONTROL Match by product SKU]** est
 
 1. Ouvrez votre instance d’auteur AEM Assets (l’URL est fournie pour votre projet dans la même organisation IMS qu’Adobe Commerce).
 
-1. Dans l’écran de navigation principal, cliquez sur **** pour accéder à l’interface de gestion des ressources numériques (DAM).
+1. Dans l’écran de navigation principal, cliquez sur **&#x200B;**&#x200B;pour accéder à l’interface de gestion des ressources numériques (DAM).
 
 1. Dans AEM Assets, mettez à jour les métadonnées de l’image pour ajouter l’association Adobe Commerce en définissant le champ `Eligible for Commerce` sur `Yes`.
 
-   ![ Exemple de métadonnées ](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
+   ![&#x200B; Exemple de métadonnées &#x200B;](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
 
 1. Configurez les métadonnées ([!UICONTROL SKU], [!UICONTROL position] et [!UICONTROL role]) qui lient la ressource au SKU du produit associé.
 
@@ -59,8 +59,8 @@ Lorsque la règle de correspondance de **[!UICONTROL Match by product SKU]** est
    >
    > Si une ressource est utilisée pour plusieurs produits, configurez les métadonnées de chaque SKU associé.
 
-1. Dans l’onglet `Basic` , définissez la valeur par défaut du champ _[!UICONTROL Review Status]_sur `approved`.
+1. Dans l’onglet `Basic` , définissez la valeur par défaut du champ _[!UICONTROL Review Status]_&#x200B;sur `approved`.
 
-   ![ Exemple de métadonnées ](../assets/metadata-review-status.png){width="600" zoomable="yes"}
+   ![&#x200B; Exemple de métadonnées &#x200B;](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
 Cette approche permet de s’assurer que les ressources numériques sont correctement liées et affichées dans Adobe Commerce. Il permet également aux marchandiseurs et aux marketeurs de gérer les rôles et le positionnement des ressources directement dans AEM Assets, fournissant ainsi un mécanisme cohérent et centralisé pour la sélection et la commande des images sur tous les canaux d’engagement.
