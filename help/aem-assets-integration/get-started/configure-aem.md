@@ -20,9 +20,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4c27d94eca656c48dd50ba8dc69a905ea141c6fd
+source-git-commit: fda6fa7c9ae80a594f0eb05624030cd6b13f0da2
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1861'
 ht-degree: 1%
 ---
 # Configuration du projet AEM Assets
@@ -33,7 +33,7 @@ Vous disposez de deux options pour configurer le projet AEM Assets :
 
 * [!BADGE Recommandé]{type=Positive} **Intégration en libre-service** — Dans les versions `2026.5.26309` et ultérieures d’AEM, activez l’intégration dans Cloud Manager en définissant une variable d’environnement et en activant Dynamic Media avec les fonctionnalités OpenAPI. Aucun déploiement de code personnalisé n’est requis. Voir [Activation de l’intégration de Commerce (libre-service)](#enable-aem-commerce-self-service).
 
-* **Configuration manuelle** — Déployez le package `assets-commerce` via un pipeline Cloud Manager. Utilisez ces étapes manuelles lorsque vous devez déployer le code de package personnalisé ou si vous utilisez une version d’AEM antérieure à `2026.5.26309`. Voir [&#x200B; Installation manuelle du package Assets-Commerce](#install-the-assets-commerce-package-manually).
+* **Configuration manuelle** — Déployez le package `assets-commerce` via un pipeline Cloud Manager. Utilisez ces étapes manuelles lorsque vous devez déployer le code de package personnalisé ou si vous utilisez une version d’AEM antérieure à `2026.5.26309`. Voir [ Installation manuelle du package Assets-Commerce](#install-the-assets-commerce-package-manually).
 
 >[!TIP]
 >
@@ -41,7 +41,7 @@ Vous disposez de deux options pour configurer le projet AEM Assets :
 
 >[!IMPORTANT]
 >
->Quelle que soit l’option utilisée, [configurez le schéma de métadonnées pour l’approbation des ressources](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration) dans l’éditeur de schéma de métadonnées d’AEM afin de pouvoir approuver les ressources Commerce.
+>Quelle que soit l’option utilisée, [configurez le schéma de métadonnées pour l’approbation des ressources](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration) dans l’éditeur de schéma de métadonnées d’AEM afin de pouvoir approuver les ressources Commerce.
 
 ## Activer l’intégration de Commerce (libre-service) {#enable-aem-commerce-self-service}
 
@@ -51,7 +51,7 @@ Dans les versions d’AEM prises en charge, vous activez l’intégration de Com
 
 ### Conditions préalables relatives au libre-service
 
-* [Accès au programme et aux environnements AEM Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) avec les rôles Responsable de programme et de déploiement .
+* [Accès au programme et aux environnements AEM Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) avec les rôles Responsable de programme et de déploiement .
 
 * Un programme AEM à la version `2026.5.26309` ou ultérieure.
 
@@ -75,7 +75,7 @@ La création d’un programme dans Cloud Manager est un processus à plusieurs �
 
    >[!IMPORTANT]
    >
-   >[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} lors de la création des environnements AEM Assets pour cette intégration, sélectionnez une région de déploiement d’AEM prise en charge proche géographiquement de votre cellule Adobe Commerce as a Cloud Service.
+   >[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} lors de la création des environnements AEM Assets pour cette intégration, sélectionnez une région de déploiement d’AEM prise en charge proche géographiquement de votre cellule Adobe Commerce as a Cloud Service.
 
    ![Boîte de dialogue Cloud Manager Ajouter un environnement avec les détails de Production et d’Évaluation](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
 
@@ -116,7 +116,7 @@ Dans Cloud Manager, ouvrez l’environnement créé à l’étape 1, puis :
 
 ### Étape 4 : valider la configuration
 
-Basculez vers l’environnement de création **&#x200B;**&#x200B;puis ouvrez n’importe quelle ressource. Modifiez ses propriétés et vérifiez que le schéma de métadonnées par défaut inclut l’onglet **[!UICONTROL Commerce]** et que les champs **[!UICONTROL Product Data]** et **[!UICONTROL Eligible for Commerce]** sont visibles.
+Basculez vers l’environnement de création **** puis ouvrez n’importe quelle ressource. Modifiez ses propriétés et vérifiez que le schéma de métadonnées par défaut inclut l’onglet **[!UICONTROL Commerce]** et que les champs **[!UICONTROL Product Data]** et **[!UICONTROL Eligible for Commerce]** sont visibles.
 
 ## Installation manuelle du package Assets-Commerce
 
@@ -128,21 +128,21 @@ Basculez vers l’environnement de création **&#x200B;**&#x200B;puis ouvrez n�
 
 Pour déployer le code du package `assets-commerce` dans l’environnement AEM Assets as a Cloud Service AEM, vous avez besoin des ressources et autorisations suivantes :
 
-* [Accès au programme et aux environnements AEM Assets Cloud Manager](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) avec les rôles Responsable de programme et de déploiement .
+* [Accès au programme et aux environnements AEM Assets Cloud Manager](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo) avec les rôles Responsable de programme et de déploiement .
 
-* Un [environnement de développement AEM local](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) et une connaissance du processus de développement local d’AEM.
+* Un [environnement de développement AEM local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview) et une connaissance du processus de développement local d’AEM.
 
-* Découvrez la structure de projet [AEM et comment déployer &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) packages de contenu personnalisés à l’aide de Cloud Manager.
+* Découvrez la structure de projet [AEM et comment déployer ](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure) packages de contenu personnalisés à l’aide de Cloud Manager.
 
 * L’**ID d’organisation IMS** pour votre instance Commerce. Votre instance Commerce et votre environnement de création AEM Assets doivent se trouver dans la même organisation IMS.
 
-* Pour activer [Dynamic Media avec les fonctionnalités OpenAPI](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) :
+* Pour activer [Dynamic Media avec les fonctionnalités OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis) :
 
 >[!BEGINTABS]
 
 >[!TAB Visuels du produit]
 
-[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} Dynamic Media avec fonctionnalités OpenAPI est en libre-service pour les visuels de produit optimisés par AEM Assets.
+[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} Dynamic Media avec fonctionnalités OpenAPI est en libre-service pour les visuels de produit optimisés par AEM Assets.
 
 1. Accédez à votre Cloud Manager.
 
@@ -152,7 +152,7 @@ Pour déployer le code du package `assets-commerce` dans l’environnement AEM A
 
    Si le bouton **Dynamic Media avec fonctionnalités OpenAPI** n’est pas actif, ouvrez un ticket de support.
 
->[!TAB Tab]
+>[!TAB ]
 
 [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} Sur AEM as a Cloud Service, envoyez un ticket d’assistance Adobe avec les informations suivantes :
 
@@ -171,9 +171,9 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
 
 ### Etapes d&#39;installation
 
-1. Accédez à AEM Cloud Manager, sélectionnez un programme, puis [créez des environnements de production et d’évaluation](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) à intégrer à Adobe Commerce.
+1. Accédez à AEM Cloud Manager, sélectionnez un programme, puis [créez des environnements de production et d’évaluation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments) à intégrer à Adobe Commerce.
 
-1. [Clonez le référentiel Git géré par Adobe](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) pour le programme sélectionné.
+1. [Clonez le référentiel Git géré par Adobe](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access) pour le programme sélectionné.
 
    ![Informations d’identification du référentiel Cloud Manager et commande de clonage](../assets/cloud-manager-repository-info.png){width="600" zoomable="yes"}
 
@@ -181,7 +181,7 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
 
 1. À partir de GitHub, téléchargez le code du package à partir du [référentiel AEM Assets Commerce](https://github.com/ankumalh/assets-commerce).
 
-1. À partir de votre [environnement de développement AEM local](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), copiez manuellement le code téléchargé dans le référentiel géré par Adobe existant.
+1. À partir de votre [environnement de développement AEM local](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview), copiez manuellement le code téléchargé dans le référentiel géré par Adobe existant.
 
 1. Dans tous les fichiers `filter.xml` et `pom.xml` de votre projet, remplacez toutes les occurrences de &lt;my-app> par le nom de votre application.
 
@@ -191,29 +191,31 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
 
 1. Validez les modifications et envoyez votre branche de développement local au référentiel Git de Cloud Manager.
 
-1. Configurez un [pipeline de déploiement](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) ou vérifiez que votre pipeline peut déployer les modifications dans l’environnement sélectionné.
+1. Configurez un [pipeline de déploiement](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline) ou vérifiez que votre pipeline peut déployer les modifications dans l’environnement sélectionné.
 
-   ![Pipelines &#x200B;](../assets/cloud-manager-pipelines.png){width="600" zoomable="yes"}
+   ![Pipelines ](../assets/cloud-manager-pipelines.png){width="600" zoomable="yes"}
 
    Lorsque le pipeline existe, ouvrez le menu d’actions (**...**) pour **[!UICONTROL Run]**, **[!UICONTROL Edit]**, **[!UICONTROL View/Edit variables]** ou d’autres actions, consultez la documentation sur le pipeline Cloud Manager liée ci-dessus.
 
-1. Depuis AEM Cloud Manager, [mettez à jour l’environnement AEM à l’aide du pipeline pour déployer votre code](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
+1. Depuis AEM Cloud Manager, [mettez à jour l’environnement AEM à l’aide du pipeline pour déployer votre code](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager).
 
 1. Accédez à n’importe quelle ressource et modifiez ses propriétés pour valider les modifications :
 
-   * Le schéma de métadonnées par défaut inclut l’onglet **&#x200B;**.
+   * Le schéma de métadonnées par défaut inclut l’onglet ****.
 
    * Les SKU de produit et les champs `Eligible for Commerce` sont visibles.
 
+   * Le multichamp **[!UICONTROL Alt texts]** est disponible avec des entrées **[!UICONTROL Store View Code]** et **[!UICONTROL Alt Text]**.
+
 ### L’onglet Commerce n’est pas visible dans les propriétés
 
-Si l’onglet **&#x200B;**&#x200B;n’apparaît pas dans les propriétés, vous devez effectuer manuellement les étapes suivantes dans l’éditeur de schéma de métadonnées :
+Si l’onglet **** n’apparaît pas dans les propriétés, vous devez effectuer manuellement les étapes suivantes dans l’éditeur de schéma de métadonnées :
 
 1. Accédez à l’éditeur de schéma de métadonnées.
 
 1. Sélectionnez **Modifier** pour modifier le formulaire de schéma de métadonnées par défaut.
 
-1. Créez un onglet **&#x200B;**&#x200B;et sélectionnez-le.
+1. Créez un onglet **** et sélectionnez-le.
 
 1. Faites glisser et déposez le composant **Product** dans l’onglet **Commerce** et mappez-le à la `commerce:skus` de propriété.
 
@@ -221,7 +223,9 @@ Si l’onglet **&#x200B;**&#x200B;n’apparaît pas dans les propriétés, vous 
 
 1. Faites glisser et déposez un composant **case à cocher** dans l’onglet **Commerce** et mappez-le à l’`commerce:isCommerce` de propriété. Définissez **Oui** et **Non** comme options.
 
-Si vous rencontrez d’autres problèmes, créez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) ou contactez votre représentant commercial pour l’intégration AEM Assets pour obtenir de l’aide.
+1. Ajoutez le multichamp **[!UICONTROL Alt texts]** à l’onglet **Commerce**. Configurez ses deux propriétés alignées sur l’index en tant que `commerce:altTextStoreViews` et `commerce:altTextValues`.
+
+Si vous rencontrez d’autres problèmes, créez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) ou contactez votre représentant commercial pour l’intégration AEM Assets pour obtenir de l’aide.
 
 ## Configuration d’un profil de métadonnées (facultatif)
 
@@ -241,7 +245,7 @@ Le composant d’interface utilisateur des données de produit est ajouté autom
 
 1. Dans l’espace de travail Adobe Experience Manager , accédez à l’espace de travail Créer une administration de contenu pour AEM Assets en cliquant sur l’icône Adobe Experience Manager .
 
-   ![Création &#x200B;](../assets/aem-assets-authoring.png){width="600" zoomable="yes"}
+   ![Création ](../assets/aem-assets-authoring.png){width="600" zoomable="yes"}
 
 1. Ouvrez les outils d’administration en sélectionnant l’icône en forme de marteau.
 
@@ -279,7 +283,7 @@ Le composant d’interface utilisateur des données de produit est ajouté autom
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Facultatif. Pour synchroniser automatiquement les Assets Commerce approuvées lors de leur chargement dans l’environnement AEM Assets, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_&#x200B;de l’onglet `Basic` sur `approved`.
+1. Facultatif. Pour synchroniser automatiquement les Assets Commerce approuvées lors de leur chargement dans l’environnement AEM Assets, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_de l’onglet `Basic` sur `approved`.
 
 1. Enregistrez la mise à jour.
 
@@ -299,4 +303,4 @@ Le composant d’interface utilisateur des données de produit est ajouté autom
 
 * [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} [installer les packages Adobe Commerce](configure-commerce.md).
 
-* [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} [Configurez l’intégration à partir de l’Administration](setup-synchronization.md).
+* [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} [Configurez l’intégration à partir de l’Administration](setup-synchronization.md).
