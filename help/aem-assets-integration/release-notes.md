@@ -3,13 +3,11 @@ title: Notes de mise à jour de l’intégration AEM Assets
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les versions de l’intégration AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: afef108e512c69047a0420566a498dab164c207e
+source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1784'
 ht-degree: 0%
-
 ---
-
 # Notes de mise à jour de l’intégration AEM Assets
 
 Ces notes de mise à jour décrivent toutes les versions de l’intégration AEM Assets et incluent :
@@ -38,6 +36,36 @@ _1 février 2025_
 
 +++
 
+## v1.4.7
+
+_18 septembre 2026_
+
+[!BADGE pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce version 2.4.5 et versions ultérieures.
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue ACAP-1317 --> Correction d’un problème en raison duquel le fichier `workspace.json` chargé pour la [correspondance automatique personnalisée](synchronize/custom-match.md) ne persistait pas correctement lorsque l’enregistrement de la configuration asynchrone de Commerce était activé. Auparavant, la requête d’administration mettait uniquement en file d’attente les métadonnées de chargement plutôt que le contenu du fichier. Par conséquent, le temps que le client de configuration asynchrone traite l’enregistrement, le fichier de chargement temporaire ne peut plus être lu. Par conséquent, la configuration semblait s’enregistrer correctement tandis que les valeurs OAuth d’App Builder restaient inchangées. Les informations d’identification App Builder chargées survivent désormais à la limite de la file d’attente et sont traitées correctement par le client asynchrone.
+
+>[!IMPORTANT]
+>
+>Si vous utilisez un mappeur personnalisé avec l’option Enregistrer la configuration asynchrone activée, chargez à nouveau votre fichier `workspace.json` après avoir effectué la mise à niveau vers cette version. Pour obtenir des instructions de chargement, voir [Enregistrement de la configuration asynchrone](synchronize/custom-match.md#async-config-save).
+
+## v1.4.6
+
+_8 septembre 2026_
+
+[!BADGE pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce version 2.4.5 et versions ultérieures.
+
+![Nouvel événement](../assets/new.svg)<!-- Issue ACAP-1272 --> Les rôles d’image AEM personnalisés sont désormais conservés pendant la synchronisation. Les valeurs personnalisées du champ de métadonnées de `commerce:roles` AEM sont ingérées et mappées aux données de la galerie de médias du produit Commerce, en plus des quatre rôles standard (`image`, `small_image`, `thumbnail` et `swatch_image`). Pour plus d’informations, voir [Correspondance automatique personnalisée](synchronize/custom-match.md).
+
+![Nouveau problème](../assets/new.svg)<!-- Issue ACAP-1272 --> Adobe Commerce peut désormais rechercher les mises à jour de l’extension d’intégration AEM Assets de manière asynchrone et informer les administrateurs dans l’administration lorsqu’une nouvelle version est disponible. Les administrateurs peuvent également exécuter une vérification manuelle à l’aide de `bin/magento aem:assets:check-update`. Pour plus d’informations, voir [Rechercher les mises à jour d’extension](get-started/check-for-updates.md).
+
+## v1.4.5
+
+_3 août 2026_
+
+[!BADGE pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce version 2.4.5 et versions ultérieures.
+
+![Correction d’un problème](../assets/fix.svg)<!-- Issue ACAP-1321 --> Correction d’un problème de rétrocompatibilité avec la visibilité des ressources dans la vue du magasin. Les demandes de synchronisation de ressources existantes qui ne spécifient pas de vues de magasin masquées continuent à fonctionner sans modifications.
+
 ## v1.4.4
 
 _30 juillet 2026_
@@ -45,6 +73,8 @@ _30 juillet 2026_
 [!BADGE pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce version 2.4.5 et versions ultérieures.
 
 ![Nouvel événement](../assets/new.svg) Désormais, les commerçants peuvent masquer les vues de magasin spécifiques à une ressource AEM. Lorsqu’AEM Assets marque une image comme masquée pour une ou plusieurs vues de magasin, Commerce l’exclut du storefront sur ces vues de magasin. La galerie de médias du produit d’administration comprend désormais un champ **[!UICONTROL Store View Visibility]** qui indique quelles vues de magasin masquent l’image. <!-- Issue ACAP-1308 -->
+
+![Correction d’un problème](../assets/fix.svg) Correction d’un problème en raison duquel le package d’intégration de Page Builder nécessitait incorrectement le package `magento/module-page-builder`, ce qui empêchait son installation indépendante.
 
 ## v1.4.2
 

@@ -20,9 +20,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4c27d94eca656c48dd50ba8dc69a905ea141c6fd
+source-git-commit: fda6fa7c9ae80a594f0eb05624030cd6b13f0da2
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1861'
 ht-degree: 1%
 ---
 # Configuration du projet AEM Assets
@@ -205,6 +205,8 @@ Une fois que vous avez envoyé le ticket d’assistance, Adobe active Dynamic Me
 
    * Les SKU de produit et les champs `Eligible for Commerce` sont visibles.
 
+   * Le multichamp **[!UICONTROL Alt texts]** est disponible avec des entrées **[!UICONTROL Store View Code]** et **[!UICONTROL Alt Text]**.
+
 ### L’onglet Commerce n’est pas visible dans les propriétés
 
 Si l’onglet **&#x200B;**&#x200B;n’apparaît pas dans les propriétés, vous devez effectuer manuellement les étapes suivantes dans l’éditeur de schéma de métadonnées :
@@ -220,6 +222,8 @@ Si l’onglet **&#x200B;**&#x200B;n’apparaît pas dans les propriétés, vous 
 1. Cochez la case **Afficher les rôles** et **Afficher l’ordre**.
 
 1. Faites glisser et déposez un composant **case à cocher** dans l’onglet **Commerce** et mappez-le à l’`commerce:isCommerce` de propriété. Définissez **Oui** et **Non** comme options.
+
+1. Ajoutez le multichamp **[!UICONTROL Alt texts]** à l’onglet **Commerce**. Configurez ses deux propriétés alignées sur l’index en tant que `commerce:altTextStoreViews` et `commerce:altTextValues`.
 
 Si vous rencontrez d’autres problèmes, créez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) ou contactez votre représentant commercial pour l’intégration AEM Assets pour obtenir de l’aide.
 

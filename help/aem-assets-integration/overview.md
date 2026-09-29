@@ -1,32 +1,41 @@
 ---
 title: Intégration d’AEM Assets pour Commerce
-description: Découvrez comment intégrer Adobe Experience Manager Assets à votre instance  [!DNL Commerce]  créer et gérer les fichiers multimédias pour votre storefront Commerce.
+description: Découvrez comment intégrer Adobe Experience Manager Assets à votre instance [!DNL Commerce] pour créer et gérer les fichiers multimédias pour votre storefront Commerce.
 feature: CMS, Media, Configuration, Integration
 exl-id: f450752a-bef1-419e-ad14-ff8879ab204b
 TQID: https://experienceleague.adobe.com/CTDmM7Ox2rQ-55F1BVTg-C8DPBEuEpzFxXGtWpnjXKs
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Administration
+source-git-commit: 9ac4dbfe281f683adce98fc3693295e0f5364fca
 workflow-type: tm+mt
-source-wordcount: 1091
+source-wordcount: '1236'
 ht-degree: 1%
-
 ---
-
 # Intégration d’AEM Assets pour Commerce
 
 La demande de contenu personnalisé augmente rapidement tandis que les budgets marketing sont sous pression. Les détaillants et les marques ont du mal à suivre le rythme du besoin croissant de variations dans l’imagerie des produits, liées aux exigences régionales, saisonnières et spécifiques aux segments.
@@ -42,6 +51,14 @@ L’intégration d’AEM Assets relève ce défi en automatisant les workflows d
 * **Mises à jour dynamiques des ressources** - Les images des produits et les ressources marketing reflètent automatiquement les dernières modifications d’AEM Assets, préservant la précision et la pertinence des storefronts.
 
 * **Gestion rationalisée des catalogues** - Automatise l’actualisation et le nettoyage des ressources, ce qui réduit les opérations manuelles et garantit la cohérence et la maintenance du catalogue de produits.
+
+* **Texte secondaire d’image localisé** - Les marketeurs peuvent créer du texte de remplacement pour chaque vue de la boutique Commerce. L’intégration synchronise la valeur avec le champ de **[!UICONTROL Label]** d’image standard de Commerce.
+
+* **Rôles d’image personnalisés** - Avec l’extension d’intégration AEM Assets version 1.4.6 ou ultérieure, les rôles d’image personnalisés configurés dans AEM Assets sont conservés pendant la synchronisation, en plus des quatre rôles standard. Voir [Correspondance automatique personnalisée](synchronize/custom-match.md).
+
+* **Notifications de mise à jour d’extension** - Avec l’intégration AEM Assets version 1.4.6 ou ultérieure, Commerce recherche de nouvelles versions d’extension et en informe les administrateurs. Voir [Rechercher les mises à jour d’extension](get-started/check-for-updates.md).
+
+La localisation du texte de remplacement ne modifie pas l’affectation de l’image du produit ou le mappage de la galerie. La disponibilité des ressources en affichage de magasin est une fonctionnalité distincte et n’est pas couverte par le workflow de texte secondaire.
 
 ## Conditions requises pour utiliser l’intégration
 
@@ -106,6 +123,8 @@ Découvrez comment utiliser Adobe Commerce as a Cloud Service avec l’intégrat
 Le processus d’installation et de configuration de l’intégration AEM Assets dépend de votre déploiement Adobe Commerce. Dans tous les cas, vous devez d’abord configurer AEM Assets, puis y connecter Commerce.
 
 Pour comprendre l’espace de noms, le schéma de métadonnées et **[!UICONTROL Commerce]**’onglet que l’intégration ajoute à votre environnement AEM Assets, consultez [Métadonnées Commerce dans AEM Assets](metadata.md) avant de commencer.
+
+Pour le texte secondaire d’image localisé, voir [Texte secondaire localisé dans les métadonnées AEM Assets](metadata.md#localized-alt-text-in-aem-assets-metadata). Pour obtenir des instructions de configuration et de synchronisation, voir [Configuration du projet AEM Assets](get-started/configure-aem.md) et [Configuration de l’intégration](get-started/setup-synchronization.md).
 
 Sélectionnez votre déploiement pour suivre les étapes requises dans l’ordre :
 
