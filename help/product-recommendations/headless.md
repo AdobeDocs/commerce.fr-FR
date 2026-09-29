@@ -1,27 +1,33 @@
 ---
 title: Découplé
-description: Découvrez comment intégrer  [!DNL Product Recommendations]  dans un storefront découplé.
+description: Découvrez comment intégrer [!DNL Product Recommendations] dans un storefront découplé.
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
 TQID: https://experienceleague.adobe.com/J3qXs-SWuDCz7pQwzGm0VcOOFoU1QM2M4qwsTxxPwE8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+    internal-label: Data collection
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: 365
+source-wordcount: '366'
 ht-degree: 0%
-
 ---
-
 # Découplé
 
 Vous pouvez intégrer [!DNL Product Recommendations] dans un storefront découplé à l’aide de [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) ou d’une technologie frontale personnalisée, telle que React ou Vue JS.
@@ -67,6 +73,6 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
 
 1. Une fois les données comportementales collectées, vous pouvez [créer](create.md) [!DNL Product Recommendations] dans l’Administration.
 
-1. Utilisez le SDK Recommendations[&#128279;](https://developer.adobe.com/commerce/services/product-recommendations/) pour récupérer les unités de recommandation sur le storefront. Le SDK renvoie les données de produit nécessaires pour effectuer le rendu des unités de recommandation sur une page.
+1. Utilisez le SDK Recommendations](https://developer.adobe.com/commerce/services/product-recommendations/) pour récupérer les unités de recommandation sur le storefront. [Le SDK renvoie les données de produit nécessaires pour effectuer le rendu des unités de recommandation sur une page.
 
 1. Découvrez comment utiliser la requête [`recommendations` GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations) pour renvoyer des informations sur les blocs de recommandation de produit pour un SKU donné, etc.
