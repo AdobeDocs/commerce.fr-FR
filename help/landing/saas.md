@@ -8,26 +8,34 @@ badgePaas: label="PaaS uniquement" type="Informative" url="https://experiencelea
 TQID: https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Data management
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: 1665
+source-wordcount: '1665'
 ht-degree: 0%
-
 ---
-
 # [!DNL Commerce Services Connector]
 
 Certaines fonctionnalités d’Adobe Commerce et de Magento Open Source sont optimisées par [!DNL Commerce Services] et déployées en tant que SaaS (logiciel en tant que service). Pour utiliser ces services, vous devez connecter votre instance [!DNL Commerce] à l’aide des clés API de production et sandbox, puis spécifier l’espace de données dans la [configuration](#saas-configuration). Il vous suffit de configurer la connexion une seule fois pour chaque instance.
@@ -70,7 +78,7 @@ Le propriétaire de la licence est généralement le contact par Principal sur l
 
 1. Connectez-vous à votre compte [!DNL Commerce] sur [https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"}.
 
-1. Sous l’onglet **&#x200B;**, sélectionnez **Portail API** dans la barre latérale.
+1. Sous l’onglet **Magento**, sélectionnez **Portail API** dans la barre latérale.
 
 1. Dans le menu _Environnement_, sélectionnez **Production** ou **Sandbox**.
 
@@ -108,7 +116,7 @@ Si vous ne trouvez pas les champs de configuration Live Search dans Admin, véri
 
 Avant de supprimer une clé API, générez et stockez en toute sécurité une clé de remplacement. Mettez à jour toutes les intégrations pour utiliser la nouvelle clé et vérifiez que les services dépendants fonctionnent comme prévu.
 
-Si vous ne voyez pas **[!DNL Live Search]** champs de configuration dans le Panneau d’administration, confirmez que vous avez saisi la clé d’API SaaS appropriée pour cet environnement. Utilisez la clé SaaS de production pour l’espace de données de production et la clé d’évaluation pour l’espace de données d’évaluation. Si la mauvaise clé est configurée, les services SaaS (y compris **[!DNL Live Search]**) ne seront pas disponibles dans votre environnement Adobe Commerce.
+Si vous ne voyez pas **[!DNL Live Search]** champs de configuration dans le panneau d’administration, confirmez que vous avez saisi la clé d’API SaaS appropriée pour cet environnement. Utilisez la clé SaaS de production pour l’espace de données de production et la clé d’évaluation pour l’espace de données d’évaluation. Si la mauvaise clé est configurée, les services SaaS (y compris **[!DNL Live Search]**) ne seront pas disponibles dans votre environnement Adobe Commerce.
 
 Sur la clé API à supprimer, cliquez sur **[!UICONTROL Delete]**. Lorsque vous y êtes invité, confirmez l’opération de suppression définitive de la clé.
 
@@ -155,9 +163,9 @@ Pour sélectionner ou créer un projet SaaS, demandez les clés d’API [!DNL Co
 
    Si vous disposez d’instances distinctes à intégrer aux services Commerce, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) pour demander un nouveau projet SaaS pour chaque instance supplémentaire. Une fois que l’assistance a créé le projet SaaS, configurez le connecteur de services Commerce pour l’instance **à l’aide des mêmes clés API** et sélectionnez le nouveau projet SaaS et le nouvel espace de données.
 
->[!WARNING]
->
-> Si vous générez de nouvelles clés sur le portail API, mettez immédiatement à jour les clés API dans la configuration Admin. Si l’administrateur utilise toujours d’anciennes clés, vos extensions SaaS ne fonctionnent plus et la collecte de données est interrompue.
+   >[!WARNING]
+   >
+   > Si vous générez de nouvelles clés sur le portail API, mettez immédiatement à jour les clés API dans la configuration Admin. Si l’administrateur utilise toujours d’anciennes clés, vos extensions SaaS ne fonctionnent plus et la collecte de données est interrompue.
 
 Pour modifier les noms de votre projet SaaS ou de votre espace de données, cliquez sur **Renommer** en regard de l’un des deux. La modification du nom n’affecte pas votre service, car le nom n’est qu’un libellé pour vous aider à identifier et à différencier les projets des espaces de données.
 
