@@ -1,35 +1,48 @@
 ---
 title: Clés d’accès restreintes
-description: Découvrez comment créer, affecter et faire pivoter des clés d’accès restreintes pour protéger les vues de catalogue dans  [!DNL Adobe Commerce Optimizer]  avec l’authentification par jeton signé.
+description: Découvrez comment les clés d’accès restreint protègent les vues de catalogue dans [!DNL Adobe Commerce Optimizer], qu’elles soient créées automatiquement pour les catalogues partagés B2B ou gérées manuellement.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 nudge: true
-source-git-commit: 688bc6e28a4c5a94b1fe55c84f7c05401dd651bc
+source-git-commit: f93bd673624c58050696da772ce733874ce594e5
 workflow-type: tm+mt
-source-wordcount: 791
+source-wordcount: '1251'
 ht-degree: 0%
-
 ---
-
 # Clés d’accès restreintes
 
-Les clés d’accès restreint permettent aux applications clientes autorisées d’accéder à une [vue de catalogue privée](catalog-view.md) ; seules les requêtes portant un jeton signé valide à partir d’une clé attribuée peuvent récupérer les données du catalogue. Toutes les autres requêtes sont refusées, y compris celles des acheteurs anonymes, des acheteurs qui n’ont pas explicitement eu accès à cette vue de catalogue et des scripts qui analysent l’API.
+Les clés d’accès restreint permettent aux applications clientes autorisées d’accéder à une [vue de catalogue privée](catalog-view.md) ; seules les requêtes portant un jeton signé valide à partir d’une clé attribuée peuvent récupérer les données du catalogue. Toutes les autres requêtes sont refusées, y compris celles des acheteurs qui n’ont pas reçu explicitement l’accès à cette vue de catalogue et les scripts qui analysent l’API.
+
+Les clés d’accès restreint sont configurées de l’une des deux façons suivantes :
+
+- {type=Caution tooltip="Nécessite l’extension B2B du connecteur Adobe Commerce Optimizer, qui est actuellement en version bêta privée."} **Automatiquement, pour les catalogues partagés B2B**—Pour les déploiements intégrés avec le [!DNL Adobe Commerce Optimizer Connector for B2B], le connecteur met en place et attribue la clé initiale. Ensuite, vous gérez les clés et l’affectation des clés à partir de l’administrateur Commerce. Voir [Authentification des vues de catalogue](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) dans le *Guide d’administration de Commerce**.
+
+- **Manuellement, pour toute vue de catalogue**—Pour protéger vous-même une vue de catalogue, par exemple pour un portail partenaire ou un aperçu de version préliminaire—suivez les étapes de cette rubrique en commençant par [Créer une clé d’accès restreinte](#create-a-restricted-access-key).
 
 ## Cas d’utilisation de clés d’accès limité
 
@@ -37,19 +50,15 @@ En [!DNL Adobe Commerce Optimizer], **[!UICONTROL Price Book ID]** détermine le
 
 Les clés d’accès restreint sont généralement utilisées pour :
 
-- **Tarification B2B basée sur un contrat** : limitez une vue de catalogue liée à un catalogue de prix négocié afin que seul l&#39;acheteur auquel il s&#39;applique puisse l&#39;interroger. Les autres organisations d&#39;achat et le public ne peuvent pas le faire.
+- **Tarification B2B basée sur un contrat** : limitez une vue de catalogue liée à un catalogue de prix négocié afin que seul l&#39;acheteur auquel il s&#39;applique puisse l&#39;interroger. Les autres organisations d&#39;achat et le public ne peuvent pas le faire. Pour les catalogues partagés B2B, cette configuration est automatique. Voir [&#x200B; Gestion des clés et rotation &#x200B;](#key-management-and-rotation).
 - **Portail des partenaires et revendeurs** : limitez un sous-ensemble du catalogue aux partenaires approuvés qui s’intègrent directement à l’API de marchandisage.
 - **Prévisualisations de version préliminaire** : laissez un système interne ou partenaire de confiance prévisualiser les produits à venir avant qu’ils ne soient visibles publiquement.
 
->[!IMPORTANT]
->
->La génération de clés, la signature de jeton et la rotation sont actuellement gérées entièrement par l’application cliente principale qui authentifie les acheteurs. [!DNL Adobe Commerce Optimizer] ne génère ni ne fait pivoter ces clés en votre nom.
-
 ## Fonctionnement des clés d’accès restreintes
 
-Une clé d’accès restreint est le composant public d’une paire de clés RSA. Votre application cliente génère et utilise cette clé pour prouver qu’elle est autorisée à lire une vue de catalogue privée. Dans ce contexte, « application cliente » désigne le système principal qui authentifie les acheteurs, par exemple la logique personnalisée sur [!DNL Adobe Commerce] ou un serveur principal tiers, et jamais le storefront lui-même.
+Une clé d’accès restreint est le composant public d’une paire de clés RSA. Votre application cliente génère et utilise cette clé pour prouver qu’elle est autorisée à lire une vue de catalogue privée. Dans ce contexte, _application cliente_ fait référence au système principal qui authentifie les acheteurs, par exemple la logique personnalisée sur [!DNL Adobe Commerce] ou un serveur principal tiers, et jamais le serveur frontal storefront lui-même.
 
-Les étapes suivantes décrivent comment une paire de clés et un jeton signé passent de la création à la validation :
+Les étapes suivantes décrivent comment une paire de clés et un jeton signé passent de la création à la validation pour les vues de catalogue qui ne font pas partie d’un catalogue partagé B2B.
 
 1. Votre application cliente génère une paire de clés RSA et conserve la clé privée.
 1. Vous enregistrez la clé **publique** dans [!DNL Commerce Optimizer] en tant que clé d’accès restreint.
@@ -58,7 +67,11 @@ Les étapes suivantes décrivent comment une paire de clés et un jeton signé p
 
 ## Créer une clé d’accès restreinte
 
-Pour les tests initiaux des vues de catalogue privé, générez une paire de clés à l’aide d’un outil tel que [!DNL OpenSSL]. Gardez la clé privée secrète : seule la clé publique est téléchargée sur [!DNL Commerce Optimizer].
+>[!NOTE]
+>
+>Cette section et les trois qui suivent décrivent le flux manuel [!DNL Adobe Commerce Optimizer] Studio. Si vous utilisez des catalogues partagés B2B avec le [!DNL Adobe Commerce Optimizer Connector B2B extension], gérez les clés à partir de l’administrateur Commerce. Voir [Clés d’accès restreintes](../../aco-connector/restricted-access-keys.md) dans la documentation du _connecteur Adobe Commerce Optimizer_.
+
+Pour les tests initiaux des vues de catalogue privé, générez une paire de clés à l’aide d’un outil tel que [!DNL OpenSSL]. Gardez la clé privée secrète. Seule la clé publique est chargée dans [!DNL Commerce Optimizer].
 
 ```bash
 openssl genrsa -out private-key.pem 2048
@@ -89,7 +102,7 @@ Les clés sont immuables après leur création. Pour modifier n’importe quelle
 
 ## Attribution d’une clé à une vue de catalogue
 
-Une clé d’accès restreint ne restreint l’accès qu’après son affectation à une vue de catalogue avec **[!UICONTROL Catalog Protection]** activé. Voir [Protection d’une vue de catalogue](private-catalog-view.md#protect-a-catalog-view) pour connaître les étapes de configuration.
+Une clé d’accès restreint n’authentifie l’accès qu’après son affectation à une vue de catalogue avec **[!UICONTROL Catalog Protection]** activé. Voir [Protection d’une vue de catalogue](private-catalog-view.md#protect-a-catalog-view) pour connaître les étapes de configuration.
 
 ## Supprimer une clé
 
@@ -99,7 +112,19 @@ Une clé d’accès restreint ne restreint l’accès qu’après son affectatio
 
 1. Confirmez la suppression.
 
-## Rotation d’une touche
+## Gestion des clés et rotation
+
+Les clés d’accès restreint sont gérées de l’une des deux façons suivantes, selon la manière dont vous utilisez la protection du catalogue :
+
+- **Automatiquement, pour les catalogues partagés B2B**—[!BADGE Private Beta]{type=Caution tooltip="Nécessite l’extension B2B du connecteur Adobe Commerce Optimizer, qui est actuellement en version bêta privée."} Pour les déploiements intégrés avec le [!DNL Adobe Commerce Optimizer Connector for B2B], le service génère et attribue automatiquement la première clé d’accès restreint lors de la création d’une vue de catalogue. Chaque vue de catalogue obtient sa propre clé. Ensuite, vous pouvez gérer chaque clé à partir des pages Catalogue partagé ou Compte d’entreprise . Vous pouvez également afficher et gérer les clés à partir de la page Commerce Admin **Clés d’accès restreint** (**Système** > **Transfert de données**). Voir [Gérer la configuration de la vue du catalogue](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage).
+
+  Chaque combinaison d’un catalogue partagé et d’une vue de magasin à laquelle elle est affectée est projetée en tant que vue de catalogue distincte. Une projection correspond à la vue de catalogue, à la politique, à la référence du catalogue et aux données de configuration de clé d’accès restreint que le connecteur exporte vers [!DNL Adobe Commerce Optimizer] pour cette combinaison. Ainsi, un catalogue partagé affecté à plusieurs vues de magasin produit plusieurs vues de catalogue, chacune avec sa propre clé. Modifier ou faire pivoter une clé pour une vue de catalogue sans affecter les autres.
+
+  Les clés ont par défaut une longue période d’expiration. Si vous devez faire pivoter une clé, ajoutez le remplacement dans le fichier Admin et conservez les deux actifs jusqu’à ce que vous supprimiez l’ancienne. Voir [Modifications du catalogue partagé B2B](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes).
+
+- **Manuellement, pour toute vue de catalogue** : pour les vues de catalogue qui ne sont pas associées à un catalogue partagé B2B dans le serveur principal Adobe Commerce, la génération de clés, la signature de jeton et la rotation sont entièrement gérées par l’application cliente du serveur principal qui authentifie les acheteurs. [!DNL Adobe Commerce Optimizer] ne génère ni ne fait pivoter ces clés en votre nom. Suivez les étapes décrites plus haut dans cette rubrique pour créer, ajouter et supprimer des clés. Pour faire pivoter une touche, voir [Faire pivoter une touche](#rotate-a-key).
+
+### Rotation d’une touche
 
 Pour faire pivoter une clé sans interruption d’accès, notez qu’une vue de catalogue peut être associée à trois clés à la fois :
 
@@ -115,4 +140,5 @@ Voir [Vues du catalogue et limites des politiques](../boundaries-limits.md#catal
 ## Plus comme ceci
 
 - [Vues de catalogue privé](private-catalog-view.md) : découvrez comment protéger une vue de catalogue avec des clés d’accès restreintes.
+- [Modifications du catalogue partagé B2B &#x200B;](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes)—Découvrez comment le [!DNL Adobe Commerce Optimizer Connector] automatise la gestion des clés pour les catalogues partagés B2B.
 

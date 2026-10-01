@@ -24,7 +24,7 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 658401a83acf5bab669f0734100eef99af98c908
+source-git-commit: 1009ae28286a8503511c85726bf44922c7c2575e
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Surveillez les opérations de synchronisation dans le fichier `var/log/saas-expo
 >
 >La synchronisation initiale s’exécute automatiquement lorsque Live Search ou les recommandations de produits sont activées. Les commandes manuelles ne sont pas nécessaires.
 >
->Pour les déploiements [!DNL Adobe Commerce Optimizer Connector], la commande `aco:config:init` planifie la synchronisation complète initiale en invalidant tous les indexeurs de flux du connecteur. Voir [Activation de l’intégration  [!DNL Commerce Optimizer]  &#x200B;](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration) et [Gestion de la synchronisation vers [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md).
+>Pour les déploiements [!DNL Adobe Commerce Optimizer Connector], la commande `aco:config:init` planifie la synchronisation complète initiale en invalidant tous les indexeurs de flux du connecteur. Voir [Activation de l’intégration  [!DNL Commerce Optimizer]  &#x200B;](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration) et [Gestion de la synchronisation vers [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md).
 
 Lorsque vous déclenchez une `saas:resync` à partir de la ligne de commande, en fonction de la taille de votre catalogue, la mise à jour des données peut prendre de quelques minutes à quelques heures.
 

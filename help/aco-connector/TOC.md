@@ -1,24 +1,29 @@
 ---
 user-guide-title: Guide d’intégration d’[!DNL Adobe Commerce Optimizer Connector]
 breadcrumb-title: '[!DNL Optimizer Connector]'
-user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation du  [!DNL Adobe Commerce Optimizer Connector]  pour exporter des données de catalogue, synchroniser les prix et diffuser  [!DNL Edge Delivery Services]  vitrines à l’aide du  [!DNL Adobe Commerce Optimizer].
+user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de l’[!DNL Adobe Commerce Optimizer Connector] pour exporter des données de catalogue, synchroniser les prix et diffuser des vitrines [!DNL Edge Delivery Services] à l’aide de [!DNL Adobe Commerce Optimizer].
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
 nudge: true
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 7ab078f4780c25e3bb43479eec1fe18e31faf96c
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '105'
 ht-degree: 5%
-
 ---
-
 
 # Guide d’intégration d’[!DNL Adobe Commerce Optimizer Connector] {#aco-optimizer-connector}
 
 - [[!DNL Adobe Commerce Optimizer Connector]](overview.md)
-- [Prise en main](get-started.md)
+- [Projection de catalogue partagé B2B](b2b-shared-catalog-projection.md)
+- Prise en main {#get-started}
+  - [Configurer le connecteur pour Adobe Commerce](get-started.md)
+  - [Configurer le connecteur pour B2B Commerce](get-started-b2b-shared-catalogs.md)
 - [Pipeline de synchronisation du connecteur](connector-sync-pipeline.md)
-- [Gestion de la synchronisation](data-sync-manage.md)
+- Gestion de la synchronisation {#manage-sync}
+  - [Surveiller la synchronisation des données du catalogue](data-sync-status.md)
+  - Synchronisation de la vue Catalogue {#catalog-view-sync}
+    - [Surveiller la synchronisation de la vue du catalogue](catalog-view-sync-status.md)
+    - [Gestion des clés d’accès restreintes](restricted-access-keys.md)
 - [Intégration de storefront découplé](headless-storefront.md)
 - Dépannage {#troubleshooting}
   - [Vue d’ensemble](troubleshooting.md)

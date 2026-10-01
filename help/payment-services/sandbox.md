@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -57,9 +57,9 @@ Pour terminer l’intégration au sandbox :
 
    Lorsque l&#39;intégration de votre sandbox PayPal est approuvée, une notification devrait s&#39;afficher indiquant que votre système de paiement est actuellement en mode sandbox et ne traite pas les paiements en direct.
 
-   >[!IMPORTANT]
-   >
-   >Si vous révoquez le consentement à [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] pour le traitement de vos paiements (dans les paramètres de votre compte PayPal), les commandes dans votre boutique ne peuvent pas être traitées par [!DNL Payment Services]. Sur la page d’accueil de Payment Services, une alerte concernant le consentement révoqué s’affiche. Pour ignorer l’alerte, cliquez sur **[!UICONTROL Do not show again]**.
+>[!IMPORTANT]
+>
+>Si vous révoquez le consentement à [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] pour le traitement de vos paiements (dans les paramètres de votre compte PayPal), les commandes dans votre boutique ne peuvent pas être traitées par [!DNL Payment Services]. Sur la page d’accueil de Payment Services, une alerte concernant le consentement révoqué s’affiche. Pour ignorer l’alerte, cliquez sur **[!UICONTROL Do not show again]**.
 
 ### Réinitialiser votre compte sandbox
 
@@ -102,9 +102,9 @@ Pour configurer le pays de l&#39;acheteur :
 
 1. Cliquez sur **[!UICONTROL Save Config]** pour enregistrer vos modifications.
 
->[!NOTE]
->
->Le paramètre **[!UICONTROL Buyer's country]** s’affiche uniquement lorsque la méthode est définie sur `Sandbox`. Cela n’affecte pas les environnements de production.
+   >[!NOTE]
+   >
+   >Le paramètre **[!UICONTROL Buyer's country]** s’affiche uniquement lorsque la méthode est définie sur `Sandbox`. Cela n’affecte pas les environnements de production.
 
 ## Test dans un environnement sandbox
 

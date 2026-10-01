@@ -1,9 +1,8 @@
 ---
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '708'
 ht-degree: 0%
-
 ---
 # Fragments de code Commerce
 
@@ -20,6 +19,11 @@ ht-degree: 0%
 >
 >Connectez toujours les instances Sandbox Optimizer aux environnements hors production et les instances de production aux environnements de production. Les environnements incohérents entraînent des incohérences au niveau des données de catalogue, des résultats de recherche et des recommandations.
 
+## Remarque sur le traitement de la synchronisation des données Adobe Commerce Optimizer {#aco-data-sync-processing-note}
+
+>[!IMPORTANT]
+>
+>Le traitement de la synchronisation des données démarre en arrière-plan dès que vous avez terminé la configuration. Selon la taille de votre catalogue, le processus de synchronisation des données peut prendre de quelques minutes à plusieurs heures.
 
 ## Services de marchandisage pour Optimizer {#aco-merchandising-services}
 
@@ -110,3 +114,13 @@ Pour plus d’informations sur les options de configuration de l’identité, no
 >[!IMPORTANT]
 >
 >L’outil de migration de données en masse est actuellement en accès anticipé. L’accès est fourni exclusivement par le biais du processus d’engagement de l’ingénierie déployée (CDE) Commerce. Pour une présentation de l’outil et de ses conditions d’éligibilité, voir [Outil de migration de données en bloc](../cloud-service/migration/bulk-data/migration-tool.md).
+
+## Installer des liens d’extension {#install-extension-links}
+
+>[!NOTE]
+>
+>Pour obtenir des instructions d’installation d’extension détaillées, consultez les guides suivants :
+>
+>[Installer l’extension sur [!DNL Adobe Commerce] sur une infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>
+>[Installer l’extension sur  [!DNL Adobe Commerce]  site](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/extensions)
