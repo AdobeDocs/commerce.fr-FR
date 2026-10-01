@@ -40,7 +40,7 @@ Les clés d’accès restreint permettent aux applications clientes autorisées 
 
 Les clés d’accès restreint sont configurées de l’une des deux façons suivantes :
 
-- [!BADGE ]{type=Caution tooltip="Nécessite l’extension B2B du connecteur Adobe Commerce Optimizer, qui est actuellement en version bêta privée."} **Automatiquement, pour les catalogues partagés B2B**—Pour les déploiements intégrés avec le [!DNL Adobe Commerce Optimizer Connector for B2B], le connecteur met en place et attribue la clé initiale. Ensuite, vous gérez les clés et l’affectation des clés à partir de l’administrateur Commerce. Voir [Authentification des vues de catalogue](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) dans le *Guide d’administration de Commerce**.
+- {type=Caution tooltip="Nécessite l’extension B2B du connecteur Adobe Commerce Optimizer, qui est actuellement en version bêta privée."} **Automatiquement, pour les catalogues partagés B2B**—Pour les déploiements intégrés avec le [!DNL Adobe Commerce Optimizer Connector for B2B], le connecteur met en place et attribue la clé initiale. Ensuite, vous gérez les clés et l’affectation des clés à partir de l’administrateur Commerce. Voir [Authentification des vues de catalogue](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) dans le *Guide d’administration de Commerce**.
 
 - **Manuellement, pour toute vue de catalogue**—Pour protéger vous-même une vue de catalogue, par exemple pour un portail partenaire ou un aperçu de version préliminaire—suivez les étapes de cette rubrique en commençant par [Créer une clé d’accès restreinte](#create-a-restricted-access-key).
 
@@ -50,7 +50,7 @@ En [!DNL Adobe Commerce Optimizer], **[!UICONTROL Price Book ID]** détermine le
 
 Les clés d’accès restreint sont généralement utilisées pour :
 
-- **Tarification B2B basée sur un contrat** : limitez une vue de catalogue liée à un catalogue de prix négocié afin que seul l&#39;acheteur auquel il s&#39;applique puisse l&#39;interroger. Les autres organisations d&#39;achat et le public ne peuvent pas le faire. Pour les catalogues partagés B2B, cette configuration est automatique. Voir [ Gestion des clés et rotation ](#key-management-and-rotation).
+- **Tarification B2B basée sur un contrat** : limitez une vue de catalogue liée à un catalogue de prix négocié afin que seul l&#39;acheteur auquel il s&#39;applique puisse l&#39;interroger. Les autres organisations d&#39;achat et le public ne peuvent pas le faire. Pour les catalogues partagés B2B, cette configuration est automatique. Voir [&#x200B; Gestion des clés et rotation &#x200B;](#key-management-and-rotation).
 - **Portail des partenaires et revendeurs** : limitez un sous-ensemble du catalogue aux partenaires approuvés qui s’intègrent directement à l’API de marchandisage.
 - **Prévisualisations de version préliminaire** : laissez un système interne ou partenaire de confiance prévisualiser les produits à venir avant qu’ils ne soient visibles publiquement.
 
@@ -90,7 +90,7 @@ La taille de la clé doit être comprise entre 2 048 et 8 192 bits. `public-key.
 
 1. Saisissez les détails clés :
 
-   ![Ajoutez le formulaire de clé d’accès restreint, avec les champs Titre, Date d’expiration et Clé publique ](../assets/restricted-access-keys-add.png){width="70%" zoomable="yes"}
+   ![Ajoutez le formulaire de clé d’accès restreint, avec les champs Titre, Date d’expiration et Clé publique &#x200B;](../assets/restricted-access-keys-add.png){width="70%" zoomable="yes"}
 
    - **[!UICONTROL Title]** : libellé permettant d&#39;identifier la clé, affiché dans la liste des clés et dans le sélecteur de clé de la vue du catalogue, par exemple `ACME Corp wholesale portal — Tier 1 pricing`.
    - **[!UICONTROL Expiration date]** : date et heure (UTC) au-delà desquelles la clé cesse d’être honorée, même pour un jeton qui n’a pas encore expiré.
@@ -98,7 +98,7 @@ La taille de la clé doit être comprise entre 2 048 et 8 192 bits. `public-key.
 
 1. Cliquez sur **[!UICONTROL Save]**.
 
-Les clés sont immuables après leur création. Pour modifier n’importe quelle valeur, supprimez la clé et créez-en une. Voir [ Rotation d’une clé ](#rotate-a-key) pour ce faire sans interruption de l’accès.
+Les clés sont immuables après leur création. Pour modifier n’importe quelle valeur, supprimez la clé et créez-en une. Voir [&#x200B; Rotation d’une clé &#x200B;](#rotate-a-key) pour ce faire sans interruption de l’accès.
 
 ## Attribution d’une clé à une vue de catalogue
 
@@ -140,5 +140,5 @@ Voir [Vues du catalogue et limites des politiques](../boundaries-limits.md#catal
 ## Plus comme ceci
 
 - [Vues de catalogue privé](private-catalog-view.md) : découvrez comment protéger une vue de catalogue avec des clés d’accès restreintes.
-- [Modifications du catalogue partagé B2B ](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes)—Découvrez comment le [!DNL Adobe Commerce Optimizer Connector] automatise la gestion des clés pour les catalogues partagés B2B.
+- [Modifications du catalogue partagé B2B &#x200B;](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes)—Découvrez comment le [!DNL Adobe Commerce Optimizer Connector] automatise la gestion des clés pour les catalogues partagés B2B.
 

@@ -73,6 +73,6 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
 
 1. Une fois les données comportementales collectées, vous pouvez [créer](create.md) [!DNL Product Recommendations] dans l’Administration.
 
-1. Utilisez le SDK Recommendations](https://developer.adobe.com/commerce/services/product-recommendations/) pour récupérer les unités de recommandation sur le storefront. [Le SDK renvoie les données de produit nécessaires pour effectuer le rendu des unités de recommandation sur une page.
+1. Utilisez le SDK Recommendations[&#128279;](https://developer.adobe.com/commerce/services/product-recommendations/) pour récupérer les unités de recommandation sur le storefront. Le SDK renvoie les données de produit nécessaires pour effectuer le rendu des unités de recommandation sur une page.
 
 1. Découvrez comment utiliser la requête [`recommendations` GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations) pour renvoyer des informations sur les blocs de recommandation de produit pour un SKU donné, etc.

@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 # Obtention des détails de l’instance [!DNL Commerce Optimizer]
 
-Récupérez l’_identifiant du client_ à partir du champ _[!DNL Instance Id]_de l’instance [!DNL Commerce Optimizer] [[!DNL Instance details] page](/help/optimizer/get-started.md#manage-instances) ou à partir de l’URL utilisée pour accéder à l’instance. Par exemple, dans `https://experience.adobe.com/#/@<your organization>/in:<tenant>/commerce-optimizer-studio/home`.
+Récupérez l’_identifiant du client_ à partir du champ _[!DNL Instance Id]_&#x200B;de l’instance [!DNL Commerce Optimizer] [[!DNL Instance details] page](/help/optimizer/get-started.md#manage-instances) ou à partir de l’URL utilisée pour accéder à l’instance. Par exemple, dans `https://experience.adobe.com/#/@<your organization>/in:<tenant>/commerce-optimizer-studio/home`.
 
 1. Dans l’Administration de Commerce, sélectionnez **[!UICONTROL Adobe Commerce Optimizer]** pour afficher la page de configuration avec les instructions.
 

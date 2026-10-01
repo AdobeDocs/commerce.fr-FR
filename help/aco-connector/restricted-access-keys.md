@@ -42,7 +42,7 @@ ht-degree: 0%
 
 # Gérer les clés d’accès restreintes pour les catalogues partagés B2B
 
-[!BADGE ]{type=Caution tooltip="Nécessite l’extension B2B du connecteur Adobe Commerce Optimizer, qui est actuellement en version bêta privée."}
+{type=Caution tooltip="Nécessite l’extension B2B du connecteur Adobe Commerce Optimizer, qui est actuellement en version bêta privée."}
 
 Si vous utilisez [!DNL Adobe Commerce] catalogues partagés B2B avec le [!DNL Adobe Commerce Optimizer Connector B2B extension], l’extension génère et attribue automatiquement la première clé d’accès restreint lors de la création d’une vue de catalogue. Utilisez la page [!UICONTROL Restricted Access Keys] de l’Administration Commerce pour afficher cette clé, ainsi que pour créer, attribuer ou supprimer des clés supplémentaires.
 
@@ -60,7 +60,7 @@ Vous pouvez attribuer une clé à la vue de catalogue à partir de la grille Cat
 
 >[!NOTE]
 >
->Pour consulter les champs de cette page, reportez-vous à la section [ Gestion des clés d’accès restreint ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} du *Guide d’administration de Commerce*.—>
+>Pour consulter les champs de cette page, reportez-vous à la section [&#x200B; Gestion des clés d’accès restreint &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} du *Guide d’administration de Commerce*.—>
 
 ## Lorsque vous avez besoin de plus que la clé automatique {#when-you-need-more-than-the-automatic-key}
 

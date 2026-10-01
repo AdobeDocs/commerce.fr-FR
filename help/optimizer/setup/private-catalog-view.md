@@ -37,7 +37,7 @@ Par défaut, une [vue de catalogue](catalog-view.md) est publique. Limitez l’a
 
 Une vue de catalogue devient privée de deux manières :
 
-- [!BADGE ]{type=Caution tooltip="Nécessite l’extension B2B du connecteur Adobe Commerce Optimizer, qui est actuellement en version bêta privée."} **Automatiquement, pour les catalogues partagés B2B** : pour les déploiements Commerce qui utilisent l’intégration [!DNL Adobe Commerce Optimizer Connector] avec l’extension B2B, les vues de catalogue privé sont automatiquement créées et configurées pour vous, en fonction de la configuration du catalogue partagé dans [!DNL Adobe Commerce]. Voir [Vues de catalogue privé automatiques pour les catalogues partagés B2B](#automatic-private-catalog-views-for-b2b-shared-catalogs).
+- {type=Caution tooltip="Nécessite l’extension B2B du connecteur Adobe Commerce Optimizer, qui est actuellement en version bêta privée."} **Automatiquement, pour les catalogues partagés B2B** : pour les déploiements Commerce qui utilisent l’intégration [!DNL Adobe Commerce Optimizer Connector] avec l’extension B2B, les vues de catalogue privé sont automatiquement créées et configurées pour vous, en fonction de la configuration du catalogue partagé dans [!DNL Adobe Commerce]. Voir [Vues de catalogue privé automatiques pour les catalogues partagés B2B](#automatic-private-catalog-views-for-b2b-shared-catalogs).
 
 - **Manuellement, pour toute vue de catalogue** : pour restreindre l’accès à une vue de catalogue qui serait autrement publique, y compris une vue de catalogue B2C, suivez les étapes décrites dans la section [Protection d’une vue de catalogue](#protect-a-catalog-view). Consultez [Cas d’utilisation clés à accès limité](restricted-access-keys.md#restricted-access-key-use-cases) pour obtenir des exemples, tels que les portails des partenaires et les aperçus de version préliminaire.
 
@@ -66,7 +66,7 @@ Les vues de catalogue public ne sont pas affectées par cette restriction et peu
 
 ## Vues de catalogue privé automatiques pour les catalogues partagés B2B
 
-[!BADGE ]{type=Caution tooltip="Nécessite l’extension B2B du connecteur Adobe Commerce Optimizer, qui est actuellement en version bêta privée."}
+{type=Caution tooltip="Nécessite l’extension B2B du connecteur Adobe Commerce Optimizer, qui est actuellement en version bêta privée."}
 
 Pour les déploiements intégrés avec [!DNL Adobe Commerce Optimizer Connector for B2B] pour prendre en charge les catalogues partagés, l’extension crée et configure automatiquement les vues de catalogue privé, en fonction de la configuration de catalogue partagé dans [!DNL Adobe Commerce]. Cette configuration inclut la vue de catalogue, la politique, une clé d’accès restreint initiale et une référence au catalogue. Avec cette configuration, vous gérez les clés d’accès restreint à partir de la page Commerce Admin **Clés d’accès restreint** (**Système** > **Transfert de données**). Pour plus d’informations, consultez [Modifications du catalogue partagé B2B](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes) dans le guide d’intégration *[!DNL Adobe Commerce Optimizer Connector]*.
 
@@ -96,7 +96,7 @@ Avant de commencer, [créez une clé d’accès restreint](restricted-access-key
 
 ## Vérifier que l’accès est appliqué
 
-Pour confirmer qu’une vue de catalogue privé rejette les requêtes non autorisées, appelez son point d’entrée [](../get-started.md#get-instance-details) avec ou sans jeton signé, à l’aide des en-têtes suivants :
+Pour confirmer qu’une vue de catalogue privé rejette les requêtes non autorisées, appelez son point d’entrée [&#128279;](../get-started.md#get-instance-details) avec ou sans jeton signé, à l’aide des en-têtes suivants :
 
 | En-tête | Objectif |
 | --- | --- |
@@ -125,7 +125,7 @@ Si [!UICONTROL Catalog Protection] est activé et que toutes les clés affectée
 
 >[!NOTE]
 >
->Pour les déploiements intégrés avec l’extension [!DNL Adobe Commerce Optimizer Connector for B2B], vous gérez les clés d’accès à partir de la page Commerce Admin **Restricted Access Keys** (**System** > **Data Transfer**). Pour plus d’informations, consultez la section [ Gestion des clés d’accès restreint ](../../aco-connector/restricted-access-keys.md) dans le guide d’intégration *[!DNL Adobe Commerce Optimizer Connector]*.
+>Pour les déploiements intégrés avec l’extension [!DNL Adobe Commerce Optimizer Connector for B2B], vous gérez les clés d’accès à partir de la page Commerce Admin **Restricted Access Keys** (**System** > **Data Transfer**). Pour plus d’informations, consultez la section [&#x200B; Gestion des clés d’accès restreint &#x200B;](../../aco-connector/restricted-access-keys.md) dans le guide d’intégration *[!DNL Adobe Commerce Optimizer Connector]*.
 
 ## Plus comme ceci
 

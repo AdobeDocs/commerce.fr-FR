@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 # Obtenir les détails de connexion requis
 
-À partir de [](https://developer.adobe.com/console), créez un projet activé pour le service d’ingestion [!DNL Commerce Optimizer] et générez des informations d’identification de serveur à serveur OAuth. Pour obtenir des instructions détaillées, voir [Obtention des informations d’identification IMS](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication#obtain-ims-credentials) dans le *Guide de développement du marchandisage pour Adobe Commerce Optimizer*.
+À partir de [&#128279;](https://developer.adobe.com/console), créez un projet activé pour le service d’ingestion [!DNL Commerce Optimizer] et générez des informations d’identification de serveur à serveur OAuth. Pour obtenir des instructions détaillées, voir [Obtention des informations d’identification IMS](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication#obtain-ims-credentials) dans le *Guide de développement du marchandisage pour Adobe Commerce Optimizer*.
 
 Enregistrez les valeurs suivantes à partir de la page des informations d’identification :
 

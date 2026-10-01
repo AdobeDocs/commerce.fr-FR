@@ -39,7 +39,7 @@ La plupart des activités de synchronisation sont traitées automatiquement à l
 
 >[!BEGINTABS]
 
->[!TAB ]
+>[!TAB Tab]
 
 Pour les déploiements d’Adobe Commerce on cloud, on-premise ou Adobe Commerce as a Cloud Service, affichez et gérez le processus de synchronisation à partir de ces ressources d’administration Commerce :
 
@@ -84,7 +84,7 @@ Utilisez les options suivantes pour resynchroniser manuellement les données de 
 
 >[!MORELIKETHIS]
 >
-> - [Fonctionnement de la synchronisation ](sync-overview.md) — Découvrez les modes de synchronisation, la synchronisation complète, la synchronisation partielle et les éléments pour lesquels une nouvelle tentative a échoué.
+> - [Fonctionnement de la synchronisation &#x200B;](sync-overview.md) — Découvrez les modes de synchronisation, la synchronisation complète, la synchronisation partielle et les éléments pour lesquels une nouvelle tentative a échoué.
 > - [Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce](data-export-cli-commands.md) : utilisez la commande `saas:resync` pour les resynchronisations de flux ciblées.
 > - [Consulter les journaux et résoudre les problèmes](troubleshooting/logging.md) — Diagnostiquer les erreurs d&#39;exportation de données et d&#39;exportation SaaS.
 > - [Gérer la synchronisation sur  [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md) — Vérifier la synchronisation des données du catalogue et resynchroniser manuellement les flux du connecteur.

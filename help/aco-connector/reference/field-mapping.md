@@ -72,8 +72,8 @@ Le flux de `products` envoie des données au point d’entrée [Products](https:
 | `categoryData[].categoryPath` | `routes[].path` | |
 | `categoryData[].productPosition` | `routes[].position` | |
 | `links[].type` + `links[].sku` | `links[]` | `type` mis en majuscules ; entrées sans `sku` supprimées |
-| `parents[].productType` + `parents[].sku` | `links[]` | Type mappé : →`VARIANT_OF`, `bundle`/`bundle_fixed`→`IN_BUNDLE``configurable` |
-| `configurable options` | `configurations[]` | →`attributeCode`, `label` ; type d’option `SWATCH` lorsque `swatchType` est défini, sinon `CONFIGURABLE` ; variante par défaut de `isDefault` ; les valeurs comprennent `variantReferenceId`, `label`, `colorHex`, `imageUrl``id` |
+| `parents[].productType` + `parents[].sku` | `links[]` | Type mappé : →`VARIANT_OF`, `bundle`/`bundle_fixed`→`IN_BUNDLE`&#x200B;`configurable` |
+| `configurable options` | `configurations[]` | →`attributeCode`, `label` ; type d’option `SWATCH` lorsque `swatchType` est défini, sinon `CONFIGURABLE` ; variante par défaut de `isDefault` ; les valeurs comprennent `variantReferenceId`, `label`, `colorHex`, `imageUrl`&#x200B;`id` |
 | `bundle options` | `bundles[]` | →`group`; `required`; `renderType` `checkbox`/`multi`→`multiSelect: true`; SKU par défaut de `isDefault`; les éléments comprennent `sku`, `qty`, `userDefinedQty` (`qtyMutability`)`label` |
 
 ## Métadonnées des attributs de produit
