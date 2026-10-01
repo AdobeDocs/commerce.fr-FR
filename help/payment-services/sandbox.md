@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Un compte sandbox PayPal vous permet d’utiliser [!DNL Payment Services] en mod
 
 Pour terminer l’intégration au sandbox :
 
-1. Accédez à la page [&#x200B; Compte de développeur PayPal &#x200B;](https://developer.paypal.com/developer/accounts/).
+1. Accédez à la page [ Compte de développeur PayPal ](https://developer.paypal.com/developer/accounts/).
 1. Cliquez sur **[!UICONTROL Log in to Dashboard]** et connectez-vous avec votre compte de test de sandbox d&#39;entreprise généré par PayPal Developer Portal ou cliquez sur **S&#39;inscrire** pour créer un compte.
 1. Créez un compte sandbox PayPal :
    1. Accédez à _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
@@ -29,7 +29,7 @@ Pour terminer l’intégration au sandbox :
       Si vous avez créé un compte sandbox PayPal pendant le processus d’intégration de PayPal, vous devez [réinitialiser votre sandbox d’intégration](#reset-your-sandbox-account) car vous ne pouvez pas vérifier votre adresse e-mail.
 
    1. Sélectionnez **[!UICONTROL Business]** comme type de compte, puis cliquez sur **[!UICONTROL Create]**.
-   1. Dans la section _[!UICONTROL Sandbox Accounts]_, cliquez sur les trois points de la colonne&#x200B;_[!UICONTROL Manage accounts]_ pour le compte sandbox que vous avez créé.
+   1. Dans la section _[!UICONTROL Sandbox Accounts]_, cliquez sur les trois points de la colonne_[!UICONTROL Manage accounts]_ pour le compte sandbox que vous avez créé.
    1. Cliquez sur **[!UICONTROL View/edit account]**.
 
       ![PayPal - Afficher/modifier le compte sandbox](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -57,9 +57,9 @@ Pour terminer l’intégration au sandbox :
 
    Lorsque l&#39;intégration de votre sandbox PayPal est approuvée, une notification devrait s&#39;afficher indiquant que votre système de paiement est actuellement en mode sandbox et ne traite pas les paiements en direct.
 
-   >[!IMPORTANT]
-   >
-   >Si vous révoquez le consentement à [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] pour le traitement de vos paiements (dans les paramètres de votre compte PayPal), les commandes dans votre boutique ne peuvent pas être traitées par [!DNL Payment Services]. Sur la page d’accueil de Payment Services, une alerte concernant le consentement révoqué s’affiche. Pour ignorer l’alerte, cliquez sur **[!UICONTROL Do not show again]**.
+>[!IMPORTANT]
+>
+>Si vous révoquez le consentement à [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] pour le traitement de vos paiements (dans les paramètres de votre compte PayPal), les commandes dans votre boutique ne peuvent pas être traitées par [!DNL Payment Services]. Sur la page d’accueil de Payment Services, une alerte concernant le consentement révoqué s’affiche. Pour ignorer l’alerte, cliquez sur **[!UICONTROL Do not show again]**.
 
 ### Réinitialiser votre compte sandbox
 
@@ -72,7 +72,7 @@ Pour réinitialiser votre compte sandbox :
 
 ## Activer le numéro de téléphone du contact
 
-Le numéro de téléphone de contact vous permet d&#39;obtenir les numéros de téléphone de contact que PayPal collecte auprès de vos clients. PayPal recueille toujours les numéros de téléphone des titulaires de compte PayPal pour aider à confirmer leur identité et à les contacter pour résoudre les problèmes sur leurs comptes ou pour terminer leurs processus d&#39;exécution. Cependant, PayPal décourage l&#39;utilisation des numéros de téléphone de contact directement du marchand car cela peut avoir un impact négatif sur les ventes. Pour plus d’informations, consultez la documentation [PayPal obtenir les numéros de téléphone &#x200B;](https://www.sandbox.paypal.com/businessmanage/preferences/website) contact .
+Le numéro de téléphone de contact vous permet d&#39;obtenir les numéros de téléphone de contact que PayPal collecte auprès de vos clients. PayPal recueille toujours les numéros de téléphone des titulaires de compte PayPal pour aider à confirmer leur identité et à les contacter pour résoudre les problèmes sur leurs comptes ou pour terminer leurs processus d&#39;exécution. Cependant, PayPal décourage l&#39;utilisation des numéros de téléphone de contact directement du marchand car cela peut avoir un impact négatif sur les ventes. Pour plus d’informations, consultez la documentation [PayPal obtenir les numéros de téléphone ](https://www.sandbox.paypal.com/businessmanage/preferences/website) contact .
 
 Cette fonctionnalité est `off` par défaut. Lorsque vous l’activez, les administrateurs de magasin peuvent voir les numéros de téléphone lorsqu’un client termine un flux de passage en caisse de marque en dehors de la page de passage en caisse.
 
@@ -94,7 +94,7 @@ Pour configurer le pays de l&#39;acheteur :
 
 1. Développez la section _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Dans la section _[!UICONTROL Payment Services]_, développez la section&#x200B;_[!UICONTROL General Configuration]_ .
+1. Dans la section _[!UICONTROL Payment Services]_, développez la section_[!UICONTROL General Configuration]_ .
 
 1. Définissez **[!UICONTROL Method]** sur `Sandbox`.
 
@@ -102,9 +102,9 @@ Pour configurer le pays de l&#39;acheteur :
 
 1. Cliquez sur **[!UICONTROL Save Config]** pour enregistrer vos modifications.
 
->[!NOTE]
->
->Le paramètre **[!UICONTROL Buyer's country]** s’affiche uniquement lorsque la méthode est définie sur `Sandbox`. Cela n’affecte pas les environnements de production.
+   >[!NOTE]
+   >
+   >Le paramètre **[!UICONTROL Buyer's country]** s’affiche uniquement lorsque la méthode est définie sur `Sandbox`. Cela n’affecte pas les environnements de production.
 
 ## Test dans un environnement sandbox
 

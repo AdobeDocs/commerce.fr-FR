@@ -1,43 +1,51 @@
 ---
 title: Affichage et gestion du processus de synchronisation
-description: Découvrez comment afficher et gérer le processus  [!DNL SaaS Data Export]  synchronisation à l’aide du tableau de bord de gestion des données et de la page Statut de la synchronisation des flux de données.
+description: Découvrez comment afficher et gérer le processus de synchronisation des [!DNL SaaS Data Export] à l’aide du tableau de bord de la gestion des données et de la page Statut de la synchronisation des flux de données.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
 workflow-type: tm+mt
-source-wordcount: 557
+source-wordcount: '558'
 ht-degree: 0%
-
 ---
-
 # Afficher et gérer le processus de synchronisation
 
 La plupart des activités de synchronisation sont traitées automatiquement à l’aide d’une synchronisation complète, partielle ou par une nouvelle synchronisation des éléments ayant échoué. Voir [Types de synchronisation](sync-overview.md#synchronization-types) pour savoir quand chaque type s’exécute. [!DNL SaaS Data Export] fournit également des outils de surveillance, de gestion et de dépannage du processus. Vous pouvez afficher l’état de synchronisation et gérer le processus de synchronisation des données à l’aide des tableaux de bord de votre déploiement .
 
 >[!BEGINTABS]
 
->[!TAB Tab]
+>[!TAB ]
 
 Pour les déploiements d’Adobe Commerce on cloud, on-premise ou Adobe Commerce as a Cloud Service, affichez et gérez le processus de synchronisation à partir de ces ressources d’administration Commerce :
 
-- **[Page Statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** : vérifiez le statut d’exportation des flux pour les déploiements connectés à [!DNL Live Search], [!DNL Product Recommendations] ou [!DNL Catalog Service]. Ce tableau de bord affiche le statut d’exportation de chaque flux, y compris les erreurs rencontrées. Une vue détaillée affiche le statut d’exportation des flux pour chaque élément de flux.
+- **[Page Statut de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** : vérifiez le statut d’exportation des flux pour les déploiements connectés à [!DNL Live Search], [!DNL Product Recommendations] ou [!DNL Catalog Service]. Ce tableau de bord affiche le statut d’exportation de chaque flux, y compris les erreurs rencontrées. Une vue détaillée affiche le statut d’exportation des flux pour chaque élément de flux.
 
-- **[Tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** : les utilisateurs administrateurs peuvent afficher et suivre les données exportées et synchronisées avec succès vers les services Commerce connectés. Ce tableau de bord affiche les données de produit synchronisées avec les services Commerce.
+- **[Tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** : les utilisateurs administrateurs peuvent afficher et suivre les données exportées et synchronisées avec succès vers les services Commerce connectés. Ce tableau de bord affiche les données de produit synchronisées avec les services Commerce.
 
 >[!NOTE]
 >
@@ -47,11 +55,11 @@ Pour les déploiements d’Adobe Commerce on cloud, on-premise ou Adobe Commerce
 
 Pour les déploiements sur le cloud ou on-premise de Commerce intégrés avec [!DNL Commerce Optimizer], visualisez et gérez le processus de synchronisation à l’aide des ressources suivantes :
 
-- **[Page Statut de la synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** : surveiller le statut d’exportation des flux du connecteur depuis Commerce Admin. Cette page indique si les données de catalogue ont bien été exportées à partir de [!DNL Adobe Commerce], y compris les détails d’erreur par flux et par élément.
+- **[Page Statut de la synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** : surveiller le statut d’exportation des flux du connecteur depuis Commerce Admin. Cette page indique si les données de catalogue ont bien été exportées à partir de [!DNL Adobe Commerce], y compris les détails d’erreur par flux et par élément.
 
 - **[Page de synchronisation des données](../optimizer/setup/data-sync.md)** : la page de synchronisation des données donne un aperçu de l&#39;état de synchronisation des données de produit provenant de votre source de catalogue en amont dans [!DNL Commerce Optimizer].
 
-Pour plus d’informations sur l’utilisation de ces tableaux de bord pour vérifier que la synchronisation des données fonctionne et pour resynchroniser manuellement les données, voir [Gérer la synchronisation](../aco-connector/data-sync-manage.md) dans le guide du connecteur Adobe Commerce Optimizer __.
+Pour plus d’informations sur l’utilisation de ces tableaux de bord pour vérifier que la synchronisation des données fonctionne et pour resynchroniser manuellement les données, voir [Gérer la synchronisation](../aco-connector/data-sync-status.md) dans le guide du connecteur Adobe Commerce Optimizer __.
 
 >[!ENDTABS]
 
@@ -76,7 +84,7 @@ Utilisez les options suivantes pour resynchroniser manuellement les données de 
 
 >[!MORELIKETHIS]
 >
-> - [Fonctionnement de la synchronisation &#x200B;](sync-overview.md) — Découvrez les modes de synchronisation, la synchronisation complète, la synchronisation partielle et les éléments pour lesquels une nouvelle tentative a échoué.
+> - [Fonctionnement de la synchronisation ](sync-overview.md) — Découvrez les modes de synchronisation, la synchronisation complète, la synchronisation partielle et les éléments pour lesquels une nouvelle tentative a échoué.
 > - [Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce](data-export-cli-commands.md) : utilisez la commande `saas:resync` pour les resynchronisations de flux ciblées.
 > - [Consulter les journaux et résoudre les problèmes](troubleshooting/logging.md) — Diagnostiquer les erreurs d&#39;exportation de données et d&#39;exportation SaaS.
-> - [Gérer la synchronisation sur  [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md) — Vérifier la synchronisation des données du catalogue et resynchroniser manuellement les flux du connecteur.
+> - [Gérer la synchronisation sur  [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md) — Vérifier la synchronisation des données du catalogue et resynchroniser manuellement les flux du connecteur.

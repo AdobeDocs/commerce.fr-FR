@@ -23,7 +23,7 @@ topic_v2:
     internal-label: Behavioral data
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: 7ab078f4780c25e3bb43479eec1fe18e31faf96c
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -73,6 +73,6 @@ Vous pouvez effectuer ces deux actions à l’aide des SDK disponibles, comme d�
 
 1. Une fois les données comportementales collectées, vous pouvez [créer](create.md) [!DNL Product Recommendations] dans l’Administration.
 
-1. Utilisez le SDK Recommendations[&#128279;](https://developer.adobe.com/commerce/services/product-recommendations/) pour récupérer les unités de recommandation sur le storefront. Le SDK renvoie les données de produit nécessaires pour effectuer le rendu des unités de recommandation sur une page.
+1. Utilisez le SDK Recommendations](https://developer.adobe.com/commerce/services/product-recommendations/) pour récupérer les unités de recommandation sur le storefront. [Le SDK renvoie les données de produit nécessaires pour effectuer le rendu des unités de recommandation sur une page.
 
 1. Découvrez comment utiliser la requête [`recommendations` GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations) pour renvoyer des informations sur les blocs de recommandation de produit pour un SKU donné, etc.
