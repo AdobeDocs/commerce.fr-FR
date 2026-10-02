@@ -2,7 +2,7 @@
 title: Prise en main du [!DNL Adobe Commerce Optimizer Connector]
 description: Découvrez comment installer le [!DNL Adobe Commerce Optimizer Connector], configurer les paramètres d’exportation de l’étendue, activer l’authentification IMS et vérifier la synchronisation des catalogues.
 feature: Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T16:55:50.934Z'
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
@@ -58,11 +58,11 @@ Installez et configurez le [!DNL Adobe Commerce Optimizer Connector] pour synchr
 
 ## Conditions requises pour utiliser l’intégration {#requirements-to-use-the-integration}
 
-* [&#128279;](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7+. Pour connaître la configuration requise, voir [Configuration requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+* [&#128279;](https://business.adobe.com/fr/products/magento/magento-commerce.html) 2.4.7+. Pour connaître la configuration requise, voir [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements).
 
 * [!DNL Commerce Optimizer] une licence avec une instance sandbox configurée.
 
-* [Clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) pour télécharger le métapaquet de connecteur à l’aide du compositeur.
+* [Clés d’authentification](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) pour télécharger le métapaquet de connecteur à l’aide du compositeur.
 
 * Accès administrateur à une [[!DNL Commerce Optimizer] instance sandbox](../optimizer/get-started.md).
 
@@ -70,9 +70,9 @@ L’utilisateur [!DNL Adobe Commerce] configurant l’intégration doit disposer
 
 * Accès de l’administrateur à l’administrateur Commerce.
 
-* [Accès en ligne de commande au serveur  [!DNL Adobe Commerce] ’applications](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Accès en ligne de commande au serveur  [!DNL Adobe Commerce] ’applications](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Accès des développeurs à l’organisation [IMS](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations ?) où le projet [!DNL Commerce Optimizer] est configuré.
+* Accès des développeurs à l’organisation [IMS](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/organizations ?) où le projet [!DNL Commerce Optimizer] est configuré.
 
 >[!BEGINSHADEBOX]
 
