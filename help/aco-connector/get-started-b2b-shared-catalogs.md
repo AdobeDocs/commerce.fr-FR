@@ -134,7 +134,7 @@ Un catalogue partagé personnalisé peut générer plusieurs vues de catalogue p
 
 1. Sélectionnez le site web ou la vue de magasin que vous souhaitez configurer.
 
-1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**[!DNL Commerce Optimizer]
+1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**&#x200B;[!DNL Commerce Optimizer]
 
    ![Mettre à jour la configuration de la synchronisation des données](./assets/aco-connector-b2b-storeview-list.png){width="500" zoomable="yes"}
 
