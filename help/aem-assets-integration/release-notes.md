@@ -3,9 +3,9 @@ title: Notes de mise à jour de l’intégration AEM Assets
 description: Consultez les notes de mise à jour pour plus d’informations sur toutes les versions de l’intégration AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
+source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1738'
 ht-degree: 0%
 ---
 # Notes de mise à jour de l’intégration AEM Assets
@@ -42,11 +42,11 @@ _18 septembre 2026_
 
 [!BADGE pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce version 2.4.5 et versions ultérieures.
 
-![Correction d’un problème](../assets/fix.svg)<!-- Issue ACAP-1317 --> Correction d’un problème en raison duquel le fichier `workspace.json` chargé pour la [correspondance automatique personnalisée](synchronize/custom-match.md) ne persistait pas correctement lorsque l’enregistrement de la configuration asynchrone de Commerce était activé. Auparavant, la requête d’administration mettait uniquement en file d’attente les métadonnées de chargement plutôt que le contenu du fichier. Par conséquent, le temps que le client de configuration asynchrone traite l’enregistrement, le fichier de chargement temporaire ne peut plus être lu. Par conséquent, la configuration semblait s’enregistrer correctement tandis que les valeurs OAuth d’App Builder restaient inchangées. Les informations d’identification App Builder chargées survivent désormais à la limite de la file d’attente et sont traitées correctement par le client asynchrone.
+![Correction d’un problème](../assets/fix.svg)<!-- Issue ACAP-1317 --> Correction d’un problème en raison duquel l’enregistrement de la configuration **[!UICONTROL AEM Assets Integration]**, y compris son chargement `workspace.json`, avec le `Commerce Async Config Save` (introduit dans Adobe Commerce 2.4.7) activé, ne permettait pas d’enregistrer ou de mettre à jour le client avec ARES. La configuration semblait s’enregistrer correctement, mais les valeurs OAuth d’App Builder sont restées inchangées. Les informations d’identification chargées sont désormais traitées correctement par le client asynchrone.
 
 >[!IMPORTANT]
 >
->Si vous utilisez un mappeur personnalisé avec l’option Enregistrer la configuration asynchrone activée, chargez à nouveau votre fichier `workspace.json` après avoir effectué la mise à niveau vers cette version. Pour obtenir des instructions de chargement, voir [Enregistrement de la configuration asynchrone](synchronize/custom-match.md#async-config-save).
+>Si vous utilisez un mappeur personnalisé avec l’option Enregistrer la configuration asynchrone activée, chargez à nouveau votre fichier `workspace.json` après la mise à niveau. Pour obtenir des instructions, voir [Enregistrement de la configuration asynchrone](synchronize/custom-match.md#async-config-save).
 
 ## v1.4.6
 
