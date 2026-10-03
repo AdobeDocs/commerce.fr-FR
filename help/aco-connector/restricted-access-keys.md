@@ -60,7 +60,7 @@ Vous pouvez attribuer une clé à la vue de catalogue à partir de la grille Cat
 
 >[!NOTE]
 >
->Pour consulter les champs de cette page, reportez-vous à la section [&#x200B; Gestion des clés d’accès restreint &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} du *Guide d’administration de Commerce*.—>
+>Pour consulter les champs de cette page, reportez-vous à la section [&#x200B; Gestion des clés d’accès restreint &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} du *Guide d’administration de Commerce*.—>
 
 ## Lorsque vous avez besoin de plus que la clé automatique {#when-you-need-more-than-the-automatic-key}
 
@@ -159,7 +159,7 @@ La rotation automatique des clés n’est pas encore disponible.
 
 >[!MORELIKETHIS]
 >
-> - [Gérer les clés d’accès restreint](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Référence complète des champs pour cette page, dans le *Guide d’administration de Commerce* —>
+> - [Gérer les clés d’accès restreint](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Référence complète des champs pour cette page, dans le *Guide d’administration de Commerce* —>
 > - [Surveillance de la synchronisation des vues du catalogue](catalog-view-sync-status.md) — Surveillez les vues du catalogue protégées par ces clés
 > - [Vues de catalogue privé](/help/optimizer/setup/private-catalog-view.md) — Découvrez ce qu’est une vue de catalogue privé gérée par connecteur
 > - [Clés d’accès restreint](/help/optimizer/setup/restricted-access-keys.md) — Découvrez comment fonctionne le flux de clés manuel basé sur ACO Studio pour les cas d’utilisation non-B2B
