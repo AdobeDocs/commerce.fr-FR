@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
+source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
 workflow-type: tm+mt
-source-wordcount: '7581'
+source-wordcount: '8005'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -129,6 +129,38 @@ Vous pouvez désormais appliquer une réduction arbitraire sur les frais d’exp
 
 Utilisez `POST /V1/carts/:cartId/shipping-discount` pour définir la remise. Un accès de niveau administrateur ou intégration est requis pour utiliser ce point d’entrée. <!-- ACCS-1156 -->
 
+### Ajouter des articles de panier à un prix personnalisé
+
+Vous pouvez désormais définir un prix personnalisé sur un article de panier en ajoutant l’attribut d’extension `custom_price` aux points d’entrée REST d’ajout ou de mise à jour d’article de panier standard (`POST /V1/carts/:cartId/items` et `PUT /V1/carts/:cartId/items/:itemId`). Vous devez fournir un jeton d’administration ou d’intégration pour définir un prix personnalisé. Les requêtes comportant un prix négatif ou un type de produit non pris en charge, tel qu&#39;un produit groupé avec une tarification dynamique, sont rejetées. <!-- ACCS-1155 -->
+
+```json
+{
+  "cartItem": {
+    "sku": "t-shirt",
+    "qty": 1,
+    "quote_id": 17,
+    "extension_attributes": { "custom_price": 15.00 }
+  }
+}
+```
+
+Les points d’entrée `GET /V1/carts/:cartId` et `GET /V1/carts/:cartId/items` renvoient également la valeur `custom_price` .
+
+### Isoler les paniers créés par l’administrateur des paniers storefront
+
+Une fonctionnalité de souscription, désactivée par défaut, isole les paniers que les administrateurs et les intégrations peuvent créer via l’API REST à partir du panier storefront actif du client. Lorsqu’il est activé, `POST /V1/customers/:customerId/carts` crée toujours un panier inactif que l’administrateur et les appelants de l’intégration peuvent gérer via les points d’entrée REST de panier sans modifier le panier de l’acheteur. <!-- ACCS-1153 -->
+
+Pour l’activer, contactez votre responsable du succès client Adobe Commerce ou créez un ticket d’assistance.
+
+### Envoyer des e-mails transactionnels via des plateformes tierces
+
+Les nouveaux événements vous permettent d’envoyer des e-mails transactionnels à partir d’une plateforme de messagerie tierce, telle que [!DNL Salesforce Marketing Cloud], par le biais de [!DNL App Builder]. Abonnez-vous aux événements suivants via [!DNL Adobe I/O Events] : <!-- ACCS-1929 -->
+
+* `observer.customer_balance_save_after` - Un solde créditeur de magasin est enregistré. Ajoutez une règle d’abonnement où `notify_by_email` est égal à `1` pour recevoir un événement par e-mail de notification de crédit de magasin.
+* `observer.giftcard_item_email_send_after` - Un e-mail de carte cadeau est envoyé pour un article de commande. La payload inclut tous les codes de carte cadeau pour l’article.
+* `plugin.customer.api.account_management.activate` - Un client confirme son compte.
+* `plugin.negotiable_quote.api.negotiable_quote_management.decline` - Un devis négociable est refusé.
+
 ### Améliorations et correctifs
 
 Les améliorations, optimisations et correctifs suivants sont inclus dans cette version :
@@ -152,6 +184,22 @@ Les améliorations, optimisations et correctifs suivants sont inclus dans cette 
 * Correction d’un problème en raison duquel la demande de prix ou de totaux de panier pouvait renvoyer une erreur lorsque le panier contenait un article en rupture de stock. <!-- CEXT-6776 -->
 
 * Correction d’un problème en raison duquel le client d’inventaire pouvait surcharger la file d’attente de messages lors de la recherche d’un SKU manquant. <!-- ACCS-1976 -->
+
+* La requête `customerDownloadableProducts` GraphQL renvoie désormais des métadonnées de fichier pour les produits téléchargeables configurés avec une URL externe, de sorte que les storefronts puissent déterminer le type de fichier et s’il faut ouvrir ou télécharger la ressource. <!-- ACCS-1735 -->
+
+* La requête GraphQL `sourceAvailability` applique désormais les autorisations de catégorie et de catalogue partagé B2B, de sorte que les acheteurs ne reçoivent le stock par source que pour les produits qu’ils sont autorisés à voir. <!-- ACCS-1888 -->
+
+* Correction d’un problème en raison duquel les clients et clientes ne pouvaient pas définir de mot de passe à partir du lien de l’e-mail de bienvenue et les nouveaux clients et clientes n’apparaissaient pas dans la grille des clients et clientes [!DNL Commerce Admin]. <!-- ACCS-1979 -->
+
+* Correction d’un problème en raison duquel les commandes modifiées via l’API REST de modification de commande pouvaient enregistrer des articles au mauvais prix. <!-- ACCS-1982 -->
+
+* Correction d’un problème en raison duquel les produits supprimés du catalogue partagé d’une entreprise restaient visibles sur le storefront et étaient silencieusement supprimés du panier. <!-- CCSAAS-5544 -->
+
+* Correction d’un problème en raison duquel un produit de catalogue partagé dans une catégorie refusée au groupe de clients s’affichait sur le storefront mais ne pouvait pas être ajouté au panier. Une autorisation de refus de catégorie est désormais prioritaire sur l’appartenance au catalogue partagé. <!-- CCSAAS-5549 -->
+
+* Correction d’un problème en raison duquel le fait de passer une commande via GraphQL pouvait renvoyer une erreur lorsqu’un élément de taxe d’expédition n’avait pas de titre. <!-- CCSAAS-5552 -->
+
+* Correction d’un problème en raison duquel le point d’entrée REST `GET /V1/customers/:customerId/companyRoles` renvoyait des autorisations vides pour un administrateur d’entreprise. <!-- ACCS-1998 -->
 
 {{accs-release}}
 
