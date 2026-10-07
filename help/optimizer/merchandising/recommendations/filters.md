@@ -76,7 +76,7 @@ Configurez la façon dont les livres de prix sont associés à un storefront dan
 
 Les règles de prix **filtrer** le candidat de recommandation défini ; elles ne **pas** reclassent les produits. Le moteur génère une liste avec classement, les règles d’inclusion et d’exclusion de prix suppriment les produits de cette liste et l’ordre relatif des produits restants reste le même. Si le nombre de produits admissibles est inférieur au nombre de demandes d&#39;unité, seuls les articles valides sont affichés. Si aucun n’est qualifié, l’unité n’est pas rendue (aucun espace réservé vide).
 
-Le prix affiché sur les produits à l’intérieur de l’unité de recommandation est le même **prix final** du catalogue des prix de ce magasin, de sorte que ce que les acheteurs voient correspond à la valeur utilisée pour le filtrage. Dans la prévisualisation Admin, les produits configurables peuvent afficher une plage de prix lorsque les prix des variantes diffèrent ; voir [ Produits configurables dans la prévisualisation ](#configurable-products-in-preview).
+Le prix affiché sur les produits à l’intérieur de l’unité de recommandation est le même **prix final** du catalogue des prix de ce magasin, de sorte que ce que les acheteurs voient correspond à la valeur utilisée pour le filtrage. Dans la prévisualisation Admin, les produits configurables peuvent afficher une plage de prix lorsque les prix des variantes diffèrent ; voir [&#x200B; Produits configurables dans la prévisualisation &#x200B;](#configurable-products-in-preview).
 
 #### Gamme de prix statique
 
