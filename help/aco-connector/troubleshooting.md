@@ -3,7 +3,7 @@ title: Résolution des problèmes liés à [!DNL Adobe Commerce Optimizer Connec
 description: Découvrez comment résoudre les problèmes d’informations d’identification [!DNL Adobe Commerce Optimizer Connector], de synchronisation des catalogues et d’exportation de la portée pour les intégrations PaaS [!DNL Adobe Commerce].
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/ei86QuJ3nQ2d-6NRoAeJslgDxjGlZRejD-Nx-6SAVdc'
 product_v2:
@@ -80,4 +80,4 @@ Pour obtenir un catalogue de comportements spécifiques causés par une mauvaise
 
 ## Diagnostics [!DNL SaaS Data Export]
 
-Pour les diagnostics de [!DNL SaaS Data Export] de niveau inférieur, y compris les emplacements des journaux et les commandes de resynchronisation des flux, consultez le guide de dépannage [[!DNL SaaS Data Export] &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.
+Pour les diagnostics de [!DNL SaaS Data Export] de niveau inférieur, y compris les emplacements des journaux et les commandes de resynchronisation des flux, consultez le guide de dépannage [[!DNL SaaS Data Export] &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.

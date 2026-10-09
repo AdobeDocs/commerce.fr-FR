@@ -74,7 +74,7 @@ Le contrôle de mise à jour lit les métadonnées de version à partir de la se
 ```json
 {
   "extra": {
-    "release_notes_url": "https://experienceleague.adobe.com/...",
+    "release_notes_url": "https://experienceleague.adobe.com/fr...",
     "release_type": "feature",
     "compatible_commerce_versions": ">=2.4.7 <2.5.0"
   }
