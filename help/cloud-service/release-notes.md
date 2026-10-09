@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
+source-git-commit: dee10a97e03a115bcd758171082061e95bb6adcc
 workflow-type: tm+mt
-source-wordcount: '8005'
+source-wordcount: '8069'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -64,11 +64,11 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 ## Octobre 2026 - version #1 {#latest}
 
-[!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="Les éléments répertoriés sont actuellement disponibles dans les environnements de production."}
 
-Les éléments suivants seront ajoutés aux environnements de production le 6 octobre 2026.
+Les éléments suivants ont été publiés dans les environnements de production le 7 octobre 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -78,7 +78,7 @@ La payload du webhook `plugin.out_of_process_shipping_methods.api.shipping_rate_
 
 ### Gérer les règles de prix de catalogue dans REST
 
-Les nouveaux points d’entrée de l’API REST permettent aux intégrations de gérer et de rechercher [règles de prix de catalogue](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) par programmation. <!-- ACCS-1621 -->
+Nouveaux points d’entrée [API REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/catalog-price-rules) permettent aux intégrations de gérer et de rechercher [règles de prix de catalogue](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) par programmation. <!-- ACCS-1621 -->
 
 Les points d’entrée suivants sont protégés par l’autorisation `Magento_CatalogRule::promo_catalog` , qui protège également l’écran Règle de prix du catalogue d’administration . Un accès de niveau administrateur ou intégration est requis pour utiliser ce point d’entrée.
 
@@ -125,13 +125,13 @@ Vous pouvez maintenant définir l’heure de la journée à laquelle une [règle
 
 ### Appliquer des remises d’expédition personnalisées via l’API REST d’administration
 
-Vous pouvez désormais appliquer une réduction arbitraire sur les frais d’expédition à un panier via l’API REST d’administration pour les cas qui ne correspondent pas à une règle de prix de panier.
+Vous pouvez désormais appliquer une [réduction sur les frais d’expédition](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/shipping-discounts) arbitraire à un panier via l’API REST d’administration dans les cas qui ne correspondent pas à une règle de prix de panier.
 
 Utilisez `POST /V1/carts/:cartId/shipping-discount` pour définir la remise. Un accès de niveau administrateur ou intégration est requis pour utiliser ce point d’entrée. <!-- ACCS-1156 -->
 
 ### Ajouter des articles de panier à un prix personnalisé
 
-Vous pouvez désormais définir un prix personnalisé sur un article de panier en ajoutant l’attribut d’extension `custom_price` aux points d’entrée REST d’ajout ou de mise à jour d’article de panier standard (`POST /V1/carts/:cartId/items` et `PUT /V1/carts/:cartId/items/:itemId`). Vous devez fournir un jeton d’administration ou d’intégration pour définir un prix personnalisé. Les requêtes comportant un prix négatif ou un type de produit non pris en charge, tel qu&#39;un produit groupé avec une tarification dynamique, sont rejetées. <!-- ACCS-1155 -->
+Vous pouvez désormais définir un [prix personnalisé sur un article de panier](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price) en ajoutant l’attribut d’extension `custom_price` aux points d’entrée REST standard d’ajout ou de mise à jour d’article de panier (`POST /V1/carts/:cartId/items` et `PUT /V1/carts/:cartId/items/:itemId`). Vous devez fournir un jeton d’administration ou d’intégration pour définir un prix personnalisé. Les requêtes comportant un prix négatif ou un type de produit non pris en charge, tel qu&#39;un produit groupé avec une tarification dynamique, sont rejetées. <!-- ACCS-1155 -->
 
 ```json
 {
@@ -161,6 +161,10 @@ Les nouveaux événements vous permettent d’envoyer des e-mails transactionnel
 * `plugin.customer.api.account_management.activate` - Un client confirme son compte.
 * `plugin.negotiable_quote.api.negotiable_quote_management.decline` - Un devis négociable est refusé.
 
+### Limites d’API en bloc
+
+L’[API en bloc](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints) applique désormais un nombre maximal d’entités par requête. Les requêtes qui dépassent la limite renvoient une erreur. Le champ [!UICONTROL Maximum Entities Per Bulk Request] non configurable dans le [Référence de configuration](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/bulk-api) affiche la limite. Pour plus d’informations, voir [Sécurité des API](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints). <!-- ACCS-703 -->
+
 ### Améliorations et correctifs
 
 Les améliorations, optimisations et correctifs suivants sont inclus dans cette version :
@@ -168,8 +172,6 @@ Les améliorations, optimisations et correctifs suivants sont inclus dans cette 
 * Le [!DNL Commerce Admin] affiche désormais un avertissement lorsque vous créez ou modifiez un webhook qui inclut l’en-tête `X-OW-EXTRA-LOGGING` Adobe I/O Runtime défini sur `on`. L’en-tête est destiné au débogage et n’est pas recommandé en production. <!-- CCSAAS-5486 -->
 
 * Les fichiers téléchargés via les URL de téléchargement S3 prédéfinies comportent désormais des analyses supplémentaires à la recherche de programmes malveillants. <!-- ACCS-1463 -->
-
-* L’API Bulk applique désormais un nombre maximal d’entités par requête. Les requêtes qui dépassent la limite renvoient une erreur. <!-- ACCS-703 -->
 
 * Correction d’un problème en raison duquel la quantité vendable pouvait être sous-déclarée pour les produits, ce qui pouvait bloquer incorrectement les contrôles de stock d’ajouts au panier, de REST et de GraphQL. <!-- ACCS-1908 -->
 
@@ -217,7 +219,7 @@ Les éléments suivants ont été ajoutés aux environnements de production le 2
 
 ### Joindre des fichiers et des images aux demandes de retour
 
-Les clients peuvent désormais charger des fichiers et des images lors de l’envoi d’une demande de retour via la mutation storefront [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL. Utilisez les mutations [`initiateUpload` et `finishUpload` pour charger le fichier](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/) puis affectez la clé renvoyée à un attribut personnalisé d’élément renvoyé. <!-- CCSAAS-5410 -->
+Les clients peuvent désormais charger des fichiers et des images lors de l’envoi d’une demande de retour via la mutation storefront [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL. Utilisez la mutation &rbrack;(https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#recaptcha-validation) pour charger le fichier, puis affectez la clé renvoyée à un attribut personnalisé d’élément renvoyé. <!-- CCSAAS-5410 -->&lbrack;`initiateUpload`
 
 ### Contrôle de l&#39;apparence de la source d&#39;inventaire
 
