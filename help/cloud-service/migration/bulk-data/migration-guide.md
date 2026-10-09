@@ -2,36 +2,48 @@
 title: Exécution d’une migration de données en bloc
 description: Découvrez comment configurer et exécuter une migration de données en bloc d’une instance Adobe Commerce PaaS ou locale vers Adobe Commerce as a Cloud Service avec l’interface de ligne de commande.
 feature: Cloud
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
 TQID: 'https://experienceleague.adobe.com/z9659Vnf2JLxJ4U5p3tEEjurj5Mg3bfKj68Gheq2AXY'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 670b6214b28be93a16130552a226a8cadb487324
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 2802
+source-wordcount: '2802'
 ht-degree: 0%
-
 ---
-
 # Exécuter une migration de données en bloc
 
 {{bulk-data-early-access}}
@@ -54,7 +66,7 @@ Avant de commencer, confirmez que vous avez terminé chaque élément de la [lis
 
 Configurez l’environnement pour la migration de données en bloc :
 
->[!VIDEO](https://video.tv.adobe.com/v/3496124?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3496121)
 
 1. Extrayez le contenu du `ccsaas-migration-tools.tar.gz`.
 
@@ -97,7 +109,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### Configuration des informations d’identification OAuth source
 
->[!VIDEO](https://video.tv.adobe.com/v/3496144?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3496142)
 
 Ces quatre valeurs signent les requêtes de l’outil de migration vers les API du magasin source. Pour les obtenir, ouvrez le [!UICONTROL Admin] source et accédez à [!UICONTROL **Système**] > [!UICONTROL **Extensions**] > [!UICONTROL **Intégrations**]. Créez ou ouvrez une intégration, puis copiez les valeurs dans `.env` :
 
@@ -130,7 +142,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->Si c’est la première fois que vous utilisez l’interface de ligne de commande Cloud, vous devez également ajouter votre clé publique SSH à votre compte . Pour obtenir des instructions, consultez le [Guide de connexions sécurisées](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/secure-connections).
+>Si c’est la première fois que vous utilisez l’interface de ligne de commande Cloud, vous devez également ajouter votre clé publique SSH à votre compte . Pour obtenir des instructions, consultez le [Guide de connexions sécurisées](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections).
 
 ### Aligner les paramètres d’administration Commerce
 
@@ -142,13 +154,13 @@ Avant la migration, assurez-vous que les paramètres suivants sont cohérents en
 
 ### Configuration des identifiants SaaS et IMS cibles
 
->[!VIDEO](https://video.tv.adobe.com/v/3496169?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3496167)
 
 Il s’agit des paramètres IMS et API [!DNL Adobe Commerce as a Cloud Service] pour la cible. Vous avez besoin de l’identifiant du client, de l’identifiant de l’organisation, des informations d’identification de serveur à serveur OAuth IMS et de l’hôte IMS approprié pour votre environnement. Assurez la coordination avec votre équipe Adobe pour l’accès à l’organisation, au client et au profil. N’essayez pas de déduire ou d’estimer des valeurs sensibles.
 
 #### Générer les informations d’identification IMS
 
-Utiliser le [&#128279;](https://developer.adobe.com/console/). Vous avez besoin d’un accès [!UICONTROL Developer] ou [!UICONTROL Admin] à l’organisation Adobe pour créer des projets. Une connexion utilisateur de base ne suffit pas pour ajouter des API.
+Utiliser le [](https://developer.adobe.com/console/). Vous avez besoin d’un accès [!UICONTROL Developer] ou [!UICONTROL Admin] à l’organisation Adobe pour créer des projets. Une connexion utilisateur de base ne suffit pas pour ajouter des API.
 
 1. Créez un projet ou ouvrez-en un existant, puis sélectionnez [!UICONTROL Add API].
 
@@ -247,7 +259,7 @@ CDMS_PORT=443
 
 ## Configurer le fichier de connexion à la base de données
 
->[!VIDEO](https://video.tv.adobe.com/v/3496159?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3496152)
 
 Le fichier `.my.cnf` fournit [!DNL MySQL] paramètres de connexion pour le côté extraction de l’outil de migration. Créez-le en copiant les `.my.cnf.example` dans les `.my.cnf` de la racine du projet. Le nom de la section doit correspondre à `SOURCE_CONNECTION_NAME` dans `.env`.
 

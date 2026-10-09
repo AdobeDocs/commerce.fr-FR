@@ -2,19 +2,33 @@
 title: Gestion de l’application
 description: Associez, configurez et dissociez les applications App Builder à votre instance Commerce.
 feature: App Builder, Extensibility, Integration
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 72863f3c-9d27-5dda-afe1-d9f934b1fba0
+    internal-label: Extensibility
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 1%
-
 ---
-
 
 # Gestion de l’application
 
 Un App Manager associe une application App Builder à son instance Commerce. Les formulaires de configuration sont rendus dynamiquement en fonction du schéma de l’application. Aucun développement personnalisé de l’interface d’administration n’est donc nécessaire. App Manager configure les paramètres par le biais de formulaires que Commerce génère automatiquement.
 
-![&#x200B; Gestion des applications &#x200B;](assets/app-management-view.png){width="500" zoomable="yes"}
+![ Gestion des applications ](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## Trouver une application dans l’Admin
 
@@ -46,7 +60,7 @@ Avant d’associer une application, vérifiez que vous disposez des éléments s
 
 Regardez cette vidéo pour savoir comment associer une application à une instance Commerce et configurer des paramètres.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478957?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## Associer une application
 
@@ -66,7 +80,7 @@ Pour lier votre application App Builder à une instance Commerce :
 
 1. Cliquez sur **[!UICONTROL Associate]**.
 
-   ![&#x200B; Détails de l’application &#x200B;](assets/app-details.png){width="500" zoomable="yes"}
+   ![ Détails de l’application ](assets/app-details.png){width="500" zoomable="yes"}
 
 >[!WARNING]
 >

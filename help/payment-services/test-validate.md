@@ -1,15 +1,32 @@
 ---
 title: Tester et valider
-description: Les tests et la validation permettent de s [!DNL Payment Services] assurer que les fonctions fonctionnent comme prévu et offrent les meilleures options de paiement pour vos clients
+description: Les tests et la validation permettent de s’assurer que [!DNL Payment Services] fonctions fonctionnent comme prévu et fournissent les meilleures options de paiement à vos clients
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '806'
 ht-degree: 0%
-
 ---
-
 # Tester et valider
 
 Avant d’exposer [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Magento Open Source] à vos clientes et clients, il est préférable de les tester dans votre environnement de sandbox _et_ en production. Les tests et la validation permettent de s’assurer que [!DNL Payment Services] fonctions fonctionnent comme prévu et fournissent les meilleures options de paiement pour votre magasin et vos clients.
@@ -19,7 +36,7 @@ Avant d’exposer [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Ma
 Tester les [!DNL Payment Services] dans un environnement sandbox est une étape de validation importante, même s’il s’agit d’un environnement simulé connecté uniquement au sandbox PayPal, et non à de vraies banques et commerçants.
 
 1. Effectuez un passage en caisse réussi à partir de votre boutique, soit avec les [champs de carte de crédit](payments-options.md#credit-card-fields) ou l&#39;un des [boutons de paiement PayPal](payments-options.md#paypal-payment-buttons). Consultez [Test des informations d’identification](#testing-credentials) pour plus d’informations sur l’utilisation de fausses cartes de crédit pour les tests.
-1. Capturez (lorsque votre action de paiement est [définie sur `Authorize and Capture`](production.md#set-payment-services-as-payment-method)), [remboursez](refunds.md) ou [annulez](voids.md) la commande qui vient d’être terminée. Vous pouvez également simplement [créer une facture](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} pour une commande, si votre action de paiement est définie sur `Authorize` au lieu de `Authorize and Capture`.
+1. Capturez (lorsque votre action de paiement est [définie sur `Authorize and Capture`](production.md#set-payment-services-as-payment-method)), [remboursez](refunds.md) ou [annulez](voids.md) la commande qui vient d’être terminée. Vous pouvez également simplement [créer une facture](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} pour une commande, si votre action de paiement est définie sur `Authorize` au lieu de `Authorize and Capture`.
 1. Dans les 24 à 48 heures, affichez la transaction et d&#39;autres informations dans le [rapport des paiements](payouts.md).
 1. Voir les détails de la commande dans l&#39;état [Statut du paiement de la commande](order-payment-status.md).
 
@@ -68,7 +85,7 @@ Utilisez le générateur de cartes de crédit PayPal pour [générer des informa
 
 Pour tester Apple Pay en mode sandbox :
 
-* Créez un compte de testeur de sandbox [&#128279;](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) avec une fausse carte de crédit et de fausses informations de facturation.
+* Créez un compte de testeur de sandbox [](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) avec une fausse carte de crédit et de fausses informations de facturation.
 * [Enregistrement de vos domaines Sandbox](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
 
 >[!NOTE]

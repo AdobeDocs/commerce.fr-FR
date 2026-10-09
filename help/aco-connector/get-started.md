@@ -2,8 +2,9 @@
 title: Prise en main du [!DNL Adobe Commerce Optimizer Connector]
 description: Découvrez comment installer le [!DNL Adobe Commerce Optimizer Connector], configurer les paramètres d’exportation de l’étendue, activer l’authentification IMS et vérifier la synchronisation des catalogues.
 feature: Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T16:55:50.934Z'
+last-update: 2026-10-01T00:00:00.000Z
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -21,6 +22,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: e126554b-28f9-4290-b58c-10b888b88174
     internal-label: IMS integration
@@ -39,8 +42,7 @@ topic_v2:
     internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-10-01
-source-git-commit: 9ed3a09bc4e26e2ef787909700f51e25de0a18fa
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -58,11 +60,11 @@ Installez et configurez le [!DNL Adobe Commerce Optimizer Connector] pour synchr
 
 ## Conditions requises pour utiliser l’intégration {#requirements-to-use-the-integration}
 
-* [&#128279;](https://business.adobe.com/fr/products/magento/magento-commerce.html) 2.4.7+. Pour connaître la configuration requise, voir [Configuration requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements).
+* [](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7+. Pour connaître la configuration requise, voir [Configuration requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
 
 * [!DNL Commerce Optimizer] une licence avec une instance sandbox configurée.
 
-* [Clés d’authentification](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) pour télécharger le métapaquet de connecteur à l’aide du compositeur.
+* [Clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) pour télécharger le métapaquet de connecteur à l’aide du compositeur.
 
 * Accès administrateur à une [[!DNL Commerce Optimizer] instance sandbox](../optimizer/get-started.md).
 
@@ -70,9 +72,9 @@ L’utilisateur [!DNL Adobe Commerce] configurant l’intégration doit disposer
 
 * Accès de l’administrateur à l’administrateur Commerce.
 
-* [Accès en ligne de commande au serveur  [!DNL Adobe Commerce] ’applications](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/user-access).
+* [Accès en ligne de commande au serveur  [!DNL Adobe Commerce] ’applications](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access).
 
-* Accès des développeurs à l’organisation [IMS](https://experienceleague.adobe.com/fr/docs/core-services/interface/administration/organizations ?) où le projet [!DNL Commerce Optimizer] est configuré.
+* Accès des développeurs à l’organisation [IMS](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations ?) où le projet [!DNL Commerce Optimizer] est configuré.
 
 >[!BEGINSHADEBOX]
 
@@ -135,7 +137,7 @@ Le tableau suivant décrit les données exportées à chaque niveau de l’éten
 
 1. Sélectionnez le site web ou la vue de magasin que vous souhaitez configurer.
 
-1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**&#x200B;[!DNL Commerce Optimizer]
+1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**[!DNL Commerce Optimizer]
 
    ![Mettre à jour la configuration de la synchronisation des données](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
 

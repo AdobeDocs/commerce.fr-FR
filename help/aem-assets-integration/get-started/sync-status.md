@@ -2,19 +2,30 @@
 title: Affichage de l’état de synchronisation d’AEM Assets
 description: Consultez les ressources synchronisées dans une liste centrée sur les ressources dans l’administration Commerce.
 feature: CMS, Media, Integration
-source-git-commit: 446739ffad0da97e2e923e6e02be3f8f6b3eb2b3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
-
 ---
-
 
 # Affichage de l’état de synchronisation d’AEM Assets
 
 La vue **[!UICONTROL Sync Status]** fournit une liste des ressources synchronisées par l’intégration d’AEM Assets en fonction des ressources. Utilisez-le pour rechercher, examiner et résoudre les problèmes liés aux ressources en fonction de leurs propres attributs, au lieu de parcourir le catalogue produit par produit.
 
-![Affichage de l’état de synchronisation &#x200B;](../assets/aem-assets-sync-status-view.png){width="700" zoomable="yes"}
+![Affichage de l’état de synchronisation ](../assets/aem-assets-sync-status-view.png){width="700" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -24,7 +35,7 @@ La vue **[!UICONTROL Sync Status]** fournit une liste des ressources synchronis�
 
 Dans la barre latérale _Admin_, accédez à **[!UICONTROL System]** > **[!UICONTROL AEM Assets]** > **[!UICONTROL Sync Status]**.
 
-![Statut de synchronisation d’AEM Assets dans le menu Système &#x200B;](../assets/aem-assets-configuration-admin-menu.png){width="600" zoomable="yes"}
+![Statut de synchronisation d’AEM Assets dans le menu Système ](../assets/aem-assets-configuration-admin-menu.png){width="600" zoomable="yes"}
 
 ## Intégration de l’intégrité de la synchronisation
 

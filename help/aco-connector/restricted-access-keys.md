@@ -3,7 +3,7 @@ title: Gestion des clés d’accès restreint pour les catalogues partagés B2B
 description: Découvrez comment gérer les clés d’accès restreint utilisées par le connecteur Adobe Commerce Optimizer pour sécuriser les projections de catalogue partagé B2B.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -34,7 +36,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -42,7 +44,7 @@ ht-degree: 0%
 
 # Gérer les clés d’accès restreintes pour les catalogues partagés B2B
 
-{type=Caution tooltip="Nécessite l’extension B2B du connecteur Adobe Commerce Optimizer, qui est actuellement en version bêta privée."}
+[!BADGE ]{type=Caution tooltip="Nécessite l’extension B2B du connecteur Adobe Commerce Optimizer, qui est actuellement en version bêta privée."}
 
 Si vous utilisez [!DNL Adobe Commerce] catalogues partagés B2B avec le [!DNL Adobe Commerce Optimizer Connector B2B extension], l’extension génère et attribue automatiquement la première clé d’accès restreint lors de la création d’une vue de catalogue. Utilisez la page [!UICONTROL Restricted Access Keys] de l’Administration Commerce pour afficher cette clé, ainsi que pour créer, attribuer ou supprimer des clés supplémentaires.
 
@@ -60,7 +62,7 @@ Vous pouvez attribuer une clé à la vue de catalogue à partir de la grille Cat
 
 >[!NOTE]
 >
->Pour consulter les champs de cette page, reportez-vous à la section [&#x200B; Gestion des clés d’accès restreint &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} du *Guide d’administration de Commerce*.—>
+>Pour consulter les champs de cette page, reportez-vous à la section [ Gestion des clés d’accès restreint ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} du *Guide d’administration de Commerce*.—>
 
 ## Lorsque vous avez besoin de plus que la clé automatique {#when-you-need-more-than-the-automatic-key}
 
@@ -159,7 +161,7 @@ La rotation automatique des clés n’est pas encore disponible.
 
 >[!MORELIKETHIS]
 >
-> - [Gérer les clés d’accès restreint](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Référence complète des champs pour cette page, dans le *Guide d’administration de Commerce* —>
+> - [Gérer les clés d’accès restreint](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Référence complète des champs pour cette page, dans le *Guide d’administration de Commerce* —>
 > - [Surveillance de la synchronisation des vues du catalogue](catalog-view-sync-status.md) — Surveillez les vues du catalogue protégées par ces clés
 > - [Vues de catalogue privé](/help/optimizer/setup/private-catalog-view.md) — Découvrez ce qu’est une vue de catalogue privé gérée par connecteur
 > - [Clés d’accès restreint](/help/optimizer/setup/restricted-access-keys.md) — Découvrez comment fonctionne le flux de clés manuel basé sur ACO Studio pour les cas d’utilisation non-B2B

@@ -1,35 +1,47 @@
 ---
-title: Scénarios de dépannage pour  [!DNL Adobe Commerce Optimizer Connector]
-description: Diagnostiquez et résolvez les comportements inattendus dans  [!DNL Adobe Commerce Optimizer Connector]  causés par une configuration incorrecte ou une mauvaise interprétation des résultats de synchronisation.
+title: Scénarios de dépannage pour le [!DNL Adobe Commerce Optimizer Connector]
+description: Diagnostiquez et résolvez les comportements inattendus dans [!DNL Adobe Commerce Optimizer Connector] causés par une configuration incorrecte ou une mauvaise interprétation des résultats de synchronisation.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
+    internal-label: Data Transfer
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
+    internal-label: Troubleshooting
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 645
+source-wordcount: '646'
 ht-degree: 0%
-
 ---
-
 
 # Scénarios de dépannage pour le [!DNL Adobe Commerce Optimizer Connector]
 
@@ -90,7 +102,7 @@ Cette page décrit les comportements que vous pouvez observer lors de l’utilis
 
 **Solution :**
 
-Au lieu d’écrire des modifications de catalogue directement dans [!DNL Adobe Commerce Optimizer], utilisez [&#x200B; calques de catalogue &#x200B;](../../optimizer/setup/catalog-layer.md){target="_blank"} pour appliquer des modifications en dehors de [!DNL Adobe Commerce]. Les couches Catalogue permettent aux systèmes externes d’enrichir ou de remplacer les données de catalogue dans [!DNL Adobe Commerce Optimizer] sans entrer en conflit avec la synchronisation du connecteur.
+Au lieu d’écrire des modifications de catalogue directement dans [!DNL Adobe Commerce Optimizer], utilisez [ calques de catalogue ](../../optimizer/setup/catalog-layer.md){target="_blank"} pour appliquer des modifications en dehors de [!DNL Adobe Commerce]. Les couches Catalogue permettent aux systèmes externes d’enrichir ou de remplacer les données de catalogue dans [!DNL Adobe Commerce Optimizer] sans entrer en conflit avec la synchronisation du connecteur.
 
 ## Scénarios de dépannage pour les problèmes de [!DNL SaaS Data Export] courants
 

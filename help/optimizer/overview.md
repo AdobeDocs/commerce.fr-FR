@@ -1,16 +1,24 @@
 ---
-title: Qu'est-ce que  [!DNL Adobe Commerce Optimizer] ?
-description: En savoir plus sur  [!DNL Adobe Commerce Optimizer]  et ses principales fonctionnalités.
+title: Qu’est-ce qu’[!DNL Adobe Commerce Optimizer] ?
+description: En savoir plus sur [!DNL Adobe Commerce Optimizer] et ses principales fonctionnalités.
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1009'
 ht-degree: 0%
-
 ---
-
 # Qu’est-ce qu’[!DNL Adobe Commerce Optimizer] ?
 
 [!DNL Adobe Commerce Optimizer] améliore votre expérience d’e-commerce grâce à une vitrine haute performance qui stimule le trafic organique, l’engagement des clients et le chiffre d’affaires.
@@ -26,7 +34,7 @@ Avec [!DNL Adobe Commerce Optimizer], vous pouvez :
 
 Regardez la vidéo suivante pour un aperçu général de [!DNL Adobe Commerce Optimizer] :
 
->[!VIDEO](https://video.tv.adobe.com/v/3450465?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Qui profite le plus de [!DNL Adobe Commerce Optimizer] ?
 
@@ -34,7 +42,7 @@ Regardez la vidéo suivante pour un aperçu général de [!DNL Adobe Commerce Op
 
 - Les commerçants qui souhaitent maintenir leur système commercial principal existant et transformer uniquement les expériences de storefront.
 - Entreprises dans lesquelles un système tiers gère le cycle de vie du panier et du passage en caisse.
-- [Les clients AEM &#x200B;](setup/product-visuals.md) recherchent un moyen simple de gérer leur catalogue de produits à partir d’un moteur de commerce tiers.
+- [Les clients AEM ](setup/product-visuals.md) recherchent un moyen simple de gérer leur catalogue de produits à partir d’un moteur de commerce tiers.
 
 ## Aperçu rapide
 
@@ -96,4 +104,4 @@ Les principales fonctionnalités sont les suivantes :
 
 Le diagramme suivant décrit l’architecture de base de [!DNL Adobe Commerce Optimizer], de l’ingestion des données du catalogue à la relation entre les services de marchandisage, votre storefront, l’intégration à un panier tiers et le processus de passage en caisse.
 
-![[!DNL Adobe Commerce Optimizer] Architecture &#x200B;](./assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer] Architecture ](./assets/architecture.png)

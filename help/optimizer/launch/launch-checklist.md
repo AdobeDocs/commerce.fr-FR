@@ -9,7 +9,7 @@ role: Admin, Developer
 level: Intermediate
 topic: Administration
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -20,9 +20,15 @@ feature_v2:
     internal-label: Configuration
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
     internal-label: Catalog management
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
     internal-label: Storefront configuration
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -36,7 +42,7 @@ topic_v2:
     internal-label: Administration
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1009ae28286a8503511c85726bf44922c7c2575e
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '2311'
 ht-degree: 0%
@@ -56,18 +62,18 @@ Votre solution comprend généralement les composants suivants :
 - **Optimizer** : [!DNL Adobe Commerce Optimizer] offre des expériences de marchandisage.
 - **Storefront** : le storefront Adobe Commerce sur Edge Delivery Services fournit l’interface utilisateur.
 - **Services tiers**—Prestataires de services de paiement, d&#39;expédition et de taxe.
-- **&#x200B;**—Extensibilité.
+- ****—Extensibilité.
 - **Maillage API**—Routage des requêtes.
 
 ## Vérification d’Adobe Commerce sur le cloud {#verify-cloud}
 
 Vérifiez que votre environnement Adobe Commerce on Cloud est prêt pour la production.
 
-▢ L’instance cloud est [configurée](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/start/new-project).
+▢ L’instance cloud est [configurée](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/new-project).
 Les données de test ▢ et factices sont supprimées de l’instance.
 ▢ Les données de production sont chargées sur l’instance.
 ▢ Vous connaissez le point d’entrée [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/).
-▢ L’instance répond aux exigences [prêt pour le lancement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/launch/checklist).
+▢ L’instance répond aux exigences [prêt pour le lancement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist).
 
 ## Vérification de l’instance Commerce Optimizer {#verify-optimizer}
 
@@ -164,7 +170,7 @@ Confirmez la configuration de l’extensibilité pour la production.
 
 ▢ L’espace de travail de production comprend toutes les configurations et tous les services requis.
 ▢ L’application de production passe le test dans tous les scénarios de création.
-▢ limites et limites du produit ont été examinées et confirmées en fonction de la [description du produit Adobe Developer App Builder](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} et des [paramètres et limites du système App Builder](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
+▢ limites et limites du produit ont été examinées et confirmées en fonction de la [description du produit Adobe Developer App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} et des [paramètres et limites du système App Builder](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
 ▢ L’application de production utilise des points d’entrée de production App Builder.
 ▢ extensions de panneau *Admin* personnalisées sont déployées dans l’espace de travail de production.
 
@@ -233,7 +239,7 @@ Confirmez les lignes de base de performances et le câblage d’analyse.
 Confirmez les autorisations et les secrets.
 
 ▢ Les autorisations appropriées sont configurées pour le contenu DA et les sites EDS. Voir [Autorisations DA.live](https://da.live/docs/administration/permissions) et [Configuration de l’authentification pour la création](https://www.aem.live/docs/authentication-setup-authoring).
-▢ L’intégration des visuels de produit est configurée. Voir [&#x200B; Présentation de l’accès à AEM Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-learn/cloud-service/accessing/overview#).
+▢ L’intégration des visuels de produit est configurée. Voir [ Présentation de l’accès à AEM Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
 ▢ Les liens de réinitialisation du mot de passe dans les modèles d’e-mail correspondent à votre configuration Edge Delivery Services. Voir la FAQ sur storefront : [Que dois-je faire si mes liens de modèle d’e-mail sont rompus après la migration vers Edge Delivery Services ou Helix ?](https://experienceleague.adobe.com/en/tools/commerce-storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 ▢ Les clés de production pour les intégrations et les fournisseurs de paiement sont en place.
 Les domaines ▢ sont placés sur la liste autorisée et les webhooks d’arrière-plan fonctionnent.

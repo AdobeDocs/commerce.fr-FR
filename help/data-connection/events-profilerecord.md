@@ -4,21 +4,30 @@ description: Découvrez les données capturées par un enregistrement de profil.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: aaa30886-d9c0-4909-81ee-fad3407cac43
-TQID: https://experienceleague.adobe.com/bHKuzUSApLQNW-M8NY1xb6-WZtjACmRRZ0TtsPM55rU
+TQID: 'https://experienceleague.adobe.com/bHKuzUSApLQNW-M8NY1xb6-WZtjACmRRZ0TtsPM55rU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 499
+source-wordcount: '499'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Connection] des enregistrements de profil
 
 La section suivante décrit les données d’enregistrement de profil Commerce disponibles lorsque vous installez l’extension [!DNL Data Connection]. Les données des enregistrements de profil sont envoyées au Adobe Experience Platform.
@@ -33,7 +42,7 @@ La section suivante décrit les données capturées pour un enregistrement de pr
 
 | Champ | Description |
 |---|---|
-| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/schema/namespaces). |
+| `channel` | Contient des informations sur la source des données. `_id` et `_type` contiennent tous deux des [valeurs d’espace de noms](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces). |
 | `channel._id` | Identifiant unique du canal, tel que `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifie la source des données du canal, telles que les `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Contient des informations sur le client. |
@@ -68,6 +77,6 @@ La section suivante décrit les données capturées pour un enregistrement de pr
 
 >[!NOTE]
 >
->Chaque enregistrement de profil inclut également le champ [`identityMap`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/profile/identitymap) , qui inclut l’ID de client Commerce généré par le système comme identifiant principal du profil et un ID d’e-mail utilisé comme identifiant secondaire.
+>Chaque enregistrement de profil inclut également le champ [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) , qui inclut l’ID de client Commerce généré par le système comme identifiant principal du profil et un ID d’e-mail utilisé comme identifiant secondaire.
 
 Découvrez comment [créer un schéma spécifique aux enregistrements de profil](profile-data.md) qui peut ingérer les données de vos enregistrements de profil.

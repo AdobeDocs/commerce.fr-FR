@@ -1,16 +1,27 @@
 ---
-title: Éléments de ligne pour  [!DNL Payment Services]
-description: Découvrez les lignes pour et comment afficher les lignes  [!DNL Payment Services]  tableau de bord du commerçant.
+title: Éléments de ligne pour [!DNL Payment Services]
+description: Découvrez les éléments de ligne pour [!DNL Payment Services] et comment les afficher dans le tableau de bord du commerçant.
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '690'
 ht-degree: 0%
-
 ---
-
 # Éléments de ligne pour [!DNL Payment Services]
 
 Les articles de ligne pour [!DNL Payment Services] sont les articles inclus dans une commande. Ces lignes fournissent des informations telles que :
@@ -31,7 +42,7 @@ Les éléments de ligne sont activés par défaut pour [!DNL Payment Services]. 
 
 1. Développez la section _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Dans la section _[!UICONTROL Payment Services]_, développez la section&#x200B;_[!UICONTROL Line Items]_ .
+1. Dans la section _[!UICONTROL Payment Services]_, développez la section_[!UICONTROL Line Items]_ .
 
 1. Par **[!UICONTROL Line Items Enabled]**, sélectionnez `Yes` pour activer (par défaut) ou `No` pour désactiver les éléments de ligne.
 
@@ -149,7 +160,7 @@ Voir [Documentation PayPal pour les développeurs sur les éléments de ligne](h
 
 ## Gérer les éléments de ligne
 
-Adobe Commerce [calcule la taxe en fonction du montant total de chaque ligne](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, ce qui peut entraîner des problèmes d&#39;arrondi si plusieurs quantités du même article sont commandées ou si des prix incluant la taxe sont affichés dans le catalogue. Dans ce cas, la quantité totale peut être fractionnée en deux lignes, mais la quantité sera égale au total des articles commandés.
+Adobe Commerce [calcule la taxe en fonction du montant total de chaque ligne](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, ce qui peut entraîner des problèmes d&#39;arrondi si plusieurs quantités du même article sont commandées ou si des prix incluant la taxe sont affichés dans le catalogue. Dans ce cas, la quantité totale peut être fractionnée en deux lignes, mais la quantité sera égale au total des articles commandés.
 
 > Exemple d&#39;éléments de ligne avec des problèmes d&#39;arrondi dans la vue du tableau de bord du commerçant
 

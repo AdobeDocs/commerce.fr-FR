@@ -2,13 +2,27 @@
 title: Vue d’ensemble des [!DNL App Management]
 description: Gérez les applications App Builder associées à votre instance Adobe Commerce via une interface utilisateur d’administration unifiée.
 feature: App Builder, Extensibility, Integration
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 72863f3c-9d27-5dda-afe1-d9f934b1fba0
+    internal-label: Extensibility
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
-
 ---
-
 # Vue d’ensemble des [!DNL App Management]
 
 [!DNL App Management] dans Adobe Commerce simplifie la découverte, l’installation, la configuration et l’exploitation des applications dans l’environnement de commerce. Il fournit un cadre unifié qui permet aux entreprises d’adopter l’extensibilité de manière sûre et efficace tout en réduisant le frottement opérationnel.
@@ -33,7 +47,7 @@ Ensemble, ces fonctionnalités créent un modèle d’extensibilité évolutif q
 | Rôle | Cas d’utilisation |
 |------|----------|
 | **Gestionnaires d’applications** | Associez des applications, configurez des paramètres et gérez des applications sur votre instance Commerce. |
-| **Administrateurs Commerce** | Surveillez les configurations et les autorisations d’application dans l’ensemble de l’organisation. |
+| **Administrateurs** | Surveillez les configurations et les autorisations d’application dans l’ensemble de l’organisation. |
 | **Architectes techniques** | Assurez-vous que les applications sont correctement configurées pour les déploiements multi-magasin ou multi-région. |
 
 ## Ce que vous pouvez faire

@@ -1,10 +1,10 @@
 ---
 title: Surveiller la synchronisation des vues de catalogue pour les catalogues partagés B2B
-last-update: 2026-09-03
+last-update: 2026-09-03T00:00:00.000Z
 description: Utilisez la page État de synchronisation de la vue Catalogue pour surveiller et réconcilier la vue Catalogue, la politique, la référence du catalogue et les données de configuration clés synchronisées avec Adobe Commerce Optimizer.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -35,7 +37,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 1fd5e3d84d5249ce96014cae46e045528d2790d0
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 0%
@@ -66,7 +68,7 @@ Sur l’onglet [!UICONTROL Catalog View] , chaque ligne représente une vue de c
 | **Retrait** | Vous avez supprimé le catalogue partagé dans [!DNL Adobe Commerce]. La vue du catalogue reste accessible jusqu’à l’expiration du délai de grâce de suppression. La période de grâce par défaut est de sept jours. Vous pouvez modifier la valeur par défaut en mettant à jour les [paramètres de synchronisation des vues de catalogue](#configure-aco-catalog-view-sync-settings). |
 | **Orphelin** | La vue ou la clé du catalogue a été créée directement dans [!DNL Adobe Commerce Optimizer] Studio, et non par le connecteur. Voir [Vérifier les entrées orphelines et supprimées](#review-orphaned-and-deleted-entries). |
 
-[!UICONTROL Healthy], [!UICONTROL Pending] et [!UICONTROL Deleted] sont des états informatifs qui ne nécessitent aucune action. Pour obtenir la liste complète[&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} consultez la section Valeurs de statut de synchronisation dans le Guide d’administration de Commerce **.
+[!UICONTROL Healthy], [!UICONTROL Pending] et [!UICONTROL Deleted] sont des états informatifs qui ne nécessitent aucune action. Pour obtenir la liste complète](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} consultez la section [Valeurs de statut de synchronisation dans le Guide d’administration de Commerce **.
 
 ### Configurer les paramètres de synchronisation de la vue Catalogue ACO {#configure-aco-catalog-view-sync-settings}
 
@@ -80,7 +82,7 @@ Depuis l’administrateur [!DNL Adobe Commerce] (et non [!DNL Adobe Commerce Opt
 
 - **[!UICONTROL Enabled]** (réconciliateur de dérive) : exécute le réconciliateur de dérive planifié qui compare les [!DNL Adobe Commerce Optimizer] à l&#39;état de projection [!DNL Adobe Commerce] et répare ou signale la divergence.
 
-- **[!UICONTROL Automatically Repair Drift]** : lorsqu&#39;elle est définie sur **[!UICONTROL Yes]**, l&#39;exécution planifiée converge [!DNL Adobe Commerce Optimizer] vers [!DNL Adobe Commerce] pour une dérive réparable. Lorsque la valeur est définie sur **[!UICONTROL No]**, l’exécution planifiée détecte et consigne uniquement la dérive ; les entrées orphelines sont toujours signalées et ne sont jamais supprimées automatiquement. Ce paramètre affecte uniquement le réconciliateur planifié. L’action **[!UICONTROL Reconcile & Repair]** sur cette page répare toujours la dérive. Voir [&#x200B; Choisir la surveillance ou la réparation](#choose-monitoring-or-repair).
+- **[!UICONTROL Automatically Repair Drift]** : lorsqu&#39;elle est définie sur **[!UICONTROL Yes]**, l&#39;exécution planifiée converge [!DNL Adobe Commerce Optimizer] vers [!DNL Adobe Commerce] pour une dérive réparable. Lorsque la valeur est définie sur **[!UICONTROL No]**, l’exécution planifiée détecte et consigne uniquement la dérive ; les entrées orphelines sont toujours signalées et ne sont jamais supprimées automatiquement. Ce paramètre affecte uniquement le réconciliateur planifié. L’action **[!UICONTROL Reconcile & Repair]** sur cette page répare toujours la dérive. Voir [ Choisir la surveillance ou la réparation](#choose-monitoring-or-repair).
 
 Voir [Configuration de la synchronisation des vues du catalogue ACO](https://experienceleague.adobe.com/en/docs/commerce-admin/configuration-reference/services/aco-catalog-view-sync.md) dans le guide de *[!DNL Commerce Admin]* pour plus d’informations sur chaque paramètre.
 

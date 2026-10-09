@@ -4,34 +4,43 @@ description: Découvrez les données capturées par chaque événement de back-o
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
-TQID: https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA
+TQID: 'https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 3716
+source-wordcount: '3716'
 ht-degree: 0%
-
 ---
-
 # Événements Back Office [!DNL Data Connection]
 
 Vous trouverez ci-dessous la liste des événements de back-office Commerce disponibles lorsque vous installez l’extension [!DNL Data Connection]. Les données collectées par ces événements sont envoyées au Adobe Experience Platform. Vous pouvez également créer des [événements personnalisés](custom-events.md) pour collecter des données supplémentaires non prêtes à l’emploi.
 
-Outre les données collectées par les événements ci-après, vous obtenez également [d’autres données](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/js-overview) fournies par le SDK Web Adobe Experience Platform.
+Outre les données collectées par les événements ci-après, vous obtenez également [d’autres données](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) fournies par le SDK Web Adobe Experience Platform.
 
 Les événements Back Office contiennent des données côté serveur. Ces données comprennent [statut de la commande](#order-status) des informations telles que si une commande a été passée, annulée, remboursée, expédiée ou terminée. Les données côté serveur incluent également des informations [événements de profil client](#customer-profile-events) telles que si un compte a été créé, mis à jour ou supprimé.
 
 >[!NOTE]
 >
->Tous les événements de back-office incluent le champ [`identityMap`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/profile/identitymap) , qui inclut l’adresse e-mail de l’acheteur, le cas échéant, et l’ECID.
+>Tous les événements de back-office incluent le champ [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) , qui inclut l’adresse e-mail de l’acheteur, le cas échéant, et l’ECID.
 
 ## Statut de la commande
 
@@ -418,7 +427,7 @@ Les événements de profil capturés côté serveur incluent des informations de
 
 >[!NOTE]
 >
->Chaque événement de profil client inclut également le champ [`identityMap`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/field-groups/profile/identitymap) , qui inclut l’identifiant client Commerce généré par le système en tant qu’identifiant principal du profil et un identifiant d’e-mail utilisé en tant qu’identifiant secondaire. [Découvrez &#x200B;](custom-identities.md) comment créer des attributs d’identité personnalisés pour améliorer l’identification du profil client.
+>Chaque événement de profil client inclut également le champ [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) , qui inclut l’identifiant client Commerce généré par le système en tant qu’identifiant principal du profil et un identifiant d’e-mail utilisé en tant qu’identifiant secondaire. [Découvrez ](custom-identities.md) comment créer des attributs d’identité personnalisés pour améliorer l’identification du profil client.
 
 ### accountCreated
 

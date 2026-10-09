@@ -1,28 +1,36 @@
 ---
 title: Présentation du guide [!DNL Product Recommendations]
-description: Informations complètes sur  [!DNL Product Recommendations]  pour les administrateurs Adobe Commerce, y compris l’installation et l’intégration
+description: Informations complètes sur les [!DNL Product Recommendations] pour les administrateurs et administratrices Adobe Commerce, y compris l’installation et l’intégration
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 feature: Services, Recommendations
 exl-id: 8df3ef2e-b00e-42d8-b92b-4fbdaaed9f8f
-TQID: https://experienceleague.adobe.com/6XeFQMGG-2vEfCQlv-zlKBqELdN-rOKhulVS8IgmpYg
+TQID: 'https://experienceleague.adobe.com/6XeFQMGG-2vEfCQlv-zlKBqELdN-rOKhulVS8IgmpYg'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dec06508-d41f-555a-87e8-29e8bcdfa95a
+    internal-label: Recommendations
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+    internal-label: Troubleshooting
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 249
-ht-degree: 0%
-
+source-wordcount: '250'
+ht-degree: 4%
 ---
-
 # Présentation du guide [!DNL Product Recommendations]
 
 Ce guide est destiné aux administrateurs d’Adobe Commerce. Il comprend des informations détaillées sur l’installation et l’intégration des [!DNL Product Recommendations], ainsi que sur la configuration et la gestion des services. Il suppose une compréhension de base de la configuration et des fonctionnalités de base du [!DNL Commerce].
@@ -43,12 +51,12 @@ Ce guide ne couvre pas les principales fonctionnalités d’Adobe Commerce et de
 
 | Guide | Description |
 |------ | ----------- |
-| [Guide de l’utilisateur d’Adobe Commerce 2.4](https://experienceleague.adobe.com/fr/docs/commerce-admin/user-guides/home) | Documentation axée sur les commerçants pour Adobe Commerce et Magento Open Source |
+| [Guide de l’utilisateur d’Adobe Commerce 2.4](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Documentation axée sur les commerçants pour Adobe Commerce et Magento Open Source |
 | [Guide du développeur d’Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentation destinée aux développeurs utilisée pour créer et personnaliser Adobe Commerce ou Magento Open Source. |
 
 ## Support technique
 
 Si vous avez besoin d’informations ou si vous avez des questions qui ne sont pas abordées dans ce guide, utilisez les ressources suivantes :
 
-* [Centre d&#39;aide](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-cases){target="_blank"} : consultez les articles de dépannage liés à [!DNL Product Recommendations].
-* [Tickets d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"} : envoyez un ticket pour recevoir de l’aide supplémentaire.
+* [Centre d&#39;aide](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-cases){target="_blank"} : consultez les articles de dépannage liés à [!DNL Product Recommendations].
+* [Tickets d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"} : envoyez un ticket pour recevoir de l’aide supplémentaire.

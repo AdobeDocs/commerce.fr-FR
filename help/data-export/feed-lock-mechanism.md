@@ -1,30 +1,40 @@
 ---
 title: Mécanisme de verrouillage de flux pour l'exportation de données SaaS
-description: Découvrez comment utilise  [!DNL SaaS Data Export]  verrous de flux pour éviter les opérations de synchronisation en conflit et protéger l’intégrité des données lors de mises à jour simultanées des flux.
+description: Découvrez comment [!DNL SaaS Data Export] utilise des verrous de flux pour éviter les opérations de synchronisation en conflit et protéger l’intégrité des données lors de mises à jour simultanées des flux.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Services
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 355
+source-wordcount: '356'
 ht-degree: 0%
-
 ---
-
 
 # Mécanisme de verrouillage de flux pour exportation de données SaaS
 
@@ -41,7 +51,7 @@ Chaque opération de synchronisation de flux, qu’elle soit déclenchée par un
 1. Si le verrou est **acquis**, le processus enregistre son nom et son PID à des fins de diagnostic, puis exécute la synchronisation.
 1. Une fois la synchronisation terminée ou ayant échoué, le verrouillage est désactivé sans condition afin que la tâche cron suivante planifiée puisse se poursuivre normalement.
 
-Une seule opération de synchronisation peut contenir le verrouillage du flux à la fois, qu’il ait été démarré par cron ou l’interface de ligne de commande. Le verrouillage d’alimentation est implémenté via le `LockManagerInterface` de [!DNL Adobe Commerce]. Le serveur principal par défaut est MySQL, qui utilise les fonctions `GET_LOCK` et `RELEASE_LOCK`. Pour configurer un autre fournisseur de verrous, voir [Configurer le fournisseur de verrous](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}.
+Une seule opération de synchronisation peut contenir le verrouillage du flux à la fois, qu’il ait été démarré par cron ou l’interface de ligne de commande. Le verrouillage d’alimentation est implémenté via le `LockManagerInterface` de [!DNL Adobe Commerce]. Le serveur principal par défaut est MySQL, qui utilise les fonctions `GET_LOCK` et `RELEASE_LOCK`. Pour configurer un autre fournisseur de verrous, voir [Configurer le fournisseur de verrous](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}.
 
 ## Messages du journal attendus
 
@@ -62,4 +72,4 @@ Ce message s’affiche lorsqu’une synchronisation partielle déclenchée par c
 > - [Synchroniser les données avec l’exportation de données SaaS](sync-overview.md)
 > - [Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce](data-export-cli-commands.md)
 > - [Pipeline de synchronisation du connecteur](../aco-connector/connector-sync-pipeline.md)
-> - [Configurer le fournisseur de verrouillage](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
+> - [Configurer le fournisseur de verrouillage](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}

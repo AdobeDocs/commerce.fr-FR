@@ -21,10 +21,12 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 1009ae28286a8503511c85726bf44922c7c2575e
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 0%
@@ -40,7 +42,7 @@ La commande `saas:resync` du package `magento/saas-export` permet de gérer la s
 Adobe déconseille d&#39;utiliser régulièrement la commande `saas:resync`. Les scénarios classiques d’utilisation de la commande sont les suivants :
 
 - Synchronisation initiale
-- Synchronisez les données avec un nouvel espace de données après avoir modifié l’identifiant de l’espace de données [SaaS](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/services/saas)
+- Synchronisez les données avec un nouvel espace de données après avoir modifié l’identifiant de l’espace de données [SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Dépannage
 
 Surveillez les opérations de synchronisation dans le fichier `var/log/saas-export.log`.
@@ -51,7 +53,7 @@ Surveillez les opérations de synchronisation dans le fichier `var/log/saas-expo
 >
 >La synchronisation initiale s’exécute automatiquement lorsque Live Search ou les recommandations de produits sont activées. Les commandes manuelles ne sont pas nécessaires.
 >
->Pour les déploiements [!DNL Adobe Commerce Optimizer Connector], la commande `aco:config:init` planifie la synchronisation complète initiale en invalidant tous les indexeurs de flux du connecteur. Voir [Activation de l’intégration  [!DNL Commerce Optimizer]  &#x200B;](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration) et [Gestion de la synchronisation vers [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md).
+>Pour les déploiements [!DNL Adobe Commerce Optimizer Connector], la commande `aco:config:init` planifie la synchronisation complète initiale en invalidant tous les indexeurs de flux du connecteur. Voir [Activation de l’intégration  [!DNL Commerce Optimizer]  ](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration) et [Gestion de la synchronisation vers [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md).
 
 Lorsque vous déclenchez une `saas:resync` à partir de la ligne de commande, en fonction de la taille de votre catalogue, la mise à jour des données peut prendre de quelques minutes à quelques heures.
 
@@ -90,7 +92,7 @@ Consultez les sections suivantes pour obtenir une description des options ainsi 
 
 >[!NOTE]
 >
->Pour obtenir des options avancées de gestion du traitement des exportations, voir [&#x200B; Personnaliser le traitement des exportations &#x200B;](customize-export-processing.md).
+>Pour obtenir des options avancées de gestion du traitement des exportations, voir [ Personnaliser le traitement des exportations ](customize-export-processing.md).
 
 ## `--feed`
 
@@ -220,5 +222,5 @@ bin/magento saas:resync --feed productAttributes --no-reindex
 >[!MORELIKETHIS]
 >
 > - [Consulter les journaux et résoudre les problèmes](troubleshooting/logging.md) — Diagnostiquer les erreurs d&#39;exportation de données et d&#39;exportation SaaS.
-> - [Scénarios de dépannage &#x200B;](troubleshooting/troubleshooting-scenarios.md) — Résolvez les erreurs de configuration et les résultats de synchronisation inattendus.
-> - [Fonctionnement de la synchronisation &#x200B;](sync-overview.md) — Découvrez les modes de synchronisation et le comportement des nouvelles tentatives.
+> - [Scénarios de dépannage ](troubleshooting/troubleshooting-scenarios.md) — Résolvez les erreurs de configuration et les résultats de synchronisation inattendus.
+> - [Fonctionnement de la synchronisation ](sync-overview.md) — Découvrez les modes de synchronisation et le comportement des nouvelles tentatives.

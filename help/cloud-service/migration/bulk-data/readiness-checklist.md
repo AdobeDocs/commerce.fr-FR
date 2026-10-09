@@ -2,35 +2,46 @@
 title: Liste de contrôle de préparation du client
 description: Découvrez comment préparer une migration de données en bloc vers Adobe Commerce as a Cloud Service avec une liste de contrôle de préparation couvrant l’engagement, la machine, la source et la cible.
 feature: Cloud
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:18.443Z'
 TQID: 'https://experienceleague.adobe.com/728hkK-dzIPzyuBhuNyOqEE9FxlVGdVc9R2wIRcXobk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 670b6214b28be93a16130552a226a8cadb487324
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1171
+source-wordcount: '1171'
 ht-degree: 0%
-
 ---
-
 # Liste de contrôle de préparation du client
 
 {{bulk-data-early-access}}
@@ -64,7 +75,7 @@ L’outil de migration s’exécute sur une machine que vous contrôlez, telle q
 - **Répertoire de travail accessible en écriture** — Le répertoire dans lequel l&#39;outil de migration est extrait doit être entièrement accessible en écriture par l&#39;utilisateur de la migration. L’outil écrit des journaux, du cache, des dépendances [!DNL Composer] et des fichiers générés lors de l’exécution.
 - **Espace disque suffisant** — Assurez-vous que l&#39;espace disque disponible est suffisant pour les données extraites, les images [!DNL Docker] et la sortie du journal. Les exigences d’espace varient en fonction de la taille de la base de données source.
 - **Sources locales : connectivité directe de la base de données à partir de la machine de migration** — Pour les instances sources locales, la machine de migration doit avoir un accès direct au réseau à la base de données source. L’outil n’établit pas automatiquement la connectivité de la base de données locale. Vérifiez que l’hôte, le port et les informations d’identification sont accessibles à partir de la machine de migration avant d’exécuter toute commande de migration.
-- **Cloud CLI installé et clé SSH enregistrée** — Pour les instances [!DNL Adobe Commerce on Cloud] source, [Cloud CLI](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) doit être installé sur la machine de migration. Votre clé publique SSH doit également être enregistrée dans votre compte. Pour obtenir des instructions, consultez le [Guide de connexions sécurisées](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/secure-connections).
+- **Cloud CLI installé et clé SSH enregistrée** — Pour les instances [!DNL Adobe Commerce on Cloud] source, [Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) doit être installé sur la machine de migration. Votre clé publique SSH doit également être enregistrée dans votre compte. Pour obtenir des instructions, consultez le [Guide de connexions sécurisées](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections).
 
 ### Instance Source
 
@@ -79,7 +90,7 @@ L’outil de migration s’exécute sur une machine que vous contrôlez, telle q
 ### Instance cible
 
 - **ID de client et ID d’organisation confirmés** — Obtenez vos `TARGET_TENANT_ID` et `TARGET_ORG_ID` auprès de votre équipe Adobe avant la configuration.
-- **Informations d’identification de serveur à serveur OAuth IMS** — Requises pour que l’outil de migration s’authentifie auprès de la cible. Généré via [&#128279;](https://developer.adobe.com/console/). Vous devez disposer d’un accès [!UICONTROL Developer] ou [!UICONTROL Admin] à votre organisation Adobe, car l’accès utilisateur de base n’est pas suffisant pour créer des informations d’identification. Contactez votre équipe Adobe pour sélectionner le profil de produit approprié et préparez l’identifiant client (`ADOBE_IMS_CLIENT_ID`) et le secret client (`ADOBE_IMS_CLIENT_SECRET`).
+- **Informations d’identification de serveur à serveur OAuth IMS** — Requises pour que l’outil de migration s’authentifie auprès de la cible. Généré via [](https://developer.adobe.com/console/). Vous devez disposer d’un accès [!UICONTROL Developer] ou [!UICONTROL Admin] à votre organisation Adobe, car l’accès utilisateur de base n’est pas suffisant pour créer des informations d’identification. Contactez votre équipe Adobe pour sélectionner le profil de produit approprié et préparez l’identifiant client (`ADOBE_IMS_CLIENT_ID`) et le secret client (`ADOBE_IMS_CLIENT_SECRET`).
 - **URL du point d’entrée CDMS** — Fournie par votre équipe Adobe. N’essayez pas d’en déduire cette valeur. Vous avez besoin du point d’entrée de pré-production pour les migrations de sandbox et de test, ainsi que du point d’entrée de production pour les migrations de basculement en direct.
 - **Configuration de base alignée entre la source et la cible** — Les données de configuration de base, telles que les paramètres de stockage et la configuration système, ne sont pas migrées par l’outil. Configurez-le manuellement sur la cible pour qu’il corresponde à la source avant la migration.
 - Stockages **B2B : les fonctionnalités B2B sont configurées de manière cohérente** — Si la source est un magasin compatible B2B, assurez-vous que les paramètres de [!UICONTROL Admin] B2B appropriés sont configurés de manière cohérente à la fois sur la source et la cible avant la migration. Reportez-vous au [guide de migration](migration-guide.md) pour connaître les paramètres spécifiques requis.

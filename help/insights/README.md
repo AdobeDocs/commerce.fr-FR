@@ -1,13 +1,17 @@
 ---
 title: Gouvernance de la documentation Commerce
 description: 'Découvrez le modèle de gouvernance interne de Commerce Insights. Non publié sur Experience League : délibérément exclu de la table des matières.'
-source-git-commit: 1da6d9753acbeadf3a0df5fae86a9386643c6d6d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
-
 ---
-
 
 # Gouvernance de la documentation Commerce
 

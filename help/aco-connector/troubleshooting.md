@@ -3,7 +3,7 @@ title: Résolution des problèmes liés à [!DNL Adobe Commerce Optimizer Connec
 description: Découvrez comment résoudre les problèmes d’informations d’identification [!DNL Adobe Commerce Optimizer Connector], de synchronisation des catalogues et d’exportation de la portée pour les intégrations PaaS [!DNL Adobe Commerce].
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/ei86QuJ3nQ2d-6NRoAeJslgDxjGlZRejD-Nx-6SAVdc'
 product_v2:
@@ -22,6 +22,8 @@ feature_v2:
     internal-label: Admin tools and workspace
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
     internal-label: Catalog management
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -36,7 +38,7 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -51,7 +53,7 @@ Si la `aco:config:init` échoue lors de la validation des informations d’ident
 
 - Exécutez la commande `bin/magento aco:config:show` [!DNL Adobe Commerce] CLI pour vérifier les valeurs stockées.
 - Vérifiez que l’identifiant du client appartient à l’organisation IMS utilisée pour obtenir les informations d’identification.
-- Vérifiez que le client OAuth dispose des portées nécessaires pour le service d’ingestion de [!DNL Adobe Commerce Optimizer] (voir [&#x200B; Obtention des informations d’identification IMS &#x200B;](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)).
+- Vérifiez que le client OAuth dispose des portées nécessaires pour le service d’ingestion de [!DNL Adobe Commerce Optimizer] (voir [ Obtention des informations d’identification IMS ](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)).
 
 ## Données non synchronisées
 
@@ -61,7 +63,7 @@ Consultez [Vérification du fonctionnement de la synchronisation des données](.
 
 Points clés concernant la gestion des erreurs :
 
-- Les erreurs **400** ne sont pas reprises. Recherchez dans la payload des champs obligatoires incorrects ou manquants. Voir [&#x200B; Mappage de champ pour les flux du connecteur &#x200B;](reference/field-mapping.md) pour le format attendu.
+- Les erreurs **400** ne sont pas reprises. Recherchez dans la payload des champs obligatoires incorrects ou manquants. Voir [ Mappage de champ pour les flux du connecteur ](reference/field-mapping.md) pour le format attendu.
 - Les erreurs **5xx** sont automatiquement retentées par la tâche cron `*_resend_failed_items` (s’exécute toutes les 5 minutes).
 
 **Vérifier la configuration de l’étendue :**
@@ -78,4 +80,4 @@ Pour obtenir un catalogue de comportements spécifiques causés par une mauvaise
 
 ## Diagnostics [!DNL SaaS Data Export]
 
-Pour les diagnostics de [!DNL SaaS Data Export] de niveau inférieur, y compris les emplacements des journaux et les commandes de resynchronisation des flux, consultez le guide de dépannage [[!DNL SaaS Data Export] &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.
+Pour les diagnostics de [!DNL SaaS Data Export] de niveau inférieur, y compris les emplacements des journaux et les commandes de resynchronisation des flux, consultez le guide de dépannage [[!DNL SaaS Data Export] ](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.

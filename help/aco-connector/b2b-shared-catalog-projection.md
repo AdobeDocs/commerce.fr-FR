@@ -34,10 +34,18 @@ subfeature_v2:
     internal-label: Logs
   - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
     internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -77,7 +85,7 @@ Une fois qu’un acheteur s’est connecté, le serveur principal Commerce authe
 
 Le storefront envoie l’identifiant de vue de catalogue, l’identifiant de catalogue et le jeton signé avec chaque requête de l’API de marchandisage. [!DNL Adobe Commerce Optimizer] vérifie la signature RS256 du jeton JWT par rapport aux clés d’accès restreint affectées à la vue catalogue. Elle renvoie des données de catalogue uniquement lorsque le jeton et la clé sont valides et n’ont pas expiré.
 
-Flux d’autorisation d’exécution ![&#x200B; pour les requêtes de catalogue B2B d’un acheteur par le biais d’un storefront et d’un serveur principal Commerce vers [!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-runtime-authorization.svg){width="700"}
+Flux d’autorisation d’exécution ![ pour les requêtes de catalogue B2B d’un acheteur par le biais d’un storefront et d’un serveur principal Commerce vers [!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-runtime-authorization.svg){width="700"}
 
 Pour les requêtes de catalogue privé, envoyez les en-têtes suivants :
 

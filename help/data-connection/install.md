@@ -1,24 +1,28 @@
 ---
-title: Installer  [!DNL Data Connection]
-description: Découvrez comment installer, mettre à jour et désinstaller l’extension  [!DNL Data Connection]  partir d’Adobe Commerce.
+title: Installer [!DNL Data Connection]
+description: Découvrez comment installer, mettre à jour et désinstaller l’extension [!DNL Data Connection] d’Adobe Commerce.
 role: Admin, Developer
 feature: Install
 exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
-TQID: https://experienceleague.adobe.com/EbYHB6L9Q7bZNnoz3-yT4aaBcRiLiatvjO-hQyGOwoo
+TQID: 'https://experienceleague.adobe.com/EbYHB6L9Q7bZNnoz3-yT4aaBcRiLiatvjO-hQyGOwoo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+    internal-label: Developer
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 493
+source-wordcount: '494'
 ht-degree: 0%
-
 ---
-
 # Installer [!DNL Data Connection]
 
 Avant d’installer l’extension, [consultez les conditions préalables](overview.md#prerequisites).
@@ -27,7 +31,7 @@ Avant d’installer l’extension, [consultez les conditions préalables](overvi
 
 L’extension [!DNL Data Connection] est disponible sur [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Lorsque vous installez cette extension à partir de la ligne de commande du serveur, elle se connecte à votre installation Adobe Commerce en tant que [service](../landing/saas.md). Une fois le processus terminé, **[!DNL Data Connection]** et **Commerce Services Connector** apparaissent dans le menu **Système** sous **Services** dans Commerce _Admin_.
 
-Vue d’administration de l’extension ![&#128279;](assets/epc-adminui.png) [!DNL Data Connection]
+Vue d’administration de l’extension ](assets/epc-adminui.png)![[!DNL Data Connection]
 
 >[!NOTE]
 >
@@ -89,7 +93,7 @@ Finalisez l’installation en fonction du type de déploiement : Adobe Commerce 
 
 #### Sur les infrastructures cloud
 
-Dans Adobe Commerce sur les infrastructures cloud, activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-global#enable_eventing).
+Dans Adobe Commerce sur les infrastructures cloud, activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-global#enable_eventing).
 
 ```bash
 stage:
@@ -177,4 +181,4 @@ Pour effectuer une mise à jour vers une version majeure telle que de 2.0.0 à 3
 
 ## Désinstaller l’extension [!DNL Data Connection] {#uninstall}
 
-Pour désinstaller l’extension [!DNL Data Connection], consultez la section [désinstallation des modules](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
+Pour désinstaller l’extension [!DNL Data Connection], consultez la section [désinstallation des modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
