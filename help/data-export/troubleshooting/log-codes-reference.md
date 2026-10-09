@@ -1,5 +1,5 @@
 ---
-title: Référence des codes journaux [!Data Export]
+title: Référence des codes journaux [ !Data Export]
 description: Liste de référence pour les codes de journal d’exportation des données, les messages et les niveaux de gravité afin de résoudre les problèmes de synchronisation et de décider quand une resynchronisation partielle ou complète est requise.
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services

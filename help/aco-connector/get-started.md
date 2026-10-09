@@ -60,7 +60,7 @@ Installez et configurez le [!DNL Adobe Commerce Optimizer Connector] pour synchr
 
 ## Conditions requises pour utiliser l’intégration {#requirements-to-use-the-integration}
 
-* [](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7+. Pour connaître la configuration requise, voir [Configuration requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+* [&#128279;](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7+. Pour connaître la configuration requise, voir [Configuration requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
 
 * [!DNL Commerce Optimizer] une licence avec une instance sandbox configurée.
 
@@ -137,7 +137,7 @@ Le tableau suivant décrit les données exportées à chaque niveau de l’éten
 
 1. Sélectionnez le site web ou la vue de magasin que vous souhaitez configurer.
 
-1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**[!DNL Commerce Optimizer]
+1. Dans les paramètres de l’exportateur de **, cochez la case pour activer ou désactiver la synchronisation des données si nécessaire.**&#x200B;[!DNL Commerce Optimizer]
 
    ![Mettre à jour la configuration de la synchronisation des données](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
 
