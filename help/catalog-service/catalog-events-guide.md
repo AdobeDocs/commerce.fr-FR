@@ -1,28 +1,40 @@
 ---
 title: Guide de configuration et d’intégration des événements de catalogue
-description: Découvrez comment vérifier les données du catalogue, configurer pour  [!DNL Adobe I/O Events]  vous abonner à des types d’événements de catalogue et valider la diffusion pour les consommateurs et consommatrices.
+description: Découvrez comment vérifier les données du catalogue, configurer des [!DNL Adobe I/O Events] pour Adobe Commerce, vous abonner à des types d’événements de catalogue et valider la diffusion pour les consommateurs et consommatrices.
 level: Intermediate
 recommendations: noCatalog
 role: Admin, Developer
 feature: Services, Catalog Service
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: 4273989f-0bf2-5361-a17a-6909488d18ab
+    internal-label: Catalog Service
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 818efacb8dbf63e48cdc83506d228c665d7a8b22
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1568
+source-wordcount: '1569'
 ht-degree: 0%
-
 ---
-
 # Activation et configuration d’événements de catalogue avec Adobe I/O
 
 Les événements de catalogue sont des notifications générées par l’ordinateur qui décrivent les modifications de catalogue prises en charge mises à disposition par le biais de [!DNL Catalog Service]. Ils activent des workflows pilotés par les événements tels que :
