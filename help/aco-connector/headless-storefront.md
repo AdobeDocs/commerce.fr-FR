@@ -48,7 +48,7 @@ Pour obtenir des instructions générales sur la configuration des storefronts, 
 
 ## GraphQL : requête `commerceOptimizer` {#graphql-commerceoptimizer-query}
 
-Les storefronts découplés appellent la requête `commerceOptimizer` GraphQL pour récupérer les `priceBookId` de la session client actuelle. Transmettez cette valeur à l’API [[!DNL Adobe Commerce Optimizer] ](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api){target="_blank"} lors de la récupération des prix.
+Les storefronts découplés appellent la requête `commerceOptimizer` GraphQL pour récupérer les `priceBookId` de la session client actuelle. Transmettez cette valeur à l’API [[!DNL Adobe Commerce Optimizer] &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api){target="_blank"} lors de la récupération des prix.
 
 ```graphql
 {

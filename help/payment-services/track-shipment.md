@@ -63,4 +63,4 @@ Les instructions suivantes vous guideront tout au long du processus de création
 
 ### Compatibilité avec les tiers
 
-Toute extension tierce est compatible avec la fonctionnalité lorsqu’une entité d’expédition est créée via l’API [](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank}.
+Toute extension tierce est compatible avec la fonctionnalité lorsqu’une entité d’expédition est créée via l’API [&#128279;](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank}.

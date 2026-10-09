@@ -43,7 +43,7 @@ Les événements de catalogue sont des notifications générées par l’ordinat
 * Déclencher des processus en aval lorsque des produits, des variantes, des prix ou des catégories changent.
 * Optimiser les cas d’utilisation Experience Edge et [!DNL Edge Delivery Services] qui nécessitent des mises à jour de catalogue en temps quasi réel.
 
-Pour le chemin d’accès de bout en bout du [!DNL Adobe Commerce] aux consommateurs d’événements, consultez la section [ Diffusion d’événements via  [!DNL Adobe I/O Events]](#event-delivery-through-adobe-io-events).
+Pour le chemin d’accès de bout en bout du [!DNL Adobe Commerce] aux consommateurs d’événements, consultez la section [&#x200B; Diffusion d’événements via  [!DNL Adobe I/O Events]](#event-delivery-through-adobe-io-events).
 
 ## Types d’événement pris en charge {#supported-event-types}
 
@@ -194,7 +194,7 @@ Vérifiez que [!DNL Catalog Service] dispose des données de catalogue actuelles
 
 Définissez les événements Commerce auxquels vous abonner, puis enregistrez-les dans le projet.
 
-Si votre instance ne figure pas dans la liste de sélection, elle n’est pas connectée à [!DNL Adobe I/O]. Pour obtenir des instructions sur la résolution du problème, consultez [Configuration de la connexion [!DNL Adobe I/O]  ](https://developer.adobe.com/commerce/extensibility/events/configure-commerce#configure-the-adobe-io-connection) dans la documentation *Adobe Commerce Developer*.
+Si votre instance ne figure pas dans la liste de sélection, elle n’est pas connectée à [!DNL Adobe I/O]. Pour obtenir des instructions sur la résolution du problème, consultez [Configuration de la connexion [!DNL Adobe I/O]  &#x200B;](https://developer.adobe.com/commerce/extensibility/events/configure-commerce#configure-the-adobe-io-connection) dans la documentation *Adobe Commerce Developer*.
 
 1. À partir du [!DNL Adobe Developer Console], connectez-vous à la même organisation IMS que celle utilisée pour le projet Commerce.
 
@@ -208,7 +208,7 @@ Si votre instance ne figure pas dans la liste de sélection, elle n’est pas co
 
    * Sur la carte **[!UICONTROL Commerce Catalog Events]**, sélectionnez **[!UICONTROL Project]**.
 
-   ![Fournisseur d’événements de catalogue Commerce sélectionné sur la page Parcourir les API et services ](assets/catalog-event-select-provider.png){width="600" zoomable="yes"}
+   ![Fournisseur d’événements de catalogue Commerce sélectionné sur la page Parcourir les API et services &#x200B;](assets/catalog-event-select-provider.png){width="600" zoomable="yes"}
 
 1. Configurez l’enregistrement des événements.
 
@@ -325,7 +325,7 @@ Si des événements de catalogue sont manquants ou retardés, procédez comme su
 
 1. **Contactez l’assistance Adobe**
 
-   Lors de l’ouverture d’un ticket d’assistance, sélectionnez le motif du problème qui correspond à l’application **** et incluez les informations suivantes :
+   Lors de l’ouverture d’un ticket d’assistance, sélectionnez le motif du problème qui correspond à l’application **&#x200B;**&#x200B;et incluez les informations suivantes :
 
    * Détails du service de catalogue (environnement, région).
    * [!DNL Adobe I/O Events] les détails de l’abonnement.
@@ -336,10 +336,10 @@ Si des événements de catalogue sont manquants ou retardés, procédez comme su
 >[!MORELIKETHIS]
 >
 >
->* [ Intégration et installation ](installation.md)
+>* [&#x200B; Intégration et installation &#x200B;](installation.md)
 >* [Prise en main du service de catalogue](get-started.md)
 >* [Synchroniser les données avec l’exportation de données SaaS](../data-export/data-sync-manage.md)
 >* [Récupérer des données de catalogue avec l’API GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/){target="_blank"}
->* [[!DNL Catalog Service]  et maillage API ](mesh.md)
+>* [[!DNL Catalog Service]  et maillage API &#x200B;](mesh.md)
 >* [Configurer la [!DNL Adobe I/O] connexion](https://developer.adobe.com/commerce/extensibility/events/configure-commerce#configure-the-adobe-io-connection){target="_blank"}
 >* [[!DNL Adobe I/O Events]](https://developer.adobe.com/events/docs/guides/){target="_blank"}

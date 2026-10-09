@@ -102,7 +102,7 @@ Cette page décrit les comportements que vous pouvez observer lors de l’utilis
 
 **Solution :**
 
-Au lieu d’écrire des modifications de catalogue directement dans [!DNL Adobe Commerce Optimizer], utilisez [ calques de catalogue ](../../optimizer/setup/catalog-layer.md){target="_blank"} pour appliquer des modifications en dehors de [!DNL Adobe Commerce]. Les couches Catalogue permettent aux systèmes externes d’enrichir ou de remplacer les données de catalogue dans [!DNL Adobe Commerce Optimizer] sans entrer en conflit avec la synchronisation du connecteur.
+Au lieu d’écrire des modifications de catalogue directement dans [!DNL Adobe Commerce Optimizer], utilisez [&#x200B; calques de catalogue &#x200B;](../../optimizer/setup/catalog-layer.md){target="_blank"} pour appliquer des modifications en dehors de [!DNL Adobe Commerce]. Les couches Catalogue permettent aux systèmes externes d’enrichir ou de remplacer les données de catalogue dans [!DNL Adobe Commerce Optimizer] sans entrer en conflit avec la synchronisation du connecteur.
 
 ## Scénarios de dépannage pour les problèmes de [!DNL SaaS Data Export] courants
 

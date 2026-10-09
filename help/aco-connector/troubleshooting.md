@@ -53,7 +53,7 @@ Si la `aco:config:init` échoue lors de la validation des informations d’ident
 
 - Exécutez la commande `bin/magento aco:config:show` [!DNL Adobe Commerce] CLI pour vérifier les valeurs stockées.
 - Vérifiez que l’identifiant du client appartient à l’organisation IMS utilisée pour obtenir les informations d’identification.
-- Vérifiez que le client OAuth dispose des portées nécessaires pour le service d’ingestion de [!DNL Adobe Commerce Optimizer] (voir [ Obtention des informations d’identification IMS ](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)).
+- Vérifiez que le client OAuth dispose des portées nécessaires pour le service d’ingestion de [!DNL Adobe Commerce Optimizer] (voir [&#x200B; Obtention des informations d’identification IMS &#x200B;](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)).
 
 ## Données non synchronisées
 
@@ -63,7 +63,7 @@ Consultez [Vérification du fonctionnement de la synchronisation des données](.
 
 Points clés concernant la gestion des erreurs :
 
-- Les erreurs **400** ne sont pas reprises. Recherchez dans la payload des champs obligatoires incorrects ou manquants. Voir [ Mappage de champ pour les flux du connecteur ](reference/field-mapping.md) pour le format attendu.
+- Les erreurs **400** ne sont pas reprises. Recherchez dans la payload des champs obligatoires incorrects ou manquants. Voir [&#x200B; Mappage de champ pour les flux du connecteur &#x200B;](reference/field-mapping.md) pour le format attendu.
 - Les erreurs **5xx** sont automatiquement retentées par la tâche cron `*_resend_failed_items` (s’exécute toutes les 5 minutes).
 
 **Vérifier la configuration de l’étendue :**
@@ -80,4 +80,4 @@ Pour obtenir un catalogue de comportements spécifiques causés par une mauvaise
 
 ## Diagnostics [!DNL SaaS Data Export]
 
-Pour les diagnostics de [!DNL SaaS Data Export] de niveau inférieur, y compris les emplacements des journaux et les commandes de resynchronisation des flux, consultez le guide de dépannage [[!DNL SaaS Data Export] ](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.
+Pour les diagnostics de [!DNL SaaS Data Export] de niveau inférieur, y compris les emplacements des journaux et les commandes de resynchronisation des flux, consultez le guide de dépannage [[!DNL SaaS Data Export] &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.

@@ -32,7 +32,7 @@ ht-degree: 0%
 ---
 # Créer des événements personnalisés
 
-Vous pouvez étendre la [plateforme d’événements](events.md) en créant vos propres événements de storefront pour collecter des données propres à votre secteur d’activité. Lorsque vous créez et configurez un événement personnalisé, il est envoyé au [collecteur d’événements ](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
+Vous pouvez étendre la [plateforme d’événements](events.md) en créant vos propres événements de storefront pour collecter des données propres à votre secteur d’activité. Lorsque vous créez et configurez un événement personnalisé, il est envoyé au [collecteur d’événements &#x200B;](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
 
 ## Gérer les événements personnalisés
 

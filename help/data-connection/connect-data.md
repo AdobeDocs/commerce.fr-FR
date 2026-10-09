@@ -99,7 +99,7 @@ Le commerçant saisit les informations d’identification du compte de service u
 
 ### Ajout des détails du compte de service et des informations d’identification
 
-Si vous prévoyez de collecter et d’envoyer des [données de commande historiques](#send-historical-order-data) ou des [données de profil client](#send-customer-profile-data), vous devez ajouter des détails de compte de service et d’informations d’identification. En outre, si vous configurez l’extension [](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation), vous devez effectuer les étapes suivantes.
+Si vous prévoyez de collecter et d’envoyer des [données de commande historiques](#send-historical-order-data) ou des [données de profil client](#send-customer-profile-data), vous devez ajouter des détails de compte de service et d’informations d’identification. En outre, si vous configurez l’extension [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation), vous devez effectuer les étapes suivantes.
 
 Les informations d’identification du compte de service sont configurées à la portée **Configuration par défaut** et s’appliquent globalement. Voir [Portée de la configuration](#configuration-scope) pour les paramètres étendus au site web, tels que le nom du sandbox.
 
@@ -228,7 +228,7 @@ Une fois l’extension configurée, les données du storefront commencent à cir
 
 Vous pouvez envoyer deux types de données de profil à Experience Platform : les enregistrements de profil et les événements de profil de série temporelle.
 
-Un enregistrement de profil contient des données qui sont enregistrées lorsqu’un acheteur crée un profil dans votre instance Commerce, tel que le nom de l’acheteur. Lorsque votre schéma et votre jeu de données sont [ correctement configurés ](profile-data.md), un enregistrement de profil est envoyé à Experience Platform et transféré au service de gestion des profils et de segmentation d’Adobe : [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
+Un enregistrement de profil contient des données qui sont enregistrées lorsqu’un acheteur crée un profil dans votre instance Commerce, tel que le nom de l’acheteur. Lorsque votre schéma et votre jeu de données sont [&#x200B; correctement configurés &#x200B;](profile-data.md), un enregistrement de profil est envoyé à Experience Platform et transféré au service de gestion des profils et de segmentation d’Adobe : [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 Les événements de profil de série temporelle contiennent des données sur les informations de profil de votre acheteur, par exemple s’ils créent, modifient ou suppriment un compte sur votre site. Lorsque les données d’événement de profil sont envoyées à Experience Platform, elles résident dans un jeu de données où elles peuvent être utilisées par d’autres produits DX.
 
@@ -326,7 +326,7 @@ Indiquez la période des commandes historiques que vous souhaitez envoyer à Exp
 
 Dans l’onglet **Personnalisation des données**, vous pouvez afficher tous les attributs personnalisés configurés dans [!DNL Commerce] et envoyés à Experience Platform.
 
-Personnalisation ![[!DNL Data Connection] données ](./assets/epc-data-customization.png){width="700" zoomable="yes"}
+Personnalisation ![[!DNL Data Connection] données &#x200B;](./assets/epc-data-customization.png){width="700" zoomable="yes"}
 
 >[!IMPORTANT]
 >
@@ -354,7 +354,7 @@ En savoir plus sur la [configuration d’attributs personnalisés](custom-attrib
 
 ## Confirmer que les données d’événement sont collectées {#confirm-that-event-data-is-collected}
 
-Pour confirmer que les données sont collectées à partir de votre magasin Commerce, utilisez le débogueur [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home) pour examiner votre site Commerce. Une fois que vous avez confirmé que les données sont collectées, vous pouvez vérifier que vos données d’événement storefront et back office s’affichent à la périphérie en exécutant une requête qui renvoie les données du jeu de données [ que vous avez créé lors de la configuration](overview.md#enable-extension).
+Pour confirmer que les données sont collectées à partir de votre magasin Commerce, utilisez le débogueur [Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home) pour examiner votre site Commerce. Une fois que vous avez confirmé que les données sont collectées, vous pouvez vérifier que vos données d’événement storefront et back office s’affichent à la périphérie en exécutant une requête qui renvoie les données du jeu de données [&#x200B; que vous avez créé lors de la configuration](overview.md#enable-extension).
 
 1. Sélectionnez **Requêtes** dans le volet de navigation de gauche d’Experience Platform, puis cliquez sur [!UICONTROL Create Query].
 

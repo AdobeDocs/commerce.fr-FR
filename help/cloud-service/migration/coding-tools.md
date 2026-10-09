@@ -83,7 +83,7 @@ Cette commande met à jour les outils vers la dernière version.
 
 ## Installation
 
-1. Installez globalement la dernière [ligne de commande ](https://github.com/adobe/aio-cli) :
+1. Installez globalement la dernière [ligne de commande &#x200B;](https://github.com/adobe/aio-cli) :
 
    ```bash
    npm install -g @adobe/aio-cli
@@ -169,8 +169,8 @@ Cette commande met à jour les outils vers la dernière version.
 >
 >Avant de déployer votre projet, effectuez les tâches de configuration suivantes :
 >
->* Connectez-vous à [](https://developer.adobe.com/console) à l’aide de l’interface de ligne de commande Adobe I/O.
->* Créez un projet App Builder (voir [ Configuration du projet ](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Connectez-vous à [&#128279;](https://developer.adobe.com/console) à l’aide de l’interface de ligne de commande Adobe I/O.
+>* Créez un projet App Builder (voir [&#x200B; Configuration du projet &#x200B;](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Configurez les variables d’environnement dans un fichier `.env`.
 >
 >Vous pouvez effectuer ces tâches de configuration manuellement ou utiliser les outils de codage de l’IA pour vous guider tout au long du processus. Voir [Création d’une intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) pour obtenir des instructions de configuration détaillées.

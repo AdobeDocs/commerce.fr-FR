@@ -297,7 +297,7 @@ Après le déploiement, effectuez les étapes suivantes pour enregistrer l’op�
    - Cliquez sur **Configurer les extensions**, choisissez l’espace de travail sur lequel votre application est déployée, puis cliquez sur **Appliquer**. Vous pouvez également sélectionner l’option **Personnalisé** et saisir le nom de l’espace de travail.
    - Sélectionnez l’application [!DNL App Builder] dans la liste et enregistrez-la. Si l’application n’apparaît pas, cliquez sur **Actualiser les enregistrements** et réessayez.
 
-   SDK de l’interface utilisateur d’administration configure la fenêtre modale des extensions avec l’espace de travail et la sélection des extensions](../assets/admin-ui-configure-extensions.png){width="600" zoomable="yes"}![
+   SDK de l’interface utilisateur d’administration configure la fenêtre modale des extensions avec l’espace de travail et la sélection des extensions![&#128279;](../assets/admin-ui-configure-extensions.png){width="600" zoomable="yes"}
 
 1. **Configurez la méthode d’expédition simulée dans l’interface utilisateur d’administration d’Adobe Commerce :**
    - Ouvrez **Applications** et sélectionnez votre application.

@@ -72,7 +72,7 @@ Avant d’implémenter des attributs d’identité personnalisés, veillez à :
    - `primaryID` (chaîne) - nom du champ d’identité du Principal
    - `secondaryID` (chaîne) - nom de champ d’identité Secondaire
 
-![Configuration du schéma ](./assets/aep-schema-configuration.png)
+![Configuration du schéma &#x200B;](./assets/aep-schema-configuration.png)
 
 >[!NOTE]
 >

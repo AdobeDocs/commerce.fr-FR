@@ -46,7 +46,7 @@ Remplissez ce guide après avoir terminé tous les éléments de la [liste de co
 
 ## Conditions préalables
 
-- Informations d’identification de serveur à serveur OAuth 2.0 (identifiant client et secret client) créées dans [](https://developer.adobe.com/console/).
+- Informations d’identification de serveur à serveur OAuth 2.0 (identifiant client et secret client) créées dans [&#128279;](https://developer.adobe.com/console/).
 - Votre identifiant de l’organisation IMS, au format `<org>@AdobeOrg`. L’organisation doit être propriétaire du client cible.
 - Le `tenantId` cible, un identifiant client IMS alphanumérique de 22 caractères.
 - Adresses IP sortantes envoyées à et traitées par Adobe pour la passerelle CDMS. Contactez l’équipe d’Adobe si vous avez des doutes sur les adresses IP ou leur statut.
@@ -101,4 +101,4 @@ curl -i "https://<host>/<tenantId>/v1/migrations" \
 
 ## Étapes suivantes
 
-Une fois l’accès confirmé, passez au [ guide de migration ](migration-guide.md) pour commencer la configuration de l’environnement et l’exécution de la migration.
+Une fois l’accès confirmé, passez au [&#x200B; guide de migration &#x200B;](migration-guide.md) pour commencer la configuration de l’environnement et l’exécution de la migration.

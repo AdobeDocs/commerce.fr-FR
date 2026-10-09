@@ -135,7 +135,7 @@ Pour accéder au tableau de bord **Audiences**, positionnez-vous sur la barre la
 
 Dans le tableau de bord, recherchez l’audience que vous avez créée. Notez qu’elle n’est pas utilisée dans une règle de prix de panier ou un bloc dynamique. Dans la section suivante, vous liez l’audience à une règle de prix de panier.
 
-![Tableau de bord des audiences ](assets/real-time-cdp-dashboard.png)
+![Tableau de bord des audiences &#x200B;](assets/real-time-cdp-dashboard.png)
 
 ### &#x200B;4. Créez une règle de prix de panier basée sur l’audience
 

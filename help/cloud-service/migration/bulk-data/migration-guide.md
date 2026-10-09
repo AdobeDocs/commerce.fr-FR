@@ -160,7 +160,7 @@ Il s’agit des paramètres IMS et API [!DNL Adobe Commerce as a Cloud Service] 
 
 #### Générer les informations d’identification IMS
 
-Utiliser le [](https://developer.adobe.com/console/). Vous avez besoin d’un accès [!UICONTROL Developer] ou [!UICONTROL Admin] à l’organisation Adobe pour créer des projets. Une connexion utilisateur de base ne suffit pas pour ajouter des API.
+Utiliser le [&#128279;](https://developer.adobe.com/console/). Vous avez besoin d’un accès [!UICONTROL Developer] ou [!UICONTROL Admin] à l’organisation Adobe pour créer des projets. Une connexion utilisateur de base ne suffit pas pour ajouter des API.
 
 1. Créez un projet ou ouvrez-en un existant, puis sélectionnez [!UICONTROL Add API].
 

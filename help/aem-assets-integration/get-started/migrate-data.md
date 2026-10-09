@@ -136,11 +136,11 @@ Voici un aperçu général de l’utilisation de l’outil.
 
 1. Dans la vue Outils Experience Manager, sélectionnez **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**.
 
-   ![Création ](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
+   ![Création &#x200B;](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
 
 1. Dans les configurations d’importation en bloc, sélectionnez **[!UICONTROL Create]** pour ouvrir le formulaire de configuration.
 
-   ![Création ](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
+   ![Création &#x200B;](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
 
 1. Configurez et enregistrez la configuration.
 
@@ -157,6 +157,6 @@ Voici un aperçu général de l’utilisation de l’outil.
 
 >[!MORELIKETHIS]
 >
-> Démonstration vidéo de l’outil d’importation en bloc [](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
+> Démonstration vidéo de l’outil d’importation en bloc [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
 > [Conseils, bonnes pratiques et restrictions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
 > [Chargement ou ingestion de ressources à l’aide d’API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)

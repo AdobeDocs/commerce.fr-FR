@@ -25,7 +25,7 @@ ht-degree: 0%
 
 La vue **[!UICONTROL Sync Status]** fournit une liste des ressources synchronisées par l’intégration d’AEM Assets en fonction des ressources. Utilisez-le pour rechercher, examiner et résoudre les problèmes liés aux ressources en fonction de leurs propres attributs, au lieu de parcourir le catalogue produit par produit.
 
-![Affichage de l’état de synchronisation ](../assets/aem-assets-sync-status-view.png){width="700" zoomable="yes"}
+![Affichage de l’état de synchronisation &#x200B;](../assets/aem-assets-sync-status-view.png){width="700" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ La vue **[!UICONTROL Sync Status]** fournit une liste des ressources synchronis�
 
 Dans la barre latérale _Admin_, accédez à **[!UICONTROL System]** > **[!UICONTROL AEM Assets]** > **[!UICONTROL Sync Status]**.
 
-![Statut de synchronisation d’AEM Assets dans le menu Système ](../assets/aem-assets-configuration-admin-menu.png){width="600" zoomable="yes"}
+![Statut de synchronisation d’AEM Assets dans le menu Système &#x200B;](../assets/aem-assets-configuration-admin-menu.png){width="600" zoomable="yes"}
 
 ## Intégration de l’intégrité de la synchronisation
 

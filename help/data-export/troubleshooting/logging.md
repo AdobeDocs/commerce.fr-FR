@@ -207,6 +207,6 @@ Les données du profileur sont stockées dans le journal d’exportation des don
 
 >[!MORELIKETHIS]
 >
-> - [Scénarios de dépannage ](troubleshooting-scenarios.md) — Résolvez les problèmes de synchronisation des catalogues et les incohérences entre les données.
+> - [Scénarios de dépannage &#x200B;](troubleshooting-scenarios.md) — Résolvez les problèmes de synchronisation des catalogues et les incohérences entre les données.
 > - [Référence des codes journaux](log-codes-reference.md) — Recherchez les codes journaux d&#39;exportation.
 > - [Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce](../data-export-cli-commands.md) — Exécuter les resynchronisations des flux ciblés.

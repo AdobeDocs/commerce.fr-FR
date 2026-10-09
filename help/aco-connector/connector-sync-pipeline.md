@@ -53,13 +53,13 @@ Contexte connexe :
 
 - Découvrez la valeur commerciale de l’intégration, ses fonctionnalités clés et son architecture dans la rubrique [[!DNL Commerce Optimizer Connector] présentation](overview.md).
 
-- Pour les noms de package de module, les points d’entrée de l’API de flux et les chemins d’accès aux clés de configuration, consultez la référence [ Connector ](reference/connector-reference.md)
+- Pour les noms de package de module, les points d’entrée de l’API de flux et les chemins d’accès aux clés de configuration, consultez la référence [&#x200B; Connector &#x200B;](reference/connector-reference.md)
 
 ## Fonctionnement de la synchronisation
 
 Le diagramme suivant montre la synchronisation des données de [!DNL Adobe Commerce] à [!DNL Commerce Optimizer] à travers le [!DNL Adobe I/O Gateway].
 
-![Diagramme de synchronisation de haut niveau du connecteur ](assets/aco-connector-sync-high-level-diagram.png){width="800" zoomable="yes"}
+![Diagramme de synchronisation de haut niveau du connecteur &#x200B;](assets/aco-connector-sync-high-level-diagram.png){width="800" zoomable="yes"}
 
 Lorsque les données du catalogue changent dans [!DNL Adobe Commerce], la synchronisation passe par ces étapes.
 
@@ -85,7 +85,7 @@ L’extension **[!DNL SaaS Data Export]** gère la collecte de flux et le suivi 
 #### Conditions requises
 
 - [Commerce cron doit être en cours d&#39;exécution](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}.
-- Les indexeurs de flux doivent utiliser le mode **[!UICONTROL Update by Schedule]**. Voir [ Synchronisation partielle ](../data-export/sync-overview.md#partial-sync){target="_blank"}.
+- Les indexeurs de flux doivent utiliser le mode **[!UICONTROL Update by Schedule]**. Voir [&#x200B; Synchronisation partielle &#x200B;](../data-export/sync-overview.md#partial-sync){target="_blank"}.
 
 ## Contrôle de synchronisation basé sur la portée
 

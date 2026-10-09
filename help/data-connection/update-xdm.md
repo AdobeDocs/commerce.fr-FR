@@ -70,7 +70,7 @@ Dans cette section, vous apprendrez à mettre à jour votre schéma existant ou 
    >
    > Ne définissez aucun groupe de champs spécifique à Commerce comme `Primary identity`. Ce faisant, identifie le champ comme requis et Experience Platform s’attend à ce que ce champ soit présent dans chaque événement. Si ce champ est absent, l’ingestion des données échoue.
 
-   Votre schéma contient désormais des groupes de champs spécifiques à Commerce, de sorte que les données de série temporelle collectées à partir des événements Commerce [comportementaux](events.md) et [ back-office](events-backoffice.md) soient représentées dans le schéma.
+   Votre schéma contient désormais des groupes de champs spécifiques à Commerce, de sorte que les données de série temporelle collectées à partir des événements Commerce [comportementaux](events.md) et [&#x200B; back-office](events-backoffice.md) soient représentées dans le schéma.
 
 1. [Activer](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#profile) le schéma pour Profil.
 

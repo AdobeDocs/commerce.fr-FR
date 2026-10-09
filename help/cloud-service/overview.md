@@ -134,8 +134,8 @@ Pour créer des expériences riches en quelques minutes avec une création simpl
 
 Adobe fournit un ensemble riche de services de marchandisage intelligents et composables pour vous aider à atteindre vos principaux objectifs commerciaux. Ces services fournissent également des API qui sont essentielles pour optimiser les performances à grande échelle.
 
-- [[!DNL Live Search]](../live-search/overview.md) : obtenez des résultats plus intelligents, plus rapides et pertinents pour les acheteurs grâce à cet outil de recherche optimisé par l&#39;IA. Pour obtenir des instructions de configuration, voir [ Configuration  [!DNL Live Search]](../live-search/workspace.md).
-- [[!DNL Product Recommendations]](../product-recommendations/overview.md) : ajoutez des recommandations optimisées par l’IA en fonction du comportement des acheteurs, des tendances populaires, de la similarité des produits, etc. Pour obtenir des instructions de configuration, voir [[!DNL Product Recommendations] ](../product-recommendations/workspace.md).
+- [[!DNL Live Search]](../live-search/overview.md) : obtenez des résultats plus intelligents, plus rapides et pertinents pour les acheteurs grâce à cet outil de recherche optimisé par l&#39;IA. Pour obtenir des instructions de configuration, voir [&#x200B; Configuration  [!DNL Live Search]](../live-search/workspace.md).
+- [[!DNL Product Recommendations]](../product-recommendations/overview.md) : ajoutez des recommandations optimisées par l’IA en fonction du comportement des acheteurs, des tendances populaires, de la similarité des produits, etc. Pour obtenir des instructions de configuration, voir [[!DNL Product Recommendations] &#x200B;](../product-recommendations/workspace.md).
 - [Service de catalogue](../catalog-service/guide-overview.md) : offrez à vos clients une expérience de produit optimisée tout en améliorant les performances, l’évolutivité et les conversions.
 
   >[!NOTE]
@@ -215,12 +215,12 @@ Adobe fournit aux développeurs des points d’extension et des outils complets 
 
 >[!TIP]
 >
->Des applications créées par le fournisseur peuvent également être installées sur [](https://exchange.adobe.com/).
+>Des applications créées par le fournisseur peuvent également être installées sur [&#128279;](https://exchange.adobe.com/).
 
 Adobe fournit les outils de développement suivants pour créer des intégrations et des personnalisations :
 
 - [**Maillage API pour Adobe Developer App Builder**](https://developer.adobe.com/graphql-mesh-gateway/) : coordonnez et combinez plusieurs API, GraphQL, REST et d’autres sources en un seul point d’entrée GraphQL interrogeable.
-- [****](https://developer.adobe.com/app-builder/docs/intro_and_overview/) : créez et déployez des applications web sécurisées et évolutives qui étendent les fonctionnalités de Commerce et s’intègrent à des solutions tierces.
+- [**&#128279;**](https://developer.adobe.com/app-builder/docs/intro_and_overview/) : créez et déployez des applications web sécurisées et évolutives qui étendent les fonctionnalités de Commerce et s’intègrent à des solutions tierces.
 - [**Événements**](https://developer.adobe.com/commerce/extensibility/events/) : utilisez des déclencheurs d&#39;événement personnalisés pour interagir avec d&#39;autres outils de développement extensibles.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) : utilisez les webhooks pour déclencher automatiquement les interactions entre Commerce et les systèmes tiers.
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) : personnalisez et améliorez l’administration Commerce avec de nouvelles pages et fonctionnalités pour vos commerçants.
@@ -254,7 +254,7 @@ Le processus de mise à niveau classique pour Adobe Commerce sur Cloud consistai
 
 ### Intégrations tierces
 
-Les développeurs peuvent utiliser des API [](https://developer.adobe.com/commerce/webapi/graphql/) et [REST](https://developer.adobe.com/commerce/webapi/rest/) complètes pour intégrer [!DNL Commerce Foundation] à des systèmes tiers et étendre les fonctionnalités de Commerce.
+Les développeurs peuvent utiliser des API [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/) et [REST](https://developer.adobe.com/commerce/webapi/rest/) complètes pour intégrer [!DNL Commerce Foundation] à des systèmes tiers et étendre les fonctionnalités de Commerce.
 
 <!-- 
 ## Experience Cloud integration

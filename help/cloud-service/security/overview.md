@@ -71,7 +71,7 @@ Les commerçants peuvent choisir de déployer un réseau CDN géré par Adobe ou
 
 La couche de réseau CDN de [!DNL API Mesh] met fin à TLS, exécute la passerelle GraphQL en tant que Workers, fournit une mise en cache de périphérie globale et des DDoS/WAF automatiques, et expose `edge‑graph.adobe.io`/`edge‑sandbox‑graph.adobe.io` en tant que points d’entrée de maillage public ; les clients peuvent ajouter leur propre réseau CDN en amont, mais le réseau CDN de [!DNL API Mesh] est fixe et géré par Adobe et les clients ne peuvent pas configurer leurs propres règles WAF.
 
-Pour plus d’informations sur les fonctionnalités de sécurité de [!DNL API Mesh], consultez la documentation sur le [ maillage API ](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}.
+Pour plus d’informations sur les fonctionnalités de sécurité de [!DNL API Mesh], consultez la documentation sur le [&#x200B; maillage API &#x200B;](https://developer.adobe.com/graphql-mesh-gateway/mesh/security){target="_blank"}.
 
 ### Réseau CDN principal
 
@@ -87,7 +87,7 @@ En raison de l’architecture [!DNL Adobe Commerce as a Cloud Service], lorsqu�
 
 [!DNL Adobe Commerce as a Cloud Service] utilise un WAF et un réseau CDN combinés :
 
-- **** - Protection par pare-feu d&#39;application web pour toutes les surfaces publiques [!DNL Adobe Commerce as a Cloud Service].
+- **&#x200B;**&#x200B;- Protection par pare-feu d&#39;application web pour toutes les surfaces publiques [!DNL Adobe Commerce as a Cloud Service].
 - **CDN** - Mise en cache Edge pour les ressources statiques et les réponses GraphQL pouvant être mises en cache.
 
 WAF et le réseau CDN sont gérés par la plateforme [!DNL Adobe Commerce as a Cloud Service] et ne sont pas configurables par les clients.
