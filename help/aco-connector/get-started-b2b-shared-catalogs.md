@@ -3,7 +3,7 @@ title: Configurer le connecteur pour B2B Commerce
 description: Découvrez comment installer le connecteur B2B, sélectionner des portées Commerce, synchroniser les données de catalogue partagées, vérifier les vues de catalogue et surveiller l’intégrité de la projection.
 feature: Integration, Configuration
 badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
-last-update: 2026-10-01T00:00:00.000Z
+last-update: 2026-10-01
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -40,7 +40,7 @@ topic_v2:
     internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: c76e776250d9f996daf61d3cf62e2070803e998c
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%
