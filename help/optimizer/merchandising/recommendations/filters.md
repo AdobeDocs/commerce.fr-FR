@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
+source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2364'
 ht-degree: 0%
 ---
 # Filtrer les produits
@@ -280,3 +280,11 @@ Attribute filter support varies by recommendation type.
 - S’il existe des valeurs d’attribut vides ou des conditions non valides, les recommandations ne s’affichent pas sur le storefront ou dans le panneau d’aperçu.
 - Les valeurs d’attribut doivent correspondre exactement à celles de votre catalogue, y compris les espaces et la casse.
 - Si aucun des produits ne répond aux critères de filtre, les recommandations ne s’affichent pas sur le storefront ou dans le panneau de prévisualisation.
+
+### Rupture de stock
+
+Le filtre d’exclusion suivant peut filtrer les produits en fonction du statut du stock :
+
+- En rupture de stock - (Exclusion uniquement) Exclut les produits en rupture de stock.
+
+![Filtre de statut des stocks](../../assets/filter-stock-status.png)
