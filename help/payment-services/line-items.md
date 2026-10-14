@@ -42,7 +42,7 @@ Les éléments de ligne sont activés par défaut pour [!DNL Payment Services]. 
 
 1. Développez la section _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Dans la section _[!UICONTROL Payment Services]_, développez la section&#x200B;_[!UICONTROL Line Items]_ .
+1. Dans la section _[!UICONTROL Payment Services]_, développez la section_[!UICONTROL Line Items]_ .
 
 1. Par **[!UICONTROL Line Items Enabled]**, sélectionnez `Yes` pour activer (par défaut) ou `No` pour désactiver les éléments de ligne.
 
@@ -160,7 +160,7 @@ Voir [Documentation PayPal pour les développeurs sur les éléments de ligne](h
 
 ## Gérer les éléments de ligne
 
-Adobe Commerce [calcule la taxe en fonction du montant total de chaque ligne](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, ce qui peut entraîner des problèmes d&#39;arrondi si plusieurs quantités du même article sont commandées ou si des prix incluant la taxe sont affichés dans le catalogue. Dans ce cas, la quantité totale peut être fractionnée en deux lignes, mais la quantité sera égale au total des articles commandés.
+Adobe Commerce [calcule la taxe en fonction du montant total de chaque ligne](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, ce qui peut entraîner des problèmes d&#39;arrondi si plusieurs quantités du même article sont commandées ou si des prix incluant la taxe sont affichés dans le catalogue. Dans ce cas, la quantité totale peut être fractionnée en deux lignes, mais la quantité sera égale au total des articles commandés.
 
 > Exemple d&#39;éléments de ligne avec des problèmes d&#39;arrondi dans la vue du tableau de bord du commerçant
 
