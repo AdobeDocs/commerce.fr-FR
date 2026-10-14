@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 559efed5340b7076f18a3efc0077f9afd5f8ca48
 workflow-type: tm+mt
-source-wordcount: '3447'
+source-wordcount: '3576'
 ht-degree: 0%
 ---
 # Notes de mise à jour de [!DNL SaaS Data Export Extension]
@@ -60,6 +60,16 @@ Les mises à jour incluent :
 >L’extension [!DNL SaaS data export] est un ensemble de modules installés automatiquement avec [!DNL Live Search], [!DNL Product Recommendations] et [!DNL Catalog Service]. Vous pouvez vérifier la version installée sur votre système à l’aide de [!DNL Composer]. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Versions de 2026 {#release-notes-2026}
+
+### Version 103.5.0
+
+_13 octobre 2026_
+
+![Correction](../assets/fix.svg) **Visibilité précise des attributs dans les métadonnées exportées**-Correction d’un problème où le champ de visibilité des attributs exportait le paramètre de visibilité d’administration au lieu du paramètre de visibilité de storefront. Les services Commerce connectés bénéficient désormais de la visibilité correcte pour chaque attribut. <!--MDEE-932-->
+
+![Nouveau](../assets/new.svg) **Filtres de plage pour les attributs de produit numériques**-Attributs de produit mis à jour pour prendre en charge le type d’entrée **Nombre**. Ce type d’entrée s’applique aux attributs qui stockent des valeurs décimales, y compris des nombres négatifs, sans afficher de symbole de devise. Ils sont exportés avec des métadonnées qui [!DNL Live Search] permettent de générer des facettes de plage, de sorte que les acheteurs peuvent filtrer selon des mesures telles que la température de fonctionnement. <!--MDEE-1416-->
+
+![Correctif](../assets/fix.svg) **Valeurs d’attribut de prix personnalisées cohérentes**-Les valeurs d’attribut de prix personnalisées sont désormais exportées avec deux décimales, dans la devise par défaut du magasin. Par conséquent, le formatage du prix sur le storefront correspond au format des données de prix.<!--MDEE-1459-->
 
 ### Version 103.4.35
 
