@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 1051405a754ac98534b8a27472dccbfb2fff19c7
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '602'
 ht-degree: 0%
 ---
 # Notes de mise à jour du connecteur Adobe Commerce Optimizer
@@ -52,6 +52,13 @@ Ces notes de mise à jour décrivent toutes les versions du [!DNL Adobe Commerce
 ![Problème connu](../assets/bug.svg) Problèmes connus
 
 ## Versions De 2026
+
+### Version 1.2.0
+
+_13 octobre 2026_
+
+![Corriger](../assets/fix.svg) Activer le flux de magasins pour le service de paiement. <!--MDEE-1459-->
+![Correction](../assets/fix.svg) les vidéos de produits sont désormais synchronisées avec [!DNL Adobe Commerce Optimizer], en conservant l’ordre de tri configuré. <!--DATA-7320-->
 
 ### Version 1.1.1
 
