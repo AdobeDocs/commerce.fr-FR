@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+source-git-commit: 3d21aed1af575d15c2cea4a42c49169a0fe37d7e
 workflow-type: tm+mt
-source-wordcount: '4182'
+source-wordcount: '4111'
 ht-degree: 0%
 ---
 # Créer et gérer des règles
@@ -40,7 +40,7 @@ Pour créer et publier une règle :
 ## Créer une règle {#create-a-rule}
 
 1. Dans le rail de gauche, accédez à _Marchandisage_ > **Règles de marchandisage**.
-1. (Facultatif) Utilisez la liste déroulante **Vue du catalogue** pour sélectionner la vue du catalogue à laquelle la règle doit s’appliquer. La règle que vous créez est étendue à la vue sélectionnée (ou à toutes les vues de catalogue si **Toutes les vues** est sélectionné). Voir [Sélectionner la vue du catalogue](workspace.md#select-catalog-view) pour savoir comment fonctionne la portée de la vue du catalogue.
+1. (Facultatif) Sélectionnez la vue du catalogue à laquelle la règle s’applique à l’aide de la liste déroulante **Vue du catalogue**. La règle que vous créez est étendue à la vue sélectionnée (ou à toutes les vues de catalogue si **Toutes les vues** est sélectionné). Voir [Sélectionner la vue du catalogue](workspace.md#select-catalog-view) pour savoir comment fonctionne la portée de la vue du catalogue.
 
 1. Cliquez sur **[!UICONTROL Create rule]** pour lancer l’éditeur de règles.
 
@@ -48,7 +48,7 @@ Pour créer et publier une règle :
 
 ### Types de règle
 
-Chaque type de règle comporte une icône d’information dans l’éditeur, accompagnée d’une brève explication. Utilisez le type correspondant à l’endroit où les acheteurs doivent voir la logique de marchandisage :
+Chaque type de règle comporte une icône d’information dans l’éditeur, accompagnée d’une brève explication. Utilisez le type correspondant à l’endroit où les acheteurs voient la logique de marchandisage :
 
 | Type de règle | Objectif |
 | --- | --- |
@@ -82,7 +82,7 @@ Les conditions sont les conditions requises pour déclencher un événement. Une
    - La requête de recherche commence par : saisissez un caractère ou une chaîne de texte qui doit se trouver au début de la requête de l’acheteur.
    - La requête de recherche se termine par - Saisissez un caractère ou une chaîne de texte qui doit se trouver à la fin de la requête de l’acheteur.
 
-   Les résultats apparaissent immédiatement dans le volet *Tester votre règle* et sont numérotés par priorité. Vous pouvez utiliser le curseur *Résultats par ligne* en haut à droite pour modifier le nombre de produits dans chaque ligne.
+   Le volet *Tester votre règle* affiche immédiatement les résultats, numérotés par priorité. Vous pouvez utiliser le curseur *Résultats par ligne* en haut à droite pour modifier le nombre de produits dans chaque ligne.
 
 1. Pour tester d’autres requêtes, modifiez le texte de la requête dans la zone de recherche *Tester votre règle* et appuyez sur **Retour**.
 Au départ, le volet de test effectue le rendu de la requête à partir de la zone de recherche Conditions . Mais maintenant, il effectue le rendu de la requête à partir de la zone de requête test. Le volet de test effectue le rendu d’une seule requête à la fois.
@@ -110,13 +110,13 @@ Une règle peut contenir jusqu’à dix conditions. L’opérateur logique qui j
 
 >[!TAB  Règle de catégorie ]
 
-Les règles de catégorie contrôlent la manière dont les produits sont triés sur les **pages de catégorie**. Vous combinez les **règles de catégorie** avec le **classement intelligent** (y compris les signaux pilotés par l’IA) et les **actions manuelles** telles que l’épinglage, l’amplification et l’enterrement, afin d’organiser la découverte, d’exécuter des promotions et d’aligner les pages de catégorie sur votre stratégie sans recourir à des outils externes.
+Les règles de catégorie contrôlent la manière dont les produits sont triés sur les **pages de catégorie**. Combinez les actions **règles de catégorie** avec les actions **classement intelligent** et **manuel** pour traiter les découvertes, exécuter des promotions et aligner les pages de catégorie sur votre stratégie.
 
 **Sélectionner des catégories**
 
-Sous **Catégories**, sélectionnez une ou plusieurs catégories auxquelles la règle doit s’appliquer. Les catégories sélectionnées s’affichent sous le contrôle afin que vous puissiez confirmer la portée. Sélectionnez des catégories de l’une des manières suivantes :
+Sous **Catégories**, sélectionnez une ou plusieurs catégories pour la règle. Les catégories sélectionnées s’affichent sous le contrôle afin que vous puissiez confirmer la portée. Sélectionnez des catégories de l’une des manières suivantes :
 
-- **Parcourir l’arborescence des catégories** - Développez une catégorie pour charger ses catégories enfants immédiates. Pour accéder à un niveau plus profond, développez la catégorie enfant . L’arborescence charge un niveau à la fois.
+- **Parcourir l’arborescence des catégories** - Pour charger des catégories enfants immédiates, développez une catégorie. Pour accéder à un niveau plus profond, développez la catégorie enfant . L’arborescence charge un niveau à la fois.
 - **Rechercher par nom de catégorie** - Saisissez un nom de catégorie dans le champ **Rechercher et sélectionner des catégories**. Les résultats de recherche incluent les noms de catégorie correspondants de l’ensemble du catalogue, y compris les catégories en dehors de la branche actuellement développée. La recherche ne correspond pas au texte du chemin d’accès à la catégorie.
 
 Si plusieurs catégories portent des noms similaires, utilisez le chemin d’accès à la catégorie affiché avec chaque résultat (par exemple, `brakes/aurora`) pour sélectionner la catégorie appropriée.
@@ -127,13 +127,13 @@ Si plusieurs catégories portent des noms similaires, utilisez le chemin d’acc
 
 >[!TIP]
 >
->Si une catégorie enfant n’est pas visible, développez sa catégorie parent pour charger le niveau suivant. Si vous connaissez le nom de la catégorie, utilisez le champ de recherche au lieu de parcourir l’arborescence. Cela s’avère utile pour les catalogues volumineux, car les niveaux de catégorie se chargent à la demande.
+>Si une catégorie enfant n’est pas visible, développez sa catégorie parent pour charger le niveau suivant. Si vous connaissez le nom de la catégorie, utilisez le champ de recherche au lieu de parcourir l’arborescence. Ce comportement est utile pour les catalogues volumineux, car les niveaux de catégorie se chargent à la demande.
 
 1. Dans la liste des catégories sélectionnées, cliquez sur les trois points en regard d’une catégorie et sélectionnez pour :
 
    - **Supprimer** - Supprime la catégorie de la règle.
    - **Appliquer aux sous-catégories** - Applique la règle aux sous-catégories pour lesquelles aucune règle de marchandisage active n’est définie.
-   - **Aperçu** - Affiche l’aspect de la page de catégorie sur votre storefront.
+   - **Aperçu** - Affiche la façon dont la page de catégorie apparaît sur votre storefront.
 
 1. Vous pouvez éventuellement définir [Classement intelligent](#intelligent-ranking), [Classement manuel](#manual-ranking) ou [Classement des attributs](#attribute-ranking) comme décrit dans les sections suivantes. Les mêmes contrôles s’appliquent aux règles de recherche, les différences étant signalées.
 
@@ -145,7 +145,7 @@ Si plusieurs catégories portent des noms similaires, utilisez le chemin d’acc
 
 Le classement intelligent classe les produits en utilisant des **signaux comportementaux** et, le cas échéant, l’IA. Elle s’applique à **règles de recherche**, **toutes les listes de produits** (règles par défaut) et **règles de catégorie** (pages de catégorie). Pour les achats **recherches**, le classement pèse également **pertinence textuelle** dans la requête ; **pages de catégories** n’utilisent pas le texte de la requête de la même manière ; l’éditeur se concentre sur les stratégies comportementales.
 
-Les propriétaires de magasin peuvent définir des stratégies telles que les suivantes. Les libellés exacts et les fenêtres temporelles correspondent à l’éditeur de règles et peuvent différer légèrement en fonction du type de règle.
+Les propriétaires de magasin peuvent définir des stratégies telles que les suivantes. Les libellés exacts et les fenêtres temporelles correspondent à l’éditeur de règles et diffèrent légèrement en fonction du type de règle.
 
 ![Classements intelligents](../../assets/rule-intelligent-ranking.png)
 
@@ -160,13 +160,13 @@ Sélectionnez la stratégie de votre règle. Le volet de **[!UICONTROL Test your
 
 #### Signaux comportementaux pour les produits configurables et leurs variantes {#behavioral-signals-variants}
 
-Le classement intelligent collecte des signaux comportementaux, tels que les affichages, les événements de type ajouter au panier et les achats, en fonction du produit spécifique avec lequel un acheteur interagit. Pour un produit configurable, cela signifie que les signaux sont enregistrés au niveau de la **variante** (produit simple), et non par rapport au parent configurable.
+Le classement intelligent collecte des signaux comportementaux par rapport au produit spécifique avec lequel un acheteur interagit. Pour un produit configurable, cela signifie que les signaux sont enregistrés au niveau de la **variante** (produit simple), et non par rapport au parent configurable.
 
 Lors du classement d’un produit configurable, le classement intelligent agrège les signaux comportementaux collectés de toutes ses variantes et les inclut dans le parent configurable. Le score de classement d’un produit configurable reflète les signaux combinés de chaque variante, et pas seulement d’une seule.
 
 Cette agrégation se produit dans la portée de la catégorie parcourue. Une variante ne transmet ses signaux comportementaux qu’au score de classement du parent configurable pour les catégories auxquelles cette **variante** est attribuée. Si une variante est manquante dans une catégorie, ses signaux ne sont pas pris en compte dans le classement du parent dans cette catégorie, même lorsque le parent configurable lui-même y est affecté.
 
-**Bonne pratique :** passez en revue les affectations de catégorie pour toutes les variantes de produits, en particulier dans les catalogues qui utilisent des structures de catégorie spécifiques à la taille, à la couleur ou à toute autre variante, afin de confirmer que chaque variante est affectée à chaque catégorie dans laquelle elle doit apparaître et influencer le classement.
+**Bonne pratique :** consultez les affectations de catégorie pour toutes les variantes de produit afin de confirmer que chaque variante est affectée à chaque catégorie où elle influence le classement.
 
 **Exemple:**
 
@@ -180,8 +180,8 @@ Utilisez ce contrôle pour équilibrer la force avec laquelle **signaux comporte
 
 | Comportement | Détail |
 | --- | --- |
-| Par défaut | `5` (équivalent au multiplicateur comportemental fixe précédent). |
-| Plage | De `1` (influence comportementale plus douce) à `100` (influence plus forte). La limite supérieure peut changer dans une version ultérieure. |
+| Par défaut | `50`. |
+| Plage | De `1` (influence comportementale plus douce) à `1000` (influence plus forte). |
 | Portée | S&#39;applique uniquement aux requêtes ou aux listes ciblées par la règle. D&#39;autres règles conservent leurs propres valeurs de surenchère. |
 | Prévisualiser | L’aperçu de la règle utilise le même amplification que les résultats en direct pour cette règle. |
 | Indexation | Appliqué au **moment de la requête** ; vous n’avez pas besoin d’une resynchronisation du catalogue ou d’une réindexation complète uniquement parce que vous avez modifié ce paramètre. |
@@ -222,7 +222,7 @@ Un commerçant utilise la stratégie de classement intelligente « Les plus cons
 
 - **Texas Candle** (1ère position) : a un nom de produit plus court et plus propre qui crée un score de pertinence du texte très élevé. Même s&#39;il a moins de vues que **YAN-K-E-512**, sa correspondance de texte supérieure l&#39;emporte sur l&#39;amplification comportementale.
 
-- **YAN-K-E-512** (position inférieure) : bien que disposant du centile de vue le plus élevé dans les données comportementales « Les plus consultés », son nom complexe basé sur un SKU génère un score de pertinence du texte inférieur. À l’**[!UICONTROL Intelligent Ranking Boost]** par défaut (`5`), l’influence comportementale peut ne pas suffire à combler ce vide textuel. L’augmentation peut faire passer le **YAN-K-E-512** à un niveau plus élevé parmi les produits qui correspondent déjà à la requête. **YAN-K-E-512** doit également correspondre à la requête : au moins un attribut consultable pour ce SKU doit inclure **candle**, ou il n’apparaîtra pas dans les résultats et l’amplification ne peut pas s’appliquer.
+- **YAN-K-E-512** (position inférieure) : bien que disposant du centile de vue le plus élevé dans les données comportementales « Les plus consultés », son nom complexe basé sur un SKU génère un score de pertinence du texte inférieur. À l’**[!UICONTROL Intelligent Ranking Boost]** par défaut (`50`), l’influence comportementale peut ne pas suffire à combler ce vide textuel. L’augmentation peut faire passer le **YAN-K-E-512** à un niveau plus élevé parmi les produits qui correspondent déjà à la requête. **YAN-K-E-512** doit également correspondre à la requête : au moins un attribut consultable pour ce SKU doit inclure **candle**, ou il n’apparaîtra pas dans les résultats et l’amplification ne peut pas s’appliquer.
 
 **Exemple (requête large) :**
 
@@ -394,7 +394,7 @@ Cette option permet d’afficher rapidement tous les paramètres de la règle, t
 
 | Champ | Description |
 | --- | --- |
-| [!UICONTROL Intelligent Ranking Boost] | Lorsqu&#39;une stratégie intelligente autre que **Aucune** est sélectionnée, ce paramètre contrôle la force avec laquelle les signaux comportementaux influencent le classement pour cette règle. `5` par défaut ; plage autorisée `1`-`100`. Appliqué au moment de la requête ; l’aperçu des règles correspond au comportement en direct de la règle configurée. |
+| [!UICONTROL Intelligent Ranking Boost] | Lorsqu&#39;une stratégie intelligente autre que **Aucune** est sélectionnée, ce paramètre contrôle la force avec laquelle les signaux comportementaux influencent le classement pour cette règle. `50` par défaut ; plage autorisée `1`-`1000`. Appliqué au moment de la requête ; l’aperçu des règles correspond au comportement en direct de la règle configurée. |
 
 ### Détails
 
