@@ -64,7 +64,7 @@ _9 septembre 2026_
 
 _7 août 2026_
 
-![Nouveau](../assets/new.svg) **Nouveau champ de `externalIds`**—Ajout de `externalIds` au service de catalogue GraphQL, exposant la source de données externe associée à un produit afin que les clients du storefront et de l’intégration puissent identifier la source de données d’origine. Voir [ Renvoi d’externalIds pour un produit](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+![Nouveau](../assets/new.svg) **Nouveau champ de `externalIds`**—Ajout de `externalIds` au service de catalogue GraphQL, exposant la source de données externe associée à un produit afin que les clients du storefront et de l’intégration puissent identifier la source de données d’origine. Voir [&#x200B; Renvoi d’externalIds pour un produit](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
 <!--DATA-7307-->
 
 ![Correction](../assets/fix.svg) **Correction de la réponse `refineProduct` pour les produits configurables**—Correction d’un problème en raison duquel la requête `refineProduct` renvoyait des `priceRange: null` et des `roles: ["hidden"]` pour des produits configurables spécifiques, garantissant ainsi des informations précises sur le prix et la visibilité pour les consommateurs storefront.
@@ -157,7 +157,7 @@ _4 mai 2026_
 
 ### Filtre de prix (version bêta)
 
-Les filtres de recommandation incluent désormais un [ filtre de plage de prix ](./merchandising/recommendations/filters.md#price) (minimum et maximum).
+Les filtres de recommandation incluent désormais un [&#x200B; filtre de plage de prix &#x200B;](./merchandising/recommendations/filters.md#price) (minimum et maximum).
 
 ### Mises à jour des API
 
@@ -209,7 +209,7 @@ Les bundles dynamiques renvoient désormais une plage de prix calculée. <!--DAT
 
 ### Vue Catalogue pour les règles et recommandations de marchandisage
 
-Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [ des règles de marchandisage](./merchandising/rules/add.md).
+Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](./merchandising/rules/add.md).
 
 ### Mises à jour des API
 
