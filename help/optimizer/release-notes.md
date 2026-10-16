@@ -4,7 +4,7 @@ description: Informations de mise à jour mensuelles pour [!DNL Adobe Commerce O
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: 'https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo'
 product_v2:
@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 0%
@@ -47,7 +47,7 @@ _3 septembre 2026_
 
 ### Classement des attributs (version bêta)
 
-[!DNL Adobe Commerce Optimizer] règles de marchandisage prennent désormais en charge [**classement des attributs**](./merchandising/rules/add.md#attribute-ranking) pour les **listes de produits**, **règle de catégorie** et **règle de recherche**. Appliquez automatiquement une action **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** à chaque produit qui correspond à une ou plusieurs conditions d’attribut, telles que la marque ou la catégorie, sans sélectionner de SKU individuels. Le classement des attributs est en version Beta. [En savoir plus](./merchandising/rules/add.md#attribute-ranking).
+[!DNL Adobe Commerce Optimizer] règles de marchandisage prennent désormais en charge le [**classement des attributs**](./merchandising/rules/add.md#attribute-ranking) pour les **Règle de recherche par défaut**, **Règle de catégorie** et **Règle de recherche**. Appliquez automatiquement une action **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** à chaque produit qui correspond à une ou plusieurs conditions d’attribut, telles que la marque ou la catégorie, sans sélectionner de SKU individuels. Le classement des attributs est en version Beta. [En savoir plus](./merchandising/rules/add.md#attribute-ranking).
 
 {{aco-release}}
 
@@ -64,7 +64,7 @@ _9 septembre 2026_
 
 _7 août 2026_
 
-![Nouveau](../assets/new.svg) **Nouveau champ de `externalIds`**—Ajout de `externalIds` au service de catalogue GraphQL, exposant la source de données externe associée à un produit afin que les clients du storefront et de l’intégration puissent identifier la source de données d’origine. Voir [&#x200B; Renvoi d’externalIds pour un produit](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+![Nouveau](../assets/new.svg) **Nouveau champ de `externalIds`**—Ajout de `externalIds` au service de catalogue GraphQL, exposant la source de données externe associée à un produit afin que les clients du storefront et de l’intégration puissent identifier la source de données d’origine. Voir [ Renvoi d’externalIds pour un produit](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
 <!--DATA-7307-->
 
 ![Correction](../assets/fix.svg) **Correction de la réponse `refineProduct` pour les produits configurables**—Correction d’un problème en raison duquel la requête `refineProduct` renvoyait des `priceRange: null` et des `roles: ["hidden"]` pour des produits configurables spécifiques, garantissant ainsi des informations précises sur le prix et la visibilité pour les consommateurs storefront.
@@ -157,7 +157,7 @@ _4 mai 2026_
 
 ### Filtre de prix (version bêta)
 
-Les filtres de recommandation incluent désormais un [&#x200B; filtre de plage de prix &#x200B;](./merchandising/recommendations/filters.md#price) (minimum et maximum).
+Les filtres de recommandation incluent désormais un [ filtre de plage de prix ](./merchandising/recommendations/filters.md#price) (minimum et maximum).
 
 ### Mises à jour des API
 
@@ -165,7 +165,7 @@ _29 avril 2026_
 
 <!--v1.52 release-->
 
-**Traitement par lots des requêtes requis** — L’API GraphQL applique désormais un maximum de 100 SKU par requête lorsque vous récupérez des données de catalogue. Voir [limites et limites documentées](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Traitement par lots des requêtes requis** — L’API GraphQL applique désormais un maximum de 100 SKU par requête lorsque vous récupérez des données de catalogue. Voir [limites et limites documentées](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
@@ -209,7 +209,7 @@ Les bundles dynamiques renvoient désormais une plage de prix calculée. <!--DAT
 
 ### Vue Catalogue pour les règles et recommandations de marchandisage
 
-Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [&#x200B; des règles de marchandisage](./merchandising/rules/add.md).
+Vous pouvez désormais spécifier une vue de catalogue lorsque vous [créez des unités de recommandation](./merchandising/recommendations/create.md) ou [ des règles de marchandisage](./merchandising/rules/add.md).
 
 ### Mises à jour des API
 
