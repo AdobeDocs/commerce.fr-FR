@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3d21aed1af575d15c2cea4a42c49169a0fe37d7e
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
-source-wordcount: '4111'
+source-wordcount: '4108'
 ht-degree: 0%
 ---
 # Créer et gérer des règles
@@ -52,7 +52,7 @@ Chaque type de règle comporte une icône d’information dans l’éditeur, acc
 
 | Type de règle | Objectif |
 | --- | --- |
-| **Toutes les listes de produits** | Classement et marchandisage par défaut dans les listes de produits lorsqu’aucune règle de recherche ou de catégorie plus spécifique ne s’applique. Vous ne pouvez créer qu’une seule règle de ce type. Elle ne peut pas contenir de conditions. |
+| **Règle de recherche par défaut** | Classement et marchandisage par défaut dans les listes de produits lorsqu’aucune règle de recherche ou de catégorie plus spécifique ne s’applique. Vous ne pouvez créer qu’une seule règle de ce type. Elle ne peut pas contenir de conditions. |
 | **Règle de catégorie** | Applique le marchandisage et le classement à une seule catégorie, ce qui contrôle la commande des produits sur cette page de catégorie. |
 | **Règle de recherche** | Applique le marchandisage et le classement lorsque les acheteurs exécutent une recherche correspondant aux conditions de requête de la règle. |
 
@@ -143,7 +143,7 @@ Si plusieurs catégories portent des noms similaires, utilisez le chemin d’acc
 
 ### Classement intelligent {#intelligent-ranking}
 
-Le classement intelligent classe les produits en utilisant des **signaux comportementaux** et, le cas échéant, l’IA. Elle s’applique à **règles de recherche**, **toutes les listes de produits** (règles par défaut) et **règles de catégorie** (pages de catégorie). Pour les achats **recherches**, le classement pèse également **pertinence textuelle** dans la requête ; **pages de catégories** n’utilisent pas le texte de la requête de la même manière ; l’éditeur se concentre sur les stratégies comportementales.
+Le classement intelligent classe les produits en utilisant des **signaux comportementaux** et, le cas échéant, l’IA. Elle s’applique à **règles de recherche**, **règles de recherche par défaut** et **règles de catégorie** (pages de catégorie). Pour les achats **recherches**, le classement pèse également **pertinence textuelle** dans la requête ; **pages de catégories** n’utilisent pas le texte de la requête de la même manière ; l’éditeur se concentre sur les stratégies comportementales.
 
 Les propriétaires de magasin peuvent définir des stratégies telles que les suivantes. Les libellés exacts et les fenêtres temporelles correspondent à l’éditeur de règles et diffèrent légèrement en fonction du type de règle.
 
@@ -401,7 +401,7 @@ Cette option permet d’afficher rapidement tous les paramètres de la règle, t
 | Champ | Description |
 | --- | --- |
 | Nom | Nom de la règle. Les noms des règles doivent être uniques. |
-| Type de règle | **Par défaut** (toutes les listes de produits), **Requête** (conditions de recherche spécifiques) ou **Catégorie** (pages de catégorie), selon **La règle s’applique à**. |
+| Type de règle | **Règle de recherche par défaut**, **Requête** (conditions de recherche spécifiques) ou **Catégorie** (pages de catégorie), selon **La règle s’applique à**. |
 | Date de début | Date de début de la règle, le cas échéant. |
 | Date de fin | Date de fin de la règle, le cas échéant. |
 | Description | Brève description de la règle. |

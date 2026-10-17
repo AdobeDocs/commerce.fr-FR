@@ -1,29 +1,33 @@
 ---
 title: Règles de marchandisage
 description: '[!DNL Adobe Commerce Optimizer] règles de marchandisage associent une logique à des actions pour façonner les résultats de recherche, les listes de produits par défaut et les pages de catégories.'
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+    internal-label: Personalization
+source-git-commit: 44fb94ab5d9ba6deab421a15b391294ec0087f38
 workflow-type: tm+mt
-source-wordcount: 760
+source-wordcount: '821'
 ht-degree: 0%
-
 ---
-
 # Règles de marchandisage
 
-Les règles de marchandisage associent une logique à des actions pour définir la façon dont les produits apparaissent dans **résultats de recherche**, sur **listes de produits par défaut** (**Toutes les listes de produits**) et sur **pages de catégorie**. Vous pouvez booster, enterrer, épingler ou masquer des produits et appliquer le **classement intelligent** afin que les annonces reflètent les objectifs de votre entreprise.
+Les règles de marchandisage associent une logique à des actions pour définir la façon dont les produits apparaissent dans **résultats de recherche**, dans **listes de produits par défaut** via la **règle de recherche par défaut** et sur **pages de catégorie**. Vous pouvez booster, enterrer, épingler ou masquer des produits et appliquer le **classement intelligent** afin que les annonces reflètent les objectifs de votre entreprise.
 
 Chaque **règle de recherche** comporte trois composants principaux :
 
@@ -33,7 +37,7 @@ Chaque **règle de recherche** comporte trois composants principaux :
 
 **Règles de catégorie** utilisez **sélection de catégorie** au lieu des conditions de requête de recherche. Le classement intelligent et le classement manuel fonctionnent de la même manière que pour la recherche, avec les différences répertoriées dans [Créer et gérer des règles](add.md).
 
-Vous pouvez combiner plusieurs conditions et actions pour les règles de recherche et planifier l’activation de n’importe quelle règle pour une période donnée. Vous pouvez également définir une **règle par défaut** (**Toutes les listes de produits**) qui s’applique lorsqu’aucune règle de recherche ou de catégorie plus spécifique ne s’applique.
+Vous pouvez combiner plusieurs conditions et actions pour les règles de recherche et planifier l’activation de n’importe quelle règle pour une période donnée. Vous pouvez également définir une **règle de recherche par défaut** qui s’applique lorsqu’aucune règle de recherche ou de catégorie plus spécifique ne s’applique.
 
 ## Règles de catégorie {#category-rules}
 
@@ -68,7 +72,7 @@ Lors de la composition d’une règle complexe, il peut être utile de l’écri
 
 ## Règle par défaut
 
-Vous pouvez définir une règle par défaut (**Toutes les listes de produits**) qui s’applique lorsqu’aucun terme de recherche n’est fourni ou qu’aucune autre règle de recherche ne peut être appliquée. Si vous définissez la règle par défaut sur « Les plus achetés », les requêtes sont définies par défaut sur ce type de classement, sauf si elles sont remplacées par un terme de recherche plus spécifique. Aucun terme de recherche ne peut être défini pour la règle par défaut. Les **règles de catégorie** sont distinctes : elles s’appliquent uniquement aux catégories que vous sélectionnez et ne remplacent pas la règle d’énumération par défaut.
+Vous pouvez définir une **règle de recherche par défaut** qui s’applique lorsqu’aucun terme de recherche n’est fourni, ou qu’aucune autre règle de recherche ne peut être appliquée. Si vous définissez la règle par défaut sur « Les plus achetés », les requêtes sont définies par défaut sur ce type de classement, sauf si elles sont remplacées par un terme de recherche plus spécifique. Aucun terme de recherche ne peut être défini pour la règle par défaut. Les **règles de catégorie** sont distinctes : elles s’appliquent uniquement aux catégories que vous sélectionnez et ne remplacent pas la règle d’énumération par défaut.
 
 ## Ordre de priorité avec plusieurs règles
 

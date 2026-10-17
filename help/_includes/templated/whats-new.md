@@ -1,7 +1,7 @@
 ---
-source-git-commit: b12fd59e97279b78017bee0403a7e7672adb1957
+source-git-commit: f43710c77d063d923d136b9fda2d9283ede97788
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1250'
 ht-degree: 1%
 ---
 # Nouveautés du modèle
@@ -9,6 +9,80 @@ ht-degree: 1%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 16 Octobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour de la documentation sur les règles de marchandisage afin de renommer le type de règle Toutes les listes de produits en Règle de recherche par défaut dans <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/overview">Aperçu des règles de marchandisage</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/add">Créer et gérer des règles</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/release-notes">Notes de mise à jour</a>, en correspondant à l’option renommé dans le menu de type de règle d’administration.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b5c9b1b4ead9f355cd7438d3a8f1b90ac08b12d1">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 14 Octobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Correction des valeurs par défaut et de plage documentées pour les [!UICONTROL Intelligent Ranking Boost] dans <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Créer et gérer des règles de marchandisage</a> : la valeur par défaut est <code>50</code> (précédemment documentée comme <code>5</code>) et la plage maximale est <code>1000</code> (précédemment documentée comme <code>100</code>).</p>
+</td>
+      <td>
+        Technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/07fb011b0303ebca11dd3e0948d264c72bd2422e">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 12 Octobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout de la documentation sur le nouveau filtre d’exclusion des produits en rupture de stock pour les unités de recommandation dans <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/recommendations/filters">Filtres</a>, qui exclut les produits en rupture de stock des recommandations.</p>
+</td>
+      <td>
+        Commentaires, mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/abba2327d9c678e374a94c5bc5ed091f401c8aff">validation</a></td>
+    </tr>
+    <tr>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">référence des codes de journal d’exportation de données</a> à partir de la dernière <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>.</p>
+</td>
+      <td>
+        Technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/83acf0b6474920141c0bcc354f7c49ea7d10d29c">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 8 octobre 2026
 
@@ -388,36 +462,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Mise à jour majeure
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 12 Août 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la production <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Les commerçants peuvent désormais intégrer en libre-service un autre compte PayPal à la portée du site web directement à partir de l’administrateur Commerce. Voir <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/configure/connect-website-account">Connecter un autre compte PayPal à un site web</a> pour plus d’informations.</p>
-</td>
-      <td>
-        Nouvelle rubrique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">validation</a></td>
     </tr>
   </tbody>
 </table>
