@@ -153,7 +153,7 @@ Le flux de `prices` envoie [!DNL Adobe Commerce] données au point d’entrée [
 Le flux de `categories` envoie [!DNL Adobe Commerce] données au point d’entrée [Catégories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 Le connecteur identifie les enregistrements de flux de catégorie par chemin d’URL et code d’affichage de magasin.
-- 
+- &#x200B;
   - Lorsqu’une catégorie passe à un autre parent dans l’arborescence des catégories, la synchronisation envoie les nouveaux chemins d’accès pour cette catégorie et ses descendants et supprime leurs chemins d’accès précédents de [!DNL Adobe Commerce Optimizer].
 - Les éléments avec un `urlPath` vide (catégories racine logique) sont ignorés et ne sont jamais envoyés.
 
