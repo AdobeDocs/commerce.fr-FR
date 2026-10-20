@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1051405a754ac98534b8a27472dccbfb2fff19c7
+source-git-commit: 4f45ba5b177dfb826c49ae3ddc41cb453c6bb93b
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '647'
 ht-degree: 0%
 ---
 # Notes de mise à jour du connecteur Adobe Commerce Optimizer
@@ -52,6 +52,12 @@ Ces notes de mise à jour décrivent toutes les versions du [!DNL Adobe Commerce
 ![Problème connu](../assets/bug.svg) Problèmes connus
 
 ## Versions De 2026
+
+### Version 1.2.1
+
+_19 octobre 2026_
+
+![Correction](../assets/fix.svg) **Conservation du comportement de synchronisation des catégories**-Le connecteur Adobe Commerce Optimizer conserve le chemin d’accès à l’URL et le code de vue du magasin en tant qu’identifiants de flux de catégorie, conservant ainsi une synchronisation correcte. Lorsque des catégories se déplacent dans une arborescence de catégories, les nouveaux chemins sont synchronisés et les chemins précédents sont supprimés.<!--MDEE-1473-->
 
 ### Version 1.2.0
 

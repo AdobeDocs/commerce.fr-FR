@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9ea19181108118892e238ba2ffce4bb7b451ee94
+source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3719'
 ht-degree: 0%
 ---
 # Notes de mise à jour de [!DNL SaaS Data Export Extension]
@@ -60,6 +60,16 @@ Les mises à jour incluent :
 >L’extension [!DNL SaaS data export] est un ensemble de modules installés automatiquement avec [!DNL Live Search], [!DNL Product Recommendations] et [!DNL Catalog Service]. Vous pouvez vérifier la version installée sur votre système à l’aide de [!DNL Composer]. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Versions de 2026 {#release-notes-2026}
+
+### Version 103.5.2
+
+_19 octobre 2026_
+
+![Correctif](../assets/fix.svg) **Identification cohérente des catégories** : identification restaurée des flux de catégories à l’aide de l’ID de catégorie et du code d’affichage du magasin dans l’[API GraphQL du service de catalogue pour les services Storefront](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"} prise en charge dans Adobe Commerce as a Cloud Service, Adobe Commerce sur le cloud et sur site. Cette mise à jour empêche les déplacements de catégorie de marquer les catégories comme supprimées de manière incorrecte. <!--MDEE-1473-->
+
+![Correction](../assets/fix.svg) **Traitement fiable des options d&#39;attribut sur PHP 8.5**—Gestion fixe des valeurs d&#39;option d&#39;attribut pour éviter les erreurs d&#39;exportation de flux de produit lorsque les libellés d&#39;option font référence à un magasin manquant. <!--MDEE-1472-->
+
+![Correctif](../assets/fix.svg) **Synchronisation fiable des produits configurables sur PHP 8.5**—Correction d’un problème où les valeurs d’attribut enfant nulles empêchaient les produits configurables de se synchroniser correctement. <!--MDEE-1474-->
 
 ### Version 103.5.1
 

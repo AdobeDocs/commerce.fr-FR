@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b62a0a272684daa2494017d290a711da8e1746b9
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1065'
 ht-degree: 2%
 ---
 
@@ -152,7 +152,10 @@ Le flux de `prices` envoie [!DNL Adobe Commerce] données au point d’entrée [
 
 Le flux de `categories` envoie [!DNL Adobe Commerce] données au point d’entrée [Catégories](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
-Les éléments avec un `urlPath` vide (catégories racine logique) sont ignorés et ne sont jamais envoyés.
+Le connecteur identifie les enregistrements de flux de catégorie par chemin d’URL et code d’affichage de magasin.
+- &#x200B;
+  - Lorsqu’une catégorie passe à un autre parent dans l’arborescence des catégories, la synchronisation envoie les nouveaux chemins d’accès pour cette catégorie et ses descendants et supprime leurs chemins d’accès précédents de [!DNL Adobe Commerce Optimizer].
+- Les éléments avec un `urlPath` vide (catégories racine logique) sont ignorés et ne sont jamais envoyés.
 
 | champ [!DNL Adobe Commerce] | Champ API [!DNL Commerce Optimizer] | Détails du mappage |
 | --------------- | -------------- | ------- |
