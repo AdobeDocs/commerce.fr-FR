@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9ea19181108118892e238ba2ffce4bb7b451ee94
+source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3719'
 ht-degree: 0%
 ---
 # Notes de mise à jour de [!DNL SaaS Data Export Extension]
@@ -60,6 +60,16 @@ Les mises à jour incluent :
 >L’extension [!DNL SaaS data export] est un ensemble de modules installés automatiquement avec [!DNL Live Search], [!DNL Product Recommendations] et [!DNL Catalog Service]. Vous pouvez vérifier la version installée sur votre système à l’aide de [!DNL Composer]. Dans certains cas, vous souhaiterez peut-être mettre à niveau l’extension d’exportation de données sur votre système pour relever les correctifs ou les nouvelles fonctionnalités sans mettre à jour la version du service Commerce.
 
 ## Versions de 2026 {#release-notes-2026}
+
+### Version 103.5.2
+
+_19 octobre 2026_
+
+![Correctif](../assets/fix.svg) **Identification cohérente des catégories** : identification restaurée des flux de catégories à l’aide de l’ID de catégorie et du code d’affichage du magasin dans l’[API GraphQL du service de catalogue pour les services Storefront](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"} prise en charge dans Adobe Commerce as a Cloud Service, Adobe Commerce sur le cloud et sur site. Cette mise à jour empêche les déplacements de catégorie de marquer les catégories comme supprimées de manière incorrecte. <!--MDEE-1473-->
+
+![Correction](../assets/fix.svg) **Traitement fiable des options d&#39;attribut sur PHP 8.5**—Gestion fixe des valeurs d&#39;option d&#39;attribut pour éviter les erreurs d&#39;exportation de flux de produit lorsque les libellés d&#39;option font référence à un magasin manquant. <!--MDEE-1472-->
+
+![Correctif](../assets/fix.svg) **Synchronisation fiable des produits configurables sur PHP 8.5**—Correction d’un problème où les valeurs d’attribut enfant nulles empêchaient les produits configurables de se synchroniser correctement. <!--MDEE-1474-->
 
 ### Version 103.5.1
 
@@ -121,7 +131,7 @@ _10 juillet 2026_
 
 _6 juillet 2026_
 
-![Correction &#x200B;](../assets/fix.svg) correction d’un problème en raison duquel l’ordre des liens de produits liés, de vente incitative et de vente croisée dans le flux de produits pouvait varier d’une exécution à l’autre, ce qui entraînait la renvoi de produits inchangés à chaque exécution `bin/magento saas:resync --feed products`. Ces liens sont désormais exportés dans un ordre cohérent, de sorte que les produits ne sont resynchronisés que lorsqu’ils sont réellement modifiés. <!--MDEE-1391-->
+![Correction ](../assets/fix.svg) correction d’un problème en raison duquel l’ordre des liens de produits liés, de vente incitative et de vente croisée dans le flux de produits pouvait varier d’une exécution à l’autre, ce qui entraînait la renvoi de produits inchangés à chaque exécution `bin/magento saas:resync --feed products`. Ces liens sont désormais exportés dans un ordre cohérent, de sorte que les produits ne sont resynchronisés que lorsqu’ils sont réellement modifiés. <!--MDEE-1391-->
 ![Correction](../assets/fix.svg) Correction d’un problème en raison duquel les prix des flux envoyaient des prix de base complets au lieu des prix des règles de catalogue pour les sites web situés dans des fuseaux horaires derrière UTC (par exemple, États-Unis et Canada) au cours des heures matinales en UTC. La tarification des règles de catalogue est désormais correctement diffusée, quel que soit le fuseau horaire d’un site web. <!--MDEE-1401-->
 
 ### Version 103.4.28
@@ -190,7 +200,7 @@ _13 avril 2026_
 - Correction d’un problème en raison duquel les produits supprimés n’étaient pas correctement supprimés des services Commerce connectés si le service d’exportation n’était pas disponible lors de la suppression. Les opérations de reprise et de resynchronisation s’assurent désormais que les produits supprimés sont correctement répercutés dans SaaS. <!--MDEE-1319-->
 - Les entités de catalogue (produits et catégories) peuvent désormais être exportées vers les services Commerce connectés même si les valeurs d’attribut sont manquantes pour la vue de magasin d’administration. Cela améliore la compatibilité avec les extensions tierces et réduit les erreurs d’exportation dues à des valeurs par défaut manquantes. <!--MDEE-1333-->
 
-![Correction](../assets/fix.svg) Correction d’une erreur sur la page Statut de la synchronisation des flux de données qui pouvait se produire lorsque les enregistrements de flux contenaient des données inattendues ou manquantes. Le système gère désormais ces cas avec élégance, améliorant ainsi la stabilité et prévenant les accidents. Si vous utilisez le connecteur Adobe Commerce Optimizer pour synchroniser les données d’Adobe Commerce avec Adobe Commerce Optimizer, mettez à jour vers [Adobe Commerce Optimizer Connector version 1.0.11](https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/release-notes) ou ultérieure pour le correctif.<!--MDEE-1327-->
+![Correction](../assets/fix.svg) Correction d’une erreur sur la page Statut de la synchronisation des flux de données qui pouvait se produire lorsque les enregistrements de flux contenaient des données inattendues ou manquantes. Le système gère désormais ces cas avec élégance, améliorant ainsi la stabilité et prévenant les accidents. Si vous utilisez le connecteur Adobe Commerce Optimizer pour synchroniser les données d’Adobe Commerce avec Adobe Commerce Optimizer, mettez à jour vers [Adobe Commerce Optimizer Connector version 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes) ou ultérieure pour le correctif.<!--MDEE-1327-->
 
 ### Version 103.4.21
 
@@ -204,7 +214,7 @@ _5 mars 2026_
 
 ![Correctif](../assets/fix.svg) Garantit la compatibilité avec les futures versions de PHP en mettant à jour le processus d’index de flux de produits afin d’éviter l’utilisation obsolète de la valeur null comme décalage de tableau. Cela améliore la stabilité lors de l’indexation.<!--MDEE-1306-->
 
-![Correctif &#x200B;](../assets/fix.svg) Amélioration de la synchronisation des flux de produits pour les données de catégorie : désormais, lorsque vous mettez à jour une URL de catégorie dans l’interface utilisateur d’administration de Commerce, le flux de produits s’actualise automatiquement pour refléter le nouveau chemin d’accès de catégorie. Aucune action manuelle n’est requise et les résultats de votre recherche de produits sont toujours à jour après le changement de l’URL d’une catégorie.<!--MDEE-1294-->
+![Correctif ](../assets/fix.svg) Amélioration de la synchronisation des flux de produits pour les données de catégorie : désormais, lorsque vous mettez à jour une URL de catégorie dans l’interface utilisateur d’administration de Commerce, le flux de produits s’actualise automatiquement pour refléter le nouveau chemin d’accès de catégorie. Aucune action manuelle n’est requise et les résultats de votre recherche de produits sont toujours à jour après le changement de l’URL d’une catégorie.<!--MDEE-1294-->
 
 ### Version 103.4.19
 
@@ -216,7 +226,7 @@ _6 février 2026_
 
 _2 février 2026_
 
-![Correction](../assets/fix.svg) correction d’un problème en raison duquel les lots d’éléments pouvaient dépasser la limite autorisée lors des mises à jour, provoquant des erreurs `items_limit_exceeded` lors de la synchronisation des données avec [les services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home) ou [Adobe Commerce Optimizer](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
+![Correction](../assets/fix.svg) correction d’un problème en raison duquel les lots d’éléments pouvaient dépasser la limite autorisée lors des mises à jour, provoquant des erreurs `items_limit_exceeded` lors de la synchronisation des données avec [les services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) ou [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
 
 ![Correctif](../assets/fix.svg) Amélioration de la fiabilité des exportations de données de produit en ajoutant une logique pour enregistrer les éléments ayant échoué lors de la collecte des options de produit groupées. <!--CCSAAS-4458-->
 
@@ -244,7 +254,7 @@ _24 novembre 2025_
 
 _2 octobre 2025_
 
-![Nouveau](../assets/new.svg) Ajout de la prise en charge de l’extension Statut de synchronisation des flux de données pour surveiller et résoudre les problèmes de transfert de données de [!DNL Adobe Commerce] vers les services connectés ([!DNL Catalog Service], [!DNL Live Search] et [!DNL Product Recommendations]). Pour plus d’informations sur l’installation et l’utilisation de cette extension, voir [Surveillance de l’état de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) dans le *Guide d’administration de Commerce*. <!--MDEE-954-->
+![Nouveau](../assets/new.svg) Ajout de la prise en charge de l’extension Statut de synchronisation des flux de données pour surveiller et résoudre les problèmes de transfert de données de [!DNL Adobe Commerce] vers les services connectés ([!DNL Catalog Service], [!DNL Live Search] et [!DNL Product Recommendations]). Pour plus d’informations sur l’installation et l’utilisation de cette extension, voir [Surveillance de l’état de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) dans le *Guide d’administration de Commerce*. <!--MDEE-954-->
 
 ### Version 103.4.14
 
@@ -270,7 +280,7 @@ _18 septembre 2025_
 
 _29 août 2025_
 
-![Nouveau](../assets/new.svg) [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
+![Nouveau](../assets/new.svg) [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."}
 Ajout de la prise en charge d’attributs de produit supplémentaires pour inclure la classe de taxe, le jeu d’attributs et les données d’inventaire des configurations de produit Commerce dans le flux de produits. Les clients qui souhaitent inclure ces attributs dans les flux d’exportation de produits doivent ajouter le module Attributs de produit supplémentaires à leur projet Adobe Commerce. Voir [Ajouter une classe de taxe, un jeu d&#39;attributs et des attributs de stock](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 
 ![Correctif](../assets/fix.svg) Correction d’un problème qui entraînait une synchronisation incorrecte des mises à jour de produits supprimés si une erreur se produisait pendant un index de produit complet. Désormais, toutes les suppressions de produits sont correctement synchronisées, même si une erreur se produit pendant le processus d’indexation. <!--MDEE-1144-->
@@ -299,7 +309,7 @@ _6 août 2025_
 
 ![Nouveau](../assets/new.svg) Ajout d’informations de prix de niveau au flux de prix. <!--MDEE-1070-->
 
-![Correction &#x200B;](../assets/fix.svg) l’extension d’exportateur de données exporte désormais correctement les prix de sélection des lots à l’échelle du site web, en veillant à ce que les prix du storefront reflètent des valeurs précises en fonction de la configuration « Étendue du prix du catalogue ».<!--MDEE-1115-->
+![Correction ](../assets/fix.svg) l’extension d’exportateur de données exporte désormais correctement les prix de sélection des lots à l’échelle du site web, en veillant à ce que les prix du storefront reflètent des valeurs précises en fonction de la configuration « Étendue du prix du catalogue ».<!--MDEE-1115-->
 
 ![Correctif](../assets/fix.svg) Auparavant, les produits étaient synchronisés avec un statut de `lowStock=true` incorrect lors de l’utilisation d’Inventory management (Inventory management multi-sources) avec une configuration de seuil. Ce problème a été corrigé afin d’assurer la précision des rapports de stock faible.<!--MDEE-1113-->
 
@@ -367,7 +377,7 @@ _31 mars 2025_
 
 _1 mars 2025_
 
-![Nouveau &#x200B;](../assets/new.svg) fonctionnalité ajoutée pour synchroniser partiellement les flux de `products`, de `productOverrides` et de `productAttributes` en fonction d’une liste spécifiée de SKU de produit. Utilisez la nouvelle fonctionnalité en ajoutant l’option `--by-ids` à la commande resynchroniser l’interface de ligne de commande : <!--MDEE-606-->
+![Nouveau ](../assets/new.svg) fonctionnalité ajoutée pour synchroniser partiellement les flux de `products`, de `productOverrides` et de `productAttributes` en fonction d’une liste spécifiée de SKU de produit. Utilisez la nouvelle fonctionnalité en ajoutant l’option `--by-ids` à la commande resynchroniser l’interface de ligne de commande : <!--MDEE-606-->
 
 ```shell
 bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>'
