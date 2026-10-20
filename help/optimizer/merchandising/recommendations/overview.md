@@ -33,6 +33,6 @@ Les recommandations sont affichées sur le storefront sous la forme d’unités 
 
 ## Confidentialité
 
-La collecte de données à des fins de recommandations n’inclut aucune information d’identification personnelle (PII). En outre, tous les identifiants d’utilisateur tels que les ID de cookie et les adresses IP sont strictement anonymisés. Pour en savoir plus, consultez la [Politique de confidentialité d’](https://www.adobe.com/privacy/policy.html).
+La collecte de données à des fins de recommandations n’inclut aucune information d’identification personnelle (PII). En outre, tous les identifiants d’utilisateur tels que les ID de cookie et les adresses IP sont strictement anonymisés. Pour en savoir plus, consultez la [Politique de confidentialité d’](https://www.adobe.com/fr/privacy/policy.html).
 
 Les utilisateurs de Recommendations peuvent consulter la page [Synchronisation des données](../../setup/data-sync.md) pour plus d’informations sur la synchronisation des données.

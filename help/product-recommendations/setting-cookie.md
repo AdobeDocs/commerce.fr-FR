@@ -97,7 +97,7 @@ Pour tester le comportement des recommandations de produits avec les restriction
 
 ## Respect de la confidentialité
 
-La collecte de données des recommandations de produits n’inclut pas les informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les ID de cookie et les adresses IP, sont rendus anonymes. Pour plus d’informations, consultez la [Politique de confidentialité d’](https://www.adobe.com/privacy/policy.html).
+La collecte de données des recommandations de produits n’inclut pas les informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les ID de cookie et les adresses IP, sont rendus anonymes. Pour plus d’informations, consultez la [Politique de confidentialité d’](https://www.adobe.com/fr/privacy/policy.html).
 
 >[!TIP]
 >
