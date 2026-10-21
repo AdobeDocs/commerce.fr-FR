@@ -2,7 +2,7 @@
 title: Outils de développement du codage de l’IA pour Adobe Commerce App Builder
 description: Découvrez comment utiliser les outils d’IA pour créer des applications Commerce App Builder.
 feature: App Builder, Cloud
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:11:12.988Z'
@@ -33,7 +33,7 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
 source-wordcount: '2611'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Cette commande met à jour les outils vers la dernière version.
 
 ## Installation
 
-1. Installez globalement la dernière [ligne de commande &#x200B;](https://github.com/adobe/aio-cli) :
+1. Installez globalement la dernière [ligne de commande ](https://github.com/adobe/aio-cli) :
 
    ```bash
    npm install -g @adobe/aio-cli
@@ -169,8 +169,8 @@ Cette commande met à jour les outils vers la dernière version.
 >
 >Avant de déployer votre projet, effectuez les tâches de configuration suivantes :
 >
->* Connectez-vous à [&#128279;](https://developer.adobe.com/console) à l’aide de l’interface de ligne de commande Adobe I/O.
->* Créez un projet App Builder (voir [&#x200B; Configuration du projet &#x200B;](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
+>* Connectez-vous à [](https://developer.adobe.com/console) à l’aide de l’interface de ligne de commande Adobe I/O.
+>* Créez un projet App Builder (voir [ Configuration du projet ](https://developer.adobe.com/commerce/extensibility/events/project-setup)).
 >* Configurez les variables d’environnement dans un fichier `.env`.
 >
 >Vous pouvez effectuer ces tâches de configuration manuellement ou utiliser les outils de codage de l’IA pour vous guider tout au long du processus. Voir [Création d’une intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) pour obtenir des instructions de configuration détaillées.
@@ -360,7 +360,7 @@ Consultez les ressources suivantes pour commencer :
 * [Kit de démarrage d’intégration](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Kit de démarrage pour passage en caisse](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Modèles de kit de démarrage Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Modèles de démarrage de Adobe I/O Events](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Modèles de démarrage de Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [Exemples d’applications App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps/)
 
 #### Pourquoi utiliser ces ressources ?

@@ -1,8 +1,8 @@
 ---
 title: Connecteur Adobe Commerce Optimizer
-description: Découvrez les [!DNL Adobe Commerce Optimizer Connector] de synchronisation de catalogue, de recherche et de diffusion storefront entre [!DNL Adobe Commerce] et [!DNL Adobe Commerce Optimizer].
+description: Découvrez comment le [!DNL Adobe Commerce Optimizer Connector] synchronise les données de catalogue de Commerce vers [!DNL Adobe Commerce Optimizer] pour la diffusion en recherche et en storefront.
 feature: Integration, Storefront, Configuration
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 autotag-review: '2026-06-09T19:00:00.000Z'
 nudge: true
 TQID: 'https://experienceleague.adobe.com/v769V06jl-9YfovpL3HOB-FxovIMZyHxOlHXHvkQmbc'
@@ -89,9 +89,9 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1206'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce Optimizer Connector]
@@ -118,7 +118,7 @@ Le [!DNL Adobe Commerce Optimizer Connector] est une intégration native et prop
 
 Le diagramme suivant illustre l’architecture de bout en bout du connecteur, du [!DNL Adobe Commerce] à l’[!DNL Adobe Commerce Optimizer] et à l’extraction jusqu’aux storefronts et aux systèmes de passage en caisse.
 
-![Diagramme d&#39;architecture de bout en bout du connecteur &#x200B;](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
+![Diagramme d&#39;architecture de bout en bout du connecteur ](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
 
 Dans cette architecture :
 
@@ -151,7 +151,7 @@ Une fois que le connecteur a synchronisé les données du catalogue, configurez 
 
 ### Comportement du connecteur B2B {#b2b-shared-catalog-projection-specification}
 
-Le [!DNL Adobe Commerce Optimizer Connector for B2B] étend le connecteur de base avec une projection unidirectionnelle du catalogue partagé B2B et de la configuration d’affectation d’entreprise dans des expériences de catalogue protégées. [!DNL Adobe Commerce] reste la source de vérité pour les données de catalogue et de tarification ; le connecteur B2B s’appuie sur le catalogue de base et la synchronisation des prix et gère ses projections générées par le connecteur.
+Le [!DNL Adobe Commerce Optimizer Connector for B2B] étend le connecteur de base avec une projection unidirectionnelle du catalogue partagé B2B et de la configuration d’affectation d’entreprise dans des expériences de catalogue protégées. [!DNL Adobe Commerce] reste le système d’enregistrement des données de catalogue et de prix. Le connecteur B2B s’appuie sur le catalogue de base et la synchronisation des prix, et gère ses projections générées par le connecteur.
 
 Pour le mappage de projection, le flux d’autorisation d’exécution et la limite de protection, consultez [projection du catalogue partagé B2B](b2b-shared-catalog-projection.md). Pour obtenir des instructions de configuration, voir [Prise en main du connecteur B2B](/help/aco-connector/get-started-b2b-shared-catalogs.md).
 
@@ -198,7 +198,7 @@ Une fois que [!DNL Adobe Commerce] données sont disponibles dans [!DNL Adobe Co
 
 - **Vues et politiques de catalogue** — Pour le connecteur de base, définissez des sous-ensembles et des règles d&#39;accès spécifiques à la région, à la marque ou au client à partir du menu [!UICONTROL Store setup]. Pour savoir qui peut interroger une vue de catalogue, consultez [Vues de catalogue privé](/help/optimizer/setup/private-catalog-view.md)
 - **Découverte de produits et recommandations** — Configurez la recherche, les facettes, les règles de marchandisage, les synonymes et les unités de recommandation dans le menu [!UICONTROL Merchandising]. Le comportement de recherche et de recommandation est géré dans [!DNL Adobe Commerce Optimizer] ; les paramètres [!DNL Live Search] et [!DNL Product Recommendations] de l’administrateur [!DNL Adobe Commerce] ne s’appliquent plus à ces flux
-- **Connexions Storefront** — Pointez les storefronts Commerce sur des versions [!DNL Edge Delivery Services] ou tierces découplées vers les points d’entrée appropriés du client [!DNL Adobe Commerce Optimizer], de la vue de catalogue et de l’API de marchandisage. Pour les intégrations découplées personnalisées, voir [Intégration storefront découplée](/help/aco-connector/headless-storefront.md). Pour obtenir un exemple d’intégration tierce, consultez la section Connecteur Salesforce Commerce [&#x200B; [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)
+- **Connexions Storefront** — Pointez les storefronts Commerce sur des versions [!DNL Edge Delivery Services] ou tierces découplées vers les points d’entrée appropriés du client [!DNL Adobe Commerce Optimizer], de la vue de catalogue et de l’API de marchandisage. Pour les intégrations découplées personnalisées, voir [Intégration storefront découplée](/help/aco-connector/headless-storefront.md). Pour obtenir un exemple d’intégration tierce, consultez la section Connecteur Salesforce Commerce [ [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)
 - **Passage en caisse** — Conservez le panier, le passage en caisse, la gestion des commandes et les comptes clients sur [!DNL Adobe Commerce] ou une plateforme tierce connectée. Utilisez des [!DNL App Builder] et des [!DNL API Mesh] pour la remise du panier si nécessaire.
 
 Pour obtenir des conseils de configuration détaillés, consultez [Prise en main](/help/aco-connector/get-started.md) et le [[!DNL Adobe Commerce Optimizer] Outils de marchandisage](/help/optimizer/overview.md#quick-tour).
@@ -241,7 +241,7 @@ Déchargez l’indexation et la recherche de catalogues lourds pour [!DNL Adobe 
 >
 > - [Prise en main de l’ [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md) — Configurez l’intégration et activez les workflows clés.
 > - [Pipeline de synchronisation du connecteur](/help/aco-connector/connector-sync-pipeline.md) — Découvrez le mécanisme de synchronisation, l’initialisation et la gestion des erreurs.
-> - [Gérer la synchronisation &#x200B;](/help/aco-connector/data-sync-status.md) — Vérifier la synchronisation des données de catalogue et resynchroniser manuellement les flux.
+> - [Gérer la synchronisation ](/help/aco-connector/data-sync-status.md) — Vérifier la synchronisation des données de catalogue et resynchroniser manuellement les flux.
 > - [Mappage de champs pour les flux du connecteur](/help/aco-connector/reference/field-mapping.md) — Examinez le mappage de données au niveau du champ pour tous les flux.
 > - [Scénarios de dépannage](/help/aco-connector/troubleshooting/troubleshooting-scenarios.md) — Résolvez les erreurs de configuration ou les résultats de synchronisation inattendus.
 > - [Notes de mise à jour](/help/aco-connector/release-notes.md) — Consultez les mises à jour du connecteur et les problèmes connus.
