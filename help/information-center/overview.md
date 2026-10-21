@@ -32,7 +32,7 @@ La documentation de référence et approfondie de chaque produit se trouve toujo
 | Section | Utilisez-le pour |
 | ------- | --------- |
 | [Commencer par rôle](get-started/get-started-by-role.md) | Trouvez un point de départ en fonction de votre rôle (professionnel, marchandiseur, administrateur, développeur, architecte de solution ou partenaire). |
-| [ Plateformes et services ](portfolio/platform-and-services.md) | Découvrez la gamme de produits Adobe Commerce et identifiez les produits et services qui répondent à vos besoins. |
+| [&#x200B; Plateformes et services &#x200B;](portfolio/platform-and-services.md) | Découvrez la gamme de produits Adobe Commerce et identifiez les produits et services qui répondent à vos besoins. |
 | [Choisir une option Commerce](portfolio/choose-commerce-option.md) | Obtenez des conseils sur la sélection de l’offre Commerce appropriée en fonction de vos préférences de déploiement, de vos exigences opérationnelles et du niveau de gestion de l’infrastructure souhaité. |
 | [Storefronts](storefronts/overview.md) | Découvrez les différentes options de storefront disponibles dans Adobe Commerce. |
 | [Intégration d’AEM Assets pour Commerce](aem-assets/aem-assets-integration.md) | Ajoutez la gestion centralisée des ressources numériques à toute architecture Commerce ou Optimizer. |

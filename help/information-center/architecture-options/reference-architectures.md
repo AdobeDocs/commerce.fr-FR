@@ -57,7 +57,7 @@ La documentation suivante fournit des modèles d’architecture de référence p
 
 ## Storefront optimisé par Edge Delivery Services
 
-Un storefront construit sur la norme Adobe Commerce, utilisant des composants de dépôt et des blocs de contenu, connectés à Adobe Commerce ou [!DNL Adobe Commerce Optimizer] comme serveur principal. Consultez la [présentation du storefront ](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
+Un storefront construit sur la norme Adobe Commerce, utilisant des composants de dépôt et des blocs de contenu, connectés à Adobe Commerce ou [!DNL Adobe Commerce Optimizer] comme serveur principal. Consultez la [présentation du storefront &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
 
 - [Architecture du storefront d’Adobe Commerce](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/)
 
@@ -65,7 +65,7 @@ Un storefront construit sur la norme Adobe Commerce, utilisant des composants de
 
 Flux de données permettant de synchroniser les données de catalogue, de prix et d’inventaire entre Adobe Commerce et les services Adobe Commerce (Commerce Optimizer, Live Search, Catalog Service, Product Recommendations et autres [services Commerce connectés](../../landing/home.md)).
 
-- Pour les déploiements Adobe Commerce as a Cloud Service, sur les infrastructures cloud ou sur site, voir [ Synchronisation des données avec l’exportation de données SaaS ](/help/data-export/sync-overview.md)
+- Pour les déploiements Adobe Commerce as a Cloud Service, sur les infrastructures cloud ou sur site, voir [&#x200B; Synchronisation des données avec l’exportation de données SaaS &#x200B;](/help/data-export/sync-overview.md)
 
 - Pour Adobe Commerce sur l’infrastructure cloud ou local configuré avec le connecteur Adobe Commerce Optimizer, consultez [Pipeline de synchronisation du connecteur](/help/aco-connector/connector-sync-pipeline.md).
 

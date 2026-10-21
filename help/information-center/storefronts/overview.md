@@ -42,7 +42,7 @@ Le storefront est distinct du serveur principal Commerce et des couches d’API.
 
 ## Commerce Storefront optimisé par Edge Delivery Services
 
-Le storefront Commerce optimisé par [!DNL Edge Delivery Services] est une option de storefront destinée aux clients qui repose sur la norme Adobe Commerce, utilisant des composants de dépôt et des blocs de contenu. Il est compatible avec tous les [présentation de l’architecture](../architecture-options/overview.md), la connexion à Commerce Foundation, les services Storefront ou les services de marchandisage [!DNL Adobe Commerce Optimizer], selon le serveur principal. Consultez la [présentation du storefront ](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
+Le storefront Commerce optimisé par [!DNL Edge Delivery Services] est une option de storefront destinée aux clients qui repose sur la norme Adobe Commerce, utilisant des composants de dépôt et des blocs de contenu. Il est compatible avec tous les [présentation de l’architecture](../architecture-options/overview.md), la connexion à Commerce Foundation, les services Storefront ou les services de marchandisage [!DNL Adobe Commerce Optimizer], selon le serveur principal. Consultez la [présentation du storefront &#x200B;](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
 
 ## Services Storefront
 

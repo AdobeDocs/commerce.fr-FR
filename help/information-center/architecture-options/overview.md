@@ -63,7 +63,7 @@ Les architectures Adobe Commerce combinent généralement trois couches : un ser
 
 | Section | Utilisez-le pour |
 | ------- | --------- |
-| [ Plateformes et services ](../portfolio/platform-and-services.md) | comprendre ce qu’est chaque produit Commerce : Adobe Commerce, Commerce Foundation, Adobe Commerce Optimizer et Adobe Commerce as a Cloud Service ; |
+| [&#x200B; Plateformes et services &#x200B;](../portfolio/platform-and-services.md) | comprendre ce qu’est chaque produit Commerce : Adobe Commerce, Commerce Foundation, Adobe Commerce Optimizer et Adobe Commerce as a Cloud Service ; |
 | [Choisir une option Commerce](../portfolio/choose-commerce-option.md) | Comparez les options de Commerce en fonction de la propriété de la transaction, du modèle de déploiement et des besoins de marchandisage. |
 | [Options d’architecture](../architecture-options/implementation-architectures.md) | Comparez en détail les quatre architectures prises en charge, y compris les diagrammes système et les liens de référence. |
 | [Storefronts](../storefronts/overview.md) | Découvrez les options de storefront et comment elles se connectent à chaque architecture. |

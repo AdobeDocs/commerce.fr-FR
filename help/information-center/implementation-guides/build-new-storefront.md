@@ -54,7 +54,7 @@ L’utilisation du modèle standard d’Adobe Commerce fournit un storefront fon
 
 ## Prise en main
 
-1. Consultez la documentation Présentation du storefront Adobe Commerce [](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/) et [ Architecture du storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/) pour comprendre l’architecture et les composants de liste déroulante disponibles.
+1. Consultez la documentation Présentation du storefront Adobe Commerce [&#128279;](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/create-content/) et [&#x200B; Architecture du storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/) pour comprendre l’architecture et les composants de liste déroulante disponibles.
 
 1. Pour configurer votre storefront, consultez la documentation du storefront :
 

@@ -52,9 +52,9 @@ Il existe deux chemins d’intégration. Le chemin d’accès dépend de votre a
 | Architecture de Commerce | Chemin d’intégration d’AEM Assets | En savoir plus |
 | --- | --- | --- |
 | [!DNL Adobe Commerce] sur le cloud ou sur site | Intégration [!DNL AEM Assets] pour Commerce. Utilise le package d’intégration Commerce pour synchroniser et gérer les images du produit, les vidéos et d’autres médias entre [!DNL Adobe Commerce] et [!DNL AEM Assets]. | [Intégration AEM Assets pour Commerce](/help/aem-assets-integration/overview.md) |
-| [!DNL Adobe Commerce as a Cloud Service] | [!DNL Product Visuals] optimisé par [!DNL AEM Assets] | [configuration de l’intégration ](/help/aem-assets-integration/overview.md#next-steps) |
+| [!DNL Adobe Commerce as a Cloud Service] | [!DNL Product Visuals] optimisé par [!DNL AEM Assets] | [configuration de l’intégration &#x200B;](/help/aem-assets-integration/overview.md#next-steps) |
 | [!DNL Adobe Commerce Optimizer] autonome | [!DNL Product Visuals] optimisé par [!DNL AEM Assets]. Les données de catalogue et de prix de base arrivent via l’API [Optimizer Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/). | [Visuels de produit avec AEM Assets](/help/optimizer/setup/product-visuals.md) |
-| [!DNL Adobe Commerce] avec le [!DNL Adobe Commerce Optimizer Connector] | [!DNL Product Visuals] optimisé par [!DNL AEM Assets]. Les données de catalogue et de prix sont synchronisées à partir de [!DNL Adobe Commerce] par le connecteur. | [Intégrations ](/help/optimizer/integrations/integrations-overview.md) |
+| [!DNL Adobe Commerce] avec le [!DNL Adobe Commerce Optimizer Connector] | [!DNL Product Visuals] optimisé par [!DNL AEM Assets]. Les données de catalogue et de prix sont synchronisées à partir de [!DNL Adobe Commerce] par le connecteur. | [Intégrations &#x200B;](/help/optimizer/integrations/integrations-overview.md) |
 
 [!DNL Product Visuals] est le chemin d’intégration d’Adobe Commerce as a Cloud Service et de Adobe Commerce Optimizer. Il synchronise les images de produit gérées par AEM avec la couche Catalogue Commerce et les diffuse dans les expériences storefront via les API storefront.
 

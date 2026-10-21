@@ -54,7 +54,7 @@ Magento Open Source utilise le connecteur de services Commerce pour [!DNL Paymen
 
 1. Consultez la documentation de [Commerce Services Connector](/help/landing/saas.md) pour obtenir et configurer vos clés API.
 
-1. Consultez les [Guides des services ](/help/landing/home.md) pour connaître les services individuels disponibles via le connecteur.
+1. Consultez les [Guides des services &#x200B;](/help/landing/home.md) pour connaître les services individuels disponibles via le connecteur.
 
 ## Conseils connexes
 

@@ -70,7 +70,7 @@ ht-degree: 0%
 
 ## API Commerce Foundation GraphQL
 
-Fonctionnalités commerciales principales, notamment le catalogue, le panier, le passage en caisse, les clients et les commandes. Utilisé par [!DNL Adobe Commerce] sur le cloud, [!DNL Adobe Commerce] sur site et [!DNL Adobe Commerce as a Cloud Service]. Voir l’API Commerce GraphQL [](https://developer.adobe.com/commerce/webapi/graphql/).
+Fonctionnalités commerciales principales, notamment le catalogue, le panier, le passage en caisse, les clients et les commandes. Utilisé par [!DNL Adobe Commerce] sur le cloud, [!DNL Adobe Commerce] sur site et [!DNL Adobe Commerce as a Cloud Service]. Voir l’API Commerce GraphQL [&#128279;](https://developer.adobe.com/commerce/webapi/graphql/).
 
 ## API GraphQL de Storefront Services
 
@@ -78,7 +78,7 @@ Expériences de catalogue, de recherche et de recommandation orientées magasin 
 
 ## API GraphQL des services de marchandisage Commerce Optimizer
 
-Récupérez le catalogue géré par Optimizer, les vues de catalogue, les contextes de prix, la recherche, les recommandations et les résultats de marchandisage. Utilisé par [!DNL Adobe Commerce] sur le cloud, sur site avec le [!DNL Adobe Commerce Optimizer Connector] et [!DNL Adobe Commerce Optimizer] autonome. Voir [Services de marchandisage ](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/).
+Récupérez le catalogue géré par Optimizer, les vues de catalogue, les contextes de prix, la recherche, les recommandations et les résultats de marchandisage. Utilisé par [!DNL Adobe Commerce] sur le cloud, sur site avec le [!DNL Adobe Commerce Optimizer Connector] et [!DNL Adobe Commerce Optimizer] autonome. Voir [Services de marchandisage &#x200B;](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/).
 
 ## API REST d’ingestion de données Commerce Optimizer
 
@@ -90,7 +90,7 @@ Ajoutez des données de catalogue et de prix à une implémentation [!DNL Adobe 
 
 ### Connecteur Adobe Commerce Optimizer
 
-Synchronise les données de catalogue et de prix de [!DNL Adobe Commerce] sur le cloud ou sur site vers [!DNL Adobe Commerce Optimizer], en [!DNL Adobe Commerce] le système de transaction tandis qu&#39;Optimizer fournit la détection et le marchandisage. Voir [Intégrations ](/help/optimizer/integrations/integrations-overview.md).
+Synchronise les données de catalogue et de prix de [!DNL Adobe Commerce] sur le cloud ou sur site vers [!DNL Adobe Commerce Optimizer], en [!DNL Adobe Commerce] le système de transaction tandis qu&#39;Optimizer fournit la détection et le marchandisage. Voir [Intégrations &#x200B;](/help/optimizer/integrations/integrations-overview.md).
 
 ### Intégrations commerciales tierces
 
