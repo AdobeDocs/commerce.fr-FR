@@ -36,7 +36,7 @@ Les événements sont un outil essentiel pour améliorer l’expérience d’ach
 
 >[!NOTE]
 >
->La collecte de données n’inclut pas les informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les ID de cookie et les adresses IP, sont strictement anonymisés. [En savoir plus](https://www.adobe.com/privacy/experience-cloud.html).
+>La collecte de données n’inclut pas les informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les ID de cookie et les adresses IP, sont strictement anonymisés. [En savoir plus](https://www.adobe.com/fr/privacy/experience-cloud.html).
 
 La page **Événements** vous permet d’observer les données d’événement storefront collectées. Disposer d’une vue dans la collecte de données d’événement permet aux commerçants de vérifier qu’ils ont correctement implémenté les événements du storefront et que ceux-ci sont capturés avec succès. Les commerçants peuvent utiliser cette page pour identifier les problèmes potentiels et prendre des mesures pour résoudre les problèmes d’événement.
 

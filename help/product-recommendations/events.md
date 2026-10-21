@@ -47,7 +47,7 @@ Pour en savoir plus sur les données comportementales collectées par les évén
 
 >[!NOTE]
 >
->La collecte de données à des fins de [!DNL Product Recommendations] n’inclut pas les informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les ID de cookie et les adresses IP, sont strictement anonymisés. En savoir [plus](https://www.adobe.com/privacy/experience-cloud.html).
+>La collecte de données à des fins de [!DNL Product Recommendations] n’inclut pas les informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les ID de cookie et les adresses IP, sont strictement anonymisés. En savoir [plus](https://www.adobe.com/fr/privacy/experience-cloud.html).
 
 ## Clients du secteur de la santé
 

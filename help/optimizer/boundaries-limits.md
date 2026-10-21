@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1483'
 ht-degree: 0%
 ---
 # Limites et limites
@@ -118,7 +118,6 @@ L’utilisation de Dynamic Media effectue le suivi des requêtes d’API entrant
 | Politiques par vue de catalogue | Nombre de filtres de données autorisés | 10 | Non |
 | Valeurs d’attribut dans une politique | Nombre de caractéristiques de produit configurables pour le filtrage | 100 | Non |
 | [Attribution de clé d’accès restreinte](setup/private-catalog-view.md) | Nombre de clés d’accès restreint pouvant être affectées à une seule vue de catalogue | 3 | Non |
-| [Clés d’accès limitées](setup/restricted-access-keys.md) | Nombre de clés par environnement | Maximum de 100 | Non |
 | Taille de la clé RSA (clés d’accès restreint) | Intensité de clé minimale et maximale acceptée pour une clé à accès restreint | 2 048 bits au minimum, 8 192 bits au maximum | Non |
 | Clés d’accès restreintes | Délai de propagation de révocation de clé | Jusqu’à 5 minutes, en raison de la mise en cache. Les jetons signés par une clé supprimée sont refusés une fois le délai écoulé. | Sans objet |
 

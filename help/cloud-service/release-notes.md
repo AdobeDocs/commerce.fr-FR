@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 02108257eed58231854947feafc8c48e0a75a8bb
+source-git-commit: ca71a86bb37c1ddd90118b0babd0a9c530b71be9
 workflow-type: tm+mt
-source-wordcount: '8820'
+source-wordcount: '8909'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -76,11 +76,11 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 
 ## Octobre 2026 - version #2 {#latest}
 
-[!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="Les éléments répertoriés sont actuellement disponibles dans les environnements de production."}
 
-Les éléments suivants seront disponibles dans les environnements de production le 20 octobre 2026.
+Les éléments suivants ont été publiés dans les environnements de production le 20 octobre 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -88,7 +88,7 @@ Les éléments suivants seront disponibles dans les environnements de production
 
 ### Gérer les régions de pays personnalisées
 
-Les nouveaux points d’entrée de l’API REST permettent aux intégrations de gérer des régions personnalisées, telles que des États ou des provinces, pour les pays qui ne sont pas couverts par les données de région par défaut.
+De nouveaux points d’entrée [API REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-regions) permettent aux intégrations de gérer des régions personnalisées, telles que des États ou des provinces, pour les pays qui ne sont pas couverts par les données de région par défaut.
 
 Les régions par défaut (système) ne peuvent pas être modifiées ni supprimées. Ces points d’entrée nécessitent l’autorisation [!UICONTROL Manage Country Regions]. <!-- ACCS-1937 -->
 
@@ -108,8 +108,8 @@ Les intégrations peuvent désormais s’abonner aux événements suivants via [
 
 Vous pouvez désormais fournir une somme de contrôle SHA-256 facultative lorsque vous demandez une URL de chargement présignée. Envoyez la même valeur dans l’en-tête `x-amz-checksum-sha256` lorsque vous chargez le fichier. <!-- ACCS-1464 -->
 
-* GraphQL - Spécifiez le champ `checksum_sha256` comme entrée de la mutation `initiateUpload`.
-* REST - Utilisez le nouveau point d’entrée `POST /V1/media/initiate-upload-with-checksum` avec le champ `checksumSha256` .
+* GraphQL - Spécifiez le champ `checksum_sha256` comme entrée de la mutation [`initiateUpload`](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#checksum-validation).
+* REST - Utilisez le nouveau point d’entrée [`POST /V1/media/initiate-upload-with-checksum`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads#initiate-the-upload-with-a-checksum) avec le champ `checksumSha256` .
 
 ### Afficher les totaux des commandes sur une chaîne de modification de commande
 
@@ -121,13 +121,26 @@ Pour activer ces champs, contactez votre responsable du succès client Adobe Com
 
 ### Vérifier la disponibilité au niveau des stocks
 
-La nouvelle requête `stockAvailability(skus: [String!]!)` GraphQL renvoie la disponibilité au niveau du stock pour un maximum de 100 SKU. <!-- ACCS-2079 -->
+La nouvelle requête [`stockAvailability(skus: [String!]!)`](https://developer.adobe.com/commerce/webapi/graphql/schema/inventory-sources/queries/stock-availability) GraphQL renvoie la disponibilité au niveau du stock pour un maximum de 100 SKU. <!-- ACCS-2079 -->
+
+>[!IMPORTANT]
+>
+>Cette version comprend des modifications apportées à la requête [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/inventory-sources/queries/source-availability) GraphQL.
+>
+>* Les champs `is_saleable` et `backorder_message` sont supprimés de `sourceAvailability`. Demandez-les plutôt à partir de la requête `stockAvailability` .
+
+### Stock et quantité de flux de produits
+
+Les flux de produits exportent désormais les paramètres de quantité d’inventaire et de panier par le biais de l’attribut de produit personnalisé `ac_inventory`, ainsi que la classe de taxe et l’attribut définis par le biais des attributs de produit personnalisé `ac_tax_class` et `ac_attribute_set`. <!-- ACCS-1981, MDEE-1129 -->
+
+<!-- needs link pending COMDOX-1862 -->
+
+Comme ces points d’entrée externes ont été modifiés, vous devez [resynchroniser manuellement le flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports).
+
 
 ### Améliorations et correctifs
 
 Les améliorations, optimisations et correctifs suivants sont inclus dans cette version :
-
-* Les flux de produits exportent désormais les paramètres de quantité d’inventaire et de panier par le biais de l’attribut de produit personnalisé `ac_inventory`, ainsi que la classe de taxe et l’attribut définis par le biais des attributs de produit personnalisé `ac_tax_class` et `ac_attribute_set`. <!-- ACCS-1981, MDEE-1129 -->
 
 * Correction d’un problème où les images de catégorie n’étaient pas renvoyées dans GraphQL lorsque [!DNL AEM Assets] était le propriétaire de la visualisation. <!-- ACCS-1943 -->
 
