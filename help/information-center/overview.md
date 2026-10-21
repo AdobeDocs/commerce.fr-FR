@@ -51,7 +51,7 @@ La documentation de référence et approfondie de chaque produit se trouve toujo
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Formation et ressources</strong><br/>
-<a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://experienceleague.adobe.com/en/playlists?solution=Commerce" target="_blank">Listes de lecture vidéo</a> - <a href="https://helpx.adobe.com/legal/product-descriptions.html" target="_blank">Descriptions des produits</a> - <a href="https://certification.adobe.com/certifications#filters=Adobe%20Commerce" target="_blank">Certifications</a>
+<a href="https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/overview" target="_blank">Tutoriels</a> - <a href="https://experienceleague.adobe.com/fr/playlists?solution=Commerce" target="_blank">Listes de lecture vidéo</a> - <a href="https://helpx.adobe.com/fr/legal/product-descriptions.html" target="_blank">Descriptions des produits</a> - <a href="https://certification.adobe.com/certifications#filters=Adobe%20Commerce" target="_blank">Certifications</a>
 
 </td>
 <td><strong>Ressources pour les développeurs</strong><br/>

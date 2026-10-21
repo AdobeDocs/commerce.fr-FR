@@ -100,7 +100,7 @@ Ingère les données de catalogue et de prix d’une plateforme commerciale tier
 
 Utilisez le maillage API pour orchestrer les API Adobe Commerce avec des API privées ou tierces. Utilisez Adobe Developer App Builder pour créer des applications et des intégrations personnalisées. Pour obtenir des conseils sur l’extensibilité des Commerce, voir [Maillage API](https://developer.adobe.com/graphql-mesh-gateway/) et [Extensibilité d’Adobe Commerce](https://developer.adobe.com/commerce/extensibility/).
 
-Pour les intégrations basées sur un événement en particulier, consultez [Adobe I/O Events pour Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events).
+Pour les intégrations basées sur un événement en particulier, consultez [Adobe I/O Events pour Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events).
 
 
 ### Transfert de panier et de passage en caisse

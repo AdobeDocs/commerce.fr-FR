@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## Prise en main
 
-1. Vérifiez la disponibilité de la version du produit et du pays dans [Compatibilité des services de paiement](https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility).
+1. Vérifiez la disponibilité de la version du produit et du pays dans [Compatibilité des services de paiement](https://experienceleague.adobe.com/fr/docs/commerce/payment-services/compatibility).
 
 1. Suivez le [flux Services de paiement d’intégration](/help/payment-services/onboard.md).
 

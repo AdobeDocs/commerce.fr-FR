@@ -49,7 +49,7 @@ La configuration d’un sandbox dépend du produit Adobe Commerce que vous utili
 
 - **[!DNL Adobe Commerce as a Cloud Service]** : utilisez le portail d&#39;approvisionnement en libre-service de Commerce Cloud Manager pour lancer des instances de sandbox et de production. Voir [Prise en main d’Adobe Commerce as a Cloud Service](/help/cloud-service/getting-started.md).
 
-- **Adobe Commerce on Cloud (partenaires)** : envoyez des demandes de sandbox par le biais de l’assistance Adobe. Voir [Demandes de sandbox de partenariat Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests).
+- **Adobe Commerce on Cloud (partenaires)** : envoyez des demandes de sandbox par le biais de l’assistance Adobe. Voir [Demandes de sandbox de partenariat Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests).
 
 - **Services**—Utilisez les clés API Sandbox avec le [Connecteur de services Commerce](/help/landing/saas.md) pour tester les intégrations de services avant de connecter une instance de production.
 
