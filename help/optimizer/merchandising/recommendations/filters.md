@@ -1,7 +1,7 @@
 ---
 title: Filtres de recommandation
 description: Découvrez comment utiliser des filtres pour contrôler quels produits apparaissent dans [!DNL Adobe Commerce Optimizer] recommandations.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
+source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2407'
 ht-degree: 0%
 ---
 # Filtrer les produits
@@ -76,7 +76,7 @@ Configurez la façon dont les livres de prix sont associés à un storefront dan
 
 Les règles de prix **filtrer** le candidat de recommandation défini ; elles ne **pas** reclassent les produits. Le moteur génère une liste avec classement, les règles d’inclusion et d’exclusion de prix suppriment les produits de cette liste et l’ordre relatif des produits restants reste le même. Si le nombre de produits admissibles est inférieur au nombre de demandes d&#39;unité, seuls les articles valides sont affichés. Si aucun n’est qualifié, l’unité n’est pas rendue (aucun espace réservé vide).
 
-Le prix affiché sur les produits à l’intérieur de l’unité de recommandation est le même **prix final** du catalogue des prix de ce magasin, de sorte que ce que les acheteurs voient correspond à la valeur utilisée pour le filtrage. Dans la prévisualisation Admin, les produits configurables peuvent afficher une plage de prix lorsque les prix des variantes diffèrent ; voir [&#x200B; Produits configurables dans la prévisualisation &#x200B;](#configurable-products-in-preview).
+Le prix affiché sur les produits à l’intérieur de l’unité de recommandation est le même **prix final** du catalogue des prix de ce magasin, de sorte que ce que les acheteurs voient correspond à la valeur utilisée pour le filtrage. Dans la prévisualisation Admin, les produits configurables peuvent afficher une plage de prix lorsque les prix des variantes diffèrent ; voir [ Produits configurables dans la prévisualisation ](#configurable-products-in-preview).
 
 #### Gamme de prix statique
 
@@ -225,6 +225,14 @@ Un filtre d’attribut diffère d’un [filtre de produit](#product) dans la mes
 #### Configurer un filtre d’attribut
 
 Procédez comme suit pour ajouter une règle d’inclusion ou d’exclusion d’attribut à une unité de recommandation.
+
+>[!TIP]
+>
+>Pour les attributs que vous souhaitez pouvoir filtrer, utilisez l’[API Metadata](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) afin de définir le paramètre `filterable` :
+>
+>{« filtrable »: true}
+>
+>L’attribut est disponible dans le menu **Attributs** lors de la prochaine synchronisation du catalogue avec [!DNL Adobe Commerce Optimizer].
 
 1. Lors de la [création ou modification](create.md) d’une unité de recommandation, accédez à **[!UICONTROL Filter products]**.
 1. Sélectionnez l’onglet **[!UICONTROL Inclusions]** ou **[!UICONTROL Exclusions]** . Le badge de chaque onglet indique le nombre de filtres activés de ce type.
