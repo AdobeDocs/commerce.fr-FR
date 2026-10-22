@@ -156,13 +156,13 @@ Commerce comprend des services et des outils permettant de connecter des platefo
 
 ### Outils de développement et extensibilité
 
-Les fonctionnalités de développement comprennent ****, **maillage API**, **Événements**, **Webhooks** et **SDK de l’interface utilisateur d’administration**. Ces outils prennent en charge des applications, des intégrations et des extensions personnalisées. La disponibilité varie en fonction de l’offre Commerce.
+Les fonctionnalités de développement comprennent **&#x200B;**, **maillage API**, **Événements**, **Webhooks** et **SDK de l’interface utilisateur d’administration**. Ces outils prennent en charge des applications, des intégrations et des extensions personnalisées. La disponibilité varie en fonction de l’offre Commerce.
 
 Consultez la [documentation Adobe Commerce Developer](https://developer.adobe.com/commerce/docs/).
 
 ### Disponibilité du service
 
-Utilisez cette comparaison pour identifier le chemin d’accès au service pour votre produit Commerce. Consultez la [comparaison des fonctionnalités ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison) et chaque guide de service pour connaître les versions prises en charge, les licences et les exigences de configuration.
+Utilisez cette comparaison pour identifier le chemin d’accès au service pour votre produit Commerce. Consultez la [comparaison des fonctionnalités &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison) et chaque guide de service pour connaître les versions prises en charge, les licences et les exigences de configuration.
 
 | Service ou fonctionnalité | Disponibilité |
 | --- | --- |

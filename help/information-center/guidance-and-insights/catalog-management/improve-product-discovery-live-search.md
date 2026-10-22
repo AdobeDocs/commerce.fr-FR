@@ -49,7 +49,7 @@ Adobe Commerce Live Search fournit des informations sur les performances de rech
 
 Dans l’espace de travail Performances de la recherche en direct , passez en revue des mesures telles que les recherches uniques, les recherches à zéro résultat, les résultats populaires, le taux de clic publicitaire, le taux de conversion et la position moyenne des clics. Utilisez-les pour identifier les tendances et décider quelles requêtes ou quels produits nécessitent une attention particulière. [Performances](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/performance)
 
-Espace de travail Performances de la recherche en direct ![ présentant les recherches uniques, la position moyenne des clics, le taux de clic publicitaire, le taux de conversion et le taux de résultats nuls, avec des onglets pour les recherches uniques, les résultats nuls et les résultats populaires](../../assets/guidance-and-insights/live-search-performance-dashboard.png){width="800" zoomable="yes"}
+Espace de travail Performances de la recherche en direct ![&#x200B; présentant les recherches uniques, la position moyenne des clics, le taux de clic publicitaire, le taux de conversion et le taux de résultats nuls, avec des onglets pour les recherches uniques, les résultats nuls et les résultats populaires](../../assets/guidance-and-insights/live-search-performance-dashboard.png){width="800" zoomable="yes"}
 
 *L’espace de travail Performances de Live Search affiche les mesures à vérifier. Les valeurs affichées sont des exemples de données.*
 

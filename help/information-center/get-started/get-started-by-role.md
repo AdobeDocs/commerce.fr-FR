@@ -47,7 +47,7 @@ ht-degree: 0%
 
 # Prise en main par rôle
 
-La documentation d’Adobe Commerce est organisée sur plusieurs référentiels et sites. Le bon point de départ dépend de votre rôle et, pour les administrateurs et les marchandiseurs, de la plateforme et du chemin de marchandisage que votre projet utilise. Consultez la section [ Plateformes et services ](../portfolio/platform-and-services.md) si vous ne savez pas encore quelle plateforme s’applique à vous.
+La documentation d’Adobe Commerce est organisée sur plusieurs référentiels et sites. Le bon point de départ dépend de votre rôle et, pour les administrateurs et les marchandiseurs, de la plateforme et du chemin de marchandisage que votre projet utilise. Consultez la section [&#x200B; Plateformes et services &#x200B;](../portfolio/platform-and-services.md) si vous ne savez pas encore quelle plateforme s’applique à vous.
 
 ## Pour les professionnels
 
