@@ -47,7 +47,7 @@ Adobe Commerce Live Search fournit des informations sur les performances de rech
 
 ## Rechercher des signaux dans les performances de recherche
 
-Dans l’espace de travail Performances de la recherche en direct , passez en revue des mesures telles que les recherches uniques, les recherches à zéro résultat, les résultats populaires, le taux de clic publicitaire, le taux de conversion et la position moyenne des clics. Utilisez-les pour identifier les tendances et décider quelles requêtes ou quels produits nécessitent une attention particulière. [Performances](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/performance)
+Dans l’espace de travail Performances de la recherche en direct , passez en revue des mesures telles que les recherches uniques, les recherches à zéro résultat, les résultats populaires, le taux de clic publicitaire, le taux de conversion et la position moyenne des clics. Utilisez-les pour identifier les tendances et décider quelles requêtes ou quels produits nécessitent une attention particulière. [Performances](https://experienceleague.adobe.com/fr/docs/commerce/live-search/live-search-admin/performance)
 
 Espace de travail Performances de la recherche en direct ![&#x200B; présentant les recherches uniques, la position moyenne des clics, le taux de clic publicitaire, le taux de conversion et le taux de résultats nuls, avec des onglets pour les recherches uniques, les résultats nuls et les résultats populaires](../../assets/guidance-and-insights/live-search-performance-dashboard.png){width="800" zoomable="yes"}
 
@@ -65,7 +65,7 @@ Traitez-les comme des signaux de référence et de diagnostic, et non comme un s
 
 Les acheteurs ne décrivent pas toujours les produits à l’aide de la terminologie de votre catalogue. Par exemple, une personne qui cherche des « chaussures confortables pour rester debout toute la journée » peut être intéressée par des produits appelés « baskets de marche rembourrées ».
 
-La recherche sémantique utilise le sens et le contexte ainsi que la correspondance de mots-clés, ce qui permet de connecter les requêtes en langage naturel aux produits appropriés même lorsque la requête ne correspond pas exactement à la formulation du catalogue. La recherche en direct combine la correspondance sémantique et par mot-clé dans une seule expérience de recherche. [Recherche sémantique](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
+La recherche sémantique utilise le sens et le contexte ainsi que la correspondance de mots-clés, ce qui permet de connecter les requêtes en langage naturel aux produits appropriés même lorsque la requête ne correspond pas exactement à la formulation du catalogue. La recherche en direct combine la correspondance sémantique et par mot-clé dans une seule expérience de recherche. [Recherche sémantique](https://experienceleague.adobe.com/fr/docs/commerce/live-search/live-search-admin/semantic-search)
 
 La correspondance sémantique peut faciliter les recherches exploratoires, mais la pertinence dépend toujours des produits et des informations disponibles dans votre catalogue. Pour les recherches impliquant un modèle, une spécification ou une exigence de compatibilité exacts, vérifiez que les résultats restent précis.
 
@@ -73,9 +73,9 @@ La correspondance sémantique peut faciliter les recherches exploratoires, mais 
 
 La configuration dépend du produit Adobe Commerce que vous utilisez :
 
-- **Adobe Commerce sur les infrastructures cloud ou sur site :** la recherche sémantique Live Search est disponible pour Adobe Commerce 2.4.4 et les versions ultérieures. Dans Admin, accédez à Marketing > SEO et recherche > Recherche en direct, ouvrez les paramètres, activez la recherche sémantique et enregistrez. Il prend en charge les catalogues anglais. [Paramètres—Recherche sémantique](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/settings)
-- **Adobe Commerce as a Cloud Service :** le système active par défaut la recherche sémantique. Il prend en charge les catalogues anglais. [Recherche sémantique](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
-- **Adobe Commerce Optimizer :** le système active la recherche sémantique par défaut. Vous pouvez éventuellement régler des commandes telles que l’amplification sémantique et le seuil de similarité. Les paramètres incluent également des options de recherche floue. [Recherche sémantique](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/semantic-search) · [Paramètres—Réglage facultatif](https://experienceleague.adobe.com/en/docs/commerce/optimizer/settings)
+- **Adobe Commerce sur les infrastructures cloud ou sur site :** la recherche sémantique Live Search est disponible pour Adobe Commerce 2.4.4 et les versions ultérieures. Dans Admin, accédez à Marketing > SEO et recherche > Recherche en direct, ouvrez les paramètres, activez la recherche sémantique et enregistrez. Il prend en charge les catalogues anglais. [Paramètres—Recherche sémantique](https://experienceleague.adobe.com/fr/docs/commerce/live-search/live-search-admin/settings)
+- **Adobe Commerce as a Cloud Service :** le système active par défaut la recherche sémantique. Il prend en charge les catalogues anglais. [Recherche sémantique](https://experienceleague.adobe.com/fr/docs/commerce/live-search/live-search-admin/semantic-search)
+- **Adobe Commerce Optimizer :** le système active la recherche sémantique par défaut. Vous pouvez éventuellement régler des commandes telles que l’amplification sémantique et le seuil de similarité. Les paramètres incluent également des options de recherche floue. [Recherche sémantique](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/semantic-search) · [Paramètres—Réglage facultatif](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/settings)
 
 ## Transformer les informations de recherche en action
 
@@ -83,8 +83,8 @@ Utilisez un cycle de révision continu pour améliorer la découverte de produit
 
 1. **Rechercher des requêtes à étudier.** Examinez les recherches sans résultat, les requêtes populaires et les recherches avec un faible engagement.
 2. **Vérifiez ce que l’acheteur demande.** Déterminez si la requête pointe vers un produit manquant, une incohérence de libellé ou des données de produit imprécises.
-3. **Améliorez les informations sur les produits.** Rendez les attributs et les descriptions des produits exacts et utiles pour les termes utilisés par les acheteurs. Pour la recherche en direct, Adobe recommande de configurer les attributs et poids recherchables appropriés et de s’assurer que les données d’attribut sont pertinentes. [Bonnes pratiques de recherche en direct](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice)
-4. **Affiner l’expérience de recherche.** Le cas échéant, utilisez des règles de recherche, des synonymes et des facettes pour aider les acheteurs à trouver et à affiner les résultats pertinents. [Bonnes pratiques de recherche en direct](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice)
+3. **Améliorez les informations sur les produits.** Rendez les attributs et les descriptions des produits exacts et utiles pour les termes utilisés par les acheteurs. Pour la recherche en direct, Adobe recommande de configurer les attributs et poids recherchables appropriés et de s’assurer que les données d’attribut sont pertinentes. [Bonnes pratiques de recherche en direct](https://experienceleague.adobe.com/fr/docs/commerce/live-search/best-practice)
+4. **Affiner l’expérience de recherche.** Le cas échéant, utilisez des règles de recherche, des synonymes et des facettes pour aider les acheteurs à trouver et à affiner les résultats pertinents. [Bonnes pratiques de recherche en direct](https://experienceleague.adobe.com/fr/docs/commerce/live-search/best-practice)
 5. **Examinez les résultats et répétez l’opération.** Surveillez les mêmes requêtes et signaux de performances après avoir apporté des modifications, puis ajustez-les en fonction de ce que font les acheteurs.
 
 ## Faire en sorte que chaque recherche compte

@@ -136,4 +136,4 @@ Le commerce électronique ne se limite plus aux vitrines et aux résultats de re
 * [Politiques](/help/optimizer/setup/policies.md)
 * [Outils de développement du codage de l’IA pour Adobe Commerce App Builder](/help/cloud-service/migration/coding-tools.md)
 * [API COMMERCE](../../apis/commerce-apis.md)
-* [Liste de lecture de l&#39;agent de développement Commerce &#x200B;](https://experienceleague.adobe.com/en/playlists/commerce-developer-agent)—Regardez des vidéos techniques sur la configuration et l&#39;utilisation de l&#39;agent de développement Commerce.
+* [Liste de lecture de l&#39;agent de développement Commerce &#x200B;](https://experienceleague.adobe.com/fr/playlists/commerce-developer-agent)—Regardez des vidéos techniques sur la configuration et l&#39;utilisation de l&#39;agent de développement Commerce.

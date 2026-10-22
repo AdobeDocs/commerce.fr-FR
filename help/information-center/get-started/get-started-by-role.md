@@ -57,7 +57,7 @@ Découvrez Adobe Commerce et comment l’administrateur et le storefront travail
 
 - [[!DNL Adobe Commerce Optimizer role-based workflows]](/help/optimizer/get-started.md#role-based-workflows)
 
-- [Guide de prise en main d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview)
+- [Guide de prise en main d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/guide-overview)
 
 
 ## Pour les marchandiseurs
@@ -90,8 +90,8 @@ La configuration diffère selon la plateforme et selon que votre projet utilise 
 
 - Pour l’administration de la plateforme pour Adobe Commerce sur le cloud ou sur site, voir :
 
-- [Guide de Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
-- [Guides opérationnels d’](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) pour la version locale.
+- [Guide de Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview)
+- [Guides opérationnels d’](https://experienceleague.adobe.com/fr/docs/commerce-operations/operational-guides/home) pour la version locale.
 
 ## Pour les développeurs
 
