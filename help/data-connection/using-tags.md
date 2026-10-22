@@ -29,14 +29,14 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: e689017374503218dd1100ab1226e7d76fbb7dae
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2693'
 ht-degree: 0%
 ---
 # Collecter des données Commerce à l’aide de balises Adobe Experience Platform
 
-Bien que vous puissiez utiliser l’extension [!DNL Data Connection] pour publier des événements de storefront et vous y abonner, certains commerçants peuvent déjà utiliser une solution de collecte de données, telle que les balises [Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/platform-learn/data-collection/tags/create-a-property). Pour ces commerçants, Adobe Commerce fournit une option de publication uniquement dans l’extension [!DNL Data Connection] qui utilise le SDK d’événement Adobe Commerce.
+Bien que vous puissiez utiliser l’extension [!DNL Data Connection] pour publier des événements de storefront et vous y abonner, certains commerçants peuvent déjà utiliser une solution de collecte de données, telle que les balises [Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home). Pour ces commerçants, Adobe Commerce fournit une option de publication uniquement dans l’extension [!DNL Data Connection] qui utilise le SDK d’événement Adobe Commerce.
 
 Flux de données d’extension ![[!DNL Data Connection]](assets/tags-data-flow.png)
 _[!DNL Data Connection]le flux de données d’extension avec des balises_

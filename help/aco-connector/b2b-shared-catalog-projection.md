@@ -1,6 +1,6 @@
 ---
 title: Projection de catalogue partagé B2B
-description: Découvrez comment le connecteur B2B projette les catalogues partagés B2B d’Adobe Commerce dans des vues de catalogue Commerce Optimizer protégées et comment les storefronts résolvent et autorisent l’accès des acheteurs.
+description: Découvrez comment le connecteur B2B synchronise les catalogues partagés d’Adobe Commerce avec les vues de catalogue Commerce Optimizer protégées et comment les storefronts autorisent l’accès des acheteurs.
 feature: Integration, Configuration
 role: Admin, Developer
 level: Intermediate
@@ -45,9 +45,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: fe5fc895d1f1cab3bcf081ec699f59192cb215a3
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '594'
 ht-degree: 0%
 ---
 # Projection de catalogue partagé B2B
@@ -64,7 +64,7 @@ Le [!DNL Adobe Commerce Optimizer Connector for B2B] projette l’assortiment et
 
 La projection B2B combine le contenu et la tarification synchronisés du catalogue avec l’assortiment de catalogues partagés et le contexte d’affectation de l’entreprise.
 
-![Mappage de diagramme [!DNL Adobe Commerce] les vues de magasin, la tarification, les catalogues partagés et les affectations d’entreprise aux vues de catalogue privé projetées dans [!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping.svg){width="800"}
+![Mappage de diagramme [!DNL Adobe Commerce] les vues de magasin, la tarification, les catalogues partagés et les affectations d’entreprise aux vues de catalogue privé projetées dans [!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping-alternate.svg){width="100%" zoomable="yes"}
 
 | [!DNL Adobe Commerce] des données | [!DNL Adobe Commerce Optimizer] résultat | Objectif |
 | --- | --- | --- |

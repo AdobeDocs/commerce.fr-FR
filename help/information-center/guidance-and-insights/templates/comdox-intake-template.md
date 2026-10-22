@@ -13,9 +13,9 @@ role_v2:
     internal-label: Developer
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
     internal-label: Leader
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '258'
 ht-degree: 1%
 ---
 
@@ -25,7 +25,7 @@ ticket itself. Copy the section below into the ticket description, fill
 in the brackets, and delete this comment.
 -->
 
-# Entrée d’article dans Commerce Insights
+# Entrée d’articles d’informations et de conseils
 
 Lien pour créer un ticket :
 
@@ -33,7 +33,7 @@ Créez un ticket dans le suivi d’entreprise du projet COMDOX.
 
 ## Informations sur l’en-tête
 
-Résumé : ajouter un article Commerce Insights pour ...
+Résumé : ajouter un article Informations et conseils pour ...
 
 Priorité :
 
@@ -59,16 +59,16 @@ Description :
 
 **Contenu temporaire ?** Non/Oui : si oui, expire [AAAA-MM-JJ], motif : [par exemple, lié à une fonctionnalité obsolète, une fenêtre de migration limitée dans le temps, un événement ou une promotion spécifique]
 
-## Est-ce que cela appartient à Commerce Insights ?
+## Cela fait-il partie des informations et des conseils ?
 
-Commerce Insights sert de guide stratégique et de livre blanc sur la sécurité et la mise en œuvre en fonction de scénarios réels, et non de instructions étape par étape ou de documentation de référence. Confirmez que ce n’est **pas** principalement :
+Insights et conseils sont destinés aux orientations stratégiques et aux livres blancs couvrant les conseils de sécurité et d’implémentation basés sur des scénarios réels, et non sur des instructions étape par étape ou une documentation de référence. Confirmez que ce n’est **pas** principalement :
 
 - [ ] Instructions de configuration détaillées
 - [ Tutoriels ]
 - [ ] Documents de référence (API/CLI/configuration de référence)
 - [ ] les étapes de dépannage
 
-Si l’une des cases est cochée, elle se trouve dans le guide du produit approprié à la place : un lien vers celle-ci à partir d’Insights plutôt que de la dupliquer ici.
+Si l’une des cases est cochée, elle se trouve plutôt dans le guide du produit approprié : liez-la à partir d’Informations et de conseils plutôt que de la dupliquer ici.
 
 ## Portée
 

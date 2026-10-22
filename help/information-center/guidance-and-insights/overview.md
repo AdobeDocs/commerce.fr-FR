@@ -1,5 +1,5 @@
 ---
-title: Adobe Commerce Insights
+title: Informations et conseils
 description: Découvrez l’implémentation pratique, les perspectives en matière de sécurité, de produits et d’ingénierie, ainsi que l’orientation stratégique d’Adobe Commerce
 TQID: 'https://experienceleague.adobe.com/nVpCq5GPWn9aifhkXUf6EpqUf6ia-8sgjc4gs-VToLY'
 product_v2:
@@ -30,17 +30,19 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '241'
 ht-degree: 0%
 ---
 
-# Commerce Insights
+# Informations et conseils
 
-Les responsables de la gestion et de l’ingénierie des produits Adobe Commerce partagent les conseils qu’ils donneraient à un homologue : qu’est-ce qui fonctionne en production, que surveiller et comment tirer le meilleur parti de votre investissement dans Adobe Commerce.
+Les responsables de la gestion et de l’ingénierie des produits Adobe Commerce partagent les conseils qu’ils donneraient à un homologue : ce qui fonctionne en production, ce qu’il faut surveiller et comment tirer le meilleur parti de votre investissement dans Adobe Commerce.
 
-## Ce que vous trouverez
+## Ce que vous trouverez {#what-youll-find}
+
+À mesure que les articles seront publiés, cette section comprendra :
 
 - Conseils de mise en œuvre pour les cas d’utilisation courants d’Adobe Commerce
 - Perspectives architecturales et techniques
@@ -49,10 +51,13 @@ Les responsables de la gestion et de l’ingénierie des produits Adobe Commerce
 - Mises à jour sur les nouvelles fonctionnalités
 - Leçons apprises par les experts d’Adobe Commerce
 
-## À qui ça s&#39;adresse
+## À qui est-ce destiné ? {#who-its-for}
 
 Développeurs, architectes, responsables techniques, stratèges du commerce et équipes commerciales travaillant avec Adobe Commerce, que vous planifiiez une implémentation, résolviez un défi technique ou optimisiez ce que vous avez déjà.
 
 ## Commencer l’exploration
 
-Parcourez les articles pour obtenir des points de vue d’experts, des stratégies d’implémentation et des recommandations que vous pouvez utiliser immédiatement.
+- [Concevoir une plateforme commerciale pour les acheteurs et les agents d’IA](agentic-commerce/architectural-foundations-agentic-commerce.md)—Découvrez comment servir les personnes et les agents d’IA à partir d’une seule source de vérité. L’article couvre un catalogue créé pour le raisonnement machine, le protocole MCP (Model Context Protocol) et les protocoles de commerce agentique ouverts, ainsi que la télémétrie qui montre comment les agents représentent votre marque.
+- [Améliorez la découverte de produits avec Adobe Commerce Live Search](catalog-management/improve-product-discovery-live-search.md)—Découvrez comment utiliser les informations sur les performances de recherche et la recherche sémantique pour aider les acheteurs à trouver des produits pertinents.
+
+Des articles sont ajoutés à cette section au fur et à mesure de leur publication. Revenez pour découvrir les points de vue d’experts, les stratégies d’implémentation et les recommandations que vous pouvez mettre en œuvre immédiatement.

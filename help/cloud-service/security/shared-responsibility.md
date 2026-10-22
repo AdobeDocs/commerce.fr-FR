@@ -40,18 +40,28 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 8b3db59ed02539646dd53a2e9c7a0925b7c3a804
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '472'
 ht-degree: 0%
 ---
 # Sécurité à responsabilité partagée et modèle opérationnel
 
 [!DNL Adobe Commerce as a Cloud Service] est un service à la demande qui repose sur un modèle de sécurité et d&#39;exploitation à responsabilité partagée. Adobe et les clients partagent ces responsabilités, chaque partie assumant une responsabilité distincte pour la sécurisation et l’exploitation de l’application Adobe Commerce.
 
+[!DNL Adobe Commerce as a Cloud Service with Managed Operations] est une offre premium qui ajoute un ingénieur du succès client (CSE) nommé et une équipe d’assistance P1 chargée des opérations gérées 24h/24 et 7j/7 en plus du modèle de responsabilité partagée standard. Adobe reste propriétaire de la plateforme, de l’infrastructure, de la sécurité et de l’application principale, ainsi que de vos personnalisations et intégrations. Toutefois, avec Managed Operations, Adobe Managed Services est consulté sur vos :
+
+- Intégrations
+- Applications App Builder
+- Edge Delivery Storefront
+- Gestion des événements
+- Mises à jour de Platform
+
+Adobe Managed Services partage également la responsabilité des tests de reprise après sinistre, du débogage et de l’isolation des problèmes. Votre CSE vous guide de l’intégration à la mise en production et au-delà, de sorte que vous ayez un expert Adobe avec vous à chaque étape au lieu d’opérer seul.
+
 >[!BEGINSHADEBOX]
 
-Les tableaux récapitulatifs ci-après utilisent le modèle RACI pour montrer les responsabilités en matière de sécurité partagées entre Adobe et les clients.
+Les tableaux récapitulatifs ci-après utilisent le modèle RACI pour montrer les responsabilités en matière de sécurité partagées entre Adobe, les opérations gérées par Adobe et les clients.
 
 **R** — Responsable
 **A** — Responsabilité
@@ -60,39 +70,39 @@ Les tableaux récapitulatifs ci-après utilisent le modèle RACI pour montrer le
 
 >[!ENDSHADEBOX]
 
-| Tâche | Adobe | Client |
-| --- | --- | --- |
-| Définir les règles WAF d’origine du serveur principal | RA | |
-| Définition des règles de WAF du réseau CDN principal | RA | |
-| Déploiement et maintenance des applications [!DNL Adobe Developer App Builder] | | RA |
-| Déploiement des règles WAF de la plateforme principale | RA | |
-| Déploiement des règles de WAF du réseau CDN principal | RA | |
-| Correction des bugs principaux dans [!DNL Adobe Commerce as a Cloud Service] | RA | I |
-| Publication des correctifs d’infrastructure [!DNL Adobe Commerce as a Cloud Service] | RA | |
-| Évolutivité (infrastructure) | RA | |
-| Mise à l’échelle (application principale) | RA | |
-| Intégration d’applications externes | | RA |
-| Installation des applications App Builder | | RA |
-| Test des performances de toutes les applications App Builder | | RA |
-| Thème et conception d’applications App Builder personnalisées | | RA |
-| Configuration du serveur DNS principal | RA | I |
-| Intégration du réseau CDN principal | RA | I |
-| Prise en charge du réseau CDN principal | RA | I |
-| Obtention d’un fournisseur DNS principal | RA | |
-| Approvisionnement des environnements de production et de sandbox | A | R |
-| Accès à Dynamics pour Adobe Commerce sur les infrastructures cloud | R | C |
-| Résolution des problèmes de sécurité du client principal | RA | I |
-| Résolution des problèmes de sécurité du réseau CDN principal | RA | |
-| Assister Adobe dans ses recherches sur la sécurité (analyses/audits) | RA | |
-| Exécution d’analyses PCI ASV | RA | I |
-| Correction des analyses PCI de l’infrastructure Adobe Commerce | R | |
-| Gestion des secrets de système d’exploitation et de plateforme | RA | |
-| Surveillance des journaux de sécurité du serveur principal | RA | |
-| Contrôle de l’assistance clientèle et de l’accès | A | R |
-| Tests annuels et documentation du plan de reprise après sinistre, de sauvegarde et de restauration d’Adobe | RA | |
-| Tests annuels et documentation du plan de reprise après sinistre | RA | |
-| Débogage et isolation des problèmes | R | R |
-| Prise en charge en temps voulu du débogage et du processus d’isolation des problèmes | R | R |
-| Publication de mises à jour et de correctifs sur Adobe Commerce Core | RA | I |
-| Installation de mises à jour et de correctifs sur Adobe Commerce Core | RA | I |
-| Qualité des applications Adobe Commerce principales | RA | |
+| Tâche | Adobe | Opérations gérées par Adobe | Client |
+| --- | --- | --- | --- |
+| Définir les règles WAF d’origine du serveur principal | RA | | |
+| Définition des règles de WAF du réseau CDN principal | RA | | |
+| Déploiement et maintenance des applications [!DNL Adobe Developer App Builder] | | | RA |
+| Déploiement des règles WAF de la plateforme principale | RA | | |
+| Déploiement des règles de WAF du réseau CDN principal | RA | | |
+| Correction des bugs principaux dans [!DNL Adobe Commerce as a Cloud Service] | RA | | I |
+| Publication des correctifs d’infrastructure [!DNL Adobe Commerce as a Cloud Service] | RA | | |
+| Évolutivité (infrastructure) | RA | | |
+| Mise à l’échelle (application principale) | RA | | |
+| Intégration d’applications externes | | C | RA |
+| Installation des applications App Builder | | C | RA |
+| Test des performances de toutes les applications App Builder | | C | RA |
+| Thème et conception d’applications App Builder personnalisées | | C | RA |
+| Configuration du serveur DNS principal | RA | | I |
+| Intégration du réseau CDN principal | RA | | I |
+| Prise en charge du réseau CDN principal | RA | | I |
+| Obtention d’un fournisseur DNS principal | RA | | |
+| Approvisionnement des environnements de production et de sandbox | A | | R |
+| Accès à Dynamics pour Adobe Commerce sur les infrastructures cloud | R | | C |
+| Résolution des problèmes de sécurité du client principal | RA | | I |
+| Résolution des problèmes de sécurité du réseau CDN principal | RA | | |
+| Assister Adobe dans ses recherches sur la sécurité (analyses/audits) | RA | | |
+| Exécution d’analyses PCI ASV | RA | | I |
+| Correction des analyses PCI de l’infrastructure Adobe Commerce | R | | |
+| Gestion des secrets de système d’exploitation et de plateforme | RA | | |
+| Surveillance des journaux de sécurité du serveur principal | RA | | |
+| Contrôle de l’assistance clientèle et de l’accès | A | C | R |
+| Tests annuels et documentation du plan de reprise après sinistre, de sauvegarde et de restauration d’Adobe | RA | C | |
+| Tests annuels et documentation du plan de reprise après sinistre | RA | RA | |
+| Débogage et isolation des problèmes | R | R | R |
+| Prise en charge en temps voulu du débogage et du processus d’isolation des problèmes | R | R | R |
+| Publication de mises à jour et de correctifs sur Adobe Commerce Core | RA | C | I |
+| Installation de mises à jour et de correctifs sur Adobe Commerce Core | RA | C | I |
+| Qualité des applications Adobe Commerce principales | RA | C | |
