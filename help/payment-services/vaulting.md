@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # Chambre forte de carte de crédit
@@ -100,3 +100,5 @@ Pour créer une commande dans l’Administration pour un client à l’aide de s
 ## Sécurité
 
 Les informations de carte de crédit sont partagées avec l’acheteur de manière minimale ; il ne voit que les quatre derniers chiffres, la date d’expiration et la marque de sa carte de crédit en chambre forte. Les informations de carte de crédit sont stockées avec le fournisseur de paiement pour satisfaire aux normes de conformité [PCI](security.md#pci-compliance).
+
+Dans la version 2.17.0 d’[!DNL Payment Services] ou une version ultérieure, les acheteurs qui paient avec une carte de crédit enregistrée peuvent être invités à effectuer un test d’authentification [3D Secure (3DS)](security.md#3ds) requis par l’émetteur de leur carte. L’enregistrement d’une carte ne contourne pas l’authentification requise par l’émetteur.

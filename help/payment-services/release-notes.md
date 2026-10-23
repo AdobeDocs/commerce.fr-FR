@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '5479'
+source-wordcount: '5663'
 ht-degree: 0%
 ---
 
@@ -132,9 +132,29 @@ _28 juin 2021_
 > Les versions se produisent fréquemment pour fournir de nouvelles fonctionnalités et de nouveaux correctifs si nécessaire. Le planning de publication n’est pas fixe.
 
 
+## v2.17.0
+
+_2 octobre 2026_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.6 et ultérieures
+
+![Nouveau](../assets/new.svg)<!-- PAY-6722 --> Désormais, les commerçants peuvent configurer une page d&#39;évaluation facultative pour le passage en caisse PayPal Express afin que les acheteurs puissent consulter les quantités totales finales et les conditions générales applicables avant de passer une commande. Voir [Page de vérification PayPal Express](payments-options.md#paypal-express-review-page) pour plus d&#39;informations.
+
+![Nouveau](../assets/new.svg)<!-- PAY-6668 --> Les commerçants admissibles ayant un accord de surcapture PayPal peuvent désormais capturer plus que le montant autorisé à l&#39;origine lors de la facturation d&#39;une commande, dans les limites approuvées par PayPal. Consultez [Overcapture](over-capture.md) pour connaître les exigences et la configuration.
+
+![Correction d’un problème](../assets/fix.svg)<!-- PAY-7062 --> Correction d’un problème en raison duquel le paramètre [!DNL Google Pay] **[!UICONTROL Button Type]** ne modifiait pas le libellé du bouton lors de l’affichage du bouton Google Pay sur la page de passage en caisse.
+
+![Correction d’un problème](../assets/fix.svg)<!-- PAY-7063 --> Correction d’un problème qui empêchait les acheteurs de passer en caisse PayPal, Pay Later ou Venmo express après avoir fermé et rouvert la fenêtre de paiement.
+
+![Correction d’un problème](../assets/fix.svg)<!-- PAY-6952 --> Correction d’une discordance du montant de la taxe d’expédition qui empêchait l’exécution du paiement express PayPal lorsque les acheteurs sélectionnaient une option d’expédition payée.
+
+![Correction d’un problème](../assets/fix.svg)<!-- PAY-6939 --> Ajout de la prise en charge des défis d’authentification sécurisée [3D](security.md#3ds) lorsque les acheteurs paient avec une carte de crédit enregistrée.
+
 ## v2.16.1
 
 _10 août 2026_
+
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.6 et ultérieures
 
 ![Correction d&#39;un problème &#x200B;](../assets/fix.svg)<!-- PAY-6769 --> correction d&#39;un problème intermittent sur les storefronts EDS qui utilisent les boutons intelligents PayPal et qui entraînait l&#39;indisponibilité de certains modes de paiement sur la page de passage en caisse.
 
@@ -142,13 +162,15 @@ _10 août 2026_
 
 _27 juillet 2026_
 
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.6 et ultérieures
+
 ![Nouveau problème](../assets/new.svg)<!-- Issue PAY-6510 --> Les commerçants peuvent désormais intégrer en libre-service un autre compte PayPal à la portée du site web directement à partir du [!DNL Commerce Admin]. [!DNL Payment Services] La page d’accueil comprend désormais un bouton **[!UICONTROL Connect a different PayPal account for a website]** qui redirige vers la page de configuration d’administration pour les modes de paiement. Voir [Connecter un autre compte PayPal à un site web](connect-website-account.md) pour plus d’informations.
 
 ## v2.15.0
 
 _15 juin 2026_
 
-[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.4 et ultérieures
+[!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.6 et ultérieures
 
 ![Nouveau](../assets/new.svg)<!-- PAY-6564 --> Désormais, [!DNL Google Pay] commande express peut afficher les modes d’expédition sur la feuille de paiement Google à l’aide de rappels d’expédition côté client. Ainsi, les acheteurs sélectionnent l’expédition avant de confirmer le paiement. Les commerçants peuvent afficher ou masquer une étape de révision de Google Pay distincte en utilisant **[!UICONTROL Skip Review]** dans la configuration de [Google Pay](configure-admin.md#google-pay). Lorsque l’étape de révision est ignorée, les options d’expédition restent dans la feuille lorsque l’adresse du portefeuille ou le mode d’expédition change.
 
@@ -744,4 +766,3 @@ _29 novembre 2021_
 ![Problème connu](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] rapports [peuvent ne pas se synchroniser immédiatement](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26837).
 
 ![Problème connu](../assets/bug.svg)<!-- Issue PAY-2475 --> Votre [compte sandbox PayPal](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26836) pour [!DNL Payment Services] ne peut pas être vérifié si vous créez ce compte lors de l’intégration.
-

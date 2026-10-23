@@ -26,9 +26,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1110'
 ht-degree: 0%
 ---
 # Activer le [!DNL Payment Services] pour la production
@@ -61,6 +61,8 @@ Après avoir [configuré vos services Commerce](connect.md#configure-commerce-se
    >[!IMPORTANT]
    >
    >[!DNL Payment Services] prend en charge les captures partielles. Un commerçant peut capturer partiellement (facturer) des parties d’une commande. Par exemple, vous pouvez capturer chaque élément individuellement ou un élément maintenant et le reste plus tard.
+
+   Les commerçants éligibles disposant d&#39;un contrat de surcapture PayPal peuvent également activer la [surcapture](over-capture.md) dans la [!DNL Payment Services] 2.17.0 ou une version ultérieure. La surcapture nécessite de définir **[!UICONTROL Payment Action]** sur `Authorize`, la capture étant effectuée ultérieurement lors de la facturation.
 
 1. Cliquez sur **[!UICONTROL Save]**.
 1. Cliquez sur **[!UICONTROL Go to Payment Services]** pour être redirigé vers la page d’accueil [!DNL Payment Services].

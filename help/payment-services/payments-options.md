@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2458'
 ht-degree: 0%
 ---
 # Options de paiement
@@ -167,6 +167,17 @@ Les clients peuvent quitter facilement et en toute confiance en utilisant le bou
 
 Le bouton [!DNL PayPal] est visible à partir de la page produit, du mini-panier, du panier et des vues de passage en caisse.
 
+#### Page d&#39;évaluation de PayPal Express
+
+Dans [!DNL Payment Services] 2.17.0 ou une version ultérieure, les commerçants peuvent configurer une page d&#39;examen de commerçant facultative pour le paiement PayPal Express. Cette page est distincte de la fenêtre modale de paiement PayPal et permet aux acheteurs de consulter le total de la commande finale et les conditions générales applicables avant de passer une commande.
+
+Utilisez **[!UICONTROL Skip Review]** dans [Configuration des boutons de paiement PayPal](configure-admin.md#paypal-payment-buttons) pour contrôler cette étape :
+
+* `No` : l&#39;acheteur retourne à la page d&#39;examen du commerçant après avoir rempli le mode de paiement PayPal et confirme la commande avant qu&#39;elle ne soit passée.
+* `Yes` : la page d&#39;examen du commerçant est ignorée.
+
+Le paramètre de page de révision ne remplace pas la responsabilité du commerçant de respecter les exigences réglementaires applicables. Le paramètre de la page de révision de paie [Google existant](configure-admin.md#google-pay) est configuré séparément.
+
 #### bouton [!DNL Venmo]
 
 Les clients peuvent passer en caisse à l’aide du bouton [Venmo](https://venmo.com/).
@@ -201,7 +212,7 @@ Découvrez comment désactiver ou activer la messagerie [!DNL Pay Later] en mett
 
 Les méthodes de paiement PayPal, Pay Later et Venmo utilisent un [rappel d’expédition côté serveur](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) qui permet à PayPal de communiquer directement avec votre instance Commerce pour récupérer les options d’expédition et calculer les totaux en temps réel.
 
-Cette approche côté serveur [!DNL Payment Services] permet d’ignorer le pop-up de confirmation de commande, offrant ainsi une expérience d’achat plus rapide et rationalisée. Comme les frais d&#39;expédition et les taxes sont calculés dynamiquement par le biais de rappels, l&#39;acheteur peut voir des totaux précis directement sur la page d&#39;examen PayPal ou Venmo.
+Comme les frais d’expédition et les taxes sont calculés dynamiquement par le biais de rappels, l’acheteur voit les options d’expédition mises à jour et les totaux directement dans la fenêtre modale de paiement PayPal ou Venmo. Pour le passage en caisse PayPal Express, la [page d&#39;évaluation des commerçants](#paypal-express-review-page) facultative est une étape distincte après la modale de paiement PayPal, contrôlée par **[!UICONTROL Skip Review]**.
 
 >[!NOTE]
 >
@@ -283,7 +294,7 @@ Avec Adobe Commerce et Magento Open Source [!DNL Payment Services], vous dispose
 
 ### Recalcul de commande
 
-Lorsqu’un client accède au flux de passage en caisse à partir du mini-panier, du panier ou de la page produit, il est redirigé vers une page de révision de commande où il peut voir l’adresse de livraison sélectionnée dans une fenêtre contextuelle PayPal. Une fois que le client a sélectionné le mode d’expédition, le montant de la commande est recalculé de manière appropriée et il peut consulter les coûts d’expédition et les taxes.
+Lorsqu’un client accède au flux de paiement PayPal à partir du mini-panier, du panier ou de la page produit, il peut consulter l’adresse de livraison sélectionnée dans la fenêtre modale de paiement PayPal. Une fois que le client a sélectionné le mode d’expédition, le montant de la commande est recalculé et il peut consulter les coûts d’expédition et les taxes. Pour le passage en caisse PayPal Express, la page facultative [page d&#39;examen du commerçant](#paypal-express-review-page) permet au client de consulter le total final et les conditions générales applicables avant de passer la commande.
 
 Lorsqu’un client accède au flux de passage en caisse à partir de la page de passage en caisse, le système connaît déjà l’adresse de livraison et le montant calculé final, et les totaux sont correctement représentés.
 
