@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # Chambre forte de carte de crédit
@@ -49,7 +49,7 @@ Les clients connectés peuvent archiver un mode de paiement dans le tableau de b
 
 1. Accédez à **[!UICONTROL Stored Payment Methods]** dans le volet de navigation de gauche pour afficher tous les modes de paiement stockés.
 
-   Voir [Modes de paiement stockés](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/payments/stored-payment-methods) pour plus d’informations.
+   Voir [Modes de paiement stockés](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) pour plus d’informations.
 
 1. Le client clique sur **[!UICONTROL Add New Card]** pour stocker une nouvelle carte.
 
@@ -90,13 +90,15 @@ Vous ne pouvez utiliser des cartes voûtées dans l&#39;Admin que si le client d
 
 Pour créer une commande dans l’Administration pour un client à l’aide de sa carte de crédit voûtée :
 
-1. [Créer une commande et ajouter des produits](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
-1. Dans _[!UICONTROL Payment & Shipping Information]_, sélectionnez **[!UICONTROL Stored Cards]**&#x200B;comme mode de paiement.
+1. [Créer une commande et ajouter des produits](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
+1. Dans _[!UICONTROL Payment & Shipping Information]_, sélectionnez **[!UICONTROL Stored Cards]**comme mode de paiement.
 1. Sélectionnez le mode de paiement par carte de crédit en chambre forte souhaité.
-1. Après avoir effectué toutes les autres étapes nécessaires pour la commande, [envoyez-la](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
+1. Après avoir effectué toutes les autres étapes nécessaires pour la commande, [envoyez-la](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
 
    ![Utilisez une carte de crédit voûtée dans Admin pour le client](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Sécurité
 
 Les informations de carte de crédit sont partagées avec l’acheteur de manière minimale ; il ne voit que les quatre derniers chiffres, la date d’expiration et la marque de sa carte de crédit en chambre forte. Les informations de carte de crédit sont stockées avec le fournisseur de paiement pour satisfaire aux normes de conformité [PCI](security.md#pci-compliance).
+
+Dans la version 2.17.0 d’[!DNL Payment Services] ou une version ultérieure, les acheteurs qui paient avec une carte de crédit enregistrée peuvent être invités à effectuer un test d’authentification [3D Secure (3DS)](security.md#3ds) requis par l’émetteur de leur carte. L’enregistrement d’une carte ne contourne pas l’authentification requise par l’émetteur.

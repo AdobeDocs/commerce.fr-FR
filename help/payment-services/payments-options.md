@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2458'
 ht-degree: 0%
 ---
 # Options de paiement
@@ -53,9 +53,9 @@ Il existe différents comportements pour chaque mode de paiement en fonction de 
 
 [!DNL Payment Services] offre des options de paiement et des flux d’intégration **avancés** (entièrement pris en charge) et **standard** (paiement express), en fonction du pays dans lequel vous opérez.
 
-* **Avancé** - Toutes les [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays actuellement entièrement pris en charge](compatibility.md#standard-vs-advanced-payment-services-experience). Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [&#x200B; Intégration avancée &#x200B;](../payment-services/production.md#advanced-onboarding).
+* **Avancé** - Toutes les [options de paiement](../payment-services/payments-options.md) sont disponibles pour les [pays actuellement entièrement pris en charge](compatibility.md#standard-vs-advanced-payment-services-experience). Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [ Intégration avancée ](../payment-services/production.md#advanced-onboarding).
 
-* **Standard** - Un sous-ensemble d’options de paiement (paiement express), à savoir les cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Les champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [&#x200B; Intégration standard &#x200B;](../payment-services/production.md#standard-onboarding).
+* **Standard** - Un sous-ensemble d’options de paiement (paiement express), à savoir les cartes de crédit et de débit PayPal, est disponible pour les autres pays pris en charge. [Les champs de carte de crédit](#credit-card-fields) et [Apple Pay](#apple-pay-button) ne sont pas disponibles pour cette option d’intégration. Lors de l’intégration pour activer les paiements en direct, sélectionnez l’option [ Intégration standard ](../payment-services/production.md#standard-onboarding).
 
 Consultez [Activer [!DNL Payment Services] pour la production](../payment-services/production.md#complete-merchant-onboarding) pour plus d’informations sur l’intégration avancée et standard.
 
@@ -149,7 +149,7 @@ Lorsqu’il est activé, le bouton [!DNL Google Pay] est visible à partir de la
 * Les codes ajoutés dans la feuille de paie [!DNL Google Pay] peuvent uniquement être supprimés de la feuille de paie, et non de la page du panier Commerce.
 * Sur Adobe Commerce 2.4.4-2.4.6, la ligne de remise de la feuille de paie [!DNL Google Pay] peut ne présenter aucune valeur en raison d’une limitation de la plateforme.
 * Sur Adobe Commerce 2.4.7, la valeur de remise peut ne pas apparaître dans la feuille de paie [!DNL Google Pay] pour certains produits (principalement les produits téléchargeables) en raison d’une limitation de la plateforme dans la réponse de GraphQL.
-* Si une [règle de prix de panier](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart) automatique s’applique (par exemple, « 50 $ de réduction lorsque vous dépensez plus de 200 $ »), elle est combinée avec tout code que l’acheteur applique dans la feuille de paie. Par conséquent, les totaux indiqués sur la feuille de paie [!DNL Google Pay] peuvent différer de la synthèse de la commande.
+* Si une [règle de prix de panier](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart) automatique s’applique (par exemple, « 50 $ de réduction lorsque vous dépensez plus de 200 $ »), elle est combinée avec tout code que l’acheteur applique dans la feuille de paie. Par conséquent, les totaux indiqués sur la feuille de paie [!DNL Google Pay] peuvent différer de la synthèse de la commande.
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -166,6 +166,17 @@ Découvrez les modes de paiement disponibles par pays dans la [documentation rel
 Les clients peuvent quitter facilement et en toute confiance en utilisant le bouton PayPal.
 
 Le bouton [!DNL PayPal] est visible à partir de la page produit, du mini-panier, du panier et des vues de passage en caisse.
+
+#### Page d&#39;évaluation de PayPal Express
+
+Dans [!DNL Payment Services] 2.17.0 ou une version ultérieure, les commerçants peuvent configurer une page d&#39;examen de commerçant facultative pour le paiement PayPal Express. Cette page est distincte de la fenêtre modale de paiement PayPal et permet aux acheteurs de consulter le total de la commande finale et les conditions générales applicables avant de passer une commande.
+
+Utilisez **[!UICONTROL Skip Review]** dans [Configuration des boutons de paiement PayPal](configure-admin.md#paypal-payment-buttons) pour contrôler cette étape :
+
+* `No` : l&#39;acheteur retourne à la page d&#39;examen du commerçant après avoir rempli le mode de paiement PayPal et confirme la commande avant qu&#39;elle ne soit passée.
+* `Yes` : la page d&#39;examen du commerçant est ignorée.
+
+Le paramètre de page de révision ne remplace pas la responsabilité du commerçant de respecter les exigences réglementaires applicables. Le paramètre de la page de révision de paie [Google existant](configure-admin.md#google-pay) est configuré séparément.
 
 #### bouton [!DNL Venmo]
 
@@ -201,7 +212,7 @@ Découvrez comment désactiver ou activer la messagerie [!DNL Pay Later] en mett
 
 Les méthodes de paiement PayPal, Pay Later et Venmo utilisent un [rappel d’expédition côté serveur](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) qui permet à PayPal de communiquer directement avec votre instance Commerce pour récupérer les options d’expédition et calculer les totaux en temps réel.
 
-Cette approche côté serveur [!DNL Payment Services] permet d’ignorer le pop-up de confirmation de commande, offrant ainsi une expérience d’achat plus rapide et rationalisée. Comme les frais d&#39;expédition et les taxes sont calculés dynamiquement par le biais de rappels, l&#39;acheteur peut voir des totaux précis directement sur la page d&#39;examen PayPal ou Venmo.
+Comme les frais d’expédition et les taxes sont calculés dynamiquement par le biais de rappels, l’acheteur voit les options d’expédition mises à jour et les totaux directement dans la fenêtre modale de paiement PayPal ou Venmo. Pour le passage en caisse PayPal Express, la [page d&#39;évaluation des commerçants](#paypal-express-review-page) facultative est une étape distincte après la modale de paiement PayPal, contrôlée par **[!UICONTROL Skip Review]**.
 
 >[!NOTE]
 >
@@ -228,7 +239,7 @@ Pour **capturer des paiements avec votre fournisseur de carte de crédit existan
 1. Assurez-vous que votre boutique est [en mode production](configure-admin.md#general-configuration).
 1. [Configurez les boutons de paiement PayPal souhaités](configure-admin.md#paypal-payment-buttons).
 1. Désactivez _off_ l’option **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)** dans la section _[!UICONTROL Payment buttons]_.
-1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_&#x200B;et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/payments/payments#payments).
+1. Désactivez _Désactiver_ l’option **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** dans la section _[!UICONTROL Credit card fields]_et utilisez votre [compte de fournisseur de carte de crédit existant](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments#payments).
 
 ## Modes de paiement locaux
 
@@ -283,7 +294,7 @@ Avec Adobe Commerce et Magento Open Source [!DNL Payment Services], vous dispose
 
 ### Recalcul de commande
 
-Lorsqu’un client accède au flux de passage en caisse à partir du mini-panier, du panier ou de la page produit, il est redirigé vers une page de révision de commande où il peut voir l’adresse de livraison sélectionnée dans une fenêtre contextuelle PayPal. Une fois que le client a sélectionné le mode d’expédition, le montant de la commande est recalculé de manière appropriée et il peut consulter les coûts d’expédition et les taxes.
+Lorsqu’un client accède au flux de paiement PayPal à partir du mini-panier, du panier ou de la page produit, il peut consulter l’adresse de livraison sélectionnée dans la fenêtre modale de paiement PayPal. Une fois que le client a sélectionné le mode d’expédition, le montant de la commande est recalculé et il peut consulter les coûts d’expédition et les taxes. Pour le passage en caisse PayPal Express, la page facultative [page d&#39;examen du commerçant](#paypal-express-review-page) permet au client de consulter le total final et les conditions générales applicables avant de passer la commande.
 
 Lorsqu’un client accède au flux de passage en caisse à partir de la page de passage en caisse, le système connaît déjà l’adresse de livraison et le montant calculé final, et les totaux sont correctement représentés.
 
