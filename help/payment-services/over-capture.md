@@ -17,7 +17,7 @@ PayPal détermine la limite de surcapture pour chaque compte marchand. L&#39;act
 
 >[!NOTE]
 >
->Cette rubrique décrit la surcapture dans l’extension [!DNL Payment Services]. Pour [!DNL Adobe Commerce as a Cloud Service] d’informations, voir [Quantités de capture personnalisées](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) pour connaître les différentes exigences en matière de disponibilité et d’activation.
+>Cette rubrique décrit la surcapture dans l’extension [!DNL Payment Services]. Pour [!DNL Adobe Commerce as a Cloud Service] d’informations, voir [Quantités de capture personnalisées](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) pour connaître les différentes exigences en matière de disponibilité et d’activation.
 
 ## Conditions préalables
 
@@ -42,7 +42,7 @@ Avant d’activer la surcapture :
 
 ## Capturer un paiement autorisé
 
-La surcapture a lieu lors de la facturation dans l’administrateur. Le montant de la capture demandée doit être compris dans la limite approuvée par PayPal pour votre compte marchand. Voir [Créer une facture](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) pour le workflow de facturation standard.
+La surcapture a lieu lors de la facturation dans l’administrateur. Le montant de la capture demandée doit être compris dans la limite approuvée par PayPal pour votre compte marchand. Voir [Créer une facture](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) pour le workflow de facturation standard.
 
 1. Dans la barre latérale _Admin_, accédez à **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
 1. Ouvrez une commande avec un paiement autorisé qui n&#39;a pas encore été saisi.
