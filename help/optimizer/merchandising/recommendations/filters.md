@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
+source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2407'
 ht-degree: 0%
 ---
 # Filtrer les produits
@@ -225,6 +225,14 @@ Un filtre d’attribut diffère d’un [filtre de produit](#product) dans la mes
 #### Configurer un filtre d’attribut
 
 Procédez comme suit pour ajouter une règle d’inclusion ou d’exclusion d’attribut à une unité de recommandation.
+
+>[!TIP]
+>
+>Pour les attributs que vous souhaitez pouvoir filtrer, utilisez l’[API Metadata](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) afin de définir le paramètre `filterable` :
+>
+>{« filtrable »: true}
+>
+>L’attribut est disponible dans le menu **Attributs** lors de la prochaine synchronisation du catalogue avec [!DNL Adobe Commerce Optimizer].
 
 1. Lors de la [création ou modification](create.md) d’une unité de recommandation, accédez à **[!UICONTROL Filter products]**.
 1. Sélectionnez l’onglet **[!UICONTROL Inclusions]** ou **[!UICONTROL Exclusions]** . Le badge de chaque onglet indique le nombre de filtres activés de ce type.
