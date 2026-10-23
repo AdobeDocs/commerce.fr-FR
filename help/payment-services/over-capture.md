@@ -35,7 +35,7 @@ Avant d’activer la surcapture :
 1. Dans le panneau de gauche, développez **[!UICONTROL Sales]** et choisissez **[!UICONTROL Payment Methods]**.
 1. Sélectionnez le site web à configurer à l’aide du sélecteur de portée du magasin.
 1. Développez la section _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. Dans la section _[!UICONTROL Payment Services]_, développez la section_[!UICONTROL General Configuration]_ .
+1. Dans la section _[!UICONTROL Payment Services]_, développez la section&#x200B;_[!UICONTROL General Configuration]_ .
 1. Définissez **[!UICONTROL Over Capture Enabled]** sur `Yes`.
 1. Cliquez sur **[!UICONTROL Save Config]** pour enregistrer vos modifications.
 1. Accédez à **[!UICONTROL System]** > **[!UICONTROL Cache Management]**, puis cliquez sur **[!UICONTROL Flush Cache]** pour actualiser tous les caches non valides.
