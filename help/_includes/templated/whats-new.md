@@ -360,7 +360,7 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
   </thead>
   <tbody>
     <tr>
-      <td><p>Ajout du guide <a href="https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a>, un nouvel accueil pour des conseils en matière d’implémentation stratégique et de sécurité proposés par la section Ingénierie et gestion des produits Adobe Commerce.</p>
+      <td><p>Ajout du guide <a href="https://experienceleague.adobe.com/fr/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a>, un nouvel accueil pour des conseils en matière d’implémentation stratégique et de sécurité proposés par la section Ingénierie et gestion des produits Adobe Commerce.</p>
 </td>
       <td>
         Nouvelle rubrique
