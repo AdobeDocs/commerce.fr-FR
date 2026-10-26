@@ -47,8 +47,8 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-last-update: 2026-10-09
-source-git-commit: 4c3c267873a68560a885c6376cd1137a7503710a
+last-update: 2026-10-21
+source-git-commit: 74fd3753c29482d4d2ed0ed6bd96c9a4c4aa2adb
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Les services Adobe Commerce fournissent des fonctionnalités composables qui ét
 
 ## Comment Commerce se connecte-t-il aux services ?
 
-Pour les services qui le demandent, le [Commerce Services Connector](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/integration-services/saas) connecte une instance Commerce aux services pris en charge à l’aide de clés d’API et d’un espace de données SaaS. Les étapes de connexion et de synchronisation des données dépendent du modèle de déploiement et du service.
+Pour les services qui le demandent, le [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) connecte une instance Commerce aux services pris en charge à l’aide de clés d’API et d’un espace de données SaaS. Les étapes de connexion et de synchronisation des données dépendent du modèle de déploiement et du service.
 
 Lorsque Commerce Services Connector est configuré, vous avez accès aux fonctionnalités suivantes :
 
@@ -151,7 +151,7 @@ Les services Storefront sont un groupe de fonctionnalités optimisées par l’I
 >
 >Adobe Commerce Optimizer fournit des fonctionnalités de catalogue et de marchandisage en mode natif, au lieu d’utiliser les services distincts Live Search, Catalog Service et Product Recommendations. Voir [Qu’est-ce que Adobe Commerce Optimizer ?](../optimizer/overview.md)
 >
->Pour les déploiements Adobe Commerce intégrés à Optimizer, le connecteur Adobe Commerce Optimizer gère la synchronisation des catalogues et des prix sans nécessiter le connecteur de services Commerce pour cette synchronisation. D’autres intégrations, telles que [Payment Services](../payment-services/compatibility.md) et [Data Connection](../data-connection/connect-data.md#configure-the-commerce-services-connector), nécessitent toujours le connecteur Commerce Services. Voir [Configuration du connecteur pour Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce/aco-optimizer-connector/get-started/get-started).
+>Pour les déploiements Adobe Commerce intégrés à Optimizer, le connecteur Adobe Commerce Optimizer gère la synchronisation des catalogues et des prix sans nécessiter le connecteur de services Commerce pour cette synchronisation. D’autres intégrations, telles que [Payment Services](../payment-services/compatibility.md) et [Data Connection](../data-connection/connect-data.md#configure-the-commerce-services-connector), nécessitent toujours le connecteur Commerce Services. Voir [Configuration du connecteur pour Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/get-started/get-started).
 
 >[!TAB Services d’intégration]
 
@@ -234,11 +234,11 @@ Les outils de données vous aident à gérer et à optimiser le flux d’informa
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Surveiller la synchronisation des données" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Tableau de bord de gestion des données</strong>
          </a>
       </div>
@@ -264,7 +264,7 @@ Que vous souhaitiez développer votre entreprise, améliorer l’expérience cli
 | Création d’expériences personnalisées omnicanal | Vos données commerciales sont compartimentées, ce qui vous empêche de diffuser des expériences personnalisées sur plusieurs canaux. | Utilisez [Connexion de données](../data-connection/overview.md) pour envoyer des données comportementales, transactionnelles et de profil à Adobe Experience Platform. Créez des segments de clients sophistiqués, créez des campagnes de panier abandonnées, ciblez des audiences semblables et analysez les tendances saisonnières sur l’ensemble de votre parcours de clients. |
 | Rationalisation de la gestion des ressources numériques | La gestion des images de produit et des médias riches sur plusieurs systèmes est longue et source d’erreurs. | L’[intégration d’](../aem-assets-integration/overview.md) fournit une gestion des ressources centralisée en connectant Adobe Commerce à un projet Adobe Experience Manager Assets, en simplifiant les workflows et en assurant des expériences de marque cohérentes entre tous les points de contact. |
 | Optimiser le traitement des paiements | Les options de paiement limitées et les mauvaises expériences de paiement nuisent à la satisfaction et à la conversion des clients. | [Payment Services](../payment-services/guide-overview.md) offre plusieurs modes de paiement, y compris des versements sans intérêt, avec un tableau de bord unifié pour la gestion des paiements, des commandes et des factures. |
-| Gestion de la synchronisation des données à grande échelle | L’indexation qui nécessite de nombreuses ressources ralentit votre site et vous ne pouvez pas facilement suivre les problèmes de synchronisation des données. | [Exportation de données SaaS](../data-export/overview.md), [Indexeur de prix SaaS](../price-index/price-indexing.md) et le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synchronisent automatiquement les données de catalogue, de commande et d’inventaire, déchargent les calculs de prix sur l’infrastructure cloud d’Adobe et offrent une visibilité en temps réel sur l’état de synchronisation. |
+| Gestion de la synchronisation des données à grande échelle | L’indexation qui nécessite de nombreuses ressources ralentit votre site et vous ne pouvez pas facilement suivre les problèmes de synchronisation des données. | [Exportation de données SaaS](../data-export/overview.md), [Indexeur de prix SaaS](../price-index/price-indexing.md) et le [Tableau de bord de gestion des données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) synchronisent automatiquement les données de catalogue, de commande et d’inventaire, déchargent les calculs de prix sur l’infrastructure cloud d’Adobe et offrent une visibilité en temps réel sur l’état de synchronisation. |
 | Reconquérir les clients perdus et réduire les retours | Les taux élevés de perte de clientèle et de retour de produits ont une incidence sur la rentabilité. | Combinez [Connexion de données](../data-connection/overview.md) avec Adobe Journey Optimizer et Real-Time CDP pour identifier les modèles de retour, créer des campagnes de reconquête, segmenter les clients par comportement et envoyer des campagnes de réengagement personnalisées par e-mail et SMS. |
 | Prendre des décisions de marchandisage axées sur les données | Vous ne savez pas quels produits promouvoir ou quand lancer des promotions. | [Live Search](../live-search/overview.md) fournit des informations sur les performances de recherche et des outils de marchandisage pour accéder aux mesures clés, analyser les termes de recherche et utiliser des règles de marchandisage intelligentes pour booster ou noyer les produits en fonction du comportement réel des clients et des objectifs commerciaux. |
 | Maintenir la conformité avec les données sensibles | Vous devez gérer les données client sensibles tout en respectant la loi HIPAA. | La norme [Data Connection](../data-connection/overview.md) est conforme à la loi HIPAA, ce qui vous permet de partager des données back-office avec Experience Platform tout en préservant la conformité et en gérant systématiquement les demandes d’accès à des informations personnelles. |
