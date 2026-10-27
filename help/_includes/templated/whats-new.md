@@ -1,7 +1,7 @@
 ---
-source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
+source-git-commit: ecad33a6883ee25d21ed358736a2f1e3529c6edf
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1279'
 ht-degree: 1%
 ---
 # Nouveautés du modèle
@@ -9,6 +9,80 @@ ht-degree: 1%
 ## Nouveautés
 
 Cette page contient les modifications apportées au cours des 60 derniers jours. Toutes les mises à jour mineures, telles que la modification de copies, sont exclues de cette liste.
+
+### 26 Octobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">référence des codes de journal d’exportation de données</a> à partir de la dernière <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>.</p>
+</td>
+      <td>
+        Technique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fd4ea4603999043844c786da3ab1e84fb8d4d4aa">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 23 Octobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><br />La documentation relative aux Services de paiement 2.17.0 fournit des conseils pour la <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/payments-checkout/payments-options#paypal-express-review-page">page d’examen PayPal Express</a> et la <a href="https://experienceleague.adobe.com/fr/docs/commerce/payment-services/payments-checkout/manage/over-capture">surcapture</a> facultatives, y compris les workflows de configuration, d’éligibilité et de facturation.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d2bcc58f34af50f26d4a4f082e5b3fc30089ab58">validation</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 21 Octobre 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ajout du <a href="https://experienceleague.adobe.com/fr/docs/commerce/information-center/overview">Centre d’informations </a>, un nouveau point de départ pour les clients et les partenaires afin d’explorer les offres d’Adobe Commerce, de comparer les architectures d’implémentation et de planifier les migrations et les intégrations. Inclut des guides de navigation et d’implémentation basés sur les rôles pour les storefronts, les paiements, les services Commerce, AEM Assets, Adobe Commerce Optimizer, les environnements sandbox et Adobe Experience Platform, avec des liens vers une documentation détaillée du produit.</p>
+</td>
+      <td>
+        Mise à jour majeure, nouvelle rubrique
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fcb3c575a9af82ee75408fba4b4fe7cee5dbffa4">validation</a></td>
+    </tr>
+    <tr>
+      <td><p>Mise à jour du tableau <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/security/shared-responsibility">responsabilité partagée</a> pour Adobe Commerce as a Cloud Service afin d’inclure Adobe Managed Services.</p>
+</td>
+      <td>
+        Mise à jour majeure
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/56bb1f5c9723842386af60afe5611c85213f4aeb">validation</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 16 Octobre 2026
 
@@ -388,80 +462,6 @@ Cette page contient les modifications apportées au cours des 60 derniers jours.
         Feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/01028c8645f0d8ef868aacbaf14e34595bc5ccc1">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 26 Août 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">référence des codes de journal d’exportation de données</a> à partir de la dernière <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>.</p>
-</td>
-      <td>
-        Technique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e91727732882ce6a990068bf2bd3c4dc9fc69370">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 25 Août 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Ajout de la sandbox <a href="https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/release-notes">notes de mise à jour</a> pour Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/452a47d6769d90449ece9fe171a01a36df45324d">validation</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 18 Août 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>Type</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Mise à jour de la <a href="https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">référence des codes de journal d’exportation de données</a> à partir de la dernière <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>.</p>
-</td>
-      <td>
-        Technique
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1291cadbeca63d454eabab31c415b2d037d280ba">validation</a></td>
-    </tr>
-    <tr>
-      <td><p>Adobe Commerce Optimizer limite désormais une vue de catalogue privé à un seul catalogue. En savoir plus sur <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">Vues de catalogue privé</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-view">Vues de catalogue</a> et <a href="https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/pricebooks">Livres à prix fixe</a>.</p>
-</td>
-      <td>
-        Mise à jour majeure
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">validation</a></td>
     </tr>
   </tbody>
 </table>
