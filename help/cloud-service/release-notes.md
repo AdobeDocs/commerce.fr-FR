@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f7a84928b817f21a05ecc9e822ace49e103a8dfd
+source-git-commit: d84e54994e01c702c9d3634fbe42409bc4b0ce51
 workflow-type: tm+mt
-source-wordcount: '9292'
+source-wordcount: '9439'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -74,13 +74,21 @@ Les notes de mise à jour suivantes contiennent des mises à jour de [!DNL Adobe
 >
 >Si vous utilisez Adobe Commerce On-Premise ou Adobe Commerce sur une infrastructure cloud, consultez les [notes de mise à jour d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/notes/overview).
 
+## Modifications de l’interface d’administration
+
+L’administrateur [!DNL Adobe Commerce as a Cloud Service] fonctionne désormais comme les autres produits Adobe que vous utilisez déjà, avec le même sélecteur de navigation supérieure, de produits et d’organisations. Connectez-vous une seule fois pour passer facilement d’un produit à l’autre et aux instances Commerce, sans connexion distincte pour Commerce Cloud Manager et chaque instance. Un sélecteur d’instances et une navigation Commerce consultable vous permettent d’atteindre rapidement les objectifs recherchés.
+
+Chaque expérience d’administration possède sa propre URL. Les liens d’instance dans Commerce Cloud Manager ouvrent par défaut la nouvelle expérience d’administration Commerce, à l’aide de **[!UICONTROL Admin URL (Unified Shell UI)]**. L’interface utilisateur classique reste prise en charge. Vous pouvez donc continuer à utiliser les workflows habituels tout en vous adaptant à la nouvelle expérience. Pour utiliser l’interface utilisateur classique, ouvrez le panneau des détails de l’instance et sélectionnez **[!UICONTROL Admin URL (Classic UI)]**. Les URL d’administration et les signets existants continuent d’ouvrir l’interface utilisateur classique.
+
+En savoir plus sur [Commerce Admin dans l’expérience unifiée Adobe](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/admin-unified-experience).
+
 ## Octobre 2026 - version #3 {#latest}
 
-[!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="Les éléments répertoriés sont actuellement disponibles dans les environnements de production."}
 
-Les éléments suivants seront disponibles dans les environnements de production le 29 octobre 2026.
+Les éléments suivants ont été publiés dans les environnements de production le 28 octobre 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -94,9 +102,9 @@ Lorsque les révisions de produit sont activées, le nombre de révisions et l�
 
 ### Remboursement du crédit de magasin
 
-Le point d’entrée REST `POST /V1/creditmemo/refund` accepte désormais un champ de `extension_attributes.refund_to_store_credit_amount` facultatif qui rembourse tout ou partie d’un avoir au crédit de la boutique du client.<!-- ACCS-2068 -->
+Le point d’entrée REST [`POST /V1/creditmemo/refund` &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit) accepte désormais un champ `extension_attributes.refund_to_store_credit_amount` facultatif qui rembourse tout ou partie d’un avoir au crédit de la boutique du client.<!-- ACCS-2068 -->
 
-Deux nouvelles autorisations de rôle d’administrateur contrôlent l’accès au crédit de magasin : <!-- ACCS-1961 -->
+Deux [nouvelles autorisations de rôle d’administrateur](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customer-accounts/store-credit/store-credit-using#store-credit-role-resources) contrôlent l’accès pour stocker le crédit : <!-- ACCS-1961 -->
 
 * [!UICONTROL Customers] > [!UICONTROL All Customers] > [!UICONTROL Manage Store Credit Balances]
 * [!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Orders] > [!UICONTROL Actions] > [!UICONTROL Create] > [!UICONTROL Can Spend Store Credit]
