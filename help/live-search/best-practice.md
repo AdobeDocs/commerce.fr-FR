@@ -1,6 +1,6 @@
 ---
 title: Bonnes pratiques [!DNL Live Search]
-description: Découvrez les bonnes pratiques d’implémentation  [!DNL Live Search]  dans votre boutique.
+description: Découvrez les bonnes pratiques d’implémentation de [!DNL Live Search] dans votre boutique.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
 TQID: https://experienceleague.adobe.com/X9zgHooEzDJe-zzmLLXHdVVVFUHVX4be47dOUaJyUXU
@@ -23,13 +23,11 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 2965
+source-wordcount: '3008'
 ht-degree: 0%
-
 ---
-
 # Bonnes pratiques
 
 Cet article aide les marchandiseurs à améliorer leurs fonctionnalités de recherche de site, afin d’offrir une expérience d’achat transparente et efficace qui optimise les taux de conversion. En suivant les stratégies décrites, vous apprendrez à mettre en œuvre des fonctionnalités de recherche avancées et à affiner continuellement votre outil de recherche pour obtenir des performances optimales avec Adobe Commerce [!DNL Live Search].
@@ -94,7 +92,7 @@ Pour configurer un attribut de produit en tant que facette, les [propriétés](f
 - Déterminez les attributs les plus pertinents pour vos produits et définissez-les comme [facettes dynamiques](facets-type.md). 
 - Définissez et triez des attributs de produit cohérents dans l’ensemble de votre catalogue et hautement pertinents pour vos produits afin d’améliorer la pertinence et les fonctionnalités de filtrage de vos acheteurs.
 - Assurez-vous que les libellés des facettes sont faciles à comprendre et nommés de manière cohérente sur l’ensemble du site. Par exemple, utilisez « Price Range » au lieu de « Cost ».
-- Évitez d’accabler les acheteurs en limitant le nombre de facettes aux plus importantes. Un nombre trop élevé d’options peut entraîner une fatigue liée aux décisions. Par défaut, la [!DNL Live Search] est limitée à un maximum de 100 attributs configurés en tant que facettes et 30 intervalles renvoyés dans chaque facette. En savoir plus sur les [limites des facettes](boundaries-limits.md#facets). 
+- Évitez d’accabler les acheteurs en limitant le nombre de facettes aux plus importantes. Un nombre trop élevé d’options peut entraîner une fatigue liée aux décisions. Par défaut, la [!DNL Live Search] est limitée à un maximum de 100 attributs configurés en tant que facettes et 30 intervalles renvoyés dans chaque facette. Les commerçants éligibles peuvent demander une augmentation jusqu&#39;à un maximum de 500 facettes par le biais de [l&#39;assistance ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"} ; l&#39;approbation est soumise à une évaluation de l&#39;éligibilité et des performances. En savoir plus sur les [limites des facettes](boundaries-limits.md#facets).
 - Autoriser les acheteurs à sélectionner plusieurs critères de filtre simultanément pour affiner les résultats. Par exemple, laisser les acheteurs sélectionner les couleurs « Rouge » et « Bleu ».
 - Affichez le nombre de produits disponibles à côté de chaque facette pour donner aux acheteurs une idée des résultats de recherche auxquels ils peuvent s’attendre.
 - Pour que l’interface reste propre et gérable, en particulier sur les appareils mobiles, implémentez des sections de facettes réductibles.
@@ -232,7 +230,7 @@ Si les résultats de la recherche semblent aléatoires ou non pertinents, utilis
 En savoir plus sur les attributs de produit pour la recherche :
 
 - [Définir les attributs comme pouvant faire l’objet d’une recherche](workspace.md#set-attributes-as-searchable)
-- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Attribuer un poids aux attributs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Surveillance des résultats de recherche
 

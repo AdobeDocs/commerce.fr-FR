@@ -1,6 +1,6 @@
 ---
 title: Ajout de facettes
-description: Découvrez comment ajouter des attributs de produit filtrables sous forme  [!DNL Live Search]  facettes.
+description: Découvrez comment ajouter des attributs de produit filtrables en tant que facettes de [!DNL Live Search].
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
 TQID: https://experienceleague.adobe.com/6mX3QWuZRFuDb1eDnUlPj1yvXZ2qGIdQ4oScxfHjNWY
 product_v2:
@@ -15,13 +15,11 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: a652b6d5659dd6d5aede27d771736222b72b9c5e
 workflow-type: tm+mt
-source-wordcount: 600
-ht-degree: 0%
-
+source-wordcount: '622'
+ht-degree: 3%
 ---
-
 # Ajout de facettes
 
 Tout attribut de produit filtrable peut être utilisé comme facette, à l’exception de l’état des stocks (`quantity_and_stock_status`). Le panneau *[!UICONTROL Add facets]* répertorie les facettes actives et facilite l’affectation d’attributs de produit supplémentaires en tant que facettes. Au cours de ce processus en trois étapes, un attribut est choisi pour être utilisé comme facette, les propriétés sont modifiées si nécessaire et les modifications sont publiées sur le storefront.
@@ -41,8 +39,8 @@ Tout attribut de produit filtrable peut être utilisé comme facette, à l’exc
    * Dans la liste *Attributs de facettes*, sélectionnez l’attribut de produit à utiliser comme facette et cliquez sur **Ajouter**.
    * Pour rechercher un attribut de produit spécifique, saisissez les premiers caractères du nom de l’attribut dans la zone *Rechercher*. Cliquez ensuite sur **Ajouter**.
 
-     Pour configurer les intervalles et les regroupements de facettes de prix, reportez-vous à [Paramètres](settings.md). Pour en savoir plus, accédez à [&#x200B; Types de facettes &#x200B;](facets-type.md).
-La facette est ajoutée en bas de la liste *Facettes dynamiques* et le bouton *Publier les modifications* devient disponible.
+     Pour configurer les intervalles et les regroupements de facettes de prix, reportez-vous à [Paramètres](settings.md). Pour en savoir plus, accédez à [ Types de facettes ](facets-type.md).
+     La facette est ajoutée à la liste *Facettes dynamiques* dans l’ordre croissant et le bouton *Publier les modifications* devient disponible.
 
 1. Si la facette à ajouter est introuvable, accédez à **Magasins** > Attributs > **Produit** et vérifiez que l’attribut possède les [propriétés requises](facets.md) à utiliser comme facette. Si nécessaire, mettez à jour les propriétés storefront suivantes de l’attribut :
 
@@ -91,4 +89,4 @@ La facette est ajoutée en bas de la liste *Facettes dynamiques* et le bouton *P
 |--- |--- |
 | ![Sélecteur d’épingle](assets/btn-pin-blue.png) | Épingle ou détache une facette en haut de la liste *Filtres*. |
 | ![Plus de sélecteur](assets/btn-more.png) | Affiche un menu d&#39;actions supplémentaires pouvant être appliquées à la facette sélectionnée. Options : Modifier, Supprimer |
-| ![&#x200B; Déplacer le sélecteur &#x200B;](assets/btn-move.png) | Utilisez l’icône *Déplacer* pour faire glisser une facette épinglée vers un autre emplacement de la section *Facettes épinglées*. |
+| ![ Déplacer le sélecteur ](assets/btn-move.png) | Utilisez l’icône *Déplacer* pour faire glisser une facette épinglée vers un autre emplacement de la section *Facettes épinglées*. |
