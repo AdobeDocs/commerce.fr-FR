@@ -1,6 +1,6 @@
 ---
 title: Limites et limites
-description: Découvrez les limites et les limites de pour  [!DNL Live Search]  assurer qu’il répond aux besoins de votre entreprise.
+description: Découvrez les limites et les limites de [!DNL Live Search] pour vous assurer qu’elle répond aux besoins de votre entreprise.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
 TQID: https://experienceleague.adobe.com/QIKvaTUGLWd6yw6cEAyDkP9tCgEcJHLdiwpZDtx1-p4
@@ -28,13 +28,11 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 1409
+source-wordcount: '1448'
 ht-degree: 0%
-
 ---
-
 # Limites et limites
 
 En ce qui concerne la recherche de site, Adobe Commerce vous propose des options. Pour vous assurer que [!DNL Live Search] et [!DNL Catalog Service] répondent aux besoins de votre entreprise, revoyez les limites et les limites suivantes. Si vous avez besoin de fonctionnalités de recherche avancées telles que la recherche de contenu, l’algorithme Bring-your-own-algorithm (BYOA) ou le marchandisage basé sur les attributs, pensez à une solution de recherche tierce.
@@ -68,7 +66,7 @@ En ce qui concerne la recherche de site, Adobe Commerce vous propose des options
 
 ## Facettes
 
-- À partir du jeu d’attributs filtrables définis, vous pouvez configurer jusqu’à 100 attributs sous forme de facettes.
+- Par défaut, vous pouvez configurer jusqu’à 100 attributs filtrables en tant que facettes. Les commerçants éligibles peuvent demander une augmentation jusqu&#39;à un maximum de 500 facettes par le biais de [l&#39;assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"} ; l&#39;approbation est soumise à une évaluation de l&#39;éligibilité et des performances.
 - Dans une facette, 100 intervalles au maximum peuvent être renvoyés. Si vous devez renvoyer plus de 100 compartiments, [créez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) afin qu’Adobe puisse analyser l’impact sur les performances et déterminer s’il est possible d’augmenter cette limite pour votre environnement.
 - Les facettes dynamiques peuvent entraîner des problèmes de performances dans les index volumineux et les index de haute ordinalité. Si vous avez créé des facettes dynamiques et que vous constatez une dégradation des performances ou que la page ne se charge pas avec des erreurs de délai d’expiration, essayez de remplacer vos facettes par épinglées afin de déterminer si cela résout votre problème de performances.
 - L’état des stocks (`quantity_and_stock_status`) n’est pas pris en charge en tant que facette. Dans Admin, vous pouvez définir [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] pour filtrer les produits en rupture de stock. Cette fonctionnalité est prise en charge de manière native dans le module `[PLP Widget](plp-styling.md)`. Pour plus d’informations, voir [Gestion des produits en rupture de stock](manage-out-of-stock-products.md).

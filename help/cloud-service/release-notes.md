@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: d84e54994e01c702c9d3634fbe42409bc4b0ce51
+source-git-commit: 43c00a414f95900a30103e56820d06077d530e0f
 workflow-type: tm+mt
-source-wordcount: '9439'
+source-wordcount: '9823'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -82,7 +82,59 @@ Chaque expérience d’administration possède sa propre URL. Les liens d’inst
 
 En savoir plus sur [Commerce Admin dans l’expérience unifiée Adobe](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/admin-unified-experience).
 
-## Octobre 2026 - version #3 {#latest}
+## Novembre 2026 - #1 de mise à jour {#latest}
+
+[!BADGE &#x200B; Sandbox &#x200B;]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Les éléments suivants seront publiés dans les environnements de production le 10 novembre 2026.
+
+>[!BEGINSHADEBOX]
+
+<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+
+### Modifier les attributs d&#39;article retourné
+
+Le nouveau `observer.rma_save_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) vous permet de lire un retour et ses éléments avant l’enregistrement du retour, puis de modifier les valeurs d’attribut. <!-- ACCS-2062 -->
+
+* La payload inclut les éléments renvoyés lorsque l’enregistrement crée ou modifie des éléments, par exemple lorsqu’un retour est créé dans le [!DNL Commerce Admin], via REST ou via la mutation GraphQL `requestReturn`.
+* Le webhook s’exécute dans le cadre de l’enregistrement du retour. Si un webhook obligatoire échoue, le retour n’est pas enregistré.
+
+### Inclure les adresses de livraison
+
+Les nouvelles commandes non virtuelles créées par le biais des points d’entrée REST `POST /V1/orders` et `PUT /V1/orders/create` nécessitent désormais une adresse de livraison. Les requêtes sans adresse d’expédition renvoient une erreur HTTP 400. Cette modification empêche les commandes sans informations d’expédition de provoquer des échecs d’e-mail de commande. <!-- CCSAAS-5351 -->
+
+Pour créer une commande sans adresse de livraison :
+
+* Définissez `is_virtual` sur `1` lorsque la commande ne contient que des produits numériques.
+* Passez la commande à partir d’un panier à l’aide du point d’entrée `PUT /V1/carts/:cartId/order`.
+
+### Récupération des images de catégorie [!DNL AEM Assets]
+
+Les types de GraphQL `CategoryInterface` et `CategoryTree` incluent désormais un champ `asset_role_image` qui renvoie l’image de la catégorie affectée à partir de [!DNL AEM Assets]. <!-- ACCS-2180 -->
+
+### Améliorations et correctifs
+
+Les améliorations, optimisations et correctifs suivants sont inclus dans cette version :
+
+* Correction d’un problème où les images de produit [!DNL AEM Assets] étaient renvoyées sans rôles d’image dans les requêtes de produit GraphQL. Pour restaurer des rôles d’image pour les produits exportés avant ce correctif, [resynchronisez le flux de données de produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports). <!-- ACCS-2180 -->
+
+* Correction d’un problème où les options de produit configurables, telles que la couleur ou la taille, étaient absentes des `selected_options` dans les réponses de commande GraphQL lorsque l’élément de commande disposait également d’options personnalisées. <!-- CCSAAS-5722 -->
+
+* Correction d’un problème où les règles du Carnet d’adresses d’entreprise s’appliquaient aux utilisateurs de l’entreprise sur les sites Web où les entreprises étaient désactivées. <!-- ACCS-2138 -->
+
+* Correction d’un problème en raison duquel le point d’entrée REST `POST /V1/orders/:orderId/edit/start` renvoyait une erreur 404 lorsque vous modifiiez une commande avec une adresse de livraison modifiée. <!-- ACCS-2220 -->
+
+* Correction d’un problème en raison duquel la mutation `requestReturn` de GraphQL échouait lorsqu’un attribut personnalisé d’élément de retour facultatif était envoyé avec une valeur vide. <!-- CCSAAS-5628 -->
+
+* Correction d’un problème en raison duquel le traitement des stocks pouvait s’arrêter lorsque des produits étaient supprimés après une action en masse [!UICONTROL Update attributes]. <!-- CCSAAS-5713 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Octobre 2026 - version #3
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
