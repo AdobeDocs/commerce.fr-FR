@@ -28,7 +28,7 @@ ht-degree: 0%
 
 Utilisez [!DNL App Management] pour associer, installer, configurer, mettre à niveau et dissocier des applications App Builder de votre instance Commerce. Les formulaires de configuration sont générés à partir du schéma de chaque application. Vous pouvez ainsi gérer les paramètres sans développer d’interface utilisateur d’administration personnalisée.
 
-![ Gestion des applications ](assets/app-management-view.png){width="500" zoomable="yes"}
+![&#x200B; Gestion des applications &#x200B;](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## Trouver une application dans l’Admin
 
@@ -91,7 +91,7 @@ Pour lier votre application App Builder à une instance Commerce :
 
 1. Cliquez sur **[!UICONTROL Associate]**.
 
-   ![ Détails de l’application ](assets/app-details.png){width="500" zoomable="yes"}
+   ![&#x200B; Détails de l’application &#x200B;](assets/app-details.png){width="500" zoomable="yes"}
 
 >[!WARNING]
 >
