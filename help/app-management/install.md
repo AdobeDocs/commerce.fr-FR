@@ -18,9 +18,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a00b9e1654a572e1773b5b7e321683332882d86f
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '516'
 ht-degree: 0%
 ---
 # Installation et accès à [!DNL App Management]
@@ -36,7 +36,7 @@ Une fois les conditions requises suivantes remplies, sélectionnez l’onglet co
 Avant d’associer une application, vérifiez que vous disposez des éléments suivants :
 
 | Exigence | Description |
-|-------------|-------------|
+| --- | --- |
 | **Accès administrateur** | Administrateur Commerce avec autorisations [!DNL App Management] |
 | **Application déployée** | Application App Builder déployée dans votre organisation et prête à se connecter |
 | **Accès à l’organisation** | Accès à l’organisation Adobe sur laquelle l’application est déployée |
@@ -76,19 +76,19 @@ Voir [Installer ou mettre à jour Adobe Commerce Admin UI SDK](https://developer
 
 1. Accédez à **[!UICONTROL Apps]** > **[!UICONTROL App Management]**.
 
-La vue [!DNL App Management] s’affiche. Vous pouvez y associer, configurer et gérer des applications App Builder. Pour la recherche, les filtres et l’action **[!UICONTROL Acquire App]** sur cet écran, consultez [Rechercher une application dans l’administrateur](manage-app.md#find-an-application-in-the-admin) dans [Gérer votre application](manage-app.md).
+La vue [!DNL App Management] s’affiche. Vous pouvez y associer, installer, configurer, mettre à niveau et gérer des applications App Builder. Pour la recherche, les filtres et l’action **[!UICONTROL Acquire App]** sur cet écran, consultez [Rechercher une application dans l’administrateur](manage-app.md#find-an-application-in-the-admin) dans [Gérer votre application](manage-app.md).
 
 ## Installation des applications App Builder
 
 Si vous devez installer une application App Builder à partir d’Adobe Exchange (par exemple, une intégration préconfigurée ou une application de marketplace), consultez [Installation d’applications App Builder à partir d’Adobe Exchange](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"} pour obtenir des instructions détaillées.
 
-Une fois l’application installée et déployée, utilisez [!DNL App Management] pour l’[associer à votre instance Commerce](manage-app.md#associate-an-app) et configurer ses paramètres.
+L’acquisition et le déploiement d’une application App Builder la rendent disponible pour votre organisation. Pour l’utiliser avec une instance Commerce, [associez l’application](manage-app.md#associate-an-app), [installez ses composants](manage-app.md#install-an-app) le cas échéant, et [configurez ses paramètres](manage-app.md#configure-settings) dans [!DNL App Management].
 
 ## Webhooks et applications Commerce
 
 Certaines applications App Builder utilisent des [Webhooks Adobe Commerce](https://developer.adobe.com/commerce/extensibility/webhooks/) afin que Commerce puisse appeler votre application via HTTP lorsque certains événements se produisent (par exemple, après l’enregistrement d’un produit). Les points d’entrée Webhook et la logique d’abonnement sont définis par le **développeur d’applications** lorsque l’application est créée et déployée. Les administrateurs des magasins ne configurent pas les webhooks séparément dans App Management.
 
-Une fois que vous avez [associé l’application](https://experienceleague.adobe.com/fr/docs/commerce/app-management/manage-app/manage-app) à votre instance Commerce et suivi les instructions de configuration de l’application, le comportement de webhook suit la mise en œuvre de l’application.
+Après avoir [associé l’application](manage-app.md#associate-an-app) à votre instance Commerce, [installé ses composants](manage-app.md#install-an-app) et suivi toutes les instructions de configuration de l’application, le comportement de webhook suit la mise en œuvre de l’application. L’installation et les mises à niveau de l’application appliquent les abonnements webhook déclarés par le développeur ; vous n’avez pas besoin de créer ces abonnements séparément.
 
 Si [!DNL App Management] ne parvenez pas à déclencher le point d’entrée de validation de l’application (par exemple, l’URL est inatteignable ou la réponse ne répond pas aux exigences), une erreur similaire à celle-ci peut s’afficher dans le tableau de bord [!DNL App Management] :
 

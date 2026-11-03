@@ -18,9 +18,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a00b9e1654a572e1773b5b7e321683332882d86f
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '489'
 ht-degree: 0%
 ---
 # Vue d’ensemble des [!DNL App Management]
@@ -37,7 +37,7 @@ Ensemble, ces fonctionnalités créent un modèle d’extensibilité évolutif q
 
 ## Ce que [!DNL App Management] offre
 
-* **Un emplacement pour toutes vos applications**. Associez, configurez et gérez des applications à partir de **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Rechercher, filtrer et acquérir des applications](manage-app.md) à partir de la même vue.
+* **Un emplacement pour toutes vos applications**. Associez, installez, configurez, mettez à niveau et gérez des applications à partir de **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Rechercher, filtrer et acquérir des applications](manage-app.md) à partir de la même vue.
 * **Paramètres correspondant à votre entreprise**. Appliquez différentes configurations par site web, magasin ou vue de magasin pour les configurations multi-régions ou multi-marques.
 * **Synchronisation automatique de la boutique**. Les sites web, les boutiques et les affichages de boutique de Commerce sont importés lorsque vous associez une application.
 * **Expérience d’administration native**. Utilisez des applications Adobe Exchange ou des déploiements personnalisés sans quitter Commerce.
@@ -45,22 +45,24 @@ Ensemble, ces fonctionnalités créent un modèle d’extensibilité évolutif q
 ## Qui utilise [!DNL App Management] ?
 
 | Rôle | Cas d’utilisation |
-|------|----------|
-| **Gestionnaires d’applications** | Associez des applications, configurez des paramètres et gérez des applications sur votre instance Commerce. |
+| --- | --- |
+| **Gestionnaires d’applications** | Consultez les détails de l’application, associez et installez des applications, configurez des paramètres et gérez les mises à niveau sur votre instance Commerce. |
 | **Administrateurs** | Surveillez les configurations et les autorisations d’application dans l’ensemble de l’organisation. |
 | **Architectes techniques** | Assurez-vous que les applications sont correctement configurées pour les déploiements multi-magasin ou multi-région. |
 
 ## Ce que vous pouvez faire
 
 * **Associer une application**. Liez une application App Builder à votre instance Commerce en sélectionnant le projet et l’espace de travail.
+* **Vérifier et installer une application**. Inspectez les cas d’utilisation professionnels et la configuration de l’application, suivez les instructions de préinstallation et surveillez la progression de l’installation.
 * **Configurer les paramètres**. Ajustez les paramètres de l’application par le biais du formulaire généré automatiquement ; remplacez les valeurs par magasin ou région si nécessaire.
 * **Gérer les portées**. Gardez votre hiérarchie de boutique synchronisée avec vos applications et appliquez les paramètres au niveau approprié.
-* **Dissocier une application**. Supprimez une application lors du retrait d’une intégration ou du nettoyage des configurations de test.
+* **Mettre à niveau une application**. Examinez et démarrez les mises à niveau lorsque votre développeur ou développeuse déploie une nouvelle version. Les développeurs peuvent également activer des mises à niveau automatiques expérimentales.
+* **Dissocier une application**. Passez en revue les composants concernés et les exigences de nettoyage avant de supprimer une application lors du retrait d’une intégration ou du nettoyage des configurations de test.
 
 ## Étapes suivantes
 
 * [Installer](install.md). Vérifiez que les conditions préalables sont remplies et que l’accès est [!DNL App Management].
-* [Gérer l’application](manage-app.md). Associer, configurer et dissocier des applications.
+* [Gérer l’application](manage-app.md). Examinez, associez, installez, configurez, mettez à niveau et dissociez les applications.
 
 ## Pour les développeurs
 
