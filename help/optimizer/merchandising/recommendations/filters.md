@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
+source-git-commit: 8e3471bb89e2dd77c390ee1b8199c835a4f1e6bc
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2452'
 ht-degree: 0%
 ---
 # Filtrer les produits
@@ -247,6 +247,8 @@ Procédez comme suit pour ajouter une règle d’inclusion ou d’exclusion d’
 >[!NOTE]
 >
 >Lorsque vous sélectionnez un attribut dont les jeux de métadonnées `number` à `true`, tel que **Size**, le champ **Value** affiche des entrées de plage au lieu d’une valeur de texte unique.
+
+La liste des attributs dépend de la **vue Catalogue** que vous avez sélectionnée. Si vous sélectionnez **Toutes les vues**, la liste est basée sur la source du catalogue associée à la première vue du catalogue. Si vous sélectionnez une vue de catalogue spécifique, la liste est basée sur la source de catalogue de cette vue.
 
 #### Utilisation des conditions d’inclusion et d’exclusion
 

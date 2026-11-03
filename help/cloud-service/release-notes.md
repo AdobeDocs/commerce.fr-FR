@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 43c00a414f95900a30103e56820d06077d530e0f
+source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
 workflow-type: tm+mt
-source-wordcount: '9823'
+source-wordcount: '9775'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -147,10 +147,6 @@ Les éléments suivants ont été publiés dans les environnements de production
 ### Ajout de variables personnalisées pour classer les e-mails de commentaires
 
 Le `observer.email_order_comment_set_template_vars_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) est désormais disponible. Utilisez-le pour ajouter ou modifier des variables de modèle dans l’e-mail de commentaire de commande avant que l’e-mail ne soit rendu. <!-- ACCS-2087 -->
-
-### Exporter les évaluations de produits
-
-Lorsque les révisions de produit sont activées, le nombre de révisions et l’évaluation moyenne approuvés de chaque produit sont exportés vers [!DNL Catalog Service] en tant qu’attributs de produit système `ac_review_count` et `ac_rating_summary`. Les storefronts peuvent utiliser ces attributs pour afficher les évaluations de produits. Le flux de produits se met à jour lorsque les résumés de révision changent. Les révisions de produits sont désactivées par défaut. <!-- ACCS-2196 -->
 
 ### Remboursement du crédit de magasin
 
