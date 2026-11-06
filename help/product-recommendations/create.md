@@ -39,30 +39,30 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
 1. Dans la barre latérale _Admin_, accédez à **Marketing** > _Promotions_ > **Recommandations de produit** pour afficher l’espace de travail _Recommandations de produit_.
 
-1. Spécifiez l’[Affichage de la boutique](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) où vous souhaitez que les recommandations s’affichent.
+1. Spécifiez l’[Affichage de la boutique](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/setup/websites-stores-views) où vous souhaitez que les recommandations s’affichent.
 
    >[!NOTE]
    >
-   > Les unités de recommandation Page Builder doivent être créées dans la vue de magasin par défaut, mais peuvent ensuite être utilisées n’importe où. Pour en savoir plus sur la création de recommandations de produit avec Page Builder, voir [Ajouter du contenu - Recommandations de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
+   > Les unités de recommandation Page Builder doivent être créées dans la vue de magasin par défaut, mais peuvent ensuite être utilisées n’importe où. Pour en savoir plus sur la création de recommandations de produit avec Page Builder, voir [Ajouter du contenu - Recommandations de produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Cliquez sur **Créer une recommandation**.
 
 1. Dans la section _Nommer votre recommandation_, saisissez un nom explicite à des fins de référence interne, tel que `Home page most popular`.
 
-1. [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement au projet Adobe Commerce as a Cloud Service (infrastructure SaaS gérée par Adobe)."} Dans la section **Référence du storefront**, saisissez une clé de référence pour identifier cette unité de recommandation dans votre configuration de storefront. Après avoir créé la recommandation, vous pouvez [copier sa valeur](#get-the-storefront-reference-key) à partir des **détails de l’unité de recommandation** et l’utiliser comme `referenceKey` dans le bloc de recommandations. La clé de référence sert à la configuration du storefront. Le libellé d’affichage du storefront correspond au texte que les acheteurs voient.
+1. [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement au projet Adobe Commerce as a Cloud Service (infrastructure SaaS gérée par Adobe)."} Dans la section **Référence du storefront**, saisissez une clé de référence pour identifier cette unité de recommandation dans votre configuration de storefront. Après avoir créé la recommandation, vous pouvez [copier sa valeur](#get-the-storefront-reference-key) à partir des **détails de l’unité de recommandation** et l’utiliser comme `referenceKey` dans le bloc de recommandations. La clé de référence sert à la configuration du storefront. Le libellé d’affichage du storefront correspond au texte que les acheteurs voient.
 
 1. Dans la section _Sélectionner le type de page_, sélectionnez la page sur laquelle vous souhaitez que la recommandation apparaisse parmi les options suivantes :
 
    >[!NOTE]
    >
-   > Les recommandations de produits ne sont pas prises en charge sur la page Panier lorsque votre boutique est configurée pour [afficher la page du panier immédiatement après l’ajout d’un produit au panier](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > Les recommandations de produits ne sont pas prises en charge sur la page Panier lorsque votre boutique est configurée pour [afficher la page du panier immédiatement après l’ajout d’un produit au panier](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Page d’accueil
    * Catégorie
    * Détails du produit
    * Panier
    * Confirmation
-   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Vous pouvez créer jusqu’à 50 unités de recommandation actives pour chaque type de page. Le type de page est grisé lorsque la limite est atteinte.
 
@@ -106,7 +106,7 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
 ## Obtenir la clé de référence du storefront
 
-[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement au projet Adobe Commerce as a Cloud Service (infrastructure SaaS gérée par Adobe)."} Après avoir créé une recommandation, utilisez sa clé de référence pour configurer l’unité de recommandation sur votre storefront.
+[!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement au projet Adobe Commerce as a Cloud Service (infrastructure SaaS gérée par Adobe)."} Après avoir créé une recommandation, utilisez sa clé de référence pour configurer l’unité de recommandation sur votre storefront.
 
 1. Ouvrez les détails d’une recommandation de produit.
 
