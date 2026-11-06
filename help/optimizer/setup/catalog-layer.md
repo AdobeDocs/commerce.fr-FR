@@ -36,7 +36,7 @@ ht-degree: 0%
 
 Les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine. Les calques modifient les attributs de produit, tels que le nom, la description, les images, les liens et les métadonnées, en créant un calque par-dessus votre catalogue de base. Vos données de produit d’origine restent intactes, ce qui vous permet de personnaliser les produits en toute sécurité et d’annuler les modifications à tout moment.
 
-![ Calques de catalogue ](../assets/catalog-layers.png)
+![&#x200B; Calques de catalogue &#x200B;](../assets/catalog-layers.png)
 
 ## Fonctionnement des calques de catalogue
 
@@ -242,7 +242,7 @@ Suivez ces recommandations lors de l’utilisation des calques de catalogue :
 
 * **Logique de priorité du document** : suivez les calques prioritaires pour éviter les remplacements inattendus.
 
-* **Vérifier les calques Sites Optimizer** : lorsque vous utilisez le correctif automatique de Sites Optimizer, le système crée les calques avec la priorité la plus élevée. Veillez à ajouter des calques manuels qui remplacent les recommandations de l’IA. En savoir plus sur l&#39;utilisation de [](../manage-results/opportunities.md).
+* **Vérifier les calques Sites Optimizer** : lorsque vous utilisez le correctif automatique de Sites Optimizer, le système crée les calques avec la priorité la plus élevée. Veillez à ajouter des calques manuels qui remplacent les recommandations de l’IA. En savoir plus sur l&#39;utilisation de [&#128279;](../manage-results/opportunities.md).
 
 * **Surveillance des performances** : si vous constatez un chargement lent des pages produit, passez en revue la configuration des calques et envisagez de les consolider.
 
