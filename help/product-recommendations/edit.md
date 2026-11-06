@@ -15,18 +15,17 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
     internal-label: Behavioral data
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 97fda73b4f68154aa6fe66eee61ef2d68be979ca
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Modifier la recommandation
 
 La page Modifier la recommandation vous permet d’ajuster les paramètres individuels qui constituent la recommandation. Tous les paramètres peuvent être modifiés, à l’exception du type de page et du type de recommandation. Les paramètres suivants peuvent être modifiés :
 
 - [Nom de la recommandation](#name)
+- [Clé de référence](#reference-key)
 - [Libellé du storefront](#label)
 - [Nombre de produits](#number)
 - [Emplacement et position](#placement)
@@ -51,6 +50,10 @@ L’aperçu sur le côté droit de la page montre comment la recommandation avec
 Choisissez un nom explicite qui indique l’objectif de la recommandation. Le nom est destiné à une référence interne et n’apparaît pas dans le storefront.
 
 ![Modifier le nom](assets/edit-name.png)
+
+### Clé de référence {#reference-key}
+
+Clé utilisée pour identifier l’unité de recommandation dans la configuration du storefront.
 
 ### Libellé du storefront {#label}
 

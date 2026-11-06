@@ -1,7 +1,7 @@
 ---
 title: Création et gestion de Recommendations
 description: Découvrez comment créer et gérer des recommandations.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 TQID: https://experienceleague.adobe.com/4w6G-IgBjgmYYnnEpbK0HML9pSi3quLDxJfuCp9tV84
 product_v2:
@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f316b57d365b8952223d4d250ac14f113cf48601
+source-git-commit: 0be21c4e838dabb8871eecbfc6c36c34af2d3ff0
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1612'
 ht-degree: 0%
 ---
 # Création et gestion de Recommendations
@@ -38,7 +38,7 @@ _Unité de recommandation_
 
 Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [collecter des données](../../manage-results/recommendation-performance.md) pour mesurer les impressions, les vues, les clics, etc. Le tableau Recommandations affiche les mesures de chaque unité de recommandation afin de vous aider à prendre des décisions commerciales éclairées.
 
-1. Dans la barre latérale _[!DNL Adobe Commerce Optimizer]_, accédez à_ Marchandisage _>**Recommandations**&#x200B;pour afficher l’espace de travail_ Recommandations _.
+1. Dans la barre latérale _[!DNL Adobe Commerce Optimizer]_, accédez à_ Marchandisage _>**Recommandations**pour afficher l’espace de travail_ Recommandations _.
 
 1. Dans le champ **Vue du catalogue**, sélectionnez la vue du catalogue dans laquelle vous souhaitez que la recommandation soit disponible. En savoir plus sur l’[utilisation des vues de catalogue pour les recommandations](../../manage-results/recommendation-performance.md#select-catalog-view).
 
@@ -47,6 +47,8 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
    La recommandation que vous créez sera disponible dans la vue de catalogue que vous avez précédemment sélectionnée.
 
 1. Dans la section _Nommer votre recommandation_, saisissez un nom explicite à des fins de référence interne, tel que `Home page most popular`.
+
+1. Dans la section **Référence de storefront**, saisissez une clé de référence pour identifier cette unité de recommandation dans votre configuration de storefront. Après avoir créé la recommandation, vous pouvez [copier sa valeur](#get-the-storefront-reference-key) à partir des **détails de l’unité de recommandation** et l’utiliser comme `referenceKey` dans le bloc de recommandations. La clé de référence sert à la configuration du storefront. Le libellé d’affichage du storefront correspond au texte que les acheteurs voient.
 
 1. Dans la section _Sélectionner le type de recommandation_, indiquez le [type de recommandation](types.md) souhaité en fonction de votre stratégie.
 
@@ -66,7 +68,7 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
    - **Activer** pour activer l’unité de recommandation sur votre storefront.
 
-   Votre recommandation apparaît dans l’espace de travail de Recommendations. Pour utiliser votre recommandation sur votre storefront, vous devez trouver l’[ID de recommandation](#get-recommendation-id).
+   Votre recommandation apparaît dans l’espace de travail de Recommendations. Pour utiliser votre recommandation sur votre storefront, vous avez besoin de l’[ID de recommandation ou clé de référence](#get-the-recommendation-id-or-reference-key).
 
 >[!NOTE]
 >
@@ -98,21 +100,17 @@ Tandis que vous créez votre unité de recommandation, testez le type et les fil
 
 Pour les configurations multi-storefront, multi-langue ou multi-marque, vous pouvez configurer si chaque recommandation s’applique à toutes les vues de catalogue (globales) ou à une seule [vue de catalogue](../../setup/catalog-view.md). En savoir plus sur la [définition de la vue du catalogue](../../manage-results/recommendation-performance.md#select-catalog-view) lorsque vous utilisez des recommandations.
 
-## Obtenir l’ID de recommandation
+## Obtenir la clé de référence du storefront
 
-Après avoir créé une recommandation, vous devez récupérer son identifiant pour implémenter l’unité de recommandation sur votre storefront.
+Après avoir créé une recommandation, utilisez sa clé de référence pour configurer l’unité de recommandation sur votre storefront.
 
-1. Sur la page **Recommendations**, sélectionnez la recommandation.
+1. Sur la page **Recommendations**, cliquez sur l’icône d’informations (![icône Infos](../../assets/info-icon.png)) à côté du nom de la recommandation pour ouvrir la page **Détails de l’unité de recommandation**.
 
-1. Cliquez sur l’icône d’informations (![icône d’information](../../assets/info-icon.png)) en regard du nom de la recommandation.
+   ![Obtenir l’ID de recommandation](../../assets/get-ref-id.png)
 
-   La page **Détails de l’unité de recommandation** s’affiche.
+1. Copiez la valeur de la section **Clé de référence Storefront**.
 
-   ![Obtenir l’ID de recommandation](../../assets/get-rec-id.png)
-
-1. Dans la section **ID de recommandation**, copiez l’ID.
-
-1. Utilisez cet identifiant pour configurer le [menu déroulant de recommandations](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) sur votre storefront Edge Delivery Services.
+1. Dans le bloc de `product-recommendations` storefront, utilisez cette clé de référence pour configurer le [menu déroulant de recommandation](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) sur votre storefront Edge Delivery Services.
 
 ## Gestion des recommandations existantes
 
@@ -127,6 +125,7 @@ Vous pouvez modifier, désactiver ou supprimer une recommandation existante.
 1. Dans le menu, vous pouvez **Désactiver**, **Supprimer** ou **Modifier** la recommandation. Si vous sélectionnez **Modifier**, vous pouvez ajuster les paramètres suivants selon vos besoins :
 
    - Nom de la recommandation
+   - Clé de référence
    - Libellé du storefront
    - Nombre de produits
    - Filtrer les produits
