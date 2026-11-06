@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1109'
 ht-degree: 1%
 ---
 # Intégration d’AEM Assets pour Commerce
@@ -161,22 +161,6 @@ Sélectionnez votre déploiement pour suivre les étapes requises dans l’ordre
 1. [Configurez l’intégration dans Commerce Admin](get-started/setup-synchronization.md).
 
 1. Facultatif. [Activer l’affichage image du produit](get-started/configure-storefront.md#enable-product-images) de sorte qu’un storefront optimisé par Edge Delivery Services effectue le rendu des images de produit gérées par AEM.
-
->[!TAB Tab]
-
-[!BADGE SaaS uniquement]{type=Positive tooltip="S’applique uniquement aux projets Adobe Commerce Optimizer."}
-
-[!DNL Adobe Commerce Optimizer] Il n’a pas d’interface utilisateur de configuration d’administration. L’assistance Adobe configure l’intégration à partir de votre ticket d’intégration, préparez donc AEM Assets en premier.
-
-1. Pour prendre en charge les métadonnées Commerce, [configurez le projet AEM Assets](get-started/configure-aem.md). Dans les versions `2026.5.26309` et ultérieures d’AEM, utilisez la [intégration en libre-service](get-started/configure-aem.md#enable-aem-commerce-self-service) ; dans les versions antérieures, installez le package `assets-commerce` manuellement.
-
-1. [Envoyez le ticket d’assistance à l’intégration](get-started/configure-aco.md#onboarding) avec votre identifiant client, l’identifiant du programme AEM, l’identifiant de l’environnement AEM, la règle, la couche et le paramètre régional correspondants.
-
-1. [Configurez votre vue de catalogue](get-started/configure-aco.md#onboarding) avec les paramètres régionaux et le calque que vous avez enregistrés dans le ticket.
-
-1. Facultatif. [Activer l’affichage image du produit](get-started/configure-storefront.md#enable-product-images) de sorte qu’un storefront optimisé par Edge Delivery Services effectue le rendu des images de produit gérées par AEM.
-
-   Pour obtenir des instructions complètes sur la procédure, les limitations et les calques, voir [Configuration d’AEM Assets pour Commerce Optimizer](get-started/configure-aco.md).
 
 >[!ENDTABS]
 

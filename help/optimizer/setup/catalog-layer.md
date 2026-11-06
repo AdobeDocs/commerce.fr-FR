@@ -3,7 +3,7 @@ title: Calques de catalogue
 description: Découvrez comment les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine, afin que vous puissiez les personnaliser en toute sécurité et annuler les modifications à tout moment.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -27,13 +27,11 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: 1533
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # Calques de catalogue
 
 Les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine. Les calques modifient les attributs de produit, tels que le nom, la description, les images, les liens et les métadonnées, en créant un calque par-dessus votre catalogue de base. Vos données de produit d’origine restent intactes, ce qui vous permet de personnaliser les produits en toute sécurité et d’annuler les modifications à tout moment.
@@ -67,8 +65,6 @@ Les calques de catalogue sont généralement utilisés pour :
 * **Visuels du produit** : appliquez les images du produit AEM Assets sous forme de calque au-dessus de votre catalogue de base.
 
 ## Couche AEM-Assets
-
-Lorsque vous activez [Visuels de produit](product-visuals.md), l’intégration AEM Assets crée et gère automatiquement une couche de catalogue dédiée exclusivement au contenu AEM Assets. Le nom de calque par défaut est `AEM-Assets` ; vous pouvez toutefois spécifier un nom personnalisé lors de l’[intégration dans l’intégration AEM Assets](../../aem-assets-integration/get-started/configure-aco.md).
 
 Ce calque contient les images des produits synchronisées à partir d’AEM Assets. Comme les autres calques de catalogue, il est renseigné via l’[API Product Layers](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. Le service d’intégration Assets transforme les métadonnées des ressources AEM et les URL de diffusion au format API et envoie automatiquement les données lorsque les ressources sont approuvées dans AEM Assets.
 
