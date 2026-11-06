@@ -5,7 +5,7 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -25,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 972d2a1118daca17dc17a29e20ada593656960e1
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '564'
 ht-degree: 0%
 ---
 
@@ -42,7 +42,6 @@ ht-degree: 0%
 Les Visuels de produit vous permettent de gérer les images de produit via Adobe Experience Manager (AEM) Assets. Configurez AEM Assets for Commerce Optimizer pour activer les visuels de produit. Une fois la configuration terminée, vous utilisez AEM Assets comme solution centralisée de gestion des ressources numériques pour vos images de produit, avec des workflows automatisés de révision et de gestion des ressources qui maintiennent les images synchronisées avec votre catalogue Commerce Optimizer. L’intégration fait correspondre les ressources aux produits par SKU. Les mises à jour transitent par les services d’intégration d’Adobe afin que les storefronts reflètent les derniers médias sans rechargement manuel.
 
 - [Visuels de produit avec AEM Assets](../setup/product-visuals.md)
-- [Configuration d’AEM Assets pour Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md){target="_blank"}
 
 ## Adobe Experience Manager Sites Optimizer {#aem-sites-optimizer}
 
@@ -76,5 +75,5 @@ Le connecteur Commerce Salesforce (basé sur Adobe App Builder) synchronise les 
 
 >[!MORELIKETHIS]
 >
->- [Documentation technique de &#x200B;](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+>- [Documentation technique de ](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 >- [Prise en main de Adobe Commerce Optimizer](../get-started.md)

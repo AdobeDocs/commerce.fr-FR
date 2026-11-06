@@ -1,6 +1,7 @@
 ---
 title: Configuration d’AEM Assets pour Commerce Optimizer
 description: Découvrez comment configurer l’intégration d’AEM Assets pour [!DNL Adobe Commerce Optimizer].
+hide: true
 feature: CMS, Media, Configuration, Integration
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -17,7 +18,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 0%
@@ -33,7 +34,7 @@ Le diagramme suivant présente une vue d’ensemble de la synchronisation de pro
 
 ![AEM Assets vers [!DNL Commerce Optimizer] flux](../assets/aco-asset-sync-architecture.png){width="700"}
 
-Cette intégration comporte deux flux d’événements indépendants. Les deux utilisent [&#128279;](https://developer.adobe.com/events/docs/) pour transférer des événements vers Assets Integration Service, mais chaque direction utilise son propre fournisseur d&#39;événements :
+Cette intégration comporte deux flux d’événements indépendants. Les deux utilisent [](https://developer.adobe.com/events/docs/) pour transférer des événements vers Assets Integration Service, mais chaque direction utilise son propre fournisseur d&#39;événements :
 
 * **D’AEM Assets au service d’intégration d’Assets** : lorsqu’une ressource est approuvée, rejetée ou supprimée, l’événement est diffusé au service d’intégration d’Assets. Le service fait correspondre les ressources aux produits à l’aide de `match-by-SKU` (piloté par les métadonnées) ou d’un [mappeur personnalisé (App Builder)](../synchronize/custom-match.md){target=_blank}, puis envoie les mappages de `product-asset` à [!DNL Commerce Optimizer], où ils sont stockés en tant que couches de produit.
 
@@ -69,7 +70,7 @@ L’intégration [!DNL Commerce Optimizer] présente les limites suivantes :
 
 Avant de configurer l’intégration, vérifiez les points suivants :
 
-* Une instance [!DNL Adobe Commerce Optimizer] active avec les droits **Visuels de produit** (regroupe Dynamic Media avec des fonctionnalités OpenAPI + [AEM Assets Prime](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-prime)) ou une licence AEM Assets fournie par le client (par exemple, **AEM Assets Ultimate**) avec Dynamic Media activé.
+* Une instance [!DNL Adobe Commerce Optimizer] active avec les droits **Visuels de produit** (regroupe Dynamic Media avec des fonctionnalités OpenAPI + [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)) ou une licence AEM Assets fournie par le client (par exemple, **AEM Assets Ultimate**) avec Dynamic Media activé.
 * Accès à un environnement AEM Assets as a Cloud Service.
 * [!DNL Commerce Optimizer] et AEM Assets dans la même organisation Adobe IMS.
 * Dynamic Media avec OpenAPI activé dans votre environnement AEM Assets (voir [Configuration du projet AEM Assets](configure-aem.md#prerequisites) pour les étapes d’activation).
@@ -98,7 +99,7 @@ Pour intégrer l’intégration d’AEM Assets à [!DNL Commerce Optimizer], l�
 * Événements AEM Assets (ressource approuvée, mise à jour, supprimée)
 * Événements de catalogue [!DNL Commerce Optimizer] (produit créé, mis à jour)
 
-Pour lancer ce processus, [créez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) qui contient les informations suivantes :
+Pour lancer ce processus, [créez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) qui contient les informations suivantes :
 
 * **[!DNL Adobe Commerce Optimizer]ID de client** (ID d’instance) trouvé dans l’URL [!DNL Commerce Optimizer] ou l’interface utilisateur de Commerce Cloud Manager.
 * **ID de programme AEM et ID d’environnement** que vous configurez lorsque vous [avez configuré AEM Assets](#configure-aem-assets-first) pour l’intégration.

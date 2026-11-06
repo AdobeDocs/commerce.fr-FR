@@ -4,9 +4,9 @@ breadcrumb-title: Intégration [!DNL AEM Assets]
 user-guide-description: Informations complètes sur l’intégration AEM Assets pour les administrateurs Adobe Commerce et Magento Open Source et les spécialistes du marketing eCommerce.
 feature: CMS, Page Content
 nudge: true
-source-git-commit: 7db47b2b78642d47b0f38c3933bd87a0a2b6e127
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '103'
 ht-degree: 3%
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 3%
   - [Rechercher les mises à jour d’extension](get-started/check-for-updates.md)
   - [Configuration de l’intégration](get-started/setup-synchronization.md)
   - [Configuration des autorisations utilisateur IMS](get-started/permissions.md)
-  - [Configuration de Commerce Optimizer](get-started/configure-aco.md)
   - [Configuration de votre storefront](get-started/configure-storefront.md)
   - [Affichage et gestion des journaux](get-started/logs.md)
   - [Affichage de l’état de synchronisation d’AEM Assets](get-started/sync-status.md)
@@ -32,4 +31,4 @@ ht-degree: 3%
   - [Correspondance automatique personnalisée](synchronize/custom-match.md)
   - [Sélection manuelle des ressources](synchronize/asset-selector-integration.md)
 - [Gestion des ressources multimédias Commerce](manage-assets.md)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

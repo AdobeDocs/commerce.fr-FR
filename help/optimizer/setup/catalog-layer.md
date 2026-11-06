@@ -3,7 +3,7 @@ title: Calques de catalogue
 description: Découvrez comment les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine, afin que vous puissiez les personnaliser en toute sécurité et annuler les modifications à tout moment.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -27,18 +27,16 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: 1533
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # Calques de catalogue
 
 Les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine. Les calques modifient les attributs de produit, tels que le nom, la description, les images, les liens et les métadonnées, en créant un calque par-dessus votre catalogue de base. Vos données de produit d’origine restent intactes, ce qui vous permet de personnaliser les produits en toute sécurité et d’annuler les modifications à tout moment.
 
-![&#x200B; Calques de catalogue &#x200B;](../assets/catalog-layers.png)
+![ Calques de catalogue ](../assets/catalog-layers.png)
 
 ## Fonctionnement des calques de catalogue
 
@@ -67,8 +65,6 @@ Les calques de catalogue sont généralement utilisés pour :
 * **Visuels du produit** : appliquez les images du produit AEM Assets sous forme de calque au-dessus de votre catalogue de base.
 
 ## Couche AEM-Assets
-
-Lorsque vous activez [Visuels de produit](product-visuals.md), l’intégration AEM Assets crée et gère automatiquement une couche de catalogue dédiée exclusivement au contenu AEM Assets. Le nom de calque par défaut est `AEM-Assets` ; vous pouvez toutefois spécifier un nom personnalisé lors de l’[intégration dans l’intégration AEM Assets](../../aem-assets-integration/get-started/configure-aco.md).
 
 Ce calque contient les images des produits synchronisées à partir d’AEM Assets. Comme les autres calques de catalogue, il est renseigné via l’[API Product Layers](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. Le service d’intégration Assets transforme les métadonnées des ressources AEM et les URL de diffusion au format API et envoie automatiquement les données lorsque les ressources sont approuvées dans AEM Assets.
 
@@ -246,7 +242,7 @@ Suivez ces recommandations lors de l’utilisation des calques de catalogue :
 
 * **Logique de priorité du document** : suivez les calques prioritaires pour éviter les remplacements inattendus.
 
-* **Vérifier les calques Sites Optimizer** : lorsque vous utilisez le correctif automatique de Sites Optimizer, le système crée les calques avec la priorité la plus élevée. Veillez à ajouter des calques manuels qui remplacent les recommandations de l’IA. En savoir plus sur l&#39;utilisation de [&#128279;](../manage-results/opportunities.md).
+* **Vérifier les calques Sites Optimizer** : lorsque vous utilisez le correctif automatique de Sites Optimizer, le système crée les calques avec la priorité la plus élevée. Veillez à ajouter des calques manuels qui remplacent les recommandations de l’IA. En savoir plus sur l&#39;utilisation de [](../manage-results/opportunities.md).
 
 * **Surveillance des performances** : si vous constatez un chargement lent des pages produit, passez en revue la configuration des calques et envisagez de les consolider.
 
