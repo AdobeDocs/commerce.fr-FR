@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
+source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1486'
 ht-degree: 0%
 ---
 # Limites et limites
@@ -81,7 +81,7 @@ Les tableaux suivants résument les limites des licences et les limites du syst�
 | --- | --- | --- | --- |
 | Visuels du produit Utilisateurs expérimentés | Utilisateur sous licence disposant de fonctionnalités complètes de gestion des ressources numériques, notamment des outils d’IA, des intégrations [!DNL Adobe Express]/[!DNL Firefly] et du partage Content Hub, qui gère les tâches principales de gestion des ressources numériques et des fonctionnalités avancées natives dans le cloud pour une efficacité optimale. | 2 | Oui<p>Mettre à niveau vers la licence [!DNL AEM Assets]</p> |
 | Visuels de produit Utilisateurs collaborateurs | Accédez aux ressources et travaillez avec elles via l’intégration d’AEM Commerce, créez et modifiez du contenu à l’aide de [!DNL Adobe Express] et [!DNL Firefly], et, si cette option est activée, exploitez les ressources approuvées via le portail Content Hub. | 2 | Oui<p>Mettre à niveau vers la licence [!DNL AEM Assets]</p> |
-| Stockage des visualisations de produit | Espace de stockage alloué aux ressources | Stockage de 1 To | Non |
+| Stockage des visualisations de produit | Espace de stockage alloué aux ressources | Stockage de 1 To | Oui<p>Mettre à niveau vers la licence [!DNL AEM Assets]</p> |
 | Utilisation de Dynamic Media | La tolérance pour les opérations de traitement Dynamic Media comprend :<ul><li>Diffusion d’images</li><li>Imagerie dynamique</li><li>Diffusion vidéo</li></ul><p>Pour plus d’informations, consultez *Calcul de l’utilisation de Dynamic Media* ci-dessous. | Basé sur la valeur brute (VMG)<p>Allocation minimale : 5 millions d’opérations/mois</p> | Oui<ul><li>Achat d’une licence pour des opérations supplémentaires</li><li>Mettre à niveau vers la licence [!DNL AEM Assets]</li></ul> |
 | Diffusion vidéo | Possibilité de diffusion ou de téléchargement de vidéos | 300 vidéos, 1 minute par vidéo | Oui<p>Mettre à niveau vers la licence [!DNL AEM Assets]</p> |
 | Génération de ressources | Accès à l’IA [!DNL Adobe Express] et [!DNL Adobe Firefly] générative pour créer des images | Aucune | Achetez les crédits IA génératifs séparément |

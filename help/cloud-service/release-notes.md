@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
+source-git-commit: ab9c4d33ab0254c0c4ba990cd91ed01226d3abb9
 workflow-type: tm+mt
-source-wordcount: '9775'
+source-wordcount: '9964'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -92,7 +92,9 @@ Les éléments suivants seront publiés dans les environnements de production le
 
 >[!BEGINSHADEBOX]
 
-<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+### Application d’attributs personnalisés lors de l’ajout de produits au panier
+
+Vous pouvez désormais appliquer des attributs personnalisés aux articles du panier avec la mutation &rbrack;(https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/add-products) en spécifiant un tableau de paires clé/valeur dans le champ `CartItemInput.custom_attributes` . <!-- ACCS-1980 -->&lbrack;`addProductsToCart`
 
 ### Modifier les attributs d&#39;article retourné
 
@@ -100,6 +102,10 @@ Le nouveau `observer.rma_save_before` [webhook](https://developer.adobe.com/comm
 
 * La payload inclut les éléments renvoyés lorsque l’enregistrement crée ou modifie des éléments, par exemple lorsqu’un retour est créé dans le [!DNL Commerce Admin], via REST ou via la mutation GraphQL `requestReturn`.
 * Le webhook s’exécute dans le cadre de l’enregistrement du retour. Si un webhook obligatoire échoue, le retour n’est pas enregistré.
+
+### Exclure des articles des expéditions
+
+Le nouveau `plugin.magento.out_of_process_shipping_methods.api.shipment_item_filter.filter` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) vous permet d’exclure les articles de commande des nouvelles expéditions, tels que les articles exécutés par un tiers. <!-- ACCS-2088 -->
 
 ### Inclure les adresses de livraison
 
@@ -113,6 +119,14 @@ Pour créer une commande sans adresse de livraison :
 ### Récupération des images de catégorie [!DNL AEM Assets]
 
 Les types de GraphQL `CategoryInterface` et `CategoryTree` incluent désormais un champ `asset_role_image` qui renvoie l’image de la catégorie affectée à partir de [!DNL AEM Assets]. <!-- ACCS-2180 -->
+
+### Récupérer les soldes créditeurs du magasin client
+
+Le nouveau point d’entrée REST `GET /V1/customers/:customerId/balance` renvoie le solde de crédit d’une boutique d’un client. Ce point d’entrée nécessite l’autorisation [!UICONTROL Manage Store Credit Balances]. <!-- CCSAAS-5274 -->
+
+### Récupérer les totaux des lignes de l&#39;article de facture
+
+Le type GraphQL `InvoiceItemInterface` comprend désormais un champ `row_total` qui renvoie le sous-total de ligne stocké pour un élément de facture. <!-- USF-4460 -->
 
 ### Améliorations et correctifs
 
@@ -129,6 +143,16 @@ Les améliorations, optimisations et correctifs suivants sont inclus dans cette 
 * Correction d’un problème en raison duquel la mutation `requestReturn` de GraphQL échouait lorsqu’un attribut personnalisé d’élément de retour facultatif était envoyé avec une valeur vide. <!-- CCSAAS-5628 -->
 
 * Correction d’un problème en raison duquel le traitement des stocks pouvait s’arrêter lorsque des produits étaient supprimés après une action en masse [!UICONTROL Update attributes]. <!-- CCSAAS-5713 -->
+
+* Correction d’un problème en raison duquel les e-mails de rappel de panier abandonnés pouvaient envoyer des e-mails de rappel supplémentaires. <!-- CCSAAS-5707 -->
+
+* Correction d’un problème en raison duquel les e-mails d’alerte de prix et de retour en stock n’étaient pas envoyés. <!-- ACCS-2268 -->
+
+* Correction d’un problème en raison duquel le webhook `plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` pouvait omettre `custom_attributes`. <!-- CEXT-6870, CEXT-6959 -->
+
+* Correction d’un problème en raison duquel la mutation `addProductsToCart` de GraphQL pouvait renvoyer une erreur lors de l’utilisation du collecteur de totaux hors processus . <!-- ACCS-2263, CEXT-6986 -->
+
+* Correction d’un problème en raison duquel les requêtes et les mutations du panier GraphQL pouvaient renvoyer une erreur après la suppression d’un produit configurable du panier.<!-- CCSAAS-5721 -->
 
 {{accs-release}}
 

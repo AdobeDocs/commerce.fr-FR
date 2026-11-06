@@ -1,9 +1,9 @@
 ---
 title: Gouvernance du Centre d’informations Commerce
 description: Découvrez le modèle de gouvernance interne du Centre d’informations Commerce. Non publié sur Experience League.
-source-git-commit: a91925091da28cd0745923894a3faab0374f0a0c
+source-git-commit: bd6b2a10f02498b94c8837a27490e943b630c5fc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 
@@ -13,9 +13,9 @@ Cette référence interne pour l’équipe de documentation n’est pas réperto
 
 ## Propriété
 
-L’équipe de documentation d’Adobe Commerce est propriétaire du Centre d’informations. Il est créé dans `Adobe-Enterprise-Docs/commerce.en`, le référentiel répertorié comme `git-repo` dans `metadata.md`.
+L’équipe de documentation d’Adobe Commerce gère le processus de réception, la révision éditoriale et la publication du contenu du Centre d’informations provenant du référentiel GitHub `Adobe-Enterprise-Docs/commerce.en`.
 
-Il n’appartient à aucune équipe de produits, car il s’agit d’un produit interspécifique. Envoyez les corrections spécifiques au produit au contact de documentation de l’équipe produit propriétaire au lieu de les corriger ici.
+Il n’appartient à aucune équipe de produits, car il s’agit d’un produit interspécifique. Les propriétaires de produits et d’ingénieurs doivent approuver le contenu avant d’envoyer la requête de recherche ExL. Envoyez les corrections spécifiques au produit au contact de documentation de l’équipe produit propriétaire au lieu de les corriger ici.
 
 ## Contenu du Centre d’informations
 
@@ -28,6 +28,8 @@ Il n’appartient à aucune équipe de produits, car il s’agit d’un produit 
 - Le Centre d’informations ne consolide ni ne migre la documentation des produits, et ne documente pas les fonctionnalités individuelles des produits. Créez un lien vers le contenu existant faisant autorité avant d’écrire quelque chose de nouveau.
 
 ## Ajouter du nouveau contenu
+
+Soumettez des propositions d&#39;articles en créant un ticket JIRA dans le projet COMDOX en suivant le processus décrit dans l&#39;épopée [COMDOX-1864](https://jira.corp.adobe.com/browse/COMDOX-1864). Utilisez la description du ticket avec l’IA pour générer un ticket et le lier à l’épique.
 
 ### Articles d’une section existante
 
