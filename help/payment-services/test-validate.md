@@ -22,7 +22,7 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b3ce7cadce74310cef2b7253b965eccb4a17107d
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Avant d’exposer [!DNL Payment Services] pour [!DNL Adobe Commerce] et [!DNL Ma
 Tester les [!DNL Payment Services] dans un environnement sandbox est une étape de validation importante, même s’il s’agit d’un environnement simulé connecté uniquement au sandbox PayPal, et non à de vraies banques et commerçants.
 
 1. Effectuez un passage en caisse réussi à partir de votre boutique, soit avec les [champs de carte de crédit](payments-options.md#credit-card-fields) ou l&#39;un des [boutons de paiement PayPal](payments-options.md#paypal-payment-buttons). Consultez [Test des informations d’identification](#testing-credentials) pour plus d’informations sur l’utilisation de fausses cartes de crédit pour les tests.
-1. Capturez (lorsque votre action de paiement est [définie sur `Authorize and Capture`](production.md#set-payment-services-as-payment-method)), [remboursez](refunds.md) ou [annulez](voids.md) la commande qui vient d’être terminée. Vous pouvez également simplement [créer une facture](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} pour une commande, si votre action de paiement est définie sur `Authorize` au lieu de `Authorize and Capture`.
+1. Capturez (lorsque votre action de paiement est [définie sur `Authorize and Capture`](production.md#set-payment-services-as-payment-method)), [remboursez](refunds.md) ou [annulez](voids.md) la commande qui vient d’être terminée. Vous pouvez également simplement [créer une facture](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} pour une commande, si votre action de paiement est définie sur `Authorize` au lieu de `Authorize and Capture`.
 1. Dans les 24 à 48 heures, affichez la transaction et d&#39;autres informations dans le [rapport des paiements](payouts.md).
 1. Voir les détails de la commande dans l&#39;état [Statut du paiement de la commande](order-payment-status.md).
 
@@ -64,7 +64,7 @@ Pour exposer votre environnement local :
 
 1. Restaurez la configuration de l’URL de base d’origine une fois le test terminé.
 
-Si le temps de réponse du point d&#39;entrée est inférieur à 5 secondes, PayPal affiche un message d&#39;erreur dans le pop-up.
+Si le temps de réponse du point d&#39;entrée dépasse 5 secondes, PayPal affiche un message d&#39;erreur dans le pop-up.
 
 #### Développement local d’Apple Pay
 
@@ -85,7 +85,7 @@ Utilisez le générateur de cartes de crédit PayPal pour [générer des informa
 
 Pour tester Apple Pay en mode sandbox :
 
-* Créez un compte de testeur de sandbox [&#128279;](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) avec une fausse carte de crédit et de fausses informations de facturation.
+* Créez un compte de testeur de sandbox [](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) avec une fausse carte de crédit et de fausses informations de facturation.
 * [Enregistrement de vos domaines Sandbox](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
 
 >[!NOTE]
