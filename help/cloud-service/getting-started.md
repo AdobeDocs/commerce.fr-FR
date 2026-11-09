@@ -48,9 +48,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 19c1c7d4cfaa6192169e8005e6bb323a0940d875
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1348'
 ht-degree: 0%
 ---
 # Prise en main
@@ -125,7 +125,7 @@ En tant qu’administrateur système, vous êtes chargé de configurer l’organ
 | Comprendre la plateforme | En savoir plus sur l’architecture et les avantages d’Adobe Commerce as a Cloud Service | [Aperçu](overview.md) |
 | Comparer les fonctionnalités | Comprendre les différences entre Cloud Service et les autres offres Adobe Commerce | [Comparaison des fonctionnalités](feature-comparison.md) |
 | Création d’une instance | Configuration des environnements de sandbox et de production | [Créer une instance](#create-an-instance) |
-| Configurer User Management | Ajouter des utilisateurs, attribuer des rôles et gérer les autorisations | [Gestion des utilisateurs](user-management.md) |
+| Configurer User Management | Ajoutez des utilisateurs et gérez l’accès via Adobe Admin Console, et configurez des rôles et des autorisations dans Commerce Admin. | [Gestion des utilisateurs](user-management.md) |
 | Configuration de [!DNL AEM Assets] et [!DNL Product Visuals] (facultatif) | Ajouter des utilisateurs, attribuer des rôles et gérer les autorisations | [Gestion des utilisateurs](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB Marchand]
