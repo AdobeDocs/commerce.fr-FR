@@ -398,7 +398,7 @@ Utilisez `POST /V1/carts/:cartId/shipping-discount` pour définir la remise. Un 
 
 ### Ajouter des articles de panier à un prix personnalisé
 
-Vous pouvez désormais définir un prix personnalisé [ pour un article de panier](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price) en ajoutant l’attribut d’extension `custom_price` aux points d’entrée REST d’article de panier standard d’ajout ou de mise à jour (`POST /V1/carts/:cartId/items` et `PUT /V1/carts/:cartId/items/:itemId`). Vous devez fournir un jeton d’administration ou d’intégration pour définir un prix personnalisé. Les requêtes comportant un prix négatif ou un type de produit non pris en charge, tel qu&#39;un produit groupé avec une tarification dynamique, sont rejetées. <!-- ACCS-1155 -->
+Vous pouvez désormais définir un prix personnalisé [&#x200B; pour un article de panier](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price) en ajoutant l’attribut d’extension `custom_price` aux points d’entrée REST d’article de panier standard d’ajout ou de mise à jour (`POST /V1/carts/:cartId/items` et `PUT /V1/carts/:cartId/items/:itemId`). Vous devez fournir un jeton d’administration ou d’intégration pour définir un prix personnalisé. Les requêtes comportant un prix négatif ou un type de produit non pris en charge, tel qu&#39;un produit groupé avec une tarification dynamique, sont rejetées. <!-- ACCS-1155 -->
 
 ```json
 {
@@ -1027,7 +1027,7 @@ De nouvelles requêtes GraphQL, [`isSubscribedProductAlertStock`](https://develo
 
 ### Créer des attributs de produit numériques qui prennent en charge les valeurs négatives
 
-Un nouveau type d’entrée d’attribut de produit `numeric` [](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) permet aux commerçants de créer des attributs décimaux prenant en charge les valeurs négatives. <!-- ACCS-600 -->
+Un nouveau type d’entrée d’attribut de produit `numeric` [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) permet aux commerçants de créer des attributs décimaux prenant en charge les valeurs négatives. <!-- ACCS-600 -->
 
 ### Configuration de requête reCAPTCHA pour plusieurs formulaires dans une seule requête GraphQL
 
@@ -1275,7 +1275,7 @@ Les éléments suivants ont été publiés dans les environnements de production
 
 Les améliorations suivantes ont été apportées à [!DNL Commerce Admin] :
 
-* Amélioration des [payloads webhook d’expédition ](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#payload) hors processus pour inclure les attributs personnalisés d’adresse d’expédition. Cette modification permet aux commerçants de mettre en œuvre des méthodes d’expédition personnalisées. <!-- ACCS-235 -->
+* Amélioration des [payloads webhook d’expédition &#x200B;](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#payload) hors processus pour inclure les attributs personnalisés d’adresse d’expédition. Cette modification permet aux commerçants de mettre en œuvre des méthodes d’expédition personnalisées. <!-- ACCS-235 -->
 
 * Ajout d’un accès aux rapports d’administration, y compris les rapports pour [les clients](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports), [le marketing](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports), [les produits](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports) et [les ventes](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports). <!-- CCSAAS-3085 -->
 
@@ -1349,7 +1349,7 @@ Les storefronts [!DNL Adobe Commerce as a Cloud Service] prennent désormais en 
 
 ### Accès administrateur spécifique à l’instance
 
-Vous pouvez désormais [attribuer l’accès ](./user-management.md#add-users) des utilisateurs à [!DNL Adobe Commerce as a Cloud Service] instances individuelles dans Admin Console. <!-- CCSAAS-4337 -->
+Vous pouvez désormais [attribuer l’accès &#x200B;](./user-management.md#add-users) des utilisateurs à [!DNL Adobe Commerce as a Cloud Service] instances individuelles dans Admin Console. <!-- CCSAAS-4337 -->
 <!-- See PR #332 -->
 
 ### Observability
