@@ -1,7 +1,7 @@
 ---
 user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
-user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de  [!DNL Adobe Commerce as a Cloud Service].
+user-guide-description: Ce guide fournit des instructions détaillées sur l'utilisation de [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
 product_v2:
@@ -9,17 +9,16 @@ product_v2:
     internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
     internal-label: Commerce as a Cloud Service
-source-git-commit: f37892b9a2de995dbc4b631ae1008e09cda68207
+source-git-commit: 896b53de478dbb3acc4a4ab8b26c8ae9e10ec8d2
 workflow-type: tm+mt
-source-wordcount: 226
+source-wordcount: '228'
 ht-degree: 3%
-
 ---
-
 
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [Adobe Commerce as a Cloud Service](overview.md)
+- [Services de marchandisage](merchandising-services.md)
 - [Comparaison des fonctionnalités](feature-comparison.md)
 - [Prise en main](getting-started.md)
 - [Gestion des utilisateurs et des identités](user-management.md)
@@ -52,7 +51,7 @@ ht-degree: 3%
   - [Tutoriels préalables](tutorials/tutorial-prerequisites.md)
   - [Tutoriel sur l’extension d’évaluations](tutorials/ratings-extension.md)
   - [Tutoriel sur l’extension des méthodes d’expédition](tutorials/shipping-method-extension.md)
-  - {hide-from-toc}[&#x200B; Tutoriel sur l’extension des estimations de diffusion &#x200B;](tutorials/delivery-estimates-extension.md)
+  - {hide-from-toc}[Tutoriel sur l’extension des estimations de diffusion](tutorials/delivery-estimates-extension.md)
   - {hide-from-toc}[Tutoriel sur l’extension de notification en stock](tutorials/in-stock-notification-extension.md)
   - {hide-from-toc}[Tutoriel sur l’extension des révisions de produits](tutorials/product-reviews-extension.md)
 - Schémas {#schemas}

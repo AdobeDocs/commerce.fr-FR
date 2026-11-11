@@ -51,9 +51,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92240ffdb1444d600679ad8392902f543b0d84e3
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1111'
 ht-degree: 0%
 ---
 # Comparaison des fonctionnalités
@@ -61,8 +61,8 @@ ht-degree: 0%
 Adobe Commerce propose trois modèles de déploiement :
 
 - [!BADGE SaaS uniquement]{type=Positive url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
-- [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} [Adobe Commerce on Cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview) (PaaS)
-- [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/overview) (On-premise)
+- [!BADGE PaaS uniquement]{type=Informative url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."} [Adobe Commerce sur le cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/overview) (PaaS)
+- [Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/overview) (sur site)
 
 Cette comparaison se concentre sur les différences entre les modèles SaaS (logiciel en tant que service) et PaaS (plateforme en tant que service). Ces modèles fournissent différents niveaux de personnalisation, d’extensibilité et de contrôle sur votre mise en œuvre Commerce.
 
@@ -72,7 +72,7 @@ Cette comparaison se concentre sur les différences entre les modèles SaaS (log
 
 ## Fonctionnalités de gestion des magasins
 
-L’interface utilisateur d’administration de [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/guide-overview) est l’interface principale permettant d’accéder aux fonctionnalités de gestion des opérations de la boutique principale, des stocks, des prix, des promotions et des interactions des clients. Cependant, [!DNL Adobe Commerce as a Cloud Service] propose des solutions uniques qui remplacent certaines des fonctionnalités connues disponibles dans les projets [!DNL Adobe Commerce on Cloud] et sur site.
+L’[interface utilisateur d’administration de Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/guide-overview) est l’interface principale permettant d’accéder aux fonctionnalités de gestion des opérations de la boutique principale, des stocks, des prix, des promotions et des interactions des clients. Cependant, [!DNL Adobe Commerce as a Cloud Service] offre des solutions uniques qui remplacent certaines des fonctionnalités connues disponibles dans [!DNL Adobe Commerce on Cloud] et les projets On-Premise.
 
 Le tableau suivant décrit les fonctionnalités et solutions de remplacement disponibles dans [!DNL Adobe Commerce as a Cloud Service] :
 
@@ -92,13 +92,16 @@ Le tableau suivant décrit les fonctionnalités et solutions de remplacement dis
         </tr>
         <tr>
             <td>Gestion de contenu</td>
-            <td><a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/guide-overview">Content Management System (CMS)</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/guide-overview">Page Builder</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">réécritures d’URL</a></td>
+            <td><a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/guide-overview">Système de gestion de contenu (CMS)</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/guide-overview">Page Builder</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">réécritures d’URL</a></td>
             <td><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/get-started/">Storefront Builder</a></td>
         </tr>
         <tr>
             <td>Marchandisage des catalogues</td>
-            <td><a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/staging/content-staging">Évaluation de contenu</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Marchandiseur visuel</a></td>
-            <td><a href="../catalog-service/overview.md">Service de catalogue</a></td>
+            <td><a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/staging/content-staging">Évaluation du contenu</a>, <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Marchandiseur visuel</a></td>
+            <td>
+                <p><strong>Modèle de données de catalogue composable (CCDM) :</strong> <a href="../optimizer/setup/catalog-view.md">les services de marchandisage</a> utilisent des vues de catalogue, des politiques, des sources de catalogue et des tarifs pour définir le contexte du catalogue storefront.</p>
+                <p><strong>Le modèle de services de catalogue d’origine :</strong> <a href="../catalog-service/guide-overview.md">le service de catalogue</a> fournit des données de catalogue avec Live Search et les recommandations de produits.</p>
+            </td>
         </tr>
         <tr>
             <td>Paiements</td>
@@ -108,7 +111,7 @@ Le tableau suivant décrit les fonctionnalités et solutions de remplacement dis
         <tr>
             <td>Fonctionnalité B2B</td>
             <td>Fonctionnalités B2B complètes disponibles après l’installation</td>
-            <td>Préinstallé avec les principales fonctionnalités B2B <sup>1</sup></td>
+            <td>Préinstallé avec les principales fonctionnalités B2B<sup>1</sup></td>
         </tr>
         <tr>
             <td>Expérimentation</td>
@@ -119,7 +122,7 @@ Le tableau suivant décrit les fonctionnalités et solutions de remplacement dis
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup> les fonctionnalités principales <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/guide-overview">B2B</a> telles que la gestion d'entreprise et les devis, sont disponibles prêtes à l'emploi dans SaaS. Toutefois, les personnalisations spécifiques au secteur peuvent nécessiter des considérations d’implémentation supplémentaires.
+                <sup>1</sup> Les fonctionnalités de base <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/guide-overview">B2B</a>, telles que la gestion d'entreprise et les devis, sont disponibles prêtes à l'emploi en SaaS. Toutefois, les personnalisations spécifiques au secteur peuvent nécessiter des considérations d’implémentation supplémentaires.
             </td>
         </tr>
     </tfoot>
@@ -159,7 +162,7 @@ Le tableau suivant compare les fonctionnalités de la plateforme et les fonction
         <tr>
             <td>Observability</td>
             <td>[!DNL New Relic] accès permettant aux clients de surveiller et de gérer l’environnement</td>
-            <td>Adobe géré. Les clients peuvent utiliser [!DNL OpenTelemetry] pour les applications [!DNL App Builder] et les tableaux de bord RUM pour storefront. [!DNL New Relic] licence non incluse. Les clients peuvent configurer [!DNL API Mesh] et [!DNL App Builder] pour envoyer des données à leur propre compte [!DNL New Relic].</td>
+            <td>Adobe géré. Les clients peuvent utiliser [!DNL OpenTelemetry] pour les applications [!DNL App Builder] et les tableaux de bord RUM pour storefront. Licence [!DNL New Relic] non incluse. Les clients peuvent configurer [!DNL API Mesh] et [!DNL App Builder] pour envoyer des données à leur propre compte [!DNL New Relic].</td>
         </tr>
         <tr>
             <td>CDN</td>
@@ -214,8 +217,8 @@ Le tableau suivant compare les fonctionnalités de la plateforme et les fonction
         </tr>
         <tr>
             <td>App Marketplace</td>
-            <td>[Magento Marketplace](https://marketplace.magento.com/) (extensions PHP) et [Exchange Marketplace](https://commercemarketplace.adobe.com) pour les applications [!DNL App Builder] (Recommandé)</td>
-            <td>[!DNL App Builder] applications de [[!DNL Exchange Marketplace]](https://commercemarketplace.adobe.com)</td>
+            <td><a href="https://marketplace.magento.com/">Magento Marketplace</a> (extensions PHP) et <a href="https://commercemarketplace.adobe.com">Exchange Marketplace</a> pour [!DNL App Builder] applications (recommandé)</td>
+            <td>[!DNL App Builder] applications issues de <a href="https://commercemarketplace.adobe.com">[!DNL Exchange Marketplace]</a></td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>Données et stockage</strong></td>
@@ -233,15 +236,15 @@ Le tableau suivant compare les fonctionnalités de la plateforme et les fonction
         <tr>
             <td>Stockage de données personnalisé</td>
             <td>Base de données, fichier, cache, file d'attente</td>
-            <td>Bibliothèque d’état App Builder (fichier uniquement)<sup>2 - <a href="https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database">Stockage de base de données pour App Builder</a> est actuellement en accès anticipé.</sup></td>
+            <td>Bibliothèque d’état App Builder (fichier uniquement)<sup>2 - <a href="https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database">Le stockage de la base de données pour App Builder</a> est actuellement en accès anticipé.</sup></td>
         </tr>
     </tbody>
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup> L’extensibilité du modèle de données en SaaS prend en charge <a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/">l’extension des entités principales</a> au-delà du produit et du client, y compris les entités B2B. Cependant, les modèles de données spécifiques au secteur (par exemple, les attributs spécifiques aux revendeurs) peuvent nécessiter des considérations architecturales supplémentaires.
+                <sup>1</sup> L’extensibilité du modèle de données dans SaaS prend en charge <a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/">l’extension des entités principales</a> au-delà du produit et du client, y compris les entités B2B. Cependant, les modèles de données spécifiques au secteur (par exemple, les attributs spécifiques aux revendeurs) peuvent nécessiter des considérations architecturales supplémentaires.
                 <br><br>
-                <sup>2</sup> Adobe travaille activement à l’intégration de la base de données Document pour répondre aux besoins de stockage persistant pour SaaS. Actuellement, les implémentations nécessitant un stockage de données à long terme peuvent avoir besoin de configurer et de gérer des infrastructures supplémentaires.
+                <sup>2</sup> Adobe travaille activement à l’intégration de Document DB pour répondre aux besoins de stockage persistant pour SaaS. Actuellement, les implémentations nécessitant un stockage de données à long terme peuvent avoir besoin de configurer et de gérer des infrastructures supplémentaires.
             </td>
         </tr>
     </tfoot>
@@ -253,7 +256,6 @@ Le tableau suivant compare les fonctionnalités de la plateforme et les fonction
 >
 >- Dans la mesure du possible, déplacez les fonctionnalités appropriées vers l’extensibilité hors processus.
 >- Réduisez la portée nécessitant une transition.
->- Tenez compte des [!DNL API Mesh] d’extension de la fonctionnalité d’API.
+>- Envisagez [!DNL API Mesh] pour étendre les fonctionnalités de l’API.
 >- Surveillez l’évolution continue de la plateforme Adobe et les nouvelles versions de fonctionnalités.
 >- Évaluez les exigences des modèles de données spécifiques au secteur par rapport aux options d’extensibilité disponibles.
-
