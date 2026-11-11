@@ -60,7 +60,7 @@ Avant de lancer l’un de ces cas d’utilisation, vous devez remplir les condit
 1. [Créez votre instance Cloud Service](./getting-started.md#create-an-instance) à l’aide des options suivantes :
    1. Sélectionnez [!UICONTROL **Sandbox**] dans la liste déroulante [!UICONTROL **Environnement**].
    1. Sélectionnez [!UICONTROL **Boutique Adobe**] dans le menu déroulant [!UICONTROL **Tester les données**].
-1. [Connectez-vous à votre compte  [!DNL Adobe Experience Cloud] ](https://experience.adobe.com)
+1. [Connectez-vous à votre compte  [!DNL Adobe Experience Cloud] &#x200B;](https://experience.adobe.com)
 1. [Configurez votre storefront Cloud Service](./storefront.md) à l’aide des options suivantes :
    1. Sélectionnez [!UICONTROL `adobe-commerce/adobe-demo-store`] pour le modèle.
    1. Sélectionnez [!UICONTROL **Sélectionner une instance disponible (Maillage -> SaaS)**] pour la méthode de connexion.

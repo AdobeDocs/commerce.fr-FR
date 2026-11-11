@@ -136,6 +136,6 @@ Le modèle CCDM ne modifie pas les limites d’Adobe Commerce as a Cloud Service
 
 Les organisations qui commencent à utiliser Adobe Commerce as a Cloud Service après cette version bénéficient par défaut de services de marchandisage. Si votre organisation a besoin du modèle de données de catalogue d’origine, contactez l’équipe de votre compte Adobe pour déterminer si une exception est disponible.
 
-Les organisations qui disposaient d’Adobe Commerce as a Cloud Service avant cette version peuvent choisir l’un des modèles de catalogue lors de l’approvisionnement d’une nouvelle instance [1. ](./getting-started.md#create-an-instance)Par défaut, le sélecteur [!UICONTROL Enable CCDM] est désactivé. Une fois que le CCDM est activé, vous ne pouvez pas le désactiver.
+Les organisations qui disposaient d’Adobe Commerce as a Cloud Service avant cette version peuvent choisir l’un des modèles de catalogue lors de l’approvisionnement d’une nouvelle instance [1. &#x200B;](./getting-started.md#create-an-instance)Par défaut, le sélecteur [!UICONTROL Enable CCDM] est désactivé. Une fois que le CCDM est activé, vous ne pouvez pas le désactiver.
 
 Les instances existantes ne changent pas automatiquement. Lors de la disponibilité générale (GA), vous ne pouvez pas migrer une instance de services de catalogue d’origine existante vers les services de marchandisage.
