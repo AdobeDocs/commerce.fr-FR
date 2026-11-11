@@ -1,7 +1,7 @@
 ---
 user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
-user-guide-description: Ce guide fournit des instructions détaillées sur l’utilisation de  [!DNL Adobe Commerce as a Cloud Service].
+user-guide-description: Ce guide fournit des instructions détaillées sur l'utilisation de [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
 product_v2:
@@ -9,17 +9,16 @@ product_v2:
     internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
     internal-label: Commerce as a Cloud Service
-source-git-commit: f37892b9a2de995dbc4b631ae1008e09cda68207
+source-git-commit: 896b53de478dbb3acc4a4ab8b26c8ae9e10ec8d2
 workflow-type: tm+mt
-source-wordcount: 226
+source-wordcount: '228'
 ht-degree: 3%
-
 ---
-
 
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [Adobe Commerce as a Cloud Service](overview.md)
+- [Services de marchandisage](merchandising-services.md)
 - [Comparaison des fonctionnalités](feature-comparison.md)
 - [Prise en main](getting-started.md)
 - [Gestion des utilisateurs et des identités](user-management.md)
@@ -41,24 +40,24 @@ ht-degree: 3%
       - [Liste de contrôle de préparation du client](migration/bulk-data/readiness-checklist.md)
       - [Vérifier l’accès au service de migration](migration/bulk-data/cdms-access.md)
       - [Exécuter une migration de données en bloc](migration/bulk-data/migration-guide.md)
-      - [Présentation vidéo](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
+      - [Présentation vidéo](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
     - [Outil d’évaluation de la migration](migration/assessment.md)
     - [Outils de codage](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"}
   - {hide-from-toc}[Service Documentation RAG](migration/doc-rag.md)
-- [Connexion en tant que client](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Connexion en tant que client](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Points d’entrée REST du compte de carte cadeau](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [Déclenchement d’e-mail via REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutoriels {#tutorials}
   - [Tutoriels préalables](tutorials/tutorial-prerequisites.md)
   - [Tutoriel sur l’extension d’évaluations](tutorials/ratings-extension.md)
   - [Tutoriel sur l’extension des méthodes d’expédition](tutorials/shipping-method-extension.md)
-  - {hide-from-toc}[&#x200B; Tutoriel sur l’extension des estimations de diffusion &#x200B;](tutorials/delivery-estimates-extension.md)
+  - {hide-from-toc}[Tutoriel sur l’extension des estimations de diffusion](tutorials/delivery-estimates-extension.md)
   - {hide-from-toc}[Tutoriel sur l’extension de notification en stock](tutorials/in-stock-notification-extension.md)
   - {hide-from-toc}[Tutoriel sur l’extension des révisions de produits](tutorials/product-reviews-extension.md)
 - Schémas {#schemas}
   - [Schéma GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
   - [Schéma de l’API REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Agent de développement Commerce](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [Tutoriels vidéo](https://experienceleague.adobe.com/fr/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Tutoriels vidéo](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Notes de mise à jour](release-notes.md)
-- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/fr/docs/commerce/user-guides/home)
+- [Retour à la page d’accueil des services Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
