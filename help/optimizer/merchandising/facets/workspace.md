@@ -1,7 +1,7 @@
 ---
 title: Workspace à facettes
-description: Découvrez comment utiliser l’espace de travail Facettes dans  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+description: Découvrez comment utiliser l’espace de travail Facettes dans [!DNL Adobe Commerce Optimizer].
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 exl-id: bd977769-6565-48ca-b5aa-963a217df3ea
 TQID: https://experienceleague.adobe.com/gpKL-sHYbuIW9obwCgozt4WJgVc7gq9IA4c17Eu-TJo
 product_v2:
@@ -20,31 +20,11 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 8041acb445e99eae524cc46933d6b322861be81d
 workflow-type: tm+mt
-source-wordcount: 212
-ht-degree: 1%
-
+source-wordcount: '38'
+ht-degree: 0%
 ---
-
 # Workspace à facettes
 
-L’espace de travail *Facettes* répertorie toutes les facettes actuellement disponibles et permet d’accéder aux outils dont vous avez besoin pour configurer et gérer des facettes. Les facettes épinglées apparaissent en premier dans la liste des facettes existantes, suivies des facettes dynamiques. Vous pouvez effectuer une recherche dans la liste des facettes.
-
-Workspace à facettes![&#128279;](../../assets/facet-workspace.png)
-
-## Descriptions des champs
-
-| Champ | Description |
-|--- |--- |
-| Création de facettes | Ouvre l’[éditeur de facettes](add.md). |
-| Libellé | Le [libellé de facette](type.md#facet-labels) visible dans le storefront peut être modifié par souci de cohérence avec votre marque. |
-| Type de tri | Méthode utilisée pour [trier](type.md#sort-type) les facettes. Tous les storefronts [!DNL Adobe Commerce Optimizer] trient les facettes par ordre alphabétique et par `Count`. Options:<br />Alphabétique - Trie les facettes par ordre alphabétique.<br />Count - Trie les facettes en fonction du nombre de correspondances trouvées. |
-| Valeur max | Nombre maximal de valeurs pouvant être affichées dans le storefront pour chaque facette. Les facettes qui représentent une plage de valeurs sont également réparties. Entrées valides : 0 - 100 ; valeur par défaut : 8. |
-
-## Contrôles
-
-| Contrôle | Description |
-|--- |--- |
-| ![Sélecteur d’épingle](../../assets/btn-pin-blue.png) | Épingle ou détache une facette en haut de la liste *Filtres*. |
-| ![Plus de sélecteur](../../assets/btn-more.png) | Affiche un menu d&#39;actions supplémentaires pouvant être appliquées à la facette sélectionnée. Options : Modifier, Supprimer |
+{{$include /help/_includes/ccdm-shared/merchandising/facets/workspace.md}}

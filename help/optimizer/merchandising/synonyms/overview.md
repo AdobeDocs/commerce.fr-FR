@@ -1,7 +1,7 @@
 ---
 title: Présentation des synonymes
-description: Découvrez les synonymes dans et  [!DNL Adobe Commerce Optimizer]  comment ils améliorent les résultats de recherche.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+description: Découvrez les synonymes dans [!DNL Adobe Commerce Optimizer] et comment ils améliorent les résultats de recherche.
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 exl-id: 9efa7b7b-4559-4e23-8858-d2f5da90455b
 TQID: https://experienceleague.adobe.com/Y92PBdhfA6TxH1qFWtllycIqB5XuXCtCgT-ezYvOKhk
 product_v2:
@@ -17,15 +17,11 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 38a78729200299094cf48e30d7bbeba16d83dccf
 workflow-type: tm+mt
-source-wordcount: 158
+source-wordcount: '39'
 ht-degree: 0%
-
 ---
-
 # Synonymes
 
-Les synonymes étendent la requête de recherche pour inclure des mots que les acheteurs peuvent utiliser et qui diffèrent de ceux de votre catalogue. Vous ne voulez pas perdre une vente parce que quelqu&#39;un cherche un « canapé », alors que votre produit est listé comme un « canapé ». Vous pouvez saisir un large éventail de termes de recherche en saisissant tous les mots que les clients peuvent utiliser pour trouver vos produits.
-
-La [recherche sémantique](../../setup/semantic-search.md) est activée par défaut et peut également correspondre à des termes similaires et à du langage naturel en comprenant le sens plutôt que le texte exact. La recherche sémantique peut réduire la nécessité de certains synonymes généraux (par exemple, « canapé » et « canapé ») ; vous pouvez toujours vouloir des synonymes pour des termes spécifiques à la marque ou hautement techniques. Vous pouvez utiliser des synonymes et la recherche sémantique ensemble.
+{{$include /help/_includes/ccdm-shared/merchandising/synonyms/overview.md}}

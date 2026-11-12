@@ -1,7 +1,7 @@
 ---
 title: Types de facettes
-description: Découvrez les différents types de facettes dans  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et  [!DNL Adobe Commerce Optimizer]  (infrastructure SaaS gérée par Adobe)."
+description: Découvrez les différents types de facettes dans [!DNL Adobe Commerce Optimizer].
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 exl-id: f4ab1f27-b393-45e0-94bf-c77d46e3f994
 TQID: https://experienceleague.adobe.com/xuyEZ-CuFXUfhUi24ERf32uVNgENFTTdR5l-K22W4-M
 product_v2:
@@ -22,30 +22,11 @@ topic_v2:
     internal-label: Metadata
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 8041acb445e99eae524cc46933d6b322861be81d
 workflow-type: tm+mt
-source-wordcount: 227
+source-wordcount: '39'
 ht-degree: 0%
-
 ---
-
 # Types de facettes
 
-[!DNL Adobe Commerce Optimizer] utilise différents types de facettes qui n’apparaissent dans la liste *Filtres* que lorsque cela est pertinent. La liste des facettes disponibles change en fonction des produits renvoyés. Les caractéristiques suivantes affectent leur présentation et leur comportement :
-
-- Facettes épinglées - Les facettes les plus couramment utilisées peuvent être épinglées en haut de la liste. Les facettes restantes sont répertoriées dans l’ordre *Type de tri* après les facettes épinglées.
-- Facettes dynamiques - Attributs de produit que [&#128279;](https://business.adobe.com/fr/ai.html) trouve les plus pertinents pour un ensemble de produits et une requête. Le calcul prend en compte les métadonnées d’attribut de l’ensemble du catalogue et détermine au moment de la requête les facettes les plus pertinentes pour la requête.
-- Facettes de prix - Retourner les produits par gamme de prix. Vous pouvez indiquer le nombre de sélections et l’intervalle entre les plages de prix dans l’espace de travail [*Paramètres*](../../settings.md).
-
-## Libellés de facettes
-
-Vous pouvez modifier les libellés de facettes à partir de l&#39;espace de travail [facettes](workspace.md).
-
-## Type de tri
-
-Toutes les facettes rendues pour le storefront sont triées par ordre alphabétique ou par nombre.
-
-| Type de tri | Description |
-|--- |--- |
-| Alphabétique | Dans la liste storefront *Filtres*, les facettes sont triées par ordre alphabétique. |
-| Nombre | Les facettes peuvent également être triées en fonction du nombre de valeurs trouvées par facette dans l’ensemble actuel de produits renvoyés. |
+{{$include /help/_includes/ccdm-shared/merchandising/facets/type.md}}

@@ -1,6 +1,6 @@
 ---
 title: Synchronisation des données
-description: Passez en revue les données de catalogue synchronisées à partir de la source de données Commerce dans [!DNL Adobe Commerce Optimizer].
+description: Passez en revue les données du catalogue en cours de synchronisation depuis votre source de données Commerce dans [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
@@ -19,56 +19,11 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 014ae9bbe0a9bb48e6a5d574af4fc47158ad33dc
+source-git-commit: 9163ab912965d82bda7f9da86177e40e7c81cce6
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '44'
 ht-degree: 0%
 ---
 # Synchronisation des données
 
-La page **Synchronisation des données** présente un aperçu du statut de synchronisation des données de produit transférées de votre source de données (catalogue Commerce existant, système de gestion des informations produit (PIM), système de planification des ressources de l’entreprise (ERP), etc.) vers [!DNL Adobe Commerce Optimizer].
-
-La page **Synchronisation des données** fournit des informations précieuses sur la disponibilité des données de produit pour votre storefront, en veillant à ce qu’elles puissent être rapidement affichées pour vos clients.
-
-La page **Synchronisation des données** se trouve à l’emplacement *Configuration* > **Synchronisation des données**.
-
-![Synchronisation des données](../assets/data-sync.png)
-
-La page **Synchronisation des données** contient les champs suivants :
-
-| Champ | Description |
-| --- | --- |
-| Source du catalogue | Paramètre régional spécifique pour les données synchronisées. |
-| [!DNL Catalog Service] | Affiche la dernière mise à jour de synchronisation, le nombre total de produits reçus, un champ de recherche et un tableau des produits synchronisés pour [!DNL Catalog Service]. |
-| Découverte de produits | Affiche la dernière mise à jour de synchronisation, le nombre total de produits reçus, un champ de recherche et un tableau des produits synchronisés pour la recherche. |
-| Recommendations | Affiche la dernière mise à jour de synchronisation, le nombre total de produits reçus, un champ de recherche et un tableau des produits synchronisés pour Recommendations. |
-| Produits reçus au cours des 3 dernières heures | Affiche le nombre de produits qui ont été transférés de la source du catalogue vers [!DNL Adobe Commerce Optimizer] au cours des trois dernières heures. Si vous effectuez des mises à jour peu fréquentes de votre catalogue, cette valeur est souvent égale à zéro. |
-| Nombre total de produits dans le catalogue | Indique le nombre total de produits du catalogue disponibles pour [!DNL Adobe Commerce Optimizer]. |
-| Produits synchronisés | Fournit des détails sur les produits synchronisés avec [!DNL Adobe Commerce Optimizer]. Par défaut, ce tableau est trié par « Dernière mise à jour ». Pour rechercher un produit spécifique, utilisez le champ **[!UICONTROL Search by Name or SKU]** . |
-
-## Liste des produits synchronisés
-
-Pour afficher les détails d’un produit synchronisé au format JSON, cliquez sur l’icône de code ![lien du code](../assets/data-sync-details.png) sur la ligne du produit dans le tableau des produits synchronisés.
-
-![Détails du produit synchronisés](../assets/synced-products.png)
-
-## Resynchroniser les données du catalogue
-
-Si vous ne voyez pas de produits spécifiques sur la page **Synchronisation des données**, vous devez lancer une resynchronisation à partir de votre système en amont. Gardez toutefois à l’esprit qu’une resynchronisation peut augmenter la charge sur les ressources matérielles. Néanmoins, une resynchronisation de votre catalogue peut être nécessaire dans les scénarios suivants :
-
-- Lorsque des modifications importantes sont apportées à votre catalogue de produits, telles que l’ajout de nouveaux produits, la mise à jour des détails de produits ou la modification de catégories
-
-- Si vous constatez des incohérences ou des problèmes de performances dans l’affichage des données de produits sur vos storefronts
-
->[!IMPORTANT]
->
->Le temps nécessaire à la synchronisation varie en fonction de la taille de votre catalogue et du volume de données mises à jour.
-
-## Vérifier que la synchronisation des données fonctionne
-
-Pour les projets qui utilisent Adobe Commerce comme source de données en amont via le connecteur Adobe Commerce Optimizer, vous pouvez surveiller le processus d’exportation des données et lancer des opérations de resynchronisation à partir de la page Statut de la synchronisation des flux de données . Pour plus d’informations, consultez la section [Vérifier que la synchronisation des données fonctionne](../../aco-connector/data-sync-status.md#verify-that-the-data-sync-is-working) de la documentation du connecteur Adobe Commerce Optimizer __.
-
-## Rubriques connexes
-
-- [Connecteur Adobe Commerce Optimizer](../../aco-connector/overview.md){target="_blank"}
-
+{{$include /help/_includes/ccdm-shared/setup/data-sync.md}}
