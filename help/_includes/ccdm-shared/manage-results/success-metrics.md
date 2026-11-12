@@ -66,7 +66,7 @@ Les métadonnées C2PA sont des métadonnées lisibles par machine et inviolable
 
 ![Inspecter L&#39;Exemple](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
-En savoir plus sur la [transparence du contenu de Generative AI](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
+En savoir plus sur la [transparence du contenu de Generative AI](https://experienceleague.adobe.com/fr/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
 
 ## Utilisation conjointe des mesures de succès et de Sites Optimizer
 

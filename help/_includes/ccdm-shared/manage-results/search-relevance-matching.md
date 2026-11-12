@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 >[!IMPORTANT]
 >
->La fonctionnalité suivante est disponible dans [Private Beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>La fonctionnalité suivante est disponible dans [Private Beta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta).
 
 Les services de marchandisage avec le modèle de données de catalogue composable (CCDM) classent les résultats afin que les acheteurs voient d’abord les produits les plus pertinents. Le service booste les produits dont le texte de catalogue **correspond étroitement** à la requête de l’acheteur, puis favorise les correspondances dans lesquelles les termes apparaissent ensemble et inclut enfin des correspondances plus larges.
 
@@ -57,7 +57,7 @@ La correspondance des expressions seule ne détermine pas la pertinence. Plusieu
 - Booster à partir de **exact / proche** correspondance d&#39;expressions
 - Amplifier lorsque **tous les termes de la requête** apparaissent dans le champ **même**
 - **Classement intelligent** (lorsqu’il est activé), qui associe la pertinence textuelle aux signaux comportementaux ; voir [Fonctionnement du classement intelligent](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Poids de la recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** sur chaque attribut et autres facteurs de pertinence textuelle (par exemple, la fréquence d’apparition des termes dans le nom ou la longueur de la description). Dans *Paramètres*, configurez les attributs qui participent à la recherche par mot-clé et leurs **[poids de recherche par mot-clé](../settings.md)** relatifs.
+- **[Poids de la recherche](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results)** sur chaque attribut et autres facteurs de pertinence textuelle (par exemple, la fréquence d’apparition des termes dans le nom ou la longueur de la description). Dans *Paramètres*, configurez les attributs qui participent à la recherche par mot-clé et leurs **[poids de recherche par mot-clé](../settings.md)** relatifs.
 - **[Règles de marchandisage](../merchandising/rules/overview.md)** telles que l’épinglage, l’amplification et l’enfouissement
 
 Comme les signaux interagissent, une correspondance large se classe parfois au-dessus d&#39;une correspondance d&#39;expression plus stricte lorsque **le poids de la recherche** ou la fréquence des termes l&#39;emporte sur une correspondance d&#39;expression plus faible.

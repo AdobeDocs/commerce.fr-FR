@@ -197,6 +197,6 @@ Suivez ces recommandations lors de l’utilisation des calques de catalogue :
 ## Plus comme ceci
 
 * [Vues de catalogue](catalog-view.md) : configurez les vues de catalogue pour différents storefronts.
-* [Visuels de produit](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) : utilisez AEM Assets pour les images de produit.
+* [Visuels de produit](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/product-visuals) : utilisez AEM Assets pour les images de produit.
 * [Opportunités](../manage-results/opportunities.md)—Découvrez l’optimisation optimisée par l’IA à l’aide des calques de catalogue
 * [Clés d&#39;accès restreintes](restricted-access-keys.md)—Protégez une vue de catalogue avec l&#39;authentification par jeton signé

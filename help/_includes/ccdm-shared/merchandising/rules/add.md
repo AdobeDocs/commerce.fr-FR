@@ -208,7 +208,7 @@ Pour améliorer la recherche de produit à l’aide de règles, consultez [règl
 
 Pour plus d’informations sur la définition des poids de recherche :
 
-- Pour tous les déploiements d’Adobe Commerce, consultez [Résultats de la recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) dans le _Guide de gestion des catalogues_.
+- Pour tous les déploiements d’Adobe Commerce, consultez [Résultats de la recherche](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results) dans le _Guide de gestion des catalogues_.
 - Pour les déploiements Adobe Commerce Optimizer autonomes, consultez la section [API REST de métadonnées](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) dans le _Guide du développeur des services de marchandisage_.
 
 ### Classement manuel {#manual-ranking}
@@ -244,7 +244,7 @@ Les événements ou peuvent être définis manuellement :
 
 >[!AVAILABILITY]
 >
->Cette fonctionnalité est disponible dans la version [bêta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Cette fonctionnalité est disponible dans la version [bêta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **Le classement des attributs** applique automatiquement une action **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** à chaque produit qui correspond à une ou plusieurs conditions d’attribut, sans que vous ayez à sélectionner des SKU individuels. Le classement des attributs apparaît dans l’éditeur de règles aux côtés du [classement intelligent](#intelligent-ranking) et du [classement manuel](#manual-ranking), et est disponible pour les **règles de tous les produits**, **règles de recherche** et **règles de catégorie**. Utilisez-le pour adapter le merchandising à de grands catalogues, par exemple pour booster chaque produit d’une marque donnée ou pour enterrer chaque produit dans une couleur inhabituelle.
 
@@ -295,7 +295,7 @@ Une seule règle peut contenir jusqu’à 25 conditions d’attribut, la même l
 
 ## Modifier, afficher et supprimer des règles {#edit-view-and-delete-rules}
 
-Pour mettre à jour les propriétés des règles existantes, suivez ces instructions. Vous ne pouvez pas modifier la vue de catalogue (portée) d’une règle après sa création ; la portée est définie lorsque vous créez la règle. Voir [Sélectionner la vue du catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
+Pour mettre à jour les propriétés des règles existantes, suivez ces instructions. Vous ne pouvez pas modifier la vue de catalogue (portée) d’une règle après sa création ; la portée est définie lorsque vous créez la règle. Voir [Sélectionner la vue du catalogue](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
 
 ### Modifier la règle
 

@@ -96,7 +96,7 @@ Si [!UICONTROL Catalog Protection] est activé et que toutes les clés affectée
 
 >[!NOTE]
 >
->Pour les déploiements B2B d’Adobe Commerce à l’aide des services de marchandisage avec CCDM, vous gérez les clés d’accès à partir de la page **Clés d’accès restreint** de l’administrateur Commerce (**Système** > **Transfert de données**). Pour plus d&#39;informations, consultez la section [Gestion des clés d&#39;accès restreint](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) du Guide d&#39;intégration *[!DNL Adobe Commerce Optimizer Connector]*.
+>Pour les déploiements B2B d’Adobe Commerce à l’aide des services de marchandisage avec CCDM, vous gérez les clés d’accès à partir de la page **Clés d’accès restreint** de l’administrateur Commerce (**Système** > **Transfert de données**). Pour plus d&#39;informations, consultez la section [Gestion des clés d&#39;accès restreint](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) du Guide d&#39;intégration *[!DNL Adobe Commerce Optimizer Connector]*.
 
 ## Plus comme ceci
 
