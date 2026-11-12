@@ -326,7 +326,7 @@ Application :
 ![Corrigez](../assets/fix.svg) les améliorations apportées au niveau du système et de l&#39;infrastructure pour améliorer la sécurité, les performances et la stabilité.<!--DATA-5732-->
 
 <!-- v1.33 -->
-![L’infrastructure ](../assets/fix.svg) de correctif prend désormais en charge des catalogues extrêmement volumineux (jusqu’à 440 millions de SKU) sans affecter les charges de travail existantes.
+![L’infrastructure &#x200B;](../assets/fix.svg) de correctif prend désormais en charge des catalogues extrêmement volumineux (jusqu’à 440 millions de SKU) sans affecter les charges de travail existantes.
 
 ### Mars 2025
 
@@ -560,7 +560,7 @@ Le ![nouveau](../assets/new.svg) service de catalogue prend désormais en charge
 [!BADGE Pris en charge]{type=Informative tooltip="Pris en charge"} Adobe Commerce versions 2.4.x et ultérieures
 
 ![Nouveau](../assets/new.svg) métapaquet de service de catalogue publié pour simplifier les étapes d’installation.
-![Corrigez l&#39;évolutivité et les performances de l&#39;API ](../assets/fix.svg).
+![Corrigez l&#39;évolutivité et les performances de l&#39;API &#x200B;](../assets/fix.svg).
 
 ### Janvier 2023
 
@@ -571,8 +571,8 @@ Le ![nouveau](../assets/new.svg) service de catalogue prend désormais en charge
 
 ![Nouveau](../assets/new.svg) : expérience d’intégration simplifiée et améliorée.
 ![Nouveaux](../assets/new.svg) nouveaux points d’entrée de sandbox client disponibles pour les tests de pré-production.
-![Ajout de la prise en charge ](../assets/new.svg) pour les produits virtuels.
-![Corrigez l&#39;évolutivité et les performances de l&#39;API ](../assets/fix.svg).
+![Ajout de la prise en charge &#x200B;](../assets/new.svg) pour les produits virtuels.
+![Corrigez l&#39;évolutivité et les performances de l&#39;API &#x200B;](../assets/fix.svg).
 
 ### Novembre 2022
 

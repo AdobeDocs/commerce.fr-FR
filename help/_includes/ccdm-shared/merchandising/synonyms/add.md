@@ -15,7 +15,7 @@ Augmentez l’engagement des clients en ajoutant votre propre liste de synonymes
 
 ## Étape 2 : définir le synonyme par type
 
-Suivez les instructions relatives au type de synonyme [](type.md) que vous souhaitez créer.
+Suivez les instructions relatives au type de synonyme [&#128279;](type.md) que vous souhaitez créer.
 
 ### Synonyme bidirectionnel
 

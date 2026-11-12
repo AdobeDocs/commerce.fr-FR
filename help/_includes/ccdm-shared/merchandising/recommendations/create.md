@@ -25,7 +25,7 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
 1. Dans la section _Sélectionner le type de recommandation_, spécifiez le [type de recommandation](types.md) que vous souhaitez en fonction de votre stratégie.
 
-1. Dans la section _Étiquette d&#39;affichage du storefront_, saisissez l&#39;étiquette [3} visible par vos acheteurs, telle que « Meilleurs vendeurs ».](best-practice.md#recommendation-labels)
+1. Dans la section _Étiquette d&#39;affichage du storefront_, saisissez l&#39;étiquette [3&rbrace; visible par vos acheteurs, telle que « Meilleurs vendeurs ».](best-practice.md#recommendation-labels)
 
 1. Dans la section _Choisir le nombre de produits_, utilisez le curseur pour indiquer le nombre de produits à afficher dans l’unité de recommandation.
 

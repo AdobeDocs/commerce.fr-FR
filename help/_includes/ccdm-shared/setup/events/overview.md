@@ -62,7 +62,7 @@ Ce tableau décrit les événements utilisés par les [stratégies de classement
 
 #### Événements de tableau de bord requis
 
-Certains événements sont requis pour renseigner le tableau de bord des performances de recherche [](../../manage-results/search-performance.md)
+Certains événements sont requis pour renseigner le tableau de bord des performances de recherche [&#128279;](../../manage-results/search-performance.md)
 
 | Zone du tableau de bord | Événements | Joindre le champ |
 | ------------------- | ------------- | ---------- |
