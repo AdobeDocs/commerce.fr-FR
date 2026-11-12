@@ -1,6 +1,6 @@
 ---
 title: '[!DNL SaaS Data Export Guide]'
-description: Découvrez comment utiliser l [!DNL data export] extension pour les services SaaS Adobe Commerce qui synchronise les données entre Adobe Commerce et les services Commerce connectés.
+description: Découvrez comment utiliser l’extension [!DNL data export] pour les services Adobe Commerce SaaS qui synchronisent les données entre Adobe Commerce et les services Commerce connectés.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
@@ -29,27 +29,25 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
 workflow-type: tm+mt
-source-wordcount: 402
-ht-degree: 0%
-
+source-wordcount: '403'
+ht-degree: 5%
 ---
-
 # Guide [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] synchronise les données entre une instance Adobe Commerce et les services Commerce connectés. Lorsque vous ajoutez Live Search, Product Recommendations, Catalog Service ou l’[!DNL Adobe Commerce Optimizer Connector] à une installation Adobe Commerce, l’extension [!DNL Data Export] est installée automatiquement.
+[!DNL SaaS data export] synchronise les données entre une instance Adobe Commerce et les services Commerce connectés. Lorsque vous ajoutez Live Search, Product Recommendations, Catalog Service ou [!DNL Adobe Commerce Optimizer Connector] à une installation Adobe Commerce, l’extension [!DNL Data Export] est installée automatiquement.
 
 >[!NOTE]
 >
->Si vous installez le [!DNL Adobe Commerce Optimizer Connector], la même extension [!DNL Data Export] collecte les flux de catalogue et de prix de [!DNL Adobe Commerce]. Le connecteur mappe ensuite et envoie ces flux aux [!DNL Adobe Commerce Optimizer] à l’aide du modèle de données de catalogue composable (CCDM). Consultez les sections [[!DNL Adobe Commerce Optimizer Connector] présentation](../aco-connector/overview.md) pour la configuration et l’architecture, et [Pipeline de synchronisation du connecteur](../aco-connector/connector-sync-pipeline.md) pour connaître le comportement de synchronisation après l’exportation.
+>Si vous installez [!DNL Adobe Commerce Optimizer Connector], la même extension [!DNL Data Export] collecte les flux de catalogue et de prix de [!DNL Adobe Commerce]. Le connecteur mappe ensuite et envoie ces flux à [!DNL Adobe Commerce Optimizer] à l’aide du modèle de données de catalogue composable (CCDM). Consultez la [[!DNL Adobe Commerce Optimizer Connector] présentation](../aco-connector/overview.md) pour la configuration et l’architecture, et le [Pipeline de synchronisation du connecteur](../aco-connector/connector-sync-pipeline.md) pour le comportement de synchronisation après l’exportation.
 
-L’exportation de données SaaS collecte et exporte divers types de données, appelés _flux_, qui agrègent des types spécifiques d’informations. Selon les services Commerce installés, les flux d’exportation de données SaaS incluent :
+L&#39;exportation de données SaaS collecte et exporte divers types de données, appelés _flux_, qui regroupent des types spécifiques d&#39;informations. Selon les services Commerce installés, les flux d’exportation de données SaaS incluent :
 
-- **Flux d’entité de catalogue** agréger les données de produit. Les données incluent les produits, les attributs de produit, les prix de produit, les variations de produit, les catégories, les autorisations de catégorie et les autorisations de produit.
-- Le **flux Portées** regroupe des données pour les groupes de clients, les sites web, les boutiques et les vues de boutique.
-- Le **flux de commande client** regroupe les données de commande, y compris leurs entités associées telles que les factures, les expéditions, les avoirs, etc.
-- Le **flux Inventaire multi-Source** regroupe des données sur les éléments de statut du stock.
+- **Flux d’entités de catalogue** données agrégées de produits. Les données incluent les produits, les attributs de produit, les prix de produit, les variations de produit, les catégories, les autorisations de catégorie et les autorisations de produit.
+- Le flux **Étendues** agrège les données pour les groupes de clients, les sites Web, les magasins et les vues de magasin.
+- Le flux de **commandes client** agrège les données de commande, y compris leurs entités associées telles que les factures, les expéditions, les avoirs, etc.
+- Le **flux Multi-Source Inventory** agrège les données sur les éléments de statut du stock.
 
 L&#39;export de données SaaS est fourni sous la forme d&#39;une extension PHP qui prend en charge la synchronisation automatique et manuelle :
 
@@ -57,18 +55,18 @@ L&#39;export de données SaaS est fourni sous la forme d&#39;une extension PHP q
 
 - **Synchronisation manuelle** : exécutez une resynchronisation complète ou resynchronisez les flux sélectionnés à partir de l’interface de ligne de commande Commerce Admin ou de l’[interface de ligne de commande Commerce](data-export-cli-commands.md).
 
-- **Surveillance** : suivez l’intégrité, le statut et la diffusion des flux depuis la page [!UICONTROL Data Feed Sync Status] et le tableau de bord de gestion des données de l’administrateur Commerce. Voir [Gérer la synchronisation](data-sync-manage.md) pour connaître les étapes de vérification et de resynchronisation.
+- **Surveillance** : suivez l’intégrité, le statut et la diffusion des flux depuis la page [!UICONTROL Data Feed Sync Status] et le tableau de bord de la gestion des données dans l’administration Commerce. Voir [Gérer la synchronisation](data-sync-manage.md) pour les étapes de vérification et de resynchronisation.
 
-Pour le comportement de synchronisation, les modes et le diagramme de flux d’exportation, consultez [Fonctionnement de la synchronisation](sync-overview.md).
+Pour connaître le comportement de synchronisation, les modes et le diagramme de flux d&#39;exportation, consultez [Fonctionnement de la synchronisation](sync-overview.md).
 
 L’exportation des données SaaS fournit également des outils pour planifier et résoudre les problèmes liés au processus de synchronisation :
 
-- **Planification et performances**—Estimez le temps de synchronisation pour planifier le traitement et éviter les interruptions du site, et personnalisez le traitement des exportations pour améliorer les performances. Voir [&#x200B; Estimer le volume et la durée de transmission des données](estimate-data-volume-sync-time.md) et [&#x200B; Améliorer les performances d’exportation des données](customize-export-processing.md).
+- **Planification et performances** : estimez le temps de synchronisation pour planifier le traitement et éviter l&#39;interruption du site, et personnalisez le traitement des exportations pour améliorer les performances. Voir [Estimer le volume de données et la durée de transmission](estimate-data-volume-sync-time.md) et [Améliorer les performances d’exportation des données](customize-export-processing.md).
 
-- **Suivi et dépannage** : consultez l’état de synchronisation et les payloads de flux à l’aide des journaux d’exportation de données et saas. Voir [Vérification des journaux et dépannage](troubleshooting/logging.md).
+- **Suivi et dépannage** : consultez le statut de synchronisation et les payloads de flux à l’aide des journaux d’exportation de données et d’exportation saas. Voir [Vérification des journaux et résolution des problèmes](troubleshooting/logging.md).
 
 >[!MORELIKETHIS]
 >
 > - [Étendre et personnaliser les flux d’exportation de données SaaS](extensibility-and-customizations.md) — Ajouter ou modifier des données de flux.
-> - [Scénarios de dépannage &#x200B;](troubleshooting/troubleshooting-scenarios.md) — Diagnostiquez les erreurs de configuration et les résultats de synchronisation inattendus.
-> - [Notes de mise à jour](release-notes.md) — Mises à jour des extensions et problèmes connus.
+> - [Scénarios de dépannage](troubleshooting/troubleshooting-scenarios.md) — Diagnostiquer les erreurs de configuration et les résultats de synchronisation inattendus.
+> - [Notes de mise à jour](release-notes.md) — Mises à jour d’extensions et problèmes connus.
