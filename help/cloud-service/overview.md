@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 7b6ed19c7ca30a72bda94c8af60ba27324bcb2ea
+source-git-commit: 213fcf83118eb60b0e80db224192963592945d8d
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1416'
 ht-degree: 0%
 ---
 # Vue d’ensemble des [!DNL Adobe Commerce as a Cloud Service]
@@ -135,7 +135,7 @@ Pour créer des expériences riches en quelques minutes avec une création simpl
 Les services de marchandisage prennent en charge deux modèles de données de catalogue dans [!DNL Adobe Commerce as a Cloud Service] :
 
 - **Modèle de services de catalogue** : utilise [!DNL Catalog Service] avec [!DNL Live Search] et [!DNL Product Recommendations] pour fournir des données de catalogue, des recherches et des recommandations aux storefronts.
-- [**Modèle de données de catalogue composable (CCDM)**(merchandising-services.md)]—Utilise des vues de catalogue, des politiques, des sources de catalogue et des livres de prix pour définir les produits et les prix disponibles dans les vitrines. Le CCDM est également la base du catalogue pour [!DNL Adobe Commerce Optimizer].
+- [**Modèle de données de catalogue composable (CCDM)**](merchandising-services.md) : utilise des vues de catalogue, des politiques, des sources de catalogue et des registres de prix pour définir les produits et les prix disponibles pour les vitrines. Le CCDM est également la base du catalogue pour [!DNL Adobe Commerce Optimizer].
 
 [Les services de paiement](../payment-services/guide-overview.md) prennent en charge les modes de paiement et offrent une vue du traitement des paiements, des commandes et des factures. Pour obtenir des instructions de configuration, voir [Accueil des services de paiement](../payment-services/payments-home.md).
 
