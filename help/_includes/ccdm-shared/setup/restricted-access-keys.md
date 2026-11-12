@@ -10,7 +10,7 @@ Les clés d’accès restreint permettent aux applications clientes autorisées 
 
 Les clés d’accès restreint sont configurées de l’une des deux façons suivantes :
 
-- **Automatiquement, pour les catalogues partagés B2B** : le système met en service et affecte la clé initiale pour les vues de catalogue associées à un catalogue partagé B2B. Ensuite, vous gérez les clés et l’affectation des clés à partir de l’administrateur Commerce. Voir [Authentification des vues de catalogue](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) dans le *Guide d’administration de Commerce*. L’approvisionnement automatique est disponible dans les déploiements suivants :
+- **Automatiquement, pour les catalogues partagés B2B** : le système met en service et affecte la clé initiale pour les vues de catalogue associées à un catalogue partagé B2B. Ensuite, vous gérez les clés et l’affectation des clés à partir de l’administrateur Commerce. Voir [Authentification des vues de catalogue](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) dans le *Guide d’administration de Commerce*. L’approvisionnement automatique est disponible dans les déploiements suivants :
 
   - **Adobe Commerce as a Cloud Service avec CCDM** pour Adobe Commerce B2B.
   - **Adobe Commerce sur le cloud ou sur site** intégré à Adobe Commerce Optimizer via [!DNL Adobe Commerce Optimizer Connector for B2B]. L’extension B2B du connecteur est requise.
@@ -50,7 +50,7 @@ La façon dont vous ouvrez l’espace de travail des clés d’accès restreint 
 
 >[!NOTE]
 >
->Cette section et les deux qui suivent décrivent le processus manuel de gestion des clés d’accès restreint. Pour les catalogues partagés B2B avec approvisionnement automatique des clés, gérez les clés à partir de l’administrateur Commerce. Voir [Clés D&#39;Accès Restreint](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
+>Cette section et les deux qui suivent décrivent le processus manuel de gestion des clés d’accès restreint. Pour les catalogues partagés B2B avec approvisionnement automatique des clés, gérez les clés à partir de l’administrateur Commerce. Voir [Clés D&#39;Accès Restreint](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
 
 ### Ajout d’une clé d’accès restreint
 
@@ -60,7 +60,7 @@ Sélectionnez l’onglet correspondant à l’outil que vous utilisez pour gére
 
 >[!TAB Administrateur Adobe Commerce]
 
-Les clients qui utilisent Adobe Commerce as a Cloud Service avec CCDM, ou Adobe Commerce Optimizer connecté à Adobe Commerce par le biais du connecteur, peuvent générer des paires de clés RSA à partir de l’administrateur Commerce. Voir [Gérer les clés d&#39;accès restreint](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
+Les clients qui utilisent Adobe Commerce as a Cloud Service avec CCDM, ou Adobe Commerce Optimizer connecté à Adobe Commerce par le biais du connecteur, peuvent générer des paires de clés RSA à partir de l’administrateur Commerce. Voir [Gérer les clés d&#39;accès restreint](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
 
 >[!TAB Adobe Commerce Optimizer Studio - gestion manuelle des clés]
 
@@ -113,7 +113,7 @@ Une clé d’accès restreint authentifie l’accès uniquement après son affec
 
 Les clés d’accès restreint sont gérées de l’une des deux façons suivantes, selon la manière dont vous utilisez la protection du catalogue :
 
-- **Automatiquement, pour les catalogues partagés B2B** : pour les déploiements B2B d’Adobe Commerce utilisant les services de marchandisage avec CCDM, et pour les déploiements de Adobe Commerce Optimizer intégrés via [!DNL Adobe Commerce Optimizer Connector for B2B] (qui nécessite l’extension B2B), le service génère et attribue automatiquement la première clé d’accès restreint lors de la création d’une vue de catalogue. Chaque vue de catalogue obtient sa propre clé. Ensuite, vous pouvez gérer chaque clé à partir des pages Catalogue partagé ou Compte d’entreprise . Vous pouvez également afficher et gérer les clés de la page **Clés d’accès restreint** de l’administrateur Commerce (**Système** > **Transfert de données**). Voir [Gérer la configuration de la vue du catalogue](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage).
+- **Automatiquement, pour les catalogues partagés B2B** : pour les déploiements B2B d’Adobe Commerce utilisant les services de marchandisage avec CCDM, et pour les déploiements de Adobe Commerce Optimizer intégrés via [!DNL Adobe Commerce Optimizer Connector for B2B] (qui nécessite l’extension B2B), le service génère et attribue automatiquement la première clé d’accès restreint lors de la création d’une vue de catalogue. Chaque vue de catalogue obtient sa propre clé. Ensuite, vous pouvez gérer chaque clé à partir des pages Catalogue partagé ou Compte d’entreprise . Vous pouvez également afficher et gérer les clés de la page **Clés d’accès restreint** de l’administrateur Commerce (**Système** > **Transfert de données**). Voir [Gérer la configuration de la vue du catalogue](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage).
 
   Chaque combinaison d’un catalogue partagé et d’une vue de magasin est projetée en tant que vue de catalogue distincte. Une projection correspond à la vue de catalogue, à la politique, à la référence du catalogue et aux données de configuration des clés d’accès restreint qui sont exportées vers la couche de données des services de marchandisage pour cette combinaison. Ainsi, un catalogue partagé affecté à plusieurs vues de magasin produit plusieurs vues de catalogue, chacune avec sa propre clé. Modifier ou faire pivoter une clé pour une vue de catalogue sans affecter les autres.
 
@@ -134,7 +134,7 @@ Sélectionnez l’onglet correspondant à l’outil que vous utilisez pour gére
 
 >[!TAB Administrateur Adobe Commerce]
 
-Voir [Sélection et rotation des clés](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation). Cela s’applique à Adobe Commerce as a Cloud Service avec CCDM et aux projets Adobe Commerce intégrés à Adobe Commerce Optimizer par le biais du connecteur Adobe Commerce Optimizer.
+Voir [Sélection et rotation des clés](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation). Cela s’applique à Adobe Commerce as a Cloud Service avec CCDM et aux projets Adobe Commerce intégrés à Adobe Commerce Optimizer par le biais du connecteur Adobe Commerce Optimizer.
 
 >[!TAB Adobe Commerce Optimizer Studio (gestion manuelle des clés)]
 
@@ -149,7 +149,7 @@ Cette procédure est requise pour Adobe Commerce Optimizer avec un serveur princ
 
 ## Limites
 
-Voir [Vues de catalogue et limites de politique](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
+Voir [Vues de catalogue et limites de politique](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits).
 
 ## Plus comme ceci
 
