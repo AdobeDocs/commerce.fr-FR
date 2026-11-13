@@ -3,7 +3,7 @@ title: Vues de catalogue privé
 description: Découvrez comment les vues de catalogue privé limitent l’accès aux données du catalogue, qu’elles soient créées automatiquement pour les catalogues partagés B2B ou configurées manuellement avec la protection des catalogues.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique à [!DNL Adobe Commerce Optimizer] projets (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique à [!DNL Adobe Commerce Optimizer] projets (infrastructure SaaS gérée par Adobe)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -28,7 +28,8 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 611ee289959cb0c927cac0e4830d8dccf2ad149e
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 0%
