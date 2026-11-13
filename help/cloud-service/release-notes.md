@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 2123503aaa8088baab9b9a5e3ce9c3036518061e
+source-git-commit: c77ccb87ac61a4dae8adc3079bb8aac7a4a9bf58
 workflow-type: tm+mt
-source-wordcount: '10011'
+source-wordcount: '10458'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -82,7 +82,74 @@ Chaque expérience d’administration possède sa propre URL. Les liens d’inst
 
 En savoir plus sur [Commerce Admin dans l’expérience unifiée Adobe](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/admin-unified-experience).
 
-## Novembre 2026 - #1 de mise à jour {#latest}
+## Novembre 2026 - #2 de mise à jour {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Les éléments suivants ont été publiés dans les environnements Sandbox le 18 novembre 2026.
+
+>[!BEGINSHADEBOX]
+
+### Examens de produits
+
+[Des avis de produits](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/merchandising/product-reviews/product-reviews) sont désormais disponibles pour [!DNL Adobe Commerce as a Cloud Service]. <!-- ACCS-2277, ACCS-432 -->
+
+Les révisions de produits sont désactivées par défaut. Pour activer les révisions, accédez à [!UICONTROL Stores] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Catalog] > [!UICONTROL Product Reviews], décochez la case [!UICONTROL Use System Value] et définissez [!UICONTROL Enabled] sur **Oui**.
+
+Utilisez la requête GraphQL [`reviews`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/reviews) pour récupérer les révisions et la mutation [`createProductReview`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/mutations/create-review) pour créer des révisions.
+
+### Attributs personnalisés
+
+Cette version introduit plusieurs nouvelles fonctionnalités REST et GraphQL pour gérer les attributs personnalisés :
+
+* **Avoirs**
+  * Le point d’entrée REST `GET /V1/creditmemos` peut désormais filtrer les avoirs par valeurs d’attribut personnalisées. Utilisez le nom du champ `custom_attributes.<code>` dans les critères de recherche, par exemple `searchCriteria[filter_groups][0][filters][0][field]=custom_attributes.is_appeasement`. <!-- ACCS-2158, ACCS-1915, ACCS-2159, ACCS-2221 -->
+
+  >[!IMPORTANT]
+  >
+  >Cette fonctionnalité est désactivée par défaut. Pour l’activer, contactez votre responsable du succès client Adobe Commerce ou créez un ticket d’assistance.
+
+* **Commandes**
+  * Le nouveau point d’entrée REST `POST /V1/orders/:orderId/customAttributes` ajoute ou met à jour des attributs personnalisés sur une commande existante. <!-- ACCS-2137 -->
+* **Renvoie**
+  * Les autorisations de retour de marchandises (RMA) prennent désormais en charge les attributs personnalisés sur le retour lui-même, en plus des articles renvoyés. <!-- CEXT-6925 -->
+    * Les points d’entrée REST `/V1/returns` enregistrent et renvoient `custom_attributes` lors du retour.
+    * Le type GraphQL `Return` comprend un champ `custom_attributes`.
+  * Lorsqu’un retour comporte un attribut personnalisé `return_address`, Commerce utilise cette adresse au lieu de l’adresse de retour configurée. Vous pouvez définir cet attribut via les points d’entrée REST `/V1/returns` ou le webhook `observer.rma_save_before`. <!-- ACCS-2184 -->
+
+### Améliorations et correctifs
+
+Les améliorations, optimisations et correctifs suivants sont inclus dans cette version :
+
+* Correction d’un problème en raison duquel l’enregistrement des paramètres d’intégration [!DNL AEM Assets] via le point d’entrée REST `PUT /V1/system/config` ne synchronisait pas les images du produit. <!-- ACCS-2282 -->
+
+* Correction d’un problème en raison duquel le sélecteur de SKU de cadeau dans une règle de prix de panier Cadeau gratuit ne s’ouvrait pas lorsque plusieurs sources d’inventaire étaient activées. <!-- ACCS-2208 -->
+
+* Correction d’un problème en raison duquel les acheteurs B2B ne pouvaient pas renvoyer les articles expédiés sur le storefront lorsque les produits étaient supprimés du catalogue partagé de leur entreprise. <!-- ACCS-2283, AC-19727 -->
+
+* Correction d’un problème en raison duquel les clients recevaient un e-mail « Vous avez été lié à une entreprise » supplémentaire. <!-- ACCS-2292, ACCS-856 -->
+
+* Les devis négociables et les modèles de devis incluent désormais un champ GraphQL `created_by` qui inclut le nom du vendeur et le nom de l&#39;acheteur. <!-- USF-4511 -->
+
+* Correction d’un problème en raison duquel le point d’entrée REST `POST /V1/customers` renvoyait une erreur 400. <!-- CCSAAS-5786 -->
+
+* L’enregistrement d’un client ne réenregistre plus les adresses inchangées. <!-- CCSAAS-5599 -->
+
+* Correction d’un problème en raison duquel des commandes simultanées du même produit avec [!UICONTROL Manage Stock] désactivé pouvaient échouer. <!-- CCSAAS-5778, ACP2E-5457 -->
+
+* Correction d’un problème en raison duquel le point d’entrée REST `POST /V1/invoice/:invoiceId/refund` renvoyait une erreur lorsque vous remboursiez la quantité totale facturée restante. <!-- CCSAAS-5794, AC-16056 -->
+
+* Amélioration des performances du point d’entrée REST `GET /V1/products`. <!-- CCSAAS-4664 -->
+
+* Les importations de CSV de produit prennent désormais en charge les URL d’image qui ne se terminent pas par une extension de nom de fichier. <!-- CCSAAS-5605 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Novembre 2026 - #1 de mise à jour
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
