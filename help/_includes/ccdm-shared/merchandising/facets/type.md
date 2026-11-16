@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/facets/type.md
+https://github.com/Adobe-Enterprise-Docs/commerce.fr-FR/blob/main/help/_includes/ccdm-shared/merchandising/facets/type.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -19,12 +19,12 @@ This includes related images in help/assets/ccdm-shared/.
 Les facettes sont de différents types et apparaissent dans la liste *Filtres* uniquement lorsque cela est pertinent. La liste des facettes disponibles change en fonction des produits renvoyés. Les caractéristiques suivantes affectent leur présentation et leur comportement :
 
 - Facettes épinglées : les facettes les plus couramment utilisées peuvent être épinglées en haut de la liste. Les facettes restantes sont répertoriées dans l’ordre *Type de tri* après les facettes épinglées.
-- Facettes dynamiques : attributs de produit que [Adobe AI](https://business.adobe.com/ai.html) trouve les plus pertinents pour un ensemble de produits et une requête. Le calcul prend en compte les métadonnées d’attribut de l’ensemble du catalogue et détermine au moment de la requête les facettes les plus pertinentes pour la requête.
-- Facettes de prix : renvoie les produits par gamme de prix. Vous pouvez spécifier le nombre de sélections et l’intervalle entre les périodes de prix dans l’espace de travail [*Paramètres*](https://experienceleague.adobe.com/en/docs/commerce/optimizer/settings).
+- Facettes dynamiques : attributs de produit que [Adobe AI](https://business.adobe.com/fr/ai.html) trouve les plus pertinents pour un ensemble de produits et une requête. Le calcul prend en compte les métadonnées d’attribut de l’ensemble du catalogue et détermine au moment de la requête les facettes les plus pertinentes pour la requête.
+- Facettes de prix : renvoie les produits par gamme de prix. Vous pouvez spécifier le nombre de sélections et l’intervalle entre les périodes de prix dans l’espace de travail [*Paramètres*](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/settings).
 
 ## Libellés de facettes
 
-Vous pouvez modifier les libellés de facettes dans l&#39;espace de travail de facettes [3](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/facets/workspace).
+Vous pouvez modifier les libellés de facettes dans l&#39;espace de travail de facettes [3](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/facets/workspace).
 
 ## Type de tri
 

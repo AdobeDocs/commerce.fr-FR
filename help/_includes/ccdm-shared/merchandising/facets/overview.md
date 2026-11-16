@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/facets/overview.md
+https://github.com/Adobe-Enterprise-Docs/commerce.fr-FR/blob/main/help/_includes/ccdm-shared/merchandising/facets/overview.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -43,7 +43,7 @@ Le système active par défaut les attributs de produit suivants.
 
 En savoir plus sur les attributs de produit et leurs propriétés :
 
-- Pour les déploiements connectés à un serveur principal Adobe Commerce, consultez la [présentation des attributs de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)
+- Pour les déploiements connectés à un serveur principal Adobe Commerce, consultez la [présentation des attributs de produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/product-attributes)
 - Pour les déploiements utilisant un serveur principal Commerce tiers, consultez [API de métadonnées d&#39;ingestion de données](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata).
 
 ## Recherche en couches et développement de types de recherche

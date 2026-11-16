@@ -6,7 +6,7 @@ ht-degree: 10%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/events/overview.md
+https://github.com/Adobe-Enterprise-Docs/commerce.fr-FR/blob/main/help/_includes/ccdm-shared/setup/events/overview.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -22,7 +22,7 @@ Les services de marchandisage avec le modèle de données de catalogue composabl
 
 >[!NOTE]
 >
->La collecte de données n’inclut pas les informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les ID de cookie et les adresses IP, sont strictement anonymisés. [En savoir plus](https://www.adobe.com/privacy/experience-cloud.html).
+>La collecte de données n’inclut pas les informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les ID de cookie et les adresses IP, sont strictement anonymisés. [En savoir plus](https://www.adobe.com/fr/privacy/experience-cloud.html).
 
 La page **Événements** vous permet d’observer les données d’événement storefront collectées. Disposer d’une vue dans la collecte de données d’événement permet aux commerçants de vérifier qu’ils ont correctement implémenté les événements du storefront et que ceux-ci sont capturés avec succès. Les commerçants peuvent utiliser cette page pour identifier les problèmes potentiels et prendre des mesures pour résoudre les problèmes d’événement.
 
@@ -184,4 +184,4 @@ Ce tableau décrit les événements utilisés par chaque type de recommandation.
 
 ## Support technique
 
-Si vous constatez des incohérences dans les données ou si les recommandations et les résultats de recherche ne fonctionnent pas comme prévu, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Si vous constatez des incohérences dans les données ou si les recommandations et les résultats de recherche ne fonctionnent pas comme prévu, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
