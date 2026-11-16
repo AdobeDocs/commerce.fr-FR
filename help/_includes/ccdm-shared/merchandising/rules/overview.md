@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.fr-FR/blob/main/help/_includes/ccdm-shared/merchandising/rules/overview.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Règles de marchandisage
 
 Les règles de marchandisage associent une logique à des actions pour déterminer comment les produits apparaissent dans les **résultats de recherche**, dans les **listes de produits par défaut** via la **règle de recherche par défaut** et sur les **pages de catégorie**. Vous pouvez booster, enterrer, épingler ou masquer des produits et appliquer un **classement intelligent** afin que les annonces reflètent les objectifs de votre entreprise.
