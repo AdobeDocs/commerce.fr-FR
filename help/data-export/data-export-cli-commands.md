@@ -42,7 +42,7 @@ La commande de l’interface de ligne de commande `saas:resync` permet de gérer
 Adobe déconseille d&#39;utiliser régulièrement la commande `saas:resync`. Les scénarios classiques d’utilisation de la commande sont les suivants :
 
 - Synchronisation initiale
-- Synchronisez les données avec un nouvel espace de données après avoir modifié l&#39;[identifiant d&#39;espace de données SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
+- Synchronisez les données avec un nouvel espace de données après avoir modifié l&#39;[identifiant d&#39;espace de données SaaS](https://experienceleague.adobe.com/fr/docs/commerce-admin/config/services/saas)
 - Dépannage
 
 Surveillez les opérations de synchronisation dans le fichier `var/log/saas-export.log`.
