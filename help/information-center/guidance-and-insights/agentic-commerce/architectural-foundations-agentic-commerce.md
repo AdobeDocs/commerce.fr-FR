@@ -49,23 +49,21 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f54c816fd23786ec519d5c890bc2664c3dcf8c6f
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1323'
 ht-degree: 0%
 ---
 
 # Concevoir une plateforme commerciale pour les acheteurs et les agents d’IA
 
+![Illustration héroïque d&#39;une plateforme de commerce agentique où les humains et les agents de l&#39;IA interagissent avec une source unique de vérité](../../assets/guidance-and-insights/agentic-commerce-hero.png "Les bases architecturales d&#39;une plateforme de commerce agentique"){width="800"}
+
 <table style="table-layout:auto">
 <tr style="border: 0;">
-   <td valign="middle" style="vertical-align: middle;"><img alt="Portrait de Surya Lamech" src="../../assets/guidance-and-insights/agentic-commerce-author-avatar-slamech.png" width="96"><br><strong>Surya Lamech</strong><br><em>Responsable principale du marketing produit</em></td>
+   <td valign="middle" style="vertical-align: middle;"><img alt="Portrait de Surya Lamech" src="../../assets/guidance-and-insights/agentic-commerce-author-avatar-slamech.png" width="96"><br><strong>Surya Lamech</strong><br><em>Responsable Principal Du Marketing Des Produits</em></td>
 </tr>
 </table>
-
-![Illustration héroïque d&#39;une plateforme de commerce agentique où les humains et les agents de l&#39;IA interagissent avec une seule source de vérité](../../assets/guidance-and-insights/agentic-commerce-hero.png "Les bases architecturales d&#39;une plateforme de commerce agentique")
-
-*Concevoir une plateforme commerciale où les humains et les agents de l&#39;IA interagissent avec une seule source de vérité.*
 
 Commerce est en pleine mutation structurelle. Les clients ne comptent plus uniquement sur les moteurs de recherche ou la navigation sur les vitrines pour explorer leurs options. Au lieu de cela, ils se tournent vers des interfaces optimisées par LLM, des assistants basés sur le chat et des outils d&#39;achat agentiques pour poser des questions, comparer les produits entre les détaillants et accélérer les prises de décision à un stade précoce.
 
@@ -75,13 +73,13 @@ Pourtant, quand vient le temps de finaliser un achat, les clients préfèrent to
 
 Il est important de noter que l&#39;IA ne disparaît pas à ce stade. Lorsque les clients accèdent à la vitrine d&#39;une marque, l&#39;IA dédiée aux agences peut améliorer l&#39;expérience en guidant la sélection de produits, en personnalisant les recommandations en temps réel, en répondant aux objections, en regroupant les éléments complémentaires et en rationalisant le passage en caisse. Dans ces environnements approuvés, l’IA devient un accélérateur de conversion, améliorant les taux d’achèvement et la valeur moyenne des commandes.
 
-Pour être compétitives dans ce nouveau paysage, les entreprises ont besoin d’une base commerciale **structurée, gouvernée et optimisée pour la consommation humaine et celle des agents**. Adobe Commerce est conçu pour cette évolution. Les principes présentés ci-dessous expliquent ce qu’il faut faire pour être réellement prêt à intervenir sur les agents.
+Pour être compétitives dans ce nouveau paysage, les entreprises ont besoin d&#39;une base commerciale **structurée, gouvernée et optimisée pour la consommation humaine et d&#39;agents**. Adobe Commerce est conçu pour cette évolution. Les principes présentés ci-dessous expliquent ce qu’il faut faire pour être réellement prêt à intervenir sur les agents.
 
 ## Architecture de commerce conçue pour deux audiences
 
-![Diagramme montrant les vitrines et les applications pour les humains à gauche et les assistants de chat et les agents autonomes à droite, tous deux tirés d’un noyau Commerce central de produits, de prix, d’inventaire, de promotions, de panier et de passage en caisse qui est exposé via les API et les MCP](../../assets/guidance-and-insights/agentic-commerce-foundational-model.png){width="800" zoomable="yes"}
+![Diagramme montrant les vitrines et les applications pour les humains à gauche et les assistants de chat et les agents autonomes à droite, tous deux tirés d&#39;un noyau Commerce central de produits, de prix, d&#39;inventaire, de promotions, de panier et de passage en caisse qui est exposé via les API et MCP](../../assets/guidance-and-insights/agentic-commerce-foundational-model.png){width="800" zoomable="yes"}
 
-*Ce que voient les clients et ce que consomment les agents reste cohérent, précis et intégré à la marque.*
+*Ce que les clients voient et ce que les agents consomment restent cohérents, précis et sur la marque.*
 
 La pile commerciale moderne doit maintenant desservir deux audiences tout aussi importantes : les personnes et les agents d&#39;IA. Les expériences en contact direct avec les utilisateurs comme les storefronts et les applications restent essentielles pour l’engagement, l’expression de la marque et la fidélisation de la clientèle. Mais à côté d&#39;eux se trouve une surface en expansion rapide face à l&#39;agent : des points d&#39;entrée lisibles par machine qui fournissent aux LLM et aux agents autonomes des faits structurés, du contenu régi et des capacités transactionnelles.
 
@@ -91,7 +89,7 @@ Cette architecture à double surface est la base du commerce agentique.
 
 ## Un catalogue conçu pour le raisonnement automatique
 
-![Diagramme présentant des entités de produit structurées (SKU, attributs, variantes, offres groupées, prix et disponibilité) formées par des couches et des politiques de catalogue, puis diffusées par le biais de vues de catalogue à un storefront de marque, un marketplace, un flux de partenaire, une application mobile et une surface d’IA ou d’agent](../../assets/guidance-and-insights/agentic-commerce-agent-interaction.png){width="800" zoomable="yes"}
+![Diagramme présentant les entités de produit structurées (SKU, attributs, variantes, offres groupées, prix et disponibilité) formées par des couches et des politiques de catalogue, puis diffusées par le biais de vues de catalogue à un storefront de marque, un marketplace, un flux de partenaire, une application mobile et une surface d&#39;IA ou d&#39;agent](../../assets/guidance-and-insights/agentic-commerce-agent-interaction.png){width="800" zoomable="yes"}
 
 *Une seule source de vérité régie, mise en forme par canal sans jamais dupliquer les données de produit.*
 
@@ -101,9 +99,9 @@ Les vues catalogue définissent où et comment les données de produit sont expo
 
 ## Les MCP comme langage commun pour les agents
 
-![Diagramme présentant les assistants d’achat, les agents d’assistance et les outils de développement qui envoient des requêtes par le biais du protocole de contexte de modèle, qui inclut le MCP Commerce et le MCP Développeur, aux fonctionnalités d’Adobe Commerce telles que la création de panier, la commande, les paiements, l’inventaire, les promotions et les retours](../../assets/guidance-and-insights/agentic-commerce-reference-stack.png){width="800" zoomable="yes"}
+![Diagramme montrant les assistants d’achat, les agents d’assistance et les outils de développement qui envoient des demandes par le biais du protocole de contexte de modèle, qui inclut le MCP Commerce et le MCP développeur, aux fonctionnalités d’Adobe Commerce telles que la création de panier, la commande en caisse, les paiements, l’inventaire, les promotions et les retours](../../assets/guidance-and-insights/agentic-commerce-reference-stack.png){width="800" zoomable="yes"}
 
-*MCP normalise la manière dont les agents demandent des actions dans l’intention naturelle, et Adobe Commerce les effectue en tant qu’actions gouvernées et déterministes.*
+*MCP normalise la manière dont les agents demandent des actions dans l’intention naturelle, et Adobe Commerce les exécute comme des actions gouvernées et déterministes.*
 
 Pour qu’Agentic Commerce fonctionne de bout en bout, les plateformes d’e-commerce doivent prendre en charge des protocoles normalisés qui permettent aux agents d’exécuter des actions en toute sécurité, telles que la création de panier, le lancement du passage en caisse, l’orchestration des paiements, la validation des stocks, les promotions et les retours.
 
@@ -136,4 +134,4 @@ Le commerce électronique ne se limite plus aux vitrines et aux résultats de re
 * [Politiques](/help/optimizer/setup/policies.md)
 * [Outils de développement du codage de l’IA pour Adobe Commerce App Builder](/help/cloud-service/migration/coding-tools.md)
 * [API COMMERCE](../../apis/commerce-apis.md)
-* [Liste de lecture de l&#39;agent de développement Commerce &#x200B;](https://experienceleague.adobe.com/fr/playlists/commerce-developer-agent)—Regardez des vidéos techniques sur la configuration et l&#39;utilisation de l&#39;agent de développement Commerce.
+* [Liste de lecture de l’agent de développement Commerce](https://experienceleague.adobe.com/en/playlists/commerce-developer-agent) : regardez des vidéos techniques sur la configuration et l’utilisation de l’agent de développement Commerce.

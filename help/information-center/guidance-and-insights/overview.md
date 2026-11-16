@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '265'
 ht-degree: 0%
 ---
 
@@ -57,7 +57,8 @@ Développeurs, architectes, responsables techniques, stratèges du commerce et �
 
 ## Commencer l’exploration
 
-- [Concevoir une plateforme commerciale pour les acheteurs et les agents d’IA](agentic-commerce/architectural-foundations-agentic-commerce.md)—Découvrez comment servir les personnes et les agents d’IA à partir d’une seule source de vérité. L’article couvre un catalogue créé pour le raisonnement machine, le protocole MCP (Model Context Protocol) et les protocoles de commerce agentique ouverts, ainsi que la télémétrie qui montre comment les agents représentent votre marque.
+- [Concevoir une plateforme commerciale pour les acheteurs et les agents d&#39;IA](agentic-commerce/architectural-foundations-agentic-commerce.md)—Découvrez comment servir les personnes et les agents d&#39;IA à partir d&#39;une seule source de vérité. L’article couvre un catalogue créé pour le raisonnement machine, le protocole MCP (Model Context Protocol) et les protocoles de commerce agentique ouverts, ainsi que la télémétrie qui montre comment les agents représentent votre marque.
+- [Le commerce agentique en 2027 : cinq priorités pour les chefs de file du commerce](agentic-commerce/five-priorities-commerce-leaders-2027.md)—Préparer les achats assistés par l&#39;IA avec des priorités pour les données sur les produits, la découvrabilité, l&#39;infrastructure, la mesure et l&#39;expérimentation.
 - [Améliorez la découverte de produits avec Adobe Commerce Live Search](catalog-management/improve-product-discovery-live-search.md)—Découvrez comment utiliser les informations sur les performances de recherche et la recherche sémantique pour aider les acheteurs à trouver des produits pertinents.
 
 Des articles sont ajoutés à cette section au fur et à mesure de leur publication. Revenez pour découvrir les points de vue d’experts, les stratégies d’implémentation et les recommandations que vous pouvez mettre en œuvre immédiatement.
