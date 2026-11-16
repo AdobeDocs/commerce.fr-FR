@@ -1,12 +1,14 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '385'
 ht-degree: 0%
 ---
+# Bonnes pratiques relatives aux synonymes
+
 Vous trouverez ci-dessous une liste des bonnes pratiques à suivre lors de la création de synonymes.
 
-- Le système gère les fautes d&#39;orthographe par défaut. Pour inclure des mots que les acheteurs peuvent utiliser, configurez des synonymes. Ces mots diffèrent de ceux spécifiés dans votre catalogue. Vous ne voulez pas perdre une vente parce que quelqu&#39;un cherche un « canapé » alors que votre produit est listé comme un « canapé ». Capturez un large éventail de termes de recherche en saisissant tous les mots que les clients peuvent utiliser pour trouver vos produits. Pour améliorer les résultats, [définissez des synonymes unidirectionnels ou bidirectionnels](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).
+- Le système gère les fautes d&#39;orthographe par défaut. Pour inclure des mots que les acheteurs peuvent utiliser, configurez des synonymes. Ces mots diffèrent de ceux spécifiés dans votre catalogue. Vous ne voulez pas perdre une vente parce que quelqu&#39;un cherche un « canapé » alors que votre produit est listé comme un « canapé ». Capturez un large éventail de termes de recherche en saisissant tous les mots que les clients peuvent utiliser pour trouver vos produits. Pour améliorer les résultats, [définissez des synonymes unidirectionnels ou bidirectionnels](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).
 
 - Mappez les noms de marque et les abréviations à leurs noms complets, par exemple « HP » vers « Hewlett-Packard » et les surnoms de produit courants, par exemple « iPhone » vers « Apple iPhone ».
 

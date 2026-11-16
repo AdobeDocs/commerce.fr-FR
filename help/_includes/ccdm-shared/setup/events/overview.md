@@ -1,16 +1,18 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# Événements
+
 Les événements sont un outil essentiel pour améliorer l’expérience d’achat et stimuler les conversions en exploitant les informations sur les données en temps réel.
 
 Les services de marchandisage avec le modèle de données de catalogue composable (CCDM) déploient automatiquement les événements de storefront sur votre site. Ces événements capturent des données à partir des interactions des acheteurs sur votre site. Ces données anonymisées alimentent [recommandations](../../manage-results/recommendation-performance.md), [la découverte de produits](../../manage-results/search-performance.md) et [les mesures de succès](../../manage-results/success-metrics.md).
 
 >[!NOTE]
 >
->La collecte de données n’inclut pas les informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les ID de cookie et les adresses IP, sont strictement anonymisés. [En savoir plus](https://www.adobe.com/fr/privacy/experience-cloud.html).
+>La collecte de données n’inclut pas les informations d’identification personnelle (PII). Tous les identifiants d’utilisateur, tels que les ID de cookie et les adresses IP, sont strictement anonymisés. [En savoir plus](https://www.adobe.com/privacy/experience-cloud.html).
 
 La page **Événements** vous permet d’observer les données d’événement storefront collectées. Disposer d’une vue dans la collecte de données d’événement permet aux commerçants de vérifier qu’ils ont correctement implémenté les événements du storefront et que ceux-ci sont capturés avec succès. Les commerçants peuvent utiliser cette page pour identifier les problèmes potentiels et prendre des mesures pour résoudre les problèmes d’événement.
 
@@ -62,7 +64,7 @@ Ce tableau décrit les événements utilisés par les [stratégies de classement
 
 #### Événements de tableau de bord requis
 
-Certains événements sont requis pour renseigner le tableau de bord des performances de recherche [&#128279;](../../manage-results/search-performance.md)
+Certains événements sont requis pour renseigner le tableau de bord des performances de recherche [](../../manage-results/search-performance.md)
 
 | Zone du tableau de bord | Événements | Joindre le champ |
 | ------------------- | ------------- | ---------- |
@@ -172,4 +174,4 @@ Ce tableau décrit les événements utilisés par chaque type de recommandation.
 
 ## Support technique
 
-Si vous constatez des incohérences dans les données ou si les recommandations et les résultats de recherche ne fonctionnent pas comme prévu, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Si vous constatez des incohérences dans les données ou si les recommandations et les résultats de recherche ne fonctionnent pas comme prévu, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

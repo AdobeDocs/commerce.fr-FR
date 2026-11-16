@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '921'
 ht-degree: 0%
 ---
+# Facettes
+
 Facettes est une méthode de filtrage haute performance qui utilise plusieurs dimensions de valeurs d’attribut comme critères de recherche.
 
 ![Résultats de recherche filtrés](/help/assets/ccdm-shared/facets/storefront-search-results-run.png)
@@ -31,7 +33,7 @@ Le système active par défaut les attributs de produit suivants.
 
 En savoir plus sur les attributs de produit et leurs propriétés :
 
-- Pour les déploiements connectés à un serveur principal Adobe Commerce, consultez la [présentation des attributs de produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/product-attributes)
+- Pour les déploiements connectés à un serveur principal Adobe Commerce, consultez la [présentation des attributs de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)
 - Pour les déploiements utilisant un serveur principal Commerce tiers, consultez [API de métadonnées d&#39;ingestion de données](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata).
 
 ## Recherche en couches et développement de types de recherche

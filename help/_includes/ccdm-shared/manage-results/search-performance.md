@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1925'
 ht-degree: 0%
 ---
+# Performances de recherche
+
 La page *Performances de la recherche* fournit insight dans les termes de recherche utilisés par les acheteurs. Ces informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. La page Performances de la recherche fournit un instantané des mesures de recherche pour une période spécifique et inclut les rapports suivants :
 
 - Recherches uniques
@@ -66,7 +68,7 @@ Plusieurs facteurs clés déterminent la pertinence et l’efficacité des résu
 
 Pour optimiser les résultats de recherche, surveillez les indicateurs clés de performance (KPI) pertinents, tels que les requêtes uniques, la position moyenne des clics, les taux de clics publicitaires, le taux de conversion et le taux de résultats nul pour comprendre les interactions de recherche d’acheteurs. Ces données vous aident à mettre à jour et à affiner régulièrement vos règles de recherche.
 
-- **Recherches uniques** - Nombre de requêtes de recherche distinctes effectuées sur votre site. Le système comptabilise chaque recherche unique une seule fois, même si le même acheteur ou différents acheteurs la répètent plusieurs fois. Cette mesure vous aide à comprendre la diversité des termes de recherche utilisés par les clients et fournit des informations sur les produits ou les informations recherchés par les acheteurs. Le suivi des recherches uniques vous permet :
+- **Recherches uniques** - Nombre de recherches uniques effectuées sur votre site au cours de la période sélectionnée. Les recherches multiples effectuées par le même acheteur pour la même requête sont considérées comme uniques si elles sont envoyées à plus d’une heure d’intervalle. Utilisez cette mesure avec le rapport Recherches uniques pour comprendre l’activité de recherche et identifier les produits ou les informations recherchés par les acheteurs. Le suivi des recherches uniques vous permet :
 
   - Identifiez les tendances de recherche populaires et les éléments fréquemment recherchés.
   - Détection des lacunes potentielles dans votre catalogue de produits ou votre contenu
@@ -84,7 +86,7 @@ Pour optimiser les résultats de recherche, surveillez les indicateurs clés de 
 
   Pour réduire le taux de résultats nul, vous pouvez :
 
-  - Confirmez que la recherche sémantique [&#128279;](../setup/semantic-search.md)1&rbrace; est activée dans l’onglet **[Recherche avancée](../settings.md#advanced-search)** des Paramètres. &#x200B;La recherche sémantique est activée par défaut. Aucune modification du storefront ou du développeur n’est requise. Les résultats sont mis à jour une fois l’indexation terminée.
+  - Confirmez que la recherche sémantique [1} est activée dans l’onglet **[Recherche avancée](../settings.md#advanced-search)** des Paramètres. ](../setup/semantic-search.md)La recherche sémantique est activée par défaut. Aucune modification du storefront ou du développeur n’est requise. Les résultats sont mis à jour une fois l’indexation terminée.
   - Proposez d’autres termes de recherche ou des termes connexes, tels que [synonymes](../merchandising/synonyms/overview.md) lorsqu’aucune correspondance exacte n’est trouvée.
   - Passez régulièrement en revue les requêtes sans résultat pour identifier les modèles et apporter les ajustements nécessaires à votre catalogue de produits et à vos paramètres de recherche.
 
@@ -115,7 +117,7 @@ Assurez-vous que les produits enfants des produits configurables possèdent des 
 
 ### Utilisation des métadonnées de produit
 
-Assurez-vous que des attributs de produit [&#x200B; précis et détaillés sont configurés comme pouvant faire l’objet de recherches et qu’ils ont un poids attribué](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Notez que les attributs SKU, nom et catégorie peuvent être recherchés par défaut et ne peuvent pas être exclus de la recherche. Pour de meilleurs résultats, n’utilisez pas d’espaces dans vos SKU.
+Assurez-vous que des attributs de produit [ précis et détaillés sont configurés comme pouvant faire l’objet de recherches et qu’ils ont un poids attribué](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Notez que les attributs SKU, nom et catégorie peuvent être recherchés par défaut et ne peuvent pas être exclus de la recherche. Pour de meilleurs résultats, n’utilisez pas d’espaces dans vos SKU.
 
 Pour accroître la pertinence de la recherche, attribuez un poids à chaque attribut consultable. Les attributs ayant un poids plus élevé doivent apparaître plus haut dans les résultats de la recherche. Le tri par pertinence est affecté par plusieurs critères, tels que le poids de la recherche. Cela signifie que parfois les attributs ayant un poids de recherche inférieur peuvent toujours avoir plus de pertinence que les attributs ayant un poids de recherche supérieur. D’autres critères peuvent inclure le nombre de correspondances dans un attribut donné, la position du terme de recherche trouvé et la structure textuelle globale avant et après un terme de recherche.
 

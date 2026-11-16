@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '872'
 ht-degree: 0%
 ---
+# Paramètres de marchandisage
+
 Utilisez l’espace de travail *Paramètres* pour configurer la recherche et la découverte de produits pour votre storefront. Les onglets suivants sont disponibles :
 
 - **Facettes** : configurez les groupes de gammes de prix et les intervalles utilisés comme filtres de recherche.

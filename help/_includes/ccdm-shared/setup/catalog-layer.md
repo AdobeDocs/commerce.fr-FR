@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1470'
 ht-degree: 0%
 ---
+# Calques de catalogue
+
 Les calques de catalogue vous permettent de modifier les données de produit sans modifier les données source d’origine. Les calques modifient les attributs de produit, tels que le nom, la description, les images, les liens et les métadonnées, en créant un calque par-dessus votre catalogue de base. Vos données de produit d’origine restent intactes, ce qui vous permet de personnaliser les produits en toute sécurité et d’annuler les modifications à tout moment.
 
 ![Calques de catalogue](/help/assets/ccdm-shared/setup/catalog-layers.png)
@@ -94,7 +96,7 @@ Pour obtenir des spécifications d’API détaillées et des exemples de payload
 
 ## Ajout manuel d’un calque de catalogue dans l’interface utilisateur
 
-L’interface utilisateur de la vue Catalogue vous permet de créer et de gérer des calques manuellement, ce qui est particulièrement utile pour les intégrations telles que Sites Optimizer qui génèrent des recommandations optimisées par l’IA. Pour les opérations de calque en masse, utilisez la méthode API d’ingestion de données [&#x200B; décrite ci-dessus](#add-a-catalog-layer-via-data-ingestion).
+L’interface utilisateur de la vue Catalogue vous permet de créer et de gérer des calques manuellement, ce qui est particulièrement utile pour les intégrations telles que Sites Optimizer qui génèrent des recommandations optimisées par l’IA. Pour les opérations de calque en masse, utilisez la méthode API d’ingestion de données [ décrite ci-dessus](#add-a-catalog-layer-via-data-ingestion).
 
 S’il n’existe pas de calque Sites Optimizer dans votre vue de catalogue, la fonction de correction automatique de Sites Optimizer en crée automatiquement un et lui affecte la priorité la plus élevée (numéro le plus élevé). Si vous supprimez ce calque, il sera recréé la prochaine fois que la fonction de correction automatique de Sites Optimizer s’exécutera et décalera les calques existants vers des numéros d’ordre inférieurs. Si le calque Sites Optimizer existe déjà avec un autre numéro de commande, la fonction de correction automatique ne modifie pas sa priorité.
 
@@ -197,6 +199,6 @@ Suivez ces recommandations lors de l’utilisation des calques de catalogue :
 ## Plus comme ceci
 
 * [Vues de catalogue](catalog-view.md) : configurez les vues de catalogue pour différents storefronts.
-* [Visuels de produit](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/product-visuals) : utilisez AEM Assets pour les images de produit.
+* [Visuels de produit](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) : utilisez AEM Assets pour les images de produit.
 * [Opportunités](../manage-results/opportunities.md)—Découvrez l’optimisation optimisée par l’IA à l’aide des calques de catalogue
 * [Clés d&#39;accès restreintes](restricted-access-keys.md)—Protégez une vue de catalogue avec l&#39;authentification par jeton signé

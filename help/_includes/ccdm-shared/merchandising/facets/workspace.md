@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '177'
 ht-degree: 1%
 ---
+# Workspace à facettes
+
 L’espace de travail *Facettes* répertorie toutes les facettes actuellement disponibles et permet d’accéder aux outils dont vous avez besoin pour configurer et gérer les facettes. Les facettes épinglées apparaissent en premier dans la liste des facettes existantes, suivies des facettes dynamiques. Vous pouvez effectuer une recherche dans la liste des facettes.
 
 ![Workspace À Facettes](/help/assets/ccdm-shared/facets/facet-workspace.png)

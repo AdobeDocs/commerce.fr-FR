@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '917'
 ht-degree: 0%
 ---
+# Performances de Recommendations
+
 La page Performances des recommandations affiche une liste des recommandations configurées ainsi que des mesures clés pour vous aider à évaluer leur efficacité. Vous pouvez configurer la vue pour afficher les mesures du dernier jour, de la dernière semaine ou du dernier mois. Ces informations indiquent la fréquence à laquelle chaque unité de recommandation est consultée ou fait l’objet d’un clic, ce qui vous permet d’évaluer les performances et d’identifier les opportunités d’optimisation.
 
 >[!INFO]

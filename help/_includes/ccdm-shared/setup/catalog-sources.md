@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '510'
 ht-degree: 0%
 ---
+# Sources de catalogue
+
 Les sources de catalogue représentent les étendues de produits, d’attributs et de catégories faisant autorité. Ils sont généralement associés à la langue, à l’audience ou au système d’origine et déterminent le comportement de la recherche, du filtrage et du tri.
 
 ## Sources de catalogue et concepts connexes

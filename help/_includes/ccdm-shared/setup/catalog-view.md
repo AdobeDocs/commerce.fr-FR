@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '745'
 ht-degree: 0%
 ---
+# Présentation des vues de catalogue pour les services Adobe Merchandising
+
 <!--This shared include file contains the conceptual and architecture overview of catalog views for Adobe Merchandising Services-->
 
 Une vue de catalogue définit les produits et les prix qu’un client peut récupérer. Il combine des sources de catalogue, des calques de catalogue, des politiques et des livres de prix pour prendre en charge différentes marques, régions, unités commerciales ou canaux.
@@ -38,7 +40,7 @@ Les données de catalogue d’un serveur principal Adobe Commerce ou d’un autr
 
 - **Serveur principal Adobe Commerce** : le système exporte les flux du catalogue Commerce, les mappe au format attendu par l’API REST d’ingestion de données et synchronise les données de flux avec la couche de données des services Adobe Merchandising. Dans ce modèle, Adobe Commerce gère la synchronisation initiale et les mises à jour suivantes. Les flux comprennent les produits, les catégories, les attributs de produit, les prix et les catalogues de prix.
 
-- **Serveur principal ou système source tiers**—Un connecteur ou un service d’intégration récupère les données de catalogue de la source, par le biais d’API, d’événements ou de flux d’exportation, puis les mappe et les valide par rapport au schéma de modèle de données de catalogue composable (CCDM) et synchronise les données avec la couche Services Adobe Merchandising à l’aide de l’API REST Data Ingestion. L’intégration est responsable du chargement initial et de l’envoi des modifications ultérieures. Un connecteur spécifique à une plateforme, tel que le connecteur Commerce Adobe [Salesforce](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/developer/salesforce-connector), peut fournir un point de départ.
+- **Serveur principal ou système source tiers**—Un connecteur ou un service d’intégration récupère les données de catalogue de la source, par le biais d’API, d’événements ou de flux d’exportation, puis les mappe et les valide par rapport au schéma de modèle de données de catalogue composable (CCDM) et synchronise les données avec la couche Services Adobe Merchandising à l’aide de l’API REST Data Ingestion. L’intégration est responsable du chargement initial et de l’envoi des modifications ultérieures. Un connecteur spécifique à une plateforme, tel que le connecteur Commerce Adobe [Salesforce](https://experienceleague.adobe.com/en/docs/commerce/optimizer/developer/salesforce-connector), peut fournir un point de départ.
 
 **2. Catalogue de base unifié**
 Les données ingérées créent un catalogue de base unifié dans le pipeline de données du service de catalogue. Cette source unique élimine la duplication des données entre les unités opérationnelles.
