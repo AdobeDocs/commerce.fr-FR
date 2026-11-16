@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/private-catalog-view.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Vues de catalogue privé
 
 Par défaut, une [vue de catalogue](catalog-view.md) est publique. Limitez l’accès à une vue de catalogue afin que seules les requêtes disposant d’un jeton signé valide puissent récupérer ses données.
@@ -98,7 +108,7 @@ Si [!UICONTROL Catalog Protection] est activé et que toutes les clés affectée
 
 >[!NOTE]
 >
->Pour les déploiements B2B d’Adobe Commerce à l’aide des services de marchandisage avec CCDM, vous gérez les clés d’accès à partir de la page **Clés d’accès restreint** de l’administrateur Commerce (**Système** > **Transfert de données**). Pour plus d&#39;informations, consultez la section [Gestion des clés d&#39;accès restreint](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) du Guide d&#39;intégration *[!DNL Adobe Commerce Optimizer Connector]*.
+>Pour les déploiements B2B d’Adobe Commerce à l’aide des services de marchandisage avec CCDM, vous gérez les clés d’accès à partir de la page **Clés d’accès restreint** de l’administrateur Commerce (**Système** > **Transfert de données**). Pour plus d&#39;informations, consultez la section [Gestion des clés d&#39;accès restreint](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) du Guide d&#39;intégration *[!DNL Adobe Commerce Optimizer Connector]*.
 
 ## Plus comme ceci
 

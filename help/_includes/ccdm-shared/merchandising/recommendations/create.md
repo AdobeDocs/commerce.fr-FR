@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/recommendations/create.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Création et gestion de Recommendations
 
 Lorsque vous créez une recommandation, vous créez une _unité de recommandation_, ou widget, qui contient les _éléments_ de produit recommandés.
@@ -27,7 +37,7 @@ Lorsque vous activez l’unité de recommandation, Adobe Commerce commence à [c
 
 1. Dans la section _Sélectionner le type de recommandation_, spécifiez le [type de recommandation](types.md) que vous souhaitez en fonction de votre stratégie.
 
-1. Dans la section _Étiquette d&#39;affichage du storefront_, saisissez l&#39;étiquette [3&rbrace; visible par vos acheteurs, telle que « Meilleurs vendeurs ».](best-practice.md#recommendation-labels)
+1. Dans la section _Étiquette d&#39;affichage du storefront_, saisissez l&#39;étiquette [3} visible par vos acheteurs, telle que « Meilleurs vendeurs ».](best-practice.md#recommendation-labels)
 
 1. Dans la section _Choisir le nombre de produits_, utilisez le curseur pour indiquer le nombre de produits à afficher dans l’unité de recommandation.
 
