@@ -1,6 +1,6 @@
 ---
 title: Estimation du volume de données et de la durée de transmission
-description: Découvrez comment estimer le volume de données et le temps de transmission requis pour que l’outil  [!DNL data export]  synchroniser les données de flux entre Adobe Commerce et les services connectés.
+description: Découvrez comment estimer le volume de données et le temps de transmission requis pour que l’outil [!DNL data export] synchronise les données de flux entre Adobe Commerce et les services connectés.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 787d05d6-fc2f-4f23-8ea7-ef54330e1f37
@@ -27,20 +27,18 @@ role_v2:
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: 585
+source-wordcount: '548'
 ht-degree: 0%
-
 ---
-
 # Estimation du volume de données et de la durée de transmission pour la synchronisation des données
 
 Adobe recommande d’estimer le volume et la durée de synchronisation des données avant de démarrer la synchronisation des flux de données afin d’assurer une planification fluide et d’éviter toute interruption des opérations sur le site. Cette estimation est importante lors de la planification de synchronisations initiales ou de mises à jour de catalogue à grande échelle, telles que des modifications de prix en masse.
 
 >[!NOTE]
 >
->Pour les déploiements [!DNL Adobe Commerce Optimizer Connector], passez en revue les flux pris en charge spécifiques au connecteur et les limites de lots dans [Modules du connecteur et points d’entrée des flux](../aco-connector/reference/connector-reference.md#supported-feeds).
+>Pour les déploiements [!DNL Adobe Commerce Optimizer Connector], passez en revue les flux pris en charge spécifiques au connecteur et les limites de lots dans [Modules de connecteur et points d’entrée de flux](../aco-connector/reference/connector-reference.md#supported-feeds).
 
 Par défaut, l’outil d’exportation de données traite les données en mode thread unique avec une taille de lot par défaut. Avec la configuration par défaut, il n’y a pas de parallélisation du processus d’envoi des flux. En outre, ce composant accepte les requêtes par seconde (RPS), ce qui se traduit par :
 
@@ -72,7 +70,6 @@ Utilisez les valeurs et les formules du tableau suivant pour calculer le volume 
 | Remplacements de produit | Produits avec autorisations ou dans le catalogue partagé (P) : 10000, Groupes de clients affectés (CG) : 5, Sites web attribués WS : 2 | P \* WS * CG = 100000 | 100000/taille du lot (100) = 1 000 requêtes | (1 000 requêtes * 0,5 seconde par requête)/60 = 8,3 minutes |
 | Variantes de produit | Variantes (produits enfants) affectées aux produits configurables (VA) : 100000 | PV = 100000 | 100000/taille du lot (100) = 1 000 requêtes | (1 000 requêtes * 0,5 seconde par requête)/60 = 8,3 minutes |
 | Autorisations de catégorie | Nombre de toutes les autorisations de catégorie + 4 enregistrements de secours (CP) : 10000 | CP = 10000 | 10000/taille du lot (100) = 100 requêtes | (100 requêtes * 0,5 seconde par requête) / 60 = 0,8 minute (50 secondes) |
-| Statut du stock de stock | Produits (P) : 10000, Stocks produits affectés à (S) : 5 (en supposant que chaque produit est affecté à chaque stock) | P * S = 50000 | 50000/taille du lot (100) = 500 requêtes | (500 requêtes * 0,5 seconde par requête) / 60 = 4,2 minutes |
 | Commandes client | Tous les enregistrements de commande (y compris les factures, les expéditions, etc.) (SO) : 10000 | SO = 10000 | 10000/taille du lot (100) = 100 requêtes | (100 requêtes * 0,5 seconde par requête) / 60 = 0,8 minute (50 secondes) |
 
 >[!MORELIKETHIS]

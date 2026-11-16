@@ -1,6 +1,6 @@
 ---
 title: Consulter les journaux et résoudre les problèmes
-description: Découvrez comment résoudre les erreurs [!DNL data export] à l’aide des journaux data-export et saas-export .
+description: Découvrez comment résoudre les erreurs [!DNL data export] à l’aide des journaux data-export et saas-export.
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 0%
 ---
 # Consulter les journaux et résoudre les problèmes
@@ -42,7 +42,7 @@ L’extension [!DNL data export] fournit des journaux pour suivre les processus 
 
 >[!NOTE]
 >
->Vous pouvez également suivre l’intégrité et les performances des flux d’exportation de données pour les données de produit et de catégorie à partir du tableau de bord [Statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) dans Admin.
+>Vous pouvez également suivre l’intégrité et les performances des flux d’exportation de données pour les données de produit et de catégorie à partir du tableau de bord [Statut de la synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) dans l’administration.
 
 ## Logs
 
@@ -106,11 +106,11 @@ Lors d’une resynchronisation complète, la progression est suivie et consigné
 
 Dans cet exemple, les valeurs `status` fournissent des informations sur l’opération de synchronisation :
 
-- **`"Progress 2/5"`** indique que 2 itérations sur 5 ont été terminées. Le nombre d’itérations dépend du nombre d’entités exportées.
+- **`"Progress 2/5"`** indique que 2 des 5 itérations ont été effectuées. Le nombre d’itérations dépend du nombre d’entités exportées.
 - **`"processed: 200"`** indique que 200 éléments ont été traités.
-- **`"synced: 100"`** indique que 100 articles ont été envoyés à SaaS. On s’attend à ce que `"synced"` ne soit pas égal à `"processed"`. Voici un exemple :
-  - **`"synced" < "processed"`** signifie que la table de flux n’a détecté aucune modification dans l’élément, par rapport à la version synchronisée précédemment. Ces éléments sont ignorés pendant l’opération de synchronisation.
-  - **`"synced" > "processed"`** même id d’entité (par exemple, `Product ID`) peut avoir plusieurs valeurs dans différentes portées. Par exemple, un produit peut être attribué à cinq sites web. Dans ce cas, il se peut que vous ayez « 1 élément traité » et « 5 éléments synchronisés ».
+- **`"synced: 100"`** indique que 100 éléments ont été envoyés à SaaS. Il est attendu que `"synced"` ne soit pas égal à `"processed"`. Voici un exemple :
+  - **`"synced" < "processed"`** signifie que la table des flux n&#39;a détecté aucune modification dans l&#39;élément, par rapport à la version précédemment synchronisée. Ces éléments sont ignorés pendant l’opération de synchronisation.
+  - **`"synced" > "processed"`** un même id d’entité (par exemple, `Product ID`) peut avoir plusieurs valeurs dans différentes portées. Par exemple, un produit peut être attribué à cinq sites web. Dans ce cas, il se peut que vous ayez « 1 élément traité » et « 5 éléments synchronisés ».
 
 +++ **Exemple : journal de resynchronisation complet pour le flux de prix**
 
@@ -156,14 +156,14 @@ Cet exemple ajoute une règle qui vous permet d’interroger les journaux New Re
 
 Si des données sont manquantes ou incorrectes dans les services Commerce, recherchez dans les journaux les messages d’erreur relatifs à la synchronisation entre Adobe Commerce et la plateforme des services Commerce. Si nécessaire, utilisez la journalisation étendue pour ajouter des informations supplémentaires aux journaux à des fins de dépannage.
 
-- Le journal des erreurs d’exportation des données (`commerce-data-export-errors.log`) capture les erreurs qui se produisent pendant la phase de collecte.
-- Le journal des erreurs d’exportation SaaS (`saas-export-errors.log`) capture les erreurs qui se produisent pendant la phase de transmission.
+- Le journal des erreurs d&#39;exportation de données (`commerce-data-export-errors.log`) capture les erreurs qui se produisent pendant la phase de collecte.
+- Le journal des erreurs d&#39;exportation SaaS (`saas-export-errors.log`) capture les erreurs qui se produisent pendant la phase de transmission.
 
-Si vous rencontrez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) avec autant d’informations que possible.
+Si vous constatez des erreurs non liées à la configuration ou aux extensions tierces, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) avec autant d’informations que possible.
 
 ### Résolution des problèmes de synchronisation des catalogues {#resolvesync}
 
-Pour la résolution des problèmes de synchronisation de catalogue (notamment les incohérences des données, la synchronisation non exécutée et le statut de synchronisation en échec), consultez la section [Dépannage des scénarios](troubleshooting-scenarios.md).
+Pour la résolution des problèmes de synchronisation de catalogue (notamment les incohérences de données, la synchronisation ne s’exécutant pas et le statut de synchronisation en échec), consultez [Scénarios de dépannage](troubleshooting-scenarios.md).
 
 ## Journalisation étendue
 
@@ -181,7 +181,7 @@ Une fois l’opération terminée, la payload de flux peut être consultée dans
 
 ### Conserver la payload dans la table d’index de flux
 
-Pour l’extension d’exportation de données SaaS Commerce (`magento/module-data-exporter`) 103.3.0 et versions ultérieures, les flux d’exportation immédiats conservent uniquement les données minimales requises dans la table d’index. Les flux comprennent tous les flux de statut du stock de catalogue et d’inventaire.
+Pour l’extension d’exportation de données SaaS Commerce (`magento/module-data-exporter`) 103.3.0 et versions ultérieures, les flux d’exportation immédiats conservent uniquement les données minimales requises dans la table d’index. Les flux incluent tous les flux du catalogue.
 
 La conservation des données de payload dans la table d’index n’est pas recommandée dans les environnements de production, mais elle peut s’avérer utile dans un environnement de développement. Incluez la payload du flux dans l’index en ajoutant la variable d’environnement `PERSIST_EXPORTED_FEED=1` lorsque vous resynchronisez le flux.
 
@@ -193,13 +193,13 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 Si le processus de réindexation d’un flux spécifique prend un temps déraisonnable, exécutez le profileur pour collecter des données supplémentaires qui peuvent être utiles à l’équipe d’assistance.
 
-Exécutez le profileur en ajoutant la variable d’environnement `EXPORTER_PROFILER=1` lorsque vous exécutez la commande de réindexation.
+Exécutez le profileur en ajoutant la variable d&#39;environnement `EXPORTER_PROFILER=1` lorsque vous exécutez la commande de réindexation.
 
 ```shell
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 
-Les données du profileur sont stockées dans le journal d’exportation des données (`var/log/commerce-data-export.log`) au format suivant :
+Les données du profileur sont stockées dans le journal d&#39;exportation de données (`var/log/commerce-data-export.log`) au format suivant :
 
 ```text
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
@@ -207,6 +207,6 @@ Les données du profileur sont stockées dans le journal d’exportation des don
 
 >[!MORELIKETHIS]
 >
-> - [Scénarios de dépannage &#x200B;](troubleshooting-scenarios.md) — Résolvez les problèmes de synchronisation des catalogues et les incohérences entre les données.
-> - [Référence des codes journaux](log-codes-reference.md) — Recherchez les codes journaux d&#39;exportation.
+> - [Scénarios de dépannage](troubleshooting-scenarios.md) — Résolvez les problèmes de synchronisation de catalogue et les incohérences de données.
+> - [Référence des codes de journal](log-codes-reference.md) — Recherchez les codes de journal d&#39;exportation.
 > - [Synchroniser les flux à l’aide de l’interface de ligne de commande Commerce](../data-export-cli-commands.md) — Exécuter les resynchronisations des flux ciblés.

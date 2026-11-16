@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '391'
 ht-degree: 5%
 ---
 # Guide [!DNL SaaS Data Export]
@@ -47,7 +47,6 @@ L&#39;exportation de données SaaS collecte et exporte divers types de données,
 - **Flux d’entités de catalogue** données agrégées de produits. Les données incluent les produits, les attributs de produit, les prix de produit, les variations de produit, les catégories, les autorisations de catégorie et les autorisations de produit.
 - Le flux **Étendues** agrège les données pour les groupes de clients, les sites Web, les magasins et les vues de magasin.
 - Le flux de **commandes client** agrège les données de commande, y compris leurs entités associées telles que les factures, les expéditions, les avoirs, etc.
-- Le **flux Multi-Source Inventory** agrège les données sur les éléments de statut du stock.
 
 L&#39;export de données SaaS est fourni sous la forme d&#39;une extension PHP qui prend en charge la synchronisation automatique et manuelle :
 
