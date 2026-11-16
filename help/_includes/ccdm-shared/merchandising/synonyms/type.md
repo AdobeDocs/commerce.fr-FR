@@ -30,4 +30,4 @@ Si aucun synonyme n’est créé et qu’un acheteur recherche **table de cuisin
 
 Après avoir créé un synonyme, le comportement de recherche change pour rechercher l&#39;expression exacte **table de cuisine**. Cela peut réduire le nombre de résultats, car seuls les produits avec l’expression exacte seront affichés.
 
-Si vous souhaitez que les termes soient recherchés séparément comme auparavant, vous pouvez [créer un ticket d&#39;assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Si vous souhaitez que les termes soient recherchés séparément comme auparavant, vous pouvez [créer un ticket d&#39;assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

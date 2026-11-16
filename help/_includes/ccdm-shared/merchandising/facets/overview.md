@@ -33,7 +33,7 @@ Le système active par défaut les attributs de produit suivants.
 
 En savoir plus sur les attributs de produit et leurs propriétés :
 
-- Pour les déploiements connectés à un serveur principal Adobe Commerce, consultez la [présentation des attributs de produit](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)
+- Pour les déploiements connectés à un serveur principal Adobe Commerce, consultez la [présentation des attributs de produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/product-attributes/product-attributes)
 - Pour les déploiements utilisant un serveur principal Commerce tiers, consultez [API de métadonnées d&#39;ingestion de données](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata).
 
 ## Recherche en couches et développement de types de recherche

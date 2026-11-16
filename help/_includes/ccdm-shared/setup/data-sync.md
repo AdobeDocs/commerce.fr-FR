@@ -51,4 +51,4 @@ Si vous ne voyez pas de produits spécifiques sur la page **Synchronisation des 
 
 ## Vérifier que la synchronisation des données fonctionne
 
-Pour les projets qui utilisent Adobe Commerce comme source de données en amont, vous pouvez surveiller le processus d’exportation des données et lancer des opérations de resynchronisation à partir de la page Statut de synchronisation des flux de données . Pour plus d’informations, consultez [Surveillance du statut de synchronisation des flux de données](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
+Pour les projets qui utilisent Adobe Commerce comme source de données en amont, vous pouvez surveiller le processus d’exportation des données et lancer des opérations de resynchronisation à partir de la page Statut de synchronisation des flux de données . Pour plus d’informations, consultez [Surveillance du statut de synchronisation des flux de données](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
