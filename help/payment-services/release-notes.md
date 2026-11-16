@@ -119,7 +119,7 @@ _28 Juin 2021_
 
 ![Nouveaux](../assets/new.svg)<!-- Issue PAY-1720 --> litiges relatifs aux commandes en magasin sont désormais disponibles dans [le rapport État du paiement des commandes](order-payment-status.md#view-disputes). Vous pouvez résoudre les litiges en accédant directement au Centre de résolution PayPal à partir de [!DNL Payment Services].
 
-![Les nouvelles ](../assets/new.svg)<!-- Issue PAY-2854 --> améliorations de l’expérience utilisateur de l’accueil [!DNL Payment Services] incluent la possibilité de modifier une configuration au niveau de l’héritage actuel et des améliorations de l’affichage de l’en-tête et de la navigation.
+![Les nouvelles &#x200B;](../assets/new.svg)<!-- Issue PAY-2854 --> améliorations de l’expérience utilisateur de l’accueil [!DNL Payment Services] incluent la possibilité de modifier une configuration au niveau de l’héritage actuel et des améliorations de l’affichage de l’en-tête et de la navigation.
 
 ![Nouveau](../assets/new.svg)<!-- Issue PAY-2854 --> Vous pouvez désormais voir des avertissements lorsque vous passez du mode sandbox au mode production et lorsque vous tentez de quitter une vue avec des mises à jour qui n’ont pas été enregistrées.
 
@@ -291,7 +291,7 @@ _20 Août 2025_
 
 ![Nouveau](../assets/new.svg)<!-- PAY-6169 --> Ajout de la mutation [`setCartAsInactive`](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/mutations/) à [!DNL Payment Services] pour améliorer la gestion du cycle de vie des devis.
 
-![Nouveau](../assets/new.svg)<!-- PAY-6227 --> Lors du passage en caisse avec PayPal, [!DNL Payment Services] ignore la fenêtre contextuelle de confirmation de commande pour accélérer le processus d&#39;achat. Cette fonction est activée par le rappel d&#39;expédition côté serveur [](payments-options.md#server-side-shipping-callbacks-for-paypal-payment-buttons), qui calcule l&#39;expédition et les totaux directement dans la page de vérification PayPal.
+![Nouveau](../assets/new.svg)<!-- PAY-6227 --> Lors du passage en caisse avec PayPal, [!DNL Payment Services] ignore la fenêtre contextuelle de confirmation de commande pour accélérer le processus d&#39;achat. Cette fonction est activée par le rappel d&#39;expédition côté serveur [&#128279;](payments-options.md#server-side-shipping-callbacks-for-paypal-payment-buttons), qui calcule l&#39;expédition et les totaux directement dans la page de vérification PayPal.
 
 ![Nouveau](../assets/new.svg)<!-- PAY-6234 --> Ajout d&#39;une nouvelle fonctionnalité pour l&#39;option de paiement [Payer plus tard](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options). Désormais, le configurateur de messagerie BNPL offre plus de flexibilité pour afficher les messages BNPL à payer plus tard sur les pages de passage en caisse des clients.
 
@@ -370,11 +370,11 @@ _13 Décembre 2024_
 
 ![Nouveau](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] prend désormais en charge l&#39;authentification sécurisée [3D avec Google Pay](security.md#3ds), ce qui renforce la sécurité des commerçants et des clients lors des transactions de paiement.
 
-![Correctif](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] permet aux [ clients d&#39;enregistrer leurs cartes directement dans leur **Mon compte**](vaulting.md#vaulting-without-purchase), ce qui améliore la commodité et simplifie les paiements futurs. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
+![Correctif](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] permet aux [&#x200B; clients d&#39;enregistrer leurs cartes directement dans leur **Mon compte**](vaulting.md#vaulting-without-purchase), ce qui améliore la commodité et simplifie les paiements futurs. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
 
 ![Correction](../assets/fix.svg)<!-- PAY-5762 --> d&#39;un problème en raison duquel les codes coupon n&#39;étaient pas appliqués sur la page de révision de la commande lorsque la commande était lancée à partir de la page des détails du produit (PDP).
 
-![Correctif](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services] affiche désormais les descriptions et les adresses de facturation des [ cartes voûtées sur la page de passage en caisse](vaulting.md), ce qui donne aux clients une plus grande visibilité sur leurs modes de paiement enregistrés.
+![Correctif](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services] affiche désormais les descriptions et les adresses de facturation des [&#x200B; cartes voûtées sur la page de passage en caisse](vaulting.md), ce qui donne aux clients une plus grande visibilité sur leurs modes de paiement enregistrés.
 
 ![Correctif](../assets/fix.svg)<!-- PAY-5793 --> [!DNL Payment Services] permet aux commerçants de stocker l&#39;adresse de facturation des cartes voûtées directement à partir de la page de passage en caisse, en veillant à ce que les informations de paiement soient exactes et complètes.
 
@@ -446,7 +446,7 @@ _4 Juin 2024_
 
 ![Nouveau](../assets/new.svg)<!-- PAY-4877 --> Désormais, [!DNL Payment Services] prend en charge les [fonctionnalités de tarification L2/L3](levels-card-payment-transactions.md#level-2-and-level-3). Cette fonctionnalité est uniquement disponible pour les clients [!DNL Payment Services] pour lesquels le prix IC++ est activé. Si vous souhaitez utiliser les données de traitement L2/L3 pour [!DNL Payment Services], contactez votre gestionnaire de compte [!DNL Payment Services].
 
-![Le correctif](../assets/fix.svg)<!-- PAY-5455 -->[!DNL Payment Services] vous permet d’activer Apple Pay directement à partir de l’extension sans télécharger et héberger le fichier d’association de domaine [](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
+![Le correctif](../assets/fix.svg)<!-- PAY-5455 -->[!DNL Payment Services] vous permet d’activer Apple Pay directement à partir de l’extension sans télécharger et héberger le fichier d’association de domaine [&#128279;](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
 
 ## v2.5.0
 
@@ -602,7 +602,7 @@ _10 Mars 2023_
 
 ![Correction](../assets/fix.svg)<!-- Issue PAY-4205 --> d&#39;un problème en raison duquel l&#39;état de l&#39;adresse de livraison spécifiée était remplacé par l&#39;état dans les paramètres de taxe par défaut lors du passage en caisse à l&#39;aide de l&#39;option [PayPal](payments-options.md#paypal-payment-buttons). Désormais, les clients peuvent faire expédier leurs commandes vers un état autre que celui configuré par défaut dans les paramètres fiscaux du commerçant.
 
-![Correction](../assets/fix.svg)<!-- Issue PAY-4202 --> d&#39;un problème empêchant les clients d&#39;utiliser le coffre-fort par carte pour effectuer un achat ou supprimer un mode de paiement avec coffre-fort pour un magasin [ à l&#39;aide de l&#39;action de paiement `Authorize and Capture`](production.md#set-payment-services-as-payment-method). Auparavant, une erreur « Identifiant de coffre du fournisseur introuvable » s’affichait lorsque le client tentait d’utiliser ou de modifier ses cartes de crédit protégées.
+![Correction](../assets/fix.svg)<!-- Issue PAY-4202 --> d&#39;un problème empêchant les clients d&#39;utiliser le coffre-fort par carte pour effectuer un achat ou supprimer un mode de paiement avec coffre-fort pour un magasin [&#x200B; à l&#39;aide de l&#39;action de paiement `Authorize and Capture`](production.md#set-payment-services-as-payment-method). Auparavant, une erreur « Identifiant de coffre du fournisseur introuvable » s’affichait lorsque le client tentait d’utiliser ou de modifier ses cartes de crédit protégées.
 
 ## v1.6.0
 
@@ -716,7 +716,7 @@ _29 Juin 2022_
 
 ![Correction d’un problème](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> lorsque les informations d’identification des services Commerce ne sont pas valides,[!DNL Payment Services] vous avertit désormais en affichant une erreur d’informations d’identification à partir de l’Accueil [!DNL Payment Services] dans l’administration.
 
-![Problème connu](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] est incompatible avec `commerce-data-export` v101.20 et les versions ultérieures, ce qui le rend incompatible avec l’extension [[!DNL Channel manager] 3} (arrêtée).](https://experienceleague.adobe.com/en/docs/discontinued/using/commerce-channels)
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] est incompatible avec `commerce-data-export` v101.20 et les versions ultérieures, ce qui le rend incompatible avec l’extension [[!DNL Channel manager] 3&rbrace; (arrêtée).](https://experienceleague.adobe.com/en/docs/discontinued/using/commerce-channels)
 
 ## v1.1.0
 
@@ -740,11 +740,11 @@ _31 Mars 2022_
 
 ![Problème résolu](../assets/fix.svg)<!-- Issue PAY-2742 --> Vous pouvez désormais activer et désactiver les modes de paiement disponibles, tels que Venmo, au niveau de la vue du magasin. Auparavant, vous pouviez uniquement configurer les modes de paiement par site web.
 
-![Problème résolu](../assets/fix.svg)<!-- Issue PAY-2277 --> Vous pouvez désormais activer ou désactiver de manière sélective les boutons de paiement PayPal](configure-admin.md#paypal-payment-buttons).[
+![Problème résolu](../assets/fix.svg)<!-- Issue PAY-2277 --> Vous pouvez désormais activer ou désactiver de manière sélective les boutons de paiement PayPal[&#128279;](configure-admin.md#paypal-payment-buttons).
 
 ![Problème résolu](../assets/fix.svg)<!-- Issue PAY-2561 --> Les produits précédemment supprimés n’apparaissent pas dans le panier sur la page _Vérifier la commande_.
 
-![Problème connu](../assets/bug.svg)<!-- Issue PAY-2842 --> Les transactions de carte de crédit de test [ peuvent échouer avec PayPal](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26825) lors du traitement des paiements dans un environnement sandbox.
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-2842 --> Les transactions de carte de crédit de test [&#x200B; peuvent échouer avec PayPal](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26825) lors du traitement des paiements dans un environnement sandbox.
 
 ## v1.0.0
 
@@ -770,6 +770,6 @@ _29 Novembre 2021_
 
 ![Problème connu](../assets/bug.svg)<!-- Issue PAY-2473 --> L’utilisation de [clés de compositeur incorrectes](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26826) lors de l’installation de l’extension empêche l’utilisateur de [s’authentifier](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) avec la bonne `MAGEID`.
 
-![Problème connu](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] rapports [ ne se synchronisent peut-être pas immédiatement](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26837).
+![Problème connu](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] rapports [&#x200B; ne se synchronisent peut-être pas immédiatement](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26837).
 
 ![Problème connu](../assets/bug.svg)<!-- Issue PAY-2475 --> Votre [compte sandbox PayPal](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26836) pour [!DNL Payment Services] ne peut pas être vérifié si vous créez ce compte lors de l’intégration.
