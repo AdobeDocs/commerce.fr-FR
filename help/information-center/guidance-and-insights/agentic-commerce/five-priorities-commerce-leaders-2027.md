@@ -168,7 +168,7 @@ L&#39;avenir du commerce ne dépend pas seulement de l&#39;endroit où les clien
 
 **Prêt à préparer votre entreprise au commerce optimisé par l&#39;IA ?**
 
-[Explorez Adobe Commerce as a Cloud Service](https://business.adobe.com/products/commerce.html) et découvrez comment Adobe peut vous aider à créer des expériences d’achat plus connectées et plus intelligentes.
+[Explorez Adobe Commerce as a Cloud Service](https://business.adobe.com/fr/products/commerce.html) et découvrez comment Adobe peut vous aider à créer des expériences d’achat plus connectées et plus intelligentes.
 
 >[!ENDSHADEBOX]
 
