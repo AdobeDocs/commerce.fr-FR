@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '209'
 ht-degree: 0%
 ---
+# Types de facettes
+
 Les facettes sont de différents types et apparaissent dans la liste *Filtres* uniquement lorsque cela est pertinent. La liste des facettes disponibles change en fonction des produits renvoyés. Les caractéristiques suivantes affectent leur présentation et leur comportement :
 
 - Facettes épinglées : les facettes les plus couramment utilisées peuvent être épinglées en haut de la liste. Les facettes restantes sont répertoriées dans l’ordre *Type de tri* après les facettes épinglées.

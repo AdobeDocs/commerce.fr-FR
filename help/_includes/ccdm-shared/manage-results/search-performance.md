@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1925'
 ht-degree: 0%
 ---
+# Performances de recherche
+
 La page *Performances de la recherche* fournit insight dans les termes de recherche utilisés par les acheteurs. Ces informations peuvent être utilisées pour identifier les tendances, augmenter les clics publicitaires et améliorer le taux de conversion. La page Performances de la recherche fournit un instantané des mesures de recherche pour une période spécifique et inclut les rapports suivants :
 
 - Recherches uniques
@@ -66,7 +68,7 @@ Plusieurs facteurs clés déterminent la pertinence et l’efficacité des résu
 
 Pour optimiser les résultats de recherche, surveillez les indicateurs clés de performance (KPI) pertinents, tels que les requêtes uniques, la position moyenne des clics, les taux de clics publicitaires, le taux de conversion et le taux de résultats nul pour comprendre les interactions de recherche d’acheteurs. Ces données vous aident à mettre à jour et à affiner régulièrement vos règles de recherche.
 
-- **Recherches uniques** - Nombre de requêtes de recherche distinctes effectuées sur votre site. Le système comptabilise chaque recherche unique une seule fois, même si le même acheteur ou différents acheteurs la répètent plusieurs fois. Cette mesure vous aide à comprendre la diversité des termes de recherche utilisés par les clients et fournit des informations sur les produits ou les informations recherchés par les acheteurs. Le suivi des recherches uniques vous permet :
+- **Recherches uniques** - Nombre de recherches uniques effectuées sur votre site au cours de la période sélectionnée. Les recherches multiples effectuées par le même acheteur pour la même requête sont considérées comme uniques si elles sont envoyées à plus d’une heure d’intervalle. Utilisez cette mesure avec le rapport Recherches uniques pour comprendre l’activité de recherche et identifier les produits ou les informations recherchés par les acheteurs. Le suivi des recherches uniques vous permet :
 
   - Identifiez les tendances de recherche populaires et les éléments fréquemment recherchés.
   - Détection des lacunes potentielles dans votre catalogue de produits ou votre contenu

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '4094'
+source-wordcount: '4098'
 ht-degree: 0%
 ---
+# Créer et gérer des règles
+
 La création d’une règle nécessite de sélectionner la vue de catalogue à laquelle la règle s’applique, de configurer la description, le type et de définir ses conditions et son classement, de tester les résultats et de publier la règle.
 
 ## Créer une règle {#create-a-rule}

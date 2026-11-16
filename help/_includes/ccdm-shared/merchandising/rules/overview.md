@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 0%
 ---
+# Règles de marchandisage
+
 Les règles de marchandisage associent une logique à des actions pour déterminer comment les produits apparaissent dans les **résultats de recherche**, dans les **listes de produits par défaut** via la **règle de recherche par défaut** et sur les **pages de catégorie**. Vous pouvez booster, enterrer, épingler ou masquer des produits et appliquer un **classement intelligent** afin que les annonces reflètent les objectifs de votre entreprise.
 
 Chaque **règle de recherche** comporte trois composants principaux :

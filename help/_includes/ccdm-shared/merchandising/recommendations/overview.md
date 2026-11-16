@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '157'
 ht-degree: 0%
 ---
+# Présentation de Recommendations
+
 Les recommandations sont un puissant outil marketing que vous pouvez utiliser pour augmenter les conversions, augmenter le chiffre d’affaires et stimuler l’engagement des acheteurs. Les recommandations sont optimisées par [Adobe AI](https://business.adobe.com/fr/ai.html), qui utilise l’intelligence artificielle et des algorithmes de machine learning pour effectuer une analyse approfondie des données agrégées des visiteurs. Ces données, lorsqu’elles sont combinées à votre catalogue Adobe Commerce, offrent une expérience très attrayante, pertinente et personnalisée.
 
 Les recommandations sont affichées sur le storefront sous la forme d’unités avec des étiquettes, telles que « Les clients qui ont consulté ce produit ont également consulté ». Vous pouvez créer, gérer et déployer des recommandations dans les vues de votre magasin directement à partir de l’espace de travail de Recommendations.

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 ---
+# Vues de catalogue privé
+
 Par défaut, une [vue de catalogue](catalog-view.md) est publique. Limitez l’accès à une vue de catalogue afin que seules les requêtes disposant d’un jeton signé valide puissent récupérer ses données.
 
 Une vue de catalogue devient privée de deux manières :

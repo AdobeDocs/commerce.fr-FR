@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '455'
 ht-degree: 0%
 ---
+# Bonnes pratiques relatives aux règles de marchandisage
+
 Pour optimiser la conversion et le chiffre d’affaires, implémentez des **règles de recherche** efficaces, une **règle de liste par défaut** forte et des **[règles de catégorie](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/add#rule-types)**. Ajustez les classements à l&#39;aide des données de vente, des stocks, des promotions et du [classement intelligent](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking).
 
 Il est essentiel d&#39;établir une **règle par défaut** bien pensée. Votre [règle par défaut](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/overview#default-rule) détermine la manière dont les résultats de recherche sont initialement triés lorsqu’aucune règle de recherche plus spécifique ne s’applique, ce qui améliore la probabilité de découverte et d’achat. Consultez-le régulièrement afin qu’il suive le rythme des besoins et des campagnes des acheteurs.

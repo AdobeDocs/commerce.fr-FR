@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '993'
 ht-degree: 0%
 ---
+# Politiques
+
 Les politiques définissent les filtres qui sont appliqués aux produits dans une vue de catalogue. Ils permettent de personnaliser l’assortiment de produits renvoyé à un storefront ou à un canal. Cela permet de s’assurer que le contenu approprié est diffusé à la bonne destination. Par exemple, les magasins physiques, les places de marché et les canaux publicitaires tels que Google, Facebook et Instagram.
 
 Les politiques utilisent des attributs de produit tels que la marque, le modèle ou la catégorie d’articles pour adapter les données du catalogue aux besoins de l’entreprise. &#x200B;

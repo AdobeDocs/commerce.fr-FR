@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '829'
 ht-degree: 0%
 ---
+# Correspondance de recherche et classement
+
 >[!IMPORTANT]
 >
 >La fonctionnalité suivante est disponible dans [Private Beta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta).

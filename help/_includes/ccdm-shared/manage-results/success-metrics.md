@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '2821'
+source-wordcount: '2823'
 ht-degree: 0%
 ---
+# Mesures de succès
+
 Cette page présente un aperçu des mesures de performances clés de votre boutique. L’objectif est de comprendre les résultats de la mise en œuvre des services de marchandisage avec le modèle de données de catalogue composable (CCDM) afin d’identifier les possibilités de croissance et les domaines à optimiser.
 
 ![Rapport sur les mesures de succès](/help/assets/ccdm-shared/manage-results/success-metrics.png)

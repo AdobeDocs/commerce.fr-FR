@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '487'
 ht-degree: 0%
 ---
+# Synchronisation des catalogues
+
 La page **Synchronisation des données** affiche un aperçu du statut de synchronisation des données de produit transférées depuis votre source de données (votre catalogue Commerce existant, le système de gestion des informations produit (PIM), le système de planification des ressources de l&#39;entreprise (ERP), etc.) dans la couche de données des services de marchandisage.
 
 La page **Synchronisation des données** fournit des informations précieuses sur la disponibilité des données de produit pour votre storefront, en veillant à ce qu’elles puissent être rapidement affichées pour vos acheteurs.

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '310'
 ht-degree: 0%
 ---
+# Bonnes pratiques relatives aux recommandations
+
 Adobe recommande de suivre les instructions suivantes lors de l’utilisation de recommendations :
 
 - Diversifiez vos types de recommandations. Les clients commencent à ignorer les recommandations s’ils suggèrent les mêmes produits à plusieurs reprises.

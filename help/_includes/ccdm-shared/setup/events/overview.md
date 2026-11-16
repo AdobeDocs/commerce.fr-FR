@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# Événements
+
 Les événements sont un outil essentiel pour améliorer l’expérience d’achat et stimuler les conversions en exploitant les informations sur les données en temps réel.
 
 Les services de marchandisage avec le modèle de données de catalogue composable (CCDM) déploient automatiquement les événements de storefront sur votre site. Ces événements capturent des données à partir des interactions des acheteurs sur votre site. Ces données anonymisées alimentent [recommandations](../../manage-results/recommendation-performance.md), [la découverte de produits](../../manage-results/search-performance.md) et [les mesures de succès](../../manage-results/success-metrics.md).
