@@ -344,7 +344,7 @@ _20 Juin 2025_
 
 _27 Mai 2025_
 
-![L&#39;exportation de données SaaS ](../assets/new.svg) prend désormais en charge le type de produit Adobe Commerce `giftcard`. Dans le flux de données, les produits de carte cadeau sont exportés en tant que produits simples avec le type d’attribut de produit `ac_giftcard`. <!--MDEE-1042-->
+![L&#39;exportation de données SaaS &#x200B;](../assets/new.svg) prend désormais en charge le type de produit Adobe Commerce `giftcard`. Dans le flux de données, les produits de carte cadeau sont exportés en tant que produits simples avec le type d’attribut de produit `ac_giftcard`. <!--MDEE-1042-->
 
 ![Correctif](../assets/fix.svg) Amélioration des rapports d’erreur d’exportation de données. Les journaux incluent désormais des messages d’erreur plus détaillés, y compris des détails techniques d’origine, pour faciliter le débogage et le suivi des erreurs. <!--MDEE-1064-->
 
@@ -418,7 +418,7 @@ _13 Février 2025_
 
 _28 Janvier 2025_
 
-![Les mises à jour intermédiaires ](../assets/fix.svg) pour les entités de produit et de catégorie sont désormais correctement déclenchées lors des mises à jour des données d&#39;exportation de données.<!--MDEE-963-->
+![Les mises à jour intermédiaires &#x200B;](../assets/fix.svg) pour les entités de produit et de catégorie sont désormais correctement déclenchées lors des mises à jour des données d&#39;exportation de données.<!--MDEE-963-->
 
 ### Version 103.3.17
 
@@ -530,7 +530,7 @@ _31 Mai 2024_
 
 _21 Mai 2024_
 
-![L&#39;exportation de données SaaS ](../assets/new.svg) met désormais en cache les attributs Entity-Attribute-Value (EAV) pour la requête de métadonnées d&#39;attribut.
+![L&#39;exportation de données SaaS &#x200B;](../assets/new.svg) met désormais en cache les attributs Entity-Attribute-Value (EAV) pour la requête de métadonnées d&#39;attribut.
 
 ![Correctif](../assets/fix.svg) Correction d’un problème en raison duquel le flux `InventoryStockStatus` n’était pas enregistré lors de la nouvelle tentative si le produit était supprimé.
 
