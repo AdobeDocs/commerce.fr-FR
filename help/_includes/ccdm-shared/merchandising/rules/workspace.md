@@ -65,7 +65,7 @@ Le panneau des détails affiche le nom de la règle, le statut, les conditions e
 
 | Contrôle | Description |
 |--- |--- |
-| Ajouter une règle | Ouvre l&#39;éditeur de règles [](add.md). |
+| Ajouter une règle | Ouvre l&#39;éditeur de règles [&#128279;](add.md). |
 | Vue Catalogue | Filtre le tableau en fonction des règles qui s’appliquent à la vue de catalogue sélectionnée. Définit également la portée lorsque vous [créez une règle](add.md). Options : *Toutes les vues* ou une [vue de catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) spécifique. Voir [Sélectionner la vue du catalogue](#select-catalog-view). |
 | Statut | Filtre la liste des règles par statut. Options : Tous, Actif, Inactif, Planifié |
 | ![Sélecteur de colonnes](/help/assets/ccdm-shared/rules/btn-show-hide-columns.png) | Spécifie les colonnes visibles dans la grille. Options : Dernière mise à jour, Date de début, Date de fin, Statut |
@@ -112,7 +112,7 @@ Les données comportementales qui optimisent le [classement intelligent](add.md#
 1. Cliquez sur **[!UICONTROL Create rule]**.
 
    La règle que vous créez est étendue à la vue de catalogue sélectionnée.
-1. Créez votre règle dans l’éditeur de règles [](add.md).
+1. Créez votre règle dans l’éditeur de règles [&#128279;](add.md).
 
    Dans l’éditeur, définissez des conditions, des événements et des détails. La règle s’applique uniquement aux résultats de recherche dans cette vue de catalogue.
 

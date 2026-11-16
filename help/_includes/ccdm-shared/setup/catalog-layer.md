@@ -96,7 +96,7 @@ Pour obtenir des spécifications d’API détaillées et des exemples de payload
 
 ## Ajout manuel d’un calque de catalogue dans l’interface utilisateur
 
-L’interface utilisateur de la vue Catalogue vous permet de créer et de gérer des calques manuellement, ce qui est particulièrement utile pour les intégrations telles que Sites Optimizer qui génèrent des recommandations optimisées par l’IA. Pour les opérations de calque en masse, utilisez la méthode API d’ingestion de données [ décrite ci-dessus](#add-a-catalog-layer-via-data-ingestion).
+L’interface utilisateur de la vue Catalogue vous permet de créer et de gérer des calques manuellement, ce qui est particulièrement utile pour les intégrations telles que Sites Optimizer qui génèrent des recommandations optimisées par l’IA. Pour les opérations de calque en masse, utilisez la méthode API d’ingestion de données [&#x200B; décrite ci-dessus](#add-a-catalog-layer-via-data-ingestion).
 
 S’il n’existe pas de calque Sites Optimizer dans votre vue de catalogue, la fonction de correction automatique de Sites Optimizer en crée automatiquement un et lui affecte la priorité la plus élevée (numéro le plus élevé). Si vous supprimez ce calque, il sera recréé la prochaine fois que la fonction de correction automatique de Sites Optimizer s’exécutera et décalera les calques existants vers des numéros d’ordre inférieurs. Si le calque Sites Optimizer existe déjà avec un autre numéro de commande, la fonction de correction automatique ne modifie pas sa priorité.
 

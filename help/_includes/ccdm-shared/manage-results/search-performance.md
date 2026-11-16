@@ -86,7 +86,7 @@ Pour optimiser les résultats de recherche, surveillez les indicateurs clés de 
 
   Pour réduire le taux de résultats nul, vous pouvez :
 
-  - Confirmez que la recherche sémantique [1} est activée dans l’onglet **[Recherche avancée](../settings.md#advanced-search)** des Paramètres. ](../setup/semantic-search.md)La recherche sémantique est activée par défaut. Aucune modification du storefront ou du développeur n’est requise. Les résultats sont mis à jour une fois l’indexation terminée.
+  - Confirmez que la recherche sémantique [&#128279;](../setup/semantic-search.md)1&rbrace; est activée dans l’onglet **[Recherche avancée](../settings.md#advanced-search)** des Paramètres. &#x200B;La recherche sémantique est activée par défaut. Aucune modification du storefront ou du développeur n’est requise. Les résultats sont mis à jour une fois l’indexation terminée.
   - Proposez d’autres termes de recherche ou des termes connexes, tels que [synonymes](../merchandising/synonyms/overview.md) lorsqu’aucune correspondance exacte n’est trouvée.
   - Passez régulièrement en revue les requêtes sans résultat pour identifier les modèles et apporter les ajustements nécessaires à votre catalogue de produits et à vos paramètres de recherche.
 
@@ -117,7 +117,7 @@ Assurez-vous que les produits enfants des produits configurables possèdent des 
 
 ### Utilisation des métadonnées de produit
 
-Assurez-vous que des attributs de produit [ précis et détaillés sont configurés comme pouvant faire l’objet de recherches et qu’ils ont un poids attribué](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Notez que les attributs SKU, nom et catégorie peuvent être recherchés par défaut et ne peuvent pas être exclus de la recherche. Pour de meilleurs résultats, n’utilisez pas d’espaces dans vos SKU.
+Assurez-vous que des attributs de produit [&#x200B; précis et détaillés sont configurés comme pouvant faire l’objet de recherches et qu’ils ont un poids attribué](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Notez que les attributs SKU, nom et catégorie peuvent être recherchés par défaut et ne peuvent pas être exclus de la recherche. Pour de meilleurs résultats, n’utilisez pas d’espaces dans vos SKU.
 
 Pour accroître la pertinence de la recherche, attribuez un poids à chaque attribut consultable. Les attributs ayant un poids plus élevé doivent apparaître plus haut dans les résultats de la recherche. Le tri par pertinence est affecté par plusieurs critères, tels que le poids de la recherche. Cela signifie que parfois les attributs ayant un poids de recherche inférieur peuvent toujours avoir plus de pertinence que les attributs ayant un poids de recherche supérieur. D’autres critères peuvent inclure le nombre de correspondances dans un attribut donné, la position du terme de recherche trouvé et la structure textuelle globale avant et après un terme de recherche.
 
