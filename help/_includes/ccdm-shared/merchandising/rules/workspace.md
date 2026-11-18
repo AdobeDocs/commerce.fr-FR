@@ -1,12 +1,12 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: e3be9274ca8db80d3559b24a5c8be36f5d61b2ba
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '1154'
 ht-degree: 1%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.fr-FR/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/rules/workspace.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -16,13 +16,15 @@ This includes related images in help/assets/ccdm-shared/.
 
 # Workspace des règles de marchandisage
 
-L’espace de travail *Règles de marchandisage* répertorie la sélection actuelle de règles et leur statut, et donne accès aux outils dont vous avez besoin pour créer et gérer des règles. Vous pouvez étendre les règles à toutes les [vues de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-view) (globales) ou à une seule vue de catalogue. Voir [Sélectionner la vue de catalogue](#select-catalog-view) pour savoir comment filtrer par vue de catalogue et créer des règles par vue de catalogue. Dans l’espace de travail , vous pouvez :
+L’espace de travail *Règles de marchandisage* répertorie la sélection actuelle de règles et leur statut, et donne accès aux outils dont vous avez besoin pour créer et gérer des règles. Vous pouvez étendre les règles à toutes les [vues de catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) (globales) ou à une seule vue de catalogue. Voir [Sélectionner la vue de catalogue](#select-catalog-view) pour savoir comment filtrer par vue de catalogue et créer des règles par vue de catalogue. Dans l’espace de travail , vous pouvez :
 
 - Rechercher des règles
 - Afficher les détails de la règle
 - Activer/désactiver les règles
 - Supprimer les règles
 - Accès à l’éditeur de règles
+
+L’espace de travail inclut également **[des règles de suppression de la recherche](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)**. Utilisez les mêmes contrôles de gestion des règles pour modifier, planifier, activer ou désactiver ces règles. Pour configurer les conditions de requête et publier les modifications, consultez [Créer et gérer des règles de suppression de recherche](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Un aperçu n’est pas affiché pour les règles de suppression de la recherche.
 
 ![Workspace des règles de marchandisage](/help/assets/ccdm-shared/rules/rules-workspace.png)
 
@@ -61,6 +63,14 @@ Le panneau des détails affiche le nom de la règle, le statut, les conditions e
    - Supprimer la règle
    - Activer/Désactiver La Règle
 
+## Activation ou désactivation d’une règle {#enable-disable-rule}
+
+1. Recherchez la règle dans l’espace de travail *Règles de marchandisage*.
+1. Ouvrez **Plus** (...) et sélectionnez **Activer la règle** ou **Désactiver la règle**. Vous pouvez également utiliser la commande **Activé** dans le panneau des détails.
+1. Confirmez le statut mis à jour. Une règle activée avec une date de début ultérieure reste planifiée jusqu’à cette date.
+
+Pour une **règle de suppression de recherche**, la désactivation de la règle empêche cette règle de bloquer les requêtes correspondantes sans supprimer ses conditions. D’autres règles de suppression actives peuvent toujours bloquer ces requêtes. Pour modifier les conditions ou les dates de la règle, sélectionnez **Modifier**, vérifiez les modifications, puis cliquez sur **Enregistrer et publier**.
+
 ## Descriptions des colonnes
 
 | Colonne | Description |
@@ -75,8 +85,8 @@ Le panneau des détails affiche le nom de la règle, le statut, les conditions e
 
 | Contrôle | Description |
 |--- |--- |
-| Ajouter une règle | Ouvre l&#39;éditeur de règles [&#128279;](add.md). |
-| Vue Catalogue | Filtre le tableau en fonction des règles qui s’appliquent à la vue de catalogue sélectionnée. Définit également la portée lorsque vous [créez une règle](add.md). Options : *Toutes les vues* ou une [vue de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-view) spécifique. Voir [Sélectionner la vue du catalogue](#select-catalog-view). |
+| Ajouter une règle | Ouvre l&#39;éditeur de règles [](add.md). |
+| Vue Catalogue | Filtre le tableau en fonction des règles qui s’appliquent à la vue de catalogue sélectionnée. Définit également la portée lorsque vous [créez une règle](add.md). Options : *Toutes les vues* ou une [vue de catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) spécifique. Voir [Sélectionner la vue du catalogue](#select-catalog-view). |
 | Statut | Filtre la liste des règles par statut. Options : Tous, Actif, Inactif, Planifié |
 | ![Sélecteur de colonnes](/help/assets/ccdm-shared/rules/btn-show-hide-columns.png) | Spécifie les colonnes visibles dans la grille. Options : Dernière mise à jour, Date de début, Date de fin, Statut |
 | Rechercher | Recherche une règle par nom complet ou correspondance partielle. |
@@ -99,7 +109,7 @@ Le panneau des détails affiche le nom de la règle, le statut, les conditions e
 Le sélecteur **[!UICONTROL Catalog view]** de la page Règles de marchandisage effectue deux opérations :
 
 1. **Filtre le tableau** : affiche uniquement les règles (et leurs détails) qui s’appliquent à la vue de catalogue sélectionnée.
-1. **Définit la portée des nouvelles règles** - Lorsque vous [créez une règle](add.md), la vue de catalogue sélectionnée est utilisée comme portée de la règle. Les options sont *Toutes les vues* ou une [vue de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/setup/catalog-view) spécifique.
+1. **Définit la portée des nouvelles règles** - Lorsque vous [créez une règle](add.md), la vue de catalogue sélectionnée est utilisée comme portée de la règle. Les options sont *Toutes les vues* ou une [vue de catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) spécifique.
 
    - **Toutes les vues** - La règle s’applique à toutes les vues de catalogue. Le comportement de recherche et de classement est le même sur chaque storefront qui utilise le catalogue.
    - **Vue catalogue** - La règle s’applique uniquement à la vue catalogue sélectionnée (par exemple, un storefront, une région, un concessionnaire ou une marque). Utilisez cette option lorsque différentes vues de catalogue nécessitent une logique de marchandisage différente.
@@ -114,7 +124,7 @@ Créez des règles par vue de catalogue lorsque différents storefronts, région
 - **Multi-région** - Vues de catalogue distinctes pour l’UE, les États-Unis ou d’autres régions avec des règles de marchandisage spécifiques à la région.
 - **Marque multiple** - Chaque marque possède sa propre vue de catalogue et vous souhaitez des règles spécifiques à la marque (par exemple, un classement par défaut différent ou des produits promus par marque).
 
-Les données comportementales qui optimisent le [classement intelligent](add.md#intelligent-ranking) (telles que les plus consultées, les plus achetées, les tendances) sont calculées par vue de catalogue par défaut. Les règles qui utilisent le classement intelligent reflètent donc le comportement de l’acheteur de cette vue de catalogue. Lorsque votre compte comporte un grand nombre de vues de catalogue, le système peut agréger les données comportementales globalement afin de maintenir les performances. Dans ce cas, le classement peut être influencé davantage par les vues de catalogue à trafic élevé et la pertinence des vues à trafic faible peut être réduite. Voir [Limites et limites](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits) pour les limites actuelles.
+Les données comportementales qui optimisent le [classement intelligent](add.md#intelligent-ranking) (telles que les plus consultées, les plus achetées, les tendances) sont calculées par vue de catalogue par défaut. Les règles qui utilisent le classement intelligent reflètent donc le comportement de l’acheteur de cette vue de catalogue. Lorsque votre compte comporte un grand nombre de vues de catalogue, le système peut agréger les données comportementales globalement afin de maintenir les performances. Dans ce cas, le classement peut être influencé davantage par les vues de catalogue à trafic élevé et la pertinence des vues à trafic faible peut être réduite. Voir [Limites et limites](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits) pour les limites actuelles.
 
 ### Configuration d’une règle par vue de catalogue
 
@@ -122,8 +132,8 @@ Les données comportementales qui optimisent le [classement intelligent](add.md#
 1. Cliquez sur **[!UICONTROL Create rule]**.
 
    La règle que vous créez est étendue à la vue de catalogue sélectionnée.
-1. Créez votre règle dans l’éditeur de règles [&#128279;](add.md).
+1. Créez votre règle dans l’éditeur de règles [](add.md).
 
-   Dans l’éditeur, définissez des conditions, des événements et des détails. La règle s’applique uniquement aux résultats de recherche dans cette vue de catalogue.
+   Dans l’éditeur, définissez les conditions, événements et détails qui s’appliquent au type de règle. Les règles de suppression de recherche utilisent des conditions de requête pour bloquer les résultats uniquement dans la vue de catalogue sélectionnée. Ils ne modifient pas la visibilité du produit par le biais de la navigation par catégorie, des pages de marchandisage, des recommandations ou des URL de produit directes.
 
 Vous ne pouvez pas modifier la vue de catalogue (portée) d’une règle après sa création. Pour appliquer une logique similaire à une autre vue de catalogue, créez une règle et sélectionnez cette vue de catalogue avant de la créer.

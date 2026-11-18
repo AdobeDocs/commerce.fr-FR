@@ -1,22 +1,10 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: 3478e3f0162b553d03c4ac4f5b3000b8aabd8c66
 workflow-type: tm+mt
-source-wordcount: '4098'
+source-wordcount: '4826'
 ht-degree: 0%
 ---
-<!--
-SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.fr-FR/blob/main/help/_includes/ccdm-shared/merchandising/rules/add.md
-
-This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
-Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
-are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
-This includes related images in help/assets/ccdm-shared/.
--->
-
-# Créer et gérer des règles
-
-La création d’une règle nécessite de sélectionner la vue de catalogue à laquelle la règle s’applique, de configurer la description, le type et de définir ses conditions et son classement, de tester les résultats et de publier la règle.
+Pour créer une règle, vous devez sélectionner la vue de catalogue à laquelle la règle s’applique, configurer la description et le type de la règle (recherche, suppression de la recherche, recherche par défaut ou catégorie), définir ses conditions et son classement, le cas échéant, tester les résultats si un aperçu est disponible et publier la règle. Les règles de suppression de la recherche n’affichent pas d’aperçu.
 
 ## Créer une règle {#create-a-rule}
 
@@ -37,8 +25,9 @@ Chaque type de règle comporte une icône d’information dans l’éditeur, acc
 | **Règle de recherche par défaut** | Classement et marchandisage par défaut dans les listes de produits lorsqu’aucune règle de recherche ou de catégorie plus spécifique ne s’applique. Vous ne pouvez créer qu’une seule règle de ce type. Elle ne peut pas contenir de conditions. |
 | **Règle de catégorie** | Applique le marchandisage et le classement à une seule catégorie, ce qui contrôle la commande des produits sur cette page de catégorie. |
 | **Règle de recherche** | Applique le marchandisage et le classement lorsque les acheteurs exécutent une recherche correspondant aux conditions de requête de la règle. |
+| **Règle de suppression de la recherche** | Empêche les requêtes de recherche correspondantes de renvoyer des produits, de sorte que le storefront affiche une page de résultats de recherche sans produits. La visibilité des produits via la navigation par catégorie, les pages de marchandisage, les recommandations et les URL de produits directes n’est pas affectée. |
 
-Dans la section **Créer votre règle**, définissez le nom de la règle, le planning, si la règle s&#39;applique à toutes les listes ou à des conditions de recherche spécifiques, ainsi que les types de classement.
+Dans la section **Créer votre règle**, définissez le nom, le planning, le type de règle, ainsi que les conditions et le classement applicables. Les règles de suppression de la recherche bloquent les requêtes correspondantes au lieu de classer les produits.
 
 1. Dans le champ **[!UICONTROL Name]**, saisissez un nom pour la règle. Tous les noms de règle doivent être uniques.
 1. Dans le champ **[!UICONTROL Description]**, saisissez une description pour la règle.
@@ -90,6 +79,28 @@ Une règle peut contenir jusqu’à dix conditions. L’opérateur logique qui j
 1. Pour ajouter une autre condition, cliquez sur **Ajouter une condition** et répétez le processus.
 1. Vous pouvez éventuellement définir [le classement intelligent](#intelligent-ranking), [le classement manuel](#manual-ranking) ou [le classement des attributs](#attribute-ranking) comme décrit dans les sections suivantes. Les mêmes commandes s’appliquent aux pages de catégorie, avec les différences signalées.
 
+>[!TAB Règle de suppression de la recherche]
+
+Une règle de suppression de la recherche bloque les résultats des requêtes qui correspondent à ses conditions. Il ne nécessite pas d’actions de classement au niveau du produit. Les requêtes correspondantes ne renvoient aucun produit et le storefront affiche une page de résultats de recherche sans produit.
+
+>[!NOTE]
+>
+>Un aperçu n’est pas affiché pour les règles de suppression de la recherche. Passez en revue les conditions de la requête avant la publication, puis vérifiez les recherches correspondantes et non correspondantes sur le storefront une fois que la règle est active.
+
+1. Dans **[!UICONTROL Rule applies to]**, sélectionnez **Règle de suppression de la recherche**.
+1. Sélectionnez une condition de requête et saisissez le texte à faire correspondre :
+
+   | Condition | Lorsque la requête est bloquée | Exemple |
+   | --- | --- | --- |
+   | **Requête est** | La requête entière correspond au texte spécifié. | `restricted item` bloque cette requête exacte. |
+   | **La requête contient** | La requête inclut le texte spécifié. | `restricted brand` blocs `buy restricted brand shoes`. |
+   | **La requête commence par** | La requête commence par le texte spécifié. | `restricted brand` blocs `restricted brand accessories`. |
+   | **La requête se termine par** | La requête se termine par le texte spécifié. | `restricted item` blocs `discount restricted item`. |
+
+1. Suivez les [étapes de planification et de publication](#schedule-publish-search-suppression).
+
+Pour la portée et les interactions avec d’autres règles, consultez [Règles de suppression de la recherche](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
+
 >[!TAB Règle de catégorie]
 
 Les règles de catégorie contrôlent la manière dont les produits sont triés sur les **pages de catégorie**. Combinez **les règles de catégorie** avec **le classement intelligent** et **les actions manuelles** pour traiter la découverte, exécuter des promotions et aligner les pages de catégorie sur votre stratégie.
@@ -122,6 +133,44 @@ Lorsque plusieurs catégories portent des noms similaires, utilisez le chemin d�
    ![Menu D&#39;Actions De Catégorie](/help/assets/ccdm-shared/rules/category-action-menu.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+### Créer et gérer des règles de suppression de recherche {#search-suppression-rules}
+
+Utilisez ce workflow pour bloquer les termes de recherche sans modifier la visibilité des produits ailleurs sur le storefront.
+
+1. Ouvrez **Marchandisage** > **Règles De Marchandisage**.
+1. Sélectionnez **Toutes les vues** ou la **vue de catalogue** spécifique où la restriction est requise.
+1. Cliquez sur **[!UICONTROL Create rule]**.
+1. Saisissez un **Nom** unique et une **Description** qui explique la restriction.
+1. Sous **[!UICONTROL Rule applies to]**, sélectionnez **Règle de suppression de la recherche**.
+1. Configurez **La requête est**, **La requête contient**, **La requête commence par** ou **La requête se termine par**, comme décrit dans l’onglet **Règle de suppression de la recherche** ci-dessus.
+1. Suivez les [étapes de planification et de publication](#schedule-publish-search-suppression).
+
+#### Planifier et publier une règle de suppression de recherche {#schedule-publish-search-suppression}
+
+1. Dans **[!UICONTROL Date range]**, définissez la date de début et, si nécessaire, la date de fin de la restriction. Utiliser une date de début ultérieure pour planifier la règle.
+1. Examinez les conditions de la requête.
+1. Cliquez sur **Enregistrer et publier**.
+1. Recherchez la règle dans l’espace de travail *Règles de marchandisage* et confirmez son statut et ses dates. Une règle planifiée prend effet pendant sa période configurée lorsqu’elle est activée.
+1. Une fois la règle activée, vérifiez qu’une recherche storefront correspondante affiche une page de résultats de recherche sans produits. L’actualisation des résultats de la requête mise en cache peut prendre jusqu’à 15 minutes.
+
+#### Modification d’une règle de suppression de recherche
+
+1. Dans l’espace de travail *Règles de marchandisage*, recherchez la règle et ouvrez **Plus** (...) > **Modifier**.
+1. Mettez à jour ses conditions de requête, son nom, sa description ou sa période selon vos besoins.
+1. Passez en revue les conditions de requête mises à jour.
+1. Cliquez sur **Enregistrer et publier** pour publier les modifications.
+1. Une fois la règle mise à jour activée, vérifiez les recherches correspondantes et non correspondantes sur le storefront. L’actualisation des résultats de la requête mise en cache peut prendre jusqu’à 15 minutes.
+
+L’étendue de la vue du catalogue ne peut pas être modifiée après la création. Pour appliquer la restriction à une autre portée, créez une règle dans cette vue de catalogue.
+
+#### Activation ou désactivation d’une règle de suppression de recherche
+
+1. Dans l’espace de travail *Règles de marchandisage*, recherchez la règle et ouvrez le **Plus** (...) menu.
+1. Sélectionnez **Désactiver la règle** pour arrêter l’application de la restriction de recherche ou **Activer la règle** pour l’appliquer en fonction des dates configurées.
+1. Confirmez le statut de la règle dans l’espace de travail.
+
+La désactivation d’une règle conserve sa configuration. Pour modifier ses conditions ou son planning, modifiez et publiez la règle. Voir [Workspace des règles de marchandisage](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace) pour plus d’informations.
 
 ### Classement intelligent {#intelligent-ranking}
 
@@ -220,7 +269,7 @@ Pour améliorer la recherche de produit à l’aide de règles, consultez [règl
 
 Pour plus d’informations sur la définition des poids de recherche :
 
-- Pour tous les déploiements d’Adobe Commerce, consultez [Résultats de la recherche](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results) dans le _Guide de gestion des catalogues_.
+- Pour tous les déploiements d’Adobe Commerce, consultez [Résultats de la recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) dans le _Guide de gestion des catalogues_.
 - Pour les déploiements Adobe Commerce Optimizer autonomes, consultez la section [API REST de métadonnées](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) dans le _Guide du développeur des services de marchandisage_.
 
 ### Classement manuel {#manual-ranking}
@@ -252,11 +301,13 @@ Les événements ou peuvent être définis manuellement :
 
 1. Pour plusieurs événements, choisissez tous les autres événements que vous souhaitez déclencher lorsque les conditions sont remplies.
 
+Lorsque **[!UICONTROL Hide a product]** est configuré dans la **règle de recherche par défaut**, les produits exclus sont également supprimés des **suggestions de recherche et remplis automatiquement**. Pour bloquer une requête entière plutôt que des produits sélectionnés, utilisez une [règle de suppression de recherche](#search-suppression-rules).
+
 ### Classement des attributs {#attribute-ranking}
 
 >[!AVAILABILITY]
 >
->Cette fonctionnalité est disponible dans la version [bêta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Cette fonctionnalité est disponible dans la version [bêta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **Le classement des attributs** applique automatiquement une action **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** à chaque produit qui correspond à une ou plusieurs conditions d’attribut, sans que vous ayez à sélectionner des SKU individuels. Le classement des attributs apparaît dans l’éditeur de règles aux côtés du [classement intelligent](#intelligent-ranking) et du [classement manuel](#manual-ranking), et est disponible pour les **règles de tous les produits**, **règles de recherche** et **règles de catégorie**. Utilisez-le pour adapter le merchandising à de grands catalogues, par exemple pour booster chaque produit d’une marque donnée ou pour enterrer chaque produit dans une couleur inhabituelle.
 
@@ -277,6 +328,8 @@ Les événements ou peuvent être définis manuellement :
 
 L’épinglage n’est pas disponible dans le classement des attributs, car il affecte un produit à une position exacte, tandis qu’une condition d’attribut peut correspondre à de nombreux produits à la fois. Pour épingler un produit spécifique, utilisez [le classement manuel](#manual-ranking) sur ce SKU directement.
 
+Les conditions de classement des attributs sont également appelées **Événements de marchandisage basés sur les attributs**. Les produits exclus par une action **[!UICONTROL Hide]** dans la **règle de recherche par défaut** sont également exclus des **suggestions de recherche et de la saisie semi-automatique**, tout comme les exclusions manuelles dans cette règle. Ces exclusions au niveau du produit diffèrent de la [suppression de la recherche](#search-suppression-rules), qui bloque tous les résultats pour une requête correspondante.
+
 #### Comment le classement des attributs interagit avec le classement intelligent
 
 Lorsqu’une règle combine une stratégie de classement intelligente avec une ou plusieurs conditions d’attribut, l’action d’attribut est prioritaire pour tous les produits correspondants. Le classement intelligent continue de classer les autres produits inégalés.
@@ -293,6 +346,8 @@ Une seule règle peut contenir jusqu’à 25 conditions d’attribut, la même l
 
 ### Finalisation de la règle {#finalizing-the-rule}
 
+Pour les règles de suppression de la recherche, suivez [Planifier et publiez une règle de suppression de la recherche](#schedule-publish-search-suppression) à la place. Ces règles n’affichent pas d’aperçu.
+
 1. Examinez les résultats de la règle dans le volet de test.
 1. Si la règle comporte plusieurs requêtes, testez chacune d’elles qui peut être affectée par la règle.
 1. Une fois l’opération terminée, cliquez sur **Enregistrer et publier**.
@@ -303,19 +358,19 @@ Une seule règle peut contenir jusqu’à 25 conditions d’attribut, la même l
 
 >[!NOTE]
 >
->Les règles et les produits classés manuellement sont appliqués aux résultats de **recherche** lorsque l&#39;ordre de tri par défaut, « Trier par : les plus pertinents », est sélectionné. Si un acheteur modifie l’ordre de tri comme trier par nom, les règles et les classements manuels ne sont plus en vigueur. Pour les listes de **catégorie**, le comportement de tri par défaut est décrit dans le [classement manuel](#manual-ranking).
+>Les règles de classement et les produits classés manuellement sont appliqués aux résultats de **recherche** lorsque l’ordre de tri par défaut « Trier par : les plus pertinents » est sélectionné. Si un acheteur modifie l’ordre de tri pour qu’il ressemble à un tri par nom, les règles de classement et les classements manuels ne sont plus en vigueur. Ce comportement de classement ne permet pas à une requête bloquée de contourner la suppression de la recherche. Pour les listes de **catégorie**, le comportement de tri par défaut est décrit dans le [classement manuel](#manual-ranking).
 
 ## Modifier, afficher et supprimer des règles {#edit-view-and-delete-rules}
 
-Pour mettre à jour les propriétés des règles existantes, suivez ces instructions. Vous ne pouvez pas modifier la vue de catalogue (portée) d’une règle après sa création ; la portée est définie lorsque vous créez la règle. Voir [Sélectionner la vue du catalogue](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
+Pour mettre à jour les propriétés des règles existantes, suivez ces instructions. Vous ne pouvez pas modifier la vue de catalogue (portée) d’une règle après sa création ; la portée est définie lorsque vous créez la règle. Voir [Sélectionner la vue du catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
 
 ### Modifier la règle
 
 1. Dans l’espace de travail *Règles de marchandisage*, recherchez la règle de la grille à modifier et cliquez sur **Plus** (...) options.
 1. Cliquez sur **Modifier** pour accéder à l’éditeur de règles.
-1. Mettez à jour les conditions, les opérateurs et les événements selon les besoins.
+1. Mettez à jour les conditions, les opérateurs et les événements en fonction du type de règle. Les règles de suppression de recherche utilisent des conditions de requête plutôt que des événements de classement.
 1. Mettez à jour le nom, la date de début et de fin, ainsi que les champs de description selon les besoins. Tous les noms de règle doivent être uniques.
-1. Testez la règle.
+1. Tester la règle si un aperçu est disponible Pour les règles de suppression de recherche, passez plutôt en revue les conditions de requête et vérifiez les recherches storefront une fois que la règle mise à jour est active.
 1. Publiez les modifications.
 La règle est ajoutée à la liste dans l’espace de travail *Règles*. Bien que les règles actives entrent en vigueur immédiatement, l’actualisation des résultats des requêtes mises en cache dans le storefront peut prendre jusqu’à 15 minutes.
 
@@ -386,7 +441,7 @@ Cette option permet d&#39;afficher rapidement tous les paramètres de règle, to
 | Champ | Description |
 | --- | --- |
 | Nom | Nom de la règle. Les noms des règles doivent être uniques. |
-| Type de règle | **Règle de recherche par défaut**, **Requête** (conditions de recherche spécifiques) ou **Catégorie** (pages de catégorie), en fonction de **La règle s’applique à**. |
+| Type de règle | **Règle de recherche par défaut**, **Requête** (conditions de recherche spécifiques), **Règle de suppression de la recherche** (blocs correspondant aux requêtes) ou **Catégorie** (pages de catégorie), selon que la règle **s’applique à**. |
 | Date de début | Date de début de la règle, le cas échéant. |
 | Date de fin | Date de fin de la règle, le cas échéant. |
 | Description | Brève description de la règle. |
