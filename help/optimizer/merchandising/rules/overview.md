@@ -1,7 +1,7 @@
 ---
 title: Règles de marchandisage
 description: Les règles de marchandisage [!DNL Adobe Commerce Optimizer] façonnent les résultats de recherche, suppriment les requêtes de recherche et contrôlent les listes de produits et les pages de catégories par défaut.
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
 product_v2:

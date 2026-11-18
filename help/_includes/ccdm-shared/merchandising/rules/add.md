@@ -99,7 +99,7 @@ Une règle de suppression de la recherche bloque les résultats des requêtes qu
 
 1. Suivez les [étapes de planification et de publication](#schedule-publish-search-suppression).
 
-Pour la portée et les interactions avec d’autres règles, consultez [Règles de suppression de la recherche](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
+Pour la portée et les interactions avec d’autres règles, consultez [Règles de suppression de la recherche](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
 
 >[!TAB Règle de catégorie]
 
@@ -170,7 +170,7 @@ L’étendue de la vue du catalogue ne peut pas être modifiée après la créat
 1. Sélectionnez **Désactiver la règle** pour arrêter l’application de la restriction de recherche ou **Activer la règle** pour l’appliquer en fonction des dates configurées.
 1. Confirmez le statut de la règle dans l’espace de travail.
 
-La désactivation d’une règle conserve sa configuration. Pour modifier ses conditions ou son planning, modifiez et publiez la règle. Voir [Workspace des règles de marchandisage](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace) pour plus d’informations.
+La désactivation d’une règle conserve sa configuration. Pour modifier ses conditions ou son planning, modifiez et publiez la règle. Voir [Workspace des règles de marchandisage](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/workspace) pour plus d’informations.
 
 ### Classement intelligent {#intelligent-ranking}
 
@@ -269,7 +269,7 @@ Pour améliorer la recherche de produit à l’aide de règles, consultez [règl
 
 Pour plus d’informations sur la définition des poids de recherche :
 
-- Pour tous les déploiements d’Adobe Commerce, consultez [Résultats de la recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) dans le _Guide de gestion des catalogues_.
+- Pour tous les déploiements d’Adobe Commerce, consultez [Résultats de la recherche](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/search/search-results) dans le _Guide de gestion des catalogues_.
 - Pour les déploiements Adobe Commerce Optimizer autonomes, consultez la section [API REST de métadonnées](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) dans le _Guide du développeur des services de marchandisage_.
 
 ### Classement manuel {#manual-ranking}
@@ -307,7 +307,7 @@ Lorsque **[!UICONTROL Hide a product]** est configuré dans la **règle de reche
 
 >[!AVAILABILITY]
 >
->Cette fonctionnalité est disponible dans la version [bêta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Cette fonctionnalité est disponible dans la version [bêta](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **Le classement des attributs** applique automatiquement une action **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** à chaque produit qui correspond à une ou plusieurs conditions d’attribut, sans que vous ayez à sélectionner des SKU individuels. Le classement des attributs apparaît dans l’éditeur de règles aux côtés du [classement intelligent](#intelligent-ranking) et du [classement manuel](#manual-ranking), et est disponible pour les **règles de tous les produits**, **règles de recherche** et **règles de catégorie**. Utilisez-le pour adapter le merchandising à de grands catalogues, par exemple pour booster chaque produit d’une marque donnée ou pour enterrer chaque produit dans une couleur inhabituelle.
 
@@ -362,7 +362,7 @@ Pour les règles de suppression de la recherche, suivez [Planifier et publiez un
 
 ## Modifier, afficher et supprimer des règles {#edit-view-and-delete-rules}
 
-Pour mettre à jour les propriétés des règles existantes, suivez ces instructions. Vous ne pouvez pas modifier la vue de catalogue (portée) d’une règle après sa création ; la portée est définie lorsque vous créez la règle. Voir [Sélectionner la vue du catalogue](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
+Pour mettre à jour les propriétés des règles existantes, suivez ces instructions. Vous ne pouvez pas modifier la vue de catalogue (portée) d’une règle après sa création ; la portée est définie lorsque vous créez la règle. Voir [Sélectionner la vue du catalogue](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
 
 ### Modifier la règle
 
