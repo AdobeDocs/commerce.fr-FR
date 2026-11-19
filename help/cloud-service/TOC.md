@@ -9,9 +9,9 @@ product_v2:
     internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
     internal-label: Commerce as a Cloud Service
-source-git-commit: 896b53de478dbb3acc4a4ab8b26c8ae9e10ec8d2
+source-git-commit: af9c81b93d4ad1ff75a0380ec3fd4e3e5f374e3a
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '231'
 ht-degree: 3%
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 3%
 - [Services de marchandisage](merchandising-services.md)
 - [Comparaison des fonctionnalités](feature-comparison.md)
 - [Prise en main](getting-started.md)
+- [Limites et limites](boundaries-limits.md)
 - [Gestion des utilisateurs et des identités](user-management.md)
 - [Storefront](storefront.md)
 - [Cas d’utilisation](use-cases.md)
