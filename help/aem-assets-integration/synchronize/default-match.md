@@ -65,7 +65,7 @@ Lorsque la règle de correspondance **[!UICONTROL Match by product SKU]** est co
    >
    > Si une ressource est utilisée pour plusieurs produits, configurez les métadonnées de chaque SKU associé.
 
-1. Dans l’onglet `Basic`, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_sur `approved`.
+1. Dans l’onglet `Basic`, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_&#x200B;sur `approved`.
 
    ![Exemple de métadonnées](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 

@@ -81,7 +81,7 @@ La création d’un programme dans Cloud Manager est un processus à plusieurs �
 
    ![Étape Solutions et modules complémentaires Cloud Manager avec Dynamic Media sélectionnée](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
 
-1. À l’étape **[!UICONTROL Add Environment]**, saisissez le nom de l’environnement **Production**, puis sélectionnez une région. Si votre droit comprend un environnement d’évaluation, saisissez également le nom de l’environnement d’évaluation **1}.**
+1. À l’étape **[!UICONTROL Add Environment]**, saisissez le nom de l’environnement **Production**, puis sélectionnez une région. Si votre droit comprend un environnement d’évaluation, saisissez également le nom de l’environnement d’évaluation **1&rbrace;.**
 
    >[!IMPORTANT]
    >
@@ -293,7 +293,7 @@ Le composant d’interface utilisateur des données de produit est ajouté autom
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Facultatif. Pour synchroniser automatiquement les Assets Commerce approuvées lors de leur chargement dans l’environnement AEM Assets, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_sur `approved` dans l’onglet `Basic`.
+1. Facultatif. Pour synchroniser automatiquement les Assets Commerce approuvées lors de leur chargement dans l’environnement AEM Assets, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_&#x200B;sur `approved` dans l’onglet `Basic`.
 
 1. Enregistrez la mise à jour.
 

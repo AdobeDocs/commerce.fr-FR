@@ -142,7 +142,7 @@ Sélectionnez votre déploiement pour suivre les étapes requises dans l’ordre
 
 [!BADGE SaaS uniquement]{type=Positive tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service (infrastructure SaaS gérée par Adobe)."}
 
-1. Pour prendre en charge les métadonnées Commerce, [configurez le projet AEM Assets](get-started/configure-aem.md). Sur AEM version `2026.5.26309` et ultérieure, utilisez l’intégration en libre-service [2} ; sur les versions antérieures, installez le package `assets-commerce` manuellement.](get-started/configure-aem.md#enable-aem-commerce-self-service)
+1. Pour prendre en charge les métadonnées Commerce, [configurez le projet AEM Assets](get-started/configure-aem.md). Sur AEM version `2026.5.26309` et ultérieure, utilisez l’intégration en libre-service [2&rbrace; ; sur les versions antérieures, installez le package `assets-commerce` manuellement.](get-started/configure-aem.md#enable-aem-commerce-self-service)
 
 1. [Configurez les autorisations d’utilisateur IMS](get-started/permissions.md) pour le sélecteur de ressources, ainsi que pour la sélection d’environnements et de domaines AEM.
 
@@ -154,7 +154,7 @@ Sélectionnez votre déploiement pour suivre les étapes requises dans l’ordre
 
 [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."}
 
-1. Pour prendre en charge les métadonnées Commerce, [configurez le projet AEM Assets](get-started/configure-aem.md). Sur AEM version `2026.5.26309` et ultérieure, utilisez l’intégration en libre-service [2} ; sur les versions antérieures, installez le package `assets-commerce` manuellement.](get-started/configure-aem.md#enable-aem-commerce-self-service)
+1. Pour prendre en charge les métadonnées Commerce, [configurez le projet AEM Assets](get-started/configure-aem.md). Sur AEM version `2026.5.26309` et ultérieure, utilisez l’intégration en libre-service [2&rbrace; ; sur les versions antérieures, installez le package `assets-commerce` manuellement.](get-started/configure-aem.md#enable-aem-commerce-self-service)
 
 1. [Installez les packages Adobe Commerce](get-started/configure-commerce.md) pour ajouter l’extension et générer les informations d’identification et les connexions requises.
 
