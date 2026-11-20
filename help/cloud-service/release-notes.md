@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: c77ccb87ac61a4dae8adc3079bb8aac7a4a9bf58
+source-git-commit: eebf534ca77d223db63f2062dd889d8f3ceb1866
 workflow-type: tm+mt
-source-wordcount: '10458'
+source-wordcount: '10433'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -84,11 +84,11 @@ En savoir plus sur [Commerce Admin dans l’expérience unifiée Adobe](https://
 
 ## Novembre 2026 - #2 de mise à jour {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Production]{type=Neutral tooltip="Les éléments répertoriés sont actuellement disponibles dans les environnements de production."}
 
-Les éléments suivants ont été publiés dans les environnements Sandbox le 18 novembre 2026.
+Les éléments suivants ont été publiés dans les environnements de production le 18 novembre 2026.
 
 >[!BEGINSHADEBOX]
 
