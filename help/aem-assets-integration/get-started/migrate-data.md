@@ -24,14 +24,14 @@ topic_v2:
     internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1055'
 ht-degree: 0%
 ---
 # Migrer des fichiers multimédias vers la gestion des ressources numériques AEM Assets
 
-Adobe Commerce et Adobe Experience Manager (AEM) fournissent des fonctionnalités intégrées pour rationaliser la migration des fichiers multimédias de Commerce vers AEM Assets **système de gestion des ressources numériques (DAM)**. Vous pouvez également migrer des fichiers multimédias provenant d’autres sources.
+Adobe Commerce et Adobe Experience Manager (AEM) fournissent des fonctionnalités intégrées pour rationaliser la migration des fichiers multimédias de Commerce vers le **système de gestion des ressources numériques (DAM) d’AEM Assets**. Vous pouvez également migrer des fichiers multimédias provenant d’autres sources.
 
 ## Conditions préalables
 
@@ -39,9 +39,13 @@ Adobe Commerce et Adobe Experience Manager (AEM) fournissent des fonctionnalité
 |----------|-------------|
 | **Configuration requise** | <ul><li>Environnement AEM as a Cloud Service configuré avec AEM Assets</li><li>Capacité de stockage suffisante</li><li>Bande passante réseau pour les transferts de fichiers volumineux</li></ul> |
 | **Accès et autorisations requis** | <ul><li>Accès des administrateurs à AEM Assets as a Cloud Service</li><li>Accès au système source où sont stockés les fichiers multimédias (Adobe Commerce ou système externe)</li><li>Autorisations appropriées pour accéder aux services de stockage dans le cloud</li></ul> |
-| **Compte d’espace de stockage** | <ul><li>Compte de stockage Blob AWS S3 ou Azure</li><li>Configuration de conteneur/compartiment privé</li><li>Informations d’identification d’authentification</li></ul> |
-| **Contenu** | <ul><li>Fichiers multimédias organisés prêts pour la migration</li><li>Fichiers image et vidéo dans des <a href="https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">formats pris en charge par AEM Assets</a>.</li><li>Nettoyer les ressources dupliquées</li></li> |
-| **Préparation des métadonnées** | <ul><li><a href="configure-aem.md">Profil de métadonnées AEM Assets configuré pour les ressources Commerce</a></li><li>Valeurs de métadonnées mappées pour chaque ressource</li><li>Éditeur de fichier CSV (par exemple, Microsoft Excel)</li></ul> |
+| **Compte De Stockage Dans Le Cloud** | <ul><li>Compte de stockage Blob AWS S3 ou Azure</li><li>Configuration de conteneur/compartiment privé</li><li>Informations d’identification d’authentification</li></ul> |
+| **Contenu Source** | <ul><li>Fichiers multimédias organisés prêts pour la migration</li><li>Fichiers image et vidéo dans des formats <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats"> pris en charge par AEM Assets</a>.</li><li>Nettoyer les ressources dupliquées</li></li> |
+| **Préparation Des Métadonnées** | <ul><li><a href="configure-aem.md">profil de métadonnées AEM Assets configuré pour les ressources Commerce</a></li><li>Valeurs de métadonnées mappées pour chaque ressource</li><li>Éditeur de fichier CSV (par exemple, Microsoft Excel)</li></ul> |
+
+>[!IMPORTANT]
+>
+>Les opérations de chargement et de métadonnées en bloc prises en charge ne nécessitent pas, en soi, AEM Assets Ultimate. Les workflows de migration ou de métadonnées par programmation qui nécessitent des API AEM Assets, y compris l’entrée et la sortie de métadonnées basées sur les API, nécessitent AEM Assets Ultimate. Avant de choisir une méthode de migration, passez en revue les [limites visuelles du produit](../../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Bonnes pratiques de migration
 
@@ -63,15 +67,15 @@ Suivez le workflow de migration pour exporter des fichiers multimédias depuis A
 
 [!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."}
 
-Pour les commerçants Adobe Commerce, le **module de stockage à distance** peut faciliter l’importation et l’exportation de fichiers multimédias. Ce module permet aux entreprises de stocker et de gérer des fichiers multimédias à l’aide de services de stockage à distance tels qu’AWS S3. Pour configurer le stockage distant de votre instance Commerce, consultez [Configurer le stockage distant](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) dans le **Guide de configuration de Commerce**.
+Pour les commerçants Adobe Commerce, le **module de stockage étendu** peut faciliter les importations et les exportations de fichiers multimédias. Ce module permet aux entreprises de stocker et de gérer des fichiers multimédias à l’aide de services de stockage à distance tels qu’AWS S3. Pour configurer le stockage distant de votre instance Commerce, consultez [Configurer le stockage distant](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3) dans le **Guide de configuration de Commerce**.
 
-Si des fichiers multimédias sont stockés en dehors d’Adobe Commerce, chargez-les directement vers l’une des [sources de données](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites) prises en charge par AEM as a Cloud Service.
+Si des fichiers multimédias sont stockés en dehors d’Adobe Commerce, chargez-les directement dans l’une des [sources de données](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites) prises en charge par AEM as a Cloud Service.
 
 ### Étape 2 : créer un fichier CSV pour le mappage des métadonnées
 
 Créez un fichier CSV qui mappe chaque fichier multimédia à ses données de produit Commerce. Choisissez l’une des méthodes suivantes :
 
-* **Adobe Commerce (PaaS)** : utilisez la commande de l’interface de ligne de commande pour générer automatiquement le fichier CSV à partir de votre catalogue
+* **Adobe Commerce (PaaS)** : utilisez la commande CLI pour générer automatiquement le fichier CSV à partir de votre catalogue
 * Création manuelle du fichier CSV
 
 #### Exportation de métadonnées à l’aide de l’interface de ligne de commande
@@ -94,7 +98,7 @@ Utilisez la commande AEM Assets Integration CLI pour générer automatiquement u
    bin/magento aem:assets:export:csv <AEM-path-prefix>
    ```
 
-   Le `<AEM-path-prefix>` est le chemin d’accès au dossier de base où vos ressources seront stockées dans la gestion des ressources numériques d’AEM Assets (par exemple, `/content/dam/commerce/`).
+   `<AEM-path-prefix>` est le chemin d’accès au dossier de base où vos ressources seront stockées dans la gestion des ressources numériques AEM Assets (par exemple, `/content/dam/commerce/`).
 
    ```bash
    bin/magento aem:assets:export:csv /content/dam/commerce/
@@ -104,11 +108,11 @@ Utilisez la commande AEM Assets Integration CLI pour générer automatiquement u
 
 #### Créer le fichier CSV manuellement
 
-Pour les fichiers multimédias stockés en dehors d’Adobe Commerce, créez manuellement le fichier CSV. Les en-têtes de colonne **doivent correspondre** noms de champ configurés dans votre [profil de métadonnées AEM Assets](configure-aem.md). Une fois le fichier créé, renseignez les lignes avec les valeurs de métadonnées de chaque fichier multimédia.
+Pour les fichiers multimédias stockés en dehors d’Adobe Commerce, créez manuellement le fichier CSV. Les en-têtes de colonne **doivent correspondre** aux noms de champ configurés dans votre [profil de métadonnées AEM Assets](configure-aem.md). Une fois le fichier créé, renseignez les lignes avec les valeurs de métadonnées de chaque fichier multimédia.
 
 | Métadonnées | Description | Valeur |
 |-------|-------------|--------|
-| assetPath | Chemin d’accès complet où la ressource sera stockée dans le référentiel AEM Assets.<br><br>Utilisez le chemin d’accès pour créer des sous-dossiers afin d’organiser les ressources Commerce, par exemple les `content/dam/commerce/<brand>/<type>`. | `/content/dam/commerce/<sub-folder>/..<filename>` |
+| assetPath | Chemin d’accès complet où la ressource sera stockée dans le référentiel AEM Assets.<br><br>Utilisez le chemin d’accès pour créer des sous-dossiers afin d’organiser les ressources Commerce, par exemple `content/dam/commerce/<brand>/<type>`. | `/content/dam/commerce/<sub-folder>/..<filename>` |
 | commerce:positions | Position/ordre de la ressource dans les galeries de produits | Valeurs numériques multiples séparées par une barre verticale (« Number: multi ») |
 | commerce:isCommerce | Indicateur signalant si la ressource est utilisée dans Commerce | `Yes` |
 | commerce:skus | SKU de produit associés à cette ressource | Plusieurs valeurs de chaîne séparées par une barre verticale (chaîne : multi) |
@@ -132,15 +136,15 @@ Après avoir créé le fichier de mappage de métadonnées, utilisez l’outil d
 
 Voici un aperçu général de l’utilisation de l’outil.
 
-1. [Connectez-vous à votre environnement de création AEM Assets as a Cloud Service](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem).
+1. [Connectez-vous à votre environnement de création AEM Assets as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem).
 
 1. Dans la vue Outils Experience Manager, sélectionnez **[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**.
 
-   ![Création &#x200B;](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
+   ![Création AEM Assets](../assets/aem-assets-bulk-import-selection.png){width="600" zoomable="yes"}
 
 1. Dans les configurations d’importation en bloc, sélectionnez **[!UICONTROL Create]** pour ouvrir le formulaire de configuration.
 
-   ![Création &#x200B;](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
+   ![Création AEM Assets](../assets/aem-assets-bulk-import-configuration.png){width="600" zoomable="yes"}
 
 1. Configurez et enregistrez la configuration.
 
@@ -151,12 +155,12 @@ Voici un aperçu général de l’utilisation de l’outil.
    * Facultatif. Informations sur les types MIME, la taille de fichier et d’autres paramètres permettant de personnaliser la configuration de l’importation
    * Chemin d’accès au fichier CSV de mappage de métadonnées que vous avez chargé dans l’instance d’espace de stockage.
 
-   Pour obtenir des instructions détaillées, consultez [Configuration de l’outil d’importation en bloc](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/add-assets#configure-bulk-ingestor-tool) dans le *Guide de l’utilisateur d’AEM Assets as a Cloud Service*.
+   Pour obtenir des instructions détaillées, consultez [Configuration de l’outil d’importation en bloc](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#configure-bulk-ingestor-tool) dans le *Guide de l’utilisateur d’AEM Assets as a Cloud Service*.
 
 1. Après avoir enregistré la configuration, utilisez les outils d’importation en bloc pour tester et exécuter l’opération d’importation.
 
 >[!MORELIKETHIS]
 >
-> Démonstration vidéo de l’outil d’importation en bloc [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
-> [Conseils, bonnes pratiques et restrictions](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> [Chargement ou ingestion de ressources à l’aide d’API](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> Démonstration vidéo de l’outil d’importation en bloc [](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
+> [Conseils, bonnes pratiques et restrictions](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
+> [Chargement ou ingestion de ressources à l’aide d’API](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload) - Vérifiez les [limites des visuels de produit](../../optimizer/boundaries-limits.md#product-visuals-limits) avant d’implémenter une migration pilotée par l’API.

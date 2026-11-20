@@ -3,7 +3,7 @@ title: Visuels de produit avec AEM Assets
 description: Découvrez comment utiliser AEM Assets pour les images de produit dans [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '567'
 ht-degree: 0%
 ---
 
@@ -33,24 +33,24 @@ La fonctionnalité Visuels du produit permet aux commerçants [!DNL Adobe Commer
 
 >[!NOTE]
 >
->**Visuels du produit** est le nom du lot fourni avec [!DNL Adobe Commerce as a Cloud Service] et [!DNL Adobe Commerce Optimizer]. Il associe [Dynamic Media aux fonctionnalités OpenAPI](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) et [AEM Assets Prime](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-prime).
+>**Visuels du produit** est le nom du lot fourni avec [!DNL Adobe Commerce as a Cloud Service] et [!DNL Adobe Commerce Optimizer]. Il associe [Dynamic Media aux fonctionnalités OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) et [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime).
 >
->Les clients disposant d’une licence AEM Assets différente (par exemple, **AEM Assets Ultimate**) peuvent utiliser la même intégration ; seule la version d’AEM affecte les étapes d’intégration, et non le type de licence.
+>Les clients disposant d’une licence AEM Assets différente, telle que [AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview), peuvent utiliser la même intégration. Ultimate n’est pas inclus dans les visuels de produit et nécessite un SKU de module complémentaire AEM Assets Ultimate. Contactez votre représentant de compte Adobe pour obtenir les licences et la configuration. La version d’AEM détermine la méthode d’intégration ; les fonctionnalités et environnements disponibles dépendent des droits. Voir [Limites des visuels de produit](../boundaries-limits.md#product-visuals-limits).
 
 ## Principaux avantages
 
-* **Gestion centralisée des ressources** : gérez toutes les images de produits dans AEM Assets, la solution de gestion des ressources numériques d’entreprise.
+* **Gestion centralisée des ressources** : gérez les images de produit dans AEM Assets pour les cas d’utilisation de la gestion des ressources axée sur Commerce.
 * **Synchronisation automatique** : les images de produit se synchronisent automatiquement lorsque des ressources sont approuvées ou mises à jour dans AEM Assets.
 * **Diffusion Dynamic Media** : utilisez Dynamic Media avec les fonctionnalités OpenAPI pour une diffusion d’images optimisée.
-* **Calques de catalogue** : les images de produit sont appliquées en tant que calque de catalogue, ce qui vous permet de superposer des images AEM Assets sur votre catalogue de base.
+* **Calques de catalogue** : les images de produit sont appliquées en tant que calque de catalogue, ce qui vous permet de superposer les images AEM Assets sur votre catalogue de base.
 
 ## Fonctionnement
 
-L’intégration comporte deux flux d’événements indépendants. Les deux utilisent [&#128279;](https://developer.adobe.com/events/docs/) pour transférer des événements au service d&#39;intégration d&#39;Assets, mais chaque direction utilise son propre fournisseur d&#39;événements :
+L’intégration comporte deux flux d’événements indépendants. Les deux utilisent [Adobe I/O Events](https://developer.adobe.com/events/docs/) pour transférer des événements au service d’intégration d’Assets, mais chaque direction utilise son propre fournisseur d’événements :
 
-* **D’AEM Assets au service d’intégration d’Assets** : lorsqu’une ressource est approuvée, rejetée ou supprimée, l’événement est diffusé au service d’intégration d’Assets. Le service associe les ressources aux produits à l’aide d’une `match-by-SKU` ou d’une stratégie de correspondance personnalisée, puis envoie les mappages de `product-asset` à [!DNL Commerce Optimizer], où elles sont stockées en tant que couches de produit.
+* **D’AEM Assets au service d’intégration Assets** : lorsqu’une ressource est approuvée, rejetée ou supprimée, l’événement est diffusé au service d’intégration Assets. Le service fait correspondre les ressources aux produits à l’aide d’une stratégie `match-by-SKU` ou d’une stratégie de correspondance personnalisée, puis envoie les mappages `product-asset` à [!DNL Commerce Optimizer], où ils sont stockés en tant que couches de produit.
 
-* **De [!DNL Commerce Optimizer] à Assets Integration Service** : lorsqu&#39;un produit est mis à jour en [!DNL Commerce Optimizer], l&#39;événement est diffusé au service d&#39;intégration d&#39;Assets. Le service resynchronise tous les mappages de ressources correspondants avec [!DNL Commerce Optimizer].
+* **De [!DNL Commerce Optimizer] au service d&#39;intégration Assets** : lorsqu&#39;un produit est mis à jour dans [!DNL Commerce Optimizer], l&#39;événement est diffusé au service d&#39;intégration Assets. Le service resynchronise tous les mappages de ressources correspondants avec [!DNL Commerce Optimizer].
 
 Les images mises à jour sont disponibles via les API de storefront (service de catalogue, recherche en direct, recommandations de produits).
 
@@ -58,11 +58,11 @@ Les images mises à jour sont disponibles via les API de storefront (service de 
 
 Pour activer la correspondance automatique de produits, configurez vos ressources dans AEM Assets avec les métadonnées Commerce.
 
-Voir [Configuration d’AEM Assets](../../aem-assets-integration/get-started/configure-aem.md) pour connaître les étapes et champs de métadonnées requis.
+Consultez [Configurer AEM Assets](../../aem-assets-integration/get-started/configure-aem.md) pour connaître les étapes et champs de métadonnées requis.
 
 ## Restrictions
 
-Pour les allocations de capacité et d’utilisation (stockage des ressources, opérations Dynamic Media, licences utilisateur), consultez [Limites des visuels de produit](../boundaries-limits.md#product-visuals-limits) dans le guide _Limites et limites_.
+Pour les droits aux fonctionnalités, la capacité et les allocations d’utilisation (stockage des ressources, opérations Dynamic Media, licences utilisateur), consultez [Limites des visuels de produit](../boundaries-limits.md#product-visuals-limits) dans le guide _Limites et limites_.
 
 ## Utilisation des visuels de produit
 
@@ -78,7 +78,7 @@ Une fois l’intégration configurée, gérez vos images de produit via AEM Asse
 
 1. Valider la ressource à diffuser. La ressource doit avoir le statut **approuvé** pour déclencher la synchronisation.
 
-1. L’image se synchronise automatiquement avec [!DNL Commerce Optimizer].
+1. L&#39;image se synchronise automatiquement avec [!DNL Commerce Optimizer].
 
 ### Application du calque AEM-Assets
 
@@ -89,4 +89,4 @@ Pour afficher des images AEM Assets sur votre storefront, [affectez le calque `A
 * [Calques de catalogue](catalog-layer.md)
 * [Vues du catalogue](catalog-view.md)
 * [Guide d’intégration d’AEM Assets](../../aem-assets-integration/overview.md)
-* [Limites et limites des visualisations de produit](https://experienceleague.adobe.com/fr/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
+* [Limites et limites des visualisations de produit](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)

@@ -22,30 +22,34 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # Correspondance automatique personnalisée
 
-Si la stratégie de correspondance automatique par défaut (**correspondance automatique prête à l’emploi**) n’est pas alignée avec les besoins spécifiques de votre entreprise, sélectionnez l’option Correspondance personnalisée . Cette option prend en charge l’utilisation de [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) pour développer une application de correspondance personnalisée qui gère une logique de correspondance complexe, ou des ressources provenant d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
+Si la stratégie de correspondance automatique par défaut (**correspondance automatique prête à l&#39;emploi**) n&#39;est pas alignée avec les besoins spécifiques de votre entreprise, sélectionnez l&#39;option de correspondance personnalisée. Cette option prend en charge l’utilisation d’[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) pour développer une application de correspondance personnalisée qui gère une logique de correspondance complexe, ou des ressources provenant d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
+
+>[!NOTE]
+>
+>Si votre correspondance personnalisée ou votre intégration Adobe Developer App Builder nécessite que les API AEM Assets gèrent les ressources ou les métadonnées par programmation, un droit AEM Assets Ultimate est requis. Cette exigence dépend des API utilisées par l’application et non de l’utilisation d’App Builder seule. Voir [Limites des visuels de produit](../../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Configuration de la correspondance automatique personnalisée
 
-1. Dans l’Administration Commerce, accédez à **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. Dans l’administration Commerce, accédez à **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
 1. Sélectionnez **[!UICONTROL Custom Matcher]** comme règle correspondante.
 
-1. Lorsque vous sélectionnez cette règle de correspondance, Admin affiche des champs supplémentaires pour configurer les **points d’entrée** et les **paramètres d’authentification** nécessaires à la logique de correspondance personnalisée.
+1. Lorsque vous sélectionnez cette règle de correspondance, l’administrateur affiche des champs supplémentaires pour configurer les **points d’entrée** et les **paramètres d’authentification** nécessaires pour la logique de correspondance personnalisée.
 
 ### workspace.json
 
-Le champ **[!UICONTROL Adobe I/O Workspace Configuration]** permet de configurer votre correspondant personnalisé de manière simplifiée en important votre fichier de configuration de `workspace.json` App Builder.
+Le champ **[!UICONTROL Adobe I/O Workspace Configuration]** offre un moyen simplifié de configurer votre correspondant personnalisé en important votre fichier de configuration App Builder `workspace.json`.
 
-Vous pouvez télécharger le fichier `workspace.json` à partir de [Adobe Developer Console](https://developer.adobe.com/console). Le fichier contient toutes les informations d’identification et de configuration pour votre espace de travail App Builder.
+Vous pouvez télécharger le fichier `workspace.json` à partir du [Adobe Developer Console](https://developer.adobe.com/console). Le fichier contient toutes les informations d’identification et de configuration pour votre espace de travail App Builder.
 
-+++Exemple de `workspace.json`
++++Exemple `workspace.json`
 
 ```json
 {
@@ -114,9 +118,9 @@ Vous pouvez télécharger le fichier `workspace.json` à partir de [Adobe Develo
 
 +++
 
-1. Effectuez un glisser-déposer de votre fichier `workspace.json` de votre projet App Builder vers le champ **[!UICONTROL Adobe I/O Workspace Configuration]** . Vous pouvez également cliquer sur pour parcourir et sélectionner le fichier.
+1. Faites glisser votre fichier `workspace.json` de votre projet App Builder vers le champ **[!UICONTROL Adobe I/O Workspace Configuration]**. Vous pouvez également cliquer sur pour parcourir et sélectionner le fichier.
 
-![Configuration &#x200B;](../assets/workspace-configuration.png){width="600" zoomable="yes"}
+![Configuration Workspace](../assets/workspace-configuration.png){width="600" zoomable="yes"}
 
 1. Le système effectue automatiquement les opérations suivantes :
 
@@ -129,13 +133,17 @@ Vous pouvez télécharger le fichier `workspace.json` à partir de [Adobe Develo
 
 1. Cliquez sur **[!UICONTROL Save Config]**.
 
+Une fois la configuration appliquée, [vérifiez l’intégration](../get-started/setup-synchronization.md#verify-the-integration) avec une ressource approuvée et un produit que votre correspondant personnalisé y associe.
+
+[!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} Si la synchronisation échoue, passez en revue les [journaux d’intégration](../get-started/logs.md).
+
 ## Enregistrement de la configuration asynchrone
 
-Si l’option [Enregistrer la configuration asynchrone](https://experienceleague.adobe.com/fr/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) est activée pour votre instance Commerce, les modifications de configuration sont mises en file d’attente et appliquées par un client asynchrone au lieu d’être enregistrées immédiatement dans la même requête. Pour charger un fichier `workspace.json` pour la correspondance automatique personnalisée dans ce mode, effectuez les étapes suivantes dans l’ordre :
+Si l’option [Enregistrer la configuration asynchrone](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) est activée pour votre instance Commerce, les modifications de configuration sont mises en file d’attente et appliquées par un client asynchrone au lieu d’être enregistrées immédiatement dans la même requête. Pour charger un fichier `workspace.json` en vue d’une correspondance automatique personnalisée dans ce mode, procédez comme suit :
 
-1. Vérifiez que l’enregistrement de la configuration asynchrone de Commerce est [&#x200B; activé](https://experienceleague.adobe.com/fr/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
+1. Vérifiez que l’enregistrement de la configuration asynchrone de Commerce est [activé](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
 
-1. Dans l’administration, accédez à **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**.
+1. Depuis l’administration, accédez à **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**.
 
 1. Chargez le fichier App Builder `workspace.json` actuel.
 
@@ -155,8 +163,8 @@ Si l’option [Enregistrer la configuration asynchrone](https://experienceleague
 
 | Symptôme | Que faire |
 | --- | --- |
-| Les valeurs OAuth restent inchangées après enregistrement | Vérifiez que vous exécutez la version 1.4.7 ou une version ultérieure de l’extension AEM Assets Integration, chargez un nouveau fichier `workspace.json` et attendez la fin du traitement de la file d’attente avant de vérifier à nouveau les valeurs. |
-| L’enregistrement échoue après un chargement non valide | Vérifiez que le fichier est un fichier `workspace.json` bien formé et qu’il contient les informations d’identification App Builder attendues. |
+| Les valeurs OAuth restent inchangées après enregistrement | Vérifiez que vous exécutez AEM Assets Integration extension version 1.4.7 ou ultérieure, chargez un nouveau fichier `workspace.json` et attendez la fin du traitement de la file d’attente avant de vérifier à nouveau les valeurs. |
+| L’enregistrement échoue après un chargement non valide | Vérifiez que le fichier est un fichier `workspace.json` bien formé et contient les informations d’identification App Builder attendues. |
 | Aucun fichier n&#39;a été chargé | La configuration stockée existante reste inchangée. |
 | L’enregistrement du mappeur externe n’est pas mis à jour | Vérifiez si le client de la file d’attente a terminé le traitement, consultez les journaux Commerce et confirmez le statut d’enregistrement du mappeur externe. |
 | L&#39;enregistrement de la configuration asynchrone est désactivé | Le comportement normal d’enregistrement synchrone s’applique ; cette section de dépannage ne s’applique pas. |
@@ -167,9 +175,9 @@ Si l’option [Enregistrer la configuration asynchrone](https://experienceleague
 
 ## Points d’entrée de l’API de correspondance personnalisés
 
-Lorsque vous créez une application de correspondance personnalisée à l’aide d’[&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l’application doit exposer les points d’entrée suivants :
+Lorsque vous créez une application de correspondance personnalisée à l’aide d’[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l’application doit exposer les points d’entrée suivants :
 
-* **Ressource App Builder vers l’URL du produit** point d’entrée
+* **Ressource App Builder vers le point d’entrée de l’URL du produit**
 * **Point d’entrée du produit App Builder vers l’URL de la ressource**
 
 ### Ressource App Builder vers le point d’entrée de l’URL du produit
@@ -249,7 +257,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 | --- | --- | --- |
 | `asset_id` | String | Identifiant de ressource correspondant. |
 | `product_matches` | Tableau | Liste des produits associés à la ressource. |
-| `skip` | Booléen | (Facultatif) Lorsqu’il est `true`, le moteur de règle ignore la synchronisation pour cette ressource (aucune mise à jour du mappage de produits). Lorsqu’il est `false` ou omis, le traitement normal s’exécute. Voir [Ignorer le traitement de la synchronisation](#skip-sync-processing). |
+| `skip` | Booléen | (Facultatif) Lorsque `true`, le moteur de règle ignore la synchronisation pour cette ressource (aucune mise à jour du mappage de produits). Lorsque `false` est omis, le traitement normal s’exécute. Voir [Ignorer le traitement de la synchronisation](#skip-sync-processing). |
 
 ### Produit App Builder vers le point d’entrée de l’URL de la ressource
 
@@ -329,14 +337,14 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | --- | --- | --- |
 | `product_sku` | String | SKU du produit correspondant. |
 | `asset_matches` | Tableau | Liste des ressources associées au produit. |
-| `skip` | Booléen | (Facultatif) Lorsqu’il est `true`, le moteur de règles ignore la synchronisation pour ce produit (aucune mise à jour du mappage des ressources). Lorsqu’il est `false` ou omis, le traitement normal s’exécute. Voir [Ignorer le traitement de la synchronisation](#skip-sync-processing). |
+| `skip` | Booléen | (Facultatif) Lorsque `true`, le moteur de règle ignore la synchronisation pour ce produit (aucune mise à jour du mappage des ressources). Lorsque `false` est omis, le traitement normal s’exécute. Voir [Ignorer le traitement de la synchronisation](#skip-sync-processing). |
 
 Le paramètre `asset_matches` contient les attributs suivants :
 
 | Attribut | Type de données | Description |
 | --- | --- | --- |
 | `asset_id` | String | Identifiant de la ressource. |
-| `asset_roles` | Tableau | Rôles de ressources. Utilise les [rôles de ressources Commerce pris en charge](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) tels que `thumbnail`, `image`, `small_image` et `swatch_image`. Avec AEM Assets Integration extension 1.4.6 et versions ultérieures, les rôles d’image personnalisés (tels que `hero` ou `custom_role_1`) sont également acceptés. |
+| `asset_roles` | Tableau | Rôles de ressources. Utilise les [rôles de ressource Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) pris en charge, tels que `thumbnail`, `image`, `small_image` et `swatch_image`. Avec l’extension d’intégration AEM Assets 1.4.6 et versions ultérieures, les rôles d’image personnalisés (tels que `hero` ou `custom_role_1`) sont également acceptés. |
 | `asset_format` | String | Format de la ressource. Les valeurs possibles sont `image` et `video`. |
 | `asset_position` | Nombre | Position de la ressource dans la galerie de produits. |
 
@@ -344,4 +352,4 @@ Le paramètre `asset_matches` contient les attributs suivants :
 
 Le paramètre `skip` permet à votre mappeur personnalisé de contourner le traitement de synchronisation pour des ressources ou des produits spécifiques.
 
-Lorsque votre application App Builder renvoie des `"skip": true` dans la réponse, le moteur de règle n’envoie pas de requêtes de mise à jour ou de suppression d’API à Commerce pour cette ressource ou ce produit. Cette optimisation réduit les appels d’API inutiles et améliore les performances.
+Lorsque votre application App Builder renvoie `"skip": true` dans la réponse, le moteur de règle n’envoie pas de requêtes de mise à jour ou de suppression d’API à Commerce pour cette ressource ou ce produit. Cette optimisation réduit les appels d’API inutiles et améliore les performances.
