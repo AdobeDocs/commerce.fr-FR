@@ -22,24 +22,24 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 0%
 ---
 # Correspondance automatique par défaut
 
-L’intégration d’AEM Assets pour Commerce fournit un mécanisme de correspondance automatique par défaut (**[!UICONTROL Match by product SKU]**) en fonction de la configuration des métadonnées **AEM Assets**. Cette règle permet une synchronisation transparente entre **&#x200B;**&#x200B;et **AEM Assets**, en veillant à ce que les ressources soient automatiquement liées aux entités de marchandisage correctes.
+L’intégration d’AEM Assets pour Commerce fournit un mécanisme de correspondance automatique par défaut (**[!UICONTROL Match by product SKU]**) en fonction de la configuration des métadonnées **AEM Assets**. Cette règle permet une synchronisation transparente entre **Adobe Commerce** et **AEM Assets**, en veillant à ce que les ressources soient automatiquement liées aux entités de marchandisage appropriées.
 
 ## Configuration du mécanisme de correspondance automatique
 
-1. Dans l’Administration Commerce, accédez à **[!UICONTROL Store]** > Configuration > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. Dans l’administration Commerce, accédez à **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-1. Spécifiez **[!UICONTROL Match by SKU]** comme règle correspondante.
+1. Spécifiez **[!UICONTROL Match by product SKU]** comme règle correspondante.
 
-   ![règle de rapprochement automatisé par défaut](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
+   ![Correspondance par règle de SKU de produit et nom de propriété de métadonnées](../assets/ootb-matching-rule.png){width="700" zoomable="yes"}
 
-1. Saisissez le nom du champ de métadonnées utilisé pour l’identification de la ressource dans AEM Assets.
+1. Dans **[!UICONTROL Match by product SKU attribute name]**, saisissez le [nom de propriété de métadonnées](../metadata.md) qui stocke les SKU de produit dans AEM Assets, et non une valeur de SKU réelle.
 
    >[!NOTE]
    >
@@ -47,26 +47,28 @@ L’intégration d’AEM Assets pour Commerce fournit un mécanisme de correspon
 
 ## Fonctionnement du mécanisme de correspondance automatique
 
-Lorsque la règle de correspondance de **[!UICONTROL Match by product SKU]** est configurée dans l’administration Commerce, les fichiers de ressources Commerce se synchronisent automatiquement entre AEM Assets et votre projet Commerce en fonction des métadonnées de ressources configurées pour chaque fichier. Vous configurez les métadonnées à partir de l’onglet AEM **Commerce** dans l’environnement de création **AEM Assets** :
+Lorsque la règle de correspondance **[!UICONTROL Match by product SKU]** est configurée dans l’administration Commerce, les fichiers de ressources Commerce se synchronisent automatiquement entre AEM Assets et votre projet Commerce en fonction des métadonnées de ressources configurées pour chaque fichier. Vous configurez les métadonnées à partir de l’onglet AEM **Commerce** dans l’environnement de **création AEM Assets** :
 
 1. Ouvrez votre instance d’auteur AEM Assets (l’URL est fournie pour votre projet dans la même organisation IMS qu’Adobe Commerce).
 
-1. Dans l’écran de navigation principal, cliquez sur **&#x200B;**&#x200B;pour accéder à l’interface de gestion des ressources numériques (DAM).
+1. Dans l’écran de navigation principal, cliquez sur **Assets** pour accéder à l’interface de gestion des ressources numériques (DAM).
 
 1. Dans AEM Assets, mettez à jour les métadonnées de l’image pour ajouter l’association Adobe Commerce en définissant le champ `Eligible for Commerce` sur `Yes`.
 
-   ![&#x200B; Exemple de métadonnées &#x200B;](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
+   ![Exemple de métadonnées](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
 
-1. Configurez les métadonnées ([!UICONTROL SKU], [!UICONTROL position] et [!UICONTROL role]) qui lient la ressource au SKU du produit associé.
+1. Configurez les métadonnées ([!UICONTROL SKU], [!UICONTROL position] et [!UICONTROL role]) qui lient la ressource au SKU de produit associé.
 
-   Les quatre rôles standard sont `image`, `small_image`, `thumbnail` et `swatch_image`. Avec les versions 1.4.6 et ultérieures de l’extension d’intégration AEM Assets, vous pouvez également saisir un rôle d’image personnalisé, tel que `hero` ou `custom_role_1`. Voir [Correspondance automatique personnalisée](custom-match.md) pour plus d’informations.
+   Les quatre rôles standard sont `image`, `small_image`, `thumbnail` et `swatch_image`. Avec les versions 1.4.6 et ultérieures de l’extension d’intégration AEM Assets, vous pouvez également saisir un rôle d’image personnalisé, tel que `hero` ou `custom_role_1`. Voir [Correspondance automatique personnalisée](custom-match.md) pour plus de détails.
 
    >[!NOTE]
    >
    > Si une ressource est utilisée pour plusieurs produits, configurez les métadonnées de chaque SKU associé.
 
-1. Dans l’onglet `Basic` , définissez la valeur par défaut du champ _[!UICONTROL Review Status]_&#x200B;sur `approved`.
+1. Dans l’onglet `Basic`, définissez la valeur par défaut du champ _[!UICONTROL Review Status]_&#x200B;sur `approved`.
 
-   ![&#x200B; Exemple de métadonnées &#x200B;](../assets/metadata-review-status.png){width="600" zoomable="yes"}
+   ![Exemple de métadonnées](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
-Cette approche permet de s’assurer que les ressources numériques sont correctement liées et affichées dans Adobe Commerce. Il permet également aux marchandiseurs et aux marketeurs de gérer les rôles et le positionnement des ressources directement dans AEM Assets, fournissant ainsi un mécanisme cohérent et centralisé pour la sélection et la commande des images sur tous les canaux d’engagement.
+Après approbation de la ressource, [vérifiez l’association de produit, le résultat de la synchronisation et l’affichage du storefront](../get-started/setup-synchronization.md#verify-the-integration). Si la ressource n’apparaît pas, vérifiez [État de synchronisation](../get-started/sync-status.md). Pour Adobe Commerce Optimizer, utilisez plutôt le workflow de vérification [Optimizer](../get-started/configure-aco.md#match-by-sku-workflow-example) ; le statut de synchronisation n’est pas disponible.
+
+[!BADGE PaaS uniquement]{type=Informative tooltip="S’applique uniquement à Adobe Commerce sur les projets cloud (infrastructure PaaS gérée par Adobe)."} Pour effectuer un dépannage de synchronisation supplémentaire, consultez les [journaux d’intégration](../get-started/logs.md).

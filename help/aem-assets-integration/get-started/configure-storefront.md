@@ -26,9 +26,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '664'
 ht-degree: 0%
 ---
 # Configuration de votre storefront
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 L’intégration d’AEM Assets affiche les images de produit d’AEM Assets au lieu d’Adobe Commerce, ce qui permet une optimisation avancée, le recadrage et la diffusion sur le réseau CDN.
 
-Pour activer l’intégration dans les storefronts Commerce optimisés par Edge Delivery Services, ajoutez le paramètre `"commerce-assets-enabled": true` au fichier de configuration de storefront (`config.json`).
+Pour activer l&#39;intégration dans les storefronts Commerce optimisés par Edge Delivery Services, ajoutez le paramètre `"commerce-assets-enabled": true` au fichier de configuration des storefronts (`config.json`).
 
 ```json
 {
@@ -51,7 +51,9 @@ Pour activer l’intégration dans les storefronts Commerce optimisés par Edge 
 
 Les listes déroulantes Commerce détectent automatiquement la configuration `commerce-assets-enabled` et ajustent la gestion des images en conséquence.
 
-Pour plus d’informations sur l’utilisation d’AEM Assets avec le storefront Commerce optimisé par Edge Delivery Services, consultez la rubrique sur l’[intégration d’AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) dans la documentation du *storefront Adobe Commerce*.
+Pour plus d’informations sur l’utilisation d’AEM Assets avec le storefront Commerce optimisé par Edge Delivery Services, consultez la rubrique [Intégration d’AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) dans la documentation *Storefront Adobe Commerce*.
+
+Après avoir enregistré la configuration du storefront, [vérifiez l&#39;intégration](setup-synchronization.md#verify-the-integration) avec une ressource approuvée associée à un produit. Vérifiez que l’image attendue s’affiche sur le storefront. Dans le cas contraire, vérifiez l’association de produit, le propriétaire de la visualisation et le résultat de la synchronisation avant de résoudre les problèmes de diffusion des images storefront. Pour Adobe Commerce Optimizer, suivez le workflow de vérification de [Optimizer](configure-aco.md#match-by-sku-workflow-example).
 
 >[!TIP]
 >
@@ -61,17 +63,17 @@ Pour plus d’informations sur l’utilisation d’AEM Assets avec le storefront
 
 >[!NOTE]
 >
->Cette configuration est distincte de l’extension d’intégration AEM Assets. Fourni par [Da.live](https://da.live){target="_blank"} il permet aux auteurs de parcourir et d’insérer AEM Assets dans des pages de contenu statiques (par exemple, des pages de destination ou des blocs de contenu) via le panneau de [!UICONTROL Library] et les [!UICONTROL Content Advisor]. Les images de produit synchronisées par le biais de l’intégration AEM Assets sont configurées séparément à l’aide du paramètre `commerce-assets-enabled`.
+>Cette configuration est distincte de l’extension d’intégration AEM Assets. Fourni par [Da.live](https://da.live){target="_blank"}, il permet aux auteurs de parcourir et d’insérer AEM Assets dans des pages de contenu statiques (par exemple, des pages de destination ou des blocs de contenu) via le panneau [!UICONTROL Library] et [!UICONTROL Content Advisor]. Les images de produit synchronisées via l’intégration AEM Assets sont configurées séparément à l’aide du paramètre `commerce-assets-enabled`.
 
-Suivez les étapes ci-après pour connecter AEM Assets à un storefront de création de documents (Da.live) afin que les auteurs puissent parcourir et insérer AEM Assets à partir du **[!UICONTROL Content Advisor]** tout en modifiant le contenu statique.
+Suivez les étapes ci-après pour connecter AEM Assets à un storefront de création de documents (Da.live) afin que les auteurs puissent parcourir et insérer AEM Assets à partir de **[!UICONTROL Content Advisor]** lors de la modification de contenu statique.
 
 >[!NOTE]
 >
->Pour obtenir des instructions de configuration détaillées, consultez [Configuration d’AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} dans la documentation Da.live et [Intégration d’AEM Assets lors de la création de contenu pour Edge Delivery Services](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} dans la documentation d’AEM Assets.
+>Pour obtenir des instructions de configuration détaillées, consultez [Configuration d’AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank} dans la documentation Da.live et [Intégration d’AEM Assets lors de la création de contenu pour Edge Delivery Services](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} dans la documentation AEM Assets.
 
 ### Étape 1 : Ouvrez la configuration de votre site dans Da.live
 
-1. À partir de [Da.live](https://da.live){target=_blank}, localisez et ouvrez votre storefront.
+1. À partir de [Da.live](https://da.live){target=_blank}, recherchez et ouvrez votre storefront.
 
 1. Dans la navigation du chemin de navigation, sélectionnez l’icône **[!UICONTROL Settings]** en regard du nom de votre site pour ouvrir la feuille de calcul de configuration du site.
 
@@ -79,9 +81,9 @@ Suivez les étapes ci-après pour connecter AEM Assets à un storefront de créa
 
 1. Dans un nouvel onglet, accédez à [experience.adobe.com](https://experience.adobe.com){target=_blank} et à **[!UICONTROL Experience Manager]**.
 
-1. Ouvrez Adobe Experience Manager Assets : faites défiler l’écran jusqu’à la section **[!UICONTROL My Authoring]**, puis sélectionnez **[!UICONTROL Assets]** en regard de votre environnement de **[!UICONTROL Production]**.
+1. Ouvrez Adobe Experience Manager Assets : faites défiler l’écran jusqu’à la section **[!UICONTROL My Authoring]**, puis sélectionnez **[!UICONTROL Assets]** en regard de votre environnement **[!UICONTROL Production]**.
 
-1. Dans la barre d’adresse du navigateur, copiez le segment commençant par `author` jusqu’à et y compris `.com`, par exemple `author-p107634-e1009805.adobeaemcloud.com`.
+1. Dans la barre d’adresse du navigateur, copiez le segment commençant par `author` jusqu’à `.com` inclus, par exemple `author-p107634-e1009805.adobeaemcloud.com`.
 
 ### Étape 3 : ajouter l’ID de référentiel à votre configuration
 
@@ -100,7 +102,7 @@ Suivez les étapes ci-après pour connecter AEM Assets à un storefront de créa
 
    >[!NOTE]
    >
-   > L’hôte avec préfixe `author-` parcourt les ressources à partir du niveau de création. Pour diffuser des ressources via Dynamic Media à la place, utilisez un hôte doté d’un préfixe `delivery-`. Pour toutes `aem.repositoryId` options, voir [Configuration d’AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}.
+   > L’hôte préfixé `author-` parcourt les ressources à partir du niveau de création. Pour diffuser des ressources via Dynamic Media à la place, utilisez un hôte préfixé `delivery-`. Pour toutes les options `aem.repositoryId`, consultez [Configuration d’AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}.
 
 ### Étape 4 : connexion d’AEM Assets via la bibliothèque
 
@@ -110,11 +112,11 @@ Suivez les étapes ci-après pour connecter AEM Assets à un storefront de créa
 
    La fenêtre contextuelle **[!UICONTROL Content Advisor]** s’ouvre et affiche vos dossiers et fichiers AEM Assets.
 
-Votre storefront est maintenant connecté à AEM Assets. Vous pouvez parcourir et insérer des ressources directement à partir du **[!UICONTROL Content Advisor]**.
+Votre storefront est maintenant connecté à AEM Assets. Vous pouvez parcourir et insérer des ressources directement depuis **[!UICONTROL Content Advisor]**.
 
 ## Documentation connexe
 
-* [Intégration d’](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} dans la documentation *Adobe Commerce Storefront* : configuration du storefront et comportement de la gestion des images.
+* [Intégration d’AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} dans la documentation *Adobe Commerce Storefront*—configuration du storefront et comportement de la gestion des images.
 
 * [Intégrez AEM Assets lors de la création de contenu pour Edge Delivery Services](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank} dans la documentation *AEM Assets*.
 
