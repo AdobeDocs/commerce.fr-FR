@@ -27,7 +27,7 @@ ht-degree: 0%
 * Pour Adobe Commerce as a Cloud Service, l’administrateur active l’authentification IMS par défaut.
 * Pour Adobe Commerce sur le cloud ou sur site, IMS est facultatif.
 
-  [L’activation d’IMS pour Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} fournit une interface utilisateur de configuration améliorée avec le sélecteur de ressources et les listes déroulantes d’environnement et de domaine. Si votre configuration affiche des champs **ID de programme** et **ID d’environnement** distincts, vous pouvez saisir ces identifiants manuellement sans IMS.
+  [L’activation d’IMS pour Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} fournit une interface utilisateur de configuration améliorée avec le sélecteur de ressources et les listes déroulantes d’environnement et de domaine. Si votre configuration affiche des champs **ID de programme** et **ID d’environnement** distincts, vous pouvez saisir ces identifiants manuellement sans IMS.
 
 Lors de l’utilisation d’IMS, l’intégration d’AEM Assets nécessite également des **profils de produit Adobe Admin Console** spécifiques. Les utilisateurs qui configurent l’intégration dans Commerce Admin ont besoin du profil de produit **Utilisateurs OpenAPI DM AEM Assets - diffusion** ou **auteur** comme solution de secours. Cet accès est contrôlé par le biais des profils de produit Admin Console dans l’organisation IMS de l’utilisateur et permet :
 
@@ -77,7 +77,7 @@ Ajoutez l’utilisateur au profil de produit **Utilisateurs OpenAPI AEM Assets D
 
 >[!NOTE]
 >
-> Les utilisateurs doivent également être ajoutés à Commerce et AEM Assets. Voir [Ajout d’un utilisateur à AEM Assets ou les visuels de produit](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} dans le guide _Utilisateur et Identity Management_ pour la configuration complète.
+> Les utilisateurs doivent également être ajoutés à Commerce et AEM Assets. Voir [Ajout d’un utilisateur à AEM Assets ou les visuels de produit](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} dans le guide _Utilisateur et Identity Management_ pour la configuration complète.
 
 ![Profil de produit Admin Console pour la diffusion AEM Assets](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
 
@@ -89,9 +89,9 @@ L’**ID client IMS** est requis pour que PaaS active le sélecteur de ressource
 
 Pour utiliser le sélecteur de ressources et les listes déroulantes **Environnement AEM** et **Mappage de domaine AEM** :
 
-1. [Activez Adobe IMS pour Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} de sorte que l’administrateur Commerce utilise l’authentification IMS et puisse lire les profils de produits Admin Console de l’utilisateur.
+1. [Activez Adobe IMS pour Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} de sorte que l’administrateur Commerce utilise l’authentification IMS et puisse lire les profils de produits Admin Console de l’utilisateur.
 
-1. Pour demander un identifiant de client IMS personnalisé pour le sélecteur de ressources, [Ouvrez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
+1. Pour demander un identifiant de client IMS personnalisé pour le sélecteur de ressources, [Ouvrez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 1. À partir du [Adobe Admin Console](https://adminconsole.adobe.com/), ajoutez l’utilisateur au profil de produit **Utilisateurs OpenAPI de DM d’AEM Assets - diffusion** ou au profil de produit **auteur** comme solution de secours.
 
@@ -103,6 +103,6 @@ Pour les configurations qui affichent des champs d’ID de programme et d’ID d
 
 * [Configurez les autorisations d&#39;utilisateur IMS pour l&#39;intégration AEM Assets](setup-synchronization.md)—Connectez Commerce à AEM Assets et configurez les règles correspondantes.
 * [Sélection manuelle des ressources](../synchronize/asset-selector-integration.md) : utilisez le sélecteur de ressources pour les images de catégorie et le générateur de page.
-* [Ajout d’un utilisateur à AEM Assets ou à Product Visuals](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} : pour [!DNL Adobe Commerce as a Cloud Service], ajoutez d’abord des utilisateurs à Commerce et à AEM Cloud Manager (Propriétaire de l’entreprise, Responsable de déploiement). Le profil **Utilisateurs de l’OpenAPI AEM Assets DM - diffusion** (ou **profil d’auteur** comme profil de secours) est une exigence supplémentaire pour le sélecteur de ressources et le remplissage automatique des fonctionnalités.
-* [Affectez des membres de l’équipe à la couche de diffusion AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. Documentation AEM pour l’accès aux diffusions.
+* [Ajout d’un utilisateur à AEM Assets ou à Product Visuals](https://experienceleague.adobe.com/fr/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} : pour [!DNL Adobe Commerce as a Cloud Service], ajoutez d’abord des utilisateurs à Commerce et à AEM Cloud Manager (Propriétaire de l’entreprise, Responsable de déploiement). Le profil **Utilisateurs de l’OpenAPI AEM Assets DM - diffusion** (ou **profil d’auteur** comme profil de secours) est une exigence supplémentaire pour le sélecteur de ressources et le remplissage automatique des fonctionnalités.
+* [Affectez des membres de l’équipe à la couche de diffusion AEM](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. Documentation AEM pour l’accès aux diffusions.
 

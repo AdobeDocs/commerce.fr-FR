@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et Adobe Commerce Optimizer (infrastructure SaaS gérée par Adobe)."
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
@@ -145,7 +145,7 @@ La visualisation des produits prend en charge la gestion des ressources numériq
 
 L’intégration garantit que les ressources numériques, telles que les images de produit ou le contenu marketing, sont liées dynamiquement aux entités de marchandisage appropriées, y compris les produits et les catégories dans Adobe Commerce, en fonction du SKU ou d’autres attributs clés.
 
-[!DNL Product Visuals] est inclus dans [!DNL Adobe Commerce as a Cloud Service]. Il regroupe [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime), une solution légère de gestion des ressources numériques, avec Dynamic Media et des fonctionnalités OpenAPI pour la diffusion des ressources.
+[!DNL Product Visuals] est inclus dans [!DNL Adobe Commerce as a Cloud Service]. Il regroupe [AEM Assets Prime](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-prime), une solution légère de gestion des ressources numériques, avec Dynamic Media et des fonctionnalités OpenAPI pour la diffusion des ressources.
 
 Les fonctionnalités natives de [!DNL Adobe Commerce as a Cloud Service] fournissent également des outils de gestion des ressources de base pour le stockage et la gestion des ressources numériques.
 
@@ -153,7 +153,7 @@ Consultez le guide d’intégration [AEM Assets](../aem-assets-integration/overv
 
 ### [!DNL Product Visuals] ou [!DNL AEM Assets Ultimate]
 
-La comparaison suivante vous aide à sélectionner la meilleure option pour vos besoins de supply chain de contenu. Les Visuels de produit prennent en charge la gestion des ressources axée sur Commerce. [AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview) prend en charge une gestion des ressources numériques d’entreprise plus étendue et des chaînes d’approvisionnement de contenu complexes, notamment l’extensibilité de l’interface utilisateur, l’automatisation pilotée par les API et le déploiement de code personnalisé.
+La comparaison suivante vous aide à sélectionner la meilleure option pour vos besoins de supply chain de contenu. Les Visuels de produit prennent en charge la gestion des ressources axée sur Commerce. [AEM Assets Ultimate](https://experienceleague.adobe.com/fr/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview) prend en charge une gestion des ressources numériques d’entreprise plus étendue et des chaînes d’approvisionnement de contenu complexes, notamment l’extensibilité de l’interface utilisateur, l’automatisation pilotée par les API et le déploiement de code personnalisé.
 
 >[!IMPORTANT]
 >
@@ -268,7 +268,7 @@ Les développeurs peuvent utiliser des [API GraphQL](https://developer.adobe.com
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/fr/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->

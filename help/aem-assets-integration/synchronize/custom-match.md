@@ -29,7 +29,7 @@ ht-degree: 0%
 ---
 # Correspondance automatique personnalisée
 
-Si la stratégie de correspondance automatique par défaut (**correspondance automatique prête à l&#39;emploi**) n&#39;est pas alignée avec les besoins spécifiques de votre entreprise, sélectionnez l&#39;option de correspondance personnalisée. Cette option prend en charge l’utilisation d’[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) pour développer une application de correspondance personnalisée qui gère une logique de correspondance complexe, ou des ressources provenant d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
+Si la stratégie de correspondance automatique par défaut (**correspondance automatique prête à l&#39;emploi**) n&#39;est pas alignée avec les besoins spécifiques de votre entreprise, sélectionnez l&#39;option de correspondance personnalisée. Cette option prend en charge l’utilisation d’[Adobe Developer App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) pour développer une application de correspondance personnalisée qui gère une logique de correspondance complexe, ou des ressources provenant d’un système tiers qui ne peut pas renseigner de métadonnées dans AEM Assets.
 
 >[!NOTE]
 >
@@ -139,9 +139,9 @@ Une fois la configuration appliquée, [vérifiez l’intégration](../get-starte
 
 ## Enregistrement de la configuration asynchrone
 
-Si l’option [Enregistrer la configuration asynchrone](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) est activée pour votre instance Commerce, les modifications de configuration sont mises en file d’attente et appliquées par un client asynchrone au lieu d’être enregistrées immédiatement dans la même requête. Pour charger un fichier `workspace.json` en vue d’une correspondance automatique personnalisée dans ce mode, procédez comme suit :
+Si l’option [Enregistrer la configuration asynchrone](https://experienceleague.adobe.com/fr/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) est activée pour votre instance Commerce, les modifications de configuration sont mises en file d’attente et appliquées par un client asynchrone au lieu d’être enregistrées immédiatement dans la même requête. Pour charger un fichier `workspace.json` en vue d’une correspondance automatique personnalisée dans ce mode, procédez comme suit :
 
-1. Vérifiez que l’enregistrement de la configuration asynchrone de Commerce est [activé](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
+1. Vérifiez que l’enregistrement de la configuration asynchrone de Commerce est [activé](https://experienceleague.adobe.com/fr/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
 
 1. Depuis l’administration, accédez à **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**.
 
@@ -175,7 +175,7 @@ Si l’option [Enregistrer la configuration asynchrone](https://experienceleague
 
 ## Points d’entrée de l’API de correspondance personnalisés
 
-Lorsque vous créez une application de correspondance personnalisée à l’aide d’[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l’application doit exposer les points d’entrée suivants :
+Lorsque vous créez une application de correspondance personnalisée à l’aide d’[App Builder](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, l’application doit exposer les points d’entrée suivants :
 
 * **Ressource App Builder vers le point d’entrée de l’URL du produit**
 * **Point d’entrée du produit App Builder vers l’URL de la ressource**
@@ -344,7 +344,7 @@ Le paramètre `asset_matches` contient les attributs suivants :
 | Attribut | Type de données | Description |
 | --- | --- | --- |
 | `asset_id` | String | Identifiant de la ressource. |
-| `asset_roles` | Tableau | Rôles de ressources. Utilise les [rôles de ressource Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) pris en charge, tels que `thumbnail`, `image`, `small_image` et `swatch_image`. Avec l’extension d’intégration AEM Assets 1.4.6 et versions ultérieures, les rôles d’image personnalisés (tels que `hero` ou `custom_role_1`) sont également acceptés. |
+| `asset_roles` | Tableau | Rôles de ressources. Utilise les [rôles de ressource Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) pris en charge, tels que `thumbnail`, `image`, `small_image` et `swatch_image`. Avec l’extension d’intégration AEM Assets 1.4.6 et versions ultérieures, les rôles d’image personnalisés (tels que `hero` ou `custom_role_1`) sont également acceptés. |
 | `asset_format` | String | Format de la ressource. Les valeurs possibles sont `image` et `video`. |
 | `asset_position` | Nombre | Position de la ressource dans la galerie de produits. |
 
