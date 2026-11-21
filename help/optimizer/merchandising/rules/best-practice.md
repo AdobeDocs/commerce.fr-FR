@@ -2,7 +2,7 @@
 title: Bonnes pratiques relatives aux règles de marchandisage
 description: Découvrez les bonnes pratiques d’implémentation des règles de marchandisage pour la recherche, la suppression des recherches, les listes par défaut et les pages de catégorie.
 role: Admin, Developer
-badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
+badgeSaas: label="SaaS uniquement" type="Positive" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce as a Cloud Service et [!DNL Adobe Commerce Optimizer] (infrastructure SaaS gérée par Adobe)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 TQID: https://experienceleague.adobe.com/DrdrBBXeMyqQr16h1LrlSoet3F6ihn57LBmPFBUXmTs
 product_v2:
