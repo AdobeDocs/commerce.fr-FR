@@ -1,6 +1,6 @@
 ---
-title: Modèle de données de catalogue composable et services de marchandisage
-description: Découvrez comment le modèle de données de catalogue composable modifie la diffusion du catalogue dans [!DNL Adobe Commerce as a Cloud Service] et ce que les commerçants et les équipes de storefront doivent savoir.
+title: Services de marchandisage avec le modèle de données de catalogue composable
+description: Découvrez comment les services de marchandisage avec le modèle de données de catalogue composable modifient la diffusion du catalogue dans [!DNL Adobe Commerce as a Cloud Service] et ce que les commerçants et les équipes de storefront doivent savoir.
 feature: Catalog Management, Personalization, Saas
 role: Leader
 level: Beginner
@@ -61,13 +61,13 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 0bda134570bb3bf2f43da545917dedc95394df5e
+source-git-commit: 71700f3fc10957ec2b1cccb7df12acd9840c35a1
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '998'
 ht-degree: 0%
 ---
 
-# Services de marchandisage
+# Services de marchandisage avec le modèle de données de catalogue composable
 
 Adobe Commerce as a Cloud Service prend désormais en charge le modèle de données de catalogue composable (CCDM) via les services de marchandisage. Adobe Commerce Optimizer a introduit ce modèle de données. Le CCDM offre aux deux produits une base commune pour les fonctionnalités de navigation dans les catalogues de storefront et de marchandisage, tandis que Commerce Foundation continue à gérer les produits, les prix et les transactions.
 
@@ -75,7 +75,7 @@ Cette rubrique explique les modifications apportées au CCDM, les fonctionnalit�
 
 ## Quels changements le CCDM apporte-t-il ?
 
-Le modèle de catalogue d’origine utilise le service de catalogue pour fournir des données de produit aux storefronts, avec la recherche en direct et les recommandations de produits offrant des fonctionnalités de recherche, de marchandisage et de recommandation. Dans ce modèle, Commerce se synchronise à l’aide de l’exportation de données [SaaS](https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/overview).
+Le modèle de catalogue d’origine utilise le [service de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/catalog-service/overview) pour diffuser des données de produit sur les storefronts, avec des fonctions de recherche en direct et de recommandations de produits offrant des fonctionnalités de recherche, de marchandisage et de recommandation. Dans ce modèle, Commerce synchronise les données sur la couche de services à l’aide de l’[exportation de données SaaS](https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/overview).
 
 Avec le CCDM, ces fonctionnalités fonctionnent sur la même base de catalogue que celle qui alimente Adobe Commerce Optimizer. Les [vues de catalogue](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) et les [politiques](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/setup/policies) définissent le contexte de catalogue disponible pour un storefront. Les politiques déterminent l’assortiment de produits et les règles de marchandisage peuvent s’appliquer à toutes les vues de catalogue ou être personnalisées pour une vue spécifique.
 
@@ -85,7 +85,7 @@ Commerce Foundation reste la source canonique des produits et des prix. Les donn
 
 ## Octroi de licences et approvisionnement
 
-Les services de marchandisage sont inclus dans le SKU Adobe Commerce as a Cloud Service existant. Il ne s’agit pas d’un second produit ou abonnement, et il ne nécessite pas d’achat, de droit ou de client Adobe Commerce Optimizer distinct.
+Les services de marchandisage avec CCDM sont inclus dans le SKU Adobe Commerce as a Cloud Service existant. Il ne s’agit pas d’un second produit ou abonnement, et il ne nécessite pas d’achat, de droit ou de client Adobe Commerce Optimizer distinct.
 
 ## Aperçu de l’architecture
 
@@ -93,7 +93,7 @@ Les services de marchandisage sont inclus dans le SKU Adobe Commerce as a Cloud 
 
 Les storefronts utilisent des services de marchandisage pris en charge par le CCDM pour récupérer les données du catalogue et le contexte pour la navigation, la recherche, les recommandations et le marchandisage. Les requêtes utilisent le contexte du catalogue pour récupérer les produits et les prix pour l’audience prévue. Vous continuez à gérer la configuration du site web, du magasin et de l’affichage du magasin dans [!DNL Commerce].
 
-Le diagramme suivant montre la position des services de marchandisage dans l’architecture plus large d’Adobe Commerce as a Cloud Service.
+Le diagramme suivant montre la position des services de marchandisage avec le CCDM dans l’architecture plus large d’Adobe Commerce as a Cloud Service.
 
 Architecture de ![Commerce présentant le flux de données du catalogue dans les services de marchandisage](./assets/data-flow-ccdm.png){zoomable="yes"}
 
@@ -105,7 +105,7 @@ Dans Admin, vous pouvez configurer le contexte du catalogue avec [!UICONTROL Cat
 
 ## Considérations avant l&#39;adoption
 
-Examinez l’impact du modèle CCDM sur vos workflows de licence, d’intégration de catalogues, de storefront et d’administration avant d’adopter les services de marchandisage.
+Examinez l’impact du modèle CCDM sur vos workflows de licence, d’intégration de catalogues, de storefront et d’administration avant d’adopter les services de marchandisage avec CCDM.
 
 ### Gestion des catalogues et intégrations
 
@@ -134,8 +134,12 @@ Le modèle CCDM ne modifie pas les limites d’Adobe Commerce as a Cloud Service
 
 ## Disponibilité et migration
 
-Les organisations qui commencent à utiliser Adobe Commerce as a Cloud Service après cette version bénéficient par défaut de services de marchandisage. Si votre organisation a besoin du modèle de données de catalogue d’origine, contactez l’équipe de votre compte Adobe pour déterminer si une exception est disponible.
+Les organisations qui commencent à utiliser Adobe Commerce as a Cloud Service après la version du 18 novembre 2026 incluent par défaut les services de marchandisage avec CCDM. Si votre organisation a besoin du modèle de données de catalogue d’origine, contactez l’équipe de votre compte Adobe pour déterminer si une exception est disponible.
 
 Les organisations qui disposaient d’Adobe Commerce as a Cloud Service avant cette version peuvent choisir l’un des modèles de catalogue lors de l’approvisionnement d’une nouvelle instance [1. &#x200B;](./getting-started.md#create-an-instance)Par défaut, le sélecteur [!UICONTROL Enable CCDM] est désactivé. Une fois que le CCDM est activé, vous ne pouvez pas le désactiver.
 
 Les instances existantes ne changent pas automatiquement. Lors de la disponibilité générale (GA), vous ne pouvez pas migrer une instance de services de catalogue d’origine existante vers les services de marchandisage.
+
+>[!MORELIKETHIS]
+>
+>* [Guide de l’administrateur des services de marchandisage avec CCDM Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/overview)
