@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: eebf534ca77d223db63f2062dd889d8f3ceb1866
+source-git-commit: c1bd52e33427ed9222ef72aadf791d424fff20bb
 workflow-type: tm+mt
-source-wordcount: '10433'
+source-wordcount: '10913'
 ht-degree: 0%
 ---
 # Notes de mise à jour
@@ -82,7 +82,90 @@ Chaque expérience d’administration possède sa propre URL. Les liens d’inst
 
 En savoir plus sur [Commerce Admin dans l’expérience unifiée Adobe](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/admin-unified-experience).
 
-## Novembre 2026 - #2 de mise à jour {#latest}
+## Décembre 2026 - #1 de mise à jour {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="Les éléments répertoriés ne sont actuellement disponibles que dans les environnements Sandbox. Adobe commence par rendre les nouvelles versions disponibles dans les environnements Sandbox afin de donner le temps de tester les modifications à venir avant que la version ne soit disponible dans les environnements de production."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Les éléments suivants seront publiés dans les environnements de production le 2 décembre 2026.
+
+>[!BEGINSHADEBOX]
+
+### Envoi de copies d’e-mails personnalisés
+
+Le point d’entrée REST [`POST /V1/custom-email/send`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) accepte désormais les tableaux `ccEmails` et `bccEmails` facultatifs pour envoyer des copies d’un e-mail à d’autres destinataires. <!-- ACCS-2225 -->
+
+### Nomination des sources d’inventaire via REST
+
+Les nouveaux points d’entrée REST d’administration suivants fournissent des fonctionnalités de nomination et de disponibilité de source : <!-- ACCS-1884 -->
+
+* `GET /V1/carts/:cartId/nominated-sources` et `PUT /V1/carts/:cartId/nominated-sources` lisent et définissent la source d’inventaire désignée pour chaque article de panier.
+* `GET /V1/inventory/source-availability` renvoie la disponibilité par source pour un magasin.
+* `GET /V1/inventory/stock-availability` renvoie la quantité vendable au niveau du stock pour un magasin.
+
+### Réinitialiser les prix des articles de panier personnalisés
+
+Vous pouvez désormais supprimer un [prix personnalisé](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price) d’un article de panier sans supprimer ni ajouter à nouveau l’article. Définissez l’attribut d’extension `reset_custom_price` sur `true` dans une requête `PUT /V1/carts/:cartId/items/:itemId`. <!-- ACCS-2189 -->
+
+```json
+{
+  "cartItem": {
+    "item_id": 8,
+    "quote_id": "17",
+    "sku": "hat",
+    "qty": 1,
+    "extension_attributes": { "reset_custom_price": true }
+  }
+}
+```
+
+### Exclure les articles du panier des remises
+
+Vous pouvez désormais exclure des articles de panier individuels des remises de règle de prix de panier en définissant l’attribut d’extension `apply_discounts` sur `false` dans les requêtes `POST /V1/carts/:quoteId/items` et `PUT /V1/carts/:cartId/items/:itemId`. <!-- ACCS-2190 -->
+
+### Récupérer les listes de souhaits des clients
+
+Les nouveaux points d’entrée REST suivants vous permettent de récupérer les listes de souhaits des clients : <!-- ACCS-2330 -->
+
+* `GET /V1/customers/:customerId/wishlists` renvoie les listes de souhaits du client.
+* `GET /V1/customers/:customerId/wishlists/:wishlistId/items` renvoie les éléments d&#39;une liste de souhaits avec leurs options de produit enregistrées.
+
+### Taxe sur les frais de douane
+
+Les frais de douane renvoyés par le webhook `plugin.magento.out_of_process_totals_collector.api.get_total_modifications.custom_fees` sont désormais envoyés au webhook `plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` sous la forme d’éléments avec le code `oope_custom_fee_<fee code>`, à des fins fiscales. <!-- ACCS-2274 -->
+
+### Rechercher des événements et des webhooks dans l’administrateur
+
+La disposition des pages **[!UICONTROL Events List]** ([!UICONTROL System] > [!UICONTROL Events] > [!UICONTROL Events List]) et **[!UICONTROL Webhooks List]** ([!UICONTROL System] > [!UICONTROL Webhooks] > [!UICONTROL Webhooks List]) de [!DNL Commerce Admin] a été repensée et peut faire l’objet d’une recherche. Vous pouvez effectuer une recherche par nom de module, d’événement ou webhook, sélectionner un élément pour afficher son schéma de payload (noms et types de champs) dans un volet en regard de la liste, puis copier le schéma au format JSON. <!-- CEXT-6999 -->
+
+### Appliquer les paramètres de l&#39;entreprise lors de l&#39;enregistrement du storefront
+
+La mutation GraphQL `createCompany` accepte désormais une entrée facultative `config` qui applique les paramètres du carnet d’adresses de la société (`address_book_enabled` et `custom_shipping_address_enabled`) lors de la création de la société. <!-- USF-4527 -->
+
+Par défaut, cette option est désactivée. Pour l’activer, accédez à [!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Company Configuration] > [!UICONTROL General] et définissez **[!UICONTROL Allow Company Configuration on Storefront Registration]** sur **Oui**. Ce champ s&#39;affiche uniquement lorsque **[!UICONTROL Allow Company Registration from the Storefront]** est défini sur **Oui**.
+
+### Améliorations et correctifs
+
+Les améliorations, optimisations et correctifs suivants sont inclus dans cette version :
+
+* Un paramètre facultatif est disponible pour réduire les appels répétés au webhook `collect_taxes`. Contactez votre responsable du succès client Adobe Commerce pour l’activer.
+
+* La payload du webhook `collect_taxes` inclut désormais `is_virtual` pour chaque élément et un `parent_code` pour les éléments enfants des lots de prix dynamiques. <!-- CEXT-7035, CEXT-7049 -->
+
+* Correction d’un problème en raison duquel la mutation GraphQL `addProductsToCart` pouvait renvoyer le prix d’origine des nouveaux articles au lieu des prix d’article renvoyés par le webhook. <!-- CEXT-7019 -->
+
+* Correction d’un problème en raison duquel le webhook `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` ne supprimait pas les taux fournis par les transporteurs d’expédition hors processus. <!-- ACCS-2251 -->
+
+* Correction d’un problème en raison duquel les modifications apportées au webhook `observer.rma_save_before` n’étaient pas enregistrées via REST lors de l’utilisation d’attributs personnalisés. <!-- CCSAAS-5728 -->
+
+* Correction d’un problème en raison duquel l’administrateur renvoyait une erreur 404 après la création d’un devis négociable. <!-- CCSAAS-5864 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Novembre 2026 - #2 de mise à jour
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
