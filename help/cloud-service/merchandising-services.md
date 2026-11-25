@@ -61,7 +61,7 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 94e9623945acbaa3d969b8623e3bd3673d03dec3
+source-git-commit: ca2330c059ede860c464134878a83babd12eb148
 workflow-type: tm+mt
 source-wordcount: '1115'
 ht-degree: 0%
@@ -75,9 +75,9 @@ Cette rubrique explique les modifications apportées au CCDM, les fonctionnalit�
 
 ## Quels changements le CCDM apporte-t-il ?
 
-Le modèle de catalogue d’origine utilise le [service de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/catalog-service/overview) pour diffuser des données de produit sur les storefronts, avec des fonctions de recherche en direct et de recommandations de produits offrant des fonctionnalités de recherche, de marchandisage et de recommandation. Dans ce modèle, Commerce synchronise les données sur la couche de services à l’aide de l’[exportation de données SaaS](https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/overview).
+Le modèle de catalogue d’origine utilise le [service de catalogue](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/overview) pour diffuser des données de produit sur les storefronts, avec des fonctions de recherche en direct et de recommandations de produits offrant des fonctionnalités de recherche, de marchandisage et de recommandation. Dans ce modèle, Commerce synchronise les données sur la couche de services à l’aide de l’[exportation de données SaaS](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview).
 
-Avec le CCDM, ces fonctionnalités fonctionnent sur la même base de catalogue que celle qui alimente Adobe Commerce Optimizer. Les [vues de catalogue](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) et les [politiques](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/setup/policies) définissent le contexte de catalogue disponible pour un storefront. Les politiques déterminent l’assortiment de produits et les règles de marchandisage peuvent s’appliquer à toutes les vues de catalogue ou être personnalisées pour une vue spécifique.
+Avec le CCDM, ces fonctionnalités fonctionnent sur la même base de catalogue que celle qui alimente Adobe Commerce Optimizer. Les [vues de catalogue](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) et les [politiques](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies) définissent le contexte de catalogue disponible pour un storefront. Les politiques déterminent l’assortiment de produits et les règles de marchandisage peuvent s’appliquer à toutes les vues de catalogue ou être personnalisées pour une vue spécifique.
 
 Cela modifie la configuration, l’accès et le marchandisage du catalogue. Le CCDM s’appuie sur les fonctionnalités de recherche, de recommandations et de marchandisage du catalogue Commerce d’origine tout en introduisant des contrôles au niveau de la vue du catalogue. D’autres fonctionnalités de gestion et de création de rapports sont décrites ci-dessous.
 
@@ -99,9 +99,9 @@ Architecture de ![Commerce présentant le flux de données du catalogue dans les
 
 ## Quelles sont les nouveautés pour les commerçants ?
 
-Le nouveau modèle permet d’étendre les règles de marchandisage existantes à toutes les vues de catalogue ou à une vue spécifique. Vous pouvez ainsi appliquer le marchandisage à chaque audience storefront. Découvrez comment [étendre une règle de marchandisage aux vues de catalogue](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
+Le nouveau modèle permet d’étendre les règles de marchandisage existantes à toutes les vues de catalogue ou à une vue spécifique. Vous pouvez ainsi appliquer le marchandisage à chaque audience storefront. Découvrez comment [étendre une règle de marchandisage aux vues de catalogue](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
 
-Dans Admin, vous pouvez configurer le contexte du catalogue avec [!UICONTROL Catalog Views] et [!UICONTROL Policies]. Vous pouvez également utiliser [!UICONTROL Success Metrics] pour consulter le chiffre d’affaires, la conversion, l’engagement, l’acquisition et le taux de rebond. Voir [Mesures de succès](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) pour plus d’informations.
+Dans Admin, vous pouvez configurer le contexte du catalogue avec [!UICONTROL Catalog Views] et [!UICONTROL Policies]. Vous pouvez également utiliser [!UICONTROL Success Metrics] pour consulter le chiffre d’affaires, la conversion, l’engagement, l’acquisition et le taux de rebond. Voir [Mesures de succès](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) pour plus d’informations.
 
 ## Considérations avant l&#39;adoption
 
@@ -118,8 +118,6 @@ La manière dont votre storefront récupère les données de catalogue dépend d
 - **[!DNL Adobe Commerce Storefront]** compléments : les compléments gèrent la transition. Aucune modification du code n’est requise. Consultez la [documentation sur la configuration du storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
 - **Storefronts personnalisés ou autres**—Mettez à jour les en-têtes de votre demande de catalogue comme décrit dans la [référence de configuration des en-têtes](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
 
-Examinez vos requêtes de catalogue et les en-têtes de requête pour le modèle basé sur le CCDM. Ne supposez pas que les requêtes ou en-têtes existants restent inchangés. Les requêtes du GraphQL de marchandisage diffèrent des requêtes utilisées dans le modèle de services de catalogue d’origine. Les requêtes supplémentaires prennent en charge le CCDM. Utilisez la [référence de l’API Merchandising GraphQL](https://developer.adobe.com/commerce/services/reference/graphql/) et vérifiez le contexte de catalogue requis par rapport à la [référence de l’en-tête storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
-
 ### Applications et extensions tierces
 
 Examinez les applications et extensions tierces qui lisent des données de catalogue ou consomment des événements de catalogue avec leur fournisseur. La compatibilité dépend de la manière dont chaque application ou extension utilise ces interfaces.
@@ -131,9 +129,11 @@ Les services de marchandisage fournissent des API pour la gestion des données d
 - **API REST :** suivez [Commencez avec l’API Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api) pour créer et gérer des données de produit et de catalogue à partir des applications principales.
 - **API GraphQL :** suivez [Commencez avec l’API de marchandisage](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api) pour récupérer les données de catalogue pour les expériences de storefront. Configurez les requêtes avec les en-têtes requis pour votre storefront, comme décrit dans la [référence d’en-tête storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
 
+Examinez vos requêtes de catalogue et les en-têtes de requête pour le modèle basé sur le CCDM. Ne supposez pas que les requêtes ou en-têtes existants restent inchangés. Les requêtes du GraphQL de marchandisage diffèrent des requêtes utilisées dans le modèle de services de catalogue d’origine. Les requêtes supplémentaires prennent en charge le CCDM. Utilisez la [référence de l’API Merchandising GraphQL](https://developer.adobe.com/commerce/services/reference/graphql/) et vérifiez le contexte de catalogue requis par rapport à la [référence d’en-tête d’intégration](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#headers).
+
 ### Expérience d’administrateur
 
-Adobe Commerce as a Cloud Service avec CCDM utilise [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe a publié Unified Shell séparément du CCDM. Les instances existantes sur le modèle de services de catalogue d’origine conservent l’accès à la fois à Classic et à Unified Shell.
+Adobe Commerce as a Cloud Service avec CCDM utilise [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe a publié Unified Shell séparément du CCDM. Les instances existantes sur le modèle de services de catalogue d’origine conservent l’accès à la fois à Classic et à Unified Shell.
 
 ### Limites
 
@@ -143,10 +143,10 @@ Le modèle CCDM ne modifie pas les limites d’Adobe Commerce as a Cloud Service
 
 Les organisations qui commencent à utiliser Adobe Commerce as a Cloud Service après la version du 18 novembre 2026 incluent par défaut les services de marchandisage avec CCDM. Si votre organisation a besoin du modèle de données de catalogue d’origine, contactez l’équipe de votre compte Adobe pour déterminer si une exception est disponible.
 
-Les organisations qui disposaient d’Adobe Commerce as a Cloud Service avant cette version peuvent choisir l’un des modèles de catalogue lors de l’approvisionnement d’une nouvelle instance [1. &#x200B;](./getting-started.md#create-an-instance)Par défaut, le sélecteur [!UICONTROL Enable CCDM] est désactivé. Une fois que le CCDM est activé, vous ne pouvez pas le désactiver.
+Les organisations qui disposaient d’Adobe Commerce as a Cloud Service avant cette version peuvent choisir l’un des modèles de catalogue lors de l’approvisionnement d’une nouvelle instance [1. ](./getting-started.md#create-an-instance)Par défaut, le sélecteur [!UICONTROL Enable CCDM] est désactivé. Une fois que le CCDM est activé, vous ne pouvez pas le désactiver.
 
 Les instances existantes ne changent pas automatiquement. Lors de la disponibilité générale (GA), vous ne pouvez pas migrer une instance de services de catalogue d’origine existante vers les services de marchandisage.
 
 >[!MORELIKETHIS]
 >
->* [Guide de l’administrateur des services de marchandisage avec CCDM Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/overview)
+>* [Guide de l’administrateur des services de marchandisage avec CCDM Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/overview)
