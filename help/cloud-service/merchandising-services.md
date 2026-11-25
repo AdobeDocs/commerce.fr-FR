@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 71700f3fc10957ec2b1cccb7df12acd9840c35a1
+source-git-commit: ca2330c059ede860c464134878a83babd12eb148
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1115'
 ht-degree: 0%
 ---
 
@@ -118,11 +118,18 @@ La manière dont votre storefront récupère les données de catalogue dépend d
 - **[!DNL Adobe Commerce Storefront]** compléments : les compléments gèrent la transition. Aucune modification du code n’est requise. Consultez la [documentation sur la configuration du storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/).
 - **Storefronts personnalisés ou autres**—Mettez à jour les en-têtes de votre demande de catalogue comme décrit dans la [référence de configuration des en-têtes](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
 
-Examinez vos requêtes de catalogue et les en-têtes de requête pour le modèle basé sur le CCDM. Ne supposez pas que les requêtes ou en-têtes existants restent inchangés. Les requêtes du GraphQL de marchandisage diffèrent des requêtes utilisées dans le modèle de services de catalogue d’origine. Les requêtes supplémentaires prennent en charge le CCDM. Utilisez la [référence de l’API Merchandising GraphQL](https://developer.adobe.com/commerce/services/reference/graphql/) et vérifiez le contexte de catalogue requis par rapport à la [référence de l’en-tête storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
-
 ### Applications et extensions tierces
 
 Examinez les applications et extensions tierces qui lisent des données de catalogue ou consomment des événements de catalogue avec leur fournisseur. La compatibilité dépend de la manière dont chaque application ou extension utilise ces interfaces.
+
+### API de marchandisage
+
+Les services de marchandisage fournissent des API pour la gestion des données de catalogue principal et la récupération du catalogue storefront. Utilisez l’API REST pour gérer les données de catalogue et l’API GraphQL pour récupérer les données pour les expériences de storefront.
+
+- **API REST :** suivez [Commencez avec l’API Data Ingestion](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api) pour créer et gérer des données de produit et de catalogue à partir des applications principales.
+- **API GraphQL :** suivez [Commencez avec l’API de marchandisage](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api) pour récupérer les données de catalogue pour les expériences de storefront. Configurez les requêtes avec les en-têtes requis pour votre storefront, comme décrit dans la [référence d’en-tête storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers).
+
+Examinez vos requêtes de catalogue et les en-têtes de requête pour le modèle basé sur le CCDM. Ne supposez pas que les requêtes ou en-têtes existants restent inchangés. Les requêtes du GraphQL de marchandisage diffèrent des requêtes utilisées dans le modèle de services de catalogue d’origine. Les requêtes supplémentaires prennent en charge le CCDM. Utilisez la [référence de l’API Merchandising GraphQL](https://developer.adobe.com/commerce/services/reference/graphql/) et vérifiez le contexte de catalogue requis par rapport à la [référence d’en-tête d’intégration](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#headers).
 
 ### Expérience d’administrateur
 
