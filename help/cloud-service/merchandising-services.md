@@ -75,9 +75,9 @@ Cette rubrique explique les modifications apportées au CCDM, les fonctionnalit�
 
 ## Quels changements le CCDM apporte-t-il ?
 
-Le modèle de catalogue d’origine utilise le [service de catalogue](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/overview) pour diffuser des données de produit sur les storefronts, avec des fonctions de recherche en direct et de recommandations de produits offrant des fonctionnalités de recherche, de marchandisage et de recommandation. Dans ce modèle, Commerce synchronise les données sur la couche de services à l’aide de l’[exportation de données SaaS](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview).
+Le modèle de catalogue d’origine utilise le [service de catalogue](https://experienceleague.adobe.com/fr/docs/commerce/catalog-service/overview) pour diffuser des données de produit sur les storefronts, avec des fonctions de recherche en direct et de recommandations de produits offrant des fonctionnalités de recherche, de marchandisage et de recommandation. Dans ce modèle, Commerce synchronise les données sur la couche de services à l’aide de l’[exportation de données SaaS](https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/overview).
 
-Avec le CCDM, ces fonctionnalités fonctionnent sur la même base de catalogue que celle qui alimente Adobe Commerce Optimizer. Les [vues de catalogue](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) et les [politiques](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies) définissent le contexte de catalogue disponible pour un storefront. Les politiques déterminent l’assortiment de produits et les règles de marchandisage peuvent s’appliquer à toutes les vues de catalogue ou être personnalisées pour une vue spécifique.
+Avec le CCDM, ces fonctionnalités fonctionnent sur la même base de catalogue que celle qui alimente Adobe Commerce Optimizer. Les [vues de catalogue](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) et les [politiques](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/setup/policies) définissent le contexte de catalogue disponible pour un storefront. Les politiques déterminent l’assortiment de produits et les règles de marchandisage peuvent s’appliquer à toutes les vues de catalogue ou être personnalisées pour une vue spécifique.
 
 Cela modifie la configuration, l’accès et le marchandisage du catalogue. Le CCDM s’appuie sur les fonctionnalités de recherche, de recommandations et de marchandisage du catalogue Commerce d’origine tout en introduisant des contrôles au niveau de la vue du catalogue. D’autres fonctionnalités de gestion et de création de rapports sont décrites ci-dessous.
 
@@ -99,9 +99,9 @@ Architecture de ![Commerce présentant le flux de données du catalogue dans les
 
 ## Quelles sont les nouveautés pour les commerçants ?
 
-Le nouveau modèle permet d’étendre les règles de marchandisage existantes à toutes les vues de catalogue ou à une vue spécifique. Vous pouvez ainsi appliquer le marchandisage à chaque audience storefront. Découvrez comment [étendre une règle de marchandisage aux vues de catalogue](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
+Le nouveau modèle permet d’étendre les règles de marchandisage existantes à toutes les vues de catalogue ou à une vue spécifique. Vous pouvez ainsi appliquer le marchandisage à chaque audience storefront. Découvrez comment [étendre une règle de marchandisage aux vues de catalogue](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
 
-Dans Admin, vous pouvez configurer le contexte du catalogue avec [!UICONTROL Catalog Views] et [!UICONTROL Policies]. Vous pouvez également utiliser [!UICONTROL Success Metrics] pour consulter le chiffre d’affaires, la conversion, l’engagement, l’acquisition et le taux de rebond. Voir [Mesures de succès](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) pour plus d’informations.
+Dans Admin, vous pouvez configurer le contexte du catalogue avec [!UICONTROL Catalog Views] et [!UICONTROL Policies]. Vous pouvez également utiliser [!UICONTROL Success Metrics] pour consulter le chiffre d’affaires, la conversion, l’engagement, l’acquisition et le taux de rebond. Voir [Mesures de succès](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) pour plus d’informations.
 
 ## Considérations avant l&#39;adoption
 
@@ -133,7 +133,7 @@ Examinez vos requêtes de catalogue et les en-têtes de requête pour le modèle
 
 ### Expérience d’administrateur
 
-Adobe Commerce as a Cloud Service avec CCDM utilise [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe a publié Unified Shell séparément du CCDM. Les instances existantes sur le modèle de services de catalogue d’origine conservent l’accès à la fois à Classic et à Unified Shell.
+Adobe Commerce as a Cloud Service avec CCDM utilise [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). Adobe a publié Unified Shell séparément du CCDM. Les instances existantes sur le modèle de services de catalogue d’origine conservent l’accès à la fois à Classic et à Unified Shell.
 
 ### Limites
 
@@ -149,4 +149,4 @@ Les instances existantes ne changent pas automatiquement. Lors de la disponibili
 
 >[!MORELIKETHIS]
 >
->* [Guide de l’administrateur des services de marchandisage avec CCDM Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/overview)
+>* [Guide de l’administrateur des services de marchandisage avec CCDM Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/merchandising-with-ccdm/overview)
